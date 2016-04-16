@@ -1,0 +1,1025 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>C'est la Z (old posts, page 16)</title>
+  <id>http://cestlaz.github.io/index-16.atom</id>
+  <updated>2016-04-16T20:26:33Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/index-16.atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-15.atom"/>
+  <link rel="previous" type="application/atom+xml" href="http://cestlaz.github.io/index-17.atom"/>
+  <link rel="current" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
+  <link rel="next-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-17.atom"/>
+  <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-15.atom"/>
+  <fh:archive/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-16.html"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Looking under the hood</title>
+    <id>http://cestlaz.github.io/posts/2015-10-17-under-the-hood.html/</id>
+    <updated>2015-10-17T00:00:00</updated>
+    <published>2015-10-17T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-10-17-under-the-hood.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+Just had an interesting conversation with &lt;a href="http://chrisgrant.co/"&gt;Chris&lt;/a&gt;, one of our &lt;a href="http://cstuy.org/"&gt;CSTUY&lt;/a&gt;
+mentors. Chris is working with one of our more advanced groups of
+hackers - they'll be creating a web based app that with ultimately be
+deployed as mobile using &lt;a href="http://phonegap.com/"&gt;PhoneGap&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The question he had was "&lt;a href="http://angularjs.org/"&gt;Angular.js&lt;/a&gt; or &lt;a href="http://backbonejs.org/"&gt;Backbone.js&lt;/a&gt;."
+&lt;/p&gt;
+
+&lt;p&gt;
+Chris and I have had this conversation before. I was explaining at the
+time why I preferred to use Backbone.js over Angular in my SoftDev
+classes. Part of the reason is that the current version of Angular is
+already deprecated while the new version isn't ready for prime time
+yet. This means I'd be teaching to a dead end. More importantly, Angular
+is a much higher level framework than Backbone. There's a lot of
+"magic" going on. Just a few short lines of code and you're done.
+&lt;/p&gt;
+
+&lt;p&gt;
+Backbone is much closer to the metal. It does less work for you so it
+let's me drill down with the kids all the way to the source. This way 
+the kids understand what's going on under the hood. As my buddy &lt;a href="https://www.linkedin.com/in/gerryseidman"&gt;Gerry&lt;/a&gt;
+says, "never use a tool you couldn't write yourself." I personally
+like low level tools like Backbone.js. If you have to get a job
+done quickly, it might not be the right tool, but for teaching,
+it's terrific.
+&lt;/p&gt;
+
+&lt;p&gt;
+I think Chris was surprised when I said that a higher level tool like
+Angular could very well be appropriate for our Saturday Hackers and
+that I'd certainly support whichever direction Chris wanted to go in
+with his team.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why  might it be right in this case?
+&lt;/p&gt;
+
+&lt;p&gt;
+Mostly because the hackers only meet once a week. In our Saturday
+sessions, we want our kids to learn, but we also need to create an
+environment where they can continue to progress on their
+projects. Some times, compromise is needed. Angular will let them get
+up and running within the constraints of our program and the hackers
+will still learn a lot, particularly with people like Chris mentoring them.
+&lt;/p&gt;
+
+&lt;p&gt;
+That's the balance we strive to achieve - a good amount of real CS but
+tempered with the realities of a once a week program.
+&lt;/p&gt;
+
+&lt;p&gt;
+We could go the way of many other CS programs out there and
+just use tools that do 90% of the work but we like to think we have a
+higher standard and I think that's what makes our team of teachers and
+mentors special.
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Grading Autograders</title>
+    <id>http://cestlaz.github.io/posts/2015-10-16-graders.html/</id>
+    <updated>2015-10-16T00:00:00</updated>
+    <published>2015-10-16T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-10-16-graders.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+		The other day codehs made an announcement about their new
+		&lt;a href="https://medium.com/codehs-product-updates/these-are-the-autograders-you-ve-been-looking-for-bda0fa8fd8a"&gt;autograder&lt;/a&gt;. Fellow CS Teaching veteran Alfred Thompson had his say up
+		on his &lt;a href="http://blog.acthompson.net/2015/10/autogradersfor-good-or-for-evil.html"&gt;blog&lt;/a&gt; where he talked about &lt;a href="https://computinged.wordpress.com/"&gt;Mark Guzdial&lt;/a&gt;'s comment on
+		autograders leading to less creative assignments.
+&lt;/p&gt;
+
+&lt;p&gt;
+		I very much agree that autograders, due to their rigidness lend
+		themselves to less creative projects, but thought I'd write up a few
+		of my own thoughts on autograders.
+&lt;/p&gt;
+
+&lt;p&gt;
+		First and foremost, &lt;b&gt;I HATE GRADING&lt;/b&gt;. It's one of the worst parts of
+		my job and grading projects is &lt;b&gt;really&lt;/b&gt; hard to do well.
+&lt;/p&gt;
+
+&lt;p&gt;
+		You'd think an autograder would be a panacea. 
+&lt;/p&gt;
+
+&lt;p&gt;
+		It's not. 
+&lt;/p&gt;
+
+&lt;p&gt;
+		In addition to them being very nit-picky – got an extra space in your
+		output? &lt;b&gt;FAIL&lt;/b&gt;. Wrong number of significant digits? &lt;b&gt;FAIL&lt;/b&gt;. Didn't
+		handle all those "trick" cases? &lt;b&gt;FAIL&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+		Since autograders typically check your output against a correct
+		solution, it's going to be limited in what it can grade right and
+		wrong and what's more, it's very limited in the feedback it can give.
+&lt;/p&gt;
+
+&lt;p&gt;
+		These are some of the limitations that lead to less creative
+		projects but that's not my beef with the autograders.
+&lt;/p&gt;
+
+&lt;p&gt;
+		Why do we give assignments? To assess students? Yes, but also to
+		inform our instruction. We need to grade the assignments ourselves
+		because those assignments tell us about our students and teach us how
+		best to work with them. What's more, we really don't just want to see
+		that finished product, but rather, we want to see the process as
+		well. Autograders can't help here.
+&lt;/p&gt;
+
+&lt;p&gt;
+		I do use autograders – &lt;a href="http://codingbat.com/"&gt;codingbat.com&lt;/a&gt; and our own locally developed
+		&lt;a href="http://bert.stuy.edu/pbrooks/SchemingBat/scheming.py"&gt;Scheming Bat.&lt;/a&gt; I use them for small homeworks and class assignments
+		early on. For bigger stuff, I do it myself.
+&lt;/p&gt;
+
+&lt;p&gt;
+		For advanced classes (AP and beyond) we're all about the GitHub. Not
+		only can I grab the projects at any time but I can also see how
+		projects were developed - logs, diffs, &lt;a href="https://github.com/vynl/vynl-v0/graphs/contributors"&gt;graphs&lt;/a&gt;. All give me insight
+		into how the students working. Add in class lab time when I get to
+		interact with the kids and I've got a good sense of my student
+		computer scientists. 
+&lt;/p&gt;
+
+&lt;p&gt;
+		In our intro courses, where they're not ready for GitHub, we use
+		Dropbox for sharing and collecting assignments. Not quite as good but
+		we can still see a lot.
+&lt;/p&gt;
+
+&lt;p&gt;
+		At the end of the day, if a teacher doesn't look at a student's work
+		directly, a teacher isn't going to know everything there is to know
+		about a student. I can't imagine a top English teacher not reading a
+		student's essays. We're no different. 
+&lt;/p&gt;
+
+&lt;p&gt;
+		It's time consuming and generally no fun but it's a big part of &lt;b&gt;real&lt;/b&gt;
+		education.
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Free labor for the College Board and more angst for the kids</title>
+    <id>http://cestlaz.github.io/posts/2015-10-13-psat.html/</id>
+    <updated>2015-10-13T00:00:00</updated>
+    <published>2015-10-13T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-10-13-psat.html/"/>
+    <summary type="html">&lt;p&gt;
+I won't be teaching my regular classes tomorrow. I'll be
+meeting all my kids but classes will only be 12 minutes long.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, how will my colleagues and I spend the rest of the day?
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;b&gt;Proctoring the PSAT.&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+This has always been a sore point with me. Back in the day, many
+schools, Stuy included, offered the PSAT on the weekend. If you wanted
+to proctor, you'd come in and get paid a little extra. As a kid, if
+you wanted to take the exam you'd come in as well.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't remember when it changed but at some point it did. The DOE
+decreed that if you offered the PSAT during the week on school time,
+the DOE would pay for the exams. This was done under the ridiculous
+idea that all kids taking a test that counts for nothing is a good
+thing. You can make a claim that having taken the PSAT gives the kids
+some familiarity with the SAT but the SAT's value as a predictor of
+college success is questionable at best anyway.
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course, setting things up like this is a great deal for the College
+Board. It looks like they get a $15 per kid cash cow every year from
+the NYC tax payers. It's a hidden expense so no one complains but we
+keep shoveling the money out the door.
+&lt;/p&gt;
+
+&lt;p&gt;
+What's worse is that we also provide the College Board with free
+labor - rather then spend my day teaching my kids I'm working for free
+for the College Board administering their test to my kids.
+&lt;/p&gt;
+
+&lt;p&gt;
+Teachers do the work, kids suffer through the exam, and the College
+Board laughs all the way to the bank.
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Coding schools - or why I chose NYCDA</title>
+    <id>http://cestlaz.github.io/posts/2015-10-12-nycda.html/</id>
+    <updated>2015-10-12T00:00:00</updated>
+    <published>2015-10-12T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-10-12-nycda.html/"/>
+    <summary type="html">&lt;div id="outline-container-orgheadline1" class="outline-2"&gt;
+&lt;h2 id="orgheadline1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline1"&gt;
+&lt;p&gt;
+Some of you might have noticed that a few months ago, I decided to
+affiliate myself with &lt;a href="http://nycda.com/"&gt;The New York Code and Design Academy&lt;/a&gt; or NYCDA. I
+took on the role of "Academic Director, Youth Programs." It's a part
+time gig, at least for now and I'm helping them develop their programs
+for middle and high school students.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why did I choose them?
+&lt;/p&gt;
+
+&lt;p&gt;
+There are a number of coding schools with varying levels of hype
+around them. At their core, all are workforce programs. They take
+people with little or no programming background and after a few months
+of intensive training, they ship them off as web devs or the like.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-orgheadline2" class="outline-2"&gt;
+&lt;h2 id="orgheadline2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline2"&gt;
+&lt;p&gt;
+I have friends at many of these coding schools and related programs so
+what was different about NYCDA that made me decide to work with them?
+&lt;/p&gt;
+
+&lt;p&gt;
+They know who they are, they know what they do, they know where they
+want to go, and we all feel I can help them get there.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-orgheadline3" class="outline-2"&gt;
+&lt;h2 id="orgheadline3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline3"&gt;
+&lt;p&gt;
+Let me explain.
+&lt;/p&gt;
+
+&lt;p&gt;
+Most coding schools follow the same mold.
+&lt;/p&gt;
+
+&lt;p&gt;
+For one reason or another, a founder decides to start teaching a
+class. This works pretty well so it starts to grow into a
+business. For many of these coding schools, the teaching staff comes
+from the program's own graduates.
+&lt;/p&gt;
+
+&lt;p&gt;
+The key point here is that most coding schools have little to no
+interaction with real, experienced educators.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, why do they work? Well, to start, there's plenty of low hanging
+fruit. Right now, as these programs are in high demand,  programs can
+cream top applicants. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Many programs also have applicants complete
+pre-work - that is a program of self study before starting the coding
+school. This pretty much ensures that your classes are going to be
+composed of hard working, intelligent self starters - that's a recipe
+for a successful student body.
+&lt;/p&gt;
+
+&lt;p&gt;
+Given the student population and the fact that the skill set for an
+entry level programmer can be taught fairly formulaicaly, it's a recipe
+for success.
+&lt;/p&gt;
+
+&lt;p&gt;
+Now, I don't mean to imply that these schools are bad or doing bad
+things - all of them are taking people and giving them a chance at a
+new career. It's good and it's important. Even more so for
+organizations that provide a step up for the have nots.
+&lt;/p&gt;
+
+&lt;p&gt;
+Teaching kids is another matter. 
+&lt;/p&gt;
+
+&lt;p&gt;
+For adults you're teaching a specific skill set for a specific job
+market. For kids, you're setting a foundation and opening doors. You
+can't just take your adult model and apply it to kids. Well, you can,
+and it will even look good, but it won't have real substance.
+&lt;/p&gt;
+
+&lt;p&gt;
+That's what impressed me about NYCDA - when &lt;a href="https://twitter.com/jeremysnepar"&gt;Jeremy&lt;/a&gt; came to me it was
+clear - they knew what they did and what they did well. He also knew
+that as they ramp up their youth offerings, it was important to
+involve real, experienced educators - that it was about having true
+expert teachers even more than it was curriculum. He understood that
+while NYCDA is doing a great job, how much better could it be to
+include CS educators who have been sending kids into industry
+successfully for years.
+&lt;/p&gt;
+
+&lt;p&gt;
+I was even more delighted when my partner in crime JonAlf
+Dyrland-Weaver - one of the best teachers I know, CS or otherwise,
+agreed to teach one of our NYCDA youth courses this semester.
+&lt;/p&gt;
+
+&lt;p&gt;
+NYCDA is the only coding school working to bring the best teachers out
+there to their youth programs.
+&lt;/p&gt;
+
+&lt;p&gt;
+That's why I joined on and that's why I'm really excited for the
+programs we're going to roll out.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>How it all began</title>
+    <id>http://cestlaz.github.io/posts/2015-10-09-be-a-cs-teacher.html/</id>
+    <updated>2015-10-09T00:00:00</updated>
+    <published>2015-10-09T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-10-09-be-a-cs-teacher.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;div id="outline-container-orgheadline1" class="outline-2"&gt;
+&lt;h2 id="orgheadline1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline1"&gt;
+&lt;p&gt;
+This past week, Garth Flint wrote a couple of posts on how he
+got to be a CS teacher and on being a CS teacher. You can find them here:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://gflint.wordpress.com/2015/10/07/so-you-want-to-be-a-cs-teacher-part-1/"&gt;Part 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gflint.wordpress.com/2015/10/08/so-you-want-to-be-a-cs-teacher-part-2/"&gt;Part 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+They're both well worth a read.
+&lt;/p&gt;
+
+&lt;p&gt;
+It got me thinking about how I got my start.
+&lt;/p&gt;
+
+&lt;p&gt;
+I never planned on being a teacher. I figured I'd just work in
+tech. After working my way through college, fresh CS degree in hand, I
+landed at Goldman Sachs. I had other opportunities but the tech scene
+was very different. You could (basically):
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Work for a financial house or insurance company&lt;/li&gt;
+&lt;li&gt;Do niche consulting&lt;/li&gt;
+&lt;li&gt;travel out of the city to Bellcore, AT&amp;amp;T or IBM.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Well, I didn't drive and wasn't going to do consulting so I ended up
+on Wall Street. I worked there for a bit but it didn't do it for me,
+then tried a consulting gig. No better. Wall street never appealed to
+me and at the time, more programming type jobs involved you working
+alone on a computer in an office or a cube all day. 
+&lt;/p&gt;
+
+&lt;p&gt;
+So, for no particular reason, I decided to give teaching a go.
+&lt;/p&gt;
+
+&lt;p&gt;
+I always wonder, if I had come along a few years later if I would have
+stayed in pure tech.
+&lt;/p&gt;
+
+&lt;p&gt;
+I had zero teaching credentials but there was a math teacher shortage
+at the time. By taking a couple of CS classes as math classes
+(numerical methods, algorithms) they justified giving me temporary
+license. I would have to take a handful of Ed credits within a couple
+of years and later get a masters (which I knew would be in CS, no way
+was I getting an Education degree).
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-orgheadline2" class="outline-2"&gt;
+&lt;h2 id="orgheadline2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline2"&gt;
+&lt;p&gt;
+So, I started at Seward Park High School as a math teacher. Best thing
+that could have happened to me. I was working with an incredibly
+diverse population - high achieving kids, low achieving kids,
+immigrants, multi-generational Americans, delightful kids and kids on
+parole. That's where I developed my chops.
+&lt;/p&gt;
+
+&lt;p&gt;
+Knowing that I was a CS guy the math chairman started having me teach
+the basic programming course and later APCS.
+&lt;/p&gt;
+
+&lt;p&gt;
+A couple of years later, I was bumped to Stuy. Taught math and the
+rest of my history can be seen &lt;a href="http://cestlaz.github.io/2014/09/17/stuycs-spectator.html#.VhfhBt8qcbw"&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Garth talks about requirements and Alfred Thompson, in his &lt;a href="http://blog.acthompson.net/2015/10/an-inside-look-at-being-computer.html"&gt;link to
+Garth's posts&lt;/a&gt; talks about the problems of CS teacher isolation. It
+took a long time and it was hard work, but I started in a school with
+no CS to speak and no CS teachers and now we have a required course,
+between six and 10 CS teachers depending on the year, and a thoroughly
+oversubscribed program. Of course, if you're at a small school, you
+can't really do that. I remember in the early years, when it came to
+course signup time, I'd have to visit every math class in the building
+on one day to hock my courses. I'm glad those days are gone.
+&lt;/p&gt;
+
+&lt;p&gt;
+Garth also makes a great point about all there is to learn as a real
+CS teacher. The best math teachers I know love doing math and love
+solving problems but by and large, they're not learning new subfields
+every year. Over my time as a teacher I've learned, either by choice
+or necessity:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;new fields such as
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;relearning AI, which is radically different then when I was in
+college&lt;/li&gt;
+&lt;li&gt;Data mining&lt;/li&gt;
+&lt;li&gt;Stats&lt;/li&gt;
+&lt;li&gt;OOP&lt;/li&gt;
+&lt;li&gt;Machine Learning&lt;/li&gt;
+&lt;li&gt;UX&lt;/li&gt;
+&lt;li&gt;HCI&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;new languages
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Java&lt;/li&gt;
+&lt;li&gt;C++&lt;/li&gt;
+&lt;li&gt;Javascript&lt;/li&gt;
+&lt;li&gt;Haskell (a bit)&lt;/li&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;Perl&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;And tons of technologies
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Unix as a toolset&lt;/li&gt;
+&lt;li&gt;system administration&lt;/li&gt;
+&lt;li&gt;network administration.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;
+Git
+&lt;/p&gt;
+
+&lt;p&gt;
+and many more.
+&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+On the other hand, since I do work with many other CS teachers, I
+might be a little bit of an outlier. Some of my colleagues also work
+to keep current and learn new things while others are content with
+their knowledge base and are happy to teach what they're currently
+teaching. That's not to say that they don't work on their craft, but
+rather, they're in a comfort zone of knowledge.
+&lt;/p&gt;
+
+&lt;p&gt;
+So what's next? As initiatives like CS4All progress, CS education will
+become more formalized. You all know my fear about the current
+efforts - CS Ed will go the way of Math Ed and we'll be left with Meh
+CS education for all. If that's the case, and I hope I'm wrong, many
+of Garth's issues will disappear. CS across the nation will become
+more generic but more accessible and CS teachers will hopefully know
+how to teach their courses but maybe not too much more. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Even if that is the case, there will hopefully still be places for us
+old time gluttons for punishment.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>I guess some people like the blues</title>
+    <id>http://cestlaz.github.io/posts/2015-10-01-fans.html/</id>
+    <updated>2015-10-01T00:00:00</updated>
+    <published>2015-10-01T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-10-01-fans.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+
+&lt;p&gt;
+Funny story from yesterday.
+&lt;/p&gt;
+
+&lt;p&gt;
+Devorah, my better half, is an assistant principal at another high
+school. Yesterday evening, she was at work late for "curriculum
+night." Parents came to the school after hours to hear a variety of
+presentations.
+&lt;/p&gt;
+
+&lt;p&gt;
+During her presentation, Devorah mentioned her name, that she had two
+former public school kids in college, and that's about it for the
+personal info.
+&lt;/p&gt;
+
+&lt;p&gt;
+After the session, two parents approached Devorah to say "we're big
+fans of your husband!"
+&lt;/p&gt;
+
+&lt;p&gt;
+Since when do teachers have fans?????????
+&lt;/p&gt;
+
+&lt;p&gt;
+I mean, I understand "my daughter/son was in your husbands class and
+really enjoyed it," but "I'm a big fan?" She wasn't sure how to take
+it. Obviously we both took it as an honor and compliment but we also
+both got a chuckle out of the turn of phrase.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've already said that teachers aren't &lt;a href="http://cestlaz.github.io/2014/12/14/rockstar-godfather.html#.Vg264t8Sr0o"&gt;rock stars, we're blues men&lt;/a&gt; so
+I guess this shows that some folks still like the blues.
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Hacking Sessions - iterating until it's right</title>
+    <id>http://cestlaz.github.io/posts/2015-09-26-hacking-sessions.html/</id>
+    <updated>2015-09-26T00:00:00</updated>
+    <published>2015-09-26T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-09-26-hacking-sessions.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/hacking-sessions-2015/hs.jpg" alt="hs.jpg" width="480px" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Today we kicked off Hacking Sessions 2015. Saturday morning with sixty kids in a room
+brainstorming ideas.  Soon they'll settle on teams and projects and
+we'll be off for a semester of exploring CS and tech.
+&lt;/p&gt;
+
+&lt;p&gt;
+The next couple of weeks will be a little chaotic with groups
+shifting, mentors figuring out which groups to work with and us, the
+instructors launching each team on its way.
+&lt;/p&gt;
+
+&lt;p&gt;
+This is our third year running Hacking Sessions. We're setting things
+up to have student teams exploring a project, technology, or
+tool. Each team will have more experienced students mentoring them. In
+some cases the mentors will also be new to the topic. Supporting both
+the hackers and mentors are our instructors.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm pretty happy with our model but it took us a couple of iterations
+to get here.
+&lt;/p&gt;
+
+&lt;p&gt;
+Our first go round was Fall 2013. We had just started CSTUY and wanted
+to get something started prior to launching a summer program. &lt;i&gt;SumAll&lt;/i&gt;
+provided us with space and we were able to attract a small cadre of
+kids. We had a few of our older students as teaching assistants and
+ran the program with a mix of instruction and projects. Over the year
+we saw that a Saturday program presents a number of challenges:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Students have other obligations on Saturdays such as athletic
+teams. This can lead to inconsistent attendance.
+&lt;/li&gt;
+&lt;li&gt;SATs also kill attendance
+&lt;/li&gt;
+&lt;li&gt;You can't count on the participants to work between the sessions.
+&lt;/li&gt;
+&lt;li&gt;Lateness can be an issue early on a Saturday morning.
+&lt;/li&gt;
+&lt;li&gt;Once a week makes building a community a challenge.
+&lt;/li&gt;
+&lt;li&gt;kids have enough classroom learning during the week. Saturday should
+be a change of pace.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+We learned a lot that year and ran V2.0 the following fall. Second
+time around we had the advantage of bringing in kids from our summer
+program to seed the culture. We also knew we wanted to move to more of
+a project / mentor based model but due to space restrictions couldn't
+really get to where we wanted to be.
+&lt;/p&gt;
+
+&lt;p&gt;
+That changed halfway through when SumAll moved to larger offices. By
+the end of the year, I think we worked out most of the kinks. We
+figured out how to get the kids into teams and pointing in the right
+direction as well as  how to find the right mentors and provide them
+with support. The only thing we weren't happy with was that the mentors
+didn't have enough time to work on their own projects. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Now we're in V3.0. Thanks to our &lt;a href="https://www.kickstarter.com/projects/262929085/saturday-hacking-sessions"&gt;kickstarter&lt;/a&gt;, we're fully funded and
+somehow word seems to have gotten out. Numbers are way up and I think
+we've finally gotten the model down.
+&lt;/p&gt;
+
+&lt;p&gt;
+As with anything new, it takes time and revisions to get things right
+but as long as one leaves the kids with a net positive and as long as
+one can look at oneself with a critical eye, you eventually get there.
+&lt;/p&gt;
+
+&lt;p&gt;
+Looking forward to a great year.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Suspension if disbelief and the Mikado</title>
+    <id>http://cestlaz.github.io/posts/2015-09-21-mikado.html/</id>
+    <updated>2015-09-21T00:00:00</updated>
+    <published>2015-09-21T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-09-21-mikado.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+I was brought up on Gilberg and Sullvan. My father, who always wanted
+to be an opera singer sang with &lt;a href="https://en.wikipedia.org/wiki/Light_Opera_of_Manhattan"&gt;LOOM&lt;/a&gt; back in the day and there was
+always classical music playing. Either from the Hi Fi or my father
+singing.
+&lt;/p&gt;
+
+&lt;p&gt;
+Recently, there's been a kerfufle over what was to be &lt;a href="http://nygasp.org"&gt;NYGASP's&lt;/a&gt;
+production of Mikado.
+&lt;/p&gt;
+
+&lt;p&gt;
+	My son, Natan wrote a terrific blog post on it and the suspension of
+	belief in opera. It's long but well worth a read.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you like G&amp;amp;S or opera in general, take a look.
+&lt;/p&gt;
+
+&lt;p&gt;
+It can be found &lt;a href="http://seccorecit.blogspot.com/2015/09/imagine-if-you-will.html"&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy. 
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Not in with the in crowd - concerns about NYC &amp;#35CS4All</title>
+    <id>http://cestlaz.github.io/posts/2015-09-18-in-crowd.html/</id>
+    <updated>2015-09-18T00:00:00</updated>
+    <published>2015-09-18T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-09-18-in-crowd.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+	&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+	&lt;div class="outline-text-2" id="text-1"&gt;
+		&lt;p&gt;
+			Earlier this week, Mayor Bill deBlasio announced some ambitious 
+			&lt;a href="http://avc.com/2015/09/computer-science-for-all/"&gt;CS Education Plans&lt;/a&gt; for NYC. I posted a response &lt;a href="http://cestlaz.github.io/2015/09/15/failed.html#.Vfx1Rp_0-Ak"&gt;here&lt;/a&gt;. Now that a few
+			days past, I thought I'd clear a few things up.
+		&lt;/p&gt;
+
+		&lt;p&gt;
+			First and foremost, I hope my concerns are unfounded and I hope the
+			plan is a tremendous success. 
+		&lt;/p&gt;
+
+		&lt;p&gt;
+			What's got me bummed is not that I need to see my name in lights
+			given that in many ways I've been a CS Ed trailblazer (although who doesn't
+			like a little ego stroking), rather that in my humble opinion NY has
+			squandered a great opportunity and resource and as a results, kids
+			won't get nearly all they could.
+		&lt;/p&gt;
+
+		&lt;p&gt;
+			This STEMs from the fact that NYC has been unwilling to engage us,
+			StuyCS as a resource. We've got the most experience and success in
+			building programs, training teachers, and teaching kids. What more
+			could you ask?
+		&lt;/p&gt;
+
+		&lt;p&gt;
+			I've repeatedly reached out to and repeatedly invited in key
+			government and DOE players in an effort to try to get them to look at
+			our work and leverage it to do more good for more kids but over two
+			mayors and around fifteen years, the silence we get back is deafening.
+		&lt;/p&gt;
+
+		&lt;p&gt;
+			Now, this isn't to say that I don't have some friends and supporters
+			in the CS Ed space. I consider &lt;a href="http://avc.com/2015/09/computer-science-for-all/"&gt;Fred Wilson&lt;/a&gt;, the main man driving this
+			from the tech sector side to be a supporter, ally and friend. His
+			involvement is the key reason I think this whole thing might
+			work. Likewise, many people in the tech industry who've worked with my
+			graduates are very supportive of my efforts and my actual graduates are
+			a wonderfully supportive family.
+		&lt;/p&gt;
+
+		&lt;p&gt;
+			So why do the DOE and NYC people say they don't want to include us?
+		&lt;/p&gt;
+
+		&lt;p&gt;
+			Here are some of the things I get back:
+		&lt;/p&gt;
+
+		&lt;ul class="org-ul"&gt;
+			&lt;li&gt;We want something that works for all students.
+			&lt;/li&gt;
+		&lt;/ul&gt;
+
+		&lt;p&gt;
+			This implies that our stuff is purely a result of Stuy being a school
+			with high achievers. My response? 
+		&lt;/p&gt;
+
+		&lt;ul class="org-ul"&gt;
+			&lt;li&gt;By saying all students but excluding high achievers, you can't mean
+				all students.
+			&lt;/li&gt;
+			&lt;li&gt;Other high achieving schools haven't developed anything near what
+				we've built.
+			&lt;/li&gt;
+		&lt;/ul&gt;
+
+		&lt;p&gt;
+			and it also ignores the fact that:
+		&lt;/p&gt;
+
+		&lt;ul class="org-ul"&gt;
+			&lt;li&gt;Our nonprofit has had kids from around 40 to 50 schools and we
+				get rave reviews from those kids and their parents.
+			&lt;/li&gt;
+			&lt;li&gt;Our gender numbers far outpace the national averages.
+			&lt;/li&gt;
+			&lt;li&gt;We've had teachers move on to other schools and customize our work
+				their.
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+	&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+	&lt;div class="outline-text-2" id="text-2"&gt;
+		&lt;p&gt;
+			and this is just the teaching part. What about our success in
+			designing an overall program or training teachers.
+		&lt;/p&gt;
+
+		&lt;p&gt;
+			Of course it doesn't help that Stuyvesant's own administration has
+			never recognized nor supported StuyCS.
+		&lt;/p&gt;
+
+		&lt;p&gt;
+			You'd think that those with the keys to the castle would engage and at
+			least consult with the people who've been doing this successfully for
+			over 20 years.
+		&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+	&lt;h2 id="sec-3"&gt;&lt;/h2&gt;
+	&lt;div class="outline-text-2" id="text-3"&gt;
+		&lt;p&gt;
+			So who are these folk with the keys?
+		&lt;/p&gt;
+
+		&lt;p&gt;
+			It's a mix of people. Some in NYC government, some in DOE, some Tech
+			entrepreneurs, and running program. None have our experience or track
+			record and a number have neither taught nor coded.
+		&lt;/p&gt;
+
+		&lt;p&gt;
+			Why won't they really engage us? 
+		&lt;/p&gt;
+
+		&lt;p&gt;
+			You're guess is as good as mine but I have my suspicions.
+		&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-4" class="outline-2"&gt;
+	&lt;h2 id="sec-4"&gt;&lt;/h2&gt;
+	&lt;div class="outline-text-2" id="text-4"&gt;
+		&lt;p&gt;
+			Why am I concerned?
+		&lt;/p&gt;
+
+		&lt;p&gt;
+			Because we have something to offer. NYC and DOE won't leverage us as a
+			resource. What other missteps will they make as they try to bring
+			CS4All.
+		&lt;/p&gt;
+
+		&lt;p&gt;
+			I have no control over all of this, all I can do is work in my little
+			corner of the world. If others want my help, my doors always open. If
+			not, I know there will always be some parents, kids, and educators who
+			get what we do and will benefit from it.
+		&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>I should be happy but feel like I've failed</title>
+    <id>http://cestlaz.github.io/posts/2015-09-15-failed.html/</id>
+    <updated>2015-09-15T00:00:00</updated>
+    <published>2015-09-15T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-09-15-failed.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+
+&lt;p&gt;
+The NY Times just posted an article - the  mayor announced a 10 year
+deadline by which time all NYC public school students will be taking
+CS.
+&lt;/p&gt;
+
+&lt;p&gt;
+I should be happy. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I feel thoroughly defeated.
+&lt;/p&gt;
+
+&lt;p&gt;
+As many of you know, I've struggled for years to try to bring CS
+education to more kids and to train more teachers. You also probably
+know that over the years, I've become pretty good at this.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why am I feeling so down about this.
+&lt;/p&gt;
+
+&lt;p&gt;
+Because despite my best efforts I'm no closer to my goal than day one.
+&lt;/p&gt;
+
+&lt;p&gt;
+Stuy is no closer to recognizing CS. I'm still a just math teacher
+and the DOE has given the job of running CS education to person after
+person none whom had any real CS experience and few who have had any
+real teaching experience.
+&lt;/p&gt;
+
+&lt;p&gt;
+I see plans based on dropping in curricula and quick fixes.
+&lt;/p&gt;
+
+&lt;p&gt;
+I see programs run by people still wet behind the ears with respect to
+CS Education.
+&lt;/p&gt;
+
+&lt;p&gt;
+Sometimes I feel like I'm the only sane person in the room, or maybe
+I'm the loony. I'm not sure.
+&lt;/p&gt;
+
+&lt;p&gt;
+Probably because I don't play well with others. 
+&lt;/p&gt;
+
+&lt;p&gt;
+So I feel defeated.
+&lt;/p&gt;
+
+&lt;p&gt;
+Defeated because I know I have something to offer that the kids of NYC
+deserve.
+&lt;/p&gt;
+
+&lt;p&gt;
+Defeated because I know they're not going to get it.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm already looking to leave Stuy and public education.
+&lt;/p&gt;
+
+&lt;p&gt;
+Maybe this is just another sign that it's time.
+&lt;/p&gt;</summary>
+  </entry>
+</feed>

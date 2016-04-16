@@ -1,0 +1,714 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>C'est la Z (old posts, page 6)</title>
+  <id>http://cestlaz.github.io/index-6.atom</id>
+  <updated>2016-04-16T20:26:32Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/index-6.atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-5.atom"/>
+  <link rel="previous" type="application/atom+xml" href="http://cestlaz.github.io/index-7.atom"/>
+  <link rel="current" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
+  <link rel="next-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-7.atom"/>
+  <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-5.atom"/>
+  <fh:archive/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-6.html"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Summer Project 1 - Citibike Data</title>
+    <id>http://cestlaz.github.io/posts/2013-07-14-summer_projects.md/</id>
+    <updated>2013-07-14T00:00:00</updated>
+    <published>2013-07-14T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-07-14-summer_projects.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;So, the Citibike program has been running for a bit. I like the idea,
+but I have some reservations -- it's great for getting around in the
+zone - I've been using it for short shopping trips - run cross town to
+&lt;a href="http://www.fairwaymarket.com/"&gt;Fairway&lt;/a&gt; or take a quick trip from
+work to &lt;a href="http://www.portorico.com/store/"&gt;Porto Rico Importers&lt;/a&gt; or
+&lt;a href="http://pasticceriarocco.com/"&gt;Rocco's Pastries&lt;/a&gt;. On the other hand,
+the zone doesn't get to the residential neighborhoods of upper
+Manhattan or the boroughs and the price per day is way too expensive
+for regular working class joes, particularly on top of a subway trip.&lt;/p&gt;
+&lt;p&gt;In any event, I was curious about station use patterns. Cool thing is
+that you can get live data from
+&lt;a href="http://citibikenyc.com/stations/json"&gt;here&lt;/a&gt;. This was a great
+opportunity to play with some tools to see if I want to use them in
+class next year. In particular, &lt;a href="http://backbonejs.org"&gt;backbone.js&lt;/a&gt;
+and &lt;a href="http://cestlaz.github.io/posts/2013-07-14-summer_projects.md/d3js.org"&gt;d3.js&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;So, I'm grabbing the station data every 5 minutes, storing it in a
+Mongo database, and threw together a little map and graph app:&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cb.zamansky.net"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/2013-07-14-summer-projects/citibike-1.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can check it out &lt;a href="http://cb.zamansky.net"&gt;here&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;The code is up on GitHub:
+&lt;a href="http://github.com/zamansky/citibike-1"&gt;citibike-1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I might play around and add more graphs as I collect more data or
+maybe I'll just move on to the next project.&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>NYTM + StuyCS</title>
+    <id>http://cestlaz.github.io/posts/2013-07-11-NYTM.md/</id>
+    <updated>2013-07-11T00:00:00</updated>
+    <published>2013-07-11T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-07-11-NYTM.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;For those of that don't know, the
+&lt;a href="http://nytm.org"&gt;New York Tech Meetup&lt;/a&gt; it's one of the things that
+help make the New York Tech Scene so awesome.&lt;/p&gt;
+&lt;p&gt;It's a group of some 30k+ members and once a month, at Skriball Center
+at NYU they hold a meetup. It's really quite an event. Members of the
+tech community demo their projects, there's question and answer time,
+and afterwards theres a gathering for schmoozing amongst the crowd and
+the presenters.&lt;/p&gt;
+&lt;p&gt;During the QA period, there's one rule -- You can't ask "What's your
+business model." I think we all love that it's about the tech not
+about the buck.&lt;/p&gt;
+&lt;p&gt;Stuy CS family members such as
+&lt;a href="http://digitalocean.com"&gt;Digital Ocean&lt;/a&gt;,
+&lt;a href="http://www.tactonic.com"&gt;Tactonic Technologies&lt;/a&gt;, and
+&lt;a href="http://www.vantageousvideo.com/pages/about"&gt;Vantageous&lt;/a&gt; have all
+presented. I'm not able to go to the meetup regularly - It's usually
+on a school night and tickets are hard to come by, but I love the fact
+that whenever I'm there, I reconnect with old Stuy CS family members
+and meet new ones. Yesterday, at the meetup I met Ron Williams, of
+&lt;a href="http://knod.es"&gt;Knodes&lt;/a&gt;. He's Stuy '94 - one year before my first CS
+grads.&lt;/p&gt;
+&lt;p&gt;So, why am I writing about NYTM? As a result of our
+&lt;a href="http://cestlaz.github.io/2013/06/27/Demo_Night.html#.Ud6jHKBtw7w"&gt;Demo Night&lt;/a&gt;,
+&lt;a href="https://twitter.com/brandondiamond"&gt;Brandon Diamond&lt;/a&gt; invited a couple
+of the groups to present as part of the &lt;strong&gt;Hack of the Month&lt;/strong&gt; segment.&lt;/p&gt;
+&lt;p&gt;Brian, Eli, Jules, and Shan got up on stage and presented their work
+to a live audience of about 1000 technologiest plus those viewing the
+simulcast.&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/2013-07-11-NYTM/webexplorer.jpg" rel="lightbox"&gt;
+&lt;img width="40%" src="http://cestlaz.github.io/img/2013-07-11-NYTM/webexplorer.jpg" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;a href="http://cestlaz.github.io/img/2013-07-11-NYTM/stallwall.jpg" rel="lightbox"&gt;
+&lt;img width="40%" src="http://cestlaz.github.io/img/2013-07-11-NYTM/stallwall.jpg" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/2013-07-11-NYTM/qa.jpg" rel="lightbox"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/2013-07-11-NYTM/qa.jpg" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Afterwards the we mixed with the crowd. A great experience for the guys.&lt;/p&gt;
+&lt;p&gt;As Brandon said afterwards - "That's another 1000 people that know what you guys are doing." Given the difficulties in getting our program recognized and to more students, this exposure is so important.&lt;/p&gt;
+&lt;p&gt;So, thanks Brandon, Jessica, and everone else involved in giving the kids this opportunity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt; If you want to actually see the kids, check out the vide here: &lt;a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.4/R7/MP4.jsp?calendar_event_id=14-376935-2013-07-10&amp;amp;source=NYTM&amp;amp;media_type=video"&gt;NYTM Video&lt;/a&gt;. Just go to the 4th yellow dot (about 52 minutes in).&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Gender stats</title>
+    <id>http://cestlaz.github.io/posts/2013-07-05-gender-stats.md/</id>
+    <updated>2013-07-05T00:00:00</updated>
+    <published>2013-07-05T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-07-05-gender-stats.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;People keep asking me about how we're doing with respect to gender
+balance and CS education at Stuy. &lt;/p&gt;
+&lt;p&gt;Rather than writing the same email again and again, I figured I'd summarize things here.&lt;/p&gt;
+&lt;p&gt;We've done rather well at Stuy. I might write more in depth at some
+point in the future but we don't dumb anything down and we aren't
+patronizing. I think much of the success can be attributed to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Awesome teachers that really know their CS and are great teachers.&lt;/li&gt;
+&lt;li&gt;Teachers that buy into the same insanity.&lt;/li&gt;
+&lt;li&gt;Well designed courses in a well designed sequence.&lt;/li&gt;
+&lt;li&gt;A well designed &lt;strong&gt;required&lt;/strong&gt; intro course where young ladies can see that this stuff is cool and women are just as good at it as men.&lt;/li&gt;
+&lt;li&gt;Did I mention awesome teachers.&lt;/li&gt;
+&lt;li&gt;An atmosphere where everyone feels accepted.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;An important fact to consider here is that Stuyvesant is only &lt;strong&gt;40%
+female&lt;/strong&gt; so our numbers are actually even better than they
+appear. Also, we've typically offered AP CS to 150 students and our
+senior classes to between 60 and 120 students. Even with these
+numbers, we're always over subscribed (it's not uncommon to have 300 - 400 students out of a class of about 800 students request AP Computer Science).&lt;/p&gt;
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Course&lt;/th&gt;
+&lt;th&gt;Percent Female&lt;/th&gt;
+&lt;th&gt;Notes&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;C Physics (National)&lt;/td&gt;
+&lt;td class="right"&gt; 23% and 26% &lt;/td&gt;
+&lt;td class="left"&gt;There are 2 actual exams (E and M, and Mechanics) hence the two numbers&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;C Physics (Stuy)&lt;/td&gt;
+&lt;td class="right"&gt;18%&lt;/td&gt;
+&lt;td class="left"&gt;&lt;ul&gt;&lt;li&gt;We don't have the breakdown between two exams.&lt;/li&gt;
+&lt;li&gt; Note that all Stuy students take the required regents physics class prior to being allowed to sign up for Physics C&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;AP CS (National)&lt;/td&gt;
+&lt;td class="right"&gt;14% - 18.92%&lt;/td&gt;
+&lt;td class="left"&gt;18.92% is current, the 14% reflects when both the A and the more rigorous AB exams were offered&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;AP CS (Stuy)&lt;/td&gt;
+&lt;td class="right"&gt;25%&lt;/td&gt;
+&lt;td class="left"&gt;&lt;ul&gt;
+&lt;li&gt;Stuy teaches a superset of the old AB curriculum.&lt;/li&gt;
+&lt;li&gt; This actully
+represents a down year.&lt;/li&gt;
+&lt;li&gt; Normally we
+hover around 30%.&lt;/li&gt;
+&lt;li&gt;All stuy students take a required intro course prior to being allowed to sign up for AP CS.
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;Systems / Graphics&lt;/td&gt;
+&lt;td class="right"&gt;21%&lt;/td&gt;
+&lt;td class="left"&gt;This one option for students that complete APCS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;Software Development&lt;/td&gt;
+&lt;td class="right"&gt;37%&lt;/td&gt;
+&lt;td class="left"&gt;The other post-AP option&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;Senior classes combined&lt;/td&gt;
+&lt;td class="right"&gt;29%&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;You might wonder why I included the C Physics numbers. Of all the
+other STEM AP classes, C Physics is probably the most analagous to AP
+Comp Sci. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Both are electives that are traditionally male dominated. &lt;/li&gt;
+&lt;li&gt;Both follow a required class in an earlier grade. &lt;/li&gt;
+&lt;li&gt;Neither is a graduation requirement,&lt;/li&gt;
+&lt;li&gt;but C Physics can fulfill one of Stuyvesant's senior science elective requirements.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I didn't look at Calculus because at
+Stuy, Calc is just "the next math course" so just students take it
+regardless of gender.&lt;/p&gt;
+&lt;p&gt;Another difference is that AP CS is offered mostly to juniors and that
+the students have additional classes they can take in their senior
+year.&lt;/p&gt;
+&lt;p&gt;Notice that Stuy CS outperforms the national gender breakdown while
+Stuy C Physics doesn't. The point is that it's not a Stuy thing, it's
+something we're doing in our little CS corner of the world.&lt;/p&gt;
+&lt;p&gt;Another interesting morsel is that we recently had our &lt;a href="http://cestlaz.github.io/2013/06/27/Demo_Night.html#.UdXzVaBtw7w"&gt;demo night&lt;/a&gt;. There
+were 13 combined students on the four winning teams. 6 were young
+ladies so women were in no way dominated in our most advanced class.&lt;/p&gt;
+&lt;p&gt;So, there you have it. What's going on with gender and CS at Stuy.&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Graduation</title>
+    <id>http://cestlaz.github.io/posts/2013-07-02-graduation.html/</id>
+    <updated>2013-07-02T00:00:00</updated>
+    <published>2013-07-02T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-07-02-graduation.html/"/>
+    <summary type="html">One week ago today was Stuyvesant's graduation. 
+&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+I usually know a number of seniors pretty well but, since I like to
+cycle through classes, every couple of years I have a group that I've
+been with from 10th grade to 12th. 
+&lt;/p&gt;&lt;p&gt;
+This was one of those years
+&lt;/p&gt;&lt;p&gt;
+It was extra special because it was also my daughter Batya's graduating class.
+&lt;/p&gt;&lt;p&gt;
+It's been an amazing gift to be able to work at her school for the past four years and she's been amazingly tolerant. Particularly with both her and her boyfriend in my class this year.
+&lt;/p&gt;&lt;p&gt;
+
+Actually, they're both terrific and I think I only embarrassed her a
+couple of times.
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+
+Every few years, my seniors ask me if I want them to nominate me as
+faculty speaker at graduation. Usually I say no - stage fright. This
+year, Batya asked. I thought it would be really cool. I said yes and
+the troops came through and voted me in. I wasn't sure I would be the
+winner, but as Peter commented "but you lead the most popular cult at
+Stuy!"
+
+It would have been enough of an honor to speak to the graduating
+class, including many students that I feel connected to and it would
+have been a great honor to speak at Batya's graduation. To add to it
+all, the guest keynote speaker was my dear childhood friend Ben Fried.
+&lt;/p&gt;&lt;p&gt;
+Truly a career highlight.
+&lt;/p&gt;&lt;p&gt;
+Ben was terrific. I was watching the audience as he spoke - he
+delivered a great message and really kept the classes attention. No video as of yet, but Ben published the text on Google+.
+
+&lt;/p&gt;&lt;p&gt;
+You can find it 
+&lt;a href="https://plus.google.com/108690239590381459413/posts/addaYWp36R2"&gt;here&lt;/a&gt;
+
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+
+Here's a video of my speech. Jennifer said some very nice things to
+introduce me. I was tempted to go off script right at the beginning
+and point out that many of the nice things she said were really about
+our CS team and not just me:
+&lt;/p&gt;&lt;p&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/beFQc2U9Kls" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+I really didn't read the speech, just used the printed text as notes,
+but here's what I worked from:
+
+&lt;a href="http://cestlaz.github.io/img/07-02-2013-graduation/gradspeech.pdf"&gt;gradspeech.pdf&lt;/a&gt;
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt; The graduating class seemed to enjoy it, at least as much as
+one can enjoy any graduation speech, but, for me, as I said, a
+career highlight.&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Demo Night</title>
+    <id>http://cestlaz.github.io/posts/2013-06-27-Demo_Night.md/</id>
+    <updated>2013-06-27T00:00:00</updated>
+    <published>2013-06-27T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-06-27-Demo_Night.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;This past year, I was able to convince my administration to allow me
+to create a new course - Software Development. I really felt there was
+something missing in our kids CS preparation - missing both from
+Stuy's program and from many youngsters college experiences.&lt;/p&gt;
+&lt;p&gt;I plan to do a few posts on the course, it's design, implementation,
+and lessons learned, but for today, let's look at the years
+culminating event:&lt;/p&gt;
+&lt;p&gt;The class had students working in teams taking projects from idea to
+completion. Last week, we had a demo night, hosted by
+&lt;a href="http://cstuy.org"&gt;CSTUY&lt;/a&gt; and Google. Neal Zupancic, part of our Stuy
+CS family attended the event and put together a wonderful write up on
+the &lt;a href="http://cstuy.org/blog/stuy-cs-software-development-demo-night-neal-zupancic"&gt;CSTUY
+Blog&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Before getting into details, thanks goes out to Ben Fried, Mike Mu,
+and the rest of the Stuy CS Googlers who helped out. Ben for securing
+the space, Mike for coordinating everything, and the rest for manning
+the event.&lt;/p&gt;
+&lt;p&gt;The students, parents, friends, alums, and guests from the NY Tech scene gathered at Google at 6:00 last Thursday. Judging the event, we had 
+&lt;a href="https://twitter.com/brandondiamond"&gt;Brandon Diamond&lt;/a&gt; of HuffPost labs, founder of the &lt;a href="http://www.hackerunion.org/"&gt;Hacker Union&lt;/a&gt; and &lt;a href="http://nytm.org"&gt;NYTM&lt;/a&gt; board member, &lt;a href="https://twitter.com/evankorth"&gt;Evan Korth&lt;/a&gt;, founder of &lt;a href="http://hackny.org"&gt;hackNY&lt;/a&gt;, &lt;a href="http://nytm.org"&gt;NYTM&lt;/a&gt; board member and NYU Professor and Lee Fischman, &lt;a href="http://family.stuycs.org"&gt;StuyCS family&lt;/a&gt; member, currently at Galorath, and as dinosaurs like me remember, one of the creators of &lt;a href="http://en.wikipedia.org/wiki/The_Big_Electric_Cat"&gt;The Big Electric Cat&lt;/a&gt;. Awesome folk all.&lt;/p&gt;
+&lt;p&gt;The students presented a set of amazing projects. They can all be
+found on the class &lt;a href="http://github.com/stuycs-softdev"&gt;github page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The evening was like a NYTM for a group of amazing high school youngsters.&lt;/p&gt;
+&lt;p&gt;Here are some of the highlights:&lt;/p&gt;
+&lt;h5&gt;Scavenger Tours&lt;/h5&gt;
+&lt;h6&gt;Tied for winning project&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;Team: Denis, Claire, Sofia, and Sarah&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href="https://github.com/stuycs-softdev/ScavengerTours"&gt;https://github.com/stuycs-softdev/ScavengerTours&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Live: &lt;a href="http://ml7.stuycs.org:1995/"&gt;http://ml7.stuycs.org:1995/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Create tours that people can take using their mobile devices.&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/demo-night-06-27-2013/tours-login.png" rel="lightbox"&gt;
+&lt;img width="40%" src="http://cestlaz.github.io/img/demo-night-06-27-2013/tours-login.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;a href="http://cestlaz.github.io/img/demo-night-06-27-2013/tours-mainpage.png" rel="lightbox"&gt;
+&lt;img width="40%" src="http://cestlaz.github.io/img/demo-night-06-27-2013/tours-mainpage.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h5&gt;Stuy Wiggles&lt;/h5&gt;
+&lt;h6&gt;Winner - "Scratch your own itch"&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;Team: Georgianna, Mengdi, Victoria&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href="https://github.com/stuycs-softdev/StuyWiggles"&gt;https://github.com/stuycs-softdev/StuyWiggles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Live: &lt;a href="http://ml7.stuycs.org:7007/about"&gt;http://ml7.stuycs.org:7007/about&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;An attempt at fixing all the problems students have registering for classes at Stuyvesant. This is probably the most polished project of all the demos.&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/demo-night-06-27-2013/stuywiggles-login.png" rel="lightbox"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/demo-night-06-27-2013/stuywiggles-login.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/demo-night-06-27-2013/stuywiggles-profile.png" rel="lightbox"&gt;
+&lt;img width="40%" src="http://cestlaz.github.io/img/demo-night-06-27-2013/stuywiggles-profile.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;a href="http://cestlaz.github.io/img/demo-night-06-27-2013/stuywiggles-trading.png" rel="lightbox"&gt;
+&lt;img width="40%" src="http://cestlaz.github.io/img/demo-night-06-27-2013/stuywiggles-trading.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h5&gt;Stall Wall&lt;/h5&gt;
+&lt;h6&gt;Winner -- most amusing project&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;Team: Ivan Smirnoff Jules Skrill&lt;/li&gt;
+&lt;li&gt;Github: &lt;a href="https://github.com/stuycs-softdev/StallWall"&gt;https://github.com/stuycs-softdev/StallWall&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Live: &lt;a href="http://ml7.stuycs.org:45454/"&gt;http://ml7.stuycs.org:45454/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Collaborative network writing on the bathroom wall!!!!&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/demo-night-06-27-2013/stallwall.png" rel="lightbox"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/demo-night-06-27-2013/stallwall.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h5&gt;Web Explorer&lt;/h5&gt;
+&lt;h6&gt;Tied for winning project&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;Team: Eli Nass, Shan Shi, Brian Yan, Brain Zhang&lt;/li&gt;
+&lt;li&gt;Github &lt;a href="https://github.com/stuycs-softdev/NSYZ"&gt;https://github.com/stuycs-softdev/NSYZ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Live &lt;a href="http://ml7.stuycs.org:1999/"&gt;http://ml7.stuycs.org:1999/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Turn any web page into a game.&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/demo-night-06-27-2013/web-explorer-main.png" rel="lightbox"&gt;
+&lt;img width="40%" src="http://cestlaz.github.io/img/demo-night-06-27-2013/web-explorer-main.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;a href="http://cestlaz.github.io/img/demo-night-06-27-2013/web-explorer-inaction.png" rel="lightbox"&gt;
+&lt;img width="40%" src="http://cestlaz.github.io/img/demo-night-06-27-2013/web-explorer-inaction.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The students had a great time and got lots of feedback from the
+audience, particularly during pizza time after the demos.&lt;/p&gt;
+&lt;p&gt;I'll post more about the course in the coming weeks but demo night was
+a terrific conclusion to a terrific first year.&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Real Data - Part II</title>
+    <id>http://cestlaz.github.io/posts/2013-05-20-Real_Data_Part_II.md/</id>
+    <updated>2013-05-20T00:00:00</updated>
+    <published>2013-05-20T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-05-20-Real_Data_Part_II.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;About a month ago, I talked about using &lt;a href="http://cestlaz.github.io/2013/04/14/Real_Data.html#.UZjTjqDctKk"&gt;real
+data&lt;/a&gt;
+with our intro classes. After looking at the correlation between
+school's SAT scores and free and reduced lunch rates, it was time to
+turn the students loose.&lt;/p&gt;
+&lt;p&gt;The assignment: Find some interesting data out and do something with
+it. Make a web page that shows what you did and what you
+discoverde. We had already looked at the NYC Data Mine as well as a
+few other sources but students were encouraged to find new data sourcess.&lt;/p&gt;
+&lt;p&gt;The results were terrific. On top of the requirements, some students
+figured out how to incorporate Google Maps, graphs, and other niceties
+well beyond what we've covered in class.&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/data_project.png" rel="lightbox"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/data_project.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Explorations included:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://149.89.150.100/~veronika.azzara/compsci_project/maps.py"&gt;311 Calls in NYC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://149.89.150.100/~vanessa.miraj/untitled%20text%203.html"&gt;Movie earnings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://149.89.150.100/~lily.chen/fooddata.html"&gt;Food pricing over time&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://149.89.150.100/~ivette.chen/healthiest-state-rankings.py"&gt;Red Meat and Health&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://149.89.150.100/~hilary.tung/data/pie%20vs%20cake.py"&gt;Cake comparisons&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;and even &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://149.89.150.100/~kyle.oleksiuk/Kyle&amp;amp;AnishProject2.html"&gt;Pokemon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That's just a sampling.&lt;/p&gt;
+&lt;p&gt;Well done guys.&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Evaluating Teachers - Evaluating schools</title>
+    <id>http://cestlaz.github.io/posts/2013-05-09-Evaluating_Teachers.md/</id>
+    <updated>2013-05-09T00:00:00</updated>
+    <published>2013-05-09T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-05-09-Evaluating_Teachers.md/"/>
+    <summary type="html">&lt;div&gt;&lt;h2&gt;The Problem:&lt;/h2&gt;
+&lt;p&gt;The buzz word is "accountability." Why are teachers special? Why don't
+they feel they need to be evaluated like other professionals? Why do
+they feel they need a "job for life?"&lt;/p&gt;
+&lt;p&gt;Of course, the job for life line is nonsense -- teachers have tenure,
+but that's just due process - not a guarantee of a job.&lt;/p&gt;
+&lt;p&gt;Friends in the private sector ask "if a teacher is doing a good job,
+why do they need tenure? In the private sector as long as you're
+producing, you've got nothing to worry about."&lt;/p&gt;
+&lt;p&gt;Well, first I dispute that last sentence. second, K-12 education isn't
+the real world. It's rife with stories of administrators that go after
+teachers for no apparent reason. Why? Because accountability doesn't
+mean accountability - it means we can fire teachers at will. No one
+wants accountability to apply to anyone except the ground troops. I
+don't have an exact attribution, but Mayor Bloomberg is frequently
+quoted as stating "If parent's don't like the way I run the schools,
+they can boo me at parades."&lt;/p&gt;
+&lt;p&gt;Beyond that, the powers that be state that teacher accountability
+revolves around flawed "value added" metrics but other bloggers such as Gary
+Rubintein have already done a great job debunking that.&lt;/p&gt;
+&lt;h2&gt;The Solution:&lt;/h2&gt;
+&lt;p&gt;The solution is to simplify. There's a better way. Let's start by
+making the principals accountable. Bottom line is that they're
+responsible for a school's success. If the school doesn't cut the
+mustard, then they're out. But, how do we measure this?&lt;/p&gt;
+&lt;p&gt;High Schools&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Madlib Madness</title>
+    <id>http://cestlaz.github.io/posts/2013-04-30-Madlib_Madness.md/</id>
+    <updated>2013-04-30T00:00:00</updated>
+    <published>2013-04-30T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-04-30-Madlib_Madness.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Earlier in the term, our intro classes spent a little time learning
+some basic HTML. We don't spend a lot of time on it, just enough so
+that the students can present their work in a static web site. The end
+goal, though, was to programatically generate the web sites - there's
+nothing quite as empowering to a student as when they can present their
+work to the world.&lt;/p&gt;
+&lt;p&gt;Finally, it's all coming together.&lt;/p&gt;
+&lt;p&gt;Now that the classes are comfortable with Python, we can have some
+fun. We all remember Mad Libs - that wacky word game where you select
+unknowingly select words to substitute into a basic story and
+hilarity ensues.&lt;/p&gt;
+&lt;p&gt;We did our own versions using Python files, lists and
+dictionaries. &lt;/p&gt;
+&lt;p&gt;Here are some of the results:
+ 1. &lt;a href="http://homer.stuy.edu/~richard.zhan/19-Madlibs.py"&gt;
+http://homer.stuy.edu/~richard.zhan/19-Madlibs.py
+&lt;/a&gt;
+ 2. &lt;a href="http://homer.stuy.edu/~veronika.azzara/madlibifystory.py"&gt;
+http://homer.stuy.edu/~veronika.azzara/madlibifystory.py
+&lt;/a&gt;
+ 3. &lt;a href="http://homer.stuy.edu/~belinda.liang/18-MadLibsMiniProject.py"&gt;
+http://homer.stuy.edu/~belinda.liang/18-MadLibsMiniProject.py
+&lt;/a&gt;
+ 4. &lt;a href="http://homer.stuy.edu/~kyle.oleksiuk/MadlibifyProject5.py"&gt;
+http://homer.stuy.edu/~kyle.oleksiuk/MadlibifyProject5.py
+&lt;/a&gt;
+ 5. &lt;a href="http://homer.stuy.edu/~phillip.huynh/story.py"&gt;
+http://homer.stuy.edu/~phillip.huynh/story.py
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The students wrote a basic story with substitution points. Their
+programs then randomly replaced these points with words from an
+assortment of categorized lists. &lt;/p&gt;
+&lt;p&gt;Enjoy!!!!!&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Real Data</title>
+    <id>http://cestlaz.github.io/posts/2013-04-14-Real_Data.md/</id>
+    <updated>2013-04-14T00:00:00</updated>
+    <published>2013-04-14T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-04-14-Real_Data.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;When looking for assignments for our classes, in addition to trying to
+craft assignments that develop and reinforce key ideas, we also strive
+to come up with ideas that "speak" to the students and keep their
+interest. We write small games, use problems within the student's
+experiences, and in general try to find problems that are appealing.&lt;/p&gt;
+&lt;p&gt;This is much easier to do when the kids can read data from a file. The
+tool we're using with our sophomores right now is Python and Python
+makes reading files very easy. Combining file input with basic string
+functions and all of a sudden, we can read and parse comma separated
+values.&lt;/p&gt;
+&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight python linenos %}
+l=[]
+for line in open(filename).readlines():
+    l.append(line.strip().split(",")&lt;/p&gt;
+&lt;p&gt;True, this doesn't handle quotes and embedded commas, but that just
+leads to a discussion on cleaning up data and when we do list
+comprehensions, things get even slicker.&lt;/p&gt;
+&lt;p&gt;We could just make up some sample data, for example, student test scores:&lt;/p&gt;
+&lt;p&gt;Tom,95,87,97,93&lt;/p&gt;
+&lt;p&gt;Sarah,98,98,84,92&lt;/p&gt;
+&lt;p&gt;Harry,90,90,90,90&lt;/p&gt;
+&lt;p&gt;Sue,94,95,96,97&lt;/p&gt;
+&lt;p&gt;But it's so much more fun with the wealth of CSV data waiting to be
+grabbed. If your kids like sports, you can check
+out &lt;a href="http://www.baseball-reference.com/"&gt;baseball-reference.com&lt;/a&gt;
+or it's counterparts for basketball or football. &lt;/p&gt;
+&lt;p&gt;We decided to look at government data instead.&lt;/p&gt;
+&lt;p&gt;Federal data can be found at &lt;a href="http://www.data.gov/"&gt;data.gov&lt;/a&gt; but we focused on &lt;a href="https://data.cityofnewyork.us/"&gt;New York City&lt;/a&gt;. We
+settled
+on &lt;a href="https://data.cityofnewyork.us/Education/SAT-Results/f9bf-2cp4"&gt;SAT&lt;/a&gt;
+data. SAT math, reading, and writing scores for all NYC public
+schools. Something Stuy kids are very interested in. We were able to
+look for comparable schools, which schools had large spreads between
+math and verbal, which schools had score increases over time, etc.&lt;/p&gt;
+&lt;p&gt;Much more interesting to look at real SAT data than made up student
+grade info. &lt;/p&gt;
+&lt;p&gt;Tomorrow we'll look at combining data sets -- looking at
+the relationship between SAT scores and school ratings and
+demographics. It should be interesting. Later, we'll grab books
+from &lt;a href="http://www.gutenberg.org/"&gt;Project Gutenberg&lt;/a&gt; and see
+how we can analyze large texts.&lt;/p&gt;
+&lt;p&gt;The moral of the story - there's lots of great data easily accessible
+-- let's use it to motivate and engage our students.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;UPDATE:&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;It's taken me a while to post this, and in the meantime we analyzed
+the SAT data from one NYC data set and matched it with a data set of
+demographic data:&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/SAT_SCORES.png" rel="lightbox"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/SAT_SCORES.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The graph shows a strong correlation between schools with a high number of
+students eligable for free lunch (the Y-axis) and low SAT scores (the
+X-axis). This led to a very interesting conversation on the effects of
+poverty.&lt;/p&gt;
+&lt;p&gt;We also noticed a couple of outliers. There's one school at about
+(1400,82). High poverty (free lunch) and national average SAT. Also two
+schools with low free lunch numbers and middling SAT scores
+(1400,17ish).&lt;/p&gt;
+&lt;p&gt;The (1400,82) point turns out to be a school that caters to English
+Language Learners and we presume has a large number of recent
+immigrants (partially noted by the name and also by the fact that
+their SAT math scores far surpassed the English ones).&lt;/p&gt;
+&lt;p&gt;Great discussions ensued all due to applying CS to real world data.&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Who won the election -- Quadratic to Linear Time!!!!!</title>
+    <id>http://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md/</id>
+    <updated>2013-03-23T00:00:00</updated>
+    <published>2013-03-23T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Last week was crazy. Busy, stressful, late night after late night. It
+ended, though, on a great note.&lt;/p&gt;
+&lt;p&gt;A young lady in my intro class found me in my office near the end of the day:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Student: Mr. Z, I wanted to make sure to catch you before vacation!&lt;/p&gt;
+&lt;p&gt;Me: What's up?&lt;/p&gt;
+&lt;p&gt;Student: I wanted to tell you that today's lesson was AWESOME!!!!!!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Wow. I've been teaching 23 years and that's never happened before!!!!&lt;/p&gt;
+&lt;p&gt;So, what was the hubbub about?&lt;/p&gt;
+&lt;p&gt;We've been doing list processing in Python over the past few days. We already did the basics, such as finding the largest element in a list:&lt;/p&gt;
+&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight python linenos %}
+def find_max(L):
+    maxval = L[0]
+    i=0
+    while i&lt;len if l&gt;maxval:
+            maxval=L[i]
+        i += 1
+    return maxVal&lt;/len&gt;&lt;/p&gt;
+&lt;p&gt;We've also done basic searching, counting elements, removing elements, etc.&lt;/p&gt;
+&lt;p&gt;Today we started with finding the mode of a list of grades.&lt;/p&gt;
+&lt;p&gt;Most students approached the problem as a maximum problem. Assume the
+first item is the mode and find it's frequency, then proceed through
+the list each time seeing if the current node occurs more fequently
+than the "mode so far." Pretty much the same idea as find_max (but in this case, returning a list of all the modes).&lt;/p&gt;
+&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight python linenos %}
+def mode(L):
+    modecount = L.count( L[0] )
+    modes = [ L[0] ]
+    i = 1
+    while i &amp;lt; len(L):
+        c = L.count(L[i]) 
+        if c &amp;gt; modecount:
+            modecount = c
+            modes = [ L[i] ]
+        elif c==modecount and L[i] not in modes:
+            modes.append( L[i] )
+        i += 1
+    return modes&lt;/p&gt;
+&lt;p&gt;Pretty cool. The kids are doing something pretty sophisticated here. &lt;/p&gt;
+&lt;p&gt;Time to look deeper. We started running this on larger and larger data
+sets. Things started really slowing down at about 20K. We then timed
+things to get some numbers (thanks
+&lt;a href="http://stackoverflow.com/questions/5998245/get-current-time-in-milliseconds-in-python"&gt;StackOverflow&lt;/a&gt;). &lt;/p&gt;
+&lt;p&gt;What was going on. The students pretty quickly honed in on the line
+that called L.count(L[i]) -- &lt;strong&gt;Hidden Complexity&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;We haven't done big-O notation but the class easily saw that count had
+to go through the entire data set and we ended up with an N^2
+algorithm. For example, if we have 10 items, the main loop executes 10
+times and each time, count goes through the entire list (10 items) as
+well. If we go to 100 items, it becomes 100x100.&lt;/p&gt;
+&lt;p&gt;What to do????&lt;/p&gt;
+&lt;p&gt;Time to talk about what's probably the most discussed instance of mode
+finding - elections. The winner is "the mode of the ballots."&lt;/p&gt;
+&lt;p&gt;Of course we don't use the above algorithm. We usually tally or count the ballots. We go through the ballots once, each time adding one to the appropriate candidates "bucket." &lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/tally.png" rel="lightbox"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/tally.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;From here, it's a short step to see that we can use a list. It's
+indices represent the grade values and the data in the list the counts
+or tallies:&lt;/p&gt;
+&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight python linenos %}
+def fastmode(L):
+    i=0
+    counts = []
+    while i&amp;lt;max(L)+1:
+        counts.append(0)
+        i+=1
+    i=0
+    while i &amp;lt; len(L):
+        counts[ L[i] ] += 1
+        i += 1
+    modecount = max(counts)
+    modes = []
+    i=0
+    while i &amp;lt; len(counts):
+        if counts[i]==modecount:
+            modes.append(i)
+        i=i+1
+    return modes&lt;/p&gt;
+&lt;p&gt;We go through the list once to build the tallies and then the "tally"
+list once to get the modes. Simple, straightforward, and linear
+time!!!!!!!!!&lt;/p&gt;
+&lt;p&gt;The original routine started to hit a roadblock at about 20K items,
+here we got to one million without breaking a sweat.&lt;/p&gt;
+&lt;p&gt;The take away:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Get it working first.&lt;/li&gt;
+&lt;li&gt;Then profile to find your bottleneck&lt;/li&gt;
+&lt;li&gt;Look at the problem in a different way&lt;/li&gt;
+&lt;li&gt;Using data structures in a clever way can really improve performance.&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</summary>
+  </entry>
+</feed>

@@ -1,0 +1,1541 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>C'est la Z (old posts, page 13)</title>
+  <id>http://cestlaz.github.io/index-13.atom</id>
+  <updated>2016-04-16T20:26:33Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/index-13.atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-12.atom"/>
+  <link rel="previous" type="application/atom+xml" href="http://cestlaz.github.io/index-14.atom"/>
+  <link rel="current" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
+  <link rel="next-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-14.atom"/>
+  <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-12.atom"/>
+  <fh:archive/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-13.html"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>CS Ed Predictions 2015</title>
+    <id>http://cestlaz.github.io/posts/2015-01-04-predictions-2015.html/</id>
+    <updated>2015-01-04T00:00:00</updated>
+    <published>2015-01-04T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-01-04-predictions-2015.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+I just read &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson's&lt;/a&gt; predictions for next year. I was going
+to leave a comment but since it would have gotten somewhat long
+winded, I thought I'd comment in a post of my own.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you haven't read Alfred's post yet, check it out:
+&lt;a href="http://blog.acthompson.net/2015/01/computer-science-education-predictions.html"&gt;http://blog.acthompson.net/2015/01/computer-science-education-predictions.html&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;div id="outline-container-unnumbered-1" class="outline-2"&gt;
+&lt;h2 id="unnumbered-1"&gt;On more states allowing CS to count for a graduation requirement:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-unnumbered-1"&gt;
+&lt;p&gt;
+Alfred's probably right but I'm leery. Sure, it could end up terrific
+but I could see a number of ways this could play out badly.
+&lt;/p&gt;
+
+&lt;p&gt;
+We could end up with non-cs classes to count as CS or we could see
+schools allowing real CS to count but there would be no incentive for
+a school to actually create any meaningful CS classes
+much less for kids to take them.
+&lt;/p&gt;
+
+&lt;p&gt;
+I guess the root of my concern probably relates two of my concerns
+about education in general:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Real, experienced teachers aren't driving policy in education in
+general and CS is and will  be no different. We're going to be left
+with something forced down from above and I fear it will be bad.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+and
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I'm not a big fan of education education. As schools of education
+get involved they will have more of a voice. I think one of the
+worst things to happen to math education over the course of my
+career has been "Math Ed." I fear CS Ed will have the same effect
+on K12 CS education.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Maybe I'm a pessimist or maybe I've just been burned one to many times
+or maybe it's that as a public school teacher I see the negative
+effect of politics and money on public education but at least in NYC I
+see where the decision making is coming from and I'm not encouraged.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand, even if I'm right and the powers that be really
+screw things up,there should always be at least a few people who see
+through they hype and that's where I can continue to do positive work.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-unnumbered-2" class="outline-2"&gt;
+&lt;h2 id="unnumbered-2"&gt;On Python continuing to grow&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-unnumbered-2"&gt;
+&lt;p&gt;
+It's been one of my go to languages for a while now. I've been using
+it in and out of classes since some time in the mid 90s.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't see it replacing Java in AP CS and it looks like Scratch has
+the inside track CS Principles but it's good for so many things and
+has such a low cost of entry, I again feel that Alfred's right. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The fact that it's easy for a non-cs teacher to pick up, at least to a
+limited degree, will certainly help the charge. I'm not sure if long
+term, this is a good thing, but it will help to push python's growth in education.
+&lt;/p&gt;
+
+&lt;p&gt;
+As a side note on Java – I'm not personally a fan, but there good things in there that would be lost 
+with a total shift to languages like Python.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-unnumbered-3" class="outline-2"&gt;
+&lt;h2 id="unnumbered-3"&gt;On CS Principles&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-unnumbered-3"&gt;
+&lt;p&gt;
+I do see a time where the course is forced on Stuy but I'm
+not worrying about it for the moment. I think we already teach a
+stronger course and by the time CS Principles becomes an issue at
+Stuy, I'll probably be gone.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-unnumbered-4" class="outline-2"&gt;
+&lt;h2 id="unnumbered-4"&gt;Chromebooks&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-unnumbered-4"&gt;
+&lt;p&gt;
+I could see chromebooks working out for CS but only if schools don't
+lock them down. Out of the box, you can only use cloud based
+development environments. This is surely limiting but if you have the bandwidth, between
+&lt;a href="http://codesters.com/"&gt;codesters.com&lt;/a&gt;, &lt;a href="http://koding.com/"&gt;koding.com&lt;/a&gt;, cloud9, Dr.Racket and assorted other tools
+you can certainly do some good CS.
+&lt;/p&gt;
+
+&lt;p&gt;
+The upside comes when you can drop into the Linux shell. I've been
+playing with a C720 Intel chromebook recently. It's small and
+lightweight and once I set it up, it was running Dr. Racket, NetLogo,
+Python, Java, Processing (all with a fairly hefty Emacs install).
+&lt;/p&gt;
+
+&lt;p&gt;
+Will it run everything? I don't know, but if I can get a new lab of
+computers and have the freedom to custom install the machines, I'm
+seriously considering chromebooks. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm also recommending them to my kids looking for a cheap portable
+development environment.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-unnumbered-5" class="outline-2"&gt;
+&lt;h2 id="unnumbered-5"&gt;Closing thoughts&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-unnumbered-5"&gt;
+&lt;p&gt;
+I've never been one for my own predictions - maybe because I'm more of
+a continuous journey rather than destination type of guy so I'll hold
+off on my own predictions for now, but I'll close with a direct
+shoutout – Hey Alfred - thanks for posting your predictions - good food for thought 
+as is your blog in general.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Boys, Girls, Arts, Tech, and Vacation</title>
+    <id>http://cestlaz.github.io/posts/2015-01-03-vacation.html/</id>
+    <updated>2015-01-03T00:00:00</updated>
+    <published>2015-01-03T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-01-03-vacation.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+Spent most of vacation relaxing. Finished off the remaining college
+recs, tried to catch up on sleep, and worked on a few project.
+&lt;/p&gt;
+
+&lt;p&gt;
+We've had an interesting December break dynamic in our household for
+the past few years. My son, Natan is very much into his music, both as
+a performer and a composer. A few years ago we discovered &lt;a href="http://www.livingtraditions.org/docs/index_kk.htm"&gt;KlezKamp&lt;/a&gt;. It
+spoke to both Natan and Devorah. Batya, coming back from college
+wasn't so into it and I was somewhat indifferent. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The end result is that for most of the first half of the break, Batya
+and I were left on our own in the city while Natan and Devorah were up
+in the Catskills. 
+&lt;/p&gt;
+
+&lt;p&gt;
+So, what did we do? In addition to playing tourist, we rebuilt the
+CSTUY web site (with a little help from her boyfriend Zach) - check it
+out: &lt;a href="http://cstuy.org/"&gt;cstuy.org&lt;/a&gt;. I'm really happy with the result and now have a code
+base that I'm happy with and can maintain.
+&lt;/p&gt;
+
+&lt;p&gt;
+I can't describe how awesome it is to be able to collaborate on
+something real with ones daughter and I hope we can work on more
+projects in the future. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course, I had my Natan time when he and Devorah got home. We spent
+new years eve at the &lt;a href="http://nygasp.org/"&gt;NYGASP&lt;/a&gt; production of HMS Pinafore. Natan loves
+opera and is something of a Savoyard and he's also a terrific
+singer. Something he must have inherited from my father, although he
+never met him.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, we had our own project:
+&lt;/p&gt;
+
+&lt;iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/184357024&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+His is the good voice singing Dick Deadeye and I'm the not so good one
+doing Captain Corcoran. We recorded it A Capella and he added the midi
+after the fact. I think he had to change the key and I'm sure he had
+to mess with the tempo.
+&lt;/p&gt;
+
+&lt;p&gt;
+Some of you might have noticed that I worked on the tech project with
+Batya and the artsy one with Natan but don't worry - Natan's planning
+on majoring in &lt;a href="https://github.com/NZamansky"&gt;Computer Science&lt;/a&gt; and Batya's the musical director and
+an alto in &lt;a href="http://www.thechainotes.com/"&gt;The
+Chai Notes&lt;/a&gt; up at Cornell. 
+&lt;/p&gt;
+
+&lt;p&gt;
+So that was my break. Back to work in a couple of days.
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Teachers, Rockstars, and the Godfather</title>
+    <id>http://cestlaz.github.io/posts/2014-12-14-rockstar-godfather.html/</id>
+    <updated>2014-12-14T00:00:00</updated>
+    <published>2014-12-14T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2014-12-14-rockstar-godfather.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+
+&lt;p&gt;
+In a &lt;a href="http://blog.acthompson.net/2014/12/tech-companies-and-computer-science.html"&gt;recent post&lt;/a&gt;, &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; referred to an &lt;a href="http://blog.acthompson.net/2012/12/advice-to-microsoft-education.html"&gt;earlier post&lt;/a&gt; where he
+mentioned rock star CS teachers. That's a term I've heard thrown
+around a lot in the past few years. I've heard some of my graduates
+referred to as rock stars - top tech people, and in fact I've seen
+some of them courted for positions in a manner that a rock star might
+be accustomed to. I've periodically referred to some of my colleagues
+as rock stars, but I don't know if the term really fits. 
+&lt;/p&gt;
+
+&lt;p&gt;
+So, how else are us teacher folk referred to? More than once I've been
+called &lt;a href="http://avc.com/2014/04/ship-st-josephs-a-summer-coding-program-in-nyc/"&gt;the godfather of K-12 CS education in NYC&lt;/a&gt;. Maybe because I've
+been in the game so long or maybe because a friend once coined the
+phrase "StuyCS Mafia" to refer to my graduates. It's flattering, but
+like rock star, it doesn't quite fit the bill. Don Corleone rose to
+power through both fear and respect. I certainly hope I'm not feared
+and while I do believe that the people whose opinion I care about
+respect me, it's far from universal.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, where does that leave teachers like me, or more so, teachers I
+aspire to be like?
+&lt;/p&gt;
+
+&lt;p&gt;
+Not the godfather and not rockstars.
+&lt;/p&gt;
+
+&lt;p&gt;
+We're bluesmen. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Huh?
+&lt;/p&gt;
+
+&lt;p&gt;
+Well, the bluesman's got the chops that the rock star may or may not
+have. In fact, the rock star always talks about how the bluesman was
+his greatest influence and inspiration.
+&lt;/p&gt;
+
+&lt;p&gt;
+But, the rock star gets the accolades and the attention while the
+bluesman toils in relative obscurity tending to his craft and if
+acknowledged it's well after his career has ended.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, there you have it. The best teachers I know are not rock stars,
+they're bluesmen all about honing their craft and inspiring their
+students.
+&lt;/p&gt;
+
+&lt;p&gt;
+One of the things Alfred talked about in his post is the top down
+influence on CS education. On the one hand, it's brought attention to
+bear but on the other hand it's being driven by people who don't
+really get education.
+&lt;/p&gt;
+
+&lt;p&gt;
+The same can be said for the overall recent big money influences on
+education.
+&lt;/p&gt;
+
+&lt;p&gt;
+We'd be much better off if those in power stopped playing rock star
+and started listening to the bluesmen.
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Thoughts on diversity</title>
+    <id>http://cestlaz.github.io/posts/2014-12-07-thoughts-on-diversity.html/</id>
+    <updated>2014-12-07T00:00:00</updated>
+    <published>2014-12-07T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2014-12-07-thoughts-on-diversity.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+Yesterday, my buddy &lt;a href="https://twitter.com/snikolov"&gt;Stan&lt;/a&gt; pointed me to this article: 
+&lt;a href="http://arstechnica.com/business/2014/12/to-address-techs-diversity-woes-start-with-the-vanishing-comp-sci-classroom/"&gt;"To address tech’s diversity woes, start with the vanishing Comp Sci classroom"&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+It gives a reasonable overview of the gender issues in computer
+science education. The article talks about the drop in popularity of
+the old Advanced Placement AB course and its eventually being dropped
+as well as thoughts on how the current A course is pretty dry.
+&lt;/p&gt;
+
+&lt;p&gt;
+It made me think about the old vs new exams. The current APCS A exam
+is roughly analogous to a typical college 101 course: programming in
+one language and one paradigm. The old AB class represented a 101 and
+a 102 with the 102 being data structures and algorithms. Much more
+interesting for both guys and girls. Over the years, the AP A exam has
+become more and more vocational, at least in my opinion, and that
+makes matters worse. Its more and more about using the language and
+built in collections and less about thinking and problem
+solving. What's fun about that?
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course, we teach our version, a super-set, of the AB curriculum over
+the course of a school year.
+&lt;/p&gt;
+
+&lt;p&gt;
+Interesting that even though we teach that old school hardcore CS, we
+far exceed the national numbers in terms of gender balance, but more
+on that later.
+&lt;/p&gt;
+
+&lt;p&gt;
+One of the big things going on right now is the AP CS Principles
+course. There's some good stuff in there but I've got a lot of
+questions. 
+&lt;/p&gt;
+
+&lt;p&gt;
+To start, I'm tired of hearing that it's a college level course. If
+a course is designed so that a 10th grader can be successful, it's not
+college level. I do understand that it's being taught in places like
+Berekely (and as an aside I both like and greatly respect Dan Garcia,
+who's the architect of one version of CS principles - the Beauty and
+Joy of Computing, and his work). If my kids were doing in college what
+they could have been doing in 10th grade, something's wrong. That's
+not to say that you can't have a similar course at both levels, just
+that there's a &lt;b&gt;&lt;b&gt;huge&lt;/b&gt;&lt;/b&gt; difference between a 10th grader and a college
+freshman. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I also take issue with the drag and drop languages in high school and
+beyond. True, there's a low cost of entry, but then it's limiting in
+oh so many ways. Much slower than a keyboard interface, limited screen
+real estate, and no clear exit to traditional textual
+programming. Scratch and the like are probably good for younger kids,
+but I've had to rescue many a kid from the damage done by drag and
+drop. I'm not advocating starting a high schooler in Haskell with Vim
+but there are plenty of tools that are both accessible, easy entry,
+fun, but at the same time real.
+&lt;/p&gt;
+
+&lt;p&gt;
+We also see the proliferation of all girl after school programs. I
+don't have any problem with this per se. I think we need some all
+girls and some co-ed. In fact, one of the young ladies in our summer
+program commented on how much she liked the fact that we weren't all
+girls but we created a wonderful environment where everyone felt
+comfortable and supported. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Some of those programs do great things in terms of exposing girls to
+role models and to what's possible. My issue is with the actual
+education, notably because these programs invariably don't have real
+educator/computer scientists running the show. They teach a watered
+down CS or conversely too much too quickly and then the girls are
+clobbered at the next level, they start doubting themselves and they
+change majors.
+&lt;/p&gt;
+
+&lt;p&gt;
+The problems with these after school programs as well as with CS
+Principles are the same. A few of my students who studied CS at
+Harvard framed it nicely when talking about Harvard's highly
+publicized CS50 course (I'm paraphrasing and combining thoughts here):
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+They don't really teach anything, you've got to do it mostly on your
+own. In the end you don't really learn anything.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then, they go on to Harvard's next real CS class - functional
+programming with no real preparation and they drop like flies.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+So, what do you do?
+&lt;/p&gt;
+
+&lt;p&gt;
+You do what we did.
+&lt;/p&gt;
+
+&lt;p&gt;
+I developed an intro course over 10 years ago. The new AP Principles
+course has some overlap in terms of concepts but one big difference is
+that we dive into programming using two real languages. &lt;a href="http://racket-lang.org/"&gt;Scheme&lt;/a&gt;, which
+is mathy functional and &lt;a href="https://ccl.northwestern.edu/netlogo/index.shtml"&gt;NetLogo&lt;/a&gt; which is visual and interactive but
+still text based. We then move on to a number of really neat concepts
+in Python. 
+&lt;/p&gt;
+
+&lt;p&gt;
+People say, "Oh, you do the NetLogo because it's visual and appeals to
+girls." No - we do NetLogo because it's cool and it appeals to
+kids. Same with Scheme. Show me a girl that loves the visual stuff,
+I'll show you a girl that loves Scheme's functional goodness. I might
+only be a dopey old school teacher, but I really believe "kids are
+kids."
+&lt;/p&gt;
+
+&lt;p&gt;
+On top of this, you get great teachers that really know their stuff
+(and we've built plenty of them over the years) and create a culture
+with everyone's accepted and good things happen.
+&lt;/p&gt;
+
+&lt;p&gt;
+By the time our kids leave us, they've got enough under their belts so
+they not only know their stuff but they have the confidence that they
+know their stuff. 
+&lt;/p&gt;
+
+&lt;p&gt;
+How does it work for us? Nationally, about 19% of APCS test takers are
+women. At Stuy, we hover around 30%. My Software Development, Post AP
+classes are also around 30% so we keep them. Oh, and Stuy is only 40%
+female and we do much worse than the national averages in other
+traditionally male dominated fields such as physics.
+&lt;/p&gt;
+
+&lt;p&gt;
+Yesterday, I was talking to one of our CSTUY hackers as we ended the
+day. We were talking about possible directions to go in after the new
+year. We could stay graphical, go to text processing, look at some
+hardcore algorithms and more. I asked Aruna what she thought. Her
+answer: "It's all fun."
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Reunions part 2 - My Stuy, Your Stuy</title>
+    <id>http://cestlaz.github.io/posts/2014-11-30-reunions-2.html/</id>
+    <updated>2014-11-30T00:00:00</updated>
+    <published>2014-11-30T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2014-11-30-reunions-2.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+About a month ago, I was at my 30 year high school reunion. Yesterday
+I was at the class of 2009's 5 year one. Stuy 2004 also had their 10
+year reunion last night.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's always nice to be invited to reunions - I know it's largely
+dependent on who's on the organizing committee but it's nice to be
+remembered.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="http://cestlaz.github.io/2014/10/25/reunions.html#.VHuvPJ-c30o"&gt;Last time&lt;/a&gt; I wrote about Stuy reunions I noted how similar they all
+are. It's something I've noticed over the years. The kids are all
+unique but the vibe is the same. I tell people that the biggest
+difference between my class reunion and the ones I attend as a teacher
+is that I know more people when I'm there as a teacher. That's
+probably more of a statement about me than the reunions or classes though.
+&lt;/p&gt;
+
+&lt;p&gt;
+Interesting to me was that I didn't really feel like I was at a Stuy
+event. The people I chatted with were by and large part of our CS
+family. We've got our own mailing list, have our own meetups and are
+already a community that spans the years. It was nice to actually see
+people, particularly the out of towners in person and it was nice to
+speak to some of the people who are more comfortable lurking on our
+list but it's not like we've been out of touch for the past five years.
+&lt;/p&gt;
+
+&lt;p&gt;
+It really cemented my feelings that my Stuy really doesn't have much
+to do with the actual school any more. It's the kids and teachers I
+work with right now and the many graduates that I now consider
+friends. It's also the CSTUY kids from the summer and the kids that I
+hope to work with in the future. There are more than a few non-Stuy
+people that are part of the community as well.
+&lt;/p&gt;
+
+&lt;p&gt;
+That's my Stuy. On the one hand, it's pretty cool. We've got a
+community that's around 700 people and spans almost four decades and
+StuyCS is a known quantity in the tech world.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand it's kind of sad that I no longer feel passionate
+about the institution that I attended as a kid and have worked at for
+over 20 years.
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Little details we take for granted</title>
+    <id>http://cestlaz.github.io/posts/2014-11-21-little-details.html/</id>
+    <updated>2014-11-21T00:00:00</updated>
+    <published>2014-11-21T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2014-11-21-little-details.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+
+&lt;div id="outline-container-unnumbered-1" class="outline-2"&gt;
+&lt;h2 id="unnumbered-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-unnumbered-1"&gt;
+&lt;p&gt;
+I'm getting ready for my AP classes this morning. We're building a
+&lt;a href="http://cestlaz.github.io/2011/12/03/wheres-waldo-text-style.html#.VG8qtt-c2Ak"&gt;word search generator&lt;/a&gt; and we're at the point where we need to read a
+list of words from a file
+&lt;/p&gt;
+
+&lt;p&gt;
+First, I'd better make sure I can do it. We're using the java
+&lt;b&gt;&lt;b&gt;scanner&lt;/b&gt;&lt;/b&gt;, mostly because it's easy.
+&lt;/p&gt;
+
+&lt;p&gt;
+First cut:
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-java"&gt;&lt;span style="color: #00ffff; font-weight: bold;"&gt;public&lt;/span&gt; &lt;span style="color: #00ffff; font-weight: bold;"&gt;class&lt;/span&gt; &lt;span style="color: #00ff00;"&gt;wl&lt;/span&gt; {
+    &lt;span style="color: #00ffff; font-weight: bold;"&gt;public&lt;/span&gt; &lt;span style="color: #00ffff; font-weight: bold;"&gt;static&lt;/span&gt; &lt;span style="color: #00ff00;"&gt;void&lt;/span&gt; &lt;span style="color: #0000ff; font-weight: bold;"&gt;main&lt;/span&gt;(&lt;span style="color: #00ff00;"&gt;String&lt;/span&gt;[] &lt;span style="color: #ffff00;"&gt;args&lt;/span&gt;) {
+        &lt;span style="color: #00ff00;"&gt;Scanner&lt;/span&gt; &lt;span style="color: #ffff00;"&gt;sc&lt;/span&gt; = &lt;span style="color: #00ffff; font-weight: bold;"&gt;new&lt;/span&gt; &lt;span style="color: #00ff00;"&gt;Scanner&lt;/span&gt;(&lt;span style="color: #00ffff; font-weight: bold;"&gt;new&lt;/span&gt; &lt;span style="color: #00ff00;"&gt;File&lt;/span&gt;(&lt;span style="color: #00ff00;"&gt;"words"&lt;/span&gt;));
+        &lt;span style="color: #00ffff; font-weight: bold;"&gt;while&lt;/span&gt; (sc.hasNext()){
+            &lt;span style="color: #00ff00;"&gt;String&lt;/span&gt; &lt;span style="color: #ffff00;"&gt;s&lt;/span&gt; = sc.next();
+            System.out.println(s);
+        }
+    }
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+Oh yes, I forgot the
+&lt;/p&gt;
+&lt;pre class="example"&gt;
+import java.io.*;
+import java.util.*;
+&lt;/pre&gt;
+
+
+&lt;p&gt;
+Oh, and also the fact that I've got deal with exceptions when working
+with files:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-java"&gt;&lt;span style="color: #00ffff; font-weight: bold;"&gt;try&lt;/span&gt; {
+    &lt;span style="color: #00ff00;"&gt;Scanner&lt;/span&gt; &lt;span style="color: #ffff00;"&gt;sc&lt;/span&gt; = &lt;span style="color: #00ffff; font-weight: bold;"&gt;new&lt;/span&gt; &lt;span style="color: #00ff00;"&gt;Scanner&lt;/span&gt;(&lt;span style="color: #00ffff; font-weight: bold;"&gt;new&lt;/span&gt; &lt;span style="color: #00ff00;"&gt;File&lt;/span&gt;(&lt;span style="color: #00ff00;"&gt;"words"&lt;/span&gt;));
+    &lt;span style="color: #00ffff; font-weight: bold;"&gt;while&lt;/span&gt; (sc.hasNext()){
+        &lt;span style="color: #00ff00;"&gt;String&lt;/span&gt; &lt;span style="color: #ffff00;"&gt;s&lt;/span&gt; = sc.next();
+        System.out.println(s);
+    }
+} &lt;span style="color: #00ffff; font-weight: bold;"&gt;catch&lt;/span&gt; (&lt;span style="color: #00ff00;"&gt;Exception&lt;/span&gt; &lt;span style="color: #ffff00;"&gt;e&lt;/span&gt;){
+    System.out.println(&lt;span style="color: #00ff00;"&gt;"Can't open file."&lt;/span&gt;);
+    System.exit(0);
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+But we don't want to wrap our entire program in an exception:
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-java"&gt;&lt;span style="color: #00ffff; font-weight: bold;"&gt;try&lt;/span&gt; {
+    &lt;span style="color: #00ff00;"&gt;Scanner&lt;/span&gt; &lt;span style="color: #ffff00;"&gt;sc&lt;/span&gt; = &lt;span style="color: #00ffff; font-weight: bold;"&gt;new&lt;/span&gt; &lt;span style="color: #00ff00;"&gt;Scanner&lt;/span&gt;(&lt;span style="color: #00ffff; font-weight: bold;"&gt;new&lt;/span&gt; &lt;span style="color: #00ff00;"&gt;File&lt;/span&gt;(&lt;span style="color: #00ff00;"&gt;"words"&lt;/span&gt;));
+} &lt;span style="color: #00ffff; font-weight: bold;"&gt;catch&lt;/span&gt; (&lt;span style="color: #00ff00;"&gt;Exception&lt;/span&gt; &lt;span style="color: #ffff00;"&gt;e&lt;/span&gt;){
+    System.out.println(&lt;span style="color: #00ff00;"&gt;"Can't open file."&lt;/span&gt;);
+    System.exit(0);
+}
+
+&lt;span style="color: #00ffff; font-weight: bold;"&gt;while&lt;/span&gt; (sc.hasNext()){
+    &lt;span style="color: #00ff00;"&gt;String&lt;/span&gt; &lt;span style="color: #ffff00;"&gt;s&lt;/span&gt; = sc.next();
+    System.out.println(s);
+
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+Now it doesn't work because the &lt;b&gt;&lt;b&gt;Scanner sc&lt;/b&gt;&lt;/b&gt; might not exist after the
+try catch block (if an exception occurred), so we need:
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-java"&gt;&lt;span style="color: #00ff00;"&gt;Scanner&lt;/span&gt; &lt;span style="color: #ffff00;"&gt;sc&lt;/span&gt;
+&lt;span style="color: #00ffff; font-weight: bold;"&gt;try&lt;/span&gt; {
+    sc = &lt;span style="color: #00ffff; font-weight: bold;"&gt;new&lt;/span&gt; &lt;span style="color: #00ff00;"&gt;Scanner&lt;/span&gt;(&lt;span style="color: #00ffff; font-weight: bold;"&gt;new&lt;/span&gt; &lt;span style="color: #00ff00;"&gt;File&lt;/span&gt;(&lt;span style="color: #00ff00;"&gt;"words"&lt;/span&gt;));
+} &lt;span style="color: #00ffff; font-weight: bold;"&gt;catch&lt;/span&gt; (&lt;span style="color: #00ff00;"&gt;Exception&lt;/span&gt; &lt;span style="color: #ffff00;"&gt;e&lt;/span&gt;){
+    System.out.println(&lt;span style="color: #00ff00;"&gt;"Can't open file."&lt;/span&gt;);
+    System.exit(0);
+}
+
+&lt;span style="color: #00ffff; font-weight: bold;"&gt;while&lt;/span&gt; (sc.hasNext()){
+    &lt;span style="color: #00ff00;"&gt;String&lt;/span&gt; &lt;span style="color: #ffff00;"&gt;s&lt;/span&gt; = sc.next();
+    System.out.println(s);
+
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+And now this doesn't work because &lt;b&gt;&lt;b&gt;sc&lt;/b&gt;&lt;/b&gt; might not have a value so we
+finally get to the working version:
+&lt;/p&gt;
+
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-java"&gt;&lt;span style="color: #00ffff; font-weight: bold;"&gt;import&lt;/span&gt; &lt;span style="color: #ff00ff;"&gt;java&lt;/span&gt;.&lt;span style="color: #ff00ff;"&gt;io&lt;/span&gt;.*;
+&lt;span style="color: #00ffff; font-weight: bold;"&gt;import&lt;/span&gt; &lt;span style="color: #ff00ff;"&gt;java&lt;/span&gt;.&lt;span style="color: #ff00ff;"&gt;util&lt;/span&gt;.*;
+&lt;span style="color: #00ffff; font-weight: bold;"&gt;publ&lt;/span&gt;&lt;span style="color: #00ff00;"&gt;ic c&lt;/span&gt;&lt;span style="color: #00ffff; font-weight: bold;"&gt;lass&lt;/span&gt; &lt;span style="color: #00ff00;"&gt;wl&lt;/span&gt; {
+    &lt;span style="color: #00ffff; font-weight: bold;"&gt;public&lt;/span&gt; &lt;span style="color: #00ffff; font-weight: bold;"&gt;static&lt;/span&gt; &lt;span style="color: #00ff00;"&gt;void&lt;/span&gt; &lt;span style="color: #0000ff; font-weight: bold;"&gt;main&lt;/span&gt;(&lt;span style="color: #00ff00;"&gt;String&lt;/span&gt;[] &lt;span style="color: #ffff00;"&gt;args&lt;/span&gt;) {
+        &lt;span style="color: #00ff00;"&gt;Scanner&lt;/span&gt; &lt;span style="color: #ffff00;"&gt;sc&lt;/span&gt; = &lt;span style="color: #ff00ff;"&gt;null&lt;/span&gt;;
+        &lt;span style="color: #00ffff; font-weight: bold;"&gt;try&lt;/span&gt; {
+                sc = &lt;span style="color: #00ffff; font-weight: bold;"&gt;new&lt;/span&gt; &lt;span style="color: #00ff00;"&gt;Scanner&lt;/span&gt;(&lt;span style="color: #00ffff; font-weight: bold;"&gt;new&lt;/span&gt; &lt;span style="color: #00ff00;"&gt;File&lt;/span&gt;(&lt;span style="color: #00ff00;"&gt;"words"&lt;/span&gt;));
+        } &lt;span style="color: #00ffff; font-weight: bold;"&gt;catch&lt;/span&gt; (&lt;span style="color: #00ff00;"&gt;Exception&lt;/span&gt; &lt;span style="color: #ffff00;"&gt;e&lt;/span&gt;){
+            System.out.println(&lt;span style="color: #00ff00;"&gt;"Can't open file."&lt;/span&gt;);
+            System.exit(0);
+        }
+        &lt;span style="color: #00ffff; font-weight: bold;"&gt;while&lt;/span&gt; (sc.hasNext()){
+            &lt;span style="color: #00ff00;"&gt;String&lt;/span&gt; &lt;span style="color: #ffff00;"&gt;s&lt;/span&gt; = sc.next();
+            System.out.println(&lt;span style="color: #00ff00;"&gt;s&lt;/span&gt;);
+
+        }
+    }
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+Really simple program but that's a long list of things that can go
+wrong along the way. Nothing big, but each a stumbling block for a
+beginning student that doesn't have the wealth of experience that
+someone like me has. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I had an interesting discussion with one of my seniors the other day
+on this subject - all the base knowledge that experienced programmers
+have that students don't and how we have to approach teaching so that
+students are supported and not frustrated by these little but
+important speed-bumps that they'll hit along the way.
+&lt;/p&gt;
+
+&lt;p&gt;
+I hope to write more about this soon, but for now I'll leave you to
+ponder the issue.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Hidden Complexity</title>
+    <id>http://cestlaz.github.io/posts/2014-11-17-hidden-complexity.html/</id>
+    <updated>2014-11-17T00:00:00</updated>
+    <published>2014-11-17T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2014-11-17-hidden-complexity.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+I've said it many times:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Never use a tool you couldn't write yourself.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+That is - make sure you understand what's going on under the hood.
+&lt;/p&gt;
+
+&lt;p&gt;
+In AP we've been playing with ArrayLists. The problem for today?
+Create an ArrayList with consecutive integers and then write a routine
+that will randomize the ArrayList.
+&lt;/p&gt;
+
+&lt;p&gt;
+For example, you might start with this ArrayList:
+&lt;/p&gt;
+
+&lt;pre class="example"&gt;
+0,1,2,3,4,5
+&lt;/pre&gt;
+
+&lt;p&gt;
+and end up with
+&lt;/p&gt;
+
+&lt;pre class="example"&gt;
+3,5,1,4,2,0
+&lt;/pre&gt;
+
+&lt;p&gt;
+First cut, the students grabbed a random element from the ArrayList,
+removed it, and added it to the end of a new list. Then repeat until
+the original list is empty and the new one is randomized. Then return
+the list.
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-java"&gt;&lt;span style="color: #a020f0;"&gt;public&lt;/span&gt; &lt;span style="color: #228b22;"&gt;ArrayList&lt;/span&gt;&amp;lt;&lt;span style="color: #228b22;"&gt;Integer&lt;/span&gt;&amp;gt; &lt;span style="color: #0000ff;"&gt;shuffle1&lt;/span&gt;(&lt;span style="color: #228b22;"&gt;ArrayList&lt;/span&gt;&amp;lt;&lt;span style="color: #228b22;"&gt;Integer&lt;/span&gt;&amp;gt; &lt;span style="color: #a0522d;"&gt;l&lt;/span&gt;){
+    &lt;span style="color: #228b22;"&gt;ArrayList&lt;/span&gt;&amp;lt;&lt;span style="color: #228b22;"&gt;Integer&lt;/span&gt;&amp;gt; &lt;span style="color: #a0522d;"&gt;result&lt;/span&gt; = &lt;span style="color: #a020f0;"&gt;new&lt;/span&gt; &lt;span style="color: #228b22;"&gt;ArrayList&lt;/span&gt;&amp;lt;&lt;span style="color: #228b22;"&gt;Integer&lt;/span&gt;&amp;gt;();
+    &lt;span style="color: #a020f0;"&gt;while&lt;/span&gt; (l.size()&amp;gt;0){
+        &lt;span style="color: #228b22;"&gt;int&lt;/span&gt; &lt;span style="color: #a0522d;"&gt;i&lt;/span&gt; = rnd.nextInt(l.size());
+        &lt;span style="color: #228b22;"&gt;int&lt;/span&gt; &lt;span style="color: #a0522d;"&gt;v&lt;/span&gt; = l.remove(i);
+        result.add(v);
+      }
+    &lt;span style="color: #a020f0;"&gt;return&lt;/span&gt; result;
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Looks good.
+&lt;/p&gt;
+
+&lt;p&gt;
+Version two was much the same but after it removed a random value, it
+added it to the end of the same ArrayList:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-java"&gt;&lt;span style="color: #a020f0;"&gt;public&lt;/span&gt; &lt;span style="color: #228b22;"&gt;ArrayList&lt;/span&gt;&amp;lt;&lt;span style="color: #228b22;"&gt;Integer&lt;/span&gt;&amp;gt; &lt;span style="color: #0000ff;"&gt;shuffle2&lt;/span&gt;(&lt;span style="color: #228b22;"&gt;ArrayList&lt;/span&gt;&amp;lt;&lt;span style="color: #228b22;"&gt;Integer&lt;/span&gt;&amp;gt; &lt;span style="color: #a0522d;"&gt;l&lt;/span&gt;){
+    &lt;span style="color: #228b22;"&gt;ArrayList&lt;/span&gt;&amp;lt;&lt;span style="color: #228b22;"&gt;Integer&lt;/span&gt;&amp;gt; &lt;span style="color: #a0522d;"&gt;result&lt;/span&gt; = &lt;span style="color: #a020f0;"&gt;new&lt;/span&gt; &lt;span style="color: #228b22;"&gt;ArrayList&lt;/span&gt;&amp;lt;&lt;span style="color: #228b22;"&gt;Integer&lt;/span&gt;&amp;gt;();
+    &lt;span style="color: #a020f0;"&gt;for&lt;/span&gt; (&lt;span style="color: #228b22;"&gt;int&lt;/span&gt; &lt;span style="color: #a0522d;"&gt;s&lt;/span&gt;=l.size();s&amp;gt;0;s--) {
+        &lt;span style="color: #228b22;"&gt;int&lt;/span&gt; &lt;span style="color: #a0522d;"&gt;i&lt;/span&gt; = rnd.nextInt(s);
+        &lt;span style="color: #228b22;"&gt;int&lt;/span&gt; &lt;span style="color: #a0522d;"&gt;v&lt;/span&gt; = l.remove(i);
+        l.add(v);
+    }
+    &lt;span style="color: #a020f0;"&gt;return&lt;/span&gt; l;
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Then it was time to time. Both seemed pretty quick but as our data set
+grew things seemed strange:
+&lt;/p&gt;
+&lt;div class="row"&gt;
+&lt;div class="c4"&gt;
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col" class="left"&gt;Size&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;Time&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;100,000&lt;/td&gt;
+&lt;td class="left"&gt;2 seconds&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;200,000&lt;/td&gt;
+&lt;td class="left"&gt;7 seconds&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;400,000&lt;/td&gt;
+&lt;td class="left"&gt;26 seonds&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;
+We're just looping through an ArrayList, what's going on? When we
+double the size of the list, it should just take double the time.
+&lt;/p&gt;
+
+&lt;p&gt;
+Since the class already wrote their own ArrayList implementation, they
+were quick to realize that every time we removed an item from the
+original Array, we were doing a linear or O(n) operation. That means
+our algorithms, which look linear, are in fact O(N&lt;sup&gt;2&lt;/sup&gt;). 
+&lt;/p&gt;
+
+&lt;p&gt;
+Can we do better? You bet. They just changed the remove and add to
+using get and set. Instead off removing an item and re-inserting it,
+just swap the randomly selected item with the last element:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-java"&gt;&lt;span style="color: #a020f0;"&gt;public&lt;/span&gt; &lt;span style="color: #228b22;"&gt;ArrayList&lt;/span&gt;&amp;lt;&lt;span style="color: #228b22;"&gt;Integer&lt;/span&gt;&amp;gt; &lt;span style="color: #0000ff;"&gt;shuffle3&lt;/span&gt;(&lt;span style="color: #228b22;"&gt;ArrayList&lt;/span&gt;&amp;lt;&lt;span style="color: #228b22;"&gt;Integer&lt;/span&gt;&amp;gt; &lt;span style="color: #a0522d;"&gt;l&lt;/span&gt;){
+    &lt;span style="color: #228b22;"&gt;ArrayList&lt;/span&gt;&amp;lt;&lt;span style="color: #228b22;"&gt;Integer&lt;/span&gt;&amp;gt; &lt;span style="color: #a0522d;"&gt;result&lt;/span&gt; = &lt;span style="color: #a020f0;"&gt;new&lt;/span&gt; &lt;span style="color: #228b22;"&gt;ArrayList&lt;/span&gt;&amp;lt;&lt;span style="color: #228b22;"&gt;Integer&lt;/span&gt;&amp;gt;();
+    &lt;span style="color: #a020f0;"&gt;for&lt;/span&gt; (&lt;span style="color: #228b22;"&gt;int&lt;/span&gt; &lt;span style="color: #a0522d;"&gt;s&lt;/span&gt;=l.size();s&amp;gt;0;s--) {
+        &lt;span style="color: #228b22;"&gt;int&lt;/span&gt; &lt;span style="color: #a0522d;"&gt;i&lt;/span&gt; = rnd.nextInt(s);
+
+        &lt;span style="color: #228b22;"&gt;int&lt;/span&gt; &lt;span style="color: #a0522d;"&gt;tmp&lt;/span&gt; = l.get(i);
+        l.set(i, l.get(s-1));
+        l.set(s-1,tmp);
+    }
+    &lt;span style="color: #a020f0;"&gt;return&lt;/span&gt; l;
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+No removes so no hidden linear component.
+&lt;/p&gt;
+
+&lt;p&gt;
+The run time?
+&lt;/p&gt;
+&lt;div class="row"&gt;
+&lt;div class="c4"&gt;
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col" class="left"&gt;Size&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;Time&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;100,000&lt;/td&gt;
+&lt;td class="left"&gt;.15 seconds&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;200,000&lt;/td&gt;
+&lt;td class="left"&gt;.16 seconds&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;400,000&lt;/td&gt;
+&lt;td class="left"&gt;.17 seonds&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;
+In fact, it took data sets in the size of millions before we even
+broke more than a couple of seconds.
+&lt;/p&gt;
+
+&lt;p&gt;
+The algorithm looks the same but understanding what goes on under the
+hood can make a big difference.
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Hi, I'm Mike, I went to high school with....</title>
+    <id>http://cestlaz.github.io/posts/2014-11-16-weddings.html/</id>
+    <updated>2014-11-16T00:00:00</updated>
+    <published>2014-11-16T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2014-11-16-weddings.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+That's how I introduce myself whenever I attend a former student's
+wedding. It leads to all sorts of confusion.
+&lt;/p&gt;
+
+&lt;p&gt;
+Even better was the time I was at the wedding of two former
+students. I had just dropped around 65 pounds and was wearing my hair
+differently. I sat at a table filled with former students that didn't
+recognize me – they had no reason to expect me, out of context and
+all. I joined the conversation - able to go toe to toe on stories of
+"the old days at Stuy." It really confused them. We all had a good
+laugh when I outed myself.
+&lt;/p&gt;
+
+&lt;p&gt;
+Over the years, a many of my graduates have moved from student to
+friend and I've shared life events with a number of them. Rule one is
+that I don't reach out to them after graduation - that would just be
+creepy. If, however, they reach out to me, then we stay in touch. As
+an educator, even if it's a periodic note or update, it's something
+that really touches me - it reminds me that even with all the teacher
+bashing going on in this country, the kids, at least some of the time,
+appreciate us.
+&lt;/p&gt;
+
+&lt;p&gt;
+This weekend was particularly memorable for me. I was at JonAlf and Jamie's
+wedding. JonAlf falls in a special category. 
+&lt;/p&gt;
+
+&lt;p&gt;
+He was a former student and also on my fencing teams. I don't remember
+how much we stayed in touch, but it must have been enough for me to
+know that he minored in CS and was teaching high school at Brandeis.
+&lt;/p&gt;
+
+&lt;p&gt;
+When I heard Brandeis was being phased out and I saw we had a couple
+of math openings, I tried to find him to bring him over to Stuy. You
+try finding JonAlf Dyrland-Weaver in "the system." Is it Jon Dyrland?
+Alf Weaver?  JonAlf Dyrland? Nothing worked. In any event I did
+eventually find him. Unfortunately, I wasn't allowed to bring him on
+in spite of his being a Stuy graduate with a CS background and a
+successful teaching record. Nonetheless I kept trying and a couple of
+years later I got him.
+&lt;/p&gt;
+
+&lt;p&gt;
+Since then, JonAlf has been my partner in crime. A kindred spirit whom
+I describe him as a younger hipper version of me although the hip bar
+was set pretty low to begin with.
+&lt;/p&gt;
+
+&lt;p&gt;
+In addition to the lunacy - The Blues Brothers, Austin Powers and
+Dr. Evil, Clyde "Thluffy" Sinclair, the CS Semi Formal and all, he's
+one of the best teachers I know.  A former student that I'm now proud
+to call friend and colleague.
+&lt;/p&gt;
+
+&lt;p&gt;
+I was touched to be included in the festivities this weekend. I'm
+incredibly proud of JonAlf as a teacher, a person, and a friend. He
+and Jamie looked so happy together and I just know that their union
+will be as amazing as Devorah and mine has been.
+&lt;/p&gt;
+
+&lt;p&gt;
+So this post is my way of raising a glass to JonAlf and Jamie. 
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Forty minutes to the punch line or "we'll never look at functions the same way again""</title>
+    <id>http://cestlaz.github.io/posts/2014-11-12-decorators.html/</id>
+    <updated>2014-11-12T00:00:00</updated>
+    <published>2014-11-12T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2014-11-12-decorators.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;div id="outline-container-unnumbered-1" class="outline-2"&gt;
+&lt;h2 id="unnumbered-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-unnumbered-1"&gt;
+&lt;p&gt;
+How many times do we teach something and leave the kids thinking:
+&lt;/p&gt;
+
+&lt;p&gt;
+"what's the point of this?" "When will I use this?" or even just the
+plain old fashioned "that's weird."
+&lt;/p&gt;
+
+&lt;p&gt;
+It's pretty cool when a lesson starts out that way but you get to the
+payoff by the end of the class.
+&lt;/p&gt;
+
+&lt;p&gt;
+Today we started exploring some advanced python.
+&lt;/p&gt;
+
+&lt;p&gt;
+We started by showing that you can assign functions to variables or
+pass them as parameters:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;&lt;span style="color: #a020f0;"&gt;def&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;inc&lt;/span&gt;(x):
+    &lt;span style="color: #a020f0;"&gt;return&lt;/span&gt; x+1
+&lt;span style="color: #a020f0;"&gt;def&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;dec&lt;/span&gt;(x):
+    &lt;span style="color: #a020f0;"&gt;return&lt;/span&gt; x-1
+
+&lt;span style="color: #a0522d;"&gt;f&lt;/span&gt; = inc
+&lt;span style="color: #a020f0;"&gt;print&lt;/span&gt; f(5)
+
+&lt;span style="color: #a0522d;"&gt;flist&lt;/span&gt; = [inc,dec]
+
+&lt;span style="color: #a020f0;"&gt;print&lt;/span&gt; flist[1](5)
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+We then looked at closures in python:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;&lt;span style="color: #a020f0;"&gt;def&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;makeAdder&lt;/span&gt;(n):
+    &lt;span style="color: #a020f0;"&gt;def&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;inner&lt;/span&gt;(x):
+        &lt;span style="color: #a020f0;"&gt;return&lt;/span&gt; x+n
+    &lt;span style="color: #a020f0;"&gt;return&lt;/span&gt; inner
+
+&lt;span style="color: #a0522d;"&gt;add3&lt;/span&gt; = makeAdder(3)
+&lt;span style="color: #a0522d;"&gt;add5&lt;/span&gt; = makeAdder(5)
+
+&lt;span style="color: #a020f0;"&gt;print&lt;/span&gt; add3(10)
+&lt;span style="color: #a020f0;"&gt;print&lt;/span&gt; add5(10)
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+The idea that we can make a function that builds and returns a
+function. When we call &lt;b&gt;&lt;b&gt;makeAdder(3)&lt;/b&gt;&lt;/b&gt;, the 3 is passed as parameter
+n so the inner function reduces to &lt;b&gt;&lt;b&gt;return x+3&lt;/b&gt;&lt;/b&gt; and then we return
+that inner function. When we later run it: add3(10) it adds
+10+3. makeAdder(5) works similarly but passing a 5 in for n instead
+of a 3.
+&lt;/p&gt;
+
+&lt;p&gt;
+Even a somewhat clunky way of doing class type abstractions:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;&lt;span style="color: #a020f0;"&gt;def&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;make_counter&lt;/span&gt;():
+    &lt;span style="color: #b22222;"&gt;# &lt;/span&gt;&lt;span style="color: #b22222;"&gt;private "instance" data&lt;/span&gt;
+    &lt;span style="color: #b22222;"&gt;# &lt;/span&gt;&lt;span style="color: #b22222;"&gt;has to be a list due to weird python scoping rules&lt;/span&gt;
+    &lt;span style="color: #a0522d;"&gt;count&lt;/span&gt; = [0]
+
+    &lt;span style="color: #b22222;"&gt;# &lt;/span&gt;&lt;span style="color: #b22222;"&gt;public methods&lt;/span&gt;
+    &lt;span style="color: #a020f0;"&gt;def&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;inc&lt;/span&gt;():
+        &lt;span style="color: #a0522d;"&gt;count&lt;/span&gt;[0]=count[0]+1
+    &lt;span style="color: #a020f0;"&gt;def&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;dec&lt;/span&gt;():
+        &lt;span style="color: #a0522d;"&gt;count&lt;/span&gt;[0]=count[0]-1
+    &lt;span style="color: #a020f0;"&gt;def&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;reset&lt;/span&gt;():
+        &lt;span style="color: #a0522d;"&gt;count&lt;/span&gt;[0]=0
+    &lt;span style="color: #a020f0;"&gt;def&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;get&lt;/span&gt;():
+        &lt;span style="color: #a020f0;"&gt;return&lt;/span&gt; count[0]
+
+    &lt;span style="color: #b22222;"&gt;# &lt;/span&gt;&lt;span style="color: #b22222;"&gt;send back a dictionary so we have access to all the methods&lt;/span&gt;
+    &lt;span style="color: #a020f0;"&gt;return&lt;/span&gt; {&lt;span style="color: #8b2252;"&gt;'inc'&lt;/span&gt;: inc, &lt;span style="color: #8b2252;"&gt;'dec'&lt;/span&gt;: dec, &lt;span style="color: #8b2252;"&gt;'reset'&lt;/span&gt;: reset, &lt;span style="color: #8b2252;"&gt;'get'&lt;/span&gt;: get}
+
+&lt;span style="color: #a0522d;"&gt;c1&lt;/span&gt; = make_counter()
+&lt;span style="color: #a0522d;"&gt;c2&lt;/span&gt; = make_counter()
+
+&lt;span style="color: #b22222;"&gt;# &lt;/span&gt;&lt;span style="color: #b22222;"&gt;we've got to use the clunky list notation &lt;/span&gt;
+c1[&lt;span style="color: #8b2252;"&gt;'inc'&lt;/span&gt;]()
+c1[&lt;span style="color: #8b2252;"&gt;'inc'&lt;/span&gt;]()
+c1[&lt;span style="color: #8b2252;"&gt;'inc'&lt;/span&gt;]()
+&lt;span style="color: #a020f0;"&gt;print&lt;/span&gt; c1[&lt;span style="color: #8b2252;"&gt;'get'&lt;/span&gt;]()
+c2[&lt;span style="color: #8b2252;"&gt;'inc'&lt;/span&gt;]()
+&lt;span style="color: #a020f0;"&gt;print&lt;/span&gt; c2[&lt;span style="color: #8b2252;"&gt;'get'&lt;/span&gt;]()
+c1[&lt;span style="color: #8b2252;"&gt;'reset'&lt;/span&gt;]()
+&lt;span style="color: #a020f0;"&gt;print&lt;/span&gt; c1[&lt;span style="color: #8b2252;"&gt;'get'&lt;/span&gt;]()
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Up to now the students are able to see how this works but the why is
+unclear.
+&lt;/p&gt;
+
+&lt;p&gt;
+So now we'll look at where this is useful.
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's suppose we have routines like the following. It returns a
+string:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;&lt;span style="color: #a020f0;"&gt;import&lt;/span&gt; random
+&lt;span style="color: #a020f0;"&gt;def&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;get_name&lt;/span&gt;():
+    &lt;span style="color: #a0522d;"&gt;names&lt;/span&gt; = [&lt;span style="color: #8b2252;"&gt;'tom'&lt;/span&gt;,&lt;span style="color: #8b2252;"&gt;'sue'&lt;/span&gt;,&lt;span style="color: #8b2252;"&gt;'harry'&lt;/span&gt;,&lt;span style="color: #8b2252;"&gt;'lisa'&lt;/span&gt;,&lt;span style="color: #8b2252;"&gt;'sarah'&lt;/span&gt;,&lt;span style="color: #8b2252;"&gt;'horatio'&lt;/span&gt;]
+    &lt;span style="color: #a020f0;"&gt;return&lt;/span&gt; random.choice(names)
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+get&lt;sub&gt;name&lt;/sub&gt; and routines like it might be scattered throughout our
+code. Let's suppose, for some strange reason, we want to double the
+name every time we use it. A "traditional" way of doing this might be:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;&lt;span style="color: #a020f0;"&gt;def&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;dble&lt;/span&gt;(f):
+    &lt;span style="color: #a0522d;"&gt;name&lt;/span&gt; = f()
+    &lt;span style="color: #a020f0;"&gt;return&lt;/span&gt; name+name
+
+&lt;span style="color: #a020f0;"&gt;print&lt;/span&gt; dble(get_name) &lt;span style="color: #b22222;"&gt;# &lt;/span&gt;&lt;span style="color: #b22222;"&gt;returns something like tomtom&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Here, we pass a function which returns a string and then dble returns
+that string repeated twice. The problem here is that if we've got
+get&lt;sub&gt;name&lt;/sub&gt; all over our code base, we have to find it and change each
+instance to &lt;b&gt;&lt;b&gt;dble(get&lt;sub&gt;name&lt;/sub&gt;)&lt;/b&gt;&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+What if we write it as a function that returns a function:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;&lt;span style="color: #a020f0;"&gt;def&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;doubler&lt;/span&gt;(f):
+    &lt;span style="color: #a020f0;"&gt;def&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;inner&lt;/span&gt;():
+        &lt;span style="color: #a0522d;"&gt;name&lt;/span&gt;=f()
+        &lt;span style="color: #a020f0;"&gt;return&lt;/span&gt; name+name
+    &lt;span style="color: #a020f0;"&gt;return&lt;/span&gt; inner
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Now, in this case, we can do something like:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;&lt;span style="color: #b22222;"&gt;# &lt;/span&gt;&lt;span style="color: #b22222;"&gt;make a new function that wraps get_name in "inner"&lt;/span&gt;
+&lt;span style="color: #b22222;"&gt;# &lt;/span&gt;&lt;span style="color: #b22222;"&gt;when we call inner, it returns the string twice&lt;/span&gt;
+&lt;span style="color: #a0522d;"&gt;f&lt;/span&gt; = doubler(get_name)
+&lt;span style="color: #b22222;"&gt;# &lt;/span&gt;&lt;span style="color: #b22222;"&gt;and then later&lt;/span&gt;
+&lt;span style="color: #a020f0;"&gt;print&lt;/span&gt; f() &lt;span style="color: #b22222;"&gt;# &lt;/span&gt;&lt;span style="color: #b22222;"&gt;will print something like tomtom&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+The cool part is that we can also do this:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;&lt;span style="color: #a0522d;"&gt;get_name&lt;/span&gt; = double(get_name)
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+And then whenever we call our new &lt;b&gt;&lt;b&gt;get&lt;sub&gt;name&lt;/sub&gt;&lt;/b&gt;&lt;/b&gt; we end up calling the
+wrapped function. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This was the first A-ha. We don't have to change get&lt;sub&gt;name&lt;/sub&gt; all over our
+code base - we only have to change it once.
+&lt;/p&gt;
+
+&lt;p&gt;
+Once we write a function like doubler, instead of re-assigning
+get&lt;sub&gt;name&lt;/sub&gt; as we did above, we can do the following:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;&lt;span style="color: #228b22;"&gt;@doubler&lt;/span&gt;
+&lt;span style="color: #a020f0;"&gt;def&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;get_name&lt;/span&gt;():
+    &lt;span style="color: #b22222;"&gt;# &lt;/span&gt;&lt;span style="color: #b22222;"&gt;rest of code as defined above&lt;/span&gt;
+
+&lt;span style="color: #228b22;"&gt;@doubler&lt;/span&gt;():
+&lt;span style="color: #a020f0;"&gt;def&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;demo&lt;/span&gt;():
+    &lt;span style="color: #a020f0;"&gt;return&lt;/span&gt; &lt;span style="color: #8b2252;"&gt;"hello"&lt;/span&gt;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+The second example will have demo return "hellohello" whenever we
+invoke it.
+&lt;/p&gt;
+
+&lt;p&gt;
+A Python decorator is merely shorthand for calling a wrapper type
+function like doubler.
+&lt;/p&gt;
+
+&lt;p&gt;
+This was the second A-ha moment – we can write functions that
+transform functions.
+&lt;/p&gt;
+
+&lt;p&gt;
+We'll cover more decorator and closure plumbing tomorrow and then
+start doing some fun stuff with these concepts.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Rich and Rich - two legends on opposite sides of the hall</title>
+    <id>http://cestlaz.github.io/posts/2014-11-07-rich-rich.html/</id>
+    <updated>2014-11-07T00:00:00</updated>
+    <published>2014-11-07T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2014-11-07-rich-rich.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+.leftborder {border-left:1px; border-style:solid;}
+&lt;/style&gt;
+
+&lt;p&gt;
+We'll get back to CS content soon, but for now:
+&lt;/p&gt;
+
+&lt;p&gt;
+Last Tuesday was Election day - no students in the school - a day
+devoted to professional development. Traditionally, math team coaches
+from around the city descend on Stuy for a day full of lectures,
+discussion, and general catching up. I've never actually attended
+these meetings. In the past, they were for math team coaches only and this
+year, I was actually allowed to do something with the CS teachers.
+&lt;/p&gt;
+
+&lt;p&gt;
+These meetings used to be organized by my late friend and colleague,
+Rich Geller so it made sense that we took time at end of the day to
+honor his memory and unveil a memorial dedicated to Rich and his
+work. Rich was a legendary Stuy teacher, but more on that shortly.
+&lt;/p&gt;
+
+&lt;p&gt;
+As I looked at Rich's memorial, I couldn't help and turn my head
+around to gaze at another memorial - "Celebration" - created to honor
+the memory of another legendary teacher that died before his time -
+Richard Rothenberg.
+&lt;/p&gt;
+
+&lt;p&gt;
+Both of these men were friends and mentors. I thought I'd dedicate
+this post to some of the things I learned from both of them.
+&lt;/p&gt;
+
+
+&lt;div class="row"&gt;
+
+&lt;div class="c6"&gt;
+&lt;h2&gt;Rich (Doc)&lt;/h2&gt;
+
+&lt;div class="center"&gt;
+&lt;figure&gt;
+ &lt;img height="250px" src="http://cestlaz.github.io/img/rich-rich/doc.jpg"&gt;
+&lt;figcaption&gt;Celebration - the Rothenberg Memorial&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+Richard Rothenberg, known to me as Richie or Doc was the math chair
+when I was a senior. He taught AP Computer Science that year and he
+hired me back a few years later.
+&lt;/p&gt;
+
+&lt;p&gt;
+He didn't give me my first teaching gig. He knew that I had to go
+somewhere else to develop my chops. We did stay in touch, though, and
+he hired me two and a half years later.
+&lt;/p&gt;
+
+&lt;p&gt;
+Doc was an amazing teacher but he was also someone who worked 
+tirelessly behind the scenes for the good of his students.
+&lt;/p&gt;
+
+&lt;p&gt;
+I remember one year he heard that one our recent graduates got into
+some trouble at college. Doc got wind of this and went out of his way
+to contact the college on the student's behalf. The student never
+knew. That was Doc.
+&lt;/p&gt;
+
+&lt;p&gt;
+He also understood the "big picture."
+&lt;/p&gt;
+
+&lt;p&gt;
+I was at a parents association meeting early in my Stuy career. All of
+the assistant principals were taking turns talking to an audience of
+Freshman parents.
+&lt;/p&gt;
+
+&lt;p&gt;
+Each got up  and started to brag about their program:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;We had n intel semi finalists last year
+&lt;/li&gt;
+&lt;li&gt;Our kids won whatever essay writing contest
+&lt;/li&gt;
+&lt;li&gt;Six kids won gold medals in…
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Each AP was bragging about how awesome their department was but in
+truth they were talking about a handful of excellent kids who would
+have excelled no matter where they went. I'd guess Stuy or at least
+Stuy's educational programs probably had very little to do with these
+top kid's development and in any event, this wasn't really relevant to
+parents of incoming students.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then it was Richie's turn.
+&lt;/p&gt;
+
+&lt;p&gt;
+Richie got up and said the following:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Go home, hug your children, ask them how their days were.
+Encourage them and support them.
+Everything else will work itself out.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+That really stayed with me. So few teachers look beyond their field. I
+remember talking to one of the best chemistry teachers I know - I
+asked "what do you do knowing that most of your kids won't be and in
+fact shouldn't be chemists?" The reply was that he looked at all his
+students as though they all wanted to be and were going to be
+chemists. Doc looked at his students as whole people first -
+mathematicians second. That's one of the many lessons I learned from Doc.
+&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;div class="c6 leftborder"&gt;
+&lt;h2&gt;Rich (Richard)&lt;/h2&gt;
+
+&lt;div class="center"&gt;
+&lt;figure&gt;
+ &lt;img height="250px" src="http://cestlaz.github.io/img/rich-rich/geller.jpg"&gt;
+&lt;figcaption&gt;The Rich Geller Memorial Display&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Richard Geller was never my teacher. He was my colleague and friend.
+&lt;/p&gt;
+
+&lt;p&gt;
+He introduced me to fine dining and wine. We talked food, biking, and
+teaching.
+&lt;/p&gt;
+
+&lt;p&gt;
+Rich had a reputation for being unyielding and strict. Many students
+went into his class in fear but just as many came back after
+graduating to thank him.
+&lt;/p&gt;
+
+&lt;p&gt;
+I remember one of our mutual students saying:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+I need to be in Mr. Geller's once every three terms to keep me in good
+habits. Then I need a couple of pushover teachers in between to pump
+up my GPA.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+He was a top math teacher but his students learned much
+more. Responsibility, respect, having care and pride in one's work,
+and more.
+&lt;/p&gt;
+
+&lt;p&gt;
+Rich was a demanding teacher and one who really cared about his
+students. When grads came back from college and Rich would great them
+with a smile. The scary teacher was gone. He asked how and what the
+graduates were doing and he honestly cared. Gone was the in class
+persona. That was business. 
+&lt;/p&gt;
+
+&lt;p&gt;
+In some ways Rich was much like an earlier Stuyvesant math
+legend. Phil Fisher, who terrorized us poor calc students in the
+'80s. I got to know Phil when I came back as a teacher and once he
+explained why he was so rigid and strict in class. Phil explained that
+here he was, charged with teaching these amazing talented Stuy
+students while at the same time, he felt he wasn't nearly as smart as
+them. Phil needed 100% focus during every minute of every class to
+give the kids what they deserved. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I think Rich was something like that. Not exactly the same, he also
+wanted the kids to learn to be responsible and respectful but I think
+the core idea was the same.
+&lt;/p&gt;
+
+&lt;p&gt;
+As a colleague and friend, Rich was the first guy to show appreciation
+and the guy with enough character to tell you not what you wanted to
+hear but what you needed to hear. I also learned to always be open and
+honest with my team. Make sure everyone had all the information.
+&lt;/p&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+I learned a lot from both of these men. Stuyvesant misses them and I
+miss them, but the there influence lives on through me, their
+students, colleagues and friends.
+&lt;/p&gt;</summary>
+  </entry>
+</feed>

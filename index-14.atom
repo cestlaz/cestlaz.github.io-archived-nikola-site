@@ -1,0 +1,1355 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>C'est la Z (old posts, page 14)</title>
+  <id>http://cestlaz.github.io/index-14.atom</id>
+  <updated>2016-04-16T20:26:33Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/index-14.atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-13.atom"/>
+  <link rel="previous" type="application/atom+xml" href="http://cestlaz.github.io/index-15.atom"/>
+  <link rel="current" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
+  <link rel="next-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-15.atom"/>
+  <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-13.atom"/>
+  <fh:archive/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-14.html"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Code.org and the College Board - what's the catch and is it a cash cow?</title>
+    <id>http://cestlaz.github.io/posts/2015-05-19-code-org-college-board.html/</id>
+    <updated>2015-05-19T00:00:00</updated>
+    <published>2015-05-19T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-05-19-code-org-college-board.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Big announcement the other day. Code.org will be partnering with the 
+College Board. 
+&lt;/p&gt;
+
+&lt;p&gt;
+They'll help school's adopt their CS courses and provide funding for
+Code.org's professional development.
+&lt;/p&gt;
+
+&lt;p&gt;
+You can read about it on Code.org's blog &lt;a href="http://blog.code.org/post/118964845433/college-board-and-code-org-announce-an-alliance-to"&gt;here&lt;/a&gt; and a USA Today article
+&lt;a href="http://www.usatoday.com/story/tech/2015/05/14/codeorg-college-board-computer-science-high-school-diversity/27304593/"&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Already it's made it's rounds with Alfred Thompson giving his take on
+his blog over &lt;a href="http://blog.acthompson.net/2015/05/expanding-computing-educationare-we.html"&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Sounds terrific.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not sold.
+&lt;/p&gt;
+
+&lt;p&gt;
+I do believe that Code.org has the best of intentions and they've been
+front and center on the PR front for CS Education - that's great but
+they also seem to be taking that startup mentality - scale, scale,
+scale, fast, fast, fast. It's the drop in curriculum plus PD
+approach. I wrote about it about a month ago &lt;a href="http://cestlaz.github.io/2015/03/04/expedient-vs-good.html#.VVvHnt-c30o"&gt;here&lt;/a&gt;. I hope I'm wrong,
+but we'll see.
+&lt;/p&gt;
+
+&lt;p&gt;
+What I really want to comment on here is the whole College Board
+piece. The kicker is the PSAT 8/9 - a new PSAT exam for eighth and ninth
+graders. The Code.org blog says that schools will be encouraged to use
+this exam. The USA Today piece says that schools that use the PSAT 8/9
+will receive funding to subsidize the Code.org stuff. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Either way, it's a concern.
+&lt;/p&gt;
+
+&lt;p&gt;
+As it stands, kids have to take either the SAT or ACT for college
+acceptance (for the most part). I know that now the College Board says
+that the SAT measures college readiness but I recall a few years ago
+they proudly proclaimed that the SAT could only predict one thing: how
+a student would do on the next SAT. 
+&lt;/p&gt;
+
+&lt;p&gt;
+So, if the SAT has little value, the PSAT has less, other than
+possible entry to scholarships. Taking the test down to eight or
+ninth grade seems to have little to no value for students and don't tell me that
+an SAT style test in the 8th grade can determine if you'll be a good
+computer scientist or not.
+&lt;/p&gt;
+
+&lt;p&gt;
+What is it about? 
+&lt;/p&gt;
+
+&lt;p&gt;
+Call me cynical, but I think the College Board is looking for a new
+cash cow. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Districts push the PSAT 8/9 saying it's good for kids and
+force the kids to take an additional test. Since schools and districts
+typically pay for the PSAT, the taxpayers fork over money year after
+year and funnel it to the College Board and get no real value in
+return. To make it all seem kosher, the College Board kicks in a
+little for the Code.org training, for whatever that's worth.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Learning takes time, hype doesn't</title>
+    <id>http://cestlaz.github.io/posts/2015-05-07-learning-takes-time.html/</id>
+    <updated>2015-05-07T00:00:00</updated>
+    <published>2015-05-07T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-05-07-learning-takes-time.html/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
+&lt;h3 id="sec-1-1"&gt;or: what to watch out for in after school and summer programs&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;CAVEATS:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+In writing this post I do not mean to say that there aren't some great
+programs out there - there are. I also know that most of the programs
+I'm aware are being developed by people who are really trying to do
+some good.  
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;p&gt;
+Since I wrote a post on my problem with drop in curricula on March 4
+(&lt;a href="http://cestlaz.github.io/2015/03/04/expedient-vs-good.html"&gt;http://cestlaz.github.io/2015/03/04/expedient-vs-good.html&lt;/a&gt;)
+I've been meaning to follow up with some of my thoughts on after
+school and summer programs. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This itch was further spurred when I read this post on &lt;a href="http://avc.com"&gt;avc.com&lt;/a&gt;:
+&lt;a href="http://avc.com/2015/03/numbers-can-ruin-a-good-story/"&gt;http://avc.com/2015/03/numbers-can-ruin-a-good-story/&lt;/a&gt;. It talks about
+startups - you can have a good story and raise some funds but then
+when numbers, that is, results start to come in, that story might not
+look so good.
+&lt;/p&gt;
+
+&lt;p&gt;
+The world of CS Education summer and after school programs are full of
+"good stories." My favorite is "your kid will learn how to build an
+iPhone app in 4 weeks!!!" If it were that easy, we wouldn't have a
+tech talent shortage and my grads wouldn't be in such high demand. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The truth is, it's very easy to get by in CS Education on nothing more
+than a good story. You never actually have to show real results. Most
+of the programs out there follow this pattern. I don't think it's
+intentional. It's just that most people running K12 CS Ed programs
+aren't educators and frequently they aren't CS people. What they are
+concerned is scaling so that they can get to as many kids as
+possible. They aren't dealing with next steps. Besides, to them, it
+appears they're doing great work - they buy into their own hype.
+&lt;/p&gt;
+
+&lt;p&gt;
+What's the problem?
+&lt;/p&gt;
+
+&lt;p&gt;
+Simple - learning takes time.
+&lt;/p&gt;
+
+&lt;p&gt;
+How do you set up the story?
+&lt;/p&gt;
+
+&lt;p&gt;
+Easy.
+&lt;/p&gt;
+
+&lt;p&gt;
+Start by promising an awesome program - an awesome project after two
+or four weeks. With today's tools it's easy to make a mock up. Either
+you use simplified tools or you can use a lot of boilerplate code with
+pre-built components. These aren't necessarily bad in and of
+themselves, just don't pretend you're teaching the real deal.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's easy to pull this off since there's no real follow up. Kids are
+then sent back to their high schools or off to college and results
+aren't tracked.
+&lt;/p&gt;
+
+&lt;p&gt;
+Also, make sure you recruit some high performing kids. I know a number
+of programs that have taken in my Stuy kids even though they already
+know more than the program has to offer. This guarantees that your
+program will look good since these kids &lt;b&gt;&lt;b&gt;will&lt;/b&gt;&lt;/b&gt; produce great projects.
+&lt;/p&gt;
+
+&lt;p&gt;
+I recall about a year and a half ago reading an article. It
+highlighted a youngster who went through one of these summer
+programs. A bright kid in a well regarded, well hyped, well funded
+program. I've don't think the article said so, but I heard many of this
+programs top people repeatedly say "our program better prepares our
+kids for the AP Computer Science exam than the AP course itself does."
+Hmmm. Well, in the article, the kid learned all these wonderful things
+from the program and then went back to high school.
+&lt;/p&gt;
+
+&lt;p&gt;
+A short time after, according to the piece, the kid was struggling in
+AP Computer Science and the article quickly threw the teacher under
+the bus. Now, I have no idea if the teacher was any good but if your
+program better prepares a kid for the exam than the class, there's not
+way the kid should have been struggling - unless, of course, it was
+all a story.
+&lt;/p&gt;
+
+&lt;p&gt;
+The truth is, that the designers and implementers of many of these programs
+don't know education and often know little CS. I can't tell
+you the number of kids that have come into my classes and programs
+proclaiming to be master programmers as a result of these programs and
+it turns out all they know is how to build a limited drag and drop
+prototype or how to tweak a pre-built template.
+&lt;/p&gt;
+
+&lt;p&gt;
+What's the harm? In my classes and programs, we can educate the kids
+but if this is in college with less support, self doubt will creep in
+and more often than not the kid will drop tech. I've seen it happen
+many a time.
+&lt;/p&gt;
+
+&lt;p&gt;
+That brings me to the next story – the glue programs. I also see a
+lot of this. Programs that teach the very rudiments of programming and
+then use pre-built libraries and packages to make really impressive
+looking results. They look great, but there's not a lot of substance
+under the hood. I remember seeing a number of these "finished
+products" and each time noting that the student contributed maybe 20 to
+40 lines of code and they were mostly tweaks to the web site samples.
+&lt;/p&gt;
+
+&lt;p&gt;
+The final story is less of a story and more legit in terms of teaching
+but it still largely a story. That's when a program tries to teach too
+much to quickly. I've seen one and two week programs that promise the
+word. The kids put together some impressive stuff but since it's so
+much so fast, facilitated by lots of coaching, there's little
+retention and questionable understanding. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I was talking to a friend a few months ago. She worked with a number
+of high achieving kids teaching them to code. All seemed great. They
+got the kids back together months later for a follow up. I asked "how
+was the retention?" The reply "that's a real problem."
+&lt;/p&gt;
+
+&lt;p&gt;
+the truth is learning takes time. There's only so much you can do in
+an after-school or in a summer and it's not always flashy. 
+&lt;/p&gt;
+
+&lt;p&gt;
+When I designed Google CAPE NYC for the summer of 2010 I knew we
+couldn't do everything in a month. What we did do is give the kids the
+fundamentals and a path to follow to learn more. They did neat
+projects but they weren't the over the top stuff you see other
+programs produce (as an aside, one of my grads noted - "If it looks
+too good to be true, it probably isn't true."). While we didn't
+formally track the kids, 3/4 of the kids we were still in touch with
+last year were still doing computer science at a second year college
+level so I know what we did worked but I haven't seen that type follow
+up from any other program.
+&lt;/p&gt;
+
+&lt;p&gt;
+We're in the midst of recruiting and fund-raising for my non-profit,
+&lt;a href="http://cstuy.org"&gt;CSTUY&lt;/a&gt;'s summer program, &lt;a href="http://cstuy.org/programs/ship"&gt;SHIP&lt;/a&gt;. We're not as connected as the big CS
+programs and we don't have the hype. That makes our job harder. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I do know is that we've got the best teachers and the best
+program and that our kids might not make something quite so flashy
+after three or four weeks as some of the other programs, our kids are
+set up for long term success.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, if you're looking for a great program with great teachers and a
+solid plan, check out CSTUY. If you want to create a story, just follow
+these steps:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Recruit some high achieving kids so you'll have some stories
+&lt;/li&gt;
+&lt;li&gt;Teach a framework or simplified tool 
+&lt;/li&gt;
+&lt;li&gt;Coaching, coaching, coaching.
+&lt;/li&gt;
+&lt;li&gt;Make sure they have fun so you get good reviews
+&lt;/li&gt;
+&lt;li&gt;Profit!!!!
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>"def hack(2015)</title>
+    <id>http://cestlaz.github.io/posts/2015-03-29-defhacks.html/</id>
+    <updated>2015-03-29T00:00:00</updated>
+    <published>2015-03-29T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-03-29-defhacks.html/"/>
+    <summary type="html">&lt;style&gt;
+.center {text-align:center;}
+div.center {text-align:center;}
+&lt;/style&gt;
+
+
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/dh2015/dh-logo.png" alt="dh-logo.png" width="300px" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+This past Saturday, 50 high school students, 10 high school mentors, and 10
+more post high school mentors headed down to &lt;i&gt;SumAll&lt;/i&gt; to participate in
+&lt;b&gt;&lt;b&gt;def hacks(2015):&lt;/b&gt;&lt;/b&gt; &lt;i&gt;CSTUY&lt;/i&gt;'s first hackathon.
+&lt;/p&gt;
+
+&lt;p&gt;
+The fifty participants, came from all over the city, Long Island, and
+New Jersey. They ranged from having never programmed to three or four
+years experience. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Projects ranged from web sites to full stack applications. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+After workshops run by CSTUY teachers and mentors and also by
+&lt;a href="http://codesters.com"&gt;Codesters.com&lt;/a&gt; the hackers spread out all over SumAll's offices, working in small
+groups with the support of our amazing mentors.
+&lt;/p&gt;
+
+
+&lt;p style="float:left"&gt;
+&lt;figure style="float:left;padding:20px"&gt;
+ &lt;img height="300px" src="http://cestlaz.github.io/img/dh2015/dh-hacking.jpg"&gt;
+&lt;/figure&gt;
+&lt;figure style="padding:20px"&gt;
+ &lt;img height="300px" src="http://cestlaz.github.io/img/dh2015/dh-hacking-2.jpg"&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p style="clear:both"&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;p&gt;
+Four nourishment, we had sandwiches from &lt;a href="http://amishintribeca.com/"&gt;Amish Market&lt;/a&gt;, pizza from
+Wanted Pizza, snacks and those amazing doughnuts from &lt;a href="http://doughbrooklyn.com"&gt;Dough Flatiron&lt;/a&gt;.
+&lt;/p&gt;
+
+
+&lt;p style="float:left"&gt;
+&lt;figure style="float:left;padding:20px"&gt;
+ &lt;img height="300px" src="http://cestlaz.github.io/img/dh2015/dh-food1.jpg"&gt;
+&lt;/figure&gt;
+&lt;figure style="padding:20px"&gt;
+ &lt;img height="300px" src="http://cestlaz.github.io/img/dh2015/dh-dough.jpg"&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p style="clear:both"&gt;&lt;/p&gt;
+&lt;p&gt;
+At the end of the day, the hackers demoed and the judges judged
+&lt;/p&gt;
+
+&lt;p style="float:left"&gt;
+&lt;figure style="float:left;padding:20px"&gt;
+ &lt;img height="300px" src="http://cestlaz.github.io/img/dh2015/dh-winner-demo.jpg"&gt;
+&lt;/figure&gt;
+&lt;figure style="padding:20px"&gt;
+ &lt;img height="300px" src="http://cestlaz.github.io/img/dh2015/dh-demo-1.jpg"&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p style="clear:both"&gt;&lt;/p&gt;
+
+
+&lt;figure style="float:center;padding:20px;width:100%"&gt;
+ &lt;img height="300px" src="http://cestlaz.github.io/img/dh2015/dh-judging.jpg"&gt;
+&lt;/figure&gt;
+&lt;p style="clear:both"&gt;&lt;/p&gt;
+
+&lt;p&gt;
+In the end everyone made something terrific and walked away having
+built new skills, met new people, and gotten a little swag.
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/dh2015/dh-certificate.jpg" alt="dh-certificate.jpg" width="300px" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-4" class="outline-2"&gt;
+&lt;h2 id="sec-4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-4"&gt;
+&lt;p&gt;
+The judges singled out two groups for special
+recognition. One was a team of four experienced programmers who put
+together a full stack app to help schedule parent/teacher meetings.
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/dh2015/dh-winner-group.jpg" alt="dh-winner-group.jpg" width="300px" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+The other was a solo project from a young man who had never programmed
+prior to the event. 
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/dh2015/dh-winner-demo-2.jpg" alt="dh-winner-demo-2.jpg" width="300px" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+That one really blew me away. We were able to give these groups
+Raspberry Pis thanks to a last minute donation from &lt;a href="http://www.fullstackacademy.com/"&gt;Fullstack Academy&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+None of this would have been possible without the help of:
+&lt;/p&gt;
+
+&lt;p&gt;
+Our organizers - Caitlin and Lise
+&lt;/p&gt;
+
+&lt;p&gt;
+Our Mentors - both the Stuy students and the older mentors
+&lt;/p&gt;
+
+&lt;p&gt;
+Our judges:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Ben Fried (Google)
+&lt;/li&gt;
+&lt;li&gt;Noah Weiss (Foursqurae)
+&lt;/li&gt;
+&lt;li&gt;Benny Wong (TimeHop)
+&lt;/li&gt;
+&lt;li&gt;Gerry Seidman (Too many to list)
+&lt;/li&gt;
+&lt;li&gt;Davin Chew (SumAll)
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+and our Sponsors:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://timehop.com"&gt;TimeHop&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://sumall.com"&gt;SumAll&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://digitalocean.com"&gt;DigitalOcean&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.generalcatalyst.com/"&gt;General Catalyst Partners&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://codesters.com"&gt;Codesters.com&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Shell games - who confirmed attendence</title>
+    <id>http://cestlaz.github.io/posts/2015-03-19-duplicate-emails.html/</id>
+    <updated>2015-03-19T00:00:00</updated>
+    <published>2015-03-19T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-03-19-duplicate-emails.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+Quick post on why I love the Unix command line.
+&lt;/p&gt;
+
+&lt;p&gt;
+We're busy organizing &lt;a href="http://cstuy.org"&gt;CSTUY's&lt;/a&gt; first &lt;a href="http://cstuy.org/programs/defhacks"&gt;hackathon&lt;/a&gt;. It's going to be at
+&lt;a href="http://sumall.com"&gt;SumAll&lt;/a&gt;, where we hold our weekly &lt;a href="http://cstuy.org/programs/hacking_sessions"&gt;hacking sessions&lt;/a&gt; but while taking
+registration, we had a little program.
+&lt;/p&gt;
+
+&lt;p&gt;
+The kids signed up on a Google doc but we all know the story – when
+people sign up for a free event, even one with free food and t-shirts,
+many don't show. I asked all of the applicants to confirm by filling
+out a second Google doc.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then it got to reminder time - I wanted to send an email out to all
+those kids who signed up on the first form, but hadn't confirmed on
+the second. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Two Google spreadsheets with an email field. I needed all the people
+on sheet 1 that weren't on sheet 2. I'm sure there's some
+spreadsheet-fu that accomplishes this, but nothing I know. I also
+could have written a little python script which isn't so bad, but this
+was a perfect time to turn to the shell.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, here's how a command line guy would do this.
+&lt;/p&gt;
+
+&lt;p&gt;
+To start, I put the emails in two files: e1 and e2. The first has
+all the original applicants, the second those that confirmed.
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-org"&gt;|&lt;/pre&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Just another day at StuyCS</title>
+    <id>http://cestlaz.github.io/posts/2015-03-08-antother-day-stuycs.html/</id>
+    <updated>2015-03-08T00:00:00</updated>
+    <published>2015-03-08T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-03-08-antother-day-stuycs.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;style&gt;
+.photo {width:60%;}
+&lt;/style&gt;
+&lt;img class="photo" src="http://cestlaz.github.io/img/just_another_day/pic.jpg"&gt;
+
+&lt;p&gt;
+Last post was a little heavy so just a short fun one for today.
+&lt;/p&gt;
+
+&lt;p&gt;
+"Just another day at StuyCS." That was the subject of the email Brian
+sent with the photo above. What's going on?
+&lt;/p&gt;
+
+&lt;p&gt;
+We're working on advanced JavaScript while also looking at
+&lt;i&gt;Backbone.js&lt;/i&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Now, as sometimes happens, Batya, while in her CS class up at college,
+decided to open up a Google chat with me. This happens now and then. We try to
+have some fun with it. We actually have a plan to mess with the kids
+later this term, but I'll keep that to myself.
+&lt;/p&gt;
+
+&lt;p&gt;
+Now, Batya, of course, was sitting in her CS class in college. I told
+her what we were doing and continued with the lesson.  She responded
+that Zach, her boyfriend and my former student said not to forget to
+emphasize certain things. I also asked Batya if her professor was
+having a chat with his kid while he was teaching. Everyone was having a
+laugh.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then things got sillier. Another chat popped up. It was Natan, my son,
+who happens to be in that class. So, the insanity continued on when I
+get a video call -  it was from Aida sitting in row 1 - that's what you
+see on the screen. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Now it was getting a little ridiculous and it all started with Batya
+and Natan. So, what's a a teacher to do? I had to contact their
+parent, my wife, to tell her to discipline her children. That's the
+third chat. 
+&lt;/p&gt;
+
+&lt;p&gt;
+So, just another day at StuyCS.
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>What's Expedient vs what's good - curriculum vs teachers</title>
+    <id>http://cestlaz.github.io/posts/2015-03-04-expedient-vs-good.html/</id>
+    <updated>2015-03-04T00:00:00</updated>
+    <published>2015-03-04T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-03-04-expedient-vs-good.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+If we don't do anything then only schools like Stuy will have CS.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+I heard that the other day. It was a comment relating to a number of
+efforts, both in and out of  NY to get CS into the classroom.
+&lt;/p&gt;
+
+&lt;p&gt;
+These programs abound and up front let me say that they're all well
+meaning and have the best of intentions.
+&lt;/p&gt;
+
+&lt;p&gt;
+In NYC, programs receiving money, publicity, and support, include:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;The Software Engineering Pilot (SEP)
+&lt;/li&gt;
+&lt;li&gt;Google CS First afterschool
+&lt;/li&gt;
+&lt;li&gt;The NSF grant bring the Beauty and Joy of Computing class to NYC (BGP)
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Terrific – we'll scale up CS ed in NY from nothing to everyone in no
+time. It's fast, it scales. But is it good.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+I'd argue that maybe it's not. These programs all share a few things
+in common. 
+&lt;/p&gt;
+
+&lt;p&gt;
+First, they're all expedient. You can implement them in an election
+cycle. Roll out a pre-fab curriculum with scripted lessons, give the
+teachers a summer and some weekend workshops and we're good to go. No
+CS knowledge needed.
+&lt;/p&gt;
+
+&lt;p&gt;
+Next, as far as I can tell, none were developed by experienced high school
+teachers with a deep knowledge of CS. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The SEP was originally developed by someone, who, according to his
+linked in profile never coded and never taught.
+&lt;/p&gt;
+
+&lt;p&gt;
+I could be wrong about BGP. It was developed by Dan Garcia - an
+educator whom I like and respect, but as far as I know, his experience
+is at the college level. 
+&lt;/p&gt;
+
+&lt;p&gt;
+And Google's CS First? I've been very impressed by Google's engineers,
+in fact, many are my former students. It's high school education team?
+Not so much.
+&lt;/p&gt;
+
+&lt;p&gt;
+Finally, these efforts buy into the myth that anyone can teach and
+that anyone can teach computer science. Even worse, the Google CS
+First claims people running their program don't need to know a thing
+about computer science.
+&lt;/p&gt;
+
+&lt;p&gt;
+Anyone who knows teaching knows that you can't learn a subject well
+enough to reall teach it in such a short period of time. Of course,
+it does align itself with education "reform" where the true master
+teacher is no longer desirable and we should all be drones that teach
+lessons from scripts and all testing shall be standardized.
+&lt;/p&gt;
+
+&lt;p&gt;
+I rememer the first time I saw a progarm like this - it was the CISCO
+Networking Academy. Teachers trained for a few weeks in the summer and
+the course was basically run via computer based tutorials. I can't
+speak for it nationally but in my experience, what the students
+learned was superficial - very test oriented and there was no value
+added by the teacher - even after years of "teaching" the
+classes. There's a reason why the few networking lessons in our System
+Programming class are called "CISCO in an hour." The kids learn more
+in those couple of lessons than in a year of the CISCO curriculum. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Who was to blame? Cisco? They were trying to do something good. The
+teacher? Partially, after time they should have learned something of
+networking but they were very much out of their element having started
+the process from zero tech experience. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The fact is, that got a "Computer Networking" class into the
+schools. It might have been meant as a stop-gap until we could get
+real Computer Networking teachers hired or trained but it ended up
+being good enough. The end result – bad classes and students not
+learning what they could.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;p&gt;
+So here we are back again at the "let's take non CS teachers, give
+them some PD and we'll be good." Rather than take the time to solve
+the CS Education problem, we're going to throw down a curriculum, do
+some PD and say that it will buy us time. The truth is, however, that
+we're going to say "look, we have CS in the schools" and it will be
+good enough. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'd argue, though that for CS, good enough is particularly
+dangerous. It's very easy to work through a scripted and coached
+program and end up with kids thinking they know some real CS and have
+a real product yet having not really learned the subject. This won't
+be exposed until later, when they're gone and in college. I predict
+that unless something changes, these efforts and similar ones will
+drive up the  number of people who after this exposure will say they
+love CS but once they get hit over the head with "funcitonal
+programming in HASKELL" or whatever real CS they see in college,
+they'll drop like flies.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-4" class="outline-2"&gt;
+&lt;h2 id="sec-4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-4"&gt;
+&lt;p&gt;
+What's the answer? We've got to stop doing what's expedient and do
+what's good and what's right.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div id="outline-container-sec-5" class="outline-2"&gt;
+&lt;h2 id="sec-5"&gt;Part 2&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-5"&gt;
+&lt;p&gt;
+A couple of other blog itches I want to scratch are the many after
+school, summer, and drop in programs to go with the there I mentioned
+above. Hopefully I'll get to rant about them soon.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Believing in what you're doing</title>
+    <id>http://cestlaz.github.io/posts/2015-02-25-good-idea-avc.html/</id>
+    <updated>2015-02-25T00:00:00</updated>
+    <published>2015-02-25T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-02-25-good-idea-avc.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+The other day, &lt;a href="https://twitter.com/fredwilson"&gt;Fred Wilson&lt;/a&gt; sent out a short tweet storm turned &lt;a href="http://avc.com/2015/02/is-this-a-good-startup-idea/"&gt;post&lt;/a&gt; on
+determining if an entrepreneur's startup idea is a good one. It's
+short. Take a minute to read it over.
+&lt;/p&gt;
+
+&lt;p&gt;
+At its core, the post and the comments talk about belief in an idea
+and it got me thinking about some things as an educator.
+&lt;/p&gt;
+
+&lt;p&gt;
+Tweet 7:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+and you have to believe in yourself and your idea or nobody else ever will
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+resonated with me, not just in terms of a startup idea, but with
+respect to one's passion. 
+&lt;/p&gt;
+
+&lt;p&gt;
+As a CS teacher we get to shepherd kids through projects big and
+small. The best work invariably comes from when the kids take an idea
+they're passionate about and run with it. Sometimes I can guide the
+kids to an idea and it works out well but when the kids end up working
+on the stock project the results are less spectacular. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Once the kids buy into a great idea, the educator has to create a
+framework for success - give the kids the tools and set up the safety
+nets when things don't go as planned.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've never liked all those student entrepreneurs programs – make a
+business for the sake of making a business - much better to help guide
+the kids towards something they're passionate about and help them run
+with it. That's when great things happen.
+&lt;/p&gt;
+
+&lt;p&gt;
+The neat thing is that it's not limited to classes. CSTUY is having
+its first hackathon in a few weeks; &lt;a href="http://cstuy.org/programs/defhacks"&gt;def hacks():&lt;/a&gt;. One of my juniors
+came to me with the idea - she got a couple more kids on board and
+we're off to the races. I've done some things behind the scenes to
+make sure we don't have any real problems but the awesome thing is
+that the event is all on the kids.
+&lt;/p&gt;
+
+&lt;p&gt;
+In a way, I'd imagine that Fred, as a VC, once he invests, his role is to
+help create the framework for success. I'd also imagine that the
+best way to do that is similar to what a great teacher does - bring
+out the best in the student, make them aware of pitfalls and be a
+supportive mentor.
+&lt;/p&gt;
+
+&lt;p&gt;
+On a deeper level, as teachers, we get to work with young people as
+they're developing their own passions. This was something else that I
+started thinking about after reading Fred's tweet storm, in particular
+tweet 9:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+because I never want someone telling me they wasted five years of
+their life on something because I told them it was a good idea
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+Teachers are role models and the best teachers are passionate about
+their subject and their craft. One of the things I'm most proud of is
+the number of friends, former students, who have told me that I gave
+them a career, I introduced them to their passion. Sometimes, though,
+we miss. I've seen some kids come through my program and leave loving
+CS but it was, at least in part, an illusion. I work with a great team
+and sometimes loving classes can stand in for loving a subject. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I was talking to my daughter when she was a senior at Stuy and she
+commented that she was missing all the subjects she loved one day when
+she had to leave early. She included math. I said "since when do you
+love math?" She respond "I meant I love math class." That makes sense
+she had an amazing teacher. 
+&lt;/p&gt;
+
+&lt;p&gt;
+So, at times, kids leave us for college and then they might discover
+that they don't love CS as much as they thought they did. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Now, I'm not overly concerned with our misses here since I think we do
+better than most in showing CS and Tech for what it is and we always
+leave the kids with a great set of mental and practical tools but
+every now and then I see a kid who is doing well in the tech industry
+and in my gut I feel that the world missed out on a great author,
+chemist, or doctor.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, I've rambled on this long enough - just some food for thought from
+a teacher.
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>A chocolate treasure in a city losing its soul</title>
+    <id>http://cestlaz.github.io/posts/2015-02-13-myzels.html/</id>
+    <updated>2015-02-13T00:00:00</updated>
+    <published>2015-02-13T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-02-13-myzels.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/myzels/myzels.jpg" alt="myzels.jpg"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+I'm a born and bred New Yorker and more and more I'm lamenting what
+the city's becoming. 
+&lt;/p&gt;
+
+&lt;p&gt;
+New York used to be a collection of neighborhoods. Yes, we were the
+city that never slept, but there were scores of mom and pop stores,
+sole proprieterships. You could become a "regular." I'm reminded of
+Tom Shachman's book &lt;a href="http://www.amazon.com/Around-The-Block-Business-Neighborhood/dp/0151000778"&gt;Around the Block&lt;/a&gt; which looks at the businesses
+around a single NYC block, mostly all gone now. If you can get your
+hands on the book. It's worth a read.
+&lt;/p&gt;
+
+&lt;p&gt;
+In any event, here's a story:
+&lt;/p&gt;
+
+&lt;p&gt;
+Yesterday. JonAlf and I were at the Apple store on Fifth avenue talking about
+&lt;a href="http://cstuy.org/"&gt;CSTUY&lt;/a&gt;. We had four of our talented students presenting their work.
+&lt;/p&gt;
+
+&lt;p&gt;
+After the event, JonAlf had gone and one of our student presenters had
+left with his parents. I was left with our other three presenters.
+&lt;/p&gt;
+
+&lt;p&gt;
+I told them that I'd love to take them by this amazing chocolate shop
+a few blocks away and I had to explain why:
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;img src="http://cestlaz.github.io/img/myzels/candy.jpg" alt="candy.jpg"&gt;]]
+&lt;/p&gt;
+
+
+&lt;p&gt;
+A number of years ago, after a morning in Central Park, Batya, Natan,
+and I were winding our way home. We ended up passing &lt;a href="http://www.myzels.com/"&gt;Myzel's
+Chocolates&lt;/a&gt; on the south side of 55th street between fifth and sixth
+avenue. That's when we met Kamila, the shop owner. We chatted for a
+while got some chocolate and went on our way. Kamila was amazingly
+warm and sincere and the chocolates really really good. I noted that
+we would have to return.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;img src="http://cestlaz.github.io/img/myzels/kamila.jpg" alt="kamila.jpg"&gt;]]
+&lt;/p&gt;
+
+
+&lt;p&gt;
+That didn't happen until months later but when it did, I was shocked
+that Kamila remembered us, what we were doing that day and we just
+picked up the conversation where we left off.
+&lt;/p&gt;
+
+&lt;p&gt;
+This pattern repeated over the years. We didn't get to that
+neighborhood and thus Myzel's often, but whenever we did, we had to
+stop by. Great candies from a truly special person.
+&lt;/p&gt;
+
+&lt;p&gt;
+Alas, my schedule has been such that I hadn't been back to Myzel's in
+years. I think three or four. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Now, I was with Nadia, Miranda, and Leslie - three of my incredibly
+talented students. They just did an awesome job presenting their work
+and I figured I could give them some thank you chocolate as well as
+visit one of my  favorite places in the city.
+&lt;/p&gt;
+
+&lt;p&gt;
+I told them that Kamila probably wouldn't remember me but I recounted
+my story of Myzel's and how amazing Kamila and the store were. I got
+the feeling that they didn't believe me when I told them about Kamila
+and the store.
+&lt;/p&gt;
+
+&lt;p&gt;
+We got to Myzel's went in and started to place our order. When Kamila
+came out, her first word to me was "professor…" and we picked up
+where we left off. As usual, she was charming and sincere. We
+reminisced and chatted and then we were off.
+&lt;/p&gt;
+
+&lt;p&gt;
+In a city that's fast becoming cookie cutter we need more places like
+&lt;a href="http://www.myzels.com/"&gt;Myzel's&lt;/a&gt; and more people like Kamila.
+&lt;/p&gt;
+
+&lt;p&gt;
+Unfortunately rents are rapidly dispatching shops like &lt;a href="http://www.myzels.com/"&gt;Myzel's&lt;/a&gt; and
+people like Kamila are few and far between.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, when you're around City Center or midtown in general, please treat
+yourself. You won't be disappointed.
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Taking stock and tracking progress</title>
+    <id>http://cestlaz.github.io/posts/2015-02-11-taking-stock-self-assess.html/</id>
+    <updated>2015-02-11T00:00:00</updated>
+    <published>2015-02-11T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-02-11-taking-stock-self-assess.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+When starting the spring semester, students are frequently a little
+rusty. They just had a high intensity month of study, tests, and
+projects. That was followed by a week of nothing.
+&lt;/p&gt;
+
+&lt;p&gt;
+I like to start with something lightweight that gets them coding again
+and ramps them up to speed.
+&lt;/p&gt;
+
+&lt;p&gt;
+In SoftDev I started with a brief overview of the HTML5 canvas and
+then gave them a small homework assignment to do something fun.
+&lt;/p&gt;
+
+&lt;p&gt;
+I also remind the kids to self assess where they are and how they've
+developed as a programmer. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I get a little tired of education "experts" espousing nonsense like you
+have to have each talk each day or that you need to assess each kid
+multiple times a period. That's nonsense. With 34 kids in a 40 minute
+class and 150 kids a day, that doesn't fly. Besides, so many concepts
+take time to develop, learn, and absorb. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Yes, you can get some instant and short term feedback but a lot more
+is revealed over time.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm attaching a small sampling of their homework assignments. It was
+basically a one day assignment to do something fun with the HTML5
+canvas and indeed, it looks like they had fun.
+&lt;/p&gt;
+
+&lt;p&gt;
+I asked the kids to reflect on what they did now and what they could
+do a semester, two, and three semesters ago.
+&lt;/p&gt;
+
+&lt;p&gt;
+In the beginning they would have had no idea how to approach any of
+these. A year ago, they would be a major project. Now, they can knock
+these out as a homework assignment. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Once you take a step back to look at how much a student can grow in a
+year or so you have to marvel at the results.
+&lt;/p&gt;
+
+&lt;p&gt;
+At a place like Stuy, the kids frequently and unfairly judge themselves against
+super prodigies. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm hoping by looking back at what they could do then vs now they'll
+appreciate how awesome they are.
+&lt;/p&gt;
+
+&lt;p&gt;
+All sources at &lt;a href="https://github.com/stuycs-softdev/submissions"&gt;https://github.com/stuycs-softdev/submissions&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy…
+&lt;/p&gt;
+
+&lt;div id="outline-container-unnumbered-1" class="outline-2"&gt;
+&lt;h2 id="unnumbered-1"&gt;Chain reaction&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-unnumbered-1"&gt;
+&lt;/div&gt;&lt;div id="outline-container-unnumbered-2" class="outline-3"&gt;
+&lt;h3 id="unnumbered-2"&gt;click to start the reaction&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-unnumbered-2"&gt;
+&lt;/div&gt;&lt;div id="outline-container-unnumbered-3" class="outline-4"&gt;
+&lt;h4 id="unnumbered-3"&gt;by Nadia and Sophie&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-unnumbered-3"&gt;
+&lt;iframe height="600" width="80%" src="https://cdn.rawgit.com/stuycs-softdev/submissions/master/6/canvas/sophie-nadia/canvas.html"&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-unnumbered-4" class="outline-2"&gt;
+&lt;h2 id="unnumbered-4"&gt;MakeOver Party&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-unnumbered-4"&gt;
+&lt;/div&gt;&lt;div id="outline-container-unnumbered-5" class="outline-3"&gt;
+&lt;h3 id="unnumbered-5"&gt;Take a picture and apply virtual makeup&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-unnumbered-5"&gt;
+&lt;/div&gt;&lt;div id="outline-container-unnumbered-6" class="outline-4"&gt;
+&lt;h4 id="unnumbered-6"&gt;by Veronika and Miranda&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-unnumbered-6"&gt;
+&lt;iframe height="800" width="80%" src="https://cdn.rawgit.com/stuycs-softdev/submissions/master/7/canvas/miranda-veronika/canvas.html"&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-unnumbered-7" class="outline-2"&gt;
+&lt;h2 id="unnumbered-7"&gt;3D Depth Perception Pong&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-unnumbered-7"&gt;
+&lt;/div&gt;&lt;div id="outline-container-unnumbered-8" class="outline-3"&gt;
+&lt;h3 id="unnumbered-8"&gt;Follow the ball and keep it in the well&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-unnumbered-8"&gt;
+&lt;/div&gt;&lt;div id="outline-container-unnumbered-9" class="outline-4"&gt;
+&lt;h4 id="unnumbered-9"&gt;by Natan&lt;/h4&gt;
+&lt;div class="outline-text-4" id="text-unnumbered-9"&gt;
+&lt;iframe height="800" width="80%" src="https://cdn.rawgit.com/stuycs-softdev/submissions/master/6/canvas/NZamansky/index.html"&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-unnumbered-10" class="outline-2"&gt;
+&lt;h2 id="unnumbered-10"&gt;Can't really describe this but I love it&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-unnumbered-10"&gt;
+&lt;/div&gt;&lt;div id="outline-container-unnumbered-11" class="outline-3"&gt;
+&lt;h3 id="unnumbered-11"&gt;Use WASD to move DW around&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-unnumbered-12" class="outline-3"&gt;
+&lt;h3 id="unnumbered-12"&gt;by Fish&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-unnumbered-12"&gt;
+&lt;iframe height="800" width="80%" src="https://cdn.rawgit.com/stuycs-softdev/submissions/master/6/canvas/fishy/dyrlandland.html"&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Kids these days -- they don't know nuttin</title>
+    <id>http://cestlaz.github.io/posts/2015-01-15-kids-know-nuttin.html/</id>
+    <updated>2015-01-15T00:00:00</updated>
+    <published>2015-01-15T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-01-15-kids-know-nuttin.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+Yesterday, I took part in a round table discussion on Ed Tech and Tech
+Ed, the latter being more, as they say, my wheelhouse. Afterwards a
+few of us were chatting and a friend observed that when she first
+started to talk to high school kids she was shocked that they really
+didn't know the local tech players - neither names nor companies.
+&lt;/p&gt;
+
+&lt;p&gt;
+A couple of years ago, another friend was helping me organize an event for
+high schoolers. He started to go down a list of well known tech names
+and was surprised when I told him that the kids wouldn't know them.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first time I experienced this, it was just as big a surprised to
+me. I was setting up a big high school event at Foursquare (&lt;a href="http://cestlaz.github.io/2012/03/31/checking-in-with-family.html#.VLfzl9-c1CU"&gt;post here&lt;/a&gt;)
+and was shocked to learn that practically non of the attendees had
+heard of the company.
+&lt;/p&gt;
+
+&lt;p&gt;
+This would never have been the case in the 90s or even the early
+2000s. What happened?
+&lt;/p&gt;
+
+&lt;p&gt;
+I have a theory.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't think it's just due to the fact that CS is a hot subject
+now. It was hot during the 90's bubble. I'm sure the fact that a wider
+range of kids are being exposed to CS is part of this phenomenon but
+I don't think it's the biggest reason.
+&lt;/p&gt;
+
+&lt;p&gt;
+I think CS kids back then knew more – more of the players, more of the
+tools, more about the systems because they had to. In some ways, and I
+know I'm vastly overstating things, it's "too easy" now.
+&lt;/p&gt;
+
+&lt;p&gt;
+Back in the day, if you wanted to put your thoughts on line you had
+to:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;learn html
+&lt;/li&gt;
+&lt;li&gt;maybe some PHP, Perl, or Python
+&lt;/li&gt;
+&lt;li&gt;You probably had to learn a bit about hosting a server
+&lt;/li&gt;
+&lt;li&gt;you had to deal with registering a domain name
+&lt;/li&gt;
+&lt;li&gt;and more
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Now, you just go to blogger or tumblr. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Back then, if you wanted to communicate, you had to learn how to learn
+the dark art of &lt;a href="http://en.wikipedia.org/wiki/Internet_Relay_Chat"&gt;irc&lt;/a&gt;, now you have Google chat.
+&lt;/p&gt;
+
+&lt;p&gt;
+Back then, you want to share photos, you had to learn how to make a
+gallery. Now, Facebook.
+&lt;/p&gt;
+
+&lt;p&gt;
+And of course the list goes on. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Even programming required that you know something about the filesystem
+and the basics of working in an operating system. Now between IDEs
+both local and cloud based, you can learn all about programming and
+never actually create a stand alone program that operates outside of
+the IDE sandbox.
+&lt;/p&gt;
+
+&lt;p&gt;
+Back in the day, if a kid was into CS they had to learn more than
+just the in class toolset and this in turn forced them to be in touch
+with the tech community both products and players.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not saying the "good old days" were in fact that good and I love
+most of the progress we've made. Just noting the cultural difference. 
+&lt;/p&gt;
+
+&lt;p&gt;
+It means we should pay more attention to educating our classes on tech
+culture, the good, the bad, and the ugly.
+&lt;/p&gt;</summary>
+  </entry>
+</feed>

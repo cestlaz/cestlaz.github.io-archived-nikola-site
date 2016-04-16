@@ -1,0 +1,538 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>C'est la Z (old posts, page 7)</title>
+  <id>http://cestlaz.github.io/index-7.atom</id>
+  <updated>2016-04-16T20:26:32Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/index-7.atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-6.atom"/>
+  <link rel="previous" type="application/atom+xml" href="http://cestlaz.github.io/index-8.atom"/>
+  <link rel="current" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
+  <link rel="next-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-8.atom"/>
+  <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-6.atom"/>
+  <fh:archive/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-7.html"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Hacking Sessions - Week 2</title>
+    <id>http://cestlaz.github.io/posts/2013-10-28-hacking-sessions-2.md/</id>
+    <updated>2013-10-28T00:00:00</updated>
+    <published>2013-10-28T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-10-28-hacking-sessions-2.md/"/>
+    <summary type="html">&lt;div&gt;&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/2013-10-28-hacking-sessions-2/hackers2.jpg" rel="lightbox"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/2013-10-28-hacking-sessions-2/hackers2.jpg" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Saturday was the second day of CSTUY's Hacking Sessions. We started out
+wit a minor panic - none of the laptops could connect to the
+wireless!!! After a brief scramble, we finally gave up and gave our
+host a call (sorry Davin) and the problem was swiftly addressed. From
+there it was off to the races.&lt;/p&gt;
+&lt;p&gt;Last week we spent most of the session with mixers and setting up the
+laptops. Not today. Sam started us off with a brief survey of Python -
+some of the Hackers had never seen it before.&lt;/p&gt;
+&lt;p&gt;From there we divided up the hackers - making sure to spread out the
+Pythonistas and they were off on a project. We did a little pig-latin
+converter. It's a fun project to start a class with since it can be
+attacked in a few different ways and you can illustrate a lot of
+interesting coding techniques. For instance, checking for vowels or
+consenants can be done with conditionals but testing set membership: &lt;strong&gt;if letter in "aeiou": &lt;/strong&gt; is a touch more elegant.&lt;/p&gt;
+&lt;p&gt;It was really nice to watch things develop. At first groups were four
+individual hackers working on four laptops. Soon, with the
+encouragement of our awesome TAs, it was two groups of two talking to
+each other and then finally, groups of four all working together.&lt;/p&gt;
+&lt;p&gt;22 students from 9 schools all hacking together - that's what we're
+trying to build. I think we're off to a great start.&lt;/p&gt;
+&lt;p&gt;We finished the day sharing the projects and learning a little bit
+about the Flask microframework for Python.&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Stuyablo II</title>
+    <id>http://cestlaz.github.io/posts/2013-10-27-stuyabloII.md/</id>
+    <updated>2013-10-27T00:00:00</updated>
+    <published>2013-10-27T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-10-27-stuyabloII.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Last week in my AP classes, we were working on inheritance.&lt;/p&gt;
+&lt;p&gt;So, what to do?&lt;/p&gt;
+&lt;p&gt;Last time around I had my classes work on a "speed dating" program -
+StuyDater. Back then JonAlf had his classes work on Stuyablo, that
+classic dungeon crawl.&lt;/p&gt;
+&lt;p&gt;I still plan on reworking the StuyDater project, but first I decided
+to do my take on Stuyablo. Of course, we've improved on it. This time
+it's &lt;strong&gt;Stuyablo II&lt;/strong&gt;. The next guy will have to do &lt;strong&gt;Stuyablo III - in
+3D&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;We used the concept of a base class &lt;strong&gt;Character&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;public class Character {
+  private int health;
+  private String name;
+
+  public String toString() {
+    return Name;
+  }
+
+  // etc
+}
+&lt;/pre&gt;
+
+
+&lt;p&gt;And then some derived classes such as:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;public class Wizard extends Character {
+ private int mana;
+ // etc
+}
+&lt;/pre&gt;
+
+
+&lt;p&gt;We spend time dealing with public vs private vs protected, issues with
+constructors, super and the like but then the weekend was upon us.&lt;/p&gt;
+&lt;p&gt;So, what was the assignment - we broke up into groups. Each group had
+to design one aspect of the project. Some groups had to decide on what
+would make up a player character. Perhaps a fighter or a wizard. What
+base level attributes are needed? What methods? What do they need as
+parameters and what do they return? What will the combat system look
+like? &lt;/p&gt;
+&lt;p&gt;Another groups had to work on non player characters. Yet others
+designed the game driver.&lt;/p&gt;
+&lt;p&gt;None of them were supposed to actually write finished code. &lt;/p&gt;
+&lt;p&gt;I asked them to bounce around ideas on our mailing list over the
+weekend.&lt;/p&gt;
+&lt;p&gt;It's been amazing to watch the discussion. It's now Saturday evening
+and throughout the day there's been a constant flow of ideas and
+discussion. I love it when the classes are into the projects. &lt;/p&gt;
+&lt;p&gt;Monday we're going to sync up, finalize the design, and then start
+writing this thing.&lt;/p&gt;
+&lt;p&gt;It's going to be fun.&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Why I'm no longer an effective teacher - part 2</title>
+    <id>http://cestlaz.github.io/posts/2013-10-25-effective-teacher-2.md/</id>
+    <updated>2013-10-25T00:00:00</updated>
+    <published>2013-10-25T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-10-25-effective-teacher-2.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;&lt;a href="http://cestlaz.github.io/2013/09/06/why_i_might_no_longer_be_an_effective_teacher.html#.UmhWzN__umg"&gt;Earlier&lt;/a&gt;
+I wrote about the new teacher evaluation system and why a teacher such
+as myself might now be considered ineffective and two ineffectives in
+a row can cost you your job.&lt;/p&gt;
+&lt;p&gt;Well, the New York City and New York State Departments of Education
+are the departments that just keep on giving. Here's the latest.&lt;/p&gt;
+&lt;p&gt;This coming Wednesday, I won't be teaching during my usual 8:00 to
+10:15 block of three AP classes. Instead I'll likely be
+proctoring. Classes will be shorter and start at around 9:35.&lt;/p&gt;
+&lt;p&gt;What will we be proctoring? A preliminary assessment. I, and in
+fact all Stuy teachers, will be judged by how our students perform on
+English and Math Regents exams vs how the DOE thinks they should
+do. So, the DOE needs to issue a preliminary assessment. &lt;/p&gt;
+&lt;p&gt;So, this Wednesday, instead of having their normal allocation of class
+time, they will start a day taking an exam whose only purpose is to
+evaluate (and some of us believe fire) teachers. So, since I don't
+teach English or Math, the closest I come to having some impact on the kids whos grades will determine my effectiveness will
+be proctoring this exam. Well, that's a fair measure of my value as a teacher.&lt;/p&gt;
+&lt;p&gt;So, that's 40% of my evaluation, 60% comes from observation but
+there's a loophole. If the school doesn't perform at a satisfactory
+level, even if I ace the 60%, I will be deemed ineffective. Now, I
+know I don't have a large readership, but I'm guessing there are
+enough of my former students out there that can vouch for the fact
+that I do a pretty decent job.&lt;/p&gt;
+&lt;p&gt;Now, as to that 60%, that doesn't seem much better. I'm reluctant to
+say anything specific since I don't know whose reading this, but let's
+just say, word on the street says that it's more about filling out
+lines on forms than actual education and teacher improvement.  &lt;/p&gt;
+&lt;p&gt;Unless things change soon, I expect good, experienced teachers to
+start leaving in droves.&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>The College Board Smorgasbord -Don't Overfill Your Plate</title>
+    <id>http://cestlaz.github.io/posts/2013-10-23-spectator-ap.md/</id>
+    <updated>2013-10-23T00:00:00</updated>
+    <published>2013-10-23T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-10-23-spectator-ap.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Each month, The Stuyvesant school paper - the Spectator invites a teacher to write a piece on, well, basically, whatever they want to. I did it this past month.&lt;/p&gt;
+&lt;p&gt;Here's a reposting of the piece. The original can be found on the &lt;a href="http://stuyspectator.org"&gt;Spectator&lt;/a&gt; site.&lt;/p&gt;
+&lt;p&gt;Enjoy&lt;/p&gt;
+&lt;p&gt;"I've got 10 periods of class and no lunch." "I've got four APs." "Can I also take Great Books, Multivariate, Physics C, and Software Development?" The goal of a Stuyvesant student: take as many electives and AP classes as possible. Is that good? Is that smart? Probably not. I'm just a teacher, yes, but I'm also a Stuyvesant graduate and parent, so I've wrestled with this issue from all sides. Let's talk about AP classes, student schedules, and the big picture.&lt;/p&gt;
+&lt;p&gt;When I was a Stuyvesant student in the mid-'80s, we had AP classes, but they weren't really a big deal. I took two, Calculus and Computer Science. My wife, then a classmate, didn't take any. Some kids took a third, and four was a rarity. You took AP English if you were really into English, AP Chemistry if that was your thing. The school day consisted of eight periods, starting at 9:00 and ending at 3:00.&lt;/p&gt;
+&lt;p&gt;Fast-forward to the early to mid '90s, when I was a young teacher. The Stuyvesant day was still eight periods. Students wanted more AP classes, but it wasn't out of control. Soon after, we adopted what is known as a split schedule. Students were either in classes from periods one to eight, or from two through nine, but that didn't last. Like empty space in a closet, students looked at that additional period as an extra slot to fill, and we were more than happy to oblige. This ultimately led to today. To get into a top college, students feel the need to take a full schedule with as many AP classes as possible.&lt;/p&gt;
+&lt;p&gt;It's important to recognize the hypocrisy that we're getting from colleges: "Take more AP classes, though we're giving you less credit for them." The more "selective" schools want a transcript filled with APs, but good luck getting college credit from them. You'll be lucky to get placement.&lt;/p&gt;
+&lt;p&gt;It's also important to recognize the lack of value offered by AP classes. We teach AP Computer Science at Stuyvesant, and I can tell you that the AP syllabus, as defined by the College Board, is weak at best. What's more, the College Board is starting a new AP Computer Science class that I wouldn't even consider college-level. Now, we teach rigorous, college-level computer science, a superset of the AP class, but we end up fighting to get around the limitations of the AP curriculum.&lt;/p&gt;
+&lt;p&gt;Fifteen years ago, when graphing calculators first became commonplace, I decided to work my way through a released AP Calculus A exam. The rules were that I could only use common sense, the calculator, and precalculus techniques, that is, I had to pretend I knew no calculus. When all was said and done, this technique earned a 3, a passing grade. How strong is the College Board standard when one can "pass" with no knowledge of the subject? We can also look at our English classes at Stuyvesant. It's also well known that classes such as Great Books and Creative Nonfiction are as rigorous as or more rigorous than classes following the College Board AP syllabus.&lt;/p&gt;
+&lt;p&gt;So, Advanced Placement isn't all it's cracked up to be; it's a brand name, and we buy into it. But we shouldn't. Buying into the hype has led countless students to sign up for a course "to get another AP." That's the worst reason to take a course. Take AP Computer Science if you are interested in the subject or if you think it will give you a skill set for the future. Same with the others. Don't take advanced courses to fill a schedule. You won't enjoy it, you won't be happy, and you won't get a lot out of it. Part of the beauty of the high school experience is that you get a taste of each subject before you have to select AP classes. By the time you get there, you should have some idea of your interests. Don't take APs for the sake of taking APs. If you have room and aren't passionate about the available AP choices, take another elective and try something new.&lt;/p&gt;
+&lt;p&gt;The 10-period day is another part of the AP madness. Now, a 10-period day isn't necessarily bad. My daughter Batya did it and my son is doing it now. A key point, though, is that two of their classes were and are chorus and band, respecitvely, classes with little out-of-class workload, which, in fact, provide a break of sorts during the day. While our music classes require focus and effort, it's not the same as, say, a math class. Think of it as cross-training. Their only elective on top of these was AP Computer Science. but since they both enjoy the subject, it wasn't work for them.&lt;/p&gt;
+&lt;p&gt;For my kids, the electives that made a 10-period day are what made the day fun and worthwhile. Now, that's a little bit of an overstatement, as both Batya and Natan really enjoyed some of their required classes, but I think you all know what I mean. The problem comes when you add classes because you feel you need an additional workload. We take more classes but end up learning less. Even with an eight-period day: take out one for lunch and one for gym, that's six. If each teacher gives forty minutes of homework a day, that's four hours. Add two classes and you're over five, and we know that many teachers give more than forty minutes a night. I believe that if Stuyvesant students take less classes, they'd actually learn more, because they wouldn't be cramming day after day, trying to meet unrealistic deadlines. Rather, they could really explore fewer subjects in a more meaningful way.&lt;/p&gt;
+&lt;p&gt;Don't take a course just to take a course, but what about the AP designation? To start, I see two types of AP courses. Those that are a drop-in replacement for a regular course, such as the history and English courses, and those that are extras, such as AP Computer Science, Physics, etc.&lt;/p&gt;
+&lt;p&gt;I can't really speak to the drop-in classes, but I can for the extras: I'd just love to teach "rigorous, college-level" classes. Let's drop the AP designation. For computer science, we could create study guides for those who want to take the test, but we could dump the nonsense from our curriculum and make it even stronger. I know this flies in the face of our test-taking mentality, but we're Stuyvesant. Colleges know our courses and our teachers. If anyone can do it, we can. Let's be leaders and not buy into the nonsense that the College Board is selling us. The Ethical Culture Fieldston School did this a few years ago, and it doesn't seem to have hurt them.&lt;/p&gt;
+&lt;p&gt;The AP class-crunch culture didn't happen over night. It developed like a prisoner's dilemma out of control: "They're taking more AP classes, so I have to."&lt;/p&gt;
+&lt;p&gt;Let's re-examine not only AP classes, but all our classes. What does it mean to be a Stuyvesant student? Should we have a semester of this and a year of that or three years of something else? Am I right that less is more, or is the current system working? Let's get some people together to look at this question. Let's evaluate all our requirements and how we do things. Let's talk to students, teachers, parents, and, maybe most importantly, alums who have the perspective of time.&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Hacking Sessions Begin</title>
+    <id>http://cestlaz.github.io/posts/2013-10-20-Hacking-Sessions-Begin.md/</id>
+    <updated>2013-10-20T00:00:00</updated>
+    <published>2013-10-20T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-10-20-Hacking-Sessions-Begin.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Yesterday was my 46th birthday. How did I spend it?  Well, 20
+"Hackers" from 9 schools, 4 student TAs and a few of us teachers
+gathered at &lt;a href="http://sumall.com"&gt;SumAll&lt;/a&gt; to kick off CSTUY's first
+weekly program - Hacking Sessions (sometimes called Hackers Sessions).&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/2013-10-20-hacking-sessions/hackingsessions-2.jpg" rel="lightbox"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/2013-10-20-hacking-sessions/hackingsessions-2.jpg" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It was the first week so it was mostly mixers, setting up machines
+(installing Linux on 24 laptops takes time) and going over how we'll
+be communicating but I'm really excited about the weeks to come. We
+all expect to hit the ground running this coming Saturday.&lt;/p&gt;
+&lt;p&gt;It's easy for a Stuyvesant student to become part of the Stuy CS
+family. Most students at other schools aren't lucky enough to have
+that type of critical mass. Typically they're one of a few techie
+students and if they're lucky there will be maybe one teacher who's
+really knowledgeable and passionate about CS and tech in general.&lt;/p&gt;
+&lt;p&gt;We're hoping that this is going to change that. These 20 hackers
+represent the start of a community for student hackers -- taking what
+we've developed at Stuy outside the confines of the school.&lt;/p&gt;
+&lt;p&gt;Special thanks to Davin and everyone at &lt;a href="http://sumall.com"&gt;SumAll&lt;/a&gt;
+for providing not only space but an amazingly welcoming and friendly
+environment and also Fanming for coming up with the laptops.&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Databases - the next day</title>
+    <id>http://cestlaz.github.io/posts/2013-10-09-database-followup.md/</id>
+    <updated>2013-10-09T00:00:00</updated>
+    <published>2013-10-09T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-10-09-database-followup.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Two days ago I asked the students, in small groups, to come up with a design to store a school (or school district) database.&lt;/p&gt;
+&lt;p&gt;Yesterday we discussed the designs.&lt;/p&gt;
+&lt;p&gt;All the students took our brand of AP Computer Science last year - a
+superset of the old AB curriculum and in that class they implemented a
+number of data structures such as binary search trees and hash tables,
+but they really didn't have an opportunity to design something more
+comprehensive.&lt;/p&gt;
+&lt;p&gt;At the start, suggestions were based around simple monolithic
+designs. A class to represent a student, an array or hash table of
+these classes and in each object, an array of grades or something like
+that. &lt;/p&gt;
+&lt;p&gt;Soon the discussion turned to optimizing search based on different
+"keys." Searching by student id or searching by name. This led to the
+idea of indices. For example, if our main data set is sorted by name, we can make auxiliary lists sorted by id or grades and use those to point into our main data set.&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/2013-10-09-database-part2/indices.png" rel="lightbox"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/2013-10-09-database-part2/indices.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This was followed by less monolithic ideas -- essentially ideas behind
+linking different tables using key fields. For example, a student
+table with student id and a transcript table where each line has a
+student id, a class, grade, teacher, and date.&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/2013-10-09-database-part2/links.png" rel="lightbox"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/2013-10-09-database-part2/links.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Pretty sophisticated ideas.&lt;/p&gt;
+&lt;p&gt;From there we talked about assorted data structures that we could use with these ideas. &lt;/p&gt;
+&lt;p&gt;I think it was a productive day.&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Databases - putting it all together</title>
+    <id>http://cestlaz.github.io/posts/2013-10-07-databases.md/</id>
+    <updated>2013-10-07T00:00:00</updated>
+    <published>2013-10-07T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-10-07-databases.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;So, we're into the second year of my Software Development class. It's a
+little different since last time, I taught many of the kids in
+AP. This time, they're mostly new to me.&lt;/p&gt;
+&lt;p&gt;In AP, everything is low level. The students build linked lists,
+binary search trees, heaps, hash tables, graphs and the like. It's all
+about building the data structure. The Node, if you would.&lt;/p&gt;
+&lt;p&gt;We're about to start talking about databases. We'll probably spend a
+couple of days on relational databases and SQL and then some time with
+MongoDB. &lt;/p&gt;
+&lt;p&gt;There can be a big gap between a single lower level data structure and
+something as complex as a database.&lt;/p&gt;
+&lt;p&gt;I wanted to learn more about the kids and also
+see how they would go from last years material to solving a larger
+problem.&lt;/p&gt;
+&lt;p&gt;So today we talked about designing a database. Actually, we haven't
+even gotten there yet. We actually talked about what data we'd want to
+store if we were building a database for a school. Sounds like a
+typical class assignment.&lt;/p&gt;
+&lt;p&gt;Turns out, there's lots of data:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Personal info like name, id number, address&lt;/li&gt;
+&lt;li&gt;Transcript based data including:&lt;/li&gt;
+&lt;li&gt;grade&lt;/li&gt;
+&lt;li&gt;class code&lt;/li&gt;
+&lt;li&gt;class section&lt;/li&gt;
+&lt;li&gt;time stamp&lt;/li&gt;
+&lt;li&gt;teacher&lt;/li&gt;
+&lt;li&gt;Teacher information&lt;/li&gt;
+&lt;li&gt;Attendance Information&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And more.&lt;/p&gt;
+&lt;p&gt;The kids were then broken into groups.&lt;/p&gt;
+&lt;p&gt;The assignment:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Assume you're working in Java. You can use all the tools covered last years. Both built in like HashMaps and TreeMaps and those that you built like search trees or heaps. 
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+You can assume that whatever you design will automatically be stored in a file system without any changes.
+&lt;p&gt;&lt;/p&gt;
+Design your student database.
+&lt;/blockquote&gt;
+&lt;p&gt;It was great hearing the discussions. Some groups based things on Java
+Classes, some on hash tables, some trees. Some groups started with
+efficiency concerns and wondered what types of queries they would
+need. I was really pleased with the level of activity and the types of
+concerns the students had.&lt;/p&gt;
+&lt;p&gt;I'm really looking forward to tomorrow when we discuss the designs and move on from there.&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Why I might no longer be an effective teacher</title>
+    <id>http://cestlaz.github.io/posts/2013-09-06-why_i_might_no_longer_be_an_effective_teacher.md/</id>
+    <updated>2013-09-06T00:00:00</updated>
+    <published>2013-09-06T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-09-06-why_i_might_no_longer_be_an_effective_teacher.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;So here we are starting the new year and NY City is rolling out its new teacher evaluation system.&lt;/p&gt;
+&lt;p&gt;It was all over the news last year. &lt;/p&gt;
+&lt;p&gt;Ultimately, the state imposed the plan.&lt;/p&gt;
+&lt;p&gt;The city hailed the new plan as a way to fire under-performing teachers.&lt;/p&gt;
+&lt;p&gt;The UFT president hailed the plan as something that "is designed to help teachers improve their skills...."&lt;/p&gt;
+&lt;p&gt;My take? All three parties have thrown the students and teachers under the bus.&lt;/p&gt;
+&lt;p&gt;I'd like to think of myself as a pretty effective teacher. Let's see how this plan works with me in mind.&lt;/p&gt;
+&lt;p&gt;40% of a teacher's evaluation is based on standardized tests, 60% from a supervisors evaluation.&lt;/p&gt;
+&lt;p&gt;Let's look at the 40% first. It's broken down into 20% state test
+results and 20% local results.  Suppose I taught regents math. 20% of
+my evaluation would be the city's assessment of how my students
+performed on the math regents. Since we don't have any local measures,
+the other 20% would be based on the lowest performing third of my
+students regents results and how they performed vs what the city
+expected of them.&lt;/p&gt;
+&lt;p&gt;So, what does this mean and what are the problems:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Many sources indicate that these standardized tests aren't even good measures of student achievement and they should &lt;strong&gt;NEVER&lt;/strong&gt; be used as a means of teacher assessment.&lt;/li&gt;
+&lt;li&gt;In a way they're using the same data twice.&lt;/li&gt;
+&lt;li&gt;By focusing 20% of the lowest performing segment, they're telling teachers to teach to the bottom of the class pushing NY Ed to the lowest common denominator.&lt;/li&gt;
+&lt;li&gt;This will  &lt;strong&gt;CLEARLY&lt;/strong&gt; encourage teaching to the test.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The biggest problem here is that while the city and state claim they
+want accountability and transparency, they only want to extend that to
+teachers (that is, publishing teacher scores). The methods they use to
+convert a teachers actual scores to their 40% score is hidden. They
+can work the same "magic" they work on standard tests. Look at the raw
+scores, decide what they want the results to be and then create or
+adjust the mapping.&lt;/p&gt;
+&lt;p&gt;Now, this is already a ridiculous system, &lt;strong&gt;but it gets worse&lt;/strong&gt;. I
+don't teach regents classes. I teach computer science. So, my 40% will
+be based on the school's regents results. That is, they will look at
+the results of all the students taking regents exams at Stuyvesant.&lt;/p&gt;
+&lt;p&gt;So &lt;strong&gt;I'm being evaluated based on students who I probably never taught&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;What about the other 60%?&lt;/p&gt;
+&lt;p&gt;That's basically classroom observation. I've been fortunate enough to
+always have fair supervisors, but in this system, a vindictive
+supervisor could easily railroad a teacher. Even with a fair supervisor, there are problems.&lt;/p&gt;
+&lt;p&gt;New York is using the Danielson Framework for observations. Each
+teacher will be awarded a score between 1 and 4 in each of 22 areas or
+competencies. A great teacher that doesn't cover all of the Danielson
+bases could easily be rated lower than a run of the mill one that
+does. Some of the best teachers I know could rate either reasonably
+highly or at the low end of the scale depending on how their
+supervisor interprets the competencies.&lt;/p&gt;
+&lt;p&gt;The other day, we all watched a video of a demo lesson of a math
+class. The evaluators in the video and then Danielson gushed over the
+lesson. Everyone in the room felt that the lesson was OK, but had real
+problems. Our issue was over the rigor of the lesson -- it was a math
+lesson. Both the evaluator and Danielson felt it was rigorous and
+appropriate based on the fact that the students were saying things
+that the evaluator didn't understand. As a computer science teacher in
+a math department, my supervisors have never had a background in my
+field. This is also true in small schools where there aren't
+departmental supervisors. In any event, if you have a fair supervisor,
+great - if not - look out.&lt;/p&gt;
+&lt;p&gt;So where does that leave us? Teachers of my generation see the writing
+on the wall. For the first time, I'm seriously considering other
+career paths.&lt;/p&gt;
+&lt;p&gt;My first supervisor told me a long time ago that when he went into
+class to observe a teacher, he asked himself one question: "is
+learning going on?" He knew that teaching could take on numerous forms
+but by working from that base question, he could evaluate and work with any teacher.&lt;/p&gt;
+&lt;p&gt;It should really be that simple.&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>Bikeshares - Bixi vs Citibike</title>
+    <id>http://cestlaz.github.io/posts/2013-08-15-Bikeshares-Citibike-vs-Bixi.md/</id>
+    <updated>2013-08-15T00:00:00</updated>
+    <published>2013-08-15T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-08-15-Bikeshares-Citibike-vs-Bixi.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;We just got back from a few days in Montreal. &lt;/p&gt;
+&lt;p&gt;Love the city - it's walkable, lots of good food, love the waterfront,
+history, and lots to do.&lt;/p&gt;
+&lt;p&gt;I also love seeing a city using a bike/walking combo. In a car, you
+speed by things too fast and parking's always a problem. Foot alone
+doesn't let you cover enough ground. By bike, you're slow enough to
+see things but fast enough to get from place to place.&lt;/p&gt;
+&lt;p&gt;Last time, we brought our own bikes for the trip. These time, we used
+the Bixi bike share. Here are some thoughts comparing their system
+with our Citibike system. It's not really a fair comparison. In NY I
+use it alone for shopping and meetings and in Montreal, it was a
+family of 4 tourists. Still, I found some things interesting.&lt;/p&gt;
+&lt;h4&gt;Our trips&lt;/h4&gt;
+&lt;p&gt;On our first day, we rode from our place to the &lt;a href="http://espacepourlavie.ca/en/botanical-garden"&gt;Botanical
+Gardens&lt;/a&gt;. Between 7 and
+8 kilometers. They had a pretty amazing exhibition going on:&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/2013-08-15-Bikeshares-Citibike-vs-Bixi/montreal-1.jpg" rel="lightbox"&gt;
+&lt;img width="40%" src="http://cestlaz.github.io/img/2013-08-15-Bikeshares-Citibike-vs-Bixi/montreal-1.jpg" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;a href="http://cestlaz.github.io/img/2013-08-15-Bikeshares-Citibike-vs-Bixi/montreal-2.jpg" rel="lightbox"&gt;
+&lt;img width="40%" src="http://cestlaz.github.io/img/2013-08-15-Bikeshares-Citibike-vs-Bixi/montreal-2.jpg" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Last time, we brought our own bikes. The biggest
+difference - we didn't have to schlep locks. Maybe not a big deal if
+you're taking little piddly locks, but when you're taking
+&lt;a href="http://www.abus.com/eng/Mobile-Security/Bike-safety-and-security/Locks/Lock-chain-combination/CityChain-1010"&gt;these&lt;/a&gt;
+and
+&lt;a href="http://www.kryptonitelock.com/Pages/ProductInformation.aspx?PNumber=999492"&gt;these&lt;/a&gt;
+it's a big deal. It's really nice to be able take a bike and not have
+to carry anything else, even though we did bring our own helmets. &lt;/p&gt;
+&lt;p&gt;On the other hand, between the time it took to check out all four
+bikes, a leisurely pace, and the timing of traffic lights, the ride
+took about 50 minutes. That meant that we had to swap out bikes once
+in the middle and wait two minutes between. Not a huge deal, but a
+little annoying. The 45 minutes that subscribers of both systems get
+seems to be a much sweeter spot. I know, 50 minutes is still more than
+45, but at 30, by the time we check out four bikes and are ready to
+go, the first bike already has almost 5 minutes on it.&lt;/p&gt;
+&lt;p&gt;During the second day, we took the bikes down to the waterfront and
+spent most of the day there. It was about a 17 minute ride. At the end
+of the day, we decided to wend our way back to the apartment on foot
+to see more of the neighborhoods - something we couldn't do if we
+brought our own bikes.&lt;/p&gt;
+&lt;h4&gt;Issues and annoyances&lt;/h4&gt;
+&lt;p&gt;One problem we had, was lack of internet. Without internet, you can't
+use the mobile app to find bike and docks. This turned out not to be
+too much of a problem as Montreal seems to be saturated with Bixi
+stations but it was a concern if we wanted to venture to more fringe
+areas.&lt;/p&gt;
+&lt;p&gt;Another problem was that there seemed to be a number of broken
+docks. They were full, but the kiosk was non-responsive. This led to a
+dual problem -- finding a place to dock your bike and taking another
+bike out. This hit us twice, but fortunately, nearby docks were
+working with bikes and docks.&lt;/p&gt;
+&lt;p&gt;A third problem, and this one I never would have thought about before,
+is that the Montreal bikes have shorter seat posts than the NY
+bikes. This is actually a big deal. I'm about 5'10" with short limbs
+and at maximum height, the bikes were too short. My son's legs are
+longer. Neither of us are giants. This made for a less comfortable and
+slower ride. I guess people might not notice -- even in NY I always
+see people on rentals and Citibikes with their seats too low.&lt;/p&gt;
+&lt;h4&gt;Overall&lt;/h4&gt;
+&lt;p&gt;I still love my Bike Friday.&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/2013-08-15-Bikeshares-Citibike-vs-Bixi/bike.jpg" rel="lightbox"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/2013-08-15-Bikeshares-Citibike-vs-Bixi/bike.jpg" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;But I'm also liking this bike share touring thing as well.&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+  <entry>
+    <title>That One Inspirational Curriculum</title>
+    <id>http://cestlaz.github.io/posts/2013-08-07-That_One_Inspirational_Curriculum.md/</id>
+    <updated>2013-08-07T00:00:00</updated>
+    <published>2013-08-07T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-08-07-That_One_Inspirational_Curriculum.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Over the last few years, I've heard a lot of people talk about curriculum.&lt;/p&gt;
+&lt;p&gt;"We need a curriculum that works for everyone."&lt;/p&gt;
+&lt;p&gt;"If we had a good curriculum, we could get CS in the schools."&lt;/p&gt;
+&lt;p&gt;"Can't you just take someone else's curriculum and scale things out?"&lt;/p&gt;
+&lt;p&gt;People miss the point. In my twenty some odd years as an educator and
+my forty five  as a human (including 18 as a parent), I've &lt;em&gt;never&lt;/em&gt;
+heard someone talk about &lt;em&gt;that one inspirational curriculum&lt;/em&gt; that made
+all the difference in their lives.&lt;/p&gt;
+&lt;p&gt;It's not about the curriculum, it's about the teacher.&lt;/p&gt;
+&lt;p&gt;The collegeboard web site provides some sample AP Computer Science A
+syllabi. In them, you'll find things like:&lt;/p&gt;
+&lt;p&gt;mergesort&lt;/p&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;p&gt;Students will gain additional practice with arrays as they explore the
+nontrivial task of merging two sorted lists. In addition, students
+will once again see a comparison between a recursive and
+nonrecursive solution to an algorithm....&lt;/p&gt;
+&lt;p&gt;Technically, this covers what has to be taught and what will be on the
+AP exam but it really misses the point.&lt;/p&gt;
+&lt;p&gt;I blogged about a few lessons I taught last year. One here:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cestlaz.github.io/2013/03/23/Who_won_the_election-Quadratic_to_Linear_Time.html#.UgLhfN__umg"&gt;http://cestlaz.github.io/2013/03/23/Who_won_the_election-Quadratic_to_Linear_Time.html#.UgLhfN__umg&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;and here:&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cestlaz.github.io/2012/12/17/layers-of-a-lesson.html#.UgLhi9__umg"&gt;http://cestlaz.github.io/2012/12/17/layers-of-a-lesson.html#.UgLhi9__umg&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The first topic might have a line in the syllabus saying: Finding the mode
+of a data set and have a description talking about using lists. None of
+the beauty of the topic is captured in the syllabus. That's all the
+teacher.&lt;/p&gt;
+&lt;p&gt;Similar things can be said about the second lesson.&lt;/p&gt;
+&lt;p&gt;The NY State Common Core Math Curriculum does a little better (not
+that I'm sold on it) - for example, it doesn't just say "Quadratic
+Formula" but at least says that it should be derived. It's better, but
+not by much.&lt;/p&gt;
+&lt;p&gt;In my experience, Curricula are least common denominator documents and
+centering education around them rather than teachers is a huge
+mistake. &lt;/p&gt;
+&lt;p&gt;A great teacher can inspire and mask a bad curriculum. The reverse isn't true.&lt;/p&gt;
+&lt;p&gt;Likewise, a bad curriculum can do more to constrain a good teacher than
+a good curriculum can help a bad teacher to inspire. &lt;/p&gt;
+&lt;p&gt;Over the past few years, I've met a few CS teachers that really
+impressed me as teachers but not course designers. I found there
+courses and curricula sorely lacking, but the fact that they had the
+gift allowed them to truly inspire their students.&lt;/p&gt;
+&lt;p&gt;Of course, this is not to say that good class design and curriculum
+aren't important -- those same teachers would be even better with a
+better course framework but it has to start with the teaching talent.&lt;/p&gt;
+&lt;p&gt;Why am I writing about this? Because more and more we see the
+marginalization of teachers. We see the TFA 5 week training model or
+summer workshops to create or train new teachers. The theory seems to
+be, it we script the teaching, this will be sufficient. It might be,
+if the goal is to get by standardized tests, but it won't be if the
+goal is to have an inspirational knowledgeable teacher in front of our
+kids. &lt;/p&gt;
+&lt;p&gt;For that we have to start with the talent and develop the curriculum
+around it.&lt;/p&gt;&lt;/div&gt;</summary>
+  </entry>
+</feed>

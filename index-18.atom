@@ -1,0 +1,633 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>C'est la Z (old posts, page 18)</title>
+  <id>http://cestlaz.github.io/index-18.atom</id>
+  <updated>2016-04-16T20:26:33Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/index-18.atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-17.atom"/>
+  <link rel="previous" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
+  <link rel="current" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
+  <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-17.atom"/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-18.html"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Teaching Coding - getting beyond superficial syntax</title>
+    <id>http://cestlaz.github.io/posts/2016-01-01-different-languages.html/</id>
+    <updated>2016-01-01T00:00:00</updated>
+    <published>2016-01-01T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2016-01-01-different-languages.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+The other day, Alfred Thompson put up a piece about &lt;a href="http://blog.acthompson.net/2015/12/code-in-different-languages.html"&gt;coding in multiple
+languages&lt;/a&gt;. Alfred references a post written last May by &lt;a href="http://robunderwood.com/2015/05/31/code-syntax-compared-part-1/%0A"&gt;Rob Underwood.&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Both pieces are worth a look.
+&lt;/p&gt;
+
+&lt;p&gt;
+Rob is trying to illustrate many of the superficial similarities in
+popular languages. 
+&lt;/p&gt;
+
+&lt;p&gt;
+In the comments on Alfred's blog, both Alfred and I alluded to coding
+in an appropriate style for the language.
+&lt;/p&gt;
+
+&lt;p&gt;
+For me the issue is even bigger.
+&lt;/p&gt;
+
+&lt;p&gt;
+Learning to code is all the rage and places to learn are popping out of
+the woodwork.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;In classes, in schools, with teachers&lt;/li&gt;
+&lt;li&gt;Drop in programs in schools.&lt;/li&gt;
+&lt;li&gt;Programs run by coding schools&lt;/li&gt;
+&lt;li&gt;Moocs and other online resources&lt;/li&gt;
+&lt;li&gt;Summer and weekend programs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+And probably more. All of these options are giving more and more
+people a way to learn to code. 
+&lt;/p&gt;
+
+&lt;p&gt;
+That's great, but it also raises concerns given that very few people
+involved in CS education have both strong teaching and CS backgrounds. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I'm starting to see are the results as I meet young people coming
+out of all of these programs.
+&lt;/p&gt;
+
+&lt;p&gt;
+Unfortunately, what I'm frequently seeing, at best, is very
+superficial coverage of syntax.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've seen kids who would have no basis for understanding that the
+ramifications of this Python code:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;a = 30
+def f():
+  a=20 
+  print a
+
+print a
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+and this Javascript code:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-javascript"&gt;a = 30;
+function f(){
+  a = 20  
+  console.log(a);
+}
+console.log(a);
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+are very different.
+&lt;/p&gt;
+
+&lt;p&gt;
+It gets worse when I meet kids who "know C" because they were exposed
+to constructs like:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-c"&gt;for (i=0;i&amp;lt;10;i++){
+ // code goes here
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+I think the most common issue come from kids being "taught"
+programming using javascript which seems deceptively simple but is
+really rather deep.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's important that as CS becomes more mainstream that we make sure
+that we have teachers and programs that are teaching the real deal. It
+can be fun and accessible but it does require teachers that know their
+stuff and are willing to continue to learn. 
+&lt;/p&gt;
+
+
+&lt;p&gt;
+		Do our kids deserve any less?
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Leaving Stuyvesant</title>
+    <id>http://cestlaz.github.io/posts/2015-12-23-leaving-stuy.html/</id>
+    <updated>2015-12-23T00:00:00</updated>
+    <published>2015-12-23T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-12-23-leaving-stuy.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+
+&lt;p&gt;
+Almost twenty six years. That's how long I've been a NYC public school
+teacher. Most of that time at my alma mater, Stuyvesant. 
+&lt;/p&gt;
+
+&lt;p&gt;
+A couple of years ago, the school paper wrote up an overview of my
+career. I re-posted it &lt;a href="http://cestlaz.github.io/2014/09/17/stuycs-spectator.html#.Vnqfxh8Sr0o"&gt;here&lt;/a&gt;. I'm somtimes amazed at where we are now
+and how we got here.
+&lt;/p&gt;
+
+&lt;p&gt;
+Regulars here also know my frustrations. To Stuy, I'm an
+interchangeable, generic math teacher and the DOE has shown no
+interested in supporting what we've built. I've also written about my
+concerns with the direction the city's going with respect to K12 CS
+education.
+&lt;/p&gt;
+
+&lt;p&gt;
+It was time for me to start the next phase of my career.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm happy to say that I will be joining Hunter College in late
+		January. I'll be developing their CS Teacher Ed program and also
+		working with their computer science undergrads. I'll also have the
+		opportunity to work with the Manhattan/Hunter Science High School and
+		Hunter College High School.
+&lt;/p&gt;
+
+&lt;p&gt;
+		I also look forward to the opportunity to work more closely with my
+		friends in the K12 Ed space.
+&lt;/p&gt;
+
+&lt;p&gt;
+		I'm very excited about this opportunity but it feels a bit weird after
+		being in the same place for so long. I don't feel any special
+		attachment to the institution that is Stuyvesant, my allegiance is to
+		my current and former students and that community isn't going
+		anywhere. Next year I'll still be working with terrific young people,
+		just in a different location under a different name.
+&lt;/p&gt;
+
+&lt;p&gt;
+		I will miss the team that we've put together but even then, we get to
+		continue our work with CSTUY.
+&lt;/p&gt;
+
+&lt;p&gt;
+		With the new year comes new opportunity and I can't wait.
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Advent of Code - because I'm an idiot</title>
+    <id>http://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/</id>
+    <updated>2015-12-17T00:00:00</updated>
+    <published>2015-12-17T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/advent/advent.png" alt="advent.png" width="480px" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+I wish our kids believed us when we tell them that we have the same
+programming troubles as they do. We stare at code for hours not seeing
+problems that could be a simple as passing the wrong value. We spend
+an inordinate amount of time trying to see the problem and then
+realize that we just forgot something silly. 
+&lt;/p&gt;
+
+&lt;p&gt;
+At this point, it's common for us CS teachers to tell each other "I
+figured out the problem I was having – it's that I was an idiot."
+&lt;/p&gt;
+
+&lt;p&gt;
+Last time, I talked about &lt;a href="http://adventofcode.com/"&gt;Advent of Code&lt;/a&gt; and how I was somewhat behind
+the curve. In part because I started late and in part because I've
+been using it as an excuse to learn some Clojure.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's how I burned over two days on &lt;a href="http://adventofcode.com/day/6"&gt;Day 6&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+The problem is pretty straight forward. You have a 1,000 x 1,000 grid
+representing a light board and you have to repeatedly do operations on
+smaller rectangles on that grid. Turning individual lights on and off,
+if you would.
+&lt;/p&gt;
+
+&lt;p&gt;
+If I were doing this in a language like C, I'd probably just take a
+big block of memory and loop through the instructions but since I was
+working in Clojure, I thought I'd try to do something in more of the
+functional mode, that is, with immutable data types. 
+&lt;/p&gt;
+
+&lt;p&gt;
+After a while, I was getting the feeling that it was going to be too
+slow so I shifted to just modifying a big block of memory.
+&lt;/p&gt;
+
+&lt;p&gt;
+Try as I could, I couldn't get it to work. I was sure my algorithm was
+fine - it wasn't a hard problem, but I couldn't get the right answer.
+&lt;/p&gt;
+
+&lt;p&gt;
+After a while, I started looking at existing solutions and they were
+basically the same as mine.
+&lt;/p&gt;
+
+&lt;p&gt;
+I was stumped. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Two days after the start, I figured it out.
+&lt;/p&gt;
+
+&lt;p&gt;
+No matter how hard you try, if your problem specifies the data in the
+form &lt;b&gt;&lt;b&gt;row1,col1 row2,col2&lt;/b&gt;&lt;/b&gt;, you're not going to get the right answer
+if you decide that the input is in the form &lt;b&gt;&lt;b&gt;row1,row2 col1,col2&lt;/b&gt;&lt;/b&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;b&gt;&lt;b&gt;D'Oh&lt;/b&gt;&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Ok, after that the problem was pretty trivial.
+&lt;/p&gt;
+
+&lt;p&gt;
+Hopefully I'll have some time to do problem 7 and beyond this weekend.
+&lt;/p&gt;
+
+&lt;p&gt;
+If there are any Clojure people out there, I'm putting my solutions up
+on &lt;a href="https://github.com/zamansky/adventofcodeclojure"&gt;GitHub&lt;/a&gt; - I'd love some feedback on how to get more idiomatic.
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Advent of Code</title>
+    <id>http://cestlaz.github.io/posts/2015-12-15-advent.html/</id>
+    <updated>2015-12-15T00:00:00</updated>
+    <published>2015-12-15T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-12-15-advent.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/advent/advent.png" alt="advent.png" width="480px" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+Has everyone seen &lt;a href="http://adventofcode.com/"&gt;Advent of Code&lt;/a&gt;?
+&lt;/p&gt;
+
+&lt;p&gt;
+It's a site with a series of programming problems that are being
+revealed one a day, a la an advent calendar. You can read more about
+it &lt;a href="http://adventofcode.com/about"&gt;here&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I came to the party a little late so I'm only up to day 6.
+&lt;/p&gt;
+
+&lt;p&gt;
+Each problem comes in two parts. The second is revealed after you
+complete the first. Both students and teachers are enjoying the
+problems.
+&lt;/p&gt;
+
+&lt;p&gt;
+What I like about the Advent of code, besides the one a day release,
+is the fact that at least so far, the problems aren't super crazy
+hard. They require a little thought but they seem very doable.
+&lt;/p&gt;
+
+&lt;p&gt;
+For me, that makes them a perfect platform on which to play with a new
+language. I'm working through these in Clojure. I've been putting my
+solutions up &lt;a href="https://github.com/zamansky/adventofcodeclojure"&gt;here&lt;/a&gt;. I have no idea if my code is "good" Clojure but
+it's been fun nonetheless.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, if you're looking for a nice set of small programming problems
+and want to explore something new, check it out.
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>We're Number One!! We're Number One!!!</title>
+    <id>http://cestlaz.github.io/posts/2015-11-19-were-number-one.html/</id>
+    <updated>2015-11-19T00:00:00</updated>
+    <published>2015-11-19T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-11-19-were-number-one.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+I woke up this morning to an email from my principal "Stuy is #1."
+This followed a bunch of Facebook posts by friends and alums of a
+similar vein. 
+&lt;/p&gt;
+
+&lt;p&gt;
+It was all about a couple of reports, &lt;a href="https://k12.niche.com/rankings/public-high-schools/best-overall/"&gt;here&lt;/a&gt;, and &lt;a href="http://www.businessinsider.com/best-public-high-schools-in-america-2015-11"&gt;here&lt;/a&gt;. It turns out
+Stuy is ranked #1. Woo Hoo. We're awesome.
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course, everyone whooping it up now was quick to say "all those
+rankings are meaningless" back when US News and World report ranked
+Stuy way down on their list.
+&lt;/p&gt;
+
+&lt;p&gt;
+We all know what makes a great school: great students. At least in
+terms of perception. Look at most of these lists and they'll be
+dominated by high schools that take in high performing students. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Truth be told, in many ways, Stuyvesant isn't a special place, but
+more on that down below.
+&lt;/p&gt;
+
+&lt;p&gt;
+In terms of the ratings and rankings they're meaningless but in a way
+dangerous. I see it at Stuy. Under the current administration AP is
+the word of the day. It's all Advanced Placement all the time.  Why?
+That's one of the ways to rise up in the rankings. So are the school
+surveys which is why there's been more pressure to get those done.
+&lt;/p&gt;
+
+&lt;p&gt;
+My feelings? AP is all about making money for the College Board. I'm
+not a fan of "early college," I'm a fan of enrichment. I've said it
+many times - if a course is such that it can be mastered equally well
+by a 15 year old in 10th grade as by a 19 or 20 year old in college,
+well, it really isn't college level. High achieving, well prepared
+high school kids can do college level work in 11th and 12th grades but
+probably not in all subject areas. Sure they can memorize, ape, and
+mimic, but the depth of knowledge won't be there. Regardless, we
+should trust schools and teachers to do it right. Schools can roll out
+rigorous courses as good or better than AP. There's no real need for
+the College Board seal of approval. Look at &lt;a href="http://www.huffingtonpost.com/alex-mallory/private-schools-ap-tests_b_823616.html"&gt;Fieldston and other
+private schools&lt;/a&gt; as examples.
+&lt;/p&gt;
+
+&lt;p&gt;
+We've been teaching our own introductory CS class at Stuy for
+years. The entire team knows that it's far superior, at least for our
+students, than the new AP CS Principles course yet our principal keeps
+pushing the AP course. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I've spoken to a number of administrators  from highly regarded schools
+over the past couple of years and all are pushing test scores, AP
+classes, and anything to get those rankings up.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, there's a movement to make Stuy a generic school that happens to
+have high performing students which brings me back to are we number
+one or indeed are we special?
+&lt;/p&gt;
+
+&lt;p&gt;
+It certainly has a couple of things going for it. Great kids and a
+large size. The large size ensures lots of electives. Stuy is one of
+the few schools with a robust set of humanities classes, stem classes,
+multiple music groups, and more. That's important. When I sent my kids
+to Stuy a big part of the decision was due to the fact that they'd be
+surrounded by smart kids whose interests range all over the place. The
+kids come from all backgrounds. Also, my kids would be able to explore all
+of their current interests and maybe even pick up some new ones.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+But then there's the other side. We have lots of electives and some
+are great but then, some are lousy. Just like any other school we have
+some amazing teachers and some garbage. For the most part, if you
+switched Stuy's faculty and administration with another school, you
+might lose a few special electives and gain a few different ones but
+by and large people wouldn't notice the difference.
+&lt;/p&gt;
+
+&lt;p&gt;
+Regardless, Stuy and all similar institution should be charged with
+something extra. We should be leaders in developing programs and
+sharing them with other schools. We should be developing experiences
+for our kids that are appropriate to their level of development, not
+being happy with high regents scores or the fact that we had a bunch
+of Intel semifinalists, many who probably would have accomplished
+similar feats regardless of the school they attended.
+&lt;/p&gt;
+
+&lt;p&gt;
+Kowtowing to the rankings kills that possibility. To reach the top of
+the charts you have to follow the book. If you want to lead, you have
+to write the book.
+&lt;/p&gt;
+
+&lt;p&gt;
+It would be silly of me to judge my success by how many kids pass the
+APCS exam. It's an easy test for them. I've worked hard not to create
+classes because I like them, but because they make sense for our
+kids. They sequence appropriately, and they give the kids
+opportunities and experiences that they wouldn't get had they not
+attended Stuy. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Unfortunately, since the late 90's I haven't had the luxury of a
+supportive administration that shared my vision. As the school and the
+system moves more towards the rankings you're going to see educational
+leaders more and more marginalized and finally eliminated. 
+&lt;/p&gt;
+
+&lt;p&gt;
+So, is Stuy number one and is it special? As long as it's given the
+same type of kids it's had for the past 100 or so years, the kids will
+do fine. Is it really special? Well, unless it starts really think
+about what the kids need and deserve, maybe not so much.
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Other People's Code</title>
+    <id>http://cestlaz.github.io/posts/2015-11-11-other-peoples-code.html/</id>
+    <updated>2015-11-11T00:00:00</updated>
+    <published>2015-11-11T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-11-11-other-peoples-code.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+&lt;div id="outline-container-orgheadline1" class="outline-2"&gt;
+&lt;h2 id="orgheadline1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline1"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+The coding on their project is reminiscent in many ways of an Ed
+Sheerhan song. It left me in tears and very confused as to what the
+author was trying to accomplish.
+&lt;/p&gt;
+
+&lt;p&gt;
+– a student commenting on their most recent project.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-orgheadline2" class="outline-2"&gt;
+&lt;h2 id="orgheadline2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline2"&gt;
+&lt;p&gt;
+We had some fun last week. Well, OK, I had some fun. The SoftDev
+classes had just finished a little project. Basically, a blogging
+platform. Something that would tie together all the tools we've been
+using. Flask, user management, an SQL database (SQLite), and a nice
+looking front end. 
+&lt;/p&gt;
+
+&lt;p&gt;
+It was also the first real group project so the teams have started to
+learn how to work together. 
+&lt;/p&gt;
+
+&lt;p&gt;
+After some project demos, it was time for part two: NOSQL. We explored
+MongoDB and then it was time for the project - clean up the
+previous project through the use of techniques like template
+inheritance and convert the database backend to MongoDB.
+&lt;/p&gt;
+
+&lt;p&gt;
+The catch? Each group would take another groups project and use that
+as their starter code. The rules? They could modify and refactor but
+they couldn't rewrite.
+&lt;/p&gt;
+
+&lt;p&gt;
+It threw the groups for a loop but I ultimately think they had
+fun with this.
+&lt;/p&gt;
+
+&lt;p&gt;
+Afterwards each group gave a write up to their starter group. What
+made their life easier, what made it harder. We then circled up for
+discussion as a class.
+&lt;/p&gt;
+
+&lt;p&gt;
+It was terrific.
+&lt;/p&gt;
+
+&lt;p&gt;
+First, it was great that we've gotten to a point where everyone feels
+comfortable giving each other constructive criticism. We've gotten to
+the point where the class is a team.
+&lt;/p&gt;
+
+&lt;p&gt;
+Beyond that, I'm hoping that everyone got a lot out of the exercise.
+&lt;/p&gt;
+
+&lt;p&gt;
+As each group talked, common themes arose:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;consistent commenting is good&lt;/li&gt;
+&lt;li&gt;variable names matter&lt;/li&gt;
+&lt;li&gt;unused code and files can be misleading&lt;/li&gt;
+&lt;li&gt;overall code structure, file names, and locations are important.&lt;/li&gt;
+&lt;li&gt;and much more&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+We're now going to start a discussion of coding style, standards, and
+documentation.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've got to say that I'm very happy how this little experiment worked
+out.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
+</feed>
