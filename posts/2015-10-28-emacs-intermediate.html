@@ -1,0 +1,195 @@
+<!--
+.. title: Know your tools - intermediate Emacs
+.. slug: 2015-10-28-emacs-intermediate.html
+.. date: 2015-10-28
+.. type: text
+-->
+
+
+<style>
+div.center {text-align:center;}
+</style>
+<div id="outline-container-orgheadline1" class="outline-2">
+<h2 id="orgheadline1"></h2>
+<div class="outline-text-2" id="text-orgheadline1">
+<p>
+A good workman is known by his tools, or so the saying goes. My tools
+of choice are my terminal shell and Emacs.
+</p>
+
+<p>
+I suppose if I was a full time developer working with a limited set of
+tools I might like an IDE like JetBrains or Eclipse but no matter how
+many alternatives I try, I always end back in Emacs.
+</p>
+
+<p>
+I recommend that my students spend time not only in Emacs but also in
+tools like Vim or Sublime Text.
+</p>
+
+<p>
+I do warn them, though, that as a commercial product, Sublime might
+not be around forever, I mean before Sublime was sublime, TextMate was
+sublime. If you go back to the 1980s, Brief was sublime. 
+</p>
+
+<p>
+Commercial tools come and go but I've been using Emacs since the mid
+eighties.
+</p>
+
+<p>
+A few students have been asking me for some pointers on going past the
+basics of Emacs so here we go.
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgheadline2" class="outline-2">
+<h2 id="orgheadline2">Notes</h2>
+<div class="outline-text-2" id="text-orgheadline2">
+<p>
+This post just has some getting started notes. There are mode powerful
+and advanced ways of doing most things.
+</p>
+
+<p>
+I think I'll just talk about a few of the basics here and will write
+about code development with Emacs in a later post.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline3" class="outline-2">
+<h2 id="orgheadline3">Starting out</h2>
+<div class="outline-text-2" id="text-orgheadline3">
+<p>
+Once you're OK with the basics (by using the built in tutorial or
+on line resources) start to fore yourself to get to know:
+</p>
+</div>
+
+<div id="outline-container-orgheadline4" class="outline-3">
+<h3 id="orgheadline4">Buffers</h3>
+<div class="outline-text-3" id="text-orgheadline4">
+<p>
+when you find a new file <b><b>(C-x C-f)</b></b> it opens it into a new
+buffer. You can also open a new buffer using <b><b>C-x b</b></b> and rather than
+selecting a buffer typing in a new buffer name.
+</p>
+
+<p>
+Each buffer can hold a file and you can switch quickly between them
+using <b><b>C-x b</b></b> and hitting <b>&lt;Enter&gt;</b>. 
+</p>
+
+<p>
+You can kill the current buffer with <b><b>C-x k</b></b>
+</p>
+
+<p>
+Using buffers lets you edit multiple files in a project quickly and
+efficiently.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline5" class="outline-3">
+<h3 id="orgheadline5">Windows</h3>
+<div class="outline-text-3" id="text-orgheadline5">
+<p>
+Your Emacs frame can be split into multiple windows. <b><b>C-x 2</b></b> splits
+the window top and bottom, <b><b>C-x3</b></b> left and right. You can switch
+between windows using <b><b>C-x o</b></b> for other window. Switching to one
+window is done with <b><b>C-x 1</b></b>.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgheadline6" class="outline-2">
+<h2 id="orgheadline6">Getting Help</h2>
+<div class="outline-text-2" id="text-orgheadline6">
+<p>
+Get to know the built in help. You can always use functions like
+<b><b>M-x describe-function</b></b> or <b><b>M-x describe-key</b></b> and of course
+you can use completion to help speed things up but the help functions
+are bound to:
+</p>
+<ul class="org-ul">
+<li>C-h k  for describe key</li>
+<li>C-h f  for describe function</li>
+<li>C-h a for search for command</li>
+</ul>
+
+<p>
+You can usually type <b><b>q</b></b> to close the help.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline7" class="outline-2">
+<h2 id="orgheadline7">Navigation</h2>
+<div class="outline-text-2" id="text-orgheadline7">
+<p>
+Use search for navigation rather than arrow keys.
+</p>
+
+<p>
+This can change the way you edit. 
+</p>
+
+<p>
+For example ,if I wanted to go up to the word Navigation, above,
+rather than using traditional motion keys, I'd do a reverse search
+(<b><b>C-r</b></b>) and search for Nav.
+</p>
+
+<p>
+Incremental search forward (<b><b>C-s</b></b>) and back are your friends.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline8" class="outline-2">
+<h2 id="orgheadline8">Packages</h2>
+<div class="outline-text-2" id="text-orgheadline8">
+<p>
+You can check out my emacs configuration here: 
+</p>
+
+<p>
+<a href="https://github.com/zamansky/dotemacs"><a href="https://github.com/zamansky/dotemacs">https://github.com/zamansky/dotemacs</a></a>
+</p>
+
+<p>
+You can find basic installation instructions there or you can use the
+interactive package manager, invoking it with <b><b>M-x list-packages</b></b>.
+</p>
+
+<p>
+Some of my favorite general purpose packages are:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://github.com/abo-abo/swiper">Swiper</a> - for navigation and finding files</li>
+<li><a href="https://github.com/nflath/hungry-delete">Hungry Delete</a></li>
+<li><a href="https://github.com/magnars/expand-region.el">Expand Region</a></li>
+<li><a href="https://github.com/abo-abo/ace-window">Ace Window</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline9" class="outline-2">
+<h2 id="orgheadline9">Next steps</h2>
+<div class="outline-text-2" id="text-orgheadline9">
+<p>
+We haven't even talked about code development or killer packages like
+org-mode but I think this will do for a start.
+</p>
+</div>
+</div>

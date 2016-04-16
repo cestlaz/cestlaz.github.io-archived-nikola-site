@@ -1,0 +1,233 @@
+<!--
+.. title: Debugging deployment
+.. slug: 2016-01-23-debugging-deployment.html
+.. date: 2016-01-23
+.. type: text
+-->
+
+
+<style>
+div.center {text-align:center;}
+</style>
+
+<p>
+SoftDev students are hard at work on their final projects. By now,
+they all have fairly complex code bases. This limits how much I can
+help them with debugging.
+</p>
+
+<p>
+There are some problems, though, that they have to contend with that
+even with experience, are hard to spot. Notably because the very
+tools you use to debug these errors are part of the problem.
+</p>
+
+<p>
+Last week, this happened twice. Both cases were brought to me by
+really strong students which just goes to underscore how insidious
+these problems can be.
+</p>
+
+
+<p>
+Here's a fake code snippet of a <a href="http://flask.pocoo.org/">Flask</a> application that illustrates
+both problems.
+</p>
+
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span class="linenr"> 1: </span>from flask import Flask, render_template
+<span class="linenr"> 2: </span>
+<span class="linenr"> 3: </span>app = Flask(__name__)
+<span class="linenr"> 4: </span>
+<span class="linenr"> 5: </span>@app.route("/")
+<span class="linenr"> 6: </span>def index():
+<span class="linenr"> 7: </span>    return "hello"
+<span class="linenr"> 8: </span>
+<span class="linenr"> 9: </span>@app.route('/test/&lt;some_data&gt;')
+<span class="linenr">10: </span>def test():
+<span class="linenr">11: </span>    picture_url = build_url(some_data)
+<span class="linenr">12: </span>    result = api_test(picture_url)
+<span class="linenr">13: </span>    do_something(result)
+<span class="linenr">14: </span>
+<span class="linenr">15: </span>if __name__ == "__main__":
+<span class="linenr">16: </span>   app.debug = True
+<span class="linenr">17: </span>   app.secret_key = "some secret key"
+<span class="linenr">18: </span>   app.run(host="0.0.0.0", port=8000)
+</pre>
+</div>
+
+
+<p>
+First, the "easy" one. The student was trying to deploy the
+application. We use <a href="http://gunicorn.org/">Green Unicorn</a> to deploy our applications,
+ultimately on <a href="http://digitalocean.com/">Digital Ocean</a> servers in the cloud. 
+</p>
+
+<p>
+The student was using the correct command:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-shell">gunicorn -W 4 -b 0.0.0.0:8000 app:app
+</pre>
+</div>
+
+<p>
+but it wasn't working. It ran, but whenever he went to the site, it
+came back with an error.
+</p>
+
+<p>
+The problem?
+</p>
+
+<p>
+He had to change:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-python">if __name__ == "__main__":
+   app.debug = True
+   app.secret_key = "some secret key"
+   app.run(host="0.0.0.0", port=8000)
+</pre>
+</div>
+
+<p>
+to
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python">app.secret_key = "some secret key"
+if __name__ == "__main__":
+    app.debug = True
+    app.run(host="0.0.0.0", port=8000)
+</pre>
+</div>
+
+<p>
+Normally, when developing and testing our applications, we use the
+test server that's bundled with Flask. The line that reads
+"app.run&#x2026;" takes care of this.
+</p>
+
+<p>
+When running the application as a "main program" - "python app.py" the
+if statement is true and it runs the indented lines, setting the
+secret key which is required for session management.
+</p>
+
+<p>
+When running under <b><b>gunicorn</b></b>, the <b><b>gunicorn</b></b> server loads the
+application as a module and then runs it. In this case name isn't main
+so it never sets secret key and so we have a problem.
+</p>
+
+<p>
+Pretty subtle and even though we did cover this in class, it comes up
+pretty rarely so it's not an easy catch.
+</p>
+
+<p>
+Then there was this problem.
+</p>
+
+<p>
+The setup for this one's a little more complicated. The group was
+using a facial recognition api. You provide the API with the url to an
+image, it fetches it and does recognition.
+</p>
+
+<p>
+It's also important to note that when Flask is running, it will serve
+files from a static directory, so, if I'm running my flask server on
+myhost, port 800 and you stored an image named picture.jpg in the
+static directory, going to:
+</p>
+
+<verbatim>
+ http://myhost:8000/static/picture.jpg
+</verbatim>
+<br><br>
+
+
+<p>
+would get that image.
+</p>
+
+<p>
+The group did things right. They ran the Flask test server to serve
+the static files and then wrote a small python program to test the
+api:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python">picture_url = build_url(some_data)
+result = api_test(picture_url)
+do_something(result)
+</pre>
+</div>
+
+<p>
+Everything worked fine. 
+</p>
+
+<p>
+But, when they put this code in as a route in their web app (as in the
+top code fragment), it froze. 
+</p>
+
+<p>
+They couldn't figure it out.
+</p>
+
+<p>
+The code worked as a "stand alone" but not in the web app.
+</p>
+
+<p>
+The problem?
+</p>
+
+<p>
+Once again, the built in Flask development server.
+</p>
+
+<p>
+The development server runs in a single thread / process. This means
+it can only do one thing at a time. When they ran their test as a
+separate program, the api they used made a request to their app to
+serve up the static picture file and it worked.
+</p>
+
+<p>
+When they ran from the Flask application itself, their app made a call
+to the web api (line 12) and then blocked while waiting for the
+response. The web api tried to request the image from the Flask app
+but it was blocked &#x2013; <b><b>deadlock</b></b>.
+</p>
+
+<p>
+Again, the solution was to run the web app using a server that could
+handle multiple requests - gunicorn.
+</p>
+
+<p>
+Once again, that solved the problem.
+</p>
+
+<p>
+Both of these problems were fairly subtle and very hard to catch -
+even with experience. I remember the hours I lost when I was learning
+this stuff.
+</p>
+
+<p>
+Some times kids get caught up in algorithms or poor code design but
+sometimes, it's just the tools.
+</p>

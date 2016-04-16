@@ -1,0 +1,109 @@
+<!--
+.. title: Be the ball
+.. slug: 2014-03-09-be-the-ball.html
+.. date: 2014-03-09
+.. type: text
+-->
+
+<style>
+div.center {text-align:center;}
+</style>
+
+
+<div class="center"> <iframe width="560" height="315"
+src="//www.youtube.com/embed/sWH811TcckU" frameborder="0"
+allowfullscreen></iframe> </div>
+
+
+
+<p>
+Crystal Furman wrote a nice post titled <a href="http://teachingcomputerscience.weebly.com/1/post/2014/03/coding-comprehension.html">Coding Comprehension</a> about a
+week ago. There was a little buzz about it in the APCS Facebook group
+and shortly after, Alfred Thompson added his <a href="http://blog.acthompson.net/2014/03/when-knowing-syntax-is-not-enough.html">two cents.</a>
+</p>
+
+<p>
+I thought I'd add mine, at least a couple of thoughts.
+</p>
+
+<p>
+There are a lot of issues - long term retention, transfer of knowledge
+from the basics to more advanced tools, pattern recognition, and more. 
+</p>
+
+<p>
+It reminded me of Benjamin Zander's talk "Playing on one Buttock":
+</p>
+
+<div class="center"> <iframe width="560" height="315"
+src="//www.youtube.com/embed/r9LCwI5iErE" frameborder="0"
+allowfullscreen></iframe> </div>
+
+<p>
+Check out the first five minutes.
+</p>
+
+<p>
+Code reading is important, pair programming, where students are
+constantly explaining to each other helps, and there are other
+techniques. 
+</p>
+
+<p>
+We can also model thinking like a computer from day one.
+</p>
+
+<p>
+Many of us start day one with exercises where students are the
+computer. Perhaps using a simplified made up language or maybe by just
+throwing some task at the kids and having them write instruction lists
+for each other. That's a great start, but we can continue drawing the
+relationship between the way we think and the way a computer works.
+</p>
+
+<p>
+Take a simple intro problem &#x2013; finding the largest value in a list of
+numbers.
+</p>
+
+<p>
+The ultimate solution in Java might be:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-java"><span style="color: #F0DFAF; font-weight: bold;">public</span> <span style="color: #7CB8BB;">int</span> <span style="color: #93E0E3;">findMax</span>(<span style="color: #7CB8BB;">int</span>[] <span style="color: #DFAF8F;">L</span>){
+    maxIndex = 0;
+    <span style="color: #F0DFAF; font-weight: bold;">for</span> (<span style="color: #7CB8BB;">int</span> <span style="color: #DFAF8F;">i</span>=0;i&lt;L.<span style="color: #7CB8BB;">length</span>;i++){
+        <span style="color: #F0DFAF; font-weight: bold;">if</span> (a[i]&lt;a[maxIndex]){
+            maxIndex = i;
+        }
+    }
+    <span style="color: #F0DFAF; font-weight: bold;">return</span> maxIndex;
+}
+</pre>
+</div>
+
+<p>
+Somewhere along the development process, I ask my students how they
+would find the largest value in list. If the list was short, they
+might just scan it. If the list was very long, they do the same thing
+as our Java snippet does - remember the largest so far as we scan down
+the list one by one. At first, we just think we're scanning the list,
+but if we slow things down, we see that we're following pretty much
+the same algorithm as what we'd write in code.
+</p>
+
+<p>
+I use this technique throughout all my classes - slow ourselves down
+and really analyze the steps towards solving the problem. No single
+technique is going to teach our kids how to think about and comprehend
+code, but it's another tool in our bag of tricks.
+</p>
+
+<h4>Side note</h4>
+
+<p>
+This is my first post written using <a href="http://www.emacswiki.org/emacs/">Emacs</a> <a href="http://orgmode.org/">Org mode</a>. I've been using it
+for years but only now discovering how amazing a tool it is.
+</p>

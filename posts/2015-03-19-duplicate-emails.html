@@ -1,0 +1,55 @@
+<!--
+.. title: Shell games - who confirmed attendence
+.. slug: 2015-03-19-duplicate-emails.html
+.. date: 2015-03-19
+.. type: text
+-->
+
+
+<style>
+div.center {text-align:center;}
+</style>
+
+<p>
+Quick post on why I love the Unix command line.
+</p>
+
+<p>
+We're busy organizing <a href="http://cstuy.org">CSTUY's</a> first <a href="http://cstuy.org/programs/defhacks">hackathon</a>. It's going to be at
+<a href="http://sumall.com">SumAll</a>, where we hold our weekly <a href="http://cstuy.org/programs/hacking_sessions">hacking sessions</a> but while taking
+registration, we had a little program.
+</p>
+
+<p>
+The kids signed up on a Google doc but we all know the story &#x2013; when
+people sign up for a free event, even one with free food and t-shirts,
+many don't show. I asked all of the applicants to confirm by filling
+out a second Google doc.
+</p>
+
+<p>
+Then it got to reminder time - I wanted to send an email out to all
+those kids who signed up on the first form, but hadn't confirmed on
+the second. 
+</p>
+
+<p>
+Two Google spreadsheets with an email field. I needed all the people
+on sheet 1 that weren't on sheet 2. I'm sure there's some
+spreadsheet-fu that accomplishes this, but nothing I know. I also
+could have written a little python script which isn't so bad, but this
+was a perfect time to turn to the shell.
+</p>
+
+<p>
+So, here's how a command line guy would do this.
+</p>
+
+<p>
+To start, I put the emails in two files: e1 and e2. The first has
+all the original applicants, the second those that confirmed.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-org">|

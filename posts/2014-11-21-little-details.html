@@ -1,0 +1,169 @@
+<!--
+.. title: Little details we take for granted
+.. slug: 2014-11-21-little-details.html
+.. date: 2014-11-21
+.. type: text
+-->
+
+
+<style>
+div.center {text-align:center;}
+</style>
+
+
+<div id="outline-container-unnumbered-1" class="outline-2">
+<h2 id="unnumbered-1"></h2>
+<div class="outline-text-2" id="text-unnumbered-1">
+<p>
+I'm getting ready for my AP classes this morning. We're building a
+<a href="http://cestlaz.github.io/2011/12/03/wheres-waldo-text-style.html#.VG8qtt-c2Ak">word search generator</a> and we're at the point where we need to read a
+list of words from a file
+</p>
+
+<p>
+First, I'd better make sure I can do it. We're using the java
+<b><b>scanner</b></b>, mostly because it's easy.
+</p>
+
+<p>
+First cut:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-java"><span style="color: #00ffff; font-weight: bold;">public</span> <span style="color: #00ffff; font-weight: bold;">class</span> <span style="color: #00ff00;">wl</span> {
+    <span style="color: #00ffff; font-weight: bold;">public</span> <span style="color: #00ffff; font-weight: bold;">static</span> <span style="color: #00ff00;">void</span> <span style="color: #0000ff; font-weight: bold;">main</span>(<span style="color: #00ff00;">String</span>[] <span style="color: #ffff00;">args</span>) {
+        <span style="color: #00ff00;">Scanner</span> <span style="color: #ffff00;">sc</span> = <span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">Scanner</span>(<span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">File</span>(<span style="color: #00ff00;">"words"</span>));
+        <span style="color: #00ffff; font-weight: bold;">while</span> (sc.hasNext()){
+            <span style="color: #00ff00;">String</span> <span style="color: #ffff00;">s</span> = sc.next();
+            System.out.println(s);
+        }
+    }
+}
+</pre>
+</div>
+
+
+<p>
+Oh yes, I forgot the
+</p>
+<pre class="example">
+import java.io.*;
+import java.util.*;
+</pre>
+
+
+<p>
+Oh, and also the fact that I've got deal with exceptions when working
+with files:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-java"><span style="color: #00ffff; font-weight: bold;">try</span> {
+    <span style="color: #00ff00;">Scanner</span> <span style="color: #ffff00;">sc</span> = <span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">Scanner</span>(<span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">File</span>(<span style="color: #00ff00;">"words"</span>));
+    <span style="color: #00ffff; font-weight: bold;">while</span> (sc.hasNext()){
+        <span style="color: #00ff00;">String</span> <span style="color: #ffff00;">s</span> = sc.next();
+        System.out.println(s);
+    }
+} <span style="color: #00ffff; font-weight: bold;">catch</span> (<span style="color: #00ff00;">Exception</span> <span style="color: #ffff00;">e</span>){
+    System.out.println(<span style="color: #00ff00;">"Can't open file."</span>);
+    System.exit(0);
+}
+</pre>
+</div>
+
+<p>
+But we don't want to wrap our entire program in an exception:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-java"><span style="color: #00ffff; font-weight: bold;">try</span> {
+    <span style="color: #00ff00;">Scanner</span> <span style="color: #ffff00;">sc</span> = <span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">Scanner</span>(<span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">File</span>(<span style="color: #00ff00;">"words"</span>));
+} <span style="color: #00ffff; font-weight: bold;">catch</span> (<span style="color: #00ff00;">Exception</span> <span style="color: #ffff00;">e</span>){
+    System.out.println(<span style="color: #00ff00;">"Can't open file."</span>);
+    System.exit(0);
+}
+
+<span style="color: #00ffff; font-weight: bold;">while</span> (sc.hasNext()){
+    <span style="color: #00ff00;">String</span> <span style="color: #ffff00;">s</span> = sc.next();
+    System.out.println(s);
+
+}
+</pre>
+</div>
+
+
+<p>
+Now it doesn't work because the <b><b>Scanner sc</b></b> might not exist after the
+try catch block (if an exception occurred), so we need:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-java"><span style="color: #00ff00;">Scanner</span> <span style="color: #ffff00;">sc</span>
+<span style="color: #00ffff; font-weight: bold;">try</span> {
+    sc = <span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">Scanner</span>(<span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">File</span>(<span style="color: #00ff00;">"words"</span>));
+} <span style="color: #00ffff; font-weight: bold;">catch</span> (<span style="color: #00ff00;">Exception</span> <span style="color: #ffff00;">e</span>){
+    System.out.println(<span style="color: #00ff00;">"Can't open file."</span>);
+    System.exit(0);
+}
+
+<span style="color: #00ffff; font-weight: bold;">while</span> (sc.hasNext()){
+    <span style="color: #00ff00;">String</span> <span style="color: #ffff00;">s</span> = sc.next();
+    System.out.println(s);
+
+}
+</pre>
+</div>
+
+
+<p>
+And now this doesn't work because <b><b>sc</b></b> might not have a value so we
+finally get to the working version:
+</p>
+
+
+<div class="org-src-container">
+
+<pre class="src src-java"><span style="color: #00ffff; font-weight: bold;">import</span> <span style="color: #ff00ff;">java</span>.<span style="color: #ff00ff;">io</span>.*;
+<span style="color: #00ffff; font-weight: bold;">import</span> <span style="color: #ff00ff;">java</span>.<span style="color: #ff00ff;">util</span>.*;
+<span style="color: #00ffff; font-weight: bold;">publ</span><span style="color: #00ff00;">ic c</span><span style="color: #00ffff; font-weight: bold;">lass</span> <span style="color: #00ff00;">wl</span> {
+    <span style="color: #00ffff; font-weight: bold;">public</span> <span style="color: #00ffff; font-weight: bold;">static</span> <span style="color: #00ff00;">void</span> <span style="color: #0000ff; font-weight: bold;">main</span>(<span style="color: #00ff00;">String</span>[] <span style="color: #ffff00;">args</span>) {
+        <span style="color: #00ff00;">Scanner</span> <span style="color: #ffff00;">sc</span> = <span style="color: #ff00ff;">null</span>;
+        <span style="color: #00ffff; font-weight: bold;">try</span> {
+                sc = <span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">Scanner</span>(<span style="color: #00ffff; font-weight: bold;">new</span> <span style="color: #00ff00;">File</span>(<span style="color: #00ff00;">"words"</span>));
+        } <span style="color: #00ffff; font-weight: bold;">catch</span> (<span style="color: #00ff00;">Exception</span> <span style="color: #ffff00;">e</span>){
+            System.out.println(<span style="color: #00ff00;">"Can't open file."</span>);
+            System.exit(0);
+        }
+        <span style="color: #00ffff; font-weight: bold;">while</span> (sc.hasNext()){
+            <span style="color: #00ff00;">String</span> <span style="color: #ffff00;">s</span> = sc.next();
+            System.out.println(<span style="color: #00ff00;">s</span>);
+
+        }
+    }
+}
+</pre>
+</div>
+
+
+<p>
+Really simple program but that's a long list of things that can go
+wrong along the way. Nothing big, but each a stumbling block for a
+beginning student that doesn't have the wealth of experience that
+someone like me has. 
+</p>
+
+<p>
+I had an interesting discussion with one of my seniors the other day
+on this subject - all the base knowledge that experienced programmers
+have that students don't and how we have to approach teaching so that
+students are supported and not frustrated by these little but
+important speed-bumps that they'll hit along the way.
+</p>
+
+<p>
+I hope to write more about this soon, but for now I'll leave you to
+ponder the issue.
+</p>
+</div>
+</div>

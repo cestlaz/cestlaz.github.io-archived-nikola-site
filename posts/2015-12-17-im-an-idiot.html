@@ -1,0 +1,100 @@
+<!--
+.. title: Advent of Code - because I'm an idiot
+.. slug: 2015-12-17-im-an-idiot.html
+.. date: 2015-12-17
+.. type: text
+-->
+
+
+<style>
+div.center {text-align:center;}
+</style>
+
+
+<div class="figure">
+<p><img src="http:/img/advent/advent.png" alt="advent.png" width="480px" align="center" />
+</p>
+</div>
+
+<p>
+I wish our kids believed us when we tell them that we have the same
+programming troubles as they do. We stare at code for hours not seeing
+problems that could be a simple as passing the wrong value. We spend
+an inordinate amount of time trying to see the problem and then
+realize that we just forgot something silly. 
+</p>
+
+<p>
+At this point, it's common for us CS teachers to tell each other "I
+figured out the problem I was having &#x2013; it's that I was an idiot."
+</p>
+
+<p>
+Last time, I talked about <a href="http://adventofcode.com/">Advent of Code</a> and how I was somewhat behind
+the curve. In part because I started late and in part because I've
+been using it as an excuse to learn some Clojure.
+</p>
+
+<p>
+Here's how I burned over two days on <a href="http://adventofcode.com/day/6">Day 6</a>.
+</p>
+
+<p>
+The problem is pretty straight forward. You have a 1,000 x 1,000 grid
+representing a light board and you have to repeatedly do operations on
+smaller rectangles on that grid. Turning individual lights on and off,
+if you would.
+</p>
+
+<p>
+If I were doing this in a language like C, I'd probably just take a
+big block of memory and loop through the instructions but since I was
+working in Clojure, I thought I'd try to do something in more of the
+functional mode, that is, with immutable data types. 
+</p>
+
+<p>
+After a while, I was getting the feeling that it was going to be too
+slow so I shifted to just modifying a big block of memory.
+</p>
+
+<p>
+Try as I could, I couldn't get it to work. I was sure my algorithm was
+fine - it wasn't a hard problem, but I couldn't get the right answer.
+</p>
+
+<p>
+After a while, I started looking at existing solutions and they were
+basically the same as mine.
+</p>
+
+<p>
+I was stumped. 
+</p>
+
+<p>
+Two days after the start, I figured it out.
+</p>
+
+<p>
+No matter how hard you try, if your problem specifies the data in the
+form <b><b>row1,col1 row2,col2</b></b>, you're not going to get the right answer
+if you decide that the input is in the form <b><b>row1,row2 col1,col2</b></b>. 
+</p>
+
+<p>
+<b><b>D'Oh</b></b>
+</p>
+
+<p>
+Ok, after that the problem was pretty trivial.
+</p>
+
+<p>
+Hopefully I'll have some time to do problem 7 and beyond this weekend.
+</p>
+
+<p>
+If there are any Clojure people out there, I'm putting my solutions up
+on <a href="https://github.com/zamansky/adventofcodeclojure">GitHub</a> - I'd love some feedback on how to get more idiomatic.
+</p>
