@@ -1,0 +1,177 @@
+<!--
+.. title: Spreadsheet? I'd rather use the command line.
+.. slug: 2014-07-06-spreadsheet-vs-cli.html
+.. date: 2014-07-06
+.. type: text
+-->
+
+
+<style>
+div.center {text-align:center;}
+</style>
+
+<p>
+Spreadsheets are terrific - we've all used them. I particularly like
+Google spreadsheets - I use them all the time to collect data, usually
+from students. 
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"></h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Go to Google Drive
+</li>
+<li>Make a form 
+</li>
+<li>Send the form out to the students
+</li>
+<li>Wait
+</li>
+</ul>
+
+<p>
+All the data gets dumped into a Google spreadsheet. The trouble is,
+what to do with it once it's in the spreadsheet. 
+</p>
+
+<p>
+The other day, I wrote on a few basic stats for our upcoming SHIP
+program. The data I reported on was all collected in a spreadsheet. I
+also collected participant and parent emails in the spreadsheet. 
+</p>
+
+<p>
+So, here's the task, compute some simple numbers form the spreadsheet
+and also extract and use the email addresses.
+</p>
+
+<p>
+I'm sure one could use some fancy spreadsheet magic to get the job
+done, but I'm a command line wonk &#x2013; here's how I take care of tasks
+like these.
+</p>
+
+<p>
+First, I downloaded the spreadsheet as a csv (comma separated value)
+file. Each line looked something like this:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-csv">last,first,email,address,gender,grade,school,...
+</pre>
+</div>
+
+<p>
+First question, how many applicants did we have:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh">cat cstuy.csv | wc -l
+</pre>
+</div>
+
+<p>
+Which gave:
+</p>
+<pre class="example">
+47
+</pre>
+
+
+
+<p>
+The |, or pipe means take the output of the first command and send it
+to the  next one. <b>Cat</b> just outputs the original file and <b>wc -l</b> counts all
+the lines in the file.
+</p>
+
+<p>
+Next, how many young ladies:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh">cat cstuy.csv | grep female | wc -l
+</pre>
+</div>
+
+<p>
+The results: 
+</p>
+<pre class="example">
+17
+</pre>
+
+<p>
+How many schools? Well, that's a little trickier. Here, I use a few
+extra commands:
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"></h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>cut - this will cut out one column from the csv file - in this case
+the school column (the -d, says use a comma as delimiter and -f7 for
+field 7).
+</li>
+<li>sort - takes the lines and sorts them.
+</li>
+<li>uniq - eliminates duplicate lines in a sorted file
+</li>
+</ul>
+
+<p>
+Putting it all together:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh">cat cstuy.csv | cut -d, -f7 | sort | uniq | wc -l
+</pre>
+</div>
+
+<p>
+Results: 
+</p>
+<pre class="example">
+30
+</pre>
+
+
+<p>
+Thirty different schools.
+</p>
+
+<p>
+Finally I needed the emails - here I wanted to be able to paste them
+into Gmail's bcc field. I could have just used <b>cat</b> and <b>cut</b> and
+then used the mouse, but instead:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh">cat cstuy.csv | cut -d, -f3 | xclip -sel clip
+</pre>
+</div>
+
+<p>
+Then I can just do a Ctrl-v in Gmail and I'm good to go.
+</p>
+
+<p>
+The cool thing is that the tools here - cut, sort, uniq, grep  - are
+all general purpose tools that do simple text manipulations. Once you
+know them and a few others, you can really quickly and efficiently do
+all sorts of data processing without even thinking about it. I still
+go to the spreadsheet for data collection ad also for when I need more
+hardcore formulas but for day to day manipulations, I'll take the
+command line.
+</p>
+</div>
+</div>

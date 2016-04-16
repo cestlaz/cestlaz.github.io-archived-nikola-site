@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<base href="http://cestlaz.github.io/">
+<meta name="description" content="C'est la Z">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C'est la Z</title>
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<link rel="canonical" href="http://cestlaz.github.io/">
+<link rel="next" href="index-18.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/2016-04-14-i-hate-ruby/" type="text/html">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+
+
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cestlaz.github.io/">
+						<img class="zlogo" src="assets/images/thluffy.jpg" id="logo"><span class="zname" id="blog-title">C'est la Z</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav navbar-right zmenu">
+<li class="zitem">
+<a href="http://github.com/zamansky">GitHub</a>
+                </li>
+<li class="zitem">
+<a href="archive.html">Archive</a>
+                </li>
+<li class="zitem">
+<a href="stories/about">About</a>
+                </li>
+<li class="zitem">
+<a href="rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><h2 class="text-center">
+		Musings about education, computer science,</h2>
+		<h3 class="text-center">and maybe a few other miscellaneous topics.
+</h3>
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+		<div class="body-content">
+				<!--Body content-->
+				<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-8">
+				
+								
+    
+<div class="postindex">
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2016-04-14-i-hate-ruby/" class="u-url">2016-04-14-i-hate-ruby</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2016-04-14-i-hate-ruby/" rel="bookmark"><time class="published dt-published" datetime="2016-04-16T00:00:00-04:00" title="2016-04-16 00:00">2016-04-16 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2016-04-14-i-hate-ruby/#disqus_thread" data-disqus-identifier="cache/posts/2016-04-14-i-hate-ruby.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p>
+I think I've got the move worked out but if you're reading this via an
+rss or atom reader, make sure to check back in a couple of days - you
+might have to re-subscribe.
+</p>
+
+<p>
+Why am I switching?
+</p>
+
+<p>
+Because I hate Ruby. 
+</p>
+
+<p>
+Ok, not really - I barely know the language. I was already a  Python
+guy when Ruby came along and I didn't see any real added value to
+switching. 
+</p>
+
+<p>
+This isn't really about Ruby though, it's really about how that which
+we don't know is strange and frightening. In this case, the ruby ecosystem.
+</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LV0wTtiJygY" frameborder="0" allowfullscreen></iframe>
+
+<p>
+I started using Jekyll because that's what was supported by GitHub
+pages. It's fairly simple and it basically worked. It had a few
+warts, specifically, I've had problems getting org-mode blog posts to
+publish just the way I'd like and it's hard to debug when a post has
+some bad markup in it, but it got the job done. 
+</p>
+
+<p>
+Recently, though, I've had to re-install Jekyll a number of  times and
+for me, that's been a nightmare.
+</p>
+
+<p>
+One is supposed to just be able to <b><b>sudo gem install jekyll</b></b>.
+</p>
+
+<p>
+Ok, so you need some packages installed:
+</p>
+
+<div class="highlight"><pre><span></span>sudo apt-get install ruby-dev
+</pre></div>
+
+<p>
+But I've got ruby 1.9 and I need ruby 2 point something. Ok:
+</p>
+
+<div class="highlight"><pre><span></span>sudo apt-get install ruby2.0 ruby2.0-dev
+</pre></div>
+
+<p>
+But that fails since we're still running 1.9. Every time I look for a
+solution I go down the ruby ecosystem rabbit hole. 
+</p>
+
+<p>
+All I want is Jekyll!!!!!!
+</p>
+
+<p>
+Why can't I just <b><b>pip install jekyll</b></b> like I can do with Python
+packages!!!!!
+</p>
+
+<p>
+In truth, there's nothing wrong with the ruby ecosystem, It's just
+something I'm not familiar with. I probably had to go through the same
+battles with Python it's just that I did them incrementally over time.
+</p>
+
+<p>
+The truth is, setting up a development environment should be much
+easier. It used to be that I installed Linux, it had C installed and I
+just had to install <a href="https://en.wikipedia.org/wiki/Make_(software)">make</a>. Now it's all about tool chains, virtual
+environments, containers, and more.
+</p>
+
+<p>
+ I think this is what <a href="https://twitter.com/roybahat">Roy</a> was talking about when we traded
+tweets on using development environments in an  <a href="http://cestlaz.github.io/2016/04/12/ide-or-cloud.html#.Vw_nPN9vETt">Ide or in the cloud</a>.
+</p>
+
+<p>
+If it's hard for me to get an environment running, imagine some poor
+soul who just went through a "learn to code" web site and now has to
+figure out how to set up his or her own machine!!!!!!
+</p>
+
+<p>
+I don't have a solution but at least it hasn't stopped me and others
+from trying new things.
+</p>
+
+<p>
+Two of my CS blogging friends, <a href="https://gflint.wordpress.com/">Garth Flint</a> and <a href="http://blog.acthompson.net/">Alfred Thompson</a> have in
+their own ways talked about this same issue. Garth, showing a bias
+towards VB yet still working to get his head around Python. Alfred
+shows the same disdain for Linux and the command line as I show
+towards Windows. All this leads to valuable learning experiences and
+discussions.
+</p>
+
+<p>
+Personally, I'm also going through this battle as I continue to
+explore Clojure.
+</p>
+
+<p>
+So, I'm going to finish the changeover to Nikola in the next day or
+two. Remember to check back in case the feeds aren't working.
+</p>
+
+<p>
+Once I make the change, I'll talk about Jekyll vs Nikola as actual
+blogging platforms.
+</p>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2016-04-12-ide-or-cloud.html/" class="u-url">IDE or the Cloud</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2016-04-12-ide-or-cloud.html/" rel="bookmark"><time class="published dt-published" datetime="2016-04-12T00:00:00-04:00" title="2016-04-12 00:00">2016-04-12 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2016-04-12-ide-or-cloud.html/#disqus_thread" data-disqus-identifier="cache/posts/2016-04-12-ide-or-cloud.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <style>
+div.center {text-align:center;}
+</style>
+<div id="outline-container-orgheadline1" class="outline-2">
+<h2 id="orgheadline1"></h2>
+<div class="outline-text-2" id="text-orgheadline1">
+<p>
+This weekend, I had a conversation on Twitter with my friend <a href="https://twitter.com/roybahat">Roy Bahat</a>:
+</p>
+
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en">
+<p lang="en" dir="ltr"><a href="https://twitter.com/zamansky">@zamansky</a> Mike, unrelated, what do you think of <a href="https://t.co/BT1ublbajF">https://t.co/BT1ublbajF</a> ?</p>— Roy Bahat (@roybahat) <a href="https://twitter.com/roybahat/status/718835740738650112">April 9, 2016</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr"><a href="https://twitter.com/roybahat">@roybahat</a>Maybe I'll blog about my thoughts about online environments vs local installs</p>— Mike Zamansky (@zamansky) 
+<a href="https://twitter.com/zamansky/status/718837282334240768">April 9, 2016</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr"><a href="https://twitter.com/roybahat">@roybahat</a> Agree with this but there are many issues. I'll try to write more later. Now going to see my son in <a href="https://twitter.com/umgass">@umgass</a> prod of Pinafore.</p>— Mike Zamansky (@zamansky) <a href="https://twitter.com/zamansky/status/718838508689993728">April 9, 2016</a>
+</blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>
+Another friend had just asked me about IDEs vs local installs for learning enviromnents the day before.
+</p>
+
+<p>
+So, should we use cloud based IDEs when teaching CS or should we use
+local installs.
+</p>
+
+<p>
+There isn't a single right answer but I thought I'd share some of my thoughts here.
+</p>
+
+<p>
+I'm hoping this is helpful to both those of us in the trenches as well
+as maybe some platform developers out there.
+</p>
+
+<p>
+Some times, you don't have a choice.
+</p>
+
+<p>
+On the web based side, does your school have the bandwidth. We're not
+only talking about the pipe to the outside world but also <a href="http://www.nytimes.com/2016/01/14/nyregion/bronx-science-bans-cellphones-from-wi-fi-as-students-devour-it.html?_r=0">wifi within
+the school</a>.  If kids can't reliably get to the web based environment,
+it's not a viable option. On the other hand, cloud based software will
+always be up to date and properly configured and kids can use them
+from home or pretty much anywhere they have a connection.
+</p>
+
+<p>
+On the other side we have local installs. This can also present
+problems. Is the teacher allowed to install locally? Does he or she
+know how to do it? Who's going keep all the machines up to date and configured? 
+</p>
+
+<p>
+Assuming we can get past the technical issues we can start looking at
+the education side of thing.
+</p>
+
+<p>
+On the web based side, you've got a silo. This can be both good and
+bad. In an intro class, using a tool like <a href="http://codesters.com">Codesters</a> can keep the cost
+of entry low, allow students to share work online and allow teachers
+to make use of their curricular materials. If you can't tell, I'm a
+big fan of Codesters and the Codesters team. The limitation is that
+you have to use their simplified interface and toolset.
+</p>
+
+<p>
+Some web based IDEs like <a href="http://koding.com">Koding</a> offer more flexibility - one tool with
+many languages as well as deployment. The cost is complexity. With
+Koding, you're basically running a virtual machine in the
+cloud. You've got their web based IDE and a terminal shell so it's not
+as complex as doign everything from scratch locally but it's not as
+structured as Codesters and is more of a general purpose site rather
+than one focussed soley on learning.
+</p>
+
+<p>
+Then you have <a href="http://repl.it">repl.it</a>. This looks to be a great platform for
+experienced programmers to play with and explore new languages but I'd
+be concerned about using it with beginners. It looks like they're
+rolling out some teacher tools so this might be worth revisiting soon.
+</p>
+
+<p>
+In any case and with other web based products, you're living in the
+providers silo. 
+</p>
+
+<p>
+Personally, I'm a command line wonk and confessed Emacs geek so I'm
+generally wary of an online environment without an exit strategy to
+real world tools. Eventually, if all development moves into the
+browser as platform then this problem goes away, but for now, you're
+not going to have the expressive power and flexibility that a local
+install gives.
+</p>
+
+<p>
+Local installs let you use more powerful and flexible tools either
+alone or in combination.
+</p>
+
+<p>
+Keeping kids out of silos also makes it easier for them to learn new
+tools, languages, and techniques.
+</p>
+
+<p>
+Since I like generic tools, I'm not a fan of big professional IDEs
+like Eclipse. I'm an Emacs geek but Atom, Sublime Text, and Vim are
+all good as well.
+</p>
+
+<p>
+There are also an assortment of beginner IDEs like Dr. Racket and I'm
+a fan with these for beginners as long as there's an exit strategy.
+</p>
+
+<p>
+For completeness, I should mention that if I weren't an old school
+Emacs guy, I might check out something like JetBrain's IDEs. They're
+much lighter weight than something like Eclipse but still full
+featured. Somewhere between a true general purpose, customizable,
+programmable editor and an all encompassing IDE.
+</p>
+
+
+<p>
+In general, I use online enviromnents with my classes early on when:
+</p>
+
+<ul class="org-ul">
+<li>They're pretty much identical or equivalent to the installed version.</li>
+<li>They provide some value added (<a href="http://codingbat.com">codingbat</a> for example) so they're not
+being used as a development environment but for some other purpose.</li>
+<li>They help with student collaboration (such as cloud9 or Koding.com
+for more advanced kids).</li>
+</ul>
+<p>
+In any case, it's imporant that our kids aren't locked into any IDE be
+it web based or local.
+</p>
+
+<p>
+Our kids that go on to more advanced CS studies will certainly need to
+break out of sheltered world of a learning IDE and we're not doing
+them a service if we shelter them too long. 
+</p>
+
+<p>
+Our other kids also benefit from seeing beyond these restrictive
+environments. A student might learn to code in Python in one of our
+classes, but if we do our jobs right, that student might be writing a
+little Javascript to automate Google Docs.
+</p>
+
+<p>
+I can't tell you how many people I've seen go through online coding
+courses in a web based enviromnent only to be unable to do anything
+outside of that enviromnent.
+</p>
+
+<p>
+At the end of the day, we want our kids to be empowered to grow on
+their own. All of the things I've talked about here are merely
+tools. Each has it's place. It's up to the teacher to make the roadmap
+and to lead the student down the path.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2016-03-29-hunter-cs.html/" class="u-url">Hunter College - Honors CS</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2016-03-29-hunter-cs.html/" rel="bookmark"><time class="published dt-published" datetime="2016-03-29T00:00:00-04:00" title="2016-03-29 00:00">2016-03-29 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2016-03-29-hunter-cs.html/#disqus_thread" data-disqus-identifier="cache/posts/2016-03-29-hunter-cs.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <style>
+div.center {text-align:center;}
+</style>
+<p>
+It's been a while since my last post and a while since I started at
+Hunter.
+</p>
+
+<p>
+Time to share a bit about what I've been up to.
+</p>
+
+<p>
+One of the better kept secrets in New York City is Hunter College's
+computer science program. It's been around for years and it's been
+that way for years. In fact, when I was looking to get my masters
+degree back in the mid nineties I carefully researched all of the
+area's MS in CS programs. It came down to Hunter College and Courant
+Institute at NYU. I was going to go with Hunter since the programs
+seemed comparable and Hunter was far more affordable but I had to go
+with NYU due to class schedules. Too many of the Hunter offerings were
+to early in the day and I had my full time teaching job to consider.
+</p>
+
+<p>
+Hunter isn't currently offering their Masters program but their
+Bachelor of Arts program is alive and well, it's just that people
+don't know about it.
+</p>
+
+<p>
+Part of my job is to change that.
+</p>
+
+<p>
+Well, not really, part of my job is to add my piece to the puzzle. The
+rest will take care of itself.
+</p>
+
+<p>
+My piece? It's all about creating a tech culture, tying into the NY
+Tech ecosystem, and filling in the gaps that are shared by just about
+every college computer science program.
+</p>
+
+<p>
+How do we do it? 
+</p>
+
+<p>
+The long term plan is that we're starting a new CS Honors program. In
+the fall, I'll be teaching and mentoring a group of entering
+undergrads. We'll have workshops, trips, activities. You name it. I'll
+also be teaching them modified versions of our courses with the hope
+of bringing some of my modifications back to the rest of the student
+body. Things like integrating real tools and professional techniques
+into what is already a solid academic program.
+</p>
+
+<p>
+In the mean time, I'm getting to know Hunter's current CS students and
+working to energize the existing community. 
+</p>
+
+<p>
+We already had an amazing event hosted at <a href="http://yext.com">Yext</a>. We had a panel and
+mixer with representatives from about a dozen companies talking to the
+kids about the possibilities ahead of them.
+</p>
+
+<p>
+We've also set up a couple of workshops in house.
+</p>
+
+<p>
+I'm also starting to talk to friends at companies across the city to
+plan out both curriculum and programs to set up our kids to
+succeed. 
+</p>
+
+<p>
+My goal is that within five years, I want people to realize that
+Hunter CS is the place to be for CS Education in NYC. Not everyone can
+afford the 40K and up private college tuition and there's no reason to
+when you can get a great CS education with ties to the tech community
+at CUNY prices.
+</p>
+
+<p>
+If you want to help, drop me a note. We're looking to start something
+very special and you have a chance to be a part of it.
+</p>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2016-01-31-devops.html/" class="u-url">DevOps, or You don't know what the F you're doing!</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2016-01-31-devops.html/" rel="bookmark"><time class="published dt-published" datetime="2016-01-31T00:00:00-05:00" title="2016-01-31 00:00">2016-01-31 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2016-01-31-devops.html/#disqus_thread" data-disqus-identifier="cache/posts/2016-01-31-devops.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <style>
+div.center {text-align:center;}
+</style>
+<p>
+Having just concluded almost a quarter century at one job in one
+place, I've been reflecting on a number of things.
+</p>
+
+<p>
+What I accomplished, what I've failed to accomplish, highlights,
+low lights and everything in between.
+</p>
+
+<p>
+I've also learned a lot over these twenty five years.
+</p>
+
+<p>
+One thing I learned is DevOps and System Administration. 
+</p>
+
+<p>
+Back around 1993 or 1994 Stuy wasn't really on the internet. Yes, we
+were able to scam stuy.edu even though we were a high school and yes
+we did have a class B address block but no one really had access.
+</p>
+
+<p>
+Somehow, Bruce, a student of mine at the time and I ended up with the
+job of getting Stuy onto the internet. Bruce was one of our superstar
+kids and people thought I had extensive experience setting up and
+running networks. Truth be told I messed around a bit but there's no
+way I would have hired myself for the job.
+</p>
+
+<p>
+Nonetheless, we were off. 
+</p>
+
+<p>
+We were able to take one of the RS/6000 AIX workstations that were
+supposed to be used as CAD stations and repurposed it as a server. We
+made email accounts for everyone and were off.
+</p>
+
+<p>
+Neither Bruce nor I really knew what we were doing but we figured
+things out. I learned a lot from him and I'd like to think he also got
+some benefit out of working with me. Fortunately, we seemed to have a
+knack for <a href="http://www.amazon.com/Linux-System-Administration-Handbook-Edition/dp/0131480057/ref=pd_sim_14_2?ie=UTF8&amp;dpID=61%2B57ajucML&amp;dpSrc=sims&amp;preST=_AC_UL160_SR117%2C160_&amp;refRID=164V89GZMZM2X9M2S8AH">finding the answers</a>.
+</p>
+
+
+<p>
+Of course, we had our moments. Once, we got a critical patch
+announcement from IBM. It said that if we needed the patch and didn't
+apply it were were in big trouble but if our machine didn't need it,
+applying the patch would kill our system. It was unclear whether we
+needed the patch or not.
+</p>
+
+<p>
+After about a half hour research, we determined that we didn't need
+the patch.
+</p>
+
+<p>
+But applied it anyway :-(.
+</p>
+
+<p>
+D'Oh.
+</p>
+
+<p>
+After a brief set of panic attacks and a bunch of fumbling around, we
+did manage to restore things.
+</p>
+
+<p>
+So, Bruce and I ran the system for a year or so and as I said, I
+learned a lot. Now, Bruce was close to graduating so I was starting to
+worry that I'd have to figure this all out myself soon. That was a
+seriously frightening thought. 
+</p>
+
+<p>
+I figured it would be good to bring in a couple of new super smart
+students. As it turns out, Jon was one of them. 
+</p>
+
+<p>
+At one point, there was some problem and Bruce and I were going to
+head to the office to try to figure it out. Jon asked if he could come
+and watch. I thought that was a great idea so I agreed.
+</p>
+
+<p>
+We all went to the office and Bruce and I went to work. After about
+fifteen minutes, Jon blurted out:
+</p>
+
+<blockquote>
+<p>
+"I just figured how you guys do it!!!"
+</p>
+
+<p>
+"You guys have no idea what the F you're doing!!!!!"
+</p>
+</blockquote>
+
+<p>
+We all cracked up.
+</p>
+
+<p>
+He was absolutely right. We had no clue. We didn't know what we were
+doing but we had become pretty good at figuring things out.
+</p>
+
+<p>
+Truth be told, that really is the norm. If you already knew how to
+solve the problem, well, then it really wouldn't have been a problem
+to begin with.
+</p>
+
+<p>
+So, you learn to figure it out. It's something I learned not to be
+afraid of a long time ago. I hope that it's something I've been able
+to convey to my students.
+</p>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2016-01-23-debugging-deployment.html/" class="u-url">Debugging deployment</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2016-01-23-debugging-deployment.html/" rel="bookmark"><time class="published dt-published" datetime="2016-01-23T00:00:00-05:00" title="2016-01-23 00:00">2016-01-23 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2016-01-23-debugging-deployment.html/#disqus_thread" data-disqus-identifier="cache/posts/2016-01-23-debugging-deployment.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <style>
+div.center {text-align:center;}
+</style>
+<p>
+SoftDev students are hard at work on their final projects. By now,
+they all have fairly complex code bases. This limits how much I can
+help them with debugging.
+</p>
+
+<p>
+There are some problems, though, that they have to contend with that
+even with experience, are hard to spot. Notably because the very
+tools you use to debug these errors are part of the problem.
+</p>
+
+<p>
+Last week, this happened twice. Both cases were brought to me by
+really strong students which just goes to underscore how insidious
+these problems can be.
+</p>
+
+
+<p>
+Here's a fake code snippet of a <a href="http://flask.pocoo.org/">Flask</a> application that illustrates
+both problems.
+</p>
+
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span class="linenr"> 1: </span>from flask import Flask, render_template
+<span class="linenr"> 2: </span>
+<span class="linenr"> 3: </span>app = Flask(__name__)
+<span class="linenr"> 4: </span>
+<span class="linenr"> 5: </span>@app.route("/")
+<span class="linenr"> 6: </span>def index():
+<span class="linenr"> 7: </span>    return "hello"
+<span class="linenr"> 8: </span>
+<span class="linenr"> 9: </span>@app.route('/test/&lt;some_data&gt;')
+<span class="linenr">10: </span>def test():
+<span class="linenr">11: </span>    picture_url = build_url(some_data)
+<span class="linenr">12: </span>    result = api_test(picture_url)
+<span class="linenr">13: </span>    do_something(result)
+<span class="linenr">14: </span>
+<span class="linenr">15: </span>if __name__ == "__main__":
+<span class="linenr">16: </span>   app.debug = True
+<span class="linenr">17: </span>   app.secret_key = "some secret key"
+<span class="linenr">18: </span>   app.run(host="0.0.0.0", port=8000)
+</pre>
+</div>
+
+
+<p>
+First, the "easy" one. The student was trying to deploy the
+application. We use <a href="http://gunicorn.org/">Green Unicorn</a> to deploy our applications,
+ultimately on <a href="http://digitalocean.com/">Digital Ocean</a> servers in the cloud. 
+</p>
+
+<p>
+The student was using the correct command:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-shell">gunicorn -W 4 -b 0.0.0.0:8000 app:app
+</pre>
+</div>
+
+<p>
+but it wasn't working. It ran, but whenever he went to the site, it
+came back with an error.
+</p>
+
+<p>
+The problem?
+</p>
+
+<p>
+He had to change:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-python">if __name__ == "__main__":
+   app.debug = True
+   app.secret_key = "some secret key"
+   app.run(host="0.0.0.0", port=8000)
+</pre>
+</div>
+
+<p>
+to
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python">app.secret_key = "some secret key"
+if __name__ == "__main__":
+    app.debug = True
+    app.run(host="0.0.0.0", port=8000)
+</pre>
+</div>
+
+<p>
+Normally, when developing and testing our applications, we use the
+test server that's bundled with Flask. The line that reads
+"app.run…" takes care of this.
+</p>
+
+<p>
+When running the application as a "main program" - "python app.py" the
+if statement is true and it runs the indented lines, setting the
+secret key which is required for session management.
+</p>
+
+<p>
+When running under <b><b>gunicorn</b></b>, the <b><b>gunicorn</b></b> server loads the
+application as a module and then runs it. In this case name isn't main
+so it never sets secret key and so we have a problem.
+</p>
+
+<p>
+Pretty subtle and even though we did cover this in class, it comes up
+pretty rarely so it's not an easy catch.
+</p>
+
+<p>
+Then there was this problem.
+</p>
+
+<p>
+The setup for this one's a little more complicated. The group was
+using a facial recognition api. You provide the API with the url to an
+image, it fetches it and does recognition.
+</p>
+
+<p>
+It's also important to note that when Flask is running, it will serve
+files from a static directory, so, if I'm running my flask server on
+myhost, port 800 and you stored an image named picture.jpg in the
+static directory, going to:
+</p>
+
+<verbatim>
+ http://myhost:8000/static/picture.jpg
+</verbatim><br><br><p>
+would get that image.
+</p>
+
+<p>
+The group did things right. They ran the Flask test server to serve
+the static files and then wrote a small python program to test the
+api:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python">picture_url = build_url(some_data)
+result = api_test(picture_url)
+do_something(result)
+</pre>
+</div>
+
+<p>
+Everything worked fine. 
+</p>
+
+<p>
+But, when they put this code in as a route in their web app (as in the
+top code fragment), it froze. 
+</p>
+
+<p>
+They couldn't figure it out.
+</p>
+
+<p>
+The code worked as a "stand alone" but not in the web app.
+</p>
+
+<p>
+The problem?
+</p>
+
+<p>
+Once again, the built in Flask development server.
+</p>
+
+<p>
+The development server runs in a single thread / process. This means
+it can only do one thing at a time. When they ran their test as a
+separate program, the api they used made a request to their app to
+serve up the static picture file and it worked.
+</p>
+
+<p>
+When they ran from the Flask application itself, their app made a call
+to the web api (line 12) and then blocked while waiting for the
+response. The web api tried to request the image from the Flask app
+but it was blocked – <b><b>deadlock</b></b>.
+</p>
+
+<p>
+Again, the solution was to run the web app using a server that could
+handle multiple requests - gunicorn.
+</p>
+
+<p>
+Once again, that solved the problem.
+</p>
+
+<p>
+Both of these problems were fairly subtle and very hard to catch -
+even with experience. I remember the hours I lost when I was learning
+this stuff.
+</p>
+
+<p>
+Some times kids get caught up in algorithms or poor code design but
+sometimes, it's just the tools.
+</p>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2016-01-17-maze-ca.html/" class="u-url">Cellular Automata for Pathfinding in NetLogo</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2016-01-17-maze-ca.html/" rel="bookmark"><time class="published dt-published" datetime="2016-01-17T00:00:00-05:00" title="2016-01-17 00:00">2016-01-17 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2016-01-17-maze-ca.html/#disqus_thread" data-disqus-identifier="cache/posts/2016-01-17-maze-ca.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet">
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script><style>
+div.center {text-align:center;}
+.smaller {height:200px;width:200px}
+
+.center {text-align:center;}
+.frame {width:600px;height:800px;}
+
+</style>
+<div class="center">
+<a class="center" href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-start.png">
+<img src="img/maze-ca/maze-start.png"></a>
+</div>
+<br><div id="outline-container-orgheadline1" class="outline-2">
+<h2 id="orgheadline1"></h2>
+<div class="outline-text-2" id="text-orgheadline1">
+<p>
+<a href="http://cestlaz.github.io/2016/01/15/shift-image.html#.Vpvy4x8SrmE">Last time</a> we took a look at implementing a Cellular Automaton in
+NetLogo to do some simple image manipulation. We just scratched the
+surface. In class, the kids write pretty nice Photoshop Light
+applications. 
+</p>
+
+<p>
+Today we'll look at some more ambitious problem solving - using a
+Cellular Automaton to find a path through a maze. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline2" class="outline-2">
+<h2 id="orgheadline2">Part 1 - finding possible paths</h2>
+<div class="outline-text-2" id="text-orgheadline2">
+<p>
+We'll use the image above as an example and a live model with all the
+code is at the end of this post.
+</p>
+
+<p>
+Each square of the maze is a
+NetLogo patch. White square represent possible paths, Red is our
+entrance, green our exit. As we explore the maze, we'll color the
+cells yellow.
+</p>
+
+<p>
+Remember, in  a Cellular Automaton (CA), each cell makes a decision as to
+it's next state based on information about its neighbors (up, down,
+left, and right only in this case).
+</p>
+
+<p>
+So, if every cell is looking around at it's neighbors, most cells
+don't have enough information. The only white cell that might be on
+the path from entrance to exit is the one next to the entrance - it
+might be on the path.
+</p>
+
+<p>
+This leads us to the first step of our CA rule set:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-netlogo">; if I have a green neighbor, I might be on the path, turn yellow
+ask patches with [pcolor = white] [
+  if any? neighbors with [pcolor = red] [
+   set pcolor yellow
+  ] 
+]
+</pre>
+</div>
+
+<p>
+(click images to enlarge)
+</p>
+
+<a href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-1.png">
+<img class="smaller" src="img/maze-ca/maze-1.png"></a>
+
+<p>
+Next time through, we notice that a cell might be on the path if it's
+white and it has either red or yellow neighbors.
+</p>
+
+
+<a href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-2.png">
+<img class="smaller" src="img/maze-ca/maze-2.png"></a>
+<a href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-3.png">
+<img class="smaller" src="img/maze-ca/maze-3.png"></a>
+
+<a href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-4.png">
+<img class="smaller" src="img/maze-ca/maze-4.png"></a>
+
+<p>
+Eventually, we end up with a yellow abutting green - the exit.
+</p>
+
+<a href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-found.png">
+<img class="smaller" src="img/maze-ca/maze-found.png"></a>
+
+<p>
+Notice that each yellow cell is also numbered. The number indicates
+how many steps it took to get there from the entrance. The
+implementation is trivial:
+</p>
+
+<ul class="org-ul">
+<li>Start by giving each patch a variable <b><b>step</b></b> and starting it at 0.</li>
+<li>When a cell is about to turn yellow, it should look at it's yellow
+or red neighbors, ask for their <b><b>step</b></b> value (they'll all be the
+same - think about why), and set it's <b><b>step</b></b> value to one more
+than that.</li>
+</ul>
+<p>
+We'll use these step numbers to recover the actual shortest path.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline3" class="outline-2">
+<h2 id="orgheadline3">Part 2 - recovering the shortest path.</h2>
+<div class="outline-text-2" id="text-orgheadline3">
+<p>
+We can now use the yellow patches with the step numbers to find our
+way back. 
+</p>
+
+<p>
+We're going to build a solution set.
+</p>
+<ol class="org-ol">
+<li>start with an empty solution set.</li>
+<li>take the only green cell not in the solution set (let's call it <b><b>G</b></b>).</li>
+<li>Ask <b><b>G</b></b>'s yellow neighbor with lowest step number to turn
+itself green (that cell will be <b><b>G</b></b> next time around).</li>
+<li>Place <b><b>G</b></b> into the solution set (leaving the new green cell as
+the only green cell not in the solution set).</li>
+<li>Repeat 2 - 5 until we're back at the entrance.</li>
+</ol>
+<a href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-back-1.png">
+<img class="smaller" src="img/maze-ca/maze-back-1.png"></a>
+<a href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-back-2.png">
+<img class="smaller" src="img/maze-ca/maze-back-2.png"></a>
+<a href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-solved.png">
+<img class="smaller" src="img/maze-ca/maze-solved.png"></a>
+
+<p>
+This is one of my favorite intro topics. It's using a CA - something
+normally just presented as a toy idea, to solve a real problem. It
+reinforces parallel processing and foreshadows all sorts of pathfinding
+ideas to come.
+</p>
+
+<p>
+Below is the complete NetLogo program. You can look at the code by
+clicking on the code tab at the bottom.
+</p>
+
+<p>
+To run:
+</p>
+<ul class="org-ul">
+<li>
+<b><b>setup</b></b> sets up all the variables and clears the world.</li>
+<li>
+<b><b>buildmaze</b></b> builds a random maze.</li>
+<li>
+<b><b>solve</b></b> is a toggle to run through an entire solution.</li>
+<li>
+<b><b>step</b></b> single steps through the CA.</li>
+<li>
+<b><b>reset</b></b> Resets all the variables and recolors the maze to
+unsolved.</li>
+<li>The other buttons are toggles for drawing your own maze.</li>
+</ul>
+<div class="center frame">
+<iframe class="center frame" src="img/maze-ca/maze.html"></iframe>
+</div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2016-01-15-shift-image.html/" class="u-url">Cellular Automata, NetLogo and real problems</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2016-01-15-shift-image.html/" rel="bookmark"><time class="published dt-published" datetime="2016-01-15T00:00:00-05:00" title="2016-01-15 00:00">2016-01-15 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2016-01-15-shift-image.html/#disqus_thread" data-disqus-identifier="cache/posts/2016-01-15-shift-image.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <style>
+.center {text-align:center;}
+.frame {width:640px;height:800px;}
+</style>
+<p>
+We've been using <a href="https://ccl.northwestern.edu/netlogo/">NetLogo</a> in our intro course for years. It's a
+wonderful programming environment. Many of you recall the <a href="https://en.wikipedia.org/wiki/Logo_(programming_language)">Logo</a>
+programming language. NetLogo is like Logo but instead of programming
+a turtle, you write a program that's run by multiple, perhaps hundreds
+of turtles and also by the world the turtles live on. 
+</p>
+
+<p>
+Some of the reasons we like it are that it's:
+</p>
+
+<ul class="org-ul">
+<li>An easy accessible textual programming language</li>
+<li>Makes building a graphical interface trivial</li>
+<li>great for modeling</li>
+<li>Comes with tons of demo models</li>
+</ul>
+<p>
+And now, with the latest version, NetLogo programs/models can be
+deployed as web sites. All you have to do is save your program as
+"NetLogo Web" and put it up on a observer somewhere.
+</p>
+
+<p>
+If you haven't you should download and install NetLogo, run it, then
+go to the file menu and look at the built in models.
+</p>
+
+<p>
+I also enjoy playing with <a href="https://en.wikipedia.org/wiki/Cellular_automaton">Cellular Automata</a> and NetLogo's a wonderful
+platform to play with. The turtles live on a grid of patches and just
+like the turtles, the patches will all run your program over and over.
+</p>
+
+<p>
+The patches make perfect cells for a cellular automaton and you can
+implement a rule set in your patches. 
+</p>
+
+<p>
+NetLogo even comes with a bunch of built in demo models for Cellular
+Automata including <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a>, probably the most famous CA.
+</p>
+
+<p>
+On the other hand, Conway's Game of Life is somewhat cliche and while
+I find it fascinating, it doesn't really solve a practical problem, at
+least on on the surface.
+</p>
+
+<p>
+So, I was looking for something more practical to do and something
+where we could explore some deeper CS concepts. 
+</p>
+
+<p>
+Image manipulation.
+</p>
+
+<p>
+In class, we make a Cellular Automaton where each cell or patch is a
+pixel in an image. In NetLogo, you can do this with the
+"import-pcolors" command. Lower down, I have a demo that just manually
+colors patches - the web version of NetLogo doesn't yet support that
+command.
+</p>
+
+<p>
+Task 1 - what if we want to shift the image over? The kids come up
+with a solution pretty quickly: "We can just have each patch ask its
+neighbor for its color." Here's the code they try:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-netlogo">; ask each patch to set its color to the color of the
+; patch at relative location -1,0
+to shift-naive
+  ask patches [ set pcolor [pcolor] of patch-at -1 0]
+end
+</pre>
+</div>
+
+<p>
+To see what happens, scroll down to the NetLogo model below, click on
+setup and then hit the <b><b>shift-naive</b></b> button a few times.
+</p>
+
+<p>
+It doesn't work. 
+</p>
+
+<p>
+What's going on?
+</p>
+
+<p>
+It's a synchronization issue.
+</p>
+
+<p>
+Suppose we have the following three cells in a row:
+</p>
+
+
+<div class="figure">
+<p><img src="img/shift-image/image1.png" alt="image1.png"></p>
+</div>
+
+<p>
+If cell 3 asks cell 2 it's color before cell 2 asks cell 1's color, we
+get the desired result:
+</p>
+
+
+<div class="figure">
+<p><img src="img/shift-image/image2.png" alt="image2.png"></p>
+</div>
+
+<p>
+But if cell 2 asks cell 1 for it's color first then cell 3 will
+actually get cell 1's color:
+</p>
+
+
+<div class="figure">
+<p><img src="img/shift-image/image3.png" alt="image3.png"></p>
+</div>
+
+<p>
+So now we have the students thinking about synchronization and
+parallel processing and they don't even know it.
+</p>
+
+<p>
+The solution's pretty easy, break the problem up into two steps.
+</p>
+
+<p>
+First, have every patch ask its neighbor for its color and then once
+everyone knows their neighbor's color, then change:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-html">patches-own [next-color]
+
+to shift-correct
+  ; figure out my next color
+  ask patches [ set next-color [pcolor] of patch-at -1 0 ]
+  ; then switch to it
+  ask patches [ set pcolor next-color]
+end
+</pre>
+</div>
+
+<p>
+You can run that by clicking <b><b>setup</b></b> again and then <b><b>shift-correct</b></b> a
+few times.
+</p>
+
+<p>
+There's some of the beauty of NetLogo - we can get kids to think about
+some deep concepts while playing with an easy to use, fun, interactive
+environment with a real textual programming language.
+</p>
+
+<p>
+Stay tuned for part 2 when I'll talk about creating a cellular
+automaton that can solve a maze.
+</p>
+
+<div class="center frame">
+<iframe class="center frame" src="img/shift-image/shift-image.html"></iframe>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2016-01-06-delurking-week.html/" class="u-url">International Blog Delurking Week 2016</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2016-01-06-delurking-week.html/" rel="bookmark"><time class="published dt-published" datetime="2016-01-06T00:00:00-05:00" title="2016-01-06 00:00">2016-01-06 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2016-01-06-delurking-week.html/#disqus_thread" data-disqus-identifier="cache/posts/2016-01-06-delurking-week.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <style>
+div.center {text-align:center;}
+</style>
+<p>
+It's been pointed out by a couple of bloggers I follow:
+</p>
+<ul class="org-ul">
+<li><a href="https://gasstationwithoutpumps.wordpress.com/">Gas station without pumps</a></li>
+<li><a href="http://blog.acthompson.net/">Computer Science Teacher (Alfred Thompson's blog)</a></li>
+</ul>
+<p>
+That it's International Blog Delurking Week.
+</p>
+
+<p>
+So, I know I don't have a large readership, but if you do read this
+ blog, why not give a brief hi in the comments.  I'd love to know who you are and what you do.
+</p>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2016-01-03-discussion-silos.html/" class="u-url">Discussion Silos</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2016-01-03-discussion-silos.html/" rel="bookmark"><time class="published dt-published" datetime="2016-01-03T00:00:00-05:00" title="2016-01-03 00:00">2016-01-03 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2016-01-03-discussion-silos.html/#disqus_thread" data-disqus-identifier="cache/posts/2016-01-03-discussion-silos.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <style>
+div.center {text-align:center;}
+</style>
+<p>
+In response to the past couple of days where my friends and fellow CS
+Ed advocates Alfred Thompson, Rob Underwood, and I had a nice little
+discussion via our blogs, Alfred wrote <a href="http://blog.acthompson.net/2016/01/when-blogging-works-for-educators.html">this</a>.
+</p>
+
+<p>
+It's great when a number of voices in the community have an open
+discussion but one of the things I found myself lamenting was the fact
+that a lot of the discussion isn't truly accessible.
+</p>
+
+<p>
+Why not? 
+</p>
+
+<p>
+The silo known as Facebook.
+</p>
+
+<p>
+I have no problem with Facebook - I like it and use it daily - it's a great way to
+keep in touch with former students turned friends. The problem is that
+much like Las Vegas, discussions that happen on Facebook stay on
+Facebook.
+</p>
+
+<p>
+Recently I've seen a number of blog posts, some mine, some Alfred's,
+some others where the post garnered nary a comment. Head over to
+Facebook  and if you're friends with the right people, you might find
+a lively, informative discussion. 
+</p>
+
+<p>
+In one case in particular, one post had independent, overlapping
+discussions in at least three Facebook threads.
+</p>
+
+<p>
+How much richer would the discussion have been  in a public forum
+plus it would be left open for people to discover in the future.
+</p>
+
+<p>
+Personally, I use <a href="http://disqus.com/">Disqus</a>. I like it since I can also follow people on
+it and I can just embed the code in any page but others like what
+Wordpress or Blogger uses for comment threads. In any event, it keeps
+the conversation open.
+</p>
+
+<p>
+Is this really a problem? Maybe not but I do wish people would look
+beyond Facebook for discussions.
+</p>
+
+<p>
+It's something I've been trying to get my students to do for
+years. I've used a number of tools for class communication:
+</p>
+<ul class="org-ul">
+<li>mail lists</li>
+<li>Piazza</li>
+<li>custom forum software like vanilla</li>
+<li>slack</li>
+</ul>
+<p>
+and haven't found anything that really does the job quite right. I'm
+still looking.
+</p>
+
+<p>
+The kids use these but invariably end up also setting up a Facebook
+group for my class and their other classes. I encourage this - they
+certainly should have a forum that I can't see. How else can they plan
+that surprise party for me :-). In all seriousness though, ideally
+they should have a forum free of teachers but they should use the one
+with the teacher as much as possible.
+</p>
+
+<p>
+The real problem with the kids setting up Facebook groups every year
+is that there's no institutional memory. I see the kids, year after
+year, have to clear the same hurdles. If they started thinking outside
+of the silo of their Facebook communities and just had an ongoing
+community for each class - one that passed on from year to year, it
+would be of tremendous value for them.
+</p>
+
+<p>
+So, I'd like to encourage everyone out there to get our discussions
+out into public forums. It would be terrific if more of us would blog
+or blog more often and also to take the time to add to the dialog in a
+public place.
+</p>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2016-01-01-different-languages.html/" class="u-url">Teaching Coding - getting beyond superficial syntax</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2016-01-01-different-languages.html/" rel="bookmark"><time class="published dt-published" datetime="2016-01-01T00:00:00-05:00" title="2016-01-01 00:00">2016-01-01 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2016-01-01-different-languages.html/#disqus_thread" data-disqus-identifier="cache/posts/2016-01-01-different-languages.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <style>
+div.center {text-align:center;}
+</style>
+<p>
+The other day, Alfred Thompson put up a piece about <a href="http://blog.acthompson.net/2015/12/code-in-different-languages.html">coding in multiple
+languages</a>. Alfred references a post written last May by <a href="http://robunderwood.com/2015/05/31/code-syntax-compared-part-1/%0A">Rob Underwood.</a>
+</p>
+
+<p>
+Both pieces are worth a look.
+</p>
+
+<p>
+Rob is trying to illustrate many of the superficial similarities in
+popular languages. 
+</p>
+
+<p>
+In the comments on Alfred's blog, both Alfred and I alluded to coding
+in an appropriate style for the language.
+</p>
+
+<p>
+For me the issue is even bigger.
+</p>
+
+<p>
+Learning to code is all the rage and places to learn are popping out of
+the woodwork.
+</p>
+
+<p>
+There are:
+</p>
+
+<ul class="org-ul">
+<li>In classes, in schools, with teachers</li>
+<li>Drop in programs in schools.</li>
+<li>Programs run by coding schools</li>
+<li>Moocs and other online resources</li>
+<li>Summer and weekend programs</li>
+</ul>
+<p>
+And probably more. All of these options are giving more and more
+people a way to learn to code. 
+</p>
+
+<p>
+That's great, but it also raises concerns given that very few people
+involved in CS education have both strong teaching and CS backgrounds. 
+</p>
+
+<p>
+What I'm starting to see are the results as I meet young people coming
+out of all of these programs.
+</p>
+
+<p>
+Unfortunately, what I'm frequently seeing, at best, is very
+superficial coverage of syntax.
+</p>
+
+<p>
+I've seen kids who would have no basis for understanding that the
+ramifications of this Python code:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python">a = 30
+def f():
+  a=20 
+  print a
+
+print a
+</pre>
+</div>
+
+<p>
+and this Javascript code:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-javascript">a = 30;
+function f(){
+  a = 20  
+  console.log(a);
+}
+console.log(a);
+</pre>
+</div>
+
+<p>
+are very different.
+</p>
+
+<p>
+It gets worse when I meet kids who "know C" because they were exposed
+to constructs like:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-c">for (i=0;i&lt;10;i++){
+ // code goes here
+}
+</pre>
+</div>
+
+<p>
+I think the most common issue come from kids being "taught"
+programming using javascript which seems deceptively simple but is
+really rather deep.
+</p>
+
+<p>
+It's important that as CS becomes more mainstream that we make sure
+that we have teachers and programs that are teaching the real deal. It
+can be fun and accessible but it does require teachers that know their
+stuff and are willing to continue to learn. 
+</p>
+
+
+<p>
+		Do our kids deserve any less?
+</p>
+    </div>
+    </article>
+</div>
+        <nav class="postindexpager"><ul class="pager">
+<li class="next">
+                <a href="index-18.html" rel="next">Older posts</a>
+            </li>
+        </ul></nav><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+						<div class="col-md-3">
+								<br><!-- feedburner subscribe via email --><form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CestLaZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+<p>Enter your email address:</p>
+<p><input type="text" style="width:140px" name="email"></p>
+<input type="hidden" value="CestLaZ" name="uri"><input type="hidden" name="loc" value="en_US"><input type="submit" value="Subscribe"><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p>
+</form>
+								<!--  feedburner subscribe end -->
+								<!-- Twitter sidebar start -->
+								<table class="table"><tr><td>
+												<a class="twitter-timeline" href="https://twitter.com/zamansky" data-widget-id="251117725303312385">Tweets by @zamansky</a>
+												<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</td></tr></table>
+<!-- Twitter sidebar end -->
+</div>
+						<!--End of body content-->
+
+						<footer id="footer">
+								Contents © 2016         <a href="mailto:zamansky@gmail.com">Mike Zamansky</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+								
+						</footer>
+</div>
+		</div>
+
+		            <script src="assets/js/jquery.min.js"></script><script src="assets/js/bootstrap.min.js"></script><script src="assets/js/moment-with-locales.min.js"></script><script src="assets/js/fancydates.js"></script><script src="assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+		 moment.locale("en");
+		 fancydates(0, "YYYY-MM-DD HH:mm");
+		</script><!-- end fancy dates -->
+</div>
+</body>
+</html>

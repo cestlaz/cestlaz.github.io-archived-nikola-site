@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<base href="http://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who won the election -- Quadratic to Linear Time!!!!! | C'est la Z</title>
+<link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
+<link rel="prev" href="../2013-02-14-Schools-Snake-Oil-and-the-SOTU.md/" title="Schools, Snake Oil, and the SOTU" type="text/html">
+<link rel="next" href="../2013-04-14-Real_Data.md/" title="Real Data" type="text/html">
+<meta property="og:site_name" content="C'est la Z">
+<meta property="og:title" content="Who won the election -- Quadratic to Linear Time!!!!!">
+<meta property="og:url" content="http://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md/">
+<meta property="og:description" content="Last week was crazy. Busy, stressful, late night after late night. It
+ended, though, on a great note.
+A young lady in my intro class found me in my office near the end of the day:
+
+Student: Mr. Z, I w">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2013-03-23T00:00:00-04:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+
+
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cestlaz.github.io/">
+						<img class="zlogo" src="../../assets/images/thluffy.jpg" id="logo"><span class="zname" id="blog-title">C'est la Z</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav navbar-right zmenu">
+<li class="zitem">
+<a href="http://github.com/zamansky">GitHub</a>
+                </li>
+<li class="zitem">
+<a href="../../archive.html">Archive</a>
+                </li>
+<li class="zitem">
+<a href="../../stories/about">About</a>
+                </li>
+<li class="zitem">
+<a href="../../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><h2 class="text-center">
+		Musings about education, computer science,</h2>
+		<h3 class="text-center">and maybe a few other miscellaneous topics.
+</h3>
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+		<div class="body-content">
+				<!--Body content-->
+				<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-8">
+				
+								
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Who won the election -- Quadratic to Linear Time!!!!!</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                    Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2013-03-23T00:00:00-04:00" itemprop="datePublished" title="2013-03-23 00:00">2013-03-23 00:00</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.html">Comments</a>
+
+
+            
+        </p>
+</div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Last week was crazy. Busy, stressful, late night after late night. It
+ended, though, on a great note.</p>
+<p>A young lady in my intro class found me in my office near the end of the day:</p>
+<blockquote>
+<p>Student: Mr. Z, I wanted to make sure to catch you before vacation!</p>
+<p>Me: What's up?</p>
+<p>Student: I wanted to tell you that today's lesson was AWESOME!!!!!!</p>
+</blockquote>
+<p>Wow. I've been teaching 23 years and that's never happened before!!!!</p>
+<p>So, what was the hubbub about?</p>
+<p>We've been doing list processing in Python over the past few days. We already did the basics, such as finding the largest element in a list:</p>
+<p _="%" endhighlight="endhighlight">{% highlight python linenos %}
+def find_max(L):
+    maxval = L[0]
+    i=0
+    while i<len if l>maxval:
+            maxval=L[i]
+        i += 1
+    return maxVal</len></p>
+<p>We've also done basic searching, counting elements, removing elements, etc.</p>
+<p>Today we started with finding the mode of a list of grades.</p>
+<p>Most students approached the problem as a maximum problem. Assume the
+first item is the mode and find it's frequency, then proceed through
+the list each time seeing if the current node occurs more fequently
+than the "mode so far." Pretty much the same idea as find_max (but in this case, returning a list of all the modes).</p>
+<p _="%" endhighlight="endhighlight">{% highlight python linenos %}
+def mode(L):
+    modecount = L.count( L[0] )
+    modes = [ L[0] ]
+    i = 1
+    while i &lt; len(L):
+        c = L.count(L[i]) 
+        if c &gt; modecount:
+            modecount = c
+            modes = [ L[i] ]
+        elif c==modecount and L[i] not in modes:
+            modes.append( L[i] )
+        i += 1
+    return modes</p>
+<p>Pretty cool. The kids are doing something pretty sophisticated here. </p>
+<p>Time to look deeper. We started running this on larger and larger data
+sets. Things started really slowing down at about 20K. We then timed
+things to get some numbers (thanks
+<a href="http://stackoverflow.com/questions/5998245/get-current-time-in-milliseconds-in-python">StackOverflow</a>). </p>
+<p>What was going on. The students pretty quickly honed in on the line
+that called L.count(L[i]) -- <strong>Hidden Complexity</strong>. </p>
+<p>We haven't done big-O notation but the class easily saw that count had
+to go through the entire data set and we ended up with an N^2
+algorithm. For example, if we have 10 items, the main loop executes 10
+times and each time, count goes through the entire list (10 items) as
+well. If we go to 100 items, it becomes 100x100.</p>
+<p>What to do????</p>
+<p>Time to talk about what's probably the most discussed instance of mode
+finding - elections. The winner is "the mode of the ballots."</p>
+<p>Of course we don't use the above algorithm. We usually tally or count the ballots. We go through the ballots once, each time adding one to the appropriate candidates "bucket." </p>
+<div align="center">
+<a href="../../img/tally.png" rel="lightbox">
+<img width="50%" src="../../img/tally.png" class="" alt=""></a>
+</div>
+
+<p>From here, it's a short step to see that we can use a list. It's
+indices represent the grade values and the data in the list the counts
+or tallies:</p>
+<p _="%" endhighlight="endhighlight">{% highlight python linenos %}
+def fastmode(L):
+    i=0
+    counts = []
+    while i&lt;max(L)+1:
+        counts.append(0)
+        i+=1
+    i=0
+    while i &lt; len(L):
+        counts[ L[i] ] += 1
+        i += 1
+    modecount = max(counts)
+    modes = []
+    i=0
+    while i &lt; len(counts):
+        if counts[i]==modecount:
+            modes.append(i)
+        i=i+1
+    return modes</p>
+<p>We go through the list once to build the tallies and then the "tally"
+list once to get the modes. Simple, straightforward, and linear
+time!!!!!!!!!</p>
+<p>The original routine started to hit a roadblock at about 20K items,
+here we got to one million without breaking a sweat.</p>
+<p>The take away:</p>
+<ul>
+<li>Get it working first.</li>
+<li>Then profile to find your bottleneck</li>
+<li>Look at the problem in a different way</li>
+<li>Using data structures in a clever way can really improve performance.</li>
+</ul>
+</div>
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_google_plusone_share"></a>
+<a class="addthis_button_hackernews"></a>
+<a class="addthis_button_reddit"></a>
+<a class="addthis_button_gmail"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
+</div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../2013-02-14-Schools-Snake-Oil-and-the-SOTU.md/" rel="prev" title="Schools, Snake Oil, and the SOTU">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../2013-04-14-Real_Data.md/" rel="next" title="Real Data">Next post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="cestlaz",
+            disqus_url="http://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md/",
+        disqus_title="Who won the election -- Quadratic to Linear Time!!!!!",
+        disqus_identifier="cache/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+						<div class="col-md-3">
+								<br><!-- feedburner subscribe via email --><form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CestLaZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+<p>Enter your email address:</p>
+<p><input type="text" style="width:140px" name="email"></p>
+<input type="hidden" value="CestLaZ" name="uri"><input type="hidden" name="loc" value="en_US"><input type="submit" value="Subscribe"><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p>
+</form>
+								<!--  feedburner subscribe end -->
+								<!-- Twitter sidebar start -->
+								<table class="table"><tr><td>
+												<a class="twitter-timeline" href="https://twitter.com/zamansky" data-widget-id="251117725303312385">Tweets by @zamansky</a>
+												<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</td></tr></table>
+<!-- Twitter sidebar end -->
+</div>
+						<!--End of body content-->
+
+						<footer id="footer">
+								Contents © 2016         <a href="mailto:zamansky@gmail.com">Mike Zamansky</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+								
+						</footer>
+</div>
+		</div>
+
+		            <script src="../../assets/js/jquery.min.js"></script><script src="../../assets/js/bootstrap.min.js"></script><script src="../../assets/js/moment-with-locales.min.js"></script><script src="../../assets/js/fancydates.js"></script><script src="../../assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+		 moment.locale("en");
+		 fancydates(0, "YYYY-MM-DD HH:mm");
+		</script><!-- end fancy dates -->
+</div>
+</body>
+</html>

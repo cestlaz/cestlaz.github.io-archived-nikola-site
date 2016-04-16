@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<base href="http://cestlaz.github.io/posts/2014-11-12-decorators.html/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forty minutes to the punch line or "we'll never look at functions the same way again"" | C'est la Z</title>
+<link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://cestlaz.github.io/posts/2014-11-12-decorators.html/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
+<link rel="prev" href="../2014-11-07-rich-rich.html/" title="Rich and Rich - two legends on opposite sides of the hall" type="text/html">
+<link rel="next" href="../2014-11-16-weddings.html/" title="Hi, I'm Mike, I went to high school with...." type="text/html">
+<meta property="og:site_name" content="C'est la Z">
+<meta property="og:title" content="Forty minutes to the punch line or &quot;we'll never look at functions the ">
+<meta property="og:url" content="http://cestlaz.github.io/posts/2014-11-12-decorators.html/">
+<meta property="og:description" content="div.center {text-align:center;}
+
+
+
+
+
+
+How many times do we teach something and leave the kids thinking:
+
+
+
+&quot;what's the point of this?&quot; &quot;When will I use this?&quot; or even just the
+plain old fashioned &quot;tha">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2014-11-12T00:00:00-05:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+
+
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cestlaz.github.io/">
+						<img class="zlogo" src="../../assets/images/thluffy.jpg" id="logo"><span class="zname" id="blog-title">C'est la Z</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav navbar-right zmenu">
+<li class="zitem">
+<a href="http://github.com/zamansky">GitHub</a>
+                </li>
+<li class="zitem">
+<a href="../../archive.html">Archive</a>
+                </li>
+<li class="zitem">
+<a href="../../stories/about">About</a>
+                </li>
+<li class="zitem">
+<a href="../../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><h2 class="text-center">
+		Musings about education, computer science,</h2>
+		<h3 class="text-center">and maybe a few other miscellaneous topics.
+</h3>
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+		<div class="body-content">
+				<!--Body content-->
+				<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-8">
+				
+								
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Forty minutes to the punch line or "we'll never look at functions the same way again""</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                    Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2014-11-12T00:00:00-05:00" itemprop="datePublished" title="2014-11-12 00:00">2014-11-12 00:00</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/2014-11-12-decorators.html">Comments</a>
+
+
+            
+        </p>
+</div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <style>
+div.center {text-align:center;}
+</style>
+<div id="outline-container-unnumbered-1" class="outline-2">
+<h2 id="unnumbered-1"></h2>
+<div class="outline-text-2" id="text-unnumbered-1">
+<p>
+How many times do we teach something and leave the kids thinking:
+</p>
+
+<p>
+"what's the point of this?" "When will I use this?" or even just the
+plain old fashioned "that's weird."
+</p>
+
+<p>
+It's pretty cool when a lesson starts out that way but you get to the
+payoff by the end of the class.
+</p>
+
+<p>
+Today we started exploring some advanced python.
+</p>
+
+<p>
+We started by showing that you can assign functions to variables or
+pass them as parameters:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #a020f0;">def</span> <span style="color: #0000ff;">inc</span>(x):
+    <span style="color: #a020f0;">return</span> x+1
+<span style="color: #a020f0;">def</span> <span style="color: #0000ff;">dec</span>(x):
+    <span style="color: #a020f0;">return</span> x-1
+
+<span style="color: #a0522d;">f</span> = inc
+<span style="color: #a020f0;">print</span> f(5)
+
+<span style="color: #a0522d;">flist</span> = [inc,dec]
+
+<span style="color: #a020f0;">print</span> flist[1](5)
+</pre>
+</div>
+
+<p>
+We then looked at closures in python:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #a020f0;">def</span> <span style="color: #0000ff;">makeAdder</span>(n):
+    <span style="color: #a020f0;">def</span> <span style="color: #0000ff;">inner</span>(x):
+        <span style="color: #a020f0;">return</span> x+n
+    <span style="color: #a020f0;">return</span> inner
+
+<span style="color: #a0522d;">add3</span> = makeAdder(3)
+<span style="color: #a0522d;">add5</span> = makeAdder(5)
+
+<span style="color: #a020f0;">print</span> add3(10)
+<span style="color: #a020f0;">print</span> add5(10)
+</pre>
+</div>
+
+<p>
+The idea that we can make a function that builds and returns a
+function. When we call <b><b>makeAdder(3)</b></b>, the 3 is passed as parameter
+n so the inner function reduces to <b><b>return x+3</b></b> and then we return
+that inner function. When we later run it: add3(10) it adds
+10+3. makeAdder(5) works similarly but passing a 5 in for n instead
+of a 3.
+</p>
+
+<p>
+Even a somewhat clunky way of doing class type abstractions:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #a020f0;">def</span> <span style="color: #0000ff;">make_counter</span>():
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">private "instance" data</span>
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">has to be a list due to weird python scoping rules</span>
+    <span style="color: #a0522d;">count</span> = [0]
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">public methods</span>
+    <span style="color: #a020f0;">def</span> <span style="color: #0000ff;">inc</span>():
+        <span style="color: #a0522d;">count</span>[0]=count[0]+1
+    <span style="color: #a020f0;">def</span> <span style="color: #0000ff;">dec</span>():
+        <span style="color: #a0522d;">count</span>[0]=count[0]-1
+    <span style="color: #a020f0;">def</span> <span style="color: #0000ff;">reset</span>():
+        <span style="color: #a0522d;">count</span>[0]=0
+    <span style="color: #a020f0;">def</span> <span style="color: #0000ff;">get</span>():
+        <span style="color: #a020f0;">return</span> count[0]
+
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">send back a dictionary so we have access to all the methods</span>
+    <span style="color: #a020f0;">return</span> {<span style="color: #8b2252;">'inc'</span>: inc, <span style="color: #8b2252;">'dec'</span>: dec, <span style="color: #8b2252;">'reset'</span>: reset, <span style="color: #8b2252;">'get'</span>: get}
+
+<span style="color: #a0522d;">c1</span> = make_counter()
+<span style="color: #a0522d;">c2</span> = make_counter()
+
+<span style="color: #b22222;"># </span><span style="color: #b22222;">we've got to use the clunky list notation </span>
+c1[<span style="color: #8b2252;">'inc'</span>]()
+c1[<span style="color: #8b2252;">'inc'</span>]()
+c1[<span style="color: #8b2252;">'inc'</span>]()
+<span style="color: #a020f0;">print</span> c1[<span style="color: #8b2252;">'get'</span>]()
+c2[<span style="color: #8b2252;">'inc'</span>]()
+<span style="color: #a020f0;">print</span> c2[<span style="color: #8b2252;">'get'</span>]()
+c1[<span style="color: #8b2252;">'reset'</span>]()
+<span style="color: #a020f0;">print</span> c1[<span style="color: #8b2252;">'get'</span>]()
+</pre>
+</div>
+
+<p>
+Up to now the students are able to see how this works but the why is
+unclear.
+</p>
+
+<p>
+So now we'll look at where this is useful.
+</p>
+
+<p>
+Let's suppose we have routines like the following. It returns a
+string:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #a020f0;">import</span> random
+<span style="color: #a020f0;">def</span> <span style="color: #0000ff;">get_name</span>():
+    <span style="color: #a0522d;">names</span> = [<span style="color: #8b2252;">'tom'</span>,<span style="color: #8b2252;">'sue'</span>,<span style="color: #8b2252;">'harry'</span>,<span style="color: #8b2252;">'lisa'</span>,<span style="color: #8b2252;">'sarah'</span>,<span style="color: #8b2252;">'horatio'</span>]
+    <span style="color: #a020f0;">return</span> random.choice(names)
+</pre>
+</div>
+
+<p>
+get<sub>name</sub> and routines like it might be scattered throughout our
+code. Let's suppose, for some strange reason, we want to double the
+name every time we use it. A "traditional" way of doing this might be:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #a020f0;">def</span> <span style="color: #0000ff;">dble</span>(f):
+    <span style="color: #a0522d;">name</span> = f()
+    <span style="color: #a020f0;">return</span> name+name
+
+<span style="color: #a020f0;">print</span> dble(get_name) <span style="color: #b22222;"># </span><span style="color: #b22222;">returns something like tomtom</span>
+</pre>
+</div>
+
+<p>
+Here, we pass a function which returns a string and then dble returns
+that string repeated twice. The problem here is that if we've got
+get<sub>name</sub> all over our code base, we have to find it and change each
+instance to <b><b>dble(get<sub>name</sub>)</b></b>
+</p>
+
+<p>
+What if we write it as a function that returns a function:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #a020f0;">def</span> <span style="color: #0000ff;">doubler</span>(f):
+    <span style="color: #a020f0;">def</span> <span style="color: #0000ff;">inner</span>():
+        <span style="color: #a0522d;">name</span>=f()
+        <span style="color: #a020f0;">return</span> name+name
+    <span style="color: #a020f0;">return</span> inner
+</pre>
+</div>
+
+<p>
+Now, in this case, we can do something like:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #b22222;"># </span><span style="color: #b22222;">make a new function that wraps get_name in "inner"</span>
+<span style="color: #b22222;"># </span><span style="color: #b22222;">when we call inner, it returns the string twice</span>
+<span style="color: #a0522d;">f</span> = doubler(get_name)
+<span style="color: #b22222;"># </span><span style="color: #b22222;">and then later</span>
+<span style="color: #a020f0;">print</span> f() <span style="color: #b22222;"># </span><span style="color: #b22222;">will print something like tomtom</span>
+</pre>
+</div>
+
+<p>
+The cool part is that we can also do this:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #a0522d;">get_name</span> = double(get_name)
+</pre>
+</div>
+
+<p>
+And then whenever we call our new <b><b>get<sub>name</sub></b></b> we end up calling the
+wrapped function. 
+</p>
+
+<p>
+This was the first A-ha. We don't have to change get<sub>name</sub> all over our
+code base - we only have to change it once.
+</p>
+
+<p>
+Once we write a function like doubler, instead of re-assigning
+get<sub>name</sub> as we did above, we can do the following:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #228b22;">@doubler</span>
+<span style="color: #a020f0;">def</span> <span style="color: #0000ff;">get_name</span>():
+    <span style="color: #b22222;"># </span><span style="color: #b22222;">rest of code as defined above</span>
+
+<span style="color: #228b22;">@doubler</span>():
+<span style="color: #a020f0;">def</span> <span style="color: #0000ff;">demo</span>():
+    <span style="color: #a020f0;">return</span> <span style="color: #8b2252;">"hello"</span>
+</pre>
+</div>
+
+<p>
+The second example will have demo return "hellohello" whenever we
+invoke it.
+</p>
+
+<p>
+A Python decorator is merely shorthand for calling a wrapper type
+function like doubler.
+</p>
+
+<p>
+This was the second A-ha moment – we can write functions that
+transform functions.
+</p>
+
+<p>
+We'll cover more decorator and closure plumbing tomorrow and then
+start doing some fun stuff with these concepts.
+</p>
+</div>
+</div>
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_google_plusone_share"></a>
+<a class="addthis_button_hackernews"></a>
+<a class="addthis_button_reddit"></a>
+<a class="addthis_button_gmail"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
+</div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../2014-11-07-rich-rich.html/" rel="prev" title="Rich and Rich - two legends on opposite sides of the hall">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../2014-11-16-weddings.html/" rel="next" title="Hi, I'm Mike, I went to high school with....">Next post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="cestlaz",
+            disqus_url="http://cestlaz.github.io/posts/2014-11-12-decorators.html/",
+        disqus_title="Forty minutes to the punch line or \"we'll never look at functions the same way again\"\"",
+        disqus_identifier="cache/posts/2014-11-12-decorators.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+						<div class="col-md-3">
+								<br><!-- feedburner subscribe via email --><form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CestLaZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+<p>Enter your email address:</p>
+<p><input type="text" style="width:140px" name="email"></p>
+<input type="hidden" value="CestLaZ" name="uri"><input type="hidden" name="loc" value="en_US"><input type="submit" value="Subscribe"><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p>
+</form>
+								<!--  feedburner subscribe end -->
+								<!-- Twitter sidebar start -->
+								<table class="table"><tr><td>
+												<a class="twitter-timeline" href="https://twitter.com/zamansky" data-widget-id="251117725303312385">Tweets by @zamansky</a>
+												<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</td></tr></table>
+<!-- Twitter sidebar end -->
+</div>
+						<!--End of body content-->
+
+						<footer id="footer">
+								Contents © 2016         <a href="mailto:zamansky@gmail.com">Mike Zamansky</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+								
+						</footer>
+</div>
+		</div>
+
+		            <script src="../../assets/js/jquery.min.js"></script><script src="../../assets/js/bootstrap.min.js"></script><script src="../../assets/js/moment-with-locales.min.js"></script><script src="../../assets/js/fancydates.js"></script><script src="../../assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+		 moment.locale("en");
+		 fancydates(0, "YYYY-MM-DD HH:mm");
+		</script><!-- end fancy dates -->
+</div>
+</body>
+</html>

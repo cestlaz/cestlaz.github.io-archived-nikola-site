@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<base href="http://cestlaz.github.io/index-6.html">
+<meta name="description" content="C'est la Z">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C'est la Z (old posts, page 6) | C'est la Z</title>
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<link rel="canonical" href="http://cestlaz.github.io/index-6.html">
+<link rel="prev" href="index-7.html" type="text/html">
+<link rel="next" href="index-5.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]-->
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+
+
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cestlaz.github.io/">
+						<img class="zlogo" src="assets/images/thluffy.jpg" id="logo"><span class="zname" id="blog-title">C'est la Z</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav navbar-right zmenu">
+<li class="zitem">
+<a href="http://github.com/zamansky">GitHub</a>
+                </li>
+<li class="zitem">
+<a href="archive.html">Archive</a>
+                </li>
+<li class="zitem">
+<a href="stories/about">About</a>
+                </li>
+<li class="zitem">
+<a href="rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><h2 class="text-center">
+		Musings about education, computer science,</h2>
+		<h3 class="text-center">and maybe a few other miscellaneous topics.
+</h3>
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+		<div class="body-content">
+				<!--Body content-->
+				<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-8">
+				
+								
+    
+<div class="postindex">
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2013-07-14-summer_projects.md/" class="u-url">Summer Project 1 - Citibike Data</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2013-07-14-summer_projects.md/" rel="bookmark"><time class="published dt-published" datetime="2013-07-14T00:00:00-04:00" title="2013-07-14 00:00">2013-07-14 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2013-07-14-summer_projects.md/#disqus_thread" data-disqus-identifier="cache/posts/2013-07-14-summer_projects.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>So, the Citibike program has been running for a bit. I like the idea,
+but I have some reservations -- it's great for getting around in the
+zone - I've been using it for short shopping trips - run cross town to
+<a href="http://www.fairwaymarket.com/">Fairway</a> or take a quick trip from
+work to <a href="http://www.portorico.com/store/">Porto Rico Importers</a> or
+<a href="http://pasticceriarocco.com/">Rocco's Pastries</a>. On the other hand,
+the zone doesn't get to the residential neighborhoods of upper
+Manhattan or the boroughs and the price per day is way too expensive
+for regular working class joes, particularly on top of a subway trip.</p>
+<p>In any event, I was curious about station use patterns. Cool thing is
+that you can get live data from
+<a href="http://citibikenyc.com/stations/json">here</a>. This was a great
+opportunity to play with some tools to see if I want to use them in
+class next year. In particular, <a href="http://backbonejs.org">backbone.js</a>
+and <a href="posts/2013-07-14-summer_projects.md/d3js.org">d3.js</a>. </p>
+<p>So, I'm grabbing the station data every 5 minutes, storing it in a
+Mongo database, and threw together a little map and graph app:</p>
+<div align="center">
+<a href="http://cb.zamansky.net">
+<img width="50%" src="img/2013-07-14-summer-projects/citibike-1.png" class="" alt=""></a>
+</div>
+
+<p>You can check it out <a href="http://cb.zamansky.net">here</a>. </p>
+<p>The code is up on GitHub:
+<a href="http://github.com/zamansky/citibike-1">citibike-1</a>.</p>
+<p>I might play around and add more graphs as I collect more data or
+maybe I'll just move on to the next project.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2013-07-11-NYTM.md/" class="u-url">NYTM + StuyCS</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2013-07-11-NYTM.md/" rel="bookmark"><time class="published dt-published" datetime="2013-07-11T00:00:00-04:00" title="2013-07-11 00:00">2013-07-11 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2013-07-11-NYTM.md/#disqus_thread" data-disqus-identifier="cache/posts/2013-07-11-NYTM.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>For those of that don't know, the
+<a href="http://nytm.org">New York Tech Meetup</a> it's one of the things that
+help make the New York Tech Scene so awesome.</p>
+<p>It's a group of some 30k+ members and once a month, at Skriball Center
+at NYU they hold a meetup. It's really quite an event. Members of the
+tech community demo their projects, there's question and answer time,
+and afterwards theres a gathering for schmoozing amongst the crowd and
+the presenters.</p>
+<p>During the QA period, there's one rule -- You can't ask "What's your
+business model." I think we all love that it's about the tech not
+about the buck.</p>
+<p>Stuy CS family members such as
+<a href="http://digitalocean.com">Digital Ocean</a>,
+<a href="http://www.tactonic.com">Tactonic Technologies</a>, and
+<a href="http://www.vantageousvideo.com/pages/about">Vantageous</a> have all
+presented. I'm not able to go to the meetup regularly - It's usually
+on a school night and tickets are hard to come by, but I love the fact
+that whenever I'm there, I reconnect with old Stuy CS family members
+and meet new ones. Yesterday, at the meetup I met Ron Williams, of
+<a href="http://knod.es">Knodes</a>. He's Stuy '94 - one year before my first CS
+grads.</p>
+<p>So, why am I writing about NYTM? As a result of our
+<a href="http://cestlaz.github.io/2013/06/27/Demo_Night.html#.Ud6jHKBtw7w">Demo Night</a>,
+<a href="https://twitter.com/brandondiamond">Brandon Diamond</a> invited a couple
+of the groups to present as part of the <strong>Hack of the Month</strong> segment.</p>
+<p>Brian, Eli, Jules, and Shan got up on stage and presented their work
+to a live audience of about 1000 technologiest plus those viewing the
+simulcast.</p>
+<div align="center">
+<a href="img/2013-07-11-NYTM/webexplorer.jpg" rel="lightbox">
+<img width="40%" src="img/2013-07-11-NYTM/webexplorer.jpg" class="" alt=""></a>
+<a href="img/2013-07-11-NYTM/stallwall.jpg" rel="lightbox">
+<img width="40%" src="img/2013-07-11-NYTM/stallwall.jpg" class="" alt=""></a>
+</div>
+
+<div align="center">
+<a href="img/2013-07-11-NYTM/qa.jpg" rel="lightbox">
+<img width="50%" src="img/2013-07-11-NYTM/qa.jpg" class="" alt=""></a>
+</div>
+
+<p>Afterwards the we mixed with the crowd. A great experience for the guys.</p>
+<p>As Brandon said afterwards - "That's another 1000 people that know what you guys are doing." Given the difficulties in getting our program recognized and to more students, this exposure is so important.</p>
+<p>So, thanks Brandon, Jessica, and everone else involved in giving the kids this opportunity.</p>
+<p><strong>UPDATE:</strong> If you want to actually see the kids, check out the vide here: <a href="http://mlb.mlb.com/shared/flash/mediaplayer/v4.4/R7/MP4.jsp?calendar_event_id=14-376935-2013-07-10&amp;source=NYTM&amp;media_type=video">NYTM Video</a>. Just go to the 4th yellow dot (about 52 minutes in).</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2013-07-05-gender-stats.md/" class="u-url">Gender stats</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2013-07-05-gender-stats.md/" rel="bookmark"><time class="published dt-published" datetime="2013-07-05T00:00:00-04:00" title="2013-07-05 00:00">2013-07-05 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2013-07-05-gender-stats.md/#disqus_thread" data-disqus-identifier="cache/posts/2013-07-05-gender-stats.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>People keep asking me about how we're doing with respect to gender
+balance and CS education at Stuy. </p>
+<p>Rather than writing the same email again and again, I figured I'd summarize things here.</p>
+<p>We've done rather well at Stuy. I might write more in depth at some
+point in the future but we don't dumb anything down and we aren't
+patronizing. I think much of the success can be attributed to:</p>
+<ul>
+<li>Awesome teachers that really know their CS and are great teachers.</li>
+<li>Teachers that buy into the same insanity.</li>
+<li>Well designed courses in a well designed sequence.</li>
+<li>A well designed <strong>required</strong> intro course where young ladies can see that this stuff is cool and women are just as good at it as men.</li>
+<li>Did I mention awesome teachers.</li>
+<li>An atmosphere where everyone feels accepted.</li>
+</ul>
+<p>An important fact to consider here is that Stuyvesant is only <strong>40%
+female</strong> so our numbers are actually even better than they
+appear. Also, we've typically offered AP CS to 150 students and our
+senior classes to between 60 and 120 students. Even with these
+numbers, we're always over subscribed (it's not uncommon to have 300 - 400 students out of a class of about 800 students request AP Computer Science).</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<thead><tr>
+<th>Course</th>
+<th>Percent Female</th>
+<th>Notes</th>
+</tr></thead>
+<tbody><tr>
+<td class="left">C Physics (National)</td>
+<td class="right"> 23% and 26% </td>
+<td class="left">There are 2 actual exams (E and M, and Mechanics) hence the two numbers</td>
+</tr></tbody>
+<tbody><tr>
+<td class="left">C Physics (Stuy)</td>
+<td class="right">18%</td>
+<td class="left"><ul>
+<li>We don't have the breakdown between two exams.</li>
+<li> Note that all Stuy students take the required regents physics class prior to being allowed to sign up for Physics C</li>
+</ul></td>
+</tr></tbody>
+<tbody><tr>
+<td class="left">AP CS (National)</td>
+<td class="right">14% - 18.92%</td>
+<td class="left">18.92% is current, the 14% reflects when both the A and the more rigorous AB exams were offered</td>
+</tr></tbody>
+<tbody><tr>
+<td class="left">AP CS (Stuy)</td>
+<td class="right">25%</td>
+<td class="left"><ul>
+<li>Stuy teaches a superset of the old AB curriculum.</li>
+<li> This actully
+represents a down year.</li>
+<li> Normally we
+hover around 30%.</li>
+<li>All stuy students take a required intro course prior to being allowed to sign up for AP CS.
+</li>
+</ul></td>
+</tr></tbody>
+<tbody><tr>
+<td class="left">Systems / Graphics</td>
+<td class="right">21%</td>
+<td class="left">This one option for students that complete APCS</td>
+</tr></tbody>
+<tbody><tr>
+<td class="left">Software Development</td>
+<td class="right">37%</td>
+<td class="left">The other post-AP option</td>
+</tr></tbody>
+<tbody><tr>
+<td class="left">Senior classes combined</td>
+<td class="right">29%</td>
+<td class="left"> </td>
+</tr></tbody>
+</table>
+<p>You might wonder why I included the C Physics numbers. Of all the
+other STEM AP classes, C Physics is probably the most analagous to AP
+Comp Sci. </p>
+<ul>
+<li>Both are electives that are traditionally male dominated. </li>
+<li>Both follow a required class in an earlier grade. </li>
+<li>Neither is a graduation requirement,</li>
+<li>but C Physics can fulfill one of Stuyvesant's senior science elective requirements.</li>
+</ul>
+<p>I didn't look at Calculus because at
+Stuy, Calc is just "the next math course" so just students take it
+regardless of gender.</p>
+<p>Another difference is that AP CS is offered mostly to juniors and that
+the students have additional classes they can take in their senior
+year.</p>
+<p>Notice that Stuy CS outperforms the national gender breakdown while
+Stuy C Physics doesn't. The point is that it's not a Stuy thing, it's
+something we're doing in our little CS corner of the world.</p>
+<p>Another interesting morsel is that we recently had our <a href="http://cestlaz.github.io/2013/06/27/Demo_Night.html#.UdXzVaBtw7w">demo night</a>. There
+were 13 combined students on the four winning teams. 6 were young
+ladies so women were in no way dominated in our most advanced class.</p>
+<p>So, there you have it. What's going on with gender and CS at Stuy.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2013-07-02-graduation.html/" class="u-url">Graduation</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2013-07-02-graduation.html/" rel="bookmark"><time class="published dt-published" datetime="2013-07-02T00:00:00-04:00" title="2013-07-02 00:00">2013-07-02 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2013-07-02-graduation.html/#disqus_thread" data-disqus-identifier="cache/posts/2013-07-02-graduation.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    One week ago today was Stuyvesant's graduation. 
+<p></p>
+<p>
+I usually know a number of seniors pretty well but, since I like to
+cycle through classes, every couple of years I have a group that I've
+been with from 10th grade to 12th. 
+</p>
+<p>
+This was one of those years
+</p>
+<p>
+It was extra special because it was also my daughter Batya's graduating class.
+</p>
+<p>
+It's been an amazing gift to be able to work at her school for the past four years and she's been amazingly tolerant. Particularly with both her and her boyfriend in my class this year.
+</p>
+<p>
+
+Actually, they're both terrific and I think I only embarrassed her a
+couple of times.
+</p>
+<p></p>
+<p>
+
+Every few years, my seniors ask me if I want them to nominate me as
+faculty speaker at graduation. Usually I say no - stage fright. This
+year, Batya asked. I thought it would be really cool. I said yes and
+the troops came through and voted me in. I wasn't sure I would be the
+winner, but as Peter commented "but you lead the most popular cult at
+Stuy!"
+
+It would have been enough of an honor to speak to the graduating
+class, including many students that I feel connected to and it would
+have been a great honor to speak at Batya's graduation. To add to it
+all, the guest keynote speaker was my dear childhood friend Ben Fried.
+</p>
+<p>
+Truly a career highlight.
+</p>
+<p>
+Ben was terrific. I was watching the audience as he spoke - he
+delivered a great message and really kept the classes attention. No video as of yet, but Ben published the text on Google+.
+
+</p>
+<p>
+You can find it 
+<a href="https://plus.google.com/108690239590381459413/posts/addaYWp36R2">here</a>
+
+</p>
+<p></p>
+<p>
+
+Here's a video of my speech. Jennifer said some very nice things to
+introduce me. I was tempted to go off script right at the beginning
+and point out that many of the nice things she said were really about
+our CS team and not just me:
+</p>
+<p>
+<iframe width="560" height="315" src="//www.youtube.com/embed/beFQc2U9Kls" frameborder="0" allowfullscreen></iframe>
+</p>
+<p></p>
+<p>
+I really didn't read the speech, just used the printed text as notes,
+but here's what I worked from:
+
+<a href="img/07-02-2013-graduation/gradspeech.pdf">gradspeech.pdf</a>
+</p>
+<p></p>
+<p> The graduating class seemed to enjoy it, at least as much as
+one can enjoy any graduation speech, but, for me, as I said, a
+career highlight.</p>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2013-06-27-Demo_Night.md/" class="u-url">Demo Night</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2013-06-27-Demo_Night.md/" rel="bookmark"><time class="published dt-published" datetime="2013-06-27T00:00:00-04:00" title="2013-06-27 00:00">2013-06-27 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2013-06-27-Demo_Night.md/#disqus_thread" data-disqus-identifier="cache/posts/2013-06-27-Demo_Night.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>This past year, I was able to convince my administration to allow me
+to create a new course - Software Development. I really felt there was
+something missing in our kids CS preparation - missing both from
+Stuy's program and from many youngsters college experiences.</p>
+<p>I plan to do a few posts on the course, it's design, implementation,
+and lessons learned, but for today, let's look at the years
+culminating event:</p>
+<p>The class had students working in teams taking projects from idea to
+completion. Last week, we had a demo night, hosted by
+<a href="http://cstuy.org">CSTUY</a> and Google. Neal Zupancic, part of our Stuy
+CS family attended the event and put together a wonderful write up on
+the <a href="http://cstuy.org/blog/stuy-cs-software-development-demo-night-neal-zupancic">CSTUY
+Blog</a>.</p>
+<p>Before getting into details, thanks goes out to Ben Fried, Mike Mu,
+and the rest of the Stuy CS Googlers who helped out. Ben for securing
+the space, Mike for coordinating everything, and the rest for manning
+the event.</p>
+<p>The students, parents, friends, alums, and guests from the NY Tech scene gathered at Google at 6:00 last Thursday. Judging the event, we had 
+<a href="https://twitter.com/brandondiamond">Brandon Diamond</a> of HuffPost labs, founder of the <a href="http://www.hackerunion.org/">Hacker Union</a> and <a href="http://nytm.org">NYTM</a> board member, <a href="https://twitter.com/evankorth">Evan Korth</a>, founder of <a href="http://hackny.org">hackNY</a>, <a href="http://nytm.org">NYTM</a> board member and NYU Professor and Lee Fischman, <a href="http://family.stuycs.org">StuyCS family</a> member, currently at Galorath, and as dinosaurs like me remember, one of the creators of <a href="http://en.wikipedia.org/wiki/The_Big_Electric_Cat">The Big Electric Cat</a>. Awesome folk all.</p>
+<p>The students presented a set of amazing projects. They can all be
+found on the class <a href="http://github.com/stuycs-softdev">github page</a>.</p>
+<p>The evening was like a NYTM for a group of amazing high school youngsters.</p>
+<p>Here are some of the highlights:</p>
+<h5>Scavenger Tours</h5>
+<h6>Tied for winning project</h6>
+<ul>
+<li>Team: Denis, Claire, Sofia, and Sarah</li>
+<li>Github: <a href="https://github.com/stuycs-softdev/ScavengerTours">https://github.com/stuycs-softdev/ScavengerTours</a>
+</li>
+<li>Live: <a href="http://ml7.stuycs.org:1995/">http://ml7.stuycs.org:1995/</a>
+</li>
+</ul>
+<p>Create tours that people can take using their mobile devices.</p>
+<div align="center">
+<a href="img/demo-night-06-27-2013/tours-login.png" rel="lightbox">
+<img width="40%" src="img/demo-night-06-27-2013/tours-login.png" class="" alt=""></a>
+<a href="img/demo-night-06-27-2013/tours-mainpage.png" rel="lightbox">
+<img width="40%" src="img/demo-night-06-27-2013/tours-mainpage.png" class="" alt=""></a>
+</div>
+
+<h5>Stuy Wiggles</h5>
+<h6>Winner - "Scratch your own itch"</h6>
+<ul>
+<li>Team: Georgianna, Mengdi, Victoria</li>
+<li>Github: <a href="https://github.com/stuycs-softdev/StuyWiggles">https://github.com/stuycs-softdev/StuyWiggles</a>
+</li>
+<li>Live: <a href="http://ml7.stuycs.org:7007/about">http://ml7.stuycs.org:7007/about</a>
+</li>
+</ul>
+<p>An attempt at fixing all the problems students have registering for classes at Stuyvesant. This is probably the most polished project of all the demos.</p>
+<div align="center">
+<a href="img/demo-night-06-27-2013/stuywiggles-login.png" rel="lightbox">
+<img width="50%" src="img/demo-night-06-27-2013/stuywiggles-login.png" class="" alt=""></a>
+</div>
+
+<div align="center">
+<a href="img/demo-night-06-27-2013/stuywiggles-profile.png" rel="lightbox">
+<img width="40%" src="img/demo-night-06-27-2013/stuywiggles-profile.png" class="" alt=""></a>
+<a href="img/demo-night-06-27-2013/stuywiggles-trading.png" rel="lightbox">
+<img width="40%" src="img/demo-night-06-27-2013/stuywiggles-trading.png" class="" alt=""></a>
+</div>
+
+<h5>Stall Wall</h5>
+<h6>Winner -- most amusing project</h6>
+<ul>
+<li>Team: Ivan Smirnoff Jules Skrill</li>
+<li>Github: <a href="https://github.com/stuycs-softdev/StallWall">https://github.com/stuycs-softdev/StallWall</a>
+</li>
+<li>Live: <a href="http://ml7.stuycs.org:45454/">http://ml7.stuycs.org:45454/</a>
+</li>
+</ul>
+<p>Collaborative network writing on the bathroom wall!!!!</p>
+<div align="center">
+<a href="img/demo-night-06-27-2013/stallwall.png" rel="lightbox">
+<img width="50%" src="img/demo-night-06-27-2013/stallwall.png" class="" alt=""></a>
+</div>
+
+<h5>Web Explorer</h5>
+<h6>Tied for winning project</h6>
+<ul>
+<li>Team: Eli Nass, Shan Shi, Brian Yan, Brain Zhang</li>
+<li>Github <a href="https://github.com/stuycs-softdev/NSYZ">https://github.com/stuycs-softdev/NSYZ</a>
+</li>
+<li>Live <a href="http://ml7.stuycs.org:1999/">http://ml7.stuycs.org:1999/</a>
+</li>
+</ul>
+<p>Turn any web page into a game.</p>
+<div align="center">
+<a href="img/demo-night-06-27-2013/web-explorer-main.png" rel="lightbox">
+<img width="40%" src="img/demo-night-06-27-2013/web-explorer-main.png" class="" alt=""></a>
+<a href="img/demo-night-06-27-2013/web-explorer-inaction.png" rel="lightbox">
+<img width="40%" src="img/demo-night-06-27-2013/web-explorer-inaction.png" class="" alt=""></a>
+</div>
+
+<p>The students had a great time and got lots of feedback from the
+audience, particularly during pizza time after the demos.</p>
+<p>I'll post more about the course in the coming weeks but demo night was
+a terrific conclusion to a terrific first year.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2013-05-20-Real_Data_Part_II.md/" class="u-url">Real Data - Part II</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2013-05-20-Real_Data_Part_II.md/" rel="bookmark"><time class="published dt-published" datetime="2013-05-20T00:00:00-04:00" title="2013-05-20 00:00">2013-05-20 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2013-05-20-Real_Data_Part_II.md/#disqus_thread" data-disqus-identifier="cache/posts/2013-05-20-Real_Data_Part_II.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>About a month ago, I talked about using <a href="http://cestlaz.github.io/2013/04/14/Real_Data.html#.UZjTjqDctKk">real
+data</a>
+with our intro classes. After looking at the correlation between
+school's SAT scores and free and reduced lunch rates, it was time to
+turn the students loose.</p>
+<p>The assignment: Find some interesting data out and do something with
+it. Make a web page that shows what you did and what you
+discoverde. We had already looked at the NYC Data Mine as well as a
+few other sources but students were encouraged to find new data sourcess.</p>
+<p>The results were terrific. On top of the requirements, some students
+figured out how to incorporate Google Maps, graphs, and other niceties
+well beyond what we've covered in class.</p>
+<div align="center">
+<a href="img/data_project.png" rel="lightbox">
+<img width="50%" src="img/data_project.png" class="" alt=""></a>
+</div>
+
+<p>Explorations included:</p>
+<ul>
+<li><a href="http://149.89.150.100/~veronika.azzara/compsci_project/maps.py">311 Calls in NYC</a></li>
+<li><a href="http://149.89.150.100/~vanessa.miraj/untitled%20text%203.html">Movie earnings</a></li>
+<li><a href="http://149.89.150.100/~lily.chen/fooddata.html">Food pricing over time</a></li>
+<li><a href="http://149.89.150.100/~ivette.chen/healthiest-state-rankings.py">Red Meat and Health</a></li>
+<li><a href="http://149.89.150.100/~hilary.tung/data/pie%20vs%20cake.py">Cake comparisons</a></li>
+</ul>
+<p>and even </p>
+<ul>
+<li><a href="http://149.89.150.100/~kyle.oleksiuk/Kyle&amp;AnishProject2.html">Pokemon</a></li>
+</ul>
+<p>That's just a sampling.</p>
+<p>Well done guys.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2013-05-09-Evaluating_Teachers.md/" class="u-url">Evaluating Teachers - Evaluating schools</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2013-05-09-Evaluating_Teachers.md/" rel="bookmark"><time class="published dt-published" datetime="2013-05-09T00:00:00-04:00" title="2013-05-09 00:00">2013-05-09 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2013-05-09-Evaluating_Teachers.md/#disqus_thread" data-disqus-identifier="cache/posts/2013-05-09-Evaluating_Teachers.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<h2>The Problem:</h2>
+<p>The buzz word is "accountability." Why are teachers special? Why don't
+they feel they need to be evaluated like other professionals? Why do
+they feel they need a "job for life?"</p>
+<p>Of course, the job for life line is nonsense -- teachers have tenure,
+but that's just due process - not a guarantee of a job.</p>
+<p>Friends in the private sector ask "if a teacher is doing a good job,
+why do they need tenure? In the private sector as long as you're
+producing, you've got nothing to worry about."</p>
+<p>Well, first I dispute that last sentence. second, K-12 education isn't
+the real world. It's rife with stories of administrators that go after
+teachers for no apparent reason. Why? Because accountability doesn't
+mean accountability - it means we can fire teachers at will. No one
+wants accountability to apply to anyone except the ground troops. I
+don't have an exact attribution, but Mayor Bloomberg is frequently
+quoted as stating "If parent's don't like the way I run the schools,
+they can boo me at parades."</p>
+<p>Beyond that, the powers that be state that teacher accountability
+revolves around flawed "value added" metrics but other bloggers such as Gary
+Rubintein have already done a great job debunking that.</p>
+<h2>The Solution:</h2>
+<p>The solution is to simplify. There's a better way. Let's start by
+making the principals accountable. Bottom line is that they're
+responsible for a school's success. If the school doesn't cut the
+mustard, then they're out. But, how do we measure this?</p>
+<p>High Schools</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2013-04-30-Madlib_Madness.md/" class="u-url">Madlib Madness</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2013-04-30-Madlib_Madness.md/" rel="bookmark"><time class="published dt-published" datetime="2013-04-30T00:00:00-04:00" title="2013-04-30 00:00">2013-04-30 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2013-04-30-Madlib_Madness.md/#disqus_thread" data-disqus-identifier="cache/posts/2013-04-30-Madlib_Madness.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Earlier in the term, our intro classes spent a little time learning
+some basic HTML. We don't spend a lot of time on it, just enough so
+that the students can present their work in a static web site. The end
+goal, though, was to programatically generate the web sites - there's
+nothing quite as empowering to a student as when they can present their
+work to the world.</p>
+<p>Finally, it's all coming together.</p>
+<p>Now that the classes are comfortable with Python, we can have some
+fun. We all remember Mad Libs - that wacky word game where you select
+unknowingly select words to substitute into a basic story and
+hilarity ensues.</p>
+<p>We did our own versions using Python files, lists and
+dictionaries. </p>
+<p>Here are some of the results:
+ 1. <a href="http://homer.stuy.edu/~richard.zhan/19-Madlibs.py">
+http://homer.stuy.edu/~richard.zhan/19-Madlibs.py
+</a>
+ 2. <a href="http://homer.stuy.edu/~veronika.azzara/madlibifystory.py">
+http://homer.stuy.edu/~veronika.azzara/madlibifystory.py
+</a>
+ 3. <a href="http://homer.stuy.edu/~belinda.liang/18-MadLibsMiniProject.py">
+http://homer.stuy.edu/~belinda.liang/18-MadLibsMiniProject.py
+</a>
+ 4. <a href="http://homer.stuy.edu/~kyle.oleksiuk/MadlibifyProject5.py">
+http://homer.stuy.edu/~kyle.oleksiuk/MadlibifyProject5.py
+</a>
+ 5. <a href="http://homer.stuy.edu/~phillip.huynh/story.py">
+http://homer.stuy.edu/~phillip.huynh/story.py
+</a></p>
+<p>The students wrote a basic story with substitution points. Their
+programs then randomly replaced these points with words from an
+assortment of categorized lists. </p>
+<p>Enjoy!!!!!</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2013-04-14-Real_Data.md/" class="u-url">Real Data</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2013-04-14-Real_Data.md/" rel="bookmark"><time class="published dt-published" datetime="2013-04-14T00:00:00-04:00" title="2013-04-14 00:00">2013-04-14 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2013-04-14-Real_Data.md/#disqus_thread" data-disqus-identifier="cache/posts/2013-04-14-Real_Data.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>When looking for assignments for our classes, in addition to trying to
+craft assignments that develop and reinforce key ideas, we also strive
+to come up with ideas that "speak" to the students and keep their
+interest. We write small games, use problems within the student's
+experiences, and in general try to find problems that are appealing.</p>
+<p>This is much easier to do when the kids can read data from a file. The
+tool we're using with our sophomores right now is Python and Python
+makes reading files very easy. Combining file input with basic string
+functions and all of a sudden, we can read and parse comma separated
+values.</p>
+<p _="%" endhighlight="endhighlight">{% highlight python linenos %}
+l=[]
+for line in open(filename).readlines():
+    l.append(line.strip().split(",")</p>
+<p>True, this doesn't handle quotes and embedded commas, but that just
+leads to a discussion on cleaning up data and when we do list
+comprehensions, things get even slicker.</p>
+<p>We could just make up some sample data, for example, student test scores:</p>
+<p>Tom,95,87,97,93</p>
+<p>Sarah,98,98,84,92</p>
+<p>Harry,90,90,90,90</p>
+<p>Sue,94,95,96,97</p>
+<p>But it's so much more fun with the wealth of CSV data waiting to be
+grabbed. If your kids like sports, you can check
+out <a href="http://www.baseball-reference.com/">baseball-reference.com</a>
+or it's counterparts for basketball or football. </p>
+<p>We decided to look at government data instead.</p>
+<p>Federal data can be found at <a href="http://www.data.gov/">data.gov</a> but we focused on <a href="https://data.cityofnewyork.us/">New York City</a>. We
+settled
+on <a href="https://data.cityofnewyork.us/Education/SAT-Results/f9bf-2cp4">SAT</a>
+data. SAT math, reading, and writing scores for all NYC public
+schools. Something Stuy kids are very interested in. We were able to
+look for comparable schools, which schools had large spreads between
+math and verbal, which schools had score increases over time, etc.</p>
+<p>Much more interesting to look at real SAT data than made up student
+grade info. </p>
+<p>Tomorrow we'll look at combining data sets -- looking at
+the relationship between SAT scores and school ratings and
+demographics. It should be interesting. Later, we'll grab books
+from <a href="http://www.gutenberg.org/">Project Gutenberg</a> and see
+how we can analyze large texts.</p>
+<p>The moral of the story - there's lots of great data easily accessible
+-- let's use it to motivate and engage our students.</p>
+<p><b>UPDATE:</b></p>
+<p>It's taken me a while to post this, and in the meantime we analyzed
+the SAT data from one NYC data set and matched it with a data set of
+demographic data:</p>
+<div align="center">
+<a href="img/SAT_SCORES.png" rel="lightbox">
+<img width="50%" src="img/SAT_SCORES.png" class="" alt=""></a>
+</div>
+
+<p>The graph shows a strong correlation between schools with a high number of
+students eligable for free lunch (the Y-axis) and low SAT scores (the
+X-axis). This led to a very interesting conversation on the effects of
+poverty.</p>
+<p>We also noticed a couple of outliers. There's one school at about
+(1400,82). High poverty (free lunch) and national average SAT. Also two
+schools with low free lunch numbers and middling SAT scores
+(1400,17ish).</p>
+<p>The (1400,82) point turns out to be a school that caters to English
+Language Learners and we presume has a large number of recent
+immigrants (partially noted by the name and also by the fact that
+their SAT math scores far surpassed the English ones).</p>
+<p>Great discussions ensued all due to applying CS to real world data.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md/" class="u-url">Who won the election -- Quadratic to Linear Time!!!!!</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md/" rel="bookmark"><time class="published dt-published" datetime="2013-03-23T00:00:00-04:00" title="2013-03-23 00:00">2013-03-23 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md/#disqus_thread" data-disqus-identifier="cache/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Last week was crazy. Busy, stressful, late night after late night. It
+ended, though, on a great note.</p>
+<p>A young lady in my intro class found me in my office near the end of the day:</p>
+<blockquote>
+<p>Student: Mr. Z, I wanted to make sure to catch you before vacation!</p>
+<p>Me: What's up?</p>
+<p>Student: I wanted to tell you that today's lesson was AWESOME!!!!!!</p>
+</blockquote>
+<p>Wow. I've been teaching 23 years and that's never happened before!!!!</p>
+<p>So, what was the hubbub about?</p>
+<p>We've been doing list processing in Python over the past few days. We already did the basics, such as finding the largest element in a list:</p>
+<p _="%" endhighlight="endhighlight">{% highlight python linenos %}
+def find_max(L):
+    maxval = L[0]
+    i=0
+    while i<len if l>maxval:
+            maxval=L[i]
+        i += 1
+    return maxVal</len></p>
+<p>We've also done basic searching, counting elements, removing elements, etc.</p>
+<p>Today we started with finding the mode of a list of grades.</p>
+<p>Most students approached the problem as a maximum problem. Assume the
+first item is the mode and find it's frequency, then proceed through
+the list each time seeing if the current node occurs more fequently
+than the "mode so far." Pretty much the same idea as find_max (but in this case, returning a list of all the modes).</p>
+<p _="%" endhighlight="endhighlight">{% highlight python linenos %}
+def mode(L):
+    modecount = L.count( L[0] )
+    modes = [ L[0] ]
+    i = 1
+    while i &lt; len(L):
+        c = L.count(L[i]) 
+        if c &gt; modecount:
+            modecount = c
+            modes = [ L[i] ]
+        elif c==modecount and L[i] not in modes:
+            modes.append( L[i] )
+        i += 1
+    return modes</p>
+<p>Pretty cool. The kids are doing something pretty sophisticated here. </p>
+<p>Time to look deeper. We started running this on larger and larger data
+sets. Things started really slowing down at about 20K. We then timed
+things to get some numbers (thanks
+<a href="http://stackoverflow.com/questions/5998245/get-current-time-in-milliseconds-in-python">StackOverflow</a>). </p>
+<p>What was going on. The students pretty quickly honed in on the line
+that called L.count(L[i]) -- <strong>Hidden Complexity</strong>. </p>
+<p>We haven't done big-O notation but the class easily saw that count had
+to go through the entire data set and we ended up with an N^2
+algorithm. For example, if we have 10 items, the main loop executes 10
+times and each time, count goes through the entire list (10 items) as
+well. If we go to 100 items, it becomes 100x100.</p>
+<p>What to do????</p>
+<p>Time to talk about what's probably the most discussed instance of mode
+finding - elections. The winner is "the mode of the ballots."</p>
+<p>Of course we don't use the above algorithm. We usually tally or count the ballots. We go through the ballots once, each time adding one to the appropriate candidates "bucket." </p>
+<div align="center">
+<a href="img/tally.png" rel="lightbox">
+<img width="50%" src="img/tally.png" class="" alt=""></a>
+</div>
+
+<p>From here, it's a short step to see that we can use a list. It's
+indices represent the grade values and the data in the list the counts
+or tallies:</p>
+<p _="%" endhighlight="endhighlight">{% highlight python linenos %}
+def fastmode(L):
+    i=0
+    counts = []
+    while i&lt;max(L)+1:
+        counts.append(0)
+        i+=1
+    i=0
+    while i &lt; len(L):
+        counts[ L[i] ] += 1
+        i += 1
+    modecount = max(counts)
+    modes = []
+    i=0
+    while i &lt; len(counts):
+        if counts[i]==modecount:
+            modes.append(i)
+        i=i+1
+    return modes</p>
+<p>We go through the list once to build the tallies and then the "tally"
+list once to get the modes. Simple, straightforward, and linear
+time!!!!!!!!!</p>
+<p>The original routine started to hit a roadblock at about 20K items,
+here we got to one million without breaking a sweat.</p>
+<p>The take away:</p>
+<ul>
+<li>Get it working first.</li>
+<li>Then profile to find your bottleneck</li>
+<li>Look at the problem in a different way</li>
+<li>Using data structures in a clever way can really improve performance.</li>
+</ul>
+</div>
+    </div>
+    </article>
+</div>
+        <nav class="postindexpager"><ul class="pager">
+<li class="previous">
+                <a href="index-7.html" rel="prev">Newer posts</a>
+            </li>
+            <li class="next">
+                <a href="index-5.html" rel="next">Older posts</a>
+            </li>
+        </ul></nav><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+						<div class="col-md-3">
+								<br><!-- feedburner subscribe via email --><form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CestLaZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+<p>Enter your email address:</p>
+<p><input type="text" style="width:140px" name="email"></p>
+<input type="hidden" value="CestLaZ" name="uri"><input type="hidden" name="loc" value="en_US"><input type="submit" value="Subscribe"><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p>
+</form>
+								<!--  feedburner subscribe end -->
+								<!-- Twitter sidebar start -->
+								<table class="table"><tr><td>
+												<a class="twitter-timeline" href="https://twitter.com/zamansky" data-widget-id="251117725303312385">Tweets by @zamansky</a>
+												<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</td></tr></table>
+<!-- Twitter sidebar end -->
+</div>
+						<!--End of body content-->
+
+						<footer id="footer">
+								Contents © 2016         <a href="mailto:zamansky@gmail.com">Mike Zamansky</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+								
+						</footer>
+</div>
+		</div>
+
+		            <script src="assets/js/jquery.min.js"></script><script src="assets/js/bootstrap.min.js"></script><script src="assets/js/moment-with-locales.min.js"></script><script src="assets/js/fancydates.js"></script><script src="assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+		 moment.locale("en");
+		 fancydates(0, "YYYY-MM-DD HH:mm");
+		</script><!-- end fancy dates -->
+</div>
+</body>
+</html>

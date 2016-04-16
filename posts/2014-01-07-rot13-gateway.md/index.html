@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<base href="http://cestlaz.github.io/posts/2014-01-07-rot13-gateway.md/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rot13 - Gateway &lt;s&gt;Drugs&lt;/s&gt; Techniques | C'est la Z</title>
+<link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://cestlaz.github.io/posts/2014-01-07-rot13-gateway.md/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
+<link rel="prev" href="../2014-01-05-hacking-sessions-7.md/" title="Hacking Sessions Resume" type="text/html">
+<link rel="next" href="../2014-01-11-badstats.md/" title="At Last - CS Gender Equity in Multiple States!!!!!" type="text/html">
+<meta property="og:site_name" content="C'est la Z">
+<meta property="og:title" content="Rot13 - Gateway &lt;s&gt;Drugs&lt;/s&gt; Techniques">
+<meta property="og:url" content="http://cestlaz.github.io/posts/2014-01-07-rot13-gateway.md/">
+<meta property="og:description" content="I've written before about That One Inspirational Curriculum -
+the idea that it's not the topic in the syllabus but rather what the
+teacher does with it.
+Some times a simple problem can lead to some re">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2014-01-07T00:00:00-05:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+
+
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cestlaz.github.io/">
+						<img class="zlogo" src="../../assets/images/thluffy.jpg" id="logo"><span class="zname" id="blog-title">C'est la Z</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav navbar-right zmenu">
+<li class="zitem">
+<a href="http://github.com/zamansky">GitHub</a>
+                </li>
+<li class="zitem">
+<a href="../../archive.html">Archive</a>
+                </li>
+<li class="zitem">
+<a href="../../stories/about">About</a>
+                </li>
+<li class="zitem">
+<a href="../../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><h2 class="text-center">
+		Musings about education, computer science,</h2>
+		<h3 class="text-center">and maybe a few other miscellaneous topics.
+</h3>
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+		<div class="body-content">
+				<!--Body content-->
+				<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-8">
+				
+								
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Rot13 - Gateway &lt;s&gt;Drugs&lt;/s&gt; Techniques</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                    Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2014-01-07T00:00:00-05:00" itemprop="datePublished" title="2014-01-07 00:00">2014-01-07 00:00</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/2014-01-07-rot13-gateway.html">Comments</a>
+
+
+            
+        </p>
+</div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>I've written before about <a href="http://cestlaz.github.io/2013/08/07/That_One_Inspirational_Curriculum.html#.UsyYlN_EvZ8">That One Inspirational Curriculum</a> -
+the idea that it's not the topic in the syllabus but rather what the
+teacher does with it.</p>
+<p>Some times a simple problem can lead to some really neat concepts.</p>
+<p>Take what we did in my AP classes over the past couple of days. </p>
+<p>I wanted a nice little warm up after the break so we wrote a simple
+<a href="http://www.rot-n.com/">rotation cipher</a>. We started with a little
+encode routine - take a string and rotate the letters by some
+offset. For example if we use an offset of 3, 'hello' becomes
+'khoor' - each letter being shifted over thee places.</p>
+<p>Pretty easy for the class but even a simple problem like this lets us
+talk about a few things, including:</p>
+<ul>
+<li>we can exploit the ASCII ordering but have to remember to deal with
+   the offsets. That is in ASCII, an  'a' is 97, we can't just calculate c =
+   (c+offset)%26. We have to first shift the letter down to 0, add and
+   mod, and then shift back c = ((c-'a') +offset)%26 + 'a'</li>
+<li>We can talk about neat Internet history such as how
+  (rot13)[http://en.wikipedia.org/wiki/ROT13] was used to hide
+  spoilers and offensive material on the internet.</li>
+</ul>
+<p>I then ran a program that broke the encryption. I also showed the
+students how it didn't work on single words but did on full sentences.</p>
+<p>By hand, decodingn even a simple cipher is a pain.</p>
+<p>With computer assist, it's easy - just print out all 26 possible rotations and pull out the right one.</p>
+<p>Our question was how do we have the computer do it all on its own?</p>
+<p>I asked them to think about how they might write a program to
+accomplish this -- and that's when the magic starts.</p>
+<p>They came up with a few interesting ideas:</p>
+<ol>
+<li>For each of the 26 rotations, choose the one with the most vowels.</li>
+<li>For each word in each rotation, give a point for each word with a vowel and choose the rotation with the highest score.</li>
+<li>Look for common short words in each rotation and then check other words against a dictionary.</li>
+<li>Do the letters appear with the same frequencies as in the English language</li>
+</ol>
+<p>We noticed that all of these suggestions are based on our knowledge of
+English. What if the message was in a different language or even a
+different alphabet?</p>
+<p>We decided to use choice 4 - the letter frequencies.</p>
+<p><strong>Magic part 1 - using known data to figure out a pattern for unknown data</strong></p>
+<p>Even if we don't know the frequencies, if we can get a sample document in our language, we can figure them out. We downloaded a text from Project Gutenberg and used it to build
+an array of 26 elements called <em>CorpusFreqs</em>. CorpusFreqs[0] would hold the
+frequency of the letter 'a' in our sample document (that is, how many
+times 'a' appears over the total number of letters in our document),
+CorpusFreqs[1] the frequency of 'b' etc.</p>
+<p>Now we have a model that we can use to compare our rotations to.</p>
+<p><strong>Magic part 2 - wow, that 9th grade math is actually useful</strong></p>
+<p>At this point, it usually isn't clear how to compare our rotations to
+the model frequencies we calculated. Time to simplify,</p>
+<p>We can look at another problem: Selecting a house.</p>
+<blockquote>
+<p><strong>Me:</strong>  if we can only have one criteria, what would it be?</p>
+<p><strong>Class:</strong> Neighborhood</p>
+<p><strong>Me:</strong> Ok, let's rate each neighborhood between 0 and 100 </p>
+<p><strong>Me:</strong> We can draw two houses on a line, which is better?</p>
+<p><strong>Class:</strong> The one with the larger value!</p>
+<p><strong>Me:</strong> What if we add a third house? Which is it more similar to?</p>
+<p><strong>Class:</strong> The one it's closer to.</p>
+</blockquote>
+<p>Next:</p>
+<blockquote>
+<p><strong>Me:</strong> Well, what if we add another feature? Cost - let's map low cost to 100 and high cost to 0 and all the other costs in between.</p>
+<p><strong>Me:</strong> If we want to visualize a house, how can we do it?</p>
+<p><strong>Class:</strong> We can use a graph - like x,y points use location,cost points.</p>
+</blockquote>
+<p>So we do it.</p>
+<blockquote>
+<p><strong>Me:</strong> This is the least desirable house (0,0) and this is the best one (1,1).
+I plot two houses and ask</p>
+<p><strong>Me:</strong> Which is more desirable?</p>
+<p><strong>Class:</strong> That one (they indicate the one closer to 1,1).</p>
+<p><strong>Me:</strong> How can you tell</p>
+<p><strong>Class:</strong> It's closer</p>
+<p><strong>Me:</strong> How do we figure it out?</p>
+<p><strong>Class:</strong> The Distance Formula!!!!!</p>
+</blockquote>
+<p>So now we add a third feature - size. It's pretty easy to show that
+the distance formula extends to three-space and in fact to even higher
+dimensions.</p>
+<p><strong>Magic part 3 - from 3 dimensions to 26</strong></p>
+<p>So now, we bring it back to our cipher. For the house example, we used
+points in 1,2, and 3 dimensions (and we actually talked about it in
+4D) so we used 1 through 4-space vectors to represent the points and
+used Euclidean distance formula to see what houses were similar to
+each other, or what points where near to each other</p>
+<p>From there, it's easy to see that the frequency array we built from ou sample text is a
+26-space vector and that we can build a similar vector for each
+rotation.</p>
+<p>From there we can use the distance formula to see how close each
+rotation is to the sample document vector. The rotation with the
+closest vector is pobably our solution.</p>
+<p>So from a simple warm up problem we're at the gateway to some serious techniques that will come back time and time again as the students move through their CS education and careers.</p>
+<p>Fun!</p>
+</div>
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_google_plusone_share"></a>
+<a class="addthis_button_hackernews"></a>
+<a class="addthis_button_reddit"></a>
+<a class="addthis_button_gmail"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
+</div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../2014-01-05-hacking-sessions-7.md/" rel="prev" title="Hacking Sessions Resume">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../2014-01-11-badstats.md/" rel="next" title="At Last - CS Gender Equity in Multiple States!!!!!">Next post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="cestlaz",
+            disqus_url="http://cestlaz.github.io/posts/2014-01-07-rot13-gateway.md/",
+        disqus_title="Rot13 - Gateway <s>Drugs</s> Techniques",
+        disqus_identifier="cache/posts/2014-01-07-rot13-gateway.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+						<div class="col-md-3">
+								<br><!-- feedburner subscribe via email --><form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CestLaZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+<p>Enter your email address:</p>
+<p><input type="text" style="width:140px" name="email"></p>
+<input type="hidden" value="CestLaZ" name="uri"><input type="hidden" name="loc" value="en_US"><input type="submit" value="Subscribe"><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p>
+</form>
+								<!--  feedburner subscribe end -->
+								<!-- Twitter sidebar start -->
+								<table class="table"><tr><td>
+												<a class="twitter-timeline" href="https://twitter.com/zamansky" data-widget-id="251117725303312385">Tweets by @zamansky</a>
+												<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</td></tr></table>
+<!-- Twitter sidebar end -->
+</div>
+						<!--End of body content-->
+
+						<footer id="footer">
+								Contents © 2016         <a href="mailto:zamansky@gmail.com">Mike Zamansky</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+								
+						</footer>
+</div>
+		</div>
+
+		            <script src="../../assets/js/jquery.min.js"></script><script src="../../assets/js/bootstrap.min.js"></script><script src="../../assets/js/moment-with-locales.min.js"></script><script src="../../assets/js/fancydates.js"></script><script src="../../assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+		 moment.locale("en");
+		 fancydates(0, "YYYY-MM-DD HH:mm");
+		</script><!-- end fancy dates -->
+</div>
+</body>
+</html>

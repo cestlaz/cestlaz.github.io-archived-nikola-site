@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<base href="http://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>From selection to sorting | C'est la Z</title>
+<link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
+<link rel="prev" href="../2014-03-11-sat-the-same.html/" title="The new SAT - the more things stay the same" type="text/html">
+<link rel="next" href="../2014-03-17-subtle-errors-sorting.html/" title="Sorting - Subtle Errors" type="text/html">
+<meta property="og:site_name" content="C'est la Z">
+<meta property="og:title" content="From selection to sorting">
+<meta property="og:url" content="http://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/">
+<meta property="og:description" content="div.center {text-align:center;}
+
+
+
+When I first saw the quicksort it was in an algorithms class back in
+the day. We first learned the quicksort, then choosing a good pivot
+element and then as an after">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2014-03-12T00:00:00-04:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+
+
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cestlaz.github.io/">
+						<img class="zlogo" src="../../assets/images/thluffy.jpg" id="logo"><span class="zname" id="blog-title">C'est la Z</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav navbar-right zmenu">
+<li class="zitem">
+<a href="http://github.com/zamansky">GitHub</a>
+                </li>
+<li class="zitem">
+<a href="../../archive.html">Archive</a>
+                </li>
+<li class="zitem">
+<a href="../../stories/about">About</a>
+                </li>
+<li class="zitem">
+<a href="../../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><h2 class="text-center">
+		Musings about education, computer science,</h2>
+		<h3 class="text-center">and maybe a few other miscellaneous topics.
+</h3>
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+		<div class="body-content">
+				<!--Body content-->
+				<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-8">
+				
+								
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">From selection to sorting</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                    Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2014-03-12T00:00:00-04:00" itemprop="datePublished" title="2014-03-12 00:00">2014-03-12 00:00</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/2014-03-12-select-to-sort.html">Comments</a>
+
+
+            
+        </p>
+</div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script><script type="text/javascript" src="assets/static/mj.js"></script><style>
+div.center {text-align:center;}
+</style>
+<p>
+When I first saw the <a href="http://en.wikipedia.org/wiki/Quicksort">quicksort</a> it was in an algorithms class back in
+the day. We first learned the quicksort, then choosing a good pivot
+element and then as an afterthought we did <a href="http://en.wikipedia.org/wiki/Quickselect">quickselect</a>.
+</p>
+
+<p>
+Fast forward to teaching. I was never really happy teaching
+quicksort. Mergesort is easy to motivate and it's pretty easy to
+write. Quicksort always felt a little forced. 
+</p>
+
+<p>
+I thought I'd try switching things up this time and doing quickselect
+first.
+</p>
+
+<p>
+The motivating problem: find the K<sup>th</sup> smallest item in a list - in our
+case the list is an array of ints.
+</p>
+
+<p>
+I want to start with the least efficient algorithm so I stack the
+deck. I remind them that we've been finding the smallest item in a
+list for two years now.
+</p>
+
+<p>
+They don't disappoint and suggest something like this:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #DFAF8F;">L</span> = [10,3,28,82,14,42,66,74,81]
+
+<span style="color: #F0DFAF; font-weight: bold;">def</span> <span style="color: #93E0E3;">findKth</span>(L,k):
+    <span style="color: #DFAF8F;">omits</span>=[]
+    <span style="color: #F0DFAF; font-weight: bold;">for</span> i <span style="color: #F0DFAF; font-weight: bold;">in</span> <span style="color: #DCDCCC; font-weight: bold;">range</span>(k):
+        <span style="color: #DFAF8F;">ans</span>=<span style="color: #DCDCCC; font-weight: bold;">max</span>(L)
+        <span style="color: #F0DFAF; font-weight: bold;">for</span> item <span style="color: #F0DFAF; font-weight: bold;">in</span> L:
+            <span style="color: #F0DFAF; font-weight: bold;">if</span> item &lt; ans <span style="color: #F0DFAF; font-weight: bold;">and</span> item <span style="color: #F0DFAF; font-weight: bold;">not</span> <span style="color: #F0DFAF; font-weight: bold;">in</span> omits:
+                <span style="color: #DFAF8F;">ans</span>=item
+        omits.append(ans)
+    <span style="color: #F0DFAF; font-weight: bold;">return</span> ans
+
+<span style="color: #F0DFAF; font-weight: bold;">print</span> findKth(L,3)
+</pre>
+</div>
+
+<p>
+Clearly an \(O(n^2)\) algorithm.
+</p>
+
+
+<p>
+Can we do better?
+</p>
+
+<p>
+Certainly.
+</p>
+
+<p>
+The students then suggest sorting the data set first. If we use
+mergesort, we can sort in \(O(nLg (n))\) time. This lead to a great
+conversation about sorting being so fast it's practically free and
+that you don't have to hard code everything from scratch. Not only is
+sorting the data set then plucking the k<sup>th</sup> item out much faster, if
+you already have a sort written or if you use your language's
+library's sort, it's much easier as well:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span style="color: #F0DFAF; font-weight: bold;">def</span> <span style="color: #93E0E3;">findKth</span>(L,k):
+    <span style="color: #DFAF8F;">tmp</span> = <span style="color: #DCDCCC; font-weight: bold;">sorted</span>(L)
+    <span style="color: #F0DFAF; font-weight: bold;">return</span> tmp[k]
+</pre>
+</div>
+
+
+<p>
+But we can do even better. So now we talk about <b>quickselect</b>
+</p>
+
+<p>
+We pick a random pivot, partition the list a la quicksort (reorder the
+list such that all items less than the pivot are to its left, and all
+items greater than the pivot are to its right).
+</p>
+
+<p>
+We now know that after partitioning. the pivot is in it's exact
+location. If its index is <b>k</b> then we're done. If not, we can
+recursively <b>quickselect</b> on either the left or right side. 
+</p>
+
+<p>
+Pretty cool, but is it faster?
+</p>
+
+<p>
+It's easy to see that if we keep choosing a bad pivot (the smallest or
+largest in the list), each iteration takes \(n\) time to partition and
+each iteration takes one item out of contention. This takes us back to
+\(O(n^2)\). 
+</p>
+
+<p>
+However…
+</p>
+
+<p>
+If we choose a good partition – at the middle of the list, each
+partition takes less and less time. We get a run time of:
+</p>
+
+<p>
+\(n+\frac{n}{2} +\frac{n}{4}+\frac{n}{8}+\dots\) and since \(\frac{n}{2}
++\frac{n}{4}+\frac{n}{8}\dots=n\) this becomes an \(O(2n)\), or \(O(n)\) algorithm.
+</p>
+
+
+<p>
+That's really cool.
+</p>
+
+<p>
+Homework was the actual implementation.
+</p>
+
+<p>
+I think this might be a better way to approach quicksort. It seems
+less forced, plus the class gets to go through the exercise of taking
+an algorithm form \(O(n^2)\) to \(O(nlg(n))\) to \(O(n)\).
+</p>
+
+
+<p>
+Next, moving to the quicksort and also showing that we can indeed
+avoid those really bad pivots.
+</p>
+
+
+<h4>Addendum</h4>
+
+We moved to quicksort today and overall I'm happy with this
+approach. The only thing I think needs tweaking is going from the idea
+of partitioning to Java code. Java makes it somewhat of a bear.
+<br><!-- AddThis Button BEGIN --><div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_google_plusone_share"></a>
+<a class="addthis_button_hackernews"></a>
+<a class="addthis_button_reddit"></a>
+<a class="addthis_button_gmail"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
+</div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../2014-03-11-sat-the-same.html/" rel="prev" title="The new SAT - the more things stay the same">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../2014-03-17-subtle-errors-sorting.html/" rel="next" title="Sorting - Subtle Errors">Next post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="cestlaz",
+            disqus_url="http://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/",
+        disqus_title="From selection to sorting",
+        disqus_identifier="cache/posts/2014-03-12-select-to-sort.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+						<div class="col-md-3">
+								<br><!-- feedburner subscribe via email --><form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CestLaZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+<p>Enter your email address:</p>
+<p><input type="text" style="width:140px" name="email"></p>
+<input type="hidden" value="CestLaZ" name="uri"><input type="hidden" name="loc" value="en_US"><input type="submit" value="Subscribe"><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p>
+</form>
+								<!--  feedburner subscribe end -->
+								<!-- Twitter sidebar start -->
+								<table class="table"><tr><td>
+												<a class="twitter-timeline" href="https://twitter.com/zamansky" data-widget-id="251117725303312385">Tweets by @zamansky</a>
+												<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</td></tr></table>
+<!-- Twitter sidebar end -->
+</div>
+						<!--End of body content-->
+
+						<footer id="footer">
+								Contents © 2016         <a href="mailto:zamansky@gmail.com">Mike Zamansky</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+								
+						</footer>
+</div>
+		</div>
+
+		            <script src="../../assets/js/jquery.min.js"></script><script src="../../assets/js/bootstrap.min.js"></script><script src="../../assets/js/moment-with-locales.min.js"></script><script src="../../assets/js/fancydates.js"></script><script src="../../assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+		 moment.locale("en");
+		 fancydates(0, "YYYY-MM-DD HH:mm");
+		</script><!-- end fancy dates -->
+</div>
+</body>
+</html>

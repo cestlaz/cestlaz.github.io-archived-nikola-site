@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<base href="http://cestlaz.github.io/posts/2010-01-19-subversion-in-classroom.html/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Subversion in the classroom | C'est la Z</title>
+<link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://cestlaz.github.io/posts/2010-01-19-subversion-in-classroom.html/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
+<link rel="prev" href="../2010-01-15-cold-weather-commuting.html/" title="Cold Weather Commuting" type="text/html">
+<link rel="next" href="../2010-02-01-subversion-for-homework-part-ii-and.html/" title="Subversion for Homework part II and the start of the new term" type="text/html">
+<meta property="og:site_name" content="C'est la Z">
+<meta property="og:title" content="Subversion in the classroom">
+<meta property="og:url" content="http://cestlaz.github.io/posts/2010-01-19-subversion-in-classroom.html/">
+<meta property="og:description" content="Ok, not subversion, rather subversion, the version control system.I've used subversion as a way for students to hand in their projects for years. I haven't used it with my intro classes as I think the">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2010-01-19T00:00:00-05:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+
+
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cestlaz.github.io/">
+						<img class="zlogo" src="../../assets/images/thluffy.jpg" id="logo"><span class="zname" id="blog-title">C'est la Z</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav navbar-right zmenu">
+<li class="zitem">
+<a href="http://github.com/zamansky">GitHub</a>
+                </li>
+<li class="zitem">
+<a href="../../archive.html">Archive</a>
+                </li>
+<li class="zitem">
+<a href="../../stories/about">About</a>
+                </li>
+<li class="zitem">
+<a href="../../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><h2 class="text-center">
+		Musings about education, computer science,</h2>
+		<h3 class="text-center">and maybe a few other miscellaneous topics.
+</h3>
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+		<div class="body-content">
+				<!--Body content-->
+				<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-8">
+				
+								
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Subversion in the classroom</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                    Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2010-01-19T00:00:00-05:00" itemprop="datePublished" title="2010-01-19 00:00">2010-01-19 00:00</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/2010-01-19-subversion-in-classroom.html">Comments</a>
+
+
+            
+        </p>
+</div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    Ok, not <a href="http://www.merriam-webster.com/dictionary/subversion">subversion</a>, rather <a href="http://subversion.tigris.org/">subversion</a>, the version control system.<br><br>I've used subversion as a way for students to hand in their projects for years. I haven't used it with my intro classes as I think the learning curve is a little steep and the benefits few, but for A.P. and beyond (juniors and seniors) it's worked very well as a method of collection and I think it's good to get the kids in the habit of using versioning systems.<br><br>A versioning, or revision control system let's an individual frequently save versions of their files, in our case, on a central server.  One can easily go back to earlier versions as well as manage changes made by multiple developers. Once one's in the habit of using a revision control system, it can greatly improve  productivity.<br><br>For my classes, I would create a repository for a project, give the kids a little version control primer, and they would create projects in the repository.<br><br>There are usually a few bumps in the road.<br><br>At first the kids go kicking and screaming. They create the repository, and neglect it until the last minutes. I'd wake up on a project due date, check out the repository and seem maybe 4 out of 60 projects only to see them mystically appear as the closing time approached.<br><br>As we move through the year and work on more projects, things get better.<br><br>Students start to update their projects more frequently. Not as frequently as I like, partly because SVN gets really slow on our system, but it's still an improvement.  Invariably, it saves a student or two when they accidentally delete all their files. Also, when things become  a real mess, being able to go back a few versions is a godsend. A much better alternative than what they had to do in the past, which was restarting the entire project.<br><br><br><br>What I find really interesting is how wonderful a tool svn is from my point of view as an educator.<br><br>By looking at the log files, I can see who made changes and when. By looking at the diffs, I can look at the projects progress much as an english teacher might look at drafts. <br><br> Version control for projects turns out to be a win across the board.<br><br>Recently, I've been using SVN for homeworks as well. Homework collection has always been difficult for me as I'm disorganized and forgetful. SVN has made things much easier. At the start of the semester, I made a homework repository for each student. They then check it out at home.<br><br>Whenever a student does a homework, he or she just names it according to our conventions (HW1-name, HW2-name, etc.), put it in their checked out repository, add the file(s) and commits. With tortoiseSVN under windows it's trivial.<br><br>This lets me easily see all of the homeworks for a student as well as all submissions for a specific assignment. Again it's an overall win.<br><br>Next semester I'm going to be experimenting with GIT as a replacement for SVN.<br><br>If you're looking for a way to collect and track assignments, I'd highly recommend using a revision control system.<br><br><br><br><div class="blogger-post-footer"><img width="1" height="1" src="https://blogger.googleusercontent.com/tracker/468689896075458340-8125210248407710385?l=cestlaz.blogspot.com" alt=""></div>
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_google_plusone_share"></a>
+<a class="addthis_button_hackernews"></a>
+<a class="addthis_button_reddit"></a>
+<a class="addthis_button_gmail"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
+</div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../2010-01-15-cold-weather-commuting.html/" rel="prev" title="Cold Weather Commuting">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../2010-02-01-subversion-for-homework-part-ii-and.html/" rel="next" title="Subversion for Homework part II and the start of the new term">Next post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="cestlaz",
+            disqus_url="http://cestlaz.github.io/posts/2010-01-19-subversion-in-classroom.html/",
+        disqus_title="Subversion in the classroom",
+        disqus_identifier="cache/posts/2010-01-19-subversion-in-classroom.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+						<div class="col-md-3">
+								<br><!-- feedburner subscribe via email --><form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CestLaZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+<p>Enter your email address:</p>
+<p><input type="text" style="width:140px" name="email"></p>
+<input type="hidden" value="CestLaZ" name="uri"><input type="hidden" name="loc" value="en_US"><input type="submit" value="Subscribe"><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p>
+</form>
+								<!--  feedburner subscribe end -->
+								<!-- Twitter sidebar start -->
+								<table class="table"><tr><td>
+												<a class="twitter-timeline" href="https://twitter.com/zamansky" data-widget-id="251117725303312385">Tweets by @zamansky</a>
+												<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</td></tr></table>
+<!-- Twitter sidebar end -->
+</div>
+						<!--End of body content-->
+
+						<footer id="footer">
+								Contents © 2016         <a href="mailto:zamansky@gmail.com">Mike Zamansky</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+								
+						</footer>
+</div>
+		</div>
+
+		            <script src="../../assets/js/jquery.min.js"></script><script src="../../assets/js/bootstrap.min.js"></script><script src="../../assets/js/moment-with-locales.min.js"></script><script src="../../assets/js/fancydates.js"></script><script src="../../assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+		 moment.locale("en");
+		 fancydates(0, "YYYY-MM-DD HH:mm");
+		</script><!-- end fancy dates -->
+</div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!--
+.. title: Cellular Automata for Pathfinding in NetLogo
+.. slug: 2016-01-17-maze-ca.html
+.. date: 2016-01-17
+.. type: text
+-->
+
+
+<link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<style>
+div.center {text-align:center;}
+.smaller {height:200px;width:200px}
+
+.center {text-align:center;}
+.frame {width:600px;height:800px;}
+
+</style>
+
+
+<div class="center">
+<a class="center" href="#" data-featherlight="/img/maze-ca/maze-start.png">
+<img src="/img/maze-ca/maze-start.png">
+</a>
+</div>
+<br>
+
+<div id="outline-container-orgheadline1" class="outline-2">
+<h2 id="orgheadline1"></h2>
+<div class="outline-text-2" id="text-orgheadline1">
+<p>
+<a href="http://cestlaz.github.io/2016/01/15/shift-image.html#.Vpvy4x8SrmE">Last time</a> we took a look at implementing a Cellular Automaton in
+NetLogo to do some simple image manipulation. We just scratched the
+surface. In class, the kids write pretty nice Photoshop Light
+applications. 
+</p>
+
+<p>
+Today we'll look at some more ambitious problem solving - using a
+Cellular Automaton to find a path through a maze. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline2" class="outline-2">
+<h2 id="orgheadline2">Part 1 - finding possible paths</h2>
+<div class="outline-text-2" id="text-orgheadline2">
+<p>
+We'll use the image above as an example and a live model with all the
+code is at the end of this post.
+</p>
+
+<p>
+Each square of the maze is a
+NetLogo patch. White square represent possible paths, Red is our
+entrance, green our exit. As we explore the maze, we'll color the
+cells yellow.
+</p>
+
+<p>
+Remember, in  a Cellular Automaton (CA), each cell makes a decision as to
+it's next state based on information about its neighbors (up, down,
+left, and right only in this case).
+</p>
+
+<p>
+So, if every cell is looking around at it's neighbors, most cells
+don't have enough information. The only white cell that might be on
+the path from entrance to exit is the one next to the entrance - it
+might be on the path.
+</p>
+
+<p>
+This leads us to the first step of our CA rule set:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-netlogo">; if I have a green neighbor, I might be on the path, turn yellow
+ask patches with [pcolor = white] [
+  if any? neighbors with [pcolor = red] [
+   set pcolor yellow
+  ] 
+]
+</pre>
+</div>
+
+<p>
+(click images to enlarge)
+</p>
+
+<a href="#" data-featherlight="/img/maze-ca/maze-1.png">
+<img class="smaller" src="/img/maze-ca/maze-1.png">
+</a>
+
+<p>
+Next time through, we notice that a cell might be on the path if it's
+white and it has either red or yellow neighbors.
+</p>
+
+
+<a href="#" data-featherlight="/img/maze-ca/maze-2.png">
+<img class="smaller" src="/img/maze-ca/maze-2.png">
+</a>
+<a href="#" data-featherlight="/img/maze-ca/maze-3.png">
+<img class="smaller" src="/img/maze-ca/maze-3.png">
+</a>
+
+<a href="#" data-featherlight="/img/maze-ca/maze-4.png">
+<img class="smaller" src="/img/maze-ca/maze-4.png">
+</a>
+
+<p>
+Eventually, we end up with a yellow abutting green - the exit.
+</p>
+
+<a href="#" data-featherlight="/img/maze-ca/maze-found.png">
+<img class="smaller" src="/img/maze-ca/maze-found.png">
+</a>
+
+<p>
+Notice that each yellow cell is also numbered. The number indicates
+how many steps it took to get there from the entrance. The
+implementation is trivial:
+</p>
+
+<ul class="org-ul">
+<li>Start by giving each patch a variable <b><b>step</b></b> and starting it at 0.</li>
+<li>When a cell is about to turn yellow, it should look at it's yellow
+or red neighbors, ask for their <b><b>step</b></b> value (they'll all be the
+same - think about why), and set it's <b><b>step</b></b> value to one more
+than that.</li>
+</ul>
+
+<p>
+We'll use these step numbers to recover the actual shortest path.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline3" class="outline-2">
+<h2 id="orgheadline3">Part 2 - recovering the shortest path.</h2>
+<div class="outline-text-2" id="text-orgheadline3">
+<p>
+We can now use the yellow patches with the step numbers to find our
+way back. 
+</p>
+
+<p>
+We're going to build a solution set.
+</p>
+<ol class="org-ol">
+<li>start with an empty solution set.</li>
+<li>take the only green cell not in the solution set (let's call it <b><b>G</b></b>).</li>
+<li>Ask <b><b>G</b></b>'s yellow neighbor with lowest step number to turn
+itself green (that cell will be <b><b>G</b></b> next time around).</li>
+<li>Place <b><b>G</b></b> into the solution set (leaving the new green cell as
+the only green cell not in the solution set).</li>
+<li>Repeat 2 - 5 until we're back at the entrance.</li>
+</ol>
+
+
+
+<a href="#" data-featherlight="/img/maze-ca/maze-back-1.png">
+<img class="smaller" src="/img/maze-ca/maze-back-1.png">
+</a>
+<a href="#" data-featherlight="/img/maze-ca/maze-back-2.png">
+<img class="smaller" src="/img/maze-ca/maze-back-2.png">
+</a>
+<a href="#" data-featherlight="/img/maze-ca/maze-solved.png">
+<img class="smaller" src="/img/maze-ca/maze-solved.png">
+</a>
+
+<p>
+This is one of my favorite intro topics. It's using a CA - something
+normally just presented as a toy idea, to solve a real problem. It
+reinforces parallel processing and foreshadows all sorts of pathfinding
+ideas to come.
+</p>
+
+<p>
+Below is the complete NetLogo program. You can look at the code by
+clicking on the code tab at the bottom.
+</p>
+
+<p>
+To run:
+</p>
+<ul class="org-ul">
+<li><b><b>setup</b></b> sets up all the variables and clears the world.</li>
+<li><b><b>buildmaze</b></b> builds a random maze.</li>
+<li><b><b>solve</b></b> is a toggle to run through an entire solution.</li>
+<li><b><b>step</b></b> single steps through the CA.</li>
+<li><b><b>reset</b></b> Resets all the variables and recolors the maze to
+unsolved.</li>
+<li>The other buttons are toggles for drawing your own maze.</li>
+</ul>
+
+<div class="center frame">
+<iframe class="center frame" src="/img/maze-ca/maze.html"></iframe>
+</div>
+</div>
+</div>

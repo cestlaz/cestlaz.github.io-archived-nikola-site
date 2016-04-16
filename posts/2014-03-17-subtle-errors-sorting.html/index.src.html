@@ -1,0 +1,167 @@
+<!--
+.. title: Sorting - Subtle Errors
+.. slug: 2014-03-17-subtle-errors-sorting.html
+.. date: 2014-03-17
+.. type: text
+-->
+
+
+<style>
+div.center {text-align:center;}
+</style>
+
+<p>
+Time to wrap up sorting for a while. We just finished quicksort
+having gone through a series of lessons
+</p>
+<ul class="org-ul">
+<li>We started with <a href="http://cestlaz.github.io/2014/03/12/select-to-sort.html#.UyJRTh_G8RM">Quickselect</a>.
+</li>
+<li>Then we did a quicksort, copying to new arrays during the partition
+</li>
+<li>Then finally to an in place quicksort.
+</li>
+</ul>
+
+<p>
+For the final quicksort we used a partition algorithm pretty much the
+same as the one described <a href="http://en.wikipedia.org/wiki/Quicksort">here.</a>
+</p>
+
+<p>
+We started testing using by building a randomly filled array like this:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-java"><span style="color: #7CB8BB;">Random</span> <span style="color: #DFAF8F;">rnd</span> = <span style="color: #F0DFAF; font-weight: bold;">new</span> <span style="color: #7CB8BB;">Random</span>();
+<span style="color: #7CB8BB;">int</span> <span style="color: #DFAF8F;">a</span>[] = <span style="color: #F0DFAF; font-weight: bold;">new</span> <span style="color: #7CB8BB;">int</span>[n];
+<span style="color: #F0DFAF; font-weight: bold;">for</span> (<span style="color: #7CB8BB;">int</span> <span style="color: #DFAF8F;">i</span>=0;i&lt;<span style="color: #7CB8BB;">n</span>;i++) {
+    a[i] = rnd.nextInt(100);
+}
+qsort(a);
+</pre>
+</div>
+
+<p>
+And everything seemed terrific.
+</p>
+
+<p>
+Just like when we did the mergesort, we started to increase n. First
+20, then 100, then 1000 and so on. 
+</p>
+
+<p>
+All of a sudden, we started getting a stack overflow. We only made it
+to about 450,000. Mergesort got to arrays of about 40,000,000 items
+before we started to have memory problems.
+</p>
+
+<p>
+Our algorithm was sound. It worked on everything up to about
+450,000. Since Mergesort worked well into the tens of millions, quicksort
+should have as well.
+</p>
+
+<p>
+What was wrong? 
+</p>
+
+<p>
+We changed the code a bit:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-java"><span style="color: #7CB8BB;">Random</span> <span style="color: #DFAF8F;">rnd</span> = <span style="color: #F0DFAF; font-weight: bold;">new</span> <span style="color: #7CB8BB;">Random</span>();
+<span style="color: #7CB8BB;">int</span> <span style="color: #DFAF8F;">a</span>[] = <span style="color: #F0DFAF; font-weight: bold;">new</span> <span style="color: #7CB8BB;">int</span>[n];
+<span style="color: #F0DFAF; font-weight: bold;">for</span> (<span style="color: #7CB8BB;">int</span> <span style="color: #DFAF8F;">i</span>=0;i&lt;<span style="color: #7CB8BB;">n</span>;i++) {
+    a[i] = rnd.nextInt(10000);
+}
+qsort(a);
+</pre>
+</div>
+
+<p>
+Instead of an array of 450,000 values between 0 and 100, our elements
+now went fro 0 to 10,000. 
+</p>
+
+<p>
+All of a sudden things were good.
+</p>
+
+<p>
+Why? It wasn't long before the student saw that 500,000 elements with
+values between 0 and 100 meant lots of duplicates. Our partition
+didn't account for that. If we had duplicate pivots, only one is moved
+into place, the rest are left unsorted taking us closer to worst case
+performance and blowing our stack.
+</p>
+
+<p>
+Fortunately there was an easy fix: 
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-java"><span style="color: #F0DFAF; font-weight: bold;">public</span> <span style="color: #7CB8BB;">int</span> <span style="color: #93E0E3;">partition</span>(<span style="color: #7CB8BB;">int</span>[] <span style="color: #DFAF8F;">a</span>, <span style="color: #7CB8BB;">int</span> <span style="color: #DFAF8F;">l</span>, <span style="color: #7CB8BB;">int</span> <span style="color: #DFAF8F;">r</span>) {
+    <span style="color: #7CB8BB;">int</span> <span style="color: #DFAF8F;">tmp</span>;
+    <span style="color: #7CB8BB;">int</span> <span style="color: #DFAF8F;">pivotIndex</span> = l+rnd.nextInt(r-l);
+    <span style="color: #7CB8BB;">int</span> <span style="color: #DFAF8F;">pivot</span> = a[pivotIndex];
+    tmp = a[r];
+    a[r] = a[pivotIndex];
+    a[pivotIndex]=tmp;
+
+    <span style="color: #7CB8BB;">int</span> <span style="color: #DFAF8F;">wall</span>=l;
+    <span style="color: #7CB8BB;">int</span> <span style="color: #DFAF8F;">pcount</span>=1;
+    <span style="color: #F0DFAF; font-weight: bold;">for</span> (<span style="color: #7CB8BB;">int</span> <span style="color: #DFAF8F;">i</span>=l;i&lt;<span style="color: #7CB8BB;">r</span>;i++) {
+        <span style="color: #F0DFAF; font-weight: bold;">if</span> (a[i]&lt;pivot) {
+            tmp = a[i];
+            a[i]=a[wall];
+            a[wall]=tmp;
+            wall++;
+        }
+        <span style="color: #F0DFAF; font-weight: bold;">if</span> (a[i]==pivot)
+            pcount++;
+    }
+    <span style="color: #5F7F5F;">// </span><span style="color: #7F9F7F;">now copy over all the pivots</span>
+    <span style="color: #7CB8BB;">int</span> <span style="color: #DFAF8F;">rwall</span>=wall;
+    tmp = a[rwall];
+    a[wall]=a[r];
+    a[r]=tmp;
+    rwall++;
+    <span style="color: #F0DFAF; font-weight: bold;">for</span> (<span style="color: #7CB8BB;">int</span> <span style="color: #DFAF8F;">i</span>=rwall+1;i&lt;=r;i++) {
+        <span style="color: #F0DFAF; font-weight: bold;">if</span> (a[i]==pivot) {
+            tmp = a[rwall];
+            a[rwall]=a[i];
+            a[i]=tmp;
+            rwall++;
+        }
+    }
+    <span style="color: #F0DFAF; font-weight: bold;">return</span> (wall+rwall)/2;
+}
+</pre>
+</div>
+
+<p>
+When we partition the array, move all the elements equal to the
+partition to the middle of the array.
+</p>
+
+
+<p>
+That did the trick.
+</p>
+
+<p>
+All of a sudden we were blazing through data sets upwards of
+100,000,000 elements.
+</p>
+
+
+<p>
+We're done for sorting for a while, at least until the heapsort but
+it's been a fun couple of weeks
+</p>

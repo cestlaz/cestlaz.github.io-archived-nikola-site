@@ -1,0 +1,216 @@
+<!--
+.. title: Hidden Complexity
+.. slug: 2014-11-17-hidden-complexity.html
+.. date: 2014-11-17
+.. type: text
+-->
+
+
+<style>
+div.center {text-align:center;}
+</style>
+
+<p>
+I've said it many times:
+</p>
+
+<blockquote>
+<p>
+Never use a tool you couldn't write yourself.
+</p>
+</blockquote>
+
+<p>
+That is - make sure you understand what's going on under the hood.
+</p>
+
+<p>
+In AP we've been playing with ArrayLists. The problem for today?
+Create an ArrayList with consecutive integers and then write a routine
+that will randomize the ArrayList.
+</p>
+
+<p>
+For example, you might start with this ArrayList:
+</p>
+
+<pre class="example">
+0,1,2,3,4,5
+</pre>
+
+<p>
+and end up with
+</p>
+
+<pre class="example">
+3,5,1,4,2,0
+</pre>
+
+<p>
+First cut, the students grabbed a random element from the ArrayList,
+removed it, and added it to the end of a new list. Then repeat until
+the original list is empty and the new one is randomized. Then return
+the list.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-java"><span style="color: #a020f0;">public</span> <span style="color: #228b22;">ArrayList</span>&lt;<span style="color: #228b22;">Integer</span>&gt; <span style="color: #0000ff;">shuffle1</span>(<span style="color: #228b22;">ArrayList</span>&lt;<span style="color: #228b22;">Integer</span>&gt; <span style="color: #a0522d;">l</span>){
+    <span style="color: #228b22;">ArrayList</span>&lt;<span style="color: #228b22;">Integer</span>&gt; <span style="color: #a0522d;">result</span> = <span style="color: #a020f0;">new</span> <span style="color: #228b22;">ArrayList</span>&lt;<span style="color: #228b22;">Integer</span>&gt;();
+    <span style="color: #a020f0;">while</span> (l.size()&gt;0){
+        <span style="color: #228b22;">int</span> <span style="color: #a0522d;">i</span> = rnd.nextInt(l.size());
+        <span style="color: #228b22;">int</span> <span style="color: #a0522d;">v</span> = l.remove(i);
+        result.add(v);
+      }
+    <span style="color: #a020f0;">return</span> result;
+}
+</pre>
+</div>
+
+<p>
+Looks good.
+</p>
+
+<p>
+Version two was much the same but after it removed a random value, it
+added it to the end of the same ArrayList:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-java"><span style="color: #a020f0;">public</span> <span style="color: #228b22;">ArrayList</span>&lt;<span style="color: #228b22;">Integer</span>&gt; <span style="color: #0000ff;">shuffle2</span>(<span style="color: #228b22;">ArrayList</span>&lt;<span style="color: #228b22;">Integer</span>&gt; <span style="color: #a0522d;">l</span>){
+    <span style="color: #228b22;">ArrayList</span>&lt;<span style="color: #228b22;">Integer</span>&gt; <span style="color: #a0522d;">result</span> = <span style="color: #a020f0;">new</span> <span style="color: #228b22;">ArrayList</span>&lt;<span style="color: #228b22;">Integer</span>&gt;();
+    <span style="color: #a020f0;">for</span> (<span style="color: #228b22;">int</span> <span style="color: #a0522d;">s</span>=l.size();s&gt;0;s--) {
+        <span style="color: #228b22;">int</span> <span style="color: #a0522d;">i</span> = rnd.nextInt(s);
+        <span style="color: #228b22;">int</span> <span style="color: #a0522d;">v</span> = l.remove(i);
+        l.add(v);
+    }
+    <span style="color: #a020f0;">return</span> l;
+}
+</pre>
+</div>
+
+<p>
+Then it was time to time. Both seemed pretty quick but as our data set
+grew things seemed strange:
+</p>
+<div class="row">
+<div class="c4">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Size</th>
+<th scope="col" class="left">Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">100,000</td>
+<td class="left">2 seconds</td>
+</tr>
+
+<tr>
+<td class="left">200,000</td>
+<td class="left">7 seconds</td>
+</tr>
+
+<tr>
+<td class="left">400,000</td>
+<td class="left">26 seonds</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+
+<p>
+We're just looping through an ArrayList, what's going on? When we
+double the size of the list, it should just take double the time.
+</p>
+
+<p>
+Since the class already wrote their own ArrayList implementation, they
+were quick to realize that every time we removed an item from the
+original Array, we were doing a linear or O(n) operation. That means
+our algorithms, which look linear, are in fact O(N<sup>2</sup>). 
+</p>
+
+<p>
+Can we do better? You bet. They just changed the remove and add to
+using get and set. Instead off removing an item and re-inserting it,
+just swap the randomly selected item with the last element:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-java"><span style="color: #a020f0;">public</span> <span style="color: #228b22;">ArrayList</span>&lt;<span style="color: #228b22;">Integer</span>&gt; <span style="color: #0000ff;">shuffle3</span>(<span style="color: #228b22;">ArrayList</span>&lt;<span style="color: #228b22;">Integer</span>&gt; <span style="color: #a0522d;">l</span>){
+    <span style="color: #228b22;">ArrayList</span>&lt;<span style="color: #228b22;">Integer</span>&gt; <span style="color: #a0522d;">result</span> = <span style="color: #a020f0;">new</span> <span style="color: #228b22;">ArrayList</span>&lt;<span style="color: #228b22;">Integer</span>&gt;();
+    <span style="color: #a020f0;">for</span> (<span style="color: #228b22;">int</span> <span style="color: #a0522d;">s</span>=l.size();s&gt;0;s--) {
+        <span style="color: #228b22;">int</span> <span style="color: #a0522d;">i</span> = rnd.nextInt(s);
+
+        <span style="color: #228b22;">int</span> <span style="color: #a0522d;">tmp</span> = l.get(i);
+        l.set(i, l.get(s-1));
+        l.set(s-1,tmp);
+    }
+    <span style="color: #a020f0;">return</span> l;
+}
+</pre>
+</div>
+
+<p>
+No removes so no hidden linear component.
+</p>
+
+<p>
+The run time?
+</p>
+<div class="row">
+<div class="c4">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Size</th>
+<th scope="col" class="left">Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">100,000</td>
+<td class="left">.15 seconds</td>
+</tr>
+
+<tr>
+<td class="left">200,000</td>
+<td class="left">.16 seconds</td>
+</tr>
+
+<tr>
+<td class="left">400,000</td>
+<td class="left">.17 seonds</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+
+<p>
+In fact, it took data sets in the size of millions before we even
+broke more than a couple of seconds.
+</p>
+
+<p>
+The algorithm looks the same but understanding what goes on under the
+hood can make a big difference.
+</p>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<base href="http://cestlaz.github.io/posts/2014-02-13-fibonacci.md/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fibonacci by the tail | C'est la Z</title>
+<link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://cestlaz.github.io/posts/2014-02-13-fibonacci.md/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
+<link rel="prev" href="../2014-02-11-tapia-2.md/" title="StuyCS  family from coast to coast" type="text/html">
+<link rel="next" href="../2014-02-26-change-the-data.md/" title="Change the data" type="text/html">
+<meta property="og:site_name" content="C'est la Z">
+<meta property="og:title" content="Fibonacci by the tail">
+<meta property="og:url" content="http://cestlaz.github.io/posts/2014-02-13-fibonacci.md/">
+<meta property="og:description" content="We're ramping up for recursion in my junior classes - state space
+search, nlg(n) sorts, etc. As a refresher, we took a quick look at the
+Fibonacci numbers.
+Now, some people seem to think that it's a t">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2014-02-13T00:00:00-05:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+
+
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cestlaz.github.io/">
+						<img class="zlogo" src="../../assets/images/thluffy.jpg" id="logo"><span class="zname" id="blog-title">C'est la Z</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav navbar-right zmenu">
+<li class="zitem">
+<a href="http://github.com/zamansky">GitHub</a>
+                </li>
+<li class="zitem">
+<a href="../../archive.html">Archive</a>
+                </li>
+<li class="zitem">
+<a href="../../stories/about">About</a>
+                </li>
+<li class="zitem">
+<a href="../../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><h2 class="text-center">
+		Musings about education, computer science,</h2>
+		<h3 class="text-center">and maybe a few other miscellaneous topics.
+</h3>
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+		<div class="body-content">
+				<!--Body content-->
+				<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-8">
+				
+								
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Fibonacci by the tail</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                    Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2014-02-13T00:00:00-05:00" itemprop="datePublished" title="2014-02-13 00:00">2014-02-13 00:00</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/2014-02-13-fibonacci.html">Comments</a>
+
+
+            
+        </p>
+</div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>We're ramping up for recursion in my junior classes - state space
+search, nlg(n) sorts, etc. As a refresher, we took a quick look at the
+Fibonacci numbers.</p>
+<p>Now, some people seem to think that it's a tired problem. It's mathy,
+it's played out, it's boring etc.. They just might be missing the
+point.</p>
+<p>The beauty isn't in the problem itself, but rather, that it's a
+platform on which you can look at many problem solving techniques.</p>
+<p>We can look at the basic, straightforward , imperative solution:</p>
+<blockquote>
+<p _="%" endhighlight="endhighlight">{% highlight java %}
+public int fib1(int n) {
+  int a=1,b=1;
+  for (int i=0;i&lt;n;i++){
+    int c=a+b;
+    a=b;
+    b=c;
+  }
+  return a;
+}</p>
+</blockquote>
+<p>It's straightforward and fast - no recursion needed.</p>
+<p>Next, we can look at the basic recursive version:</p>
+<blockquote>
+<p _endhighlight_="%endhighlight%">{% highlight java %}
+public int fib2(int n) {
+ if (n&lt;=1)
+   return 1;
+ else
+    return fib2(n-1)+fib2(n-2);
+}</p>
+</blockquote>
+<p>The advantages (of recursive solutions in general):</p>
+<ul>
+<li>It's a direct translation from the recursive mathematical formula.</li>
+<li>It's elegant, clean, and concise.</li>
+<li>It can make hard problems much easier (see: <a href="http://cestlaz.github.io/2010/01/10/towers-of-hanoi.html#.Uv1m4N_EvZ8">Towers, Hanoi</a>).</li>
+<li>We can use same thought process that led to this solution to solve
+   problems like finding our way out of a maze.</li>
+</ul>
+<p>The downside:</p>
+<ul>
+<li>It can be VERY slow.</li>
+</ul>
+<p>So, how do we address this?</p>
+<p>One way is via <strong>memoization</strong> - when we find a value, store it in a
+table, then we can use the look up table instead of recalculating over
+and over:</p>
+<blockquote>
+<p><code>java
+public int[] fibnums = new int[100000]; 
+public int fib3(int n) {
+ if (n&lt;=1)
+   return 1;
+ else if (fibnums[n] != 0)
+    return fibnums[n];
+ else {
+   fibnums[n] fib3(n-1)+fib3(n-2);
+   return fibnums[n];
+   }
+}</code></p>
+</blockquote>
+<p>This is a terrific thing to show a class since it's easy for students
+to wrap their heads around, it really speeds things up, and it's a
+precursor to lots of neat algorithms.</p>
+<p>Finally, we can look at re-writing Fibonacci using tail
+recursion. This one can be a little hard for students to grasp. I like
+building it up from the iterative solution. In that solution, we use
+<strong>a</strong>, and <strong>b</strong> to "walk down" the list of Fibonacci numbers. At any point in time, <strong>a</strong> and <strong>b</strong> represent where we are in the sequence. We also use <strong>c</strong> but that's really just a temporary place to add a and b together.</p>
+<p>The problem with doing this in a recursive solution is that we can't
+have <strong>a</strong> and <strong>b</strong> as local variables as each recursive call will
+have new <strong>a</strong> and <strong>b</strong>s and no information will be transferred.</p>
+<p>Since we're working in Java, it doesn't take long for some students to come up with the idea of using instance variables to store a and b and just use the recursion for the "loop.":</p>
+<blockquote>
+<p _="%" endhighlight="endhighlight">{% highlight java %}
+public int a=1, b=1
+public int fib4(int n) {
+    if (n==1)
+        return a;
+    else {
+        int c=a+b;
+        a=b;
+        b=c;
+        return fib4(n-1)
+    }
+}</p>
+</blockquote>
+<p>Great, but using instance variables in this way is very inelegant and messy. Better, use extra parameters to store the values from call to call:</p>
+<blockquote>
+<p _="%" endhighlight="endhighlight">{% highlight java %}
+public int fib5(int n,int a, int b) {
+    if (n==1)
+        return a;
+    else
+        return fib4(n-1,b,a+b)
+}</p>
+</blockquote>
+<p>Looking at Fib5(5) we get for n, a, and b:</p>
+<ul>
+<li>5,1,1</li>
+<li>4 1,2</li>
+<li>3,2,3</li>
+<li>2,3,5</li>
+<li>1,5,8</li>
+</ul>
+<p>At which point we just return the 8</p>
+<p>Clean, elegant, fast, and easy to understand.</p>
+<p>Each of these four techniques are important and will be used time and time again and here we have one simple problem that allows us to explore them all.</p>
+<h5>Some Links</h5>
+<p><a href="http://maikolsolis.wordpress.com/2014/01/18/project-euler-problem-2-even-fibonacci-numbers/">Project Euler: Problem #2 - Even Fibonacci numbers</a></p>
+<p><a href="http://java.dzone.com/articles/memoized-fibonacci-numbers">Memoized Fibonacci Numbers with Java 8</a></p>
+<p><a href="http://mikesmathpage.wordpress.com/2014/02/07/the-quadratic-formula-and-fibonacci-numbers/">The quadratic formula and Fibonacci numbers</a></p>
+<p><a href="http://blog.smartbear.com/programming/why-developers-%0Astill-need-the-basics/">Monte Carlo Simulations, Fibonacci Numbers, and Other Number Tests: Why Developers Still Need The Basics</a></p>
+<p><a href="http://www.ted.com/talks/arthur_benjamin_the_magic_of_fibonacci_numbers.html">TED: Arthur Benjamin: The magic of Fibonacci numbers - Arthur Benjamin (2013)</a></p>
+<p><a href="http://lee-phillips.org/lispmath/">Fibonacci Numbers in the Real World</a></p>
+</div>
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_google_plusone_share"></a>
+<a class="addthis_button_hackernews"></a>
+<a class="addthis_button_reddit"></a>
+<a class="addthis_button_gmail"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
+</div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../2014-02-11-tapia-2.md/" rel="prev" title="StuyCS  family from coast to coast">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../2014-02-26-change-the-data.md/" rel="next" title="Change the data">Next post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="cestlaz",
+            disqus_url="http://cestlaz.github.io/posts/2014-02-13-fibonacci.md/",
+        disqus_title="Fibonacci by the tail",
+        disqus_identifier="cache/posts/2014-02-13-fibonacci.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+						<div class="col-md-3">
+								<br><!-- feedburner subscribe via email --><form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CestLaZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+<p>Enter your email address:</p>
+<p><input type="text" style="width:140px" name="email"></p>
+<input type="hidden" value="CestLaZ" name="uri"><input type="hidden" name="loc" value="en_US"><input type="submit" value="Subscribe"><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p>
+</form>
+								<!--  feedburner subscribe end -->
+								<!-- Twitter sidebar start -->
+								<table class="table"><tr><td>
+												<a class="twitter-timeline" href="https://twitter.com/zamansky" data-widget-id="251117725303312385">Tweets by @zamansky</a>
+												<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</td></tr></table>
+<!-- Twitter sidebar end -->
+</div>
+						<!--End of body content-->
+
+						<footer id="footer">
+								Contents © 2016         <a href="mailto:zamansky@gmail.com">Mike Zamansky</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+								
+						</footer>
+</div>
+		</div>
+
+		            <script src="../../assets/js/jquery.min.js"></script><script src="../../assets/js/bootstrap.min.js"></script><script src="../../assets/js/moment-with-locales.min.js"></script><script src="../../assets/js/fancydates.js"></script><script src="../../assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+		 moment.locale("en");
+		 fancydates(0, "YYYY-MM-DD HH:mm");
+		</script><!-- end fancy dates -->
+</div>
+</body>
+</html>

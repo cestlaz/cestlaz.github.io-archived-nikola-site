@@ -1,0 +1,141 @@
+<!--
+.. title: Using easy assignments to introduce deep concepts
+.. slug: 2014-10-05-easy-assignments.html
+.. date: 2014-10-05
+.. type: text
+-->
+
+
+<style>
+div.center {text-align:center;}
+</style>
+
+<p>
+In this early part of the semester, the students don't know all that
+much. We haven't covered that many language constructs let along
+algorithms, development techniques and all that other good stuff.
+</p>
+
+<p>
+In terms of the "Java" part of APCS we've talked about basic types,
+Strings, basic classes, loops and conditionals. We're limited in the
+tools we have but we can still get the classes thinking in the right
+way.
+</p>
+
+<p>
+Last week, when we introduced loops we spent some time drawing shapes.
+</p>
+
+<p>
+Starting with things like
+</p>
+
+Rectangle:
+<pre>
+*****
+*****
+*****
+</pre>
+
+<p>
+and
+</p>
+
+Triangle1
+<pre>
+*
+**
+***
+****
+*****
+</pre>
+
+<p>
+Simple nested loop stuff.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-java"><span style="color: #228b22;">String</span> <span style="color: #a0522d;">s</span> = <span style="color: #8b2252;">""</span>;
+<span style="color: #a020f0;">for</span> (<span style="color: #228b22;">int</span> <span style="color: #a0522d;">r</span> = 0; r &lt; <span style="color: #228b22;">height</span>; r++) {
+  <span style="color: #a020f0;">for</span> (<span style="color: #228b22;">int</span> <span style="color: #a0522d;">c</span>=0; c&lt;=r; c++ ){
+    s=s+<span style="color: #8b2252;">"*"</span>;<span style="color: #ff0000; font-weight: bold;">"</span>
+<span style="color: #8b2252;">  }</span>
+<span style="color: #8b2252;">  s=s+"</span>\n<span style="color: #ff0000; font-weight: bold;">"</span><span style="color: #8b2252;">;</span>
+<span style="color: #8b2252;">}</span>
+<span style="color: #8b2252;">return s;</span>
+</pre>
+</div>
+
+<p>
+Things get interesting when we looked at the next one:
+</p>
+
+Triangle2:
+<pre>
+    *
+   **
+  ***
+ ****
+*****
+</pre>
+
+<p>
+It seems like a simple little problem with a simple solution:
+</p>
+
+<p>
+What I love about it is that you can look at it in a couple of
+interesting ways.
+</p>
+
+<p>
+First, you can look at those spaces as a triangle in and of
+themselves (replaced with # below):
+</p>
+
+<pre>
+####*
+###**
+##***
+#****
+*****
+</pre>
+
+<p>
+Well, that's almost the same as the Triangle1 from above. Also, if you
+take away that triangle of spaces, you're pretty much left with
+Triangle1.
+</p>
+
+<p>
+The structure of the code can look something like:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-java"><span style="color: #228b22;">String</span> <span style="color: #a0522d;">s</span>=<span style="color: #8b2252;">""</span>;
+<span style="color: #a020f0;">for</span> (<span style="color: #228b22;">int</span> <span style="color: #a0522d;">r</span> = 0; r &lt; <span style="color: #228b22;">height</span>; r++){
+  <span style="color: #b22222;">// </span><span style="color: #b22222;">loop over the number of spaces we need for this line</span>
+
+  <span style="color: #b22222;">// </span><span style="color: #b22222;">loop over the number of stars we need for this line</span>
+
+  s=s+<span style="color: #8b2252;">"\n"</span>;
+}
+<span style="color: #a020f0;">return</span> s;
+</pre>
+</div>
+
+<p>
+We can also look at the problem just as a series of lines. How many
+spaces and how many stars:
+</p>
+
+
+<p>
+Let's say height = 5
+</p>
+<div class="org-src-container">
+
+<pre class="src src-org"><span style="color: #0000ff;">| row | spaces | stars |</span>
+<span style="color: #0000ff;">|

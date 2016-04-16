@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<base href="http://cestlaz.github.io/index-9.html">
+<meta name="description" content="C'est la Z">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C'est la Z (old posts, page 9) | C'est la Z</title>
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<link rel="canonical" href="http://cestlaz.github.io/index-9.html">
+<link rel="prev" href="index-10.html" type="text/html">
+<link rel="next" href="index-8.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]-->
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+
+
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cestlaz.github.io/">
+						<img class="zlogo" src="assets/images/thluffy.jpg" id="logo"><span class="zname" id="blog-title">C'est la Z</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav navbar-right zmenu">
+<li class="zitem">
+<a href="http://github.com/zamansky">GitHub</a>
+                </li>
+<li class="zitem">
+<a href="archive.html">Archive</a>
+                </li>
+<li class="zitem">
+<a href="stories/about">About</a>
+                </li>
+<li class="zitem">
+<a href="rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><h2 class="text-center">
+		Musings about education, computer science,</h2>
+		<h3 class="text-center">and maybe a few other miscellaneous topics.
+</h3>
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+		<div class="body-content">
+				<!--Body content-->
+				<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-8">
+				
+								
+    
+<div class="postindex">
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2014-02-26-change-the-data.md/" class="u-url">Change the data</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2014-02-26-change-the-data.md/" rel="bookmark"><time class="published dt-published" datetime="2014-02-26T00:00:00-05:00" title="2014-02-26 00:00">2014-02-26 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2014-02-26-change-the-data.md/#disqus_thread" data-disqus-identifier="cache/posts/2014-02-26-change-the-data.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<blockquote>
+<p>Patient: "Doctor, it hurts when I do this."</p>
+<p>Doctor: "So, don't do that."</p>
+</blockquote>
+<p>We've been spending time on
+<a href="http://en.wikipedia.org/wiki/State_space_search">State Space Search</a>. It's
+a great topic. We deal with or at least introduce:</p>
+<ul>
+<li>Recursion</li>
+<li>Blind search</li>
+<li>Heuristic search</li>
+<li>foreshadowing things like A* and Dijkstra's algorithm.</li>
+</ul>
+<p>and more. Today, however. I want to talk about something else.</p>
+<p>We started by developing a maze solver. It reads a text file
+representing the maze and then proceeds to find an exit. One version
+of the source code can be found
+<a href="https://github.com/stuycs-apcs-z/classcode/tree/master/3/maze">here</a>.</p>
+<p>It's really cool to see how such a short program, about 10 lines of
+work code, can solve such an open sounding problem. From there we talk
+about state spaces, graphs, etc. We then moved on to the
+<a href="https://github.com/stuycs-apcs-z/classcode/tree/master/3/maze">Knight's tour</a>. By
+viewing it as a state space problem we can look at it just like the
+maze.</p>
+<p>We represented a state as a board with the knight's current position and where it's been. An easy way to do this is to use an array of ints. So we have an empty 5x5 board:</p>
+<pre class="code literal-block"><span></span>0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+</pre>
+
+
+<p>Or a board after a few moves:</p>
+<pre class="code literal-block"><span></span>1 0 0 0 0
+4 0 2 0 0
+0 0 5 0 0
+0 3 0 0 6
+0 0 0 0 0
+</pre>
+
+
+<p>The kids saw three base cases:</p>
+<ol>
+<li>When our count got up to n^2 (and in fact, we're done)</li>
+<li>When we land on a non-zero space (when we just return or backtrack)</li>
+<li>When we try to move off the board, for an index out of bounds error.</li>
+</ol>
+<p>I wanted to look at that third one. We talked for a bit about using an
+if or a try/catch but I pointed out that I didn't like either. Looking
+at our maze code, we never checked bounds there. Why not. Well it
+turns out that our maze had wall all around. It was stored in a 2D
+array but the entire outer edge was wall. Why not do the same for the chess board:</p>
+<pre class="code literal-block"><span></span>-1 -1 -1 -1 -1 -1 -1 -1 -1
+-1 -1 -1 -1 -1 -1 -1 -1 -1
+-1 -1  0  0  0  0  0 -1 -1 
+-1 -1  0  0  0  0  0 -1 -1 
+-1 -1  0  0  0  0  0 -1 -1 
+-1 -1  0  0  0  0  0 -1 -1
+-1 -1  0  0  0  0  0 -1 -1 
+-1 -1 -1 -1 -1 -1 -1 -1 -1
+-1 -1 -1 -1 -1 -1 -1 -1 -1
+</pre>
+
+
+<p>Now, as long as we start on the board, if the Knight jumps off the
+edge, it will end on a -1 square and backtrack. By modifying our data
+structure and data to contain a border, we've eliminated the special
+case of index out of bounds.</p>
+<p>I always like doing that.</p>
+<h5>Some Links</h5>
+<p><a href="https://github.com/stuycs-apcs-z/classcode/tree/master/3/knights">Source code for Knight's tour</a></p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2014-02-13-fibonacci.md/" class="u-url">Fibonacci by the tail</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2014-02-13-fibonacci.md/" rel="bookmark"><time class="published dt-published" datetime="2014-02-13T00:00:00-05:00" title="2014-02-13 00:00">2014-02-13 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2014-02-13-fibonacci.md/#disqus_thread" data-disqus-identifier="cache/posts/2014-02-13-fibonacci.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>We're ramping up for recursion in my junior classes - state space
+search, nlg(n) sorts, etc. As a refresher, we took a quick look at the
+Fibonacci numbers.</p>
+<p>Now, some people seem to think that it's a tired problem. It's mathy,
+it's played out, it's boring etc.. They just might be missing the
+point.</p>
+<p>The beauty isn't in the problem itself, but rather, that it's a
+platform on which you can look at many problem solving techniques.</p>
+<p>We can look at the basic, straightforward , imperative solution:</p>
+<blockquote>
+<p _="%" endhighlight="endhighlight">{% highlight java %}
+public int fib1(int n) {
+  int a=1,b=1;
+  for (int i=0;i&lt;n;i++){
+    int c=a+b;
+    a=b;
+    b=c;
+  }
+  return a;
+}</p>
+</blockquote>
+<p>It's straightforward and fast - no recursion needed.</p>
+<p>Next, we can look at the basic recursive version:</p>
+<blockquote>
+<p _endhighlight_="%endhighlight%">{% highlight java %}
+public int fib2(int n) {
+ if (n&lt;=1)
+   return 1;
+ else
+    return fib2(n-1)+fib2(n-2);
+}</p>
+</blockquote>
+<p>The advantages (of recursive solutions in general):</p>
+<ul>
+<li>It's a direct translation from the recursive mathematical formula.</li>
+<li>It's elegant, clean, and concise.</li>
+<li>It can make hard problems much easier (see: <a href="http://cestlaz.github.io/2010/01/10/towers-of-hanoi.html#.Uv1m4N_EvZ8">Towers, Hanoi</a>).</li>
+<li>We can use same thought process that led to this solution to solve
+   problems like finding our way out of a maze.</li>
+</ul>
+<p>The downside:</p>
+<ul>
+<li>It can be VERY slow.</li>
+</ul>
+<p>So, how do we address this?</p>
+<p>One way is via <strong>memoization</strong> - when we find a value, store it in a
+table, then we can use the look up table instead of recalculating over
+and over:</p>
+<blockquote>
+<p><code>java
+public int[] fibnums = new int[100000]; 
+public int fib3(int n) {
+ if (n&lt;=1)
+   return 1;
+ else if (fibnums[n] != 0)
+    return fibnums[n];
+ else {
+   fibnums[n] fib3(n-1)+fib3(n-2);
+   return fibnums[n];
+   }
+}</code></p>
+</blockquote>
+<p>This is a terrific thing to show a class since it's easy for students
+to wrap their heads around, it really speeds things up, and it's a
+precursor to lots of neat algorithms.</p>
+<p>Finally, we can look at re-writing Fibonacci using tail
+recursion. This one can be a little hard for students to grasp. I like
+building it up from the iterative solution. In that solution, we use
+<strong>a</strong>, and <strong>b</strong> to "walk down" the list of Fibonacci numbers. At any point in time, <strong>a</strong> and <strong>b</strong> represent where we are in the sequence. We also use <strong>c</strong> but that's really just a temporary place to add a and b together.</p>
+<p>The problem with doing this in a recursive solution is that we can't
+have <strong>a</strong> and <strong>b</strong> as local variables as each recursive call will
+have new <strong>a</strong> and <strong>b</strong>s and no information will be transferred.</p>
+<p>Since we're working in Java, it doesn't take long for some students to come up with the idea of using instance variables to store a and b and just use the recursion for the "loop.":</p>
+<blockquote>
+<p _="%" endhighlight="endhighlight">{% highlight java %}
+public int a=1, b=1
+public int fib4(int n) {
+    if (n==1)
+        return a;
+    else {
+        int c=a+b;
+        a=b;
+        b=c;
+        return fib4(n-1)
+    }
+}</p>
+</blockquote>
+<p>Great, but using instance variables in this way is very inelegant and messy. Better, use extra parameters to store the values from call to call:</p>
+<blockquote>
+<p _="%" endhighlight="endhighlight">{% highlight java %}
+public int fib5(int n,int a, int b) {
+    if (n==1)
+        return a;
+    else
+        return fib4(n-1,b,a+b)
+}</p>
+</blockquote>
+<p>Looking at Fib5(5) we get for n, a, and b:</p>
+<ul>
+<li>5,1,1</li>
+<li>4 1,2</li>
+<li>3,2,3</li>
+<li>2,3,5</li>
+<li>1,5,8</li>
+</ul>
+<p>At which point we just return the 8</p>
+<p>Clean, elegant, fast, and easy to understand.</p>
+<p>Each of these four techniques are important and will be used time and time again and here we have one simple problem that allows us to explore them all.</p>
+<h5>Some Links</h5>
+<p><a href="http://maikolsolis.wordpress.com/2014/01/18/project-euler-problem-2-even-fibonacci-numbers/">Project Euler: Problem #2 - Even Fibonacci numbers</a></p>
+<p><a href="http://java.dzone.com/articles/memoized-fibonacci-numbers">Memoized Fibonacci Numbers with Java 8</a></p>
+<p><a href="http://mikesmathpage.wordpress.com/2014/02/07/the-quadratic-formula-and-fibonacci-numbers/">The quadratic formula and Fibonacci numbers</a></p>
+<p><a href="http://blog.smartbear.com/programming/why-developers-%0Astill-need-the-basics/">Monte Carlo Simulations, Fibonacci Numbers, and Other Number Tests: Why Developers Still Need The Basics</a></p>
+<p><a href="http://www.ted.com/talks/arthur_benjamin_the_magic_of_fibonacci_numbers.html">TED: Arthur Benjamin: The magic of Fibonacci numbers - Arthur Benjamin (2013)</a></p>
+<p><a href="http://lee-phillips.org/lispmath/">Fibonacci Numbers in the Real World</a></p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2014-02-11-tapia-2.md/" class="u-url">StuyCS  family from coast to coast</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2014-02-11-tapia-2.md/" rel="bookmark"><time class="published dt-published" datetime="2014-02-11T00:00:00-05:00" title="2014-02-11 00:00">2014-02-11 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2014-02-11-tapia-2.md/#disqus_thread" data-disqus-identifier="cache/posts/2014-02-11-tapia-2.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p><img height="250px" src="img/tapia/alums.jpg"></p>
+<p>I think my one regret over the years is that I haven't done much
+travel. So, when I had the opportunity to go to the 2014 Tapia
+conference, I jumped at the chance. I didn't get to see too much of
+Seattle, but that's OK. Now I've more incentive to go back.</p>
+<p>In addition to seeing new sites, it also gave me an opportunity to see
+friends that I don't get to see too often.</p>
+<p>I frequently talk about the StuyCS family. That it's all about people
+and all about community. I'm proud that I started this family and I'm
+always blown away by the guys. It's one thing for alums to swing by
+the school a couple of years after they graduate but it's another when
+they want to see me as much as I them even after ten or twenty years.</p>
+<p>It was a little tricky to coordinate between conference commitments
+and their schedules but we ended up having two dinners.</p>
+<p>First I got together with Mike (StuyCS '97), his wife Linsday, and
+<a href="http://homes.cs.washington.edu/~ln/">Helene</a>. I'll always remember
+Mike for being the police officer when he, William, Emil (I think) and Paul
+were the Village People for Halloween. It was amazing to see him, meet
+his wife talk about old times and see what he's doing today.</p>
+<p>Helene isn't StuyCS, but she is an educator of a kindred spirit, over
+the years, I've met many CS educators. Some "get it" many
+don't. Helene clearly does. We clicked right off the bat. As with my
+alums outside of the city, I regret that we only get to see each other
+once every few years.</p>
+<p>Two nights later, I got together with Sam (StuyCS '96), Daemon (StuyCS
+'06) and Matt (StuyCS '07) along with Boback, Alan, and Ephraim, three
+other high school teachers who attended the conference.</p>
+<p>I hope we didn't bore the teachers with our high school stories, but I
+really had a blast. We talked about old times, we talked of current
+issues, good food and good friends. We spanned 27 years of Stuy but
+that didn't matter. Get a bunch of bright interesting like minded
+people together and good things happen.</p>
+<p>I feel amazingly blessed that I can travel across the country and
+students from 10 and 20 years ago want to get together to catch up. I
+guess I should really say friends, not students.</p>
+<p>I've been thinking a lot about my career as I close in on 25 years of
+teaching. What impact I've had, what I could have done better, what I
+did right.</p>
+<p>I think I can live with the StuyCS family as my legacy.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2014-02-09-tapia.md/" class="u-url">Tapia 2014</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2014-02-09-tapia.md/" rel="bookmark"><time class="published dt-published" datetime="2014-02-09T00:00:00-05:00" title="2014-02-09 00:00">2014-02-09 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2014-02-09-tapia.md/#disqus_thread" data-disqus-identifier="cache/posts/2014-02-09-tapia.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Spent the past few days at the <a href="http://tapiaconference.org">Tapia Conference</a> in Seattle.</p>
+<p>The Tapia conference is billed as a "Celebration of Diversity in
+Computing." The bulk of the attendees seemed to be
+students. Undergrads and grads. The undergrads were mostly juniors and
+seniors, but a bunch of freshmen and sophomores were there as well. Of
+course there were faculty members to join them as well as people from
+industry.</p>
+<p>What was I doing there? Well, 20 high school teachers were given
+scholarships to attend a workshop run by
+<a href="http://www.eecs.berkeley.edu/Faculty/Homepages/garcia.html">Dan Garcia</a>. Dan
+is the driving force behind one of the implementations of CS
+Principals course - a new course being rolled out by the College
+Board. As you're all well aware, I'm not a fan of the College Board
+but I'm interested in Dan's work as common friends speak well of
+him.</p>
+<p>I'll talk about his course next time, after I've gone through his
+workshop. For now, let's talk about the conference.</p>
+<p>I wasn't sure what to expect but let me tell you, I was blown
+away. Many of the break out sessions didn't "speak" to me as a high
+school teacher, but that's fine - the conference was for the
+youngsters. I can't say for sure, but it seemed to me that they really
+hit the breakout sessions on the head.</p>
+<p>Then there were the plenaries. Great speakers and a great range of topics.</p>
+<p>They had:</p>
+<ul>
+<li>Cieko Asakawa talking about assistive technologies</li>
+<li>Dan Garcia on CS Education</li>
+<li>Latanya Sweeney - transparency and privacy</li>
+<li>James McLurkin - robotics (and some computational geometry)</li>
+<li>Kathryn McKinley - Systems</li>
+<li>Marcus Mitchel - A general talk on hard problems, winding paths, and more</li>
+</ul>
+<p>An incredible rage of topics. All the speakers were terrific - they
+all talked about their life and career paths and were all
+inspirational</p>
+<p>They also presented a smorgasbord of computer science possibilities
+for the students. </p>
+<p>Wow.</p>
+<p>I wish this could be bottled up and given to all aspiring technologists.</p>
+<p>I only got to attend because I was on scholarship as a high school CS
+teacher. It was an amazing few days and I can't recommend the Tapia
+conference highly enough for young computer scientists out there.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2014-02-04-shellgames-1-intro.md/" class="u-url">Shell Games - an introduction</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2014-02-04-shellgames-1-intro.md/" rel="bookmark"><time class="published dt-published" datetime="2014-02-04T00:00:00-05:00" title="2014-02-04 00:00">2014-02-04 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2014-02-04-shellgames-1-intro.md/#disqus_thread" data-disqus-identifier="cache/posts/2014-02-04-shellgames-1-intro.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>A few weeks ago, I noticed this Twitter conversation between <a href="http://twitter.com/alfredtwo">Alfred Thompson</a>  and <a href="http://twitter.com/keinath">Steve Keinath</a></p>
+<p></p>
+
+<blockquote class="twitter-tweet">I'd love to see an Intro to Linux (way more than just install) as a 3-hour workshop at <a href="https://twitter.com/search?q=%23CSTA14&amp;src=hash">#CSTA14</a> <a href="https://twitter.com/csteachersa">@csteachersa</a>— Steve Keinath (@keinath) <a href="https://twitter.com/keinath/statuses/400333558603997184">November 12, 2013</a>
+</blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><blockquote class="twitter-tweet">
+<a href="https://twitter.com/alfredtwo">@alfredtwo</a> <a href="https://twitter.com/csteachersa">@csteachersa</a> Right. I know very little &amp; would love a "zero to hero" Linux workshop.— Steve Keinath (@keinath) <a href="https://twitter.com/keinath/statuses/400335634297937920">November 12, 2013</a>
+</blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p></p>
+
+<p>I briefly considered proposing a session for the conference but it was just a day or two before the deadline, I don't know if I'm going to be able to attend the conference, and besides, who said anything I proposed would be accepted.</p>
+<p></p>
+
+<p>Still, I liked the idea - I've been an educator for 23 years, a Linux user for most of that time and an  Unix user for longer. I'm a firm believer in operating system as toolkit and so I think I'll take Steve and Alfred's suggestion and try to put together a series of posts on using Linux from a CS educators point of view.
+</p>
+<p></p>
+<p>So, before we begin - a little background.</p>
+<p></p>
+
+<p>I can proudly say that I've been Windows free since about 2000. That's when I decided to wipe the lat traces of Microsoft from my hard drives. Prior to that I just booted up MS-DOS or Windows to play games or to use a Excel or Word.
+</p>
+<p></p>
+<p>Since the early days of Linux - back before Slackware, I dual booted. Before Linux, I dialed into public Unix systems such as <a href="http://www.panix.com">Panix</a> or <a href="http://en.wikipedia.org/wiki/The_Big_Electric_Cat">The Big Electric Cat</a>. At home, I tried to make MS-DOS as Unix like as I could. I ran the <a href="http://en.wikipedia.org/wiki/MKS_Toolkit">MKS Toolkti</a>, and used my own shell (a project every young programmer should attempt).
+</p>
+<p></p>
+<p>Why am I posting this now? It's a new semester and I find myself, as usual, leveraging the Linux shell. It was time to set up a mailing list for the class.</p>
+<p></p>
+
+<p>I'm able to go to our school's data system and grab a tab delimited file that looks something like this:
+</p>
+<p></p>
+<p></p>
+<blockquote>
+<pre>
+Code    Section Period  Last    First   ID  Official    Advisor OSIS    Email
+grY22tBs    01  6   Hxk Blu GFy 9272    7rr gEs 274989649   zlu3lxk@QylKR.oqy
+grY22tBs    01  6   HiQqvlRu    Blku    9918    7PP YHZHm   200878353   zzl8@yu.oqy
+grY22tBs    01  6   plxk    ClSKv   9226    7II PHXrNY  274661826   olxkvl@QylKR.oqy
+grY22tBs    01  6   pxKk    BqVxFl  9026    7II PHXrNY  224608174   zo6461@lqR.oqy
+grY22tBs    01  6   pqxuk   NRK 9234    7dd gHAMmNd 270217219   uRKo90@QylKR.oqy
+  </pre>  </blockquote>
+<p></p>
+
+<p>It's tab delimited but I scrambled the letters so as to not reveal any student info.
+</p>
+<p></p>
+<p>Oh, how did I do that scrambling? Easy. First, I combined some basic utilities to make a random permutation of the upper and lower case letters and stored them in a shell variable. Don't worry, I'll explain these commands in upcoming posts:
+</p>
+<p></p>
+<blockquote>
+perm=`echo "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ | sed "s/\(.\)/\1\n/g" | sort -R | tr -t "\\n" ":" | sed "s/[^a-zA-Z0-9,@]//g"`
+</blockquote>
+
+<p></p>
+
+<p>Then I used tr (translate) to exchange the real letters for the matching letter in the random permutation:
+</p>
+<p></p>
+<blockquote>
+cat students.tsv | tr a-zA-Z $perm &gt; students.scrambled
+</blockquote>
+
+<p></p>
+
+<p>So back to the real work. I needed to isolate the students email addresses. The process:
+</p>
+<p></p>
+<p></p>
+<ol>
+<li>convert the tabs to commas</li>
+    <li>Pull out the students in my AP class (code MKX22X) from the list of all students</li>
+    <li>Pull out the 10th column</li>
+    <li>These are the emails, save them to a file</li>
+<p></p>
+<p>So, I typed:
+</p>
+<p></p>
+<blockquote>
+cat students.tsv | grep MKS22X | sed "s/\t/,/g" | cut -d, -f10 &gt; emails
+</blockquote>
+
+<p></p>
+
+<p>grep filters out lines that have MKS22X in them and sed replaces the tabs (\t) with commas and cut pulls out the email addresses. It's all stored in a file named emails.
+</p>
+<p></p>
+<p>Now, I just have to import these into my maillist software (mailman).
+</p>
+<p></p>
+<p></p>
+<blockquote>
+    add_members -r emails myclasslist
+  </blockquote>
+<p></p>
+<p>So, that's it, easy peasy.
+</p>
+<p></p>
+<p>I'll be away for most of this week at the Tapia conference and then I'll be playing catch up, but I'm hoping to do a series of posts talking about my Linux toolset and how I use it.
+</p>
+<p></p>
+<p>I hope you all find it interesting and maybe even useful.
+</p>
+<p></p>
+</ol>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2014-02-01-sumall.md/" class="u-url">Summing up at SumAll</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2014-02-01-sumall.md/" rel="bookmark"><time class="published dt-published" datetime="2014-02-01T00:00:00-05:00" title="2014-02-01 00:00">2014-02-01 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2014-02-01-sumall.md/#disqus_thread" data-disqus-identifier="cache/posts/2014-02-01-sumall.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Our hackers have been coming down to <a href="http://sumall.com">SumAll</a> every
+Saturday for a while now. It's a great space and we've been given run
+of the office. That said, the hackers really had no idea what SumAll
+is all about.</p>
+<p>Today, we had our first guest speaker. Davin Chew, founder and CTO of
+SumAll. Davin's also a member of the StuyCS family, he was my student back in the nineties. When Davin heard
+we needed space for our Saturday program, he and the SumAll team
+graciously offered to host.</p>
+<p>Davin spoke to the hackers about what SumAll does, how it's trying to, in Davin's words "Democratize data." How they're building a platform that lets a small business or even an individual really study their data. They've got some great visualizations and tools and you all should <a href="http://sumall.com">check them out</a> (and yes, according to their web site, there is and always will be a free tier).</p>
+<p>Davin talked a little about how he and his co-founder sat in the room
+we were all in and how they came up with SumAll. He talked about
+passions, starting out a new compnay and a variety of other topics.</p>
+<p>It's always great to connect young hackers with people doing great
+work in the real world so they can get a glimpse of the awesome things
+they will be able to accomplish in the coming years.</p>
+<h4>Some Links:</h4>
+<p><a href="http://smallbiztrends.com/2014/01/dane-atkinson-big-data-strategy.html">Dane Atkinson of SumAll: A Big Data Strategy That Goes Beyond Cutting and Pasting</a></p>
+<p><a href="http://www.meangeme.com/1/post/2014/01/my-top-5-social-media-analytics-platforms.html">My Top 5 Social Media Analytics Platforms</a></p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2014-01-30-pete-seeger.md/" class="u-url">What I learned from Pete Seeger</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2014-01-30-pete-seeger.md/" rel="bookmark"><time class="published dt-published" datetime="2014-01-30T00:00:00-05:00" title="2014-01-30 00:00">2014-01-30 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2014-01-30-pete-seeger.md/#disqus_thread" data-disqus-identifier="cache/posts/2014-01-30-pete-seeger.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<div align="center">
+<iframe width="420" height="315" src="//www.youtube.com/embed/VucczIg98Gw" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<p>This past Monday I, like may woke to hear about the passing of
+<a href="http://en.wikipedia.org/wiki/Pete_Seeger">Pete Seeger</a>. Ten days
+earlier we were up at Symphony Space for the "Woody's Children" 45th
+Anniversary Concert. Pete was supposed to perform but was ill. At 94
+years of age, I wondered if the end was near. I was at the concert
+with my family as well as with my buddy Ben. Fitting since Ben and I
+grew up on Pete's music while many of our peers did not.</p>
+<p>If you're not familiar with Pete Seeger, his life and his work, I
+really encourage you to check out the 2007 documentary <a href="http://video.pbs.org/video/2365166823/">The Power of
+Song</a>. He was truly a
+remarkable man. One of the most influential singer, songwriter,
+activists of our times yet remarkably humble and approachable.</p>
+<p>I remember seeing Pete when I was a schoolboy. He would have been in
+his fifties at the time. Thirty years later, he was singing for my
+son's second grade class in the same public school in New York City.</p>
+<p>Pete's been eulogized by far better writers than I so let me just
+share some of Pete's influences on me.</p>
+<p>Something that Pete said, highlighted in the PBS documentary - "Think
+global, act local." Peter attributed it to Rene Dubos. As a teacher
+and someone trying to make a difference through education, I think
+about this a lot.</p>
+<p>As teachers, we have to act locally. We work with our kids every day
+and can make a difference in individual lives. While we're doing this,
+the global picture is a mess. Teachers are vilified, schools are
+closed, and policy is set by people who have never been in the
+classroom.</p>
+<p>There is hope, however. Just like Pete and the <a href="http://en.wikipedia.org/wiki/Hudson_River_Sloop_Clearwater">Clearwater
+movement</a>
+local action, spearheaded by the likes of Diane Ravitch seems to be
+taking hold. We're starting to see common core exposed and the types
+of evaluation systems pushed by the Gates foundation debunked. Think
+global, act local.</p>
+<p>Now, as you know, I'm a computer science educator and there are many
+similarities between CS education and general education. Most of the
+noise you hear is from non educators, or at least non K-12
+educators with actual real experience and a real track record.</p>
+<p>These voices range from well informed, to well meaning, to
+misdirected.</p>
+<p>Last year the CSTA held a twitter conversation with K12
+CS Education thought leaders and there wasn't a k-12 teacher amongst
+the listed participants.</p>
+<p>Code.org, a well meaning organization that has done a great job
+exciting people abotu CS Ed has a quotes page. The closest thing to a
+teacher there is Randi Weingarten and she was just in the classroom
+for a cup of coffee. The only other person on the list with "teach" in
+their title is Wendy Kopp who believes that poorly trained temps make
+better teachers than experienced pros.</p>
+<p>So, how will the conversation turn? Will groups and individuals with
+influence engage those of us on the ground with actual results, or
+will will receive dictates from on high? Time will tell.</p>
+<p>Meanwhile, all I can do is continue to act local. I can't say what
+will happen in the greater CS education landscape but I know that
+every day I will see 150 kids and 20 more every Saturday. My kids, who
+will be part of the Stuy CS and now CSTUY family. They might not know
+now what they're getting, but I do and I know I've made a difference.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2014-01-26-show-me-the-data.md/" class="u-url">Show me the data</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2014-01-26-show-me-the-data.md/" rel="bookmark"><time class="published dt-published" datetime="2014-01-26T00:00:00-05:00" title="2014-01-26 00:00">2014-01-26 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2014-01-26-show-me-the-data.md/#disqus_thread" data-disqus-identifier="cache/posts/2014-01-26-show-me-the-data.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p><img alt="Show me the data" src="img/show-me-the-data/showme.png"></p>
+<p>Last time, I shared my thoughts on the recent coverage of AP CS statistics. Compiled and presented by <a href="http://home.cc.gatech.edu/ice-gt/556">Barbara Ericson</a>
+and later reported on all over the place.</p>
+<p>To summarize my point of view - yes there is a problem but some of the
+highlighted data points can easily be shown to be irrelevant and
+therefore can hurt the greater goal of access to great CS education for
+all.</p>
+<p>This felt like the launching pad for a great class discussion.</p>
+<p>I presented this to my classes last week:</p>
+<p><img width="60%" src="img/show-me-the-data/edweek.png"></p>
+<p>and asked "what do you make of this?" I was curious what the classes
+would say - they know I'm concerned with gender equity and know that
+at Stuy we've done better than most.</p>
+<p>I can say that I was very happy with their answers.</p>
+<p>We got things like:</p>
+<blockquote>
+<p>How many took the test?</p>
+<p>What states? How many African-Americans in ....</p>
+</blockquote>
+<p>and</p>
+<blockquote>
+<p>can we see the numbers?</p>
+</blockquote>
+<p>So, we started talking about the actual numbers. It's amazing when you
+actually look at the facts, truths come out.</p>
+<p>I was extremely pleased that my students saw right past the spin and
+searched for the actual numbers.</p>
+<p>In my last post I explained why the stated claims - no girls in three
+states, no blacks / Hispanics on 11 were horrible examples. Why focus
+on these when it's so easy to find better examples:</p>
+<p>The overall 20% female test takers is an easy stat to point to, but
+why point out Alaska's lack of African-American test takers when it's
+statistically irrelevant. Why not point out that in NY, only 68
+African-American test takers and 150 Hispanic (out of 1858 test).
+Given that NY is about 16% black ad 17% Hispanic, we would have
+expected around 300 from each group.</p>
+<p>In any event, I'm delighted that my students are perceptive enough to
+see past headlines, dig down to data, and make their own conclusions.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2014-01-11-badstats.md/" class="u-url">At Last - CS Gender Equity in Multiple States!!!!!</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2014-01-11-badstats.md/" rel="bookmark"><time class="published dt-published" datetime="2014-01-11T00:00:00-05:00" title="2014-01-11 00:00">2014-01-11 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2014-01-11-badstats.md/#disqus_thread" data-disqus-identifier="cache/posts/2014-01-11-badstats.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Some buzz seems to have circulated on the
+<a href="http://home.cc.gatech.edu/ice-gt/556">data</a> compiled by Barbara
+Ericson on AP Computer Science test takers in 2013. In addition to going to the <a href="http://home.cc.gatech.edu/ice-gt/556">source</a> there was a piece in  <a href="http://www.theatlantic.com/education/archive/2014/01/techs-gender-and-race-gap-starts-in-high-school/282966/">The Atlantic</a> and in <a href="http://blogs.edweek.org/edweek/curriculum/2014/01/girls_african_americans_and_hi.html">Education Week</a>.</p>
+<p><strong>Some exciting results:</strong></p>
+<ul>
+<li>In two states just as many girls passed the AP CS exam as guys!!!!!</li>
+<li>In two other states, just 6 more guys passed than girls!!!!!</li>
+<li>In yet another state, 100% of the girls passed, doing far better than the approximately 75% of the boys that passed!!!!</li>
+</ul>
+<p><strong>Wow, we're doing terrific.</strong></p>
+<p>Ok, maybe not so much.</p>
+<p>But then, I'm not saying anything false, just misleading.</p>
+<p>And that's the problem with the articles I've been reading on Barbara's report. Take a look and you'll see. The Education Week headline is:</p>
+<blockquote>
+<p>No Girls, Blacks, or Hispanics Take AP Computer Science Exam in Some States</p>
+</blockquote>
+<p>Both articles talk about how no girls took APCS in three states. Later
+in the article, it clarifies the situation - Wyoming had no test
+takers male or female, Mississippi had only 1, which wasn't a passing
+grade, and Montanna only 11 test takers total.</p>
+<p>I find the headline disingenuous.</p>
+<p>There are other tidbits like the fact that there were no hispanic test
+takers from Alaska. No mention of the fact there were only 21 test
+takers overall and that Alaska only has 6% of it's population
+identifying itself as hispanic (compared to a national number of 16%).</p>
+<p>Clearly we have problems -- not enough students are exposed to good
+computer science teaching and there certainly are under-represented
+groups, but I feel that this type of reporting detracts from the
+cause. All you have to do is look at the data and the credibility of
+the reporter is shot.</p>
+<p>I see the same type of misleading remarks made by drop in programs
+that claim to solve the problem -- "your kid will learn to make an app
+in N weeks," or "our kids are better prepared for the AP exam than
+kids who take the AP class." That's also all nonsense but these folks
+are selling a product so at least it's a little more understandable.</p>
+<p>Then there's the question of using the AP exam as a measure in the
+first place - I for one don't feel that AP CS is a particularly good
+course and I'm not sold on CS Principles as the answer either.</p>
+<p>In any event, there are a lot of important inferences we can
+make from the report and I encourage you to download the spreadsheet
+and take a look.</p>
+<p>Not enough students are being exposed to computer science and
+not all groups are getting the same exposure, but when we spin the
+data rather than illuminate it, we don't really help our cause.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2014-01-07-rot13-gateway.md/" class="u-url">Rot13 - Gateway &lt;s&gt;Drugs&lt;/s&gt; Techniques</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2014-01-07-rot13-gateway.md/" rel="bookmark"><time class="published dt-published" datetime="2014-01-07T00:00:00-05:00" title="2014-01-07 00:00">2014-01-07 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2014-01-07-rot13-gateway.md/#disqus_thread" data-disqus-identifier="cache/posts/2014-01-07-rot13-gateway.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>I've written before about <a href="http://cestlaz.github.io/2013/08/07/That_One_Inspirational_Curriculum.html#.UsyYlN_EvZ8">That One Inspirational Curriculum</a> -
+the idea that it's not the topic in the syllabus but rather what the
+teacher does with it.</p>
+<p>Some times a simple problem can lead to some really neat concepts.</p>
+<p>Take what we did in my AP classes over the past couple of days. </p>
+<p>I wanted a nice little warm up after the break so we wrote a simple
+<a href="http://www.rot-n.com/">rotation cipher</a>. We started with a little
+encode routine - take a string and rotate the letters by some
+offset. For example if we use an offset of 3, 'hello' becomes
+'khoor' - each letter being shifted over thee places.</p>
+<p>Pretty easy for the class but even a simple problem like this lets us
+talk about a few things, including:</p>
+<ul>
+<li>we can exploit the ASCII ordering but have to remember to deal with
+   the offsets. That is in ASCII, an  'a' is 97, we can't just calculate c =
+   (c+offset)%26. We have to first shift the letter down to 0, add and
+   mod, and then shift back c = ((c-'a') +offset)%26 + 'a'</li>
+<li>We can talk about neat Internet history such as how
+  (rot13)[http://en.wikipedia.org/wiki/ROT13] was used to hide
+  spoilers and offensive material on the internet.</li>
+</ul>
+<p>I then ran a program that broke the encryption. I also showed the
+students how it didn't work on single words but did on full sentences.</p>
+<p>By hand, decodingn even a simple cipher is a pain.</p>
+<p>With computer assist, it's easy - just print out all 26 possible rotations and pull out the right one.</p>
+<p>Our question was how do we have the computer do it all on its own?</p>
+<p>I asked them to think about how they might write a program to
+accomplish this -- and that's when the magic starts.</p>
+<p>They came up with a few interesting ideas:</p>
+<ol>
+<li>For each of the 26 rotations, choose the one with the most vowels.</li>
+<li>For each word in each rotation, give a point for each word with a vowel and choose the rotation with the highest score.</li>
+<li>Look for common short words in each rotation and then check other words against a dictionary.</li>
+<li>Do the letters appear with the same frequencies as in the English language</li>
+</ol>
+<p>We noticed that all of these suggestions are based on our knowledge of
+English. What if the message was in a different language or even a
+different alphabet?</p>
+<p>We decided to use choice 4 - the letter frequencies.</p>
+<p><strong>Magic part 1 - using known data to figure out a pattern for unknown data</strong></p>
+<p>Even if we don't know the frequencies, if we can get a sample document in our language, we can figure them out. We downloaded a text from Project Gutenberg and used it to build
+an array of 26 elements called <em>CorpusFreqs</em>. CorpusFreqs[0] would hold the
+frequency of the letter 'a' in our sample document (that is, how many
+times 'a' appears over the total number of letters in our document),
+CorpusFreqs[1] the frequency of 'b' etc.</p>
+<p>Now we have a model that we can use to compare our rotations to.</p>
+<p><strong>Magic part 2 - wow, that 9th grade math is actually useful</strong></p>
+<p>At this point, it usually isn't clear how to compare our rotations to
+the model frequencies we calculated. Time to simplify,</p>
+<p>We can look at another problem: Selecting a house.</p>
+<blockquote>
+<p><strong>Me:</strong>  if we can only have one criteria, what would it be?</p>
+<p><strong>Class:</strong> Neighborhood</p>
+<p><strong>Me:</strong> Ok, let's rate each neighborhood between 0 and 100 </p>
+<p><strong>Me:</strong> We can draw two houses on a line, which is better?</p>
+<p><strong>Class:</strong> The one with the larger value!</p>
+<p><strong>Me:</strong> What if we add a third house? Which is it more similar to?</p>
+<p><strong>Class:</strong> The one it's closer to.</p>
+</blockquote>
+<p>Next:</p>
+<blockquote>
+<p><strong>Me:</strong> Well, what if we add another feature? Cost - let's map low cost to 100 and high cost to 0 and all the other costs in between.</p>
+<p><strong>Me:</strong> If we want to visualize a house, how can we do it?</p>
+<p><strong>Class:</strong> We can use a graph - like x,y points use location,cost points.</p>
+</blockquote>
+<p>So we do it.</p>
+<blockquote>
+<p><strong>Me:</strong> This is the least desirable house (0,0) and this is the best one (1,1).
+I plot two houses and ask</p>
+<p><strong>Me:</strong> Which is more desirable?</p>
+<p><strong>Class:</strong> That one (they indicate the one closer to 1,1).</p>
+<p><strong>Me:</strong> How can you tell</p>
+<p><strong>Class:</strong> It's closer</p>
+<p><strong>Me:</strong> How do we figure it out?</p>
+<p><strong>Class:</strong> The Distance Formula!!!!!</p>
+</blockquote>
+<p>So now we add a third feature - size. It's pretty easy to show that
+the distance formula extends to three-space and in fact to even higher
+dimensions.</p>
+<p><strong>Magic part 3 - from 3 dimensions to 26</strong></p>
+<p>So now, we bring it back to our cipher. For the house example, we used
+points in 1,2, and 3 dimensions (and we actually talked about it in
+4D) so we used 1 through 4-space vectors to represent the points and
+used Euclidean distance formula to see what houses were similar to
+each other, or what points where near to each other</p>
+<p>From there, it's easy to see that the frequency array we built from ou sample text is a
+26-space vector and that we can build a similar vector for each
+rotation.</p>
+<p>From there we can use the distance formula to see how close each
+rotation is to the sample document vector. The rotation with the
+closest vector is pobably our solution.</p>
+<p>So from a simple warm up problem we're at the gateway to some serious techniques that will come back time and time again as the students move through their CS education and careers.</p>
+<p>Fun!</p>
+</div>
+    </div>
+    </article>
+</div>
+        <nav class="postindexpager"><ul class="pager">
+<li class="previous">
+                <a href="index-10.html" rel="prev">Newer posts</a>
+            </li>
+            <li class="next">
+                <a href="index-8.html" rel="next">Older posts</a>
+            </li>
+        </ul></nav><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+						<div class="col-md-3">
+								<br><!-- feedburner subscribe via email --><form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CestLaZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+<p>Enter your email address:</p>
+<p><input type="text" style="width:140px" name="email"></p>
+<input type="hidden" value="CestLaZ" name="uri"><input type="hidden" name="loc" value="en_US"><input type="submit" value="Subscribe"><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p>
+</form>
+								<!--  feedburner subscribe end -->
+								<!-- Twitter sidebar start -->
+								<table class="table"><tr><td>
+												<a class="twitter-timeline" href="https://twitter.com/zamansky" data-widget-id="251117725303312385">Tweets by @zamansky</a>
+												<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</td></tr></table>
+<!-- Twitter sidebar end -->
+</div>
+						<!--End of body content-->
+
+						<footer id="footer">
+								Contents © 2016         <a href="mailto:zamansky@gmail.com">Mike Zamansky</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+								
+						</footer>
+</div>
+		</div>
+
+		            <script src="assets/js/jquery.min.js"></script><script src="assets/js/bootstrap.min.js"></script><script src="assets/js/moment-with-locales.min.js"></script><script src="assets/js/fancydates.js"></script><script src="assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+		 moment.locale("en");
+		 fancydates(0, "YYYY-MM-DD HH:mm");
+		</script><!-- end fancy dates -->
+</div>
+</body>
+</html>

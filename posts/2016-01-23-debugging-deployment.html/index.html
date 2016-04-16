@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<base href="http://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Debugging deployment | C'est la Z</title>
+<link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
+<link rel="prev" href="../2016-01-17-maze-ca.html/" title="Cellular Automata for Pathfinding in NetLogo" type="text/html">
+<link rel="next" href="../2016-01-31-devops.html/" title="DevOps, or You don't know what the F you're doing!" type="text/html">
+<meta property="og:site_name" content="C'est la Z">
+<meta property="og:title" content="Debugging deployment">
+<meta property="og:url" content="http://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/">
+<meta property="og:description" content="div.center {text-align:center;}
+
+
+
+SoftDev students are hard at work on their final projects. By now,
+they all have fairly complex code bases. This limits how much I can
+help them with debugging.
+
+
+
+T">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-01-23T00:00:00-05:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+
+
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cestlaz.github.io/">
+						<img class="zlogo" src="../../assets/images/thluffy.jpg" id="logo"><span class="zname" id="blog-title">C'est la Z</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav navbar-right zmenu">
+<li class="zitem">
+<a href="http://github.com/zamansky">GitHub</a>
+                </li>
+<li class="zitem">
+<a href="../../archive.html">Archive</a>
+                </li>
+<li class="zitem">
+<a href="../../stories/about">About</a>
+                </li>
+<li class="zitem">
+<a href="../../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><h2 class="text-center">
+		Musings about education, computer science,</h2>
+		<h3 class="text-center">and maybe a few other miscellaneous topics.
+</h3>
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+		<div class="body-content">
+				<!--Body content-->
+				<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-8">
+				
+								
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Debugging deployment</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                    Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2016-01-23T00:00:00-05:00" itemprop="datePublished" title="2016-01-23 00:00">2016-01-23 00:00</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/2016-01-23-debugging-deployment.html">Comments</a>
+
+
+            
+        </p>
+</div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <style>
+div.center {text-align:center;}
+</style>
+<p>
+SoftDev students are hard at work on their final projects. By now,
+they all have fairly complex code bases. This limits how much I can
+help them with debugging.
+</p>
+
+<p>
+There are some problems, though, that they have to contend with that
+even with experience, are hard to spot. Notably because the very
+tools you use to debug these errors are part of the problem.
+</p>
+
+<p>
+Last week, this happened twice. Both cases were brought to me by
+really strong students which just goes to underscore how insidious
+these problems can be.
+</p>
+
+
+<p>
+Here's a fake code snippet of a <a href="http://flask.pocoo.org/">Flask</a> application that illustrates
+both problems.
+</p>
+
+
+<div class="org-src-container">
+
+<pre class="src src-python"><span class="linenr"> 1: </span>from flask import Flask, render_template
+<span class="linenr"> 2: </span>
+<span class="linenr"> 3: </span>app = Flask(__name__)
+<span class="linenr"> 4: </span>
+<span class="linenr"> 5: </span>@app.route("/")
+<span class="linenr"> 6: </span>def index():
+<span class="linenr"> 7: </span>    return "hello"
+<span class="linenr"> 8: </span>
+<span class="linenr"> 9: </span>@app.route('/test/&lt;some_data&gt;')
+<span class="linenr">10: </span>def test():
+<span class="linenr">11: </span>    picture_url = build_url(some_data)
+<span class="linenr">12: </span>    result = api_test(picture_url)
+<span class="linenr">13: </span>    do_something(result)
+<span class="linenr">14: </span>
+<span class="linenr">15: </span>if __name__ == "__main__":
+<span class="linenr">16: </span>   app.debug = True
+<span class="linenr">17: </span>   app.secret_key = "some secret key"
+<span class="linenr">18: </span>   app.run(host="0.0.0.0", port=8000)
+</pre>
+</div>
+
+
+<p>
+First, the "easy" one. The student was trying to deploy the
+application. We use <a href="http://gunicorn.org/">Green Unicorn</a> to deploy our applications,
+ultimately on <a href="http://digitalocean.com/">Digital Ocean</a> servers in the cloud. 
+</p>
+
+<p>
+The student was using the correct command:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-shell">gunicorn -W 4 -b 0.0.0.0:8000 app:app
+</pre>
+</div>
+
+<p>
+but it wasn't working. It ran, but whenever he went to the site, it
+came back with an error.
+</p>
+
+<p>
+The problem?
+</p>
+
+<p>
+He had to change:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-python">if __name__ == "__main__":
+   app.debug = True
+   app.secret_key = "some secret key"
+   app.run(host="0.0.0.0", port=8000)
+</pre>
+</div>
+
+<p>
+to
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python">app.secret_key = "some secret key"
+if __name__ == "__main__":
+    app.debug = True
+    app.run(host="0.0.0.0", port=8000)
+</pre>
+</div>
+
+<p>
+Normally, when developing and testing our applications, we use the
+test server that's bundled with Flask. The line that reads
+"app.run…" takes care of this.
+</p>
+
+<p>
+When running the application as a "main program" - "python app.py" the
+if statement is true and it runs the indented lines, setting the
+secret key which is required for session management.
+</p>
+
+<p>
+When running under <b><b>gunicorn</b></b>, the <b><b>gunicorn</b></b> server loads the
+application as a module and then runs it. In this case name isn't main
+so it never sets secret key and so we have a problem.
+</p>
+
+<p>
+Pretty subtle and even though we did cover this in class, it comes up
+pretty rarely so it's not an easy catch.
+</p>
+
+<p>
+Then there was this problem.
+</p>
+
+<p>
+The setup for this one's a little more complicated. The group was
+using a facial recognition api. You provide the API with the url to an
+image, it fetches it and does recognition.
+</p>
+
+<p>
+It's also important to note that when Flask is running, it will serve
+files from a static directory, so, if I'm running my flask server on
+myhost, port 800 and you stored an image named picture.jpg in the
+static directory, going to:
+</p>
+
+<verbatim>
+ http://myhost:8000/static/picture.jpg
+</verbatim><br><br><p>
+would get that image.
+</p>
+
+<p>
+The group did things right. They ran the Flask test server to serve
+the static files and then wrote a small python program to test the
+api:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-python">picture_url = build_url(some_data)
+result = api_test(picture_url)
+do_something(result)
+</pre>
+</div>
+
+<p>
+Everything worked fine. 
+</p>
+
+<p>
+But, when they put this code in as a route in their web app (as in the
+top code fragment), it froze. 
+</p>
+
+<p>
+They couldn't figure it out.
+</p>
+
+<p>
+The code worked as a "stand alone" but not in the web app.
+</p>
+
+<p>
+The problem?
+</p>
+
+<p>
+Once again, the built in Flask development server.
+</p>
+
+<p>
+The development server runs in a single thread / process. This means
+it can only do one thing at a time. When they ran their test as a
+separate program, the api they used made a request to their app to
+serve up the static picture file and it worked.
+</p>
+
+<p>
+When they ran from the Flask application itself, their app made a call
+to the web api (line 12) and then blocked while waiting for the
+response. The web api tried to request the image from the Flask app
+but it was blocked – <b><b>deadlock</b></b>.
+</p>
+
+<p>
+Again, the solution was to run the web app using a server that could
+handle multiple requests - gunicorn.
+</p>
+
+<p>
+Once again, that solved the problem.
+</p>
+
+<p>
+Both of these problems were fairly subtle and very hard to catch -
+even with experience. I remember the hours I lost when I was learning
+this stuff.
+</p>
+
+<p>
+Some times kids get caught up in algorithms or poor code design but
+sometimes, it's just the tools.
+</p>
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_google_plusone_share"></a>
+<a class="addthis_button_hackernews"></a>
+<a class="addthis_button_reddit"></a>
+<a class="addthis_button_gmail"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
+</div>
+    <aside class="postpromonav"><nav><ul class="pager hidden-print">
+<li class="previous">
+                <a href="../2016-01-17-maze-ca.html/" rel="prev" title="Cellular Automata for Pathfinding in NetLogo">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="../2016-01-31-devops.html/" rel="next" title="DevOps, or You don't know what the F you're doing!">Next post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="cestlaz",
+            disqus_url="http://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/",
+        disqus_title="Debugging deployment",
+        disqus_identifier="cache/posts/2016-01-23-debugging-deployment.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+						<div class="col-md-3">
+								<br><!-- feedburner subscribe via email --><form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CestLaZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+<p>Enter your email address:</p>
+<p><input type="text" style="width:140px" name="email"></p>
+<input type="hidden" value="CestLaZ" name="uri"><input type="hidden" name="loc" value="en_US"><input type="submit" value="Subscribe"><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p>
+</form>
+								<!--  feedburner subscribe end -->
+								<!-- Twitter sidebar start -->
+								<table class="table"><tr><td>
+												<a class="twitter-timeline" href="https://twitter.com/zamansky" data-widget-id="251117725303312385">Tweets by @zamansky</a>
+												<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</td></tr></table>
+<!-- Twitter sidebar end -->
+</div>
+						<!--End of body content-->
+
+						<footer id="footer">
+								Contents © 2016         <a href="mailto:zamansky@gmail.com">Mike Zamansky</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+								
+						</footer>
+</div>
+		</div>
+
+		            <script src="../../assets/js/jquery.min.js"></script><script src="../../assets/js/bootstrap.min.js"></script><script src="../../assets/js/moment-with-locales.min.js"></script><script src="../../assets/js/fancydates.js"></script><script src="../../assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+		 moment.locale("en");
+		 fancydates(0, "YYYY-MM-DD HH:mm");
+		</script><!-- end fancy dates -->
+</div>
+</body>
+</html>
