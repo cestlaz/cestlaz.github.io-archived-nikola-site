@@ -65,10 +65,6 @@
 {{ comments.comment_link_script() }}
 
 
-
-
-
-
 {% endblock %}
 
 {% block sourcelink %}
