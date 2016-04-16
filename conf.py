@@ -513,7 +513,6 @@ FRONT_INDEX_HEADER = {
 # Final location for the blog main RSS feed is:
 # output / TRANSLATION[lang] / RSS_PATH / rss.xml
 # RSS_PATH = ""
-RSS_PATH = "atom.xml"
 
 # Slug the Tag URL. Easier for users to type, special characters are
 # often removed or replaced as well.
