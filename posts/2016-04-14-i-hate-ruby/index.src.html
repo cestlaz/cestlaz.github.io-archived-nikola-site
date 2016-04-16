@@ -1,129 +1,135 @@
+<!--
+		 .. title: I hate ruby or why I'm switching blogging platforms
+		 .. slug: 2016-04-14-i-hate-ruby
+		 .. date: 2016-04-14
+		 .. type: text
+	 -->
 <p>
-I'm moving to a new blogging platform. I'm still going to use GitHub
-pages but after a few years of using <a href="https://jekyllrb.com/">Jekyll</a>, I'm switching to <a href="https://getnikola.com/">Nikola</a>.
+		I'm moving to a new blogging platform. I'm still going to use GitHub
+		pages but after a few years of using <a href="https://jekyllrb.com/">Jekyll</a>, I'm switching to <a href="https://getnikola.com/">Nikola</a>.
 </p>
 
 <p>
-I think I've got the move worked out but if you're reading this via an
-rss or atom reader, make sure to check back in a couple of days - you
-might have to re-subscribe.
+		I think I've got the move worked out but if you're reading this via an
+		rss or atom reader, make sure to check back in a couple of days - you
+		might have to re-subscribe.
 </p>
 
 <p>
-Why am I switching?
+		Why am I switching?
 </p>
 
 <p>
-Because I hate Ruby. 
+		Because I hate Ruby. 
 </p>
 
 <p>
-Ok, not really - I barely know the language. I was already a  Python
-guy when Ruby came along and I didn't see any real added value to
-switching. 
+		Ok, not really - I barely know the language. I was already a  Python
+		guy when Ruby came along and I didn't see any real added value to
+		switching. 
 </p>
 
 <p>
-This isn't really about Ruby though, it's really about how that which
-we don't know is strange and frightening. In this case, the ruby ecosystem.
+		This isn't really about Ruby though, it's really about how that which
+		we don't know is strange and frightening. In this case, the ruby ecosystem.
 </p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LV0wTtiJygY" frameborder="0" allowfullscreen></iframe>
 
 <p>
-I started using Jekyll because that's what was supported by GitHub
-pages. It's fairly simple and it basically worked. It had a few
-warts, specifically, I've had problems getting org-mode blog posts to
-publish just the way I'd like and it's hard to debug when a post has
-some bad markup in it, but it got the job done. 
+		I started using Jekyll because that's what was supported by GitHub
+		pages. It's fairly simple and it basically worked. It had a few
+		warts, specifically, I've had problems getting org-mode blog posts to
+		publish just the way I'd like and it's hard to debug when a post has
+		some bad markup in it, but it got the job done. 
 </p>
 
 <p>
-Recently, though, I've had to re-install Jekyll a number of  times and
-for me, that's been a nightmare.
+		Recently, though, I've had to re-install Jekyll a number of  times and
+		for me, that's been a nightmare.
 </p>
 
 <p>
-One is supposed to just be able to <b><b>sudo gem install jekyll</b></b>.
+		One is supposed to just be able to <b><b>sudo gem install jekyll</b></b>.
 </p>
 
 <p>
-Ok, so you need some packages installed:
+		Ok, so you need some packages installed:
 </p>
 
 <div class="highlight"><pre><span></span>sudo apt-get install ruby-dev
 </pre></div>
 
 <p>
-But I've got ruby 1.9 and I need ruby 2 point something. Ok:
+		But I've got ruby 1.9 and I need ruby 2 point something. Ok:
 </p>
 
 <div class="highlight"><pre><span></span>sudo apt-get install ruby2.0 ruby2.0-dev
 </pre></div>
 
 <p>
-But that fails since we're still running 1.9. Every time I look for a
-solution I go down the ruby ecosystem rabbit hole. 
+		But that fails since we're still running 1.9. Every time I look for a
+		solution I go down the ruby ecosystem rabbit hole. 
 </p>
 
 <p>
-All I want is Jekyll!!!!!!
+		All I want is Jekyll!!!!!!
 </p>
 
 <p>
-Why can't I just <b><b>pip install jekyll</b></b> like I can do with Python
-packages!!!!!
+		Why can't I just <b><b>pip install jekyll</b></b> like I can do with Python
+		packages!!!!!
 </p>
 
 <p>
-In truth, there's nothing wrong with the ruby ecosystem, It's just
-something I'm not familiar with. I probably had to go through the same
-battles with Python it's just that I did them incrementally over time.
+		In truth, there's nothing wrong with the ruby ecosystem, It's just
+		something I'm not familiar with. I probably had to go through the same
+		battles with Python it's just that I did them incrementally over time.
 </p>
 
 <p>
-The truth is, setting up a development environment should be much
-easier. It used to be that I installed Linux, it had C installed and I
-just had to install <a href="https://en.wikipedia.org/wiki/Make_(software)">make</a>. Now it's all about tool chains, virtual
-environments, containers, and more.
+		The truth is, setting up a development environment should be much
+		easier. It used to be that I installed Linux, it had C installed and I
+		just had to install <a href="https://en.wikipedia.org/wiki/Make_(software)">make</a>. Now it's all about tool chains, virtual
+		environments, containers, and more.
 </p>
 
 <p>
- I think this is what <a href="https://twitter.com/roybahat">Roy</a> was talking about when we traded
-tweets on using development environments in an  <a href="http://cestlaz.github.io/2016/04/12/ide-or-cloud.html#.Vw_nPN9vETt">Ide or in the cloud</a>.
+		I think this is what <a href="https://twitter.com/roybahat">Roy</a> was talking about when we traded
+		tweets on using development environments in an  <a href="http://cestlaz.github.io/2016/04/12/ide-or-cloud.html#.Vw_nPN9vETt">Ide or in the cloud</a>.
 </p>
 
 <p>
-If it's hard for me to get an environment running, imagine some poor
-soul who just went through a "learn to code" web site and now has to
-figure out how to set up his or her own machine!!!!!!
+		If it's hard for me to get an environment running, imagine some poor
+		soul who just went through a "learn to code" web site and now has to
+		figure out how to set up his or her own machine!!!!!!
 </p>
 
 <p>
-I don't have a solution but at least it hasn't stopped me and others
-from trying new things.
+		I don't have a solution but at least it hasn't stopped me and others
+		from trying new things.
 </p>
 
 <p>
-Two of my CS blogging friends, <a href="https://gflint.wordpress.com/">Garth Flint</a> and <a href="http://blog.acthompson.net/">Alfred Thompson</a> have in
-their own ways talked about this same issue. Garth, showing a bias
-towards VB yet still working to get his head around Python. Alfred
-shows the same disdain for Linux and the command line as I show
-towards Windows. All this leads to valuable learning experiences and
-discussions.
+		Two of my CS blogging friends, <a href="https://gflint.wordpress.com/">Garth Flint</a> and <a href="http://blog.acthompson.net/">Alfred Thompson</a> have in
+		their own ways talked about this same issue. Garth, showing a bias
+		towards VB yet still working to get his head around Python. Alfred
+		shows the same disdain for Linux and the command line as I show
+		towards Windows. All this leads to valuable learning experiences and
+		discussions.
 </p>
 
 <p>
-Personally, I'm also going through this battle as I continue to
-explore Clojure.
+		Personally, I'm also going through this battle as I continue to
+		explore Clojure.
 </p>
 
 <p>
-So, I'm going to finish the changeover to Nikola in the next day or
-two. Remember to check back in case the feeds aren't working.
+		So, I'm going to finish the changeover to Nikola in the next day or
+		two. Remember to check back in case the feeds aren't working.
 </p>
 
 <p>
-Once I make the change, I'll talk about Jekyll vs Nikola as actual
-blogging platforms.
+		Once I make the change, I'll talk about Jekyll vs Nikola as actual
+		blogging platforms.
 </p>

@@ -1,128 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 16 Apr 2016 19:05:53 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>2016-04-14-i-hate-ruby</title><link>http://cestlaz.github.io/posts/2016-04-14-i-hate-ruby/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
-I think I've got the move worked out but if you're reading this via an
-rss or atom reader, make sure to check back in a couple of days - you
-might have to re-subscribe.
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 16 Apr 2016 19:17:10 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>I hate ruby or why I'm switching blogging platforms</title><link>http://cestlaz.github.io/posts/2016-04-14-i-hate-ruby/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+		I think I've got the move worked out but if you're reading this via an
+		rss or atom reader, make sure to check back in a couple of days - you
+		might have to re-subscribe.
 &lt;/p&gt;
 
 &lt;p&gt;
-Why am I switching?
+		Why am I switching?
 &lt;/p&gt;
 
 &lt;p&gt;
-Because I hate Ruby. 
+		Because I hate Ruby. 
 &lt;/p&gt;
 
 &lt;p&gt;
-Ok, not really - I barely know the language. I was already a  Python
-guy when Ruby came along and I didn't see any real added value to
-switching. 
+		Ok, not really - I barely know the language. I was already a  Python
+		guy when Ruby came along and I didn't see any real added value to
+		switching. 
 &lt;/p&gt;
 
 &lt;p&gt;
-This isn't really about Ruby though, it's really about how that which
-we don't know is strange and frightening. In this case, the ruby ecosystem.
+		This isn't really about Ruby though, it's really about how that which
+		we don't know is strange and frightening. In this case, the ruby ecosystem.
 &lt;/p&gt;
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LV0wTtiJygY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;
-I started using Jekyll because that's what was supported by GitHub
-pages. It's fairly simple and it basically worked. It had a few
-warts, specifically, I've had problems getting org-mode blog posts to
-publish just the way I'd like and it's hard to debug when a post has
-some bad markup in it, but it got the job done. 
+		I started using Jekyll because that's what was supported by GitHub
+		pages. It's fairly simple and it basically worked. It had a few
+		warts, specifically, I've had problems getting org-mode blog posts to
+		publish just the way I'd like and it's hard to debug when a post has
+		some bad markup in it, but it got the job done. 
 &lt;/p&gt;
 
 &lt;p&gt;
-Recently, though, I've had to re-install Jekyll a number of  times and
-for me, that's been a nightmare.
+		Recently, though, I've had to re-install Jekyll a number of  times and
+		for me, that's been a nightmare.
 &lt;/p&gt;
 
 &lt;p&gt;
-One is supposed to just be able to &lt;b&gt;&lt;b&gt;sudo gem install jekyll&lt;/b&gt;&lt;/b&gt;.
+		One is supposed to just be able to &lt;b&gt;&lt;b&gt;sudo gem install jekyll&lt;/b&gt;&lt;/b&gt;.
 &lt;/p&gt;
 
 &lt;p&gt;
-Ok, so you need some packages installed:
+		Ok, so you need some packages installed:
 &lt;/p&gt;
 
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install ruby-dev
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;
-But I've got ruby 1.9 and I need ruby 2 point something. Ok:
+		But I've got ruby 1.9 and I need ruby 2 point something. Ok:
 &lt;/p&gt;
 
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install ruby2.0 ruby2.0-dev
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;
-But that fails since we're still running 1.9. Every time I look for a
-solution I go down the ruby ecosystem rabbit hole. 
+		But that fails since we're still running 1.9. Every time I look for a
+		solution I go down the ruby ecosystem rabbit hole. 
 &lt;/p&gt;
 
 &lt;p&gt;
-All I want is Jekyll!!!!!!
+		All I want is Jekyll!!!!!!
 &lt;/p&gt;
 
 &lt;p&gt;
-Why can't I just &lt;b&gt;&lt;b&gt;pip install jekyll&lt;/b&gt;&lt;/b&gt; like I can do with Python
-packages!!!!!
+		Why can't I just &lt;b&gt;&lt;b&gt;pip install jekyll&lt;/b&gt;&lt;/b&gt; like I can do with Python
+		packages!!!!!
 &lt;/p&gt;
 
 &lt;p&gt;
-In truth, there's nothing wrong with the ruby ecosystem, It's just
-something I'm not familiar with. I probably had to go through the same
-battles with Python it's just that I did them incrementally over time.
+		In truth, there's nothing wrong with the ruby ecosystem, It's just
+		something I'm not familiar with. I probably had to go through the same
+		battles with Python it's just that I did them incrementally over time.
 &lt;/p&gt;
 
 &lt;p&gt;
-The truth is, setting up a development environment should be much
-easier. It used to be that I installed Linux, it had C installed and I
-just had to install &lt;a href="https://en.wikipedia.org/wiki/Make_(software)"&gt;make&lt;/a&gt;. Now it's all about tool chains, virtual
-environments, containers, and more.
+		The truth is, setting up a development environment should be much
+		easier. It used to be that I installed Linux, it had C installed and I
+		just had to install &lt;a href="https://en.wikipedia.org/wiki/Make_(software)"&gt;make&lt;/a&gt;. Now it's all about tool chains, virtual
+		environments, containers, and more.
 &lt;/p&gt;
 
 &lt;p&gt;
- I think this is what &lt;a href="https://twitter.com/roybahat"&gt;Roy&lt;/a&gt; was talking about when we traded
-tweets on using development environments in an  &lt;a href="http://cestlaz.github.io/2016/04/12/ide-or-cloud.html#.Vw_nPN9vETt"&gt;Ide or in the cloud&lt;/a&gt;.
+		I think this is what &lt;a href="https://twitter.com/roybahat"&gt;Roy&lt;/a&gt; was talking about when we traded
+		tweets on using development environments in an  &lt;a href="http://cestlaz.github.io/2016/04/12/ide-or-cloud.html#.Vw_nPN9vETt"&gt;Ide or in the cloud&lt;/a&gt;.
 &lt;/p&gt;
 
 &lt;p&gt;
-If it's hard for me to get an environment running, imagine some poor
-soul who just went through a "learn to code" web site and now has to
-figure out how to set up his or her own machine!!!!!!
+		If it's hard for me to get an environment running, imagine some poor
+		soul who just went through a "learn to code" web site and now has to
+		figure out how to set up his or her own machine!!!!!!
 &lt;/p&gt;
 
 &lt;p&gt;
-I don't have a solution but at least it hasn't stopped me and others
-from trying new things.
+		I don't have a solution but at least it hasn't stopped me and others
+		from trying new things.
 &lt;/p&gt;
 
 &lt;p&gt;
-Two of my CS blogging friends, &lt;a href="https://gflint.wordpress.com/"&gt;Garth Flint&lt;/a&gt; and &lt;a href="http://blog.acthompson.net/"&gt;Alfred Thompson&lt;/a&gt; have in
-their own ways talked about this same issue. Garth, showing a bias
-towards VB yet still working to get his head around Python. Alfred
-shows the same disdain for Linux and the command line as I show
-towards Windows. All this leads to valuable learning experiences and
-discussions.
+		Two of my CS blogging friends, &lt;a href="https://gflint.wordpress.com/"&gt;Garth Flint&lt;/a&gt; and &lt;a href="http://blog.acthompson.net/"&gt;Alfred Thompson&lt;/a&gt; have in
+		their own ways talked about this same issue. Garth, showing a bias
+		towards VB yet still working to get his head around Python. Alfred
+		shows the same disdain for Linux and the command line as I show
+		towards Windows. All this leads to valuable learning experiences and
+		discussions.
 &lt;/p&gt;
 
 &lt;p&gt;
-Personally, I'm also going through this battle as I continue to
-explore Clojure.
+		Personally, I'm also going through this battle as I continue to
+		explore Clojure.
 &lt;/p&gt;
 
 &lt;p&gt;
-So, I'm going to finish the changeover to Nikola in the next day or
-two. Remember to check back in case the feeds aren't working.
+		So, I'm going to finish the changeover to Nikola in the next day or
+		two. Remember to check back in case the feeds aren't working.
 &lt;/p&gt;
 
 &lt;p&gt;
-Once I make the change, I'll talk about Jekyll vs Nikola as actual
-blogging platforms.
-&lt;/p&gt;</description><guid>http://cestlaz.github.io/posts/2016-04-14-i-hate-ruby/</guid><pubDate>Sat, 16 Apr 2016 04:00:00 GMT</pubDate></item><item><title>IDE or the Cloud</title><link>http://cestlaz.github.io/posts/2016-04-12-ide-or-cloud.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+		Once I make the change, I'll talk about Jekyll vs Nikola as actual
+		blogging platforms.
+&lt;/p&gt;</description><guid>http://cestlaz.github.io/posts/2016-04-14-i-hate-ruby/</guid><pubDate>Thu, 14 Apr 2016 04:00:00 GMT</pubDate></item><item><title>IDE or the Cloud</title><link>http://cestlaz.github.io/posts/2016-04-12-ide-or-cloud.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
 div.center {text-align:center;}
 &lt;/style&gt;
 &lt;div id="outline-container-orgheadline1" class="outline-2"&gt;
