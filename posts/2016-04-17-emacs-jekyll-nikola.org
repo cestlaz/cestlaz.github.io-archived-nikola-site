@@ -1,0 +1,95 @@
+#+STARTUP:  inlineimages
+#+BEGIN_COMMENT
+.. title: Blogging with Emacs, Jekyll and Nikola
+.. slug: 2016-04-17-emacs-jekyll-nikola
+.. date: 2016-04-17 13:12:26 UTC-04:00
+.. tags: mathjax
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+Switched over from [[https://jekyllrb.com/][Jekyll]] to [[https://getnikola.com/][Nikola]] yesterday.
+
+One of the primary reasons was that I got fed up with managing a Ruby
+development environment across all my machines. In spite of my
+rantings, I'm sure Ruby and Ruby installs are fine - it's just
+something that I'd have to deal with on a recurring basis for one
+specific task - other than for Jekyll blogging, I don't use Ruby.
+
+So while a platform based on Python - generally my go to language,
+made sense, the other driving force for the switch was the fact that
+[[https://www.gnu.org/software/emacs/][Emacs]] and [[http://orgmode.org/][org-mode]] have become such major parts of my workflow and
+productivity.
+
+What do I use org-mode for?
+- lesson planning
+- document preparation (instead of LaTeX)
+- note taking
+- blogging
+- email (with mu4e)
+- managing my schedule
+- tracking bookmarks
+
+and probably a lot more.
+
+Jekyll is actually a really nice tool. It's simple. You put together a
+simple directory structure: Templates in _layouts, blog posts in
+_posts, drafts in _drafts. Other directories that start with an
+underscore are ignored and everything else is copied up to your site.
+
+I love that it's "close to the metal" You can put in html files with
+some meta information up top or markdown. 
+
+You can take a look at my old site at
+[[https://github.com/cestlaz/cestlaz.github.io-jekyll][https://github.com/cestlaz/cestlaz.github.io-jekyll]] if you want to
+take a look.
+
+The beauty is that you just push your files up to GitHub and it
+automatically runs Jekyll and builds your site ([[https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/][more info here]]).
+
+The problem is that Jekyll doesn't play well with org-mode and
+org-markup so my workflow became something like this
+
+1. Create a post **something.org** in the _org directory.
+2. From within emacs, publish it. I've configured org-mode to publish
+   by exporting the org-mode markup file to html and saving it in the
+   _drafts directory.
+3. If it looks good, copy and rename the file from _drafts to the
+   _posts directory and push it up to GitHub.
+
+A little clunky, but it works. The bigger problem was the amount of
+time I'd spend putting html blocks into my org formatted posts to get
+them to look the way I wanted (or at least close enough).
+
+Enter Nikola.
+
+Nikola's a much more powerful tool. It does much more but as a result
+is much more complex. Normally, that's not my style but in this case
+since It's Python, things balance out.
+
+I still have to figure out the entire templating system and all the
+plugins but getting started was pretty quick.
+
+The big win is that Nikola supports a ton of formats for your posts
+and pages. Native org-mode support for me was the big win. On top of
+that, although I haven't tested it yet, is that there's also an
+org-mode plugin to export to Nikola restructure text but I haven't
+played with it yet.
+
+My new workflow:
+
+1. Write the post as an org-mode file.
+#+OPTION: _:nil
+2. run **nikola github\under{}deploy**.
+
+And that's it. You can look at my Nikola site here:
+[[https://github.com/cestlaz/cestlaz.github.io][https://github.com/cestlaz/cestlaz.github.io]].
+The source code is in the **src** branch, the actual rendered blog in
+the **master** branch.
+
+So far, I'm pretty happy with the setup.
+
+
