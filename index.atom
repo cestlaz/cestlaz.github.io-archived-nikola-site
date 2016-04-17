@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2016-04-17T20:07:12Z</updated>
+  <updated>2016-04-17T20:53:48Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -142,8 +142,6 @@ My new workflow:
 &lt;ol class="org-ol"&gt;
 &lt;li&gt;Write the post as an org-mode file.
 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;ol class="org-ol"&gt;
 &lt;li&gt;run &lt;b&gt;&lt;b&gt;nikola github_deploy&lt;/b&gt;&lt;/b&gt;.
 &lt;/li&gt;
 &lt;/ol&gt;
