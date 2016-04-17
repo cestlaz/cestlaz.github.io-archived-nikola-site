@@ -127,8 +127,7 @@ class CommandImportJekyll(Command, ImportMixin):
 
     def _import_posts(self):
         rel_path = self._jekyll_config.get('source', 'source')
-        #posts_path = os.path.join(self._jekyll_path, rel_path, '_posts')
-        posts_path = os.path.join(self._jekyll_path, '_posts')
+        posts_path = os.path.join(self._jekyll_path, rel_path, '_posts')
         importer = JekyllPostImport()
 
         for dirpath, dirnames, filenames in os.walk(posts_path):
