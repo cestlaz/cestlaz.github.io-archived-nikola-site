@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 18)</title>
   <id>http://cestlaz.github.io/index-18.atom</id>
-  <updated>2016-04-27T20:41:10Z</updated>
+  <updated>2016-04-29T00:23:39Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,202 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-17.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-18.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Cellular Automata, NetLogo and real problems</title>
+    <id>http://cestlaz.github.io/posts/2016-01-15-shift-image.html/</id>
+    <updated>2016-01-15T00:00:00</updated>
+    <published>2016-01-15T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2016-01-15-shift-image.html/"/>
+    <summary type="html">&lt;style&gt;
+.center {text-align:center;}
+.frame {width:640px;height:800px;}
+&lt;/style&gt;
+
+
+&lt;p&gt;
+We've been using &lt;a href="https://ccl.northwestern.edu/netlogo/"&gt;NetLogo&lt;/a&gt; in our intro course for years. It's a
+wonderful programming environment. Many of you recall the &lt;a href="https://en.wikipedia.org/wiki/Logo_(programming_language)"&gt;Logo&lt;/a&gt;
+programming language. NetLogo is like Logo but instead of programming
+a turtle, you write a program that's run by multiple, perhaps hundreds
+of turtles and also by the world the turtles live on. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Some of the reasons we like it are that it's:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;An easy accessible textual programming language&lt;/li&gt;
+&lt;li&gt;Makes building a graphical interface trivial&lt;/li&gt;
+&lt;li&gt;great for modeling&lt;/li&gt;
+&lt;li&gt;Comes with tons of demo models&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+And now, with the latest version, NetLogo programs/models can be
+deployed as web sites. All you have to do is save your program as
+"NetLogo Web" and put it up on a observer somewhere.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you haven't you should download and install NetLogo, run it, then
+go to the file menu and look at the built in models.
+&lt;/p&gt;
+
+&lt;p&gt;
+I also enjoy playing with &lt;a href="https://en.wikipedia.org/wiki/Cellular_automaton"&gt;Cellular Automata&lt;/a&gt; and NetLogo's a wonderful
+platform to play with. The turtles live on a grid of patches and just
+like the turtles, the patches will all run your program over and over.
+&lt;/p&gt;
+
+&lt;p&gt;
+The patches make perfect cells for a cellular automaton and you can
+implement a rule set in your patches. 
+&lt;/p&gt;
+
+&lt;p&gt;
+NetLogo even comes with a bunch of built in demo models for Cellular
+Automata including &lt;a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"&gt;Conway's Game of Life&lt;/a&gt;, probably the most famous CA.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand, Conway's Game of Life is somewhat cliche and while
+I find it fascinating, it doesn't really solve a practical problem, at
+least on on the surface.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, I was looking for something more practical to do and something
+where we could explore some deeper CS concepts. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Image manipulation.
+&lt;/p&gt;
+
+&lt;p&gt;
+In class, we make a Cellular Automaton where each cell or patch is a
+pixel in an image. In NetLogo, you can do this with the
+"import-pcolors" command. Lower down, I have a demo that just manually
+colors patches - the web version of NetLogo doesn't yet support that
+command.
+&lt;/p&gt;
+
+&lt;p&gt;
+Task 1 - what if we want to shift the image over? The kids come up
+with a solution pretty quickly: "We can just have each patch ask its
+neighbor for its color." Here's the code they try:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-netlogo"&gt;; ask each patch to set its color to the color of the
+; patch at relative location -1,0
+to shift-naive
+  ask patches [ set pcolor [pcolor] of patch-at -1 0]
+end
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+To see what happens, scroll down to the NetLogo model below, click on
+setup and then hit the &lt;b&gt;&lt;b&gt;shift-naive&lt;/b&gt;&lt;/b&gt; button a few times.
+&lt;/p&gt;
+
+&lt;p&gt;
+It doesn't work. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What's going on?
+&lt;/p&gt;
+
+&lt;p&gt;
+It's a synchronization issue.
+&lt;/p&gt;
+
+&lt;p&gt;
+Suppose we have the following three cells in a row:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/shift-image/image1.png" alt="image1.png"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+If cell 3 asks cell 2 it's color before cell 2 asks cell 1's color, we
+get the desired result:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/shift-image/image2.png" alt="image2.png"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+But if cell 2 asks cell 1 for it's color first then cell 3 will
+actually get cell 1's color:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/shift-image/image3.png" alt="image3.png"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+So now we have the students thinking about synchronization and
+parallel processing and they don't even know it.
+&lt;/p&gt;
+
+&lt;p&gt;
+The solution's pretty easy, break the problem up into two steps.
+&lt;/p&gt;
+
+&lt;p&gt;
+First, have every patch ask its neighbor for its color and then once
+everyone knows their neighbor's color, then change:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-html"&gt;patches-own [next-color]
+
+to shift-correct
+  ; figure out my next color
+  ask patches [ set next-color [pcolor] of patch-at -1 0 ]
+  ; then switch to it
+  ask patches [ set pcolor next-color]
+end
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+You can run that by clicking &lt;b&gt;&lt;b&gt;setup&lt;/b&gt;&lt;/b&gt; again and then &lt;b&gt;&lt;b&gt;shift-correct&lt;/b&gt;&lt;/b&gt; a
+few times.
+&lt;/p&gt;
+
+&lt;p&gt;
+There's some of the beauty of NetLogo - we can get kids to think about
+some deep concepts while playing with an easy to use, fun, interactive
+environment with a real textual programming language.
+&lt;/p&gt;
+
+&lt;p&gt;
+Stay tuned for part 2 when I'll talk about creating a cellular
+automaton that can solve a maze.
+&lt;/p&gt;
+
+&lt;div class="center frame"&gt;
+&lt;iframe class="center frame" src="http://cestlaz.github.io/img/shift-image/shift-image.html"&gt;&lt;/iframe&gt;
+&lt;/div&gt;</summary>
+  </entry>
   <entry>
     <title>International Blog Delurking Week 2016</title>
     <id>http://cestlaz.github.io/posts/2016-01-06-delurking-week.html/</id>

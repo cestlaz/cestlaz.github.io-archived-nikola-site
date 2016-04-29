@@ -82,7 +82,200 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2016-01-06-delurking-week.html/" class="u-url">International Blog Delurking Week 2016</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2016-01-15-shift-image.html/" class="u-url">Cellular Automata, NetLogo and real problems</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/2016-01-15-shift-image.html/" rel="bookmark"><time class="published dt-published" datetime="2016-01-15T00:00:00-05:00" title="2016-01-15 00:00">2016-01-15 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/2016-01-15-shift-image.html/#disqus_thread" data-disqus-identifier="cache/posts/2016-01-15-shift-image.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <style>
+.center {text-align:center;}
+.frame {width:640px;height:800px;}
+</style>
+<p>
+We've been using <a href="https://ccl.northwestern.edu/netlogo/">NetLogo</a> in our intro course for years. It's a
+wonderful programming environment. Many of you recall the <a href="https://en.wikipedia.org/wiki/Logo_(programming_language)">Logo</a>
+programming language. NetLogo is like Logo but instead of programming
+a turtle, you write a program that's run by multiple, perhaps hundreds
+of turtles and also by the world the turtles live on. 
+</p>
+
+<p>
+Some of the reasons we like it are that it's:
+</p>
+
+<ul class="org-ul">
+<li>An easy accessible textual programming language</li>
+<li>Makes building a graphical interface trivial</li>
+<li>great for modeling</li>
+<li>Comes with tons of demo models</li>
+</ul>
+<p>
+And now, with the latest version, NetLogo programs/models can be
+deployed as web sites. All you have to do is save your program as
+"NetLogo Web" and put it up on a observer somewhere.
+</p>
+
+<p>
+If you haven't you should download and install NetLogo, run it, then
+go to the file menu and look at the built in models.
+</p>
+
+<p>
+I also enjoy playing with <a href="https://en.wikipedia.org/wiki/Cellular_automaton">Cellular Automata</a> and NetLogo's a wonderful
+platform to play with. The turtles live on a grid of patches and just
+like the turtles, the patches will all run your program over and over.
+</p>
+
+<p>
+The patches make perfect cells for a cellular automaton and you can
+implement a rule set in your patches. 
+</p>
+
+<p>
+NetLogo even comes with a bunch of built in demo models for Cellular
+Automata including <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a>, probably the most famous CA.
+</p>
+
+<p>
+On the other hand, Conway's Game of Life is somewhat cliche and while
+I find it fascinating, it doesn't really solve a practical problem, at
+least on on the surface.
+</p>
+
+<p>
+So, I was looking for something more practical to do and something
+where we could explore some deeper CS concepts. 
+</p>
+
+<p>
+Image manipulation.
+</p>
+
+<p>
+In class, we make a Cellular Automaton where each cell or patch is a
+pixel in an image. In NetLogo, you can do this with the
+"import-pcolors" command. Lower down, I have a demo that just manually
+colors patches - the web version of NetLogo doesn't yet support that
+command.
+</p>
+
+<p>
+Task 1 - what if we want to shift the image over? The kids come up
+with a solution pretty quickly: "We can just have each patch ask its
+neighbor for its color." Here's the code they try:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-netlogo">; ask each patch to set its color to the color of the
+; patch at relative location -1,0
+to shift-naive
+  ask patches [ set pcolor [pcolor] of patch-at -1 0]
+end
+</pre>
+</div>
+
+<p>
+To see what happens, scroll down to the NetLogo model below, click on
+setup and then hit the <b><b>shift-naive</b></b> button a few times.
+</p>
+
+<p>
+It doesn't work. 
+</p>
+
+<p>
+What's going on?
+</p>
+
+<p>
+It's a synchronization issue.
+</p>
+
+<p>
+Suppose we have the following three cells in a row:
+</p>
+
+
+<div class="figure">
+<p><img src="img/shift-image/image1.png" alt="image1.png"></p>
+</div>
+
+<p>
+If cell 3 asks cell 2 it's color before cell 2 asks cell 1's color, we
+get the desired result:
+</p>
+
+
+<div class="figure">
+<p><img src="img/shift-image/image2.png" alt="image2.png"></p>
+</div>
+
+<p>
+But if cell 2 asks cell 1 for it's color first then cell 3 will
+actually get cell 1's color:
+</p>
+
+
+<div class="figure">
+<p><img src="img/shift-image/image3.png" alt="image3.png"></p>
+</div>
+
+<p>
+So now we have the students thinking about synchronization and
+parallel processing and they don't even know it.
+</p>
+
+<p>
+The solution's pretty easy, break the problem up into two steps.
+</p>
+
+<p>
+First, have every patch ask its neighbor for its color and then once
+everyone knows their neighbor's color, then change:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-html">patches-own [next-color]
+
+to shift-correct
+  ; figure out my next color
+  ask patches [ set next-color [pcolor] of patch-at -1 0 ]
+  ; then switch to it
+  ask patches [ set pcolor next-color]
+end
+</pre>
+</div>
+
+<p>
+You can run that by clicking <b><b>setup</b></b> again and then <b><b>shift-correct</b></b> a
+few times.
+</p>
+
+<p>
+There's some of the beauty of NetLogo - we can get kids to think about
+some deep concepts while playing with an easy to use, fun, interactive
+environment with a real textual programming language.
+</p>
+
+<p>
+Stay tuned for part 2 when I'll talk about creating a cellular
+automaton that can solve a maze.
+</p>
+
+<div class="center frame">
+<iframe class="center frame" src="img/shift-image/shift-image.html"></iframe>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2016-01-06-delurking-week.html/" class="u-url">International Blog Delurking Week 2016</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
