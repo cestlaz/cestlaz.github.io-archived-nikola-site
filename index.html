@@ -20,7 +20,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-18.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/cstuy-coi/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/semaphores/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -81,7 +81,105 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/cstuy-coi/" class="u-url">NYC DOE - Doing what it can to keep opportunities away from kids</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/semaphores/" class="u-url">As curricula changes, what's falling through the cracks?</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/semaphores/" rel="bookmark"><time class="published dt-published" datetime="2016-05-01T09:08:36-04:00" title="2016-05-01 09:08">2016-05-01 09:08</time></a></p>
+                <p class="commentline">            <a href="posts/semaphores/#disqus_thread" data-disqus-identifier="cache/posts/semaphores.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p>
+I enjoy reading blogs. It's one of the ways I keep current. Not only
+in terms of what's going on in CS Education, but also trends in CS -
+academic or professional as well as on a range of other topics.
+</p>
+
+<p>
+One of the blogs I enjoy is authored by <a href="https://twitter.com/b0rk">Julia Evans</a>. I don't know
+Julia, but we do have some mutual friends. I've enjoyed her <a href="http://jvns.ca">blog</a>. She
+does a nice job talking about any number of systems related
+issue. I've tried to leave comments a few times but for some reason,
+my comments always end up deleted or otherwise not showing up.
+</p>
+
+<p>
+One recent post, one on <a href="http://jvns.ca/blog/2016/03/29/thread-pools-part-ii-i-love-blocking/">concurrency</a> got me thinking. Since the comment
+I left there didn't take, I thought I'd write about it here.
+</p>
+
+<p>
+It's a nice post but the thing that caught my eye was when Julia
+said that she " didn't know what a semaphore was until I read this
+code and I was like OH THIS IS AMAZING AND SO USEFUL AND WOW." I was a
+little surprised, semaphores seem to be one of those basic concepts
+that you just know but that is, of course incorrect. I first learned
+about semaphores in my honors Systems class with my mentor, the late
+<a href="https://en.wikipedia.org/wiki/Robert_Dewar">Robert Dewar</a>. We started from test and set and worked our way up. I
+had two other undergraduate classes that at least mentioned the topic.
+</p>
+
+<p>
+Then again, I knew that many undergrads would never get a good
+treatment of concurrency so I tried to build a bit in to the System
+Level Programming  course I designed while at Stuy.
+</p>
+
+<p>
+This got me thinking - according to her linked in, Julia was a CS
+major at McGill - a university that I hold in high regard but either
+semaphores were never covered or their treatment didn't make enough of
+an impact to be worth remembering. What topics do we cover in our
+classes that kids just let fall to the wayside and what topics do we
+end up losing as curricula change and we don't have an eye on the big
+picture.
+</p>
+
+<p>
+One big one is memory management. When APCS and college 101 classes
+went to Java, memory management went out the window. Not a problem, as
+long as memory issues are covered in some other course. Unfortunately
+the don't seem to be. You can make a case that kids don't need to
+understand memory management or anything about garbage collection but
+I'd argue that while one might never have to do their own memory
+management a good CS person should have some understanding of what's
+going on under the hood or as my friend Gerry says "never use a
+technology you couldn't write yourself."
+</p>
+
+<p>
+Another biggie that I lived through was the IBM PC era. Prior to the
+mid to late 80's when the IBM PC ruled the world, kids learned about
+CS on timesharing systems. Once the PC took hold, every kid learning
+programming or studying CS was working on their own machine. They had
+full access to everything and the machine just supported a single
+thread. 
+</p>
+
+<p>
+On the one hand, it was nice since you could easily play with low
+level programming and hardware but on the other hand, a hole
+generation didn't learn about the complexities of multiple users and
+multiple processes. 
+</p>
+
+<p>
+Early in my career I designed courses and only later did I realize
+that you can't just design a course, you have to look at the full arc
+of a students education. 
+</p>
+
+<p>
+I think it's interesting to think about what concepts are getting left
+on the side of the road and I wonder if the big players driving CS
+education spend any time thinking about this bigger picture.
+</p>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/cstuy-coi/" class="u-url">NYC DOE - Doing what it can to keep opportunities away from kids</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
@@ -1371,200 +1469,6 @@ this stuff.
 Some times kids get caught up in algorithms or poor code design but
 sometimes, it's just the tools.
 </p>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2016-01-17-maze-ca.html/" class="u-url">Cellular Automata for Pathfinding in NetLogo</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/2016-01-17-maze-ca.html/" rel="bookmark"><time class="published dt-published" datetime="2016-01-17T00:00:00-05:00" title="2016-01-17 00:00">2016-01-17 00:00</time></a></p>
-                <p class="commentline">            <a href="posts/2016-01-17-maze-ca.html/#disqus_thread" data-disqus-identifier="cache/posts/2016-01-17-maze-ca.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet">
-<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script><style>
-div.center {text-align:center;}
-.smaller {height:200px;width:200px}
-
-.center {text-align:center;}
-.frame {width:600px;height:800px;}
-
-</style>
-<div class="center">
-<a class="center" href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-start.png">
-<img src="img/maze-ca/maze-start.png"></a>
-</div>
-<br><div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1"></h2>
-<div class="outline-text-2" id="text-orgheadline1">
-<p>
-<a href="http://cestlaz.github.io/2016/01/15/shift-image.html#.Vpvy4x8SrmE">Last time</a> we took a look at implementing a Cellular Automaton in
-NetLogo to do some simple image manipulation. We just scratched the
-surface. In class, the kids write pretty nice Photoshop Light
-applications. 
-</p>
-
-<p>
-Today we'll look at some more ambitious problem solving - using a
-Cellular Automaton to find a path through a maze. 
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2">Part 1 - finding possible paths</h2>
-<div class="outline-text-2" id="text-orgheadline2">
-<p>
-We'll use the image above as an example and a live model with all the
-code is at the end of this post.
-</p>
-
-<p>
-Each square of the maze is a
-NetLogo patch. White square represent possible paths, Red is our
-entrance, green our exit. As we explore the maze, we'll color the
-cells yellow.
-</p>
-
-<p>
-Remember, in  a Cellular Automaton (CA), each cell makes a decision as to
-it's next state based on information about its neighbors (up, down,
-left, and right only in this case).
-</p>
-
-<p>
-So, if every cell is looking around at it's neighbors, most cells
-don't have enough information. The only white cell that might be on
-the path from entrance to exit is the one next to the entrance - it
-might be on the path.
-</p>
-
-<p>
-This leads us to the first step of our CA rule set:
-</p>
-
-<div class="org-src-container">
-
-<pre class="src src-netlogo">; if I have a green neighbor, I might be on the path, turn yellow
-ask patches with [pcolor = white] [
-  if any? neighbors with [pcolor = red] [
-   set pcolor yellow
-  ] 
-]
-</pre>
-</div>
-
-<p>
-(click images to enlarge)
-</p>
-
-<a href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-1.png">
-<img class="smaller" src="img/maze-ca/maze-1.png"></a>
-
-<p>
-Next time through, we notice that a cell might be on the path if it's
-white and it has either red or yellow neighbors.
-</p>
-
-
-<a href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-2.png">
-<img class="smaller" src="img/maze-ca/maze-2.png"></a>
-<a href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-3.png">
-<img class="smaller" src="img/maze-ca/maze-3.png"></a>
-
-<a href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-4.png">
-<img class="smaller" src="img/maze-ca/maze-4.png"></a>
-
-<p>
-Eventually, we end up with a yellow abutting green - the exit.
-</p>
-
-<a href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-found.png">
-<img class="smaller" src="img/maze-ca/maze-found.png"></a>
-
-<p>
-Notice that each yellow cell is also numbered. The number indicates
-how many steps it took to get there from the entrance. The
-implementation is trivial:
-</p>
-
-<ul class="org-ul">
-<li>Start by giving each patch a variable <b><b>step</b></b> and starting it at 0.</li>
-<li>When a cell is about to turn yellow, it should look at it's yellow
-or red neighbors, ask for their <b><b>step</b></b> value (they'll all be the
-same - think about why), and set it's <b><b>step</b></b> value to one more
-than that.</li>
-</ul>
-<p>
-We'll use these step numbers to recover the actual shortest path.
-</p>
-</div>
-</div>
-
-<div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3">Part 2 - recovering the shortest path.</h2>
-<div class="outline-text-2" id="text-orgheadline3">
-<p>
-We can now use the yellow patches with the step numbers to find our
-way back. 
-</p>
-
-<p>
-We're going to build a solution set.
-</p>
-<ol class="org-ol">
-<li>start with an empty solution set.</li>
-<li>take the only green cell not in the solution set (let's call it <b><b>G</b></b>).</li>
-<li>Ask <b><b>G</b></b>'s yellow neighbor with lowest step number to turn
-itself green (that cell will be <b><b>G</b></b> next time around).</li>
-<li>Place <b><b>G</b></b> into the solution set (leaving the new green cell as
-the only green cell not in the solution set).</li>
-<li>Repeat 2 - 5 until we're back at the entrance.</li>
-</ol>
-<a href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-back-1.png">
-<img class="smaller" src="img/maze-ca/maze-back-1.png"></a>
-<a href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-back-2.png">
-<img class="smaller" src="img/maze-ca/maze-back-2.png"></a>
-<a href="posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-solved.png">
-<img class="smaller" src="img/maze-ca/maze-solved.png"></a>
-
-<p>
-This is one of my favorite intro topics. It's using a CA - something
-normally just presented as a toy idea, to solve a real problem. It
-reinforces parallel processing and foreshadows all sorts of pathfinding
-ideas to come.
-</p>
-
-<p>
-Below is the complete NetLogo program. You can look at the code by
-clicking on the code tab at the bottom.
-</p>
-
-<p>
-To run:
-</p>
-<ul class="org-ul">
-<li>
-<b><b>setup</b></b> sets up all the variables and clears the world.</li>
-<li>
-<b><b>buildmaze</b></b> builds a random maze.</li>
-<li>
-<b><b>solve</b></b> is a toggle to run through an entire solution.</li>
-<li>
-<b><b>step</b></b> single steps through the CA.</li>
-<li>
-<b><b>reset</b></b> Resets all the variables and recolors the maze to
-unsolved.</li>
-<li>The other buttons are toggles for drawing your own maze.</li>
-</ul>
-<div class="center frame">
-<iframe class="center frame" src="img/maze-ca/maze.html"></iframe>
-</div>
-</div>
-</div>
     </div>
     </article>
 </div>

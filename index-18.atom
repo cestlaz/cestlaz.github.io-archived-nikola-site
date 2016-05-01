@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 18)</title>
   <id>http://cestlaz.github.io/index-18.atom</id>
-  <updated>2016-04-29T00:23:39Z</updated>
+  <updated>2016-05-01T14:07:45Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,211 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-17.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-18.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Cellular Automata for Pathfinding in NetLogo</title>
+    <id>http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</id>
+    <updated>2016-01-17T00:00:00</updated>
+    <published>2016-01-17T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/"/>
+    <summary type="html">&lt;link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet"&gt;
+&lt;script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+&lt;style&gt;
+div.center {text-align:center;}
+.smaller {height:200px;width:200px}
+
+.center {text-align:center;}
+.frame {width:600px;height:800px;}
+
+&lt;/style&gt;
+
+
+&lt;div class="center"&gt;
+&lt;a class="center" href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-start.png"&gt;
+&lt;img src="http://cestlaz.github.io/img/maze-ca/maze-start.png"&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+
+&lt;div id="outline-container-orgheadline1" class="outline-2"&gt;
+&lt;h2 id="orgheadline1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline1"&gt;
+&lt;p&gt;
+&lt;a href="http://cestlaz.github.io/2016/01/15/shift-image.html#.Vpvy4x8SrmE"&gt;Last time&lt;/a&gt; we took a look at implementing a Cellular Automaton in
+NetLogo to do some simple image manipulation. We just scratched the
+surface. In class, the kids write pretty nice Photoshop Light
+applications. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Today we'll look at some more ambitious problem solving - using a
+Cellular Automaton to find a path through a maze. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-orgheadline2" class="outline-2"&gt;
+&lt;h2 id="orgheadline2"&gt;Part 1 - finding possible paths&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline2"&gt;
+&lt;p&gt;
+We'll use the image above as an example and a live model with all the
+code is at the end of this post.
+&lt;/p&gt;
+
+&lt;p&gt;
+Each square of the maze is a
+NetLogo patch. White square represent possible paths, Red is our
+entrance, green our exit. As we explore the maze, we'll color the
+cells yellow.
+&lt;/p&gt;
+
+&lt;p&gt;
+Remember, in  a Cellular Automaton (CA), each cell makes a decision as to
+it's next state based on information about its neighbors (up, down,
+left, and right only in this case).
+&lt;/p&gt;
+
+&lt;p&gt;
+So, if every cell is looking around at it's neighbors, most cells
+don't have enough information. The only white cell that might be on
+the path from entrance to exit is the one next to the entrance - it
+might be on the path.
+&lt;/p&gt;
+
+&lt;p&gt;
+This leads us to the first step of our CA rule set:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-netlogo"&gt;; if I have a green neighbor, I might be on the path, turn yellow
+ask patches with [pcolor = white] [
+  if any? neighbors with [pcolor = red] [
+   set pcolor yellow
+  ] 
+]
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+(click images to enlarge)
+&lt;/p&gt;
+
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-1.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-1.png"&gt;
+&lt;/a&gt;
+
+&lt;p&gt;
+Next time through, we notice that a cell might be on the path if it's
+white and it has either red or yellow neighbors.
+&lt;/p&gt;
+
+
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-2.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-2.png"&gt;
+&lt;/a&gt;
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-3.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-3.png"&gt;
+&lt;/a&gt;
+
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-4.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-4.png"&gt;
+&lt;/a&gt;
+
+&lt;p&gt;
+Eventually, we end up with a yellow abutting green - the exit.
+&lt;/p&gt;
+
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-found.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-found.png"&gt;
+&lt;/a&gt;
+
+&lt;p&gt;
+Notice that each yellow cell is also numbered. The number indicates
+how many steps it took to get there from the entrance. The
+implementation is trivial:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Start by giving each patch a variable &lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; and starting it at 0.&lt;/li&gt;
+&lt;li&gt;When a cell is about to turn yellow, it should look at it's yellow
+or red neighbors, ask for their &lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; value (they'll all be the
+same - think about why), and set it's &lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; value to one more
+than that.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+We'll use these step numbers to recover the actual shortest path.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-orgheadline3" class="outline-2"&gt;
+&lt;h2 id="orgheadline3"&gt;Part 2 - recovering the shortest path.&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline3"&gt;
+&lt;p&gt;
+We can now use the yellow patches with the step numbers to find our
+way back. 
+&lt;/p&gt;
+
+&lt;p&gt;
+We're going to build a solution set.
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;start with an empty solution set.&lt;/li&gt;
+&lt;li&gt;take the only green cell not in the solution set (let's call it &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt;).&lt;/li&gt;
+&lt;li&gt;Ask &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt;'s yellow neighbor with lowest step number to turn
+itself green (that cell will be &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt; next time around).&lt;/li&gt;
+&lt;li&gt;Place &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt; into the solution set (leaving the new green cell as
+the only green cell not in the solution set).&lt;/li&gt;
+&lt;li&gt;Repeat 2 - 5 until we're back at the entrance.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-back-1.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-back-1.png"&gt;
+&lt;/a&gt;
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-back-2.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-back-2.png"&gt;
+&lt;/a&gt;
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-solved.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-solved.png"&gt;
+&lt;/a&gt;
+
+&lt;p&gt;
+This is one of my favorite intro topics. It's using a CA - something
+normally just presented as a toy idea, to solve a real problem. It
+reinforces parallel processing and foreshadows all sorts of pathfinding
+ideas to come.
+&lt;/p&gt;
+
+&lt;p&gt;
+Below is the complete NetLogo program. You can look at the code by
+clicking on the code tab at the bottom.
+&lt;/p&gt;
+
+&lt;p&gt;
+To run:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;setup&lt;/b&gt;&lt;/b&gt; sets up all the variables and clears the world.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;buildmaze&lt;/b&gt;&lt;/b&gt; builds a random maze.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;solve&lt;/b&gt;&lt;/b&gt; is a toggle to run through an entire solution.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; single steps through the CA.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;reset&lt;/b&gt;&lt;/b&gt; Resets all the variables and recolors the maze to
+unsolved.&lt;/li&gt;
+&lt;li&gt;The other buttons are toggles for drawing your own maze.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="center frame"&gt;
+&lt;iframe class="center frame" src="http://cestlaz.github.io/img/maze-ca/maze.html"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
   <entry>
     <title>Cellular Automata, NetLogo and real problems</title>
     <id>http://cestlaz.github.io/posts/2016-01-15-shift-image.html/</id>

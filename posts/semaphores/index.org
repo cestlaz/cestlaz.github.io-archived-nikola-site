@@ -1,0 +1,79 @@
+#+BEGIN_COMMENT
+.. title: As curricula changes, what's falling through the cracks?
+.. slug: semaphores
+.. date: 2016-05-01 09:08:36 UTC-04:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+I enjoy reading blogs. It's one of the ways I keep current. Not only
+in terms of what's going on in CS Education, but also trends in CS -
+academic or professional as well as on a range of other topics.
+
+One of the blogs I enjoy is authored by [[https://twitter.com/b0rk][Julia Evans]]. I don't know
+Julia, but we do have some mutual friends. I've enjoyed her [[http://jvns.ca][blog]]. She
+does a nice job talking about any number of systems related
+issue. I've tried to leave comments a few times but for some reason,
+my comments always end up deleted or otherwise not showing up.
+
+One recent post, one on [[http://jvns.ca/blog/2016/03/29/thread-pools-part-ii-i-love-blocking/][concurrency]] got me thinking. Since the comment
+I left there didn't take, I thought I'd write about it here.
+
+It's a nice post but the thing that caught my eye was when Julia
+said that she " didn't know what a semaphore was until I read this
+code and I was like OH THIS IS AMAZING AND SO USEFUL AND WOW." I was a
+little surprised, semaphores seem to be one of those basic concepts
+that you just know but that is, of course incorrect. I first learned
+about semaphores in my honors Systems class with my mentor, the late
+[[https://en.wikipedia.org/wiki/Robert_Dewar][Robert Dewar]]. We started from test and set and worked our way up. I
+had two other undergraduate classes that at least mentioned the topic.
+
+Then again, I knew that many undergrads would never get a good
+treatment of concurrency so I tried to build a bit in to the System
+Level Programming  course I designed while at Stuy.
+
+This got me thinking - according to her linked in, Julia was a CS
+major at McGill - a university that I hold in high regard but either
+semaphores were never covered or their treatment didn't make enough of
+an impact to be worth remembering. What topics do we cover in our
+classes that kids just let fall to the wayside and what topics do we
+end up losing as curricula change and we don't have an eye on the big
+picture.
+
+One big one is memory management. When APCS and college 101 classes
+went to Java, memory management went out the window. Not a problem, as
+long as memory issues are covered in some other course. Unfortunately
+the don't seem to be. You can make a case that kids don't need to
+understand memory management or anything about garbage collection but
+I'd argue that while one might never have to do their own memory
+management a good CS person should have some understanding of what's
+going on under the hood or as my friend Gerry says "never use a
+technology you couldn't write yourself."
+
+Another biggie that I lived through was the IBM PC era. Prior to the
+mid to late 80's when the IBM PC ruled the world, kids learned about
+CS on timesharing systems. Once the PC took hold, every kid learning
+programming or studying CS was working on their own machine. They had
+full access to everything and the machine just supported a single
+thread. 
+
+On the one hand, it was nice since you could easily play with low
+level programming and hardware but on the other hand, a hole
+generation didn't learn about the complexities of multiple users and
+multiple processes. 
+
+Early in my career I designed courses and only later did I realize
+that you can't just design a course, you have to look at the full arc
+of a students education. 
+
+I think it's interesting to think about what concepts are getting left
+on the side of the road and I wonder if the big players driving CS
+education spend any time thinking about this bigger picture.
+
+
+
+
+

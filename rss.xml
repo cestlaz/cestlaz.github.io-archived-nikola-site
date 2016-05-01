@@ -1,5 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 29 Apr 2016 00:27:56 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>NYC DOE - Doing what it can to keep opportunities away from kids</title><link>http://cestlaz.github.io/posts/cstuy-coi/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 01 May 2016 14:07:45 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>As curricula changes, what's falling through the cracks?</title><link>http://cestlaz.github.io/posts/semaphores/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+I enjoy reading blogs. It's one of the ways I keep current. Not only
+in terms of what's going on in CS Education, but also trends in CS -
+academic or professional as well as on a range of other topics.
+&lt;/p&gt;
+
+&lt;p&gt;
+One of the blogs I enjoy is authored by &lt;a href="https://twitter.com/b0rk"&gt;Julia Evans&lt;/a&gt;. I don't know
+Julia, but we do have some mutual friends. I've enjoyed her &lt;a href="http://jvns.ca"&gt;blog&lt;/a&gt;. She
+does a nice job talking about any number of systems related
+issue. I've tried to leave comments a few times but for some reason,
+my comments always end up deleted or otherwise not showing up.
+&lt;/p&gt;
+
+&lt;p&gt;
+One recent post, one on &lt;a href="http://jvns.ca/blog/2016/03/29/thread-pools-part-ii-i-love-blocking/"&gt;concurrency&lt;/a&gt; got me thinking. Since the comment
+I left there didn't take, I thought I'd write about it here.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's a nice post but the thing that caught my eye was when Julia
+said that she " didn't know what a semaphore was until I read this
+code and I was like OH THIS IS AMAZING AND SO USEFUL AND WOW." I was a
+little surprised, semaphores seem to be one of those basic concepts
+that you just know but that is, of course incorrect. I first learned
+about semaphores in my honors Systems class with my mentor, the late
+&lt;a href="https://en.wikipedia.org/wiki/Robert_Dewar"&gt;Robert Dewar&lt;/a&gt;. We started from test and set and worked our way up. I
+had two other undergraduate classes that at least mentioned the topic.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then again, I knew that many undergrads would never get a good
+treatment of concurrency so I tried to build a bit in to the System
+Level Programming  course I designed while at Stuy.
+&lt;/p&gt;
+
+&lt;p&gt;
+This got me thinking - according to her linked in, Julia was a CS
+major at McGill - a university that I hold in high regard but either
+semaphores were never covered or their treatment didn't make enough of
+an impact to be worth remembering. What topics do we cover in our
+classes that kids just let fall to the wayside and what topics do we
+end up losing as curricula change and we don't have an eye on the big
+picture.
+&lt;/p&gt;
+
+&lt;p&gt;
+One big one is memory management. When APCS and college 101 classes
+went to Java, memory management went out the window. Not a problem, as
+long as memory issues are covered in some other course. Unfortunately
+the don't seem to be. You can make a case that kids don't need to
+understand memory management or anything about garbage collection but
+I'd argue that while one might never have to do their own memory
+management a good CS person should have some understanding of what's
+going on under the hood or as my friend Gerry says "never use a
+technology you couldn't write yourself."
+&lt;/p&gt;
+
+&lt;p&gt;
+Another biggie that I lived through was the IBM PC era. Prior to the
+mid to late 80's when the IBM PC ruled the world, kids learned about
+CS on timesharing systems. Once the PC took hold, every kid learning
+programming or studying CS was working on their own machine. They had
+full access to everything and the machine just supported a single
+thread. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the one hand, it was nice since you could easily play with low
+level programming and hardware but on the other hand, a hole
+generation didn't learn about the complexities of multiple users and
+multiple processes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Early in my career I designed courses and only later did I realize
+that you can't just design a course, you have to look at the full arc
+of a students education. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I think it's interesting to think about what concepts are getting left
+on the side of the road and I wonder if the big players driving CS
+education spend any time thinking about this bigger picture.
+&lt;/p&gt;</description><guid>http://cestlaz.github.io/posts/semaphores/</guid><pubDate>Sun, 01 May 2016 13:08:36 GMT</pubDate></item><item><title>NYC DOE - Doing what it can to keep opportunities away from kids</title><link>http://cestlaz.github.io/posts/cstuy-coi/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -1174,198 +1258,4 @@ this stuff.
 &lt;p&gt;
 Some times kids get caught up in algorithms or poor code design but
 sometimes, it's just the tools.
-&lt;/p&gt;</description><guid>http://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</guid><pubDate>Sat, 23 Jan 2016 05:00:00 GMT</pubDate></item><item><title>Cellular Automata for Pathfinding in NetLogo</title><link>http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet"&gt;
-&lt;script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
-&lt;style&gt;
-div.center {text-align:center;}
-.smaller {height:200px;width:200px}
-
-.center {text-align:center;}
-.frame {width:600px;height:800px;}
-
-&lt;/style&gt;
-
-
-&lt;div class="center"&gt;
-&lt;a class="center" href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-start.png"&gt;
-&lt;img src="http://cestlaz.github.io/img/maze-ca/maze-start.png"&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-&lt;br&gt;
-
-&lt;div id="outline-container-orgheadline1" class="outline-2"&gt;
-&lt;h2 id="orgheadline1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgheadline1"&gt;
-&lt;p&gt;
-&lt;a href="http://cestlaz.github.io/2016/01/15/shift-image.html#.Vpvy4x8SrmE"&gt;Last time&lt;/a&gt; we took a look at implementing a Cellular Automaton in
-NetLogo to do some simple image manipulation. We just scratched the
-surface. In class, the kids write pretty nice Photoshop Light
-applications. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Today we'll look at some more ambitious problem solving - using a
-Cellular Automaton to find a path through a maze. 
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-orgheadline2" class="outline-2"&gt;
-&lt;h2 id="orgheadline2"&gt;Part 1 - finding possible paths&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgheadline2"&gt;
-&lt;p&gt;
-We'll use the image above as an example and a live model with all the
-code is at the end of this post.
-&lt;/p&gt;
-
-&lt;p&gt;
-Each square of the maze is a
-NetLogo patch. White square represent possible paths, Red is our
-entrance, green our exit. As we explore the maze, we'll color the
-cells yellow.
-&lt;/p&gt;
-
-&lt;p&gt;
-Remember, in  a Cellular Automaton (CA), each cell makes a decision as to
-it's next state based on information about its neighbors (up, down,
-left, and right only in this case).
-&lt;/p&gt;
-
-&lt;p&gt;
-So, if every cell is looking around at it's neighbors, most cells
-don't have enough information. The only white cell that might be on
-the path from entrance to exit is the one next to the entrance - it
-might be on the path.
-&lt;/p&gt;
-
-&lt;p&gt;
-This leads us to the first step of our CA rule set:
-&lt;/p&gt;
-
-&lt;div class="org-src-container"&gt;
-
-&lt;pre class="src src-netlogo"&gt;; if I have a green neighbor, I might be on the path, turn yellow
-ask patches with [pcolor = white] [
-  if any? neighbors with [pcolor = red] [
-   set pcolor yellow
-  ] 
-]
-&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-(click images to enlarge)
-&lt;/p&gt;
-
-&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-1.png"&gt;
-&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-1.png"&gt;
-&lt;/a&gt;
-
-&lt;p&gt;
-Next time through, we notice that a cell might be on the path if it's
-white and it has either red or yellow neighbors.
-&lt;/p&gt;
-
-
-&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-2.png"&gt;
-&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-2.png"&gt;
-&lt;/a&gt;
-&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-3.png"&gt;
-&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-3.png"&gt;
-&lt;/a&gt;
-
-&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-4.png"&gt;
-&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-4.png"&gt;
-&lt;/a&gt;
-
-&lt;p&gt;
-Eventually, we end up with a yellow abutting green - the exit.
-&lt;/p&gt;
-
-&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-found.png"&gt;
-&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-found.png"&gt;
-&lt;/a&gt;
-
-&lt;p&gt;
-Notice that each yellow cell is also numbered. The number indicates
-how many steps it took to get there from the entrance. The
-implementation is trivial:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Start by giving each patch a variable &lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; and starting it at 0.&lt;/li&gt;
-&lt;li&gt;When a cell is about to turn yellow, it should look at it's yellow
-or red neighbors, ask for their &lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; value (they'll all be the
-same - think about why), and set it's &lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; value to one more
-than that.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-We'll use these step numbers to recover the actual shortest path.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-orgheadline3" class="outline-2"&gt;
-&lt;h2 id="orgheadline3"&gt;Part 2 - recovering the shortest path.&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgheadline3"&gt;
-&lt;p&gt;
-We can now use the yellow patches with the step numbers to find our
-way back. 
-&lt;/p&gt;
-
-&lt;p&gt;
-We're going to build a solution set.
-&lt;/p&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;start with an empty solution set.&lt;/li&gt;
-&lt;li&gt;take the only green cell not in the solution set (let's call it &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt;).&lt;/li&gt;
-&lt;li&gt;Ask &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt;'s yellow neighbor with lowest step number to turn
-itself green (that cell will be &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt; next time around).&lt;/li&gt;
-&lt;li&gt;Place &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt; into the solution set (leaving the new green cell as
-the only green cell not in the solution set).&lt;/li&gt;
-&lt;li&gt;Repeat 2 - 5 until we're back at the entrance.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-
-&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-back-1.png"&gt;
-&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-back-1.png"&gt;
-&lt;/a&gt;
-&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-back-2.png"&gt;
-&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-back-2.png"&gt;
-&lt;/a&gt;
-&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-solved.png"&gt;
-&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-solved.png"&gt;
-&lt;/a&gt;
-
-&lt;p&gt;
-This is one of my favorite intro topics. It's using a CA - something
-normally just presented as a toy idea, to solve a real problem. It
-reinforces parallel processing and foreshadows all sorts of pathfinding
-ideas to come.
-&lt;/p&gt;
-
-&lt;p&gt;
-Below is the complete NetLogo program. You can look at the code by
-clicking on the code tab at the bottom.
-&lt;/p&gt;
-
-&lt;p&gt;
-To run:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;b&gt;&lt;b&gt;setup&lt;/b&gt;&lt;/b&gt; sets up all the variables and clears the world.&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;&lt;b&gt;buildmaze&lt;/b&gt;&lt;/b&gt; builds a random maze.&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;&lt;b&gt;solve&lt;/b&gt;&lt;/b&gt; is a toggle to run through an entire solution.&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; single steps through the CA.&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;&lt;b&gt;reset&lt;/b&gt;&lt;/b&gt; Resets all the variables and recolors the maze to
-unsolved.&lt;/li&gt;
-&lt;li&gt;The other buttons are toggles for drawing your own maze.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class="center frame"&gt;
-&lt;iframe class="center frame" src="http://cestlaz.github.io/img/maze-ca/maze.html"&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</guid><pubDate>Sun, 17 Jan 2016 05:00:00 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;</description><guid>http://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</guid><pubDate>Sat, 23 Jan 2016 05:00:00 GMT</pubDate></item></channel></rss>
