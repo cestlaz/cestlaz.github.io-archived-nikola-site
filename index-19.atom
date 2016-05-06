@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>C'est la Z (old posts, page 19)</title>
+  <id>http://cestlaz.github.io/index-19.atom</id>
+  <updated>2016-05-06T11:08:57Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/index-19.atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-18.atom"/>
+  <link rel="previous" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
+  <link rel="current" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
+  <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-18.atom"/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-19.html"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Debugging deployment</title>
+    <id>http://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</id>
+    <updated>2016-01-23T00:00:00</updated>
+    <published>2016-01-23T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+SoftDev students are hard at work on their final projects. By now,
+they all have fairly complex code bases. This limits how much I can
+help them with debugging.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are some problems, though, that they have to contend with that
+even with experience, are hard to spot. Notably because the very
+tools you use to debug these errors are part of the problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+Last week, this happened twice. Both cases were brought to me by
+really strong students which just goes to underscore how insidious
+these problems can be.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Here's a fake code snippet of a &lt;a href="http://flask.pocoo.org/"&gt;Flask&lt;/a&gt; application that illustrates
+both problems.
+&lt;/p&gt;
+
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;&lt;span class="linenr"&gt; 1: &lt;/span&gt;from flask import Flask, render_template
+&lt;span class="linenr"&gt; 2: &lt;/span&gt;
+&lt;span class="linenr"&gt; 3: &lt;/span&gt;app = Flask(__name__)
+&lt;span class="linenr"&gt; 4: &lt;/span&gt;
+&lt;span class="linenr"&gt; 5: &lt;/span&gt;@app.route("/")
+&lt;span class="linenr"&gt; 6: &lt;/span&gt;def index():
+&lt;span class="linenr"&gt; 7: &lt;/span&gt;    return "hello"
+&lt;span class="linenr"&gt; 8: &lt;/span&gt;
+&lt;span class="linenr"&gt; 9: &lt;/span&gt;@app.route('/test/&amp;lt;some_data&amp;gt;')
+&lt;span class="linenr"&gt;10: &lt;/span&gt;def test():
+&lt;span class="linenr"&gt;11: &lt;/span&gt;    picture_url = build_url(some_data)
+&lt;span class="linenr"&gt;12: &lt;/span&gt;    result = api_test(picture_url)
+&lt;span class="linenr"&gt;13: &lt;/span&gt;    do_something(result)
+&lt;span class="linenr"&gt;14: &lt;/span&gt;
+&lt;span class="linenr"&gt;15: &lt;/span&gt;if __name__ == "__main__":
+&lt;span class="linenr"&gt;16: &lt;/span&gt;   app.debug = True
+&lt;span class="linenr"&gt;17: &lt;/span&gt;   app.secret_key = "some secret key"
+&lt;span class="linenr"&gt;18: &lt;/span&gt;   app.run(host="0.0.0.0", port=8000)
+&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+First, the "easy" one. The student was trying to deploy the
+application. We use &lt;a href="http://gunicorn.org/"&gt;Green Unicorn&lt;/a&gt; to deploy our applications,
+ultimately on &lt;a href="http://digitalocean.com/"&gt;Digital Ocean&lt;/a&gt; servers in the cloud. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The student was using the correct command:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-shell"&gt;gunicorn -W 4 -b 0.0.0.0:8000 app:app
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+but it wasn't working. It ran, but whenever he went to the site, it
+came back with an error.
+&lt;/p&gt;
+
+&lt;p&gt;
+The problem?
+&lt;/p&gt;
+
+&lt;p&gt;
+He had to change:
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;if __name__ == "__main__":
+   app.debug = True
+   app.secret_key = "some secret key"
+   app.run(host="0.0.0.0", port=8000)
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+to
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;app.secret_key = "some secret key"
+if __name__ == "__main__":
+    app.debug = True
+    app.run(host="0.0.0.0", port=8000)
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Normally, when developing and testing our applications, we use the
+test server that's bundled with Flask. The line that reads
+"app.run…" takes care of this.
+&lt;/p&gt;
+
+&lt;p&gt;
+When running the application as a "main program" - "python app.py" the
+if statement is true and it runs the indented lines, setting the
+secret key which is required for session management.
+&lt;/p&gt;
+
+&lt;p&gt;
+When running under &lt;b&gt;&lt;b&gt;gunicorn&lt;/b&gt;&lt;/b&gt;, the &lt;b&gt;&lt;b&gt;gunicorn&lt;/b&gt;&lt;/b&gt; server loads the
+application as a module and then runs it. In this case name isn't main
+so it never sets secret key and so we have a problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+Pretty subtle and even though we did cover this in class, it comes up
+pretty rarely so it's not an easy catch.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then there was this problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+The setup for this one's a little more complicated. The group was
+using a facial recognition api. You provide the API with the url to an
+image, it fetches it and does recognition.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's also important to note that when Flask is running, it will serve
+files from a static directory, so, if I'm running my flask server on
+myhost, port 800 and you stored an image named picture.jpg in the
+static directory, going to:
+&lt;/p&gt;
+
+&lt;verbatim&gt;
+ http://myhost:8000/static/picture.jpg
+&lt;/verbatim&gt;
+&lt;br&gt;&lt;br&gt;
+
+
+&lt;p&gt;
+would get that image.
+&lt;/p&gt;
+
+&lt;p&gt;
+The group did things right. They ran the Flask test server to serve
+the static files and then wrote a small python program to test the
+api:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;picture_url = build_url(some_data)
+result = api_test(picture_url)
+do_something(result)
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Everything worked fine. 
+&lt;/p&gt;
+
+&lt;p&gt;
+But, when they put this code in as a route in their web app (as in the
+top code fragment), it froze. 
+&lt;/p&gt;
+
+&lt;p&gt;
+They couldn't figure it out.
+&lt;/p&gt;
+
+&lt;p&gt;
+The code worked as a "stand alone" but not in the web app.
+&lt;/p&gt;
+
+&lt;p&gt;
+The problem?
+&lt;/p&gt;
+
+&lt;p&gt;
+Once again, the built in Flask development server.
+&lt;/p&gt;
+
+&lt;p&gt;
+The development server runs in a single thread / process. This means
+it can only do one thing at a time. When they ran their test as a
+separate program, the api they used made a request to their app to
+serve up the static picture file and it worked.
+&lt;/p&gt;
+
+&lt;p&gt;
+When they ran from the Flask application itself, their app made a call
+to the web api (line 12) and then blocked while waiting for the
+response. The web api tried to request the image from the Flask app
+but it was blocked – &lt;b&gt;&lt;b&gt;deadlock&lt;/b&gt;&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Again, the solution was to run the web app using a server that could
+handle multiple requests - gunicorn.
+&lt;/p&gt;
+
+&lt;p&gt;
+Once again, that solved the problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+Both of these problems were fairly subtle and very hard to catch -
+even with experience. I remember the hours I lost when I was learning
+this stuff.
+&lt;/p&gt;
+
+&lt;p&gt;
+Some times kids get caught up in algorithms or poor code design but
+sometimes, it's just the tools.
+&lt;/p&gt;</summary>
+  </entry>
+</feed>
