@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 19)</title>
   <id>http://cestlaz.github.io/index-19.atom</id>
-  <updated>2016-05-06T11:08:57Z</updated>
+  <updated>2016-05-07T10:59:46Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,149 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-18.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-19.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>DevOps, or You don't know what the F you're doing!</title>
+    <id>http://cestlaz.github.io/posts/2016-01-31-devops.html/</id>
+    <updated>2016-01-31T00:00:00</updated>
+    <published>2016-01-31T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2016-01-31-devops.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+Having just concluded almost a quarter century at one job in one
+place, I've been reflecting on a number of things.
+&lt;/p&gt;
+
+&lt;p&gt;
+What I accomplished, what I've failed to accomplish, highlights,
+low lights and everything in between.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've also learned a lot over these twenty five years.
+&lt;/p&gt;
+
+&lt;p&gt;
+One thing I learned is DevOps and System Administration. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Back around 1993 or 1994 Stuy wasn't really on the internet. Yes, we
+were able to scam stuy.edu even though we were a high school and yes
+we did have a class B address block but no one really had access.
+&lt;/p&gt;
+
+&lt;p&gt;
+Somehow, Bruce, a student of mine at the time and I ended up with the
+job of getting Stuy onto the internet. Bruce was one of our superstar
+kids and people thought I had extensive experience setting up and
+running networks. Truth be told I messed around a bit but there's no
+way I would have hired myself for the job.
+&lt;/p&gt;
+
+&lt;p&gt;
+Nonetheless, we were off. 
+&lt;/p&gt;
+
+&lt;p&gt;
+We were able to take one of the RS/6000 AIX workstations that were
+supposed to be used as CAD stations and repurposed it as a server. We
+made email accounts for everyone and were off.
+&lt;/p&gt;
+
+&lt;p&gt;
+Neither Bruce nor I really knew what we were doing but we figured
+things out. I learned a lot from him and I'd like to think he also got
+some benefit out of working with me. Fortunately, we seemed to have a
+knack for &lt;a href="http://www.amazon.com/Linux-System-Administration-Handbook-Edition/dp/0131480057/ref=pd_sim_14_2?ie=UTF8&amp;amp;dpID=61%2B57ajucML&amp;amp;dpSrc=sims&amp;amp;preST=_AC_UL160_SR117%2C160_&amp;amp;refRID=164V89GZMZM2X9M2S8AH"&gt;finding the answers&lt;/a&gt;.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Of course, we had our moments. Once, we got a critical patch
+announcement from IBM. It said that if we needed the patch and didn't
+apply it were were in big trouble but if our machine didn't need it,
+applying the patch would kill our system. It was unclear whether we
+needed the patch or not.
+&lt;/p&gt;
+
+&lt;p&gt;
+After about a half hour research, we determined that we didn't need
+the patch.
+&lt;/p&gt;
+
+&lt;p&gt;
+But applied it anyway :-(.
+&lt;/p&gt;
+
+&lt;p&gt;
+D'Oh.
+&lt;/p&gt;
+
+&lt;p&gt;
+After a brief set of panic attacks and a bunch of fumbling around, we
+did manage to restore things.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, Bruce and I ran the system for a year or so and as I said, I
+learned a lot. Now, Bruce was close to graduating so I was starting to
+worry that I'd have to figure this all out myself soon. That was a
+seriously frightening thought. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I figured it would be good to bring in a couple of new super smart
+students. As it turns out, Jon was one of them. 
+&lt;/p&gt;
+
+&lt;p&gt;
+At one point, there was some problem and Bruce and I were going to
+head to the office to try to figure it out. Jon asked if he could come
+and watch. I thought that was a great idea so I agreed.
+&lt;/p&gt;
+
+&lt;p&gt;
+We all went to the office and Bruce and I went to work. After about
+fifteen minutes, Jon blurted out:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+"I just figured how you guys do it!!!"
+&lt;/p&gt;
+
+&lt;p&gt;
+"You guys have no idea what the F you're doing!!!!!"
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+We all cracked up.
+&lt;/p&gt;
+
+&lt;p&gt;
+He was absolutely right. We had no clue. We didn't know what we were
+doing but we had become pretty good at figuring things out.
+&lt;/p&gt;
+
+&lt;p&gt;
+Truth be told, that really is the norm. If you already knew how to
+solve the problem, well, then it really wouldn't have been a problem
+to begin with.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, you learn to figure it out. It's something I learned not to be
+afraid of a long time ago. I hope that it's something I've been able
+to convey to my students.
+&lt;/p&gt;</summary>
+  </entry>
   <entry>
     <title>Debugging deployment</title>
     <id>http://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</id>
