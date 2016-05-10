@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 19)</title>
   <id>http://cestlaz.github.io/index-19.atom</id>
-  <updated>2016-05-08T08:56:19Z</updated>
+  <updated>2016-05-09T23:34:38Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,191 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-18.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-19.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>IDE or the Cloud</title>
+    <id>http://cestlaz.github.io/posts/2016-04-12-ide-or-cloud.html/</id>
+    <updated>2016-04-12T00:00:00</updated>
+    <published>2016-04-12T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2016-04-12-ide-or-cloud.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+&lt;div id="outline-container-orgheadline1" class="outline-2"&gt;
+&lt;h2 id="orgheadline1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline1"&gt;
+&lt;p&gt;
+This weekend, I had a conversation on Twitter with my friend &lt;a href="https://twitter.com/roybahat"&gt;Roy Bahat&lt;/a&gt;:
+&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;&lt;a href="https://twitter.com/zamansky"&gt;@zamansky&lt;/a&gt; Mike, unrelated, what do you think of &lt;a href="https://t.co/BT1ublbajF"&gt;https://t.co/BT1ublbajF&lt;/a&gt; ?&lt;/p&gt;— Roy Bahat (@roybahat) &lt;a href="https://twitter.com/roybahat/status/718835740738650112"&gt;April 9, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;&lt;a href="https://twitter.com/roybahat"&gt;@roybahat&lt;/a&gt;Maybe I'll blog about my thoughts about online environments vs local installs&lt;/p&gt;— Mike Zamansky (@zamansky) 
+&lt;a href="https://twitter.com/zamansky/status/718837282334240768"&gt;April 9, 2016&lt;/a&gt;&lt;/blockquote&gt;&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;&lt;a href="https://twitter.com/roybahat"&gt;@roybahat&lt;/a&gt; Agree with this but there are many issues. I'll try to write more later. Now going to see my son in &lt;a href="https://twitter.com/umgass"&gt;@umgass&lt;/a&gt; prod of Pinafore.&lt;/p&gt;— Mike Zamansky (@zamansky) &lt;a href="https://twitter.com/zamansky/status/718838508689993728"&gt;April 9, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;p&gt;
+Another friend had just asked me about IDEs vs local installs for learning enviromnents the day before.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, should we use cloud based IDEs when teaching CS or should we use
+local installs.
+&lt;/p&gt;
+
+&lt;p&gt;
+There isn't a single right answer but I thought I'd share some of my thoughts here.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm hoping this is helpful to both those of us in the trenches as well
+as maybe some platform developers out there.
+&lt;/p&gt;
+
+&lt;p&gt;
+Some times, you don't have a choice.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the web based side, does your school have the bandwidth. We're not
+only talking about the pipe to the outside world but also &lt;a href="http://www.nytimes.com/2016/01/14/nyregion/bronx-science-bans-cellphones-from-wi-fi-as-students-devour-it.html?_r=0"&gt;wifi within
+the school&lt;/a&gt;.  If kids can't reliably get to the web based environment,
+it's not a viable option. On the other hand, cloud based software will
+always be up to date and properly configured and kids can use them
+from home or pretty much anywhere they have a connection.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other side we have local installs. This can also present
+problems. Is the teacher allowed to install locally? Does he or she
+know how to do it? Who's going keep all the machines up to date and configured? 
+&lt;/p&gt;
+
+&lt;p&gt;
+Assuming we can get past the technical issues we can start looking at
+the education side of thing.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the web based side, you've got a silo. This can be both good and
+bad. In an intro class, using a tool like &lt;a href="http://codesters.com"&gt;Codesters&lt;/a&gt; can keep the cost
+of entry low, allow students to share work online and allow teachers
+to make use of their curricular materials. If you can't tell, I'm a
+big fan of Codesters and the Codesters team. The limitation is that
+you have to use their simplified interface and toolset.
+&lt;/p&gt;
+
+&lt;p&gt;
+Some web based IDEs like &lt;a href="http://koding.com"&gt;Koding&lt;/a&gt; offer more flexibility - one tool with
+many languages as well as deployment. The cost is complexity. With
+Koding, you're basically running a virtual machine in the
+cloud. You've got their web based IDE and a terminal shell so it's not
+as complex as doign everything from scratch locally but it's not as
+structured as Codesters and is more of a general purpose site rather
+than one focussed soley on learning.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then you have &lt;a href="http://repl.it"&gt;repl.it&lt;/a&gt;. This looks to be a great platform for
+experienced programmers to play with and explore new languages but I'd
+be concerned about using it with beginners. It looks like they're
+rolling out some teacher tools so this might be worth revisiting soon.
+&lt;/p&gt;
+
+&lt;p&gt;
+In any case and with other web based products, you're living in the
+providers silo. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Personally, I'm a command line wonk and confessed Emacs geek so I'm
+generally wary of an online environment without an exit strategy to
+real world tools. Eventually, if all development moves into the
+browser as platform then this problem goes away, but for now, you're
+not going to have the expressive power and flexibility that a local
+install gives.
+&lt;/p&gt;
+
+&lt;p&gt;
+Local installs let you use more powerful and flexible tools either
+alone or in combination.
+&lt;/p&gt;
+
+&lt;p&gt;
+Keeping kids out of silos also makes it easier for them to learn new
+tools, languages, and techniques.
+&lt;/p&gt;
+
+&lt;p&gt;
+Since I like generic tools, I'm not a fan of big professional IDEs
+like Eclipse. I'm an Emacs geek but Atom, Sublime Text, and Vim are
+all good as well.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are also an assortment of beginner IDEs like Dr. Racket and I'm
+a fan with these for beginners as long as there's an exit strategy.
+&lt;/p&gt;
+
+&lt;p&gt;
+For completeness, I should mention that if I weren't an old school
+Emacs guy, I might check out something like JetBrain's IDEs. They're
+much lighter weight than something like Eclipse but still full
+featured. Somewhere between a true general purpose, customizable,
+programmable editor and an all encompassing IDE.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+In general, I use online enviromnents with my classes early on when:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;They're pretty much identical or equivalent to the installed version.&lt;/li&gt;
+&lt;li&gt;They provide some value added (&lt;a href="http://codingbat.com"&gt;codingbat&lt;/a&gt; for example) so they're not
+being used as a development environment but for some other purpose.&lt;/li&gt;
+&lt;li&gt;They help with student collaboration (such as cloud9 or Koding.com
+for more advanced kids).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+In any case, it's imporant that our kids aren't locked into any IDE be
+it web based or local.
+&lt;/p&gt;
+
+&lt;p&gt;
+Our kids that go on to more advanced CS studies will certainly need to
+break out of sheltered world of a learning IDE and we're not doing
+them a service if we shelter them too long. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Our other kids also benefit from seeing beyond these restrictive
+environments. A student might learn to code in Python in one of our
+classes, but if we do our jobs right, that student might be writing a
+little Javascript to automate Google Docs.
+&lt;/p&gt;
+
+&lt;p&gt;
+I can't tell you how many people I've seen go through online coding
+courses in a web based enviromnent only to be unable to do anything
+outside of that enviromnent.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the end of the day, we want our kids to be empowered to grow on
+their own. All of the things I've talked about here are merely
+tools. Each has it's place. It's up to the teacher to make the roadmap
+and to lead the student down the path.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
   <entry>
     <title>Hunter College - Honors CS</title>
     <id>http://cestlaz.github.io/posts/2016-03-29-hunter-cs.html/</id>
