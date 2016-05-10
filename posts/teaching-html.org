@@ -1,0 +1,71 @@
+#+BEGIN_COMMENT
+.. title: Should We Teach HTML?
+.. slug: teaching-html
+.. date: 2016-05-09 19:08:58 UTC-04:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+Yesterday, [[https://twitter.com/dougpete][Doug Peterson]] wrote a "Whatever happened to" post subtitled
+[[https://dougpete.wordpress.com/2016/05/08/whatever-happened-to-5/][HTML as an essential 21st Century skill?]] It's a nice post.
+
+I left a comment but thought I'd elaborate here.
+
+No, knowing HTML is not programming - it's markup. Even so, when I
+help people design CS programs, I'll frequently recommend starting
+with HTML or at least introducing it early.
+
+Why? 
+
+It's a gateway and not just to programming.
+
+HTML is pretty easy, you want **something** bold, you just wrap the
+word in =<b>= and =</b>=:
+
+#+BEGIN_SRC HTML
+<b>something</b>
+#+END_SRC
+
+It's also empowering and demystifies the web. Kids can create a simple
+web page and load it right into their browser.
+
+It's true that today's web pages are chock-full-o javascript and css
+but with just the basics, students can get the idea. You can also show
+them pages by right clicking and viewing source.
+
+You can even have them change a live page.
+
+Try it. 
+ 
+Right click on the top of this page where it says "Musings about..."
+Chose **inspect element**. In the "debugger" window double click the
+text, change it and hit enter. This is just temporary - just reload
+the page but it's pretty neat for a kid to change an article and then
+screenshot it.
+
+HTML is also a nice stepping stone towards coding. You're working in a
+plain text editor by adding special code words to basic text which are
+then interpreted by, in this case, the web browser.
+
+The big reason for teaching html actually goes beyond this. Next step
+after learning HTML is having the kids programatically generating web
+pages in whatever language you're using for the class. I like using
+Python. This requires a little infrastructure setup to serve kids work
+but then there are two huge wins.
+
+First, as the kids learn programming, instead of just printing out
+results, they can make a web site with their results and share it with
+friends, family, and the world.
+
+The other big bonus is that kids might be able to leverage take these
+skills to other classes. If the student has a history paper to write,
+maybe the teacher will accept a history web site where the student can
+write code to do their analytics and build nice looking tables and
+graphs with results.
+
+So while knowledge of HTML in and of itself isn't really needed
+anymore it's still an important part of the programs I build. 
+
