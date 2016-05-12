@@ -1,0 +1,122 @@
+#+BEGIN_COMMENT
+.. title: REPOST - Shell games - who confirmed attendance
+.. slug: duplicate-emails
+.. date: 2016-05-12 09:52:25 UTC-04:00
+.. tags: shell, linux, cli
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+** Repost
+
+This is a repost from March 2015. It didn't transfer when I rebooted the blog.
+
+** Original
+
+Quick post on why I love the Unix command line.
+
+We're busy organizing [[http://cstuy.org][CSTUY's]] first [[http://cstuy.org/programs/defhacks][hackathon]]. It's going to be at
+[[http://sumall.com][SumAll]], where we hold our weekly [[http://cstuy.org/programs/hacking_sessions][hacking sessions]] but while taking
+registration, we had a little program.
+
+The kids signed up on a Google doc but we all know the story -- when
+people sign up for a free event, even one with free food and t-shirts,
+many don't show. I asked all of the applicants to confirm by filling
+out a second Google doc.
+
+Then it got to reminder time - I wanted to send an email out to all
+those kids who signed up on the first form, but hadn't confirmed on
+the second. 
+
+Two Google spreadsheets with an email field. I needed all the people
+on sheet 1 that weren't on sheet 2. I'm sure there's some
+spreadsheet-fu that accomplishes this, but nothing I know. I also
+could have written a little python script which isn't so bad, but this
+was a perfect time to turn to the shell.
+
+So, here's how a command line guy would do this.
+
+To start, I put the emails in two files: e1 and e2. The first has
+all the original applicants, the second those that confirmed.
+
+
+|---------------------------+---+---------|
+| e1                        |   | e2      |
+| <25>                      |   |         |
+|---------------------------+---+---------|
+| a@a.com                   |   | b@b.com |
+| b@b.com                   |   | F@f.com |
+| c@c.com                   |   | c@c.com |
+| d@d.com                   |   | d@d.com |
+| e@e.com                   |   |         |
+| f@f.com                   |   |         |
+| g@g.com                   |   |         |
+| h@h.com                   |   |         |
+|---------------------------+---+---------|
+
+
+If we put these lists together, any email that appears twice would
+indicate that it's the email of someone that confirmed entry. Here we
+use cat to catenate e1 and e2 and pipe them through sort.
+
+#+begin_src bash :tangle no
+cat e1 e2 | sort 
+#+end_src
+
+First problem --the upper case F -- let's use **tr** to make
+everything lower case:
+
+#+begin_src bash :tangle no
+cat e1 e2 |  tr A-Z a-z | sort
+#+end_src
+
+Now we can see the duplicates next to each other. Next, **uniq
+-c** tells us how many times each line appears:
+
+#+begin_src bash :tangle no
+cat e1 e2 | tr A-Z a-z | sort | uniq -c | sort
+#+end_src
+
+I added the sort at the end, but we didn't need it.
+
+Here's what we get:
+
+#+BEGIN_VERSE
+     1 a@a.com
+      1 c@c.com
+      1 c@c.dom
+      1 e@e.com
+      1 g@g.com
+      1 h@hc.om
+      2 b@b.com
+      2 d@d.com
+      2 f@f.com
+#+END_VERSE
+
+To pull out the ones that haven't replied I used egrep with a regex
+that means "any line that starts with 1 or more spaces followed by the
+number 1":
+
+#+begin_src bash :tanlge no
+cat e1 e2 | tr A-z a-z | sort | uniq -c | egrep "^ +1"
+#+end_src
+
+and finally to isolate the emails using sed which removes the spaces
+and number 1 from the beginning of the line:
+
+#+begin_src bash :tangle no
+cat e1 e2 | tr A-z a-z | sort | uniq -c | egrep "^ +1" | sed "s/\ \+1 //g"
+#+end_src
+
+Each of the little utilities aren't all too useful by themselves but
+if you learn them over time you start thinking about how you can
+combine them to solve problems. 
+
+If you think this way and know some basic tools, all of a sudden all
+manner of text manipulation problems become pretty easy.
+
+
+
+
