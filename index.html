@@ -20,7 +20,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-19.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/teaching-html/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/bash-scripting/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -81,7 +81,223 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/teaching-html/" class="u-url">Should We Teach HTML?</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/bash-scripting/" class="u-url">BASH scripting?</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/bash-scripting/" rel="bookmark"><time class="published dt-published" datetime="2016-05-12T08:39:25-04:00" title="2016-05-12 08:39">2016-05-12 08:39</time></a></p>
+                <p class="commentline">            <a href="posts/bash-scripting/#disqus_thread" data-disqus-identifier="cache/posts/bash-scripting.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Over in the Facebook AP Computer Science Teachers group someone asked
+for thoughts on covering BASH scripting as a post AP topic.
+</p>
+
+<p>
+A number of us made suggestions. I linked to <a href="http://cestlaz.github.io/posts/2014-07-06-spreadsheet-vs-cli.html/#.VzR7Et9vETt">this</a> old blog post.
+</p>
+
+<p>
+One group member said she asked around for similar suggestions and the
+response she got was "vi and awk." I wanted to jokingly respond "and
+after they suggested that they got into their time machine and went
+back to the 70's."
+</p>
+
+<p>
+In all seriousness though, I think that suggesting specific tools or
+commands is off base.
+</p>
+
+<p>
+The important thing to know about Vi is how to get out of it but it
+isn't really a tool in the scripting sense. I do think students should
+spend a good amount of time learning a powerful editor and should try
+bot Emacs (my choice) and Vim but that's another story.
+</p>
+
+<p>
+I also use AWK but as it's a programming language in it's own right,
+I'm not sure if I'd introduce it right off the bat.
+</p>
+
+<p>
+There are a number of important ideas kids can take away from learning
+some Linux (or other Unix flavor):
+</p>
+
+<ul class="org-ul">
+<li>There's something out there besides Windows and MacOS
+</li>
+<li>All about free software
+</li>
+<li>
+<a href="https://en.wikipedia.org/wiki/Unix_philosophy">The Unix Philosophy</a>
+</li>
+</ul>
+<p>
+That last one is the biggie and more specifically, there's a huge
+upside in teaching kids the value of "OS as Toolset" where they can
+compose the many tools that comprise the Linux experience to get
+things done. 
+</p>
+
+<p>
+I gave an example of that in the <a href="http://cestlaz.github.io/posts/2014-07-06-spreadsheet-vs-cli.html/#.VzSBHt9vETu">post</a> I previously linked to.
+</p>
+
+<p>
+For the teacher, that means wrapping your head around that way of
+working. Living in the shell and using pipes to connect program to
+progarm to program.
+</p>
+
+<p>
+I'd recommend getting into a time
+machine ourselves and taking a look at: 
+</p>
+
+
+<div class="figure">
+<p><a href="https://en.wikipedia.org/wiki/The_Unix_Programming_Environment" width="250px" align="center"><img src="http://upload.wikimedia.org/wikipedia/en/4/43/English4.gif" alt="English4.gif" width="250px" align="center"></a>
+</p>
+</div>
+
+<p>
+It's dated but it's really a great book on getting into the Unix way
+of doing things, particularly the chapter about filters. It also has
+one of the best and clearest introductions to writing a compiler in
+the chapter on program development.
+</p>
+
+<p>
+As I said, it is dated - shells are much easier to use and much more
+robust, there are many more tools now, and they've evolved but it's
+really a must read book.
+</p>
+
+<p>
+In terms of tools, I get a lot of mileage out of:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="left">
+<col class="left">
+<col class="left">
+<col class="left">
+</colgroup>
+<thead><tr>
+<th scope="col" class="left">command</th>
+<th scope="col" class="left">description</th>
+<th scope="col" class="left">example</th>
+<th scope="col" class="left">explanation</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">cat</td>
+<td class="left">catenate or display a file</td>
+<td class="left"> </td>
+<td class="left"> </td>
+</tr>
+<tr>
+<td class="left">tr</td>
+<td class="left">Translate characters</td>
+<td class="left">tr A-Z a-z</td>
+<td class="left">convert upper to lower case</td>
+</tr>
+<tr>
+<td class="left">sed</td>
+<td class="left">Stream editor</td>
+<td class="left">sed "s/a/b/g"</td>
+<td class="left">Replace all a with b</td>
+</tr>
+<tr>
+<td class="left">wc</td>
+<td class="left">word count</td>
+<td class="left"> </td>
+<td class="left">counts words lines and chars</td>
+</tr>
+<tr>
+<td class="left">cut</td>
+<td class="left">cut columns</td>
+<td class="left"> </td>
+<td class="left"> </td>
+</tr>
+<tr>
+<td class="left">sort</td>
+<td class="left">sort lines</td>
+<td class="left"> </td>
+<td class="left"> </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"></h2>
+<div class="outline-text-2" id="text-2">
+<p>
+A nice simple thing you can do with these is clean data. Let's say you
+want to do some analytics on a book from Project Gutenberg. You might
+want to convert all non letters to spaces, and all letters to lower
+case:
+</p>
+
+<div class="highlight"><pre><span></span>cat book.txt | sed "s/[^a-zA-Z ]/ /g | tr A-Z a-z"
+</pre></div>
+
+<p>
+That sends book.txt into sed which uses a regular expression to convert
+no space and letters to spaces. The tr command converts all upper case
+letters to lower case.
+</p>
+
+<p>
+If you want one word per line, add:
+</p>
+
+<div class="highlight"><pre><span></span>| sed "s/\n/g"
+</pre></div>
+
+<p>
+and maybe get rid of blank lines:
+</p>
+
+<div class="highlight"><pre><span></span>| sed "/^$/d"
+</pre></div>
+
+<p>
+We can now count the number of words in the file using <b><b>*wc</b></b> or even
+get counts of all the words:
+</p>
+<div class="highlight"><pre><span></span>| sort | uniq -c | sort -n
+</pre></div>
+
+<p>
+<b><b>sort</b></b> will sort all the lines, <b><b>uniq -c</b></b> will compress the lines that are
+adjacent and the same and give you a count and then <b><b>sort -n</b></b> will
+sort the results numerically.
+</p>
+
+<p>
+I wrote another post a while ago about using the shell to detect
+who responded on a Google form. It looks like it didn't convert when
+I moved to my current blogging platform - I'll repost that shortly.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/teaching-html/" class="u-url">Should We Teach HTML?</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
@@ -1207,143 +1423,6 @@ So far, I'm pretty happy with the setup.
 </p>
 </div>
 </div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2016-04-14-i-hate-ruby/" class="u-url">I hate ruby or why I'm switching blogging platforms</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/2016-04-14-i-hate-ruby/" rel="bookmark"><time class="published dt-published" datetime="2016-04-14T00:00:00-04:00" title="2016-04-14 00:00">2016-04-14 00:00</time></a></p>
-                <p class="commentline">            <a href="posts/2016-04-14-i-hate-ruby/#disqus_thread" data-disqus-identifier="cache/posts/2016-04-14-i-hate-ruby.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <p>
-		I think I've got the move worked out but if you're reading this via an
-		rss or atom reader, make sure to check back in a couple of days - you
-		might have to re-subscribe.
-</p>
-
-<p>
-		Why am I switching?
-</p>
-
-<p>
-		Because I hate Ruby. 
-</p>
-
-<p>
-		Ok, not really - I barely know the language. I was already a  Python
-		guy when Ruby came along and I didn't see any real added value to
-		switching. 
-</p>
-
-<p>
-		This isn't really about Ruby though, it's really about how that which
-		we don't know is strange and frightening. In this case, the ruby ecosystem.
-</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LV0wTtiJygY" frameborder="0" allowfullscreen></iframe>
-
-<p>
-		I started using Jekyll because that's what was supported by GitHub
-		pages. It's fairly simple and it basically worked. It had a few
-		warts, specifically, I've had problems getting org-mode blog posts to
-		publish just the way I'd like and it's hard to debug when a post has
-		some bad markup in it, but it got the job done. 
-</p>
-
-<p>
-		Recently, though, I've had to re-install Jekyll a number of  times and
-		for me, that's been a nightmare.
-</p>
-
-<p>
-		One is supposed to just be able to <b><b>sudo gem install jekyll</b></b>.
-</p>
-
-<p>
-		Ok, so you need some packages installed:
-</p>
-
-<div class="highlight"><pre><span></span>sudo apt-get install ruby-dev
-</pre></div>
-
-<p>
-		But I've got ruby 1.9 and I need ruby 2 point something. Ok:
-</p>
-
-<div class="highlight"><pre><span></span>sudo apt-get install ruby2.0 ruby2.0-dev
-</pre></div>
-
-<p>
-		But that fails since we're still running 1.9. Every time I look for a
-		solution I go down the ruby ecosystem rabbit hole. 
-</p>
-
-<p>
-		All I want is Jekyll!!!!!!
-</p>
-
-<p>
-		Why can't I just <b><b>pip install jekyll</b></b> like I can do with Python
-		packages!!!!!
-</p>
-
-<p>
-		In truth, there's nothing wrong with the ruby ecosystem, It's just
-		something I'm not familiar with. I probably had to go through the same
-		battles with Python it's just that I did them incrementally over time.
-</p>
-
-<p>
-		The truth is, setting up a development environment should be much
-		easier. It used to be that I installed Linux, it had C installed and I
-		just had to install <a href="https://en.wikipedia.org/wiki/Make_(software)">make</a>. Now it's all about tool chains, virtual
-		environments, containers, and more.
-</p>
-
-<p>
-		I think this is what <a href="https://twitter.com/roybahat">Roy</a> was talking about when we traded
-		tweets on using development environments in an  <a href="http://cestlaz.github.io/2016/04/12/ide-or-cloud.html#.Vw_nPN9vETt">Ide or in the cloud</a>.
-</p>
-
-<p>
-		If it's hard for me to get an environment running, imagine some poor
-		soul who just went through a "learn to code" web site and now has to
-		figure out how to set up his or her own machine!!!!!!
-</p>
-
-<p>
-		I don't have a solution but at least it hasn't stopped me and others
-		from trying new things.
-</p>
-
-<p>
-		Two of my CS blogging friends, <a href="https://gflint.wordpress.com/">Garth Flint</a> and <a href="http://blog.acthompson.net/">Alfred Thompson</a> have in
-		their own ways talked about this same issue. Garth, showing a bias
-		towards VB yet still working to get his head around Python. Alfred
-		shows the same disdain for Linux and the command line as I show
-		towards Windows. All this leads to valuable learning experiences and
-		discussions.
-</p>
-
-<p>
-		Personally, I'm also going through this battle as I continue to
-		explore Clojure.
-</p>
-
-<p>
-		So, I'm going to finish the changeover to Nikola in the next day or
-		two. Remember to check back in case the feeds aren't working.
-</p>
-
-<p>
-		Once I make the change, I'll talk about Jekyll vs Nikola as actual
-		blogging platforms.
-</p>
     </div>
     </article>
 </div>

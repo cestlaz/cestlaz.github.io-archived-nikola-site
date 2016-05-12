@@ -1,0 +1,118 @@
+#+BEGIN_COMMENT
+.. title: BASH scripting?
+.. slug: bash-scripting
+.. date: 2016-05-12 08:39:25 UTC-04:00
+.. tags: shell, linux, cli
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+Over in the Facebook AP Computer Science Teachers group someone asked
+for thoughts on covering BASH scripting as a post AP topic.
+
+A number of us made suggestions. I linked to [[http://cestlaz.github.io/posts/2014-07-06-spreadsheet-vs-cli.html/#.VzR7Et9vETt][this]] old blog post.
+
+One group member said she asked around for similar suggestions and the
+response she got was "vi and awk." I wanted to jokingly respond "and
+after they suggested that they got into their time machine and went
+back to the 70's."
+
+In all seriousness though, I think that suggesting specific tools or
+commands is off base.
+
+The important thing to know about Vi is how to get out of it but it
+isn't really a tool in the scripting sense. I do think students should
+spend a good amount of time learning a powerful editor and should try
+bot Emacs (my choice) and Vim but that's another story.
+
+I also use AWK but as it's a programming language in it's own right,
+I'm not sure if I'd introduce it right off the bat.
+
+There are a number of important ideas kids can take away from learning
+some Linux (or other Unix flavor):
+
+- There's something out there besides Windows and MacOS
+- All about free software
+- [[https://en.wikipedia.org/wiki/Unix_philosophy][The Unix Philosophy]]
+ 
+That last one is the biggie and more specifically, there's a huge
+upside in teaching kids the value of "OS as Toolset" where they can
+compose the many tools that comprise the Linux experience to get
+things done. 
+
+I gave an example of that in the [[http://cestlaz.github.io/posts/2014-07-06-spreadsheet-vs-cli.html/#.VzSBHt9vETu][post]] I previously linked to.
+
+For the teacher, that means wrapping your head around that way of
+working. Living in the shell and using pipes to connect program to
+progarm to program.
+
+I'd recommend getting into a time
+machine ourselves and taking a look at: 
+
+#+ATTR_HTML: :width 250px :align center
+[[https://en.wikipedia.org/wiki/The_Unix_Programming_Environment][http://upload.wikimedia.org/wikipedia/en/4/43/English4.gif]]
+
+It's dated but it's really a great book on getting into the Unix way
+of doing things, particularly the chapter about filters. It also has
+one of the best and clearest introductions to writing a compiler in
+the chapter on program development.
+
+As I said, it is dated - shells are much easier to use and much more
+robust, there are many more tools now, and they've evolved but it's
+really a must read book.
+
+In terms of tools, I get a lot of mileage out of:
+
+| command | description                | example       | explanation                 |
+|---------+----------------------------+---------------+------------------------------|
+| cat     | catenate or display a file |               |                              |
+| tr      | Translate characters       | tr A-Z a-z    | convert upper to lower case  |
+| sed     | Stream editor              | sed "s/a/b/g" | Replace all a with b         |
+| wc      | word count                 |               | counts words lines and chars |
+| cut     | cut columns                |               |                              |
+| sort    | sort lines                 |               |                              |
+|---------+----------------------------+---------------+------------------------------|
+
+* 
+A nice simple thing you can do with these is clean data. Let's say you
+want to do some analytics on a book from Project Gutenberg. You might
+want to convert all non letters to spaces, and all letters to lower
+case:
+
+#+BEGIN_SRC bash :tangle no
+cat book.txt | sed "s/[^a-zA-Z ]/ /g | tr A-Z a-z"
+#+END_SRC
+
+That sends book.txt into sed which uses a regular expression to convert
+no space and letters to spaces. The tr command converts all upper case
+letters to lower case.
+
+If you want one word per line, add:
+
+#+BEGIN_SRC bash :tangle no
+| sed "s/\n/g"
+#+END_SRC
+
+and maybe get rid of blank lines:
+
+#+BEGIN_SRC bash :tangle no
+| sed "/^$/d"
+#+END_SRC
+
+We can now count the number of words in the file using ***wc** or even
+get counts of all the words:
+#+BEGIN_SRC bash :tangle no
+| sort | uniq -c | sort -n
+#+END_SRC
+
+**sort** will sort all the lines, **uniq -c** will compress the lines that are
+adjacent and the same and give you a count and then **sort -n** will
+sort the results numerically.
+
+I wrote another post a while ago about using the shell to detect
+who responded on a Google form. It looks like it didn't convert when
+I moved to my current blogging platform - I'll repost that shortly.
+
