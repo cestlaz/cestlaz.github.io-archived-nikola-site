@@ -128,6 +128,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
+        ("/categories", "Tags"),
         ("http://github.com/zamansky", "GitHub"),
         ("/archive.html", "Archive"),
         ("/stories/about","About"),

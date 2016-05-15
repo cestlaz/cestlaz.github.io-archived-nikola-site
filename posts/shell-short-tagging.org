@@ -1,0 +1,99 @@
+#+BEGIN_COMMENT
+.. title: Shell short - tagging old posts in Nikola
+.. slug: shell-short-tagging
+.. date: 2016-05-15 09:58:44 UTC-04:00
+.. tags: shell, cli, nikola, linux
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+Quick post to add to the recent command line fu I've been writing
+about.
+
+[[https://twitter.com/dougpete][Douglas Peterson]] had another **Whatever happened to** post. This time
+on Logo. I wanted to reply, talk about NetLogo  and link to some of my
+old NetLogo posts to help show how cool it is.
+
+Nikola supports tags, makes a nice [[http://cestlaz.github.io/categories][tags]] page and for each tag, a nice
+page of all the [[http://cestlaz.github.io/categories/netlogo][links]]. 
+
+
+Nikola has a plugin **tags** which lets you manage tags from the
+command line. For instance:
+
+#+BEGIN_SRC bash
+nikola tags -a netlogo posts/somepost.org
+#+END_SRC
+
+Would add the tag **netlogo** to the specified post.
+
+The problem: The tags plugin only works if the post has a **tag:**
+line already present in it's header comment and I hadn't put them in
+my older posts.
+
+I had a bunch of posts, all of them in one directory. All the new ones
+were **.org** files and had the tag slug. The others were **.md** markdown
+files and **.html** html files. 
+
+Here's what a typical top block looks like:
+#+BEGIN_SRC html
+<!--
+.. title: Looking for interesting questions
+.. slug: 2010-01-03-looking-for-interesting-questions.html
+.. date: 2010-01-03
+.. type: text
+-->
+#+END_SRC
+
+Sed to the rescue. Here's the what I ended up typing (from within the
+posts directory) to add the
+**tags** slug to the top comments right above the **.. type: text:** line:
+
+#+BEGIN_SRC bash
+  ls *md *html | while read filename
+  do
+      sed "/type: text/ i .. tags: " $filename
+  done
+#+END_SRC
+
+A line at a time:
+** ls *md *html
+This lists all the files with that end in **md** or **html**
+** | while read filename
+The vertical bar (pip) sends the output of **ls** into the **while read**
+command. The **while** command sets up a loop which, each time
+through, reads the next input and places into the variable
+**filename**. The body of the loop is between the **do** and the
+**done**.
+** sed "/type: text/ i .. tags: " $filename
+Sed is the stream editor. The stuff between the slashes finds the line
+with the text **type: text** in it. The **i** inserts a line above and
+the rest of the stuff in the quotes is what to insert. The
+**$filename** expands to each filename, one each time through the
+loop.
+
+* 
+Now all of my files have blank **tag** slugs so I can find my netlogo
+posts and tag them:
+
+#+BEGIN_SRC bash
+nikola tags -a netlogo `grep -i -l netlogo posts/*`
+#+END_SRC
+
+Any command in backticks expands to the result of the commmand. The
+grep command has two argiments: **-i** means ignore case so it will
+find netlogo, NetLogo, NETLOGO, etc.. The **-l** tells grep to just
+output the filenames. So, the grep command will expand to a list of
+files that mention netlogo. The full command adds the netlogo tag to
+all of them.
+
+So, just a bit of quick shell scripting and I've:
+- modified all old posts to accept tags.
+- added the netlogo tag to all my netlogo posts.
+
+You can find all those posts [[http://cestlaz.github.io/categories/netlogo][here]].
+
+
