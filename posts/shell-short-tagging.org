@@ -68,7 +68,7 @@ command. The **while** command sets up a loop which, each time
 through, reads the next input and places into the variable
 **filename**. The body of the loop is between the **do** and the
 **done**.
-** sed "/type: text/ i .. tags: " $filename
+** sed "/ type: text/  i .. tags: " $filename
 Sed is the stream editor. The stuff between the slashes finds the line
 with the text **type: text** in it. The **i** inserts a line above and
 the rest of the stuff in the quotes is what to insert. The
