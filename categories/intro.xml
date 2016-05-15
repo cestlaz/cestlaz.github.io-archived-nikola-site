@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (intro)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/intro.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 15 May 2016 17:08:38 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Madlib Madness</title><link>http://cestlaz.github.io/posts/2013-04-30-Madlib_Madness.md/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div&gt;&lt;p&gt;Earlier in the term, our intro classes spent a little time learning
+some basic HTML. We don't spend a lot of time on it, just enough so
+that the students can present their work in a static web site. The end
+goal, though, was to programatically generate the web sites - there's
+nothing quite as empowering to a student as when they can present their
+work to the world.&lt;/p&gt;
+&lt;p&gt;Finally, it's all coming together.&lt;/p&gt;
+&lt;p&gt;Now that the classes are comfortable with Python, we can have some
+fun. We all remember Mad Libs - that wacky word game where you select
+unknowingly select words to substitute into a basic story and
+hilarity ensues.&lt;/p&gt;
+&lt;p&gt;We did our own versions using Python files, lists and
+dictionaries. &lt;/p&gt;
+&lt;p&gt;Here are some of the results:
+ 1. &lt;a href="http://homer.stuy.edu/~richard.zhan/19-Madlibs.py"&gt;
+http://homer.stuy.edu/~richard.zhan/19-Madlibs.py
+&lt;/a&gt;
+ 2. &lt;a href="http://homer.stuy.edu/~veronika.azzara/madlibifystory.py"&gt;
+http://homer.stuy.edu/~veronika.azzara/madlibifystory.py
+&lt;/a&gt;
+ 3. &lt;a href="http://homer.stuy.edu/~belinda.liang/18-MadLibsMiniProject.py"&gt;
+http://homer.stuy.edu/~belinda.liang/18-MadLibsMiniProject.py
+&lt;/a&gt;
+ 4. &lt;a href="http://homer.stuy.edu/~kyle.oleksiuk/MadlibifyProject5.py"&gt;
+http://homer.stuy.edu/~kyle.oleksiuk/MadlibifyProject5.py
+&lt;/a&gt;
+ 5. &lt;a href="http://homer.stuy.edu/~phillip.huynh/story.py"&gt;
+http://homer.stuy.edu/~phillip.huynh/story.py
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The students wrote a basic story with substitution points. Their
+programs then randomly replaced these points with words from an
+assortment of categorized lists. &lt;/p&gt;
+&lt;p&gt;Enjoy!!!!!&lt;/p&gt;&lt;/div&gt;</description><category>intro</category><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2013-04-30-Madlib_Madness.md/</guid><pubDate>Tue, 30 Apr 2013 04:00:00 GMT</pubDate></item><item><title>Who won the election -- Quadratic to Linear Time!!!!!</title><link>http://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div&gt;&lt;p&gt;Last week was crazy. Busy, stressful, late night after late night. It
+ended, though, on a great note.&lt;/p&gt;
+&lt;p&gt;A young lady in my intro class found me in my office near the end of the day:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Student: Mr. Z, I wanted to make sure to catch you before vacation!&lt;/p&gt;
+&lt;p&gt;Me: What's up?&lt;/p&gt;
+&lt;p&gt;Student: I wanted to tell you that today's lesson was AWESOME!!!!!!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Wow. I've been teaching 23 years and that's never happened before!!!!&lt;/p&gt;
+&lt;p&gt;So, what was the hubbub about?&lt;/p&gt;
+&lt;p&gt;We've been doing list processing in Python over the past few days. We already did the basics, such as finding the largest element in a list:&lt;/p&gt;
+&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight python linenos %}
+def find_max(L):
+    maxval = L[0]
+    i=0
+    while i&lt;len if l&gt;maxval:
+            maxval=L[i]
+        i += 1
+    return maxVal&lt;/len&gt;&lt;/p&gt;
+&lt;p&gt;We've also done basic searching, counting elements, removing elements, etc.&lt;/p&gt;
+&lt;p&gt;Today we started with finding the mode of a list of grades.&lt;/p&gt;
+&lt;p&gt;Most students approached the problem as a maximum problem. Assume the
+first item is the mode and find it's frequency, then proceed through
+the list each time seeing if the current node occurs more fequently
+than the "mode so far." Pretty much the same idea as find_max (but in this case, returning a list of all the modes).&lt;/p&gt;
+&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight python linenos %}
+def mode(L):
+    modecount = L.count( L[0] )
+    modes = [ L[0] ]
+    i = 1
+    while i &amp;lt; len(L):
+        c = L.count(L[i]) 
+        if c &amp;gt; modecount:
+            modecount = c
+            modes = [ L[i] ]
+        elif c==modecount and L[i] not in modes:
+            modes.append( L[i] )
+        i += 1
+    return modes&lt;/p&gt;
+&lt;p&gt;Pretty cool. The kids are doing something pretty sophisticated here. &lt;/p&gt;
+&lt;p&gt;Time to look deeper. We started running this on larger and larger data
+sets. Things started really slowing down at about 20K. We then timed
+things to get some numbers (thanks
+&lt;a href="http://stackoverflow.com/questions/5998245/get-current-time-in-milliseconds-in-python"&gt;StackOverflow&lt;/a&gt;). &lt;/p&gt;
+&lt;p&gt;What was going on. The students pretty quickly honed in on the line
+that called L.count(L[i]) -- &lt;strong&gt;Hidden Complexity&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;We haven't done big-O notation but the class easily saw that count had
+to go through the entire data set and we ended up with an N^2
+algorithm. For example, if we have 10 items, the main loop executes 10
+times and each time, count goes through the entire list (10 items) as
+well. If we go to 100 items, it becomes 100x100.&lt;/p&gt;
+&lt;p&gt;What to do????&lt;/p&gt;
+&lt;p&gt;Time to talk about what's probably the most discussed instance of mode
+finding - elections. The winner is "the mode of the ballots."&lt;/p&gt;
+&lt;p&gt;Of course we don't use the above algorithm. We usually tally or count the ballots. We go through the ballots once, each time adding one to the appropriate candidates "bucket." &lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/tally.png" rel="lightbox"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/tally.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;From here, it's a short step to see that we can use a list. It's
+indices represent the grade values and the data in the list the counts
+or tallies:&lt;/p&gt;
+&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight python linenos %}
+def fastmode(L):
+    i=0
+    counts = []
+    while i&amp;lt;max(L)+1:
+        counts.append(0)
+        i+=1
+    i=0
+    while i &amp;lt; len(L):
+        counts[ L[i] ] += 1
+        i += 1
+    modecount = max(counts)
+    modes = []
+    i=0
+    while i &amp;lt; len(counts):
+        if counts[i]==modecount:
+            modes.append(i)
+        i=i+1
+    return modes&lt;/p&gt;
+&lt;p&gt;We go through the list once to build the tallies and then the "tally"
+list once to get the modes. Simple, straightforward, and linear
+time!!!!!!!!!&lt;/p&gt;
+&lt;p&gt;The original routine started to hit a roadblock at about 20K items,
+here we got to one million without breaking a sweat.&lt;/p&gt;
+&lt;p&gt;The take away:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Get it working first.&lt;/li&gt;
+&lt;li&gt;Then profile to find your bottleneck&lt;/li&gt;
+&lt;li&gt;Look at the problem in a different way&lt;/li&gt;
+&lt;li&gt;Using data structures in a clever way can really improve performance.&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</description><category>apcs</category><category>intro</category><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md/</guid><pubDate>Sat, 23 Mar 2013 04:00:00 GMT</pubDate></item><item><title>Layers of a lesson</title><link>http://cestlaz.github.io/posts/2012-12-17-layers-of-a-lesson.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div align="center"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/turtle-anim.gif" class="" alt=""&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;
+My last post I was talking about the fact that as teachers, our
+knowledge and experience is frequently trivialized. The tenor of the
+times is that anyone can design a course, anyone can teach, and in
+fact, we don't even need teachers, just videos or computer based
+systems. If you've ever tutored a friend, you're more than qualified. 
+
+&lt;/p&gt;&lt;p&gt;
+That might be a strong statement but everywhere you look you see
+"education" programs designed and implemented by non teachers. It
+seems that it's believed that teaching only involves the most
+superficial of transfers of information.
+
+&lt;/p&gt;&lt;p&gt;
+Today, I thought I'd look at a lesson I taught the other week. How
+I've seen similar material presented and how my colleagues and I might treat
+the subject.
+
+&lt;/p&gt;&lt;p&gt;
+We use &lt;a href="http://ccl.northwestern.edu/netlogo/"&gt;NetLogo&lt;/a&gt; in
+our Sophomore level intro course. It's a highly parallel version of
+logo. It's very visual, it's great for modeling and you can introduce
+deep, meaningful concepts such as parallel processing in a gentle
+manner.
+
+&lt;/p&gt;&lt;p&gt;
+Early on the kids have to learn how to manipulate the turtles. In
+NetLogo you write a single program and it's run by all the turtles "at
+once." The image above is one of their early "experiments." Have the
+turtles wiggle out of the center, but when they get to an invisible
+border, start spinning. They do a number of variations on this theme.
+
+&lt;/p&gt;&lt;p&gt; 
+A solution might look like this:
+
+&lt;/p&gt;&lt;pre&gt;
+; asked in a turtle context
+to gospin
+  ifelse abs xcor 
+
+&lt;p&gt;
+Let's call level one just talking about the solution by looking at the
+program as a sequence of instructions. Specifically relating the
+instructions to the problem, showing how it solves it, and that's it.
+
+&lt;/p&gt;&lt;p&gt;
+This is the simplest level. A book, video, or online courseware can
+approach teaching at this level. A non computer scientist teacher or a
+non teacher computer scientist could do so as well. Students might
+learn a bit but I wouldn't hope for much inspiration or
+creativity to come out of it.
+
+&lt;/p&gt;&lt;p&gt;
+Let's move to level two. 
+&lt;/p&gt;&lt;p&gt;
+Here we might talk about "what the turtles are doing." They're always
+doing something, either wiggling or spinning. This is a step in the
+right direction. When done right, the students start thinking about
+the problem in a more general sense but they're still looking at the
+problem as something that exists only in the world of NetLogo. They
+are more likely develop patterns than in level one, but it's still
+limited.
+
+&lt;/p&gt;&lt;p&gt;
+Level three is where things get interesting. On the surface, the
+problem is just a nice introduction to programming turtles in
+NetLogo. At a deeper level, it's an opportunity to introduce the kids
+to State Machines. A new way of thinking about problems and problem
+solving.
+
+&lt;/p&gt;&lt;p&gt;
+Students understand the idea of a "state." For example, in class,
+they're in a "seated state," maybe in a "note taking state," etc. It's
+easy to see that they don't know what their day will bring but they
+constantly make decisions based on their "state." Likewise, they can
+think about the turtle as in a state. It's either in a wiggling state
+or a spinning state and based on their situation they can either
+continue in their current state or transition to the other one:
+
+&lt;/p&gt;&lt;div align="center"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/spin-state.png" class="" alt=""&gt;
+&lt;/div&gt;
+
+This opens up a new way of thinking and it's easy to see how this
+extends to other problems, for example, a ghost from pacman:
+
+&lt;div align="center"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/pacman-ghost-state.png" class="" alt=""&gt;
+&lt;/div&gt;
+
+A good teacher thinks about working across these levels. He adjusts
+based on the class and looks for opportunities to develop these deeper
+concepts.&lt;/pre&gt;</description><category>intro</category><category>netlogo</category><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2012-12-17-layers-of-a-lesson.html/</guid><pubDate>Mon, 17 Dec 2012 05:00:00 GMT</pubDate></item><item><title>Pair Programming Tag Team Shootout</title><link>http://cestlaz.github.io/posts/2012-03-01-pair-programming-tag-team-shootout.html/</link><dc:creator>Mike Zamansky</dc:creator><description>So today we changed things up a bit.&lt;br&gt;&lt;br&gt;Instead of having a typical lab type periods, we tried the Pair Programming Tag Team Shootout.&lt;br&gt;&lt;br&gt;We aren't annualized so while the kids that have been with me since September have been working in pairs for a while, the other half of the class is just getting used to how we do it. I also wanted to get the kids to mix a little more.&lt;br&gt;&lt;br&gt;Hence the shootout.&lt;br&gt;&lt;br&gt;Everyone got a sheet with a bunch of problems on it:&lt;br&gt;&lt;br&gt;&lt;a href="http://www.scribd.com/doc/83400730/Shootout" style="-x-system-font: none; display: block; font-family: Helvetica,Arial,Sans-serif; font-size-adjust: none; font-size: 14px; font-stretch: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 12px auto 6px auto; text-decoration: underline;" title="View Shootout on Scribd"&gt;Shootout&lt;/a&gt;&lt;iframe class="scribd_iframe_embed" data-aspect-ratio="0.772727272727273" data-auto-height="true" frameborder="0" height="600" id="doc_39108" scrolling="no" src="http://www.scribd.com/embeds/83400730/content?start_page=1&amp;amp;view_mode=list&amp;amp;access_key=key-2kfbc4856l652aq1j5ik" width="100%"&gt;&lt;/iframe&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;I then paired them off randomly.&lt;br&gt;&lt;br&gt;The idea is complete the first problem, find a new partner, repeat.&lt;br&gt;&lt;br&gt;By the end of the period each student worked with between five and seven partners.&lt;br&gt;&lt;br&gt;I'm having them send me their solutions and partners tonight.&lt;br&gt;&lt;br&gt;The early response was good -- it's speeding up them getting to know each other and it was a nice change of pace. We had some problems coordinating switching problems, but we'll do better next time.&lt;br&gt;&lt;br&gt;All in all a good day.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width="1" height="1" src="https://blogger.googleusercontent.com/tracker/468689896075458340-8898870113233862529?l=cestlaz.blogspot.com" alt=""&gt;&lt;/div&gt;</description><category>intro</category><category>softeng</category><guid>http://cestlaz.github.io/posts/2012-03-01-pair-programming-tag-team-shootout.html/</guid><pubDate>Thu, 01 Mar 2012 05:00:00 GMT</pubDate></item><item><title>Let me Google that for you</title><link>http://cestlaz.github.io/posts/2012-02-08-let-me-google-that-for-you.html/</link><dc:creator>Mike Zamansky</dc:creator><description>Piloting a new course this semester - Intro to Computer Science part 2. Between the existing Intro part 1 and this, we should be able to do a pretty thorough job in preparing our kids for the future.&lt;br&gt;&lt;br&gt;We decided that we wanted the kids to make deliverables in the form of web pages - plain old html written by hand. Part of the idea was to demystify things, part was to let the kids show off their work, part was to have something that they can generate programatically as the course progressed, and part was to give them a tool they might find valuable beyond their computer science classes.&lt;br&gt;&lt;br&gt;We also wanted to help teach the kids how to find information and how to learn things on their own. Despite the fact that our students use computers all the time, they possess a widely varying skill set. With that in mind,  here's what we tried to do:&lt;br&gt;&lt;br&gt;After a brief introduction to what a web page is (just a text file with markup) and showing them the bare&lt;br&gt;minimum of markup:&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;script src="https://gist.github.com/1775745.js?file=simple.html"&gt;&lt;/script&gt;&lt;br&gt;&lt;br&gt;I recommended a simple editor - gedit - while resisting all my inner urges for all things emacs, and then showed them an image of a web page:&lt;br&gt;&lt;br&gt;&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://www.stuycs.org/courses/ml2/zamansky/work/hw-1/SampleHTMLWebPagePicture.gif" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="177" src="http://www.stuycs.org/courses/ml2/zamansky/work/hw-1/SampleHTMLWebPagePicture.gif" width="320"&gt;&lt;/a&gt;&lt;/div&gt;&lt;br&gt;The end goal was to make a page that had all of the elements in the above image but I also asked:&lt;br&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;How did they go about finding out how to make the page?&lt;/li&gt;&lt;li&gt;Where did they search?&lt;/li&gt;&lt;li&gt;what turned up bad results (and what were they)?&lt;/li&gt;&lt;li&gt;what turned up good results (and what were they)?&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;I was very pleased with the results. Just about all the kids are now able to make a web page with the components in the image above. More importantly, this is what came out of our discussion:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Everyone used Google exclusively as a search engine.&lt;/li&gt;&lt;li&gt;The range of queries ranged from things like "html tutorial," "making a web page," and just plain "html" to maybe not so good things like "gedit web page."&lt;/li&gt;&lt;li&gt;No one used social search or used facebook.&lt;/li&gt;&lt;li&gt;They mostly all found sites such as w3schools. &lt;/li&gt;&lt;/ul&gt;&lt;div&gt;I'm hoping this is a good first step in having the students find things on their own and not be afraid to try things. I think it's an encouraging start.&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width="1" height="1" src="https://blogger.googleusercontent.com/tracker/468689896075458340-984256400226014120?l=cestlaz.blogspot.com" alt=""&gt;&lt;/div&gt;</description><category>intro</category><category>softeng</category><guid>http://cestlaz.github.io/posts/2012-02-08-let-me-google-that-for-you.html/</guid><pubDate>Wed, 08 Feb 2012 05:00:00 GMT</pubDate></item></channel></rss>

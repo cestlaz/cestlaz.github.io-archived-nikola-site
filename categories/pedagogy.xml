@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (pedagogy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/pedagogy.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 15 May 2016 17:08:36 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>As curricula changes, what's falling through the cracks?</title><link>http://cestlaz.github.io/posts/semaphores/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;Edit:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Just a brief note to clarify a couple of things. As indicated in the
+comments, this post isn't  about what's appropriate for HS CS. It's
+more about what kids have after they finish their education - be it
+high school, college, code school, or other. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Some of my thoughts are the results of pondering on the exacerbations
+of friends after interviewing people for entry level positions.
+&lt;/p&gt;
+
+&lt;p&gt;
+The two examples are just to illustrate the point. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;Original Post:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+I enjoy reading blogs. It's one of the ways I keep current. Not only
+in terms of what's going on in CS Education, but also trends in CS -
+academic or professional as well as on a range of other topics.
+&lt;/p&gt;
+
+&lt;p&gt;
+One of the blogs I enjoy is authored by &lt;a href="https://twitter.com/b0rk"&gt;Julia Evans&lt;/a&gt;. I don't know
+Julia, but we do have some mutual friends. I've enjoyed her &lt;a href="http://jvns.ca"&gt;blog&lt;/a&gt;. She
+does a nice job talking about any number of systems related
+issue. I've tried to leave comments a few times but for some reason,
+my comments always end up deleted or otherwise not showing up.
+&lt;/p&gt;
+
+&lt;p&gt;
+One recent post, one on &lt;a href="http://jvns.ca/blog/2016/03/29/thread-pools-part-ii-i-love-blocking/"&gt;concurrency&lt;/a&gt; got me thinking. Since the comment
+I left there didn't take, I thought I'd write about it here.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's a nice post but the thing that caught my eye was when Julia
+said that she " didn't know what a semaphore was until I read this
+code and I was like OH THIS IS AMAZING AND SO USEFUL AND WOW." I was a
+little surprised, semaphores seem to be one of those basic concepts
+that you just know but that is, of course incorrect. I first learned
+about semaphores in my honors Systems class with my mentor, the late
+&lt;a href="https://en.wikipedia.org/wiki/Robert_Dewar"&gt;Robert Dewar&lt;/a&gt;. We started from test and set and worked our way up. I
+had two other undergraduate classes that at least mentioned the topic.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then again, I knew that many undergrads would never get a good
+treatment of concurrency so I tried to build a bit in to the System
+Level Programming  course I designed while at Stuy.
+&lt;/p&gt;
+
+&lt;p&gt;
+This got me thinking - according to her linked in, Julia was a CS
+major at McGill - a university that I hold in high regard but either
+semaphores were never covered or their treatment didn't make enough of
+an impact to be worth remembering. What topics do we cover in our
+classes that kids just let fall to the wayside and what topics do we
+end up losing as curricula change and we don't have an eye on the big
+picture.
+&lt;/p&gt;
+
+&lt;p&gt;
+One big one is memory management. When APCS and college 101 classes
+went to Java, memory management went out the window. Not a problem, as
+long as memory issues are covered in some other course. Unfortunately
+the don't seem to be. You can make a case that kids don't need to
+understand memory management or anything about garbage collection but
+I'd argue that while one might never have to do their own memory
+management a good CS person should have some understanding of what's
+going on under the hood or as my friend Gerry says "never use a
+technology you couldn't write yourself."
+&lt;/p&gt;
+
+&lt;p&gt;
+Another biggie that I lived through was the IBM PC era. Prior to the
+mid to late 80's when the IBM PC ruled the world, kids learned about
+CS on timesharing systems. Once the PC took hold, every kid learning
+programming or studying CS was working on their own machine. They had
+full access to everything and the machine just supported a single
+thread. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the one hand, it was nice since you could easily play with low
+level programming and hardware but on the other hand, a hole
+generation didn't learn about the complexities of multiple users and
+multiple processes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Early in my career I designed courses and only later did I realize
+that you can't just design a course, you have to look at the full arc
+of a students education. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I think it's interesting to think about what concepts are getting left
+on the side of the road and I wonder if the big players driving CS
+education spend any time thinking about this bigger picture.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>pedagogy</category><category>policy</category><guid>http://cestlaz.github.io/posts/semaphores/</guid><pubDate>Sun, 01 May 2016 13:08:36 GMT</pubDate></item><item><title>IDE or the Cloud</title><link>http://cestlaz.github.io/posts/2016-04-12-ide-or-cloud.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+&lt;div id="outline-container-orgheadline1" class="outline-2"&gt;
+&lt;h2 id="orgheadline1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline1"&gt;
+&lt;p&gt;
+This weekend, I had a conversation on Twitter with my friend &lt;a href="https://twitter.com/roybahat"&gt;Roy Bahat&lt;/a&gt;:
+&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;&lt;a href="https://twitter.com/zamansky"&gt;@zamansky&lt;/a&gt; Mike, unrelated, what do you think of &lt;a href="https://t.co/BT1ublbajF"&gt;https://t.co/BT1ublbajF&lt;/a&gt; ?&lt;/p&gt;— Roy Bahat (@roybahat) &lt;a href="https://twitter.com/roybahat/status/718835740738650112"&gt;April 9, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;&lt;a href="https://twitter.com/roybahat"&gt;@roybahat&lt;/a&gt;Maybe I'll blog about my thoughts about online environments vs local installs&lt;/p&gt;— Mike Zamansky (@zamansky) 
+&lt;a href="https://twitter.com/zamansky/status/718837282334240768"&gt;April 9, 2016&lt;/a&gt;&lt;/blockquote&gt;&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;&lt;a href="https://twitter.com/roybahat"&gt;@roybahat&lt;/a&gt; Agree with this but there are many issues. I'll try to write more later. Now going to see my son in &lt;a href="https://twitter.com/umgass"&gt;@umgass&lt;/a&gt; prod of Pinafore.&lt;/p&gt;— Mike Zamansky (@zamansky) &lt;a href="https://twitter.com/zamansky/status/718838508689993728"&gt;April 9, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;p&gt;
+Another friend had just asked me about IDEs vs local installs for learning enviromnents the day before.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, should we use cloud based IDEs when teaching CS or should we use
+local installs.
+&lt;/p&gt;
+
+&lt;p&gt;
+There isn't a single right answer but I thought I'd share some of my thoughts here.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm hoping this is helpful to both those of us in the trenches as well
+as maybe some platform developers out there.
+&lt;/p&gt;
+
+&lt;p&gt;
+Some times, you don't have a choice.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the web based side, does your school have the bandwidth. We're not
+only talking about the pipe to the outside world but also &lt;a href="http://www.nytimes.com/2016/01/14/nyregion/bronx-science-bans-cellphones-from-wi-fi-as-students-devour-it.html?_r=0"&gt;wifi within
+the school&lt;/a&gt;.  If kids can't reliably get to the web based environment,
+it's not a viable option. On the other hand, cloud based software will
+always be up to date and properly configured and kids can use them
+from home or pretty much anywhere they have a connection.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other side we have local installs. This can also present
+problems. Is the teacher allowed to install locally? Does he or she
+know how to do it? Who's going keep all the machines up to date and configured? 
+&lt;/p&gt;
+
+&lt;p&gt;
+Assuming we can get past the technical issues we can start looking at
+the education side of thing.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the web based side, you've got a silo. This can be both good and
+bad. In an intro class, using a tool like &lt;a href="http://codesters.com"&gt;Codesters&lt;/a&gt; can keep the cost
+of entry low, allow students to share work online and allow teachers
+to make use of their curricular materials. If you can't tell, I'm a
+big fan of Codesters and the Codesters team. The limitation is that
+you have to use their simplified interface and toolset.
+&lt;/p&gt;
+
+&lt;p&gt;
+Some web based IDEs like &lt;a href="http://koding.com"&gt;Koding&lt;/a&gt; offer more flexibility - one tool with
+many languages as well as deployment. The cost is complexity. With
+Koding, you're basically running a virtual machine in the
+cloud. You've got their web based IDE and a terminal shell so it's not
+as complex as doign everything from scratch locally but it's not as
+structured as Codesters and is more of a general purpose site rather
+than one focussed soley on learning.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then you have &lt;a href="http://repl.it"&gt;repl.it&lt;/a&gt;. This looks to be a great platform for
+experienced programmers to play with and explore new languages but I'd
+be concerned about using it with beginners. It looks like they're
+rolling out some teacher tools so this might be worth revisiting soon.
+&lt;/p&gt;
+
+&lt;p&gt;
+In any case and with other web based products, you're living in the
+providers silo. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Personally, I'm a command line wonk and confessed Emacs geek so I'm
+generally wary of an online environment without an exit strategy to
+real world tools. Eventually, if all development moves into the
+browser as platform then this problem goes away, but for now, you're
+not going to have the expressive power and flexibility that a local
+install gives.
+&lt;/p&gt;
+
+&lt;p&gt;
+Local installs let you use more powerful and flexible tools either
+alone or in combination.
+&lt;/p&gt;
+
+&lt;p&gt;
+Keeping kids out of silos also makes it easier for them to learn new
+tools, languages, and techniques.
+&lt;/p&gt;
+
+&lt;p&gt;
+Since I like generic tools, I'm not a fan of big professional IDEs
+like Eclipse. I'm an Emacs geek but Atom, Sublime Text, and Vim are
+all good as well.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are also an assortment of beginner IDEs like Dr. Racket and I'm
+a fan with these for beginners as long as there's an exit strategy.
+&lt;/p&gt;
+
+&lt;p&gt;
+For completeness, I should mention that if I weren't an old school
+Emacs guy, I might check out something like JetBrain's IDEs. They're
+much lighter weight than something like Eclipse but still full
+featured. Somewhere between a true general purpose, customizable,
+programmable editor and an all encompassing IDE.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+In general, I use online enviromnents with my classes early on when:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;They're pretty much identical or equivalent to the installed version.&lt;/li&gt;
+&lt;li&gt;They provide some value added (&lt;a href="http://codingbat.com"&gt;codingbat&lt;/a&gt; for example) so they're not
+being used as a development environment but for some other purpose.&lt;/li&gt;
+&lt;li&gt;They help with student collaboration (such as cloud9 or Koding.com
+for more advanced kids).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+In any case, it's imporant that our kids aren't locked into any IDE be
+it web based or local.
+&lt;/p&gt;
+
+&lt;p&gt;
+Our kids that go on to more advanced CS studies will certainly need to
+break out of sheltered world of a learning IDE and we're not doing
+them a service if we shelter them too long. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Our other kids also benefit from seeing beyond these restrictive
+environments. A student might learn to code in Python in one of our
+classes, but if we do our jobs right, that student might be writing a
+little Javascript to automate Google Docs.
+&lt;/p&gt;
+
+&lt;p&gt;
+I can't tell you how many people I've seen go through online coding
+courses in a web based enviromnent only to be unable to do anything
+outside of that enviromnent.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the end of the day, we want our kids to be empowered to grow on
+their own. All of the things I've talked about here are merely
+tools. Each has it's place. It's up to the teacher to make the roadmap
+and to lead the student down the path.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/2016-04-12-ide-or-cloud.html/</guid><pubDate>Tue, 12 Apr 2016 04:00:00 GMT</pubDate></item><item><title>DevOps, or You don't know what the F you're doing!</title><link>http://cestlaz.github.io/posts/2016-01-31-devops.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+Having just concluded almost a quarter century at one job in one
+place, I've been reflecting on a number of things.
+&lt;/p&gt;
+
+&lt;p&gt;
+What I accomplished, what I've failed to accomplish, highlights,
+low lights and everything in between.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've also learned a lot over these twenty five years.
+&lt;/p&gt;
+
+&lt;p&gt;
+One thing I learned is DevOps and System Administration. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Back around 1993 or 1994 Stuy wasn't really on the internet. Yes, we
+were able to scam stuy.edu even though we were a high school and yes
+we did have a class B address block but no one really had access.
+&lt;/p&gt;
+
+&lt;p&gt;
+Somehow, Bruce, a student of mine at the time and I ended up with the
+job of getting Stuy onto the internet. Bruce was one of our superstar
+kids and people thought I had extensive experience setting up and
+running networks. Truth be told I messed around a bit but there's no
+way I would have hired myself for the job.
+&lt;/p&gt;
+
+&lt;p&gt;
+Nonetheless, we were off. 
+&lt;/p&gt;
+
+&lt;p&gt;
+We were able to take one of the RS/6000 AIX workstations that were
+supposed to be used as CAD stations and repurposed it as a server. We
+made email accounts for everyone and were off.
+&lt;/p&gt;
+
+&lt;p&gt;
+Neither Bruce nor I really knew what we were doing but we figured
+things out. I learned a lot from him and I'd like to think he also got
+some benefit out of working with me. Fortunately, we seemed to have a
+knack for &lt;a href="http://www.amazon.com/Linux-System-Administration-Handbook-Edition/dp/0131480057/ref=pd_sim_14_2?ie=UTF8&amp;amp;dpID=61%2B57ajucML&amp;amp;dpSrc=sims&amp;amp;preST=_AC_UL160_SR117%2C160_&amp;amp;refRID=164V89GZMZM2X9M2S8AH"&gt;finding the answers&lt;/a&gt;.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Of course, we had our moments. Once, we got a critical patch
+announcement from IBM. It said that if we needed the patch and didn't
+apply it were were in big trouble but if our machine didn't need it,
+applying the patch would kill our system. It was unclear whether we
+needed the patch or not.
+&lt;/p&gt;
+
+&lt;p&gt;
+After about a half hour research, we determined that we didn't need
+the patch.
+&lt;/p&gt;
+
+&lt;p&gt;
+But applied it anyway :-(.
+&lt;/p&gt;
+
+&lt;p&gt;
+D'Oh.
+&lt;/p&gt;
+
+&lt;p&gt;
+After a brief set of panic attacks and a bunch of fumbling around, we
+did manage to restore things.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, Bruce and I ran the system for a year or so and as I said, I
+learned a lot. Now, Bruce was close to graduating so I was starting to
+worry that I'd have to figure this all out myself soon. That was a
+seriously frightening thought. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I figured it would be good to bring in a couple of new super smart
+students. As it turns out, Jon was one of them. 
+&lt;/p&gt;
+
+&lt;p&gt;
+At one point, there was some problem and Bruce and I were going to
+head to the office to try to figure it out. Jon asked if he could come
+and watch. I thought that was a great idea so I agreed.
+&lt;/p&gt;
+
+&lt;p&gt;
+We all went to the office and Bruce and I went to work. After about
+fifteen minutes, Jon blurted out:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+"I just figured how you guys do it!!!"
+&lt;/p&gt;
+
+&lt;p&gt;
+"You guys have no idea what the F you're doing!!!!!"
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+We all cracked up.
+&lt;/p&gt;
+
+&lt;p&gt;
+He was absolutely right. We had no clue. We didn't know what we were
+doing but we had become pretty good at figuring things out.
+&lt;/p&gt;
+
+&lt;p&gt;
+Truth be told, that really is the norm. If you already knew how to
+solve the problem, well, then it really wouldn't have been a problem
+to begin with.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, you learn to figure it out. It's something I learned not to be
+afraid of a long time ago. I hope that it's something I've been able
+to convey to my students.
+&lt;/p&gt;</description><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2016-01-31-devops.html/</guid><pubDate>Sun, 31 Jan 2016 05:00:00 GMT</pubDate></item><item><title>Debugging deployment</title><link>http://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+SoftDev students are hard at work on their final projects. By now,
+they all have fairly complex code bases. This limits how much I can
+help them with debugging.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are some problems, though, that they have to contend with that
+even with experience, are hard to spot. Notably because the very
+tools you use to debug these errors are part of the problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+Last week, this happened twice. Both cases were brought to me by
+really strong students which just goes to underscore how insidious
+these problems can be.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Here's a fake code snippet of a &lt;a href="http://flask.pocoo.org/"&gt;Flask&lt;/a&gt; application that illustrates
+both problems.
+&lt;/p&gt;
+
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;&lt;span class="linenr"&gt; 1: &lt;/span&gt;from flask import Flask, render_template
+&lt;span class="linenr"&gt; 2: &lt;/span&gt;
+&lt;span class="linenr"&gt; 3: &lt;/span&gt;app = Flask(__name__)
+&lt;span class="linenr"&gt; 4: &lt;/span&gt;
+&lt;span class="linenr"&gt; 5: &lt;/span&gt;@app.route("/")
+&lt;span class="linenr"&gt; 6: &lt;/span&gt;def index():
+&lt;span class="linenr"&gt; 7: &lt;/span&gt;    return "hello"
+&lt;span class="linenr"&gt; 8: &lt;/span&gt;
+&lt;span class="linenr"&gt; 9: &lt;/span&gt;@app.route('/test/&amp;lt;some_data&amp;gt;')
+&lt;span class="linenr"&gt;10: &lt;/span&gt;def test():
+&lt;span class="linenr"&gt;11: &lt;/span&gt;    picture_url = build_url(some_data)
+&lt;span class="linenr"&gt;12: &lt;/span&gt;    result = api_test(picture_url)
+&lt;span class="linenr"&gt;13: &lt;/span&gt;    do_something(result)
+&lt;span class="linenr"&gt;14: &lt;/span&gt;
+&lt;span class="linenr"&gt;15: &lt;/span&gt;if __name__ == "__main__":
+&lt;span class="linenr"&gt;16: &lt;/span&gt;   app.debug = True
+&lt;span class="linenr"&gt;17: &lt;/span&gt;   app.secret_key = "some secret key"
+&lt;span class="linenr"&gt;18: &lt;/span&gt;   app.run(host="0.0.0.0", port=8000)
+&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+First, the "easy" one. The student was trying to deploy the
+application. We use &lt;a href="http://gunicorn.org/"&gt;Green Unicorn&lt;/a&gt; to deploy our applications,
+ultimately on &lt;a href="http://digitalocean.com/"&gt;Digital Ocean&lt;/a&gt; servers in the cloud. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The student was using the correct command:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-shell"&gt;gunicorn -W 4 -b 0.0.0.0:8000 app:app
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+but it wasn't working. It ran, but whenever he went to the site, it
+came back with an error.
+&lt;/p&gt;
+
+&lt;p&gt;
+The problem?
+&lt;/p&gt;
+
+&lt;p&gt;
+He had to change:
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;if __name__ == "__main__":
+   app.debug = True
+   app.secret_key = "some secret key"
+   app.run(host="0.0.0.0", port=8000)
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+to
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;app.secret_key = "some secret key"
+if __name__ == "__main__":
+    app.debug = True
+    app.run(host="0.0.0.0", port=8000)
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Normally, when developing and testing our applications, we use the
+test server that's bundled with Flask. The line that reads
+"app.run…" takes care of this.
+&lt;/p&gt;
+
+&lt;p&gt;
+When running the application as a "main program" - "python app.py" the
+if statement is true and it runs the indented lines, setting the
+secret key which is required for session management.
+&lt;/p&gt;
+
+&lt;p&gt;
+When running under &lt;b&gt;&lt;b&gt;gunicorn&lt;/b&gt;&lt;/b&gt;, the &lt;b&gt;&lt;b&gt;gunicorn&lt;/b&gt;&lt;/b&gt; server loads the
+application as a module and then runs it. In this case name isn't main
+so it never sets secret key and so we have a problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+Pretty subtle and even though we did cover this in class, it comes up
+pretty rarely so it's not an easy catch.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then there was this problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+The setup for this one's a little more complicated. The group was
+using a facial recognition api. You provide the API with the url to an
+image, it fetches it and does recognition.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's also important to note that when Flask is running, it will serve
+files from a static directory, so, if I'm running my flask server on
+myhost, port 800 and you stored an image named picture.jpg in the
+static directory, going to:
+&lt;/p&gt;
+
+&lt;verbatim&gt;
+ http://myhost:8000/static/picture.jpg
+&lt;/verbatim&gt;
+&lt;br&gt;&lt;br&gt;
+
+
+&lt;p&gt;
+would get that image.
+&lt;/p&gt;
+
+&lt;p&gt;
+The group did things right. They ran the Flask test server to serve
+the static files and then wrote a small python program to test the
+api:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;picture_url = build_url(some_data)
+result = api_test(picture_url)
+do_something(result)
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Everything worked fine. 
+&lt;/p&gt;
+
+&lt;p&gt;
+But, when they put this code in as a route in their web app (as in the
+top code fragment), it froze. 
+&lt;/p&gt;
+
+&lt;p&gt;
+They couldn't figure it out.
+&lt;/p&gt;
+
+&lt;p&gt;
+The code worked as a "stand alone" but not in the web app.
+&lt;/p&gt;
+
+&lt;p&gt;
+The problem?
+&lt;/p&gt;
+
+&lt;p&gt;
+Once again, the built in Flask development server.
+&lt;/p&gt;
+
+&lt;p&gt;
+The development server runs in a single thread / process. This means
+it can only do one thing at a time. When they ran their test as a
+separate program, the api they used made a request to their app to
+serve up the static picture file and it worked.
+&lt;/p&gt;
+
+&lt;p&gt;
+When they ran from the Flask application itself, their app made a call
+to the web api (line 12) and then blocked while waiting for the
+response. The web api tried to request the image from the Flask app
+but it was blocked – &lt;b&gt;&lt;b&gt;deadlock&lt;/b&gt;&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Again, the solution was to run the web app using a server that could
+handle multiple requests - gunicorn.
+&lt;/p&gt;
+
+&lt;p&gt;
+Once again, that solved the problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+Both of these problems were fairly subtle and very hard to catch -
+even with experience. I remember the hours I lost when I was learning
+this stuff.
+&lt;/p&gt;
+
+&lt;p&gt;
+Some times kids get caught up in algorithms or poor code design but
+sometimes, it's just the tools.
+&lt;/p&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</guid><pubDate>Sat, 23 Jan 2016 05:00:00 GMT</pubDate></item><item><title>Cellular Automata for Pathfinding in NetLogo</title><link>http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet"&gt;
+&lt;script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+&lt;style&gt;
+div.center {text-align:center;}
+.smaller {height:200px;width:200px}
+
+.center {text-align:center;}
+.frame {width:600px;height:800px;}
+
+&lt;/style&gt;
+
+
+&lt;div class="center"&gt;
+&lt;a class="center" href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-start.png"&gt;
+&lt;img src="http://cestlaz.github.io/img/maze-ca/maze-start.png"&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+
+&lt;div id="outline-container-orgheadline1" class="outline-2"&gt;
+&lt;h2 id="orgheadline1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline1"&gt;
+&lt;p&gt;
+&lt;a href="http://cestlaz.github.io/2016/01/15/shift-image.html#.Vpvy4x8SrmE"&gt;Last time&lt;/a&gt; we took a look at implementing a Cellular Automaton in
+NetLogo to do some simple image manipulation. We just scratched the
+surface. In class, the kids write pretty nice Photoshop Light
+applications. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Today we'll look at some more ambitious problem solving - using a
+Cellular Automaton to find a path through a maze. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-orgheadline2" class="outline-2"&gt;
+&lt;h2 id="orgheadline2"&gt;Part 1 - finding possible paths&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline2"&gt;
+&lt;p&gt;
+We'll use the image above as an example and a live model with all the
+code is at the end of this post.
+&lt;/p&gt;
+
+&lt;p&gt;
+Each square of the maze is a
+NetLogo patch. White square represent possible paths, Red is our
+entrance, green our exit. As we explore the maze, we'll color the
+cells yellow.
+&lt;/p&gt;
+
+&lt;p&gt;
+Remember, in  a Cellular Automaton (CA), each cell makes a decision as to
+it's next state based on information about its neighbors (up, down,
+left, and right only in this case).
+&lt;/p&gt;
+
+&lt;p&gt;
+So, if every cell is looking around at it's neighbors, most cells
+don't have enough information. The only white cell that might be on
+the path from entrance to exit is the one next to the entrance - it
+might be on the path.
+&lt;/p&gt;
+
+&lt;p&gt;
+This leads us to the first step of our CA rule set:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-netlogo"&gt;; if I have a green neighbor, I might be on the path, turn yellow
+ask patches with [pcolor = white] [
+  if any? neighbors with [pcolor = red] [
+   set pcolor yellow
+  ] 
+]
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+(click images to enlarge)
+&lt;/p&gt;
+
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-1.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-1.png"&gt;
+&lt;/a&gt;
+
+&lt;p&gt;
+Next time through, we notice that a cell might be on the path if it's
+white and it has either red or yellow neighbors.
+&lt;/p&gt;
+
+
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-2.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-2.png"&gt;
+&lt;/a&gt;
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-3.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-3.png"&gt;
+&lt;/a&gt;
+
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-4.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-4.png"&gt;
+&lt;/a&gt;
+
+&lt;p&gt;
+Eventually, we end up with a yellow abutting green - the exit.
+&lt;/p&gt;
+
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-found.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-found.png"&gt;
+&lt;/a&gt;
+
+&lt;p&gt;
+Notice that each yellow cell is also numbered. The number indicates
+how many steps it took to get there from the entrance. The
+implementation is trivial:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Start by giving each patch a variable &lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; and starting it at 0.&lt;/li&gt;
+&lt;li&gt;When a cell is about to turn yellow, it should look at it's yellow
+or red neighbors, ask for their &lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; value (they'll all be the
+same - think about why), and set it's &lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; value to one more
+than that.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+We'll use these step numbers to recover the actual shortest path.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-orgheadline3" class="outline-2"&gt;
+&lt;h2 id="orgheadline3"&gt;Part 2 - recovering the shortest path.&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline3"&gt;
+&lt;p&gt;
+We can now use the yellow patches with the step numbers to find our
+way back. 
+&lt;/p&gt;
+
+&lt;p&gt;
+We're going to build a solution set.
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;start with an empty solution set.&lt;/li&gt;
+&lt;li&gt;take the only green cell not in the solution set (let's call it &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt;).&lt;/li&gt;
+&lt;li&gt;Ask &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt;'s yellow neighbor with lowest step number to turn
+itself green (that cell will be &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt; next time around).&lt;/li&gt;
+&lt;li&gt;Place &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt; into the solution set (leaving the new green cell as
+the only green cell not in the solution set).&lt;/li&gt;
+&lt;li&gt;Repeat 2 - 5 until we're back at the entrance.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-back-1.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-back-1.png"&gt;
+&lt;/a&gt;
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-back-2.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-back-2.png"&gt;
+&lt;/a&gt;
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-solved.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-solved.png"&gt;
+&lt;/a&gt;
+
+&lt;p&gt;
+This is one of my favorite intro topics. It's using a CA - something
+normally just presented as a toy idea, to solve a real problem. It
+reinforces parallel processing and foreshadows all sorts of pathfinding
+ideas to come.
+&lt;/p&gt;
+
+&lt;p&gt;
+Below is the complete NetLogo program. You can look at the code by
+clicking on the code tab at the bottom.
+&lt;/p&gt;
+
+&lt;p&gt;
+To run:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;setup&lt;/b&gt;&lt;/b&gt; sets up all the variables and clears the world.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;buildmaze&lt;/b&gt;&lt;/b&gt; builds a random maze.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;solve&lt;/b&gt;&lt;/b&gt; is a toggle to run through an entire solution.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; single steps through the CA.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;reset&lt;/b&gt;&lt;/b&gt; Resets all the variables and recolors the maze to
+unsolved.&lt;/li&gt;
+&lt;li&gt;The other buttons are toggles for drawing your own maze.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="center frame"&gt;
+&lt;iframe class="center frame" src="http://cestlaz.github.io/img/maze-ca/maze.html"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>netlogo</category><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</guid><pubDate>Sun, 17 Jan 2016 05:00:00 GMT</pubDate></item><item><title>Cellular Automata, NetLogo and real problems</title><link>http://cestlaz.github.io/posts/2016-01-15-shift-image.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+.center {text-align:center;}
+.frame {width:640px;height:800px;}
+&lt;/style&gt;
+
+
+&lt;p&gt;
+We've been using &lt;a href="https://ccl.northwestern.edu/netlogo/"&gt;NetLogo&lt;/a&gt; in our intro course for years. It's a
+wonderful programming environment. Many of you recall the &lt;a href="https://en.wikipedia.org/wiki/Logo_(programming_language)"&gt;Logo&lt;/a&gt;
+programming language. NetLogo is like Logo but instead of programming
+a turtle, you write a program that's run by multiple, perhaps hundreds
+of turtles and also by the world the turtles live on. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Some of the reasons we like it are that it's:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;An easy accessible textual programming language&lt;/li&gt;
+&lt;li&gt;Makes building a graphical interface trivial&lt;/li&gt;
+&lt;li&gt;great for modeling&lt;/li&gt;
+&lt;li&gt;Comes with tons of demo models&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+And now, with the latest version, NetLogo programs/models can be
+deployed as web sites. All you have to do is save your program as
+"NetLogo Web" and put it up on a observer somewhere.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you haven't you should download and install NetLogo, run it, then
+go to the file menu and look at the built in models.
+&lt;/p&gt;
+
+&lt;p&gt;
+I also enjoy playing with &lt;a href="https://en.wikipedia.org/wiki/Cellular_automaton"&gt;Cellular Automata&lt;/a&gt; and NetLogo's a wonderful
+platform to play with. The turtles live on a grid of patches and just
+like the turtles, the patches will all run your program over and over.
+&lt;/p&gt;
+
+&lt;p&gt;
+The patches make perfect cells for a cellular automaton and you can
+implement a rule set in your patches. 
+&lt;/p&gt;
+
+&lt;p&gt;
+NetLogo even comes with a bunch of built in demo models for Cellular
+Automata including &lt;a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"&gt;Conway's Game of Life&lt;/a&gt;, probably the most famous CA.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand, Conway's Game of Life is somewhat cliche and while
+I find it fascinating, it doesn't really solve a practical problem, at
+least on on the surface.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, I was looking for something more practical to do and something
+where we could explore some deeper CS concepts. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Image manipulation.
+&lt;/p&gt;
+
+&lt;p&gt;
+In class, we make a Cellular Automaton where each cell or patch is a
+pixel in an image. In NetLogo, you can do this with the
+"import-pcolors" command. Lower down, I have a demo that just manually
+colors patches - the web version of NetLogo doesn't yet support that
+command.
+&lt;/p&gt;
+
+&lt;p&gt;
+Task 1 - what if we want to shift the image over? The kids come up
+with a solution pretty quickly: "We can just have each patch ask its
+neighbor for its color." Here's the code they try:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-netlogo"&gt;; ask each patch to set its color to the color of the
+; patch at relative location -1,0
+to shift-naive
+  ask patches [ set pcolor [pcolor] of patch-at -1 0]
+end
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+To see what happens, scroll down to the NetLogo model below, click on
+setup and then hit the &lt;b&gt;&lt;b&gt;shift-naive&lt;/b&gt;&lt;/b&gt; button a few times.
+&lt;/p&gt;
+
+&lt;p&gt;
+It doesn't work. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What's going on?
+&lt;/p&gt;
+
+&lt;p&gt;
+It's a synchronization issue.
+&lt;/p&gt;
+
+&lt;p&gt;
+Suppose we have the following three cells in a row:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/shift-image/image1.png" alt="image1.png"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+If cell 3 asks cell 2 it's color before cell 2 asks cell 1's color, we
+get the desired result:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/shift-image/image2.png" alt="image2.png"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+But if cell 2 asks cell 1 for it's color first then cell 3 will
+actually get cell 1's color:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/shift-image/image3.png" alt="image3.png"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+So now we have the students thinking about synchronization and
+parallel processing and they don't even know it.
+&lt;/p&gt;
+
+&lt;p&gt;
+The solution's pretty easy, break the problem up into two steps.
+&lt;/p&gt;
+
+&lt;p&gt;
+First, have every patch ask its neighbor for its color and then once
+everyone knows their neighbor's color, then change:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-html"&gt;patches-own [next-color]
+
+to shift-correct
+  ; figure out my next color
+  ask patches [ set next-color [pcolor] of patch-at -1 0 ]
+  ; then switch to it
+  ask patches [ set pcolor next-color]
+end
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+You can run that by clicking &lt;b&gt;&lt;b&gt;setup&lt;/b&gt;&lt;/b&gt; again and then &lt;b&gt;&lt;b&gt;shift-correct&lt;/b&gt;&lt;/b&gt; a
+few times.
+&lt;/p&gt;
+
+&lt;p&gt;
+There's some of the beauty of NetLogo - we can get kids to think about
+some deep concepts while playing with an easy to use, fun, interactive
+environment with a real textual programming language.
+&lt;/p&gt;
+
+&lt;p&gt;
+Stay tuned for part 2 when I'll talk about creating a cellular
+automaton that can solve a maze.
+&lt;/p&gt;
+
+&lt;div class="center frame"&gt;
+&lt;iframe class="center frame" src="http://cestlaz.github.io/img/shift-image/shift-image.html"&gt;&lt;/iframe&gt;
+&lt;/div&gt;</description><category>netlogo</category><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2016-01-15-shift-image.html/</guid><pubDate>Fri, 15 Jan 2016 05:00:00 GMT</pubDate></item><item><title>Teaching Coding - getting beyond superficial syntax</title><link>http://cestlaz.github.io/posts/2016-01-01-different-languages.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+The other day, Alfred Thompson put up a piece about &lt;a href="http://blog.acthompson.net/2015/12/code-in-different-languages.html"&gt;coding in multiple
+languages&lt;/a&gt;. Alfred references a post written last May by &lt;a href="http://robunderwood.com/2015/05/31/code-syntax-compared-part-1/%0A"&gt;Rob Underwood.&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Both pieces are worth a look.
+&lt;/p&gt;
+
+&lt;p&gt;
+Rob is trying to illustrate many of the superficial similarities in
+popular languages. 
+&lt;/p&gt;
+
+&lt;p&gt;
+In the comments on Alfred's blog, both Alfred and I alluded to coding
+in an appropriate style for the language.
+&lt;/p&gt;
+
+&lt;p&gt;
+For me the issue is even bigger.
+&lt;/p&gt;
+
+&lt;p&gt;
+Learning to code is all the rage and places to learn are popping out of
+the woodwork.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;In classes, in schools, with teachers&lt;/li&gt;
+&lt;li&gt;Drop in programs in schools.&lt;/li&gt;
+&lt;li&gt;Programs run by coding schools&lt;/li&gt;
+&lt;li&gt;Moocs and other online resources&lt;/li&gt;
+&lt;li&gt;Summer and weekend programs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+And probably more. All of these options are giving more and more
+people a way to learn to code. 
+&lt;/p&gt;
+
+&lt;p&gt;
+That's great, but it also raises concerns given that very few people
+involved in CS education have both strong teaching and CS backgrounds. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I'm starting to see are the results as I meet young people coming
+out of all of these programs.
+&lt;/p&gt;
+
+&lt;p&gt;
+Unfortunately, what I'm frequently seeing, at best, is very
+superficial coverage of syntax.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've seen kids who would have no basis for understanding that the
+ramifications of this Python code:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;a = 30
+def f():
+  a=20 
+  print a
+
+print a
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+and this Javascript code:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-javascript"&gt;a = 30;
+function f(){
+  a = 20  
+  console.log(a);
+}
+console.log(a);
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+are very different.
+&lt;/p&gt;
+
+&lt;p&gt;
+It gets worse when I meet kids who "know C" because they were exposed
+to constructs like:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-c"&gt;for (i=0;i&amp;lt;10;i++){
+ // code goes here
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+I think the most common issue come from kids being "taught"
+programming using javascript which seems deceptively simple but is
+really rather deep.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's important that as CS becomes more mainstream that we make sure
+that we have teachers and programs that are teaching the real deal. It
+can be fun and accessible but it does require teachers that know their
+stuff and are willing to continue to learn. 
+&lt;/p&gt;
+
+
+&lt;p&gt;
+		Do our kids deserve any less?
+&lt;/p&gt;</description><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2016-01-01-different-languages.html/</guid><pubDate>Fri, 01 Jan 2016 05:00:00 GMT</pubDate></item><item><title>Advent of Code - because I'm an idiot</title><link>http://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/advent/advent.png" alt="advent.png" width="480px" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+I wish our kids believed us when we tell them that we have the same
+programming troubles as they do. We stare at code for hours not seeing
+problems that could be a simple as passing the wrong value. We spend
+an inordinate amount of time trying to see the problem and then
+realize that we just forgot something silly. 
+&lt;/p&gt;
+
+&lt;p&gt;
+At this point, it's common for us CS teachers to tell each other "I
+figured out the problem I was having – it's that I was an idiot."
+&lt;/p&gt;
+
+&lt;p&gt;
+Last time, I talked about &lt;a href="http://adventofcode.com/"&gt;Advent of Code&lt;/a&gt; and how I was somewhat behind
+the curve. In part because I started late and in part because I've
+been using it as an excuse to learn some Clojure.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's how I burned over two days on &lt;a href="http://adventofcode.com/day/6"&gt;Day 6&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+The problem is pretty straight forward. You have a 1,000 x 1,000 grid
+representing a light board and you have to repeatedly do operations on
+smaller rectangles on that grid. Turning individual lights on and off,
+if you would.
+&lt;/p&gt;
+
+&lt;p&gt;
+If I were doing this in a language like C, I'd probably just take a
+big block of memory and loop through the instructions but since I was
+working in Clojure, I thought I'd try to do something in more of the
+functional mode, that is, with immutable data types. 
+&lt;/p&gt;
+
+&lt;p&gt;
+After a while, I was getting the feeling that it was going to be too
+slow so I shifted to just modifying a big block of memory.
+&lt;/p&gt;
+
+&lt;p&gt;
+Try as I could, I couldn't get it to work. I was sure my algorithm was
+fine - it wasn't a hard problem, but I couldn't get the right answer.
+&lt;/p&gt;
+
+&lt;p&gt;
+After a while, I started looking at existing solutions and they were
+basically the same as mine.
+&lt;/p&gt;
+
+&lt;p&gt;
+I was stumped. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Two days after the start, I figured it out.
+&lt;/p&gt;
+
+&lt;p&gt;
+No matter how hard you try, if your problem specifies the data in the
+form &lt;b&gt;&lt;b&gt;row1,col1 row2,col2&lt;/b&gt;&lt;/b&gt;, you're not going to get the right answer
+if you decide that the input is in the form &lt;b&gt;&lt;b&gt;row1,row2 col1,col2&lt;/b&gt;&lt;/b&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;b&gt;&lt;b&gt;D'Oh&lt;/b&gt;&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Ok, after that the problem was pretty trivial.
+&lt;/p&gt;
+
+&lt;p&gt;
+Hopefully I'll have some time to do problem 7 and beyond this weekend.
+&lt;/p&gt;
+
+&lt;p&gt;
+If there are any Clojure people out there, I'm putting my solutions up
+on &lt;a href="https://github.com/zamansky/adventofcodeclojure"&gt;GitHub&lt;/a&gt; - I'd love some feedback on how to get more idiomatic.
+&lt;/p&gt;</description><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/</guid><pubDate>Thu, 17 Dec 2015 05:00:00 GMT</pubDate></item><item><title>Other People's Code</title><link>http://cestlaz.github.io/posts/2015-11-11-other-peoples-code.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+&lt;div id="outline-container-orgheadline1" class="outline-2"&gt;
+&lt;h2 id="orgheadline1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline1"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+The coding on their project is reminiscent in many ways of an Ed
+Sheerhan song. It left me in tears and very confused as to what the
+author was trying to accomplish.
+&lt;/p&gt;
+
+&lt;p&gt;
+– a student commenting on their most recent project.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-orgheadline2" class="outline-2"&gt;
+&lt;h2 id="orgheadline2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline2"&gt;
+&lt;p&gt;
+We had some fun last week. Well, OK, I had some fun. The SoftDev
+classes had just finished a little project. Basically, a blogging
+platform. Something that would tie together all the tools we've been
+using. Flask, user management, an SQL database (SQLite), and a nice
+looking front end. 
+&lt;/p&gt;
+
+&lt;p&gt;
+It was also the first real group project so the teams have started to
+learn how to work together. 
+&lt;/p&gt;
+
+&lt;p&gt;
+After some project demos, it was time for part two: NOSQL. We explored
+MongoDB and then it was time for the project - clean up the
+previous project through the use of techniques like template
+inheritance and convert the database backend to MongoDB.
+&lt;/p&gt;
+
+&lt;p&gt;
+The catch? Each group would take another groups project and use that
+as their starter code. The rules? They could modify and refactor but
+they couldn't rewrite.
+&lt;/p&gt;
+
+&lt;p&gt;
+It threw the groups for a loop but I ultimately think they had
+fun with this.
+&lt;/p&gt;
+
+&lt;p&gt;
+Afterwards each group gave a write up to their starter group. What
+made their life easier, what made it harder. We then circled up for
+discussion as a class.
+&lt;/p&gt;
+
+&lt;p&gt;
+It was terrific.
+&lt;/p&gt;
+
+&lt;p&gt;
+First, it was great that we've gotten to a point where everyone feels
+comfortable giving each other constructive criticism. We've gotten to
+the point where the class is a team.
+&lt;/p&gt;
+
+&lt;p&gt;
+Beyond that, I'm hoping that everyone got a lot out of the exercise.
+&lt;/p&gt;
+
+&lt;p&gt;
+As each group talked, common themes arose:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;consistent commenting is good&lt;/li&gt;
+&lt;li&gt;variable names matter&lt;/li&gt;
+&lt;li&gt;unused code and files can be misleading&lt;/li&gt;
+&lt;li&gt;overall code structure, file names, and locations are important.&lt;/li&gt;
+&lt;li&gt;and much more&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+We're now going to start a discussion of coding style, standards, and
+documentation.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've got to say that I'm very happy how this little experiment worked
+out.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2015-11-11-other-peoples-code.html/</guid><pubDate>Wed, 11 Nov 2015 05:00:00 GMT</pubDate></item><item><title>Interview questions and tests</title><link>http://cestlaz.github.io/posts/2015-11-04-tests-and-interviews.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+The StuyCS Family mailing list was host to an interesting discussion
+today. One of our younger members asked if the practice of giving
+technical problems during an interview was going to follow him
+throughout his career or if it goes away for more senior applicants.
+&lt;/p&gt;
+
+&lt;p&gt;
+An interesting discussion followed.
+&lt;/p&gt;
+
+&lt;p&gt;
+It reminded me of a time I was talking to a few senior engineers at a
+large tech company. A couple of younger engineers were with us along
+with a new hire. The youngsters started talking about the new hires
+technical interview questions. One older engineer light heartedly
+asked another "I don't recall any tricky technical questions, how
+about you?" "I don't recall any either…" and on around the table.
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course these senior engineers had track records that stretched for
+miles.
+&lt;/p&gt;
+
+&lt;p&gt;
+I never liked those tech interview questions. If you just took
+algorithms, you've got an edge and it really seems to be more of a
+test of "have you seen this problem before" rather than a true test of
+ability.
+&lt;/p&gt;
+
+&lt;p&gt;
+I much prefer those few companies that give "take home assignments" or
+use other ways to determine fit.
+&lt;/p&gt;
+
+&lt;p&gt;
+The tech interview reminds me of the pop quiz or a poorly designed
+test. If you just ask the question that the kid doesn't get, the kid's
+in trouble. A kid could know how to handle 90% of the work but if the
+question is that last 10%, zero credit. 
+&lt;/p&gt;
+
+&lt;p&gt;
+As teachers, we end up using many forms of assessment and try to
+develop an overall picture of a student.
+&lt;/p&gt;
+
+&lt;p&gt;
+Companies should try to do the same.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why to companies still use these technical interview questions?
+&lt;/p&gt;
+
+&lt;p&gt;
+Quite simply because they can.
+&lt;/p&gt;
+
+&lt;p&gt;
+A company might miss out on a number of great candidates by using a
+bad technical question but they will probably get at least a
+reasonably strong hire that passes the test. For the company, mission
+accomplished.
+&lt;/p&gt;
+
+&lt;p&gt;
+As teachers, we can't do that. I'm not given a class of 32 kids and
+asked to pull out a couple of software engineers. As teachers, we're
+supposed to pull everyone along. 
+&lt;/p&gt;</description><category>pedagogy</category><category>policy</category><guid>http://cestlaz.github.io/posts/2015-11-04-tests-and-interviews.html/</guid><pubDate>Wed, 04 Nov 2015 05:00:00 GMT</pubDate></item></channel></rss>

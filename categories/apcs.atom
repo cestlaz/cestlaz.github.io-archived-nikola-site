@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>Posts about apcs</title>
+  <id>http://cestlaz.github.io/categories/apcs.atom</id>
+  <updated>2016-05-15T17:08:39Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/apcs.atom"/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/apcs/"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>I guess I'm a dumbass</title>
+    <id>http://cestlaz.github.io/posts/2014-02-27-dumbass.md/</id>
+    <updated>2014-02-27T00:00:00</updated>
+    <published>2014-02-27T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2014-02-27-dumbass.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;I like a fairly informal atmosphere in my classes. Students have to
+know that there's a line between teacher and student but I also want
+them to feel like we're all part of the Stuy CS family.&lt;/p&gt;
+&lt;p&gt;Whenever we start a new term, it takes a while to break down the
+walls. The students don't know what to expect of me, can they trust
+me? Am I a bozo? Who knows.&lt;/p&gt;
+&lt;p&gt;It helps when some of the class had me as a teacher before, but it still takes time.&lt;/p&gt;
+&lt;p&gt;I'm glad that this term, things are coming along nicely.&lt;/p&gt;
+&lt;p&gt;Let me share what happened in class today.&lt;/p&gt;
+&lt;p&gt;I was introducing merge sort - their first nlgn sorting
+algorithm. Before class, one of the students slipped off his seat and landed on the floor with a thud. He
+was fine although the brief butt, if you would, of jokes.&lt;/p&gt;
+&lt;p&gt;I relayed a story - many years ago, Ilya, one of the gang, was accused
+of being a dumbass. He responded "hey, it's never missed the seat." The
+class had a good laugh over it.&lt;/p&gt;
+&lt;p&gt;Fast forward a bit.&lt;/p&gt;
+&lt;p&gt;I had a deck of cards I wanted sorted. As a Stuy grad, I'm as lazy as
+the next guy so I didn't want to sort them, but I also didn't want to
+violate one of our two class tenets "Don't be a jerk" so rather than
+giving the cards to a student to sort, I split the deck in half and
+gave each half to a student.&lt;/p&gt;
+&lt;p&gt;They quickly caught on and subdivided the deck and gave away their
+halves. We did this until all the students had, at some point had one
+or more cards.&lt;/p&gt;
+&lt;p&gt;Then we got to the merge part. Each student sorted his or her pile and
+passed it back to the student who they got the cards from. This
+student then merged the two piles and passed the cards back.&lt;/p&gt;
+&lt;p&gt;As the cards made their way back to me a student noted "hey, one of my
+piles isn't in order." I commented that "the algorithm might fail if
+at some points you give your cards to a dumbass." This got a good
+laugh.&lt;/p&gt;
+&lt;p&gt;Finally, two pile of cards made their way to me and I started to merge
+then. At which point, I promptly dropped the cards all over the floor.&lt;/p&gt;
+&lt;p&gt;One of my students exclaimed: "That's what happens when you give you
+cards to a dumbass!!!!!"&lt;/p&gt;
+&lt;p&gt;It was awesome. We all cracked up.&lt;/p&gt;
+&lt;p&gt;I don't think I've been "insulted" quite so perfectly since my daughter
+called me an idiot in class last year (I fed her the straight line and
+she didn't disappoint).&lt;/p&gt;
+&lt;p&gt;I love it that my kids feel comfortable enough to joke but also know
+where the line is.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="algorithms" label="algorithms"/>
+    <category term="apcs" label="apcs"/>
+    <category term="pedagogy" label="pedagogy"/>
+  </entry>
+  <entry>
+    <title>Bucket Sorting</title>
+    <id>http://cestlaz.github.io/posts/2013-11-27-bucket-sorts.md/</id>
+    <updated>2013-11-27T00:00:00</updated>
+    <published>2013-11-27T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-11-27-bucket-sorts.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;In spite of the Java based annoyances I mentioned last time, I decided
+to go ahead and do Radix sort with my AP students. I usually don't
+cover it in AP Computer Science, but I like getting the kids to think
+about using arrays as buckets as it's a new way of thinking for them and it does give a non-trivial application that combines ararys and ArrayLists.&lt;/p&gt;
+&lt;p&gt;It's a nice little algorithm. You start with an Array of integers:&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/radix/array1.png" rel="lightbox"&gt;
+  &lt;img width="50%" src="http://cestlaz.github.io/img/radix/array1.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then, place them in buckets based on the least significant digit:&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/radix/buckets1.png" rel="lightbox"&gt;
+  &lt;img width="50%" src="http://cestlaz.github.io/img/radix/buckets1.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We then copy the numbers from the buckets back into the original array, keeping the order of the buckets (0-&amp;gt;9).&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/radix/array2.png" rel="lightbox"&gt;
+  &lt;img width="50%" src="http://cestlaz.github.io/img/radix/array2.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We then repeat this process on the 2nd least significant digit:&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/radix/step2.png" rel="lightbox"&gt;
+  &lt;img width="50%" src="http://cestlaz.github.io/img/radix/step2.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And so on until we're done:&lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/radix/step3.png" rel="lightbox"&gt;
+  &lt;img width="50%" src="http://cestlaz.github.io/img/radix/step3.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It's a nice algorithm to teach on a number of fronts. &lt;/p&gt;
+&lt;p&gt;First, we get to combine Arrays and ArrayLists. Since we'll always
+have 10 digits, the "bucket list" is of fixed size, while the
+individual bucket lengths vary. This leads to the Array of ArrayLists
+and we've got a single platform to compare and contrast the two. Which
+is better when and why?&lt;/p&gt;
+&lt;p&gt;The algorithm itself is also worth talking about. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It's relatively simple - we did it by hand before implementing it.&lt;/li&gt;
+&lt;li&gt;It's got some history worth discussing.&lt;/li&gt;
+&lt;li&gt;There are a number of other questions we can approach&lt;/li&gt;
+&lt;li&gt;How can we deal with negatives?&lt;/li&gt;
+&lt;li&gt;What about strings?&lt;/li&gt;
+&lt;li&gt;Will it always work (what about floating point numbers).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Finally, we can talk about speed -- they're testing that now and we'll discuss our Radix sort vs the built in Arrays.sort() on Monday.&lt;/p&gt;
+&lt;p&gt;We'll do the n^2 and nLog(n) sorts a little later, but I think this
+was a detour well worth taking.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="apcs" label="apcs"/>
+    <category term="pedagogy" label="pedagogy"/>
+  </entry>
+  <entry>
+    <title>Teaching Languages</title>
+    <id>http://cestlaz.github.io/posts/2013-11-23-teaching-languages.md/</id>
+    <updated>2013-11-23T00:00:00</updated>
+    <published>2013-11-23T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-11-23-teaching-languages.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Java's never been my favorite language either for using or for
+teaching.&lt;/p&gt;
+&lt;p&gt;As a programmer, after starting with languages like Fortran
+and Pascal, I really cut my teeth with C. More recently, Python has
+been my go to language to get real work done. &lt;/p&gt;
+&lt;p&gt;From a teaching point of view most languages have good points
+and bad ones. When the AP class went from Pascal to C++ I lamented
+losing the simplicity and the low cost of entry. On the other hand,
+C++ gave us objects (not that I'm a big OOP guy), separate files, the
+ability to use tons of real world libraries and more.&lt;/p&gt;
+&lt;p&gt;Moving to Java simplified things in a number of ways but removed
+memory management. If we didn't teach that along with the stack frame
+in our Systems class, I think our kids would be missing something very
+important.&lt;/p&gt;
+&lt;p&gt;I was reminded of some of Java's limitations as a teaching language over the past couple of days.&lt;/p&gt;
+&lt;p&gt;As posted earlier, I had my AP students create their own class to
+mimic the Java ArrayList. Before introducing the ArrayList in Java, I
+wanted to introduce generics:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;public class myList&amp;lt;T&amp;gt; {
+  T[] data;
+  public myList() {
+    data = new T[10];
+  }
+  // much more not shown 
+}
+&lt;/pre&gt;
+
+
+&lt;p&gt;Turns out, you can no longer do this.&lt;/p&gt;
+&lt;p&gt;After doing some searching, there does appear to be a way to get this
+effect but it was certainly not something I wanted to do with my
+classes. I was looking for something more pedagogically sound - an
+easy way to show the concept and a way to springboard to an ArrayList.&lt;/p&gt;
+&lt;p&gt;Oh well...&lt;/p&gt;
+&lt;p&gt;So, we finished ArrayLists and I was mapping out a plan for Monday. I
+thought Radix sort would be cool -- we already introduced using an
+array to tally votes when we did the mode. This seemed to be a natural
+extension. It would combine Arrays and ArrayLists and illustrate when each is appropriate.&lt;/p&gt;
+&lt;p&gt;First the kids would set up an array of 10 buckets, each being an ArrayList:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;public class Buckets {
+  ArrayList&amp;lt;Integer&amp;gt;[] buckets;
+  public Buckets() {
+    buckets = new ArrayList&amp;lt;Integer&amp;gt;[10];
+    for (int i=0;i&amp;lt;10;i++)
+      buckets[i] = new ArrayList&amp;lt;Integer&amp;gt;();
+  }
+  // much more not shown 
+}
+&lt;/pre&gt;
+
+
+&lt;p&gt;Unfortunately, Java type safety once again reared its ugly head. OK,
+maybe not ugly to a programmer, but ugly to a teacher. You can't do
+it. You can do it with an old school ArrayList without the generic:
+&lt;code&gt;ArrayList[] buckets = new Arraylist[10];&lt;/code&gt; but of course, this
+leaves you open to type mismatch problems.&lt;/p&gt;
+&lt;p&gt;Once again, Java provides a convoluted workaround that might be fine
+for a professional programmer, but for a student, it would be nuts.&lt;/p&gt;
+&lt;p&gt;I might go ahead with the Radix sort lesson anyway, we'll see, but it
+would be nice if I could teach this level of course without having to
+fight the implementation language.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="apcs" label="apcs"/>
+    <category term="pedagogy" label="pedagogy"/>
+  </entry>
+  <entry>
+    <title>Stuyablo II</title>
+    <id>http://cestlaz.github.io/posts/2013-10-27-stuyabloII.md/</id>
+    <updated>2013-10-27T00:00:00</updated>
+    <published>2013-10-27T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-10-27-stuyabloII.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Last week in my AP classes, we were working on inheritance.&lt;/p&gt;
+&lt;p&gt;So, what to do?&lt;/p&gt;
+&lt;p&gt;Last time around I had my classes work on a "speed dating" program -
+StuyDater. Back then JonAlf had his classes work on Stuyablo, that
+classic dungeon crawl.&lt;/p&gt;
+&lt;p&gt;I still plan on reworking the StuyDater project, but first I decided
+to do my take on Stuyablo. Of course, we've improved on it. This time
+it's &lt;strong&gt;Stuyablo II&lt;/strong&gt;. The next guy will have to do &lt;strong&gt;Stuyablo III - in
+3D&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;We used the concept of a base class &lt;strong&gt;Character&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;public class Character {
+  private int health;
+  private String name;
+
+  public String toString() {
+    return Name;
+  }
+
+  // etc
+}
+&lt;/pre&gt;
+
+
+&lt;p&gt;And then some derived classes such as:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;public class Wizard extends Character {
+ private int mana;
+ // etc
+}
+&lt;/pre&gt;
+
+
+&lt;p&gt;We spend time dealing with public vs private vs protected, issues with
+constructors, super and the like but then the weekend was upon us.&lt;/p&gt;
+&lt;p&gt;So, what was the assignment - we broke up into groups. Each group had
+to design one aspect of the project. Some groups had to decide on what
+would make up a player character. Perhaps a fighter or a wizard. What
+base level attributes are needed? What methods? What do they need as
+parameters and what do they return? What will the combat system look
+like? &lt;/p&gt;
+&lt;p&gt;Another groups had to work on non player characters. Yet others
+designed the game driver.&lt;/p&gt;
+&lt;p&gt;None of them were supposed to actually write finished code. &lt;/p&gt;
+&lt;p&gt;I asked them to bounce around ideas on our mailing list over the
+weekend.&lt;/p&gt;
+&lt;p&gt;It's been amazing to watch the discussion. It's now Saturday evening
+and throughout the day there's been a constant flow of ideas and
+discussion. I love it when the classes are into the projects. &lt;/p&gt;
+&lt;p&gt;Monday we're going to sync up, finalize the design, and then start
+writing this thing.&lt;/p&gt;
+&lt;p&gt;It's going to be fun.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="apcs" label="apcs"/>
+    <category term="pedagogy" label="pedagogy"/>
+  </entry>
+  <entry>
+    <title>Who won the election -- Quadratic to Linear Time!!!!!</title>
+    <id>http://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md/</id>
+    <updated>2013-03-23T00:00:00</updated>
+    <published>2013-03-23T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;Last week was crazy. Busy, stressful, late night after late night. It
+ended, though, on a great note.&lt;/p&gt;
+&lt;p&gt;A young lady in my intro class found me in my office near the end of the day:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Student: Mr. Z, I wanted to make sure to catch you before vacation!&lt;/p&gt;
+&lt;p&gt;Me: What's up?&lt;/p&gt;
+&lt;p&gt;Student: I wanted to tell you that today's lesson was AWESOME!!!!!!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Wow. I've been teaching 23 years and that's never happened before!!!!&lt;/p&gt;
+&lt;p&gt;So, what was the hubbub about?&lt;/p&gt;
+&lt;p&gt;We've been doing list processing in Python over the past few days. We already did the basics, such as finding the largest element in a list:&lt;/p&gt;
+&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight python linenos %}
+def find_max(L):
+    maxval = L[0]
+    i=0
+    while i&lt;len if l&gt;maxval:
+            maxval=L[i]
+        i += 1
+    return maxVal&lt;/len&gt;&lt;/p&gt;
+&lt;p&gt;We've also done basic searching, counting elements, removing elements, etc.&lt;/p&gt;
+&lt;p&gt;Today we started with finding the mode of a list of grades.&lt;/p&gt;
+&lt;p&gt;Most students approached the problem as a maximum problem. Assume the
+first item is the mode and find it's frequency, then proceed through
+the list each time seeing if the current node occurs more fequently
+than the "mode so far." Pretty much the same idea as find_max (but in this case, returning a list of all the modes).&lt;/p&gt;
+&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight python linenos %}
+def mode(L):
+    modecount = L.count( L[0] )
+    modes = [ L[0] ]
+    i = 1
+    while i &amp;lt; len(L):
+        c = L.count(L[i]) 
+        if c &amp;gt; modecount:
+            modecount = c
+            modes = [ L[i] ]
+        elif c==modecount and L[i] not in modes:
+            modes.append( L[i] )
+        i += 1
+    return modes&lt;/p&gt;
+&lt;p&gt;Pretty cool. The kids are doing something pretty sophisticated here. &lt;/p&gt;
+&lt;p&gt;Time to look deeper. We started running this on larger and larger data
+sets. Things started really slowing down at about 20K. We then timed
+things to get some numbers (thanks
+&lt;a href="http://stackoverflow.com/questions/5998245/get-current-time-in-milliseconds-in-python"&gt;StackOverflow&lt;/a&gt;). &lt;/p&gt;
+&lt;p&gt;What was going on. The students pretty quickly honed in on the line
+that called L.count(L[i]) -- &lt;strong&gt;Hidden Complexity&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;We haven't done big-O notation but the class easily saw that count had
+to go through the entire data set and we ended up with an N^2
+algorithm. For example, if we have 10 items, the main loop executes 10
+times and each time, count goes through the entire list (10 items) as
+well. If we go to 100 items, it becomes 100x100.&lt;/p&gt;
+&lt;p&gt;What to do????&lt;/p&gt;
+&lt;p&gt;Time to talk about what's probably the most discussed instance of mode
+finding - elections. The winner is "the mode of the ballots."&lt;/p&gt;
+&lt;p&gt;Of course we don't use the above algorithm. We usually tally or count the ballots. We go through the ballots once, each time adding one to the appropriate candidates "bucket." &lt;/p&gt;
+&lt;div align="center"&gt;
+&lt;a href="http://cestlaz.github.io/img/tally.png" rel="lightbox"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/tally.png" class="" alt=""&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;From here, it's a short step to see that we can use a list. It's
+indices represent the grade values and the data in the list the counts
+or tallies:&lt;/p&gt;
+&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight python linenos %}
+def fastmode(L):
+    i=0
+    counts = []
+    while i&amp;lt;max(L)+1:
+        counts.append(0)
+        i+=1
+    i=0
+    while i &amp;lt; len(L):
+        counts[ L[i] ] += 1
+        i += 1
+    modecount = max(counts)
+    modes = []
+    i=0
+    while i &amp;lt; len(counts):
+        if counts[i]==modecount:
+            modes.append(i)
+        i=i+1
+    return modes&lt;/p&gt;
+&lt;p&gt;We go through the list once to build the tallies and then the "tally"
+list once to get the modes. Simple, straightforward, and linear
+time!!!!!!!!!&lt;/p&gt;
+&lt;p&gt;The original routine started to hit a roadblock at about 20K items,
+here we got to one million without breaking a sweat.&lt;/p&gt;
+&lt;p&gt;The take away:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Get it working first.&lt;/li&gt;
+&lt;li&gt;Then profile to find your bottleneck&lt;/li&gt;
+&lt;li&gt;Look at the problem in a different way&lt;/li&gt;
+&lt;li&gt;Using data structures in a clever way can really improve performance.&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;</summary>
+    <category term="apcs" label="apcs"/>
+    <category term="intro" label="intro"/>
+    <category term="pedagogy" label="pedagogy"/>
+  </entry>
+  <entry>
+    <title>Pretty sneaky, Sis</title>
+    <id>http://cestlaz.github.io/posts/2012-01-11-pretty-sneaky-sis.html/</id>
+    <updated>2012-01-11T00:00:00</updated>
+    <published>2012-01-11T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2012-01-11-pretty-sneaky-sis.html/"/>
+    <summary type="html">&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;/div&gt;&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;/div&gt;&lt;div style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img height="200" id="il_fi" src="http://ecx.images-amazon.com/images/I/5103F3DHQ0L._SL500_AA300_.jpg" style="padding-bottom: 8px; padding-right: 8px; padding-top: 8px;" width="200"&gt;&lt;/div&gt;&lt;br&gt;&lt;div style="margin-left: 1em; margin-right: 1em;"&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;a href="https://www.google.com/search?q=connect+4&amp;amp;hl=en&amp;amp;prmd=imvns&amp;amp;source=lnms&amp;amp;tbm=isch&amp;amp;ei=Y74NT7zGJoTX0QHxv8zsBQ&amp;amp;sa=X&amp;amp;oi=mode_link&amp;amp;ct=mode&amp;amp;cd=2&amp;amp;ved=0CBUQ_AUoAQ&amp;amp;biw=1016&amp;amp;bih=623#"&gt;&lt;/a&gt;&lt;br&gt;&lt;a href="https://www.google.com/search?q=connect+4&amp;amp;hl=en&amp;amp;prmd=imvns&amp;amp;source=lnms&amp;amp;tbm=isch&amp;amp;ei=Y74NT7zGJoTX0QHxv8zsBQ&amp;amp;sa=X&amp;amp;oi=mode_link&amp;amp;ct=mode&amp;amp;cd=2&amp;amp;ved=0CBUQ_AUoAQ&amp;amp;biw=1016&amp;amp;bih=623#"&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;I've always lamented the fact that we don't have the time or structure to really teach our kids to program.&lt;br&gt;&lt;br&gt;In their early classes, they learn syntax, algorithms, and  some ways of storing data and while they  will probably work on some larger projects as they study CS, kids seem to be mostly left on their own in terms of how to take a project from problem or idea to completion.&lt;br&gt;&lt;br&gt;This frequently leads to poorly designed projects that are harder for the kids to write, debug, and modify. They end up with huge functions/methods no overall plan or design and everything's pretty much a mess&lt;br&gt;&lt;br&gt;To try to address this, and having finished  most of the A.P. curriculum and not wanting to diverge from the other teachers, I figured we'd develop a class project before I gave the class time for their final projects.&lt;br&gt;&lt;br&gt;I'm not a huge game person, but since they decompose well, we decided on writing connect 4 - a game that can be described as tic-tac-toe but with four in a row, on a larger board, and WITH GRAVITY!!!!!!&lt;br&gt;&lt;br&gt;Actually, the choice of project didn't matter that much so long as it was the right size -- this was more about how we develop a program than about the actual program itself.&lt;br&gt;&lt;br&gt;I started by giving my classes about ten or so minutes to talk among themselves to design the program -- no guidance was given. About seven minutes in, I asked them to reflect on whatever they were discussing - if they were discussing a data structure, why? If class design, why? What was so important about whatever they were discussing that made it their first order of business.&lt;br&gt;&lt;br&gt;After a while, we started to share thoughts as a group. Most suggestions revolved around details -- how to you check for a winner, how do you make a move. This made sense - we've spent much of the term dealing with writing code fragments to do things and not too much time thinking about overall design.&lt;br&gt;&lt;br&gt;This lead to a healthy discussion of looking at things from the top down as well as bottom up.&lt;br&gt;&lt;br&gt;By the end of the class, we had identified the key classes we'd need (Board, Player, UI, Game Driver) and had some idea as to how they would relate to each other. By the next morning, we added a data structure for the board.&lt;br&gt;&lt;br&gt;Over the next few days we filled in the missing pieces. We moved up and down levels of abstraction being careful to discuss why we designed things the way we did and adapting pieces as needed.&lt;br&gt;&lt;br&gt;By the end of the project we were able to accomplish the following:&lt;br&gt;&lt;ul&gt;&lt;li&gt;Students saw how to have classes refer to each other - that is, the Player class had an instance variable to hold the board, while the Game class had instances for Players as well as the Board). &lt;/li&gt;&lt;li&gt;We were able to use different user interfaces for the program -- starting with simple console input and then moving to a GUI -- all we had to do was extend the UI class.&lt;/li&gt;&lt;li&gt;Likewise, implementing a computer player (albeit a rather limited one) was trivial.&lt;/li&gt;&lt;li&gt;I also tried to show frequent testing and the idea of developing one concept at a time.&lt;/li&gt;&lt;li&gt;We discussed the idea that while design is important, there's a point where you can over design. Be aware of the scope of a project, what can generalize, and what shouldn't.&lt;/li&gt;&lt;li&gt;With a good design, it was also trivialize to change things like game rules, how to move, board size. etc.&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Based on preliminary feedback, I think the students have a much better ideas as to how to break down, design, and build up a project from design to implementation.&lt;br&gt;&lt;br&gt;If any one's interested, the code is available &lt;a href="http://code.google.com/p/ml1x-z-src/source/browse/#svn%2Ftrunk%2Fsrc%2Fc4"&gt;here&lt;/a&gt;.&lt;br&gt;&lt;br&gt;We'll see if it helps with the final projects, but I'm optimistic.  Spending time highlighting the design and development process while building a project can only help.&lt;br&gt;&lt;br&gt;Anyone else have interesting mid-size projects they do with their classes?&lt;br&gt;&lt;br&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width="1" height="1" src="https://blogger.googleusercontent.com/tracker/468689896075458340-5982145998594622193?l=cestlaz.blogspot.com" alt=""&gt;&lt;/div&gt;</summary>
+    <category term="apcs" label="apcs"/>
+  </entry>
+  <entry>
+    <title>Where's Waldo - Text style</title>
+    <id>http://cestlaz.github.io/posts/2011-12-03-wheres-waldo-text-style.html/</id>
+    <updated>2011-12-03T00:00:00</updated>
+    <published>2011-12-03T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2011-12-03-wheres-waldo-text-style.html/"/>
+    <summary type="html">&lt;br&gt;&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/-hMHnHYdTs4s/TtplhsggjFI/AAAAAAAAGqs/AwPiobAINw0/s1600/Screenshot%2Bat%2B2011-12-03%2B12%253A55%253A43.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" height="100" src="http://3.bp.blogspot.com/-hMHnHYdTs4s/TtplhsggjFI/AAAAAAAAGqs/AwPiobAINw0/s200/Screenshot%2Bat%2B2011-12-03%2B12%253A55%253A43.png" width="100"&gt;&lt;/a&gt;&lt;/div&gt;&lt;br&gt;Ok, it's a word search.&lt;br&gt;&lt;br&gt;We're always looking for interesting applications to build lessons around. Over the years, I've tried different things when teaching 2 dimensional arrays. Simple game boards, representing a crossword puzzle, tables of various sorts, etc.&lt;br&gt;&lt;br&gt;This year, &lt;a href="http://www.jonalf.com/"&gt;JonAlf&lt;/a&gt;, one of my amazingly talented colleagues, decided to go with building a word search. I decided to steal the idea. It's a great one.&lt;br&gt;&lt;br&gt;I thought I'd use this post to go through the project and why I like it.&lt;br&gt;&lt;br&gt;Ultimately, the students end up with a program that will generate an n by m word search filled with random words from a dictionary. We gave the kids a skeleton of the base class. The only actual code we had to supply was the method that loaded a dictionary file into memory. You can check out the assignment &lt;a href="https://sites.google.com/a/stuycs.org/home/courses/ml1x/zamansky/work/hw-20-duetbd"&gt;here&lt;/a&gt; and the finished code &lt;a href="http://code.google.com/p/ml1x-z-src/source/browse/#svn%2Ftrunk%2Fsrc%2FWordSearch"&gt;here&lt;/a&gt; (we updated the repository as the project developed).&lt;br&gt;&lt;br&gt;&lt;br&gt;The first part of the project are pretty mundane. The kids write a couple of constructors and toString. Basically just practice traversing a 2D array. The project starts to get interesting at part 2, when they write the methods that add words into the grid. First horizontally:&lt;br&gt;&lt;br&gt;&lt;script src="https://gist.github.com/1428475.js?file=addWordH"&gt;&lt;/script&gt;&lt;br&gt;&lt;br&gt;After they write the method to add words vertically, we can start to refine things. We notice that the routines are essentially the same. The only difference between adding a word horizontally and vertically is  what we add  to the row and column each time. For one, there is a delta column of + 1, for the other it's a delta row. Further, they realize that adding diagonal words just needs both deltas. This leads us to factoring out the common aspects of the code and writing something like:&lt;br&gt;&lt;br&gt;&lt;script src="https://gist.github.com/1428495.js"&gt;&lt;/script&gt;&lt;br&gt;&lt;br&gt;All of a sudden, they've written one piece of code that can add words in 8 orientations.&lt;br&gt;&lt;br&gt;After filling the rest of the grid with random letters, we turn our attention to building a random puzzle.&lt;br&gt;&lt;br&gt;This part of the project involves using an ArrayList of words. Our students frequently mix up array and ArrayList notation early on so by having a project that uses both but in clearly delineated areas, the students can be more comfortable with each.&lt;br&gt;&lt;br&gt;For this piece, the code is again straight forward. Students run a loop that gets a random word from our dictionary and tries to place it in our grid at a random location choosing one of our possible orientations randomly. We get to see another nice little refinement again when we move from the typical first take at building a random puzzle which uses a three (or more) way if statement to select how to add words:&lt;br&gt;&lt;br&gt;&lt;script src="https://gist.github.com/1428594.js?file=addWords1"&gt;&lt;/script&gt;&lt;br&gt;&lt;br&gt;to using our more general addWords method described above:&lt;br&gt;&lt;br&gt;&lt;script src="https://gist.github.com/1428599.js?file=addWords2"&gt;&lt;/script&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;When we're all done, we had some time to project the word search on the board and fun was had by all.&lt;br&gt;&lt;br&gt;Peter, another one of our CS teachers had a great suggestion that I think I'll try. Start a competition to have the students modify the program so that it generates as densely packed  a wordsearch  as possible (giving higher scores first for longer words, then number of words).&lt;br&gt;&lt;br&gt;Between the way the project broke down, the topics covered and the little refinements, I really enjoyed working with my classes on this project -- I'm hoping they enjoyed it as well.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width="1" height="1" src="https://blogger.googleusercontent.com/tracker/468689896075458340-2041316883816388484?l=cestlaz.blogspot.com" alt=""&gt;&lt;/div&gt;</summary>
+    <category term="apcs" label="apcs"/>
+  </entry>
+</feed>

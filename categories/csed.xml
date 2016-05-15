@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (csed)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/csed.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 15 May 2016 17:08:38 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Student Projects 2014 - Let's go to the video tape</title><link>http://cestlaz.github.io/posts/2014-06-23-softdev-videos-2014.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+Just completed the second time through for my Software Development
+course. Last year we had a great time at our Demo Night hosted at
+Google.
+&lt;/p&gt;
+
+&lt;p&gt;
+This year, unfortunately, due to a variety of reasons, we couldn't get
+the event together. Still, the kids did great work so I thought I'd
+share.
+&lt;/p&gt;
+
+&lt;p&gt;
+This year, I asked each group to make a short video.
+&lt;/p&gt;
+
+&lt;p&gt;
+First up, we've got bit&amp;lt;&amp;lt;shift - a search engine for code. Nice idea
+and a really slick interface.
+&lt;/p&gt;
+
+&lt;div class="center"&gt;
+&lt;iframe src="//player.vimeo.com/video/98697078" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt; &lt;p&gt;&lt;a href="http://vimeo.com/98697078"&gt;bitshift: a source code search engine&lt;/a&gt; from &lt;a href="http://vimeo.com/ear"&gt;Ben Kurtovic&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+Next up, we've got Socialpedia - our answer to Klout -
+&lt;/p&gt;
+
+
+&lt;div class="center"&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/uhLZBsZWQGk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+And then Twitch Rock-em-Sock-em Robots - 
+&lt;/p&gt;
+
+&lt;div class="center"&gt;
+&lt;iframe width="560" height="315" src="//www.youtube.com/embed/Am3PTB_FvNs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+There were a bunch of other neat projects including a site that
+crowd-sources 311 trash related problems and a version of the game
+"Frozen Synapse" where you can program your forces using an embedded
+Lisp interpreter.
+&lt;/p&gt;
+
+&lt;p&gt;
+Very cool stuff.
+&lt;/p&gt;
+
+&lt;p&gt;
+Good job guys!!!!!
+&lt;/p&gt;</description><category>csed</category><guid>http://cestlaz.github.io/posts/2014-06-23-softdev-videos-2014.html/</guid><pubDate>Mon, 23 Jun 2014 04:00:00 GMT</pubDate></item><item><title>Build it first</title><link>http://cestlaz.github.io/posts/2013-11-19-build_it.md/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div&gt;&lt;p&gt;The subtitle of this post is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;and why my students are going to hate me tomorrow.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When my good friend Gerry Seidman talks to my classes, he frequently
+says "never use a data structure or algorithm you couldn't build yourself."&lt;/p&gt;
+&lt;p&gt;This doesn't mean that you have to write everything from scratch, just
+that you should have some knowledge as to what's going on under the
+hood. I find that all too often young programmers just rely on APIs
+and libraries and really don't know how their computers and programs are working.&lt;/p&gt;
+&lt;p&gt;And it's never too early to start.&lt;/p&gt;
+&lt;p&gt;We've been spending time talking about arrays recently. Now, most of
+my students have some exposure to Python and so we started talking
+about the flexibility and power of the Python list vs the limited
+facilities of the Java array.&lt;/p&gt;
+&lt;p&gt;How to solve the problem and make Java easier to work with? Let's
+write our own list class. We started simple:&lt;/p&gt;
+&lt;pre class="code literal-block"&gt;&lt;span&gt;&lt;/span&gt;public class myList {
+  private int[] data;
+  private int numItems;
+
+  public myList() {
+    data = new int[5];
+    numItems = 0;
+  }
+
+  // append to the end of the list
+  public add(int d) {
+    if (numItems &amp;gt;= data.length) {
+      tmp = new int[data.length+data.length/2];
+      for (int i=0;i&amp;lt;numItems;i++)
+        tmp[i]=data[i];
+      data = tmp;
+    }
+
+    data[numItems]=d;
+    numItems = numItems + 1;
+  }
+}
+&lt;/pre&gt;
+
+
+&lt;p&gt;from there we added functionality such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Inserting in arbitrary locations&lt;/li&gt;
+&lt;li&gt;Removing items from the list&lt;/li&gt;
+&lt;li&gt;Searching for an item&lt;/li&gt;
+&lt;li&gt;Setting the item at a location to a value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And of course we were also able to talk about things like refactoring
+out growing the array into a private method.&lt;/p&gt;
+&lt;p&gt;And tonight the classes are changing the internal array from int[] to String[].&lt;/p&gt;
+&lt;p&gt;Of course, what we're building is an ArrayList. Tomorrow we'll reveal
+that little fact and of course the classes will all hate me, but then,
+they'll really understand what's going on under the hood.&lt;/p&gt;&lt;/div&gt;</description><category>csed</category><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2013-11-19-build_it.md/</guid><pubDate>Tue, 19 Nov 2013 05:00:00 GMT</pubDate></item><item><title>Back to Work</title><link>http://cestlaz.github.io/posts/2012-11-02-back-to-work.md/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div&gt;&lt;h4&gt;On going back to work today&lt;/h4&gt;
+&lt;p&gt;Since school was still out due to Sandy, we ran a second online class
+yesterday. At the end of the session, which I'll summarize below, I
+told the class what I wanted them to accomplish today and over the
+weekend. One student queried "you mean no class on Friday :-(?" Alas
+no -- while students aren't reporting to school this morning, teachers
+are.&lt;/p&gt;
+&lt;p&gt;Of course the logic as to why is far from sound. Some schools are
+fine, some not, in our case, there's no subway service south of 34th
+street or coming in from Brooklyn and we're located near the tip of
+Manhattan. &lt;/p&gt;
+&lt;p&gt;What are we going to do? Who knows. We don't have lessons to plan and
+while Stuy has power, phones and internet are out. Professional
+development? Even when planned extensively, I've found it to be mostly
+useless (I always have to sit through math PD, for example, learning
+how to use a graphing calculator). &lt;/p&gt;
+&lt;p&gt;So, we're going to report in for no real purpose. Best I can figure,
+the city wants teachers in so they can call it a professional
+development day then they can try to change things so that students
+will report during Brooklyn Queens day next semester thus restoring
+one instructional day lost this week. Not a bad idea to recapture the
+day but to make teachers - coming from all over the area - trudge in
+for no purpose just to play politics is distasteful but unfortunately typical. &lt;/p&gt;
+&lt;p&gt;To add to the insult, not only are us teachers still in the dark as to
+what's going on, we weren't even told when to report until after
+midnight yesterday. I woke up at my usual 5:00am to exercise but first
+checked my email -- waiting was an email from Chancellor Dennis
+Walcot. I recieved it at 12:52 this morning. This was when I was first
+told that I was to report to school at 10:00am. I can't believe this
+decision couldn't have been made and emailed out a few hours
+earlier. In any event, I'm waiting until 10:00 to get in - I've often
+found the building locked when I've shown up before official opening hours.&lt;/p&gt;
+&lt;p&gt;So now for the part of my job that I actually enjoy:  &lt;/p&gt;
+&lt;h4&gt;How did yesterday's online class go?&lt;/h4&gt;
+&lt;p&gt;Today's class was a wrapup of a mini project -- basically an
+add-a-line story site. You can see an unfinished version that two of
+the students put together &lt;a href="http://ml7.stuycs.org:5200"&gt;here&lt;/a&gt;. You can
+see more of the stuff we are using on our &lt;a href="http://github.com/organizations/stuycs-ml7"&gt;class github
+page&lt;/a&gt;. The students are
+using &lt;a href="http://flask.pocoo.org"&gt;Flask&lt;/a&gt; which is a python website
+generator along with &lt;a href="http://www.mongodb.org"&gt;MongoDB&lt;/a&gt;. We had to tie
+up some loose ends.&lt;/p&gt;
+&lt;p&gt;We again broadcast a Google+ hangout live through YouTube and we again
+used a google doc as a chat space. This time we used the right hand
+side bar for comments and only used the document for more permanent
+material (a web refernce for example). It worked much better.  The
+vertical flow of comments on the sidebar were much easier to track and
+work with than a freeform document.&lt;/p&gt;
+&lt;p&gt;The session still had the time delay problem and the feedback loop is
+still a killer but the students again seemed to enjoy the
+experience. This is clearly not a replacement for in person teaching,
+but again, better than nothing on a day off.&lt;/p&gt;
+&lt;h4&gt;And a note on the Stuy CS Culture&lt;/h4&gt;
+&lt;p&gt;The seniors were game for this experiment and would be happy to go
+again today if we were able to.  They also continually surprise me in
+little ways. When we started this mini project, we all had to learn
+how to use MongoDB (myself included). At first I had a hard time
+confirming that they had done the outside work to learn the MongoDB
+specifics. Only as they continually gave me better alternatives to my
+approaches did I know that they were on top of things.&lt;/p&gt;
+&lt;p&gt;On the other hand, my sophomores were much less receptive to an online
+class during the hurricane days. A handful wanted to give it a go, but
+the majority never responded to my email. Why was that? &lt;/p&gt;
+&lt;p&gt;I have a few thoughts. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A big reason is that I've only been with my sophomores for a short
+time. We haven't yet built the rapport and culture that exists in my
+senior classes. I always notice a difference in class attitude around
+Halloween but we really don't have the feeling of family until late
+November or some time in December.&lt;/li&gt;
+&lt;li&gt;The sophomores are in a required course, the seniors an elective. I
+think this is secondary to the culture / rapport but I'm sure it has
+an effect.&lt;/li&gt;
+&lt;li&gt;I believe the seniors have a better understanding that what we're doing in class is to their benefit and the sophomores are still &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I'm going to have to pay more attention to the time line from when
+students come into my class and when they become part of "the family."&lt;/p&gt;&lt;/div&gt;</description><category>community</category><category>csed</category><guid>http://cestlaz.github.io/posts/2012-11-02-back-to-work.md/</guid><pubDate>Fri, 02 Nov 2012 04:00:00 GMT</pubDate></item><item><title>Sandy Bridge and Screen Casting</title><link>http://cestlaz.github.io/posts/2012-10-31-sandy-bridge.html/</link><dc:creator>Mike Zamansky</dc:creator><description>Here's what the bridge leading across the West Side Highway over to
+Stuy during the storm. Hence the title with the weak tech reference.
+
+&lt;div align="center"&gt;
+&lt;img width="300" src="http://cestlaz.github.io/img/hurricane-bridge.jpg"&gt;
+&lt;/div&gt;
+
+The storm has kept the schools closed all week so it's as good a
+time as any to try to resurrect this blog.
+&lt;p&gt;
+As you can see, I've moved from blogger to a Jekyll based blog hosted
+on Github. I'm really liking the way it works but more on that at a
+later date.
+&lt;/p&gt;&lt;p&gt;
+Some time Monday evening or Tuesday morning, I asked Batya if she
+thought my seniors would be up for a livestreamed class (Batya, my
+daughter, for anyone who doesn't know, is in one of the sections of
+the class). It turned out they were all in. 
+&lt;/p&gt;&lt;p&gt;
+I've got to say that I've got amazing classes -- the fact that they're
+into the same brand of insanity as I am and even willing to go again tomorrow isawesome.
+&lt;/p&gt;&lt;p&gt;
+So, here was today's experiment:
+&lt;/p&gt;&lt;p&gt;
+A Google+ hangout based live stream of Stuyvesant's
+Software Development class. In my favor was the fact that I was just
+going to introduce CSS - not a subject that lends itself to deep
+classroom discussion. Against me was the use of technologies I haven't
+used before and the fact that we have about 64 students that I was
+hoping to reach.
+&lt;/p&gt;&lt;p&gt;
+So, how did it go?
+&lt;/p&gt;&lt;p&gt;
+
+&lt;/p&gt;&lt;h3&gt;First, let's talk about the technical side.&lt;/h3&gt;
+
+Here's the basic setup:
+
+&lt;img src="http://cestlaz.github.io/img/screenshot.png"&gt;
+
+I've got two monitors and Google would only broadcast the screenshot
+from the smaller one on the right. It had Emacs and a chrome going
+most of the time with an occasional shell. While teaching about CSS, I
+also introduced the students
+to &lt;a href="https://github.com/magit/magit/downloads"&gt;Magit&lt;/a&gt; as
+well as
+Emacs &lt;a href="https://github.com/skeeto/impatient-mode"&gt;impatient&lt;/a&gt;
+mode both of which are awesome. On the left hand screen I had the
+actual Hangout as well as the Google shared doc.
+&lt;p&gt;
+It turns out that you can't make a public Hangout and also stream it
+live on YouTube, you can only invite people in your circles. Since
+most of my students aren't in my circles, only a few could "join" the
+Hangout. Most watched the YouTube stream and we all connected to a
+shared Google Doc for notes and questions.
+&lt;/p&gt;&lt;p&gt;
+The Google Doc turned out not to be the best idea. It got everyone
+writing in the same document but people ended up writing all over the
+document. If something wasn't on the screen I wouldn't see it. We're
+going to try something more sequential tomorrow -- maybe disqus
+comments. 
+&lt;/p&gt;&lt;p&gt;
+The other two problems were the low resolution of the screenshot
+broadcast and the lag. I really had to blow up the font size. If
+anyone has any ideas how to do this well, please share. The lag was
+also a problem since it kept me from having anything resembling a reasonable feedback loop.
+&lt;/p&gt;&lt;p&gt;
+On the other hand, my students were left with this enduring image of me:
+
+
+&lt;/p&gt;&lt;div align="center"&gt;&lt;img width="50%" src="http://cestlaz.github.io/img/monocle.jpg"&gt;&lt;/div&gt;
+
+&lt;h3&gt;And the view from a teacher&lt;/h3&gt;
+
+On the one hand, it was pretty cool to be at home and able to work
+with my students but there were some major deficiencies:
+
+&lt;dl&gt;
+&lt;dt&gt;Can't see the audience&lt;/dt&gt;
+&lt;dd&gt;Even at best, with the Hangout you can only see 10 people. I'm guessing it feels like a stage actor doing a movie. I was talking but couldn't see my audience. No nodding heads, no nodding off heads, just talking to a screen. It was a little disconcerting. Teachers adjust to their class all the time both consciously and subconsciously. You might do something overt like call on a particular student or maybe sense it's time for a joke or even little things like how or where you stand. All of this was lost.&lt;/dd&gt;
+&lt;dt&gt;Need a better chatroom&lt;/dt&gt;
+&lt;dd&gt;I mentioned that the Google Doc wasn't a great idea. I think
+something that's more vertical like a chatroom will work better. I'll
+know tomorrow.&lt;/dd&gt;
+&lt;dt&gt;An shared board space would be very cool&lt;/dt&gt;
+&lt;dd&gt;The other missing piece is a way for the students to directly interact with what I'm presenting. A shared Emacs would be amazing.&lt;/dd&gt;
+&lt;dt&gt;The delay is a killer&lt;/dt&gt;
+&lt;dd&gt;This was also a problem. I found myself saying or doing something then waiting until something came through the document. This hurt the flow considerably&lt;/dd&gt;
+
+I really found the experience enlightening. People keep talking about
+recorded lectures and MOOCS and all that but if anything, today's
+experience just confirms to me that there's nothing like an in class
+teacher, particularly with a small group of students.
+
+That said, I think this was a good experience and my students seem to
+agree. We spent part of an otherwise unproductive day in a productive
+manner and we're planning on doing it again tomorrow.
+
+&lt;p&gt;
+Since Students will be home until Monday, I'd like to go for a third
+class on Friday but I'll be back at work so it looks like no class
+after tomorrow until Monday.
+
+&lt;/p&gt;&lt;p&gt;
+Comments?&lt;/p&gt;&lt;/dl&gt;</description><category>community</category><category>csed</category><guid>http://cestlaz.github.io/posts/2012-10-31-sandy-bridge.html/</guid><pubDate>Wed, 31 Oct 2012 04:00:00 GMT</pubDate></item><item><title>Anyone can cook</title><link>http://cestlaz.github.io/posts/2012-04-15-anyone-can-cook.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div style="text-align: center;"&gt;&lt;span style="font-size: x-large;"&gt;Anyone can cook&lt;/span&gt; - Chef Gusteau&lt;/div&gt;&lt;br&gt;These days the rage seems anyone can code.&lt;br&gt;&lt;br&gt;On line attempts to teach coding and computing abound.&lt;br&gt;&lt;br&gt;We've got Udacity and Coursera trying to bring college level academic offerings to the masses on one extreme and more down to earth "learn to code" efforts with Codecademy getting the most press.&lt;br&gt;&lt;br&gt;While I applaud any effort to make knowledge more accessible, there are a lot of unanswered questions as to the effectiveness of these latest attempts. Recent posts by &lt;a href="http://blog.mrmeyer.com/?p=13213"&gt;Dan Meyer&lt;/a&gt; and &lt;a href="http://hackeducation.com/2012/04/14/udacity-cs101/"&gt;Audrey Watters&lt;/a&gt; have started to raise questions and in my opinion some of the hype has worn off.&lt;br&gt;&lt;br&gt;At some point, I plan to talk at length about the Udacity and Coursera offerings as well as attempts to increase on line course offerings at the high school levels. I'll talk about the difficulties and dangers that lie ahead.&lt;br&gt;&lt;br&gt;Today, I'd like to talk about the more vocational offerings such as what Codecademy is doing.&lt;br&gt;&lt;br&gt;The premise seems to be that anyone can code and that everyone should code. I've been thinking about this for a while and I keep coming back to the question, "what's the endgame?"&lt;br&gt;&lt;br&gt;Teaching Javascript, HTML and the like narrowly focuses on creating web pages. Even if we forget about difficulties of on line learning that include lack of an interactive feedback loop, lack of follow up,  a narrow curriculum, and the fact that programming beyond the basics is not easy, what's the goal? While I find making an interactive web site cool, I don't know how much it benefits the masses.&lt;br&gt;&lt;br&gt;One could argue that the mental exercise of programming is a benefit and having a better understanding of how a computer works is a good thing. I'd agree, but what we really could benefit from is a different paradigm in terms of how we approach using computers. A new approach would make even rudimentary scripting skills of greater value to all.&lt;br&gt;&lt;br&gt;Most of us use computers as program loaders. That is, we sit down, load our word processor, edit something, and exit the word processor. Load our web browser, search the web, exit, load the next program, do something, etc. We might have multiple programs up at the same time, but we use them in isolation.&lt;br&gt;&lt;br&gt;This is how most people's computing experience has evolved.&lt;br&gt;&lt;br&gt;With this mindset, I'm not sure how useful coding will be for the masses. People might benefit from some rudimentary scripting a la Excel macros or Google App Scripts, but power users already do this. I don't think that the ability to program within the constraints of scripting individual applications will be a game changer.  To make rudimentary programming skills valuable we must use computers in a way that allows us to use simple techniques to tie together powerful applications.&lt;br&gt;&lt;br&gt;A few years ago, right before our Christmas break, I stopped over in the Math Chairman's office to wish him a good holiday. Danny was hard at work. He was frantically trying to change the math web site before he left.&lt;br&gt;&lt;br&gt;The math site was a mess. It consisted of a few dozen loosely arranged folders each with multiple sub folders. Danny was looking in each folder for old sample final exams, each saved as a Tiff file. He would load the file into Photoshop, convert it to another format and save it. He would then change the corresponding HTML file to reference the new file. He had been at it for hours with no end in sight. I said "Danny, I've got this, go home."&lt;br&gt;&lt;br&gt;I went to my office, wrote a small shell script, maybe 10 lines, hit enter, got on my bike and rode home. When I got there, the job was done.&lt;br&gt;&lt;br&gt;Now Danny's a really smart guy and he's technically savvy. The difference is that I was taught to try to tie programs together through the command line while he was taught to do things in the Windows/Mac way of loading one program and using it in isolation. I used a simple shell script to tie together a number of powerful Linux applications (find, imagemagick, sed) rather than pointing and clicking over and over again.&lt;br&gt;&lt;br&gt;I've seen this "program loader" mind set time and time again and in surprising places. My good friend and colleague &lt;a href="http://garyrubinstein.teachforus.org/"&gt;Gary Rubenstein&lt;/a&gt; has done a lot of work debunking the "educational reformers" that are currently in power. Gary had been using Excel to do all his analysis until I pointed out that he could download his data and use simple Python scripts to greater effect. Why was I surprised that Gary wasn't already doing this? Well, in addition to being an amazing math teacher, Gary holds a Masters degree in Computer Science and had worked as a professional programmer in a prior life.&lt;br&gt;&lt;br&gt;Of course, our life isn't made any easier with closed file formats and vendors that try to isolate their data, but if we could re-educate people to use computers across applications, that would make rudimentary programming useful to all and then indeed there would be a reason for everyone to code.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width="1" height="1" src="https://blogger.googleusercontent.com/tracker/468689896075458340-448488222916899193?l=cestlaz.blogspot.com" alt=""&gt;&lt;/div&gt;</description><category>csed</category><guid>http://cestlaz.github.io/posts/2012-04-15-anyone-can-cook.html/</guid><pubDate>Sun, 15 Apr 2012 04:00:00 GMT</pubDate></item><item><title>CS Stress</title><link>http://cestlaz.github.io/posts/2012-01-29-cs-stress.html/</link><dc:creator>Mike Zamansky</dc:creator><description>I've been mostly underwater for the last couple of weeks.&lt;br&gt;&lt;br&gt;End of term issues combined with the Academy of Software Engineering announcement has pretty much eaten up all of my out of class time.&lt;br&gt;&lt;br&gt;It's going to be a week or so before I can finish writing the posts I was planning on, but it looks like a storm is brewing around Stuyvesant and Computer Science so I thought I'd put up this short semi-related post.&lt;br&gt;&lt;br&gt;Stuyvesant has a reputation of being something of a pressure cooker. The day can be as long as ten periods and it's not uncommon for a student to take three or more AP classes, even before the senior year. The question of student workload and stress has been a hot topic for a number of years.&lt;br&gt;&lt;br&gt;There's frequently tension over how many courses and which courses a student should be allowed to take.  Usually, this revolves around the school placing a limit on the number of classes, or more specifically, the number of A.P. classes a student can take. Most recently, the conversation looks to be turning to the number of classes a student can take overall.&lt;br&gt;&lt;br&gt;Given that most A.P. classes fall within a Stuyvesant student's required sequence of classes - that is, Calculus is just "the next math class" and A.P. U.S. History is slotted in place of a students regular U.S. History course, limiting the number of classes a student can take, A.P. or otherwise could have a major impact on Computer Science at Stuyvesant.&lt;br&gt;&lt;br&gt;What's most disturbing is that limiting student options in terms of courses may not do anything to decrease stress and workload. No one has looked at what is actually going on in student's required classes.&lt;br&gt;&lt;br&gt;I decided to collect some information from our students. I sent out a survey to five of our seven A.P. C.S. classes (three of mine, two of JonAlf's -- the other two classes don't have a mailing list). I asked them to rate the work load and stress factor for A.P. CS, their typical Stuy course and their typical Stuy A.P.course. So far, I've gotten 80 responses (out of about 150 students emailed). Here's what we got (ratings were on a 1-10 scale):&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;A.P. C.S.&lt;/th&gt;&lt;th&gt;Reg. Class&lt;/th&gt;&lt;th&gt;A.P. Class&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Workload avgs   &lt;/td&gt;&lt;td&gt;4.97    &lt;/td&gt;   &lt;td&gt;6.65    &lt;/td&gt;   &lt;td&gt;7.13    &lt;/td&gt;   &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Workload dev   &lt;/td&gt;&lt;td&gt;1.94    &lt;/td&gt;   &lt;td&gt;1.41   &lt;/td&gt;   &lt;td&gt;1.52   &lt;/td&gt;   &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Stress avgs   &lt;/td&gt;&lt;td&gt;4.67   &lt;/td&gt;   &lt;td&gt;6.39    &lt;/td&gt;   &lt;td&gt;6.94   &lt;/td&gt;   &lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Stress dev   &lt;/td&gt;&lt;td&gt;2.24   &lt;/td&gt;   &lt;td&gt;1.63    &lt;/td&gt;   &lt;td&gt;1.64    &lt;/td&gt;   &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br&gt;I know this isn't really hard data, but it seems that our A.P. C.S. classes are considered to be both easier and less stressful than other classes at Stuyvesant. Given that our kids do very well at C.S., we're probably doing something right and it will be a shame if student opportunities become limited. I'll certainly write more on this as the situation develops.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;For you educators out there, is stress an issue at your schools and how do you deal with making room for students to take CS at your schools? &lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width="1" height="1" src="https://blogger.googleusercontent.com/tracker/468689896075458340-7465860293098412736?l=cestlaz.blogspot.com" alt=""&gt;&lt;/div&gt;</description><category>csed</category><guid>http://cestlaz.github.io/posts/2012-01-29-cs-stress.html/</guid><pubDate>Sun, 29 Jan 2012 05:00:00 GMT</pubDate></item><item><title>Reboot</title><link>http://cestlaz.github.io/posts/2011-11-27-reboot.html/</link><dc:creator>Mike Zamansky</dc:creator><description>A couple of weeks ago, I attended the K-12 workshop at the Grace Hopper Celebration of Women in Computing Conference. It was great to reconnect with some old friends, make some new ones, and talk shop for the weekend.&lt;br&gt;&lt;br&gt;One result was that I promised to start blogging again.&lt;br&gt;&lt;br&gt;I've got a number of ideas for posts lined up. Some on pedagogy, some technical, and some cultural. Hope you enjoy them.&lt;br&gt;&lt;br&gt;Earlier today Ben Chun tweeted about this post: &lt;a href="http://worrydream.com/SomeThoughtsOnTeaching/"&gt;http://worrydream.com/SomeThoughtsOnTeaching/&lt;/a&gt;.  To summarize -- teachers should practice what they preach. In the post, Bret Victor wonders if there are calculus teachers who spend their evenings doing calculus.&lt;br&gt;&lt;br&gt;I know a number of math teachers who spend a considerable amount of their free time working on problems and refining their math skills, I also know many who don't.&lt;br&gt;&lt;br&gt;I know wonderful, inspirational teachers in both camps. I've also known weak teachers that fall into both categories. Great teachers in both categories also spend large amounts of time working on how to best deliver instruction.&lt;br&gt;&lt;br&gt;Before I started developing the computer science program at Stuyvesant, there were one or two sections of A.P. Computer Science. They were taught by a terrific teacher -- one of my mentors and role models, but he was a math guy and not passionate about CS. When I took over, the enrollment immediately shot up. Not because I was any great shakes, and Dave, the previous teacher was legendary. Rather, the students knew I loved CS. Part of that love was that I enjoy solving problems with computers, coding and what have you. The students can tell.&lt;br&gt;&lt;br&gt;The fact that I code is a byproduct of my passion and part of the whole package that defines me as a teacher and a person. Whatever success I achieve is a result of this package. It's something I enjoy, and it also keeps me current with the field.&lt;br&gt;&lt;br&gt;I've seen "naturals" who are just great teachers and get by without a passion for their subjects. More often than not, there's a ceiling in terms of what they can give their students either in terms of content, or more importantly, in terms of inspiration. Some times the ceiling is high enough that there isn't a problem.&lt;br&gt;&lt;br&gt;Over the years, my "practice" has taken different shapes. Early on, while my students were working on &lt;a href="http://www.usaco.org/"&gt;USACO&lt;/a&gt; problems. I figured I had better be able to represent, so I started doing them. Later on, I would write systems to support my teaching.&lt;br&gt;&lt;br&gt;More recently, I've been lucky enough to be surrounded by a number of like minded educators. We frequently share little projects we work on.&lt;br&gt;&lt;br&gt;This semester, I've been taking the Stanford on line &lt;a href="http://ai-class.org/"&gt;AI&lt;/a&gt; and &lt;a href="http://ml-class.org/"&gt;ML&lt;/a&gt; classes -- both have been lots of fun.&lt;br&gt;&lt;br&gt;This is just what I do and who I am and it is reflected in how I teach.&lt;br&gt;&lt;br&gt;Of course, time and job constraints make coding difficult during the school year. With ~150 students, lesson planning, grading, and ancillary responsibilities take their tolls.&lt;br&gt;&lt;br&gt;So, I guess I'm an example of what Bret Victor was talking about. I'm not sure I fully agree with his thesis, but it seems to work for me.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width="1" height="1" src="https://blogger.googleusercontent.com/tracker/468689896075458340-1460836429704454417?l=cestlaz.blogspot.com" alt=""&gt;&lt;/div&gt;</description><category>csed</category><guid>http://cestlaz.github.io/posts/2011-11-27-reboot.html/</guid><pubDate>Sun, 27 Nov 2011 05:00:00 GMT</pubDate></item><item><title>What's Next</title><link>http://cestlaz.github.io/posts/2010-02-18-whats-next.html/</link><dc:creator>Mike Zamansky</dc:creator><description>Just a short follow up on the last post.&lt;br&gt;&lt;br&gt;In thinking about how I frequently programs, once I have a plan, I work on one part of the project, and then ask myself "what's next?" That is, what is the next step towards completion.&lt;br&gt; &lt;br&gt;It reminded me about a guest speaker we had a about a year and a half ago at one of our "professional development" days. For the past two years, our school has had "writing across the curriculum" as one of it's goals. While it's a laudable idea, I find the rationale for this goal to be poorly communicated to our faculty and the implementation weak at best.&lt;br&gt;&lt;br&gt;Regardless, the guest speaker, &lt;a href="http://en.wikipedia.org/wiki/William_Zinsser"&gt;William Zinsser&lt;/a&gt;, made a few good points.&lt;br&gt;&lt;br&gt; The most important reason for most of us to write is to convey ideas or arguments. In short, communication. Many students have problems organizing and ordering their thoughts and as a result, their writing is all over the place. Zinsser simplified it to the following:&lt;br&gt;&lt;br&gt;&lt;ol&gt;&lt;li&gt;What does the audience know?&lt;/li&gt;&lt;li&gt;What do they need to know next?&lt;/li&gt;&lt;/ol&gt;That drives your next sentence. You continue this 1-2 punch until you've communicated your ideas.&lt;br&gt;&lt;br&gt;This makes loads of sense, but here I was 40 years old and it was the first time I heard writing explained this way. What really struck me, however was that this concept wasn't new at all. Every ninth or tenth grader goes through this process time and time again.&lt;br&gt;&lt;br&gt;Think about geometric proof. We have some given information and a conclusion we wish to prove. At each step along the way its:&lt;br&gt;&lt;br&gt;&lt;ol&gt;&lt;li&gt;What do we know so far?&lt;/li&gt;&lt;li&gt;What's the next step to get us closer to the conclusion?&lt;/li&gt;&lt;/ol&gt;&lt;br&gt;Same idea.&lt;br&gt;&lt;br&gt;The same can be said for program development.&lt;br&gt;&lt;br&gt;Of course this makes tremendous sense since all thee things: writing, proof, and programming, are methods of communication.&lt;br&gt;&lt;br&gt;Just something to think about.&lt;div class="blogger-post-footer"&gt;&lt;img width="1" height="1" src="https://blogger.googleusercontent.com/tracker/468689896075458340-1983623605693836355?l=cestlaz.blogspot.com" alt=""&gt;&lt;/div&gt;</description><category>csed</category><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2010-02-18-whats-next.html/</guid><pubDate>Thu, 18 Feb 2010 05:00:00 GMT</pubDate></item><item><title>They teach programming, don't they?</title><link>http://cestlaz.github.io/posts/2010-02-15-they-teach-programming-dont-they.html/</link><dc:creator>Mike Zamansky</dc:creator><description>One evening, many years ago, when I was in college, I had an epiphany. Maybe not as enlightening as the epiphany I had while watching "The Mummy Returns"  many years later, but that's a story for another day.&lt;br&gt;&lt;br&gt;While working on some class project, I realized that soon, within a couple of  years, I'd be working for a real company and I'd actually have to write code that &lt;b&gt;REALLY&lt;/b&gt; works. Not just something that gets past the grader, or answers all the test cases. Something well designed, well written, maintainable, and reliable.  Scary thought.&lt;br&gt;&lt;br&gt;I've thought about this a lot since I started teaching computer science. We teach programming languages, algorithms, and assign projects. Maybe the students hear something like "comment your code," or "use good variable names," but we never really give them the tools to take a project from description to completion.&lt;br&gt;&lt;br&gt;Too often young programmers rush to the keyboards and write copious amounts of code without any plan and with little discipline. In short they do everything they can to set themselves up for a difficult road ahead.&lt;br&gt;&lt;div style="text-align: left;"&gt;&lt;br&gt;&lt;/div&gt;There are probably a number of reasons for this. When we teach introductory  programming, assignments are so short and simple that we can't easily model good programming techniques, and if we do, it's difficult to get students to "buy in" since it's hard for them to see the value. As complexity increases, we're faced with limited time to actually cover the prescribed course content, leaving little room for a protracted unit on "program development."&lt;br&gt;&lt;br&gt;I'm certainly not going to be so bold as to say that I have the answer to the problem, but I've tried some things to help address it.&lt;br&gt;&lt;br&gt;We'll take a few class days to take a project from beginning to end. Something that can be done incrementally but isn't particularly difficult. &lt;br&gt;&lt;br&gt;This semester, I attempted this with my AP students. We wrote a series of text filters in Java. I lifted the topic from Kernighan and Plauger's "Software Tools." We wrote versions of character count, word count, detabbing a file, run length encoding and a simple version of tr. Nothing too heavy, but it allowed us to focus on the development piece rather than coming up with clever algorithms and data structures (which is what the rest of the class is for). The problem may be a little contrived, but I hope the benefits outweighed any issues with the choice of problem.&lt;br&gt;&lt;br&gt;We start by talking about the importance of understanding the problem, which includes finding out what "the client" wants and not making our own assumptions. Some times, I try to leave a little ambiguity to give us a platform to discuss the "what the client wants" issue.&lt;br&gt;&lt;br&gt;From there comes design, which might be mixed with writing some code to make sure we understand certain aspects of the problem and the environment we'll be working in.&lt;br&gt;&lt;br&gt;Once we have a design and a plan we can start incremental development. This is what I think is most important for the youngsters. I try to model and emphasize the idea of coding one "concept" at a time. Frequently testing that concept and only moving on once it's completed. &lt;br&gt;&lt;br&gt;I'll also talk about things that have worked for me along the way. I always like to put consistent comment blocks at the top of my functions, trying to keep functions a "screen length" or shorter, my preferences for naming, indentation, etc. Of course, I'm careful to emphasize that my way works for me, but it's just one approach. I try to present alternatives when possible.&lt;br&gt;&lt;br&gt;Other ideas I try to emphasize is actually reading ones code and having others read it. Last semester I experimented with "pair programming" and while I have no idea how good it is as a professional development technique, I like it from a pedagogical point of view.&lt;br&gt;&lt;br&gt;I think presenting these ideas while actually developing the project helps to drive in the concepts.&lt;br&gt;&lt;br&gt;I'd like to think adding units like this helps to develop stronger programmers. Any teachers out there -- your thoughts?&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;center&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;table style="width: auto;"&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;a href="http://picasaweb.google.com/lh/photo/ljE9q55t6ltZzZVKwTzA9g?authkey=Gv1sRgCOSJ5YGwwb7e_AE&amp;amp;feat=embedwebsite"&gt;&lt;img src="http://lh3.ggpht.com/_7YN3bkG0cSc/S3m2eJx5aiI/AAAAAAAAFj4/I57gKwaFxzQ/s144/2010-02-15%2008.49.59.jpg"&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/center&gt;&lt;br&gt;&lt;br&gt;In an unrelated note, yesterday was valentines day. We don't really do anything to celebrate it, but in anticipation of her new loom, Devorah had to clear off some room in the apartment. She stumbled upon love letters sent between my parents back in the fifties. If you'd like a small taste of the past, you can see here post on squidknits &lt;a href="http://squid-knits.blogspot.com/2010/02/love-letters.html"&gt;here&lt;/a&gt;.&lt;br&gt;&lt;br&gt;Although we have gained all this immediacy with the electronics age, it sometimes feels that somethings been lost.&lt;div class="blogger-post-footer"&gt;&lt;img width="1" height="1" src="https://blogger.googleusercontent.com/tracker/468689896075458340-3365288827630860097?l=cestlaz.blogspot.com" alt=""&gt;&lt;/div&gt;</description><category>csed</category><guid>http://cestlaz.github.io/posts/2010-02-15-they-teach-programming-dont-they.html/</guid><pubDate>Mon, 15 Feb 2010 05:00:00 GMT</pubDate></item></channel></rss>

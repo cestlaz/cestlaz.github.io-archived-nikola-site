@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (linux)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/linux.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 15 May 2016 14:17:21 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Shell short - tagging old posts in Nikola</title><link>http://cestlaz.github.io/posts/shell-short-tagging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (linux)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/linux.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 15 May 2016 17:08:38 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Shell short - tagging old posts in Nikola</title><link>http://cestlaz.github.io/posts/shell-short-tagging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -138,7 +138,7 @@ So, just a bit of quick shell scripting and I've:
 You can find all those posts &lt;a href="http://cestlaz.github.io/categories/netlogo"&gt;here&lt;/a&gt;.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cli</category><category>linux</category><category>nikola</category><category>shell</category><guid>http://cestlaz.github.io/posts/shell-short-tagging/</guid><pubDate>Sun, 15 May 2016 13:58:44 GMT</pubDate></item><item><title>REPOST - Shell games - who confirmed attendance</title><link>http://cestlaz.github.io/posts/duplicate-emails/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;/div&gt;</description><category>cli</category><category>linux</category><category>nikola</category><category>shell</category><category>tools</category><guid>http://cestlaz.github.io/posts/shell-short-tagging/</guid><pubDate>Sun, 15 May 2016 13:58:44 GMT</pubDate></item><item><title>REPOST - Shell games - who confirmed attendance</title><link>http://cestlaz.github.io/posts/duplicate-emails/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;Repost&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -333,7 +333,7 @@ If you think this way and know some basic tools, all of a sudden all
 manner of text manipulation problems become pretty easy.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cli</category><category>linux</category><category>shell</category><guid>http://cestlaz.github.io/posts/duplicate-emails/</guid><pubDate>Thu, 12 May 2016 13:52:25 GMT</pubDate></item><item><title>BASH scripting?</title><link>http://cestlaz.github.io/posts/bash-scripting/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;/div&gt;</description><category>cli</category><category>linux</category><category>shell</category><category>tools</category><guid>http://cestlaz.github.io/posts/duplicate-emails/</guid><pubDate>Thu, 12 May 2016 13:52:25 GMT</pubDate></item><item><title>BASH scripting?</title><link>http://cestlaz.github.io/posts/bash-scripting/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -547,4 +547,50 @@ who responded on a Google form. It looks like it didn't convert when
 I moved to my current blogging platform - I'll repost that shortly.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cli</category><category>linux</category><category>shell</category><guid>http://cestlaz.github.io/posts/bash-scripting/</guid><pubDate>Thu, 12 May 2016 12:39:25 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>cli</category><category>linux</category><category>shell</category><category>tools</category><guid>http://cestlaz.github.io/posts/bash-scripting/</guid><pubDate>Thu, 12 May 2016 12:39:25 GMT</pubDate></item><item><title>Shell games - who confirmed attendence</title><link>http://cestlaz.github.io/posts/2015-03-19-duplicate-emails.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+Quick post on why I love the Unix command line.
+&lt;/p&gt;
+
+&lt;p&gt;
+We're busy organizing &lt;a href="http://cstuy.org"&gt;CSTUY's&lt;/a&gt; first &lt;a href="http://cstuy.org/programs/defhacks"&gt;hackathon&lt;/a&gt;. It's going to be at
+&lt;a href="http://sumall.com"&gt;SumAll&lt;/a&gt;, where we hold our weekly &lt;a href="http://cstuy.org/programs/hacking_sessions"&gt;hacking sessions&lt;/a&gt; but while taking
+registration, we had a little program.
+&lt;/p&gt;
+
+&lt;p&gt;
+The kids signed up on a Google doc but we all know the story – when
+people sign up for a free event, even one with free food and t-shirts,
+many don't show. I asked all of the applicants to confirm by filling
+out a second Google doc.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then it got to reminder time - I wanted to send an email out to all
+those kids who signed up on the first form, but hadn't confirmed on
+the second. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Two Google spreadsheets with an email field. I needed all the people
+on sheet 1 that weren't on sheet 2. I'm sure there's some
+spreadsheet-fu that accomplishes this, but nothing I know. I also
+could have written a little python script which isn't so bad, but this
+was a perfect time to turn to the shell.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, here's how a command line guy would do this.
+&lt;/p&gt;
+
+&lt;p&gt;
+To start, I put the emails in two files: e1 and e2. The first has
+all the original applicants, the second those that confirmed.
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-org"&gt;|&lt;/pre&gt;&lt;/div&gt;</description><category>cli</category><category>linux</category><category>shell</category><category>tools</category><guid>http://cestlaz.github.io/posts/2015-03-19-duplicate-emails.html/</guid><pubDate>Thu, 19 Mar 2015 04:00:00 GMT</pubDate></item></channel></rss>

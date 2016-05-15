@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (netlogo)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/netlogo.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 15 May 2016 12:39:51 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Cellular Automata for Pathfinding in NetLogo</title><link>http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (netlogo)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/netlogo.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 15 May 2016 17:08:36 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Cellular Automata for Pathfinding in NetLogo</title><link>http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet"&gt;
 &lt;script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
 &lt;style&gt;
 div.center {text-align:center;}
@@ -193,7 +193,7 @@ unsolved.&lt;/li&gt;
 &lt;iframe class="center frame" src="http://cestlaz.github.io/img/maze-ca/maze.html"&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>netlogo</category><guid>http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</guid><pubDate>Sun, 17 Jan 2016 05:00:00 GMT</pubDate></item><item><title>Cellular Automata, NetLogo and real problems</title><link>http://cestlaz.github.io/posts/2016-01-15-shift-image.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+&lt;/div&gt;</description><category>netlogo</category><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</guid><pubDate>Sun, 17 Jan 2016 05:00:00 GMT</pubDate></item><item><title>Cellular Automata, NetLogo and real problems</title><link>http://cestlaz.github.io/posts/2016-01-15-shift-image.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
 .center {text-align:center;}
 .frame {width:640px;height:800px;}
 &lt;/style&gt;
@@ -378,7 +378,7 @@ automaton that can solve a maze.
 
 &lt;div class="center frame"&gt;
 &lt;iframe class="center frame" src="http://cestlaz.github.io/img/shift-image/shift-image.html"&gt;&lt;/iframe&gt;
-&lt;/div&gt;</description><category>netlogo</category><guid>http://cestlaz.github.io/posts/2016-01-15-shift-image.html/</guid><pubDate>Fri, 15 Jan 2016 05:00:00 GMT</pubDate></item><item><title>CS Ed Predictions 2015</title><link>http://cestlaz.github.io/posts/2015-01-04-predictions-2015.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+&lt;/div&gt;</description><category>netlogo</category><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2016-01-15-shift-image.html/</guid><pubDate>Fri, 15 Jan 2016 05:00:00 GMT</pubDate></item><item><title>CS Ed Predictions 2015</title><link>http://cestlaz.github.io/posts/2015-01-04-predictions-2015.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
 div.center {text-align:center;}
 &lt;/style&gt;
 
@@ -531,7 +531,7 @@ shoutout – Hey Alfred - thanks for posting your predictions - good food for th
 as is your blog in general.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>netlogo</category><guid>http://cestlaz.github.io/posts/2015-01-04-predictions-2015.html/</guid><pubDate>Sun, 04 Jan 2015 05:00:00 GMT</pubDate></item><item><title>Thoughts on diversity</title><link>http://cestlaz.github.io/posts/2014-12-07-thoughts-on-diversity.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+&lt;/div&gt;</description><category>misc</category><category>netlogo</category><guid>http://cestlaz.github.io/posts/2015-01-04-predictions-2015.html/</guid><pubDate>Sun, 04 Jan 2015 05:00:00 GMT</pubDate></item><item><title>Thoughts on diversity</title><link>http://cestlaz.github.io/posts/2014-12-07-thoughts-on-diversity.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
 div.center {text-align:center;}
 &lt;/style&gt;
 
@@ -691,7 +691,7 @@ day. We were talking about possible directions to go in after the new
 year. We could stay graphical, go to text processing, look at some
 hardcore algorithms and more. I asked Aruna what she thought. Her
 answer: "It's all fun."
-&lt;/p&gt;</description><category>netlogo</category><guid>http://cestlaz.github.io/posts/2014-12-07-thoughts-on-diversity.html/</guid><pubDate>Sun, 07 Dec 2014 05:00:00 GMT</pubDate></item><item><title>Wait, I know that!!!!</title><link>http://cestlaz.github.io/posts/2014-09-23-I-know-that.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+&lt;/p&gt;</description><category>netlogo</category><category>policy</category><guid>http://cestlaz.github.io/posts/2014-12-07-thoughts-on-diversity.html/</guid><pubDate>Sun, 07 Dec 2014 05:00:00 GMT</pubDate></item><item><title>Wait, I know that!!!!</title><link>http://cestlaz.github.io/posts/2014-09-23-I-know-that.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
 div.center {text-align:center;}
 &lt;/style&gt;
 
@@ -816,7 +816,7 @@ It was pretty awesome.
 
 &lt;p&gt;
 It's still a long road before they graduate, but we're getting there.
-&lt;/p&gt;</description><category>netlogo</category><guid>http://cestlaz.github.io/posts/2014-09-23-I-know-that.html/</guid><pubDate>Tue, 23 Sep 2014 04:00:00 GMT</pubDate></item><item><title>Layers of a lesson</title><link>http://cestlaz.github.io/posts/2012-12-17-layers-of-a-lesson.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div align="center"&gt;
+&lt;/p&gt;</description><category>netlogo</category><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2014-09-23-I-know-that.html/</guid><pubDate>Tue, 23 Sep 2014 04:00:00 GMT</pubDate></item><item><title>Layers of a lesson</title><link>http://cestlaz.github.io/posts/2012-12-17-layers-of-a-lesson.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div align="center"&gt;
 &lt;img width="50%" src="http://cestlaz.github.io/img/turtle-anim.gif" class="" alt=""&gt;
 &lt;/div&gt;
 
@@ -913,4 +913,4 @@ extends to other problems, for example, a ghost from pacman:
 
 A good teacher thinks about working across these levels. He adjusts
 based on the class and looks for opportunities to develop these deeper
-concepts.&lt;/pre&gt;</description><category>netlogo</category><guid>http://cestlaz.github.io/posts/2012-12-17-layers-of-a-lesson.html/</guid><pubDate>Mon, 17 Dec 2012 05:00:00 GMT</pubDate></item><item><title>Who is this man?</title><link>http://cestlaz.github.io/posts/2010-01-07-who-is-this-man.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/_7YN3bkG0cSc/S0aNLCe-BoI/AAAAAAAAFaY/R4VEOV6kCeE/s1600-h/frontwolly.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://3.bp.blogspot.com/_7YN3bkG0cSc/S0aNLCe-BoI/AAAAAAAAFaY/R4VEOV6kCeE/s320/frontwolly.jpg"&gt;&lt;/a&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;Who is this man?&lt;br&gt;&lt;br&gt;I showed this to Devorah last night and she immediately said "Hey, that's the metal filing guy!!!" Yes, you got it -- &lt;a href="http://www.smethporthistory.org/smethportspeciality/wollypage.htm"&gt;Wooly Willy&lt;/a&gt;!!! Everybody's favorite party toy.&lt;br&gt;&lt;br&gt;Why did this come up? Well, yesterday, Rick put &lt;a href="http://www.zamansky.net/wooly.html"&gt;this&lt;/a&gt; together at work. So much for any productivity after that.&lt;br&gt;&lt;br&gt;It's amazing all the time sinks you can throw together with just a few lines of code and NetLogo.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width="1" height="1" src="https://blogger.googleusercontent.com/tracker/468689896075458340-5205617721773351791?l=cestlaz.blogspot.com" alt=""&gt;&lt;/div&gt;</description><category>netlogo</category><guid>http://cestlaz.github.io/posts/2010-01-07-who-is-this-man.html/</guid><pubDate>Thu, 07 Jan 2010 05:00:00 GMT</pubDate></item></channel></rss>
+concepts.&lt;/pre&gt;</description><category>intro</category><category>netlogo</category><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2012-12-17-layers-of-a-lesson.html/</guid><pubDate>Mon, 17 Dec 2012 05:00:00 GMT</pubDate></item><item><title>Who is this man?</title><link>http://cestlaz.github.io/posts/2010-01-07-who-is-this-man.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/_7YN3bkG0cSc/S0aNLCe-BoI/AAAAAAAAFaY/R4VEOV6kCeE/s1600-h/frontwolly.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://3.bp.blogspot.com/_7YN3bkG0cSc/S0aNLCe-BoI/AAAAAAAAFaY/R4VEOV6kCeE/s320/frontwolly.jpg"&gt;&lt;/a&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;Who is this man?&lt;br&gt;&lt;br&gt;I showed this to Devorah last night and she immediately said "Hey, that's the metal filing guy!!!" Yes, you got it -- &lt;a href="http://www.smethporthistory.org/smethportspeciality/wollypage.htm"&gt;Wooly Willy&lt;/a&gt;!!! Everybody's favorite party toy.&lt;br&gt;&lt;br&gt;Why did this come up? Well, yesterday, Rick put &lt;a href="http://www.zamansky.net/wooly.html"&gt;this&lt;/a&gt; together at work. So much for any productivity after that.&lt;br&gt;&lt;br&gt;It's amazing all the time sinks you can throw together with just a few lines of code and NetLogo.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width="1" height="1" src="https://blogger.googleusercontent.com/tracker/468689896075458340-5205617721773351791?l=cestlaz.blogspot.com" alt=""&gt;&lt;/div&gt;</description><category>netlogo</category><guid>http://cestlaz.github.io/posts/2010-01-07-who-is-this-man.html/</guid><pubDate>Thu, 07 Jan 2010 05:00:00 GMT</pubDate></item></channel></rss>

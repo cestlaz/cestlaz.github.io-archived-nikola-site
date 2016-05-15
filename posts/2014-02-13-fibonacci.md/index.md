@@ -2,7 +2,7 @@
 .. title: Fibonacci by the tail
 .. slug: 2014-02-13-fibonacci.md
 .. date: 2014-02-13
-.. tags: 
+.. tags: pedagogy, algorithms
 .. type: text
 -->
 

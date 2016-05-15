@@ -2,7 +2,7 @@
 .. title: That One Inspirational Curriculum
 .. slug: 2013-08-07-That_One_Inspirational_Curriculum.md
 .. date: 2013-08-07
-.. tags: 
+.. tags: policy
 .. type: text
 -->
 

@@ -1,0 +1,548 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>Posts about algorithms</title>
+  <id>http://cestlaz.github.io/categories/algorithms.atom</id>
+  <updated>2016-05-15T17:08:36Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/algorithms.atom"/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/algorithms/"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Sorting - Subtle Errors</title>
+    <id>http://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting.html/</id>
+    <updated>2014-03-17T00:00:00</updated>
+    <published>2014-03-17T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+Time to wrap up sorting for a while. We just finished quicksort
+having gone through a series of lessons
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;We started with &lt;a href="http://cestlaz.github.io/2014/03/12/select-to-sort.html#.UyJRTh_G8RM"&gt;Quickselect&lt;/a&gt;.
+&lt;/li&gt;
+&lt;li&gt;Then we did a quicksort, copying to new arrays during the partition
+&lt;/li&gt;
+&lt;li&gt;Then finally to an in place quicksort.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+For the final quicksort we used a partition algorithm pretty much the
+same as the one described &lt;a href="http://en.wikipedia.org/wiki/Quicksort"&gt;here.&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+We started testing using by building a randomly filled array like this:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-java"&gt;&lt;span style="color: #7CB8BB;"&gt;Random&lt;/span&gt; &lt;span style="color: #DFAF8F;"&gt;rnd&lt;/span&gt; = &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;new&lt;/span&gt; &lt;span style="color: #7CB8BB;"&gt;Random&lt;/span&gt;();
+&lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt; &lt;span style="color: #DFAF8F;"&gt;a&lt;/span&gt;[] = &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;new&lt;/span&gt; &lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt;[n];
+&lt;span style="color: #F0DFAF; font-weight: bold;"&gt;for&lt;/span&gt; (&lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt; &lt;span style="color: #DFAF8F;"&gt;i&lt;/span&gt;=0;i&amp;lt;&lt;span style="color: #7CB8BB;"&gt;n&lt;/span&gt;;i++) {
+    a[i] = rnd.nextInt(100);
+}
+qsort(a);
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+And everything seemed terrific.
+&lt;/p&gt;
+
+&lt;p&gt;
+Just like when we did the mergesort, we started to increase n. First
+20, then 100, then 1000 and so on. 
+&lt;/p&gt;
+
+&lt;p&gt;
+All of a sudden, we started getting a stack overflow. We only made it
+to about 450,000. Mergesort got to arrays of about 40,000,000 items
+before we started to have memory problems.
+&lt;/p&gt;
+
+&lt;p&gt;
+Our algorithm was sound. It worked on everything up to about
+450,000. Since Mergesort worked well into the tens of millions, quicksort
+should have as well.
+&lt;/p&gt;
+
+&lt;p&gt;
+What was wrong? 
+&lt;/p&gt;
+
+&lt;p&gt;
+We changed the code a bit:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-java"&gt;&lt;span style="color: #7CB8BB;"&gt;Random&lt;/span&gt; &lt;span style="color: #DFAF8F;"&gt;rnd&lt;/span&gt; = &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;new&lt;/span&gt; &lt;span style="color: #7CB8BB;"&gt;Random&lt;/span&gt;();
+&lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt; &lt;span style="color: #DFAF8F;"&gt;a&lt;/span&gt;[] = &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;new&lt;/span&gt; &lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt;[n];
+&lt;span style="color: #F0DFAF; font-weight: bold;"&gt;for&lt;/span&gt; (&lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt; &lt;span style="color: #DFAF8F;"&gt;i&lt;/span&gt;=0;i&amp;lt;&lt;span style="color: #7CB8BB;"&gt;n&lt;/span&gt;;i++) {
+    a[i] = rnd.nextInt(10000);
+}
+qsort(a);
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Instead of an array of 450,000 values between 0 and 100, our elements
+now went fro 0 to 10,000. 
+&lt;/p&gt;
+
+&lt;p&gt;
+All of a sudden things were good.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why? It wasn't long before the student saw that 500,000 elements with
+values between 0 and 100 meant lots of duplicates. Our partition
+didn't account for that. If we had duplicate pivots, only one is moved
+into place, the rest are left unsorted taking us closer to worst case
+performance and blowing our stack.
+&lt;/p&gt;
+
+&lt;p&gt;
+Fortunately there was an easy fix: 
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-java"&gt;&lt;span style="color: #F0DFAF; font-weight: bold;"&gt;public&lt;/span&gt; &lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt; &lt;span style="color: #93E0E3;"&gt;partition&lt;/span&gt;(&lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt;[] &lt;span style="color: #DFAF8F;"&gt;a&lt;/span&gt;, &lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt; &lt;span style="color: #DFAF8F;"&gt;l&lt;/span&gt;, &lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt; &lt;span style="color: #DFAF8F;"&gt;r&lt;/span&gt;) {
+    &lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt; &lt;span style="color: #DFAF8F;"&gt;tmp&lt;/span&gt;;
+    &lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt; &lt;span style="color: #DFAF8F;"&gt;pivotIndex&lt;/span&gt; = l+rnd.nextInt(r-l);
+    &lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt; &lt;span style="color: #DFAF8F;"&gt;pivot&lt;/span&gt; = a[pivotIndex];
+    tmp = a[r];
+    a[r] = a[pivotIndex];
+    a[pivotIndex]=tmp;
+
+    &lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt; &lt;span style="color: #DFAF8F;"&gt;wall&lt;/span&gt;=l;
+    &lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt; &lt;span style="color: #DFAF8F;"&gt;pcount&lt;/span&gt;=1;
+    &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;for&lt;/span&gt; (&lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt; &lt;span style="color: #DFAF8F;"&gt;i&lt;/span&gt;=l;i&amp;lt;&lt;span style="color: #7CB8BB;"&gt;r&lt;/span&gt;;i++) {
+        &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;if&lt;/span&gt; (a[i]&amp;lt;pivot) {
+            tmp = a[i];
+            a[i]=a[wall];
+            a[wall]=tmp;
+            wall++;
+        }
+        &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;if&lt;/span&gt; (a[i]==pivot)
+            pcount++;
+    }
+    &lt;span style="color: #5F7F5F;"&gt;// &lt;/span&gt;&lt;span style="color: #7F9F7F;"&gt;now copy over all the pivots&lt;/span&gt;
+    &lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt; &lt;span style="color: #DFAF8F;"&gt;rwall&lt;/span&gt;=wall;
+    tmp = a[rwall];
+    a[wall]=a[r];
+    a[r]=tmp;
+    rwall++;
+    &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;for&lt;/span&gt; (&lt;span style="color: #7CB8BB;"&gt;int&lt;/span&gt; &lt;span style="color: #DFAF8F;"&gt;i&lt;/span&gt;=rwall+1;i&amp;lt;=r;i++) {
+        &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;if&lt;/span&gt; (a[i]==pivot) {
+            tmp = a[rwall];
+            a[rwall]=a[i];
+            a[i]=tmp;
+            rwall++;
+        }
+    }
+    &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;return&lt;/span&gt; (wall+rwall)/2;
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+When we partition the array, move all the elements equal to the
+partition to the middle of the array.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+That did the trick.
+&lt;/p&gt;
+
+&lt;p&gt;
+All of a sudden we were blazing through data sets upwards of
+100,000,000 elements.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+We're done for sorting for a while, at least until the heapsort but
+it's been a fun couple of weeks
+&lt;/p&gt;</summary>
+    <category term="algorithms" label="algorithms"/>
+    <category term="pedagogy" label="pedagogy"/>
+  </entry>
+  <entry>
+    <title>From selection to sorting</title>
+    <id>http://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/</id>
+    <updated>2014-03-12T00:00:00</updated>
+    <published>2014-03-12T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/"/>
+    <summary type="html">&lt;script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/assets/static/mj.js"&gt;&lt;/script&gt;
+
+&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+When I first saw the &lt;a href="http://en.wikipedia.org/wiki/Quicksort"&gt;quicksort&lt;/a&gt; it was in an algorithms class back in
+the day. We first learned the quicksort, then choosing a good pivot
+element and then as an afterthought we did &lt;a href="http://en.wikipedia.org/wiki/Quickselect"&gt;quickselect&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Fast forward to teaching. I was never really happy teaching
+quicksort. Mergesort is easy to motivate and it's pretty easy to
+write. Quicksort always felt a little forced. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I thought I'd try switching things up this time and doing quickselect
+first.
+&lt;/p&gt;
+
+&lt;p&gt;
+The motivating problem: find the K&lt;sup&gt;th&lt;/sup&gt; smallest item in a list - in our
+case the list is an array of ints.
+&lt;/p&gt;
+
+&lt;p&gt;
+I want to start with the least efficient algorithm so I stack the
+deck. I remind them that we've been finding the smallest item in a
+list for two years now.
+&lt;/p&gt;
+
+&lt;p&gt;
+They don't disappoint and suggest something like this:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;&lt;span style="color: #DFAF8F;"&gt;L&lt;/span&gt; = [10,3,28,82,14,42,66,74,81]
+
+&lt;span style="color: #F0DFAF; font-weight: bold;"&gt;def&lt;/span&gt; &lt;span style="color: #93E0E3;"&gt;findKth&lt;/span&gt;(L,k):
+    &lt;span style="color: #DFAF8F;"&gt;omits&lt;/span&gt;=[]
+    &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;for&lt;/span&gt; i &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;in&lt;/span&gt; &lt;span style="color: #DCDCCC; font-weight: bold;"&gt;range&lt;/span&gt;(k):
+        &lt;span style="color: #DFAF8F;"&gt;ans&lt;/span&gt;=&lt;span style="color: #DCDCCC; font-weight: bold;"&gt;max&lt;/span&gt;(L)
+        &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;for&lt;/span&gt; item &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;in&lt;/span&gt; L:
+            &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;if&lt;/span&gt; item &amp;lt; ans &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;and&lt;/span&gt; item &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;not&lt;/span&gt; &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;in&lt;/span&gt; omits:
+                &lt;span style="color: #DFAF8F;"&gt;ans&lt;/span&gt;=item
+        omits.append(ans)
+    &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;return&lt;/span&gt; ans
+
+&lt;span style="color: #F0DFAF; font-weight: bold;"&gt;print&lt;/span&gt; findKth(L,3)
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Clearly an \(O(n^2)\) algorithm.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Can we do better?
+&lt;/p&gt;
+
+&lt;p&gt;
+Certainly.
+&lt;/p&gt;
+
+&lt;p&gt;
+The students then suggest sorting the data set first. If we use
+mergesort, we can sort in \(O(nLg (n))\) time. This lead to a great
+conversation about sorting being so fast it's practically free and
+that you don't have to hard code everything from scratch. Not only is
+sorting the data set then plucking the k&lt;sup&gt;th&lt;/sup&gt; item out much faster, if
+you already have a sort written or if you use your language's
+library's sort, it's much easier as well:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;&lt;span style="color: #F0DFAF; font-weight: bold;"&gt;def&lt;/span&gt; &lt;span style="color: #93E0E3;"&gt;findKth&lt;/span&gt;(L,k):
+    &lt;span style="color: #DFAF8F;"&gt;tmp&lt;/span&gt; = &lt;span style="color: #DCDCCC; font-weight: bold;"&gt;sorted&lt;/span&gt;(L)
+    &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;return&lt;/span&gt; tmp[k]
+&lt;/pre&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+But we can do even better. So now we talk about &lt;b&gt;quickselect&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+We pick a random pivot, partition the list a la quicksort (reorder the
+list such that all items less than the pivot are to its left, and all
+items greater than the pivot are to its right).
+&lt;/p&gt;
+
+&lt;p&gt;
+We now know that after partitioning. the pivot is in it's exact
+location. If its index is &lt;b&gt;k&lt;/b&gt; then we're done. If not, we can
+recursively &lt;b&gt;quickselect&lt;/b&gt; on either the left or right side. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Pretty cool, but is it faster?
+&lt;/p&gt;
+
+&lt;p&gt;
+It's easy to see that if we keep choosing a bad pivot (the smallest or
+largest in the list), each iteration takes \(n\) time to partition and
+each iteration takes one item out of contention. This takes us back to
+\(O(n^2)\). 
+&lt;/p&gt;
+
+&lt;p&gt;
+However…
+&lt;/p&gt;
+
+&lt;p&gt;
+If we choose a good partition – at the middle of the list, each
+partition takes less and less time. We get a run time of:
+&lt;/p&gt;
+
+&lt;p&gt;
+\(n+\frac{n}{2} +\frac{n}{4}+\frac{n}{8}+\dots\) and since \(\frac{n}{2}
++\frac{n}{4}+\frac{n}{8}\dots=n\) this becomes an \(O(2n)\), or \(O(n)\) algorithm.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+That's really cool.
+&lt;/p&gt;
+
+&lt;p&gt;
+Homework was the actual implementation.
+&lt;/p&gt;
+
+&lt;p&gt;
+I think this might be a better way to approach quicksort. It seems
+less forced, plus the class gets to go through the exercise of taking
+an algorithm form \(O(n^2)\) to \(O(nlg(n))\) to \(O(n)\).
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Next, moving to the quicksort and also showing that we can indeed
+avoid those really bad pivots.
+&lt;/p&gt;
+
+
+&lt;h4&gt;Addendum&lt;/h4&gt;
+
+We moved to quicksort today and overall I'm happy with this
+approach. The only thing I think needs tweaking is going from the idea
+of partitioning to Java code. Java makes it somewhat of a bear.
+&lt;br&gt;</summary>
+    <category term="algorithms" label="algorithms"/>
+    <category term="pedagogy" label="pedagogy"/>
+  </entry>
+  <entry>
+    <title>I guess I'm a dumbass</title>
+    <id>http://cestlaz.github.io/posts/2014-02-27-dumbass.md/</id>
+    <updated>2014-02-27T00:00:00</updated>
+    <published>2014-02-27T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2014-02-27-dumbass.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;I like a fairly informal atmosphere in my classes. Students have to
+know that there's a line between teacher and student but I also want
+them to feel like we're all part of the Stuy CS family.&lt;/p&gt;
+&lt;p&gt;Whenever we start a new term, it takes a while to break down the
+walls. The students don't know what to expect of me, can they trust
+me? Am I a bozo? Who knows.&lt;/p&gt;
+&lt;p&gt;It helps when some of the class had me as a teacher before, but it still takes time.&lt;/p&gt;
+&lt;p&gt;I'm glad that this term, things are coming along nicely.&lt;/p&gt;
+&lt;p&gt;Let me share what happened in class today.&lt;/p&gt;
+&lt;p&gt;I was introducing merge sort - their first nlgn sorting
+algorithm. Before class, one of the students slipped off his seat and landed on the floor with a thud. He
+was fine although the brief butt, if you would, of jokes.&lt;/p&gt;
+&lt;p&gt;I relayed a story - many years ago, Ilya, one of the gang, was accused
+of being a dumbass. He responded "hey, it's never missed the seat." The
+class had a good laugh over it.&lt;/p&gt;
+&lt;p&gt;Fast forward a bit.&lt;/p&gt;
+&lt;p&gt;I had a deck of cards I wanted sorted. As a Stuy grad, I'm as lazy as
+the next guy so I didn't want to sort them, but I also didn't want to
+violate one of our two class tenets "Don't be a jerk" so rather than
+giving the cards to a student to sort, I split the deck in half and
+gave each half to a student.&lt;/p&gt;
+&lt;p&gt;They quickly caught on and subdivided the deck and gave away their
+halves. We did this until all the students had, at some point had one
+or more cards.&lt;/p&gt;
+&lt;p&gt;Then we got to the merge part. Each student sorted his or her pile and
+passed it back to the student who they got the cards from. This
+student then merged the two piles and passed the cards back.&lt;/p&gt;
+&lt;p&gt;As the cards made their way back to me a student noted "hey, one of my
+piles isn't in order." I commented that "the algorithm might fail if
+at some points you give your cards to a dumbass." This got a good
+laugh.&lt;/p&gt;
+&lt;p&gt;Finally, two pile of cards made their way to me and I started to merge
+then. At which point, I promptly dropped the cards all over the floor.&lt;/p&gt;
+&lt;p&gt;One of my students exclaimed: "That's what happens when you give you
+cards to a dumbass!!!!!"&lt;/p&gt;
+&lt;p&gt;It was awesome. We all cracked up.&lt;/p&gt;
+&lt;p&gt;I don't think I've been "insulted" quite so perfectly since my daughter
+called me an idiot in class last year (I fed her the straight line and
+she didn't disappoint).&lt;/p&gt;
+&lt;p&gt;I love it that my kids feel comfortable enough to joke but also know
+where the line is.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="algorithms" label="algorithms"/>
+    <category term="apcs" label="apcs"/>
+    <category term="pedagogy" label="pedagogy"/>
+  </entry>
+  <entry>
+    <title>Fibonacci by the tail</title>
+    <id>http://cestlaz.github.io/posts/2014-02-13-fibonacci.md/</id>
+    <updated>2014-02-13T00:00:00</updated>
+    <published>2014-02-13T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2014-02-13-fibonacci.md/"/>
+    <summary type="html">&lt;div&gt;&lt;p&gt;We're ramping up for recursion in my junior classes - state space
+search, nlg(n) sorts, etc. As a refresher, we took a quick look at the
+Fibonacci numbers.&lt;/p&gt;
+&lt;p&gt;Now, some people seem to think that it's a tired problem. It's mathy,
+it's played out, it's boring etc.. They just might be missing the
+point.&lt;/p&gt;
+&lt;p&gt;The beauty isn't in the problem itself, but rather, that it's a
+platform on which you can look at many problem solving techniques.&lt;/p&gt;
+&lt;p&gt;We can look at the basic, straightforward , imperative solution:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight java %}
+public int fib1(int n) {
+  int a=1,b=1;
+  for (int i=0;i&amp;lt;n;i++){
+    int c=a+b;
+    a=b;
+    b=c;
+  }
+  return a;
+}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It's straightforward and fast - no recursion needed.&lt;/p&gt;
+&lt;p&gt;Next, we can look at the basic recursive version:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p _endhighlight_="%endhighlight%"&gt;{% highlight java %}
+public int fib2(int n) {
+ if (n&amp;lt;=1)
+   return 1;
+ else
+    return fib2(n-1)+fib2(n-2);
+}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The advantages (of recursive solutions in general):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It's a direct translation from the recursive mathematical formula.&lt;/li&gt;
+&lt;li&gt;It's elegant, clean, and concise.&lt;/li&gt;
+&lt;li&gt;It can make hard problems much easier (see: &lt;a href="http://cestlaz.github.io/2010/01/10/towers-of-hanoi.html#.Uv1m4N_EvZ8"&gt;Towers, Hanoi&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;We can use same thought process that led to this solution to solve
+   problems like finding our way out of a maze.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The downside:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It can be VERY slow.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So, how do we address this?&lt;/p&gt;
+&lt;p&gt;One way is via &lt;strong&gt;memoization&lt;/strong&gt; - when we find a value, store it in a
+table, then we can use the look up table instead of recalculating over
+and over:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;java
+public int[] fibnums = new int[100000]; 
+public int fib3(int n) {
+ if (n&amp;lt;=1)
+   return 1;
+ else if (fibnums[n] != 0)
+    return fibnums[n];
+ else {
+   fibnums[n] fib3(n-1)+fib3(n-2);
+   return fibnums[n];
+   }
+}&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is a terrific thing to show a class since it's easy for students
+to wrap their heads around, it really speeds things up, and it's a
+precursor to lots of neat algorithms.&lt;/p&gt;
+&lt;p&gt;Finally, we can look at re-writing Fibonacci using tail
+recursion. This one can be a little hard for students to grasp. I like
+building it up from the iterative solution. In that solution, we use
+&lt;strong&gt;a&lt;/strong&gt;, and &lt;strong&gt;b&lt;/strong&gt; to "walk down" the list of Fibonacci numbers. At any point in time, &lt;strong&gt;a&lt;/strong&gt; and &lt;strong&gt;b&lt;/strong&gt; represent where we are in the sequence. We also use &lt;strong&gt;c&lt;/strong&gt; but that's really just a temporary place to add a and b together.&lt;/p&gt;
+&lt;p&gt;The problem with doing this in a recursive solution is that we can't
+have &lt;strong&gt;a&lt;/strong&gt; and &lt;strong&gt;b&lt;/strong&gt; as local variables as each recursive call will
+have new &lt;strong&gt;a&lt;/strong&gt; and &lt;strong&gt;b&lt;/strong&gt;s and no information will be transferred.&lt;/p&gt;
+&lt;p&gt;Since we're working in Java, it doesn't take long for some students to come up with the idea of using instance variables to store a and b and just use the recursion for the "loop.":&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight java %}
+public int a=1, b=1
+public int fib4(int n) {
+    if (n==1)
+        return a;
+    else {
+        int c=a+b;
+        a=b;
+        b=c;
+        return fib4(n-1)
+    }
+}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Great, but using instance variables in this way is very inelegant and messy. Better, use extra parameters to store the values from call to call:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight java %}
+public int fib5(int n,int a, int b) {
+    if (n==1)
+        return a;
+    else
+        return fib4(n-1,b,a+b)
+}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Looking at Fib5(5) we get for n, a, and b:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;5,1,1&lt;/li&gt;
+&lt;li&gt;4 1,2&lt;/li&gt;
+&lt;li&gt;3,2,3&lt;/li&gt;
+&lt;li&gt;2,3,5&lt;/li&gt;
+&lt;li&gt;1,5,8&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At which point we just return the 8&lt;/p&gt;
+&lt;p&gt;Clean, elegant, fast, and easy to understand.&lt;/p&gt;
+&lt;p&gt;Each of these four techniques are important and will be used time and time again and here we have one simple problem that allows us to explore them all.&lt;/p&gt;
+&lt;h5&gt;Some Links&lt;/h5&gt;
+&lt;p&gt;&lt;a href="http://maikolsolis.wordpress.com/2014/01/18/project-euler-problem-2-even-fibonacci-numbers/"&gt;Project Euler: Problem #2 - Even Fibonacci numbers&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://java.dzone.com/articles/memoized-fibonacci-numbers"&gt;Memoized Fibonacci Numbers with Java 8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://mikesmathpage.wordpress.com/2014/02/07/the-quadratic-formula-and-fibonacci-numbers/"&gt;The quadratic formula and Fibonacci numbers&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blog.smartbear.com/programming/why-developers-%0Astill-need-the-basics/"&gt;Monte Carlo Simulations, Fibonacci Numbers, and Other Number Tests: Why Developers Still Need The Basics&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.ted.com/talks/arthur_benjamin_the_magic_of_fibonacci_numbers.html"&gt;TED: Arthur Benjamin: The magic of Fibonacci numbers - Arthur Benjamin (2013)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lee-phillips.org/lispmath/"&gt;Fibonacci Numbers in the Real World&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="algorithms" label="algorithms"/>
+    <category term="pedagogy" label="pedagogy"/>
+  </entry>
+  <entry>
+    <title>Sorting from the top and from the bottom</title>
+    <id>http://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom.html/</id>
+    <updated>2010-03-14T00:00:00</updated>
+    <published>2010-03-14T00:00:00-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom.html/"/>
+    <summary type="html">&lt;div id="content"&gt;&lt;h1 class="title"&gt;Sorting from the top and from the bottom&lt;/h1&gt; &lt;p&gt;I've been meaning to write this post for a couple of weeks, but some times life just gets in the way. &lt;/p&gt;&lt;p&gt;I've always thought it important to arm students with as many different tools with which to attack problems as possible. As such, the courses I teach use a number of different languages, each highlighting a different paradigm and thought process. The hope is that by the end of the sequence, they can look at problems from many different angles. &lt;/p&gt;&lt;p&gt;In my advanced placement classes, we recently studied sorting algorithms.  It think the quicksort is a good example of a problem that can be looked at from multiple points of view. &lt;/p&gt;&lt;p&gt;In my experiences talking to teachers and students who cut there teeth using languages like Java, C, or C++, much of the discussion deals with the actual partitioning of the array. Comparing elements, swapping them and arriving in the middle. One might end up with something like this as a first cut: &lt;/p&gt;   &lt;pre class="src src-java"&gt;&lt;br&gt;&lt;span class="linenr"&gt; 1:  &lt;/span&gt;&lt;span style="color: #a020f0;"&gt;public&lt;/span&gt; &lt;span style="color: #228b22;"&gt;void&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;qsort&lt;/span&gt;(&lt;span style="color: #228b22;"&gt;int&lt;/span&gt;[] &lt;span style="color: #a0522d;"&gt;a&lt;/span&gt;,&lt;span style="color: #228b22;"&gt;int&lt;/span&gt; &lt;span style="color: #a0522d;"&gt;l&lt;/span&gt;, &lt;span style="color: #228b22;"&gt;int&lt;/span&gt; &lt;span style="color: #a0522d;"&gt;h&lt;/span&gt;)&lt;br&gt;&lt;span class="linenr"&gt; 2:  &lt;/span&gt;{&lt;br&gt;&lt;span class="linenr"&gt; 3:  &lt;/span&gt;&lt;span style="color: #a020f0;"&gt;if&lt;/span&gt; (l&amp;gt;=h)&lt;br&gt;&lt;span class="linenr"&gt; 4:  &lt;/span&gt;  &lt;span style="color: #a020f0;"&gt;return&lt;/span&gt;;&lt;br&gt;&lt;span class="linenr"&gt; 5:  &lt;/span&gt;&lt;br&gt;&lt;span class="linenr"&gt; 6:  &lt;/span&gt;&lt;span style="color: #b22222;"&gt;/* &lt;/span&gt;&lt;span style="color: #b22222;"&gt;Just use lowest index as pivot for now */&lt;/span&gt;&lt;br&gt;&lt;span class="linenr"&gt; 7:  &lt;/span&gt;&lt;span style="color: #228b22;"&gt;int&lt;/span&gt; &lt;span style="color: #a0522d;"&gt;pivot&lt;/span&gt; = a[l];&lt;br&gt;&lt;span class="linenr"&gt; 8:  &lt;/span&gt;&lt;span style="color: #228b22;"&gt;int&lt;/span&gt; &lt;span style="color: #a0522d;"&gt;low&lt;/span&gt;=l;&lt;br&gt;&lt;span class="linenr"&gt; 9:  &lt;/span&gt;&lt;span style="color: #228b22;"&gt;int&lt;/span&gt; &lt;span style="color: #a0522d;"&gt;high&lt;/span&gt;=h;&lt;br&gt;&lt;span class="linenr"&gt;10:  &lt;/span&gt;&lt;br&gt;&lt;span class="linenr"&gt;11:  &lt;/span&gt;&lt;span style="color: #b22222;"&gt;/* &lt;/span&gt;&lt;span style="color: #b22222;"&gt;partition the data set around the pivot value */&lt;/span&gt;&lt;br&gt;&lt;span class="linenr"&gt;12:  &lt;/span&gt;&lt;span style="color: #a020f0;"&gt;while&lt;/span&gt; (l&amp;lt;=h)&lt;br&gt;&lt;span class="linenr"&gt;13:  &lt;/span&gt;{&lt;br&gt;&lt;span class="linenr"&gt;14:  &lt;/span&gt;  &lt;span style="color: #a020f0;"&gt;while&lt;/span&gt; (a[l]&amp;lt;pivot)&lt;br&gt;&lt;span class="linenr"&gt;15:  &lt;/span&gt;    l++;&lt;br&gt;&lt;span class="linenr"&gt;16:  &lt;/span&gt;  &lt;span style="color: #a020f0;"&gt;while&lt;/span&gt; (a[h]&amp;gt;pivot)&lt;br&gt;&lt;span class="linenr"&gt;17:  &lt;/span&gt;    h--;&lt;br&gt;&lt;span class="linenr"&gt;18:  &lt;/span&gt;  &lt;span style="color: #a020f0;"&gt;if&lt;/span&gt; (l&amp;lt;=h)&lt;br&gt;&lt;span class="linenr"&gt;19:  &lt;/span&gt;  {&lt;br&gt;&lt;span class="linenr"&gt;20:  &lt;/span&gt;    &lt;span style="color: #228b22;"&gt;int&lt;/span&gt; &lt;span style="color: #a0522d;"&gt;tmp&lt;/span&gt;=a[l];&lt;br&gt;&lt;span class="linenr"&gt;21:  &lt;/span&gt;    a[l]=a[h];&lt;br&gt;&lt;span class="linenr"&gt;22:  &lt;/span&gt;    a[h]=tmp;&lt;br&gt;&lt;span class="linenr"&gt;23:  &lt;/span&gt;    l++;&lt;br&gt;&lt;span class="linenr"&gt;24:  &lt;/span&gt;    h--; &lt;br&gt;&lt;span class="linenr"&gt;25:  &lt;/span&gt;  }&lt;br&gt;&lt;span class="linenr"&gt;26:  &lt;/span&gt;}&lt;br&gt;&lt;span class="linenr"&gt;27:  &lt;/span&gt;&lt;br&gt;&lt;span class="linenr"&gt;28:  &lt;/span&gt;&lt;span style="color: #b22222;"&gt;/* &lt;/span&gt;&lt;span style="color: #b22222;"&gt;sort items below and above the pivot */&lt;/span&gt;&lt;br&gt;&lt;span class="linenr"&gt;29:  &lt;/span&gt;qsort(a,low,l-1);&lt;br&gt;&lt;span class="linenr"&gt;30:  &lt;/span&gt;qsort(a,l,high);&lt;br&gt;&lt;span class="linenr"&gt;31:  &lt;/span&gt;&lt;br&gt;&lt;span class="linenr"&gt;32:  &lt;/span&gt;}&lt;br&gt;&lt;/pre&gt;    &lt;p&gt;A fair amount of time and detail is spent dealing with the low level movement of data within the array . This is important – good stuff, but it takes the emphasis away from the higher level elegance of the algorithm. &lt;/p&gt;&lt;p&gt;The quicksort can be described as: &lt;/p&gt;  &lt;ol&gt;&lt;li&gt; If the size of the list is &lt;/li&gt;&lt;li&gt;&lt;ol&gt;&lt;li&gt; Select a pivot element&lt;/li&gt;&lt;li&gt; Generate the list L of items smaller than the pivot&lt;/li&gt;&lt;li&gt; Generate the list H of items larger than the pivot&lt;/li&gt;&lt;li&gt; the sorted list is qsort(L)+pivot+qsort(R)&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;&lt;/ol&gt; &lt;p&gt;Having seen some scheme in their intro class, our students have a tool with which we can describe the quicksort in terms much closer to the description (allowing for the fact that this doesn't deal with multiple values equal to the pivot correctly): &lt;/p&gt;    &lt;pre class="src src-scheme"&gt;&lt;br&gt;&lt;span class="linenr"&gt; 1:  &lt;/span&gt;(&lt;span style="color: #a020f0;"&gt;define&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;makefilter&lt;/span&gt;&lt;br&gt;&lt;span class="linenr"&gt; 2:  &lt;/span&gt;  (&lt;span style="color: #a020f0;"&gt;lambda&lt;/span&gt; (op x)&lt;br&gt;&lt;span class="linenr"&gt; 3:  &lt;/span&gt;    (&lt;span style="color: #a020f0;"&gt;lambda&lt;/span&gt; (n) (op x n))))&lt;br&gt;&lt;span class="linenr"&gt; 4:  &lt;/span&gt;&lt;br&gt;&lt;span class="linenr"&gt; 5:  &lt;/span&gt;(&lt;span style="color: #a020f0;"&gt;define&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;qsort&lt;/span&gt; &lt;br&gt;&lt;span class="linenr"&gt; 6:  &lt;/span&gt;  (&lt;span style="color: #a020f0;"&gt;lambda&lt;/span&gt; (l)&lt;br&gt;&lt;span class="linenr"&gt; 7:  &lt;/span&gt;    (&lt;span style="color: #a020f0;"&gt;cond&lt;/span&gt; ((null? l) '())&lt;br&gt;&lt;span class="linenr"&gt; 8:  &lt;/span&gt;          (&lt;span style="color: #a020f0;"&gt;else&lt;/span&gt; (append (qsort (filter (makefilter &amp;gt; (car l)) l))&lt;br&gt;&lt;span class="linenr"&gt; 9:  &lt;/span&gt;                        (list (car l))&lt;br&gt;&lt;span class="linenr"&gt;10:  &lt;/span&gt;                        (qsort (filter (makefilter &amp;lt; (car l)) l)))))))&lt;br&gt;&lt;/pre&gt;    &lt;p&gt;This allows us to discuss the quicksort at a much higher level and focus on things like selecting a good pivot or the analysis of the run time. I believe this makes it much easier to really understand what's going on. &lt;/p&gt;&lt;p&gt;Having discussed it in this functional context, we can also look at the same thing in a scripting language such as python: &lt;/p&gt;   &lt;pre class="src src-python"&gt;&lt;br&gt;&lt;span class="linenr"&gt;1:  &lt;/span&gt;&lt;span style="color: #a020f0;"&gt;def&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;qsort&lt;/span&gt;(l):&lt;br&gt;&lt;span class="linenr"&gt;2:  &lt;/span&gt;    &lt;span style="color: #a020f0;"&gt;if&lt;/span&gt; &lt;span style="color: #a020f0;"&gt;len&lt;/span&gt;(l)&amp;lt;=1:&lt;br&gt;&lt;span class="linenr"&gt;3:  &lt;/span&gt;        &lt;span style="color: #a020f0;"&gt;return&lt;/span&gt; l&lt;br&gt;&lt;span class="linenr"&gt;4:  &lt;/span&gt;    &lt;span style="color: #a020f0;"&gt;else:&lt;/span&gt;&lt;br&gt;&lt;span class="linenr"&gt;5:  &lt;/span&gt;        &lt;span style="color: #a020f0;"&gt;return&lt;/span&gt; qsort([x &lt;span style="color: #a020f0;"&gt;for&lt;/span&gt; x &lt;span style="color: #a020f0;"&gt;in&lt;/span&gt; l[1:] &lt;span style="color: #a020f0;"&gt;if&lt;/span&gt; x &amp;lt;= l[0]]) + [l[0]]+\&lt;br&gt;&lt;span class="linenr"&gt;6:  &lt;/span&gt;            qsort([x &lt;span style="color: #a020f0;"&gt;for&lt;/span&gt; x &lt;span style="color: #a020f0;"&gt;in&lt;/span&gt; l[1:] &lt;span style="color: #a020f0;"&gt;if&lt;/span&gt; x &amp;gt; l[0]])&lt;br&gt;&lt;span class="linenr"&gt;7:  &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;    &lt;p&gt;Again, the focus is on the algorithm, not the array or list manipulation. &lt;/p&gt;&lt;p&gt;Looking at the problem from both the more abstract side, which in this case functional languages allow, and the more concrete, as we did in Java gives our students more tools with which to attack problems. &lt;/p&gt;&lt;p&gt;Just some food for thought. &lt;/p&gt;       &lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width="1" height="1" src="https://blogger.googleusercontent.com/tracker/468689896075458340-2070280110494147035?l=cestlaz.blogspot.com" alt=""&gt;&lt;/div&gt;</summary>
+    <category term="algorithms" label="algorithms"/>
+    <category term="pedagogy" label="pedagogy"/>
+  </entry>
+</feed>

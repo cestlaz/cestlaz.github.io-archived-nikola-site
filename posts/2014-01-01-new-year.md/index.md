@@ -2,7 +2,7 @@
 .. title: Plans for the New Year
 .. slug: 2014-01-01-new-year.md
 .. date: 2014-01-01
-.. tags: 
+.. tags: misc
 .. type: text
 -->
 

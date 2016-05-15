@@ -2,7 +2,7 @@
 .. title: Change the data
 .. slug: 2014-02-26-change-the-data.md
 .. date: 2014-02-26
-.. tags: 
+.. tags: pedagogy
 .. type: text
 -->
 

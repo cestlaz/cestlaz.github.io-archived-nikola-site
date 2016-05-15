@@ -2,7 +2,7 @@
 .. title: At Last - CS Gender Equity in Multiple States!!!!!
 .. slug: 2014-01-11-badstats.md
 .. date: 2014-01-11
-.. tags: 
+.. tags: policy
 .. type: text
 -->
 
