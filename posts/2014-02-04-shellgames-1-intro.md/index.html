@@ -121,22 +121,22 @@ I'd love to see an Intro to Linux (way more than just install) as a 3-hour works
 
 <p>Still, I liked the idea - I've been an educator for 23 years, a Linux user for most of that time and an  Unix user for longer. I'm a firm believer in operating system as toolkit and so I think I'll take Steve and Alfred's suggestion and try to put together a series of posts on using Linux from a CS educators point of view.
 </p>
-<p></p>
+
 <p>So, before we begin - a little background.</p>
 <p></p>
 
 <p>I can proudly say that I've been Windows free since about 2000. That's when I decided to wipe the lat traces of Microsoft from my hard drives. Prior to that I just booted up MS-DOS or Windows to play games or to use a Excel or Word.
 </p>
-<p></p>
+
 <p>Since the early days of Linux - back before Slackware, I dual booted. Before Linux, I dialed into public Unix systems such as <a href="http://www.panix.com">Panix</a> or <a href="http://en.wikipedia.org/wiki/The_Big_Electric_Cat">The Big Electric Cat</a>. At home, I tried to make MS-DOS as Unix like as I could. I ran the <a href="http://en.wikipedia.org/wiki/MKS_Toolkit">MKS Toolkti</a>, and used my own shell (a project every young programmer should attempt).
 </p>
-<p></p>
+
 <p>Why am I posting this now? It's a new semester and I find myself, as usual, leveraging the Linux shell. It was time to set up a mailing list for the class.</p>
 <p></p>
 
 <p>I'm able to go to our school's data system and grab a tab delimited file that looks something like this:
 </p>
-<p></p>
+
 <p></p>
 <blockquote>
 <pre>
@@ -151,10 +151,10 @@ grY22tBs    01  6   pqxuk   NRK 9234    7dd gHAMmNd 270217219   uRKo90@QylKR.oqy
 
 <p>It's tab delimited but I scrambled the letters so as to not reveal any student info.
 </p>
-<p></p>
+
 <p>Oh, how did I do that scrambling? Easy. First, I combined some basic utilities to make a random permutation of the upper and lower case letters and stored them in a shell variable. Don't worry, I'll explain these commands in upcoming posts:
 </p>
-<p></p>
+
 <blockquote>
 perm=`echo "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ | sed "s/\(.\)/\1\n/g" | sort -R | tr -t "\\n" ":" | sed "s/[^a-zA-Z0-9,@]//g"`
 </blockquote>
@@ -163,7 +163,7 @@ perm=`echo "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ | sed "s/\(.\)/
 
 <p>Then I used tr (translate) to exchange the real letters for the matching letter in the random permutation:
 </p>
-<p></p>
+
 <blockquote>
 cat students.tsv | tr a-zA-Z $perm &gt; students.scrambled
 </blockquote>
@@ -172,17 +172,18 @@ cat students.tsv | tr a-zA-Z $perm &gt; students.scrambled
 
 <p>So back to the real work. I needed to isolate the students email addresses. The process:
 </p>
-<p></p>
+
 <p></p>
 <ol>
 <li>convert the tabs to commas</li>
     <li>Pull out the students in my AP class (code MKX22X) from the list of all students</li>
     <li>Pull out the 10th column</li>
     <li>These are the emails, save them to a file</li>
-<p></p>
+
+
 <p>So, I typed:
 </p>
-<p></p>
+
 <blockquote>
 cat students.tsv | grep MKS22X | sed "s/\t/,/g" | cut -d, -f10 &gt; emails
 </blockquote>
@@ -191,24 +192,24 @@ cat students.tsv | grep MKS22X | sed "s/\t/,/g" | cut -d, -f10 &gt; emails
 
 <p>grep filters out lines that have MKS22X in them and sed replaces the tabs (\t) with commas and cut pulls out the email addresses. It's all stored in a file named emails.
 </p>
-<p></p>
+
 <p>Now, I just have to import these into my maillist software (mailman).
 </p>
-<p></p>
+
 <p></p>
 <blockquote>
     add_members -r emails myclasslist
   </blockquote>
-<p></p>
+
+
 <p>So, that's it, easy peasy.
 </p>
-<p></p>
+
 <p>I'll be away for most of this week at the Tapia conference and then I'll be playing catch up, but I'm hoping to do a series of posts talking about my Linux toolset and how I use it.
 </p>
-<p></p>
+
 <p>I hope you all find it interesting and maybe even useful.
 </p>
-<p></p>
 </ol>
 </div>
 

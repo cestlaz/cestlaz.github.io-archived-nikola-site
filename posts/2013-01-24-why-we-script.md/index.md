@@ -2,6 +2,7 @@
 .. title: Why we script
 .. slug: 2013-01-24-why-we-script.md
 .. date: 2013-01-24
+.. tags: 
 .. type: text
 -->
 

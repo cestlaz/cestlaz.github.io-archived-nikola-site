@@ -2,6 +2,7 @@
 .. title: Bucket Sorting
 .. slug: 2013-11-27-bucket-sorts.md
 .. date: 2013-11-27
+.. tags: 
 .. type: text
 -->
 

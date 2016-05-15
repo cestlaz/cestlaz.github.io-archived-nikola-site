@@ -2,6 +2,7 @@
 .. title: Bikeshares - Bixi vs Citibike
 .. slug: 2013-08-15-Bikeshares-Citibike-vs-Bixi.md
 .. date: 2013-08-15
+.. tags: 
 .. type: text
 -->
 

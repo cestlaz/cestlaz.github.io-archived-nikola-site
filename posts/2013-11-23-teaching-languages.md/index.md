@@ -2,6 +2,7 @@
 .. title: Teaching Languages
 .. slug: 2013-11-23-teaching-languages.md
 .. date: 2013-11-23
+.. tags: 
 .. type: text
 -->
 

@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (netlogo)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/netlogo.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 15 May 2016 12:39:51 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Cellular Automata for Pathfinding in NetLogo</title><link>http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet"&gt;
+&lt;script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
+&lt;style&gt;
+div.center {text-align:center;}
+.smaller {height:200px;width:200px}
+
+.center {text-align:center;}
+.frame {width:600px;height:800px;}
+
+&lt;/style&gt;
+
+
+&lt;div class="center"&gt;
+&lt;a class="center" href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-start.png"&gt;
+&lt;img src="http://cestlaz.github.io/img/maze-ca/maze-start.png"&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+
+&lt;div id="outline-container-orgheadline1" class="outline-2"&gt;
+&lt;h2 id="orgheadline1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline1"&gt;
+&lt;p&gt;
+&lt;a href="http://cestlaz.github.io/2016/01/15/shift-image.html#.Vpvy4x8SrmE"&gt;Last time&lt;/a&gt; we took a look at implementing a Cellular Automaton in
+NetLogo to do some simple image manipulation. We just scratched the
+surface. In class, the kids write pretty nice Photoshop Light
+applications. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Today we'll look at some more ambitious problem solving - using a
+Cellular Automaton to find a path through a maze. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-orgheadline2" class="outline-2"&gt;
+&lt;h2 id="orgheadline2"&gt;Part 1 - finding possible paths&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline2"&gt;
+&lt;p&gt;
+We'll use the image above as an example and a live model with all the
+code is at the end of this post.
+&lt;/p&gt;
+
+&lt;p&gt;
+Each square of the maze is a
+NetLogo patch. White square represent possible paths, Red is our
+entrance, green our exit. As we explore the maze, we'll color the
+cells yellow.
+&lt;/p&gt;
+
+&lt;p&gt;
+Remember, in  a Cellular Automaton (CA), each cell makes a decision as to
+it's next state based on information about its neighbors (up, down,
+left, and right only in this case).
+&lt;/p&gt;
+
+&lt;p&gt;
+So, if every cell is looking around at it's neighbors, most cells
+don't have enough information. The only white cell that might be on
+the path from entrance to exit is the one next to the entrance - it
+might be on the path.
+&lt;/p&gt;
+
+&lt;p&gt;
+This leads us to the first step of our CA rule set:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-netlogo"&gt;; if I have a green neighbor, I might be on the path, turn yellow
+ask patches with [pcolor = white] [
+  if any? neighbors with [pcolor = red] [
+   set pcolor yellow
+  ] 
+]
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+(click images to enlarge)
+&lt;/p&gt;
+
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-1.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-1.png"&gt;
+&lt;/a&gt;
+
+&lt;p&gt;
+Next time through, we notice that a cell might be on the path if it's
+white and it has either red or yellow neighbors.
+&lt;/p&gt;
+
+
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-2.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-2.png"&gt;
+&lt;/a&gt;
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-3.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-3.png"&gt;
+&lt;/a&gt;
+
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-4.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-4.png"&gt;
+&lt;/a&gt;
+
+&lt;p&gt;
+Eventually, we end up with a yellow abutting green - the exit.
+&lt;/p&gt;
+
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-found.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-found.png"&gt;
+&lt;/a&gt;
+
+&lt;p&gt;
+Notice that each yellow cell is also numbered. The number indicates
+how many steps it took to get there from the entrance. The
+implementation is trivial:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Start by giving each patch a variable &lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; and starting it at 0.&lt;/li&gt;
+&lt;li&gt;When a cell is about to turn yellow, it should look at it's yellow
+or red neighbors, ask for their &lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; value (they'll all be the
+same - think about why), and set it's &lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; value to one more
+than that.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+We'll use these step numbers to recover the actual shortest path.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-orgheadline3" class="outline-2"&gt;
+&lt;h2 id="orgheadline3"&gt;Part 2 - recovering the shortest path.&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgheadline3"&gt;
+&lt;p&gt;
+We can now use the yellow patches with the step numbers to find our
+way back. 
+&lt;/p&gt;
+
+&lt;p&gt;
+We're going to build a solution set.
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;start with an empty solution set.&lt;/li&gt;
+&lt;li&gt;take the only green cell not in the solution set (let's call it &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt;).&lt;/li&gt;
+&lt;li&gt;Ask &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt;'s yellow neighbor with lowest step number to turn
+itself green (that cell will be &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt; next time around).&lt;/li&gt;
+&lt;li&gt;Place &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt; into the solution set (leaving the new green cell as
+the only green cell not in the solution set).&lt;/li&gt;
+&lt;li&gt;Repeat 2 - 5 until we're back at the entrance.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-back-1.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-back-1.png"&gt;
+&lt;/a&gt;
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-back-2.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-back-2.png"&gt;
+&lt;/a&gt;
+&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-solved.png"&gt;
+&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-solved.png"&gt;
+&lt;/a&gt;
+
+&lt;p&gt;
+This is one of my favorite intro topics. It's using a CA - something
+normally just presented as a toy idea, to solve a real problem. It
+reinforces parallel processing and foreshadows all sorts of pathfinding
+ideas to come.
+&lt;/p&gt;
+
+&lt;p&gt;
+Below is the complete NetLogo program. You can look at the code by
+clicking on the code tab at the bottom.
+&lt;/p&gt;
+
+&lt;p&gt;
+To run:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;setup&lt;/b&gt;&lt;/b&gt; sets up all the variables and clears the world.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;buildmaze&lt;/b&gt;&lt;/b&gt; builds a random maze.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;solve&lt;/b&gt;&lt;/b&gt; is a toggle to run through an entire solution.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; single steps through the CA.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;reset&lt;/b&gt;&lt;/b&gt; Resets all the variables and recolors the maze to
+unsolved.&lt;/li&gt;
+&lt;li&gt;The other buttons are toggles for drawing your own maze.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="center frame"&gt;
+&lt;iframe class="center frame" src="http://cestlaz.github.io/img/maze-ca/maze.html"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>netlogo</category><guid>http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</guid><pubDate>Sun, 17 Jan 2016 05:00:00 GMT</pubDate></item><item><title>Cellular Automata, NetLogo and real problems</title><link>http://cestlaz.github.io/posts/2016-01-15-shift-image.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+.center {text-align:center;}
+.frame {width:640px;height:800px;}
+&lt;/style&gt;
+
+
+&lt;p&gt;
+We've been using &lt;a href="https://ccl.northwestern.edu/netlogo/"&gt;NetLogo&lt;/a&gt; in our intro course for years. It's a
+wonderful programming environment. Many of you recall the &lt;a href="https://en.wikipedia.org/wiki/Logo_(programming_language)"&gt;Logo&lt;/a&gt;
+programming language. NetLogo is like Logo but instead of programming
+a turtle, you write a program that's run by multiple, perhaps hundreds
+of turtles and also by the world the turtles live on. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Some of the reasons we like it are that it's:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;An easy accessible textual programming language&lt;/li&gt;
+&lt;li&gt;Makes building a graphical interface trivial&lt;/li&gt;
+&lt;li&gt;great for modeling&lt;/li&gt;
+&lt;li&gt;Comes with tons of demo models&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+And now, with the latest version, NetLogo programs/models can be
+deployed as web sites. All you have to do is save your program as
+"NetLogo Web" and put it up on a observer somewhere.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you haven't you should download and install NetLogo, run it, then
+go to the file menu and look at the built in models.
+&lt;/p&gt;
+
+&lt;p&gt;
+I also enjoy playing with &lt;a href="https://en.wikipedia.org/wiki/Cellular_automaton"&gt;Cellular Automata&lt;/a&gt; and NetLogo's a wonderful
+platform to play with. The turtles live on a grid of patches and just
+like the turtles, the patches will all run your program over and over.
+&lt;/p&gt;
+
+&lt;p&gt;
+The patches make perfect cells for a cellular automaton and you can
+implement a rule set in your patches. 
+&lt;/p&gt;
+
+&lt;p&gt;
+NetLogo even comes with a bunch of built in demo models for Cellular
+Automata including &lt;a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"&gt;Conway's Game of Life&lt;/a&gt;, probably the most famous CA.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand, Conway's Game of Life is somewhat cliche and while
+I find it fascinating, it doesn't really solve a practical problem, at
+least on on the surface.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, I was looking for something more practical to do and something
+where we could explore some deeper CS concepts. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Image manipulation.
+&lt;/p&gt;
+
+&lt;p&gt;
+In class, we make a Cellular Automaton where each cell or patch is a
+pixel in an image. In NetLogo, you can do this with the
+"import-pcolors" command. Lower down, I have a demo that just manually
+colors patches - the web version of NetLogo doesn't yet support that
+command.
+&lt;/p&gt;
+
+&lt;p&gt;
+Task 1 - what if we want to shift the image over? The kids come up
+with a solution pretty quickly: "We can just have each patch ask its
+neighbor for its color." Here's the code they try:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-netlogo"&gt;; ask each patch to set its color to the color of the
+; patch at relative location -1,0
+to shift-naive
+  ask patches [ set pcolor [pcolor] of patch-at -1 0]
+end
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+To see what happens, scroll down to the NetLogo model below, click on
+setup and then hit the &lt;b&gt;&lt;b&gt;shift-naive&lt;/b&gt;&lt;/b&gt; button a few times.
+&lt;/p&gt;
+
+&lt;p&gt;
+It doesn't work. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What's going on?
+&lt;/p&gt;
+
+&lt;p&gt;
+It's a synchronization issue.
+&lt;/p&gt;
+
+&lt;p&gt;
+Suppose we have the following three cells in a row:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/shift-image/image1.png" alt="image1.png"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+If cell 3 asks cell 2 it's color before cell 2 asks cell 1's color, we
+get the desired result:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/shift-image/image2.png" alt="image2.png"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+But if cell 2 asks cell 1 for it's color first then cell 3 will
+actually get cell 1's color:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/shift-image/image3.png" alt="image3.png"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+So now we have the students thinking about synchronization and
+parallel processing and they don't even know it.
+&lt;/p&gt;
+
+&lt;p&gt;
+The solution's pretty easy, break the problem up into two steps.
+&lt;/p&gt;
+
+&lt;p&gt;
+First, have every patch ask its neighbor for its color and then once
+everyone knows their neighbor's color, then change:
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-html"&gt;patches-own [next-color]
+
+to shift-correct
+  ; figure out my next color
+  ask patches [ set next-color [pcolor] of patch-at -1 0 ]
+  ; then switch to it
+  ask patches [ set pcolor next-color]
+end
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+You can run that by clicking &lt;b&gt;&lt;b&gt;setup&lt;/b&gt;&lt;/b&gt; again and then &lt;b&gt;&lt;b&gt;shift-correct&lt;/b&gt;&lt;/b&gt; a
+few times.
+&lt;/p&gt;
+
+&lt;p&gt;
+There's some of the beauty of NetLogo - we can get kids to think about
+some deep concepts while playing with an easy to use, fun, interactive
+environment with a real textual programming language.
+&lt;/p&gt;
+
+&lt;p&gt;
+Stay tuned for part 2 when I'll talk about creating a cellular
+automaton that can solve a maze.
+&lt;/p&gt;
+
+&lt;div class="center frame"&gt;
+&lt;iframe class="center frame" src="http://cestlaz.github.io/img/shift-image/shift-image.html"&gt;&lt;/iframe&gt;
+&lt;/div&gt;</description><category>netlogo</category><guid>http://cestlaz.github.io/posts/2016-01-15-shift-image.html/</guid><pubDate>Fri, 15 Jan 2016 05:00:00 GMT</pubDate></item><item><title>CS Ed Predictions 2015</title><link>http://cestlaz.github.io/posts/2015-01-04-predictions-2015.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+I just read &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson's&lt;/a&gt; predictions for next year. I was going
+to leave a comment but since it would have gotten somewhat long
+winded, I thought I'd comment in a post of my own.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you haven't read Alfred's post yet, check it out:
+&lt;a href="http://blog.acthompson.net/2015/01/computer-science-education-predictions.html"&gt;http://blog.acthompson.net/2015/01/computer-science-education-predictions.html&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;div id="outline-container-unnumbered-1" class="outline-2"&gt;
+&lt;h2 id="unnumbered-1"&gt;On more states allowing CS to count for a graduation requirement:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-unnumbered-1"&gt;
+&lt;p&gt;
+Alfred's probably right but I'm leery. Sure, it could end up terrific
+but I could see a number of ways this could play out badly.
+&lt;/p&gt;
+
+&lt;p&gt;
+We could end up with non-cs classes to count as CS or we could see
+schools allowing real CS to count but there would be no incentive for
+a school to actually create any meaningful CS classes
+much less for kids to take them.
+&lt;/p&gt;
+
+&lt;p&gt;
+I guess the root of my concern probably relates two of my concerns
+about education in general:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Real, experienced teachers aren't driving policy in education in
+general and CS is and will  be no different. We're going to be left
+with something forced down from above and I fear it will be bad.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+and
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I'm not a big fan of education education. As schools of education
+get involved they will have more of a voice. I think one of the
+worst things to happen to math education over the course of my
+career has been "Math Ed." I fear CS Ed will have the same effect
+on K12 CS education.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Maybe I'm a pessimist or maybe I've just been burned one to many times
+or maybe it's that as a public school teacher I see the negative
+effect of politics and money on public education but at least in NYC I
+see where the decision making is coming from and I'm not encouraged.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand, even if I'm right and the powers that be really
+screw things up,there should always be at least a few people who see
+through they hype and that's where I can continue to do positive work.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-unnumbered-2" class="outline-2"&gt;
+&lt;h2 id="unnumbered-2"&gt;On Python continuing to grow&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-unnumbered-2"&gt;
+&lt;p&gt;
+It's been one of my go to languages for a while now. I've been using
+it in and out of classes since some time in the mid 90s.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't see it replacing Java in AP CS and it looks like Scratch has
+the inside track CS Principles but it's good for so many things and
+has such a low cost of entry, I again feel that Alfred's right. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The fact that it's easy for a non-cs teacher to pick up, at least to a
+limited degree, will certainly help the charge. I'm not sure if long
+term, this is a good thing, but it will help to push python's growth in education.
+&lt;/p&gt;
+
+&lt;p&gt;
+As a side note on Java – I'm not personally a fan, but there good things in there that would be lost 
+with a total shift to languages like Python.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-unnumbered-3" class="outline-2"&gt;
+&lt;h2 id="unnumbered-3"&gt;On CS Principles&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-unnumbered-3"&gt;
+&lt;p&gt;
+I do see a time where the course is forced on Stuy but I'm
+not worrying about it for the moment. I think we already teach a
+stronger course and by the time CS Principles becomes an issue at
+Stuy, I'll probably be gone.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-unnumbered-4" class="outline-2"&gt;
+&lt;h2 id="unnumbered-4"&gt;Chromebooks&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-unnumbered-4"&gt;
+&lt;p&gt;
+I could see chromebooks working out for CS but only if schools don't
+lock them down. Out of the box, you can only use cloud based
+development environments. This is surely limiting but if you have the bandwidth, between
+&lt;a href="http://codesters.com/"&gt;codesters.com&lt;/a&gt;, &lt;a href="http://koding.com/"&gt;koding.com&lt;/a&gt;, cloud9, Dr.Racket and assorted other tools
+you can certainly do some good CS.
+&lt;/p&gt;
+
+&lt;p&gt;
+The upside comes when you can drop into the Linux shell. I've been
+playing with a C720 Intel chromebook recently. It's small and
+lightweight and once I set it up, it was running Dr. Racket, NetLogo,
+Python, Java, Processing (all with a fairly hefty Emacs install).
+&lt;/p&gt;
+
+&lt;p&gt;
+Will it run everything? I don't know, but if I can get a new lab of
+computers and have the freedom to custom install the machines, I'm
+seriously considering chromebooks. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm also recommending them to my kids looking for a cheap portable
+development environment.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-unnumbered-5" class="outline-2"&gt;
+&lt;h2 id="unnumbered-5"&gt;Closing thoughts&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-unnumbered-5"&gt;
+&lt;p&gt;
+I've never been one for my own predictions - maybe because I'm more of
+a continuous journey rather than destination type of guy so I'll hold
+off on my own predictions for now, but I'll close with a direct
+shoutout – Hey Alfred - thanks for posting your predictions - good food for thought 
+as is your blog in general.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>netlogo</category><guid>http://cestlaz.github.io/posts/2015-01-04-predictions-2015.html/</guid><pubDate>Sun, 04 Jan 2015 05:00:00 GMT</pubDate></item><item><title>Thoughts on diversity</title><link>http://cestlaz.github.io/posts/2014-12-07-thoughts-on-diversity.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+Yesterday, my buddy &lt;a href="https://twitter.com/snikolov"&gt;Stan&lt;/a&gt; pointed me to this article: 
+&lt;a href="http://arstechnica.com/business/2014/12/to-address-techs-diversity-woes-start-with-the-vanishing-comp-sci-classroom/"&gt;"To address tech’s diversity woes, start with the vanishing Comp Sci classroom"&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+It gives a reasonable overview of the gender issues in computer
+science education. The article talks about the drop in popularity of
+the old Advanced Placement AB course and its eventually being dropped
+as well as thoughts on how the current A course is pretty dry.
+&lt;/p&gt;
+
+&lt;p&gt;
+It made me think about the old vs new exams. The current APCS A exam
+is roughly analogous to a typical college 101 course: programming in
+one language and one paradigm. The old AB class represented a 101 and
+a 102 with the 102 being data structures and algorithms. Much more
+interesting for both guys and girls. Over the years, the AP A exam has
+become more and more vocational, at least in my opinion, and that
+makes matters worse. Its more and more about using the language and
+built in collections and less about thinking and problem
+solving. What's fun about that?
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course, we teach our version, a super-set, of the AB curriculum over
+the course of a school year.
+&lt;/p&gt;
+
+&lt;p&gt;
+Interesting that even though we teach that old school hardcore CS, we
+far exceed the national numbers in terms of gender balance, but more
+on that later.
+&lt;/p&gt;
+
+&lt;p&gt;
+One of the big things going on right now is the AP CS Principles
+course. There's some good stuff in there but I've got a lot of
+questions. 
+&lt;/p&gt;
+
+&lt;p&gt;
+To start, I'm tired of hearing that it's a college level course. If
+a course is designed so that a 10th grader can be successful, it's not
+college level. I do understand that it's being taught in places like
+Berekely (and as an aside I both like and greatly respect Dan Garcia,
+who's the architect of one version of CS principles - the Beauty and
+Joy of Computing, and his work). If my kids were doing in college what
+they could have been doing in 10th grade, something's wrong. That's
+not to say that you can't have a similar course at both levels, just
+that there's a &lt;b&gt;&lt;b&gt;huge&lt;/b&gt;&lt;/b&gt; difference between a 10th grader and a college
+freshman. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I also take issue with the drag and drop languages in high school and
+beyond. True, there's a low cost of entry, but then it's limiting in
+oh so many ways. Much slower than a keyboard interface, limited screen
+real estate, and no clear exit to traditional textual
+programming. Scratch and the like are probably good for younger kids,
+but I've had to rescue many a kid from the damage done by drag and
+drop. I'm not advocating starting a high schooler in Haskell with Vim
+but there are plenty of tools that are both accessible, easy entry,
+fun, but at the same time real.
+&lt;/p&gt;
+
+&lt;p&gt;
+We also see the proliferation of all girl after school programs. I
+don't have any problem with this per se. I think we need some all
+girls and some co-ed. In fact, one of the young ladies in our summer
+program commented on how much she liked the fact that we weren't all
+girls but we created a wonderful environment where everyone felt
+comfortable and supported. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Some of those programs do great things in terms of exposing girls to
+role models and to what's possible. My issue is with the actual
+education, notably because these programs invariably don't have real
+educator/computer scientists running the show. They teach a watered
+down CS or conversely too much too quickly and then the girls are
+clobbered at the next level, they start doubting themselves and they
+change majors.
+&lt;/p&gt;
+
+&lt;p&gt;
+The problems with these after school programs as well as with CS
+Principles are the same. A few of my students who studied CS at
+Harvard framed it nicely when talking about Harvard's highly
+publicized CS50 course (I'm paraphrasing and combining thoughts here):
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+They don't really teach anything, you've got to do it mostly on your
+own. In the end you don't really learn anything.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then, they go on to Harvard's next real CS class - functional
+programming with no real preparation and they drop like flies.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+So, what do you do?
+&lt;/p&gt;
+
+&lt;p&gt;
+You do what we did.
+&lt;/p&gt;
+
+&lt;p&gt;
+I developed an intro course over 10 years ago. The new AP Principles
+course has some overlap in terms of concepts but one big difference is
+that we dive into programming using two real languages. &lt;a href="http://racket-lang.org/"&gt;Scheme&lt;/a&gt;, which
+is mathy functional and &lt;a href="https://ccl.northwestern.edu/netlogo/index.shtml"&gt;NetLogo&lt;/a&gt; which is visual and interactive but
+still text based. We then move on to a number of really neat concepts
+in Python. 
+&lt;/p&gt;
+
+&lt;p&gt;
+People say, "Oh, you do the NetLogo because it's visual and appeals to
+girls." No - we do NetLogo because it's cool and it appeals to
+kids. Same with Scheme. Show me a girl that loves the visual stuff,
+I'll show you a girl that loves Scheme's functional goodness. I might
+only be a dopey old school teacher, but I really believe "kids are
+kids."
+&lt;/p&gt;
+
+&lt;p&gt;
+On top of this, you get great teachers that really know their stuff
+(and we've built plenty of them over the years) and create a culture
+with everyone's accepted and good things happen.
+&lt;/p&gt;
+
+&lt;p&gt;
+By the time our kids leave us, they've got enough under their belts so
+they not only know their stuff but they have the confidence that they
+know their stuff. 
+&lt;/p&gt;
+
+&lt;p&gt;
+How does it work for us? Nationally, about 19% of APCS test takers are
+women. At Stuy, we hover around 30%. My Software Development, Post AP
+classes are also around 30% so we keep them. Oh, and Stuy is only 40%
+female and we do much worse than the national averages in other
+traditionally male dominated fields such as physics.
+&lt;/p&gt;
+
+&lt;p&gt;
+Yesterday, I was talking to one of our CSTUY hackers as we ended the
+day. We were talking about possible directions to go in after the new
+year. We could stay graphical, go to text processing, look at some
+hardcore algorithms and more. I asked Aruna what she thought. Her
+answer: "It's all fun."
+&lt;/p&gt;</description><category>netlogo</category><guid>http://cestlaz.github.io/posts/2014-12-07-thoughts-on-diversity.html/</guid><pubDate>Sun, 07 Dec 2014 05:00:00 GMT</pubDate></item><item><title>Wait, I know that!!!!</title><link>http://cestlaz.github.io/posts/2014-09-23-I-know-that.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+If I'm doing my job right, by the time my kids graduate they can learn
+on their own.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's like when two years ago, before starting her summer internship,
+Batya listed all the tools and technologies she had to work with. When
+I pointed out that she hadn't ever used any of them before and asked
+how she was going to deal with it, she replied "I'll figure it out."
+And she did. 
+&lt;/p&gt;
+
+&lt;p&gt;
+At the end of the summer, Dina told a similar story about her
+internship and how she knew she'd figure everything out because of the
+solid background she got by going through StuyCS. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I loved both these stories.
+&lt;/p&gt;
+
+&lt;p&gt;
+But getting the kids there takes time.
+&lt;/p&gt;
+
+&lt;p&gt;
+Yesterday, in my AP classes, I assigned three &lt;i&gt;codingbat&lt;/i&gt; problems. I
+decided to go objects first this time round so we haven't done any
+language constructs. The problems were simple String manipulations but
+I added one that needed conditionals.
+&lt;/p&gt;
+
+&lt;p&gt;
+Today we went over them. Most of the class solved the assignment and
+most had either no trouble or had to do just a little work.
+&lt;/p&gt;
+
+&lt;p&gt;
+I asked what about that last problem might have caused some
+difficulty.
+&lt;/p&gt;
+
+&lt;p&gt;
+They couldn't figure it out, it seemed pretty straighforward. After a
+number of guesses, one student  said:
+&lt;/p&gt;
+
+&lt;p&gt;
+"Wait, we don't know ifs"
+&lt;/p&gt;
+
+&lt;p&gt;
+That was it. They didn't realize that they had taught themselves
+something new.
+&lt;/p&gt;
+
+&lt;p&gt;
+This, of course, doesn't just happen.
+&lt;/p&gt;
+
+&lt;p&gt;
+They've seen conditionals in all sorts of guises.
+&lt;/p&gt;
+
+&lt;p&gt;
+Scheme:
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-scheme"&gt;(&lt;span style="color: #a020f0;"&gt;if&lt;/span&gt; boolean_expression
+  True_part
+  False_part)
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+NetLogo:
+&lt;/p&gt;
+&lt;pre class="example"&gt;
+if boolean [True part]
+
+and
+
+ifelse boolean [True part][ False part]
+&lt;/pre&gt;
+
+&lt;p&gt;
+and Python:
+&lt;/p&gt;
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-python"&gt;&lt;span style="color: #a020f0;"&gt;if&lt;/span&gt; &lt;span style="color: #483d8b;"&gt;bool&lt;/span&gt;:
+  s1
+&lt;span style="color: #a020f0;"&gt;elif&lt;/span&gt; bool2:
+  s2
+&lt;span style="color: #a020f0;"&gt;else&lt;/span&gt;:
+  s3
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+and so on.
+&lt;/p&gt;
+
+&lt;p&gt;
+So they new the concept, from there it was just details.
+&lt;/p&gt;
+
+&lt;p&gt;
+Some said they just wrote it and it worked. Some said they looked up
+sample code. Most didn't think they were doing anything new.
+&lt;/p&gt;
+
+&lt;p&gt;
+It was pretty awesome.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's still a long road before they graduate, but we're getting there.
+&lt;/p&gt;</description><category>netlogo</category><guid>http://cestlaz.github.io/posts/2014-09-23-I-know-that.html/</guid><pubDate>Tue, 23 Sep 2014 04:00:00 GMT</pubDate></item><item><title>Layers of a lesson</title><link>http://cestlaz.github.io/posts/2012-12-17-layers-of-a-lesson.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div align="center"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/turtle-anim.gif" class="" alt=""&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;
+My last post I was talking about the fact that as teachers, our
+knowledge and experience is frequently trivialized. The tenor of the
+times is that anyone can design a course, anyone can teach, and in
+fact, we don't even need teachers, just videos or computer based
+systems. If you've ever tutored a friend, you're more than qualified. 
+
+&lt;/p&gt;&lt;p&gt;
+That might be a strong statement but everywhere you look you see
+"education" programs designed and implemented by non teachers. It
+seems that it's believed that teaching only involves the most
+superficial of transfers of information.
+
+&lt;/p&gt;&lt;p&gt;
+Today, I thought I'd look at a lesson I taught the other week. How
+I've seen similar material presented and how my colleagues and I might treat
+the subject.
+
+&lt;/p&gt;&lt;p&gt;
+We use &lt;a href="http://ccl.northwestern.edu/netlogo/"&gt;NetLogo&lt;/a&gt; in
+our Sophomore level intro course. It's a highly parallel version of
+logo. It's very visual, it's great for modeling and you can introduce
+deep, meaningful concepts such as parallel processing in a gentle
+manner.
+
+&lt;/p&gt;&lt;p&gt;
+Early on the kids have to learn how to manipulate the turtles. In
+NetLogo you write a single program and it's run by all the turtles "at
+once." The image above is one of their early "experiments." Have the
+turtles wiggle out of the center, but when they get to an invisible
+border, start spinning. They do a number of variations on this theme.
+
+&lt;/p&gt;&lt;p&gt; 
+A solution might look like this:
+
+&lt;/p&gt;&lt;pre&gt;
+; asked in a turtle context
+to gospin
+  ifelse abs xcor 
+
+&lt;p&gt;
+Let's call level one just talking about the solution by looking at the
+program as a sequence of instructions. Specifically relating the
+instructions to the problem, showing how it solves it, and that's it.
+
+&lt;/p&gt;&lt;p&gt;
+This is the simplest level. A book, video, or online courseware can
+approach teaching at this level. A non computer scientist teacher or a
+non teacher computer scientist could do so as well. Students might
+learn a bit but I wouldn't hope for much inspiration or
+creativity to come out of it.
+
+&lt;/p&gt;&lt;p&gt;
+Let's move to level two. 
+&lt;/p&gt;&lt;p&gt;
+Here we might talk about "what the turtles are doing." They're always
+doing something, either wiggling or spinning. This is a step in the
+right direction. When done right, the students start thinking about
+the problem in a more general sense but they're still looking at the
+problem as something that exists only in the world of NetLogo. They
+are more likely develop patterns than in level one, but it's still
+limited.
+
+&lt;/p&gt;&lt;p&gt;
+Level three is where things get interesting. On the surface, the
+problem is just a nice introduction to programming turtles in
+NetLogo. At a deeper level, it's an opportunity to introduce the kids
+to State Machines. A new way of thinking about problems and problem
+solving.
+
+&lt;/p&gt;&lt;p&gt;
+Students understand the idea of a "state." For example, in class,
+they're in a "seated state," maybe in a "note taking state," etc. It's
+easy to see that they don't know what their day will bring but they
+constantly make decisions based on their "state." Likewise, they can
+think about the turtle as in a state. It's either in a wiggling state
+or a spinning state and based on their situation they can either
+continue in their current state or transition to the other one:
+
+&lt;/p&gt;&lt;div align="center"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/spin-state.png" class="" alt=""&gt;
+&lt;/div&gt;
+
+This opens up a new way of thinking and it's easy to see how this
+extends to other problems, for example, a ghost from pacman:
+
+&lt;div align="center"&gt;
+&lt;img width="50%" src="http://cestlaz.github.io/img/pacman-ghost-state.png" class="" alt=""&gt;
+&lt;/div&gt;
+
+A good teacher thinks about working across these levels. He adjusts
+based on the class and looks for opportunities to develop these deeper
+concepts.&lt;/pre&gt;</description><category>netlogo</category><guid>http://cestlaz.github.io/posts/2012-12-17-layers-of-a-lesson.html/</guid><pubDate>Mon, 17 Dec 2012 05:00:00 GMT</pubDate></item><item><title>Who is this man?</title><link>http://cestlaz.github.io/posts/2010-01-07-who-is-this-man.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="http://3.bp.blogspot.com/_7YN3bkG0cSc/S0aNLCe-BoI/AAAAAAAAFaY/R4VEOV6kCeE/s1600-h/frontwolly.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" src="http://3.bp.blogspot.com/_7YN3bkG0cSc/S0aNLCe-BoI/AAAAAAAAFaY/R4VEOV6kCeE/s320/frontwolly.jpg"&gt;&lt;/a&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;Who is this man?&lt;br&gt;&lt;br&gt;I showed this to Devorah last night and she immediately said "Hey, that's the metal filing guy!!!" Yes, you got it -- &lt;a href="http://www.smethporthistory.org/smethportspeciality/wollypage.htm"&gt;Wooly Willy&lt;/a&gt;!!! Everybody's favorite party toy.&lt;br&gt;&lt;br&gt;Why did this come up? Well, yesterday, Rick put &lt;a href="http://www.zamansky.net/wooly.html"&gt;this&lt;/a&gt; together at work. So much for any productivity after that.&lt;br&gt;&lt;br&gt;It's amazing all the time sinks you can throw together with just a few lines of code and NetLogo.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width="1" height="1" src="https://blogger.googleusercontent.com/tracker/468689896075458340-5205617721773351791?l=cestlaz.blogspot.com" alt=""&gt;&lt;/div&gt;</description><category>netlogo</category><guid>http://cestlaz.github.io/posts/2010-01-07-who-is-this-man.html/</guid><pubDate>Thu, 07 Jan 2010 05:00:00 GMT</pubDate></item></channel></rss>

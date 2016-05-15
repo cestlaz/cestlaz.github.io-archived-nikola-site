@@ -2,6 +2,7 @@
 .. title: The College Board Smorgasbord -Don't Overfill Your Plate
 .. slug: 2013-10-23-spectator-ap.md
 .. date: 2013-10-23
+.. tags: 
 .. type: text
 -->
 

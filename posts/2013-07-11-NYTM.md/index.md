@@ -2,6 +2,7 @@
 .. title: NYTM + StuyCS
 .. slug: 2013-07-11-NYTM.md
 .. date: 2013-07-11
+.. tags: 
 .. type: text
 -->
 

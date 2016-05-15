@@ -2,6 +2,7 @@
 .. title: Build it first
 .. slug: 2013-11-19-build_it.md
 .. date: 2013-11-19
+.. tags: 
 .. type: text
 -->
 

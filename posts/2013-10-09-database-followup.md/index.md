@@ -2,6 +2,7 @@
 .. title: Databases - the next day
 .. slug: 2013-10-09-database-followup.md
 .. date: 2013-10-09
+.. tags: 
 .. type: text
 -->
 

@@ -2,6 +2,7 @@
 .. title: Rot13 - Gateway <s>Drugs</s> Techniques
 .. slug: 2014-01-07-rot13-gateway.md
 .. date: 2014-01-07
+.. tags: 
 .. type: text
 -->
 

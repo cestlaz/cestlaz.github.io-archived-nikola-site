@@ -3,7 +3,7 @@
 <feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 9)</title>
   <id>http://cestlaz.github.io/index-9.atom</id>
-  <updated>2016-05-10T15:07:38Z</updated>
+  <updated>2016-04-16T20:34:15Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -350,19 +350,23 @@ conference highly enough for young computer scientists out there.&lt;/p&gt;&lt;/
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Still, I liked the idea - I've been an educator for 23 years, a Linux user for most of that time and an  Unix user for longer. I'm a firm believer in operating system as toolkit and so I think I'll take Steve and Alfred's suggestion and try to put together a series of posts on using Linux from a CS educators point of view.
-&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/p&gt;
+
 &lt;p&gt;So, before we begin - a little background.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;I can proudly say that I've been Windows free since about 2000. That's when I decided to wipe the lat traces of Microsoft from my hard drives. Prior to that I just booted up MS-DOS or Windows to play games or to use a Excel or Word.
-&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/p&gt;
+
 &lt;p&gt;Since the early days of Linux - back before Slackware, I dual booted. Before Linux, I dialed into public Unix systems such as &lt;a href="http://www.panix.com"&gt;Panix&lt;/a&gt; or &lt;a href="http://en.wikipedia.org/wiki/The_Big_Electric_Cat"&gt;The Big Electric Cat&lt;/a&gt;. At home, I tried to make MS-DOS as Unix like as I could. I ran the &lt;a href="http://en.wikipedia.org/wiki/MKS_Toolkit"&gt;MKS Toolkti&lt;/a&gt;, and used my own shell (a project every young programmer should attempt).
-&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/p&gt;
+
 &lt;p&gt;Why am I posting this now? It's a new semester and I find myself, as usual, leveraging the Linux shell. It was time to set up a mailing list for the class.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;I'm able to go to our school's data system and grab a tab delimited file that looks something like this:
-&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/p&gt;
+
 &lt;p&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;pre&gt;
 Code    Section Period  Last    First   ID  Official    Advisor OSIS    Email
 grY22tBs    01  6   Hxk Blu GFy 9272    7rr gEs 274989649   zlu3lxk@QylKR.oqy
@@ -374,9 +378,11 @@ grY22tBs    01  6   pqxuk   NRK 9234    7dd gHAMmNd 270217219   uRKo90@QylKR.oqy
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;It's tab delimited but I scrambled the letters so as to not reveal any student info.
-&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/p&gt;
+
 &lt;p&gt;Oh, how did I do that scrambling? Easy. First, I combined some basic utilities to make a random permutation of the upper and lower case letters and stored them in a shell variable. Don't worry, I'll explain these commands in upcoming posts:
-&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/p&gt;
+
 &lt;blockquote&gt;
 perm=`echo "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ | sed "s/\(.\)/\1\n/g" | sort -R | tr -t "\\n" ":" | sed "s/[^a-zA-Z0-9,@]//g"`
 &lt;/blockquote&gt;
@@ -384,7 +390,8 @@ perm=`echo "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ | sed "s/\(.\)/
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Then I used tr (translate) to exchange the real letters for the matching letter in the random permutation:
-&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/p&gt;
+
 &lt;blockquote&gt;
 cat students.tsv | tr a-zA-Z $perm &amp;gt; students.scrambled
 &lt;/blockquote&gt;
@@ -392,15 +399,18 @@ cat students.tsv | tr a-zA-Z $perm &amp;gt; students.scrambled
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;So back to the real work. I needed to isolate the students email addresses. The process:
-&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/p&gt;
+
 &lt;p&gt;&lt;/p&gt;&lt;ol&gt;
     &lt;li&gt;convert the tabs to commas&lt;/li&gt;
     &lt;li&gt;Pull out the students in my AP class (code MKX22X) from the list of all students&lt;/li&gt;
     &lt;li&gt;Pull out the 10th column&lt;/li&gt;
     &lt;li&gt;These are the emails, save them to a file&lt;/li&gt;
-&lt;p&gt;&lt;/p&gt;
+
+
 &lt;p&gt;So, I typed:
-&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/p&gt;
+
 &lt;blockquote&gt;
 cat students.tsv | grep MKS22X | sed "s/\t/,/g" | cut -d, -f10 &amp;gt; emails
 &lt;/blockquote&gt;
@@ -408,19 +418,24 @@ cat students.tsv | grep MKS22X | sed "s/\t/,/g" | cut -d, -f10 &amp;gt; emails
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;grep filters out lines that have MKS22X in them and sed replaces the tabs (\t) with commas and cut pulls out the email addresses. It's all stored in a file named emails.
-&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/p&gt;
+
 &lt;p&gt;Now, I just have to import these into my maillist software (mailman).
-&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/p&gt;
+
 &lt;p&gt;&lt;/p&gt;&lt;blockquote&gt;
     add_members -r emails myclasslist
   &lt;/blockquote&gt;
-&lt;p&gt;&lt;/p&gt;
+
+
 &lt;p&gt;So, that's it, easy peasy.
-&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/p&gt;
+
 &lt;p&gt;I'll be away for most of this week at the Tapia conference and then I'll be playing catch up, but I'm hoping to do a series of posts talking about my Linux toolset and how I use it.
-&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/p&gt;
+
 &lt;p&gt;I hope you all find it interesting and maybe even useful.
-&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/ol&gt;&lt;/div&gt;</summary>
+&lt;/p&gt;&lt;/ol&gt;&lt;/div&gt;</summary>
   </entry>
   <entry>
     <title>Summing up at SumAll</title>

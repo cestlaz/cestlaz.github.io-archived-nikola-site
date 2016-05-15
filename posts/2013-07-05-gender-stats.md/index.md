@@ -2,6 +2,7 @@
 .. title: Gender stats
 .. slug: 2013-07-05-gender-stats.md
 .. date: 2013-07-05
+.. tags: 
 .. type: text
 -->
 

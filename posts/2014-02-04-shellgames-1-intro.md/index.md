@@ -2,6 +2,7 @@
 .. title: Shell Games - an introduction
 .. slug: 2014-02-04-shellgames-1-intro.md
 .. date: 2014-02-04
+.. tags: 
 .. type: text
 -->
 

@@ -2,6 +2,7 @@
 .. title: Hacking Sessions Week 4 - The challenges of once a week
 .. slug: 2013-11-11-hacking-sessions-4.md
 .. date: 2013-11-11
+.. tags: 
 .. type: text
 -->
 

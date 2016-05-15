@@ -2,6 +2,7 @@
 .. title: StuyCS  family from coast to coast
 .. slug: 2014-02-11-tapia-2.md
 .. date: 2014-02-11
+.. tags: 
 .. type: text
 -->
 

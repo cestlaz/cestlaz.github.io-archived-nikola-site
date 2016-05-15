@@ -2,6 +2,7 @@
 .. title: Madlib Madness
 .. slug: 2013-04-30-Madlib_Madness.md
 .. date: 2013-04-30
+.. tags: 
 .. type: text
 -->
 

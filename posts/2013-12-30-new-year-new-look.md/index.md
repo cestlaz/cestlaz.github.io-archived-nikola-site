@@ -2,6 +2,7 @@
 .. title: A New Year and a New look
 .. slug: 2013-12-30-new-year-new-look.md
 .. date: 2013-12-30
+.. tags: 
 .. type: text
 -->
 

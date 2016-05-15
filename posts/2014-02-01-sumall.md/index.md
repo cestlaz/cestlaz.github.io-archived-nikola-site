@@ -2,6 +2,7 @@
 .. title: Summing up at SumAll
 .. slug: 2014-02-01-sumall.md
 .. date: 2014-02-01
+.. tags: 
 .. type: text
 -->
 
