@@ -2,6 +2,7 @@
 .. title: Summer Project 1 - Citibike Data
 .. slug: 2013-07-14-summer_projects.md
 .. date: 2013-07-14
+.. tags: 
 .. type: text
 -->
 

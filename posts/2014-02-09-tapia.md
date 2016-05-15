@@ -2,6 +2,7 @@
 .. title: Tapia 2014
 .. slug: 2014-02-09-tapia.md
 .. date: 2014-02-09
+.. tags: 
 .. type: text
 -->
 

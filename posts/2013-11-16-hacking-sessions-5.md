@@ -2,6 +2,7 @@
 .. title: Hacking Sessions - putting it all together
 .. slug: 2013-11-16-hacking-sessions-5.md
 .. date: 2013-11-16
+.. tags: 
 .. type: text
 -->
 

@@ -2,6 +2,7 @@
 .. title: Hacking Sessions - Week 2
 .. slug: 2013-10-28-hacking-sessions-2.md
 .. date: 2013-10-28
+.. tags: 
 .. type: text
 -->
 

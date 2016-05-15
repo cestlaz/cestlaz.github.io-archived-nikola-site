@@ -2,6 +2,7 @@
 .. title: I guess I'm a dumbass
 .. slug: 2014-02-27-dumbass.md
 .. date: 2014-02-27
+.. tags: 
 .. type: text
 -->
 

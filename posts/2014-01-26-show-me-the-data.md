@@ -2,6 +2,7 @@
 .. title: Show me the data
 .. slug: 2014-01-26-show-me-the-data.md
 .. date: 2014-01-26
+.. tags: 
 .. type: text
 -->
 

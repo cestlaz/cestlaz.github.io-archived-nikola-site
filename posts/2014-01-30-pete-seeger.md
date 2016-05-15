@@ -2,6 +2,7 @@
 .. title: What I learned from Pete Seeger
 .. slug: 2014-01-30-pete-seeger.md
 .. date: 2014-01-30
+.. tags: 
 .. type: text
 -->
 

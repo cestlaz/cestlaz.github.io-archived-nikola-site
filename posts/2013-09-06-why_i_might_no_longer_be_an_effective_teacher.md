@@ -2,6 +2,7 @@
 .. title: Why I might no longer be an effective teacher
 .. slug: 2013-09-06-why_i_might_no_longer_be_an_effective_teacher.md
 .. date: 2013-09-06
+.. tags: 
 .. type: text
 -->
 

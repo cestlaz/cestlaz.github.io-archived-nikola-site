@@ -2,6 +2,7 @@
 .. title: Evaluating Teachers - Evaluating schools
 .. slug: 2013-05-09-Evaluating_Teachers.md
 .. date: 2013-05-09
+.. tags: 
 .. type: text
 -->
 

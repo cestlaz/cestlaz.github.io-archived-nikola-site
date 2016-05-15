@@ -2,6 +2,7 @@
 .. title: Making Varsity part 1 - Athletics
 .. slug: 2012-11-29-making-varsity-pt-1.md
 .. date: 2012-11-29
+.. tags: 
 .. type: text
 -->
 

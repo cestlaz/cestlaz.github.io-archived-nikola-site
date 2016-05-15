@@ -2,6 +2,7 @@
 .. title: Hacking Sessions Begin
 .. slug: 2013-10-20-Hacking-Sessions-Begin.md
 .. date: 2013-10-20
+.. tags: 
 .. type: text
 -->
 
