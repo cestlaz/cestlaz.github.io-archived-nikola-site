@@ -63,7 +63,7 @@ A line at a time:
 ** ls *md *html
 This lists all the files with that end in **md** or **html**
 ** | while read filename
-The vertical bar (pip) sends the output of **ls** into the **while read**
+The vertical bar (pipe) sends the output of **ls** into the **while read**
 command. The **while** command sets up a loop which, each time
 through, reads the next input and places into the variable
 **filename**. The body of the loop is between the **do** and the
