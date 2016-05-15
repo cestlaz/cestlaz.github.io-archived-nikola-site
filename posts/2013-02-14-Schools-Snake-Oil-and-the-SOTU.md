@@ -2,7 +2,7 @@
 .. title: Schools, Snake Oil, and the SOTU
 .. slug: 2013-02-14-Schools-Snake-Oil-and-the-SOTU.md
 .. date: 2013-02-14
-.. tags: 
+.. tags: policy
 .. type: text
 -->
 

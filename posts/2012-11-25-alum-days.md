@@ -2,7 +2,7 @@
 .. title: Alumni Day(s)
 .. slug: 2012-11-25-alum-days.md
 .. date: 2012-11-25
-.. tags: 
+.. tags: community
 .. type: text
 -->
 

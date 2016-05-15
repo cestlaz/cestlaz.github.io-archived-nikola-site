@@ -2,7 +2,7 @@
 .. title: Demo Night
 .. slug: 2013-06-27-Demo_Night.md
 .. date: 2013-06-27
-.. tags: 
+.. tags: community
 .. type: text
 -->
 

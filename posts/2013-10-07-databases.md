@@ -2,7 +2,7 @@
 .. title: Databases - putting it all together
 .. slug: 2013-10-07-databases.md
 .. date: 2013-10-07
-.. tags: 
+.. tags: pedagogy
 .. type: text
 -->
 

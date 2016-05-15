@@ -2,7 +2,7 @@
 .. title: Stuyablo II
 .. slug: 2013-10-27-stuyabloII.md
 .. date: 2013-10-27
-.. tags: 
+.. tags: pedagogy, apcs
 .. type: text
 -->
 

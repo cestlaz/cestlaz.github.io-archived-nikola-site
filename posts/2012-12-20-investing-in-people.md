@@ -2,7 +2,7 @@
 .. title: Investing in People
 .. slug: 2012-12-20-investing-in-people.md
 .. date: 2012-12-20
-.. tags: 
+.. tags: community
 .. type: text
 -->
 

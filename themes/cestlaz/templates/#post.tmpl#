@@ -19,7 +19,7 @@
     {% if post.next_post %}
         <link rel="next" href="{{ post.next_post.permalink() }}" title="{{ post.next_post.title()|e }}" type="text/html">
     {% endif %}
-    {% if post.is_draft %}
+		{% if post.is_draft %}
         <meta name="robots" content="noindex">
     {% endif %}
     {{ helper.open_graph_metadata(post) }}
@@ -63,6 +63,10 @@
     {{ helper.mathjax_script(post) }}
 </article>
 {{ comments.comment_link_script() }}
+
+
+
+
 
 
 {% endblock %}

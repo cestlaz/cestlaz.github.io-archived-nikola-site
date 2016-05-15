@@ -2,7 +2,7 @@
 .. title: Back to Work
 .. slug: 2012-11-02-back-to-work.md
 .. date: 2012-11-02
-.. tags: 
+.. tags: community, csed
 .. type: text
 -->
 

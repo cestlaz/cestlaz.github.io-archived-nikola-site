@@ -2,7 +2,7 @@
 .. title: Why I'm no longer an effective teacher - part 2
 .. slug: 2013-10-25-effective-teacher-2.md
 .. date: 2013-10-25
-.. tags: 
+.. tags: polocy
 .. type: text
 -->
 

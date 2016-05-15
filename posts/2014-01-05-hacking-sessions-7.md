@@ -2,7 +2,7 @@
 .. title: Hacking Sessions Resume
 .. slug: 2014-01-05-hacking-sessions-7.md
 .. date: 2014-01-05
-.. tags: 
+.. tags: cstuy
 .. type: text
 -->
 
