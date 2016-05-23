@@ -1,0 +1,78 @@
+#+BEGIN_COMMENT
+.. title: Learning Emacs - Introduction
+.. slug: learning-emacs-introduction
+.. date: 2016-05-23 10:07:18 UTC-04:00
+.. tags: draft, emacs, tools
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+I'm sure I've mentioned that I've been an Emacs wonk for
+decades. Since the mid-80's in fact. I've spent time using other
+editors, word processors, and development tools but always find my way
+back.
+
+I recommend that budding computer science students develop a good tool
+set and encourage them to explore Emacs but while it's pretty easy to
+load Emacs and find your way around, particularly if you use the mouse
+and menus there isn't a clear path to take you from beginner to using
+it as an efficient tool let alone customizing it.
+
+Inspired by [[https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/featured][Mattias Petter Johansson]], or MPJ who make a weekly video,
+I decided to try to create a series of YouTube videos and matching
+blog posts. I'll try to post one a week and I'll try to keep the
+videos, at least after the first couple to just a few minutes and have
+them focus on [[http://sachachua.com/blog/2015/01/developing-emacs-micro-habits-text-automation/][micro-habits]] - one or two small things that you can
+bring to your work flow and internalize.
+
+The first three four (this one and the next three) will focus on
+setting things up. After this post we'll have
+- Setting up the package manager
+- Intro to org-mode (just so that you recognize the markup)
+- Intro to Elisp (just so you have an idea of those configuration
+  lines)
+
+and then we're off to the races. Here's what I'm thinking about for
+the first few topics after the above mentioned ones:
+
+- Efficient Navigation
+- Windows and Buffers
+- Theming
+- Auto Completion
+
+and then a series of short topics to show some of my favorite editing
+tools. We'll also cover some larger topics including:
+
+- Python Development
+- C/C++ Development
+- Document Preparation
+- Scheduling / Calendaring / Note Taking
+
+I'll put together an index to these posts along with any ancillary
+materials here: [[/stories/emacs][http://cestlaz.github.io/stories/emacs]].
+
+* Getting started
+
+This series is going to assume you've installed emacs and worked your
+way through the included tutorial.
+
+To help you get to that point, here are some links to posts and sites
+that I've found useful:
+
+- http://www.braveclojure.com/basic-emacs/ 
+- https://www.masteringemacs.org/article/beginners-guide-to-emacs
+- http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs 
+- https://www.digitalocean.com/community/tutorials/how-to-use-the-emacs-editor-in-linux
+
+And here's a 10 minute getting started guide:
+
+#+BEGIN_HTML
+<iframe width="420" height="315" src="https://www.youtube.com/embed/K3_SFerNIeI" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+So, stay tuned.
+
+
