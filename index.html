@@ -20,7 +20,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-19.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/collaborative-coding-or-cheating/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-1-setup/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -84,7 +84,244 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/collaborative-coding-or-cheating/" class="u-url">Collaborative Coding or Cheating</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-1-setup/" class="u-url">Using Emacs - Setting up the Package Manager</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/using-emacs-1-setup/" rel="bookmark"><time class="published dt-published" datetime="2016-05-23T13:29:36-04:00" title="2016-05-23 13:29">2016-05-23 13:29</time></a></p>
+                <p class="commentline">            <a href="posts/using-emacs-1-setup/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-1-setup.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This video will step you through setting up Emacs to use <a href="http://melpa.org/#/">MELPA</a> for packages.
+</p>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/49kBWM3RQQ8?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg" frameborder="0" allowfullscreen></iframe>
+
+
+<p>
+We configured emacs by creating a folder named <b>.emacs.d</b> and creating a
+file within it named <b>init.el</b>. 
+</p>
+
+<p>
+Here's the contents of that file:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">setq</span> <span class="nv">inhibit-startup-message</span> <span class="nv">t</span><span class="p">)</span>
+
+
+<span class="p">(</span><span class="nf">require</span> <span class="ss">'package</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">setq</span> <span class="nv">package-enable-at-startup</span> <span class="nv">nil</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">add-to-list</span> <span class="ss">'package-archives</span>
+	     <span class="o">'</span><span class="p">(</span><span class="s">"melpa"</span> <span class="o">.</span> <span class="s">"https://melpa.org/packages/"</span><span class="p">))</span>
+
+<span class="p">(</span><span class="nf">package-initialize</span><span class="p">)</span>
+
+<span class="c1">;; Bootstrap `use-package'</span>
+<span class="p">(</span><span class="nf">unless</span> <span class="p">(</span><span class="nf">package-installed-p</span> <span class="ss">'use-package</span><span class="p">)</span>
+	<span class="p">(</span><span class="nf">package-refresh-contents</span><span class="p">)</span>
+	<span class="p">(</span><span class="nf">package-install</span> <span class="ss">'use-package</span><span class="p">))</span>
+
+<span class="p">(</span><span class="nf">use-package</span> <span class="nv">try</span>
+	<span class="nv">:ensure</span> <span class="nv">t</span><span class="p">)</span>
+
+<span class="p">(</span><span class="nf">use-package</span> <span class="nv">which-key</span>
+	<span class="nv">:ensure</span> <span class="nv">t</span> 
+	<span class="nv">:config</span>
+	<span class="p">(</span><span class="nf">which-key-mode</span><span class="p">))</span>
+</pre></div>
+
+<p>
+The last two <b>inituse-package</b> clauses install two helpful packages:
+</p>
+<ul class="org-ul">
+<li>
+<b>try</b>: let's you try packages without installing them.
+</li>
+<li>
+<b>which-key</b>: brings up help on key combinations.
+</li>
+</ul>
+<p>
+Relavent links:
+</p>
+<ul class="org-ul">
+<li>Video series overview page:
+<ul class="org-ul">
+<li>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</li>
+</ul>
+</li>
+<li>Code for this video:
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"></a><a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup">https://github.com/zamansky/using-emacs/tree/lesson-1-setup</a>
+</li>
+</ul>
+</li>
+<li>Complete code built up over all videos:
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
+</li>
+</ul>
+</li>
+<li>Melpa and packages
+<ul class="org-ul">
+<li>
+<a href="http://melpa.org"></a><a href="http://melpa.org">http://melpa.org</a>
+</li>
+<li>
+<a href="https://github.com/justbur/emacs-which-key">which-key</a>
+</li>
+<li>
+<a href="https://github.com/larstvei/Try">try</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-introduction/" class="u-url">Using Emacs - Introduction</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/using-emacs-introduction/" rel="bookmark"><time class="published dt-published" datetime="2016-05-23T10:07:18-04:00" title="2016-05-23 10:07">2016-05-23 10:07</time></a></p>
+                <p class="commentline">            <a href="posts/using-emacs-introduction/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-introduction.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+I'm sure I've mentioned that I've been an Emacs wonk for
+decades. Since the mid-80's in fact. I've spent time using other
+editors, word processors, and development tools but always find my way
+back.
+</p>
+
+<p>
+I recommend that budding computer science students develop a good tool
+set and encourage them to explore Emacs but while it's pretty easy to
+load Emacs and find your way around, particularly if you use the mouse
+and menus there isn't a clear path to take you from beginner to using
+it as an efficient tool let alone customizing it.
+</p>
+
+<p>
+Inspired by <a href="https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/featured">Mattias Petter Johansson</a>, or MPJ who make a weekly video,
+I decided to try to create a series of YouTube videos and matching
+blog posts. I'll try to post one a week and I'll try to keep the
+videos, at least after the first couple to just a few minutes and have
+them focus on <a href="http://sachachua.com/blog/2015/01/developing-emacs-micro-habits-text-automation/">micro-habits</a> - one or two small things that you can
+bring to your work flow and internalize.
+</p>
+
+<p>
+The first three four (this one and the next three) will focus on
+setting things up. After this post we'll have
+</p>
+<ul class="org-ul">
+<li>Setting up the package manager
+</li>
+<li>Intro to org-mode (just so that you recognize the markup)
+</li>
+<li>Intro to Elisp (just so you have an idea of those configuration
+lines)
+</li>
+</ul>
+<p>
+and then we're off to the races. Here's what I'm thinking about for
+the first few topics after the above mentioned ones:
+</p>
+
+<ul class="org-ul">
+<li>Efficient Navigation
+</li>
+<li>Windows and Buffers
+</li>
+<li>Theming
+</li>
+<li>Auto Completion
+</li>
+</ul>
+<p>
+and then a series of short topics to show some of my favorite editing
+tools. We'll also cover some larger topics including:
+</p>
+
+<ul class="org-ul">
+<li>Python Development
+</li>
+<li>C/C++ Development
+</li>
+<li>Document Preparation
+</li>
+<li>Scheduling / Calendaring / Note Taking
+</li>
+</ul>
+<p>
+I'll put together an index to these posts along with any ancillary
+materials here: <a href="file:///stories/emacs"></a><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Getting started</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+This series is going to assume you've installed emacs and worked your
+way through the included tutorial.
+</p>
+
+<p>
+To help you get to that point, here are some links to posts and sites
+that I've found useful:
+</p>
+
+<ul class="org-ul">
+<li>
+<a href="http://www.braveclojure.com/basic-emacs/">http://www.braveclojure.com/basic-emacs/</a> 
+</li>
+<li>
+<a href="https://www.masteringemacs.org/article/beginners-guide-to-emacs">https://www.masteringemacs.org/article/beginners-guide-to-emacs</a>
+</li>
+<li>
+<a href="http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs">http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs</a> 
+</li>
+<li>
+<a href="https://www.digitalocean.com/community/tutorials/how-to-use-the-emacs-editor-in-linux">https://www.digitalocean.com/community/tutorials/how-to-use-the-emacs-editor-in-linux</a>
+</li>
+</ul>
+<p>
+And here's a 10 minute getting started guide:
+</p>
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/K3_SFerNIeI" frameborder="0" allowfullscreen></iframe>
+
+<p>
+So, stay tuned.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/collaborative-coding-or-cheating/" class="u-url">Collaborative Coding or Cheating</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
@@ -1335,321 +1572,6 @@ private school in NY had when it <a href="http://www.nytimes.com/2002/02/01/nyre
 ago. They still seem to be well regarded as a school and their kids do
 just fine in terms of college acceptance.
 </p>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/semaphores/" class="u-url">As curricula changes, what's falling through the cracks?</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/semaphores/" rel="bookmark"><time class="published dt-published" datetime="2016-05-01T09:08:36-04:00" title="2016-05-01 09:08">2016-05-01 09:08</time></a></p>
-                <p class="commentline">            <a href="posts/semaphores/#disqus_thread" data-disqus-identifier="cache/posts/semaphores.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1">Edit:</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-Just a brief note to clarify a couple of things. As indicated in the
-comments, this post isn't  about what's appropriate for HS CS. It's
-more about what kids have after they finish their education - be it
-high school, college, code school, or other. 
-</p>
-
-<p>
-Some of my thoughts are the results of pondering on the exacerbations
-of friends after interviewing people for entry level positions.
-</p>
-
-<p>
-The two examples are just to illustrate the point. 
-</p>
-</div>
-</div>
-
-
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2">Original Post:</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-I enjoy reading blogs. It's one of the ways I keep current. Not only
-in terms of what's going on in CS Education, but also trends in CS -
-academic or professional as well as on a range of other topics.
-</p>
-
-<p>
-One of the blogs I enjoy is authored by <a href="https://twitter.com/b0rk">Julia Evans</a>. I don't know
-Julia, but we do have some mutual friends. I've enjoyed her <a href="http://jvns.ca">blog</a>. She
-does a nice job talking about any number of systems related
-issue. I've tried to leave comments a few times but for some reason,
-my comments always end up deleted or otherwise not showing up.
-</p>
-
-<p>
-One recent post, one on <a href="http://jvns.ca/blog/2016/03/29/thread-pools-part-ii-i-love-blocking/">concurrency</a> got me thinking. Since the comment
-I left there didn't take, I thought I'd write about it here.
-</p>
-
-<p>
-It's a nice post but the thing that caught my eye was when Julia
-said that she " didn't know what a semaphore was until I read this
-code and I was like OH THIS IS AMAZING AND SO USEFUL AND WOW." I was a
-little surprised, semaphores seem to be one of those basic concepts
-that you just know but that is, of course incorrect. I first learned
-about semaphores in my honors Systems class with my mentor, the late
-<a href="https://en.wikipedia.org/wiki/Robert_Dewar">Robert Dewar</a>. We started from test and set and worked our way up. I
-had two other undergraduate classes that at least mentioned the topic.
-</p>
-
-<p>
-Then again, I knew that many undergrads would never get a good
-treatment of concurrency so I tried to build a bit in to the System
-Level Programming  course I designed while at Stuy.
-</p>
-
-<p>
-This got me thinking - according to her linked in, Julia was a CS
-major at McGill - a university that I hold in high regard but either
-semaphores were never covered or their treatment didn't make enough of
-an impact to be worth remembering. What topics do we cover in our
-classes that kids just let fall to the wayside and what topics do we
-end up losing as curricula change and we don't have an eye on the big
-picture.
-</p>
-
-<p>
-One big one is memory management. When APCS and college 101 classes
-went to Java, memory management went out the window. Not a problem, as
-long as memory issues are covered in some other course. Unfortunately
-the don't seem to be. You can make a case that kids don't need to
-understand memory management or anything about garbage collection but
-I'd argue that while one might never have to do their own memory
-management a good CS person should have some understanding of what's
-going on under the hood or as my friend Gerry says "never use a
-technology you couldn't write yourself."
-</p>
-
-<p>
-Another biggie that I lived through was the IBM PC era. Prior to the
-mid to late 80's when the IBM PC ruled the world, kids learned about
-CS on timesharing systems. Once the PC took hold, every kid learning
-programming or studying CS was working on their own machine. They had
-full access to everything and the machine just supported a single
-thread. 
-</p>
-
-<p>
-On the one hand, it was nice since you could easily play with low
-level programming and hardware but on the other hand, a hole
-generation didn't learn about the complexities of multiple users and
-multiple processes. 
-</p>
-
-<p>
-Early in my career I designed courses and only later did I realize
-that you can't just design a course, you have to look at the full arc
-of a students education. 
-</p>
-
-<p>
-I think it's interesting to think about what concepts are getting left
-on the side of the road and I wonder if the big players driving CS
-education spend any time thinking about this bigger picture.
-</p>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/cstuy-coi/" class="u-url">NYC DOE - Doing what it can to keep opportunities away from kids</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/cstuy-coi/" rel="bookmark"><time class="published dt-published" datetime="2016-04-28T17:18:06-04:00" title="2016-04-28 17:18">2016-04-28 17:18</time></a></p>
-                <p class="commentline">            <a href="posts/cstuy-coi/#disqus_thread" data-disqus-identifier="cache/posts/cstuy-coi.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"></h2>
-<div class="outline-text-2" id="text-1">
-<p>
-The difficulties I've had with the city and DOE are pretty well
-documented by now.
-</p>
-
-<p>
-Today I'm going to tell you about my latest dealings with DOE and how
-they prevented my team from bringing free quality CS education to city
-students. 
-</p>
-
-
-<p>
-CSTUY's not running SHIP, its summer program this year.
-</p>
-
-<p>
-That's not something I'm happy about but part of me knew it might
-happen. What did surprise me, although it shouldn't have, was the role that
-the NYC DOE played in preventing it from happening.
-</p>
-
-<p>
-The bottom line initial reason for us not running SHIP this summer
-was my time. Moving over to my new position at Hunter has
-been terrific but I haven't had the time needed for adequate
-fundraising and outreach.
-</p>
-
-<p>
-I recently talked a bit about the difficulties we've had with
-fundraising as compared to the "chosen programs" in 
-<a href="http://cestlaz.github.io/posts/2016-04-10-thought-leaders/#.VyKAnh9vH0o">this post</a>.
-</p>
-
-<p>
-I've also written a bit about related issues in these posts:
-</p>
-<ul class="org-ul">
-<li>
-<a href="http://cestlaz.github.io/posts/2015-11-03-teachers-suck.html/#.VyKA9R9vH0o">http://cestlaz.github.io/posts/2015-11-03-teachers-suck.html/#.VyKA9R9vH0o</a>
-</li>
-<li>
-<a href="http://cestlaz.github.io/posts/2015-10-26-self-appointed-experts.html/#.VyKA-x9vH0o">http://cestlaz.github.io/posts/2015-10-26-self-appointed-experts.html/#.VyKA-x9vH0o</a>
-</li>
-<li>
-<a href="http://cestlaz.github.io/posts/2015-05-07-learning-takes-time.html/#.VyKBHB9vH0o">http://cestlaz.github.io/posts/2015-05-07-learning-takes-time.html/#.VyKBHB9vH0o</a>
-</li>
-</ul>
-<p>
-In any event, we weren't going to be able to run this summer.
-</p>
-
-<p>
-When I spoke to the team, Sam asked, "if we can keep the budget down
-and figure out how to not be dependent on fundraising and outreach, can
-we do something?" I told him, I'd love to.
-</p>
-
-<p>
-He came up with a plan. Instead of a full day program, we'd run half
-day - this means fewer staff hours and no lunch. If we could run it at
-Stuyvesant, in the computer labs (which already run Linux), we
-wouldn't have to worry about equipment. 
-</p>
-
-<p>
-Under this plan, additional fundraising wasn't needed, in fact, kids
-could attend free of charge.
-</p>
-
-<p>
-In terms of outreach, since we already had sufficient funds, even if
-we only got returning shipmates and a few from word of mouth we'd be
-ok and if we could cast a wider net, so much the better.
-</p>
-
-<p>
-Oh, and the plan was for me to take the summer off. I'd help with
-initial organization but I wouldn't actually work the summer.
-</p>
-
-<p>
-So, to summarize:
-</p>
-
-<ul class="org-ul">
-<li>Free for the kids
-</li>
-<li>I'm not involved and receive no compensation for the summer (this is
-important for later)
-</li>
-<li>My teachers would be paid for teaching in the program and CSTUY
-would supply the funds to pay them.
-</li>
-</ul>
-<p>
-We floated the idea to Stuyvesant's principal figuring that since
-the teaching staff is from there and some of the kids tat would
-benefit are Stuy students it wouldn't be a problem. She said she loved
-the idea but had to send it off to the conflict of interests people.
-</p>
-
-<p>
-You see, it's very important that teachers and former teachers don't
-actually benefit from working extra – it's critical that teachers be
-kept down.
-</p>
-
-<p>
-Long story short - the teachers could work the program but aren't
-allowed to run it. They can come in and teach but can't talk to the
-principal about organizing it. For some reason, running a <b><b>free</b></b>
-program for kids instead of relaxing over the summer means that the
-teachers are getting this <b><b>huge</b></b> benefit. Sure they'd be paid for
-their time, but that seems fair. 
-</p>
-
-<p>
-As to me, I'm not allowed any dealings with the DOE for a year. Forget
-the fact that I wanted to set this up while taking <b><b>no</b></b> pay so that
-the kids wouldn't be left without a program. Nope, that's no good -
-can't have us bringing quality CS education to the kids.
-</p>
-
-<p>
-I dealt with these folks once before so I wasn't really surprised.
-</p>
-
-<p>
-A few years ago, a friend connected me with people at Amplify
-to see about creating their APCS MOOC. We met a couple of times but
-then the DOE people said I couldn't work with them even though I was
-just going to be working on the MOOC and not dealing directly with the
-DOE in any way. I wasn't negotiating contracts, making sales pitches,
-or anything. I was just going to work on MOOC content.
-</p>
-
-<p>
-It wasn't like a certain NYC School's Chancellor who had just left the DOE and
-took the leadership position at Amplify. That wasn't a conflict - I
-guess it's just important to keep the teachers in line - the rules
-aren't meant for the higher ups.
-</p>
-
-<p>
-Funny side note – when I shared the fact that I couldn't work for
-Amplify with my friend, his first reaction was "because of the union?"
-That seems to be the knee-jerk reaction from people in the business
-world. Nope - the union was fine with it - it was the administration /
-city. The city has done <b><b>far</b></b> more harm to the public schools than
-the union ever could. Pretty much all the union does is make sure the
-city follows the jointly negotiated contract.
-</p>
-
-<p>
-Back to the story.
-</p>
-
-<p>
-So, we're not allowed to use school space to bring free CS education
-to kids this summer. Plenty of other organizations non-profit and
-for-profit alike seem to have no problem bringing their programs into
-the schools. I'm sure many are getting money for this, grant based or
-otherwise. In all cases, I'd take my team and their program over what
-the DOE is actually rolling out.
-</p>
-
-<p>
-This is the type of thing makes me want to say to hell with DOE but,
-unfortunately, they aren't affected, it's the kids that lose out.
-</p>
-</div>
-</div>
     </div>
     </article>
 </div>

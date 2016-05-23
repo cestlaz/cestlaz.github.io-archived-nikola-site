@@ -1,0 +1,67 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - Setting up the Package Manager
+.. slug: using-emacs-1-setup
+.. date: 2016-05-23 13:29:36 UTC-04:00
+.. tags: emacs, tools
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+This video will step you through setting up Emacs to use [[http://melpa.org/#/][MELPA]] for packages.
+
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/49kBWM3RQQ8?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+
+We configured emacs by creating a folder named *.emacs.d* and creating a
+file within it named *init.el*. 
+
+Here's the contents of that file:
+
+#+BEGIN_SRC emacs-lisp :tangle no
+(setq inhibit-startup-message t)
+
+
+(require 'package)
+(setq package-enable-at-startup nil)
+(add-to-list 'package-archives
+	     '("melpa" . "https://melpa.org/packages/"))
+
+(package-initialize)
+
+;; Bootstrap `use-package'
+(unless (package-installed-p 'use-package)
+	(package-refresh-contents)
+	(package-install 'use-package))
+
+(use-package try
+	:ensure t)
+
+(use-package which-key
+	:ensure t 
+	:config
+	(which-key-mode))
+#+END_SRC
+
+The last two *inituse-package* clauses install two helpful packages:
+- *try*: let's you try packages without installing them.
+- *which-key*: brings up help on key combinations.
+
+Relavent links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code for this video:
+  - [[https://github.com/zamansky/using-emacs/tree/lesson-1-setup][https://github.com/zamansky/using-emacs/tree/lesson-1-setup]]
+- Complete code built up over all videos:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+- Melpa and packages
+  - [[http://melpa.org][http://melpa.org]]
+  - [[https://github.com/justbur/emacs-which-key][which-key]]
+  - [[https://github.com/larstvei/Try][try]]
+
+
