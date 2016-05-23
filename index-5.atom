@@ -3,7 +3,7 @@
 <feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 5)</title>
   <id>http://cestlaz.github.io/index-5.atom</id>
-  <updated>2016-05-10T15:07:38Z</updated>
+  <updated>2016-05-23T17:10:55Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -95,6 +95,7 @@ and I do believe we have a similar level of rigor but we strive to
 give the kids something they won't get otherwise. &lt;/p&gt;
 &lt;p&gt;In any event, at the end of the day what do we have? Plenty of snake
 oil to go around.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="policy" label="policy"/>
   </entry>
   <entry>
     <title>Taking it out of the school</title>
@@ -241,6 +242,7 @@ To hear about our latest, &lt;a href="https://twitter.com/cstuyrun" class="twitt
 js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");&lt;/script&gt;
 on twitter, sign up for our &lt;a href="http://cstuy.org"&gt;mail list&lt;/a&gt;
 and keep an eye on the CSTUY &lt;a href="https://cstuy.org/blog"&gt;blog&lt;/a&gt;.&lt;/p&gt;</summary>
+    <category term="community" label="community"/>
   </entry>
   <entry>
     <title>Why we script</title>
@@ -291,6 +293,8 @@ done
 
 &lt;p&gt;Now, as long as all the projects are under a single Github organization I can easily clone or pull them without having to navigate the Github web site. &lt;/p&gt;
 &lt;p&gt;Commandline FTW!!!!!!&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="cli" label="cli"/>
+    <category term="shell" label="shell"/>
   </entry>
   <entry>
     <title>Investing in People</title>
@@ -347,6 +351,7 @@ about investing in people. Not in the same way as Pave, but still. My
 results aren't financial but in community. Although Pave does have a
 financial component to it, I really think they "get it" and wouldn't
 be surprised if they end up getting the community rewards as well.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="community" label="community"/>
   </entry>
   <entry>
     <title>Layers of a lesson</title>
@@ -455,6 +460,9 @@ extends to other problems, for example, a ghost from pacman:
 A good teacher thinks about working across these levels. He adjusts
 based on the class and looks for opportunities to develop these deeper
 concepts.&lt;/pre&gt;</summary>
+    <category term="intro" label="intro"/>
+    <category term="netlogo" label="netlogo"/>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
   <entry>
     <title>Who's missing from the picture</title>
@@ -629,6 +637,7 @@ tech person after another meeting with movers and shakers. He told me:
 "There are a small handful of successes, like you at Stuy, but
 basically, we're f*cked."
 &lt;/blockquote&gt;</summary>
+    <category term="policy" label="policy"/>
   </entry>
   <entry>
     <title>Real Projects</title>
@@ -740,6 +749,7 @@ I can't wait to see what they do for their next projects.
 
 &lt;/p&gt;&lt;p&gt;
 Special thanks to Ben, Moisey and the entire &lt;a href="http://digitalocean.com"&gt;DigitalOcean&lt;/a&gt; team for providing us with server space for all of this.&lt;/p&gt;</summary>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
   <entry>
     <title>Making Varsity part 1 - Athletics</title>
@@ -852,6 +862,7 @@ emphasized that graduates should be welcome at and feel part of the
 community. &lt;/p&gt;
 &lt;p&gt;It was a tiring weekend -- too many late nights, but a good one.&lt;/p&gt;
 &lt;p&gt;I sense good things to come.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="community" label="community"/>
   </entry>
   <entry>
     <title>Back to Work</title>
@@ -939,5 +950,7 @@ an effect.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I'm going to have to pay more attention to the time line from when
 students come into my class and when they become part of "the family."&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="community" label="community"/>
+    <category term="csed" label="csed"/>
   </entry>
 </feed>

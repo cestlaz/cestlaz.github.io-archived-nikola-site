@@ -3,13 +3,378 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about linux</title>
   <id>http://cestlaz.github.io/categories/linux.atom</id>
-  <updated>2016-05-12T12:49:32Z</updated>
+  <updated>2016-05-23T17:10:57Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/linux.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/linux/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Shell short - tagging old posts in Nikola</title>
+    <id>http://cestlaz.github.io/posts/shell-short-tagging/</id>
+    <updated>2016-05-15T09:58:44-04:00</updated>
+    <published>2016-05-15T09:58:44-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/shell-short-tagging/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Quick post to add to the recent command line fu I've been writing
+about.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="https://twitter.com/dougpete"&gt;Douglas Peterson&lt;/a&gt; had another &lt;b&gt;&lt;b&gt;Whatever happened to&lt;/b&gt;&lt;/b&gt; post. This time
+on &lt;a href="https://dougpete.wordpress.com/2016/05/15/whatever-happened-to-6/"&gt;Logo&lt;/a&gt;. I wanted to reply, talk about NetLogo  and link to some of my
+old NetLogo posts to help show how cool it is.
+&lt;/p&gt;
+
+&lt;p&gt;
+Nikola supports tags, makes a nice &lt;a href="http://cestlaz.github.io/categories"&gt;tags&lt;/a&gt; page and for each tag, a nice
+page of all the &lt;a href="http://cestlaz.github.io/categories/netlogo"&gt;links&lt;/a&gt;. 
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Nikola has a plugin &lt;b&gt;&lt;b&gt;tags&lt;/b&gt;&lt;/b&gt; which lets you manage tags from the
+command line. For instance:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;nikola tags -a netlogo posts/somepost.org
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Would add the tag &lt;b&gt;&lt;b&gt;netlogo&lt;/b&gt;&lt;/b&gt; to the specified post.
+&lt;/p&gt;
+
+&lt;p&gt;
+The problem: The tags plugin only works if the post has a &lt;b&gt;&lt;b&gt;tag:&lt;/b&gt;&lt;/b&gt;
+line already present in it's header comment and I hadn't put them in
+my older posts.
+&lt;/p&gt;
+
+&lt;p&gt;
+I had a bunch of posts, all of them in one directory. All the new ones
+were &lt;b&gt;&lt;b&gt;.org&lt;/b&gt;&lt;/b&gt; files and had the tag slug. The others were &lt;b&gt;&lt;b&gt;.md&lt;/b&gt;&lt;/b&gt; markdown
+files and &lt;b&gt;&lt;b&gt;.html&lt;/b&gt;&lt;/b&gt; html files. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's what a typical top block looks like:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;!--
+.. title: Looking for interesting questions
+.. slug: 2010-01-03-looking-for-interesting-questions.html
+.. date: 2010-01-03
+.. type: text
+--&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Sed to the rescue. Here's the what I ended up typing (from within the
+posts directory) to add the
+&lt;b&gt;&lt;b&gt;tags&lt;/b&gt;&lt;/b&gt; slug to the top comments right above the &lt;b&gt;&lt;b&gt;.. type: text:&lt;/b&gt;&lt;/b&gt; line:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ls *md *html | while read filename
+do
+    sed "/type: text/ i .. tags: " $filename
+done
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+A line at a time:
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
+&lt;h3 id="sec-1-1"&gt;ls *md *html&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-1"&gt;
+&lt;p&gt;
+This lists all the files with that end in &lt;b&gt;&lt;b&gt;md&lt;/b&gt;&lt;/b&gt; or &lt;b&gt;&lt;b&gt;html&lt;/b&gt;&lt;/b&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
+&lt;h3 id="sec-1-2"&gt;| while read filename&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-2"&gt;
+&lt;p&gt;
+The vertical bar (pipe) sends the output of &lt;b&gt;&lt;b&gt;ls&lt;/b&gt;&lt;/b&gt; into the &lt;b&gt;&lt;b&gt;while read&lt;/b&gt;&lt;/b&gt;
+command. The &lt;b&gt;&lt;b&gt;while&lt;/b&gt;&lt;/b&gt; command sets up a loop which, each time
+through, reads the next input and places into the variable
+&lt;b&gt;&lt;b&gt;filename&lt;/b&gt;&lt;/b&gt;. The body of the loop is between the &lt;b&gt;&lt;b&gt;do&lt;/b&gt;&lt;/b&gt; and the
+&lt;b&gt;&lt;b&gt;done&lt;/b&gt;&lt;/b&gt;.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-3" class="outline-3"&gt;
+&lt;h3 id="sec-1-3"&gt;sed "/ type: text/  i .. tags: " $filename&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-3"&gt;
+&lt;p&gt;
+Sed is the stream editor. The stuff between the slashes finds the line
+with the text &lt;b&gt;&lt;b&gt;type: text&lt;/b&gt;&lt;/b&gt; in it. The &lt;b&gt;&lt;b&gt;i&lt;/b&gt;&lt;/b&gt; inserts a line above and
+the rest of the stuff in the quotes is what to insert. The
+&lt;b&gt;&lt;b&gt;$filename&lt;/b&gt;&lt;/b&gt; expands to each filename, one each time through the
+loop.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Now all of my files have blank &lt;b&gt;&lt;b&gt;tag&lt;/b&gt;&lt;/b&gt; slugs so I can find my netlogo
+posts and tag them:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;nikola tags -a netlogo `grep -i -l netlogo posts/*`
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Any command in backticks expands to the result of the commmand. The
+grep command has two argiments: &lt;b&gt;&lt;b&gt;-i&lt;/b&gt;&lt;/b&gt; means ignore case so it will
+find netlogo, NetLogo, NETLOGO, etc.. The &lt;b&gt;&lt;b&gt;-l&lt;/b&gt;&lt;/b&gt; tells grep to just
+output the filenames. So, the grep command will expand to a list of
+files that mention netlogo. The full command adds the netlogo tag to
+all of them.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, just a bit of quick shell scripting and I've:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;modified all old posts to accept tags.
+&lt;/li&gt;
+&lt;li&gt;added the netlogo tag to all my netlogo posts.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+You can find all those posts &lt;a href="http://cestlaz.github.io/categories/netlogo"&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cli" label="cli"/>
+    <category term="linux" label="linux"/>
+    <category term="nikola" label="nikola"/>
+    <category term="shell" label="shell"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>REPOST - Shell games - who confirmed attendance</title>
+    <id>http://cestlaz.github.io/posts/duplicate-emails/</id>
+    <updated>2016-05-12T09:52:25-04:00</updated>
+    <published>2016-05-12T09:52:25-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/duplicate-emails/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;Repost&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+This is a repost from March 2015. It didn't transfer when I rebooted the blog.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;Original&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Quick post on why I love the Unix command line.
+&lt;/p&gt;
+
+&lt;p&gt;
+We're busy organizing &lt;a href="http://cstuy.org"&gt;CSTUY's&lt;/a&gt; first &lt;a href="http://cstuy.org/programs/defhacks"&gt;hackathon&lt;/a&gt;. It's going to be at
+&lt;a href="http://sumall.com"&gt;SumAll&lt;/a&gt;, where we hold our weekly &lt;a href="http://cstuy.org/programs/hacking_sessions"&gt;hacking sessions&lt;/a&gt; but while taking
+registration, we had a little program.
+&lt;/p&gt;
+
+&lt;p&gt;
+The kids signed up on a Google doc but we all know the story – when
+people sign up for a free event, even one with free food and t-shirts,
+many don't show. I asked all of the applicants to confirm by filling
+out a second Google doc.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then it got to reminder time - I wanted to send an email out to all
+those kids who signed up on the first form, but hadn't confirmed on
+the second. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Two Google spreadsheets with an email field. I needed all the people
+on sheet 1 that weren't on sheet 2. I'm sure there's some
+spreadsheet-fu that accomplishes this, but nothing I know. I also
+could have written a little python script which isn't so bad, but this
+was a perfect time to turn to the shell.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, here's how a command line guy would do this.
+&lt;/p&gt;
+
+&lt;p&gt;
+To start, I put the emails in two files: e1 and e2. The first has
+all the original applicants, the second those that confirmed.
+&lt;/p&gt;
+
+
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col" class="left"&gt;e1&lt;/th&gt;
+&lt;th scope="col" class="left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="left"&gt;e2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;a@a.com&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;b@b.com&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;b@b.com&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;F@f.com&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;c@c.com&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;c@c.com&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;d@d.com&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;d@d.com&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;e@e.com&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;f@f.com&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;g@g.com&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;h@h.com&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;p&gt;
+If we put these lists together, any email that appears twice would
+indicate that it's the email of someone that confirmed entry. Here we
+use cat to catenate e1 and e2 and pipe them through sort.
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cat e1 e2 | sort
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+First problem –the upper case F – let's use &lt;b&gt;&lt;b&gt;tr&lt;/b&gt;&lt;/b&gt; to make
+everything lower case:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cat e1 e2 |  tr A-Z a-z | sort
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Now we can see the duplicates next to each other. Next, &lt;b&gt;&lt;b&gt;uniq
+-c&lt;/b&gt;&lt;/b&gt; tells us how many times each line appears:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cat e1 e2 | tr A-Z a-z | sort | uniq -c | sort
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+I added the sort at the end, but we didn't need it.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's what we get:
+&lt;/p&gt;
+
+&lt;p class="verse"&gt;
+1 a@a.com&lt;br&gt;
+ 1 c@c.com&lt;br&gt;
+ 1 c@c.dom&lt;br&gt;
+ 1 e@e.com&lt;br&gt;
+ 1 g@g.com&lt;br&gt;
+ 1 h@hc.om&lt;br&gt;
+ 2 b@b.com&lt;br&gt;
+ 2 d@d.com&lt;br&gt;
+ 2 f@f.com&lt;br&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+To pull out the ones that haven't replied I used egrep with a regex
+that means "any line that starts with 1 or more spaces followed by the
+number 1":
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cat e1 e2 | tr A-z a-z | sort | uniq -c | egrep "^ +1"
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+and finally to isolate the emails using sed which removes the spaces
+and number 1 from the beginning of the line:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cat e1 e2 | tr A-z a-z | sort | uniq -c | egrep "^ +1" | sed "s/\ \+1 //g"
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Each of the little utilities aren't all too useful by themselves but
+if you learn them over time you start thinking about how you can
+combine them to solve problems. 
+&lt;/p&gt;
+
+&lt;p&gt;
+If you think this way and know some basic tools, all of a sudden all
+manner of text manipulation problems become pretty easy.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cli" label="cli"/>
+    <category term="linux" label="linux"/>
+    <category term="shell" label="shell"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>BASH scripting?</title>
     <id>http://cestlaz.github.io/posts/bash-scripting/</id>
@@ -19,8 +384,11 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/bash-scripting/"/>
-    <summary type="html">&lt;p&gt;
-Over in the Facebook AP Computer Science Teachers group soneone asked
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Over in the Facebook AP Computer Science Teachers group someone asked
 for thoughts on covering BASH scripting as a post AP topic.
 &lt;/p&gt;
 
@@ -29,19 +397,272 @@ A number of us made suggestions. I linked to &lt;a href="http://cestlaz.github.i
 &lt;/p&gt;
 
 &lt;p&gt;
-One group member said she asked around for similar suggestions adn the
+One group member said she asked around for similar suggestions and the
 response she got was "vi and awk." I wanted to jokingly respond "and
 after they suggested that they got into their time machine and went
 back to the 70's."
 &lt;/p&gt;
 
-
+&lt;p&gt;
+In all seriousness though, I think that suggesting specific tools or
+commands is off base.
+&lt;/p&gt;
 
 &lt;p&gt;
-&lt;a href="https://upload.wikimedia.org/wikipedia/en/4/43/English4.gif"&gt;ll&lt;/a&gt;
-&lt;/p&gt;</summary>
+The important thing to know about Vi is how to get out of it but it
+isn't really a tool in the scripting sense. I do think students should
+spend a good amount of time learning a powerful editor and should try
+bot Emacs (my choice) and Vim but that's another story.
+&lt;/p&gt;
+
+&lt;p&gt;
+I also use AWK but as it's a programming language in it's own right,
+I'm not sure if I'd introduce it right off the bat.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are a number of important ideas kids can take away from learning
+some Linux (or other Unix flavor):
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;There's something out there besides Windows and MacOS
+&lt;/li&gt;
+&lt;li&gt;All about free software
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Unix_philosophy"&gt;The Unix Philosophy&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+That last one is the biggie and more specifically, there's a huge
+upside in teaching kids the value of "OS as Toolset" where they can
+compose the many tools that comprise the Linux experience to get
+things done. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I gave an example of that in the &lt;a href="http://cestlaz.github.io/posts/2014-07-06-spreadsheet-vs-cli.html/#.VzSBHt9vETu"&gt;post&lt;/a&gt; I previously linked to.
+&lt;/p&gt;
+
+&lt;p&gt;
+For the teacher, that means wrapping your head around that way of
+working. Living in the shell and using pipes to connect program to
+progarm to program.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'd recommend getting into a time
+machine ourselves and taking a look at: 
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/The_Unix_Programming_Environment" width="250px" align="center"&gt;&lt;img src="http://upload.wikimedia.org/wikipedia/en/4/43/English4.gif" alt="English4.gif" width="250px" align="center"&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+It's dated but it's really a great book on getting into the Unix way
+of doing things, particularly the chapter about filters. It also has
+one of the best and clearest introductions to writing a compiler in
+the chapter on program development.
+&lt;/p&gt;
+
+&lt;p&gt;
+As I said, it is dated - shells are much easier to use and much more
+robust, there are many more tools now, and they've evolved but it's
+really a must read book.
+&lt;/p&gt;
+
+&lt;p&gt;
+In terms of tools, I get a lot of mileage out of:
+&lt;/p&gt;
+
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col" class="left"&gt;command&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;description&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;example&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;explanation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;cat&lt;/td&gt;
+&lt;td class="left"&gt;catenate or display a file&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;tr&lt;/td&gt;
+&lt;td class="left"&gt;Translate characters&lt;/td&gt;
+&lt;td class="left"&gt;tr A-Z a-z&lt;/td&gt;
+&lt;td class="left"&gt;convert upper to lower case&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;sed&lt;/td&gt;
+&lt;td class="left"&gt;Stream editor&lt;/td&gt;
+&lt;td class="left"&gt;sed "s/a/b/g"&lt;/td&gt;
+&lt;td class="left"&gt;Replace all a with b&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;wc&lt;/td&gt;
+&lt;td class="left"&gt;word count&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;counts words lines and chars&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;cut&lt;/td&gt;
+&lt;td class="left"&gt;cut columns&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;sort&lt;/td&gt;
+&lt;td class="left"&gt;sort lines&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+A nice simple thing you can do with these is clean data. Let's say you
+want to do some analytics on a book from Project Gutenberg. You might
+want to convert all non letters to spaces, and all letters to lower
+case:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cat book.txt | sed "s/[^a-zA-Z ]/ /g | tr A-Z a-z"
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+That sends book.txt into sed which uses a regular expression to convert
+no space and letters to spaces. The tr command converts all upper case
+letters to lower case.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you want one word per line, add:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;| sed "s/\n/g"
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+and maybe get rid of blank lines:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;| sed "/^$/d"
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+We can now count the number of words in the file using &lt;b&gt;&lt;b&gt;*wc&lt;/b&gt;&lt;/b&gt; or even
+get counts of all the words:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;| sort | uniq -c | sort -n
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+&lt;b&gt;&lt;b&gt;sort&lt;/b&gt;&lt;/b&gt; will sort all the lines, &lt;b&gt;&lt;b&gt;uniq -c&lt;/b&gt;&lt;/b&gt; will compress the lines that are
+adjacent and the same and give you a count and then &lt;b&gt;&lt;b&gt;sort -n&lt;/b&gt;&lt;/b&gt; will
+sort the results numerically.
+&lt;/p&gt;
+
+&lt;p&gt;
+I wrote another post a while ago about using the shell to detect
+who responded on a Google form. It looks like it didn't convert when
+I moved to my current blogging platform - I'll repost that shortly.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
     <category term="cli" label="cli"/>
     <category term="linux" label="linux"/>
     <category term="shell" label="shell"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Shell games - who confirmed attendence</title>
+    <id>http://cestlaz.github.io/posts/2015-03-19-duplicate-emails.html/</id>
+    <updated>2015-03-19T00:00:00</updated>
+    <published>2015-03-19T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2015-03-19-duplicate-emails.html/"/>
+    <summary type="html">&lt;style&gt;
+div.center {text-align:center;}
+&lt;/style&gt;
+
+&lt;p&gt;
+Quick post on why I love the Unix command line.
+&lt;/p&gt;
+
+&lt;p&gt;
+We're busy organizing &lt;a href="http://cstuy.org"&gt;CSTUY's&lt;/a&gt; first &lt;a href="http://cstuy.org/programs/defhacks"&gt;hackathon&lt;/a&gt;. It's going to be at
+&lt;a href="http://sumall.com"&gt;SumAll&lt;/a&gt;, where we hold our weekly &lt;a href="http://cstuy.org/programs/hacking_sessions"&gt;hacking sessions&lt;/a&gt; but while taking
+registration, we had a little program.
+&lt;/p&gt;
+
+&lt;p&gt;
+The kids signed up on a Google doc but we all know the story – when
+people sign up for a free event, even one with free food and t-shirts,
+many don't show. I asked all of the applicants to confirm by filling
+out a second Google doc.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then it got to reminder time - I wanted to send an email out to all
+those kids who signed up on the first form, but hadn't confirmed on
+the second. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Two Google spreadsheets with an email field. I needed all the people
+on sheet 1 that weren't on sheet 2. I'm sure there's some
+spreadsheet-fu that accomplishes this, but nothing I know. I also
+could have written a little python script which isn't so bad, but this
+was a perfect time to turn to the shell.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, here's how a command line guy would do this.
+&lt;/p&gt;
+
+&lt;p&gt;
+To start, I put the emails in two files: e1 and e2. The first has
+all the original applicants, the second those that confirmed.
+&lt;/p&gt;
+
+&lt;div class="org-src-container"&gt;
+
+&lt;pre class="src src-org"&gt;|&lt;/pre&gt;&lt;/div&gt;</summary>
+    <category term="cli" label="cli"/>
+    <category term="linux" label="linux"/>
+    <category term="shell" label="shell"/>
+    <category term="tools" label="tools"/>
   </entry>
 </feed>

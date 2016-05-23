@@ -3,7 +3,7 @@
 <feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 8)</title>
   <id>http://cestlaz.github.io/index-8.atom</id>
-  <updated>2016-05-10T15:07:38Z</updated>
+  <updated>2016-05-23T17:10:55Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -46,6 +46,7 @@ and so on. Even though the turn out was low, I'm really glad we got
 back to business. Weather permitting, we should be back at full
 capacity this coming Saturday.&lt;/p&gt;
 &lt;p&gt;I think it's finally time to start talking to them about git.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="cstuy" label="cstuy"/>
   </entry>
   <entry>
     <title>Plans for the New Year</title>
@@ -102,6 +103,7 @@ they'll come out in droves.&lt;/p&gt;
 &lt;p&gt;At least that's the hope.&lt;/p&gt;
 &lt;p&gt;So, those are my goals for the year.&lt;/p&gt;
 &lt;p&gt;Should be exiting.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="misc" label="misc"/>
   </entry>
   <entry>
     <title>A New Year and a New look</title>
@@ -137,6 +139,7 @@ rant, I'd like to do a series on how I use tools like the Linux shell
 and Emacs.&lt;/p&gt;
 &lt;p&gt;We'll see how things go.&lt;/p&gt;
 &lt;p&gt;For now, I wish you all a happy and healthy new year.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="misc" label="misc"/>
   </entry>
   <entry>
     <title>Bucket Sorting</title>
@@ -204,6 +207,8 @@ is better when and why?&lt;/p&gt;
 &lt;p&gt;Finally, we can talk about speed -- they're testing that now and we'll discuss our Radix sort vs the built in Arrays.sort() on Monday.&lt;/p&gt;
 &lt;p&gt;We'll do the n^2 and nLog(n) sorts a little later, but I think this
 was a detour well worth taking.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="apcs" label="apcs"/>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
   <entry>
     <title>Teaching Languages</title>
@@ -275,6 +280,8 @@ for a professional programmer, but for a student, it would be nuts.&lt;/p&gt;
 &lt;p&gt;I might go ahead with the Radix sort lesson anyway, we'll see, but it
 would be nice if I could teach this level of course without having to
 fight the implementation language.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="apcs" label="apcs"/>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
   <entry>
     <title>Build it first</title>
@@ -340,6 +347,8 @@ out growing the array into a private method.&lt;/p&gt;
 &lt;p&gt;Of course, what we're building is an ArrayList. Tomorrow we'll reveal
 that little fact and of course the classes will all hate me, but then,
 they'll really understand what's going on under the hood.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="csed" label="csed"/>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
   <entry>
     <title>Hacking Sessions - putting it all together</title>
@@ -381,6 +390,7 @@ from a pedagogical point of view - but more on that in another post.&lt;/p&gt;
 &lt;p&gt;We also gave out our first assignment -- over the weeks, the hackers
 will finish up their projects - next week we'll demo and give prizes
 for the best.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="cstuy" label="cstuy"/>
   </entry>
   <entry>
     <title>Hacking Sessions Week 4 - The challenges of once a week</title>
@@ -458,6 +468,7 @@ doing we can adjust as we move along we'll continue to build a great program.&lt
   &lt;img width="50%" src="http://cestlaz.github.io/img/hacking-sessions-4/week4-chris.jpg" class="" alt=""&gt;
 &lt;/a&gt;
 &lt;/div&gt;&lt;/div&gt;</summary>
+    <category term="cstuy" label="cstuy"/>
   </entry>
   <entry>
     <title>Four to beam up</title>
@@ -519,6 +530,7 @@ something good and something different. That's OK though, because it
 has a great affect on the classes. True, most students know me before they enter my class due to reputation, good or bad, but after Halloween there's a noticable change in the class. All of a sudden I'm just a little less scary.
 
 Looking forward to next year.&lt;/p&gt;</summary>
+    <category term="community" label="community"/>
   </entry>
   <entry>
     <title>Floating Points</title>
@@ -549,5 +561,6 @@ on Floating Points just a couple of weeks before. Here's her episode:
 &lt;iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/115558553"&gt;&lt;/iframe&gt;
 &lt;/p&gt;&lt;p&gt;
 Enjoy.&lt;/p&gt;</summary>
+    <category term="policy" label="policy"/>
   </entry>
 </feed>
