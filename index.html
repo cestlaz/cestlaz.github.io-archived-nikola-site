@@ -19,8 +19,8 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
-<link rel="next" href="index-19.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-1-setup/" type="text/html">
+<link rel="next" href="index-20.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-2-org/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -87,7 +87,98 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-1-setup/" class="u-url">Using Emacs - Setting up the Package Manager</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-2-org/" class="u-url">Using Emacs - Intro to Org Mode</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/using-emacs-2-org/" rel="bookmark"><time class="published dt-published" datetime="2016-05-23T13:29:36-04:00" title="2016-05-23 13:29">2016-05-23 13:29</time></a></p>
+                <p class="commentline">            <a href="posts/using-emacs-2-org/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-2-org.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"></h2>
+<div class="outline-text-2" id="text-1">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x5KiYDd9s8k?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg" frameborder="0" allowfullscreen></iframe>
+
+<p>
+This video is a brief introduction to org-mode, a mode I use for all
+sorts of things.
+</p>
+
+<p>
+We'll dive into org-mode later in the series. Right now I just want
+you to see the basics since we'll be using org-mode for any notes that
+are written up during this series. 
+</p>
+
+<p>
+Actually, all my blog posts are written in org-mode.
+</p>
+
+<p>
+Here are the important lines to add to your Emacs <b>init.el</b> file  to
+get the nice looking bullets when in org-mode:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">org-bullets</span>
+  <span class="nv">:ensure</span> <span class="nv">t</span>
+  <span class="nv">:config</span>
+  <span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'org-mode-hook</span> <span class="p">(</span><span class="k">lambda </span><span class="p">()</span> <span class="p">(</span><span class="nf">org-bullets-mode</span> <span class="mi">1</span><span class="p">))))</span>
+</pre></div>
+
+
+<p>
+About a month ago, Emacs user Harry Schwartz gave a nice overview talk
+on org-mode. If you want to get a better idea as to all the things you
+can do with it, check it out: <a href="https://www.youtube.com/watch?v=SzA2YODtgK4">https://www.youtube.com/watch?v=SzA2YODtgK4</a>
+</p>
+
+<p>
+Next time, we'll look at a little Elisp. After that, we'll dive in to
+using Emacs effectively and efficiently. 
+</p>
+
+<p>
+Relevant links:
+</p>
+<ul class="org-ul">
+<li>Video series overview page:
+<ul class="org-ul">
+<li>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</li>
+</ul>
+</li>
+<li>Code for this video:
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/lesson-2-org"></a><a href="https://github.com/zamansky/using-emacs/tree/lesson-2-org">https://github.com/zamansky/using-emacs/tree/lesson-2-org</a>
+</li>
+</ul>
+</li>
+<li>Complete code built up over all videos:
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
+</li>
+</ul>
+</li>
+<li>Packages
+<ul class="org-ul">
+<li>
+<a href="https://github.com/sabof/org-bullets">org-bullets</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-1-setup/" class="u-url">Using Emacs - Setting up the Package Manager</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
@@ -1444,143 +1535,11 @@ of whom are hired more for research than for their teaching chops
 and we don't trust our teachers during our kids more formative years.
 </p>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/college-board/" class="u-url">Remember, school is all about profit, wait no, I mean testing, no, I mean...</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/college-board/" rel="bookmark"><time class="published dt-published" datetime="2016-05-06T07:03:36-04:00" title="2016-05-06 07:03">2016-05-06 07:03</time></a></p>
-                <p class="commentline">            <a href="posts/college-board/#disqus_thread" data-disqus-identifier="cache/posts/college-board.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <p>
-It's important to remember, the college board is about making money
-for the college board. It's not about supporting teachers and it's
-certainly  not about educating kids.
-</p>
-
-
-<p>
-Kids took the AP Computer Science A exam last week and the College
-Board just released the free response questions. There seems to me
-more chatter about them in social media than in past years.
-</p>
-
-<p>
-I'm just left wondering how AP became the be all and end all.
-</p>
-
-<p>
-From where I stand, the College Board, who runs AP, SAT, and PSAT
-exams is all about making money for the College Board - they're a
-non-profit in name only.
-</p>
-
-<p>
-It's all about market share and dominance.
-</p>
-
-<p>
-Looking at APCS A, it's not a great exam or course. At Stuy, I taught
-a super-set of the old AB and pretty much ignored the parts I didn't
-like (that is, the case study) but many schools can't do that. In my
-case, most of the schools my kids went to didn't award credit, even
-for a 5. They did sometimes award placement but I've had just as many,
-if not more kids gain placement just by showing their work to the CS
-department at their chosen school.
-</p>
-
-<p>
-Now they're rolling out APCS Principles. I do get the fact that many
-schools don't have people to roll their own courses, but I'm not
-overly impressed by much of what's come out. I think what we've
-developed is stronger and time proven.
-</p>
-
-<p>
-Regardless, and moving beyond just CS, the College Board has somehow
-bamboozled the public to think AP = Good. Colleges are awarding less
-and less credit but everyone's telling the kids to take more and more
-AP classes. What's worse, somehow US News and World Report magically
-became an authority on school ratings and now the more AP classes your
-kids take the better.
-</p>
-
-<p>
-I know of at least one school with a highly lauded principal boast
-about all his kids came in behind in math and by their senior year
-passed honors calculus. Looking at the data unfortunately showed that
-while all his seniors took the class, all failed, scoring below
-a 3. It made the school look great but I'd argue that it was child
-abuse.
-</p>
-
-<p>
-The principal of course parlayed that gig to an even higher profile
-one.
-</p>
-
-<p>
-Now, you could just file the stupid paperwork so that you can run
-classes labeled as AP and have kids take the classes but not the exam
-but the College Board's working on that - there are rumblings in NY
-on using <a href="http://www.chalkbeat.org/posts/ny/2016/04/13/new-york-considering-using-scores-on-ap-exams-and-sat-subject-tests-in-teacher-evaluations/#.VyyRlN9vGAk">student AP scores in teacher ratings</a>. Using student test
-results for teacher ratings is already a bad idea - using AP is even
-worse.
-</p>
-
-<p>
-Of course, to really get the cash cow going, AP is entering deals with
-agencies and municipalities for large scale testing – in NY students will have to take the
-SAT and <a href="http://nymag.com/daily/intelligencer/2015/10/nyc-will-give-free-sat-testing-to-hs-juniors.html">take it for free</a>. Then there's code.org's deal free PD for
-school's that have their kids take <a href="http://cestlaz.github.io/posts/2015-05-19-code-org-college-board.html/">yet another meaningless exam</a>, the
-new PSAT/8-9.
-</p>
-
-<p>
-Of course, none of this is free - it's our taxpayer money hard at work
-being shuttled right into the college board.
-</p>
-
-<p>
-What are we getting? Tests that they create and control and are
-EXTREMELY secretive about that don't tell us anyhting that we don't
-already know about our kids. Oh, and teachers lose instructional time
-and have to <a href="http://cestlaz.github.io/posts/2015-10-13-psat.html/#.VyzHNN9vGAk">proctor</a> these exams instead of teaching.
-</p>
-
-<p>
-Great deal if you can get it.
-</p>
-
-<p>
-Now, what's the value of this – more meaningless tests for the
-kids. I don't know if there's a record of this anywhere but in the
-pre-internet day, I remember watching a news report where a College
-Board representative stated that the SAT was a valid predictor of one
-thing - how students would do on future SAT exams.
-</p>
-
-<p>
-So, were left with more money flowing to an outside company with
-students taking more meaningless tests.
-</p>
-
-<p>
-I wish more schools showed the backbone that Fieldston, an elite
-private school in NY had when it <a href="http://www.nytimes.com/2002/02/01/nyregion/high-school-drops-its-ap-courses-and-colleges-don-t-seem-to-mind.html">dropped A.P. courses</a> over 10 years
-ago. They still seem to be well regarded as a school and their kids do
-just fine in terms of college acceptance.
-</p>
-    </div>
     </article>
 </div>
         <nav class="postindexpager"><ul class="pager">
 <li class="next">
-                <a href="index-19.html" rel="next">Older posts</a>
+                <a href="index-20.html" rel="next">Older posts</a>
             </li>
         </ul></nav><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
 </div>

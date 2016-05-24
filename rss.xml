@@ -1,5 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 23 May 2016 17:48:48 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - Setting up the Package Manager</title><link>http://cestlaz.github.io/posts/using-emacs-1-setup/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 23 May 2016 23:59:07 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - Intro to Org Mode</title><link>http://cestlaz.github.io/posts/using-emacs-2-org/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x5KiYDd9s8k?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+This video is a brief introduction to org-mode, a mode I use for all
+sorts of things.
+&lt;/p&gt;
+
+&lt;p&gt;
+We'll dive into org-mode later in the series. Right now I just want
+you to see the basics since we'll be using org-mode for any notes that
+are written up during this series. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Actually, all my blog posts are written in org-mode.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here are the important lines to add to your Emacs &lt;b&gt;init.el&lt;/b&gt; file  to
+get the nice looking bullets when in org-mode:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;org-bullets&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'org-mode-hook&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;org-bullets-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+About a month ago, Emacs user Harry Schwartz gave a nice overview talk
+on org-mode. If you want to get a better idea as to all the things you
+can do with it, check it out: &lt;a href="https://www.youtube.com/watch?v=SzA2YODtgK4"&gt;https://www.youtube.com/watch?v=SzA2YODtgK4&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Next time, we'll look at a little Elisp. After that, we'll dive in to
+using Emacs effectively and efficiently. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code for this video:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-2-org"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-2-org"&gt;https://github.com/zamansky/using-emacs/tree/lesson-2-org&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete code built up over all videos:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Packages
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/sabof/org-bullets"&gt;org-bullets&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-2-org/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item><item><title>Using Emacs - Setting up the Package Manager</title><link>http://cestlaz.github.io/posts/using-emacs-1-setup/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -1255,122 +1328,4 @@ level" being taught in the high schools.
 It's a really sad state of affairs when we trust our professors - many
 of whom are hired more for research than for their teaching chops
 and we don't trust our teachers during our kids more formative years.
-&lt;/p&gt;</description><category>policy</category><guid>http://cestlaz.github.io/posts/ap-we-dont-trust-teachers/</guid><pubDate>Sat, 07 May 2016 10:59:40 GMT</pubDate></item><item><title>Remember, school is all about profit, wait no, I mean testing, no, I mean...</title><link>http://cestlaz.github.io/posts/college-board/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
-It's important to remember, the college board is about making money
-for the college board. It's not about supporting teachers and it's
-certainly  not about educating kids.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-Kids took the AP Computer Science A exam last week and the College
-Board just released the free response questions. There seems to me
-more chatter about them in social media than in past years.
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm just left wondering how AP became the be all and end all.
-&lt;/p&gt;
-
-&lt;p&gt;
-From where I stand, the College Board, who runs AP, SAT, and PSAT
-exams is all about making money for the College Board - they're a
-non-profit in name only.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's all about market share and dominance.
-&lt;/p&gt;
-
-&lt;p&gt;
-Looking at APCS A, it's not a great exam or course. At Stuy, I taught
-a super-set of the old AB and pretty much ignored the parts I didn't
-like (that is, the case study) but many schools can't do that. In my
-case, most of the schools my kids went to didn't award credit, even
-for a 5. They did sometimes award placement but I've had just as many,
-if not more kids gain placement just by showing their work to the CS
-department at their chosen school.
-&lt;/p&gt;
-
-&lt;p&gt;
-Now they're rolling out APCS Principles. I do get the fact that many
-schools don't have people to roll their own courses, but I'm not
-overly impressed by much of what's come out. I think what we've
-developed is stronger and time proven.
-&lt;/p&gt;
-
-&lt;p&gt;
-Regardless, and moving beyond just CS, the College Board has somehow
-bamboozled the public to think AP = Good. Colleges are awarding less
-and less credit but everyone's telling the kids to take more and more
-AP classes. What's worse, somehow US News and World Report magically
-became an authority on school ratings and now the more AP classes your
-kids take the better.
-&lt;/p&gt;
-
-&lt;p&gt;
-I know of at least one school with a highly lauded principal boast
-about all his kids came in behind in math and by their senior year
-passed honors calculus. Looking at the data unfortunately showed that
-while all his seniors took the class, all failed, scoring below
-a 3. It made the school look great but I'd argue that it was child
-abuse.
-&lt;/p&gt;
-
-&lt;p&gt;
-The principal of course parlayed that gig to an even higher profile
-one.
-&lt;/p&gt;
-
-&lt;p&gt;
-Now, you could just file the stupid paperwork so that you can run
-classes labeled as AP and have kids take the classes but not the exam
-but the College Board's working on that - there are rumblings in NY
-on using &lt;a href="http://www.chalkbeat.org/posts/ny/2016/04/13/new-york-considering-using-scores-on-ap-exams-and-sat-subject-tests-in-teacher-evaluations/#.VyyRlN9vGAk"&gt;student AP scores in teacher ratings&lt;/a&gt;. Using student test
-results for teacher ratings is already a bad idea - using AP is even
-worse.
-&lt;/p&gt;
-
-&lt;p&gt;
-Of course, to really get the cash cow going, AP is entering deals with
-agencies and municipalities for large scale testing – in NY students will have to take the
-SAT and &lt;a href="http://nymag.com/daily/intelligencer/2015/10/nyc-will-give-free-sat-testing-to-hs-juniors.html"&gt;take it for free&lt;/a&gt;. Then there's code.org's deal free PD for
-school's that have their kids take &lt;a href="http://cestlaz.github.io/posts/2015-05-19-code-org-college-board.html/"&gt;yet another meaningless exam&lt;/a&gt;, the
-new PSAT/8-9.
-&lt;/p&gt;
-
-&lt;p&gt;
-Of course, none of this is free - it's our taxpayer money hard at work
-being shuttled right into the college board.
-&lt;/p&gt;
-
-&lt;p&gt;
-What are we getting? Tests that they create and control and are
-EXTREMELY secretive about that don't tell us anyhting that we don't
-already know about our kids. Oh, and teachers lose instructional time
-and have to &lt;a href="http://cestlaz.github.io/posts/2015-10-13-psat.html/#.VyzHNN9vGAk"&gt;proctor&lt;/a&gt; these exams instead of teaching.
-&lt;/p&gt;
-
-&lt;p&gt;
-Great deal if you can get it.
-&lt;/p&gt;
-
-&lt;p&gt;
-Now, what's the value of this – more meaningless tests for the
-kids. I don't know if there's a record of this anywhere but in the
-pre-internet day, I remember watching a news report where a College
-Board representative stated that the SAT was a valid predictor of one
-thing - how students would do on future SAT exams.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, were left with more money flowing to an outside company with
-students taking more meaningless tests.
-&lt;/p&gt;
-
-&lt;p&gt;
-I wish more schools showed the backbone that Fieldston, an elite
-private school in NY had when it &lt;a href="http://www.nytimes.com/2002/02/01/nyregion/high-school-drops-its-ap-courses-and-colleges-don-t-seem-to-mind.html"&gt;dropped A.P. courses&lt;/a&gt; over 10 years
-ago. They still seem to be well regarded as a school and their kids do
-just fine in terms of college acceptance.
-&lt;/p&gt;</description><category>policy</category><guid>http://cestlaz.github.io/posts/college-board/</guid><pubDate>Fri, 06 May 2016 11:03:36 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;</description><category>policy</category><guid>http://cestlaz.github.io/posts/ap-we-dont-trust-teachers/</guid><pubDate>Sat, 07 May 2016 10:59:40 GMT</pubDate></item></channel></rss>
