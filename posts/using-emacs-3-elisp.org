@@ -1,0 +1,41 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 3 - How to think about Emacs
+.. slug: using-emacs-3-elisp
+.. date: 2016-05-23 13:29:36 UTC-04:00
+.. tags: emacs, tools
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nyQxRarVYH4" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+Many people think of Emacs as an editor. I like to think of it as an Elisp interpreter where you live code documents.
+
+In some ways, it's like those new fangled interactive programming environments where you type in code and the updates are reflected instantly. 
+
+In this video, I try to explain the way I think about Emacs and why it's so cool.
+
+The only change we made to our configuration was adding:
+
+#+BEGIN_SRC emacs-lisp :tangle n
+(tool-bar-mode -1)  
+#+END_SRC
+
+Which gets rid of the tool bar at the top.
+
+Next time, we start talking about efficiently using Emacs.
+
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code for this video:
+  - [[https://github.com/zamansky/using-emacs/tree/lesson-2-org][https://github.com/zamansky/using-emacs/tree/lesson-3-elisp]]
+- Complete code built up over all videos:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
