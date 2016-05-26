@@ -1,17 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
-<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 18)</title>
   <id>http://cestlaz.github.io/index-18.atom</id>
-  <updated>2016-05-02T22:36:44Z</updated>
+  <updated>2016-05-23T17:14:41Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/index-18.atom"/>
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-17.atom"/>
-  <link rel="previous" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
+  <link rel="previous" type="application/atom+xml" href="http://cestlaz.github.io/index-19.atom"/>
   <link rel="current" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
+  <link rel="next-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-19.atom"/>
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-17.atom"/>
+  <fh:archive/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-18.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
@@ -218,6 +220,8 @@ unsolved.&lt;/li&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
+    <category term="netlogo" label="netlogo"/>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
   <entry>
     <title>Cellular Automata, NetLogo and real problems</title>
@@ -414,6 +418,8 @@ automaton that can solve a maze.
 &lt;div class="center frame"&gt;
 &lt;iframe class="center frame" src="http://cestlaz.github.io/img/shift-image/shift-image.html"&gt;&lt;/iframe&gt;
 &lt;/div&gt;</summary>
+    <category term="netlogo" label="netlogo"/>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
   <entry>
     <title>International Blog Delurking Week 2016</title>
@@ -556,6 +562,7 @@ out into public forums. It would be terrific if more of us would blog
 or blog more often and also to take the time to add to the dialog in a
 public place.
 &lt;/p&gt;</summary>
+    <category term="community" label="community"/>
   </entry>
   <entry>
     <title>Teaching Coding - getting beyond superficial syntax</title>
@@ -695,6 +702,7 @@ stuff and are willing to continue to learn.
 &lt;p&gt;
 		Do our kids deserve any less?
 &lt;/p&gt;</summary>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
   <entry>
     <title>Leaving Stuyvesant</title>
@@ -763,6 +771,7 @@ I'm happy to say that I will be joining Hunter College in late
 &lt;p&gt;
 		With the new year comes new opportunity and I can't wait.
 &lt;/p&gt;</summary>
+    <category term="misc" label="misc"/>
   </entry>
   <entry>
     <title>Advent of Code - because I'm an idiot</title>
@@ -865,6 +874,7 @@ Hopefully I'll have some time to do problem 7 and beyond this weekend.
 If there are any Clojure people out there, I'm putting my solutions up
 on &lt;a href="https://github.com/zamansky/adventofcodeclojure"&gt;GitHub&lt;/a&gt; - I'd love some feedback on how to get more idiomatic.
 &lt;/p&gt;</summary>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
   <entry>
     <title>Advent of Code</title>
@@ -923,6 +933,7 @@ it's been fun nonetheless.
 So, if you're looking for a nice set of small programming problems
 and want to explore something new, check it out.
 &lt;/p&gt;</summary>
+    <category term="misc" label="misc"/>
   </entry>
   <entry>
     <title>We're Number One!! We're Number One!!!</title>
@@ -1066,6 +1077,7 @@ same type of kids it's had for the past 100 or so years, the kids will
 do fine. Is it really special? Well, unless it starts really think
 about what the kids need and deserve, maybe not so much.
 &lt;/p&gt;</summary>
+    <category term="policy" label="policy"/>
   </entry>
   <entry>
     <title>Other People's Code</title>
@@ -1172,5 +1184,6 @@ out.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
 </feed>

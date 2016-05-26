@@ -3,7 +3,7 @@
 <feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 14)</title>
   <id>http://cestlaz.github.io/index-14.atom</id>
-  <updated>2016-04-21T00:01:29Z</updated>
+  <updated>2016-05-23T17:14:41Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -116,6 +116,7 @@ little for the Code.org training, for whatever that's worth.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
+    <category term="policy" label="policy"/>
   </entry>
   <entry>
     <title>Learning takes time, hype doesn't</title>
@@ -332,6 +333,7 @@ these steps:
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
+    <category term="policy" label="policy"/>
   </entry>
   <entry>
     <title>"def hack(2015)</title>
@@ -526,6 +528,7 @@ and our Sponsors:
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
+    <category term="cstuy" label="cstuy"/>
   </entry>
   <entry>
     <title>Shell games - who confirmed attendence</title>
@@ -583,6 +586,10 @@ all the original applicants, the second those that confirmed.
 &lt;div class="org-src-container"&gt;
 
 &lt;pre class="src src-org"&gt;|&lt;/pre&gt;&lt;/div&gt;</summary>
+    <category term="cli" label="cli"/>
+    <category term="linux" label="linux"/>
+    <category term="shell" label="shell"/>
+    <category term="tools" label="tools"/>
   </entry>
   <entry>
     <title>Just another day at StuyCS</title>
@@ -649,6 +656,8 @@ third chat.
 &lt;p&gt;
 So, just another day at StuyCS.
 &lt;/p&gt;</summary>
+    <category term="community" label="community"/>
+    <category term="misc" label="misc"/>
   </entry>
   <entry>
     <title>What's Expedient vs what's good - curriculum vs teachers</title>
@@ -831,6 +840,7 @@ above. Hopefully I'll get to rant about them soon.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
+    <category term="policy" label="policy"/>
   </entry>
   <entry>
     <title>Believing in what you're doing</title>
@@ -959,6 +969,7 @@ chemist, or doctor.
 So, I've rambled on this long enough - just some food for thought from
 a teacher.
 &lt;/p&gt;</summary>
+    <category term="policy" label="policy"/>
   </entry>
   <entry>
     <title>A chocolate treasure in a city losing its soul</title>
@@ -1084,6 +1095,7 @@ people like Kamila are few and far between.
 So, when you're around City Center or midtown in general, please treat
 yourself. You won't be disappointed.
 &lt;/p&gt;</summary>
+    <category term="misc" label="misc"/>
   </entry>
   <entry>
     <title>Taking stock and tracking progress</title>
@@ -1235,6 +1247,7 @@ Enjoy…
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
   <entry>
     <title>Kids these days -- they don't know nuttin</title>
@@ -1351,5 +1364,6 @@ most of the progress we've made. Just noting the cultural difference.
 It means we should pay more attention to educating our classes on tech
 culture, the good, the bad, and the ugly.
 &lt;/p&gt;</summary>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
 </feed>

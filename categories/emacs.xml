@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (emacs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/emacs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 23 May 2016 23:59:08 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - Setting up the Package Manager</title><link>http://cestlaz.github.io/posts/using-emacs-1-setup/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (emacs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/emacs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 26 May 2016 14:39:58 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - Setting up the Package Manager</title><link>http://cestlaz.github.io/posts/using-emacs-1-setup/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -87,7 +87,63 @@ Relavent links:
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-1-setup/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item><item><title>Using Emacs - Intro to Org Mode</title><link>http://cestlaz.github.io/posts/using-emacs-2-org/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-1-setup/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item><item><title>Using Emacs - 3 - How to think about Emacs</title><link>http://cestlaz.github.io/posts/using-emacs-3-elisp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/nyQxRarVYH4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Many people think of Emacs as an editor. I like to think of it as an Elisp interpreter where you live code documents.
+&lt;/p&gt;
+
+&lt;p&gt;
+In some ways, it's like those new fangled interactive programming environments where you type in code and the updates are reflected instantly. 
+&lt;/p&gt;
+
+&lt;p&gt;
+In this video, I try to explain the way I think about Emacs and why it's so cool.
+&lt;/p&gt;
+
+&lt;p&gt;
+The only change we made to our configuration was adding:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;tool-bar-mode&lt;/span&gt; &lt;span class="mi"&gt;-1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Which gets rid of the tool bar at the top.
+&lt;/p&gt;
+
+&lt;p&gt;
+Next time, we start talking about efficiently using Emacs.
+&lt;/p&gt;
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code for this video:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-2-org"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-3-elisp"&gt;https://github.com/zamansky/using-emacs/tree/lesson-3-elisp&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete code built up over all videos:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-3-elisp/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item><item><title>Using Emacs - Intro to Org Mode</title><link>http://cestlaz.github.io/posts/using-emacs-2-org/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x5KiYDd9s8k?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;

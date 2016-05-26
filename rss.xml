@@ -1,5 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 23 May 2016 23:59:07 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - Intro to Org Mode</title><link>http://cestlaz.github.io/posts/using-emacs-2-org/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 26 May 2016 14:39:58 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 3 - How to think about Emacs</title><link>http://cestlaz.github.io/posts/using-emacs-3-elisp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/nyQxRarVYH4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Many people think of Emacs as an editor. I like to think of it as an Elisp interpreter where you live code documents.
+&lt;/p&gt;
+
+&lt;p&gt;
+In some ways, it's like those new fangled interactive programming environments where you type in code and the updates are reflected instantly. 
+&lt;/p&gt;
+
+&lt;p&gt;
+In this video, I try to explain the way I think about Emacs and why it's so cool.
+&lt;/p&gt;
+
+&lt;p&gt;
+The only change we made to our configuration was adding:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;tool-bar-mode&lt;/span&gt; &lt;span class="mi"&gt;-1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Which gets rid of the tool bar at the top.
+&lt;/p&gt;
+
+&lt;p&gt;
+Next time, we start talking about efficiently using Emacs.
+&lt;/p&gt;
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code for this video:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-2-org"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-3-elisp"&gt;https://github.com/zamansky/using-emacs/tree/lesson-3-elisp&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete code built up over all videos:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-3-elisp/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item><item><title>Using Emacs - Intro to Org Mode</title><link>http://cestlaz.github.io/posts/using-emacs-2-org/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x5KiYDd9s8k?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
@@ -1211,121 +1267,4 @@ I think that's it or my College Board rants.
 Then again, I also thought that when I wrote Friday's post.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>policy</category><guid>http://cestlaz.github.io/posts/world-without-college-board/</guid><pubDate>Sat, 07 May 2016 21:07:10 GMT</pubDate></item><item><title>Advanced Placement - Because We Don't Trust Teachers</title><link>http://cestlaz.github.io/posts/ap-we-dont-trust-teachers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
-&lt;a href="http://cestlaz.github.io/posts/college-board/"&gt;Yesterday&lt;/a&gt;, I ranted on about the College Board. This led to a Facebook
-hosted discussion which got me thinking a little more:
-&lt;/p&gt;
-
-&lt;p&gt;
-Advanced Placement exams basically exist because we don't trust our
-high school teachers. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I usually use phrases like "society doesn't trust" but let's
-personalize it this time – for parents, think about whether or not you trust your
-kids teachers? Do you a large private, unaccountable organization
-more?
-&lt;/p&gt;
-
-&lt;p&gt;
-If you teach an advanced placement course, in order for your class to
-be listed as AP you have to submit your syllabus to the college board
-for approval. This sounds like they're setting a standard but it's
-not. I can point to a bunch of teachers who have submitted identical syllabi
-where sometimes it's accepted but ofttimes it's rejected. This is the
-syllabus we submitted originally for Stuy. Yes, we have high achieving
-kids, but given the fact that the syllabus was approved originally and
-that Stuy students just about all score 4 or 5 on APCS-A should tell
-you something about the level of care or competence of the College
-Board.
-&lt;/p&gt;
-
-&lt;p&gt;
-Then you teach the class and in May, one to two months before the end
-of the semester the kids take the AP exam - you don't see results
-until the summer.
-&lt;/p&gt;
-
-&lt;p&gt;
-In theory, if the kids do well they can receive placement or
-credit. The problem is, fewer and fewer schools are giving credit,
-when they do, it might not help due to the way undergrads pay for
-courses and placement can generally be achieved by appealing to
-college departments or by taking college administered placements.
-&lt;/p&gt;
-
-&lt;p&gt;
-Back to the trust thing.
-&lt;/p&gt;
-
-&lt;p&gt;
-In college, you take a course, the final exam is created by the
-professor or a group of professors and it's graded by the people that
-teach the course - possibly as a committee. Kids final grades include
-these exams but a student can fail a final or even miss one and still
-pass the class whereas an AP exam is a one shot deal and even if you
-"pass" you might not get anything from it. I'm not even getting into
-questioning the quality and content of the exams. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Kids get their grades and college credit. There are no outside
-"standardized exams" and we trust that the professors and the colleges
-are educating our kids. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Now, in high school, teachers make their lessons, teach their classes,
-create, administer, and grade final exams and kids get grade - but not
-for college level classes.
-&lt;/p&gt;
-
-&lt;p&gt;
-I know multiple high school physics, chemistry, math, and computer
-science teachers who are far better at teaching than their college
-counterparts yet my friend the math teacher isn't trusted to assess
-his calculus students for the purpose of college credit - we don't
-trust him but we trust the faceless entity known as the College
-Board. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Why?
-&lt;/p&gt;
-
-&lt;p&gt;
-Think about that for a minute.
-&lt;/p&gt;
-
-&lt;p&gt;
-You trust your child's teacher with your child's well being every
-day but you don't trust him to say whether or not your kid knows
-calculus?
-&lt;/p&gt;
-
-&lt;p&gt;
-This is a real problem.
-&lt;/p&gt;
-
-&lt;p&gt;
-I have a friend who frequently doesn't quite finish the BC Calculus
-test topics because he actually teaches the material in depth –
-instead of "follow the scripts" the kids go through proofs and
-derivations. It costs the kids - I know a number of them who got a 4
-on the BC exam rather than a 5 but come the end of June when the class
-is done, they know more calculus more deeply than a lot of kids who've
-taken the class in college. 
-&lt;/p&gt;
-
-&lt;p&gt;
-The lines of college have been blurred with more and more "remedial"
-classes being taught at the college level and more and more "college
-level" being taught in the high schools.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's a really sad state of affairs when we trust our professors - many
-of whom are hired more for research than for their teaching chops
-and we don't trust our teachers during our kids more formative years.
-&lt;/p&gt;</description><category>policy</category><guid>http://cestlaz.github.io/posts/ap-we-dont-trust-teachers/</guid><pubDate>Sat, 07 May 2016 10:59:40 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>policy</category><guid>http://cestlaz.github.io/posts/world-without-college-board/</guid><pubDate>Sat, 07 May 2016 21:07:10 GMT</pubDate></item></channel></rss>
