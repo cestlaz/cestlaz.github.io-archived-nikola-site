@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/tools.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 26 May 2016 14:39:58 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - Setting up the Package Manager</title><link>http://cestlaz.github.io/posts/using-emacs-1-setup/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/tools.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 31 May 2016 12:24:22 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - Setting up the Package Manager</title><link>http://cestlaz.github.io/posts/using-emacs-1-setup/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -143,7 +143,201 @@ Relevant links:
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-3-elisp/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item><item><title>Using Emacs - Intro to Org Mode</title><link>http://cestlaz.github.io/posts/using-emacs-2-org/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-3-elisp/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item><item><title>Using Emacs - 4 - Buffers</title><link>http://cestlaz.github.io/posts/using-emacs-4-buffers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;iframe width="480" height="270" src="https://www.youtube.com/embed/v5eTK5lC0xs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Now that we're past the intro material, we'll start looking at emacs
+features one at a time. This will let you focus on using the one
+feature we're covering, fit it into your work flow, and really get
+comfortable with it. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This time we'll dive into using Emacs effectively with buffers.
+&lt;/p&gt;
+
+&lt;p&gt;
+Watch the video and then make a real effort to use buffers over the
+next few emacs sessions. Before you know it, they'll be a natural part
+of your work flow.
+&lt;/p&gt;
+
+&lt;p&gt;
+The idea of incrementally learning a tool this way seems to be called
+&lt;a href="http://sachachua.com/blog/2015/01/developing-emacs-micro-habits-text-automation/"&gt;developing micro-habits&lt;/a&gt; and I first read about the idea from &lt;a href="https://twitter.com/sachac"&gt;Sacha
+Chua&lt;/a&gt; who is an amazing member of the emacs community.
+&lt;/p&gt;
+
+&lt;p&gt;
+When seeing beginners, I'll frequently observe this work flow:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Open a terminal
+&lt;/li&gt;
+&lt;li&gt;Load emacs on a file
+&lt;/li&gt;
+&lt;li&gt;Edit the file
+&lt;/li&gt;
+&lt;li&gt;Save and quit emacs
+&lt;/li&gt;
+&lt;li&gt;Try to compile and run the program (since usually this is in a programming class)
+&lt;/li&gt;
+&lt;li&gt;repeat
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+If the beginner needs to see multiple files at once, they fire up multiple separate emacs.
+&lt;/p&gt;
+
+&lt;p&gt;
+All of this causes me physical pain.
+&lt;/p&gt;
+
+&lt;p&gt;
+In emacs, your editor can load several buffers at once, each
+associated with a separate file. You can quickly switch between them,
+search across them, and more. The video will get you started.
+&lt;/p&gt;
+
+&lt;p&gt;
+The video also mentions &lt;b&gt;ido&lt;/b&gt; mode. To set up &lt;b&gt;ido&lt;/b&gt; mode, add the
+following code to your init.el:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;ido-enable-flex-matching&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;ido-everywhere&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ido-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+And here's a great little write up on it by &lt;a href="https://www.masteringemacs.org/reading-guide"&gt;Mickey Petersen&lt;/a&gt;:
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="https://www.masteringemacs.org/article/introduction-to-ido-mode"&gt;https://www.masteringemacs.org/article/introduction-to-ido-mode&lt;/a&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;
+As I mentioned in the video, I actually use another mode for completions (&lt;a href="https://github.com/abo-abo/swiper"&gt;swiper&lt;/a&gt;),
+which I'll cover in a future video and another popular option is &lt;a href="https://github.com/emacs-helm/helm"&gt;helm&lt;/a&gt;
+which we'll also cover.
+&lt;/p&gt;
+
+&lt;p&gt;
+For buffers, the keys to remember are:
+&lt;/p&gt;
+
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col" class="left"&gt;Key&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;Command&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;C-x b&lt;/td&gt;
+&lt;td class="left"&gt;switch-buffer&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;C-x C-b&lt;/td&gt;
+&lt;td class="left"&gt;list-buffers&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;p&gt;
+To use ibuffer, which is more powerful than list-buffers you can add
+either:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defalias&lt;/span&gt; &lt;span class="ss"&gt;'list-buffers&lt;/span&gt; &lt;span class="ss"&gt;'ibuffer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; make ibuffer default&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Or if you want to open ibuffer in another Window:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defalias&lt;/span&gt; &lt;span class="ss"&gt;'list-buffers&lt;/span&gt; &lt;span class="ss"&gt;'ibuffer-other-window&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; make ibuffer default&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Here are a couple of useful links on ibuffer and buffer switching:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://ergoemacs.org/emacs/emacs_buffer_switching.html"&gt;http://ergoemacs.org/emacs/emacs_buffer_switching.html&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://mytechrants.wordpress.com/2010/03/25/emacs-tip-of-the-day-start-using-ibuffer-asap/"&gt;https://mytechrants.wordpress.com/2010/03/25/emacs-tip-of-the-day-start-using-ibuffer-asap/&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;
+Finally, if you like a tab bar, you can add the following to your
+init.el:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;tabbar&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;tabbar-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+There's also a package &lt;a href="https://github.com/mattfidler/tabbar-ruler.el"&gt;tabbar-ruler&lt;/a&gt; which is supposed to make the
+tabbar look nicer but since I don't use the tabbar at all, I haven't
+checked it out.
+&lt;/p&gt;
+
+&lt;p&gt;
+Hope this gets you using emacs more effectively.
+&lt;/p&gt;
+
+&lt;p&gt;
+Stay tuned for our next video on window management.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code for this video:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers"&gt;https://github.com/zamansky/using-emacs/tree/lesson-4-buffers&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete code built up over all videos:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-4-buffers/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item><item><title>Using Emacs - Intro to Org Mode</title><link>http://cestlaz.github.io/posts/using-emacs-2-org/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x5KiYDd9s8k?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
@@ -1127,140 +1321,4 @@ graphs with results.
 &lt;p&gt;
 So while knowledge of HTML in and of itself isn't really needed
 anymore it's still an important part of the programs I build. 
-&lt;/p&gt;</description><category>cli</category><category>shell</category><category>tools</category><guid>http://cestlaz.github.io/posts/teaching-html/</guid><pubDate>Mon, 09 May 2016 23:08:58 GMT</pubDate></item><item><title>Blogging with Emacs, Jekyll and Nikola</title><link>http://cestlaz.github.io/posts/2016-04-17-emacs-jekyll-nikola/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-Switched over from &lt;a href="https://jekyllrb.com/"&gt;Jekyll&lt;/a&gt; to &lt;a href="https://getnikola.com/"&gt;Nikola&lt;/a&gt; yesterday.
-&lt;/p&gt;
-
-&lt;p&gt;
-One of the primary reasons was that I got fed up with managing a Ruby
-development environment across all my machines. In spite of my
-rantings, I'm sure Ruby and Ruby installs are fine - it's just
-something that I'd have to deal with on a recurring basis for one
-specific task - other than for Jekyll blogging, I don't use Ruby.
-&lt;/p&gt;
-
-&lt;p&gt;
-So while a platform based on Python - generally my go to language,
-made sense, the other driving force for the switch was the fact that
-&lt;a href="https://www.gnu.org/software/emacs/"&gt;Emacs&lt;/a&gt; and &lt;a href="http://orgmode.org/"&gt;org-mode&lt;/a&gt; have become such major parts of my workflow and
-productivity.
-&lt;/p&gt;
-
-&lt;p&gt;
-What do I use org-mode for?
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;lesson planning
-&lt;/li&gt;
-&lt;li&gt;document preparation (instead of LaTeX)
-&lt;/li&gt;
-&lt;li&gt;note taking
-&lt;/li&gt;
-&lt;li&gt;blogging
-&lt;/li&gt;
-&lt;li&gt;email (with mu4e)
-&lt;/li&gt;
-&lt;li&gt;managing my schedule
-&lt;/li&gt;
-&lt;li&gt;tracking bookmarks
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-and probably a lot more.
-&lt;/p&gt;
-
-&lt;p&gt;
-Jekyll is actually a really nice tool. It's simple. You put together a
-simple directory structure: Templates in _layouts, blog posts in
-_posts, drafts in _drafts. Other directories that start with an
-underscore are ignored and everything else is copied up to your site.
-&lt;/p&gt;
-
-&lt;p&gt;
-I love that it's "close to the metal" You can put in html files with
-some meta information up top or markdown. 
-&lt;/p&gt;
-
-&lt;p&gt;
-You can take a look at my old site at
-&lt;a href="https://github.com/cestlaz/cestlaz.github.io-jekyll"&gt;&lt;/a&gt;&lt;a href="https://github.com/cestlaz/cestlaz.github.io-jekyll"&gt;https://github.com/cestlaz/cestlaz.github.io-jekyll&lt;/a&gt; if you want to
-take a look.
-&lt;/p&gt;
-
-&lt;p&gt;
-The beauty is that you just push your files up to GitHub and it
-automatically runs Jekyll and builds your site (&lt;a href="https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/"&gt;more info here&lt;/a&gt;).
-&lt;/p&gt;
-
-&lt;p&gt;
-The problem is that Jekyll doesn't play well with org-mode and
-org-markup so my workflow became something like this
-&lt;/p&gt;
-
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;Create a post &lt;b&gt;&lt;b&gt;something.org&lt;/b&gt;&lt;/b&gt; in the _org directory.
-&lt;/li&gt;
-&lt;li&gt;From within emacs, publish it. I've configured org-mode to publish
-by exporting the org-mode markup file to html and saving it in the
-_drafts directory.
-&lt;/li&gt;
-&lt;li&gt;If it looks good, copy and rename the file from _drafts to the
-_posts directory and push it up to GitHub.
-&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;
-A little clunky, but it works. The bigger problem was the amount of
-time I'd spend putting html blocks into my org formatted posts to get
-them to look the way I wanted (or at least close enough).
-&lt;/p&gt;
-
-&lt;p&gt;
-Enter Nikola.
-&lt;/p&gt;
-
-&lt;p&gt;
-Nikola's a much more powerful tool. It does much more but as a result
-is much more complex. Normally, that's not my style but in this case
-since It's Python, things balance out.
-&lt;/p&gt;
-
-&lt;p&gt;
-I still have to figure out the entire templating system and all the
-plugins but getting started was pretty quick.
-&lt;/p&gt;
-
-&lt;p&gt;
-The big win is that Nikola supports a ton of formats for your posts
-and pages. Native org-mode support for me was what did it for me. On top of
-that, although I haven't tested it yet, is that there's also an
-org-mode plugin to export to Nikola restructure text.
-&lt;/p&gt;
-
-&lt;p&gt;
-My new workflow:
-&lt;/p&gt;
-
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;Write the post as an org-mode file.
-&lt;/li&gt;
-&lt;li&gt;run &lt;b&gt;&lt;b&gt;nikola github_deploy&lt;/b&gt;&lt;/b&gt;.
-&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;
-And that's it. You can look at my Nikola site here:
-&lt;a href="https://github.com/cestlaz/cestlaz.github.io"&gt;&lt;/a&gt;&lt;a href="https://github.com/cestlaz/cestlaz.github.io"&gt;https://github.com/cestlaz/cestlaz.github.io&lt;/a&gt;.
-The source code is in the &lt;b&gt;&lt;b&gt;src&lt;/b&gt;&lt;/b&gt; branch, the actual rendered blog in
-the &lt;b&gt;&lt;b&gt;master&lt;/b&gt;&lt;/b&gt; branch.
-&lt;/p&gt;
-
-&lt;p&gt;
-So far, I'm pretty happy with the setup.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>mathjax</category><category>tools</category><guid>http://cestlaz.github.io/posts/2016-04-17-emacs-jekyll-nikola/</guid><pubDate>Sun, 17 Apr 2016 17:12:26 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;</description><category>cli</category><category>shell</category><category>tools</category><guid>http://cestlaz.github.io/posts/teaching-html/</guid><pubDate>Mon, 09 May 2016 23:08:58 GMT</pubDate></item></channel></rss>

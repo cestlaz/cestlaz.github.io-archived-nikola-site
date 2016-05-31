@@ -20,7 +20,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-20.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-3-elisp/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-4-buffers/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -87,7 +87,209 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-3-elisp/" class="u-url">Using Emacs - 3 - How to think about Emacs</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-4-buffers/" class="u-url">Using Emacs - 4 - Buffers</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/using-emacs-4-buffers/" rel="bookmark"><time class="published dt-published" datetime="2016-05-23T13:29:36-04:00" title="2016-05-23 13:29">2016-05-23 13:29</time></a></p>
+                <p class="commentline">            <a href="posts/using-emacs-4-buffers/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-4-buffers.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"></h2>
+<div class="outline-text-2" id="text-1">
+<iframe width="480" height="270" src="https://www.youtube.com/embed/v5eTK5lC0xs" frameborder="0" allowfullscreen></iframe>
+
+<p>
+Now that we're past the intro material, we'll start looking at emacs
+features one at a time. This will let you focus on using the one
+feature we're covering, fit it into your work flow, and really get
+comfortable with it. 
+</p>
+
+<p>
+This time we'll dive into using Emacs effectively with buffers.
+</p>
+
+<p>
+Watch the video and then make a real effort to use buffers over the
+next few emacs sessions. Before you know it, they'll be a natural part
+of your work flow.
+</p>
+
+<p>
+The idea of incrementally learning a tool this way seems to be called
+<a href="http://sachachua.com/blog/2015/01/developing-emacs-micro-habits-text-automation/">developing micro-habits</a> and I first read about the idea from <a href="https://twitter.com/sachac">Sacha
+Chua</a> who is an amazing member of the emacs community.
+</p>
+
+<p>
+When seeing beginners, I'll frequently observe this work flow:
+</p>
+
+<ul class="org-ul">
+<li>Open a terminal
+</li>
+<li>Load emacs on a file
+</li>
+<li>Edit the file
+</li>
+<li>Save and quit emacs
+</li>
+<li>Try to compile and run the program (since usually this is in a programming class)
+</li>
+<li>repeat
+</li>
+</ul>
+<p>
+If the beginner needs to see multiple files at once, they fire up multiple separate emacs.
+</p>
+
+<p>
+All of this causes me physical pain.
+</p>
+
+<p>
+In emacs, your editor can load several buffers at once, each
+associated with a separate file. You can quickly switch between them,
+search across them, and more. The video will get you started.
+</p>
+
+<p>
+The video also mentions <b>ido</b> mode. To set up <b>ido</b> mode, add the
+following code to your init.el:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">setq</span> <span class="nv">ido-enable-flex-matching</span> <span class="nv">t</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">setq</span> <span class="nv">ido-everywhere</span> <span class="nv">t</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">ido-mode</span> <span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+<p>
+And here's a great little write up on it by <a href="https://www.masteringemacs.org/reading-guide">Mickey Petersen</a>:
+</p>
+
+<p>
+<a href="https://www.masteringemacs.org/article/introduction-to-ido-mode">https://www.masteringemacs.org/article/introduction-to-ido-mode</a>
+</p>
+
+
+<p>
+As I mentioned in the video, I actually use another mode for completions (<a href="https://github.com/abo-abo/swiper">swiper</a>),
+which I'll cover in a future video and another popular option is <a href="https://github.com/emacs-helm/helm">helm</a>
+which we'll also cover.
+</p>
+
+<p>
+For buffers, the keys to remember are:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="left">
+<col class="left">
+</colgroup>
+<thead><tr>
+<th scope="col" class="left">Key</th>
+<th scope="col" class="left">Command</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">C-x b</td>
+<td class="left">switch-buffer</td>
+</tr>
+<tr>
+<td class="left">C-x C-b</td>
+<td class="left">list-buffers</td>
+</tr>
+</tbody>
+</table>
+<p>
+To use ibuffer, which is more powerful than list-buffers you can add
+either:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">defalias</span> <span class="ss">'list-buffers</span> <span class="ss">'ibuffer</span><span class="p">)</span> <span class="c1">; make ibuffer default</span>
+</pre></div>
+
+<p>
+Or if you want to open ibuffer in another Window:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">defalias</span> <span class="ss">'list-buffers</span> <span class="ss">'ibuffer-other-window</span><span class="p">)</span> <span class="c1">; make ibuffer default</span>
+</pre></div>
+
+<p>
+Here are a couple of useful links on ibuffer and buffer switching:
+</p>
+<ul class="org-ul">
+<li>
+<a href="http://ergoemacs.org/emacs/emacs_buffer_switching.html">http://ergoemacs.org/emacs/emacs_buffer_switching.html</a>
+</li>
+<li>
+<a href="https://mytechrants.wordpress.com/2010/03/25/emacs-tip-of-the-day-start-using-ibuffer-asap/">https://mytechrants.wordpress.com/2010/03/25/emacs-tip-of-the-day-start-using-ibuffer-asap/</a>
+</li>
+</ul>
+<p>
+Finally, if you like a tab bar, you can add the following to your
+init.el:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">tabbar</span>
+  <span class="nv">:ensure</span> <span class="nv">t</span>
+  <span class="nv">:config</span> <span class="p">(</span><span class="nf">tabbar-mode</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+
+<p>
+There's also a package <a href="https://github.com/mattfidler/tabbar-ruler.el">tabbar-ruler</a> which is supposed to make the
+tabbar look nicer but since I don't use the tabbar at all, I haven't
+checked it out.
+</p>
+
+<p>
+Hope this gets you using emacs more effectively.
+</p>
+
+<p>
+Stay tuned for our next video on window management.
+</p>
+
+
+<p>
+Relevant links:
+</p>
+<ul class="org-ul">
+<li>Video series overview page:
+<ul class="org-ul">
+<li>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</li>
+</ul>
+</li>
+<li>Code for this video:
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers"></a><a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers">https://github.com/zamansky/using-emacs/tree/lesson-4-buffers</a>
+</li>
+</ul>
+</li>
+<li>Complete code built up over all videos:
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-3-elisp/" class="u-url">Using Emacs - 3 - How to think about Emacs</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
@@ -1323,159 +1525,6 @@ graphs with results.
 So while knowledge of HTML in and of itself isn't really needed
 anymore it's still an important part of the programs I build. 
 </p>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/world-without-college-board/" class="u-url">A World Without Advanced Placement</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/world-without-college-board/" rel="bookmark"><time class="published dt-published" datetime="2016-05-07T17:07:10-04:00" title="2016-05-07 17:07">2016-05-07 17:07</time></a></p>
-                <p class="commentline">            <a href="posts/world-without-college-board/#disqus_thread" data-disqus-identifier="cache/posts/world-without-ap.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"></h2>
-<div class="outline-text-2" id="text-1">
-<p>
-Some good points in the Facebook comments on my <a href="http://cestlaz.github.io/posts/ap-we-dont-trust-teachers/#.Vy5aAd9vH0o">last post</a>. One notable
-comment was the fact that many teachers wouldn't be able to gain the
-traction needed to teach CS without an AP designation. This is true
-but also sad that we've awarded such educational authority to a
-private company that's accountable to no one. Schools should run
-courses because they're good for kids not specifically because they're
-AP.
-</p>
-
-<p>
-Stuyvesant just implemented a policy that every student has to take at
-least one AP class to graduate and that now every student in an AP
-class has to take the AP exam. There's also been a push for Stuy to
-run APCS Principles in spite of the fact that the current home grown
-intro course is superior.  
-</p>
-
-<p>
-These policies and pushes at Stuy are purely for the sake of ratings
-and in no way for the benefit of the student.
-</p>
-
-<p>
-But let's imagine a world without the college board.  To do this we're
-going to have to take off our computer science hats and look at
-another, more established high school subject area - mathematics.
-</p>
-
-<p>
-First, setting the stage.
-</p>
-
-<p>
-It's the mid 1990's. High school students across the nation are taking
-math classes. Some are even taking calculus. This makes the College
-Board happy since they offer two AP Calculus exams. But the College
-Board notices that many students aren't ready for calculus. To fill
-this gap, they create <a href="https://en.wikipedia.org/wiki/AP_Statistics">AP Statistics</a>. First offered in 1997 to 7,667
-students it was given to almost 200,000 students last year.
-</p>
-
-<p>
-According to wikipedia, the course was created to give an AP
-mathematics option for students not ready for calculus. 
-</p>
-
-<p>
-I don't seem to recall any huge demand for an AP statistics course but
-it was created and adopted. It turned into one of the fastest growing
-AP classes and a nice money maker for the college board. I don't know
-how the class was pushed or perceived in other schools but at Stuy it
-was seen as a way to get an easy AP math course on the
-transcript. Before any statisticians get the torches and pitchforks -
-I'm just relaying the student perception. I haven't looked into the
-course sufficiently to form an opinion on it.
-</p>
-
-<p>
-Now, let's imagine a world without the College Board.
-</p>
-
-<p>
-An individual school would look at it's students needs and decide if
-they needed an additional math course. Maybe they'd conclude that what they
-were doing was fine or maybe they would conclude that a new class was
-needed. 
-</p>
-
-<p>
-If they decided they needed a new advanced course the school would
-either have the expertise to create it in house or they'd probably
-turn to the local college or university for guidance.
-</p>
-
-<p>
-They might end up with a course very similar to AP Statistics or they
-might end up with something very different. They might
-end up with another class like Discrete Math or they might end up
-partnering with the college and having students take classes there. In
-all cases, since math teachers generally have a pretty good math
-backgroud, schools could make good decisions and design sound
-educational experiences for their kids.
-</p>
-
-<p>
-All of these seem to be better results for the students than blindly
-following the College Board - keeping
-education and education decisions local.
-</p>
-
-<p>
-What about CS?
-</p>
-
-<p>
-I admit that's a tougher nut to crack.
-</p>
-
-<p>
-Most schools generally don't currently have the in house expertise
-needed to build their own solutions or even to really critically judge
-what's out there. 
-</p>
-
-<p>
-That said, even if you need join the cult of the College Board to get
-your school to run some CS you can:
-</p>
-
-<ul class="org-ul">
-<li>Grab all the materials you can find - those labeled AP and those not
-labeled AP.
-</li>
-<li>Don't bother with AP Syllabus certification. Teach what you think is
-best. Designate the class as honors to differentiate them from other
-classes.
-</li>
-<li>Engage with your local college and tech sector. They're not high
-school educators but they are valuable resources.
-</li>
-<li>Unrelated side note - be wary of code schools - most don't really
-have any educational chops.
-</li>
-<li>Don't force kids to sit for the exams and only encourage them to do
-so if the exam will likely do something for the kid.  
-</li>
-</ul>
-<p>
-I think that's it or my College Board rants.
-</p>
-
-<p>
-Then again, I also thought that when I wrote Friday's post.
-</p>
-</div>
-</div>
     </div>
     </article>
 </div>
