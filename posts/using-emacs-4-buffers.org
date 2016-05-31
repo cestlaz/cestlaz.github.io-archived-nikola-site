@@ -1,0 +1,120 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 4 - Buffers
+.. slug: using-emacs-4-buffers
+.. date: 2016-05-23 13:29:36 UTC-04:00
+.. tags: emacs, tools
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+
+#+BEGIN_HTML
+<iframe width="480" height="270" src="https://www.youtube.com/embed/v5eTK5lC0xs" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+Now that we're past the intro material, we'll start looking at emacs
+features one at a time. This will let you focus on using the one
+feature we're covering, fit it into your work flow, and really get
+comfortable with it. 
+
+This time we'll dive into using Emacs effectively with buffers.
+
+Watch the video and then make a real effort to use buffers over the
+next few emacs sessions. Before you know it, they'll be a natural part
+of your work flow.
+
+The idea of incrementally learning a tool this way seems to be called
+[[http://sachachua.com/blog/2015/01/developing-emacs-micro-habits-text-automation/][developing micro-habits]] and I first read about the idea from [[https://twitter.com/sachac][Sacha
+Chua]] who is an amazing member of the emacs community.
+
+When seeing beginners, I'll frequently observe this work flow:
+
+- Open a terminal
+- Load emacs on a file
+- Edit the file
+- Save and quit emacs
+- Try to compile and run the program (since usually this is in a programming class)
+- repeat
+
+If the beginner needs to see multiple files at once, they fire up multiple separate emacs.
+
+All of this causes me physical pain.
+
+In emacs, your editor can load several buffers at once, each
+associated with a separate file. You can quickly switch between them,
+search across them, and more. The video will get you started.
+
+The video also mentions *ido* mode. To set up *ido* mode, add the
+following code to your init.el:
+
+#+BEGIN_SRC emacs-lisp :tangle n
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1)
+#+END_SRC
+
+And here's a great little write up on it by [[https://www.masteringemacs.org/reading-guide][Mickey Petersen]]:
+
+https://www.masteringemacs.org/article/introduction-to-ido-mode
+
+
+As I mentioned in the video, I actually use another mode for completions ([[https://github.com/abo-abo/swiper][swiper]]),
+which I'll cover in a future video and another popular option is [[https://github.com/emacs-helm/helm][helm]]
+which we'll also cover.
+
+For buffers, the keys to remember are:
+
+| Key     | Command       |
+|---------+---------------|
+| C-x b   | switch-buffer |
+| C-x C-b | list-buffers  |
+
+
+To use ibuffer, which is more powerful than list-buffers you can add
+either:
+
+#+BEGIN_SRC emacs-lisp :tangle no
+(defalias 'list-buffers 'ibuffer) ; make ibuffer default
+#+END_SRC
+
+Or if you want to open ibuffer in another Window:
+
+#+BEGIN_SRC emacs-lisp :tangle no
+(defalias 'list-buffers 'ibuffer-other-window) ; make ibuffer default
+#+END_SRC
+
+Here are a couple of useful links on ibuffer and buffer switching:
+- http://ergoemacs.org/emacs/emacs_buffer_switching.html
+- https://mytechrants.wordpress.com/2010/03/25/emacs-tip-of-the-day-start-using-ibuffer-asap/
+
+
+Finally, if you like a tab bar, you can add the following to your
+init.el:
+
+#+BEGIN_SRC emacs-lisp :tangle no
+(use-package tabbar
+  :ensure t
+  :config (tabbar-mode 1)
+)
+#+END_SRC
+
+There's also a package [[https://github.com/mattfidler/tabbar-ruler.el][tabbar-ruler]] which is supposed to make the
+tabbar look nicer but since I don't use the tabbar at all, I haven't
+checked it out.
+
+Hope this gets you using emacs more effectively.
+
+Stay tuned for our next video on window management.
+
+
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code for this video:
+  - [[https://github.com/zamansky/using-emacs/tree/lesson-4-buffers][https://github.com/zamansky/using-emacs/tree/lesson-4-buffers]]
+- Complete code built up over all videos:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
