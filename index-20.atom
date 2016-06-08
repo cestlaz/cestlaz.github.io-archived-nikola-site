@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 20)</title>
   <id>http://cestlaz.github.io/index-20.atom</id>
-  <updated>2016-05-31T12:24:22Z</updated>
+  <updated>2016-06-08T11:54:20Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,109 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-19.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-20.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Should We Teach HTML?</title>
+    <id>http://cestlaz.github.io/posts/teaching-html/</id>
+    <updated>2016-05-09T19:08:58-04:00</updated>
+    <published>2016-05-09T19:08:58-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/teaching-html/"/>
+    <summary type="html">&lt;p&gt;
+Yesterday, &lt;a href="https://twitter.com/dougpete"&gt;Doug Peterson&lt;/a&gt; wrote a "Whatever happened to" post subtitled
+&lt;a href="https://dougpete.wordpress.com/2016/05/08/whatever-happened-to-5/"&gt;HTML as an essential 21st Century skill?&lt;/a&gt; It's a nice post.
+&lt;/p&gt;
+
+&lt;p&gt;
+I left a comment but thought I'd elaborate here.
+&lt;/p&gt;
+
+&lt;p&gt;
+No, knowing HTML is not programming - it's markup. Even so, when I
+help people design CS programs, I'll frequently recommend starting
+with HTML or at least introducing it early.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why? 
+&lt;/p&gt;
+
+&lt;p&gt;
+It's a gateway and not just to programming.
+&lt;/p&gt;
+
+&lt;p&gt;
+HTML is pretty easy, you want &lt;b&gt;&lt;b&gt;something&lt;/b&gt;&lt;/b&gt; bold, you just wrap the
+word in &lt;code&gt;&amp;lt;b&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;/b&amp;gt;&lt;/code&gt;:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;b&amp;gt;something&amp;lt;/b&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+It's also empowering and demystifies the web. Kids can create a simple
+web page and load it right into their browser.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's true that today's web pages are chock-full-o javascript and css
+but with just the basics, students can get the idea. You can also show
+them pages by right clicking and viewing source.
+&lt;/p&gt;
+
+&lt;p&gt;
+You can even have them change a live page.
+&lt;/p&gt;
+
+&lt;p&gt;
+Try it. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Right click on the top of this page where it says "Musings about…"
+Chose &lt;b&gt;&lt;b&gt;inspect element&lt;/b&gt;&lt;/b&gt;. In the "debugger" window double click the
+text, change it and hit enter. This is just temporary - just reload
+the page but it's pretty neat for a kid to change an article and then
+screenshot it.
+&lt;/p&gt;
+
+&lt;p&gt;
+HTML is also a nice stepping stone towards coding. You're working in a
+plain text editor by adding special code words to basic text which are
+then interpreted by, in this case, the web browser.
+&lt;/p&gt;
+
+&lt;p&gt;
+The big reason for teaching html actually goes beyond this. Next step
+after learning HTML is having the kids programatically generating web
+pages in whatever language you're using for the class. I like using
+Python. This requires a little infrastructure setup to serve kids work
+but then there are two huge wins.
+&lt;/p&gt;
+
+&lt;p&gt;
+First, as the kids learn programming, instead of just printing out
+results, they can make a web site with their results and share it with
+friends, family, and the world.
+&lt;/p&gt;
+
+&lt;p&gt;
+The other big bonus is that kids might be able to leverage take these
+skills to other classes. If the student has a history paper to write,
+maybe the teacher will accept a history web site where the student can
+write code to do their analytics and build nice looking tables and
+graphs with results.
+&lt;/p&gt;
+
+&lt;p&gt;
+So while knowledge of HTML in and of itself isn't really needed
+anymore it's still an important part of the programs I build. 
+&lt;/p&gt;</summary>
+    <category term="cli" label="cli"/>
+    <category term="shell" label="shell"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>A World Without Advanced Placement</title>
     <id>http://cestlaz.github.io/posts/world-without-college-board/</id>

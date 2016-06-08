@@ -5,9 +5,9 @@ article: http://ogp.me/ns/article#
 " lang="en">
 <head>
 <meta charset="utf-8">
-<base href="http://cestlaz.github.io/posts/using-emacs-4-buffers/">
+<base href="http://cestlaz.github.io/posts/navajo-circles/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Using Emacs - 4 - Buffers | C'est la Z</title>
+<title>Navajo Math Circles | C'est la Z</title>
 <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
@@ -17,20 +17,22 @@ article: http://ogp.me/ns/article#
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="../../index.atom">
-<link rel="canonical" href="http://cestlaz.github.io/posts/using-emacs-4-buffers/">
+<link rel="canonical" href="http://cestlaz.github.io/posts/navajo-circles/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
-<link rel="prev" href="../using-emacs-3-elisp/" title="Using Emacs - 3 - How to think about Emacs" type="text/html">
-<link rel="next" href="../navajo-circles/" title="Navajo Math Circles" type="text/html">
+<link rel="prev" href="../using-emacs-4-buffers/" title="Using Emacs - 4 - Buffers" type="text/html">
 <meta property="og:site_name" content="C'est la Z">
-<meta property="og:title" content="Using Emacs - 4 - Buffers">
-<meta property="og:url" content="http://cestlaz.github.io/posts/using-emacs-4-buffers/">
-<meta property="og:description" content="Now that we're past the intro material, we'll start looking at emacs
-features one at a time. This will let you focus on using the one
-feature we're covering, fit it into your work flow, and really get">
+<meta property="og:title" content="Navajo Math Circles">
+<meta property="og:url" content="http://cestlaz.github.io/posts/navajo-circles/">
+<meta property="og:description" content="Yesterday, I saw the New York Premiere of Navajo Math Circles, a
+documentary on a Math Circle put in place to support and enrich the
+currently under-served community in the Navajo educational system.
+">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2016-05-23T13:29:36-04:00">
-<meta property="article:tag" content="emacs">
-<meta property="article:tag" content="tools">
+<meta property="article:published_time" content="2016-06-08T07:03:55-04:00">
+<meta property="article:tag" content="curriculum">
+<meta property="article:tag" content="education">
+<meta property="article:tag" content="pedagogy">
+<meta property="article:tag" content="policy">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -95,14 +97,14 @@ feature we're covering, fit it into your work flow, and really get">
 						<div class="col-md-8">
 				
 								
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Using Emacs - 4 - Buffers</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Navajo Math Circles</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                     Mike Zamansky
             </span></p>
-            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2016-05-23T13:29:36-04:00" itemprop="datePublished" title="2016-05-23 13:29">2016-05-23 13:29</time></a></p>
-                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-4-buffers.html">Comments</a>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2016-06-08T07:03:55-04:00" itemprop="datePublished" title="2016-06-08 07:03">2016-06-08 07:03</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/navajo-circles.html">Comments</a>
 
 
             
@@ -110,195 +112,101 @@ feature we're covering, fit it into your work flow, and really get">
 </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"></h2>
-<div class="outline-text-2" id="text-1">
-<iframe width="480" height="270" src="https://www.youtube.com/embed/v5eTK5lC0xs" frameborder="0" allowfullscreen></iframe>
-
-<p>
-Now that we're past the intro material, we'll start looking at emacs
-features one at a time. This will let you focus on using the one
-feature we're covering, fit it into your work flow, and really get
-comfortable with it. 
+    <p>
+Yesterday, I saw the New York Premiere of <a href="http://www.zalafilms.com/navajo/">Navajo Math Circles</a>, a
+documentary on a <a href="http://www.mathcircles.org/">Math Circle</a> put in place to support and enrich the
+currently under-served community in the Navajo educational system.
 </p>
 
 <p>
-This time we'll dive into using Emacs effectively with buffers.
+At their core, Math Circles are math outreach and enrichment
+programs. I'm most familiar with the <a href="https://www.nymathcircle.org/">New York Math Circle</a>. I'm friends
+with many of their teachers and organizers and my son took part in
+their summer program for a couple of years.
 </p>
 
 <p>
-Watch the video and then make a real effort to use buffers over the
-next few emacs sessions. Before you know it, they'll be a natural part
-of your work flow.
+Over in the southwest, these Math Circles have been bringing together
+students, frequently across great distances each day to explore
+problem solving and creativity through mathematics.
 </p>
 
 <p>
-The idea of incrementally learning a tool this way seems to be called
-<a href="http://sachachua.com/blog/2015/01/developing-emacs-micro-habits-text-automation/">developing micro-habits</a> and I first read about the idea from <a href="https://twitter.com/sachac">Sacha
-Chua</a> who is an amazing member of the emacs community.
+As someone who's worked hard to bring educational opportunities to the
+have nots, I love the program. Some of the highlights include the kids
+working on open ended problems, focusing on process and techniques
+more than specific results, working both collaboratively but also
+developing self sufficiency, and more. I also love the fact that
+they've started teacher math circles to help to bring some of that
+math circle magic to the everyday classroom.
 </p>
 
 <p>
-When seeing beginners, I'll frequently observe this work flow:
-</p>
-
-<ul class="org-ul">
-<li>Open a terminal
-</li>
-<li>Load emacs on a file
-</li>
-<li>Edit the file
-</li>
-<li>Save and quit emacs
-</li>
-<li>Try to compile and run the program (since usually this is in a programming class)
-</li>
-<li>repeat
-</li>
-</ul>
-<p>
-If the beginner needs to see multiple files at once, they fire up multiple separate emacs.
+I enjoyed the film and recommend you check it out to see what's
+possible and I want to share my two big takeaways.
 </p>
 
 <p>
-All of this causes me physical pain.
+First, early on in the film, one of the people running the program
+talked about developing a math enrichment program through and with
+Navajo traditions and culture. This is HUGE and I feel it's something
+we're losing. America is so diverse from coast to coast and here in
+New York City you can see radically different ways of life living
+right across the street from each other. Everyone pays lip service to
+"making the work interesting and relevant to the student" but few
+people walk the walk. These folk do.
 </p>
 
 <p>
-In emacs, your editor can load several buffers at once, each
-associated with a separate file. You can quickly switch between them,
-search across them, and more. The video will get you started.
-</p>
-
-<p>
-The video also mentions <b>ido</b> mode. To set up <b>ido</b> mode, add the
-following code to your init.el:
-</p>
-
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">setq</span> <span class="nv">ido-enable-flex-matching</span> <span class="nv">t</span><span class="p">)</span>
-<span class="p">(</span><span class="nf">setq</span> <span class="nv">ido-everywhere</span> <span class="nv">t</span><span class="p">)</span>
-<span class="p">(</span><span class="nf">ido-mode</span> <span class="mi">1</span><span class="p">)</span>
-</pre></div>
-
-<p>
-And here's a great little write up on it by <a href="https://www.masteringemacs.org/reading-guide">Mickey Petersen</a>:
-</p>
-
-<p>
-<a href="https://www.masteringemacs.org/article/introduction-to-ido-mode">https://www.masteringemacs.org/article/introduction-to-ido-mode</a>
+Second, I left the documentary with a sour taste in my mouth. Not
+because of the program but because the Navajo Math Circle project and
+projects like it are scraping together what little resources they can
+to try to do what the school systems should be doing to begin with.
 </p>
 
 
 <p>
-As I mentioned in the video, I actually use another mode for completions (<a href="https://github.com/abo-abo/swiper">swiper</a>),
-which I'll cover in a future video and another popular option is <a href="https://github.com/emacs-helm/helm">helm</a>
-which we'll also cover.
+As we move to scripted lessons, national standards, curricula dictated
+or at least influenced by large private concerns and standardized
+tests, our schools are moving further and further away from community
+and local culture.
 </p>
 
 <p>
-For buffers, the keys to remember are:
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<colgroup>
-<col class="left">
-<col class="left">
-</colgroup>
-<thead><tr>
-<th scope="col" class="left">Key</th>
-<th scope="col" class="left">Command</th>
-</tr></thead>
-<tbody>
-<tr>
-<td class="left">C-x b</td>
-<td class="left">switch-buffer</td>
-</tr>
-<tr>
-<td class="left">C-x C-b</td>
-<td class="left">list-buffers</td>
-</tr>
-</tbody>
-</table>
-<p>
-To use ibuffer, which is more powerful than list-buffers you can add
-either:
-</p>
-
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">defalias</span> <span class="ss">'list-buffers</span> <span class="ss">'ibuffer</span><span class="p">)</span> <span class="c1">; make ibuffer default</span>
-</pre></div>
-
-<p>
-Or if you want to open ibuffer in another Window:
-</p>
-
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">defalias</span> <span class="ss">'list-buffers</span> <span class="ss">'ibuffer-other-window</span><span class="p">)</span> <span class="c1">; make ibuffer default</span>
-</pre></div>
-
-<p>
-Here are a couple of useful links on ibuffer and buffer switching:
-</p>
-<ul class="org-ul">
-<li>
-<a href="http://ergoemacs.org/emacs/emacs_buffer_switching.html">http://ergoemacs.org/emacs/emacs_buffer_switching.html</a>
-</li>
-<li>
-<a href="https://mytechrants.wordpress.com/2010/03/25/emacs-tip-of-the-day-start-using-ibuffer-asap/">https://mytechrants.wordpress.com/2010/03/25/emacs-tip-of-the-day-start-using-ibuffer-asap/</a>
-</li>
-</ul>
-<p>
-Finally, if you like a tab bar, you can add the following to your
-init.el:
-</p>
-
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">tabbar</span>
-  <span class="nv">:ensure</span> <span class="nv">t</span>
-  <span class="nv">:config</span> <span class="p">(</span><span class="nf">tabbar-mode</span> <span class="mi">1</span><span class="p">)</span>
-<span class="p">)</span>
-</pre></div>
-
-<p>
-There's also a package <a href="https://github.com/mattfidler/tabbar-ruler.el">tabbar-ruler</a> which is supposed to make the
-tabbar look nicer but since I don't use the tabbar at all, I haven't
-checked it out.
+In the documentary, one student pointed out that in math class, they
+have to use the textbook. They learn the process and then have to
+solve the problems. In Math Circle, there are no textbooks. 
 </p>
 
 <p>
-Hope this gets you using emacs more effectively.
+Afterwards, the students in from the Math Circle did some Q&amp;A. I asked
+them to elaborate - what's the difference between there Math Circle
+experiences and their in school ones. I got:
+</p>
+
+<blockquote>
+<p>
+Math Circle is fun!!!!
+</p>
+</blockquote>
+
+<p>
+I think that says it all.
 </p>
 
 <p>
-Stay tuned for our next video on window management.
+I know many great teachers who try to bring culture and community to
+their classes. One of my son's best teachers, <a href="http://www.heinemann.com/authors/828.aspx">Paula Rogovin</a> did it all
+the time. Many of my friends and colleagues try to do so as well but
+the powers that be make it harder and harder. 
 </p>
-
 
 <p>
-Relevant links:
+Until we win back public education it's important to support programs
+like Math Circles (and, if I do say so myself, programs like our own
+<a href="http://cstuy.org">CSTUY</a>) and it's also critical that we work to try to bring community
+and culture to our regular classes.
 </p>
-<ul class="org-ul">
-<li>Video series overview page:
-<ul class="org-ul">
-<li>
-<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
-</li>
-</ul>
-</li>
-<li>Code for this video:
-<ul class="org-ul">
-<li>
-<a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers"></a><a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers">https://github.com/zamansky/using-emacs/tree/lesson-4-buffers</a>
-</li>
-</ul>
-</li>
-<li>Complete code built up over all videos:
-<ul class="org-ul">
-<li>
-<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
 
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
@@ -312,23 +220,22 @@ Relevant links:
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
 </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../categories/emacs/" rel="tag">emacs</a></li>
-            <li><a class="tag p-category" href="../../categories/tools/" rel="tag">tools</a></li>
+<li><a class="tag p-category" href="../../categories/curriculum/" rel="tag">curriculum</a></li>
+            <li><a class="tag p-category" href="../../categories/education/" rel="tag">education</a></li>
+            <li><a class="tag p-category" href="../../categories/pedagogy/" rel="tag">pedagogy</a></li>
+            <li><a class="tag p-category" href="../../categories/policy/" rel="tag">policy</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../using-emacs-3-elisp/" rel="prev" title="Using Emacs - 3 - How to think about Emacs">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../navajo-circles/" rel="next" title="Navajo Math Circles">Next post</a>
+                <a href="../using-emacs-4-buffers/" rel="prev" title="Using Emacs - 4 - Buffers">Previous post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="cestlaz",
-            disqus_url="http://cestlaz.github.io/posts/using-emacs-4-buffers/",
-        disqus_title="Using Emacs - 4 - Buffers",
-        disqus_identifier="cache/posts/using-emacs-4-buffers.html",
+            disqus_url="http://cestlaz.github.io/posts/navajo-circles/",
+        disqus_title="Navajo Math Circles",
+        disqus_identifier="cache/posts/navajo-circles.html",
         disqus_config = function () {
             this.language = "en";
         };
