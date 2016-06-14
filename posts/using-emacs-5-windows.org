@@ -1,0 +1,88 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 5 - Windows
+.. slug: using-emacs-5-windows
+.. date: 2016-06-14
+.. tags: emacs, tools
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+Sorry for the delay in getting this next video / post up. I spent the
+last part of last week at [[http://go.personaldemocracy.com/][The Personal Democracy Forum 2016]] which is really an exceptional conference.
+
+I posted a bit about it in my [[http://cestlaz.github.io/posts/pdf2016-lost-in-the-silo/#.V2B9th9vGAk][last post]] and plan to write some more on it, but for now, more Emacs.
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D6OUMVbPKSA" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+
+This video concerns using windows. By using buffers and windows and
+the basics you got from the tutorial, you shouldn't have to ever leave emacs.
+
+From here, we'll be able to start going over effective Emacs and then
+using it for things like development or document creation.
+
+
+Some of the key window bindings:
+
+| key   | what it does                                 |
+|-------+----------------------------------------------|
+| C-x 2 | split-window-below (vertically)              |
+| C-x 3 | split-window-right (horizontally)            |
+| C-x 0 | delete-window (this one)                     |
+| C-x 1 | delete-other-windows                         |
+| C-x o | other-window (moves foxus to the next window |
+
+You also have frames which use **C-x 5** as the prefix, so **C-x 5 2**
+creats a new frame and **C-x 5 1** closes the other frames.
+
+Remember, you can always use the help system, in particular **C-x k**
+to describe a key and **C-x f** to describe a function.
+
+
+**C-x o** can be a little clunky so some people like to use
+**windmove** which lets you move between windows by holding the shift
+key and with the arrows. To set that up, you can add this to your
+**init.el** 
+
+#+BEGIN_SRC emacs-lisp :tangle no
+(windmove-default-keybindings)
+#+END_SRC
+
+I prefer using **ace-window** mode which still uses **C-x o**:
+
+#+BEGIN_SRC emacs-lisp :tangle no
+; add this to init.el
+(use-package ace-window
+  :ensure t
+  :init
+  (progn
+    (global-set-key [remap other-window] 'ace-window)
+    (custom-set-faces
+     '(aw-leading-char-face
+       ((t (:inherit ace-jump-face-foreground :height 3.0))))) 
+    ))
+#+END_SRC
+
+The other mode I mention in the video is winner mode:
+#+BEGIN_SRC emacs-lisp :tangle no
+(winner-mdoe 1)
+#+END_SRC
+
+Which will allow you to use **C-c left or right** to move through past
+window configurations.
+
+
+Relevant links:
+- Ace window mode: https://github.com/abo-abo/ace-window
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code for this video:
+  - https://github.com/zamansky/using-emacs/tree/lesson-5-windows
+- Complete code built up over all videos:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
