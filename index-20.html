@@ -88,7 +88,200 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/bash-scripting/" class="u-url">BASH scripting?</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/duplicate-emails/" class="u-url">REPOST - Shell games - who confirmed attendance</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/duplicate-emails/" rel="bookmark"><time class="published dt-published" datetime="2016-05-12T09:52:25-04:00" title="2016-05-12 09:52">2016-05-12 09:52</time></a></p>
+                <p class="commentline">            <a href="posts/duplicate-emails/#disqus_thread" data-disqus-identifier="cache/posts/duplicate-emails.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Repost</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This is a repost from March 2015. It didn't transfer when I rebooted the blog.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Original</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Quick post on why I love the Unix command line.
+</p>
+
+<p>
+We're busy organizing <a href="http://cstuy.org">CSTUY's</a> first <a href="http://cstuy.org/programs/defhacks">hackathon</a>. It's going to be at
+<a href="http://sumall.com">SumAll</a>, where we hold our weekly <a href="http://cstuy.org/programs/hacking_sessions">hacking sessions</a> but while taking
+registration, we had a little program.
+</p>
+
+<p>
+The kids signed up on a Google doc but we all know the story – when
+people sign up for a free event, even one with free food and t-shirts,
+many don't show. I asked all of the applicants to confirm by filling
+out a second Google doc.
+</p>
+
+<p>
+Then it got to reminder time - I wanted to send an email out to all
+those kids who signed up on the first form, but hadn't confirmed on
+the second. 
+</p>
+
+<p>
+Two Google spreadsheets with an email field. I needed all the people
+on sheet 1 that weren't on sheet 2. I'm sure there's some
+spreadsheet-fu that accomplishes this, but nothing I know. I also
+could have written a little python script which isn't so bad, but this
+was a perfect time to turn to the shell.
+</p>
+
+<p>
+So, here's how a command line guy would do this.
+</p>
+
+<p>
+To start, I put the emails in two files: e1 and e2. The first has
+all the original applicants, the second those that confirmed.
+</p>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="left">
+<col class="left">
+<col class="left">
+</colgroup>
+<thead><tr>
+<th scope="col" class="left">e1</th>
+<th scope="col" class="left"> </th>
+<th scope="col" class="left">e2</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">a@a.com</td>
+<td class="left"> </td>
+<td class="left">b@b.com</td>
+</tr>
+<tr>
+<td class="left">b@b.com</td>
+<td class="left"> </td>
+<td class="left">F@f.com</td>
+</tr>
+<tr>
+<td class="left">c@c.com</td>
+<td class="left"> </td>
+<td class="left">c@c.com</td>
+</tr>
+<tr>
+<td class="left">d@d.com</td>
+<td class="left"> </td>
+<td class="left">d@d.com</td>
+</tr>
+<tr>
+<td class="left">e@e.com</td>
+<td class="left"> </td>
+<td class="left"> </td>
+</tr>
+<tr>
+<td class="left">f@f.com</td>
+<td class="left"> </td>
+<td class="left"> </td>
+</tr>
+<tr>
+<td class="left">g@g.com</td>
+<td class="left"> </td>
+<td class="left"> </td>
+</tr>
+<tr>
+<td class="left">h@h.com</td>
+<td class="left"> </td>
+<td class="left"> </td>
+</tr>
+</tbody>
+</table>
+<p>
+If we put these lists together, any email that appears twice would
+indicate that it's the email of someone that confirmed entry. Here we
+use cat to catenate e1 and e2 and pipe them through sort.
+</p>
+
+<div class="highlight"><pre><span></span>cat e1 e2 | sort
+</pre></div>
+
+<p>
+First problem –the upper case F – let's use <b><b>tr</b></b> to make
+everything lower case:
+</p>
+
+<div class="highlight"><pre><span></span>cat e1 e2 |  tr A-Z a-z | sort
+</pre></div>
+
+<p>
+Now we can see the duplicates next to each other. Next, <b><b>uniq
+-c</b></b> tells us how many times each line appears:
+</p>
+
+<div class="highlight"><pre><span></span>cat e1 e2 | tr A-Z a-z | sort | uniq -c | sort
+</pre></div>
+
+<p>
+I added the sort at the end, but we didn't need it.
+</p>
+
+<p>
+Here's what we get:
+</p>
+
+<p class="verse">
+1 a@a.com<br>
+ 1 c@c.com<br>
+ 1 c@c.dom<br>
+ 1 e@e.com<br>
+ 1 g@g.com<br>
+ 1 h@hc.om<br>
+ 2 b@b.com<br>
+ 2 d@d.com<br>
+ 2 f@f.com<br></p>
+
+<p>
+To pull out the ones that haven't replied I used egrep with a regex
+that means "any line that starts with 1 or more spaces followed by the
+number 1":
+</p>
+
+<div class="highlight"><pre><span></span>cat e1 e2 | tr A-z a-z | sort | uniq -c | egrep "^ +1"
+</pre></div>
+
+<p>
+and finally to isolate the emails using sed which removes the spaces
+and number 1 from the beginning of the line:
+</p>
+
+<div class="highlight"><pre><span></span>cat e1 e2 | tr A-z a-z | sort | uniq -c | egrep "^ +1" | sed "s/\ \+1 //g"
+</pre></div>
+
+<p>
+Each of the little utilities aren't all too useful by themselves but
+if you learn them over time you start thinking about how you can
+combine them to solve problems. 
+</p>
+
+<p>
+If you think this way and know some basic tools, all of a sudden all
+manner of text manipulation problems become pretty easy.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/bash-scripting/" class="u-url">BASH scripting?</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
