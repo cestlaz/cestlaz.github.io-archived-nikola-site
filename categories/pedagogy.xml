@@ -1,5 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (pedagogy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/pedagogy.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 11 Jun 2016 19:14:06 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Navajo Math Circles</title><link>http://cestlaz.github.io/posts/navajo-circles/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (pedagogy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/pedagogy.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 15 Jun 2016 15:06:03 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Robots platforms and practicalities</title><link>http://cestlaz.github.io/posts/robot-survey/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+I received an email from a friend the other day asking me about a
+particular robotics platform she recently saw.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've played with robotics on and off over the years ranging from
+building them from (not using) scratch using Atmel chips and programming them in
+assembly to using Arduino based platforms to using pre-built robot
+platforms. They're really cool and since they interact with the real
+world you can do all sorts of interesting and motivational things with students.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've done these on my own as a hobbyist and also with students either
+individually or in small groups, but never as part of a class I had
+been teaching.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why not?
+&lt;/p&gt;
+
+&lt;p&gt;
+The biggest reason is that the classes I've taught are already so
+packed full of CS goodness that we can't even get everything done
+that's theoretically on the syllabi.
+&lt;/p&gt;
+
+&lt;p&gt;
+The other has to do with practical concerns.
+&lt;/p&gt;
+
+&lt;p&gt;
+Equipment costs - Let's say we can get our platform at $100 a pop. I
+just can't see a public school with 34 kids in a class getting one per
+student or one for every two.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, what's the robot to student ratio and how much actual access do
+the kids get? If they're designing  building, do they all get to
+design and build? Same question with coding and operating.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then there's space – if we're talking about a mobile platform as
+opposed to something that sits on the desk and is near stationary, we
+have a problem. The classrooms I've taught in can barely hold the
+students.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are also issues with breakage, loss, theft and long term
+maintainability - will we be able to or even want to fill in with
+compatible units in a few years as needed or will we have to reboot
+the program from scratch.
+&lt;/p&gt;
+
+&lt;p&gt;
+All that to deal with before we even get to the fun of teaching and learning.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm really curious about the experiences of those of you who do teach
+using robots and similar platforms. 
+&lt;/p&gt;
+
+&lt;p&gt;
+If you are such a teacher, could you please fill out this form or
+leave a comment for anything that the form doesn't cover?
+&lt;/p&gt;
+
+
+&lt;iframe src="https://docs.google.com/forms/d/1FlppDbeiK8uPxh_RkXoCbbdE_UDY_4qXmZWbXlZ0gGg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading...&lt;/iframe&gt;</description><category>hardware</category><category>pedagogy</category><category>robotics</category><category>robots</category><category>tools</category><guid>http://cestlaz.github.io/posts/robot-survey/</guid><pubDate>Wed, 15 Jun 2016 13:08:28 GMT</pubDate></item><item><title>Navajo Math Circles</title><link>http://cestlaz.github.io/posts/navajo-circles/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 Yesterday, I saw the New York Premiere of &lt;a href="http://www.zalafilms.com/navajo/"&gt;Navajo Math Circles&lt;/a&gt;, a
 documentary on a &lt;a href="http://www.mathcircles.org/"&gt;Math Circle&lt;/a&gt; put in place to support and enrich the
 currently under-served community in the Navajo educational system.
@@ -1332,99 +1406,4 @@ Hopefully I'll have some time to do problem 7 and beyond this weekend.
 &lt;p&gt;
 If there are any Clojure people out there, I'm putting my solutions up
 on &lt;a href="https://github.com/zamansky/adventofcodeclojure"&gt;GitHub&lt;/a&gt; - I'd love some feedback on how to get more idiomatic.
-&lt;/p&gt;</description><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/</guid><pubDate>Thu, 17 Dec 2015 05:00:00 GMT</pubDate></item><item><title>Other People's Code</title><link>http://cestlaz.github.io/posts/2015-11-11-other-peoples-code.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
-div.center {text-align:center;}
-&lt;/style&gt;
-&lt;div id="outline-container-orgheadline1" class="outline-2"&gt;
-&lt;h2 id="orgheadline1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgheadline1"&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
-The coding on their project is reminiscent in many ways of an Ed
-Sheerhan song. It left me in tears and very confused as to what the
-author was trying to accomplish.
-&lt;/p&gt;
-
-&lt;p&gt;
-– a student commenting on their most recent project.
-&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-orgheadline2" class="outline-2"&gt;
-&lt;h2 id="orgheadline2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgheadline2"&gt;
-&lt;p&gt;
-We had some fun last week. Well, OK, I had some fun. The SoftDev
-classes had just finished a little project. Basically, a blogging
-platform. Something that would tie together all the tools we've been
-using. Flask, user management, an SQL database (SQLite), and a nice
-looking front end. 
-&lt;/p&gt;
-
-&lt;p&gt;
-It was also the first real group project so the teams have started to
-learn how to work together. 
-&lt;/p&gt;
-
-&lt;p&gt;
-After some project demos, it was time for part two: NOSQL. We explored
-MongoDB and then it was time for the project - clean up the
-previous project through the use of techniques like template
-inheritance and convert the database backend to MongoDB.
-&lt;/p&gt;
-
-&lt;p&gt;
-The catch? Each group would take another groups project and use that
-as their starter code. The rules? They could modify and refactor but
-they couldn't rewrite.
-&lt;/p&gt;
-
-&lt;p&gt;
-It threw the groups for a loop but I ultimately think they had
-fun with this.
-&lt;/p&gt;
-
-&lt;p&gt;
-Afterwards each group gave a write up to their starter group. What
-made their life easier, what made it harder. We then circled up for
-discussion as a class.
-&lt;/p&gt;
-
-&lt;p&gt;
-It was terrific.
-&lt;/p&gt;
-
-&lt;p&gt;
-First, it was great that we've gotten to a point where everyone feels
-comfortable giving each other constructive criticism. We've gotten to
-the point where the class is a team.
-&lt;/p&gt;
-
-&lt;p&gt;
-Beyond that, I'm hoping that everyone got a lot out of the exercise.
-&lt;/p&gt;
-
-&lt;p&gt;
-As each group talked, common themes arose:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;consistent commenting is good&lt;/li&gt;
-&lt;li&gt;variable names matter&lt;/li&gt;
-&lt;li&gt;unused code and files can be misleading&lt;/li&gt;
-&lt;li&gt;overall code structure, file names, and locations are important.&lt;/li&gt;
-&lt;li&gt;and much more&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-We're now going to start a discussion of coding style, standards, and
-documentation.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've got to say that I'm very happy how this little experiment worked
-out.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2015-11-11-other-peoples-code.html/</guid><pubDate>Wed, 11 Nov 2015 05:00:00 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;</description><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/</guid><pubDate>Thu, 17 Dec 2015 05:00:00 GMT</pubDate></item></channel></rss>

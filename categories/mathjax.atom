@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about mathjax</title>
   <id>http://cestlaz.github.io/categories/mathjax.atom</id>
-  <updated>2016-04-17T19:36:18Z</updated>
+  <updated>2016-05-23T17:14:46Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -23,13 +23,13 @@
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
-Switched over from Jekyll to Nikola yesterday.
+Switched over from &lt;a href="https://jekyllrb.com/"&gt;Jekyll&lt;/a&gt; to &lt;a href="https://getnikola.com/"&gt;Nikola&lt;/a&gt; yesterday.
 &lt;/p&gt;
 
 &lt;p&gt;
 One of the primary reasons was that I got fed up with managing a Ruby
 development environment across all my machines. In spite of my
-rantings, I'm sure Ruby adn Ruby installas are fine - it's just
+rantings, I'm sure Ruby and Ruby installs are fine - it's just
 something that I'd have to deal with on a recurring basis for one
 specific task - other than for Jekyll blogging, I don't use Ruby.
 &lt;/p&gt;
@@ -47,11 +47,117 @@ What do I use org-mode for?
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;lesson planning
 &lt;/li&gt;
-&lt;li&gt;document preparation (instead of \LaTeX  )
+&lt;li&gt;document preparation (instead of LaTeX)
+&lt;/li&gt;
+&lt;li&gt;note taking
+&lt;/li&gt;
+&lt;li&gt;blogging
+&lt;/li&gt;
+&lt;li&gt;email (with mu4e)
+&lt;/li&gt;
+&lt;li&gt;managing my schedule
+&lt;/li&gt;
+&lt;li&gt;tracking bookmarks
 &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;
+and probably a lot more.
+&lt;/p&gt;
+
+&lt;p&gt;
+Jekyll is actually a really nice tool. It's simple. You put together a
+simple directory structure: Templates in _layouts, blog posts in
+_posts, drafts in _drafts. Other directories that start with an
+underscore are ignored and everything else is copied up to your site.
+&lt;/p&gt;
+
+&lt;p&gt;
+I love that it's "close to the metal" You can put in html files with
+some meta information up top or markdown. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You can take a look at my old site at
+&lt;a href="https://github.com/cestlaz/cestlaz.github.io-jekyll"&gt;&lt;/a&gt;&lt;a href="https://github.com/cestlaz/cestlaz.github.io-jekyll"&gt;https://github.com/cestlaz/cestlaz.github.io-jekyll&lt;/a&gt; if you want to
+take a look.
+&lt;/p&gt;
+
+&lt;p&gt;
+The beauty is that you just push your files up to GitHub and it
+automatically runs Jekyll and builds your site (&lt;a href="https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/"&gt;more info here&lt;/a&gt;).
+&lt;/p&gt;
+
+&lt;p&gt;
+The problem is that Jekyll doesn't play well with org-mode and
+org-markup so my workflow became something like this
+&lt;/p&gt;
+
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Create a post &lt;b&gt;&lt;b&gt;something.org&lt;/b&gt;&lt;/b&gt; in the _org directory.
+&lt;/li&gt;
+&lt;li&gt;From within emacs, publish it. I've configured org-mode to publish
+by exporting the org-mode markup file to html and saving it in the
+_drafts directory.
+&lt;/li&gt;
+&lt;li&gt;If it looks good, copy and rename the file from _drafts to the
+_posts directory and push it up to GitHub.
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+A little clunky, but it works. The bigger problem was the amount of
+time I'd spend putting html blocks into my org formatted posts to get
+them to look the way I wanted (or at least close enough).
+&lt;/p&gt;
+
+&lt;p&gt;
+Enter Nikola.
+&lt;/p&gt;
+
+&lt;p&gt;
+Nikola's a much more powerful tool. It does much more but as a result
+is much more complex. Normally, that's not my style but in this case
+since It's Python, things balance out.
+&lt;/p&gt;
+
+&lt;p&gt;
+I still have to figure out the entire templating system and all the
+plugins but getting started was pretty quick.
+&lt;/p&gt;
+
+&lt;p&gt;
+The big win is that Nikola supports a ton of formats for your posts
+and pages. Native org-mode support for me was what did it for me. On top of
+that, although I haven't tested it yet, is that there's also an
+org-mode plugin to export to Nikola restructure text.
+&lt;/p&gt;
+
+&lt;p&gt;
+My new workflow:
+&lt;/p&gt;
+
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Write the post as an org-mode file.
+&lt;/li&gt;
+&lt;li&gt;run &lt;b&gt;&lt;b&gt;nikola github_deploy&lt;/b&gt;&lt;/b&gt;.
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+And that's it. You can look at my Nikola site here:
+&lt;a href="https://github.com/cestlaz/cestlaz.github.io"&gt;&lt;/a&gt;&lt;a href="https://github.com/cestlaz/cestlaz.github.io"&gt;https://github.com/cestlaz/cestlaz.github.io&lt;/a&gt;.
+The source code is in the &lt;b&gt;&lt;b&gt;src&lt;/b&gt;&lt;/b&gt; branch, the actual rendered blog in
+the &lt;b&gt;&lt;b&gt;master&lt;/b&gt;&lt;/b&gt; branch.
+&lt;/p&gt;
+
+&lt;p&gt;
+So far, I'm pretty happy with the setup.
+&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
     <category term="mathjax" label="mathjax"/>
+    <category term="tools" label="tools"/>
   </entry>
 </feed>

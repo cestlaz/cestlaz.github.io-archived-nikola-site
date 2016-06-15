@@ -3,7 +3,7 @@
 <feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 9)</title>
   <id>http://cestlaz.github.io/index-9.atom</id>
-  <updated>2016-04-16T20:34:15Z</updated>
+  <updated>2016-05-23T17:14:41Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -97,6 +97,7 @@ case of index out of bounds.&lt;/p&gt;
 &lt;p&gt;I always like doing that.&lt;/p&gt;
 &lt;h5&gt;Some Links&lt;/h5&gt;
 &lt;p&gt;&lt;a href="https://github.com/stuycs-apcs-z/classcode/tree/master/3/knights"&gt;Source code for Knight's tour&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
   <entry>
     <title>Fibonacci by the tail</title>
@@ -222,6 +223,8 @@ public int fib5(int n,int a, int b) {
 &lt;p&gt;&lt;a href="http://blog.smartbear.com/programming/why-developers-%0Astill-need-the-basics/"&gt;Monte Carlo Simulations, Fibonacci Numbers, and Other Number Tests: Why Developers Still Need The Basics&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.ted.com/talks/arthur_benjamin_the_magic_of_fibonacci_numbers.html"&gt;TED: Arthur Benjamin: The magic of Fibonacci numbers - Arthur Benjamin (2013)&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://lee-phillips.org/lispmath/"&gt;Fibonacci Numbers in the Real World&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="algorithms" label="algorithms"/>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
   <entry>
     <title>StuyCS  family from coast to coast</title>
@@ -271,6 +274,7 @@ guess I should really say friends, not students.&lt;/p&gt;
 teaching. What impact I've had, what I could have done better, what I
 did right.&lt;/p&gt;
 &lt;p&gt;I think I can live with the StuyCS family as my legacy.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="community" label="community"/>
   </entry>
   <entry>
     <title>Tapia 2014</title>
@@ -323,6 +327,7 @@ for the students. &lt;/p&gt;
 &lt;p&gt;I only got to attend because I was on scholarship as a high school CS
 teacher. It was an amazing few days and I can't recommend the Tapia
 conference highly enough for young computer scientists out there.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="misc" label="misc"/>
   </entry>
   <entry>
     <title>Shell Games - an introduction</title>
@@ -350,23 +355,19 @@ conference highly enough for young computer scientists out there.&lt;/p&gt;&lt;/
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Still, I liked the idea - I've been an educator for 23 years, a Linux user for most of that time and an  Unix user for longer. I'm a firm believer in operating system as toolkit and so I think I'll take Steve and Alfred's suggestion and try to put together a series of posts on using Linux from a CS educators point of view.
-&lt;/p&gt;
-
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;So, before we begin - a little background.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;I can proudly say that I've been Windows free since about 2000. That's when I decided to wipe the lat traces of Microsoft from my hard drives. Prior to that I just booted up MS-DOS or Windows to play games or to use a Excel or Word.
-&lt;/p&gt;
-
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;Since the early days of Linux - back before Slackware, I dual booted. Before Linux, I dialed into public Unix systems such as &lt;a href="http://www.panix.com"&gt;Panix&lt;/a&gt; or &lt;a href="http://en.wikipedia.org/wiki/The_Big_Electric_Cat"&gt;The Big Electric Cat&lt;/a&gt;. At home, I tried to make MS-DOS as Unix like as I could. I ran the &lt;a href="http://en.wikipedia.org/wiki/MKS_Toolkit"&gt;MKS Toolkti&lt;/a&gt;, and used my own shell (a project every young programmer should attempt).
-&lt;/p&gt;
-
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;Why am I posting this now? It's a new semester and I find myself, as usual, leveraging the Linux shell. It was time to set up a mailing list for the class.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;I'm able to go to our school's data system and grab a tab delimited file that looks something like this:
-&lt;/p&gt;
-
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;pre&gt;
 Code    Section Period  Last    First   ID  Official    Advisor OSIS    Email
 grY22tBs    01  6   Hxk Blu GFy 9272    7rr gEs 274989649   zlu3lxk@QylKR.oqy
@@ -378,11 +379,9 @@ grY22tBs    01  6   pqxuk   NRK 9234    7dd gHAMmNd 270217219   uRKo90@QylKR.oqy
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;It's tab delimited but I scrambled the letters so as to not reveal any student info.
-&lt;/p&gt;
-
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;Oh, how did I do that scrambling? Easy. First, I combined some basic utilities to make a random permutation of the upper and lower case letters and stored them in a shell variable. Don't worry, I'll explain these commands in upcoming posts:
-&lt;/p&gt;
-
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 perm=`echo "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ | sed "s/\(.\)/\1\n/g" | sort -R | tr -t "\\n" ":" | sed "s/[^a-zA-Z0-9,@]//g"`
 &lt;/blockquote&gt;
@@ -390,8 +389,7 @@ perm=`echo "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ | sed "s/\(.\)/
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Then I used tr (translate) to exchange the real letters for the matching letter in the random permutation:
-&lt;/p&gt;
-
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 cat students.tsv | tr a-zA-Z $perm &amp;gt; students.scrambled
 &lt;/blockquote&gt;
@@ -399,18 +397,15 @@ cat students.tsv | tr a-zA-Z $perm &amp;gt; students.scrambled
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;So back to the real work. I needed to isolate the students email addresses. The process:
-&lt;/p&gt;
-
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;&lt;ol&gt;
     &lt;li&gt;convert the tabs to commas&lt;/li&gt;
     &lt;li&gt;Pull out the students in my AP class (code MKX22X) from the list of all students&lt;/li&gt;
     &lt;li&gt;Pull out the 10th column&lt;/li&gt;
     &lt;li&gt;These are the emails, save them to a file&lt;/li&gt;
-
-
+&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;So, I typed:
-&lt;/p&gt;
-
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 cat students.tsv | grep MKS22X | sed "s/\t/,/g" | cut -d, -f10 &amp;gt; emails
 &lt;/blockquote&gt;
@@ -418,24 +413,22 @@ cat students.tsv | grep MKS22X | sed "s/\t/,/g" | cut -d, -f10 &amp;gt; emails
 &lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;grep filters out lines that have MKS22X in them and sed replaces the tabs (\t) with commas and cut pulls out the email addresses. It's all stored in a file named emails.
-&lt;/p&gt;
-
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;Now, I just have to import these into my maillist software (mailman).
-&lt;/p&gt;
-
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;&lt;blockquote&gt;
     add_members -r emails myclasslist
   &lt;/blockquote&gt;
-
-
+&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;So, that's it, easy peasy.
-&lt;/p&gt;
-
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;I'll be away for most of this week at the Tapia conference and then I'll be playing catch up, but I'm hoping to do a series of posts talking about my Linux toolset and how I use it.
-&lt;/p&gt;
-
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;I hope you all find it interesting and maybe even useful.
-&lt;/p&gt;&lt;/ol&gt;&lt;/div&gt;</summary>
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/ol&gt;&lt;/div&gt;</summary>
+    <category term="cli" label="cli"/>
+    <category term="shell" label="shell"/>
+    <category term="tools" label="tools"/>
   </entry>
   <entry>
     <title>Summing up at SumAll</title>
@@ -464,6 +457,7 @@ they will be able to accomplish in the coming years.&lt;/p&gt;
 &lt;h4&gt;Some Links:&lt;/h4&gt;
 &lt;p&gt;&lt;a href="http://smallbiztrends.com/2014/01/dane-atkinson-big-data-strategy.html"&gt;Dane Atkinson of SumAll: A Big Data Strategy That Goes Beyond Cutting and Pasting&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.meangeme.com/1/post/2014/01/my-top-5-social-media-analytics-platforms.html"&gt;My Top 5 Social Media Analytics Platforms&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="cstuy" label="cstuy"/>
   </entry>
   <entry>
     <title>What I learned from Pete Seeger</title>
@@ -533,6 +527,7 @@ will happen in the greater CS education landscape but I know that
 every day I will see 150 kids and 20 more every Saturday. My kids, who
 will be part of the Stuy CS and now CSTUY family. They might not know
 now what they're getting, but I do and I know I've made a difference.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="misc" label="misc"/>
   </entry>
   <entry>
     <title>Show me the data</title>
@@ -581,6 +576,7 @@ Given that NY is about 16% black ad 17% Hispanic, we would have
 expected around 300 from each group.&lt;/p&gt;
 &lt;p&gt;In any event, I'm delighted that my students are perceptive enough to
 see past headlines, dig down to data, and make their own conclusions.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="policy" label="policy"/>
   </entry>
   <entry>
     <title>At Last - CS Gender Equity in Multiple States!!!!!</title>
@@ -635,6 +631,7 @@ and take a look.&lt;/p&gt;
 &lt;p&gt;Not enough students are being exposed to computer science and
 not all groups are getting the same exposure, but when we spin the
 data rather than illuminate it, we don't really help our cause.&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="policy" label="policy"/>
   </entry>
   <entry>
     <title>Rot13 - Gateway &lt;s&gt;Drugs&lt;/s&gt; Techniques</title>
@@ -738,5 +735,6 @@ rotation is to the sample document vector. The rotation with the
 closest vector is pobably our solution.&lt;/p&gt;
 &lt;p&gt;So from a simple warm up problem we're at the gateway to some serious techniques that will come back time and time again as the students move through their CS education and careers.&lt;/p&gt;
 &lt;p&gt;Fun!&lt;/p&gt;&lt;/div&gt;</summary>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
 </feed>
