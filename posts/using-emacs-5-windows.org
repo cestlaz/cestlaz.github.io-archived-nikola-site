@@ -70,7 +70,7 @@ I prefer using **ace-window** mode which still uses **C-x o**:
 
 The other mode I mention in the video is winner mode:
 #+BEGIN_SRC emacs-lisp :tangle no
-(winner-mdoe 1)
+(winner-mode 1)
 #+END_SRC
 
 Which will allow you to use **C-c left or right** to move through past
