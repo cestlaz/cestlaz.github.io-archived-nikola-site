@@ -127,6 +127,50 @@ The video also mentions lorem-ipsum mode for generating text quickly and <b><b>d
 </p>
 
 <p>
+Here's the code we added for swiper:
+</p>
+
+<div class="highlight"><pre><span></span><span class="c1">;; it looks like counsel is a requirement for swiper</span>
+<span class="p">(</span><span class="nf">use-package</span> <span class="nv">counsel</span>
+  <span class="nv">:ensure</span> <span class="nv">t</span>
+  <span class="p">)</span>
+
+<span class="p">(</span><span class="nf">use-package</span> <span class="nv">swiper</span>
+  <span class="nv">:ensure</span> <span class="nv">try</span>
+  <span class="nv">:config</span>
+  <span class="p">(</span><span class="nf">progn</span>
+    <span class="p">(</span><span class="nf">ivy-mode</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">setq</span> <span class="nv">ivy-use-virtual-buffers</span> <span class="nv">t</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="s">"\C-s"</span> <span class="ss">'swiper</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"C-c C-r"</span><span class="p">)</span> <span class="ss">'ivy-resume</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"&lt;f6&gt;"</span><span class="p">)</span> <span class="ss">'ivy-resume</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"M-x"</span><span class="p">)</span> <span class="ss">'counsel-M-x</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"C-x C-f"</span><span class="p">)</span> <span class="ss">'counsel-find-file</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"&lt;f1&gt; f"</span><span class="p">)</span> <span class="ss">'counsel-describe-function</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"&lt;f1&gt; v"</span><span class="p">)</span> <span class="ss">'counsel-describe-variable</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"&lt;f1&gt; l"</span><span class="p">)</span> <span class="ss">'counsel-load-library</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"&lt;f2&gt; i"</span><span class="p">)</span> <span class="ss">'counsel-info-lookup-symbol</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"&lt;f2&gt; u"</span><span class="p">)</span> <span class="ss">'counsel-unicode-char</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"C-c g"</span><span class="p">)</span> <span class="ss">'counsel-git</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"C-c j"</span><span class="p">)</span> <span class="ss">'counsel-git-grep</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"C-c k"</span><span class="p">)</span> <span class="ss">'counsel-ag</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"C-x l"</span><span class="p">)</span> <span class="ss">'counsel-locate</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"C-S-o"</span><span class="p">)</span> <span class="ss">'counsel-rhythmbox</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">define-key</span> <span class="nv">read-expression-map</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"C-r"</span><span class="p">)</span> <span class="ss">'counsel-expression-history</span><span class="p">)</span>
+    <span class="p">))</span>
+</pre></div>
+
+<p>
+and we commented out the ido stuff:
+</p>
+
+<div class="highlight"><pre><span></span><span class="c1">;; using swiper so ido no longer needed</span>
+<span class="c1">;;(setq ido-enable-flex-matching t)</span>
+<span class="c1">;;(setq ido-everywhere t)</span>
+<span class="c1">;;(ido-mode 1)</span>
+</pre></div>
+
+<p>
 If you want to see a nice video specifically on swiper by the author, here it is:
 </p>
 
