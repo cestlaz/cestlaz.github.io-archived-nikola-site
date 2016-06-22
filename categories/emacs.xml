@@ -1,5 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (emacs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/emacs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 20 Jun 2016 20:24:39 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 6 - Searching a Swiper</title><link>http://cestlaz.github.io/posts/using-emacs-6-swiper/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (emacs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/emacs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 22 Jun 2016 22:18:46 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Better Comments or tooling as a time sink</title><link>http://cestlaz.github.io/posts/better-comments/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+The other day my friend and fellow CS Ed Blogger &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; wrote
+about &lt;a href="http://blog.acthompson.net/2016/06/better-comments-in-visual-studio.html"&gt;Better Comments&lt;/a&gt;, an extension for visual studio that displays
+comments that are marked up  with special characters in order to
+highlight them. Here's a screenshot:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/omsharp/BetterComments/master/screenshots/ClassificationC.png" alt="ClassificationC.png"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+So, the first thing I though was "I bet emacs could do that pretty
+easily" and down the rabbit hole I went.
+&lt;/p&gt;
+
+&lt;p&gt;
+I had to figure out something about how emacs themes and font-locking
+(emacs for syntax highlighting) works and of course spent far too much
+time learning about Emacs, my favored tool, rather than getting actual
+work done, but I came up with this:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;make-face&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-important&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;set-face-foreground&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-important&lt;/span&gt; &lt;span class="s"&gt;"#00ff00"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;make-face&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-todo&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;set-face-foreground&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-todo&lt;/span&gt; &lt;span class="s"&gt;"#ff0000"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;make-face&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-strike&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;set-face-attribute&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-strike&lt;/span&gt;
+		    &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="nv"&gt;:strike-through&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+  &lt;span class="s"&gt;"adds a few special keywords"&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;font-lock-add-keywords&lt;/span&gt; 
+   &lt;span class="nv"&gt;nil&lt;/span&gt;
+   &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"cx \\(.+\\)"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-strike&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"ct \\(.+\\)"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-todo&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"ci \\(.+\\)"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-important&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'js2-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'js-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+It's a hack but it does indeed work. In action, it looks something
+like this:
+&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/wNT2lxBuK00" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Truth be told, it really colors anything following cx, ct, or ci, not
+just in comments – I have to look a bit more into how emacs handles
+comments to figure that one out.
+&lt;/p&gt;
+
+&lt;p&gt;
+In any event, even though I spent too much time doing this, it's nice
+to know I'm working in a tool in which I can.
+&lt;/p&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/better-comments/</guid><pubDate>Wed, 22 Jun 2016 22:09:17 GMT</pubDate></item><item><title>Using Emacs - 6 - Searching a Swiper</title><link>http://cestlaz.github.io/posts/using-emacs-6-swiper/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
