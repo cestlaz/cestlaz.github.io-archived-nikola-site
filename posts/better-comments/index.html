@@ -176,6 +176,32 @@ In any event, even though I spent too much time doing this, it's nice
 to know I'm working in a tool in which I can.
 </p>
 
+<p>
+<b><b>UPDATE:</b></b> Thanks to user ncswolf on /r/emacs on reddit, here's a
+fully working, more properly done solution:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">defface</span> <span class="nv">font-lock-comment-strike</span>
+  <span class="o">'</span><span class="p">((</span><span class="nf">t</span> <span class="p">(</span><span class="nf">:strike-through</span> <span class="nv">t</span><span class="p">)))</span>
+  <span class="s">"For strike-through comments"</span><span class="p">)</span>
+
+<span class="p">(</span><span class="nf">defface</span> <span class="nv">font-lock-comment-important</span>
+  <span class="o">'</span><span class="p">((</span><span class="nf">t</span> <span class="p">(</span><span class="nf">:foreground</span> <span class="s">"#00ff00"</span><span class="p">)))</span>
+  <span class="s">"For important"</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">defface</span> <span class="nv">font-lock-comment-todo</span>
+  <span class="o">'</span><span class="p">((</span><span class="nf">t</span> <span class="p">(</span><span class="nf">:foreground</span> <span class="s">"#ff0000"</span><span class="p">))</span>
+		<span class="s">"For todo comments"</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">defun</span> <span class="nv">add-custom-keyw</span><span class="p">()</span>
+		<span class="s">"adds a few special keywords"</span>
+		<span class="p">(</span><span class="nf">font-lock-add-keywords</span>
+		 <span class="nv">nil</span>
+		 <span class="o">'</span><span class="p">((</span><span class="s">"\\s&lt;+x[[:space:]]*\\(.*?\\)[[:space:]]*\\s&gt;"</span> <span class="mi">1</span> <span class="ss">'font-lock-comment-strike</span> <span class="nv">prepend</span><span class="p">)</span>
+			 <span class="p">(</span><span class="s">"\\s&lt;+t[[:space:]]*\\(.*?\\)[[:space:]]*\\s&gt;"</span> <span class="mi">1</span> <span class="ss">'font-lock-comment-todo</span> <span class="nv">prepend</span><span class="p">)</span>
+			 <span class="p">(</span><span class="s">"\\s&lt;+i[[:space:]]*\\(.*?\\)[[:space:]]*\\s&gt;"</span> <span class="mi">1</span> <span class="ss">'font-lock-comment-important</span> <span class="nv">prepend</span><span class="p">))))</span>
+
+	<span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'prog-mode-hook</span> <span class="o">#</span><span class="ss">'add-custom-keyw</span><span class="p">)</span>
+</pre></div>
+
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
 <a class="addthis_button_twitter"></a>

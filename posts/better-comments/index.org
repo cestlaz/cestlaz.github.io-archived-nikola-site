@@ -65,4 +65,29 @@ comments to figure that one out.
 In any event, even though I spent too much time doing this, it's nice
 to know I'm working in a tool in which I can.
 
+**UPDATE:** Thanks to user ncswolf on /r/emacs on reddit, here's a
+fully working, more properly done solution:
 
+#+BEGIN_SRC emacs-lisp
+(defface font-lock-comment-strike
+  '((t (:strike-through t)))
+  "For strike-through comments")
+
+(defface font-lock-comment-important
+  '((t (:foreground "#00ff00")))
+  "For important")
+(defface font-lock-comment-todo
+  '((t (:foreground "#ff0000"))
+		"For todo comments")
+(defun add-custom-keyw()
+		"adds a few special keywords"
+		(font-lock-add-keywords
+		 nil
+		 '(("\\s<+x[[:space:]]*\\(.*?\\)[[:space:]]*\\s>" 1 'font-lock-comment-strike prepend)
+			 ("\\s<+t[[:space:]]*\\(.*?\\)[[:space:]]*\\s>" 1 'font-lock-comment-todo prepend)
+			 ("\\s<+i[[:space:]]*\\(.*?\\)[[:space:]]*\\s>" 1 'font-lock-comment-important prepend))))
+
+	(add-hook 'prog-mode-hook #'add-custom-keyw)
+
+
+#+END_SRC

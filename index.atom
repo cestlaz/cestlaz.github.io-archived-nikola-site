@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2016-06-22T23:29:45Z</updated>
+  <updated>2016-06-23T12:27:22Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -86,7 +86,33 @@ comments to figure that one out.
 &lt;p&gt;
 In any event, even though I spent too much time doing this, it's nice
 to know I'm working in a tool in which I can.
-&lt;/p&gt;</summary>
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;b&gt;&lt;b&gt;UPDATE:&lt;/b&gt;&lt;/b&gt; Thanks to user ncswolf on /r/emacs on reddit, here's a
+fully working, more properly done solution:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defface&lt;/span&gt; &lt;span class="nv"&gt;font-lock-comment-strike&lt;/span&gt;
+  &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nf"&gt;t&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:strike-through&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+  &lt;span class="s"&gt;"For strike-through comments"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defface&lt;/span&gt; &lt;span class="nv"&gt;font-lock-comment-important&lt;/span&gt;
+  &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nf"&gt;t&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:foreground&lt;/span&gt; &lt;span class="s"&gt;"#00ff00"&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+  &lt;span class="s"&gt;"For important"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defface&lt;/span&gt; &lt;span class="nv"&gt;font-lock-comment-todo&lt;/span&gt;
+  &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nf"&gt;t&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:foreground&lt;/span&gt; &lt;span class="s"&gt;"#ff0000"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+		&lt;span class="s"&gt;"For todo comments"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+		&lt;span class="s"&gt;"adds a few special keywords"&lt;/span&gt;
+		&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;font-lock-add-keywords&lt;/span&gt;
+		 &lt;span class="nv"&gt;nil&lt;/span&gt;
+		 &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"\\s&amp;lt;+x[[:space:]]*\\(.*?\\)[[:space:]]*\\s&amp;gt;"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-strike&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+			 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"\\s&amp;lt;+t[[:space:]]*\\(.*?\\)[[:space:]]*\\s&amp;gt;"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-todo&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+			 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"\\s&amp;lt;+i[[:space:]]*\\(.*?\\)[[:space:]]*\\s&amp;gt;"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-important&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;
+
+	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'prog-mode-hook&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="ss"&gt;'add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary>
     <category term="emacs" label="emacs"/>
     <category term="tools" label="tools"/>
   </entry>
