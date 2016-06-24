@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about teals</title>
   <id>http://cestlaz.github.io/categories/teals.atom</id>
-  <updated>2016-06-23T23:45:40Z</updated>
+  <updated>2016-06-24T19:26:03Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,7 +11,7 @@
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/teals/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
-    <title>Lesson planns - scripts to springboards</title>
+    <title>Lesson plans - scripts to springboards</title>
     <id>http://cestlaz.github.io/posts/lesson-plans/</id>
     <updated>2016-06-23T19:31:11-04:00</updated>
     <published>2016-06-23T19:31:11-04:00</published>
@@ -30,7 +30,7 @@ time I was able to make it.
 &lt;/p&gt;
 
 &lt;p&gt;
-If you don't know, TEALS is a program that techs volunteers in the
+If you don't know, TEALS is a program that takes volunteers in the
 tech industry and places them in classrooms. Unlike other programs,
 the TEALS volunteers work with the teachers while the kids learn some
 CS. The idea is that the teacher will learn about CS from the
@@ -38,16 +38,16 @@ volunteer and the volunteer will learn something about teaching.
 &lt;/p&gt;
 
 &lt;p&gt;
-It's not the same as having a strong, knowledgable CS teacher in the
+It's not the same as having a strong, knowledgeable CS teacher in the
 classroom but until we get there, TEALS is doing great work giving
 kids something that they need and otherwise wouldn't get.
 &lt;/p&gt;
 
 &lt;p&gt;
 At one point, Nathaniel started to talk to the volunteers about lesson
-plans emphasising the fact that TEALS would provide all the lesson materials and
+plans emphasizing the fact that TEALS would provide all the lesson materials and
 the plans so these new to teaching tech volunteers wouldn't have to
-make curricular decissions. 
+make curricular decisions. 
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -55,7 +55,7 @@ The lesson plan form was pretty traditional and pretty formulaic:
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;warmup
+&lt;li&gt;warm up
 &lt;/li&gt;
 &lt;li&gt;hook
 &lt;/li&gt;
@@ -70,8 +70,123 @@ The lesson plan form was pretty traditional and pretty formulaic:
 &lt;p&gt;
 Very similar to what I was shown back in the day during my two day
 "teaching boot camp" that kicked off my career &lt;sup&gt;&lt;a id="fnr.1" name="fnr.1" class="footref" href="http://cestlaz.github.io/posts/lesson-plans/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt; and very
-appropritae as an effective and efficient way to prepare these
+appropriate as an effective and efficient way to prepare these
 volunteers for their first days. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This got me thinking about my lesson planning over the years.
+&lt;/p&gt;
+
+&lt;p&gt;
+When I started, I was teaching math but I wasn't really a math
+guy - I was CS all the way. I had to remember the math from high
+school, learn the new topics, and figure out how to teach it.
+&lt;/p&gt;
+
+&lt;p&gt;
+I had a very supportive department but they were busy with their own
+classes and this was pre internet. Fortunately, the NYC DOE published
+lesson plan books. They were basically bound volumes of xerox copies
+of hand written and typed lesson plans provided by experienced
+teachers.
+&lt;/p&gt;
+
+&lt;p&gt;
+I spent many hours copying them, studying  them, and then later
+tweaking them.
+&lt;/p&gt;
+
+&lt;p&gt;
+They were a life saver back then. How was the teaching? OK. Not
+great. I got the material to the kids but I was nothing special. This
+is where I started to form my bias against the scripted teaching
+that's being pushed down today.
+&lt;/p&gt;
+
+&lt;p&gt;
+As I developed my chops, I started to design my own experiences for my
+classes and things improved. By the time I was done teaching math -
+maybe 4 years in, I was just scratching the surface of being a math
+teacher.
+&lt;/p&gt;
+
+&lt;p&gt;
+One year in, I started teaching CS along with math at Seward
+Park. When I was bumped to Stuy, I went back to math for  a year and a
+half and then it was all CS all the time.
+&lt;/p&gt;
+
+&lt;p&gt;
+For CS, we didn't have lesson plan books so I had to craft everything
+from scratch. It was a lot of work but the results were much better.
+&lt;/p&gt;
+
+&lt;p&gt;
+At first, I would actually write out lesson plans a la math lesson
+plans. A "do now," "instructional objectives," "applications,"
+"Homework," etc. The only thing I never formally wrote out was a
+"medial summary."
+&lt;/p&gt;
+
+&lt;p&gt;
+Over time, my lessons got better but my lesson plans looked worse and
+worse. 
+&lt;/p&gt;
+
+&lt;p&gt;
+There were times a lesson plan might look something like this:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/lesson-plans/plan.jpg" alt="plan.jpg" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+OK, not exactly but as I developed at my craft, I didn't need a laid
+out script to follow line for line  rather, just a set of little
+reminders and maybe some printed out code. If we were going to develop
+a complicated algorithm or derivation, though, I would still write out
+all the steps.
+&lt;/p&gt;
+
+&lt;p&gt;
+This doesn't mean that as my career progressed I planned any less. It
+might appear that I'm winging it but even if little to nothing is
+written down, there is a plan and there's always a lot of pre work
+before class begins.
+&lt;/p&gt;
+
+&lt;p&gt;
+Now, to bring this back to TEALS.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's interesting how what's good in one context is not so much in
+another.
+&lt;/p&gt;
+
+&lt;p&gt;
+What TEALS is doing is great - they've got to get a lot of
+technologists in to classrooms quickly but once there, they'll be with
+real, hopefully experienced teachers. What they're doing gets them
+ready to go. It's a starting point, not an end.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand, when I see scripted curriculum being sold as the
+special sauce, be it in CS teacher "training," Teach for America
+summer prep or in the name of charter school uniformity, I run the
+other way.
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's prepare curricular  materials for important programs like TEALS
+and for beginning teachers just starting out but let's not confuse a
+scripted lesson that can be delivered by one and all to be anything
+close to the work of a master educator and craftsman.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -80,8 +195,8 @@ volunteers for their first days.
 &lt;div id="text-footnotes"&gt;
 
 &lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" name="fn.1" class="footnum" href="http://cestlaz.github.io/posts/lesson-plans/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;p&gt;full disclosure: I
-came in to teaching with zero education credetials and took the
-minimum number of ed classes for my license after I started&lt;/p&gt;&lt;/div&gt;
+came in to teaching with zero education credentials and took the
+minimum number of ed classes for my license after I started.&lt;/p&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;

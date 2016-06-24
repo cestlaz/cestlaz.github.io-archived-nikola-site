@@ -1,5 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (emacs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/emacs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 23 Jun 2016 23:45:40 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Better Comments or tooling as a time sink</title><link>http://cestlaz.github.io/posts/better-comments/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (emacs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/emacs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 24 Jun 2016 19:28:56 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 7- Navigation with Avy</title><link>http://cestlaz.github.io/posts/using-emacs-7-avy/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Here's a really cool navigation method that I've been meaning to use
+more. Avy is a replacement for ace-jump mode which is an
+implementation of easymotion, a vim plugin.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's pretty cool and lets you quickly navigate to any spot on the
+screen.
+&lt;/p&gt;
+
+&lt;p&gt;
+After triggering avy, or more specifically the &lt;b&gt;&lt;b&gt;avy-goto-char&lt;/b&gt;&lt;/b&gt;
+function, emacs prompts you for a single character. When you type it,
+all instances of the character that start out words change to a
+highlighted letter. Type the highlighted letter and you jump to that
+location.
+&lt;/p&gt;
+
+&lt;p&gt;
+The avy package comes with a bunch of options including a 2 character
+search variant, a timed variant which drops into search, and more.
+&lt;/p&gt;
+
+&lt;p&gt;
+The Avy home page has all the details.
+&lt;/p&gt;
+
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/ziytRbASKeU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Here's the configuration I'm using:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;avy&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:bind&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"M-s"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;avy-goto-char&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+You can check the &lt;a href="https://github.com/abo-abo/avy"&gt;avy home page&lt;/a&gt; for their recommended configuration
+which you get by configuring this way instead:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;avy&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;avy-setup-default&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Avy: &lt;a href="https://github.com/abo-abo/avy"&gt;https://github.com/abo-abo/avy&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code for this video
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-7-avy"&gt;https://github.com/zamansky/using-emacs/tree/lesson-7-avy&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete code built up over all videos:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-7-avy/</guid><pubDate>Fri, 24 Jun 2016 04:00:00 GMT</pubDate></item><item><title>Better Comments or tooling as a time sink</title><link>http://cestlaz.github.io/posts/better-comments/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 The other day my friend and fellow CS Ed Blogger &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; wrote
 about &lt;a href="http://blog.acthompson.net/2016/06/better-comments-in-visual-studio.html"&gt;Better Comments&lt;/a&gt;, an extension for visual studio that displays
 comments that are marked up  with special characters in order to
@@ -345,7 +426,95 @@ Relevant links:
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-5-windows/</guid><pubDate>Tue, 14 Jun 2016 04:00:00 GMT</pubDate></item><item><title>Using Emacs - 4 - Buffers</title><link>http://cestlaz.github.io/posts/using-emacs-4-buffers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-5-windows/</guid><pubDate>Tue, 14 Jun 2016 04:00:00 GMT</pubDate></item><item><title>Using Emacs - Setting up the Package Manager</title><link>http://cestlaz.github.io/posts/using-emacs-1-setup/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+This video will step you through setting up Emacs to use &lt;a href="http://melpa.org/#/"&gt;MELPA&lt;/a&gt; for packages.
+&lt;/p&gt;
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/49kBWM3RQQ8?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;
+We configured emacs by creating a folder named &lt;b&gt;.emacs.d&lt;/b&gt; and creating a
+file within it named &lt;b&gt;init.el&lt;/b&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the contents of that file:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;inhibit-startup-message&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;require&lt;/span&gt; &lt;span class="ss"&gt;'package&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;package-enable-at-startup&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'package-archives&lt;/span&gt;
+	     &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"melpa"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"https://melpa.org/packages/"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-initialize&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; Bootstrap `use-package'&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;unless&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-installed-p&lt;/span&gt; &lt;span class="ss"&gt;'use-package&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-refresh-contents&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-install&lt;/span&gt; &lt;span class="ss"&gt;'use-package&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;try&lt;/span&gt;
+	&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;which-key&lt;/span&gt;
+	&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt; 
+	&lt;span class="nv"&gt;:config&lt;/span&gt;
+	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;which-key-mode&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The last two &lt;b&gt;inituse-package&lt;/b&gt; clauses install two helpful packages:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;b&gt;try&lt;/b&gt;: let's you try packages without installing them.
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;which-key&lt;/b&gt;: brings up help on key combinations.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Relavent links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code for this video:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"&gt;https://github.com/zamansky/using-emacs/tree/lesson-1-setup&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete code built up over all videos:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Melpa and packages
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://melpa.org"&gt;&lt;/a&gt;&lt;a href="http://melpa.org"&gt;http://melpa.org&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/justbur/emacs-which-key"&gt;which-key&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/larstvei/Try"&gt;try&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-1-setup/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item><item><title>Using Emacs - 4 - Buffers</title><link>http://cestlaz.github.io/posts/using-emacs-4-buffers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;iframe width="480" height="270" src="https://www.youtube.com/embed/v5eTK5lC0xs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
@@ -539,95 +708,7 @@ Relevant links:
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-4-buffers/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item><item><title>Using Emacs - Setting up the Package Manager</title><link>http://cestlaz.github.io/posts/using-emacs-1-setup/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-This video will step you through setting up Emacs to use &lt;a href="http://melpa.org/#/"&gt;MELPA&lt;/a&gt; for packages.
-&lt;/p&gt;
-
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/49kBWM3RQQ8?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-
-&lt;p&gt;
-We configured emacs by creating a folder named &lt;b&gt;.emacs.d&lt;/b&gt; and creating a
-file within it named &lt;b&gt;init.el&lt;/b&gt;. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Here's the contents of that file:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;inhibit-startup-message&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;require&lt;/span&gt; &lt;span class="ss"&gt;'package&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;package-enable-at-startup&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'package-archives&lt;/span&gt;
-	     &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"melpa"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"https://melpa.org/packages/"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-initialize&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="c1"&gt;;; Bootstrap `use-package'&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;unless&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-installed-p&lt;/span&gt; &lt;span class="ss"&gt;'use-package&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-refresh-contents&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-install&lt;/span&gt; &lt;span class="ss"&gt;'use-package&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;try&lt;/span&gt;
-	&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;which-key&lt;/span&gt;
-	&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt; 
-	&lt;span class="nv"&gt;:config&lt;/span&gt;
-	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;which-key-mode&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-The last two &lt;b&gt;inituse-package&lt;/b&gt; clauses install two helpful packages:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;b&gt;try&lt;/b&gt;: let's you try packages without installing them.
-&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;which-key&lt;/b&gt;: brings up help on key combinations.
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-Relavent links:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Video series overview page:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Code for this video:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"&gt;https://github.com/zamansky/using-emacs/tree/lesson-1-setup&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Complete code built up over all videos:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Melpa and packages
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://melpa.org"&gt;&lt;/a&gt;&lt;a href="http://melpa.org"&gt;http://melpa.org&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/justbur/emacs-which-key"&gt;which-key&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/larstvei/Try"&gt;try&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-1-setup/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item><item><title>Using Emacs - 3 - How to think about Emacs</title><link>http://cestlaz.github.io/posts/using-emacs-3-elisp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-4-buffers/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item><item><title>Using Emacs - 3 - How to think about Emacs</title><link>http://cestlaz.github.io/posts/using-emacs-3-elisp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/nyQxRarVYH4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
@@ -1006,190 +1087,4 @@ the &lt;b&gt;&lt;b&gt;master&lt;/b&gt;&lt;/b&gt; branch.
 So far, I'm pretty happy with the setup.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>mathjax</category><category>tools</category><guid>http://cestlaz.github.io/posts/2016-04-17-emacs-jekyll-nikola/</guid><pubDate>Sun, 17 Apr 2016 17:12:26 GMT</pubDate></item><item><title>Know your tools - intermediate Emacs</title><link>http://cestlaz.github.io/posts/2015-10-28-emacs-intermediate.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
-div.center {text-align:center;}
-&lt;/style&gt;
-&lt;div id="outline-container-orgheadline1" class="outline-2"&gt;
-&lt;h2 id="orgheadline1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgheadline1"&gt;
-&lt;p&gt;
-A good workman is known by his tools, or so the saying goes. My tools
-of choice are my terminal shell and Emacs.
-&lt;/p&gt;
-
-&lt;p&gt;
-I suppose if I was a full time developer working with a limited set of
-tools I might like an IDE like JetBrains or Eclipse but no matter how
-many alternatives I try, I always end back in Emacs.
-&lt;/p&gt;
-
-&lt;p&gt;
-I recommend that my students spend time not only in Emacs but also in
-tools like Vim or Sublime Text.
-&lt;/p&gt;
-
-&lt;p&gt;
-I do warn them, though, that as a commercial product, Sublime might
-not be around forever, I mean before Sublime was sublime, TextMate was
-sublime. If you go back to the 1980s, Brief was sublime. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Commercial tools come and go but I've been using Emacs since the mid
-eighties.
-&lt;/p&gt;
-
-&lt;p&gt;
-A few students have been asking me for some pointers on going past the
-basics of Emacs so here we go.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-
-&lt;div id="outline-container-orgheadline2" class="outline-2"&gt;
-&lt;h2 id="orgheadline2"&gt;Notes&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgheadline2"&gt;
-&lt;p&gt;
-This post just has some getting started notes. There are mode powerful
-and advanced ways of doing most things.
-&lt;/p&gt;
-
-&lt;p&gt;
-I think I'll just talk about a few of the basics here and will write
-about code development with Emacs in a later post.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-orgheadline3" class="outline-2"&gt;
-&lt;h2 id="orgheadline3"&gt;Starting out&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgheadline3"&gt;
-&lt;p&gt;
-Once you're OK with the basics (by using the built in tutorial or
-on line resources) start to fore yourself to get to know:
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-orgheadline4" class="outline-3"&gt;
-&lt;h3 id="orgheadline4"&gt;Buffers&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgheadline4"&gt;
-&lt;p&gt;
-when you find a new file &lt;b&gt;&lt;b&gt;(C-x C-f)&lt;/b&gt;&lt;/b&gt; it opens it into a new
-buffer. You can also open a new buffer using &lt;b&gt;&lt;b&gt;C-x b&lt;/b&gt;&lt;/b&gt; and rather than
-selecting a buffer typing in a new buffer name.
-&lt;/p&gt;
-
-&lt;p&gt;
-Each buffer can hold a file and you can switch quickly between them
-using &lt;b&gt;&lt;b&gt;C-x b&lt;/b&gt;&lt;/b&gt; and hitting &lt;b&gt;&amp;lt;Enter&amp;gt;&lt;/b&gt;. 
-&lt;/p&gt;
-
-&lt;p&gt;
-You can kill the current buffer with &lt;b&gt;&lt;b&gt;C-x k&lt;/b&gt;&lt;/b&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-Using buffers lets you edit multiple files in a project quickly and
-efficiently.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-orgheadline5" class="outline-3"&gt;
-&lt;h3 id="orgheadline5"&gt;Windows&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgheadline5"&gt;
-&lt;p&gt;
-Your Emacs frame can be split into multiple windows. &lt;b&gt;&lt;b&gt;C-x 2&lt;/b&gt;&lt;/b&gt; splits
-the window top and bottom, &lt;b&gt;&lt;b&gt;C-x3&lt;/b&gt;&lt;/b&gt; left and right. You can switch
-between windows using &lt;b&gt;&lt;b&gt;C-x o&lt;/b&gt;&lt;/b&gt; for other window. Switching to one
-window is done with &lt;b&gt;&lt;b&gt;C-x 1&lt;/b&gt;&lt;/b&gt;.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div id="outline-container-orgheadline6" class="outline-2"&gt;
-&lt;h2 id="orgheadline6"&gt;Getting Help&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgheadline6"&gt;
-&lt;p&gt;
-Get to know the built in help. You can always use functions like
-&lt;b&gt;&lt;b&gt;M-x describe-function&lt;/b&gt;&lt;/b&gt; or &lt;b&gt;&lt;b&gt;M-x describe-key&lt;/b&gt;&lt;/b&gt; and of course
-you can use completion to help speed things up but the help functions
-are bound to:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;C-h k  for describe key&lt;/li&gt;
-&lt;li&gt;C-h f  for describe function&lt;/li&gt;
-&lt;li&gt;C-h a for search for command&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-You can usually type &lt;b&gt;&lt;b&gt;q&lt;/b&gt;&lt;/b&gt; to close the help.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-orgheadline7" class="outline-2"&gt;
-&lt;h2 id="orgheadline7"&gt;Navigation&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgheadline7"&gt;
-&lt;p&gt;
-Use search for navigation rather than arrow keys.
-&lt;/p&gt;
-
-&lt;p&gt;
-This can change the way you edit. 
-&lt;/p&gt;
-
-&lt;p&gt;
-For example ,if I wanted to go up to the word Navigation, above,
-rather than using traditional motion keys, I'd do a reverse search
-(&lt;b&gt;&lt;b&gt;C-r&lt;/b&gt;&lt;/b&gt;) and search for Nav.
-&lt;/p&gt;
-
-&lt;p&gt;
-Incremental search forward (&lt;b&gt;&lt;b&gt;C-s&lt;/b&gt;&lt;/b&gt;) and back are your friends.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-orgheadline8" class="outline-2"&gt;
-&lt;h2 id="orgheadline8"&gt;Packages&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgheadline8"&gt;
-&lt;p&gt;
-You can check out my emacs configuration here: 
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;a href="https://github.com/zamansky/dotemacs"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/dotemacs"&gt;https://github.com/zamansky/dotemacs&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-You can find basic installation instructions there or you can use the
-interactive package manager, invoking it with &lt;b&gt;&lt;b&gt;M-x list-packages&lt;/b&gt;&lt;/b&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-Some of my favorite general purpose packages are:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/abo-abo/swiper"&gt;Swiper&lt;/a&gt; - for navigation and finding files&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/nflath/hungry-delete"&gt;Hungry Delete&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/magnars/expand-region.el"&gt;Expand Region&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/abo-abo/ace-window"&gt;Ace Window&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-orgheadline9" class="outline-2"&gt;
-&lt;h2 id="orgheadline9"&gt;Next steps&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgheadline9"&gt;
-&lt;p&gt;
-We haven't even talked about code development or killer packages like
-org-mode but I think this will do for a start.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/2015-10-28-emacs-intermediate.html/</guid><pubDate>Wed, 28 Oct 2015 04:00:00 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>emacs</category><category>mathjax</category><category>tools</category><guid>http://cestlaz.github.io/posts/2016-04-17-emacs-jekyll-nikola/</guid><pubDate>Sun, 17 Apr 2016 17:12:26 GMT</pubDate></item></channel></rss>
