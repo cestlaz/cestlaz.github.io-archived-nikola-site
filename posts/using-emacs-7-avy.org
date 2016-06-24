@@ -1,0 +1,64 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 7- Navigation with Avy
+.. slug: using-emacs-7-avy
+.. date: 2016-06-24
+.. tags: emacs, tools
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+
+Here's a really cool navigation method that I've been meaning to use
+more. Avy is a replacement for ace-jump mode which is an
+implementation of easymotion, a vim plugin.
+
+It's pretty cool and lets you quickly navigate to any spot on the
+screen.
+
+After triggering avy, or more specifically the **avy-goto-char**
+function, emacs prompts you for a single character. When you type it,
+all instances of the character that start out words change to a
+highlighted letter. Type the highlighted letter and you jump to that
+location.
+
+The avy package comes with a bunch of options including a 2 character
+search variant, a timed variant which drops into search, and more.
+
+The Avy home page has all the details.
+
+
+#+BEGIN_HTML
+<iframe width="420" height="315" src="https://www.youtube.com/embed/ziytRbASKeU" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+Here's the configuration I'm using:
+
+#+BEGIN_SRC emacs-lisp
+(use-package avy
+  :ensure t
+  :bind ("M-s" . avy-goto-char))
+#+END_SRC
+
+You can check the [[https://github.com/abo-abo/avy][avy home page]] for their recommended configuration
+which you get by configuring this way instead:
+
+#+BEGIN_SRC emacs-lisp
+(use-package avy
+  :ensure t
+  :config
+  (avy-setup-default))
+#+END_SRC
+
+
+Relevant links:
+- Avy: https://github.com/abo-abo/avy
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code for this video
+  - https://github.com/zamansky/using-emacs/tree/lesson-7-avy
+- Complete code built up over all videos:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
