@@ -1,0 +1,65 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 8 - Autocomplete
+.. slug: using-emacs-8-autocomplete
+.. date: 2016-06-26
+.. tags: emacs, tools
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+Out of the box, Emacs supports various types of completion.
+
+Tab completion for filenames and commands basically work right out of
+the box and Emacs has built in modes like [[https://www.emacswiki.org/emacs/AbbrevMode][Abbrev]], [[https://www.emacswiki.org/emacs/HippieExpand][Hippie Expand]], and
+[[https://www.gnu.org/software/emacs/manual/html_node/emacs/Dynamic-Abbrevs.html][Dabbrev]] provide a manner of completion for in buffer text.
+
+I briefly show Dabbrev (Dynamic Abbrevs) in the video and if you're
+interested in the others, follow the links.
+
+We saw ow the built in Ido mode and third party packages like Ivy,
+which I prefer, and Helm make for better completions on functions,
+filenames, and the like and Emacs also has third party packages for in
+buffer completion. 
+
+The two main contenders are [[https://github.com/auto-complete/auto-complete][auto-complete Mode]] and [[http://company-mode.github.io/%0A][company Mode]]. I use
+auto-complete, others swear by company. The video shows the basics of
+auto-complete mode but check both out and decide for yourself.
+
+If you feel strongly about one or the other, please share in the
+comments.
+
+
+Here's a basic configuration:
+
+
+#+BEGIN_SRC emacs-lisp
+(use-package auto-complete
+  :ensure t
+  :init
+  (progn
+    (ac-config-default)
+    (global-auto-complete-mode t)
+    ))
+#+END_SRC
+
+We'll modify this as move along in the series.
+
+Here's the video:
+
+#+BEGIN_HTML
+<iframe width="420" height="315" src="https://www.youtube.com/embed/5FBVhdyU4dA" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+Relevant links:
+- Autocomplete home page: https://github.com/auto-complete/auto-complete
+- Autocomplete manual: http://auto-complete.org/doc/manual.html
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code for this video
+  - https://github.com/zamansky/using-emacs/tree/lesson-8-autocompete
+- Complete code built up over all videos:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
