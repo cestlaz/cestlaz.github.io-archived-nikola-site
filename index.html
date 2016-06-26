@@ -20,7 +20,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-21.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-7-avy/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-8-autocomplete/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -87,7 +87,113 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-7-avy/" class="u-url">Using Emacs - 7- Navigation with Avy</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-8-autocomplete/" class="u-url">Using Emacs - 8 - Autocomplete</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/using-emacs-8-autocomplete/" rel="bookmark"><time class="published dt-published" datetime="2016-06-26T00:00:00-04:00" title="2016-06-26 00:00">2016-06-26 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/using-emacs-8-autocomplete/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-8-autocomplete.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Out of the box, Emacs supports various types of completion.
+</p>
+
+<p>
+Tab completion for filenames and commands basically work right out of
+the box and Emacs has built in modes like <a href="https://www.emacswiki.org/emacs/AbbrevMode">Abbrev</a>, <a href="https://www.emacswiki.org/emacs/HippieExpand">Hippie Expand</a>, and
+<a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Dynamic-Abbrevs.html">Dabbrev</a> provide a manner of completion for in buffer text.
+</p>
+
+<p>
+I briefly show Dabbrev (Dynamic Abbrevs) in the video and if you're
+interested in the others, follow the links.
+</p>
+
+<p>
+We saw ow the built in Ido mode and third party packages like Ivy,
+which I prefer, and Helm make for better completions on functions,
+filenames, and the like and Emacs also has third party packages for in
+buffer completion. 
+</p>
+
+<p>
+The two main contenders are <a href="https://github.com/auto-complete/auto-complete">auto-complete Mode</a> and <a href="http://company-mode.github.io/%0A">company Mode</a>. I use
+auto-complete, others swear by company. The video shows the basics of
+auto-complete mode but check both out and decide for yourself.
+</p>
+
+<p>
+If you feel strongly about one or the other, please share in the
+comments.
+</p>
+
+
+<p>
+Here's a basic configuration:
+</p>
+
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">auto-complete</span>
+  <span class="nv">:ensure</span> <span class="nv">t</span>
+  <span class="nv">:init</span>
+  <span class="p">(</span><span class="nf">progn</span>
+    <span class="p">(</span><span class="nf">ac-config-default</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-auto-complete-mode</span> <span class="nv">t</span><span class="p">)</span>
+    <span class="p">))</span>
+</pre></div>
+
+<p>
+We'll modify this as move along in the series.
+</p>
+
+<p>
+Here's the video:
+</p>
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/5FBVhdyU4dA" frameborder="0" allowfullscreen></iframe>
+
+<p>
+Relevant links:
+</p>
+<ul class="org-ul">
+<li>Autocomplete home page: <a href="https://github.com/auto-complete/auto-complete">https://github.com/auto-complete/auto-complete</a>
+</li>
+<li>Autocomplete manual: <a href="http://auto-complete.org/doc/manual.html">http://auto-complete.org/doc/manual.html</a>
+</li>
+<li>Video series overview page:
+<ul class="org-ul">
+<li>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</li>
+</ul>
+</li>
+<li>Code for this video
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/lesson-8-autocompete">https://github.com/zamansky/using-emacs/tree/lesson-8-autocompete</a>
+</li>
+</ul>
+</li>
+<li>Complete code built up over all videos:
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-7-avy/" class="u-url">Using Emacs - 7- Navigation with Avy</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
@@ -1215,79 +1321,6 @@ Relevant links:
 <ul class="org-ul">
 <li>
 <a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers"></a><a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers">https://github.com/zamansky/using-emacs/tree/lesson-4-buffers</a>
-</li>
-</ul>
-</li>
-<li>Complete code built up over all videos:
-<ul class="org-ul">
-<li>
-<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-3-elisp/" class="u-url">Using Emacs - 3 - How to think about Emacs</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/using-emacs-3-elisp/" rel="bookmark"><time class="published dt-published" datetime="2016-05-23T13:29:36-04:00" title="2016-05-23 13:29">2016-05-23 13:29</time></a></p>
-                <p class="commentline">            <a href="posts/using-emacs-3-elisp/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-3-elisp.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"></h2>
-<div class="outline-text-2" id="text-1">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nyQxRarVYH4" frameborder="0" allowfullscreen></iframe>
-
-<p>
-Many people think of Emacs as an editor. I like to think of it as an Elisp interpreter where you live code documents.
-</p>
-
-<p>
-In some ways, it's like those new fangled interactive programming environments where you type in code and the updates are reflected instantly. 
-</p>
-
-<p>
-In this video, I try to explain the way I think about Emacs and why it's so cool.
-</p>
-
-<p>
-The only change we made to our configuration was adding:
-</p>
-
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">tool-bar-mode</span> <span class="mi">-1</span><span class="p">)</span>
-</pre></div>
-
-<p>
-Which gets rid of the tool bar at the top.
-</p>
-
-<p>
-Next time, we start talking about efficiently using Emacs.
-</p>
-
-<p>
-Relevant links:
-</p>
-<ul class="org-ul">
-<li>Video series overview page:
-<ul class="org-ul">
-<li>
-<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
-</li>
-</ul>
-</li>
-<li>Code for this video:
-<ul class="org-ul">
-<li>
-<a href="https://github.com/zamansky/using-emacs/tree/lesson-2-org"></a><a href="https://github.com/zamansky/using-emacs/tree/lesson-3-elisp">https://github.com/zamansky/using-emacs/tree/lesson-3-elisp</a>
 </li>
 </ul>
 </li>
