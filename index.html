@@ -20,7 +20,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-21.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-8-autocomplete/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-9-themes/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -87,7 +87,117 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-8-autocomplete/" class="u-url">Using Emacs - 8 - Autocomplete</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-9-themes/" class="u-url">Using Emacs - 9 - Themes</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/using-emacs-9-themes/" rel="bookmark"><time class="published dt-published" datetime="2016-06-28T00:00:00-04:00" title="2016-06-28 00:00">2016-06-28 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/using-emacs-9-themes/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-9-themes.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Now that we have a nice basic configuration, let's make Emacs look a
+little nicer.
+</p>
+
+<p>
+Like most editors, Emacs can be extensively themed. 
+</p>
+
+<p>
+As shown in the video, you can quickly see the built in themes using
+the <b><b>customize-themes</b></b> command.
+</p>
+
+<p>
+You can load one of these themes by using the <b><b>load-theme</b></b> command
+interactively or, more likely by putting:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">load-theme</span> <span class="ss">'leuven</span> <span class="nv">t</span><span class="p">)</span>
+</pre></div>
+
+<p>
+in your init.el. The above code loads the built in <b><b>leuven</b></b> theme.
+</p>
+
+<p>
+I prefer the <b><b>zenburn</b></b> theme. For that, you have to load the zenburn
+package. Here's the code in our init.el:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">zenburn-theme</span>
+  <span class="nv">:ensure</span> <span class="nv">t</span>
+  <span class="nv">:config</span> <span class="p">(</span><span class="nf">load-theme</span> <span class="ss">'zenburn</span> <span class="nv">t</span><span class="p">))</span>
+</pre></div>
+
+<p>
+In the video, I also mention the color theme package.
+</p>
+
+<p>
+So, customize away.
+</p>
+
+<p>
+In the links, you'll find some links to some Emacs theme gallery sites
+to help find something you like.
+</p>
+
+<p>
+Thanks for reading and watching and as always, please leave comments,
+suggestions and favorite themes.
+</p>
+
+<p>
+Here's the video:
+</p>
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/cod2ABxlrV8" frameborder="0" allowfullscreen></iframe>
+
+<p>
+Relevant links:
+</p>
+<ul class="org-ul">
+<li>Zenburn theme home page: <a href="https://github.com/bbatsov/zenburn-emacs">https://github.com/bbatsov/zenburn-emacs</a>
+</li>
+<li>Emacs theme gallery: <a href="https://pawelbx.github.io/emacs-theme-gallery/">https://pawelbx.github.io/emacs-theme-gallery/</a>
+</li>
+<li>Another one: <a href="https://emacsthemes.com/">https://emacsthemes.com/</a>
+</li>
+<li>Video series overview page:
+<ul class="org-ul">
+<li>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</li>
+</ul>
+</li>
+<li>Code for this video
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/lesson-9-themes">https://github.com/zamansky/using-emacs/tree/lesson-9-themes</a>
+</li>
+</ul>
+</li>
+<li>Complete code built up over all videos:
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-8-autocomplete/" class="u-url">Using Emacs - 8 - Autocomplete</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
@@ -1132,208 +1242,6 @@ like Math Circles (and, if I do say so myself, programs like our own
 <a href="http://cstuy.org">CSTUY</a>) and it's also critical that we work to try to bring community
 and culture to our regular classes.
 </p>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-4-buffers/" class="u-url">Using Emacs - 4 - Buffers</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/using-emacs-4-buffers/" rel="bookmark"><time class="published dt-published" datetime="2016-05-23T13:29:36-04:00" title="2016-05-23 13:29">2016-05-23 13:29</time></a></p>
-                <p class="commentline">            <a href="posts/using-emacs-4-buffers/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-4-buffers.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"></h2>
-<div class="outline-text-2" id="text-1">
-<iframe width="480" height="270" src="https://www.youtube.com/embed/v5eTK5lC0xs" frameborder="0" allowfullscreen></iframe>
-
-<p>
-Now that we're past the intro material, we'll start looking at emacs
-features one at a time. This will let you focus on using the one
-feature we're covering, fit it into your work flow, and really get
-comfortable with it. 
-</p>
-
-<p>
-This time we'll dive into using Emacs effectively with buffers.
-</p>
-
-<p>
-Watch the video and then make a real effort to use buffers over the
-next few emacs sessions. Before you know it, they'll be a natural part
-of your work flow.
-</p>
-
-<p>
-The idea of incrementally learning a tool this way seems to be called
-<a href="http://sachachua.com/blog/2015/01/developing-emacs-micro-habits-text-automation/">developing micro-habits</a> and I first read about the idea from <a href="https://twitter.com/sachac">Sacha
-Chua</a> who is an amazing member of the emacs community.
-</p>
-
-<p>
-When seeing beginners, I'll frequently observe this work flow:
-</p>
-
-<ul class="org-ul">
-<li>Open a terminal
-</li>
-<li>Load emacs on a file
-</li>
-<li>Edit the file
-</li>
-<li>Save and quit emacs
-</li>
-<li>Try to compile and run the program (since usually this is in a programming class)
-</li>
-<li>repeat
-</li>
-</ul>
-<p>
-If the beginner needs to see multiple files at once, they fire up multiple separate emacs.
-</p>
-
-<p>
-All of this causes me physical pain.
-</p>
-
-<p>
-In emacs, your editor can load several buffers at once, each
-associated with a separate file. You can quickly switch between them,
-search across them, and more. The video will get you started.
-</p>
-
-<p>
-The video also mentions <b>ido</b> mode. To set up <b>ido</b> mode, add the
-following code to your init.el:
-</p>
-
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">setq</span> <span class="nv">ido-enable-flex-matching</span> <span class="nv">t</span><span class="p">)</span>
-<span class="p">(</span><span class="nf">setq</span> <span class="nv">ido-everywhere</span> <span class="nv">t</span><span class="p">)</span>
-<span class="p">(</span><span class="nf">ido-mode</span> <span class="mi">1</span><span class="p">)</span>
-</pre></div>
-
-<p>
-And here's a great little write up on it by <a href="https://www.masteringemacs.org/reading-guide">Mickey Petersen</a>:
-</p>
-
-<p>
-<a href="https://www.masteringemacs.org/article/introduction-to-ido-mode">https://www.masteringemacs.org/article/introduction-to-ido-mode</a>
-</p>
-
-
-<p>
-As I mentioned in the video, I actually use another mode for completions (<a href="https://github.com/abo-abo/swiper">swiper</a>),
-which I'll cover in a future video and another popular option is <a href="https://github.com/emacs-helm/helm">helm</a>
-which we'll also cover.
-</p>
-
-<p>
-For buffers, the keys to remember are:
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<colgroup>
-<col class="left">
-<col class="left">
-</colgroup>
-<thead><tr>
-<th scope="col" class="left">Key</th>
-<th scope="col" class="left">Command</th>
-</tr></thead>
-<tbody>
-<tr>
-<td class="left">C-x b</td>
-<td class="left">switch-buffer</td>
-</tr>
-<tr>
-<td class="left">C-x C-b</td>
-<td class="left">list-buffers</td>
-</tr>
-</tbody>
-</table>
-<p>
-To use ibuffer, which is more powerful than list-buffers you can add
-either:
-</p>
-
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">defalias</span> <span class="ss">'list-buffers</span> <span class="ss">'ibuffer</span><span class="p">)</span> <span class="c1">; make ibuffer default</span>
-</pre></div>
-
-<p>
-Or if you want to open ibuffer in another Window:
-</p>
-
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">defalias</span> <span class="ss">'list-buffers</span> <span class="ss">'ibuffer-other-window</span><span class="p">)</span> <span class="c1">; make ibuffer default</span>
-</pre></div>
-
-<p>
-Here are a couple of useful links on ibuffer and buffer switching:
-</p>
-<ul class="org-ul">
-<li>
-<a href="http://ergoemacs.org/emacs/emacs_buffer_switching.html">http://ergoemacs.org/emacs/emacs_buffer_switching.html</a>
-</li>
-<li>
-<a href="https://mytechrants.wordpress.com/2010/03/25/emacs-tip-of-the-day-start-using-ibuffer-asap/">https://mytechrants.wordpress.com/2010/03/25/emacs-tip-of-the-day-start-using-ibuffer-asap/</a>
-</li>
-</ul>
-<p>
-Finally, if you like a tab bar, you can add the following to your
-init.el:
-</p>
-
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">tabbar</span>
-  <span class="nv">:ensure</span> <span class="nv">t</span>
-  <span class="nv">:config</span> <span class="p">(</span><span class="nf">tabbar-mode</span> <span class="mi">1</span><span class="p">)</span>
-<span class="p">)</span>
-</pre></div>
-
-<p>
-There's also a package <a href="https://github.com/mattfidler/tabbar-ruler.el">tabbar-ruler</a> which is supposed to make the
-tabbar look nicer but since I don't use the tabbar at all, I haven't
-checked it out.
-</p>
-
-<p>
-Hope this gets you using emacs more effectively.
-</p>
-
-<p>
-Stay tuned for our next video on window management.
-</p>
-
-
-<p>
-Relevant links:
-</p>
-<ul class="org-ul">
-<li>Video series overview page:
-<ul class="org-ul">
-<li>
-<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
-</li>
-</ul>
-</li>
-<li>Code for this video:
-<ul class="org-ul">
-<li>
-<a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers"></a><a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers">https://github.com/zamansky/using-emacs/tree/lesson-4-buffers</a>
-</li>
-</ul>
-</li>
-<li>Complete code built up over all videos:
-<ul class="org-ul">
-<li>
-<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
     </div>
     </article>
 </div>

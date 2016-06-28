@@ -1,5 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 26 Jun 2016 13:42:02 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 8 - Autocomplete</title><link>http://cestlaz.github.io/posts/using-emacs-8-autocomplete/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 28 Jun 2016 18:36:00 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 9 - Themes</title><link>http://cestlaz.github.io/posts/using-emacs-9-themes/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Now that we have a nice basic configuration, let's make Emacs look a
+little nicer.
+&lt;/p&gt;
+
+&lt;p&gt;
+Like most editors, Emacs can be extensively themed. 
+&lt;/p&gt;
+
+&lt;p&gt;
+As shown in the video, you can quickly see the built in themes using
+the &lt;b&gt;&lt;b&gt;customize-themes&lt;/b&gt;&lt;/b&gt; command.
+&lt;/p&gt;
+
+&lt;p&gt;
+You can load one of these themes by using the &lt;b&gt;&lt;b&gt;load-theme&lt;/b&gt;&lt;/b&gt; command
+interactively or, more likely by putting:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;load-theme&lt;/span&gt; &lt;span class="ss"&gt;'leuven&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+in your init.el. The above code loads the built in &lt;b&gt;&lt;b&gt;leuven&lt;/b&gt;&lt;/b&gt; theme.
+&lt;/p&gt;
+
+&lt;p&gt;
+I prefer the &lt;b&gt;&lt;b&gt;zenburn&lt;/b&gt;&lt;/b&gt; theme. For that, you have to load the zenburn
+package. Here's the code in our init.el:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;zenburn-theme&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;load-theme&lt;/span&gt; &lt;span class="ss"&gt;'zenburn&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+In the video, I also mention the color theme package.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, customize away.
+&lt;/p&gt;
+
+&lt;p&gt;
+In the links, you'll find some links to some Emacs theme gallery sites
+to help find something you like.
+&lt;/p&gt;
+
+&lt;p&gt;
+Thanks for reading and watching and as always, please leave comments,
+suggestions and favorite themes.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the video:
+&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/cod2ABxlrV8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Zenburn theme home page: &lt;a href="https://github.com/bbatsov/zenburn-emacs"&gt;https://github.com/bbatsov/zenburn-emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Emacs theme gallery: &lt;a href="https://pawelbx.github.io/emacs-theme-gallery/"&gt;https://pawelbx.github.io/emacs-theme-gallery/&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Another one: &lt;a href="https://emacsthemes.com/"&gt;https://emacsthemes.com/&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code for this video
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-9-themes"&gt;https://github.com/zamansky/using-emacs/tree/lesson-9-themes&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete code built up over all videos:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-9-themes/</guid><pubDate>Tue, 28 Jun 2016 04:00:00 GMT</pubDate></item><item><title>Using Emacs - 8 - Autocomplete</title><link>http://cestlaz.github.io/posts/using-emacs-8-autocomplete/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -918,198 +1011,4 @@ Until we win back public education it's important to support programs
 like Math Circles (and, if I do say so myself, programs like our own
 &lt;a href="http://cstuy.org"&gt;CSTUY&lt;/a&gt;) and it's also critical that we work to try to bring community
 and culture to our regular classes.
-&lt;/p&gt;</description><category>curriculum</category><category>education</category><category>pedagogy</category><category>policy</category><guid>http://cestlaz.github.io/posts/navajo-circles/</guid><pubDate>Wed, 08 Jun 2016 11:03:55 GMT</pubDate></item><item><title>Using Emacs - 4 - Buffers</title><link>http://cestlaz.github.io/posts/using-emacs-4-buffers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;iframe width="480" height="270" src="https://www.youtube.com/embed/v5eTK5lC0xs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;
-Now that we're past the intro material, we'll start looking at emacs
-features one at a time. This will let you focus on using the one
-feature we're covering, fit it into your work flow, and really get
-comfortable with it. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This time we'll dive into using Emacs effectively with buffers.
-&lt;/p&gt;
-
-&lt;p&gt;
-Watch the video and then make a real effort to use buffers over the
-next few emacs sessions. Before you know it, they'll be a natural part
-of your work flow.
-&lt;/p&gt;
-
-&lt;p&gt;
-The idea of incrementally learning a tool this way seems to be called
-&lt;a href="http://sachachua.com/blog/2015/01/developing-emacs-micro-habits-text-automation/"&gt;developing micro-habits&lt;/a&gt; and I first read about the idea from &lt;a href="https://twitter.com/sachac"&gt;Sacha
-Chua&lt;/a&gt; who is an amazing member of the emacs community.
-&lt;/p&gt;
-
-&lt;p&gt;
-When seeing beginners, I'll frequently observe this work flow:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Open a terminal
-&lt;/li&gt;
-&lt;li&gt;Load emacs on a file
-&lt;/li&gt;
-&lt;li&gt;Edit the file
-&lt;/li&gt;
-&lt;li&gt;Save and quit emacs
-&lt;/li&gt;
-&lt;li&gt;Try to compile and run the program (since usually this is in a programming class)
-&lt;/li&gt;
-&lt;li&gt;repeat
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-If the beginner needs to see multiple files at once, they fire up multiple separate emacs.
-&lt;/p&gt;
-
-&lt;p&gt;
-All of this causes me physical pain.
-&lt;/p&gt;
-
-&lt;p&gt;
-In emacs, your editor can load several buffers at once, each
-associated with a separate file. You can quickly switch between them,
-search across them, and more. The video will get you started.
-&lt;/p&gt;
-
-&lt;p&gt;
-The video also mentions &lt;b&gt;ido&lt;/b&gt; mode. To set up &lt;b&gt;ido&lt;/b&gt; mode, add the
-following code to your init.el:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;ido-enable-flex-matching&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;ido-everywhere&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ido-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-And here's a great little write up on it by &lt;a href="https://www.masteringemacs.org/reading-guide"&gt;Mickey Petersen&lt;/a&gt;:
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;a href="https://www.masteringemacs.org/article/introduction-to-ido-mode"&gt;https://www.masteringemacs.org/article/introduction-to-ido-mode&lt;/a&gt;
-&lt;/p&gt;
-
-
-&lt;p&gt;
-As I mentioned in the video, I actually use another mode for completions (&lt;a href="https://github.com/abo-abo/swiper"&gt;swiper&lt;/a&gt;),
-which I'll cover in a future video and another popular option is &lt;a href="https://github.com/emacs-helm/helm"&gt;helm&lt;/a&gt;
-which we'll also cover.
-&lt;/p&gt;
-
-&lt;p&gt;
-For buffers, the keys to remember are:
-&lt;/p&gt;
-
-&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
-
-
-&lt;colgroup&gt;
-&lt;col class="left"&gt;
-
-&lt;col class="left"&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th scope="col" class="left"&gt;Key&lt;/th&gt;
-&lt;th scope="col" class="left"&gt;Command&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class="left"&gt;C-x b&lt;/td&gt;
-&lt;td class="left"&gt;switch-buffer&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="left"&gt;C-x C-b&lt;/td&gt;
-&lt;td class="left"&gt;list-buffers&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-
-&lt;p&gt;
-To use ibuffer, which is more powerful than list-buffers you can add
-either:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defalias&lt;/span&gt; &lt;span class="ss"&gt;'list-buffers&lt;/span&gt; &lt;span class="ss"&gt;'ibuffer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; make ibuffer default&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Or if you want to open ibuffer in another Window:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defalias&lt;/span&gt; &lt;span class="ss"&gt;'list-buffers&lt;/span&gt; &lt;span class="ss"&gt;'ibuffer-other-window&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; make ibuffer default&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Here are a couple of useful links on ibuffer and buffer switching:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://ergoemacs.org/emacs/emacs_buffer_switching.html"&gt;http://ergoemacs.org/emacs/emacs_buffer_switching.html&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://mytechrants.wordpress.com/2010/03/25/emacs-tip-of-the-day-start-using-ibuffer-asap/"&gt;https://mytechrants.wordpress.com/2010/03/25/emacs-tip-of-the-day-start-using-ibuffer-asap/&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;
-Finally, if you like a tab bar, you can add the following to your
-init.el:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;tabbar&lt;/span&gt;
-  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-  &lt;span class="nv"&gt;:config&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;tabbar-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-There's also a package &lt;a href="https://github.com/mattfidler/tabbar-ruler.el"&gt;tabbar-ruler&lt;/a&gt; which is supposed to make the
-tabbar look nicer but since I don't use the tabbar at all, I haven't
-checked it out.
-&lt;/p&gt;
-
-&lt;p&gt;
-Hope this gets you using emacs more effectively.
-&lt;/p&gt;
-
-&lt;p&gt;
-Stay tuned for our next video on window management.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-Relevant links:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Video series overview page:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Code for this video:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers"&gt;https://github.com/zamansky/using-emacs/tree/lesson-4-buffers&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Complete code built up over all videos:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-4-buffers/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;</description><category>curriculum</category><category>education</category><category>pedagogy</category><category>policy</category><guid>http://cestlaz.github.io/posts/navajo-circles/</guid><pubDate>Wed, 08 Jun 2016 11:03:55 GMT</pubDate></item></channel></rss>

@@ -5,9 +5,9 @@ article: http://ogp.me/ns/article#
 " lang="en">
 <head>
 <meta charset="utf-8">
-<base href="http://cestlaz.github.io/posts/using-emacs-8-autocomplete/">
+<base href="http://cestlaz.github.io/posts/using-emacs-9-themes/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Using Emacs - 8 - Autocomplete | C'est la Z</title>
+<title>Using Emacs - 9 - Themes | C'est la Z</title>
 <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
@@ -17,21 +17,24 @@ article: http://ogp.me/ns/article#
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="../../index.atom">
-<link rel="canonical" href="http://cestlaz.github.io/posts/using-emacs-8-autocomplete/">
+<link rel="canonical" href="http://cestlaz.github.io/posts/using-emacs-9-themes/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
-<link rel="prev" href="../using-emacs-7-avy/" title="Using Emacs - 7- Navigation with Avy" type="text/html">
-<link rel="next" href="../using-emacs-9-themes/" title="Using Emacs - 9 - Themes" type="text/html">
+<link rel="prev" href="../using-emacs-8-autocomplete/" title="Using Emacs - 8 - Autocomplete" type="text/html">
 <meta property="og:site_name" content="C'est la Z">
-<meta property="og:title" content="Using Emacs - 8 - Autocomplete">
-<meta property="og:url" content="http://cestlaz.github.io/posts/using-emacs-8-autocomplete/">
-<meta property="og:description" content="Out of the box, Emacs supports various types of completion.
+<meta property="og:title" content="Using Emacs - 9 - Themes">
+<meta property="og:url" content="http://cestlaz.github.io/posts/using-emacs-9-themes/">
+<meta property="og:description" content="Now that we have a nice basic configuration, let's make Emacs look a
+little nicer.
 
 
 
-Tab completion for filenames and commands basically work right out of
-the box and Emacs has built in modes like Abbrev, Hippie Expand, an">
+Like most editors, Emacs can be extensively themed. 
+
+
+
+As shown in the video, you can quickly see the built in th">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2016-06-26T00:00:00-04:00">
+<meta property="article:published_time" content="2016-06-28T00:00:00-04:00">
 <meta property="article:tag" content="emacs">
 <meta property="article:tag" content="tools">
 </head>
@@ -98,14 +101,14 @@ the box and Emacs has built in modes like Abbrev, Hippie Expand, an">
 						<div class="col-md-8">
 				
 								
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Using Emacs - 8 - Autocomplete</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Using Emacs - 9 - Themes</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                     Mike Zamansky
             </span></p>
-            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2016-06-26T00:00:00-04:00" itemprop="datePublished" title="2016-06-26 00:00">2016-06-26 00:00</time></a></p>
-                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-8-autocomplete.html">Comments</a>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2016-06-28T00:00:00-04:00" itemprop="datePublished" title="2016-06-28 00:00">2016-06-28 00:00</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-9-themes.html">Comments</a>
 
 
             
@@ -117,70 +120,74 @@ the box and Emacs has built in modes like Abbrev, Hippie Expand, an">
 <h2 id="sec-1"></h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Out of the box, Emacs supports various types of completion.
+Now that we have a nice basic configuration, let's make Emacs look a
+little nicer.
 </p>
 
 <p>
-Tab completion for filenames and commands basically work right out of
-the box and Emacs has built in modes like <a href="https://www.emacswiki.org/emacs/AbbrevMode">Abbrev</a>, <a href="https://www.emacswiki.org/emacs/HippieExpand">Hippie Expand</a>, and
-<a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Dynamic-Abbrevs.html">Dabbrev</a> provide a manner of completion for in buffer text.
+Like most editors, Emacs can be extensively themed. 
 </p>
 
 <p>
-I briefly show Dabbrev (Dynamic Abbrevs) in the video and if you're
-interested in the others, follow the links.
+As shown in the video, you can quickly see the built in themes using
+the <b><b>customize-themes</b></b> command.
 </p>
 
 <p>
-We saw ow the built in Ido mode and third party packages like Ivy,
-which I prefer, and Helm make for better completions on functions,
-filenames, and the like and Emacs also has third party packages for in
-buffer completion. 
+You can load one of these themes by using the <b><b>load-theme</b></b> command
+interactively or, more likely by putting:
 </p>
 
-<p>
-The two main contenders are <a href="https://github.com/auto-complete/auto-complete">auto-complete Mode</a> and <a href="http://company-mode.github.io/%0A">company Mode</a>. I use
-auto-complete, others swear by company. The video shows the basics of
-auto-complete mode but check both out and decide for yourself.
-</p>
-
-<p>
-If you feel strongly about one or the other, please share in the
-comments.
-</p>
-
-
-<p>
-Here's a basic configuration:
-</p>
-
-
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">auto-complete</span>
-  <span class="nv">:ensure</span> <span class="nv">t</span>
-  <span class="nv">:init</span>
-  <span class="p">(</span><span class="nf">progn</span>
-    <span class="p">(</span><span class="nf">ac-config-default</span><span class="p">)</span>
-    <span class="p">(</span><span class="nf">global-auto-complete-mode</span> <span class="nv">t</span><span class="p">)</span>
-    <span class="p">))</span>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">load-theme</span> <span class="ss">'leuven</span> <span class="nv">t</span><span class="p">)</span>
 </pre></div>
 
 <p>
-We'll modify this as move along in the series.
+in your init.el. The above code loads the built in <b><b>leuven</b></b> theme.
+</p>
+
+<p>
+I prefer the <b><b>zenburn</b></b> theme. For that, you have to load the zenburn
+package. Here's the code in our init.el:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">zenburn-theme</span>
+  <span class="nv">:ensure</span> <span class="nv">t</span>
+  <span class="nv">:config</span> <span class="p">(</span><span class="nf">load-theme</span> <span class="ss">'zenburn</span> <span class="nv">t</span><span class="p">))</span>
+</pre></div>
+
+<p>
+In the video, I also mention the color theme package.
+</p>
+
+<p>
+So, customize away.
+</p>
+
+<p>
+In the links, you'll find some links to some Emacs theme gallery sites
+to help find something you like.
+</p>
+
+<p>
+Thanks for reading and watching and as always, please leave comments,
+suggestions and favorite themes.
 </p>
 
 <p>
 Here's the video:
 </p>
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/5FBVhdyU4dA" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/cod2ABxlrV8" frameborder="0" allowfullscreen></iframe>
 
 <p>
 Relevant links:
 </p>
 <ul class="org-ul">
-<li>Autocomplete home page: <a href="https://github.com/auto-complete/auto-complete">https://github.com/auto-complete/auto-complete</a>
+<li>Zenburn theme home page: <a href="https://github.com/bbatsov/zenburn-emacs">https://github.com/bbatsov/zenburn-emacs</a>
 </li>
-<li>Autocomplete manual: <a href="http://auto-complete.org/doc/manual.html">http://auto-complete.org/doc/manual.html</a>
+<li>Emacs theme gallery: <a href="https://pawelbx.github.io/emacs-theme-gallery/">https://pawelbx.github.io/emacs-theme-gallery/</a>
+</li>
+<li>Another one: <a href="https://emacsthemes.com/">https://emacsthemes.com/</a>
 </li>
 <li>Video series overview page:
 <ul class="org-ul">
@@ -192,7 +199,7 @@ Relevant links:
 <li>Code for this video
 <ul class="org-ul">
 <li>
-<a href="https://github.com/zamansky/using-emacs/tree/lesson-8-autocompete">https://github.com/zamansky/using-emacs/tree/lesson-8-autocompete</a>
+<a href="https://github.com/zamansky/using-emacs/tree/lesson-9-themes">https://github.com/zamansky/using-emacs/tree/lesson-9-themes</a>
 </li>
 </ul>
 </li>
@@ -224,18 +231,15 @@ Relevant links:
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../using-emacs-7-avy/" rel="prev" title="Using Emacs - 7- Navigation with Avy">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../using-emacs-9-themes/" rel="next" title="Using Emacs - 9 - Themes">Next post</a>
+                <a href="../using-emacs-8-autocomplete/" rel="prev" title="Using Emacs - 8 - Autocomplete">Previous post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="cestlaz",
-            disqus_url="http://cestlaz.github.io/posts/using-emacs-8-autocomplete/",
-        disqus_title="Using Emacs - 8 - Autocomplete",
-        disqus_identifier="cache/posts/using-emacs-8-autocomplete.html",
+            disqus_url="http://cestlaz.github.io/posts/using-emacs-9-themes/",
+        disqus_title="Using Emacs - 9 - Themes",
+        disqus_identifier="cache/posts/using-emacs-9-themes.html",
         disqus_config = function () {
             this.language = "en";
         };

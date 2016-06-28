@@ -1,5 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (emacs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/emacs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 26 Jun 2016 13:42:02 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 8 - Autocomplete</title><link>http://cestlaz.github.io/posts/using-emacs-8-autocomplete/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (emacs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/emacs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 28 Jun 2016 18:36:00 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 9 - Themes</title><link>http://cestlaz.github.io/posts/using-emacs-9-themes/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Now that we have a nice basic configuration, let's make Emacs look a
+little nicer.
+&lt;/p&gt;
+
+&lt;p&gt;
+Like most editors, Emacs can be extensively themed. 
+&lt;/p&gt;
+
+&lt;p&gt;
+As shown in the video, you can quickly see the built in themes using
+the &lt;b&gt;&lt;b&gt;customize-themes&lt;/b&gt;&lt;/b&gt; command.
+&lt;/p&gt;
+
+&lt;p&gt;
+You can load one of these themes by using the &lt;b&gt;&lt;b&gt;load-theme&lt;/b&gt;&lt;/b&gt; command
+interactively or, more likely by putting:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;load-theme&lt;/span&gt; &lt;span class="ss"&gt;'leuven&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+in your init.el. The above code loads the built in &lt;b&gt;&lt;b&gt;leuven&lt;/b&gt;&lt;/b&gt; theme.
+&lt;/p&gt;
+
+&lt;p&gt;
+I prefer the &lt;b&gt;&lt;b&gt;zenburn&lt;/b&gt;&lt;/b&gt; theme. For that, you have to load the zenburn
+package. Here's the code in our init.el:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;zenburn-theme&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;load-theme&lt;/span&gt; &lt;span class="ss"&gt;'zenburn&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+In the video, I also mention the color theme package.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, customize away.
+&lt;/p&gt;
+
+&lt;p&gt;
+In the links, you'll find some links to some Emacs theme gallery sites
+to help find something you like.
+&lt;/p&gt;
+
+&lt;p&gt;
+Thanks for reading and watching and as always, please leave comments,
+suggestions and favorite themes.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the video:
+&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/cod2ABxlrV8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Zenburn theme home page: &lt;a href="https://github.com/bbatsov/zenburn-emacs"&gt;https://github.com/bbatsov/zenburn-emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Emacs theme gallery: &lt;a href="https://pawelbx.github.io/emacs-theme-gallery/"&gt;https://pawelbx.github.io/emacs-theme-gallery/&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Another one: &lt;a href="https://emacsthemes.com/"&gt;https://emacsthemes.com/&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code for this video
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-9-themes"&gt;https://github.com/zamansky/using-emacs/tree/lesson-9-themes&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete code built up over all videos:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-9-themes/</guid><pubDate>Tue, 28 Jun 2016 04:00:00 GMT</pubDate></item><item><title>Using Emacs - 8 - Autocomplete</title><link>http://cestlaz.github.io/posts/using-emacs-8-autocomplete/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -926,118 +1019,4 @@ Relevant links:
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-2-org/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item><item><title>Using Emacs - Introduction</title><link>http://cestlaz.github.io/posts/using-emacs-introduction/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-I'm sure I've mentioned that I've been an Emacs wonk for
-decades. Since the mid-80's in fact. I've spent time using other
-editors, word processors, and development tools but always find my way
-back.
-&lt;/p&gt;
-
-&lt;p&gt;
-I recommend that budding computer science students develop a good tool
-set and encourage them to explore Emacs but while it's pretty easy to
-load Emacs and find your way around, particularly if you use the mouse
-and menus there isn't a clear path to take you from beginner to using
-it as an efficient tool let alone customizing it.
-&lt;/p&gt;
-
-&lt;p&gt;
-Inspired by &lt;a href="https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/featured"&gt;Mattias Petter Johansson&lt;/a&gt;, or MPJ who make a weekly video,
-I decided to try to create a series of YouTube videos and matching
-blog posts. I'll try to post one a week and I'll try to keep the
-videos, at least after the first couple to just a few minutes and have
-them focus on &lt;a href="http://sachachua.com/blog/2015/01/developing-emacs-micro-habits-text-automation/"&gt;micro-habits&lt;/a&gt; - one or two small things that you can
-bring to your work flow and internalize.
-&lt;/p&gt;
-
-&lt;p&gt;
-The first three four (this one and the next three) will focus on
-setting things up. After this post we'll have
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Setting up the package manager
-&lt;/li&gt;
-&lt;li&gt;Intro to org-mode (just so that you recognize the markup)
-&lt;/li&gt;
-&lt;li&gt;Intro to Elisp (just so you have an idea of those configuration
-lines)
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-and then we're off to the races. Here's what I'm thinking about for
-the first few topics after the above mentioned ones:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Efficient Navigation
-&lt;/li&gt;
-&lt;li&gt;Windows and Buffers
-&lt;/li&gt;
-&lt;li&gt;Theming
-&lt;/li&gt;
-&lt;li&gt;Auto Completion
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-and then a series of short topics to show some of my favorite editing
-tools. We'll also cover some larger topics including:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Python Development
-&lt;/li&gt;
-&lt;li&gt;C/C++ Development
-&lt;/li&gt;
-&lt;li&gt;Document Preparation
-&lt;/li&gt;
-&lt;li&gt;Scheduling / Calendaring / Note Taking
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-I'll put together an index to these posts along with any ancillary
-materials here: &lt;a href="file:///stories/emacs"&gt;&lt;/a&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;Getting started&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
-&lt;p&gt;
-This series is going to assume you've installed emacs and worked your
-way through the included tutorial.
-&lt;/p&gt;
-
-&lt;p&gt;
-To help you get to that point, here are some links to posts and sites
-that I've found useful:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://www.braveclojure.com/basic-emacs/"&gt;http://www.braveclojure.com/basic-emacs/&lt;/a&gt; 
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.masteringemacs.org/article/beginners-guide-to-emacs"&gt;https://www.masteringemacs.org/article/beginners-guide-to-emacs&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs"&gt;http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs&lt;/a&gt; 
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-use-the-emacs-editor-in-linux"&gt;https://www.digitalocean.com/community/tutorials/how-to-use-the-emacs-editor-in-linux&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-And here's a 10 minute getting started guide:
-&lt;/p&gt;
-
-&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/K3_SFerNIeI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;
-So, stay tuned.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-introduction/</guid><pubDate>Mon, 23 May 2016 14:07:18 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-2-org/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item></channel></rss>
