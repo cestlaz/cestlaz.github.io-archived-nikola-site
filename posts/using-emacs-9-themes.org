@@ -1,0 +1,65 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 9 - Themes
+.. slug: using-emacs-9-themes
+.. date: 2016-06-28
+.. tags: emacs, tools
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+Now that we have a nice basic configuration, let's make Emacs look a
+little nicer.
+
+Like most editors, Emacs can be extensively themed. 
+
+As shown in the video, you can quickly see the built in themes using
+the **customize-themes** command.
+
+You can load one of these themes by using the **load-theme** command
+interactively or, more likely by putting:
+
+#+BEGIN_SRC emacs-lisp
+(load-theme 'leuven t)
+#+END_SRC
+
+in your init.el. The above code loads the built in **leuven** theme.
+
+I prefer the **zenburn** theme. For that, you have to load the zenburn
+package. Here's the code in our init.el:
+
+#+BEGIN_SRC emacs-lisp
+(use-package zenburn-theme
+  :ensure t
+  :config (load-theme 'zenburn t))
+#+END_SRC
+
+In the video, I also mention the color theme package.
+
+So, customize away.
+
+In the links, you'll find some links to some Emacs theme gallery sites
+to help find something you like.
+
+Thanks for reading and watching and as always, please leave comments,
+suggestions and favorite themes.
+
+Here's the video:
+
+#+BEGIN_HTML
+<iframe width="420" height="315" src="https://www.youtube.com/embed/cod2ABxlrV8" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+Relevant links:
+- Zenburn theme home page: https://github.com/bbatsov/zenburn-emacs
+- Emacs theme gallery: https://pawelbx.github.io/emacs-theme-gallery/
+- Another one: https://emacsthemes.com/
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code for this video
+  - https://github.com/zamansky/using-emacs/tree/lesson-9-themes
+- Complete code built up over all videos:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
