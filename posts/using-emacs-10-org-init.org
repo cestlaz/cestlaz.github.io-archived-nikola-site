@@ -1,0 +1,132 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 10 - org init files
+.. slug: using-emacs-10-org-init
+.. date: 2016-07-01
+.. tags: emacs, tools
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+I'll be traveling for the next couple of weeks so I probably won't
+have time for another video until mid to late July. I'll probably
+write a post about this series and do some regular blogging over that
+time but probably no new videos for a couple of weeks.
+
+Also, a couple of notes about the series:
+1. Instead of making a separate git branch for each episode, I'm just
+   adding on to the master branch on GitHub. If you're not familiar
+   with Git and GitHub don't worry about this. Hardly anyone will
+   notice a difference.
+2. If this theme doesn't show well on video, please let me know, I'll
+   change it.
+
+Ok, now to this installments video.
+
+It talks about using org-mode to store our emacs init file.
+
+The first key is that you can put code-blocks in org-mode:
+#+BEGIN_SRC org
+  ,#+BEGIN_SRC emacs-lisp
+  (emacs-lisp code goes here)
+  (more emacs lisp goes here)
+  (and you can have even more here)
+  ,#+END_SRC
+#+END_SRC
+
+Since it's elisp you can run the individual line using the usual **C-x C-e**
+but you can run the entire block by placing your cursor anywhere in
+the block and typing **C-c C-c**.
+
+One minor annoyance about editing code blocks is that it doesn't do
+syntax highlighting or auto indentation. To solve this, emacs lets you
+pull up an editing buffer by typing **C-c '**. 
+
+You're supposed to be able to save your changes with **C-c '** again
+or **C-x C-s** and kill the buffer without saving changes with **C-x
+C-k** 
+but the version of org-mode that came with my version of emacs
+didn't support it - I had to install a newer version of org-mode from
+melpa. 
+
+I couldn't figure out how to do this via use-package, but if this
+problem happens to you, you can just type **Alt-x package-install**
+and then type **org** and hit enter to install it.
+
+Once you do that, you might have to reload emacs but then everything
+should work. 
+
+This lets us move most of our configuration to a separate file. We're
+calling it **myinit.org** and storing it in our .emacs.d
+directory. You can use any name **except** init.org as I mentioned in
+the video.
+
+The file's a little big so here's a link to it:
+https://github.com/zamansky/using-emacs/blob/master/myinit.org
+
+Notice how GitHub formats it to look all nice.
+
+Here's the raw file so you can see the gory details:
+https://raw.githubusercontent.com/zamansky/using-emacs/master/myinit.org
+
+Since we're loading the file in overview mode, when we load it in
+emacs we see:
+
+#+BEGIN_SRC emacs-lisp
+ * interface tweaks
+ * try
+ * which key
+ * Org mode
+ * Ace windows for easy window switching
+ * Swiper / Ivy / Counsel
+ * Avy - navigate by searching for a letter on the screen and jumping to it
+ * Autocomplete
+ * Themes
+#+END_SRC
+
+We can tab open and close each section and add text to clarify things
+around the code blocks.
+
+All that's left in **init.el** is:
+
+#+BEGIN_SRC emacs-lisp
+(require 'package)
+(setq package-enable-at-startup nil)
+(add-to-list 'package-archives
+	     '("melpa" . "https://melpa.org/packages/"))
+(package-initialize)
+
+;; Bootstrap `use-package'
+(unless (package-installed-p 'use-package)
+	(package-refresh-contents)
+	(package-install 'use-package))
+
+(org-babel-load-file (expand-file-name "~/.emacs.d/myinit.org"))
+#+END_SRC
+
+With the last line performing the magic of loading our org file and
+running all the code blocks.
+
+Finally, we added a couple of small interface changes:
+#+BEGIN_SRC emacs-lisp
+(fset 'yes-or-no-p 'y-or-n-p)
+(global-set-key (kbd "<f5>") 'revert-buffer)
+#+END_SRC
+
+The first line lets us type y or n instead of yes or no and the second
+let's us reload a file into our current buffer using the **f5** key.
+
+I hope you enjoy this video and find it useful:
+
+#+BEGIN_HTML
+<iframe width="420" height="315" src="https://www.youtube.com/embed/EX9PKK3EMaw" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
