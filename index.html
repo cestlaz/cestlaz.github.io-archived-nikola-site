@@ -20,7 +20,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-21.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/hillary-loans/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-10-org-init/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -87,7 +87,197 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/hillary-loans/" class="u-url">Hillary and Student Loans</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-10-org-init/" class="u-url">Using Emacs - 10 - org init files</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/using-emacs-10-org-init/" rel="bookmark"><time class="published dt-published" datetime="2016-07-01T00:00:00-04:00" title="2016-07-01 00:00">2016-07-01 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/using-emacs-10-org-init/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-10-org-init.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+I'll be traveling for the next couple of weeks so I probably won't
+have time for another video until mid to late July. I'll probably
+write a post about this series and do some regular blogging over that
+time but probably no new videos for a couple of weeks.
+</p>
+
+<p>
+Also, a couple of notes about the series:
+</p>
+<ol class="org-ol">
+<li>Instead of making a separate git branch for each episode, I'm just
+adding on to the master branch on GitHub. If you're not familiar
+with Git and GitHub don't worry about this. Hardly anyone will
+notice a difference.
+</li>
+<li>If this theme doesn't show well on video, please let me know, I'll
+change it.
+</li>
+</ol>
+<p>
+Ok, now to this installments video.
+</p>
+
+<p>
+It talks about using org-mode to store our emacs init file.
+</p>
+
+<p>
+The first key is that you can put code-blocks in org-mode:
+</p>
+<div class="highlight"><pre><span></span>#+BEGIN_SRC emacs-lisp
+(emacs-lisp code goes here)
+(more emacs lisp goes here)
+(and you can have even more here)
+#+END_SRC
+</pre></div>
+
+<p>
+Since it's elisp you can run the individual line using the usual <b><b>C-x C-e</b></b>
+but you can run the entire block by placing your cursor anywhere in
+the block and typing <b><b>C-c C-c</b></b>.
+</p>
+
+<p>
+One minor annoyance about editing code blocks is that it doesn't do
+syntax highlighting or auto indentation. To solve this, emacs lets you
+pull up an editing buffer by typing <b>*C-c '*</b>. 
+</p>
+
+<p>
+You're supposed to be able to save your changes with <b>*C-c '*</b> again
+or <b><b>C-x C-s</b></b> and kill the buffer without saving changes with <b><b>C-x
+C-k</b></b> 
+but the version of org-mode that came with my version of emacs
+didn't support it - I had to install a newer version of org-mode from
+melpa. 
+</p>
+
+<p>
+I couldn't figure out how to do this via use-package, but if this
+problem happens to you, you can just type <b><b>Alt-x package-install</b></b>
+and then type <b><b>org</b></b> and hit enter to install it.
+</p>
+
+<p>
+Once you do that, you might have to reload emacs but then everything
+should work. 
+</p>
+
+<p>
+This lets us move most of our configuration to a separate file. We're
+calling it <b><b>myinit.org</b></b> and storing it in our .emacs.d
+directory. You can use any name <b><b>except</b></b> init.org as I mentioned in
+the video.
+</p>
+
+<p>
+The file's a little big so here's a link to it:
+<a href="https://github.com/zamansky/using-emacs/blob/master/myinit.org">https://github.com/zamansky/using-emacs/blob/master/myinit.org</a>
+</p>
+
+<p>
+Notice how GitHub formats it to look all nice.
+</p>
+
+<p>
+Here's the raw file so you can see the gory details:
+<a href="https://raw.githubusercontent.com/zamansky/using-emacs/master/myinit.org">https://raw.githubusercontent.com/zamansky/using-emacs/master/myinit.org</a>
+</p>
+
+<p>
+Since we're loading the file in overview mode, when we load it in
+emacs we see:
+</p>
+
+<div class="highlight"><pre><span></span><span class="nv">*</span> <span class="nv">interface</span> <span class="nv">tweaks</span>
+<span class="nv">*</span> <span class="nv">try</span>
+<span class="nv">*</span> <span class="nv">which</span> <span class="nv">key</span>
+<span class="nv">*</span> <span class="nv">Org</span> <span class="nv">mode</span>
+<span class="nv">*</span> <span class="nv">Ace</span> <span class="nv">windows</span> <span class="nv">for</span> <span class="nv">easy</span> <span class="nv">window</span> <span class="nv">switching</span>
+<span class="nv">*</span> <span class="nv">Swiper</span> <span class="nv">/</span> <span class="nv">Ivy</span> <span class="nv">/</span> <span class="nv">Counsel</span>
+<span class="nv">*</span> <span class="nv">Avy</span> <span class="nv">-</span> <span class="nv">navigate</span> <span class="nv">by</span> <span class="nv">searching</span> <span class="nv">for</span> <span class="nv">a</span> <span class="nv">letter</span> <span class="nv">on</span> <span class="nv">the</span> <span class="nv">screen</span> <span class="k">and </span><span class="nv">jumping</span> <span class="nv">to</span> <span class="nv">it</span>
+<span class="nv">*</span> <span class="nv">Autocomplete</span>
+<span class="nv">*</span> <span class="nv">Themes</span>
+</pre></div>
+
+<p>
+We can tab open and close each section and add text to clarify things
+around the code blocks.
+</p>
+
+<p>
+All that's left in <b><b>init.el</b></b> is:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">require</span> <span class="ss">'package</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">setq</span> <span class="nv">package-enable-at-startup</span> <span class="nv">nil</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">add-to-list</span> <span class="ss">'package-archives</span>
+	     <span class="o">'</span><span class="p">(</span><span class="s">"melpa"</span> <span class="o">.</span> <span class="s">"https://melpa.org/packages/"</span><span class="p">))</span>
+<span class="p">(</span><span class="nf">package-initialize</span><span class="p">)</span>
+
+<span class="c1">;; Bootstrap `use-package'</span>
+<span class="p">(</span><span class="nf">unless</span> <span class="p">(</span><span class="nf">package-installed-p</span> <span class="ss">'use-package</span><span class="p">)</span>
+	<span class="p">(</span><span class="nf">package-refresh-contents</span><span class="p">)</span>
+	<span class="p">(</span><span class="nf">package-install</span> <span class="ss">'use-package</span><span class="p">))</span>
+
+<span class="p">(</span><span class="nf">org-babel-load-file</span> <span class="p">(</span><span class="nf">expand-file-name</span> <span class="s">"~/.emacs.d/myinit.org"</span><span class="p">))</span>
+</pre></div>
+
+<p>
+With the last line performing the magic of loading our org file and
+running all the code blocks.
+</p>
+
+<p>
+Finally, we added a couple of small interface changes:
+</p>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">fset</span> <span class="ss">'yes-or-no-p</span> <span class="ss">'y-or-n-p</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"&lt;f5&gt;"</span><span class="p">)</span> <span class="ss">'revert-buffer</span><span class="p">)</span>
+</pre></div>
+
+<p>
+The first line lets us type y or n instead of yes or no and the second
+let's us reload a file into our current buffer using the <b><b>f5</b></b> key.
+</p>
+
+<p>
+I hope you enjoy this video and find it useful:
+</p>
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/EX9PKK3EMaw" frameborder="0" allowfullscreen></iframe>
+
+<p>
+Relevant links:
+</p>
+<ul class="org-ul">
+<li>Video series overview page:
+<ul class="org-ul">
+<li>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</li>
+</ul>
+</li>
+<li>Code:
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/hillary-loans/" class="u-url">Hillary and Student Loans</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
@@ -1193,160 +1383,6 @@ leave a comment for anything that the form doesn't cover?
 
 
 <iframe src="https://docs.google.com/forms/d/1FlppDbeiK8uPxh_RkXoCbbdE_UDY_4qXmZWbXlZ0gGg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-5-windows/" class="u-url">Using Emacs - 5 - Windows</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/using-emacs-5-windows/" rel="bookmark"><time class="published dt-published" datetime="2016-06-14T00:00:00-04:00" title="2016-06-14 00:00">2016-06-14 00:00</time></a></p>
-                <p class="commentline">            <a href="posts/using-emacs-5-windows/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-5-windows.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"></h2>
-<div class="outline-text-2" id="text-1">
-<p>
-Sorry for the delay in getting this next video / post up. I spent the
-last part of last week at <a href="http://go.personaldemocracy.com/">The Personal Democracy Forum 2016</a> which is really an exceptional conference.
-</p>
-
-<p>
-I posted a bit about it in my <a href="http://cestlaz.github.io/posts/pdf2016-lost-in-the-silo/#.V2B9th9vGAk">last post</a> and plan to write some more on it, but for now, more Emacs.
-</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/D6OUMVbPKSA" frameborder="0" allowfullscreen></iframe>
-
-
-<p>
-This video concerns using windows. By using buffers and windows and
-the basics you got from the tutorial, you shouldn't have to ever leave emacs.
-</p>
-
-<p>
-From here, we'll be able to start going over effective Emacs and then
-using it for things like development or document creation.
-</p>
-
-
-<p>
-Some of the key window bindings:
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<colgroup>
-<col class="left">
-<col class="left">
-</colgroup>
-<thead><tr>
-<th scope="col" class="left">key</th>
-<th scope="col" class="left">what it does</th>
-</tr></thead>
-<tbody>
-<tr>
-<td class="left">C-x 2</td>
-<td class="left">split-window-below (vertically)</td>
-</tr>
-<tr>
-<td class="left">C-x 3</td>
-<td class="left">split-window-right (horizontally)</td>
-</tr>
-<tr>
-<td class="left">C-x 0</td>
-<td class="left">delete-window (this one)</td>
-</tr>
-<tr>
-<td class="left">C-x 1</td>
-<td class="left">delete-other-windows</td>
-</tr>
-<tr>
-<td class="left">C-x o</td>
-<td class="left">other-window (moves foxus to the next window</td>
-</tr>
-</tbody>
-</table>
-<p>
-You also have frames which use <b><b>C-x 5</b></b> as the prefix, so <b><b>C-x 5 2</b></b>
-creats a new frame and <b><b>C-x 5 1</b></b> closes the other frames.
-</p>
-
-<p>
-Remember, you can always use the help system, in particular <b><b>C-x k</b></b>
-to describe a key and <b><b>C-x f</b></b> to describe a function.
-</p>
-
-
-<p>
-<b><b>C-x o</b></b> can be a little clunky so some people like to use
-<b><b>windmove</b></b> which lets you move between windows by holding the shift
-key and with the arrows. To set that up, you can add this to your
-<b><b>init.el</b></b> 
-</p>
-
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">windmove-default-keybindings</span><span class="p">)</span>
-</pre></div>
-
-<p>
-I prefer using <b><b>ace-window</b></b> mode which still uses <b><b>C-x o</b></b>:
-</p>
-
-<div class="highlight"><pre><span></span><span class="c1">; add this to init.el</span>
-<span class="p">(</span><span class="nf">use-package</span> <span class="nv">ace-window</span>
-  <span class="nv">:ensure</span> <span class="nv">t</span>
-  <span class="nv">:init</span>
-  <span class="p">(</span><span class="nf">progn</span>
-    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">[</span><span class="nv">remap</span> <span class="nv">other-window</span><span class="p">]</span> <span class="ss">'ace-window</span><span class="p">)</span>
-    <span class="p">(</span><span class="nf">custom-set-faces</span>
-     <span class="o">'</span><span class="p">(</span><span class="nv">aw-leading-char-face</span>
-       <span class="p">((</span><span class="nf">t</span> <span class="p">(</span><span class="nf">:inherit</span> <span class="nv">ace-jump-face-foreground</span> <span class="nv">:height</span> <span class="mf">3.0</span><span class="p">)))))</span> 
-    <span class="p">))</span>
-</pre></div>
-
-<p>
-The other mode I mention in the video is winner mode:
-</p>
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">winner-mode</span> <span class="mi">1</span><span class="p">)</span>
-</pre></div>
-
-<p>
-Which will allow you to use <b><b>C-c left or right</b></b> to move through past
-window configurations.
-</p>
-
-
-<p>
-Relevant links:
-</p>
-<ul class="org-ul">
-<li>Ace window mode: <a href="https://github.com/abo-abo/ace-window">https://github.com/abo-abo/ace-window</a>
-</li>
-<li>Video series overview page:
-<ul class="org-ul">
-<li>
-<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
-</li>
-</ul>
-</li>
-<li>Code for this video:
-<ul class="org-ul">
-<li>
-<a href="https://github.com/zamansky/using-emacs/tree/lesson-5-windows">https://github.com/zamansky/using-emacs/tree/lesson-5-windows</a>
-</li>
-</ul>
-</li>
-<li>Complete code built up over all videos:
-<ul class="org-ul">
-<li>
-<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
     </div>
     </article>
 </div>

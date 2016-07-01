@@ -1,5 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 01 Jul 2016 11:33:28 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Hillary and Student Loans</title><link>http://cestlaz.github.io/posts/hillary-loans/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 01 Jul 2016 23:33:20 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 10 - org init files</title><link>http://cestlaz.github.io/posts/using-emacs-10-org-init/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+I'll be traveling for the next couple of weeks so I probably won't
+have time for another video until mid to late July. I'll probably
+write a post about this series and do some regular blogging over that
+time but probably no new videos for a couple of weeks.
+&lt;/p&gt;
+
+&lt;p&gt;
+Also, a couple of notes about the series:
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Instead of making a separate git branch for each episode, I'm just
+adding on to the master branch on GitHub. If you're not familiar
+with Git and GitHub don't worry about this. Hardly anyone will
+notice a difference.
+&lt;/li&gt;
+&lt;li&gt;If this theme doesn't show well on video, please let me know, I'll
+change it.
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+Ok, now to this installments video.
+&lt;/p&gt;
+
+&lt;p&gt;
+It talks about using org-mode to store our emacs init file.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first key is that you can put code-blocks in org-mode:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;#+BEGIN_SRC emacs-lisp
+(emacs-lisp code goes here)
+(more emacs lisp goes here)
+(and you can have even more here)
+#+END_SRC
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Since it's elisp you can run the individual line using the usual &lt;b&gt;&lt;b&gt;C-x C-e&lt;/b&gt;&lt;/b&gt;
+but you can run the entire block by placing your cursor anywhere in
+the block and typing &lt;b&gt;&lt;b&gt;C-c C-c&lt;/b&gt;&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+One minor annoyance about editing code blocks is that it doesn't do
+syntax highlighting or auto indentation. To solve this, emacs lets you
+pull up an editing buffer by typing &lt;b&gt;*C-c '*&lt;/b&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You're supposed to be able to save your changes with &lt;b&gt;*C-c '*&lt;/b&gt; again
+or &lt;b&gt;&lt;b&gt;C-x C-s&lt;/b&gt;&lt;/b&gt; and kill the buffer without saving changes with &lt;b&gt;&lt;b&gt;C-x
+C-k&lt;/b&gt;&lt;/b&gt; 
+but the version of org-mode that came with my version of emacs
+didn't support it - I had to install a newer version of org-mode from
+melpa. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I couldn't figure out how to do this via use-package, but if this
+problem happens to you, you can just type &lt;b&gt;&lt;b&gt;Alt-x package-install&lt;/b&gt;&lt;/b&gt;
+and then type &lt;b&gt;&lt;b&gt;org&lt;/b&gt;&lt;/b&gt; and hit enter to install it.
+&lt;/p&gt;
+
+&lt;p&gt;
+Once you do that, you might have to reload emacs but then everything
+should work. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This lets us move most of our configuration to a separate file. We're
+calling it &lt;b&gt;&lt;b&gt;myinit.org&lt;/b&gt;&lt;/b&gt; and storing it in our .emacs.d
+directory. You can use any name &lt;b&gt;&lt;b&gt;except&lt;/b&gt;&lt;/b&gt; init.org as I mentioned in
+the video.
+&lt;/p&gt;
+
+&lt;p&gt;
+The file's a little big so here's a link to it:
+&lt;a href="https://github.com/zamansky/using-emacs/blob/master/myinit.org"&gt;https://github.com/zamansky/using-emacs/blob/master/myinit.org&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Notice how GitHub formats it to look all nice.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the raw file so you can see the gory details:
+&lt;a href="https://raw.githubusercontent.com/zamansky/using-emacs/master/myinit.org"&gt;https://raw.githubusercontent.com/zamansky/using-emacs/master/myinit.org&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Since we're loading the file in overview mode, when we load it in
+emacs we see:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;interface&lt;/span&gt; &lt;span class="nv"&gt;tweaks&lt;/span&gt;
+&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;try&lt;/span&gt;
+&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;which&lt;/span&gt; &lt;span class="nv"&gt;key&lt;/span&gt;
+&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Org&lt;/span&gt; &lt;span class="nv"&gt;mode&lt;/span&gt;
+&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Ace&lt;/span&gt; &lt;span class="nv"&gt;windows&lt;/span&gt; &lt;span class="nv"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;easy&lt;/span&gt; &lt;span class="nv"&gt;window&lt;/span&gt; &lt;span class="nv"&gt;switching&lt;/span&gt;
+&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Swiper&lt;/span&gt; &lt;span class="nv"&gt;/&lt;/span&gt; &lt;span class="nv"&gt;Ivy&lt;/span&gt; &lt;span class="nv"&gt;/&lt;/span&gt; &lt;span class="nv"&gt;Counsel&lt;/span&gt;
+&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Avy&lt;/span&gt; &lt;span class="nv"&gt;-&lt;/span&gt; &lt;span class="nv"&gt;navigate&lt;/span&gt; &lt;span class="nv"&gt;by&lt;/span&gt; &lt;span class="nv"&gt;searching&lt;/span&gt; &lt;span class="nv"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;letter&lt;/span&gt; &lt;span class="nv"&gt;on&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;screen&lt;/span&gt; &lt;span class="k"&gt;and &lt;/span&gt;&lt;span class="nv"&gt;jumping&lt;/span&gt; &lt;span class="nv"&gt;to&lt;/span&gt; &lt;span class="nv"&gt;it&lt;/span&gt;
+&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Autocomplete&lt;/span&gt;
+&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Themes&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+We can tab open and close each section and add text to clarify things
+around the code blocks.
+&lt;/p&gt;
+
+&lt;p&gt;
+All that's left in &lt;b&gt;&lt;b&gt;init.el&lt;/b&gt;&lt;/b&gt; is:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;require&lt;/span&gt; &lt;span class="ss"&gt;'package&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;package-enable-at-startup&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'package-archives&lt;/span&gt;
+	     &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"melpa"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"https://melpa.org/packages/"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-initialize&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; Bootstrap `use-package'&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;unless&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-installed-p&lt;/span&gt; &lt;span class="ss"&gt;'use-package&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-refresh-contents&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-install&lt;/span&gt; &lt;span class="ss"&gt;'use-package&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;org-babel-load-file&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;expand-file-name&lt;/span&gt; &lt;span class="s"&gt;"~/.emacs.d/myinit.org"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+With the last line performing the magic of loading our org file and
+running all the code blocks.
+&lt;/p&gt;
+
+&lt;p&gt;
+Finally, we added a couple of small interface changes:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;fset&lt;/span&gt; &lt;span class="ss"&gt;'yes-or-no-p&lt;/span&gt; &lt;span class="ss"&gt;'y-or-n-p&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"&amp;lt;f5&amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'revert-buffer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The first line lets us type y or n instead of yes or no and the second
+let's us reload a file into our current buffer using the &lt;b&gt;&lt;b&gt;f5&lt;/b&gt;&lt;/b&gt; key.
+&lt;/p&gt;
+
+&lt;p&gt;
+I hope you enjoy this video and find it useful:
+&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/EX9PKK3EMaw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-10-org-init/</guid><pubDate>Fri, 01 Jul 2016 04:00:00 GMT</pubDate></item><item><title>Hillary and Student Loans</title><link>http://cestlaz.github.io/posts/hillary-loans/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 Yesterday I read over Hillary's briefing on her initiative on
 &lt;a href="https://www.hillaryclinton.com/briefing/factsheets/2016/06/27/hillary-clintons-initiative-on-technology-innovation/"&gt;Technology and Innovation&lt;/a&gt;.
 &lt;/p&gt;
@@ -971,151 +1146,4 @@ leave a comment for anything that the form doesn't cover?
 &lt;/p&gt;
 
 
-&lt;iframe src="https://docs.google.com/forms/d/1FlppDbeiK8uPxh_RkXoCbbdE_UDY_4qXmZWbXlZ0gGg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading...&lt;/iframe&gt;</description><category>hardware</category><category>pedagogy</category><category>robotics</category><category>robots</category><category>tools</category><guid>http://cestlaz.github.io/posts/robot-survey/</guid><pubDate>Wed, 15 Jun 2016 13:08:28 GMT</pubDate></item><item><title>Using Emacs - 5 - Windows</title><link>http://cestlaz.github.io/posts/using-emacs-5-windows/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-Sorry for the delay in getting this next video / post up. I spent the
-last part of last week at &lt;a href="http://go.personaldemocracy.com/"&gt;The Personal Democracy Forum 2016&lt;/a&gt; which is really an exceptional conference.
-&lt;/p&gt;
-
-&lt;p&gt;
-I posted a bit about it in my &lt;a href="http://cestlaz.github.io/posts/pdf2016-lost-in-the-silo/#.V2B9th9vGAk"&gt;last post&lt;/a&gt; and plan to write some more on it, but for now, more Emacs.
-&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/D6OUMVbPKSA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-
-&lt;p&gt;
-This video concerns using windows. By using buffers and windows and
-the basics you got from the tutorial, you shouldn't have to ever leave emacs.
-&lt;/p&gt;
-
-&lt;p&gt;
-From here, we'll be able to start going over effective Emacs and then
-using it for things like development or document creation.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-Some of the key window bindings:
-&lt;/p&gt;
-
-&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
-
-
-&lt;colgroup&gt;
-&lt;col class="left"&gt;
-
-&lt;col class="left"&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th scope="col" class="left"&gt;key&lt;/th&gt;
-&lt;th scope="col" class="left"&gt;what it does&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class="left"&gt;C-x 2&lt;/td&gt;
-&lt;td class="left"&gt;split-window-below (vertically)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="left"&gt;C-x 3&lt;/td&gt;
-&lt;td class="left"&gt;split-window-right (horizontally)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="left"&gt;C-x 0&lt;/td&gt;
-&lt;td class="left"&gt;delete-window (this one)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="left"&gt;C-x 1&lt;/td&gt;
-&lt;td class="left"&gt;delete-other-windows&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="left"&gt;C-x o&lt;/td&gt;
-&lt;td class="left"&gt;other-window (moves foxus to the next window&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;
-You also have frames which use &lt;b&gt;&lt;b&gt;C-x 5&lt;/b&gt;&lt;/b&gt; as the prefix, so &lt;b&gt;&lt;b&gt;C-x 5 2&lt;/b&gt;&lt;/b&gt;
-creats a new frame and &lt;b&gt;&lt;b&gt;C-x 5 1&lt;/b&gt;&lt;/b&gt; closes the other frames.
-&lt;/p&gt;
-
-&lt;p&gt;
-Remember, you can always use the help system, in particular &lt;b&gt;&lt;b&gt;C-x k&lt;/b&gt;&lt;/b&gt;
-to describe a key and &lt;b&gt;&lt;b&gt;C-x f&lt;/b&gt;&lt;/b&gt; to describe a function.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-&lt;b&gt;&lt;b&gt;C-x o&lt;/b&gt;&lt;/b&gt; can be a little clunky so some people like to use
-&lt;b&gt;&lt;b&gt;windmove&lt;/b&gt;&lt;/b&gt; which lets you move between windows by holding the shift
-key and with the arrows. To set that up, you can add this to your
-&lt;b&gt;&lt;b&gt;init.el&lt;/b&gt;&lt;/b&gt; 
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;windmove-default-keybindings&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-I prefer using &lt;b&gt;&lt;b&gt;ace-window&lt;/b&gt;&lt;/b&gt; mode which still uses &lt;b&gt;&lt;b&gt;C-x o&lt;/b&gt;&lt;/b&gt;:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;; add this to init.el&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;ace-window&lt;/span&gt;
-  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-  &lt;span class="nv"&gt;:init&lt;/span&gt;
-  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;progn&lt;/span&gt;
-    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;remap&lt;/span&gt; &lt;span class="nv"&gt;other-window&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="ss"&gt;'ace-window&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;custom-set-faces&lt;/span&gt;
-     &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;aw-leading-char-face&lt;/span&gt;
-       &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nf"&gt;t&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:inherit&lt;/span&gt; &lt;span class="nv"&gt;ace-jump-face-foreground&lt;/span&gt; &lt;span class="nv"&gt;:height&lt;/span&gt; &lt;span class="mf"&gt;3.0&lt;/span&gt;&lt;span class="p"&gt;)))))&lt;/span&gt; 
-    &lt;span class="p"&gt;))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-The other mode I mention in the video is winner mode:
-&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;winner-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Which will allow you to use &lt;b&gt;&lt;b&gt;C-c left or right&lt;/b&gt;&lt;/b&gt; to move through past
-window configurations.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-Relevant links:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Ace window mode: &lt;a href="https://github.com/abo-abo/ace-window"&gt;https://github.com/abo-abo/ace-window&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Video series overview page:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Code for this video:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-5-windows"&gt;https://github.com/zamansky/using-emacs/tree/lesson-5-windows&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Complete code built up over all videos:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-5-windows/</guid><pubDate>Tue, 14 Jun 2016 04:00:00 GMT</pubDate></item></channel></rss>
+&lt;iframe src="https://docs.google.com/forms/d/1FlppDbeiK8uPxh_RkXoCbbdE_UDY_4qXmZWbXlZ0gGg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading...&lt;/iframe&gt;</description><category>hardware</category><category>pedagogy</category><category>robotics</category><category>robots</category><category>tools</category><guid>http://cestlaz.github.io/posts/robot-survey/</guid><pubDate>Wed, 15 Jun 2016 13:08:28 GMT</pubDate></item></channel></rss>

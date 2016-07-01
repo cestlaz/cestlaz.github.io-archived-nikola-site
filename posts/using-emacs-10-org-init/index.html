@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<base href="http://cestlaz.github.io/posts/using-emacs-10-org-init/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Using Emacs - 10 - org init files | C'est la Z</title>
+<link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/custom.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="../../index.atom">
+<link rel="canonical" href="http://cestlaz.github.io/posts/using-emacs-10-org-init/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
+<link rel="prev" href="../hillary-loans/" title="Hillary and Student Loans" type="text/html">
+<meta property="og:site_name" content="C'est la Z">
+<meta property="og:title" content="Using Emacs - 10 - org init files">
+<meta property="og:url" content="http://cestlaz.github.io/posts/using-emacs-10-org-init/">
+<meta property="og:description" content="I'll be traveling for the next couple of weeks so I probably won't
+have time for another video until mid to late July. I'll probably
+write a post about this series and do some regular blogging over th">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-07-01T00:00:00-04:00">
+<meta property="article:tag" content="emacs">
+<meta property="article:tag" content="tools">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+
+
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cestlaz.github.io/">
+						<img class="zlogo" src="../../assets/images/thluffy.jpg" id="logo"><span class="zname" id="blog-title">C'est la Z</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav navbar-right zmenu">
+<li class="zitem">
+<a href="../../categories">Tags</a>
+                </li>
+<li class="zitem">
+<a href="../../stories/emacs">Emacs</a>
+                </li>
+<li class="zitem">
+<a href="http://github.com/zamansky">GitHub</a>
+                </li>
+<li class="zitem">
+<a href="../../archive.html">Archive</a>
+                </li>
+<li class="zitem">
+<a href="../../stories/about">About</a>
+                </li>
+<li class="zitem">
+<a href="../../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><h2 class="text-center">
+		Musings about education, computer science,</h2>
+		<h3 class="text-center">and maybe a few other miscellaneous topics.
+</h3>
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+		<div class="body-content">
+				<!--Body content-->
+				<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-8">
+				
+								
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Using Emacs - 10 - org init files</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                    Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2016-07-01T00:00:00-04:00" itemprop="datePublished" title="2016-07-01 00:00">2016-07-01 00:00</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-10-org-init.html">Comments</a>
+
+
+            
+        </p>
+</div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+I'll be traveling for the next couple of weeks so I probably won't
+have time for another video until mid to late July. I'll probably
+write a post about this series and do some regular blogging over that
+time but probably no new videos for a couple of weeks.
+</p>
+
+<p>
+Also, a couple of notes about the series:
+</p>
+<ol class="org-ol">
+<li>Instead of making a separate git branch for each episode, I'm just
+adding on to the master branch on GitHub. If you're not familiar
+with Git and GitHub don't worry about this. Hardly anyone will
+notice a difference.
+</li>
+<li>If this theme doesn't show well on video, please let me know, I'll
+change it.
+</li>
+</ol>
+<p>
+Ok, now to this installments video.
+</p>
+
+<p>
+It talks about using org-mode to store our emacs init file.
+</p>
+
+<p>
+The first key is that you can put code-blocks in org-mode:
+</p>
+<div class="highlight"><pre><span></span>#+BEGIN_SRC emacs-lisp
+(emacs-lisp code goes here)
+(more emacs lisp goes here)
+(and you can have even more here)
+#+END_SRC
+</pre></div>
+
+<p>
+Since it's elisp you can run the individual line using the usual <b><b>C-x C-e</b></b>
+but you can run the entire block by placing your cursor anywhere in
+the block and typing <b><b>C-c C-c</b></b>.
+</p>
+
+<p>
+One minor annoyance about editing code blocks is that it doesn't do
+syntax highlighting or auto indentation. To solve this, emacs lets you
+pull up an editing buffer by typing <b>*C-c '*</b>. 
+</p>
+
+<p>
+You're supposed to be able to save your changes with <b>*C-c '*</b> again
+or <b><b>C-x C-s</b></b> and kill the buffer without saving changes with <b><b>C-x
+C-k</b></b> 
+but the version of org-mode that came with my version of emacs
+didn't support it - I had to install a newer version of org-mode from
+melpa. 
+</p>
+
+<p>
+I couldn't figure out how to do this via use-package, but if this
+problem happens to you, you can just type <b><b>Alt-x package-install</b></b>
+and then type <b><b>org</b></b> and hit enter to install it.
+</p>
+
+<p>
+Once you do that, you might have to reload emacs but then everything
+should work. 
+</p>
+
+<p>
+This lets us move most of our configuration to a separate file. We're
+calling it <b><b>myinit.org</b></b> and storing it in our .emacs.d
+directory. You can use any name <b><b>except</b></b> init.org as I mentioned in
+the video.
+</p>
+
+<p>
+The file's a little big so here's a link to it:
+<a href="https://github.com/zamansky/using-emacs/blob/master/myinit.org">https://github.com/zamansky/using-emacs/blob/master/myinit.org</a>
+</p>
+
+<p>
+Notice how GitHub formats it to look all nice.
+</p>
+
+<p>
+Here's the raw file so you can see the gory details:
+<a href="https://raw.githubusercontent.com/zamansky/using-emacs/master/myinit.org">https://raw.githubusercontent.com/zamansky/using-emacs/master/myinit.org</a>
+</p>
+
+<p>
+Since we're loading the file in overview mode, when we load it in
+emacs we see:
+</p>
+
+<div class="highlight"><pre><span></span><span class="nv">*</span> <span class="nv">interface</span> <span class="nv">tweaks</span>
+<span class="nv">*</span> <span class="nv">try</span>
+<span class="nv">*</span> <span class="nv">which</span> <span class="nv">key</span>
+<span class="nv">*</span> <span class="nv">Org</span> <span class="nv">mode</span>
+<span class="nv">*</span> <span class="nv">Ace</span> <span class="nv">windows</span> <span class="nv">for</span> <span class="nv">easy</span> <span class="nv">window</span> <span class="nv">switching</span>
+<span class="nv">*</span> <span class="nv">Swiper</span> <span class="nv">/</span> <span class="nv">Ivy</span> <span class="nv">/</span> <span class="nv">Counsel</span>
+<span class="nv">*</span> <span class="nv">Avy</span> <span class="nv">-</span> <span class="nv">navigate</span> <span class="nv">by</span> <span class="nv">searching</span> <span class="nv">for</span> <span class="nv">a</span> <span class="nv">letter</span> <span class="nv">on</span> <span class="nv">the</span> <span class="nv">screen</span> <span class="k">and </span><span class="nv">jumping</span> <span class="nv">to</span> <span class="nv">it</span>
+<span class="nv">*</span> <span class="nv">Autocomplete</span>
+<span class="nv">*</span> <span class="nv">Themes</span>
+</pre></div>
+
+<p>
+We can tab open and close each section and add text to clarify things
+around the code blocks.
+</p>
+
+<p>
+All that's left in <b><b>init.el</b></b> is:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">require</span> <span class="ss">'package</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">setq</span> <span class="nv">package-enable-at-startup</span> <span class="nv">nil</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">add-to-list</span> <span class="ss">'package-archives</span>
+	     <span class="o">'</span><span class="p">(</span><span class="s">"melpa"</span> <span class="o">.</span> <span class="s">"https://melpa.org/packages/"</span><span class="p">))</span>
+<span class="p">(</span><span class="nf">package-initialize</span><span class="p">)</span>
+
+<span class="c1">;; Bootstrap `use-package'</span>
+<span class="p">(</span><span class="nf">unless</span> <span class="p">(</span><span class="nf">package-installed-p</span> <span class="ss">'use-package</span><span class="p">)</span>
+	<span class="p">(</span><span class="nf">package-refresh-contents</span><span class="p">)</span>
+	<span class="p">(</span><span class="nf">package-install</span> <span class="ss">'use-package</span><span class="p">))</span>
+
+<span class="p">(</span><span class="nf">org-babel-load-file</span> <span class="p">(</span><span class="nf">expand-file-name</span> <span class="s">"~/.emacs.d/myinit.org"</span><span class="p">))</span>
+</pre></div>
+
+<p>
+With the last line performing the magic of loading our org file and
+running all the code blocks.
+</p>
+
+<p>
+Finally, we added a couple of small interface changes:
+</p>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">fset</span> <span class="ss">'yes-or-no-p</span> <span class="ss">'y-or-n-p</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"&lt;f5&gt;"</span><span class="p">)</span> <span class="ss">'revert-buffer</span><span class="p">)</span>
+</pre></div>
+
+<p>
+The first line lets us type y or n instead of yes or no and the second
+let's us reload a file into our current buffer using the <b><b>f5</b></b> key.
+</p>
+
+<p>
+I hope you enjoy this video and find it useful:
+</p>
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/EX9PKK3EMaw" frameborder="0" allowfullscreen></iframe>
+
+<p>
+Relevant links:
+</p>
+<ul class="org-ul">
+<li>Video series overview page:
+<ul class="org-ul">
+<li>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</li>
+</ul>
+</li>
+<li>Code:
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_google_plusone_share"></a>
+<a class="addthis_button_hackernews"></a>
+<a class="addthis_button_reddit"></a>
+<a class="addthis_button_gmail"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
+</div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/emacs/" rel="tag">emacs</a></li>
+            <li><a class="tag p-category" href="../../categories/tools/" rel="tag">tools</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../hillary-loans/" rel="prev" title="Hillary and Student Loans">Previous post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="cestlaz",
+            disqus_url="http://cestlaz.github.io/posts/using-emacs-10-org-init/",
+        disqus_title="Using Emacs - 10 - org init files",
+        disqus_identifier="cache/posts/using-emacs-10-org-init.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+						<div class="col-md-3">
+								<br><!-- feedburner subscribe via email --><form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CestLaZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+<p>Enter your email address:</p>
+<p><input type="text" style="width:140px" name="email"></p>
+<input type="hidden" value="CestLaZ" name="uri"><input type="hidden" name="loc" value="en_US"><input type="submit" value="Subscribe"><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p>
+</form>
+								<!--  feedburner subscribe end -->
+								<!-- Twitter sidebar start -->
+								<table class="table"><tr><td>
+												<a class="twitter-timeline" href="https://twitter.com/zamansky" data-widget-id="251117725303312385">Tweets by @zamansky</a>
+												<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</td></tr></table>
+<!-- Twitter sidebar end -->
+</div>
+						<!--End of body content-->
+
+						<footer id="footer">
+								Contents © 2016         <a href="mailto:zamansky@gmail.com">Mike Zamansky</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+								
+						</footer>
+</div>
+		</div>
+
+		<div>
+				<!-- analytics MZ -->
+				<!-- getclicky tracking code -->
+				<a title="Google Analytics Alternative" href="http://clicky.com/100530816"><img alt="Google Analytics Alternative" src="//static.getclicky.com/media/links/badge.gif" border="0"></a>
+				<script src="//static.getclicky.com/js" type="text/javascript"></script><script type="text/javascript">try{ clicky.init(100530816); }catch(e){}</script><noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100530816ns.gif"></p></noscript>
+				<!-- endgetclicky -->
+
+				<!-- google analytics code -->
+				<script type="text/javascript">
+				 var _gaq = _gaq || [];
+				 _gaq.push(['_setAccount', 'UA-35203750-1']);
+				 _gaq.push(['_trackPageview']);
+				 (function() {
+						 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+						 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+						 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				 })();
+				</script><!-- end google analytics -->
+</div>
+		
+		            <script src="../../assets/js/jquery.min.js"></script><script src="../../assets/js/bootstrap.min.js"></script><script src="../../assets/js/moment-with-locales.min.js"></script><script src="../../assets/js/fancydates.js"></script><script src="../../assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+		 moment.locale("en");
+		 fancydates(0, "YYYY-MM-DD HH:mm");
+		</script><!-- end fancy dates -->
+</div>
+</body>
+</html>
