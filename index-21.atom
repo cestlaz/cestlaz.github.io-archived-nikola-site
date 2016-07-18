@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 21)</title>
   <id>http://cestlaz.github.io/index-21.atom</id>
-  <updated>2016-07-01T23:12:35Z</updated>
+  <updated>2016-07-18T17:37:05Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,96 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-20.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-21.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Robots platforms and practicalities</title>
+    <id>http://cestlaz.github.io/posts/robot-survey/</id>
+    <updated>2016-06-15T09:08:28-04:00</updated>
+    <published>2016-06-15T09:08:28-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/robot-survey/"/>
+    <summary type="html">&lt;p&gt;
+I received an email from a friend the other day asking me about a
+particular robotics platform she recently saw.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've played with robotics on and off over the years ranging from
+building them from (not using) scratch using Atmel chips and programming them in
+assembly to using Arduino based platforms to using pre-built robot
+platforms. They're really cool and since they interact with the real
+world you can do all sorts of interesting and motivational things with students.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've done these on my own as a hobbyist and also with students either
+individually or in small groups, but never as part of a class I had
+been teaching.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why not?
+&lt;/p&gt;
+
+&lt;p&gt;
+The biggest reason is that the classes I've taught are already so
+packed full of CS goodness that we can't even get everything done
+that's theoretically on the syllabi.
+&lt;/p&gt;
+
+&lt;p&gt;
+The other has to do with practical concerns.
+&lt;/p&gt;
+
+&lt;p&gt;
+Equipment costs - Let's say we can get our platform at $100 a pop. I
+just can't see a public school with 34 kids in a class getting one per
+student or one for every two.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, what's the robot to student ratio and how much actual access do
+the kids get? If they're designing  building, do they all get to
+design and build? Same question with coding and operating.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then there's space – if we're talking about a mobile platform as
+opposed to something that sits on the desk and is near stationary, we
+have a problem. The classrooms I've taught in can barely hold the
+students.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are also issues with breakage, loss, theft and long term
+maintainability - will we be able to or even want to fill in with
+compatible units in a few years as needed or will we have to reboot
+the program from scratch.
+&lt;/p&gt;
+
+&lt;p&gt;
+All that to deal with before we even get to the fun of teaching and learning.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm really curious about the experiences of those of you who do teach
+using robots and similar platforms. 
+&lt;/p&gt;
+
+&lt;p&gt;
+If you are such a teacher, could you please fill out this form or
+leave a comment for anything that the form doesn't cover?
+&lt;/p&gt;
+
+
+&lt;iframe src="https://docs.google.com/forms/d/1FlppDbeiK8uPxh_RkXoCbbdE_UDY_4qXmZWbXlZ0gGg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading...&lt;/iframe&gt;</summary>
+    <category term="hardware" label="hardware"/>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="robotics" label="robotics"/>
+    <category term="robots" label="robots"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>Using Emacs - 5 - Windows</title>
     <id>http://cestlaz.github.io/posts/using-emacs-5-windows/</id>
