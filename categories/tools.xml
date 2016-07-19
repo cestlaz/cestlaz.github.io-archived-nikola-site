@@ -1,5 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/tools.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 01 Jul 2016 23:33:21 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 10 - org init files</title><link>http://cestlaz.github.io/posts/using-emacs-10-org-init/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/tools.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 19 Jul 2016 16:14:45 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 11 - Reveal.js presentations</title><link>http://cestlaz.github.io/posts/using-emacs-11-reveal/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Happy to be back after a couple of weeks.
+&lt;/p&gt;
+
+&lt;p&gt;
+My wife and son spent some time in San Francisco, Mountain View, and
+Seattle. The main reason was to see our daughter who's interning out
+there for the summer but it was also a great opportunity to catch up
+with over 100 former students. If you're interested in seeing more, I
+wrote a bit about it &lt;a href="http://cestlaz.github.io/posts/end-to-act-1/#.V45OGt9vGAk"&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+I was originally going to start talking about Python development but
+then saw &lt;a href="https://www.reddit.com/r/emacs/comments/4sp0xs/emacs_org_mode_and_revealjs/"&gt;this&lt;/a&gt; post on reddit about &lt;a href="https://github.com/hakimel/reveal.js/"&gt;reveal.js&lt;/a&gt; and using it with
+org-mode. Since reveal.js with org-mode  is my goto presentation tool
+I thought I'd do a video on that before getting back to "your
+regularly schedueld program."
+&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/psDpCpcIVYs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+The main package you have to use for reveal.js presentations in
+org-mode is org-reveal. The package to install is &lt;b&gt;&lt;b&gt;ox-reveal&lt;/b&gt;&lt;/b&gt;. I also
+installed &lt;b&gt;&lt;b&gt;htmlize&lt;/b&gt;&lt;/b&gt; for syntax highlighting. Here's the code from
+our configuration file:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;ox-reveal&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;ox-reveal&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;org-reveal-root&lt;/span&gt; &lt;span class="s"&gt;"http://cdn.jsdelivr.net/reveal.js/3.0.0/"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;org-reveal-mathjax&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;htmlize&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The org-reveal-root setq tells your presentation where to find the
+reveal.js code. In this example, we're getting from the cloud. You can
+also install it locally.
+&lt;/p&gt;
+
+&lt;p&gt;
+The org-reveal-mathjax is just so that LaTeX equations will look nice.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm hoping the video is pretty self-explanitory and the org-reveal
+&lt;a href="https://github.com/yjwen/org-reveal%0A"&gt;home page&lt;/a&gt; is pretty thorough but since the documentation is lagging a
+bit behind the code and due to some versioning issues, here are a
+couple of things to watch out for:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I made a &lt;b&gt;&lt;b&gt;samples&lt;/b&gt;&lt;/b&gt; folder where I'll put code for this series that
+isn't part of the configurations.
+&lt;/li&gt;
+&lt;li&gt;I showed &lt;b&gt;&lt;b&gt;:frag (roll-in)&lt;/b&gt;&lt;/b&gt; as an example of revealing list items
+one at a time. Those parens are important and are needed but weren't
+in earlier versions - this took me far too long to figure out. 
+&lt;/li&gt;
+&lt;li&gt;If you read the docs you'll see that there are many more transitions
+and you can mix and match them on a page.
+&lt;/li&gt;
+&lt;li&gt;You might have to upgrade your emacs packages. If you
+&lt;b&gt;&lt;b&gt;list-packages&lt;/b&gt;&lt;/b&gt;  in eamcs it will tell you if you have packages to
+upgrade. You mark them for upgrading by typing &lt;b&gt;&lt;b&gt;U&lt;/b&gt;&lt;/b&gt; and then do the
+upgrade with &lt;b&gt;&lt;b&gt;x&lt;/b&gt;&lt;/b&gt;. If this doesn't work, you can try getting rid fo
+the &lt;b&gt;&lt;b&gt;elpa&lt;/b&gt;&lt;/b&gt; folder and then re-installing.
+&lt;/li&gt;
+&lt;li&gt;The &lt;a href="http://github.com/zamansky/mazelesson"&gt;mazelesson&lt;/a&gt; sample presentation shows more features, many that we
+haven't covered yet. Check it out but remember that it's for an
+earlier version of org-reveal.
+&lt;/li&gt;
+&lt;li&gt;Github pages and rawgit are cool.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;p&gt;
+Hope you enjoy this. Please add any reveal.js tips and tricks of your
+own.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Reveal.js related linls:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/hakimel/reveal.js/"&gt;reveal.js home page&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/yjwen/org-reveal%0A"&gt;org-reveal home page&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://github.com/zamansky/mazelesson"&gt;Sample org reveal site (mazelesson from video)&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;rawgit.com - serving stuff from github
+&lt;/li&gt;
+&lt;li&gt;Github pages: &lt;a href="https://pages.github.com/"&gt;https://pages.github.com/&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-11-reveal/</guid><pubDate>Tue, 19 Jul 2016 15:53:15 GMT</pubDate></item><item><title>Using Emacs - 10 - org init files</title><link>http://cestlaz.github.io/posts/using-emacs-10-org-init/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -945,198 +1068,4 @@ Relavent links:
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-1-setup/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item><item><title>Using Emacs - 4 - Buffers</title><link>http://cestlaz.github.io/posts/using-emacs-4-buffers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;iframe width="480" height="270" src="https://www.youtube.com/embed/v5eTK5lC0xs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;
-Now that we're past the intro material, we'll start looking at emacs
-features one at a time. This will let you focus on using the one
-feature we're covering, fit it into your work flow, and really get
-comfortable with it. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This time we'll dive into using Emacs effectively with buffers.
-&lt;/p&gt;
-
-&lt;p&gt;
-Watch the video and then make a real effort to use buffers over the
-next few emacs sessions. Before you know it, they'll be a natural part
-of your work flow.
-&lt;/p&gt;
-
-&lt;p&gt;
-The idea of incrementally learning a tool this way seems to be called
-&lt;a href="http://sachachua.com/blog/2015/01/developing-emacs-micro-habits-text-automation/"&gt;developing micro-habits&lt;/a&gt; and I first read about the idea from &lt;a href="https://twitter.com/sachac"&gt;Sacha
-Chua&lt;/a&gt; who is an amazing member of the emacs community.
-&lt;/p&gt;
-
-&lt;p&gt;
-When seeing beginners, I'll frequently observe this work flow:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Open a terminal
-&lt;/li&gt;
-&lt;li&gt;Load emacs on a file
-&lt;/li&gt;
-&lt;li&gt;Edit the file
-&lt;/li&gt;
-&lt;li&gt;Save and quit emacs
-&lt;/li&gt;
-&lt;li&gt;Try to compile and run the program (since usually this is in a programming class)
-&lt;/li&gt;
-&lt;li&gt;repeat
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-If the beginner needs to see multiple files at once, they fire up multiple separate emacs.
-&lt;/p&gt;
-
-&lt;p&gt;
-All of this causes me physical pain.
-&lt;/p&gt;
-
-&lt;p&gt;
-In emacs, your editor can load several buffers at once, each
-associated with a separate file. You can quickly switch between them,
-search across them, and more. The video will get you started.
-&lt;/p&gt;
-
-&lt;p&gt;
-The video also mentions &lt;b&gt;ido&lt;/b&gt; mode. To set up &lt;b&gt;ido&lt;/b&gt; mode, add the
-following code to your init.el:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;ido-enable-flex-matching&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;ido-everywhere&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ido-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-And here's a great little write up on it by &lt;a href="https://www.masteringemacs.org/reading-guide"&gt;Mickey Petersen&lt;/a&gt;:
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;a href="https://www.masteringemacs.org/article/introduction-to-ido-mode"&gt;https://www.masteringemacs.org/article/introduction-to-ido-mode&lt;/a&gt;
-&lt;/p&gt;
-
-
-&lt;p&gt;
-As I mentioned in the video, I actually use another mode for completions (&lt;a href="https://github.com/abo-abo/swiper"&gt;swiper&lt;/a&gt;),
-which I'll cover in a future video and another popular option is &lt;a href="https://github.com/emacs-helm/helm"&gt;helm&lt;/a&gt;
-which we'll also cover.
-&lt;/p&gt;
-
-&lt;p&gt;
-For buffers, the keys to remember are:
-&lt;/p&gt;
-
-&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
-
-
-&lt;colgroup&gt;
-&lt;col class="left"&gt;
-
-&lt;col class="left"&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th scope="col" class="left"&gt;Key&lt;/th&gt;
-&lt;th scope="col" class="left"&gt;Command&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class="left"&gt;C-x b&lt;/td&gt;
-&lt;td class="left"&gt;switch-buffer&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="left"&gt;C-x C-b&lt;/td&gt;
-&lt;td class="left"&gt;list-buffers&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-
-&lt;p&gt;
-To use ibuffer, which is more powerful than list-buffers you can add
-either:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defalias&lt;/span&gt; &lt;span class="ss"&gt;'list-buffers&lt;/span&gt; &lt;span class="ss"&gt;'ibuffer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; make ibuffer default&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Or if you want to open ibuffer in another Window:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defalias&lt;/span&gt; &lt;span class="ss"&gt;'list-buffers&lt;/span&gt; &lt;span class="ss"&gt;'ibuffer-other-window&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; make ibuffer default&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Here are a couple of useful links on ibuffer and buffer switching:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://ergoemacs.org/emacs/emacs_buffer_switching.html"&gt;http://ergoemacs.org/emacs/emacs_buffer_switching.html&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://mytechrants.wordpress.com/2010/03/25/emacs-tip-of-the-day-start-using-ibuffer-asap/"&gt;https://mytechrants.wordpress.com/2010/03/25/emacs-tip-of-the-day-start-using-ibuffer-asap/&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;
-Finally, if you like a tab bar, you can add the following to your
-init.el:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;tabbar&lt;/span&gt;
-  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-  &lt;span class="nv"&gt;:config&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;tabbar-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-There's also a package &lt;a href="https://github.com/mattfidler/tabbar-ruler.el"&gt;tabbar-ruler&lt;/a&gt; which is supposed to make the
-tabbar look nicer but since I don't use the tabbar at all, I haven't
-checked it out.
-&lt;/p&gt;
-
-&lt;p&gt;
-Hope this gets you using emacs more effectively.
-&lt;/p&gt;
-
-&lt;p&gt;
-Stay tuned for our next video on window management.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-Relevant links:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Video series overview page:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Code for this video:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers"&gt;https://github.com/zamansky/using-emacs/tree/lesson-4-buffers&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Complete code built up over all videos:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-4-buffers/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-1-setup/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item></channel></rss>

@@ -88,7 +88,131 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/robot-survey/" class="u-url">Robots platforms and practicalities</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-6-swiper/" class="u-url">Using Emacs - 6 - Searching a Swiper</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/using-emacs-6-swiper/" rel="bookmark"><time class="published dt-published" datetime="2016-06-20T00:00:00-04:00" title="2016-06-20 00:00">2016-06-20 00:00</time></a></p>
+                <p class="commentline">            <a href="posts/using-emacs-6-swiper/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-6-swiper.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This video is all about using incremental search to navigate through your emacs buffers.
+</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0mwwN0S1dnQ" frameborder="0" allowfullscreen></iframe>
+
+<p>
+You can use the default incremental searchb, bound to <b><b>C-s</b></b> for
+isearch-forward <b><b>C-r</b></b> to search backwards (reverse).
+</p>
+
+<p>
+They work really well as is but I prefer using <a href="https://github.com/abo-abo/swiper">Swiper</a>. The video demos
+both and the <a href="https://github.com/abo-abo/swiper">Swiper</a> home page has loads of details.
+</p>
+
+<p>
+Part of the Swiper package includes ivy and counsel which I use instead of ido.
+</p>
+
+<p>
+The video also mentions lorem-ipsum mode for generating text quickly and <b><b>describe-mode</b></b> in the help system.
+</p>
+
+<p>
+Here's the code we added for swiper:
+</p>
+
+<div class="highlight"><pre><span></span><span class="c1">;; it looks like counsel is a requirement for swiper</span>
+<span class="p">(</span><span class="nf">use-package</span> <span class="nv">counsel</span>
+  <span class="nv">:ensure</span> <span class="nv">t</span>
+  <span class="p">)</span>
+
+<span class="p">(</span><span class="nf">use-package</span> <span class="nv">swiper</span>
+  <span class="nv">:ensure</span> <span class="nv">try</span>
+  <span class="nv">:config</span>
+  <span class="p">(</span><span class="nf">progn</span>
+    <span class="p">(</span><span class="nf">ivy-mode</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">setq</span> <span class="nv">ivy-use-virtual-buffers</span> <span class="nv">t</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="s">"\C-s"</span> <span class="ss">'swiper</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"C-c C-r"</span><span class="p">)</span> <span class="ss">'ivy-resume</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"&lt;f6&gt;"</span><span class="p">)</span> <span class="ss">'ivy-resume</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"M-x"</span><span class="p">)</span> <span class="ss">'counsel-M-x</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"C-x C-f"</span><span class="p">)</span> <span class="ss">'counsel-find-file</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"&lt;f1&gt; f"</span><span class="p">)</span> <span class="ss">'counsel-describe-function</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"&lt;f1&gt; v"</span><span class="p">)</span> <span class="ss">'counsel-describe-variable</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"&lt;f1&gt; l"</span><span class="p">)</span> <span class="ss">'counsel-load-library</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"&lt;f2&gt; i"</span><span class="p">)</span> <span class="ss">'counsel-info-lookup-symbol</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"&lt;f2&gt; u"</span><span class="p">)</span> <span class="ss">'counsel-unicode-char</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"C-c g"</span><span class="p">)</span> <span class="ss">'counsel-git</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"C-c j"</span><span class="p">)</span> <span class="ss">'counsel-git-grep</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"C-c k"</span><span class="p">)</span> <span class="ss">'counsel-ag</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"C-x l"</span><span class="p">)</span> <span class="ss">'counsel-locate</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">global-set-key</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"C-S-o"</span><span class="p">)</span> <span class="ss">'counsel-rhythmbox</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">define-key</span> <span class="nv">read-expression-map</span> <span class="p">(</span><span class="nf">kbd</span> <span class="s">"C-r"</span><span class="p">)</span> <span class="ss">'counsel-expression-history</span><span class="p">)</span>
+    <span class="p">))</span>
+</pre></div>
+
+<p>
+and we commented out the ido stuff:
+</p>
+
+<div class="highlight"><pre><span></span><span class="c1">;; using swiper so ido no longer needed</span>
+<span class="c1">;;(setq ido-enable-flex-matching t)</span>
+<span class="c1">;;(setq ido-everywhere t)</span>
+<span class="c1">;;(ido-mode 1)</span>
+</pre></div>
+
+<p>
+If you want to see a nice video specifically on swiper by the author, here it is:
+</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VvnJQpTFVDc" frameborder="0" allowfullscreen></iframe>
+
+
+
+<p>
+Relevant links:
+</p>
+<ul class="org-ul">
+<li>Swiper: <a href="https://github.com/abo-abo/swiper"></a><a href="https://github.com/abo-abo/swiper">https://github.com/abo-abo/swiper</a>
+</li>
+<li>The Swiper Manual: <a href="http://oremacs.com/swiper/">http://oremacs.com/swiper/</a>
+</li>
+<li>Video series overview page:
+<ul class="org-ul">
+<li>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</li>
+</ul>
+</li>
+<li>Code for this video:
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/lesson-6-swiper">https://github.com/zamansky/using-emacs/tree/lesson-6-swiper</a>
+</li>
+</ul>
+</li>
+<li>Complete code built up over all videos:
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/robot-survey/" class="u-url">Robots platforms and practicalities</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
