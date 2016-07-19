@@ -1,0 +1,92 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 11 - Reveal.js presentations
+.. slug: using-emacs-11-reveal
+.. date: 2016-07-19 11:53:15 UTC-04:00
+.. tags: emacs, tools
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+*  
+Happy to be back after a couple of weeks.
+
+My wife and son spent some time in San Francisco, Mountain View, and
+Seattle. The main reason was to see our daughter who's interning out
+there for the summer but it was also a great opportunity to catch up
+with over 100 former students. If you're interested in seeing more, I
+wrote a bit about it [[http://cestlaz.github.io/posts/end-to-act-1/#.V45OGt9vGAk][here]].
+
+I was originally going to start talking about Python development but
+then saw [[https://www.reddit.com/r/emacs/comments/4sp0xs/emacs_org_mode_and_revealjs/][this]] post on reddit about [[https://github.com/hakimel/reveal.js/][reveal.js]] and using it with
+org-mode. Since reveal.js with org-mode  is my goto presentation tool
+I thought I'd do a video on that before getting back to "your
+regularly schedueld program."
+
+#+BEGIN_HTML
+<iframe width="420" height="315" src="https://www.youtube.com/embed/psDpCpcIVYs" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+The main package you have to use for reveal.js presentations in
+org-mode is org-reveal. The package to install is **ox-reveal**. I also
+installed **htmlize** for syntax highlighting. Here's the code from
+our configuration file:
+
+#+BEGIN_SRC emacs-lisp
+    (use-package ox-reveal
+    :ensure ox-reveal)
+
+    (setq org-reveal-root "http://cdn.jsdelivr.net/reveal.js/3.0.0/")
+    (setq org-reveal-mathjax t)
+
+    (use-package htmlize
+    :ensure t)
+#+END_SRC
+
+The org-reveal-root setq tells your presentation where to find the
+reveal.js code. In this example, we're getting from the cloud. You can
+also install it locally.
+
+The org-reveal-mathjax is just so that LaTeX equations will look nice.
+
+I'm hoping the video is pretty self-explanitory and the org-reveal
+[[https://github.com/yjwen/org-reveal%0A][home page]] is pretty thorough but since the documentation is lagging a
+bit behind the code and due to some versioning issues, here are a
+couple of things to watch out for:
+- I made a **samples** folder where I'll put code for this series that
+  isn't part of the configurations.
+- I showed **:frag (roll-in)** as an example of revealing list items
+  one at a time. Those parens are important and are needed but weren't
+  in earlier versions - this took me far too long to figure out. 
+- If you read the docs you'll see that there are many more transitions
+  and you can mix and match them on a page.
+- You might have to upgrade your emacs packages. If you
+  **list-packages**  in eamcs it will tell you if you have packages to
+  upgrade. You mark them for upgrading by typing **U** and then do the
+  upgrade with **x**. If this doesn't work, you can try getting rid fo
+  the **elpa** folder and then re-installing.
+- The [[http://github.com/zamansky/mazelesson][mazelesson]] sample presentation shows more features, many that we
+  haven't covered yet. Check it out but remember that it's for an
+  earlier version of org-reveal.
+- Github pages and rawgit are cool.
+
+
+
+Hope you enjoy this. Please add any reveal.js tips and tricks of your
+own.
+
+
+Relevant links:
+- Reveal.js related linls:
+  - [[https://github.com/hakimel/reveal.js/][reveal.js home page]]
+  - [[https://github.com/yjwen/org-reveal%0A][org-reveal home page]]
+  - [[http://github.com/zamansky/mazelesson][Sample org reveal site (mazelesson from video)]]
+  - rawgit.com - serving stuff from github
+  - Github pages: https://pages.github.com/
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+
