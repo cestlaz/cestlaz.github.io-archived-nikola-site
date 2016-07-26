@@ -88,7 +88,112 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-6-swiper/" class="u-url">Using Emacs - 6 - Searching a Swiper</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/better-comments/" class="u-url">Better Comments or tooling as a time sink</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/better-comments/" rel="bookmark"><time class="published dt-published" datetime="2016-06-22T18:09:17-04:00" title="2016-06-22 18:09">2016-06-22 18:09</time></a></p>
+                <p class="commentline">            <a href="posts/better-comments/#disqus_thread" data-disqus-identifier="cache/posts/better-comments.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p>
+The other day my friend and fellow CS Ed Blogger <a href="https://twitter.com/alfredtwo">Alfred Thompson</a> wrote
+about <a href="http://blog.acthompson.net/2016/06/better-comments-in-visual-studio.html">Better Comments</a>, an extension for visual studio that displays
+comments that are marked up  with special characters in order to
+highlight them. Here's a screenshot:
+</p>
+
+
+<div class="figure">
+<p><img src="https://raw.githubusercontent.com/omsharp/BetterComments/master/screenshots/ClassificationC.png" alt="ClassificationC.png"></p>
+</div>
+
+
+<p>
+So, the first thing I though was "I bet emacs could do that pretty
+easily" and down the rabbit hole I went.
+</p>
+
+<p>
+I had to figure out something about how emacs themes and font-locking
+(emacs for syntax highlighting) works and of course spent far too much
+time learning about Emacs, my favored tool, rather than getting actual
+work done, but I came up with this:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">make-face</span> <span class="ss">'font-lock-comment-important</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">set-face-foreground</span> <span class="ss">'font-lock-comment-important</span> <span class="s">"#00ff00"</span><span class="p">)</span>
+
+<span class="p">(</span><span class="nf">make-face</span> <span class="ss">'font-lock-comment-todo</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">set-face-foreground</span> <span class="ss">'font-lock-comment-todo</span> <span class="s">"#ff0000"</span><span class="p">)</span>
+
+<span class="p">(</span><span class="nf">make-face</span> <span class="ss">'font-lock-comment-strike</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">set-face-attribute</span> <span class="ss">'font-lock-comment-strike</span>
+		    <span class="nv">nil</span> <span class="nv">:strike-through</span> <span class="nv">t</span><span class="p">)</span>
+
+<span class="p">(</span><span class="nf">defun</span> <span class="nv">add-custom-keyw</span><span class="p">()</span>
+  <span class="s">"adds a few special keywords"</span>
+  <span class="p">(</span><span class="nf">font-lock-add-keywords</span> 
+   <span class="nv">nil</span>
+   <span class="o">'</span><span class="p">((</span><span class="s">"cx \\(.+\\)"</span> <span class="mi">1</span> <span class="ss">'font-lock-comment-strike</span> <span class="nv">prepend</span><span class="p">)</span>
+     <span class="p">(</span><span class="s">"ct \\(.+\\)"</span> <span class="mi">1</span> <span class="ss">'font-lock-comment-todo</span> <span class="nv">prepend</span><span class="p">)</span>
+     <span class="p">(</span><span class="s">"ci \\(.+\\)"</span> <span class="mi">1</span> <span class="ss">'font-lock-comment-important</span> <span class="nv">prepend</span><span class="p">)</span>
+     <span class="p">)</span>
+   <span class="p">))</span>
+<span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'python-mode-hook</span> <span class="ss">'add-custom-keyw</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'js2-mode-hook</span> <span class="ss">'add-custom-keyw</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'js-mode-hook</span> <span class="ss">'add-custom-keyw</span><span class="p">)</span>
+</pre></div>
+
+<p>
+It's a hack but it does indeed work. In action, it looks something
+like this:
+</p>
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/3TLw1yOMKMc" frameborder="0" allowfullscreen></iframe>
+
+<p>
+Truth be told, it really colors anything following cx, ct, or ci, not
+just in comments – I have to look a bit more into how emacs handles
+comments to figure that one out.
+</p>
+
+<p>
+In any event, even though I spent too much time doing this, it's nice
+to know I'm working in a tool in which I can.
+</p>
+
+<p>
+<b><b>UPDATE:</b></b> Thanks to user ncsuwolf on /r/emacs on reddit, here's a
+fully working, more properly done solution:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">defface</span> <span class="nv">font-lock-comment-strike</span>
+  <span class="o">'</span><span class="p">((</span><span class="nf">t</span> <span class="p">(</span><span class="nf">:strike-through</span> <span class="nv">t</span><span class="p">)))</span>
+  <span class="s">"For strike-through comments"</span><span class="p">)</span>
+
+<span class="p">(</span><span class="nf">defface</span> <span class="nv">font-lock-comment-important</span>
+  <span class="o">'</span><span class="p">((</span><span class="nf">t</span> <span class="p">(</span><span class="nf">:foreground</span> <span class="s">"#00ff00"</span><span class="p">)))</span>
+  <span class="s">"For important"</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">defface</span> <span class="nv">font-lock-comment-todo</span>
+  <span class="o">'</span><span class="p">((</span><span class="nf">t</span> <span class="p">(</span><span class="nf">:foreground</span> <span class="s">"#ff0000"</span><span class="p">))</span>
+		<span class="s">"For todo comments"</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">defun</span> <span class="nv">add-custom-keyw</span><span class="p">()</span>
+		<span class="s">"adds a few special keywords"</span>
+		<span class="p">(</span><span class="nf">font-lock-add-keywords</span>
+		 <span class="nv">nil</span>
+		 <span class="o">'</span><span class="p">((</span><span class="s">"\\s&lt;+x[[:space:]]*\\(.*?\\)[[:space:]]*\\s&gt;"</span> <span class="mi">1</span> <span class="ss">'font-lock-comment-strike</span> <span class="nv">prepend</span><span class="p">)</span>
+			 <span class="p">(</span><span class="s">"\\s&lt;+t[[:space:]]*\\(.*?\\)[[:space:]]*\\s&gt;"</span> <span class="mi">1</span> <span class="ss">'font-lock-comment-todo</span> <span class="nv">prepend</span><span class="p">)</span>
+			 <span class="p">(</span><span class="s">"\\s&lt;+i[[:space:]]*\\(.*?\\)[[:space:]]*\\s&gt;"</span> <span class="mi">1</span> <span class="ss">'font-lock-comment-important</span> <span class="nv">prepend</span><span class="p">))))</span>
+
+	<span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'prog-mode-hook</span> <span class="o">#</span><span class="ss">'add-custom-keyw</span><span class="p">)</span>
+</pre></div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-6-swiper/" class="u-url">Using Emacs - 6 - Searching a Swiper</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky

@@ -1,5 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (education)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/education.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 01 Jul 2016 11:33:28 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Hillary and Student Loans</title><link>http://cestlaz.github.io/posts/hillary-loans/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (education)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/education.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 26 Jul 2016 00:14:43 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Ed Disruption - why it's different</title><link>http://cestlaz.github.io/posts/ed-disrupt-why-diff/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Earlier today I read &lt;a href="http://www.eliothorowitz.com/blog/2016/07/25/innovate-vs-appropriate/"&gt;this post&lt;/a&gt; by &lt;a href="https://twitter.com/eliothorowitz"&gt;Eliot Horowitz&lt;/a&gt;, founder and CTO of MongoDB.
+&lt;/p&gt;
+
+&lt;p&gt;
+Eliot titled the post "Innovate vs Appropriate" and talks about the
+importance of knowing when to come up with something new vs when to
+use the accepted tool, technique, or method. Eliot, of course is
+discussing this as it applies to MongoDB and it's well worth a read
+but it got me thinking about the ever popular need to "disrupt"
+education.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've witnessed this disruption or Ed Reform for the last decade
+plus. The basic notion that public education isn't working so we need
+to disrupt things. We've suffered through:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Vouchers
+&lt;/li&gt;
+&lt;li&gt;Charters
+&lt;/li&gt;
+&lt;li&gt;Online "learning" replacing teachers
+&lt;/li&gt;
+&lt;li&gt;Teach for America and other temp type efforts
+&lt;/li&gt;
+&lt;li&gt;Merit pay
+&lt;/li&gt;
+&lt;li&gt;VAM for teacher evaluation
+&lt;/li&gt;
+&lt;li&gt;Merit pay
+&lt;/li&gt;
+&lt;li&gt;and more
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+These disruptions are brought to you by your friendly neighborhood
+billionaire "philanthropist" or your politicians.
+&lt;/p&gt;
+
+&lt;p&gt;
+By and large, they haven't worked.
+&lt;/p&gt;
+
+&lt;p&gt;
+Bill Gates got us to close down community schools and create small
+ones. While we did need more small schools, overall it didn't work
+(&lt;a href="http://www.huffingtonpost.com/marc-epstein/small-schools-miracle-or_b_2641400.html?utm_hp_ref=new-york"&gt;link&lt;/a&gt;, &lt;a href="https://www.washingtonpost.com/news/answer-sheet/wp/2014/06/09/how-much-bill-gatess-disappointing-small-schools-effort-really-cost/%0A"&gt;link&lt;/a&gt;). VAM teacher evaluation is &lt;a href="https://www.washingtonpost.com/news/answer-sheet/wp/2014/06/09/how-much-bill-gatess-disappointing-small-schools-effort-really-cost/%0A"&gt;arbitrary and capricious&lt;/a&gt;,
+merit pay has &lt;a href="https://www.washingtonpost.com/blogs/answer-sheet/post/ravitch-why-merit-pay-for-teachers-doesnt-work/2011/03/29/AFn5w9yB_blog.html"&gt;never worked&lt;/a&gt;, nor does the &lt;a href="http://educationnext.org/online-charters-mostly-dont-work-forum-virtual-schools-greg-richmond/"&gt;online thing&lt;/a&gt;. Meanwhile, charter
+schools by and large &lt;a href="http://www.nea.org/home/32999.htm"&gt;don't do better&lt;/a&gt; than public schools.
+&lt;/p&gt;
+
+&lt;p&gt;
+Rather than saving our schools, these efforts have lowered teacher
+morale and done little for our most vulnerable children.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, what's the difference between ed disruption and the tech world?
+Well, for starters, those disrupting education totally ignore the very
+advice that Eliot posted about today.
+&lt;/p&gt;
+
+&lt;p&gt;
+Disruption to and of our public schools hasn't been a matter
+appropriating what works and innovating what needs to be innovated but rather
+a playground for pet projects of politicians and well meaning rich
+folk.  Rather than looking at something simple that works, like, say,
+smaller class sizes, we get computerized testing. Instead of
+experienced teachers, we get inexperienced newbies that leave after
+their commitment is up.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why the difference? It hit me while reading Eliot's post. When a
+founder is "disrupting" he has skin in the game - it's his company -
+sink or swim. Not so for education reformers. Politicians merely need
+to be re-elected.Sso as long as something looks good short term, it is
+good. Those who disrupt schools are never held accountable. We got
+small schools and VAM from among other places, Bill Gates. He admitted
+his reforms didn't work but was there any penalty for disrupting so
+many lives? Nope. For politicians, it's the same story. As Mayor Mike
+Bloomberg once said "If they don't like my education policy, they can
+boo me at parades."
+&lt;/p&gt;
+
+&lt;p&gt;
+Can we fix this? Sure, but not unless those forcing the changes have
+real skin in the game. Will it happen? I'm not holding my breath.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>disruption</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/ed-disrupt-why-diff/</guid><pubDate>Mon, 25 Jul 2016 23:32:01 GMT</pubDate></item><item><title>Hillary and Student Loans</title><link>http://cestlaz.github.io/posts/hillary-loans/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 Yesterday I read over Hillary's briefing on her initiative on
 &lt;a href="https://www.hillaryclinton.com/briefing/factsheets/2016/06/27/hillary-clintons-initiative-on-technology-innovation/"&gt;Technology and Innovation&lt;/a&gt;.
 &lt;/p&gt;

@@ -5,9 +5,9 @@ article: http://ogp.me/ns/article#
 " lang="en">
 <head>
 <meta charset="utf-8">
-<base href="http://cestlaz.github.io/posts/using-emacs-11-reveal/">
+<base href="http://cestlaz.github.io/posts/ed-disrupt-why-diff/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Using Emacs - 11 - Reveal.js presentations | C'est la Z</title>
+<title>Ed Disruption - why it's different | C'est la Z</title>
 <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
@@ -17,24 +17,23 @@ article: http://ogp.me/ns/article#
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="../../index.atom">
-<link rel="canonical" href="http://cestlaz.github.io/posts/using-emacs-11-reveal/">
+<link rel="canonical" href="http://cestlaz.github.io/posts/ed-disrupt-why-diff/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
-<link rel="prev" href="../end-to-act-1/" title="West coast trip - a nice close to act I" type="text/html">
-<link rel="next" href="../ed-disrupt-why-diff/" title="Ed Disruption - why it's different" type="text/html">
+<link rel="prev" href="../using-emacs-11-reveal/" title="Using Emacs - 11 - Reveal.js presentations" type="text/html">
 <meta property="og:site_name" content="C'est la Z">
-<meta property="og:title" content="Using Emacs - 11 - Reveal.js presentations">
-<meta property="og:url" content="http://cestlaz.github.io/posts/using-emacs-11-reveal/">
-<meta property="og:description" content="Happy to be back after a couple of weeks.
+<meta property="og:title" content="Ed Disruption - why it's different">
+<meta property="og:url" content="http://cestlaz.github.io/posts/ed-disrupt-why-diff/">
+<meta property="og:description" content='Earlier today I read this post by Eliot Horowitz, founder and CTO of MongoDB.
 
 
 
-My wife and son spent some time in San Francisco, Mountain View, and
-Seattle. The main reason was to see our daughter who's interning out
-there for the sum">
+Eliot titled the post "Innovate vs Appropriate" and talks about the
+importance of knowing when to come up with somethin'>
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2016-07-19T11:53:15-04:00">
-<meta property="article:tag" content="emacs">
-<meta property="article:tag" content="tools">
+<meta property="article:published_time" content="2016-07-25T19:32:01-04:00">
+<meta property="article:tag" content="disruption">
+<meta property="article:tag" content="education">
+<meta property="article:tag" content="policy">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -99,14 +98,14 @@ there for the sum">
 						<div class="col-md-8">
 				
 								
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Using Emacs - 11 - Reveal.js presentations</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Ed Disruption - why it's different</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                     Mike Zamansky
             </span></p>
-            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2016-07-19T11:53:15-04:00" itemprop="datePublished" title="2016-07-19 11:53">2016-07-19 11:53</time></a></p>
-                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-11-reveal.html">Comments</a>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2016-07-25T19:32:01-04:00" itemprop="datePublished" title="2016-07-25 19:32">2016-07-25 19:32</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/ed-disrupt-why-diff.html">Comments</a>
 
 
             
@@ -118,126 +117,97 @@ there for the sum">
 <h2 id="sec-1"></h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Happy to be back after a couple of weeks.
+Earlier today I read <a href="http://www.eliothorowitz.com/blog/2016/07/25/innovate-vs-appropriate/">this post</a> by <a href="https://twitter.com/eliothorowitz">Eliot Horowitz</a>, founder and CTO of MongoDB.
 </p>
 
 <p>
-My wife and son spent some time in San Francisco, Mountain View, and
-Seattle. The main reason was to see our daughter who's interning out
-there for the summer but it was also a great opportunity to catch up
-with over 100 former students. If you're interested in seeing more, I
-wrote a bit about it <a href="http://cestlaz.github.io/posts/end-to-act-1/#.V45OGt9vGAk">here</a>.
+Eliot titled the post "Innovate vs Appropriate" and talks about the
+importance of knowing when to come up with something new vs when to
+use the accepted tool, technique, or method. Eliot, of course is
+discussing this as it applies to MongoDB and it's well worth a read
+but it got me thinking about the ever popular need to "disrupt"
+education.
 </p>
 
 <p>
-I was originally going to start talking about Python development but
-then saw <a href="https://www.reddit.com/r/emacs/comments/4sp0xs/emacs_org_mode_and_revealjs/">this</a> post on reddit about <a href="https://github.com/hakimel/reveal.js/">reveal.js</a> and using it with
-org-mode. Since reveal.js with org-mode  is my goto presentation tool
-I thought I'd do a video on that before getting back to "your
-regularly schedueld program."
+I've witnessed this disruption or Ed Reform for the last decade
+plus. The basic notion that public education isn't working so we need
+to disrupt things. We've suffered through:
 </p>
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/psDpCpcIVYs" frameborder="0" allowfullscreen></iframe>
-
-<p>
-The main package you have to use for reveal.js presentations in
-org-mode is org-reveal. The package to install is <b><b>ox-reveal</b></b>. I also
-installed <b><b>htmlize</b></b> for syntax highlighting. Here's the code from
-our configuration file:
-</p>
-
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">ox-reveal</span>
-<span class="nv">:ensure</span> <span class="nv">ox-reveal</span><span class="p">)</span>
-
-<span class="p">(</span><span class="nf">setq</span> <span class="nv">org-reveal-root</span> <span class="s">"http://cdn.jsdelivr.net/reveal.js/3.0.0/"</span><span class="p">)</span>
-<span class="p">(</span><span class="nf">setq</span> <span class="nv">org-reveal-mathjax</span> <span class="nv">t</span><span class="p">)</span>
-
-<span class="p">(</span><span class="nf">use-package</span> <span class="nv">htmlize</span>
-<span class="nv">:ensure</span> <span class="nv">t</span><span class="p">)</span>
-</pre></div>
-
-<p>
-The org-reveal-root setq tells your presentation where to find the
-reveal.js code. In this example, we're getting from the cloud. You can
-also install it locally.
-</p>
-
-<p>
-The org-reveal-mathjax is just so that LaTeX equations will look nice.
-</p>
-
-<p>
-I'm hoping the video is pretty self-explanitory and the org-reveal
-<a href="https://github.com/yjwen/org-reveal%0A">home page</a> is pretty thorough but since the documentation is lagging a
-bit behind the code and due to some versioning issues, here are a
-couple of things to watch out for:
-</p>
 <ul class="org-ul">
-<li>I made a <b><b>samples</b></b> folder where I'll put code for this series that
-isn't part of the configurations.
+<li>Vouchers
 </li>
-<li>I showed <b><b>:frag (roll-in)</b></b> as an example of revealing list items
-one at a time. Those parens are important and are needed but weren't
-in earlier versions - this took me far too long to figure out. 
+<li>Charters
 </li>
-<li>If you read the docs you'll see that there are many more transitions
-and you can mix and match them on a page.
+<li>Online "learning" replacing teachers
 </li>
-<li>You might have to upgrade your emacs packages. If you
-<b><b>list-packages</b></b>  in eamcs it will tell you if you have packages to
-upgrade. You mark them for upgrading by typing <b><b>U</b></b> and then do the
-upgrade with <b><b>x</b></b>. If this doesn't work, you can try getting rid fo
-the <b><b>elpa</b></b> folder and then re-installing.
+<li>Teach for America and other temp type efforts
 </li>
-<li>The <a href="http://github.com/zamansky/mazelesson">mazelesson</a> sample presentation shows more features, many that we
-haven't covered yet. Check it out but remember that it's for an
-earlier version of org-reveal.
+<li>Merit pay
 </li>
-<li>Github pages and rawgit are cool.
+<li>VAM for teacher evaluation
+</li>
+<li>Merit pay
+</li>
+<li>and more
 </li>
 </ul>
 <p>
-Hope you enjoy this. Please add any reveal.js tips and tricks of your
-own.
+These disruptions are brought to you by your friendly neighborhood
+billionaire "philanthropist" or your politicians.
 </p>
-
 
 <p>
-Relevant links:
+By and large, they haven't worked.
 </p>
-<ul class="org-ul">
-<li>Reveal.js related linls:
-<ul class="org-ul">
-<li>
-<a href="https://github.com/hakimel/reveal.js/">reveal.js home page</a>
-</li>
-<li>
-<a href="https://github.com/yjwen/org-reveal%0A">org-reveal home page</a>
-</li>
-<li>
-<a href="http://github.com/zamansky/mazelesson">Sample org reveal site (mazelesson from video)</a>
-</li>
-<li>rawgit.com - serving stuff from github
-</li>
-<li>Github pages: <a href="https://pages.github.com/">https://pages.github.com/</a>
-</li>
-</ul>
-</li>
-<li>Video series overview page:
-<ul class="org-ul">
-<li>
-<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
-</li>
-</ul>
-</li>
-<li>Code:
-<ul class="org-ul">
-<li>
-<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
-</li>
-</ul>
-</li>
-</ul>
+
+<p>
+Bill Gates got us to close down community schools and create small
+ones. While we did need more small schools, overall it didn't work
+(<a href="http://www.huffingtonpost.com/marc-epstein/small-schools-miracle-or_b_2641400.html?utm_hp_ref=new-york">link</a>, <a href="https://www.washingtonpost.com/news/answer-sheet/wp/2014/06/09/how-much-bill-gatess-disappointing-small-schools-effort-really-cost/%0A">link</a>). VAM teacher evaluation is <a href="https://www.washingtonpost.com/news/answer-sheet/wp/2014/06/09/how-much-bill-gatess-disappointing-small-schools-effort-really-cost/%0A">arbitrary and capricious</a>,
+merit pay has <a href="https://www.washingtonpost.com/blogs/answer-sheet/post/ravitch-why-merit-pay-for-teachers-doesnt-work/2011/03/29/AFn5w9yB_blog.html">never worked</a>, nor does the <a href="http://educationnext.org/online-charters-mostly-dont-work-forum-virtual-schools-greg-richmond/">online thing</a>. Meanwhile, charter
+schools by and large <a href="http://www.nea.org/home/32999.htm">don't do better</a> than public schools.
+</p>
+
+<p>
+Rather than saving our schools, these efforts have lowered teacher
+morale and done little for our most vulnerable children.
+</p>
+
+<p>
+So, what's the difference between ed disruption and the tech world?
+Well, for starters, those disrupting education totally ignore the very
+advice that Eliot posted about today.
+</p>
+
+<p>
+Disruption to and of our public schools hasn't been a matter
+appropriating what works and innovating what needs to be innovated but rather
+a playground for pet projects of politicians and well meaning rich
+folk.  Rather than looking at something simple that works, like, say,
+smaller class sizes, we get computerized testing. Instead of
+experienced teachers, we get inexperienced newbies that leave after
+their commitment is up.
+</p>
+
+<p>
+Why the difference? It hit me while reading Eliot's post. When a
+founder is "disrupting" he has skin in the game - it's his company -
+sink or swim. Not so for education reformers. Politicians merely need
+to be re-elected.Sso as long as something looks good short term, it is
+good. Those who disrupt schools are never held accountable. We got
+small schools and VAM from among other places, Bill Gates. He admitted
+his reforms didn't work but was there any penalty for disrupting so
+many lives? Nope. For politicians, it's the same story. As Mayor Mike
+Bloomberg once said "If they don't like my education policy, they can
+boo me at parades."
+</p>
+
+<p>
+Can we fix this? Sure, but not unless those forcing the changes have
+real skin in the game. Will it happen? I'm not holding my breath.
+</p>
 </div>
 </div>
 
@@ -253,23 +223,21 @@ Relevant links:
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
 </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../categories/emacs/" rel="tag">emacs</a></li>
-            <li><a class="tag p-category" href="../../categories/tools/" rel="tag">tools</a></li>
+<li><a class="tag p-category" href="../../categories/disruption/" rel="tag">disruption</a></li>
+            <li><a class="tag p-category" href="../../categories/education/" rel="tag">education</a></li>
+            <li><a class="tag p-category" href="../../categories/policy/" rel="tag">policy</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../end-to-act-1/" rel="prev" title="West coast trip - a nice close to act I">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../ed-disrupt-why-diff/" rel="next" title="Ed Disruption - why it's different">Next post</a>
+                <a href="../using-emacs-11-reveal/" rel="prev" title="Using Emacs - 11 - Reveal.js presentations">Previous post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="cestlaz",
-            disqus_url="http://cestlaz.github.io/posts/using-emacs-11-reveal/",
-        disqus_title="Using Emacs - 11 - Reveal.js presentations",
-        disqus_identifier="cache/posts/using-emacs-11-reveal.html",
+            disqus_url="http://cestlaz.github.io/posts/ed-disrupt-why-diff/",
+        disqus_title="Ed Disruption - why it's different",
+        disqus_identifier="cache/posts/ed-disrupt-why-diff.html",
         disqus_config = function () {
             this.language = "en";
         };

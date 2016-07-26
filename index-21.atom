@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 21)</title>
   <id>http://cestlaz.github.io/index-21.atom</id>
-  <updated>2016-07-19T16:12:42Z</updated>
+  <updated>2016-07-26T00:14:42Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,111 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-20.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-21.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Better Comments or tooling as a time sink</title>
+    <id>http://cestlaz.github.io/posts/better-comments/</id>
+    <updated>2016-06-22T18:09:17-04:00</updated>
+    <published>2016-06-22T18:09:17-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/better-comments/"/>
+    <summary type="html">&lt;p&gt;
+The other day my friend and fellow CS Ed Blogger &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; wrote
+about &lt;a href="http://blog.acthompson.net/2016/06/better-comments-in-visual-studio.html"&gt;Better Comments&lt;/a&gt;, an extension for visual studio that displays
+comments that are marked up  with special characters in order to
+highlight them. Here's a screenshot:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/omsharp/BetterComments/master/screenshots/ClassificationC.png" alt="ClassificationC.png"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+So, the first thing I though was "I bet emacs could do that pretty
+easily" and down the rabbit hole I went.
+&lt;/p&gt;
+
+&lt;p&gt;
+I had to figure out something about how emacs themes and font-locking
+(emacs for syntax highlighting) works and of course spent far too much
+time learning about Emacs, my favored tool, rather than getting actual
+work done, but I came up with this:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;make-face&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-important&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;set-face-foreground&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-important&lt;/span&gt; &lt;span class="s"&gt;"#00ff00"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;make-face&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-todo&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;set-face-foreground&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-todo&lt;/span&gt; &lt;span class="s"&gt;"#ff0000"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;make-face&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-strike&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;set-face-attribute&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-strike&lt;/span&gt;
+		    &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="nv"&gt;:strike-through&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+  &lt;span class="s"&gt;"adds a few special keywords"&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;font-lock-add-keywords&lt;/span&gt; 
+   &lt;span class="nv"&gt;nil&lt;/span&gt;
+   &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"cx \\(.+\\)"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-strike&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"ct \\(.+\\)"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-todo&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"ci \\(.+\\)"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-important&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'js2-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'js-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+It's a hack but it does indeed work. In action, it looks something
+like this:
+&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/3TLw1yOMKMc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Truth be told, it really colors anything following cx, ct, or ci, not
+just in comments – I have to look a bit more into how emacs handles
+comments to figure that one out.
+&lt;/p&gt;
+
+&lt;p&gt;
+In any event, even though I spent too much time doing this, it's nice
+to know I'm working in a tool in which I can.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;b&gt;&lt;b&gt;UPDATE:&lt;/b&gt;&lt;/b&gt; Thanks to user ncsuwolf on /r/emacs on reddit, here's a
+fully working, more properly done solution:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defface&lt;/span&gt; &lt;span class="nv"&gt;font-lock-comment-strike&lt;/span&gt;
+  &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nf"&gt;t&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:strike-through&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+  &lt;span class="s"&gt;"For strike-through comments"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defface&lt;/span&gt; &lt;span class="nv"&gt;font-lock-comment-important&lt;/span&gt;
+  &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nf"&gt;t&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:foreground&lt;/span&gt; &lt;span class="s"&gt;"#00ff00"&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+  &lt;span class="s"&gt;"For important"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defface&lt;/span&gt; &lt;span class="nv"&gt;font-lock-comment-todo&lt;/span&gt;
+  &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nf"&gt;t&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:foreground&lt;/span&gt; &lt;span class="s"&gt;"#ff0000"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+		&lt;span class="s"&gt;"For todo comments"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+		&lt;span class="s"&gt;"adds a few special keywords"&lt;/span&gt;
+		&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;font-lock-add-keywords&lt;/span&gt;
+		 &lt;span class="nv"&gt;nil&lt;/span&gt;
+		 &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"\\s&amp;lt;+x[[:space:]]*\\(.*?\\)[[:space:]]*\\s&amp;gt;"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-strike&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+			 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"\\s&amp;lt;+t[[:space:]]*\\(.*?\\)[[:space:]]*\\s&amp;gt;"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-todo&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+			 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"\\s&amp;lt;+i[[:space:]]*\\(.*?\\)[[:space:]]*\\s&amp;gt;"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-important&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;
+
+	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'prog-mode-hook&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="ss"&gt;'add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>Using Emacs - 6 - Searching a Swiper</title>
     <id>http://cestlaz.github.io/posts/using-emacs-6-swiper/</id>
