@@ -1,5 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/tools.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 19 Jul 2016 16:14:45 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 11 - Reveal.js presentations</title><link>http://cestlaz.github.io/posts/using-emacs-11-reveal/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/tools.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 27 Jul 2016 23:03:00 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 12 - Flycheck, Jedi, Python</title><link>http://cestlaz.github.io/posts/using-emacs-12-python/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+This week, we're going to look at my setup for Python programming. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm an educator, not a professional developer so I'm not working in
+huge code bases with dozens or more files at a time. I do periodically
+work in medium size code bases and will talk about cross file
+navigation and project management later on. There are also more
+powerful emacs Python packages. One being &lt;a href="https://github.com/jorgenschaefer/elpy"&gt;elpy&lt;/a&gt;. Elpy looks pretty cool
+but for me, it's overkill.
+&lt;/p&gt;
+
+&lt;p&gt;
+Today's about the basics.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first tool I show is &lt;a href="http://www.flycheck.org/en/latest/"&gt;flycheck&lt;/a&gt;. It does code checking on the fly
+and supports &lt;a href="http://www.flycheck.org/en/latest/languages.html#flycheck-languages"&gt;tons of languages&lt;/a&gt;. You might have to install some
+external checkers though. For instance, I installed &lt;b&gt;&lt;b&gt;pylint&lt;/b&gt;&lt;/b&gt; for
+python syntax checking with:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pip install pylint
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Cofiguring flycheck is as easy as:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;flycheck&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:init&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-flycheck-mode&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+The video all shows how I like to run Python from within emacs.
+&lt;/p&gt;
+
+&lt;p&gt;
+The other tool I use is &lt;a href="https://github.com/tkf/emacs-jedi"&gt;Jedi&lt;/a&gt;. It provides more extensive completion
+for Python.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the setup:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;jedi&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:init&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:setup&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:ac-setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The last hook sets up the autocomplete. 
+&lt;/p&gt;
+
+&lt;p&gt;
+For jedi to work, you'll need to install the jedi server which is done
+in emacs by running &lt;b&gt;&lt;b&gt;M-x jedi:install-server&lt;/b&gt;&lt;/b&gt;. For that to work,
+though, you'll need to have &lt;a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/"&gt;Python Virtualenv&lt;/a&gt; istalled. I did that
+with:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pip install virtualenv
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Here's the video:
+&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/wbj_Wjm1Tuw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Flycheck:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://flycheck.org"&gt;Flycheck home page&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.pylint.org/"&gt;Pylint&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://flake8.pycqa.org/en/latest/"&gt;Flake8&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Jedi:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/davidhalter/jedi"&gt;Jedi&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://virtualenv.pypa.io/en/stable/"&gt;Virtualenv&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-12-python/</guid><pubDate>Wed, 27 Jul 2016 04:00:00 GMT</pubDate></item><item><title>Using Emacs - 11 - Reveal.js presentations</title><link>http://cestlaz.github.io/posts/using-emacs-11-reveal/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -980,92 +1098,4 @@ Relevant links:
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-5-windows/</guid><pubDate>Tue, 14 Jun 2016 04:00:00 GMT</pubDate></item><item><title>Using Emacs - Setting up the Package Manager</title><link>http://cestlaz.github.io/posts/using-emacs-1-setup/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-This video will step you through setting up Emacs to use &lt;a href="http://melpa.org/#/"&gt;MELPA&lt;/a&gt; for packages.
-&lt;/p&gt;
-
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/49kBWM3RQQ8?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-
-&lt;p&gt;
-We configured emacs by creating a folder named &lt;b&gt;.emacs.d&lt;/b&gt; and creating a
-file within it named &lt;b&gt;init.el&lt;/b&gt;. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Here's the contents of that file:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;inhibit-startup-message&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;require&lt;/span&gt; &lt;span class="ss"&gt;'package&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;package-enable-at-startup&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'package-archives&lt;/span&gt;
-	     &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"melpa"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"https://melpa.org/packages/"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-initialize&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="c1"&gt;;; Bootstrap `use-package'&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;unless&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-installed-p&lt;/span&gt; &lt;span class="ss"&gt;'use-package&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-refresh-contents&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-install&lt;/span&gt; &lt;span class="ss"&gt;'use-package&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;try&lt;/span&gt;
-	&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;which-key&lt;/span&gt;
-	&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt; 
-	&lt;span class="nv"&gt;:config&lt;/span&gt;
-	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;which-key-mode&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-The last two &lt;b&gt;inituse-package&lt;/b&gt; clauses install two helpful packages:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;b&gt;try&lt;/b&gt;: let's you try packages without installing them.
-&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;which-key&lt;/b&gt;: brings up help on key combinations.
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-Relavent links:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Video series overview page:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Code for this video:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"&gt;https://github.com/zamansky/using-emacs/tree/lesson-1-setup&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Complete code built up over all videos:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Melpa and packages
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://melpa.org"&gt;&lt;/a&gt;&lt;a href="http://melpa.org"&gt;http://melpa.org&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/justbur/emacs-which-key"&gt;which-key&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/larstvei/Try"&gt;try&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-1-setup/</guid><pubDate>Mon, 23 May 2016 17:29:36 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-5-windows/</guid><pubDate>Tue, 14 Jun 2016 04:00:00 GMT</pubDate></item></channel></rss>
