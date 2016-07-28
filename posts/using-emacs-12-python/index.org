@@ -64,6 +64,9 @@ in emacs by running **M-x jedi:install-server**. For that to work,
 though, you'll need to have [[http://docs.python-guide.org/en/latest/dev/virtualenvs/][Python Virtualenv]] istalled. I did that
 with:
 
+**EDIT:** I just got a report that you might need to also install epc (**sudo pip install epc**).
+
+
 #+BEGIN_SRC bash
 sudo pip install virtualenv
 #+END_SRC

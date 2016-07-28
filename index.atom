@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2016-07-27T23:02:59Z</updated>
+  <updated>2016-07-28T10:13:21Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -91,6 +91,11 @@ in emacs by running &lt;b&gt;&lt;b&gt;M-x jedi:install-server&lt;/b&gt;&lt;/b&gt
 though, you'll need to have &lt;a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/"&gt;Python Virtualenv&lt;/a&gt; istalled. I did that
 with:
 &lt;/p&gt;
+
+&lt;p&gt;
+&lt;b&gt;&lt;b&gt;EDIT:&lt;/b&gt;&lt;/b&gt; I just got a report that you might need to also install epc (&lt;b&gt;&lt;b&gt;sudo pip install epc&lt;/b&gt;&lt;/b&gt;).
+&lt;/p&gt;
+
 
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pip install virtualenv
 &lt;/pre&gt;&lt;/div&gt;
