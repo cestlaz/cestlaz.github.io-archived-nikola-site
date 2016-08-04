@@ -1,0 +1,80 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 13 - Yasnippet
+.. slug: using-emacs-13-yasnippet
+.. date: 2016-08-04
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+*  
+It turns out that [[https://github.com/jorgenschaefer/elpy][Elpy]], a popular emacs package for python development
+is much easier to set up than I remember. It turns out all you need
+is:
+
+#+BEGIN_SRC emacs-lisp
+      (use-package elpy
+      :ensure t
+      :config 
+      (elpy-enable))
+#+END_SRC
+
+The video shows how to install and a bit of use. I don't think it's a
+package I'm going to use much since I use other tools to do similar
+things but it's worth checking out. 
+
+The main event this week is [[https://github.com/joaotavora/yasnippet][yasnippet]], a package that lets you expand
+text aliases. Let's say you want to put the fairly standard:
+
+#+BEGIN_SRC python
+if __name__ == '__main__':
+   main()
+#+END_SRC
+
+in my file. I can just type **ifm** and then hit the **TAB** key and
+it would expand to the above code. Yasnippet also lets you leave
+placeholders for variables, function names and more. It's a pretty
+neat package.
+
+I use it for boilerplate code. The example in the video shows how I
+set up a snippet for the boilerplate code used when creating an
+application with the **Flask** python microframework.
+
+Setting up yasnippet is as easy as:
+
+#+BEGIN_SRC emacs-lisp
+    (use-package yasnippet
+      :ensure t
+      :init
+        (yas-global-mode 1))
+#+END_SRC
+
+and it has built in support for [[https://github.com/AndreaCrotti/yasnippet-snippets/tree/9ce0b05f4b4d693831e67dd65d660716a8192e8d][tons of langauges]]. You can also easily
+create your own snippets. See the documentation for details on the
+file format. Just create a text file for the snippet and place it in a
+subidectory under the snippets subdirectory of .emacs.d. The name of
+the subdirectory should be the name of the emacs mode for which the
+snippet is defined. I put up the snippet I use for flask so feel free
+to check that out.
+
+#+BEGIN_HTML
+<iframe width="420" height="315" src="https://www.youtube.com/embed/4aYMa8f6B0o" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+Relevant links:
+- Yasnippet:
+  - [[https://github.com/joaotavora/yasnippet][Home Page]]
+  - [[http://joaotavora.github.io/yasnippet/][Docs]]
+  - [[https://github.com/AndreaCrotti/yasnippet-snippets/tree/9ce0b05f4b4d693831e67dd65d660716a8192e8d][Included snippets]] 
+- Elpy:
+	- [[https://github.com/jorgenschaefer/elpy][Home Page]]
+- Flask:
+	- [[http://flask.pocoo.org][Flask Home Page]]
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+
