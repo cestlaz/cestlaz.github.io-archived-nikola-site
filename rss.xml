@@ -1,5 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 17 Aug 2016 14:16:08 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 14 - Thoughts</title><link>http://cestlaz.github.io/posts/using-emacs-14-thoughts/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 30 Aug 2016 21:45:45 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Federal Aid for Code Schools - is this a good thing?</title><link>http://cestlaz.github.io/posts/fed-aid-for-code-schools/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+I saw this headline earlier today: &lt;a href="http://www.inc.com/salvador-rodriguez/coding-bootcamps-just-got-a-big-boost.html"&gt;The U.S. Just Made a Bold Move to Improve Diversity in Tech&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+The article talks about a program by which a number of code schools
+will be able to accept federal student aid. I don't know if we're
+talking student loans or  grants but I'm not sure it matters.
+&lt;/p&gt;
+
+&lt;p&gt;
+The headline sounds great. I'm not so sure that this is a good thing.
+&lt;/p&gt;
+
+&lt;p&gt;
+My thinking's evolved over the years but right now, everything tells
+me that public funds and for profit education don't mix.
+&lt;/p&gt;
+
+&lt;p&gt;
+What we, more often than not, end up with is a cash cow for a private concern. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Example one: The edTPA - a required exam for teacher licensing, at
+least in NY. Prospective teachers pay hundreds of dollars to pass this
+gatekeeper. Pearson, a private company (and not even an American one)
+is essentially in charge of teacher licensing. They make the
+assessments, they grade them, they decide who passes. A foreign
+company is deciding who teaches our kids and at great expense to those
+prospective teachers.
+&lt;/p&gt;
+
+&lt;p&gt;
+We'd be much better off going back to the old days. To become a
+teacher, you had to pass through "The board of examiners." Basically,
+to get your permanent license you had to do an oral defense. Teachers
+would be placed in a room of principals, supervisors, and master
+teachers for an open grilling. It was cheaper and MUCH more
+effective. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Example two: The PSAT 8/9, PSAT, and SAT. These are exams that tell us
+one thing: how kids will do on future PSAT and SAT tests. They're not
+good predictors of college success but the college board (a non-profit
+in name only) has convinced us, or at least "convinced" our
+politicians of the exams importance. So, rather than having
+individuals make a choice as to whether or not to take these exams, NY
+forks over who knows how much money per year so that our kids can take
+a test with the belief that the exam will mystically make them college
+ready. To make matters worse, students lose a day of instruction and
+teachers have to proctor the exam instead of teaching.
+&lt;/p&gt;
+
+&lt;p&gt;
+Example three: Common core tests. Made in secret, graded in secret
+with cut off scores designed after the fact. Absolutely no educational
+value but once again, public funds flow freely into testing companies.
+&lt;/p&gt;
+
+&lt;p&gt;
+The problem is that these private concerns never really have to show
+results and they're never held accountable and since the money we pay
+them is hidden in city and state budgets, the taxpayer is none the wiser.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, what about code schools?
+&lt;/p&gt;
+
+&lt;p&gt;
+In a similar vein, money will flow from the government to the code
+schools. The question is, do they really have the secret sauce.
+&lt;/p&gt;
+
+&lt;p&gt;
+I have lots of friends who run and work in code schools and have met
+many more. Some code schools are trying to really educate and some
+not so much. In any case, let's take a look.
+&lt;/p&gt;
+
+&lt;p&gt;
+You frequently hear about the success stories but for every one of
+those, you can also find a manager talking about the fact that the
+code school graduate can't do anything other than ape the narrow tool
+that they were exposed to in the three or so months at the code
+school. So, the truth is that results are probably a mixed bag.
+&lt;/p&gt;
+
+&lt;p&gt;
+Is this good? Well, when you consider the typical code school MO it
+really isn't.
+&lt;/p&gt;
+
+&lt;p&gt;
+To attend a for profit code school you have to not only afford the
+tuition but also be able to sustain yourself for the duration of the
+program. That makes most code schools options for the well to do -
+those already well positioned for success.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then they make the candidates go through pre-work – frequently online
+course work. So, before you even step into a code school, they know
+you're likely going to succeed. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Once in, they train the candidates in a narrow slice of tech. I've
+talked to a number of code school leaders about that. I've asked how
+well the kids would be able to adapt given the constraints of their 3
+month or so training. The typical answer was that the candidate could
+just re-up and pay again to learn the next limited time only skill.
+&lt;/p&gt;
+
+&lt;p&gt;
+Should taxpayer dollars go to this? Probably not. There's no
+indication that code schools can provide meaningful long lasting
+education to even those who are best prepared to learn on their
+own. Whats' more, we haven't seen evidence that they have the answers
+for the under-served. Combine that with government's history of not
+keeping an eye on and not holding accountable private education
+providers, I think we're just setting up a new line of corporate
+welfare that will, on the surface help some but it is in no way the
+answer. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Too often public/private means that the private entity gets the money
+and the public gets stuck holding the bag. Better would be to have
+tech companies foot the bill. Some coding schools already do
+this. Tech companies that are happy with coding school graduates can
+finance the program. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What we should be doing is focusing on things like community
+colleges. Organizations that are supposed to be real, long term,
+community centers. With moderate tweaking, there's no reason why a
+community college, not to mention 4 year schools, couldn't provide far
+superior preparation than even the best code school.
+&lt;/p&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/fed-aid-for-code-schools/</guid><pubDate>Tue, 30 Aug 2016 19:42:30 GMT</pubDate></item><item><title>Using Emacs - 14 - Thoughts</title><link>http://cestlaz.github.io/posts/using-emacs-14-thoughts/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -1050,97 +1192,4 @@ money wasted on things like standardized testing and flawed teacher
 evaluation systems, I don't see it coming any time soon.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/mentors/</guid><pubDate>Wed, 29 Jun 2016 20:03:34 GMT</pubDate></item><item><title>Using Emacs - 9 - Themes</title><link>http://cestlaz.github.io/posts/using-emacs-9-themes/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-Now that we have a nice basic configuration, let's make Emacs look a
-little nicer.
-&lt;/p&gt;
-
-&lt;p&gt;
-Like most editors, Emacs can be extensively themed. 
-&lt;/p&gt;
-
-&lt;p&gt;
-As shown in the video, you can quickly see the built in themes using
-the &lt;b&gt;&lt;b&gt;customize-themes&lt;/b&gt;&lt;/b&gt; command.
-&lt;/p&gt;
-
-&lt;p&gt;
-You can load one of these themes by using the &lt;b&gt;&lt;b&gt;load-theme&lt;/b&gt;&lt;/b&gt; command
-interactively or, more likely by putting:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;load-theme&lt;/span&gt; &lt;span class="ss"&gt;'leuven&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-in your init.el. The above code loads the built in &lt;b&gt;&lt;b&gt;leuven&lt;/b&gt;&lt;/b&gt; theme.
-&lt;/p&gt;
-
-&lt;p&gt;
-I prefer the &lt;b&gt;&lt;b&gt;zenburn&lt;/b&gt;&lt;/b&gt; theme. For that, you have to load the zenburn
-package. Here's the code in our init.el:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;zenburn-theme&lt;/span&gt;
-  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-  &lt;span class="nv"&gt;:config&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;load-theme&lt;/span&gt; &lt;span class="ss"&gt;'zenburn&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-In the video, I also mention the color theme package.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, customize away.
-&lt;/p&gt;
-
-&lt;p&gt;
-In the links, you'll find some links to some Emacs theme gallery sites
-to help find something you like.
-&lt;/p&gt;
-
-&lt;p&gt;
-Thanks for reading and watching and as always, please leave comments,
-suggestions and favorite themes.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here's the video:
-&lt;/p&gt;
-
-&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/cod2ABxlrV8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;
-Relevant links:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Zenburn theme home page: &lt;a href="https://github.com/bbatsov/zenburn-emacs"&gt;https://github.com/bbatsov/zenburn-emacs&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Emacs theme gallery: &lt;a href="https://pawelbx.github.io/emacs-theme-gallery/"&gt;https://pawelbx.github.io/emacs-theme-gallery/&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Another one: &lt;a href="https://emacsthemes.com/"&gt;https://emacsthemes.com/&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;Video series overview page:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Code for this video
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-9-themes"&gt;https://github.com/zamansky/using-emacs/tree/lesson-9-themes&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Complete code built up over all videos:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-9-themes/</guid><pubDate>Tue, 28 Jun 2016 04:00:00 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/mentors/</guid><pubDate>Wed, 29 Jun 2016 20:03:34 GMT</pubDate></item></channel></rss>
