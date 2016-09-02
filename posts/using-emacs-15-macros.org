@@ -1,0 +1,60 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 15 - Macros
+.. slug: using-emacs-15-macros
+.. date: 2016-09-02 17:26:02 UTC-04:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+*  
+
+I originally planned on do some videos on C++ development but I'm just
+not feeling it. Probably because I'm excited to be working with my
+new class and we're working in Python. We're not going to be using
+C+++ for a few months so I'll get to those videos a little later.
+
+Today, I want to cover what I consider a leatherman or multi-tool for
+Emacs. Something that isn't perfect for any particular job but can get
+almost any job done: Macros.
+
+In their simplest form, macros let you record and play back
+keystrokes. 
+
+The video goes over the specifics. 
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y1oVNBuIoXo" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+Here are the main functions / keystrokes.
+
+| Command                              | Key |
+|--------------------------------------+-----|
+| kmacro-start-macro-or-insert-counter | F3  |
+| kmacro-end-and-call-macro            | F4  |
+| kmacro-name-last-macro               |     |
+| insert-kbd-macro                     |     |
+
+This covers most of my use of macros but there's more. You can adjust
+or set the counter, edit old macros and there's even a way to have a
+macro pause for input in the middle.
+
+Here are some links with more information:
+- [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Keyboard-Macros.html#Keyboard-Macros][Emacs manual on macros]]
+- http://ergoemacs.org/emacs/emacs_macro_example.html
+- http://emacs-fu.blogspot.com/2010/07/keyboard-macros.html
+
+
+If you're interested in checking out [[http://repl.it][Repl.it]], which I reference in the
+video, check out [[http://cestlaz.github.io/posts/new-term-new-tool-replit/#.V8n_Ed9vH0o%0A][my blog post]]. 
+
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+
