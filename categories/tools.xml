@@ -1,5 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/tools.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 02 Sep 2016 15:30:44 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>New Term, New Tool - repl.it</title><link>http://cestlaz.github.io/posts/new-term-new-tool-replit/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/tools.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 02 Sep 2016 23:16:34 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 15 - Macros</title><link>http://cestlaz.github.io/posts/using-emacs-15-macros/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+I originally planned on do some videos on C++ development but I'm just
+not feeling it. Probably because I'm excited to be working with my
+new class and we're working in Python. We're not going to be using
+C+++ for a few months so I'll get to those videos a little later.
+&lt;/p&gt;
+
+&lt;p&gt;
+Today, I want to cover what I consider a leatherman or multi-tool for
+Emacs. Something that isn't perfect for any particular job but can get
+almost any job done: Macros.
+&lt;/p&gt;
+
+&lt;p&gt;
+In their simplest form, macros let you record and play back
+keystrokes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The video goes over the specifics. 
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Y1oVNBuIoXo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Here are the main functions / keystrokes.
+&lt;/p&gt;
+
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col" class="left"&gt;Command&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;Key&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;kmacro-start-macro-or-insert-counter&lt;/td&gt;
+&lt;td class="left"&gt;F3&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;kmacro-end-and-call-macro&lt;/td&gt;
+&lt;td class="left"&gt;F4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;kmacro-name-last-macro&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;insert-kbd-macro&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;
+This covers most of my use of macros but there's more. You can adjust
+or set the counter, edit old macros and there's even a way to have a
+macro pause for input in the middle.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here are some links with more information:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Keyboard-Macros.html#Keyboard-Macros"&gt;Emacs manual on macros&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://ergoemacs.org/emacs/emacs_macro_example.html"&gt;http://ergoemacs.org/emacs/emacs_macro_example.html&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://emacs-fu.blogspot.com/2010/07/keyboard-macros.html"&gt;http://emacs-fu.blogspot.com/2010/07/keyboard-macros.html&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;
+If you're interested in checking out &lt;a href="http://repl.it"&gt;Repl.it&lt;/a&gt;, which I reference in the
+video, check out &lt;a href="http://cestlaz.github.io/posts/new-term-new-tool-replit/#.V8n_Ed9vH0o%0A"&gt;my blog post&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-15-macros/</guid><pubDate>Fri, 02 Sep 2016 21:26:02 GMT</pubDate></item><item><title>New Term, New Tool - repl.it</title><link>http://cestlaz.github.io/posts/new-term-new-tool-replit/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -938,96 +1048,4 @@ Relevant links:
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-7-avy/</guid><pubDate>Fri, 24 Jun 2016 04:00:00 GMT</pubDate></item><item><title>Better Comments or tooling as a time sink</title><link>http://cestlaz.github.io/posts/better-comments/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
-The other day my friend and fellow CS Ed Blogger &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; wrote
-about &lt;a href="http://blog.acthompson.net/2016/06/better-comments-in-visual-studio.html"&gt;Better Comments&lt;/a&gt;, an extension for visual studio that displays
-comments that are marked up  with special characters in order to
-highlight them. Here's a screenshot:
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/omsharp/BetterComments/master/screenshots/ClassificationC.png" alt="ClassificationC.png"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;
-So, the first thing I though was "I bet emacs could do that pretty
-easily" and down the rabbit hole I went.
-&lt;/p&gt;
-
-&lt;p&gt;
-I had to figure out something about how emacs themes and font-locking
-(emacs for syntax highlighting) works and of course spent far too much
-time learning about Emacs, my favored tool, rather than getting actual
-work done, but I came up with this:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;make-face&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-important&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;set-face-foreground&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-important&lt;/span&gt; &lt;span class="s"&gt;"#00ff00"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;make-face&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-todo&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;set-face-foreground&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-todo&lt;/span&gt; &lt;span class="s"&gt;"#ff0000"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;make-face&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-strike&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;set-face-attribute&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-strike&lt;/span&gt;
-		    &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="nv"&gt;:strike-through&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-  &lt;span class="s"&gt;"adds a few special keywords"&lt;/span&gt;
-  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;font-lock-add-keywords&lt;/span&gt; 
-   &lt;span class="nv"&gt;nil&lt;/span&gt;
-   &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"cx \\(.+\\)"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-strike&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"ct \\(.+\\)"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-todo&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"ci \\(.+\\)"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-important&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-     &lt;span class="p"&gt;)&lt;/span&gt;
-   &lt;span class="p"&gt;))&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'js2-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'js-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-It's a hack but it does indeed work. In action, it looks something
-like this:
-&lt;/p&gt;
-
-&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/3TLw1yOMKMc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;
-Truth be told, it really colors anything following cx, ct, or ci, not
-just in comments – I have to look a bit more into how emacs handles
-comments to figure that one out.
-&lt;/p&gt;
-
-&lt;p&gt;
-In any event, even though I spent too much time doing this, it's nice
-to know I'm working in a tool in which I can.
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;b&gt;&lt;b&gt;UPDATE:&lt;/b&gt;&lt;/b&gt; Thanks to user ncsuwolf on /r/emacs on reddit, here's a
-fully working, more properly done solution:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defface&lt;/span&gt; &lt;span class="nv"&gt;font-lock-comment-strike&lt;/span&gt;
-  &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nf"&gt;t&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:strike-through&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
-  &lt;span class="s"&gt;"For strike-through comments"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defface&lt;/span&gt; &lt;span class="nv"&gt;font-lock-comment-important&lt;/span&gt;
-  &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nf"&gt;t&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:foreground&lt;/span&gt; &lt;span class="s"&gt;"#00ff00"&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
-  &lt;span class="s"&gt;"For important"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defface&lt;/span&gt; &lt;span class="nv"&gt;font-lock-comment-todo&lt;/span&gt;
-  &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nf"&gt;t&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:foreground&lt;/span&gt; &lt;span class="s"&gt;"#ff0000"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-		&lt;span class="s"&gt;"For todo comments"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-		&lt;span class="s"&gt;"adds a few special keywords"&lt;/span&gt;
-		&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;font-lock-add-keywords&lt;/span&gt;
-		 &lt;span class="nv"&gt;nil&lt;/span&gt;
-		 &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"\\s&amp;lt;+x[[:space:]]*\\(.*?\\)[[:space:]]*\\s&amp;gt;"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-strike&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-			 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"\\s&amp;lt;+t[[:space:]]*\\(.*?\\)[[:space:]]*\\s&amp;gt;"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-todo&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-			 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"\\s&amp;lt;+i[[:space:]]*\\(.*?\\)[[:space:]]*\\s&amp;gt;"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-important&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;
-
-	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'prog-mode-hook&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="ss"&gt;'add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/better-comments/</guid><pubDate>Wed, 22 Jun 2016 22:09:17 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-7-avy/</guid><pubDate>Fri, 24 Jun 2016 04:00:00 GMT</pubDate></item></channel></rss>
