@@ -3,13 +3,1928 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about emacs</title>
   <id>http://cestlaz.github.io/categories/emacs.atom</id>
-  <updated>2016-05-15T17:08:38Z</updated>
+  <updated>2016-08-23T14:27:20Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/emacs.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/emacs/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Using Emacs - 14 - Thoughts</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-14-thoughts/</id>
+    <updated>2016-08-17T00:00:00</updated>
+    <published>2016-08-17T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-14-thoughts/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Sorry for the incosistancy of the posts. I hope to get to that one
+video a week soon but I've still got a hectic couple of weeks ahead.
+&lt;/p&gt;
+
+&lt;p&gt;
+No new material this week, or at least very little. This week, I talk
+about some thoughts on the "Using Emacs" series. 
+&lt;/p&gt;
+
+&lt;p&gt;
+In the video I talk about Sacha Chua and her work as a leader in the
+Emacs community. Check out her stuff here: &lt;a href="http://sachachua.com/blog/"&gt;http://sachachua.com/blog/&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the video - I hope you enjoy it.
+&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/tSx_sGgoVNk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+As always, please leave feedback here or on the video.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - 13 - Yasnippet</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-13-yasnippet/</id>
+    <updated>2016-08-04T00:00:00</updated>
+    <published>2016-08-04T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-13-yasnippet/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+It turns out that &lt;a href="https://github.com/jorgenschaefer/elpy"&gt;Elpy&lt;/a&gt;, a popular emacs package for python development
+is much easier to set up than I remember. It turns out all you need
+is:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;elpy&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt; 
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elpy-enable&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The video shows how to install and a bit of use. I don't think it's a
+package I'm going to use much since I use other tools to do similar
+things but it's worth checking out. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The main event this week is &lt;a href="https://github.com/joaotavora/yasnippet"&gt;yasnippet&lt;/a&gt;, a package that lets you expand
+text aliases. Let's say you want to put the fairly standard:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;'__main__'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+   &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+in my file. I can just type &lt;b&gt;&lt;b&gt;ifm&lt;/b&gt;&lt;/b&gt; and then hit the &lt;b&gt;&lt;b&gt;TAB&lt;/b&gt;&lt;/b&gt; key and
+it would expand to the above code. Yasnippet also lets you leave
+placeholders for variables, function names and more. It's a pretty
+neat package.
+&lt;/p&gt;
+
+&lt;p&gt;
+I use it for boilerplate code. The example in the video shows how I
+set up a snippet for the boilerplate code used when creating an
+application with the &lt;b&gt;&lt;b&gt;Flask&lt;/b&gt;&lt;/b&gt; python microframework.
+&lt;/p&gt;
+
+&lt;p&gt;
+Setting up yasnippet is as easy as:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;yasnippet&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:init&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;yas-global-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+and it has built in support for &lt;a href="https://github.com/AndreaCrotti/yasnippet-snippets/tree/9ce0b05f4b4d693831e67dd65d660716a8192e8d"&gt;tons of langauges&lt;/a&gt;. You can also easily
+create your own snippets. See the documentation for details on the
+file format. Just create a text file for the snippet and place it in a
+subidectory under the snippets subdirectory of .emacs.d. The name of
+the subdirectory should be the name of the emacs mode for which the
+snippet is defined. I put up the snippet I use for flask so feel free
+to check that out.
+&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/4aYMa8f6B0o" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Yasnippet:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/joaotavora/yasnippet"&gt;Home Page&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://joaotavora.github.io/yasnippet/"&gt;Docs&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AndreaCrotti/yasnippet-snippets/tree/9ce0b05f4b4d693831e67dd65d660716a8192e8d"&gt;Included snippets&lt;/a&gt; 
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Elpy:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/jorgenschaefer/elpy"&gt;Home Page&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Flask:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://flask.pocoo.org"&gt;Flask Home Page&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - 12 - Flycheck, Jedi, Python</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-12-python/</id>
+    <updated>2016-07-27T00:00:00</updated>
+    <published>2016-07-27T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-12-python/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+This week, we're going to look at my setup for Python programming. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm an educator, not a professional developer so I'm not working in
+huge code bases with dozens or more files at a time. I do periodically
+work in medium size code bases and will talk about cross file
+navigation and project management later on. There are also more
+powerful emacs Python packages. One being &lt;a href="https://github.com/jorgenschaefer/elpy"&gt;elpy&lt;/a&gt;. Elpy looks pretty cool
+but for me, it's overkill.
+&lt;/p&gt;
+
+&lt;p&gt;
+Today's about the basics.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first tool I show is &lt;a href="http://www.flycheck.org/en/latest/"&gt;flycheck&lt;/a&gt;. It does code checking on the fly
+and supports &lt;a href="http://www.flycheck.org/en/latest/languages.html#flycheck-languages"&gt;tons of languages&lt;/a&gt;. You might have to install some
+external checkers though. For instance, I installed &lt;b&gt;&lt;b&gt;pylint&lt;/b&gt;&lt;/b&gt; for
+python syntax checking with:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pip install pylint
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Cofiguring flycheck is as easy as:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;flycheck&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:init&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-flycheck-mode&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+The video all shows how I like to run Python from within emacs.
+&lt;/p&gt;
+
+&lt;p&gt;
+The other tool I use is &lt;a href="https://github.com/tkf/emacs-jedi"&gt;Jedi&lt;/a&gt;. It provides more extensive completion
+for Python.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the setup:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;jedi&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:init&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:setup&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:ac-setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The last hook sets up the autocomplete. 
+&lt;/p&gt;
+
+&lt;p&gt;
+For jedi to work, you'll need to install the jedi server which is done
+in emacs by running &lt;b&gt;&lt;b&gt;M-x jedi:install-server&lt;/b&gt;&lt;/b&gt;. For that to work,
+though, you'll need to have &lt;a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/"&gt;Python Virtualenv&lt;/a&gt; istalled. I did that
+with:
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;b&gt;&lt;b&gt;EDIT:&lt;/b&gt;&lt;/b&gt; I just got a report that you might need to also install epc (&lt;b&gt;&lt;b&gt;sudo pip install epc&lt;/b&gt;&lt;/b&gt;).
+&lt;/p&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pip install virtualenv
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Here's the video:
+&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/wbj_Wjm1Tuw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Flycheck:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://flycheck.org"&gt;Flycheck home page&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.pylint.org/"&gt;Pylint&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://flake8.pycqa.org/en/latest/"&gt;Flake8&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Jedi:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/davidhalter/jedi"&gt;Jedi&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://virtualenv.pypa.io/en/stable/"&gt;Virtualenv&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - 11 - Reveal.js presentations</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-11-reveal/</id>
+    <updated>2016-07-19T11:53:15-04:00</updated>
+    <published>2016-07-19T11:53:15-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-11-reveal/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Happy to be back after a couple of weeks.
+&lt;/p&gt;
+
+&lt;p&gt;
+My wife and son spent some time in San Francisco, Mountain View, and
+Seattle. The main reason was to see our daughter who's interning out
+there for the summer but it was also a great opportunity to catch up
+with over 100 former students. If you're interested in seeing more, I
+wrote a bit about it &lt;a href="http://cestlaz.github.io/posts/end-to-act-1/#.V45OGt9vGAk"&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+I was originally going to start talking about Python development but
+then saw &lt;a href="https://www.reddit.com/r/emacs/comments/4sp0xs/emacs_org_mode_and_revealjs/"&gt;this&lt;/a&gt; post on reddit about &lt;a href="https://github.com/hakimel/reveal.js/"&gt;reveal.js&lt;/a&gt; and using it with
+org-mode. Since reveal.js with org-mode  is my goto presentation tool
+I thought I'd do a video on that before getting back to "your
+regularly schedueld program."
+&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/psDpCpcIVYs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+The main package you have to use for reveal.js presentations in
+org-mode is org-reveal. The package to install is &lt;b&gt;&lt;b&gt;ox-reveal&lt;/b&gt;&lt;/b&gt;. I also
+installed &lt;b&gt;&lt;b&gt;htmlize&lt;/b&gt;&lt;/b&gt; for syntax highlighting. Here's the code from
+our configuration file:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;ox-reveal&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;ox-reveal&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;org-reveal-root&lt;/span&gt; &lt;span class="s"&gt;"http://cdn.jsdelivr.net/reveal.js/3.0.0/"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;org-reveal-mathjax&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;htmlize&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The org-reveal-root setq tells your presentation where to find the
+reveal.js code. In this example, we're getting from the cloud. You can
+also install it locally.
+&lt;/p&gt;
+
+&lt;p&gt;
+The org-reveal-mathjax is just so that LaTeX equations will look nice.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm hoping the video is pretty self-explanitory and the org-reveal
+&lt;a href="https://github.com/yjwen/org-reveal%0A"&gt;home page&lt;/a&gt; is pretty thorough but since the documentation is lagging a
+bit behind the code and due to some versioning issues, here are a
+couple of things to watch out for:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;I made a &lt;b&gt;&lt;b&gt;samples&lt;/b&gt;&lt;/b&gt; folder where I'll put code for this series that
+isn't part of the configurations.
+&lt;/li&gt;
+&lt;li&gt;I showed &lt;b&gt;&lt;b&gt;:frag (roll-in)&lt;/b&gt;&lt;/b&gt; as an example of revealing list items
+one at a time. Those parens are important and are needed but weren't
+in earlier versions - this took me far too long to figure out. 
+&lt;/li&gt;
+&lt;li&gt;If you read the docs you'll see that there are many more transitions
+and you can mix and match them on a page.
+&lt;/li&gt;
+&lt;li&gt;You might have to upgrade your emacs packages. If you
+&lt;b&gt;&lt;b&gt;list-packages&lt;/b&gt;&lt;/b&gt;  in eamcs it will tell you if you have packages to
+upgrade. You mark them for upgrading by typing &lt;b&gt;&lt;b&gt;U&lt;/b&gt;&lt;/b&gt; and then do the
+upgrade with &lt;b&gt;&lt;b&gt;x&lt;/b&gt;&lt;/b&gt;. If this doesn't work, you can try getting rid fo
+the &lt;b&gt;&lt;b&gt;elpa&lt;/b&gt;&lt;/b&gt; folder and then re-installing.
+&lt;/li&gt;
+&lt;li&gt;The &lt;a href="http://github.com/zamansky/mazelesson"&gt;mazelesson&lt;/a&gt; sample presentation shows more features, many that we
+haven't covered yet. Check it out but remember that it's for an
+earlier version of org-reveal.
+&lt;/li&gt;
+&lt;li&gt;Github pages and rawgit are cool.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;p&gt;
+Hope you enjoy this. Please add any reveal.js tips and tricks of your
+own.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Reveal.js related linls:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/hakimel/reveal.js/"&gt;reveal.js home page&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/yjwen/org-reveal%0A"&gt;org-reveal home page&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://github.com/zamansky/mazelesson"&gt;Sample org reveal site (mazelesson from video)&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;rawgit.com - serving stuff from github
+&lt;/li&gt;
+&lt;li&gt;Github pages: &lt;a href="https://pages.github.com/"&gt;https://pages.github.com/&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - 10 - org init files</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-10-org-init/</id>
+    <updated>2016-07-01T00:00:00</updated>
+    <published>2016-07-01T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-10-org-init/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+I'll be traveling for the next couple of weeks so I probably won't
+have time for another video until mid to late July. I'll probably
+write a post about this series and do some regular blogging over that
+time but probably no new videos for a couple of weeks.
+&lt;/p&gt;
+
+&lt;p&gt;
+Also, a couple of notes about the series:
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Instead of making a separate git branch for each episode, I'm just
+adding on to the master branch on GitHub. If you're not familiar
+with Git and GitHub don't worry about this. Hardly anyone will
+notice a difference.
+&lt;/li&gt;
+&lt;li&gt;If this theme doesn't show well on video, please let me know, I'll
+change it.
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+Ok, now to this installments video.
+&lt;/p&gt;
+
+&lt;p&gt;
+It talks about using org-mode to store our emacs init file.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first key is that you can put code-blocks in org-mode:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;#+BEGIN_SRC emacs-lisp
+(emacs-lisp code goes here)
+(more emacs lisp goes here)
+(and you can have even more here)
+#+END_SRC
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Since it's elisp you can run the individual line using the usual &lt;b&gt;&lt;b&gt;C-x C-e&lt;/b&gt;&lt;/b&gt;
+but you can run the entire block by placing your cursor anywhere in
+the block and typing &lt;b&gt;&lt;b&gt;C-c C-c&lt;/b&gt;&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+One minor annoyance about editing code blocks is that it doesn't do
+syntax highlighting or auto indentation. To solve this, emacs lets you
+pull up an editing buffer by typing &lt;b&gt;*C-c '*&lt;/b&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You're supposed to be able to save your changes with &lt;b&gt;*C-c '*&lt;/b&gt; again
+or &lt;b&gt;&lt;b&gt;C-x C-s&lt;/b&gt;&lt;/b&gt; and kill the buffer without saving changes with &lt;b&gt;&lt;b&gt;C-x
+C-k&lt;/b&gt;&lt;/b&gt; 
+but the version of org-mode that came with my version of emacs
+didn't support it - I had to install a newer version of org-mode from
+melpa. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I couldn't figure out how to do this via use-package, but if this
+problem happens to you, you can just type &lt;b&gt;&lt;b&gt;Alt-x package-install&lt;/b&gt;&lt;/b&gt;
+and then type &lt;b&gt;&lt;b&gt;org&lt;/b&gt;&lt;/b&gt; and hit enter to install it.
+&lt;/p&gt;
+
+&lt;p&gt;
+Once you do that, you might have to reload emacs but then everything
+should work. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This lets us move most of our configuration to a separate file. We're
+calling it &lt;b&gt;&lt;b&gt;myinit.org&lt;/b&gt;&lt;/b&gt; and storing it in our .emacs.d
+directory. You can use any name &lt;b&gt;&lt;b&gt;except&lt;/b&gt;&lt;/b&gt; init.org as I mentioned in
+the video.
+&lt;/p&gt;
+
+&lt;p&gt;
+The file's a little big so here's a link to it:
+&lt;a href="https://github.com/zamansky/using-emacs/blob/master/myinit.org"&gt;https://github.com/zamansky/using-emacs/blob/master/myinit.org&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Notice how GitHub formats it to look all nice.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the raw file so you can see the gory details:
+&lt;a href="https://raw.githubusercontent.com/zamansky/using-emacs/master/myinit.org"&gt;https://raw.githubusercontent.com/zamansky/using-emacs/master/myinit.org&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Since we're loading the file in overview mode, when we load it in
+emacs we see:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;interface&lt;/span&gt; &lt;span class="nv"&gt;tweaks&lt;/span&gt;
+&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;try&lt;/span&gt;
+&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;which&lt;/span&gt; &lt;span class="nv"&gt;key&lt;/span&gt;
+&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Org&lt;/span&gt; &lt;span class="nv"&gt;mode&lt;/span&gt;
+&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Ace&lt;/span&gt; &lt;span class="nv"&gt;windows&lt;/span&gt; &lt;span class="nv"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;easy&lt;/span&gt; &lt;span class="nv"&gt;window&lt;/span&gt; &lt;span class="nv"&gt;switching&lt;/span&gt;
+&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Swiper&lt;/span&gt; &lt;span class="nv"&gt;/&lt;/span&gt; &lt;span class="nv"&gt;Ivy&lt;/span&gt; &lt;span class="nv"&gt;/&lt;/span&gt; &lt;span class="nv"&gt;Counsel&lt;/span&gt;
+&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Avy&lt;/span&gt; &lt;span class="nv"&gt;-&lt;/span&gt; &lt;span class="nv"&gt;navigate&lt;/span&gt; &lt;span class="nv"&gt;by&lt;/span&gt; &lt;span class="nv"&gt;searching&lt;/span&gt; &lt;span class="nv"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;letter&lt;/span&gt; &lt;span class="nv"&gt;on&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;screen&lt;/span&gt; &lt;span class="k"&gt;and &lt;/span&gt;&lt;span class="nv"&gt;jumping&lt;/span&gt; &lt;span class="nv"&gt;to&lt;/span&gt; &lt;span class="nv"&gt;it&lt;/span&gt;
+&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Autocomplete&lt;/span&gt;
+&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Themes&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+We can tab open and close each section and add text to clarify things
+around the code blocks.
+&lt;/p&gt;
+
+&lt;p&gt;
+All that's left in &lt;b&gt;&lt;b&gt;init.el&lt;/b&gt;&lt;/b&gt; is:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;require&lt;/span&gt; &lt;span class="ss"&gt;'package&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;package-enable-at-startup&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'package-archives&lt;/span&gt;
+	     &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"melpa"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"https://melpa.org/packages/"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-initialize&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; Bootstrap `use-package'&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;unless&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-installed-p&lt;/span&gt; &lt;span class="ss"&gt;'use-package&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-refresh-contents&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-install&lt;/span&gt; &lt;span class="ss"&gt;'use-package&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;org-babel-load-file&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;expand-file-name&lt;/span&gt; &lt;span class="s"&gt;"~/.emacs.d/myinit.org"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+With the last line performing the magic of loading our org file and
+running all the code blocks.
+&lt;/p&gt;
+
+&lt;p&gt;
+Finally, we added a couple of small interface changes:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;fset&lt;/span&gt; &lt;span class="ss"&gt;'yes-or-no-p&lt;/span&gt; &lt;span class="ss"&gt;'y-or-n-p&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"&amp;lt;f5&amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'revert-buffer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The first line lets us type y or n instead of yes or no and the second
+let's us reload a file into our current buffer using the &lt;b&gt;&lt;b&gt;f5&lt;/b&gt;&lt;/b&gt; key.
+&lt;/p&gt;
+
+&lt;p&gt;
+I hope you enjoy this video and find it useful:
+&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/EX9PKK3EMaw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - 9 - Themes</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-9-themes/</id>
+    <updated>2016-06-28T00:00:00</updated>
+    <published>2016-06-28T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-9-themes/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Now that we have a nice basic configuration, let's make Emacs look a
+little nicer.
+&lt;/p&gt;
+
+&lt;p&gt;
+Like most editors, Emacs can be extensively themed. 
+&lt;/p&gt;
+
+&lt;p&gt;
+As shown in the video, you can quickly see the built in themes using
+the &lt;b&gt;&lt;b&gt;customize-themes&lt;/b&gt;&lt;/b&gt; command.
+&lt;/p&gt;
+
+&lt;p&gt;
+You can load one of these themes by using the &lt;b&gt;&lt;b&gt;load-theme&lt;/b&gt;&lt;/b&gt; command
+interactively or, more likely by putting:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;load-theme&lt;/span&gt; &lt;span class="ss"&gt;'leuven&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+in your init.el. The above code loads the built in &lt;b&gt;&lt;b&gt;leuven&lt;/b&gt;&lt;/b&gt; theme.
+&lt;/p&gt;
+
+&lt;p&gt;
+I prefer the &lt;b&gt;&lt;b&gt;zenburn&lt;/b&gt;&lt;/b&gt; theme. For that, you have to load the zenburn
+package. Here's the code in our init.el:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;zenburn-theme&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;load-theme&lt;/span&gt; &lt;span class="ss"&gt;'zenburn&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+In the video, I also mention the color theme package.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, customize away.
+&lt;/p&gt;
+
+&lt;p&gt;
+In the links, you'll find some links to some Emacs theme gallery sites
+to help find something you like.
+&lt;/p&gt;
+
+&lt;p&gt;
+Thanks for reading and watching and as always, please leave comments,
+suggestions and favorite themes.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the video:
+&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/cod2ABxlrV8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Zenburn theme home page: &lt;a href="https://github.com/bbatsov/zenburn-emacs"&gt;https://github.com/bbatsov/zenburn-emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Emacs theme gallery: &lt;a href="https://pawelbx.github.io/emacs-theme-gallery/"&gt;https://pawelbx.github.io/emacs-theme-gallery/&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Another one: &lt;a href="https://emacsthemes.com/"&gt;https://emacsthemes.com/&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code for this video
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-9-themes"&gt;https://github.com/zamansky/using-emacs/tree/lesson-9-themes&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete code built up over all videos:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - 8 - Autocomplete</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-8-autocomplete/</id>
+    <updated>2016-06-26T00:00:00</updated>
+    <published>2016-06-26T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-8-autocomplete/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Out of the box, Emacs supports various types of completion.
+&lt;/p&gt;
+
+&lt;p&gt;
+Tab completion for filenames and commands basically work right out of
+the box and Emacs has built in modes like &lt;a href="https://www.emacswiki.org/emacs/AbbrevMode"&gt;Abbrev&lt;/a&gt;, &lt;a href="https://www.emacswiki.org/emacs/HippieExpand"&gt;Hippie Expand&lt;/a&gt;, and
+&lt;a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Dynamic-Abbrevs.html"&gt;Dabbrev&lt;/a&gt; provide a manner of completion for in buffer text.
+&lt;/p&gt;
+
+&lt;p&gt;
+I briefly show Dabbrev (Dynamic Abbrevs) in the video and if you're
+interested in the others, follow the links.
+&lt;/p&gt;
+
+&lt;p&gt;
+We saw ow the built in Ido mode and third party packages like Ivy,
+which I prefer, and Helm make for better completions on functions,
+filenames, and the like and Emacs also has third party packages for in
+buffer completion. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The two main contenders are &lt;a href="https://github.com/auto-complete/auto-complete"&gt;auto-complete Mode&lt;/a&gt; and &lt;a href="http://company-mode.github.io/%0A"&gt;company Mode&lt;/a&gt;. I use
+auto-complete, others swear by company. The video shows the basics of
+auto-complete mode but check both out and decide for yourself.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you feel strongly about one or the other, please share in the
+comments.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Here's a basic configuration:
+&lt;/p&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;auto-complete&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:init&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;progn&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ac-config-default&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-auto-complete-mode&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+We'll modify this as move along in the series.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the video:
+&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/5FBVhdyU4dA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Autocomplete home page: &lt;a href="https://github.com/auto-complete/auto-complete"&gt;https://github.com/auto-complete/auto-complete&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Autocomplete manual: &lt;a href="http://auto-complete.org/doc/manual.html"&gt;http://auto-complete.org/doc/manual.html&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code for this video
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-8-autocompete"&gt;https://github.com/zamansky/using-emacs/tree/lesson-8-autocompete&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete code built up over all videos:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - 7- Navigation with Avy</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-7-avy/</id>
+    <updated>2016-06-24T00:00:00</updated>
+    <published>2016-06-24T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-7-avy/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Here's a really cool navigation method that I've been meaning to use
+more. Avy is a replacement for ace-jump mode which is an
+implementation of easymotion, a vim plugin.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's pretty cool and lets you quickly navigate to any spot on the
+screen.
+&lt;/p&gt;
+
+&lt;p&gt;
+After triggering avy, or more specifically the &lt;b&gt;&lt;b&gt;avy-goto-char&lt;/b&gt;&lt;/b&gt;
+function, emacs prompts you for a single character. When you type it,
+all instances of the character that start out words change to a
+highlighted letter. Type the highlighted letter and you jump to that
+location.
+&lt;/p&gt;
+
+&lt;p&gt;
+The avy package comes with a bunch of options including a 2 character
+search variant, a timed variant which drops into search, and more.
+&lt;/p&gt;
+
+&lt;p&gt;
+The Avy home page has all the details.
+&lt;/p&gt;
+
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/ziytRbASKeU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Here's the configuration I'm using:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;avy&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:bind&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"M-s"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;avy-goto-char&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+You can check the &lt;a href="https://github.com/abo-abo/avy"&gt;avy home page&lt;/a&gt; for their recommended configuration
+which you get by configuring this way instead:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;avy&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;avy-setup-default&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Avy: &lt;a href="https://github.com/abo-abo/avy"&gt;https://github.com/abo-abo/avy&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code for this video
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-7-avy"&gt;https://github.com/zamansky/using-emacs/tree/lesson-7-avy&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete code built up over all videos:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Better Comments or tooling as a time sink</title>
+    <id>http://cestlaz.github.io/posts/better-comments/</id>
+    <updated>2016-06-22T18:09:17-04:00</updated>
+    <published>2016-06-22T18:09:17-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/better-comments/"/>
+    <summary type="html">&lt;p&gt;
+The other day my friend and fellow CS Ed Blogger &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; wrote
+about &lt;a href="http://blog.acthompson.net/2016/06/better-comments-in-visual-studio.html"&gt;Better Comments&lt;/a&gt;, an extension for visual studio that displays
+comments that are marked up  with special characters in order to
+highlight them. Here's a screenshot:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="https://raw.githubusercontent.com/omsharp/BetterComments/master/screenshots/ClassificationC.png" alt="ClassificationC.png"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+So, the first thing I though was "I bet emacs could do that pretty
+easily" and down the rabbit hole I went.
+&lt;/p&gt;
+
+&lt;p&gt;
+I had to figure out something about how emacs themes and font-locking
+(emacs for syntax highlighting) works and of course spent far too much
+time learning about Emacs, my favored tool, rather than getting actual
+work done, but I came up with this:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;make-face&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-important&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;set-face-foreground&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-important&lt;/span&gt; &lt;span class="s"&gt;"#00ff00"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;make-face&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-todo&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;set-face-foreground&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-todo&lt;/span&gt; &lt;span class="s"&gt;"#ff0000"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;make-face&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-strike&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;set-face-attribute&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-strike&lt;/span&gt;
+		    &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="nv"&gt;:strike-through&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+  &lt;span class="s"&gt;"adds a few special keywords"&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;font-lock-add-keywords&lt;/span&gt; 
+   &lt;span class="nv"&gt;nil&lt;/span&gt;
+   &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"cx \\(.+\\)"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-strike&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"ct \\(.+\\)"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-todo&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"ci \\(.+\\)"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-important&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'js2-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'js-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+It's a hack but it does indeed work. In action, it looks something
+like this:
+&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/3TLw1yOMKMc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Truth be told, it really colors anything following cx, ct, or ci, not
+just in comments – I have to look a bit more into how emacs handles
+comments to figure that one out.
+&lt;/p&gt;
+
+&lt;p&gt;
+In any event, even though I spent too much time doing this, it's nice
+to know I'm working in a tool in which I can.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;b&gt;&lt;b&gt;UPDATE:&lt;/b&gt;&lt;/b&gt; Thanks to user ncsuwolf on /r/emacs on reddit, here's a
+fully working, more properly done solution:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defface&lt;/span&gt; &lt;span class="nv"&gt;font-lock-comment-strike&lt;/span&gt;
+  &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nf"&gt;t&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:strike-through&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+  &lt;span class="s"&gt;"For strike-through comments"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defface&lt;/span&gt; &lt;span class="nv"&gt;font-lock-comment-important&lt;/span&gt;
+  &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nf"&gt;t&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:foreground&lt;/span&gt; &lt;span class="s"&gt;"#00ff00"&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+  &lt;span class="s"&gt;"For important"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defface&lt;/span&gt; &lt;span class="nv"&gt;font-lock-comment-todo&lt;/span&gt;
+  &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nf"&gt;t&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:foreground&lt;/span&gt; &lt;span class="s"&gt;"#ff0000"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+		&lt;span class="s"&gt;"For todo comments"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+		&lt;span class="s"&gt;"adds a few special keywords"&lt;/span&gt;
+		&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;font-lock-add-keywords&lt;/span&gt;
+		 &lt;span class="nv"&gt;nil&lt;/span&gt;
+		 &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"\\s&amp;lt;+x[[:space:]]*\\(.*?\\)[[:space:]]*\\s&amp;gt;"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-strike&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+			 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"\\s&amp;lt;+t[[:space:]]*\\(.*?\\)[[:space:]]*\\s&amp;gt;"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-todo&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+			 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"\\s&amp;lt;+i[[:space:]]*\\(.*?\\)[[:space:]]*\\s&amp;gt;"&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ss"&gt;'font-lock-comment-important&lt;/span&gt; &lt;span class="nv"&gt;prepend&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;
+
+	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'prog-mode-hook&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="ss"&gt;'add-custom-keyw&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - 6 - Searching a Swiper</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-6-swiper/</id>
+    <updated>2016-06-20T00:00:00</updated>
+    <published>2016-06-20T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-6-swiper/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+This video is all about using incremental search to navigate through your emacs buffers.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/0mwwN0S1dnQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+You can use the default incremental searchb, bound to &lt;b&gt;&lt;b&gt;C-s&lt;/b&gt;&lt;/b&gt; for
+isearch-forward &lt;b&gt;&lt;b&gt;C-r&lt;/b&gt;&lt;/b&gt; to search backwards (reverse).
+&lt;/p&gt;
+
+&lt;p&gt;
+They work really well as is but I prefer using &lt;a href="https://github.com/abo-abo/swiper"&gt;Swiper&lt;/a&gt;. The video demos
+both and the &lt;a href="https://github.com/abo-abo/swiper"&gt;Swiper&lt;/a&gt; home page has loads of details.
+&lt;/p&gt;
+
+&lt;p&gt;
+Part of the Swiper package includes ivy and counsel which I use instead of ido.
+&lt;/p&gt;
+
+&lt;p&gt;
+The video also mentions lorem-ipsum mode for generating text quickly and &lt;b&gt;&lt;b&gt;describe-mode&lt;/b&gt;&lt;/b&gt; in the help system.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the code we added for swiper:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;;; it looks like counsel is a requirement for swiper&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;counsel&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;swiper&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;try&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;progn&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ivy-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;ivy-use-virtual-buffers&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="s"&gt;"\C-s"&lt;/span&gt; &lt;span class="ss"&gt;'swiper&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-c C-r"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'ivy-resume&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"&amp;lt;f6&amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'ivy-resume&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"M-x"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'counsel-M-x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-x C-f"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'counsel-find-file&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"&amp;lt;f1&amp;gt; f"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'counsel-describe-function&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"&amp;lt;f1&amp;gt; v"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'counsel-describe-variable&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"&amp;lt;f1&amp;gt; l"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'counsel-load-library&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"&amp;lt;f2&amp;gt; i"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'counsel-info-lookup-symbol&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"&amp;lt;f2&amp;gt; u"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'counsel-unicode-char&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-c g"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'counsel-git&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-c j"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'counsel-git-grep&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-c k"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'counsel-ag&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-x l"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'counsel-locate&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-S-o"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'counsel-rhythmbox&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;define-key&lt;/span&gt; &lt;span class="nv"&gt;read-expression-map&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-r"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'counsel-expression-history&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+and we commented out the ido stuff:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;;; using swiper so ido no longer needed&lt;/span&gt;
+&lt;span class="c1"&gt;;;(setq ido-enable-flex-matching t)&lt;/span&gt;
+&lt;span class="c1"&gt;;;(setq ido-everywhere t)&lt;/span&gt;
+&lt;span class="c1"&gt;;;(ido-mode 1)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+If you want to see a nice video specifically on swiper by the author, here it is:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/VvnJQpTFVDc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Swiper: &lt;a href="https://github.com/abo-abo/swiper"&gt;&lt;/a&gt;&lt;a href="https://github.com/abo-abo/swiper"&gt;https://github.com/abo-abo/swiper&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;The Swiper Manual: &lt;a href="http://oremacs.com/swiper/"&gt;http://oremacs.com/swiper/&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code for this video:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-6-swiper"&gt;https://github.com/zamansky/using-emacs/tree/lesson-6-swiper&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete code built up over all videos:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - 5 - Windows</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-5-windows/</id>
+    <updated>2016-06-14T00:00:00</updated>
+    <published>2016-06-14T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-5-windows/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Sorry for the delay in getting this next video / post up. I spent the
+last part of last week at &lt;a href="http://go.personaldemocracy.com/"&gt;The Personal Democracy Forum 2016&lt;/a&gt; which is really an exceptional conference.
+&lt;/p&gt;
+
+&lt;p&gt;
+I posted a bit about it in my &lt;a href="http://cestlaz.github.io/posts/pdf2016-lost-in-the-silo/#.V2B9th9vGAk"&gt;last post&lt;/a&gt; and plan to write some more on it, but for now, more Emacs.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/D6OUMVbPKSA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;
+This video concerns using windows. By using buffers and windows and
+the basics you got from the tutorial, you shouldn't have to ever leave emacs.
+&lt;/p&gt;
+
+&lt;p&gt;
+From here, we'll be able to start going over effective Emacs and then
+using it for things like development or document creation.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Some of the key window bindings:
+&lt;/p&gt;
+
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col" class="left"&gt;key&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;what it does&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;C-x 2&lt;/td&gt;
+&lt;td class="left"&gt;split-window-below (vertically)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;C-x 3&lt;/td&gt;
+&lt;td class="left"&gt;split-window-right (horizontally)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;C-x 0&lt;/td&gt;
+&lt;td class="left"&gt;delete-window (this one)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;C-x 1&lt;/td&gt;
+&lt;td class="left"&gt;delete-other-windows&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;C-x o&lt;/td&gt;
+&lt;td class="left"&gt;other-window (moves foxus to the next window&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;
+You also have frames which use &lt;b&gt;&lt;b&gt;C-x 5&lt;/b&gt;&lt;/b&gt; as the prefix, so &lt;b&gt;&lt;b&gt;C-x 5 2&lt;/b&gt;&lt;/b&gt;
+creats a new frame and &lt;b&gt;&lt;b&gt;C-x 5 1&lt;/b&gt;&lt;/b&gt; closes the other frames.
+&lt;/p&gt;
+
+&lt;p&gt;
+Remember, you can always use the help system, in particular &lt;b&gt;&lt;b&gt;C-x k&lt;/b&gt;&lt;/b&gt;
+to describe a key and &lt;b&gt;&lt;b&gt;C-x f&lt;/b&gt;&lt;/b&gt; to describe a function.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+&lt;b&gt;&lt;b&gt;C-x o&lt;/b&gt;&lt;/b&gt; can be a little clunky so some people like to use
+&lt;b&gt;&lt;b&gt;windmove&lt;/b&gt;&lt;/b&gt; which lets you move between windows by holding the shift
+key and with the arrows. To set that up, you can add this to your
+&lt;b&gt;&lt;b&gt;init.el&lt;/b&gt;&lt;/b&gt; 
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;windmove-default-keybindings&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+I prefer using &lt;b&gt;&lt;b&gt;ace-window&lt;/b&gt;&lt;/b&gt; mode which still uses &lt;b&gt;&lt;b&gt;C-x o&lt;/b&gt;&lt;/b&gt;:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;; add this to init.el&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;ace-window&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:init&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;progn&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;remap&lt;/span&gt; &lt;span class="nv"&gt;other-window&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="ss"&gt;'ace-window&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;custom-set-faces&lt;/span&gt;
+     &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;aw-leading-char-face&lt;/span&gt;
+       &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nf"&gt;t&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:inherit&lt;/span&gt; &lt;span class="nv"&gt;ace-jump-face-foreground&lt;/span&gt; &lt;span class="nv"&gt;:height&lt;/span&gt; &lt;span class="mf"&gt;3.0&lt;/span&gt;&lt;span class="p"&gt;)))))&lt;/span&gt; 
+    &lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The other mode I mention in the video is winner mode:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;winner-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Which will allow you to use &lt;b&gt;&lt;b&gt;C-c left or right&lt;/b&gt;&lt;/b&gt; to move through past
+window configurations.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Ace window mode: &lt;a href="https://github.com/abo-abo/ace-window"&gt;https://github.com/abo-abo/ace-window&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code for this video:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-5-windows"&gt;https://github.com/zamansky/using-emacs/tree/lesson-5-windows&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete code built up over all videos:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - Intro to Org Mode</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-2-org/</id>
+    <updated>2016-05-23T13:29:36-04:00</updated>
+    <published>2016-05-23T13:29:36-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-2-org/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x5KiYDd9s8k?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+This video is a brief introduction to org-mode, a mode I use for all
+sorts of things.
+&lt;/p&gt;
+
+&lt;p&gt;
+We'll dive into org-mode later in the series. Right now I just want
+you to see the basics since we'll be using org-mode for any notes that
+are written up during this series. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Actually, all my blog posts are written in org-mode.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here are the important lines to add to your Emacs &lt;b&gt;init.el&lt;/b&gt; file  to
+get the nice looking bullets when in org-mode:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;org-bullets&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'org-mode-hook&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;org-bullets-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+About a month ago, Emacs user Harry Schwartz gave a nice overview talk
+on org-mode. If you want to get a better idea as to all the things you
+can do with it, check it out: &lt;a href="https://www.youtube.com/watch?v=SzA2YODtgK4"&gt;https://www.youtube.com/watch?v=SzA2YODtgK4&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Next time, we'll look at a little Elisp. After that, we'll dive in to
+using Emacs effectively and efficiently. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code for this video:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-2-org"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-2-org"&gt;https://github.com/zamansky/using-emacs/tree/lesson-2-org&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete code built up over all videos:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Packages
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/sabof/org-bullets"&gt;org-bullets&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - 3 - How to think about Emacs</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-3-elisp/</id>
+    <updated>2016-05-23T13:29:36-04:00</updated>
+    <published>2016-05-23T13:29:36-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-3-elisp/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/nyQxRarVYH4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Many people think of Emacs as an editor. I like to think of it as an Elisp interpreter where you live code documents.
+&lt;/p&gt;
+
+&lt;p&gt;
+In some ways, it's like those new fangled interactive programming environments where you type in code and the updates are reflected instantly. 
+&lt;/p&gt;
+
+&lt;p&gt;
+In this video, I try to explain the way I think about Emacs and why it's so cool.
+&lt;/p&gt;
+
+&lt;p&gt;
+The only change we made to our configuration was adding:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;tool-bar-mode&lt;/span&gt; &lt;span class="mi"&gt;-1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Which gets rid of the tool bar at the top.
+&lt;/p&gt;
+
+&lt;p&gt;
+Next time, we start talking about efficiently using Emacs.
+&lt;/p&gt;
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code for this video:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-2-org"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-3-elisp"&gt;https://github.com/zamansky/using-emacs/tree/lesson-3-elisp&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete code built up over all videos:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - 4 - Buffers</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-4-buffers/</id>
+    <updated>2016-05-23T13:29:36-04:00</updated>
+    <published>2016-05-23T13:29:36-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-4-buffers/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;iframe width="480" height="270" src="https://www.youtube.com/embed/v5eTK5lC0xs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Now that we're past the intro material, we'll start looking at emacs
+features one at a time. This will let you focus on using the one
+feature we're covering, fit it into your work flow, and really get
+comfortable with it. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This time we'll dive into using Emacs effectively with buffers.
+&lt;/p&gt;
+
+&lt;p&gt;
+Watch the video and then make a real effort to use buffers over the
+next few emacs sessions. Before you know it, they'll be a natural part
+of your work flow.
+&lt;/p&gt;
+
+&lt;p&gt;
+The idea of incrementally learning a tool this way seems to be called
+&lt;a href="http://sachachua.com/blog/2015/01/developing-emacs-micro-habits-text-automation/"&gt;developing micro-habits&lt;/a&gt; and I first read about the idea from &lt;a href="https://twitter.com/sachac"&gt;Sacha
+Chua&lt;/a&gt; who is an amazing member of the emacs community.
+&lt;/p&gt;
+
+&lt;p&gt;
+When seeing beginners, I'll frequently observe this work flow:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Open a terminal
+&lt;/li&gt;
+&lt;li&gt;Load emacs on a file
+&lt;/li&gt;
+&lt;li&gt;Edit the file
+&lt;/li&gt;
+&lt;li&gt;Save and quit emacs
+&lt;/li&gt;
+&lt;li&gt;Try to compile and run the program (since usually this is in a programming class)
+&lt;/li&gt;
+&lt;li&gt;repeat
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+If the beginner needs to see multiple files at once, they fire up multiple separate emacs.
+&lt;/p&gt;
+
+&lt;p&gt;
+All of this causes me physical pain.
+&lt;/p&gt;
+
+&lt;p&gt;
+In emacs, your editor can load several buffers at once, each
+associated with a separate file. You can quickly switch between them,
+search across them, and more. The video will get you started.
+&lt;/p&gt;
+
+&lt;p&gt;
+The video also mentions &lt;b&gt;ido&lt;/b&gt; mode. To set up &lt;b&gt;ido&lt;/b&gt; mode, add the
+following code to your init.el:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;ido-enable-flex-matching&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;ido-everywhere&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ido-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+And here's a great little write up on it by &lt;a href="https://www.masteringemacs.org/reading-guide"&gt;Mickey Petersen&lt;/a&gt;:
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="https://www.masteringemacs.org/article/introduction-to-ido-mode"&gt;https://www.masteringemacs.org/article/introduction-to-ido-mode&lt;/a&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;
+As I mentioned in the video, I actually use another mode for completions (&lt;a href="https://github.com/abo-abo/swiper"&gt;swiper&lt;/a&gt;),
+which I'll cover in a future video and another popular option is &lt;a href="https://github.com/emacs-helm/helm"&gt;helm&lt;/a&gt;
+which we'll also cover.
+&lt;/p&gt;
+
+&lt;p&gt;
+For buffers, the keys to remember are:
+&lt;/p&gt;
+
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col" class="left"&gt;Key&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;Command&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;C-x b&lt;/td&gt;
+&lt;td class="left"&gt;switch-buffer&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;C-x C-b&lt;/td&gt;
+&lt;td class="left"&gt;list-buffers&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;p&gt;
+To use ibuffer, which is more powerful than list-buffers you can add
+either:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defalias&lt;/span&gt; &lt;span class="ss"&gt;'list-buffers&lt;/span&gt; &lt;span class="ss"&gt;'ibuffer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; make ibuffer default&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Or if you want to open ibuffer in another Window:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defalias&lt;/span&gt; &lt;span class="ss"&gt;'list-buffers&lt;/span&gt; &lt;span class="ss"&gt;'ibuffer-other-window&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; make ibuffer default&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Here are a couple of useful links on ibuffer and buffer switching:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://ergoemacs.org/emacs/emacs_buffer_switching.html"&gt;http://ergoemacs.org/emacs/emacs_buffer_switching.html&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://mytechrants.wordpress.com/2010/03/25/emacs-tip-of-the-day-start-using-ibuffer-asap/"&gt;https://mytechrants.wordpress.com/2010/03/25/emacs-tip-of-the-day-start-using-ibuffer-asap/&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;
+Finally, if you like a tab bar, you can add the following to your
+init.el:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;tabbar&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;tabbar-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+There's also a package &lt;a href="https://github.com/mattfidler/tabbar-ruler.el"&gt;tabbar-ruler&lt;/a&gt; which is supposed to make the
+tabbar look nicer but since I don't use the tabbar at all, I haven't
+checked it out.
+&lt;/p&gt;
+
+&lt;p&gt;
+Hope this gets you using emacs more effectively.
+&lt;/p&gt;
+
+&lt;p&gt;
+Stay tuned for our next video on window management.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code for this video:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers"&gt;https://github.com/zamansky/using-emacs/tree/lesson-4-buffers&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete code built up over all videos:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - Setting up the Package Manager</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-1-setup/</id>
+    <updated>2016-05-23T13:29:36-04:00</updated>
+    <published>2016-05-23T13:29:36-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-1-setup/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+This video will step you through setting up Emacs to use &lt;a href="http://melpa.org/#/"&gt;MELPA&lt;/a&gt; for packages.
+&lt;/p&gt;
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/49kBWM3RQQ8?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+
+&lt;p&gt;
+We configured emacs by creating a folder named &lt;b&gt;.emacs.d&lt;/b&gt; and creating a
+file within it named &lt;b&gt;init.el&lt;/b&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the contents of that file:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;inhibit-startup-message&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;require&lt;/span&gt; &lt;span class="ss"&gt;'package&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;package-enable-at-startup&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'package-archives&lt;/span&gt;
+	     &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"melpa"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"https://melpa.org/packages/"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-initialize&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; Bootstrap `use-package'&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;unless&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-installed-p&lt;/span&gt; &lt;span class="ss"&gt;'use-package&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-refresh-contents&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-install&lt;/span&gt; &lt;span class="ss"&gt;'use-package&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;try&lt;/span&gt;
+	&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;which-key&lt;/span&gt;
+	&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt; 
+	&lt;span class="nv"&gt;:config&lt;/span&gt;
+	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;which-key-mode&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The last two &lt;b&gt;inituse-package&lt;/b&gt; clauses install two helpful packages:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;b&gt;try&lt;/b&gt;: let's you try packages without installing them.
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;which-key&lt;/b&gt;: brings up help on key combinations.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Relavent links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code for this video:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"&gt;https://github.com/zamansky/using-emacs/tree/lesson-1-setup&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete code built up over all videos:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Melpa and packages
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://melpa.org"&gt;&lt;/a&gt;&lt;a href="http://melpa.org"&gt;http://melpa.org&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/justbur/emacs-which-key"&gt;which-key&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/larstvei/Try"&gt;try&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - Introduction</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-introduction/</id>
+    <updated>2016-05-23T10:07:18-04:00</updated>
+    <published>2016-05-23T10:07:18-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-introduction/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+I'm sure I've mentioned that I've been an Emacs wonk for
+decades. Since the mid-80's in fact. I've spent time using other
+editors, word processors, and development tools but always find my way
+back.
+&lt;/p&gt;
+
+&lt;p&gt;
+I recommend that budding computer science students develop a good tool
+set and encourage them to explore Emacs but while it's pretty easy to
+load Emacs and find your way around, particularly if you use the mouse
+and menus there isn't a clear path to take you from beginner to using
+it as an efficient tool let alone customizing it.
+&lt;/p&gt;
+
+&lt;p&gt;
+Inspired by &lt;a href="https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q/featured"&gt;Mattias Petter Johansson&lt;/a&gt;, or MPJ who make a weekly video,
+I decided to try to create a series of YouTube videos and matching
+blog posts. I'll try to post one a week and I'll try to keep the
+videos, at least after the first couple to just a few minutes and have
+them focus on &lt;a href="http://sachachua.com/blog/2015/01/developing-emacs-micro-habits-text-automation/"&gt;micro-habits&lt;/a&gt; - one or two small things that you can
+bring to your work flow and internalize.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first three four (this one and the next three) will focus on
+setting things up. After this post we'll have
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Setting up the package manager
+&lt;/li&gt;
+&lt;li&gt;Intro to org-mode (just so that you recognize the markup)
+&lt;/li&gt;
+&lt;li&gt;Intro to Elisp (just so you have an idea of those configuration
+lines)
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+and then we're off to the races. Here's what I'm thinking about for
+the first few topics after the above mentioned ones:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Efficient Navigation
+&lt;/li&gt;
+&lt;li&gt;Windows and Buffers
+&lt;/li&gt;
+&lt;li&gt;Theming
+&lt;/li&gt;
+&lt;li&gt;Auto Completion
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+and then a series of short topics to show some of my favorite editing
+tools. We'll also cover some larger topics including:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Python Development
+&lt;/li&gt;
+&lt;li&gt;C/C++ Development
+&lt;/li&gt;
+&lt;li&gt;Document Preparation
+&lt;/li&gt;
+&lt;li&gt;Scheduling / Calendaring / Note Taking
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+I'll put together an index to these posts along with any ancillary
+materials here: &lt;a href="file:///stories/emacs"&gt;&lt;/a&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;Getting started&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+This series is going to assume you've installed emacs and worked your
+way through the included tutorial.
+&lt;/p&gt;
+
+&lt;p&gt;
+To help you get to that point, here are some links to posts and sites
+that I've found useful:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://www.braveclojure.com/basic-emacs/"&gt;http://www.braveclojure.com/basic-emacs/&lt;/a&gt; 
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.masteringemacs.org/article/beginners-guide-to-emacs"&gt;https://www.masteringemacs.org/article/beginners-guide-to-emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs"&gt;http://www.jesshamrick.com/2012/09/10/absolute-beginners-guide-to-emacs&lt;/a&gt; 
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-use-the-emacs-editor-in-linux"&gt;https://www.digitalocean.com/community/tutorials/how-to-use-the-emacs-editor-in-linux&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+And here's a 10 minute getting started guide:
+&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/K3_SFerNIeI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+So, stay tuned.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>Blogging with Emacs, Jekyll and Nikola</title>
     <id>http://cestlaz.github.io/posts/2016-04-17-emacs-jekyll-nikola/</id>

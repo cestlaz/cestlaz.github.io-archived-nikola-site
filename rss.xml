@@ -1,5 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 30 Aug 2016 21:45:45 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Federal Aid for Code Schools - is this a good thing?</title><link>http://cestlaz.github.io/posts/fed-aid-for-code-schools/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 02 Sep 2016 15:30:44 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>New Term, New Tool - repl.it</title><link>http://cestlaz.github.io/posts/new-term-new-tool-replit/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+We're now a week in to my first class at Hunter. It's a little early
+for me to really compare and contrast the high school to college
+experience but I thought I'd share some thoughts on a tool that I've
+recently started to play with.
+&lt;/p&gt;
+
+&lt;p&gt;
+My students were all supposed to be issued laptops at the beginning of
+the semester. The plan was to have them learn Linux, the command line,
+and a little DevOps along the way. I guess I shouldn't have been too
+surprised to learn that the laptops weren't going to come in until
+late September.
+&lt;/p&gt;
+
+&lt;p&gt;
+Scratch all that advance lesson planning. A brief scramble and I was
+able to relocate the class into a computer lab but now we can't
+customize the kids environments. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Time to look for an online solution.
+&lt;/p&gt;
+
+&lt;p&gt;
+We're starting the kids off in Python, a choice that I'll talk about
+in some future post and normally my online go to for Python is
+&lt;a href="http://codesters.com"&gt;codesters.com&lt;/a&gt;. I'm a big fan of the codesters team and product. This
+time, though, I decided to try something else. Specifically &lt;a href="http://repl.it"&gt;repl.it&lt;/a&gt;. Partly because, as with
+codesters, I like the people behind it. It's also pretty simple and it
+supports a lot of different languages:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+APL, ES2015 ,Bloop, BrainF, C, CoffeeScript, C++, C++11, C#, Emoticon,
+Forth, F#, Go, Java, JavaScript, LOLCODE, Lua, Nodejs, PHP, Python,
+Python3, QBasic, Roy, Ruby, Rust, Scheme, Swift, Unlambda, and HTML, CSS, JS
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+It's still a pretty new product so there are occasional hiccups but
+I'm really liking things so far. Some of the things I like include:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;a simple clean interface.
+&lt;/li&gt;
+&lt;li&gt;sharing and embedding code:
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;script src="//repl.it/embed/DF3m/19.js"&gt;&lt;/script&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;project mode which allows multi file projects
+&lt;/li&gt;
+&lt;li&gt;examples to get you started
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+But the thing I'm really liking are the teacher features they're
+working on. The teacher interface isn't fancy. I like that. Things are
+simple and clean and they let me get the job done.
+&lt;/p&gt;
+
+&lt;p&gt;
+I had two extra minutes in class yesterday and in that time, I was
+able to:
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Make a classroom
+&lt;/li&gt;
+&lt;li&gt;Invite all my students by email
+&lt;/li&gt;
+&lt;li&gt;Create 2 quick assignments.
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+The assignment page lets you give starter code as well as instructions
+and it also lets you put in tests that are run when a student submits
+their work for instant feedback.
+&lt;/p&gt;
+
+&lt;p&gt;
+I really like the tests feature on projects. So far, I've only played
+with Python unit tests. Repl.it uses a really easy to follow
+interface and has a sample test to guide you. There's also an option
+for input/output matching which includes flexible matching and regular
+expressions but I haven't played with it yet.
+&lt;/p&gt;
+
+&lt;p&gt;
+Overall, I'm liking this tool. When the kids get their laptops we'll
+probably use it somewhat less as they start to learn to use their own
+systems but I'm glad to have repl.it in my teaching arsenal.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-term-new-tool-replit/</guid><pubDate>Fri, 02 Sep 2016 13:26:02 GMT</pubDate></item><item><title>Federal Aid for Code Schools - is this a good thing?</title><link>http://cestlaz.github.io/posts/fed-aid-for-code-schools/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 I saw this headline earlier today: &lt;a href="http://www.inc.com/salvador-rodriguez/coding-bootcamps-just-got-a-big-boost.html"&gt;The U.S. Just Made a Bold Move to Improve Diversity in Tech&lt;/a&gt;.
 &lt;/p&gt;
 
@@ -1031,165 +1134,4 @@ their first startup.
 &lt;p&gt;
 So there it is. A plan that makes for great "press release" but is it
 really addressing the issues?
-&lt;/p&gt;</description><category>education</category><category>policy</category><category>tech</category><guid>http://cestlaz.github.io/posts/hillary-loans/</guid><pubDate>Thu, 30 Jun 2016 21:38:01 GMT</pubDate></item><item><title>On Teaching,  Mentors, and Role Models</title><link>http://cestlaz.github.io/posts/mentors/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-Yesterday over at &lt;a href="http://avc.com"&gt;AVC&lt;/a&gt; Fred blogged about the AFSE graduation and
-posted a &lt;a href="http://avc.com/2016/06/afse-commencement-speech/"&gt;transcript of the speech he gave&lt;/a&gt;. It's well worth a read.
-&lt;/p&gt;
-
-&lt;p&gt;
-Some of the comments touched on mentors and role models so I though
-I'd talk a little about that here.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've always believed that as a parent, modeling - that is, how we
-behave is one of the largest shapers of our kids. It's one thing to
-take your kid to a museum because that's what you should do as a good
-parent and another if you think - "I wants to go to that museum and
-damn it, I'm taking you along." I'm no psychologist but my gut tells
-me the former is good but the latter is better. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This of course extends to schools. As teachers we deliver instruction
-but we also communicate through how we behave. Students are very
-perceptive and we can have influences that we don't even know. I
-remember a parent who thanked me because their child started
-exercising and being more active because of me. It's not something I
-ever talked to the kid about but I would run after my classes at Stuy,
-ride to school and in class I might give an exercise anecdote or
-two. Just by doing something healthy and positive where kids can see
-it led to some good.
-&lt;/p&gt;
-
-&lt;p&gt;
-Now, as teachers, we have limited reach and just as in many cases
-where a child won't listen to a parent and needs a friendly teacher to
-weigh in, there are plenty of times a student won't really listen to a
-teacher, particularly in CS. Most CS teachers don't have extensive CS
-backgrounds and self taught kids frequently feel they know more. Even
-when a student believes that a CS teacher's got the goods, they're
-skeptical - teaching as a profession has been so beaten up many
-students will have a ""so why are you teaching and not working at
-Google" attitude.
-&lt;/p&gt;
-
-&lt;p&gt;
-Even with the best intentions from parents and teachers, for many students,
-particularly those from poor backgrounds there are limits to our
-influence. If a parent has to work multiple jobs at crazy hours, they
-have less time to be a positive role model. If they've never been to
-college or worked in a white collar profession they won't have the
-connections and resources to effectively guide their child through the
-education to profession maze.
-&lt;/p&gt;
-
-&lt;p&gt;
-This is where mentors and role models become so important.
-&lt;/p&gt;
-
-&lt;p&gt;
-For me, I first saw this when I was a young teacher. My graduates
-hadn't gotten to the real world yet and I hadn't developed a
-reputation. I'd have friends come in to give tech and industry
-talks. What I found was that in addition to being inspirational, it
-help authenticate me as being legit. When they would talk about a best
-practice that I had already taught them, the classes got the idea that
-maybe I did know a thing or two about this CS stuff.
-&lt;/p&gt;
-
-&lt;p&gt;
-You could see the impact when we held &lt;a href="http://cestlaz.github.io/posts/2012-03-31-checking-in-with-family.html/#.V3Qkkx9vGAk"&gt;"Tech speed dating" events&lt;/a&gt; where
-I mixed current high school students with professionals.
-&lt;/p&gt;
-
-&lt;p&gt;
-So many comments afterwards like "I didn' know I could do that in CS,"
-"now I know what I want to do…." Slam dunk!!
-&lt;/p&gt;
-
-&lt;p&gt;
-Of course, you have to curate your volunteers. While a guest talk from
-a very senior, very established adult can be inspiring some times,
-they can be so far removed from the kids next steps, it can actually
-be intimidating and a turn off. As a side note, I don't think that
-this would be the case at all with respect to Fred's graduation
-speech. His overall sincerity and the fact that he's so connected to
-the school and known to the kids made sure of that.
-&lt;/p&gt;
-
-&lt;p&gt;
-When I made my first Hunter college event, I wanted to kick start and
-excite the current students and also give myself some CS street cred so
-I carefully selected the participants for our first panel / mixer. I
-had:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;A young VC
-&lt;/li&gt;
-&lt;li&gt;A mid 30s CTO of a mid size company
-&lt;/li&gt;
-&lt;li&gt;A mid 30s Facebook engineer who also spent time at Google
-&lt;/li&gt;
-&lt;li&gt;Assorted recent college grad tech people from big companies, start ups,
-and everything in between.
-&lt;/li&gt;
-&lt;li&gt;I tried to have a diverse crowd.
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-I wanted a couple of more senior people to show the end of the road
-but I wanted most of the people there to be at "the next rung in the
-ladder." All indications were that the event was also a slam dunk.
-&lt;/p&gt;
-
-&lt;p&gt;
-Through all of this it's become pretty apparent to me that bringing in
-adult mentors and role models can be even more important than covering
-every little bit of whatever curriculum you're teaching.  Some people
-say that we need more female High School CS teachers and while I agree
-with that sentiment, I'd rather have the best CS teacher I can get
-regardless of background as long as I have amazing women in tech to
-provide for my students as role models. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This led me to think about a couple of the CS Ed programs that I
-support. TEALS and ScriptEd. I like both, but they're different
-models. In TEALS the volunteer works with the teacher. In ScriptEd,
-the volunteer is the teacher. I have many former students that have
-volunteered through TEALS but I don't know any who've done SciptEd so
-I don't have the same "inside" info. 
-&lt;/p&gt;
-
-&lt;p&gt;
-For TEALS, those volunteers are also role models. Every day that Etsy
-engineer is in the classroom those students see and hear from a tech
-professional. What's more, they see and hear from one who's taking the
-time to be with them.
-&lt;/p&gt;
-
-&lt;p&gt;
-Of course the same is true for ScriptEd but I wonder if after some
-time the students view the ScriptEd volunteer as the teacher rather
-than the tech professional.
-&lt;/p&gt;
-
-&lt;p&gt;
-There's probably some interesting research in there.
-&lt;/p&gt;
-
-&lt;p&gt;
-Finally nothing is better than really being able to hook kids up with
-long term mentors. This is something that I think AFSE's been able to
-do but it's an expensive proposition. It's something I'd love to see
-more of at schools and as part of the basic budget but with all the
-money wasted on things like standardized testing and flawed teacher
-evaluation systems, I don't see it coming any time soon.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/mentors/</guid><pubDate>Wed, 29 Jun 2016 20:03:34 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;</description><category>education</category><category>policy</category><category>tech</category><guid>http://cestlaz.github.io/posts/hillary-loans/</guid><pubDate>Thu, 30 Jun 2016 21:38:01 GMT</pubDate></item></channel></rss>

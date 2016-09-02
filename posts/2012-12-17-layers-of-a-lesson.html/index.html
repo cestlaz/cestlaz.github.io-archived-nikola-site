@@ -162,23 +162,30 @@ A solution might look like this:
 <pre>
 ; asked in a turtle context
 to gospin
-  ifelse abs xcor 
+  ifelse abs xcor &lt; 8 or abs ycor &lt; 8 
+    [ wiggle ] ; wiggle implementation not shown
+    [ left 5 ]
+end
+</pre>
 
 <p>
 Let's call level one just talking about the solution by looking at the
 program as a sequence of instructions. Specifically relating the
 instructions to the problem, showing how it solves it, and that's it.
 
-</p><p>
+</p>
+<p>
 This is the simplest level. A book, video, or online courseware can
 approach teaching at this level. A non computer scientist teacher or a
 non teacher computer scientist could do so as well. Students might
 learn a bit but I wouldn't hope for much inspiration or
 creativity to come out of it.
 
-</p><p>
+</p>
+<p>
 Let's move to level two. 
-</p><p>
+</p>
+<p>
 Here we might talk about "what the turtles are doing." They're always
 doing something, either wiggling or spinning. This is a step in the
 right direction. When done right, the students start thinking about
@@ -187,14 +194,16 @@ problem as something that exists only in the world of NetLogo. They
 are more likely develop patterns than in level one, but it's still
 limited.
 
-</p><p>
+</p>
+<p>
 Level three is where things get interesting. On the surface, the
 problem is just a nice introduction to programming turtles in
 NetLogo. At a deeper level, it's an opportunity to introduce the kids
 to State Machines. A new way of thinking about problems and problem
 solving.
 
-</p><p>
+</p>
+<p>
 Students understand the idea of a "state." For example, in class,
 they're in a "seated state," maybe in a "note taking state," etc. It's
 easy to see that they don't know what their day will bring but they
@@ -203,7 +212,8 @@ think about the turtle as in a state. It's either in a wiggling state
 or a spinning state and based on their situation they can either
 continue in their current state or transition to the other one:
 
-</p><div align="center">
+</p>
+<div align="center">
 <img width="50%" src="../../img/spin-state.png" class="" alt="">
 </div>
 
@@ -216,7 +226,7 @@ extends to other problems, for example, a ghost from pacman:
 
 A good teacher thinks about working across these levels. He adjusts
 based on the class and looks for opportunities to develop these deeper
-concepts.</pre>
+concepts.
 
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style addthis_32x32_style">

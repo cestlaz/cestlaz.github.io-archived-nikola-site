@@ -1,0 +1,77 @@
+#+BEGIN_COMMENT
+.. title: New Term, New Tool - repl.it
+.. slug: new-term-new-tool-replit
+.. date: 2016-09-02 09:26:02 UTC-04:00
+.. tags: pedagogy, tools
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+We're now a week in to my first class at Hunter. It's a little early
+for me to really compare and contrast the high school to college
+experience but I thought I'd share some thoughts on a tool that I've
+recently started to play with.
+
+My students were all supposed to be issued laptops at the beginning of
+the semester. The plan was to have them learn Linux, the command line,
+and a little DevOps along the way. I guess I shouldn't have been too
+surprised to learn that the laptops weren't going to come in until
+late September.
+
+Scratch all that advance lesson planning. A brief scramble and I was
+able to relocate the class into a computer lab but now we can't
+customize the kids environments. 
+
+Time to look for an online solution.
+
+We're starting the kids off in Python, a choice that I'll talk about
+in some future post and normally my online go to for Python is
+[[http://codesters.com][codesters.com]]. I'm a big fan of the codesters team and product. This
+time, though, I decided to try something else. Specifically [[http://repl.it][repl.it]]. Partly because, as with
+codesters, I like the people behind it. It's also pretty simple and it
+supports a lot of different languages:
+
+#+BEGIN_QUOTE
+APL, ES2015 ,Bloop, BrainF, C, CoffeeScript, C++, C++11, C#, Emoticon,
+Forth, F#, Go, Java, JavaScript, LOLCODE, Lua, Nodejs, PHP, Python,
+Python3, QBasic, Roy, Ruby, Rust, Scheme, Swift, Unlambda, and HTML, CSS, JS
+#+END_QUOTE
+
+It's still a pretty new product so there are occasional hiccups but
+I'm really liking things so far. Some of the things I like include:
+
+- a simple clean interface.
+- sharing and embedding code:
+#+BEGIN_HTML
+<script src="//repl.it/embed/DF3m/19.js"></script>
+#+END_HTML
+- project mode which allows multi file projects
+- examples to get you started
+
+But the thing I'm really liking are the teacher features they're
+working on. The teacher interface isn't fancy. I like that. Things are
+simple and clean and they let me get the job done.
+
+I had two extra minutes in class yesterday and in that time, I was
+able to:
+1. Make a classroom
+2. Invite all my students by email
+3. Create 2 quick assignments.
+
+The assignment page lets you give starter code as well as instructions
+and it also lets you put in tests that are run when a student submits
+their work for instant feedback.
+
+I really like the tests feature on projects. So far, I've only played
+with Python unit tests. Repl.it uses a really easy to follow
+interface and has a sample test to guide you. There's also an option
+for input/output matching which includes flexible matching and regular
+expressions but I haven't played with it yet.
+
+Overall, I'm liking this tool. When the kids get their laptops we'll
+probably use it somewhat less as they start to learn to use their own
+systems but I'm glad to have repl.it in my teaching arsenal.
+
