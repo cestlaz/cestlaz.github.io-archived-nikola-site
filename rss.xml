@@ -1,5 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 02 Sep 2016 23:16:33 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 15 - Macros</title><link>http://cestlaz.github.io/posts/using-emacs-15-macros/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 06 Sep 2016 15:43:51 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>First day back, or not</title><link>http://cestlaz.github.io/posts/first-day-back/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+The day after Labor Day. The day NYC teachers traditionally return to
+work. For the first time in a quarter century, I'm not one of them.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's weird.
+&lt;/p&gt;
+
+&lt;p&gt;
+Instead, I'm in the second week of Hunter College's fall semester. So
+far so good on that front. I'm getting to know my students, planning
+activities and overall having a good time. 
+&lt;/p&gt;
+
+&lt;p&gt;
+But, I do have to reflect on some of the things I'm not going to get
+to do this week:
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not going to have the opportunity to be blindsided by a CS
+schedule made without consulting me or any other CS teacher and having
+to work frantically to fix it so that the CS teachers have the
+programs and rooms they want.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not going to be able to have that panic attack when the NFS/NIS
+server isn't working and no one can log in.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not going to sit through a mindless faculty meeting where nothing
+is really ever accomplished.
+&lt;/p&gt;
+
+&lt;p&gt;
+More seriously, I am going to miss seing my friends and colleagues
+after the summer and Thursday - the day the kids get back is always a
+thrill and I'm going to miss that.
+&lt;/p&gt;
+
+&lt;p&gt;
+In a way, I'm experiencing a version of what retired teachers go
+through. Many teachers retire in June but it's not until after Labor
+Day when the change really sinks in.
+&lt;/p&gt;
+
+&lt;p&gt;
+Soon, I'll start posting CS teaching content again but for today, I
+want to tip my cap to all the public school teachers in NY that are
+going back to work today and who will shortly be teaching their five classes
+of thirty four kids each &lt;sup&gt;&lt;a id="fnr.1" name="fnr.1" class="footref" href="http://cestlaz.github.io/posts/first-day-back/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;.
+&lt;/p&gt;
+&lt;div id="footnotes"&gt;
+&lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
+&lt;div id="text-footnotes"&gt;
+
+&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" name="fn.1" class="footnum" href="http://cestlaz.github.io/posts/first-day-back/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;p&gt;also tipping my cap to my favorite TJ
+teacher who's students are back today. I got called to task for
+failing to mention her on my facebook shoutout.&lt;/p&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;</description><category>teaching</category><guid>http://cestlaz.github.io/posts/first-day-back/</guid><pubDate>Tue, 06 Sep 2016 14:56:56 GMT</pubDate></item><item><title>Using Emacs - 15 - Macros</title><link>http://cestlaz.github.io/posts/using-emacs-15-macros/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -975,179 +1040,4 @@ that we can make sure act 2 is a success and we can build something
 similar for more young people throughout the city and perhaps the country. 
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>community</category><category>teaching</category><category>tech</category><guid>http://cestlaz.github.io/posts/end-to-act-1/</guid><pubDate>Mon, 18 Jul 2016 17:18:06 GMT</pubDate></item><item><title>Using Emacs - 10 - org init files</title><link>http://cestlaz.github.io/posts/using-emacs-10-org-init/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-I'll be traveling for the next couple of weeks so I probably won't
-have time for another video until mid to late July. I'll probably
-write a post about this series and do some regular blogging over that
-time but probably no new videos for a couple of weeks.
-&lt;/p&gt;
-
-&lt;p&gt;
-Also, a couple of notes about the series:
-&lt;/p&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;Instead of making a separate git branch for each episode, I'm just
-adding on to the master branch on GitHub. If you're not familiar
-with Git and GitHub don't worry about this. Hardly anyone will
-notice a difference.
-&lt;/li&gt;
-&lt;li&gt;If this theme doesn't show well on video, please let me know, I'll
-change it.
-&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;
-Ok, now to this installments video.
-&lt;/p&gt;
-
-&lt;p&gt;
-It talks about using org-mode to store our emacs init file.
-&lt;/p&gt;
-
-&lt;p&gt;
-The first key is that you can put code-blocks in org-mode:
-&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;#+BEGIN_SRC emacs-lisp
-(emacs-lisp code goes here)
-(more emacs lisp goes here)
-(and you can have even more here)
-#+END_SRC
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Since it's elisp you can run the individual line using the usual &lt;b&gt;&lt;b&gt;C-x C-e&lt;/b&gt;&lt;/b&gt;
-but you can run the entire block by placing your cursor anywhere in
-the block and typing &lt;b&gt;&lt;b&gt;C-c C-c&lt;/b&gt;&lt;/b&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-One minor annoyance about editing code blocks is that it doesn't do
-syntax highlighting or auto indentation. To solve this, emacs lets you
-pull up an editing buffer by typing &lt;b&gt;*C-c '*&lt;/b&gt;. 
-&lt;/p&gt;
-
-&lt;p&gt;
-You're supposed to be able to save your changes with &lt;b&gt;*C-c '*&lt;/b&gt; again
-or &lt;b&gt;&lt;b&gt;C-x C-s&lt;/b&gt;&lt;/b&gt; and kill the buffer without saving changes with &lt;b&gt;&lt;b&gt;C-x
-C-k&lt;/b&gt;&lt;/b&gt; 
-but the version of org-mode that came with my version of emacs
-didn't support it - I had to install a newer version of org-mode from
-melpa. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I couldn't figure out how to do this via use-package, but if this
-problem happens to you, you can just type &lt;b&gt;&lt;b&gt;Alt-x package-install&lt;/b&gt;&lt;/b&gt;
-and then type &lt;b&gt;&lt;b&gt;org&lt;/b&gt;&lt;/b&gt; and hit enter to install it.
-&lt;/p&gt;
-
-&lt;p&gt;
-Once you do that, you might have to reload emacs but then everything
-should work. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This lets us move most of our configuration to a separate file. We're
-calling it &lt;b&gt;&lt;b&gt;myinit.org&lt;/b&gt;&lt;/b&gt; and storing it in our .emacs.d
-directory. You can use any name &lt;b&gt;&lt;b&gt;except&lt;/b&gt;&lt;/b&gt; init.org as I mentioned in
-the video.
-&lt;/p&gt;
-
-&lt;p&gt;
-The file's a little big so here's a link to it:
-&lt;a href="https://github.com/zamansky/using-emacs/blob/master/myinit.org"&gt;https://github.com/zamansky/using-emacs/blob/master/myinit.org&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-Notice how GitHub formats it to look all nice.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here's the raw file so you can see the gory details:
-&lt;a href="https://raw.githubusercontent.com/zamansky/using-emacs/master/myinit.org"&gt;https://raw.githubusercontent.com/zamansky/using-emacs/master/myinit.org&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-Since we're loading the file in overview mode, when we load it in
-emacs we see:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;interface&lt;/span&gt; &lt;span class="nv"&gt;tweaks&lt;/span&gt;
-&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;try&lt;/span&gt;
-&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;which&lt;/span&gt; &lt;span class="nv"&gt;key&lt;/span&gt;
-&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Org&lt;/span&gt; &lt;span class="nv"&gt;mode&lt;/span&gt;
-&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Ace&lt;/span&gt; &lt;span class="nv"&gt;windows&lt;/span&gt; &lt;span class="nv"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;easy&lt;/span&gt; &lt;span class="nv"&gt;window&lt;/span&gt; &lt;span class="nv"&gt;switching&lt;/span&gt;
-&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Swiper&lt;/span&gt; &lt;span class="nv"&gt;/&lt;/span&gt; &lt;span class="nv"&gt;Ivy&lt;/span&gt; &lt;span class="nv"&gt;/&lt;/span&gt; &lt;span class="nv"&gt;Counsel&lt;/span&gt;
-&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Avy&lt;/span&gt; &lt;span class="nv"&gt;-&lt;/span&gt; &lt;span class="nv"&gt;navigate&lt;/span&gt; &lt;span class="nv"&gt;by&lt;/span&gt; &lt;span class="nv"&gt;searching&lt;/span&gt; &lt;span class="nv"&gt;for&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;letter&lt;/span&gt; &lt;span class="nv"&gt;on&lt;/span&gt; &lt;span class="nv"&gt;the&lt;/span&gt; &lt;span class="nv"&gt;screen&lt;/span&gt; &lt;span class="k"&gt;and &lt;/span&gt;&lt;span class="nv"&gt;jumping&lt;/span&gt; &lt;span class="nv"&gt;to&lt;/span&gt; &lt;span class="nv"&gt;it&lt;/span&gt;
-&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Autocomplete&lt;/span&gt;
-&lt;span class="nv"&gt;*&lt;/span&gt; &lt;span class="nv"&gt;Themes&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-We can tab open and close each section and add text to clarify things
-around the code blocks.
-&lt;/p&gt;
-
-&lt;p&gt;
-All that's left in &lt;b&gt;&lt;b&gt;init.el&lt;/b&gt;&lt;/b&gt; is:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;require&lt;/span&gt; &lt;span class="ss"&gt;'package&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;package-enable-at-startup&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'package-archives&lt;/span&gt;
-	     &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"melpa"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"https://melpa.org/packages/"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-initialize&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="c1"&gt;;; Bootstrap `use-package'&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;unless&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-installed-p&lt;/span&gt; &lt;span class="ss"&gt;'use-package&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-refresh-contents&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-install&lt;/span&gt; &lt;span class="ss"&gt;'use-package&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;org-babel-load-file&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;expand-file-name&lt;/span&gt; &lt;span class="s"&gt;"~/.emacs.d/myinit.org"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-With the last line performing the magic of loading our org file and
-running all the code blocks.
-&lt;/p&gt;
-
-&lt;p&gt;
-Finally, we added a couple of small interface changes:
-&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;fset&lt;/span&gt; &lt;span class="ss"&gt;'yes-or-no-p&lt;/span&gt; &lt;span class="ss"&gt;'y-or-n-p&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"&amp;lt;f5&amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'revert-buffer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-The first line lets us type y or n instead of yes or no and the second
-let's us reload a file into our current buffer using the &lt;b&gt;&lt;b&gt;f5&lt;/b&gt;&lt;/b&gt; key.
-&lt;/p&gt;
-
-&lt;p&gt;
-I hope you enjoy this video and find it useful:
-&lt;/p&gt;
-
-&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/EX9PKK3EMaw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;
-Relevant links:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Video series overview page:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Code:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-10-org-init/</guid><pubDate>Fri, 01 Jul 2016 04:00:00 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>community</category><category>teaching</category><category>tech</category><guid>http://cestlaz.github.io/posts/end-to-act-1/</guid><pubDate>Mon, 18 Jul 2016 17:18:06 GMT</pubDate></item></channel></rss>
