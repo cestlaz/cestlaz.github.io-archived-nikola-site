@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2016-09-24T22:28:43Z</updated>
+  <updated>2016-09-28T16:08:52Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -12,95 +12,155 @@
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
-    <title>Can NYCIST become in leader in CS Education?</title>
-    <id>http://cestlaz.github.io/posts/nycist/</id>
-    <updated>2016-09-24T16:17:53-04:00</updated>
-    <published>2016-09-24T16:17:53-04:00</published>
+    <title>User friendly - I do not think that means what you think it means</title>
+    <id>http://cestlaz.github.io/posts/user-friendly/</id>
+    <updated>2016-09-28T11:13:37-04:00</updated>
+    <published>2016-09-28T11:13:37-04:00</published>
     <author>
       <name>Mike Zamansky</name>
     </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/nycist/"/>
-    <summary type="html">&lt;p&gt;
-I only learned about NYCIST last spring. They're the "New York
-Consortium for Independent School Technologists." They had something
-of an open house that I attended. I heard about them from friend
-and fellow CS educator &lt;a href="https://twitter.com/ed_saber"&gt;Saber Khan&lt;/a&gt;.  
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/user-friendly/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Saw this post the other day: &lt;a href="https://pupeno.com/2016/09/26/emacs-is-hurting-clojure/"&gt;Emacs is hurting Clojure&lt;/a&gt; and this response: &lt;a href="http://irreal.org/blog/?p=5597"&gt;Is Emacs Really HJard to Learn / Use&lt;/a&gt;.
 &lt;/p&gt;
 
 &lt;p&gt;
-Last Thursday I spent an afternoon and evening with NYCIST members for
-a discussion of the state of K12 Computer Science Education in the
-City.
+This called to mind those countless discussions about tools being user
+friendly. I'm frequently on the unpopular side of these
+discussions. Linux vs Windows vs Mac, Shell vs GUI, Emacs vs
+fill-in-the-blank-editor-or-IDE and on and on.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Don't use Emacs, it isn't user
+friendly. Don't use Linux, it isn't user friendly.
 &lt;/p&gt;
 
 &lt;p&gt;
-Most of my work has been with public schools and most of the teachers
-I know, public school teachers so it was great to make new friends in
-the Independent school community.
+The thing is, I don't think that word means what they think it does. 
 &lt;/p&gt;
 
 &lt;p&gt;
-One thing I realized during the evening was that NYCIST has a real
-opportunity to do something special. 
+I tell my kids that Linux and the shell is amazingly user friendly and
+Windows and Macs aren't user friendly at all. Windows, rather, is 
+"Learner Friendly." For years, it's been easy to learn what you can do
+on Windows or Mac (as used via the GUI, not dropping to a shell) but
+the truth is you can't do that much. They're designed as program
+loaders not tool kits.
 &lt;/p&gt;
 
 &lt;p&gt;
-In some ways, the public schools are leading the way in computer
-science education as a result of this administrations CS4All
-initiative but at the same time, public schools face some real
-challenges. While some "early adopters" have developed their own take
-on computer science education, by and large, CS4All is being defined
-and driven by few for all and, at least right now, the model seems to
-be the "a little PD and you're a CS teacher" model.
+You can learn how to get around and load programs and files very
+quickly - much more quickly at first than using a command line
+interface. The problem is, at that point, you hit a wall. No doubt
+those operating systems are more learner friendly than Linux and the
+shell but once you learn the command line, it can be leveraged for all
+sorts of things and pretty easily at that - user friendly (see these
+posts for some examples: &lt;a href="http://localhost:8000/categories/cli/"&gt;Shell posts&lt;/a&gt;).
 &lt;/p&gt;
 
 &lt;p&gt;
-At the same time, standardized testing and teacher evaluations are
-pressuring schools, particularly schools of our most vulnerable
-students to push resources towards test prep in tested subjects rather
-than real education, including CS.
+This is important because we have our students use all sorts of tools
+and we should be thinking about things like usability but we really
+should be thinking about them a little differently. 
 &lt;/p&gt;
 
 &lt;p&gt;
-In this particular instance, NYCIST and independent schools can be
-what charter schools were supposed to be before they were corrupted.
+First, is it learner friendly. Part of this is cost of
+entry. Linux has a high cost of entry. On the other hand, while Emacs
+might look uglier than other modern editors, the cost of entry is
+pretty much the same as any other editor - click or type a command and then you can use
+the mouse and drop down menus to get started. Vim, in my opinion, on
+the other hand has a higher cost of entry due to its modal nature. 
 &lt;/p&gt;
 
 &lt;p&gt;
-Laboratories of innovation. 
+So, there's no reason not to use Emacs (vs another editor) but you
+might pause before using Linux. My approach is to start as if it were
+Windows - use the gui, icons and menus, and then slowly introduce the
+command line.
 &lt;/p&gt;
 
 &lt;p&gt;
-NYCIST has already gathered together interested parties and the
-independent schools aren't burdened by the weight of politically
-driven testing and teacher evaluation. At the same time, small class
-sizes and flexible models allow for innovation.
+Once your past the cost of entry, the we can think about being learner
+friendly. As I mentioned, Linux, not so much. Emacs, sure - just like
+any other editor with drop downs that then give you keyboard
+equivalents. 
 &lt;/p&gt;
 
 &lt;p&gt;
-If they wanted to, they could probably create curricular and
-instructional frameworks for CS education and. dare I say it, share it
-back to the public schools. 
+The keyboard equivalents lead us to another part of learner friendly
+– discoverability - can you easily discover new things about the
+tool. Here Emacs shines. Linux, maybe not so much.
 &lt;/p&gt;
 
 &lt;p&gt;
-I know I'm ignoring independent school politics and other issues that
-would prevent this from happening, but I just feel that if there's a
-desire to do so from a group like NYCIST, it could happen.
+Once past learner friendly we get to user friendly. The core question
+is "can I do what I need to and want to do easily." For most people, it
+comes down to - the tool I know is user friendly and the one I don't
+know and don't want to take the time to know isn't. There are some
+things that are cumbersome no matter what, but really, when we say
+user friendly, most people mean "what I like." To me, it's a little
+more - is the tool expressive and powerful as well.
 &lt;/p&gt;
 
 &lt;p&gt;
-I'm looking forward to continuing to work with my new friends and if
-any of you are interested in finding out more about NYCIST, just tweet
-to &lt;a href="https://twitter.com/ed_saber"&gt;Saber&lt;/a&gt;.
+So, why is this important? First, we shouldn't allow our biases to
+color the way we expose our kids to tools but at the same time, we
+should pay attention to learnability, cost of entry, discoverability,
+and indeed, true user friendliness.
 &lt;/p&gt;
 
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" border-spacing="10px" padding="10px"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col" class="left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="left"&gt;Low Power&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;High Power&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;&lt;b&gt;&lt;b&gt;Low Learnability&lt;/b&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;td class="left"&gt;CP/M&lt;/td&gt;
+&lt;td class="left"&gt;Linux Shell, Mac Terminal&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;&lt;b&gt;&lt;b&gt;High Learnability&lt;/b&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;td class="left"&gt;Windows / Mac OS GUI&lt;/td&gt;
+&lt;td class="left"&gt;Most editors, including Emacs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
 &lt;p&gt;
-I don't know if my idea here will take root but if it does, I'd love
-to work with NYCIST to make something happen.
-&lt;/p&gt;</summary>
-    <category term="community" label="community"/>
-    <category term="cs" label="CS"/>
+So, let's stop with this "your tool isn't easy to use" nonsense. Any
+tool we don't know isn't easy to use until we learn it. Let's focus on
+the path to learning the useful ones.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cli" label="cli"/>
+    <category term="emacs" label="emacs"/>
+    <category term="linux" label="linux"/>
+    <category term="shell" label="shell"/>
+    <category term="tools" label="tools"/>
   </entry>
   <entry>
     <title>Impostor Syndrome - I'm not good enough</title>

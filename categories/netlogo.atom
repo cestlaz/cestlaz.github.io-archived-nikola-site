@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about netlogo</title>
   <id>http://cestlaz.github.io/categories/netlogo.atom</id>
-  <updated>2016-05-15T12:39:50Z</updated>
+  <updated>2016-08-23T14:27:22Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -215,6 +215,7 @@ unsolved.&lt;/li&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
     <category term="netlogo" label="netlogo"/>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
   <entry>
     <title>Cellular Automata, NetLogo and real problems</title>
@@ -412,6 +413,7 @@ automaton that can solve a maze.
 &lt;iframe class="center frame" src="http://cestlaz.github.io/img/shift-image/shift-image.html"&gt;&lt;/iframe&gt;
 &lt;/div&gt;</summary>
     <category term="netlogo" label="netlogo"/>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
   <entry>
     <title>CS Ed Predictions 2015</title>
@@ -576,6 +578,7 @@ as is your blog in general.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
+    <category term="misc" label="misc"/>
     <category term="netlogo" label="netlogo"/>
   </entry>
   <entry>
@@ -749,6 +752,7 @@ hardcore algorithms and more. I asked Aruna what she thought. Her
 answer: "It's all fun."
 &lt;/p&gt;</summary>
     <category term="netlogo" label="netlogo"/>
+    <category term="policy" label="policy"/>
   </entry>
   <entry>
     <title>Wait, I know that!!!!</title>
@@ -886,6 +890,7 @@ It was pretty awesome.
 It's still a long road before they graduate, but we're getting there.
 &lt;/p&gt;</summary>
     <category term="netlogo" label="netlogo"/>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
   <entry>
     <title>Layers of a lesson</title>
@@ -939,7 +944,11 @@ A solution might look like this:
 &lt;/p&gt;&lt;pre&gt;
 ; asked in a turtle context
 to gospin
-  ifelse abs xcor 
+  ifelse abs xcor &amp;lt; 8 or abs ycor &amp;lt; 8 
+    [ wiggle ] ; wiggle implementation not shown
+    [ left 5 ]
+end
+&lt;/pre&gt;
 
 &lt;p&gt;
 Let's call level one just talking about the solution by looking at the
@@ -993,8 +1002,10 @@ extends to other problems, for example, a ghost from pacman:
 
 A good teacher thinks about working across these levels. He adjusts
 based on the class and looks for opportunities to develop these deeper
-concepts.&lt;/pre&gt;</summary>
+concepts.</summary>
+    <category term="intro" label="intro"/>
     <category term="netlogo" label="netlogo"/>
+    <category term="pedagogy" label="pedagogy"/>
   </entry>
   <entry>
     <title>Who is this man?</title>
