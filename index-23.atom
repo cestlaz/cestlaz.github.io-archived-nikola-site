@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>C'est la Z (old posts, page 23)</title>
+  <id>http://cestlaz.github.io/index-23.atom</id>
+  <updated>2016-10-07T00:52:54Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/index-23.atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-22.atom"/>
+  <link rel="previous" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
+  <link rel="current" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
+  <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-22.atom"/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-23.html"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Using Emacs - 13 - Yasnippet</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-13-yasnippet/</id>
+    <updated>2016-08-04T00:00:00</updated>
+    <published>2016-08-04T00:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-13-yasnippet/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+It turns out that &lt;a href="https://github.com/jorgenschaefer/elpy"&gt;Elpy&lt;/a&gt;, a popular emacs package for python development
+is much easier to set up than I remember. It turns out all you need
+is:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;elpy&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt; 
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elpy-enable&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The video shows how to install and a bit of use. I don't think it's a
+package I'm going to use much since I use other tools to do similar
+things but it's worth checking out. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The main event this week is &lt;a href="https://github.com/joaotavora/yasnippet"&gt;yasnippet&lt;/a&gt;, a package that lets you expand
+text aliases. Let's say you want to put the fairly standard:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;'__main__'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+   &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+in my file. I can just type &lt;b&gt;&lt;b&gt;ifm&lt;/b&gt;&lt;/b&gt; and then hit the &lt;b&gt;&lt;b&gt;TAB&lt;/b&gt;&lt;/b&gt; key and
+it would expand to the above code. Yasnippet also lets you leave
+placeholders for variables, function names and more. It's a pretty
+neat package.
+&lt;/p&gt;
+
+&lt;p&gt;
+I use it for boilerplate code. The example in the video shows how I
+set up a snippet for the boilerplate code used when creating an
+application with the &lt;b&gt;&lt;b&gt;Flask&lt;/b&gt;&lt;/b&gt; python microframework.
+&lt;/p&gt;
+
+&lt;p&gt;
+Setting up yasnippet is as easy as:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;yasnippet&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:init&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;yas-global-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+and it has built in support for &lt;a href="https://github.com/AndreaCrotti/yasnippet-snippets/tree/9ce0b05f4b4d693831e67dd65d660716a8192e8d"&gt;tons of langauges&lt;/a&gt;. You can also easily
+create your own snippets. See the documentation for details on the
+file format. Just create a text file for the snippet and place it in a
+subidectory under the snippets subdirectory of .emacs.d. The name of
+the subdirectory should be the name of the emacs mode for which the
+snippet is defined. I put up the snippet I use for flask so feel free
+to check that out.
+&lt;/p&gt;
+
+&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/4aYMa8f6B0o" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Yasnippet:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/joaotavora/yasnippet"&gt;Home Page&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://joaotavora.github.io/yasnippet/"&gt;Docs&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AndreaCrotti/yasnippet-snippets/tree/9ce0b05f4b4d693831e67dd65d660716a8192e8d"&gt;Included snippets&lt;/a&gt; 
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Elpy:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/jorgenschaefer/elpy"&gt;Home Page&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Flask:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://flask.pocoo.org"&gt;Flask Home Page&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+</feed>
