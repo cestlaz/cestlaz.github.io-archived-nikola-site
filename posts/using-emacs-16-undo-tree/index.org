@@ -1,0 +1,58 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 16 - Undo Tree
+.. slug: using-emacs-16-undo-tree
+.. date: 2016-10-09 12:00:00 UTC-04:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+*  
+
+If you use emacs, you should keep an eye on Jon Snader's [[http://irreal.org/blog/][blog]],
+[[http://irreal.org/blog/][irreal.org]]. A few days he posted on [[http://irreal.org/blog/?p=5621][Undo Tree]] - a package that extends
+Emacs's built in undo functionality.
+
+Basic emacs has undo, bound to **C-/** or **C-_** but that's about
+it. Undo tree, which you can set up with:
+
+#+BEGIN_SRC emacs-lisp
+  (use-package undo-tree
+  :ensure t
+    :init
+      (global-undo-tree-mode))
+#+END_SRC
+
+adds two key features. First is redo, which you get by adding the
+shift key to the undo keychords. 
+
+The other, is the visual undo tree. You can bring that up wit **C-x
+u**
+
+Once you bring up the undo tree, you can use the up and down arrows or
+**C-n** and **C-p** to move between undo and redos. When you get to
+what you want, just quit the undo tree visualizer with **q**.
+
+The cool part is that once you undo a few things and add new stuff,
+you get a tree that you can navigate through using the arrows. 
+
+It's much easier to get the flavor of this by watching the video
+(which also has a lame example of using artist-mode which I'll come
+back t at some point).
+
+Enjoy.
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zL0FJ-jbDPU" frameborder="0" allowfullscreen></iframe>
+
+#+END_HTML
+
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+
