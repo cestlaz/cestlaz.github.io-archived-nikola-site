@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (flask)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/flask.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 14 Oct 2016 22:35:43 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Setting up Linux for Flask Web Development</title><link>http://cestlaz.github.io/posts/flask-setup-virtualenv/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Those laptops that my Hunter students were supposed to get have
+finally arrived. We're distributing them on Monday. Each student will
+have a Dell laptop running Ubuntu 16.04 for as long as they're in the
+program. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This means we can finally start using the web as a way of displaying
+and sharing our projects.
+&lt;/p&gt;
+
+&lt;p&gt;
+For this type of web development, I'm a big fan of using &lt;a href="http://flask.pocoo.org"&gt;Flask&lt;/a&gt;. Flask
+is a Python microframework. The easiest analogy is saying it's like
+Ruby on rails but in Python. That's close enough for our purposes.
+&lt;/p&gt;
+
+&lt;p&gt;
+I much prefer Python to Ruby as a teaching tool because it leads to
+roads going in all sorts of directions so it was merely a matter of
+figuring out which framework or platform to use. I found Django to be
+far too big, cumbersome, and all encompasing while on the other hand,
+&lt;a href="http://werkzeug.pocoo.org/"&gt;Werkzeug&lt;/a&gt;, which Flask is based on is a little too low level.
+&lt;/p&gt;
+
+&lt;p&gt;
+Flask hit the sweet spot. Easy routing, session and form handling,
+templates, pretty much everything I was looking for but very
+unopinionated and open ended. Perfect for teaching and learning and
+perfect for lightweight projects. The sourecode is also
+straightforward enough for a student to explore.
+&lt;/p&gt;
+
+&lt;p&gt;
+Below is a video going over setting up Linux from right after an
+install to use the python virtualenv package. The next video will go
+over installing Flask and setting up a simple application. Later, I'll
+post a video on deployment to a &lt;a href="http://digitalocean.com"&gt;Digital Ocean&lt;/a&gt; Droplet.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here are some notes relating to the video.
+&lt;/p&gt;
+
+&lt;p&gt;
+First, go to your "software sources" or "software updates"
+ application from the menu and select all the sources (as described n
+ the video)
+&lt;/p&gt;
+
+&lt;p&gt;
+To update a new system:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgade
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+To install the most recent emacs snapshot
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-add repository -y ppa:ubuntu-lisp
+sudo apt-get update
+sudo apt-get install emacs-snapshot
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+To install python pip (used to install other python packages)
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install python-pip
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+and then to install the virtualenv packages
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pip install virtualenv
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+To create a python3 virtual environment
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install -p python3 venv-folder
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;You can activate the envorinment (assuming you create the folder under
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+your home directory):
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;source&lt;/span&gt; ~/venv-folder/bin/activate
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+And to deactivate it, from the activated terminal
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;deactivate
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Here's the video. Next time, we'll install Flask into an virtual
+environment.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/cEqB4pkR1c4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>flask</category><category>linux</category><category>python</category><category>tools</category><category>webdev</category><guid>http://cestlaz.github.io/posts/flask-setup-virtualenv/</guid><pubDate>Fri, 14 Oct 2016 22:17:33 GMT</pubDate></item></channel></rss>

@@ -5,9 +5,9 @@ article: http://ogp.me/ns/article#
 " lang="en">
 <head>
 <meta charset="utf-8">
-<base href="http://cestlaz.github.io/posts/using-emacs-16-undo-tree/">
+<base href="http://cestlaz.github.io/posts/flask-setup-virtualenv/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Using Emacs - 16 - Undo Tree | C'est la Z</title>
+<title>Setting up Linux for Flask Web Development | C'est la Z</title>
 <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
@@ -17,24 +17,22 @@ article: http://ogp.me/ns/article#
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="../../index.atom">
-<link rel="canonical" href="http://cestlaz.github.io/posts/using-emacs-16-undo-tree/">
+<link rel="canonical" href="http://cestlaz.github.io/posts/flask-setup-virtualenv/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
-<link rel="prev" href="../chromebooks/" title="Chromebooks in K12" type="text/html">
-<link rel="next" href="../flask-setup-virtualenv/" title="Setting up Linux for Flask Web Development" type="text/html">
+<link rel="prev" href="../using-emacs-16-undo-tree/" title="Using Emacs - 16 - Undo Tree" type="text/html">
 <meta property="og:site_name" content="C'est la Z">
-<meta property="og:title" content="Using Emacs - 16 - Undo Tree">
-<meta property="og:url" content="http://cestlaz.github.io/posts/using-emacs-16-undo-tree/">
-<meta property="og:description" content="If you use emacs, you should keep an eye on Jon Snader's blog,
-irreal.org. A few days he posted on Undo Tree - a package that extends
-Emacs's built in undo functionality.
-
-
-
-Basic emacs has undo, boun">
+<meta property="og:title" content="Setting up Linux for Flask Web Development">
+<meta property="og:url" content="http://cestlaz.github.io/posts/flask-setup-virtualenv/">
+<meta property="og:description" content="Those laptops that my Hunter students were supposed to get have
+finally arrived. We're distributing them on Monday. Each student will
+have a Dell laptop running Ubuntu 16.04 for as long as they're in ">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2016-10-09T12:00:00-04:00">
-<meta property="article:tag" content="emacs">
+<meta property="article:published_time" content="2016-10-14T18:17:33-04:00">
+<meta property="article:tag" content="flask">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="python">
 <meta property="article:tag" content="tools">
+<meta property="article:tag" content="webdev">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -99,14 +97,14 @@ Basic emacs has undo, boun">
 						<div class="col-md-8">
 				
 								
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Using Emacs - 16 - Undo Tree</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Setting up Linux for Flask Web Development</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                     Mike Zamansky
             </span></p>
-            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2016-10-09T12:00:00-04:00" itemprop="datePublished" title="2016-10-09 12:00">2016-10-09 12:00</time></a></p>
-                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-16-undo-tree.html">Comments</a>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2016-10-14T18:17:33-04:00" itemprop="datePublished" title="2016-10-14 18:17">2016-10-14 18:17</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/flask-setup-virtualenv.html">Comments</a>
 
 
             
@@ -118,74 +116,112 @@ Basic emacs has undo, boun">
 <h2 id="sec-1"></h2>
 <div class="outline-text-2" id="text-1">
 <p>
-If you use emacs, you should keep an eye on Jon Snader's <a href="http://irreal.org/blog/">blog</a>,
-<a href="http://irreal.org/blog/">irreal.org</a>. A few days he posted on <a href="http://irreal.org/blog/?p=5621">Undo Tree</a> - a package that extends
-Emacs's built in undo functionality.
+Those laptops that my Hunter students were supposed to get have
+finally arrived. We're distributing them on Monday. Each student will
+have a Dell laptop running Ubuntu 16.04 for as long as they're in the
+program. 
 </p>
 
 <p>
-Basic emacs has undo, bound to <b><b>C-/</b></b> or <b><b>C-_</b></b> but that's about
-it. Undo tree, which you can set up with:
+This means we can finally start using the web as a way of displaying
+and sharing our projects.
 </p>
 
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">undo-tree</span>
-<span class="nv">:ensure</span> <span class="nv">t</span>
-  <span class="nv">:init</span>
-    <span class="p">(</span><span class="nf">global-undo-tree-mode</span><span class="p">))</span>
+<p>
+For this type of web development, I'm a big fan of using <a href="http://flask.pocoo.org">Flask</a>. Flask
+is a Python microframework. The easiest analogy is saying it's like
+Ruby on rails but in Python. That's close enough for our purposes.
+</p>
+
+<p>
+I much prefer Python to Ruby as a teaching tool because it leads to
+roads going in all sorts of directions so it was merely a matter of
+figuring out which framework or platform to use. I found Django to be
+far too big, cumbersome, and all encompasing while on the other hand,
+<a href="http://werkzeug.pocoo.org/">Werkzeug</a>, which Flask is based on is a little too low level.
+</p>
+
+<p>
+Flask hit the sweet spot. Easy routing, session and form handling,
+templates, pretty much everything I was looking for but very
+unopinionated and open ended. Perfect for teaching and learning and
+perfect for lightweight projects. The sourecode is also
+straightforward enough for a student to explore.
+</p>
+
+<p>
+Below is a video going over setting up Linux from right after an
+install to use the python virtualenv package. The next video will go
+over installing Flask and setting up a simple application. Later, I'll
+post a video on deployment to a <a href="http://digitalocean.com">Digital Ocean</a> Droplet.
+</p>
+
+<p>
+Here are some notes relating to the video.
+</p>
+
+<p>
+First, go to your "software sources" or "software updates"
+ application from the menu and select all the sources (as described n
+ the video)
+</p>
+
+<p>
+To update a new system:
+</p>
+<div class="highlight"><pre><span></span>sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgade
 </pre></div>
 
 <p>
-adds two key features. First is redo, which you get by adding the
-shift key to the undo keychords. 
+To install the most recent emacs snapshot
 </p>
+<div class="highlight"><pre><span></span>sudo apt-add repository -y ppa:ubuntu-lisp
+sudo apt-get update
+sudo apt-get install emacs-snapshot
+</pre></div>
 
 <p>
-The other, is the visual undo tree. You can bring that up wit <b><b>C-x
-u</b></b>
+To install python pip (used to install other python packages)
 </p>
+<div class="highlight"><pre><span></span>sudo apt-get install python-pip
+</pre></div>
 
 <p>
-Once you bring up the undo tree, you can use the up and down arrows or
-<b><b>C-n</b></b> and <b><b>C-p</b></b> to move between undo and redos. When you get to
-what you want, just quit the undo tree visualizer with <b><b>q</b></b>.
+and then to install the virtualenv packages
 </p>
+<div class="highlight"><pre><span></span>sudo pip install virtualenv
+</pre></div>
 
 <p>
-The cool part is that once you undo a few things and add new stuff,
-you get a tree that you can navigate through using the arrows. 
+To create a python3 virtual environment
 </p>
+<div class="highlight"><pre><span></span>pip install -p python3 venv-folder
+</pre></div>
 
-<p>
-It's much easier to get the flavor of this by watching the video
-(which also has a lame example of using artist-mode which I'll come
-back t at some point).
-</p>
-
-<p>
-Enjoy.
-</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zL0FJ-jbDPU" frameborder="0" allowfullscreen></iframe>
-
-<p>
-Relevant links:
-</p>
 <ul class="org-ul">
-<li>Video series overview page:
-<ul class="org-ul">
-<li>
-<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+<li>You can activate the envorinment (assuming you create the folder under
 </li>
 </ul>
-</li>
-<li>Code:
-<ul class="org-ul">
-<li>
-<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
-</li>
-</ul>
-</li>
-</ul>
+<p>
+your home directory):
+</p>
+<div class="highlight"><pre><span></span><span class="nb">source</span> ~/venv-folder/bin/activate
+</pre></div>
+
+<p>
+And to deactivate it, from the activated terminal
+</p>
+<div class="highlight"><pre><span></span>deactivate
+</pre></div>
+
+<p>
+Here's the video. Next time, we'll install Flask into an virtual
+environment.
+</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cEqB4pkR1c4" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
 
@@ -201,23 +237,23 @@ Relevant links:
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
 </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../categories/emacs/" rel="tag">emacs</a></li>
+<li><a class="tag p-category" href="../../categories/flask/" rel="tag">flask</a></li>
+            <li><a class="tag p-category" href="../../categories/linux/" rel="tag">linux</a></li>
+            <li><a class="tag p-category" href="../../categories/python/" rel="tag">python</a></li>
             <li><a class="tag p-category" href="../../categories/tools/" rel="tag">tools</a></li>
+            <li><a class="tag p-category" href="../../categories/webdev/" rel="tag">webdev</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../chromebooks/" rel="prev" title="Chromebooks in K12">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../flask-setup-virtualenv/" rel="next" title="Setting up Linux for Flask Web Development">Next post</a>
+                <a href="../using-emacs-16-undo-tree/" rel="prev" title="Using Emacs - 16 - Undo Tree">Previous post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="cestlaz",
-            disqus_url="http://cestlaz.github.io/posts/using-emacs-16-undo-tree/",
-        disqus_title="Using Emacs - 16 - Undo Tree",
-        disqus_identifier="cache/posts/using-emacs-16-undo-tree.html",
+            disqus_url="http://cestlaz.github.io/posts/flask-setup-virtualenv/",
+        disqus_title="Setting up Linux for Flask Web Development",
+        disqus_identifier="cache/posts/flask-setup-virtualenv.html",
         disqus_config = function () {
             this.language = "en";
         };
