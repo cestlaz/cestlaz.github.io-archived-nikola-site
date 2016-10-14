@@ -1,0 +1,94 @@
+#+BEGIN_COMMENT
+.. title: Setting up Linux for Flask Web Development
+.. slug: flask-setup-virtualenv
+.. date: 2016-10-14 18:17:33 UTC-04:00
+.. tags: python,linux,tools,webdev,flask
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+
+* 
+Those laptops that my Hunter students were supposed to get have
+finally arrived. We're distributing them on Monday. Each student will
+have a Dell laptop running Ubuntu 16.04 for as long as they're in the
+program. 
+
+This means we can finally start using the web as a way of displaying
+and sharing our projects.
+
+For this type of web development, I'm a big fan of using [[http://flask.pocoo.org][Flask]]. Flask
+is a Python microframework. The easiest analogy is saying it's like
+Ruby on rails but in Python. That's close enough for our purposes.
+
+I much prefer Python to Ruby as a teaching tool because it leads to
+roads going in all sorts of directions so it was merely a matter of
+figuring out which framework or platform to use. I found Django to be
+far too big, cumbersome, and all encompasing while on the other hand,
+[[http://werkzeug.pocoo.org/][Werkzeug]], which Flask is based on is a little too low level.
+
+Flask hit the sweet spot. Easy routing, session and form handling,
+templates, pretty much everything I was looking for but very
+unopinionated and open ended. Perfect for teaching and learning and
+perfect for lightweight projects. The sourecode is also
+straightforward enough for a student to explore.
+
+Below is a video going over setting up Linux from right after an
+install to use the python virtualenv package. The next video will go
+over installing Flask and setting up a simple application. Later, I'll
+post a video on deployment to a [[http://digitalocean.com][Digital Ocean]] Droplet.
+
+Here are some notes relating to the video.
+
+ First, go to your "software sources" or "software updates"
+  application from the menu and select all the sources (as described n
+  the video)
+
+To update a new system:
+#+BEGIN_SRC sh 
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgade
+#+END_SRC 
+
+To install the most recent emacs snapshot
+#+BEGIN_SRC sh 
+sudo apt-add repository -y ppa:ubuntu-lisp
+sudo apt-get update
+sudo apt-get install emacs-snapshot
+#+END_SRC 
+
+To install python pip (used to install other python packages)
+#+BEGIN_SRC sh 
+sudo apt-get install python-pip
+#+END_SRC
+
+and then to install the virtualenv packages
+#+BEGIN_SRC sh
+sudo pip install virtualenv
+#+END_SRC
+
+To create a python3 virtual environment
+#+BEGIN_SRC sh 
+pip install -p python3 venv-folder
+#+END_SRC
+
+- You can activate the envorinment (assuming you create the folder under
+your home directory):
+#+BEGIN_SRC sh 
+source ~/venv-folder/bin/activate
+#+END_SRC
+
+And to deactivate it, from the activated terminal
+#+BEGIN_SRC sh
+deactivate
+#+END_SRC
+
+Here's the video. Next time, we'll install Flask into an virtual
+environment.
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cEqB4pkR1c4" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
