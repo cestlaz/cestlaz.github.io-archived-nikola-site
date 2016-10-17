@@ -130,6 +130,7 @@ NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/categories", "Tags"),
         ("/stories/emacs","Emacs"),
+        ("/stories/flask","Flask"),
         ("http://github.com/zamansky", "GitHub"),
         ("/archive.html", "Archive"),
         ("/stories/about","About"),
