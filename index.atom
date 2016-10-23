@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2016-10-17T15:48:32Z</updated>
+  <updated>2016-10-23T11:51:02Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,65 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-23.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Waking up in the Hudson Valley</title>
+    <id>http://cestlaz.github.io/posts/catskillsconf-2016/</id>
+    <updated>2016-10-23T07:19:06-04:00</updated>
+    <published>2016-10-23T07:19:06-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/catskillsconf-2016/"/>
+    <summary type="html">&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/catskills-conf-2016/cc.jpg" alt="cc.jpg" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+Waking up to a beautiful brisk morning at the Ashokan Center in the Hudson Valley.
+&lt;/p&gt;
+
+&lt;p&gt;
+Last year, Devorah and I attended the first &lt;a href="http://catskillsconf.com"&gt;Catskillsconf&lt;/a&gt;, a tech
+conference in Olivebridge, NY. It was an amazing and unique
+experience. I can only describe it as Tech Conference meets Summer
+camp. Where else can you hear talks by people like &lt;a href="https://twitter.com/dens?ref_src=twsrc%255Egoogle%257Ctwcamp%255Eserp%257Ctwgr%255Eauthor"&gt;Dennis Crowley&lt;/a&gt; and
+an alos hear the music of &lt;a href="http://www.mikeandruthy.com/"&gt;Mike and ruthy&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This year, I gave another educaiton rant and to add to the fun,
+Devorah's been leading a knitting for Charity project and teaching
+attendees to knit:
+&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Progress on the charity knitting project led by &lt;a href="https://twitter.com/DevorahZamansky"&gt;@DevorahZamansky&lt;/a&gt; &lt;a href="https://twitter.com/catskillsconf"&gt;@catskillsconf&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/catskillsconf?src=hash"&gt;#catskillsconf&lt;/a&gt; &lt;a href="https://t.co/yoal7r48wO"&gt;pic.twitter.com/yoal7r48wO&lt;/a&gt;&lt;/p&gt;— Mike Zamansky (@zamansky) &lt;a href="https://twitter.com/zamansky/status/790155915307737088"&gt;October 23, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;p&gt;
+and we brought up my Hunter College students to join in the fun.
+&lt;/p&gt;
+
+&lt;p&gt;
+In spite of the fact that we were out late at the bonfiere:
+&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Ending a great day by relaxing next to the fire &lt;a href="https://twitter.com/catskillsconf"&gt;@catskillsconf&lt;/a&gt;. &lt;a href="https://t.co/LzKbftZamz"&gt;pic.twitter.com/LzKbftZamz&lt;/a&gt;&lt;/p&gt;— Christopher Short (@Shortoutloud) &lt;a href="https://twitter.com/Shortoutloud/status/790020785943539712"&gt;October 23, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;p&gt;
+and then were kept up by the students bonding and chatting in the
+bunkhouse, Devorah and I are first up, bright and early.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'll write up more about this amazing event some time over the
+week. Right now, I think I'll just go out and enjoy a cup of coffee
+and the clean brisk Hudson Valley air.
+&lt;/p&gt;</summary>
+    <category term="community" label="community"/>
+  </entry>
   <entry>
     <title>Installing Flask in a virtualenv</title>
     <id>http://cestlaz.github.io/posts/flask-install-flask/</id>
@@ -896,128 +955,5 @@ failing to mention her on my facebook shoutout.&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
     <category term="teaching" label="teaching"/>
-  </entry>
-  <entry>
-    <title>Using Emacs - 15 - Macros</title>
-    <id>http://cestlaz.github.io/posts/using-emacs-15-macros/</id>
-    <updated>2016-09-02T17:26:02-04:00</updated>
-    <published>2016-09-02T17:26:02-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-15-macros/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-I originally planned on do some videos on C++ development but I'm just
-not feeling it. Probably because I'm excited to be working with my
-new class and we're working in Python. We're not going to be using
-C+++ for a few months so I'll get to those videos a little later.
-&lt;/p&gt;
-
-&lt;p&gt;
-Today, I want to cover what I consider a leatherman or multi-tool for
-Emacs. Something that isn't perfect for any particular job but can get
-almost any job done: Macros.
-&lt;/p&gt;
-
-&lt;p&gt;
-In their simplest form, macros let you record and play back
-keystrokes. 
-&lt;/p&gt;
-
-&lt;p&gt;
-The video goes over the specifics. 
-&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Y1oVNBuIoXo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;
-Here are the main functions / keystrokes.
-&lt;/p&gt;
-
-&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
-
-
-&lt;colgroup&gt;
-&lt;col class="left"&gt;
-
-&lt;col class="left"&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th scope="col" class="left"&gt;Command&lt;/th&gt;
-&lt;th scope="col" class="left"&gt;Key&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class="left"&gt;kmacro-start-macro-or-insert-counter&lt;/td&gt;
-&lt;td class="left"&gt;F3&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="left"&gt;kmacro-end-and-call-macro&lt;/td&gt;
-&lt;td class="left"&gt;F4&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="left"&gt;kmacro-name-last-macro&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="left"&gt;insert-kbd-macro&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;
-This covers most of my use of macros but there's more. You can adjust
-or set the counter, edit old macros and there's even a way to have a
-macro pause for input in the middle.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here are some links with more information:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Keyboard-Macros.html#Keyboard-Macros"&gt;Emacs manual on macros&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://ergoemacs.org/emacs/emacs_macro_example.html"&gt;http://ergoemacs.org/emacs/emacs_macro_example.html&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://emacs-fu.blogspot.com/2010/07/keyboard-macros.html"&gt;http://emacs-fu.blogspot.com/2010/07/keyboard-macros.html&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;
-If you're interested in checking out &lt;a href="http://repl.it"&gt;Repl.it&lt;/a&gt;, which I reference in the
-video, check out &lt;a href="http://cestlaz.github.io/posts/new-term-new-tool-replit/#.V8n_Ed9vH0o%0A"&gt;my blog post&lt;/a&gt;. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Relevant links:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Video series overview page:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Code:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="emacs" label="emacs"/>
-    <category term="tools" label="tools"/>
   </entry>
 </feed>

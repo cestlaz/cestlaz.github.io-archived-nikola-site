@@ -1,121 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
-  <title>Posts about cs</title>
+  <title>Posts about CS</title>
   <id>http://cestlaz.github.io/categories/cs.atom</id>
-  <updated>2016-10-17T15:48:37Z</updated>
+  <updated>2016-09-24T20:41:35Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/cs.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/cs/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
-  <entry>
-    <title>Computational Thinkers in Scotland</title>
-    <id>http://cestlaz.github.io/posts/scotland/</id>
-    <updated>2016-09-30T07:28:53-04:00</updated>
-    <published>2016-09-30T07:28:53-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/scotland/"/>
-    <summary type="html">&lt;p&gt;
-I'm way behind on my &lt;a href="http://cacm.acm.org/"&gt;Communications of the ACM&lt;/a&gt;. I generally only read
-them when I use my trainer in the mornings and with summer running and
-outside riding, I'm still on the December 2015 issue.
-&lt;/p&gt;
-
-&lt;p&gt;
-This morning, I read a viewpoint by Jeremy Scott and Alan Bundy on &lt;a href="http://cacm.acm.org/magazines/2015/12/194638-creating-a-new-generation-of-computational-thinkers/abstract"&gt;a
-program in Scotland&lt;/a&gt;. If you're an ACM member, and if you're a CS
-practitioner, student, academic, or teacher you should be, you can read the piece for details.
-&lt;/p&gt;
-
-
-
-&lt;p&gt;
-Me? I noticed a number of similarities between what Bundy and Scott
-described and efforts here in the USA including some of the red flags.
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm not here to talk about the program described in detail or their
-successes and failures. I don't have enough information to fairly
-comment on that. I'm here in my usual role of curmudgeon to highlight
-common red flags that if unheeded could cost all of us the opportunity
-to get really great CS Ed to all of our students.
-&lt;/p&gt;
-
-&lt;p&gt;
-One red flag right away were a number of references to the program
-being curriculum and materials driven, not teacher driven. The
-viewpoint states that materials "were designed to be used by even
-non-specialist teachers." We see the same thing here in the USA and
-not just in CS Ed. Teaching overall is being devalued with the elite
-pushing programs that handcuff good teachers to a script (which leads
-students towards "success" in passing a nonsense standardized exam)
-all the while sending their own kids to elite private schools with
-knowledgeable teachers.
-&lt;/p&gt;
-
-&lt;p&gt;
-I know i didn't want my kids to be taught chemistry history or any
-other subject by a teacher that hasn't studied the content yet here we
-go saying it's okay for CS. 
-&lt;/p&gt;
-
-&lt;p&gt;
-The counter argument is that we have to do something now and we'll do
-better later. We all go in with the best of intentions but more often
-than not, once a politician has their sound bite and once a cheap
-apparent solution is in place, it's good enough and we're done. I
-ranted about that a while back both &lt;a href="http://cestlaz.github.io/posts/2015-03-04-expedient-vs-good.html/#.V-5UqN9vGAk"&gt;here&lt;/a&gt; and &lt;a href="http://cestlaz.github.io/posts/2015-05-07-learning-takes-time.html/#.V-5Uot9vGAk"&gt;here&lt;/a&gt;. To their credit,
-Bundy and Scott talk a bit about this concern in the piece.
-&lt;/p&gt;
-
-&lt;p&gt;
-The piece also said "It is also necessary to employ a pedagogy that is
-informed by the latest research into the most effective ways to teach
-computing." This sounds good but the truth is, education research
-doesn't have the best reputation among educators. Last month, I
-asked one of the best math teachers around what was being bandied
-about as best practices in math education according to "the
-research?" He basically said "the research says do &lt;b&gt;&lt;b&gt;fad du jour&lt;/b&gt;&lt;/b&gt;
-but that doesn't work for me so I just do &lt;b&gt;&lt;b&gt;actually good technique&lt;/b&gt;&lt;/b&gt;."
-&lt;/p&gt;
-
-&lt;p&gt;
-Over the years, I've spoken to many teachers and by and large the best
-ones discredit "the research." Of course, my comment will be
-discredited by ed researchers saying that "you're just giving
-anecdotes" but then, if I did the same thing while employed as a
-researcher, did a couple of surveys and submitted it for publication,
-then it would be "research." So much of teaching is a craft and the
-truth is, practitioners know best.
-&lt;/p&gt;
-
-&lt;p&gt;
-Related to this is authentication by citing authority. Particularly
-dangerous in our field because many people with little to no real
-background in teaching CS are anointed as experts and thought leaders
-(see this post: &lt;a href="http://cestlaz.github.io/posts/2015-10-26-self-appointed-experts.html/"&gt;here&lt;/a&gt;). In this case, the viewpoint cites Cameron
-Fadjo. I've only met Cameron once or twice and he seems like a sharp
-guy but when he was given the post of Director of Software Engineering
-for NYC, according to his linked in profile, he had neither taught k12
-nor had any real CS background.  This is of course the profile of many
-CS Education thought leaders. 
-&lt;/p&gt;
-
-&lt;p&gt;
-My overall take. It sounds like just like here, Scotland has people
-trying to make a difference and trying to do good. It also sounds like
-they're falling into the same traps and pitfalls as we are on this
-side of the Atlantic.
-&lt;/p&gt;</summary>
-    <category term="cs" label="cs"/>
-    <category term="education" label="education"/>
-    <category term="policy" label="policy"/>
-  </entry>
   <entry>
     <title>Can NYCIST become in leader in CS Education?</title>
     <id>http://cestlaz.github.io/posts/nycist/</id>
@@ -156,7 +50,7 @@ initiative but at the same time, public schools face some real
 challenges. While some "early adopters" have developed their own take
 on computer science education, by and large, CS4All is being defined
 and driven by few for all and, at least right now, the model seems to
-be the "a little PD and you're a CS teacher" model.
+be the "a little PD and your a CS teacher" model.
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -197,7 +91,7 @@ desire to do so from a group like NYCIST, it could happen.
 &lt;p&gt;
 I'm looking forward to continuing to work with my new friends and if
 any of you are interested in finding out more about NYCIST, just tweet
-to &lt;a href="https://twitter.com/ed_saber"&gt;Saber&lt;/a&gt;.
+to &lt;i&gt;Saber&lt;/i&gt;.
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -205,6 +99,6 @@ I don't know if my idea here will take root but if it does, I'd love
 to work with NYCIST to make something happen.
 &lt;/p&gt;</summary>
     <category term="community" label="community"/>
-    <category term="cs" label="cs"/>
+    <category term="cs" label="CS"/>
   </entry>
 </feed>
