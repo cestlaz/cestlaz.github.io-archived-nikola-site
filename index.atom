@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2016-10-26T00:19:15Z</updated>
+  <updated>2016-10-28T19:42:42Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,144 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-23.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Using Emacs - 17 - misc small packages</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-17-misc/</id>
+    <updated>2016-10-28T12:00:00-04:00</updated>
+    <published>2016-10-28T12:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-17-misc/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+I'm working on getting enough of my real configuration into this
+series so that I can dump my current one and use this one all them
+time and grow it back up an episode at a time.
+&lt;/p&gt;
+
+&lt;p&gt;
+I think we're almost there.
+&lt;/p&gt;
+
+&lt;p&gt;
+This time, we're looking at a few small packages that I use all the
+time.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
+&lt;h3 id="sec-1-1"&gt;Highlight line Mode&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-1"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(global-hl-line-mode t)
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+this turns on highlight line mode.  It makes it easy to see the line
+the cursor's on. Nothing huge, I just like it.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
+&lt;h3 id="sec-1-2"&gt;&lt;a href="https://github.com/Malabarba/beacon"&gt;Beacon mode&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-2"&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/Malabarba/beacon"&gt;Beacon mode&lt;/a&gt; flashes the cursor whenever you scroll. It makes things
+easy to locate the cursor when scrolling
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;; flashes the cursor's line when you scroll&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;beacon&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;beacon-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;; this color looks good for the zenburn theme but not for the one&lt;/span&gt;
+&lt;span class="c1"&gt;; I'm using for the videos&lt;/span&gt;
+&lt;span class="c1"&gt;; (setq beacon-color "#666600")&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-sec-1-3" class="outline-3"&gt;
+&lt;h3 id="sec-1-3"&gt;&lt;a href="https://github.com/nflath/hungry-delete"&gt;Hungry Delete mode&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-3"&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/nflath/hungry-delete"&gt;This mode&lt;/a&gt; deletes all the whitespace after the cursor (or before it)
+when you use delete or backspace.
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;; deletes all the whitespace when you hit backspace or delete&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;hungry-delete&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-hungry-delete-mode&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-1-4" class="outline-3"&gt;
+&lt;h3 id="sec-1-4"&gt;&lt;a href="https://github.com/magnars/expand-region.el"&gt;Expand Region&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-4"&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/magnars"&gt;Magnar Sveen's&lt;/a&gt; awesome expand region mode is a must have. He also
+wrote the amazing &lt;a href="https://github.com/magnars/multiple-cursors.el"&gt;multiple cursors&lt;/a&gt; package. I highly recommend
+checking out his work.
+&lt;/p&gt;
+
+&lt;p&gt;
+Expand region expands the marked region by semantic units. It's my go
+to way of marking text for manipulation
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;; expand the marked region in semantic increments (negative prefix to reduce region)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;expand-region&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt; 
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-="&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'er/expand-region&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+I also tried to look at aggressive indent but that had some problems
+so we'll come back to that later.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/vKIFi1h0I5Y" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>Knitting at a Tech Conference</title>
     <id>http://cestlaz.github.io/posts/knitting-tech-conference/</id>
@@ -910,101 +1048,5 @@ to work with NYCIST to make something happen.
 &lt;/p&gt;</summary>
     <category term="community" label="community"/>
     <category term="cs" label="cs"/>
-  </entry>
-  <entry>
-    <title>Impostor Syndrome - I'm not good enough</title>
-    <id>http://cestlaz.github.io/posts/imposters/</id>
-    <updated>2016-09-09T13:53:15-04:00</updated>
-    <published>2016-09-09T13:53:15-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/imposters/"/>
-    <summary type="html">&lt;p&gt;
-I've been meaning to comment on these tweets for a while:
-&lt;/p&gt;
-
-
-
-&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;I went to high school with some scary smart people. Never made math team. Didn't get into honors math. Thought I wasn't good at it.&lt;/p&gt;— Stanislav Nikolov (@snikolov) &lt;a href="https://twitter.com/snikolov/status/748660381392871424"&gt;June 30, 2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;&lt;a href="https://twitter.com/zamansky"&gt;@zamansky&lt;/a&gt; :D&lt;br&gt;&lt;br&gt;that's the thing though you can get such an inferiority complex by always comparing yourself to others &lt;a href="https://t.co/LvaMjp1WVf"&gt;https://t.co/LvaMjp1WVf&lt;/a&gt;&lt;/p&gt;— Stanislav Nikolov (@snikolov) &lt;a href="https://twitter.com/snikolov/status/748918417667727360"&gt;July 1, 2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-
-&lt;p&gt;
-Stan, of course, is one of the most talented people I know. 
-&lt;/p&gt;
-
-&lt;p&gt;
-It reminded me of a conversation I had with my colleague and friend
-Jim last year. I had just recieved an email from a former student
-turned friend. We were trying to find some time to catch up.  I told
-Jim I had just heard from this young lady and Jim replied "I remember
-her, she's awesome. Really smart." I mention this because the
-individual we were talking about, while to us, extremely talented in
-addition to being just a terrific person spent much of her career
-living in self doubt.
-&lt;/p&gt;
-
-&lt;p&gt;
-Meantime, I was having a conversation with another friend and the
-topic turned to impostor syndrome and the desire to make it a thing of
-the past.
-&lt;/p&gt;
-
-&lt;p&gt;
-Problem is, I don't know if that will ever be the case. I'm
-approaching 50 and have a career of good work behind me but I still
-find myself questioning my credentials, work, and ability. Then I realized I wasn't alone
-when I read &lt;a href="https://twitter.com/RobertTalbert"&gt;Robert Talbert's&lt;/a&gt; recent &lt;a href="http://rtalbert.org/blog/2016/tenure-second-time"&gt;blog post&lt;/a&gt; about his going through
-the tenure process for a second time and "learning through this process
-that I have not outrun impostor syndrome and probably never will."
-&lt;/p&gt;
-
-&lt;p&gt;
-Stan's tweets tell part of the story. When we surround ourselves with
-smart, accomplished people, we sometimes feel we don't measure
-up. I've found that for the most part, the extremely accomplished
-people I've worked with are very unassuming and low key. They seem to
-operate assuming that  everyone else is at least as capable and quick as
-they. I recall &lt;a href="http://paulgraham.com/articles.html"&gt;Paul Graham&lt;/a&gt; talking about this in an essay but
-I don't remember which one. The problem is, if you don't understand
-their sincerity, you end up feeling even more inadequate. 
-&lt;/p&gt;
-
-&lt;p&gt;
-It gets worse when we start comparing ourselves to some unreal
-composite. I remember feeling pretty stupid back when I was younger
-comparing myself with others. The problem was that I clearly didn't
-measure up to the best math kid, or the best computer kid, the best
-fencer, the best violinist, etc. Now, the best math kid might have
-been a lousy athlete and the best fencer, a so so mathematician, but
-to me, I was comparing myself with this composite super human. No
-wonder I never measured up. Eventually, though, I realized three
-things. First, there's always someone better at something and always
-someone worse. Second, that's not the true value of ones worth as a
-person, and three, I bring some good stuff to the table and I should
-be (and am) content with that
-&lt;/p&gt;
-
-&lt;p&gt;
-So, I still struggle with impostor syndrome but at the end of the day,
-it just serves as a reminder to look back on what I've done and what
-I've learned in the process.  I start out in question but in the end,
-leave confident. Maybe the trick isn't to eliminate impostor syndrome
-but rather to understand and contain it. We don't want to live in fear
-and anxiety but both are useful emotions when we control them and not
-the reverse.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's probably good when we question ourselves and re-evaluate our
-positions - we just have to make sure as we're bringing new people
-into the tech fold that we foster acceptance and confidence  and when
-impostor syndrome sets in that it can be channeled into a positive
-and not scare people away.
-&lt;/p&gt;</summary>
-    <category term="community" label="community"/>
-    <category term="education" label="education"/>
   </entry>
 </feed>

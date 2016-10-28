@@ -1,0 +1,97 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 17 - misc small packages
+.. slug: using-emacs-17-misc
+.. date: 2016-10-28 12:00:00 UTC-04:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+*  
+
+I'm working on getting enough of my real configuration into this
+series so that I can dump my current one and use this one all them
+time and grow it back up an episode at a time.
+
+I think we're almost there.
+
+This time, we're looking at a few small packages that I use all the
+time.
+
+** Highlight line Mode 
+
+#+BEGIN_SRC emacs-listp
+  (global-hl-line-mode t)
+#+END_SRC
+
+this turns on highlight line mode.  It makes it easy to see the line
+the cursor's on. Nothing huge, I just like it.
+
+** [[https://github.com/Malabarba/beacon][Beacon mode]]
+
+[[https://github.com/Malabarba/beacon][Beacon mode]] flashes the cursor whenever you scroll. It makes things
+easy to locate the cursor when scrolling
+
+#+BEGIN_SRC emacs-lisp
+  ; flashes the cursor's line when you scroll
+  (use-package beacon
+  :ensure t
+  :config
+  (beacon-mode 1)
+  ; this color looks good for the zenburn theme but not for the one
+  ; I'm using for the videos
+  ; (setq beacon-color "#666600")
+  )
+#+END_SRC
+
+
+** [[https://github.com/nflath/hungry-delete][Hungry Delete mode]]
+
+[[https://github.com/nflath/hungry-delete][This mode]] deletes all the whitespace after the cursor (or before it)
+when you use delete or backspace.
+
+  #+BEGIN_SRC emacs-lisp
+  ; deletes all the whitespace when you hit backspace or delete
+  (use-package hungry-delete
+  :ensure t
+  :config
+  (global-hungry-delete-mode))
+#+END_SRC
+
+** [[https://github.com/magnars/expand-region.el][Expand Region]]
+
+[[https://github.com/magnars][Magnar Sveen's]] awesome expand region mode is a must have. He also
+wrote the amazing [[https://github.com/magnars/multiple-cursors.el][multiple cursors]] package. I highly recommend
+checking out his work.
+
+Expand region expands the marked region by semantic units. It's my go
+to way of marking text for manipulation
+
+#+BEGIN_SRC emacs-lisp
+  ; expand the marked region in semantic increments (negative prefix to reduce region)
+  (use-package expand-region
+  :ensure t
+  :config 
+  (global-set-key (kbd "C-=") 'er/expand-region))
+  
+  #+END_SRC
+
+
+I also tried to look at aggressive indent but that had some problems
+so we'll come back to that later.
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vKIFi1h0I5Y" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+
+* 
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+
