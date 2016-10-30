@@ -10,6 +10,54 @@
 #+END_COMMENT
 
 *  
+I meant to cover these last time but decided not to so as to keep the
+videos to about 10 minutes each.
+
+First up this time round is [[https://github.com/victorhge/iedit][iedit]] - a really cool mode that lets you
+select all the instances of the marked selection at the same time and
+edit them all at once. By default it's bound to **C-l**.
+
+For example, let's say you had the following code:
+
+#+BEGIN_SRC python
+  def f(somevar):
+      somevar = somevar + 1
+      return somevar
+#+END_SRC
+
+You could mark one instance of **somevar**, hit **C-;** and you'd be
+editing them all at once. When you're done, you hit **C-;** again and
+everything is un-selected.
+
+There are other ways to modify multiple instances of a selection. You
+can always search and replace or use Magnar Sveen's really cool
+[[https://github.com/magnars/multiple-cursors.el][multiple cursors]] package and I'm sure there are others but I like
+iedit since it's small and simple. It also works for rectangular
+editing but I didn't cover that in the video. I'll probably demo it
+when I cover rectangular editing in general.
+
+Iedit has limitations. For insance, since it works globally, it isn't
+perfect for renaming variables. If the above code snippet was part of
+a larger program with many other instances of **somevar**, iedit
+wouldn't, by itself, be as useful.
+
+You could reach for a language specific refactoring package but for
+me, that's where **narrowing** comes in. You can mark a region and
+tell emcas to **narrow-to-region** which hides everything outside the
+region and temporarily (until you **widen**) treats the region as the
+whole document. 
+
+So, you could narrow to the section of code you want to edit and then
+use iedit from within.
+
+To make things easier, I grabed [[http://endlessparentheses.com/emacs-narrow-or-widen-dwim.html][narrow-or-winden-dwim]] from [[http://endlessparentheses.com/][Endless
+Parentheses]].
+
+I think the video makes the behaviour pretty clearn.
+
+Enjoy
+
+
 
 
 #+BEGIN_HTML
