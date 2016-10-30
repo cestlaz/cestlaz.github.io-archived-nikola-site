@@ -3,35 +3,13 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about python</title>
   <id>http://cestlaz.github.io/categories/python.atom</id>
-  <updated>2016-10-28T19:41:07Z</updated>
+  <updated>2016-10-14T22:31:42Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/python.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/python/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
-  <entry>
-    <title>Installing Flask in a virtualenv</title>
-    <id>http://cestlaz.github.io/posts/flask-install-flask/</id>
-    <updated>2016-10-15T18:58:26-04:00</updated>
-    <published>2016-10-15T18:58:26-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/flask-install-flask/"/>
-    <summary type="html">&lt;p&gt;
-Second video in the Flask series. This one goes over installing Flask
-in a virtualenv and running a simple Flask application.
-&lt;/p&gt;
-
-&lt;p&gt;
-Nothing much to say about this other then check out the video:
-&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/2ZIhczsu1EQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary>
-    <category term="flask" label="flask"/>
-    <category term="python" label="python"/>
-  </entry>
   <entry>
     <title>Setting up Linux for Flask Web Development</title>
     <id>http://cestlaz.github.io/posts/flask-setup-virtualenv/</id>
@@ -89,68 +67,53 @@ post a video on deployment to a &lt;a href="http://digitalocean.com"&gt;Digital 
 Here are some notes relating to the video.
 &lt;/p&gt;
 
-&lt;p&gt;
-First, go to your "software sources" or "software updates"
- application from the menu and select all the sources (as described n
- the video)
-&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;First, go to your "software sources" or "software updates"
+application from the menu and select all the sources (as described n
+the video)
+&lt;/li&gt;
 
-&lt;p&gt;
-To update a new system:
-&lt;/p&gt;
+&lt;li&gt;To update a new system:
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgade
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;
-To install the most recent emacs snapshot
-&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;To install the most recent emacs snapshot
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-add repository -y ppa:ubuntu-lisp
 sudo apt-get update
 sudo apt-get install emacs-snapshot
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;
-To install python pip (used to install other python packages)
-&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;To install python pip (used to install other python packages)
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install python-pip
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;
-and then to install the virtualenv packages
-&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;and then to install the virtualenv packages
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo pip install virtualenv
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;
-To create a python3 virtual environment
-&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;To create a python3 virtual environment
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install -p python3 venv-folder
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;You can activate the envorinment (assuming you create the folder under
-&lt;/li&gt;
-&lt;/ul&gt;
 &lt;p&gt;
-your home directory):
+You can 
 &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;source&lt;/span&gt; ~/venv-folder/bin/activate
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-And to deactivate it, from the activated terminal
-&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;deactivate
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Here's the video. Next time, we'll install Flask into an virtual
-environment.
-&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/cEqB4pkR1c4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
     <category term="flask" label="flask"/>
