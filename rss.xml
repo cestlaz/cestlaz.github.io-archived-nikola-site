@@ -1,5 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 02 Nov 2016 00:50:52 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Cornell Technion Project Studio</title><link>http://cestlaz.github.io/posts/cornell-tech-proj-studio/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 02 Nov 2016 18:31:26 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 18 - Narrowing and iedit</title><link>http://cestlaz.github.io/posts/using-emacs-18-narrow/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+I meant to cover these last time but decided not to so as to keep the
+videos to about 10 minutes each.
+&lt;/p&gt;
+
+&lt;p&gt;
+First up this time round is &lt;a href="https://github.com/victorhge/iedit"&gt;iedit&lt;/a&gt; - a really cool mode that lets you
+select all the instances of the marked selection at the same time and
+edit them all at once. By default it's bound to &lt;b&gt;&lt;b&gt;C-l&lt;/b&gt;&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+For example, let's say you had the following code:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;somevar&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;somevar&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;somevar&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;somevar&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+You could mark one instance of &lt;b&gt;&lt;b&gt;somevar&lt;/b&gt;&lt;/b&gt;, hit &lt;b&gt;&lt;b&gt;C-;&lt;/b&gt;&lt;/b&gt; and you'd be
+editing them all at once. When you're done, you hit &lt;b&gt;&lt;b&gt;C-;&lt;/b&gt;&lt;/b&gt; again and
+everything is un-selected.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are other ways to modify multiple instances of a selection. You
+can always search and replace or use Magnar Sveen's really cool
+&lt;a href="https://github.com/magnars/multiple-cursors.el"&gt;multiple cursors&lt;/a&gt; package and I'm sure there are others but I like
+iedit since it's small and simple. It also works for rectangular
+editing but I didn't cover that in the video. I'll probably demo it
+when I cover rectangular editing in general.
+&lt;/p&gt;
+
+&lt;p&gt;
+Iedit has limitations. For insance, since it works globally, it isn't
+perfect for renaming variables. If the above code snippet was part of
+a larger program with many other instances of &lt;b&gt;&lt;b&gt;somevar&lt;/b&gt;&lt;/b&gt;, iedit
+wouldn't, by itself, be as useful.
+&lt;/p&gt;
+
+&lt;p&gt;
+You could reach for a language specific refactoring package but for
+me, that's where &lt;b&gt;&lt;b&gt;narrowing&lt;/b&gt;&lt;/b&gt; comes in. You can mark a region and
+tell emcas to &lt;b&gt;&lt;b&gt;narrow-to-region&lt;/b&gt;&lt;/b&gt; which hides everything outside the
+region and temporarily (until you &lt;b&gt;&lt;b&gt;widen&lt;/b&gt;&lt;/b&gt;) treats the region as the
+whole document. 
+&lt;/p&gt;
+
+&lt;p&gt;
+So, you could narrow to the section of code you want to edit and then
+use iedit from within.
+&lt;/p&gt;
+
+&lt;p&gt;
+To make things easier, I grabed &lt;a href="http://endlessparentheses.com/emacs-narrow-or-widen-dwim.html"&gt;narrow-or-winden-dwim&lt;/a&gt; from &lt;a href="http://endlessparentheses.com/"&gt;Endless
+Parentheses&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+I think the video makes the behaviour pretty clearn.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy
+&lt;/p&gt;
+
+
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/xne0kS1DfVs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-18-narrow/</guid><pubDate>Wed, 02 Nov 2016 16:00:00 GMT</pubDate></item><item><title>Cornell Technion Project Studio</title><link>http://cestlaz.github.io/posts/cornell-tech-proj-studio/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 I spent this evening as a crit advisor for this semesters &lt;a href="http://tech.cornell.edu/studio/curriculum/product-studio"&gt;Project
 Studio&lt;/a&gt;. The class is basically a finishing class for their Masters
 students. The class forms teams that work with a "company champion"
@@ -699,124 +799,4 @@ Relevant links:
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-16-undo-tree/</guid><pubDate>Sun, 09 Oct 2016 16:00:00 GMT</pubDate></item><item><title>Chromebooks in K12</title><link>http://cestlaz.github.io/posts/chromebooks/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
-The discussion today over on &lt;a href="http://avc.com"&gt;AVC&lt;/a&gt; was &lt;a href="http://avc.com/2016/10/chromebooks-in-k12/"&gt;Chromebooks in K12&lt;/a&gt;, a title I
-conveniently lifted.
-&lt;/p&gt;
-
-&lt;p&gt;
-In the comments, I was asked my thoughts on chromebooks vs Linux on
-low end hardware so, here they are.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-Chromebooks are cheap, near instant on, and, if you're using Google
-Apps for education, little to no administration necessary. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This is a HUGE win for schools. 
-&lt;/p&gt;
-
-&lt;p&gt;
-There are some issues. School WiFi, for example, is frequently
-insufficient which can be a problem for a device that's meant to be
-connected to the cloud. People might think that schools are well
-connected but I know multiple schools that keep kids off the WiFi to
-keep it from being overloaded. This is a problem and I don't know if
-it's really being addressed.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's also worth noting that DOE pricing is also a far cry from "lowest
-bidder." We keep seeing sub $200 chromebooks on the market but buying
-through the DOE approved vendor looks to cost about $300 per unit or
-more. Of course this is better than the equally inflated PC/Mac
-prices.
-&lt;/p&gt;
-
-&lt;p&gt;
-Still, the price and easy of deployment and administration seem to
-make chromebooks the way to go.
-&lt;/p&gt;
-
-&lt;p&gt;
-As to other issues, first, you have to buy in to the Google platform
-– email, docs, classroom, etc. This isn't necessarily a problem. I
-personally like most of Google's offerings. My big concern is giving
-away student data. I have mixed feelings on the whole privacy thing
-but it's more clear cut when it comes to minors in public schools -
-schools shouldn't be sharing their data and schools shouldn't be
-forcing them to share their data. Google Suite for Education is FERPA
-compliant but what about all the other Google services the kids might
-be using? I haven't looked at this carefully but we've already given
-too much power to private interests over education (see the College
-Board or Pearsons) so, at least to me, this is a concern.
-&lt;/p&gt;
-
-&lt;p&gt;
-My only other issue is a selfish one. As a CS educator, I look to
-coding tools and environments. While there are online platforms like
-cloud9 or &lt;a href="http://repl.it"&gt;repl.it&lt;/a&gt;, they don't have the same power and flexibility of
-using local installs. I've been using repl.it and it's a great tool
-but I think it's best used as a stepping stone to a local install and
-then afterwards for some of it's specific value added features. I'm
-also a big believer in teaching &lt;a href="http://cestlaz.github.io/categories/shell/"&gt;operating system as tool box&lt;/a&gt;,
-something you can't currently do with a chromebook.
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;a href="https://twitter.com/willykaram"&gt;Willy Karam&lt;/a&gt; commented over at AVC about using cheap hardware running
-Linux. This is something I've done for years and it's been a
-lifesaver. CSTUY's entire laptop collection consists of really old
-laptops running Linux. 
-&lt;/p&gt;
-
-&lt;p&gt;
-For a CS class, this works well. Even for a non CS class it can work
-well. Modern Linux distributions run pretty much the same as Windows
-and MacOS. Use the mouse to click on menus and icons. It doesn't give
-you the power of the command line but it means it's a suitable
-alternative for the masses that use the operating system as a program loader..
-&lt;/p&gt;
-
-&lt;p&gt;
-The downside of Linux for the general population is the administration
-and maintenance. At Stuy, we set up NIS and NFS. Both horrible but
-probably easier and better than most alternatives. I was never able to
-come up with a better way to do authentication and file sharing and
-the NFS stuff would have killed our wifi (we only used it in wired
-labs). Customizing software installs is also a real problem. We made
-it work but it took far too much time and effort.
-&lt;/p&gt;
-
-&lt;p&gt;
-If you're in a situation where you can do a stock install and then
-give the machine to the student for the semester, then Linux can work
-really well. If you're talking about shared machines with custom
-installs, it's harder to justify over chromebooks. 
-&lt;/p&gt;
-
-&lt;p&gt;
-A final note on chromebooks is that last year, I played with putting Linux on a
-chromebook. It worked pretty well. Almost the best of both worlds. Low
-end hardware with good battery life and a full operating system. This
-is something I have to play with on the current generation of chromebooks.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, where do I stand on this? The cloud isn't there yet in terms of
-teaching computer science. It's fine for a gentle introduction but
-eventually, you'll need the power of a full blown OS and local
-installs. We may very well get to where a cloud OS is just as
-expressive, we're just not there yet. On the other hand, for general
-computing in schools, chromebooks are a big win.
-&lt;/p&gt;
-
-&lt;p&gt;
-It would be wonderful if schools had sufficient infrastructure,
-support staff and training so that technology was just there and just
-worked and we didn't have to make these sort of decisions and
-compromises. Somehow I don't thing that will be happening any time soon.
-&lt;/p&gt;</description><category>hardware</category><guid>http://cestlaz.github.io/posts/chromebooks/</guid><pubDate>Thu, 06 Oct 2016 23:49:04 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-16-undo-tree/</guid><pubDate>Sun, 09 Oct 2016 16:00:00 GMT</pubDate></item></channel></rss>
