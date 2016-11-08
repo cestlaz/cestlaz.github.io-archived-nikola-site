@@ -1,0 +1,46 @@
+#+BEGIN_COMMENT
+.. title: Flask - deploying to DigitalOcean
+.. slug: digitaloceanflask
+.. date: 2016-11-08 14:35:52 UTC-05:00
+.. tags: python, tools, devops
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+
+* 
+This post points to the next three videos in the Flask series.
+
+The first covers setting up a droplet (virtual server) on
+[[http://digitalocean.com][DigitalOcean]]. The second, deploying a flask application using [[http://gunicorn.org/][Green
+Unicorn]], and the third, using [[https://github.com/libfuse/sshfs][sshfs]] to remotely mount your files from
+your DO box to your local machine and how to set up DNS using [[http://freedns.afraid.org][FreeDNS]].
+
+To help you on your way with DigitalOcean, here are links to a few of
+their tutorials
+
+- [[https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04][Server Setup (Ubuntu)]]
+- [[https://www.digitalocean.com/community/tutorials/how-to-connect-to-your-droplet-with-ssh%0A][Connecting to your droplet with ssh]]
+- [[https://www.digitalocean.com/community/tutorials/how-to-sqet-up-ssh-keys--2][Setting up ssh keys]]
+- [[https://www.digitalocean.com/community/tutorial_series/getting-started-with-linux][Getting started with Linux (series)]] 
+
+In general, there are lots of great tutorials and guides at the
+[[http://digitalocean.com/community][Digital Ocean Community]].
+
+* Setting up a Droplet
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LOS8PscXhz8" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+* Deploying with Gunicorn
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oum5Kh-69pg" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+* sshfs and FreeDNS
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aha2r5I18i0" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
