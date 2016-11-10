@@ -1,0 +1,43 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 18 - moving to a live config
+.. slug: using-emacs-19-live
+.. date: 2016-11-010 12:00:00 UTC-04:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+*  
+Some of the videos I want to make are going to be much easier to do if
+I'm working in my own account where my whole file tree is available. 
+
+It's also a little annoying changing between my full emacs config and
+the one I'm developing here.
+
+So, I decided to move to this config for my real config and as I make
+more videos move parts of my old configuration over to this new one.
+
+The only problem is that I **need** some of my current config right
+now -- things like my email setup.
+
+This video talks about how I'm going to set things up to take care of
+everything.
+
+
+
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8RwQNXOjSis" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+
+* 
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+
