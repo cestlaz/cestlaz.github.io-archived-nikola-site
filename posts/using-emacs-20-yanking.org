@@ -1,0 +1,55 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 20 - yanking
+.. slug: using-emacs-20-yanking
+.. date: 2016-11-13 12:00:00 UTC-04:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+*  
+Today's video is a bit of a follow up on the last one as well as a few
+miscillaneous configuration.
+
+We got some comments on alternate ways to load a file if it exists -
+it's always cool to see how different people end up doing similar things.
+
+We then talk about three little configurations. Two I found out about
+reading Jon Sander's (jcs) blog [[http://irreal.org/blog][Irreal]]. Jon's blog is a terrific
+source of emacs info - if you don't subscribe, you should.
+
+I go over using counsel for working with the kill-ring. The command
+counsel-yank-pop acts as a replamcement for yank-pop and it lets you
+easily yank anything from the kill ring - not just the most previously
+killed/whacked piece. 
+
+You just hit **M-y** and then either keep hitting it or use up and
+down to select what you want to yank. 
+
+Here's the original post from Irreal: [[http://irreal.org/blog/?p=5707]].
+
+I then briefly talk about smoothing things over between the system
+clipboard and the kill ring, also from Irreal:
+[[http://irreal.org/blog/?p=5702]].
+
+Finally, I talk about auto-revert-mode - this monitors files on your
+file system and when they change, they reload your buffer. I find this
+very useful to keep multiple machines in sync when I'm working with
+files in a could based filesystem like Dropbox or Owncloud.
+
+
++BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LReZI7VAy8w" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+
+* 
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+
