@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about intro</title>
   <id>http://cestlaz.github.io/categories/intro.atom</id>
-  <updated>2016-09-30T12:12:21Z</updated>
+  <updated>2016-11-16T18:25:01Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -75,7 +75,7 @@ ended, though, on a great note.&lt;/p&gt;
 &lt;p&gt;Wow. I've been teaching 23 years and that's never happened before!!!!&lt;/p&gt;
 &lt;p&gt;So, what was the hubbub about?&lt;/p&gt;
 &lt;p&gt;We've been doing list processing in Python over the past few days. We already did the basics, such as finding the largest element in a list:&lt;/p&gt;
-&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight python linenos %}
+&lt;p _="%" endhighlight&gt;{% highlight python linenos %}
 def find_max(L):
     maxval = L[0]
     i=0
@@ -89,7 +89,7 @@ def find_max(L):
 first item is the mode and find it's frequency, then proceed through
 the list each time seeing if the current node occurs more fequently
 than the "mode so far." Pretty much the same idea as find_max (but in this case, returning a list of all the modes).&lt;/p&gt;
-&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight python linenos %}
+&lt;p _="%" endhighlight&gt;{% highlight python linenos %}
 def mode(L):
     modecount = L.count( L[0] )
     modes = [ L[0] ]
@@ -128,7 +128,7 @@ finding - elections. The winner is "the mode of the ballots."&lt;/p&gt;
 &lt;p&gt;From here, it's a short step to see that we can use a list. It's
 indices represent the grade values and the data in the list the counts
 or tallies:&lt;/p&gt;
-&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight python linenos %}
+&lt;p _="%" endhighlight&gt;{% highlight python linenos %}
 def fastmode(L):
     i=0
     counts = []

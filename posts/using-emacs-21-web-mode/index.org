@@ -1,0 +1,60 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 21 - web mode
+.. slug: using-emacs-21-web-mode
+.. date: 2016-11-16 12:00:00 UTC-04:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+*  
+Quick post today. 
+
+The video goes over web-mode - my preferred weapon for html and all the goodies you embed in an html file.
+
+It's multi-modal so it acts sensibly regardless of wether you're editing html, css, javascript or even templates in a single file.
+
+**Note:** In the video, web-mode wasn't automatically inserting
+quotes. I had to set hte following variable to fix this:
+
+#+BEGIN_SRC emacs-listp
+(setq web-mode-enable-auto-quoting t)
+#+END_SRC
+
+
+Giving the final configuration I'm currently using: 
+
+#+BEGIN_SRC emacs-lisp
+  (use-package web-mode
+    :ensure t
+    :config
+	 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+	 (setq web-mode-engines-alist
+	       '(("django"    . "\\.html\\'")))
+	 (setq web-mode-ac-sources-alist
+	       '(("css" . (ac-source-css-property))
+		 ("html" . (ac-source-words-in-buffer ac-source-abbrev))))
+
+(setq web-mode-enable-auto-closing t)
+(setq web-mode-enable-auto-quoting t)) ; this fixes the quote problem I mentioned
+#+END_SRC
+
+The web-mode [[http://web-mode.org][documentation]] has more information including a nice chart of all the key bindings.
+
+
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/69bQa5n23jc" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+
+* 
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+

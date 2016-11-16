@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2016-11-13T17:26:43Z</updated>
+  <updated>2016-11-16T18:37:33Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,93 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-24.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Using Emacs - 21 - web mode</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-21-web-mode/</id>
+    <updated>2016-11-16T12:00:00-04:00</updated>
+    <published>2016-11-16T12:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-21-web-mode/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Quick post today. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The video goes over web-mode - my preferred weapon for html and all the goodies you embed in an html file.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's multi-modal so it acts sensibly regardless of wether you're editing html, css, javascript or even templates in a single file.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;b&gt;&lt;b&gt;Note:&lt;/b&gt;&lt;/b&gt; In the video, web-mode wasn't automatically inserting
+quotes. I had to set hte following variable to fix this:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(setq web-mode-enable-auto-quoting t)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+Giving the final configuration I'm currently using: 
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;web-mode&lt;/span&gt;
+    &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+    &lt;span class="nv"&gt;:config&lt;/span&gt;
+	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'auto-mode-alist&lt;/span&gt; &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"\\.html?\\'"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;web-mode&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;web-mode-engines-alist&lt;/span&gt;
+	       &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"django"&lt;/span&gt;    &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"\\.html\\'"&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;web-mode-ac-sources-alist&lt;/span&gt;
+	       &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"css"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ac-source-css-property&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+		 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"html"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ac-source-words-in-buffer&lt;/span&gt; &lt;span class="nv"&gt;ac-source-abbrev&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;web-mode-enable-auto-closing&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;web-mode-enable-auto-quoting&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="c1"&gt;; this fixes the quote problem I mentioned&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The web-mode &lt;a href="http://web-mode.org"&gt;documentation&lt;/a&gt; has more information including a nice chart of all the key bindings.
+&lt;/p&gt;
+
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/69bQa5n23jc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>Using Emacs - 20 - yanking</title>
     <id>http://cestlaz.github.io/posts/using-emacs-20-yanking/</id>
@@ -844,133 +931,5 @@ Relevant links:
 &lt;/div&gt;</summary>
     <category term="emacs" label="emacs"/>
     <category term="tools" label="tools"/>
-  </entry>
-  <entry>
-    <title>Knitting at a Tech Conference</title>
-    <id>http://cestlaz.github.io/posts/knitting-tech-conference/</id>
-    <updated>2016-10-25T19:32:04-04:00</updated>
-    <published>2016-10-25T19:32:04-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/knitting-tech-conference/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/knitting-tech-conference/top.jpg" alt="top.jpg" align="center"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-This past weekend was &lt;a href="http://catskillsconf.com"&gt;Catskills Conf&lt;/a&gt;, one of my favorite events of the
-year.
-&lt;/p&gt;
-
-&lt;p&gt;
-Last year, Devorah joined me and also enjoyed the show.
-&lt;/p&gt;
-
-&lt;p&gt;
-If you know my wife, you know she's &lt;b&gt;&lt;b&gt;always&lt;/b&gt;&lt;/b&gt; knitting. Ok, not true,
-she's always knitting, spinning, weaving or performing some other form
-of fiber craft.
-&lt;/p&gt;
-
-&lt;p&gt;
-I can't complain. That's how I ended up with my Kandinsky, Dust Puppy
-and Kandinsky sweaters and my awesome Kang and Kodos socks. It also
-keeps her an my entire family in warm amazingly beautiful knit wear.
-&lt;/p&gt;
-
-&lt;p&gt;
-While at the conference, Devorah was her usual self - knitting during
-the talks. That doesn't mean she wasn't paying attention, it's just
-what she does. We also noted a few other attendees knitting throughout
-the weekend.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, this year, Devorah had an idea – let's focus those idle hands to
-do some good. She asked the conference organizers to send out an email
-to attendees - knit squares during the conference and Devorah will put
-them together at the end and we'll donate the blanket we make to
-children in need through &lt;a href="https://projectlinus.org/"&gt;Project Linus&lt;/a&gt;. 
-&lt;/p&gt;
-
-&lt;p&gt;
-The organizers were supportive, if not somewhat skeptical. That was
-ok - we also had no idea if this would be a win or a flop.
-&lt;/p&gt;
-
-&lt;p&gt;
-Conference came and Devorah announced the project. She brought yarn,
-needles, crochet hooks and instructions and also offered to teach
-knitting during the breaks.
-&lt;/p&gt;
-
-&lt;p&gt;
-It started slowly, but as the conference progressed, people started
-knitting both during the talks and during the breaks.
-&lt;/p&gt;
-
-&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;&lt;a href="https://twitter.com/DevorahZamansky"&gt;@DevorahZamansky&lt;/a&gt; leading knitting for children in need at &lt;a href="https://twitter.com/catskillsconf"&gt;@catskillsconf&lt;/a&gt; &lt;a href="https://t.co/hn0rx633e1"&gt;pic.twitter.com/hn0rx633e1&lt;/a&gt;&lt;/p&gt;— Mike Zamansky (@zamansky) &lt;a href="https://twitter.com/zamansky/status/789839861813575680"&gt;October 22, 2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-
-&lt;p&gt;
-Experienced knitters cranked out squares and newbies learned.
-&lt;/p&gt;
-
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/knitting-tech-conference/learning.jpg" alt="learning.jpg" align="center"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;br&gt;
-&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;&lt;a href="https://twitter.com/jcn"&gt;@jcn&lt;/a&gt; knitting for charity with &lt;a href="https://twitter.com/DevorahZamansky"&gt;@DevorahZamansky&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/catskillsconf?src=hash"&gt;#catskillsconf&lt;/a&gt; &lt;a href="https://t.co/rvkSnMYDCp"&gt;pic.twitter.com/rvkSnMYDCp&lt;/a&gt;&lt;/p&gt;— Mike Zamansky (@zamansky) &lt;a href="https://twitter.com/zamansky/status/790164027494326272"&gt;October 23, 2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-&lt;br&gt;
-
-&lt;p&gt;
-At the end of the conference, we collected the partials. Devorah's
-going to finish the blanket up this week and then it gets donated.
-&lt;/p&gt;
-
-&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;6 X 5 and growing! &lt;a href="https://twitter.com/catskillsconf"&gt;@catskillsconf&lt;/a&gt; &lt;a href="https://t.co/epC9b3ap0t"&gt;pic.twitter.com/epC9b3ap0t&lt;/a&gt;&lt;/p&gt;— Devorah Zamansky (@DevorahZamansky) &lt;a href="https://twitter.com/DevorahZamansky/status/790697247965151232"&gt;October 24, 2016&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-
-&lt;p&gt;
-So, how much of a win was this? We got a blanket to donate to charity
-and a couple of new knitters. We also heard and overheard some
-interesting comments.
-&lt;/p&gt;
-
-&lt;p&gt;
-One speaker commented that it as much better to see members of the
-audience knitting for good rather than checking their cell phones.
-&lt;/p&gt;
-
-&lt;p&gt;
-We also overheard some attendees talking about how the knitting
-project left them feeling more connected to the conference since they
-were able to contribute something.
-&lt;/p&gt;
-
-&lt;p&gt;
-Sounds like a pretty big win to me. 
-&lt;/p&gt;
-
-&lt;p&gt;
-So much so that Devorah's thinking about taking the show on the road -
-maybe other conferences would like their idle hands doing some good
-while listening to talks.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="community" label="community"/>
   </entry>
 </feed>
