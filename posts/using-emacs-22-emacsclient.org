@@ -1,0 +1,57 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 22 - emacsclient
+.. slug: using-emacs-22-emacsclient
+.. date: 2016-11-16 12:00:00 UTC-04:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+*  
+Another quick hit today.
+
+This video is really setting the stage for hte next two, where I talk about org-mode capturing.
+
+Today, we're demoing the use of the emacs server and client.
+
+Back in the old days, emacs took a LOOONG time to load. A complex
+conviguration could take on the order of 10 to 20 seconds. This
+resulted in people loading emacs at the start of the day and leaving
+it up forever. While load times aren't much of an issue anymore, it's
+still nice to leave emacs around all the time.
+
+That's where running emacs as a server comes in.. I set up a keyboard shortcut my window manager to run:
+
+#+BEGIN_SRC 
+emacsclient -a "" -c
+#+END_SRC
+
+Rather than trying to run emacs, this tries to connect to an already
+running emacs server. The **-c** creates a new frame. Instead if you
+use **-t** it will open emacs in the terminal. The **-a ""** tells
+emacs to run itself as a server (daemon) if it isn't already running.
+
+
+Later on, running **emacsclient -c** will very quickly bring up a new frame to the server.
+
+In addition to instant loading, Running emacs this way has the
+advantage, or some may say disadvantage of keeping buffers around
+forever since you just keep emacs up and running.  
+
+
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9AHGsCtsClg" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+
+* 
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+
