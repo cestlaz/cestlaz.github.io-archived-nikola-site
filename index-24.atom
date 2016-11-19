@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 24)</title>
   <id>http://cestlaz.github.io/index-24.atom</id>
-  <updated>2016-11-16T18:31:49Z</updated>
+  <updated>2016-11-19T12:55:53Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,144 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-23.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-24.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Using Emacs - 17 - misc small packages</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-17-misc/</id>
+    <updated>2016-10-28T12:00:00-04:00</updated>
+    <published>2016-10-28T12:00:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-17-misc/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+I'm working on getting enough of my real configuration into this
+series so that I can dump my current one and use this one all them
+time and grow it back up an episode at a time.
+&lt;/p&gt;
+
+&lt;p&gt;
+I think we're almost there.
+&lt;/p&gt;
+
+&lt;p&gt;
+This time, we're looking at a few small packages that I use all the
+time.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
+&lt;h3 id="sec-1-1"&gt;Highlight line Mode&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-1"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(global-hl-line-mode t)
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+this turns on highlight line mode.  It makes it easy to see the line
+the cursor's on. Nothing huge, I just like it.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
+&lt;h3 id="sec-1-2"&gt;&lt;a href="https://github.com/Malabarba/beacon"&gt;Beacon mode&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-2"&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/Malabarba/beacon"&gt;Beacon mode&lt;/a&gt; flashes the cursor whenever you scroll. It makes things
+easy to locate the cursor when scrolling
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;; flashes the cursor's line when you scroll&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;beacon&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;beacon-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="c1"&gt;; this color looks good for the zenburn theme but not for the one&lt;/span&gt;
+&lt;span class="c1"&gt;; I'm using for the videos&lt;/span&gt;
+&lt;span class="c1"&gt;; (setq beacon-color "#666600")&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-sec-1-3" class="outline-3"&gt;
+&lt;h3 id="sec-1-3"&gt;&lt;a href="https://github.com/nflath/hungry-delete"&gt;Hungry Delete mode&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-3"&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/nflath/hungry-delete"&gt;This mode&lt;/a&gt; deletes all the whitespace after the cursor (or before it)
+when you use delete or backspace.
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;; deletes all the whitespace when you hit backspace or delete&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;hungry-delete&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-hungry-delete-mode&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-1-4" class="outline-3"&gt;
+&lt;h3 id="sec-1-4"&gt;&lt;a href="https://github.com/magnars/expand-region.el"&gt;Expand Region&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-4"&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/magnars"&gt;Magnar Sveen's&lt;/a&gt; awesome expand region mode is a must have. He also
+wrote the amazing &lt;a href="https://github.com/magnars/multiple-cursors.el"&gt;multiple cursors&lt;/a&gt; package. I highly recommend
+checking out his work.
+&lt;/p&gt;
+
+&lt;p&gt;
+Expand region expands the marked region by semantic units. It's my go
+to way of marking text for manipulation
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;; expand the marked region in semantic increments (negative prefix to reduce region)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;expand-region&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt; 
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-="&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'er/expand-region&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+I also tried to look at aggressive indent but that had some problems
+so we'll come back to that later.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/vKIFi1h0I5Y" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>Knitting at a Tech Conference</title>
     <id>http://cestlaz.github.io/posts/knitting-tech-conference/</id>

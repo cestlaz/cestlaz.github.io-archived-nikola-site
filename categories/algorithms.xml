@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (algorithms)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/algorithms.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 16 Nov 2016 18:25:04 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sorting - Subtle Errors</title><link>http://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (algorithms)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/algorithms.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 30 Sep 2016 12:12:21 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sorting - Subtle Errors</title><link>http://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
 div.center {text-align:center;}
 &lt;/style&gt;
 
@@ -364,7 +364,7 @@ point.&lt;/p&gt;
 platform on which you can look at many problem solving techniques.&lt;/p&gt;
 &lt;p&gt;We can look at the basic, straightforward , imperative solution:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p _="%" endhighlight&gt;{% highlight java %}
+&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight java %}
 public int fib1(int n) {
   int a=1,b=1;
   for (int i=0;i&amp;lt;n;i++){
@@ -428,7 +428,7 @@ have &lt;strong&gt;a&lt;/strong&gt; and &lt;strong&gt;b&lt;/strong&gt; as local 
 have new &lt;strong&gt;a&lt;/strong&gt; and &lt;strong&gt;b&lt;/strong&gt;s and no information will be transferred.&lt;/p&gt;
 &lt;p&gt;Since we're working in Java, it doesn't take long for some students to come up with the idea of using instance variables to store a and b and just use the recursion for the "loop.":&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p _="%" endhighlight&gt;{% highlight java %}
+&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight java %}
 public int a=1, b=1
 public int fib4(int n) {
     if (n==1)
@@ -443,7 +443,7 @@ public int fib4(int n) {
 &lt;/blockquote&gt;
 &lt;p&gt;Great, but using instance variables in this way is very inelegant and messy. Better, use extra parameters to store the values from call to call:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p _="%" endhighlight&gt;{% highlight java %}
+&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight java %}
 public int fib5(int n,int a, int b) {
     if (n==1)
         return a;
