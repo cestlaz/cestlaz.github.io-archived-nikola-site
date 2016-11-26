@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>Posts about programming</title>
+  <id>http://cestlaz.github.io/categories/programming.atom</id>
+  <updated>2016-11-26T22:01:22Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/programming.atom"/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/programming/"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Inverted Index Project</title>
+    <id>http://cestlaz.github.io/posts/inverted-index/</id>
+    <updated>2016-11-26T16:52:56-05:00</updated>
+    <published>2016-11-26T16:52:56-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/inverted-index/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+I haven't spoken much about the class I've been teaching this
+semester. It's an intro CS course - a programming heavy intro. I
+decided to use Python with a transition at the end to C++. The
+transition is to mirror Hunter's normal first CS course that ends with
+a C++ intro to prepare the students for next semester's CS course
+which is a more intense OOP class using C++ - the language we use in
+our core courses.
+&lt;/p&gt;
+
+&lt;p&gt;
+Throughout the semester I've tried to use a variety of interesting
+application areas so as to try to give the students some idea of the
+possibilities that studying CS will open up for them.
+&lt;/p&gt;
+
+&lt;p&gt;
+After covering Python dictionaries and lists I thought we'd play by
+building an inverted Index.
+&lt;/p&gt;
+
+&lt;p&gt;
+The basic idea is to map a set of words back to source files. For
+example, given the following four one line files:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;
+file.01 : if you prick us do we not bleed
+file.02 : if you tickle us do we not laugh 
+file.03 : if you poison us do we not die and 
+file.04 : if you wrong us shall we not revenge
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="intro" label="intro"/>
+    <category term="programming" label="programming"/>
+    <category term="python" label="python"/>
+  </entry>
+</feed>

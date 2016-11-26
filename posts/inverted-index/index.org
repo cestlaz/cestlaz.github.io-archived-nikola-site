@@ -1,0 +1,114 @@
+#+BEGIN_COMMENT
+.. title: Inverted Index Project
+.. slug: inverted-index
+.. date: 2016-11-26 16:52:56 UTC-05:00
+.. tags: programming, cs, python, intro
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+* 
+I haven't spoken much about the class I've been teaching this
+semester. It's an intro CS course - a programming heavy intro. I
+decided to use Python with a transition at the end to C++. The
+transition is to mirror Hunter's normal first CS course that ends with
+a C++ intro to prepare the students for next semester's CS course
+which is a more intense OOP class using C++ - the language we use in
+our core courses.
+
+Throughout the semester I've tried to use a variety of interesting
+application areas so as to try to give the students some idea of the
+possibilities that studying CS will open up for them.
+
+After covering Python dictionaries and lists I thought we'd play by
+building an inverted Index.
+
+The basic idea is to map a set of words back to source files. For
+example, given the following four one line files:
+
+
+| files   |   |   | contents                             |
+|---------+---+---+--------------------------------------|
+| file.01 |   |   | if you prick us do we not bleed      |
+| file.02 |   |   | if you tickle us do we not laugh     |
+| file.03 |   |   | if you poison us do we not die and   |
+| file.04 |   |   | if you wrong us shall we not revenge |
+|---------+---+---+--------------------------------------|
+
+
+
+You could build a data structure mapping each word back to the file(s)
+that contain it (partially shown here),
+
+| Word  |   | Files containing It's           |
+|-------+---+---------------------------------|
+| if    |   | file.01 file.02 file.03 file.04 |
+| you   |   | file.01 file.02 file.03 file.04 |
+| prick |   | file.01                         |
+| us    |   | file.01 file.02 file.03 file.04 |
+| do    |   | file.01 file.02 file.03         |
+|-------+---+---------------------------------|
+
+
+You can, of course, store more information - how many times a word
+appears in a file, where it appears, etc.
+
+This is a fairly easy structure to build. A dictionary where the keys
+are the words in the file and the values are lists of the documents
+containing the words.
+
+#+BEGIN_SRC python
+  inverted_index = {
+      'if' : ['file.01','file.02','file.03','file.04'],
+      'you' : ['file.01','file.02','file.03','file.04'],
+      'prick' : ['file.01'],
+      'us' : ['file.01','file.02','file.03','file.04'],
+      'do' : ['file.01','file.02','file.03'],
+      ...
+}
+
+#+END_SRC
+
+In addition to letting us work with dictionaries and lists, we can
+also review file access and even the python CSV module if we want.
+
+We can immediately write simple queries -- "what document(s) contain
+the word 'prick,' but things get more interesting if you write
+functions to perform **and** and **or** queries - "what document(s)
+contain the words 'prick' **or** 'do'" for instance.
+
+Why are we building this (besides as a data structure and programming
+exercise)? I've seen a number of references to using an inverted index
+when building a web search engine. In fact, I think that's something
+you do early on in the Udacity Mooc. I just wanted to play with
+information retrieval.
+
+I remembered that there was a collection of information, including
+last statements from [[https://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html][executed offenders in Texas]]. Someone conveniently
+converted it into a [[https://docs.google.com/spreadsheets/d/1HAjZTtPriClY-X3n9whTkA4i5D7bn3bmtHnLoaVICvI/edit#gid=1][Google Spreadsheet]]. The format's a little
+different from our simple four file example but then there's more
+data. It's straightforward enough to download the spreadsheet as a CSV
+file and then read it with a Python program that builds it into an
+inverted index.
+
+Now we have some interesting data to play with.
+
+How many offenders used words like "sorry" or "apologize?" How about
+references to religion? We can do all sorts of **and** and **or**
+queries. 
+
+We just played with this a bit but I could see all sorts of
+explorations. What about taking some great work of literature and
+turning it into an inverted index by chapter. You could query
+characters or certain words and see where and when they appear in the
+book. A new and different way of exploring literature.
+
+So, there you have it - an interesting little project we played with
+this past semester. We did it in an intro Python course but I could
+see it as an interesting project in AP CS A using hashmaps and lists.
+
+
+
+
+
