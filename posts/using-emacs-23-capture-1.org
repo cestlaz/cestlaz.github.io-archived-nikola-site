@@ -1,0 +1,121 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 23 - Org Capture 1
+.. slug: using-emacs-23-capture-1
+.. date: 2016-11-29 12:00:00 UTC-04:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+*  
+Org mode has an amazing feature - **org-capture**. I only started
+using it recently but it's really awesome. 
+
+What took me so long?
+
+Probably that the manual seemed a little intimidating. 
+
+It really isn't hard, though. Combined with what I'll go over in the
+next video and post (and a future one for Google calendar sync) it's
+what I use for:
+
+- recording blog ideas
+- managing bookmarks
+- taking short Notes
+- managing my calendar.
+
+I use the binding:
+
+#+BEGIN_SRC emacs-lisp
+ (global-set-key (kbd "C-c c")
+        'org-capture)
+#+END_SRC
+
+By default, running org-capture brings up a form to capture a "task"
+but things get really cool when you start making your own capture
+templates. With capture templates, you can speed up recording
+information and then tell org-mode to store it where you want it.
+
+Here are my template settings. 
+
+#+BEGIN_SRC emacs-lisp
+  (setq org-capture-templates
+	'(("a" "Appointment" entry (file  "~/Dropbox/orgfiles/gcal.org" "Appointments")
+	   "* TODO %?\n:PROPERTIES:\n\n:END:\nDEADLINE: %^T \n %i\n")
+	  ("n" "Note" entry (file+headline "~/Dropbox/orgfiles/notes.org" "Notes")
+	   "* Note %?\n%T")
+	  ("l" "Link" entry (file+headline "~/Dropbox/orgfiles/links.org" "Links")
+	   "* %? %^L %^g \n%T" :prepend t)
+	  ("b" "Blog idea" entry (file+headline "~/Dropbox/orgfiles/i.org" "Blog Topics:")
+	   "* %?\n%T" :prepend t)
+	  ("t" "To Do Item" entry (file+headline "~/Dropbox/orgfiles/i.org" "To Do Items")
+	   "* %?\n%T" :prepend t)
+	  ("j" "Journal" entry (file+datetree "~/Dropbox/journal.org")
+	   "* %?\nEntered on %U\n  %i\n  %a")
+	  ("s" "Screencast" entry (file "~/Dropbox/orgfiles/screencastnotes.org")
+	   "* %?\n%i\n")))
+
+#+END_SRC
+
+Let's look at the **Blog** entry:
+
+#+BEGIN_SRC emacs-lisp
+	  ("b" "Blog idea" entry (file+headline "~/Dropbox/orgfiles/i.org" "Blog Topics:")
+	   "* %?\n%T" :prepend t)
+#+END_SRC
+It's a list with a bunch of options. The first string **b** is the
+key to type to select this template, **Blog idea** is the actual name
+for this template. 
+
+The next item, **entry** describes the type of template you're
+creating. **entry** says you're going to create an org node with a
+headline which can then be added to an org-file. You can also have
+your template create things like an org list **item** a checkbox
+**checkitem** or even **plain** text. You can see the full set of
+options [[http://orgmode.org/manual/Template-elements.html#Template-elements][here]].
+
+Next, in parentheses, you have the target - where to store the captured
+info. The **Blog idea** template says **file+headline** followed by a
+filename in quotes and a headline in quotes. This says to store the
+new org heading you're capturing in the file
+"~/Dropbox/orgfiles/i.org" under the heading "Blog Topics:" Contrast
+this to the **appointments** template which just specifies **file**
+and a filename. The **appointments** template will just append the new
+appointment to its specified file whereas **Blog idea** will prepend
+(due to the **:prepend** option at the end of the template) to the
+"Blog Topics:" heading in **i.org**.
+
+After this we have the actual template: "* %?\n%T" - the %? and %T are
+placeholders for substitutions. The **%T** prompts for a date with a
+timestamp and the **%?** is where to leave the cursor for final input
+before saving the capture.
+
+Finally, **:prepend** and other options can be found at the above link.
+
+All the substitutions can be found in [[http://orgmode.org/manual/Template-expansion.html#Template-expansion][the docs]].
+
+Once you've set up your templates, it's quick and easy to capture
+information. 
+
+This video shows the basics. The next one shows how to pop up a
+capture even when you're not in emacs and how I use org-capture to
+maintain my web bookmarks.
+
+More information on capture templates can be found [[http://orgmode.org/manual/Capture-templates.html][here]].
+
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-wPfxuxIfeU" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+
+* 
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+
