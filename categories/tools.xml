@@ -1,5 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/tools.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 29 Nov 2016 22:26:28 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 23 - Org Capture 1</title><link>http://cestlaz.github.io/posts/using-emacs-23-capture-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link type="application/rss+xml" href="http://cestlaz.github.io/categories/tools.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 03 Dec 2016 21:10:21 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 24 - Org Capture 2</title><link>http://cestlaz.github.io/posts/using-emacs-24-capture-2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Not much in today's actual post. The video is a continuation of the last one on &lt;a href="http://cestlaz.github.io/posts/using-emacs-23-capture-1"&gt;org-capture&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+The video goes over how I set things up to pop up a new frame to do a
+capture even if emacs isn't on screen (as long as it's running) by
+hitting &lt;b&gt;&lt;b&gt;F1&lt;/b&gt;&lt;/b&gt;. I would  have preferred to bind to &lt;b&gt;&lt;b&gt;C-c c&lt;/b&gt;&lt;/b&gt; - the
+same as within emacs but I havn't figured out how to do that in Ubuntu
+or Mint Linux yet.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the elisp code for the configuration file to do the heavy
+lifting. I can't for th elife of me remember who's blog I found it
+on. If anyone knows, please leave a comment - I'd like to give credit
+where credit's due:
+&lt;/p&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(defadvice org-capture-finalize 
+    (after delete-capture-frame activate)  
+  "Advise capture-finalize to close the frame"  
+  (if (equal "capture" (frame-parameter nil 'name))  
+    (delete-frame)))
+
+(defadvice org-capture-destroy 
+    (after delete-capture-frame activate)  
+  "Advise capture-destroy to close the frame"  
+  (if (equal "capture" (frame-parameter nil 'name))  
+    (delete-frame)))  
+
+(use-package noflet
+  :ensure t )
+(defun make-capture-frame ()
+  "Create a new frame and run org-capture."
+  (interactive)
+  (make-frame '((name . "capture")))
+  (select-frame-by-name "capture")
+  (delete-other-windows)
+  (noflet ((switch-to-buffer-other-window (buf) (switch-to-buffer buf)))
+    (org-capture)))
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The command I bind to the keyboard shortcut in my window manager:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;emacsclient -ne "(make-capture-frame)"
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+There will be a third capture video in a few weeks where I'll talk
+about scheduling and agendas. Right now, I'm playing with org-gcal to
+sync with my Google calendar and want to figure out a config I'm happy
+with before making that video.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/gjr9mP01oWE" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-24-capture-2/</guid><pubDate>Sat, 03 Dec 2016 20:45:26 GMT</pubDate></item><item><title>Using Emacs - 23 - Org Capture 1</title><link>http://cestlaz.github.io/posts/using-emacs-23-capture-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -834,75 +921,4 @@ environment.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/cEqB4pkR1c4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>flask</category><category>linux</category><category>python</category><category>tools</category><category>webdev</category><guid>http://cestlaz.github.io/posts/flask-setup-virtualenv/</guid><pubDate>Fri, 14 Oct 2016 22:17:33 GMT</pubDate></item><item><title>Using Emacs - 16 - Undo Tree</title><link>http://cestlaz.github.io/posts/using-emacs-16-undo-tree/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-If you use emacs, you should keep an eye on Jon Snader's &lt;a href="http://irreal.org/blog/"&gt;blog&lt;/a&gt;,
-&lt;a href="http://irreal.org/blog/"&gt;irreal.org&lt;/a&gt;. A few days he posted on &lt;a href="http://irreal.org/blog/?p=5621"&gt;Undo Tree&lt;/a&gt; - a package that extends
-Emacs's built in undo functionality.
-&lt;/p&gt;
-
-&lt;p&gt;
-Basic emacs has undo, bound to &lt;b&gt;&lt;b&gt;C-/&lt;/b&gt;&lt;/b&gt; or &lt;b&gt;&lt;b&gt;C-_&lt;/b&gt;&lt;/b&gt; but that's about
-it. Undo tree, which you can set up with:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;undo-tree&lt;/span&gt;
-&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-  &lt;span class="nv"&gt;:init&lt;/span&gt;
-    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-undo-tree-mode&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-adds two key features. First is redo, which you get by adding the
-shift key to the undo keychords. 
-&lt;/p&gt;
-
-&lt;p&gt;
-The other, is the visual undo tree. You can bring that up wit &lt;b&gt;&lt;b&gt;C-x
-u&lt;/b&gt;&lt;/b&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-Once you bring up the undo tree, you can use the up and down arrows or
-&lt;b&gt;&lt;b&gt;C-n&lt;/b&gt;&lt;/b&gt; and &lt;b&gt;&lt;b&gt;C-p&lt;/b&gt;&lt;/b&gt; to move between undo and redos. When you get to
-what you want, just quit the undo tree visualizer with &lt;b&gt;&lt;b&gt;q&lt;/b&gt;&lt;/b&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-The cool part is that once you undo a few things and add new stuff,
-you get a tree that you can navigate through using the arrows. 
-&lt;/p&gt;
-
-&lt;p&gt;
-It's much easier to get the flavor of this by watching the video
-(which also has a lame example of using artist-mode which I'll come
-back t at some point).
-&lt;/p&gt;
-
-&lt;p&gt;
-Enjoy.
-&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/zL0FJ-jbDPU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;
-Relevant links:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Video series overview page:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Code:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-16-undo-tree/</guid><pubDate>Sun, 09 Oct 2016 16:00:00 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>flask</category><category>linux</category><category>python</category><category>tools</category><category>webdev</category><guid>http://cestlaz.github.io/posts/flask-setup-virtualenv/</guid><pubDate>Fri, 14 Oct 2016 22:17:33 GMT</pubDate></item></channel></rss>

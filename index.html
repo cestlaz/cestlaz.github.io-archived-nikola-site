@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-25.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/advent-of-code-2016/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-24-capture-2/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -89,7 +89,110 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/advent-of-code-2016/" class="u-url">Advent of Code 2016</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-24-capture-2/" class="u-url">Using Emacs - 24 - Org Capture 2</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/using-emacs-24-capture-2/" rel="bookmark"><time class="published dt-published" datetime="2016-12-03T15:45:26-05:00" title="2016-12-03 15:45">2016-12-03 15:45</time></a></p>
+                <p class="commentline">            <a href="posts/using-emacs-24-capture-2/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-24-capture-2.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Not much in today's actual post. The video is a continuation of the last one on <a href="http://cestlaz.github.io/posts/using-emacs-23-capture-1">org-capture</a>.
+</p>
+
+<p>
+The video goes over how I set things up to pop up a new frame to do a
+capture even if emacs isn't on screen (as long as it's running) by
+hitting <b><b>F1</b></b>. I would  have preferred to bind to <b><b>C-c c</b></b> - the
+same as within emacs but I havn't figured out how to do that in Ubuntu
+or Mint Linux yet.
+</p>
+
+<p>
+Here's the elisp code for the configuration file to do the heavy
+lifting. I can't for th elife of me remember who's blog I found it
+on. If anyone knows, please leave a comment - I'd like to give credit
+where credit's due:
+</p>
+
+
+<div class="highlight"><pre><span></span>(defadvice org-capture-finalize 
+    (after delete-capture-frame activate)  
+  "Advise capture-finalize to close the frame"  
+  (if (equal "capture" (frame-parameter nil 'name))  
+    (delete-frame)))
+
+(defadvice org-capture-destroy 
+    (after delete-capture-frame activate)  
+  "Advise capture-destroy to close the frame"  
+  (if (equal "capture" (frame-parameter nil 'name))  
+    (delete-frame)))  
+
+(use-package noflet
+  :ensure t )
+(defun make-capture-frame ()
+  "Create a new frame and run org-capture."
+  (interactive)
+  (make-frame '((name . "capture")))
+  (select-frame-by-name "capture")
+  (delete-other-windows)
+  (noflet ((switch-to-buffer-other-window (buf) (switch-to-buffer buf)))
+    (org-capture)))
+</pre></div>
+
+<p>
+The command I bind to the keyboard shortcut in my window manager:
+</p>
+
+<div class="highlight"><pre><span></span>emacsclient -ne "(make-capture-frame)"
+</pre></div>
+
+<p>
+There will be a third capture video in a few weeks where I'll talk
+about scheduling and agendas. Right now, I'm playing with org-gcal to
+sync with my Google calendar and want to figure out a config I'm happy
+with before making that video.
+</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gjr9mP01oWE" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"></h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Relevant links:
+</p>
+<ul class="org-ul">
+<li>Video series overview page:
+<ul class="org-ul">
+<li>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</li>
+</ul>
+</li>
+<li>Code:
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/advent-of-code-2016/" class="u-url">Advent of Code 2016</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
@@ -1168,79 +1271,6 @@ Improving a school, any school, for all its students might not help in
 those bogus national ratings but that really should be what we're
 about.
 </p>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-19-live/" class="u-url">Using Emacs - 19 - moving to a live config</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/using-emacs-19-live/" rel="bookmark"><time class="published dt-published" datetime="2016-11-10T12:00:00-04:00" title="2016-11-10 12:00">2016-11-10 12:00</time></a></p>
-                <p class="commentline">            <a href="posts/using-emacs-19-live/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-19-live.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"></h2>
-<div class="outline-text-2" id="text-1">
-<p>
-Some of the videos I want to make are going to be much easier to do if
-I'm working in my own account where my whole file tree is available. 
-</p>
-
-<p>
-It's also a little annoying changing between my full emacs config and
-the one I'm developing here.
-</p>
-
-<p>
-So, I decided to move to this config for my real config and as I make
-more videos move parts of my old configuration over to this new one.
-</p>
-
-<p>
-The only problem is that I <b><b>need</b></b> some of my current config right
-now – things like my email setup.
-</p>
-
-<p>
-This video talks about how I'm going to set things up to take care of
-everything.
-</p>
-
-
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8RwQNXOjSis" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-
-
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"></h2>
-<div class="outline-text-2" id="text-2">
-<p>
-Relevant links:
-</p>
-<ul class="org-ul">
-<li>Video series overview page:
-<ul class="org-ul">
-<li>
-<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
-</li>
-</ul>
-</li>
-<li>Code:
-<ul class="org-ul">
-<li>
-<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
-</li>
-</ul>
-</li>
-</ul>
 </div>
 </div>
     </div>

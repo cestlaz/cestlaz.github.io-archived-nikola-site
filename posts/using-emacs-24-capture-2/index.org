@@ -1,0 +1,77 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 24 - Org Capture 2
+.. slug: using-emacs-24-capture-2
+.. date: 2016-12-03 15:45:26 UTC-05:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+*  
+Not much in today's actual post. The video is a continuation of the last one on [[http://cestlaz.github.io/posts/using-emacs-23-capture-1][org-capture]].
+
+The video goes over how I set things up to pop up a new frame to do a
+capture even if emacs isn't on screen (as long as it's running) by
+hitting **F1**. I would  have preferred to bind to **C-c c** - the
+same as within emacs but I havn't figured out how to do that in Ubuntu
+or Mint Linux yet.
+
+Here's the elisp code for the configuration file to do the heavy
+lifting. I can't for th elife of me remember who's blog I found it
+on. If anyone knows, please leave a comment - I'd like to give credit
+where credit's due:
+
+
+#+BEGIN_SRC 
+
+    (defadvice org-capture-finalize 
+        (after delete-capture-frame activate)  
+      "Advise capture-finalize to close the frame"  
+      (if (equal "capture" (frame-parameter nil 'name))  
+  	(delete-frame)))
+
+    (defadvice org-capture-destroy 
+        (after delete-capture-frame activate)  
+      "Advise capture-destroy to close the frame"  
+      (if (equal "capture" (frame-parameter nil 'name))  
+  	(delete-frame)))  
+
+    (use-package noflet
+      :ensure t )
+    (defun make-capture-frame ()
+      "Create a new frame and run org-capture."
+      (interactive)
+      (make-frame '((name . "capture")))
+      (select-frame-by-name "capture")
+      (delete-other-windows)
+      (noflet ((switch-to-buffer-other-window (buf) (switch-to-buffer buf)))
+        (org-capture)))
+
+#+END_SRC
+
+The command I bind to the keyboard shortcut in my window manager:
+
+#+BEGIN_SRC bash
+emacsclient -ne "(make-capture-frame)"
+#+END_SRC
+
+There will be a third capture video in a few weeks where I'll talk
+about scheduling and agendas. Right now, I'm playing with org-gcal to
+sync with my Google calendar and want to figure out a config I'm happy
+with before making that video.
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gjr9mP01oWE" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+
+* 
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+
