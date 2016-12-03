@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 26 Nov 2016 22:31:38 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Inverted Index Project</title><link>http://cestlaz.github.io/posts/inverted-index/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 03 Dec 2016 20:33:50 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Advent of Code 2016</title><link>http://cestlaz.github.io/posts/advent-of-code-2016/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+Once again, it's time for &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; - a series of small
+programming problems released once a day. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I wrote a bit about it &lt;a href="http://cestlaz.github.io/posts/2015-12-15-advent.html/"&gt;last&lt;/a&gt; &lt;a href="http://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/#.WEMqBB9ieYQ"&gt;year&lt;/a&gt; and you can still find last years
+problems &lt;a href="http://adventofcode.com/2015/"&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's only day three but so far, all of the problems look really nice
+for students in APCS-A or any similar intro course. I'm thinking of
+looking at a couple of the problems this week with my class at Hunter.
+&lt;/p&gt;
+
+&lt;p&gt;
+I didn't think about this much last year but one thing I really like
+about the competition is that each problem comes in two parts. You're
+first presented with the problem and the input and once you put in the
+correct answer, you're presented with part two.
+&lt;/p&gt;
+
+&lt;p&gt;
+This can be annoying at times, particularly when it requires a large
+code rewrite but it also means that well designed, not too specific
+solutions are rewarded. 
+&lt;/p&gt;
+
+&lt;p&gt;
+It's not quite the same as changing the specs on a project mid way but
+it does encourage thinking about more than just solving a super
+specific problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+Check out &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; and see if it's something you or your classes
+might enjoy.
+&lt;/p&gt;</description><category>apcs</category><category>cs</category><category>misc</category><guid>http://cestlaz.github.io/posts/advent-of-code-2016/</guid><pubDate>Sat, 03 Dec 2016 20:25:26 GMT</pubDate></item><item><title>Inverted Index Project</title><link>http://cestlaz.github.io/posts/inverted-index/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
