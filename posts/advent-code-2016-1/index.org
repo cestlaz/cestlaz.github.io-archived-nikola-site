@@ -1,0 +1,113 @@
+#+BEGIN_COMM
+.. title: A Teacher looks at Advent of Code 2016 #1
+.. slug: advent-code-2016-1
+.. date: 2016-12-06 10:46:17 UTC-05:00
+.. tags: cs, pedagogy, programming
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+I recently posted about [[http://adventofcode.com][Advent of Code]] - a series of programming
+problems relseased one a day. While they vary in terms of level of
+difficulty, a number of them make nice problems for introductory to
+mid level programming classes.
+
+I thought I'd share some of my thoughts on a few of them starting with
+the first problem from this years competition.
+
+Take a minute to read it over.
+
+At first glance, it might seem to a young programmer that this problem
+requires a two dimensional array - all about (x,y) coordinates but
+then there's a problem - there are no limits on coordinates and we
+can't make an unlimited size array.
+
+After thinking a bit, hopefully the programmer realizes that all they
+need to do is keep track of the how the **(x,y)** location changes over
+time. In the solution below, we start at **(0,0)** and count the steps as
+we update two variables **x** and **y**.
+
+When we finish processing the moves, we have our current location in
+**(x,y)** and we have the number of steps taken to get there.
+
+The solution below hsa a couple of niceties that a beginning
+programmer might not know or use (and I'm not arguing that what's written is
+superior in any way, it's just what I ended up writing).
+
+I make use of tuple destructuring:
+#+BEGIN_SRC python
+x,y = (0,0)
+#+END_SRC
+
+which assigns **x** to the first item in the tuple and **y** the
+second. I used that a number of times 
+
+I also use a list  I call **dirs** to hold dx and dy values for the
+four direcitons:
+#+BEGIN_SRC python
+dirs=[(0,1),(1,0),(0,-1),(-1,0)]
+#+END_SRC
+
+This made it easier to to update the location based on the 4
+directions. I could also have just used if statements.
+
+Here's all the code:
+
+#+BEGIN_SRC python 
+
+x,y = (0,0) # assume our starting location is 0,0
+
+# we start with d=0 -> facing north
+# as we turn left or right, we can just increment or decrement d
+# and dirs[d] will give us the appropriate dx and dy to update
+# our locatoin for the next step
+dirs=[(0,1),(1,0),(0,-1),(-1,0)]   
+d=0
+
+# This is only needed for part 2  - We track visited locations
+# by adding them to the dictionary. If we try to add a location
+# that's already been visited we know that we've found our final 
+# location
+# locs={}  # uncomment this line for part 2
+
+
+totalsteps=0
+for i in l:
+
+    # the first char in i is the direction to turn in (L or R)
+    # the rest represents the number of steps.
+    dir=i[0]
+    steps=int(i[1:])
+    
+    if dir=="L":
+        d = (d+1)%4
+    else:
+        d = (d-1)%4
+    (dx,dy) = dirs[d]
+    for i in range(steps):
+        (x,y) = (x + dx, y + dy)
+        totalsteps=totalsteps+1
+        
+        # Uncomment this block for part 2
+        # each time we have a new location, see if it's already in
+        # locs, if it isn't, add it.
+        # if it is, we're visiting somewhere twice so we're done.
+        #if ((x,y) not in locs):
+        #    locs[(x,y)]=1
+        #else:
+        #    print((x,y))
+        #    print(abs(x)+abs(y)) # the answer
+        #    sys.exit(0)
+        #    break
+    
+
+print(x,y)
+print(abs(x)+abs(y)) # the answer
+
+#+END_SRC
+
+
+Overall, a nice little problem for beginning and intermediate
+students.
