@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-25.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/advent-code-2016-1/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/advent-of-code-2016-2/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -89,7 +89,60 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/advent-code-2016-1/" class="u-url">A Teacher looks at Advent of Code 2016 #1</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/advent-of-code-2016-2/" class="u-url">A Teacher looks at Advent of Code 2016 #2</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/advent-of-code-2016-2/" rel="bookmark"><time class="published dt-published" datetime="2016-12-08T08:40:49-05:00" title="2016-12-08 08:40">2016-12-08 08:40</time></a></p>
+                <p class="commentline">            <a href="posts/advent-of-code-2016-2/#disqus_thread" data-disqus-identifier="cache/posts/advent-of-code-2016-2.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p>
+Today we're looking at <a href="http://adventofcode.com">Advent of Code</a> 2016 <a href="http://adventofcode.com/2016/day/2">number 2</a>.
+</p>
+
+<p>
+To change things up, I thought I'd do a video where I live code a solution.
+</p>
+
+<p>
+The solution I present is pretty straightforward - use a 2D array (or
+technically, an array of strings) to represent the keypad, parse the
+input, and follow the input instructions to build the code. 
+</p>
+
+<p>
+One of the things I really like about Advent of Code is that every
+problem has two parts and depending on how you solved part 1, you may
+or may not have extra work to do for part 2.
+</p>
+
+<p>
+A couple of years ago, I wrote about one of the coding techniques I
+try to convey to my students. The idea of <a href="http://cestlaz.github.io/posts/2014-02-26-change-the-data.md">changing the data</a> to take
+away edge and special cases. 
+</p>
+
+<p>
+Part two of this problem is a perfect time to use that technique.
+</p>
+
+<p>
+Here's the video, I hope you enjoy it:
+</p>
+
+<div class="export">
+<p>
+&lt;iframe width="560" height="315" src="<a href="https://www.youtube.com/embed/EC8gSrYQ11g">https://www.youtube.com/embed/EC8gSrYQ11g</a>" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</p>
+
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/advent-code-2016-1/" class="u-url">A Teacher looks at Advent of Code 2016 #1</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
@@ -1192,97 +1245,6 @@ The web-mode <a href="http://web-mode.org">documentation</a> has more informatio
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/69bQa5n23jc" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-
-
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"></h2>
-<div class="outline-text-2" id="text-2">
-<p>
-Relevant links:
-</p>
-<ul class="org-ul">
-<li>Video series overview page:
-<ul class="org-ul">
-<li>
-<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
-</li>
-</ul>
-</li>
-<li>Code:
-<ul class="org-ul">
-<li>
-<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-20-yanking/" class="u-url">Using Emacs - 20 - yanking</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/using-emacs-20-yanking/" rel="bookmark"><time class="published dt-published" datetime="2016-11-13T12:00:00-04:00" title="2016-11-13 12:00">2016-11-13 12:00</time></a></p>
-                <p class="commentline">            <a href="posts/using-emacs-20-yanking/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-20-yanking.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"></h2>
-<div class="outline-text-2" id="text-1">
-<p>
-Today's video is a bit of a follow up on the last one as well as a few
-miscillaneous configuration.
-</p>
-
-<p>
-We got some comments on alternate ways to load a file if it exists -
-it's always cool to see how different people end up doing similar things.
-</p>
-
-<p>
-We then talk about three little configurations. Two I found out about
-reading Jon Sander's (jcs) blog <a href="http://irreal.org/blog">Irreal</a>. Jon's blog is a terrific
-source of emacs info - if you don't subscribe, you should.
-</p>
-
-<p>
-I go over using counsel for working with the kill-ring. The command
-counsel-yank-pop acts as a replamcement for yank-pop and it lets you
-easily yank anything from the kill ring - not just the most previously
-killed/whacked piece. 
-</p>
-
-<p>
-You just hit <b><b>M-y</b></b> and then either keep hitting it or use up and
-down to select what you want to yank. 
-</p>
-
-<p>
-Here's the original post from Irreal: <a href="http://irreal.org/blog/?p=5707">http://irreal.org/blog/?p=5707</a>.
-</p>
-
-<p>
-I then briefly talk about smoothing things over between the system
-clipboard and the kill ring, also from Irreal:
-<a href="http://irreal.org/blog/?p=5702">http://irreal.org/blog/?p=5702</a>.
-</p>
-
-<p>
-Finally, I talk about auto-revert-mode - this monitors files on your
-file system and when they change, they reload your buffer. I find this
-very useful to keep multiple machines in sync when I'm working with
-files in a could based filesystem like Dropbox or Owncloud.
-</p>
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LReZI7VAy8w" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
 

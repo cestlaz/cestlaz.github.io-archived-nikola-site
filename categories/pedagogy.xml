@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (pedagogy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/pedagogy.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 07 Dec 2016 01:32:14 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Teacher looks at Advent of Code 2016 #1</title><link>http://cestlaz.github.io/posts/advent-code-2016-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (pedagogy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link rel="self" type="application/rss+xml" href="http://cestlaz.github.io/categories/pedagogy.xml"></atom:link><language>en</language><lastBuildDate>Thu, 08 Dec 2016 13:46:44 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Teacher looks at Advent of Code 2016 #2</title><link>http://cestlaz.github.io/posts/advent-of-code-2016-2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+Today we're looking at &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; 2016 &lt;a href="http://adventofcode.com/2016/day/2"&gt;number 2&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+To change things up, I thought I'd do a video where I live code a solution.
+&lt;/p&gt;
+
+&lt;p&gt;
+The solution I present is pretty straightforward - use a 2D array (or
+technically, an array of strings) to represent the keypad, parse the
+input, and follow the input instructions to build the code. 
+&lt;/p&gt;
+
+&lt;p&gt;
+One of the things I really like about Advent of Code is that every
+problem has two parts and depending on how you solved part 1, you may
+or may not have extra work to do for part 2.
+&lt;/p&gt;
+
+&lt;p&gt;
+A couple of years ago, I wrote about one of the coding techniques I
+try to convey to my students. The idea of &lt;a href="http://cestlaz.github.io/posts/2014-02-26-change-the-data.md"&gt;changing the data&lt;/a&gt; to take
+away edge and special cases. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Part two of this problem is a perfect time to use that technique.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the video, I hope you enjoy it:
+&lt;/p&gt;
+
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/EC8gSrYQ11g"&gt;https://www.youtube.com/embed/EC8gSrYQ11g&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-of-code-2016-2/</guid><pubDate>Thu, 08 Dec 2016 13:40:49 GMT</pubDate></item><item><title>A Teacher looks at Advent of Code 2016 #1</title><link>http://cestlaz.github.io/posts/advent-code-2016-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 I recently &lt;a href="http://cestlaz.github.io/posts/advent-of-code-2016/"&gt;posted&lt;/a&gt; about &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; - a series of programming
 problems relseased one a day. While they vary in terms of level of
 difficulty, a number of them make nice problems for introductory to
@@ -1214,198 +1253,4 @@ this stuff.
 &lt;p&gt;
 Some times kids get caught up in algorithms or poor code design but
 sometimes, it's just the tools.
-&lt;/p&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</guid><pubDate>Sat, 23 Jan 2016 05:00:00 GMT</pubDate></item><item><title>Cellular Automata for Pathfinding in NetLogo</title><link>http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet"&gt;
-&lt;script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"&gt;&lt;/script&gt;
-&lt;style&gt;
-div.center {text-align:center;}
-.smaller {height:200px;width:200px}
-
-.center {text-align:center;}
-.frame {width:600px;height:800px;}
-
-&lt;/style&gt;
-
-
-&lt;div class="center"&gt;
-&lt;a class="center" href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-start.png"&gt;
-&lt;img src="http://cestlaz.github.io/img/maze-ca/maze-start.png"&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-&lt;br&gt;
-
-&lt;div id="outline-container-orgheadline1" class="outline-2"&gt;
-&lt;h2 id="orgheadline1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgheadline1"&gt;
-&lt;p&gt;
-&lt;a href="http://cestlaz.github.io/2016/01/15/shift-image.html#.Vpvy4x8SrmE"&gt;Last time&lt;/a&gt; we took a look at implementing a Cellular Automaton in
-NetLogo to do some simple image manipulation. We just scratched the
-surface. In class, the kids write pretty nice Photoshop Light
-applications. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Today we'll look at some more ambitious problem solving - using a
-Cellular Automaton to find a path through a maze. 
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-orgheadline2" class="outline-2"&gt;
-&lt;h2 id="orgheadline2"&gt;Part 1 - finding possible paths&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgheadline2"&gt;
-&lt;p&gt;
-We'll use the image above as an example and a live model with all the
-code is at the end of this post.
-&lt;/p&gt;
-
-&lt;p&gt;
-Each square of the maze is a
-NetLogo patch. White square represent possible paths, Red is our
-entrance, green our exit. As we explore the maze, we'll color the
-cells yellow.
-&lt;/p&gt;
-
-&lt;p&gt;
-Remember, in  a Cellular Automaton (CA), each cell makes a decision as to
-it's next state based on information about its neighbors (up, down,
-left, and right only in this case).
-&lt;/p&gt;
-
-&lt;p&gt;
-So, if every cell is looking around at it's neighbors, most cells
-don't have enough information. The only white cell that might be on
-the path from entrance to exit is the one next to the entrance - it
-might be on the path.
-&lt;/p&gt;
-
-&lt;p&gt;
-This leads us to the first step of our CA rule set:
-&lt;/p&gt;
-
-&lt;div class="org-src-container"&gt;
-
-&lt;pre class="src src-netlogo"&gt;; if I have a green neighbor, I might be on the path, turn yellow
-ask patches with [pcolor = white] [
-  if any? neighbors with [pcolor = red] [
-   set pcolor yellow
-  ] 
-]
-&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-(click images to enlarge)
-&lt;/p&gt;
-
-&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-1.png"&gt;
-&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-1.png"&gt;
-&lt;/a&gt;
-
-&lt;p&gt;
-Next time through, we notice that a cell might be on the path if it's
-white and it has either red or yellow neighbors.
-&lt;/p&gt;
-
-
-&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-2.png"&gt;
-&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-2.png"&gt;
-&lt;/a&gt;
-&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-3.png"&gt;
-&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-3.png"&gt;
-&lt;/a&gt;
-
-&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-4.png"&gt;
-&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-4.png"&gt;
-&lt;/a&gt;
-
-&lt;p&gt;
-Eventually, we end up with a yellow abutting green - the exit.
-&lt;/p&gt;
-
-&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-found.png"&gt;
-&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-found.png"&gt;
-&lt;/a&gt;
-
-&lt;p&gt;
-Notice that each yellow cell is also numbered. The number indicates
-how many steps it took to get there from the entrance. The
-implementation is trivial:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Start by giving each patch a variable &lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; and starting it at 0.&lt;/li&gt;
-&lt;li&gt;When a cell is about to turn yellow, it should look at it's yellow
-or red neighbors, ask for their &lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; value (they'll all be the
-same - think about why), and set it's &lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; value to one more
-than that.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-We'll use these step numbers to recover the actual shortest path.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-orgheadline3" class="outline-2"&gt;
-&lt;h2 id="orgheadline3"&gt;Part 2 - recovering the shortest path.&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgheadline3"&gt;
-&lt;p&gt;
-We can now use the yellow patches with the step numbers to find our
-way back. 
-&lt;/p&gt;
-
-&lt;p&gt;
-We're going to build a solution set.
-&lt;/p&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;start with an empty solution set.&lt;/li&gt;
-&lt;li&gt;take the only green cell not in the solution set (let's call it &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt;).&lt;/li&gt;
-&lt;li&gt;Ask &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt;'s yellow neighbor with lowest step number to turn
-itself green (that cell will be &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt; next time around).&lt;/li&gt;
-&lt;li&gt;Place &lt;b&gt;&lt;b&gt;G&lt;/b&gt;&lt;/b&gt; into the solution set (leaving the new green cell as
-the only green cell not in the solution set).&lt;/li&gt;
-&lt;li&gt;Repeat 2 - 5 until we're back at the entrance.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-
-&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-back-1.png"&gt;
-&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-back-1.png"&gt;
-&lt;/a&gt;
-&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-back-2.png"&gt;
-&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-back-2.png"&gt;
-&lt;/a&gt;
-&lt;a href="http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/" data-featherlight="/img/maze-ca/maze-solved.png"&gt;
-&lt;img class="smaller" src="http://cestlaz.github.io/img/maze-ca/maze-solved.png"&gt;
-&lt;/a&gt;
-
-&lt;p&gt;
-This is one of my favorite intro topics. It's using a CA - something
-normally just presented as a toy idea, to solve a real problem. It
-reinforces parallel processing and foreshadows all sorts of pathfinding
-ideas to come.
-&lt;/p&gt;
-
-&lt;p&gt;
-Below is the complete NetLogo program. You can look at the code by
-clicking on the code tab at the bottom.
-&lt;/p&gt;
-
-&lt;p&gt;
-To run:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;b&gt;&lt;b&gt;setup&lt;/b&gt;&lt;/b&gt; sets up all the variables and clears the world.&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;&lt;b&gt;buildmaze&lt;/b&gt;&lt;/b&gt; builds a random maze.&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;&lt;b&gt;solve&lt;/b&gt;&lt;/b&gt; is a toggle to run through an entire solution.&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;&lt;b&gt;step&lt;/b&gt;&lt;/b&gt; single steps through the CA.&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;&lt;b&gt;reset&lt;/b&gt;&lt;/b&gt; Resets all the variables and recolors the maze to
-unsolved.&lt;/li&gt;
-&lt;li&gt;The other buttons are toggles for drawing your own maze.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class="center frame"&gt;
-&lt;iframe class="center frame" src="http://cestlaz.github.io/img/maze-ca/maze.html"&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>netlogo</category><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</guid><pubDate>Sun, 17 Jan 2016 05:00:00 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</guid><pubDate>Sat, 23 Jan 2016 05:00:00 GMT</pubDate></item></channel></rss>

@@ -1,0 +1,36 @@
+#+BEGIN_COMMENT
+.. title: A Teacher looks at Advent of Code 2016 #2
+.. slug: advent-of-code-2016-2
+.. date: 2016-12-08 08:40:49 UTC-05:00
+.. tags: cs, pedagogy, programming
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+
+Today we're looking at [[http://adventofcode.com][Advent of Code]] 2016 [[http://adventofcode.com/2016/day/2][number 2]].
+
+To change things up, I thought I'd do a video where I live code a solution.
+
+The solution I present is pretty straightforward - use a 2D array (or
+technically, an array of strings) to represent the keypad, parse the
+input, and follow the input instructions to build the code. 
+
+One of the things I really like about Advent of Code is that every
+problem has two parts and depending on how you solved part 1, you may
+or may not have extra work to do for part 2.
+
+A couple of years ago, I wrote about one of the coding techniques I
+try to convey to my students. The idea of [[http://cestlaz.github.io/posts/2014-02-26-change-the-data.md][changing the data]] to take
+away edge and special cases. 
+
+Part two of this problem is a perfect time to use that technique.
+
+Here's the video, I hope you enjoy it:
+
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EC8gSrYQ11g" frameborder="0" allowfullscreen></iframe>
+#+END_EXPORT
+

@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Posts about programming | C'est la Z</title>
+<title>A Teacher looks at Advent of Code 2016 #2 | C'est la Z</title>
 <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
@@ -16,8 +16,26 @@ article: http://ogp.me/ns/article#
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="../../index.atom">
-<link rel="canonical" href="http://cestlaz.github.io/categories/programming/">
-<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link rel="alternate" type="application/rss+xml" title="RSS for tag programming" href="../programming.xml">
+<link rel="canonical" href="http://cestlaz.github.io/posts/advent-of-code-2016-2/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
+<link rel="prev" href="../advent-code-2016-1/" title="A Teacher looks at Advent of Code 2016 #1" type="text/html">
+<meta property="og:site_name" content="C'est la Z">
+<meta property="og:title" content="A Teacher looks at Advent of Code 2016 #2">
+<meta property="og:url" content="http://cestlaz.github.io/posts/advent-of-code-2016-2/">
+<meta property="og:description" content="Today we're looking at Advent of Code 2016 number 2.
+
+
+
+To change things up, I thought I'd do a video where I live code a solution.
+
+
+
+The solution I present is pretty straightforward - use a 2D array">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-12-08T08:40:49-05:00">
+<meta property="article:tag" content="cs">
+<meta property="article:tag" content="pedagogy">
+<meta property="article:tag" content="programming">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -85,21 +103,103 @@ article: http://ogp.me/ns/article#
 						<div class="col-md-8">
 				
 								
-<article class="tagpage"><header><h1>Posts about programming</h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">A Teacher looks at Advent of Code 2016 #2</a></h1>
+
         <div class="metadata">
-                <p class="feedlink"><a href="../programming.xml" type="application/rss+xml">RSS feed</a></p>
-        </div>
-    </header><ul class="postlist">
-<li>
-<time class="listdate" datetime="2016-12-08T08:40:49-05:00" title="2016-12-08 08:40">2016-12-08 08:40</time><a href="../../posts/advent-of-code-2016-2/" class="listtitle">A Teacher looks at Advent of Code 2016 #2</a><a></a>
-</li>
-        <li>
-<time class="listdate" datetime="2016-12-06T10:46:17-05:00" title="2016-12-06 10:46">2016-12-06 10:46</time><a href="../../posts/advent-code-2016-1/" class="listtitle">A Teacher looks at Advent of Code 2016 #1</a><a></a>
-</li>
-        <li>
-<time class="listdate" datetime="2016-11-26T16:52:56-05:00" title="2016-11-26 16:52">2016-11-26 16:52</time><a href="../../posts/inverted-index/" class="listtitle">Inverted Index Project</a><a></a>
-</li>
-    </ul></article>
+            <p class="byline author vcard"><span class="byline-name fn">
+                    Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2016-12-08T08:40:49-05:00" itemprop="datePublished" title="2016-12-08 08:40">2016-12-08 08:40</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/advent-of-code-2016-2.html">Comments</a>
+
+
+            
+        </p>
+</div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <p>
+Today we're looking at <a href="http://adventofcode.com">Advent of Code</a> 2016 <a href="http://adventofcode.com/2016/day/2">number 2</a>.
+</p>
+
+<p>
+To change things up, I thought I'd do a video where I live code a solution.
+</p>
+
+<p>
+The solution I present is pretty straightforward - use a 2D array (or
+technically, an array of strings) to represent the keypad, parse the
+input, and follow the input instructions to build the code. 
+</p>
+
+<p>
+One of the things I really like about Advent of Code is that every
+problem has two parts and depending on how you solved part 1, you may
+or may not have extra work to do for part 2.
+</p>
+
+<p>
+A couple of years ago, I wrote about one of the coding techniques I
+try to convey to my students. The idea of <a href="http://cestlaz.github.io/posts/2014-02-26-change-the-data.md">changing the data</a> to take
+away edge and special cases. 
+</p>
+
+<p>
+Part two of this problem is a perfect time to use that technique.
+</p>
+
+<p>
+Here's the video, I hope you enjoy it:
+</p>
+
+<div class="export">
+<p>
+&lt;iframe width="560" height="315" src="<a href="https://www.youtube.com/embed/EC8gSrYQ11g">https://www.youtube.com/embed/EC8gSrYQ11g</a>" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</p>
+
+</div>
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_google_plusone_share"></a>
+<a class="addthis_button_hackernews"></a>
+<a class="addthis_button_reddit"></a>
+<a class="addthis_button_gmail"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
+</div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/cs/" rel="tag">cs</a></li>
+            <li><a class="tag p-category" href="../../categories/pedagogy/" rel="tag">pedagogy</a></li>
+            <li><a class="tag p-category" href="../../categories/programming/" rel="tag">programming</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../advent-code-2016-1/" rel="prev" title="A Teacher looks at Advent of Code 2016 #1">Previous post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="cestlaz",
+            disqus_url="http://cestlaz.github.io/posts/advent-of-code-2016-2/",
+        disqus_title="A Teacher looks at Advent of Code 2016 #2",
+        disqus_identifier="cache/posts/advent-of-code-2016-2.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
 </div>
 						<div class="col-md-3">
 								<br><!-- feedburner subscribe via email --><form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CestLaZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">

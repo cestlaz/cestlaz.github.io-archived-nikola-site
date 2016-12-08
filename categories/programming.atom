@@ -3,13 +3,202 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about programming</title>
   <id>http://cestlaz.github.io/categories/programming.atom</id>
-  <updated>2016-11-26T22:01:22Z</updated>
+  <updated>2016-12-08T13:46:44Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/programming.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/programming/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>A Teacher looks at Advent of Code 2016 #2</title>
+    <id>http://cestlaz.github.io/posts/advent-of-code-2016-2/</id>
+    <updated>2016-12-08T08:40:49-05:00</updated>
+    <published>2016-12-08T08:40:49-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-of-code-2016-2/"/>
+    <summary type="html">&lt;p&gt;
+Today we're looking at &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; 2016 &lt;a href="http://adventofcode.com/2016/day/2"&gt;number 2&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+To change things up, I thought I'd do a video where I live code a solution.
+&lt;/p&gt;
+
+&lt;p&gt;
+The solution I present is pretty straightforward - use a 2D array (or
+technically, an array of strings) to represent the keypad, parse the
+input, and follow the input instructions to build the code. 
+&lt;/p&gt;
+
+&lt;p&gt;
+One of the things I really like about Advent of Code is that every
+problem has two parts and depending on how you solved part 1, you may
+or may not have extra work to do for part 2.
+&lt;/p&gt;
+
+&lt;p&gt;
+A couple of years ago, I wrote about one of the coding techniques I
+try to convey to my students. The idea of &lt;a href="http://cestlaz.github.io/posts/2014-02-26-change-the-data.md"&gt;changing the data&lt;/a&gt; to take
+away edge and special cases. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Part two of this problem is a perfect time to use that technique.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the video, I hope you enjoy it:
+&lt;/p&gt;
+
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/EC8gSrYQ11g"&gt;https://www.youtube.com/embed/EC8gSrYQ11g&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="programming" label="programming"/>
+  </entry>
+  <entry>
+    <title>A Teacher looks at Advent of Code 2016 #1</title>
+    <id>http://cestlaz.github.io/posts/advent-code-2016-1/</id>
+    <updated>2016-12-06T10:46:17-05:00</updated>
+    <published>2016-12-06T10:46:17-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-code-2016-1/"/>
+    <summary type="html">&lt;p&gt;
+I recently &lt;a href="http://cestlaz.github.io/posts/advent-of-code-2016/"&gt;posted&lt;/a&gt; about &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; - a series of programming
+problems relseased one a day. While they vary in terms of level of
+difficulty, a number of them make nice problems for introductory to
+mid level programming classes.
+&lt;/p&gt;
+
+&lt;p&gt;
+I thought I'd share some of my thoughts on a few of them starting with
+the first problem from this years competition.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="http://adventofcode.com/2016/day/1"&gt;Take a minute to read it over.&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+At first glance, it might seem to a young programmer that this problem
+requires a two dimensional array - all about (x,y) coordinates but
+then there's a problem - there are no limits on coordinates and we
+can't make an unlimited size array.
+&lt;/p&gt;
+
+&lt;p&gt;
+After thinking a bit, hopefully the programmer realizes that all they
+need to do is keep track of the how the &lt;b&gt;&lt;b&gt;(x,y)&lt;/b&gt;&lt;/b&gt; location changes over
+time. In the solution below, we start at &lt;b&gt;&lt;b&gt;(0,0)&lt;/b&gt;&lt;/b&gt; and count the steps as
+we update two variables &lt;b&gt;&lt;b&gt;x&lt;/b&gt;&lt;/b&gt; and &lt;b&gt;&lt;b&gt;y&lt;/b&gt;&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+When we finish processing the moves, we have our current location in
+&lt;b&gt;&lt;b&gt;(x,y)&lt;/b&gt;&lt;/b&gt; and we have the number of steps taken to get there.
+&lt;/p&gt;
+
+&lt;p&gt;
+The solution below hsa a couple of niceties that a beginning
+programmer might not know or use (and I'm not arguing that what's written is
+superior in any way, it's just what I ended up writing).
+&lt;/p&gt;
+
+&lt;p&gt;
+I make use of tuple destructuring:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+which assigns &lt;b&gt;&lt;b&gt;x&lt;/b&gt;&lt;/b&gt; to the first item in the tuple and &lt;b&gt;&lt;b&gt;y&lt;/b&gt;&lt;/b&gt; the
+second. I used that a number of times 
+&lt;/p&gt;
+
+&lt;p&gt;
+I also use a list  I call &lt;b&gt;&lt;b&gt;dirs&lt;/b&gt;&lt;/b&gt; to hold dx and dy values for the
+four direcitons:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;dirs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;),(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;),(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;),(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+This made it easier to to update the location based on the 4
+directions. I could also have just used if statements.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's all the code:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# assume our starting location is 0,0&lt;/span&gt;
+
+&lt;span class="c1"&gt;# we start with d=0 -&amp;gt; facing north&lt;/span&gt;
+&lt;span class="c1"&gt;# as we turn left or right, we can just increment or decrement d&lt;/span&gt;
+&lt;span class="c1"&gt;# and dirs[d] will give us the appropriate dx and dy to update&lt;/span&gt;
+&lt;span class="c1"&gt;# our locatoin for the next step&lt;/span&gt;
+&lt;span class="n"&gt;dirs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;),(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;),(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;),(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)]&lt;/span&gt;   
+&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;
+
+&lt;span class="c1"&gt;# This is only needed for part 2  - We track visited locations&lt;/span&gt;
+&lt;span class="c1"&gt;# by adding them to the dictionary. If we try to add a location&lt;/span&gt;
+&lt;span class="c1"&gt;# that's already been visited we know that we've found our final &lt;/span&gt;
+&lt;span class="c1"&gt;# location&lt;/span&gt;
+&lt;span class="c1"&gt;# locs={}  # uncomment this line for part 2&lt;/span&gt;
+
+
+&lt;span class="n"&gt;totalsteps&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+
+    &lt;span class="c1"&gt;# the first char in i is the direction to turn in (L or R)&lt;/span&gt;
+    &lt;span class="c1"&gt;# the rest represents the number of steps.&lt;/span&gt;
+    &lt;span class="nb"&gt;dir&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;steps&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:])&lt;/span&gt;
+
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;dir&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="s2"&gt;"L"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="n"&gt;d&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="n"&gt;d&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;dy&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;dirs&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;d&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;steps&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;dx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;y&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;dy&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	&lt;span class="n"&gt;totalsteps&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;totalsteps&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+
+	&lt;span class="c1"&gt;# Uncomment this block for part 2&lt;/span&gt;
+	&lt;span class="c1"&gt;# each time we have a new location, see if it's already in&lt;/span&gt;
+	&lt;span class="c1"&gt;# locs, if it isn't, add it.&lt;/span&gt;
+	&lt;span class="c1"&gt;# if it is, we're visiting somewhere twice so we're done.&lt;/span&gt;
+	&lt;span class="c1"&gt;#if ((x,y) not in locs):&lt;/span&gt;
+	&lt;span class="c1"&gt;#    locs[(x,y)]=1&lt;/span&gt;
+	&lt;span class="c1"&gt;#else:&lt;/span&gt;
+	&lt;span class="c1"&gt;#    print((x,y))&lt;/span&gt;
+	&lt;span class="c1"&gt;#    print(abs(x)+abs(y)) # the answer&lt;/span&gt;
+	&lt;span class="c1"&gt;#    sys.exit(0)&lt;/span&gt;
+	&lt;span class="c1"&gt;#    break&lt;/span&gt;
+
+
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;abs&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="c1"&gt;# the answer&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+Overall, a nice little problem for beginning and intermediate
+students.
+&lt;/p&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="programming" label="programming"/>
+  </entry>
   <entry>
     <title>Inverted Index Project</title>
     <id>http://cestlaz.github.io/posts/inverted-index/</id>
@@ -48,18 +237,190 @@ The basic idea is to map a set of words back to source files. For
 example, given the following four one line files:
 &lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;
 
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col" class="left"&gt;files&lt;/th&gt;
+&lt;th scope="col" class="left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="left"&gt;contents&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;file.01&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;if you prick us do we not bleed&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;file.02&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;if you tickle us do we not laugh&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;file.03&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;if you poison us do we not die and&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;file.04&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;if you wrong us shall we not revenge&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+&lt;p&gt;
+You could build a data structure mapping each word back to the file(s)
+that contain it (partially shown here),
+&lt;/p&gt;
+
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col" class="left"&gt;Word&lt;/th&gt;
+&lt;th scope="col" class="left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="left"&gt;Files containing It's&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;if&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;you&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;prick&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;us&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;do&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01 file.02 file.03&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;p&gt;
+You can, of course, store more information - how many times a word
+appears in a file, where it appears, etc.
 &lt;/p&gt;
 
 &lt;p&gt;
-file.01 : if you prick us do we not bleed
-file.02 : if you tickle us do we not laugh 
-file.03 : if you poison us do we not die and 
-file.04 : if you wrong us shall we not revenge
+This is a fairly easy structure to build. A dictionary where the keys
+are the words in the file and the values are lists of the documents
+containing the words.
 &lt;/p&gt;
-&lt;/blockquote&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="n"&gt;inverted_index&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="s1"&gt;'if'&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'file.01'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.02'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.03'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.04'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+      &lt;span class="s1"&gt;'you'&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'file.01'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.02'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.03'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.04'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+      &lt;span class="s1"&gt;'prick'&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'file.01'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+      &lt;span class="s1"&gt;'us'&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'file.01'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.02'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.03'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.04'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+      &lt;span class="s1"&gt;'do'&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'file.01'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.02'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.03'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
+      &lt;span class="o"&gt;...&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+In addition to letting us work with dictionaries and lists, we can
+also review file access and even the python CSV module if we want.
+&lt;/p&gt;
+
+&lt;p&gt;
+We can immediately write simple queries – "what document(s) contain
+the word 'prick,' but things get more interesting if you write
+functions to perform &lt;b&gt;&lt;b&gt;and&lt;/b&gt;&lt;/b&gt; and &lt;b&gt;&lt;b&gt;or&lt;/b&gt;&lt;/b&gt; queries - "what document(s)
+contain the words 'prick' &lt;b&gt;&lt;b&gt;or&lt;/b&gt;&lt;/b&gt; 'do'" for instance.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why are we building this (besides as a data structure and programming
+exercise)? I've seen a number of references to using an inverted index
+when building a web search engine. In fact, I think that's something
+you do early on in the Udacity Mooc. I just wanted to play with
+information retrieval.
+&lt;/p&gt;
+
+&lt;p&gt;
+I remembered that there was a collection of information, including
+last statements from &lt;a href="https://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html"&gt;executed offenders in Texas&lt;/a&gt;. Someone conveniently
+converted it into a &lt;a href="https://docs.google.com/spreadsheets/d/1HAjZTtPriClY-X3n9whTkA4i5D7bn3bmtHnLoaVICvI/edit#gid=1"&gt;Google Spreadsheet&lt;/a&gt;. The format's a little
+different from our simple four file example but then there's more
+data. It's straightforward enough to download the spreadsheet as a CSV
+file and then read it with a Python program that builds it into an
+inverted index.
+&lt;/p&gt;
+
+&lt;p&gt;
+Now we have some interesting data to play with.
+&lt;/p&gt;
+
+&lt;p&gt;
+How many offenders used words like "sorry" or "apologize?" How about
+references to religion? We can do all sorts of &lt;b&gt;&lt;b&gt;and&lt;/b&gt;&lt;/b&gt; and &lt;b&gt;&lt;b&gt;or&lt;/b&gt;&lt;/b&gt;
+queries. 
+&lt;/p&gt;
+
+&lt;p&gt;
+We just played with this a bit but I could see all sorts of
+explorations. What about taking some great work of literature and
+turning it into an inverted index by chapter. You could query
+characters or certain words and see where and when they appear in the
+book. A new and different way of exploring literature.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, there you have it - an interesting little project we played with
+this past semester. We did it in an intro Python course but I could
+see it as an interesting project in AP CS A using hashmaps and lists.
+&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
     <category term="cs" label="cs"/>
