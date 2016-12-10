@@ -1,5 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>C'est la Z (cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 08 Dec 2016 13:48:54 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Teacher looks at Advent of Code 2016 #2</title><link>http://cestlaz.github.io/posts/advent-of-code-2016-2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link rel="self" href="http://cestlaz.github.io/categories/cs.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 10 Dec 2016 16:37:40 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Advent of Code 2016 - Check your data</title><link>http://cestlaz.github.io/posts/advent-of-code-2016-check-data/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+I'm spending the weekend up in Michigan. Visiting my brother and is
+family. We're here to see the &lt;a href="http://umgass.org"&gt;UMGASS&lt;/a&gt; production of Gilbert and
+Sullivan's &lt;a href="http://www.umgass.org/current-production"&gt;The Sorcerer&lt;/a&gt;. Batya also came up from Cornell to join us so
+the two families are all togehter for the first time in about 10
+years.
+&lt;/p&gt;
+
+&lt;p&gt;
+This hasn't left much time for &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; but I did manage to
+finish yesterday's challenge this morning.
+&lt;/p&gt;
+
+&lt;p&gt;
+What took me so long? Much like last year, it was &lt;a href="http://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/"&gt;because I'm an
+idiot&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The &lt;a href="http://adventofcode.com/2016/day/9"&gt;problem&lt;/a&gt; seemed pretty straighforward. I coded a solution and it
+worked for all the test cases. I tried it on my data set but
+the grader said the answer was wrong. I went through the problem a
+number of times as well sa my code. I figured I either mis-interpreted
+the question or had some bug. I found neither to be true.
+&lt;/p&gt;
+
+&lt;p&gt;
+After some frustration, I went over to the Advent of Code &lt;a href="https://www.reddit.com/r/adventofcode/"&gt;subreddit&lt;/a&gt;
+grabbed a couple of posted solutions (trying not to look at them) and
+ran both on my data - those solutions got the same answer on my data
+set as I did. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This morning, I asked Batya to look over my code and the problem (it's
+always good to have a daughter that's smarted than you are) but she
+saw no problems.
+&lt;/p&gt;
+
+&lt;p&gt;
+Finally, I emailed my buddy JonAlf since I know he completed the problem. He sent back his answer along
+with his data set and I got the same answer as he did on his data.
+&lt;/p&gt;
+
+&lt;p&gt;
+What could be the problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+His data set was about 12k characters long, mine was 4k. Something had
+to be wrong here. I went back to the Advent of Code site and grabbed
+the data set again. This time, I went to the page and did a "save-as"
+to save it - last time, I cut and pasted.
+&lt;/p&gt;
+
+&lt;p&gt;
+The cut and paste version was 4k, the save-as was 12k. This time it
+worked and was accepted and I also finished part 2 in short order.
+&lt;/p&gt;
+
+&lt;p&gt;
+The moral of the story – make sure you check the integrity of your
+data set - you'll never get the right answer if you're working with
+the wrong data.
+&lt;/p&gt;</description><category>cs</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-of-code-2016-check-data/</guid><pubDate>Sat, 10 Dec 2016 16:25:38 GMT</pubDate></item><item><title>A Teacher looks at Advent of Code 2016 #2</title><link>http://cestlaz.github.io/posts/advent-of-code-2016-2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 Today we're looking at &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; 2016 &lt;a href="http://adventofcode.com/2016/day/2"&gt;number 2&lt;/a&gt;.
 &lt;/p&gt;
 

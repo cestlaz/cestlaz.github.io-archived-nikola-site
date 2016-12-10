@@ -1,5 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 08 Dec 2016 13:48:55 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Teacher looks at Advent of Code 2016 #2</title><link>http://cestlaz.github.io/posts/advent-of-code-2016-2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link rel="self" href="http://cestlaz.github.io/rss.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 10 Dec 2016 16:37:40 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Advent of Code 2016 - Check your data</title><link>http://cestlaz.github.io/posts/advent-of-code-2016-check-data/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+I'm spending the weekend up in Michigan. Visiting my brother and is
+family. We're here to see the &lt;a href="http://umgass.org"&gt;UMGASS&lt;/a&gt; production of Gilbert and
+Sullivan's &lt;a href="http://www.umgass.org/current-production"&gt;The Sorcerer&lt;/a&gt;. Batya also came up from Cornell to join us so
+the two families are all togehter for the first time in about 10
+years.
+&lt;/p&gt;
+
+&lt;p&gt;
+This hasn't left much time for &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; but I did manage to
+finish yesterday's challenge this morning.
+&lt;/p&gt;
+
+&lt;p&gt;
+What took me so long? Much like last year, it was &lt;a href="http://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/"&gt;because I'm an
+idiot&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The &lt;a href="http://adventofcode.com/2016/day/9"&gt;problem&lt;/a&gt; seemed pretty straighforward. I coded a solution and it
+worked for all the test cases. I tried it on my data set but
+the grader said the answer was wrong. I went through the problem a
+number of times as well sa my code. I figured I either mis-interpreted
+the question or had some bug. I found neither to be true.
+&lt;/p&gt;
+
+&lt;p&gt;
+After some frustration, I went over to the Advent of Code &lt;a href="https://www.reddit.com/r/adventofcode/"&gt;subreddit&lt;/a&gt;
+grabbed a couple of posted solutions (trying not to look at them) and
+ran both on my data - those solutions got the same answer on my data
+set as I did. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This morning, I asked Batya to look over my code and the problem (it's
+always good to have a daughter that's smarted than you are) but she
+saw no problems.
+&lt;/p&gt;
+
+&lt;p&gt;
+Finally, I emailed my buddy JonAlf since I know he completed the problem. He sent back his answer along
+with his data set and I got the same answer as he did on his data.
+&lt;/p&gt;
+
+&lt;p&gt;
+What could be the problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+His data set was about 12k characters long, mine was 4k. Something had
+to be wrong here. I went back to the Advent of Code site and grabbed
+the data set again. This time, I went to the page and did a "save-as"
+to save it - last time, I cut and pasted.
+&lt;/p&gt;
+
+&lt;p&gt;
+The cut and paste version was 4k, the save-as was 12k. This time it
+worked and was accepted and I also finished part 2 in short order.
+&lt;/p&gt;
+
+&lt;p&gt;
+The moral of the story – make sure you check the integrity of your
+data set - you'll never get the right answer if you're working with
+the wrong data.
+&lt;/p&gt;</description><category>cs</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-of-code-2016-check-data/</guid><pubDate>Sat, 10 Dec 2016 16:25:38 GMT</pubDate></item><item><title>A Teacher looks at Advent of Code 2016 #2</title><link>http://cestlaz.github.io/posts/advent-of-code-2016-2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 Today we're looking at &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; 2016 &lt;a href="http://adventofcode.com/2016/day/2"&gt;number 2&lt;/a&gt;.
 &lt;/p&gt;
 
@@ -983,78 +1047,4 @@ Relevant links:
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-22-emacsclient/</guid><pubDate>Wed, 16 Nov 2016 16:00:00 GMT</pubDate></item><item><title>Using Emacs - 21 - web mode</title><link>http://cestlaz.github.io/posts/using-emacs-21-web-mode/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-Quick post today. 
-&lt;/p&gt;
-
-&lt;p&gt;
-The video goes over web-mode - my preferred weapon for html and all the goodies you embed in an html file.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's multi-modal so it acts sensibly regardless of wether you're editing html, css, javascript or even templates in a single file.
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;b&gt;&lt;b&gt;Note:&lt;/b&gt;&lt;/b&gt; In the video, web-mode wasn't automatically inserting
-quotes. I had to set hte following variable to fix this:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(setq web-mode-enable-auto-quoting t)
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;
-Giving the final configuration I'm currently using: 
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;web-mode&lt;/span&gt;
-    &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-    &lt;span class="nv"&gt;:config&lt;/span&gt;
-	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'auto-mode-alist&lt;/span&gt; &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"\\.html?\\'"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;web-mode&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;web-mode-engines-alist&lt;/span&gt;
-	       &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"django"&lt;/span&gt;    &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"\\.html\\'"&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
-	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;web-mode-ac-sources-alist&lt;/span&gt;
-	       &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"css"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ac-source-css-property&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-		 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"html"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ac-source-words-in-buffer&lt;/span&gt; &lt;span class="nv"&gt;ac-source-abbrev&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;web-mode-enable-auto-closing&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;web-mode-enable-auto-quoting&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="c1"&gt;; this fixes the quote problem I mentioned&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-The web-mode &lt;a href="http://web-mode.org"&gt;documentation&lt;/a&gt; has more information including a nice chart of all the key bindings.
-&lt;/p&gt;
-
-
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/69bQa5n23jc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
-&lt;p&gt;
-Relevant links:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Video series overview page:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Code:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-21-web-mode/</guid><pubDate>Wed, 16 Nov 2016 16:00:00 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-22-emacsclient/</guid><pubDate>Wed, 16 Nov 2016 16:00:00 GMT</pubDate></item></channel></rss>
