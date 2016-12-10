@@ -1,0 +1,56 @@
+#+BEGIN_COMMENT
+.. title: Advent of Code 2016 - Check your data
+.. slug: advent-of-code-2016-check-data
+.. date: 2016-12-10 11:25:38 UTC-05:00
+.. tags: cs, programming
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+I'm spending the weekend up in Michigan. Visiting my brother and is
+family. We're here to see the [[http://umgass.org][UMGASS]] production of Gilbert and
+Sullivan's [[http://www.umgass.org/current-production][The Sorcerer]]. Batya also came up from Cornell to join us so
+the two families are all togehter for the first time in about 10
+years.
+
+This hasn't left much time for [[http://adventofcode.com][Advent of Code]] but I did manage to
+finish yesterday's challenge this morning.
+
+What took me so long? Much like last year, it was [[http://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/][because I'm an
+idiot]]. 
+
+The [[http://adventofcode.com/2016/day/9][problem]] seemed pretty straighforward. I coded a solution and it
+worked for all the test cases. I tried it on my data set but
+the grader said the answer was wrong. I went through the problem a
+number of times as well sa my code. I figured I either mis-interpreted
+the question or had some bug. I found neither to be true.
+
+After some frustration, I went over to the Advent of Code [[https://www.reddit.com/r/adventofcode/][subreddit]]
+grabbed a couple of posted solutions (trying not to look at them) and
+ran both on my data - those solutions got the same answer on my data
+set as I did. 
+
+This morning, I asked Batya to look over my code and the problem (it's
+always good to have a daughter that's smarted than you are) but she
+saw no problems.
+
+Finally, I emailed my buddy JonAlf since I know he completed the problem. He sent back his answer along
+with his data set and I got the same answer as he did on his data.
+ 
+What could be the problem.
+
+His data set was about 12k characters long, mine was 4k. Something had
+to be wrong here. I went back to the Advent of Code site and grabbed
+the data set again. This time, I went to the page and did a "save-as"
+to save it - last time, I cut and pasted.
+
+The cut and paste version was 4k, the save-as was 12k. This time it
+worked and was accepted and I also finished part 2 in short order.
+
+The moral of the story -- make sure you check the integrity of your
+data set - you'll never get the right answer if you're working with
+the wrong data.
+
+
