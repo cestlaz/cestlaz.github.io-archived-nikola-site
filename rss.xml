@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link rel="self" href="http://cestlaz.github.io/rss.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 10 Dec 2016 16:37:40 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Advent of Code 2016 - Check your data</title><link>http://cestlaz.github.io/posts/advent-of-code-2016-check-data/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link rel="self" href="http://cestlaz.github.io/rss.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 10 Dec 2016 16:39:21 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Advent of Code 2016 - Check your data</title><link>http://cestlaz.github.io/posts/advent-of-code-2016-check-data/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 I'm spending the weekend up in Michigan. Visiting my brother and is
 family. We're here to see the &lt;a href="http://umgass.org"&gt;UMGASS&lt;/a&gt; production of Gilbert and
 Sullivan's &lt;a href="http://www.umgass.org/current-production"&gt;The Sorcerer&lt;/a&gt;. Batya also came up from Cornell to join us so
@@ -63,6 +63,10 @@ worked and was accepted and I also finished part 2 in short order.
 The moral of the story – make sure you check the integrity of your
 data set - you'll never get the right answer if you're working with
 the wrong data.
+&lt;/p&gt;
+
+&lt;p&gt;
+In case anyone's interested, you can find my AoC code &lt;a href="https://github.com/zamansky/advent2016"&gt;here&lt;/a&gt;.
 &lt;/p&gt;</description><category>cs</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-of-code-2016-check-data/</guid><pubDate>Sat, 10 Dec 2016 16:25:38 GMT</pubDate></item><item><title>A Teacher looks at Advent of Code 2016 #2</title><link>http://cestlaz.github.io/posts/advent-of-code-2016-2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 Today we're looking at &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; 2016 &lt;a href="http://adventofcode.com/2016/day/2"&gt;number 2&lt;/a&gt;.
 &lt;/p&gt;
