@@ -1,0 +1,84 @@
+#+BEGIN_COMMENT
+.. title: It gets easier (or advent of code 2016 day 19)
+.. slug: it-gets-easier-advent19
+.. date: 2016-12-19 19:56:09 UTC-05:00
+.. tags: coding, cs
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+Today's [[http://adventofcode.com/2016/day/19][Advent of Code]] problem was a variant on the [[http://mathworld.wolfram.com/JosephusProblem.html][Josephus
+problem]]. 
+
+I recalled that there was a formula to figure out the 
+sole survivor but I decide to run a simulation rather than looking it
+up. I also decided to write it up in C++, well, really C with cout
+instead of printf.
+
+Part 1 was the traditional problem. Part 2 was a variant where at each
+iteration, you remove the elf opposite the elf being processed (see
+the [[http://adventofcode.com/2016/day/19][problem description]] for details).
+
+For both solutions I coded up a circular doubly linked list:
+
+#+BEGIN_SRC C
+struct node *make_ring(int size){
+  int i;
+  struct node *n;
+  struct node *current,*first;
+
+  first = (struct node *)malloc(sizeof(struct node));
+  first->id=1;
+  current=first;
+  
+  for  (i=0;i<size-1;i++){
+    n=(struct node *)malloc(sizeof(struct node));
+    n->id=i+1;
+    n->prev=current;
+    current->next=n;
+    current=n;
+    
+  }
+  current->next=first;
+  first->prev=current;
+  return first;
+
+}
+
+#+END_SRC 
+
+You can see my complete solutions [[https://github.com/zamansky/advent2016/blob/master/day19.cpp][here]].
+
+I was thinking about how I wrote the code -- I just rolled it off the
+top of my head. The same was true for the earlier AoC problems where I
+had to implement a breadth first search or something similar. 
+
+I'm not making a statement about my amazing coding abilities - linked
+lists and graph searches are pretty basic, but rather than having done
+the CS thing for so long, these fundamentals have become somewhat
+routine. I haven't really written C code in years but other than a
+couple of typos (and a stupid mistake in calculating steps) things
+worked right off the bat. 
+
+I remember a time when I was in college or even a young professional
+when I would use an array and an index as a stack or queue - not
+because it made more sense but rather, because I wasn't fully
+comfortable with memory manipulation and linked lists. The same could
+be said for my first few years working with anything more than the
+simplest recursion.
+
+All of this is to say that it does get easier.
+
+Things that seem trivial to us now seemed
+insurmountable when we were beginners. Last year, I wrote about an overnight homework
+assignment I gave to my class that would have been a final project a
+year earlier (the post is [[http://cestlaz.github.io/posts/2015-02-11-taking-stock-self-assess.html/#.WFiGl99iekA][here]] but the homework links are no longer
+active) and a few weeks ago I recall a fellow CS teacher talking about
+how much longer it takes his students to write a chunk of code than it
+takes the teacher.
+
+New things are challenging and take time but with practice and
+persistence techniques that were once daunting can become tools ready
+at our disposal to use on a whim.
