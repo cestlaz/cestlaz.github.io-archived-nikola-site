@@ -1,5 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link type="application/rss+xml" href="http://cestlaz.github.io/rss.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 20 Dec 2016 01:25:28 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>It gets easier (or advent of code 2016 day 19)</title><link>http://cestlaz.github.io/posts/it-gets-easier-advent19/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link type="application/rss+xml" href="http://cestlaz.github.io/rss.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 21 Dec 2016 01:25:55 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Being productive between terms</title><link>http://cestlaz.github.io/posts/between-semesters/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+We're now at the end of my first semester at Hunter. The Spring term
+classes don't start until the end of January. I've got an assortment
+of projects to work on but some of the students should have a nice
+block of relatively free time.
+&lt;/p&gt;
+
+&lt;p&gt;
+I  wanted to share some recommendations on things to explore with a
+few student groups and thought it would be easier to write those
+recommendations down here once and then just share a link.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, here we go.
+&lt;/p&gt;
+
+&lt;p&gt;
+Much of the first few CS classes at Hunter and elsewhere focus on the
+fundamentals of programming, data structures, and algorithms. It's all
+good stuff but students want to supplement that classroom knowledge
+with some practical skills.
+&lt;/p&gt;
+
+&lt;p&gt;
+I recommend playing with a language like Python that can be used in
+all sorts of domains. If you haven't played with it, check it out.
+&lt;/p&gt;
+
+&lt;p&gt;
+I like &lt;a href="https://automatetheboringstuff.com/"&gt;Automate the Boring Stuff with Python&lt;/a&gt; as a nice, free, online
+text.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'd also recommend learning a web platform like &lt;a href="http://flask.pocoo.org"&gt;Flask.&lt;/a&gt; Flask is a web
+framework in Python. The web site has a nice getting started guide and
+tutorial but here are a couple of other great learning Flask
+resources:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/realpython/discover-flask"&gt;Discover Flask&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://exploreflask.com/en/latest/"&gt;Explore Flask&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Once armed with the above, you'll be well positioned to work on a
+variety of your own projects, enter hackathons, and more.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm also a big believer in using good tools. I love the emacs text
+editor. Why not spend some time going through the web series on &lt;a href="http://cestlaz.github.io/stories/emacs"&gt;Using
+Emacs&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Finally, if you're not using Git, you should be. Here are a couple of
+playlists to get you started:
+&lt;/p&gt;
+
+&lt;p&gt;
+-&lt;i&gt; https://www.youtube.com/playlist?list=PLq0VzNtDZbe9QLq8YCizFN2TVWvlLjrvX&lt;/i&gt;
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/playlist?list=PLoGsJC6ZzSwm959Do9ZgZM9U-xp27NEaQ"&gt;https://www.youtube.com/playlist?list=PLoGsJC6ZzSwm959Do9ZgZM9U-xp27NEaQ&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+And if you haven't done so already, head over to &lt;a href="https://education.github.com/pack"&gt;Github Education&lt;/a&gt; and
+sign up for a student developer pack.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, there are a few recommendations on things to work on before the
+next term begins.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/between-semesters/</guid><pubDate>Wed, 21 Dec 2016 01:13:00 GMT</pubDate></item><item><title>It gets easier (or advent of code 2016 day 19)</title><link>http://cestlaz.github.io/posts/it-gets-easier-advent19/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 Today's &lt;a href="http://adventofcode.com/2016/day/19"&gt;Advent of Code&lt;/a&gt; problem was a variant on the &lt;a href="http://mathworld.wolfram.com/JosephusProblem.html"&gt;Josephus
 problem&lt;/a&gt;. 
 &lt;/p&gt;
@@ -675,165 +763,4 @@ more likely they are to just want confirmation of their own bias.
 &lt;p&gt;
 You might get a seat at the table but you also might end up lending
 your reputation to a cause you don't believe in.
-&lt;/p&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/selling-out-or-a-seat-at-the-table/</guid><pubDate>Thu, 01 Dec 2016 00:47:17 GMT</pubDate></item><item><title>Using Emacs - 23 - Org Capture 1</title><link>http://cestlaz.github.io/posts/using-emacs-23-capture-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-Org mode has an amazing feature - &lt;b&gt;&lt;b&gt;org-capture&lt;/b&gt;&lt;/b&gt;. I only started
-using it recently but it's really awesome. 
-&lt;/p&gt;
-
-&lt;p&gt;
-What took me so long?
-&lt;/p&gt;
-
-&lt;p&gt;
-Probably that the manual seemed a little intimidating. 
-&lt;/p&gt;
-
-&lt;p&gt;
-It really isn't hard, though. Combined with what I'll go over in the
-next video and post (and a future one for Google calendar sync) it's
-what I use for:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;recording blog ideas
-&lt;/li&gt;
-&lt;li&gt;managing bookmarks
-&lt;/li&gt;
-&lt;li&gt;taking short Notes
-&lt;/li&gt;
-&lt;li&gt;managing my calendar.
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-I use the binding:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-c c"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-       &lt;span class="ss"&gt;'org-capture&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-By default, running org-capture brings up a form to capture a "task"
-but things get really cool when you start making your own capture
-templates. With capture templates, you can speed up recording
-information and then tell org-mode to store it where you want it.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here are my template settings. 
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;org-capture-templates&lt;/span&gt;
-      &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"a"&lt;/span&gt; &lt;span class="s"&gt;"Appointment"&lt;/span&gt; &lt;span class="nv"&gt;entry&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;file&lt;/span&gt;  &lt;span class="s"&gt;"~/Dropbox/orgfiles/gcal.org"&lt;/span&gt; &lt;span class="s"&gt;"Appointments"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	 &lt;span class="s"&gt;"* TODO %?\n:PROPERTIES:\n\n:END:\nDEADLINE: %^T \n %i\n"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"n"&lt;/span&gt; &lt;span class="s"&gt;"Note"&lt;/span&gt; &lt;span class="nv"&gt;entry&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;file+headline&lt;/span&gt; &lt;span class="s"&gt;"~/Dropbox/orgfiles/notes.org"&lt;/span&gt; &lt;span class="s"&gt;"Notes"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	 &lt;span class="s"&gt;"* Note %?\n%T"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"l"&lt;/span&gt; &lt;span class="s"&gt;"Link"&lt;/span&gt; &lt;span class="nv"&gt;entry&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;file+headline&lt;/span&gt; &lt;span class="s"&gt;"~/Dropbox/orgfiles/links.org"&lt;/span&gt; &lt;span class="s"&gt;"Links"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	 &lt;span class="s"&gt;"* %? %^L %^g \n%T"&lt;/span&gt; &lt;span class="nv"&gt;:prepend&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"b"&lt;/span&gt; &lt;span class="s"&gt;"Blog idea"&lt;/span&gt; &lt;span class="nv"&gt;entry&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;file+headline&lt;/span&gt; &lt;span class="s"&gt;"~/Dropbox/orgfiles/i.org"&lt;/span&gt; &lt;span class="s"&gt;"Blog Topics:"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	 &lt;span class="s"&gt;"* %?\n%T"&lt;/span&gt; &lt;span class="nv"&gt;:prepend&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"t"&lt;/span&gt; &lt;span class="s"&gt;"To Do Item"&lt;/span&gt; &lt;span class="nv"&gt;entry&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;file+headline&lt;/span&gt; &lt;span class="s"&gt;"~/Dropbox/orgfiles/i.org"&lt;/span&gt; &lt;span class="s"&gt;"To Do Items"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	 &lt;span class="s"&gt;"* %?\n%T"&lt;/span&gt; &lt;span class="nv"&gt;:prepend&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"j"&lt;/span&gt; &lt;span class="s"&gt;"Journal"&lt;/span&gt; &lt;span class="nv"&gt;entry&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;file+datetree&lt;/span&gt; &lt;span class="s"&gt;"~/Dropbox/journal.org"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	 &lt;span class="s"&gt;"* %?\nEntered on %U\n  %i\n  %a"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"s"&lt;/span&gt; &lt;span class="s"&gt;"Screencast"&lt;/span&gt; &lt;span class="nv"&gt;entry&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;file&lt;/span&gt; &lt;span class="s"&gt;"~/Dropbox/orgfiles/screencastnotes.org"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	 &lt;span class="s"&gt;"* %?\n%i\n"&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Let's look at the &lt;b&gt;&lt;b&gt;Blog&lt;/b&gt;&lt;/b&gt; entry:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"b"&lt;/span&gt; &lt;span class="s"&gt;"Blog idea"&lt;/span&gt; &lt;span class="nv"&gt;entry&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;file+headline&lt;/span&gt; &lt;span class="s"&gt;"~/Dropbox/orgfiles/i.org"&lt;/span&gt; &lt;span class="s"&gt;"Blog Topics:"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
- &lt;span class="s"&gt;"* %?\n%T"&lt;/span&gt; &lt;span class="nv"&gt;:prepend&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;
-It's a list with a bunch of options. The first string &lt;b&gt;&lt;b&gt;b&lt;/b&gt;&lt;/b&gt; is the
-key to type to select this template, &lt;b&gt;&lt;b&gt;Blog idea&lt;/b&gt;&lt;/b&gt; is the actual name
-for this template. 
-&lt;/p&gt;
-
-&lt;p&gt;
-The next item, &lt;b&gt;&lt;b&gt;entry&lt;/b&gt;&lt;/b&gt; describes the type of template you're
-creating. &lt;b&gt;&lt;b&gt;entry&lt;/b&gt;&lt;/b&gt; says you're going to create an org node with a
-headline which can then be added to an org-file. You can also have
-your template create things like an org list &lt;b&gt;&lt;b&gt;item&lt;/b&gt;&lt;/b&gt; a checkbox
-&lt;b&gt;&lt;b&gt;checkitem&lt;/b&gt;&lt;/b&gt; or even &lt;b&gt;&lt;b&gt;plain&lt;/b&gt;&lt;/b&gt; text. You can see the full set of
-options &lt;a href="http://orgmode.org/manual/Template-elements.html#Template-elements"&gt;here&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-Next, in parentheses, you have the target - where to store the captured
-info. The &lt;b&gt;&lt;b&gt;Blog idea&lt;/b&gt;&lt;/b&gt; template says &lt;b&gt;&lt;b&gt;file+headline&lt;/b&gt;&lt;/b&gt; followed by a
-filename in quotes and a headline in quotes. This says to store the
-new org heading you're capturing in the file
-"~/Dropbox/orgfiles/i.org" under the heading "Blog Topics:" Contrast
-this to the &lt;b&gt;&lt;b&gt;appointments&lt;/b&gt;&lt;/b&gt; template which just specifies &lt;b&gt;&lt;b&gt;file&lt;/b&gt;&lt;/b&gt;
-and a filename. The &lt;b&gt;&lt;b&gt;appointments&lt;/b&gt;&lt;/b&gt; template will just append the new
-appointment to its specified file whereas &lt;b&gt;&lt;b&gt;Blog idea&lt;/b&gt;&lt;/b&gt; will prepend
-(due to the &lt;b&gt;&lt;b&gt;:prepend&lt;/b&gt;&lt;/b&gt; option at the end of the template) to the
-"Blog Topics:" heading in &lt;b&gt;&lt;b&gt;i.org&lt;/b&gt;&lt;/b&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-After this we have the actual template: "* %?\n%T" - the %? and %T are
-placeholders for substitutions. The &lt;b&gt;&lt;b&gt;%T&lt;/b&gt;&lt;/b&gt; prompts for a date with a
-timestamp and the &lt;b&gt;&lt;b&gt;%?&lt;/b&gt;&lt;/b&gt; is where to leave the cursor for final input
-before saving the capture.
-&lt;/p&gt;
-
-&lt;p&gt;
-Finally, &lt;b&gt;&lt;b&gt;:prepend&lt;/b&gt;&lt;/b&gt; and other options can be found at the above link.
-&lt;/p&gt;
-
-&lt;p&gt;
-All the substitutions can be found in &lt;a href="http://orgmode.org/manual/Template-expansion.html#Template-expansion"&gt;the docs&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-Once you've set up your templates, it's quick and easy to capture
-information. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This video shows the basics. The next one shows how to pop up a
-capture even when you're not in emacs and how I use org-capture to
-maintain my web bookmarks.
-&lt;/p&gt;
-
-&lt;p&gt;
-More information on capture templates can be found &lt;a href="http://orgmode.org/manual/Capture-templates.html"&gt;here&lt;/a&gt;.
-&lt;/p&gt;
-
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-wPfxuxIfeU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
-&lt;p&gt;
-Relevant links:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Video series overview page:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Code:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-23-capture-1/</guid><pubDate>Tue, 29 Nov 2016 16:00:00 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/selling-out-or-a-seat-at-the-table/</guid><pubDate>Thu, 01 Dec 2016 00:47:17 GMT</pubDate></item></channel></rss>
