@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2016-12-26T15:56:36Z</updated>
+  <updated>2016-12-26T16:00:18Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,150 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-26.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Using Emacs - 25 - Tramp</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-25-tramp/</id>
+    <updated>2016-12-26T10:00:26-05:00</updated>
+    <published>2016-12-26T10:00:26-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-25-tramp/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Today's video talks about using emacs &lt;a href="https://www.emacswiki.org/emacs/TrampMode"&gt;Tramp&lt;/a&gt; mode.
+&lt;/p&gt;
+
+&lt;p&gt;
+Tramp mode allows you to edit remote files using your local emacs. I usually do this over ssh.
+&lt;/p&gt;
+
+&lt;p&gt;
+To edit a file on a machine &lt;b&gt;&lt;b&gt;www.cstuy.org&lt;/b&gt;&lt;/b&gt; I would first
+&lt;b&gt;&lt;b&gt;find-file&lt;/b&gt;&lt;/b&gt; using &lt;b&gt;&lt;b&gt;C-c C-f&lt;/b&gt;&lt;/b&gt; and then for the file name to open:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/ssh:www.cstuy.org:/home/zamansky/sc/testfile
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+this would open the file &lt;b&gt;&lt;b&gt;testfile&lt;/b&gt;&lt;/b&gt; in the absolute directory
+&lt;b&gt;&lt;b&gt;/home/zamansky/sc&lt;/b&gt;&lt;/b&gt;. If my username on the remote machine is
+different:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/ssh:username@www.cstuy.org:/home/zamansky/sc/testfile
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+And I can also work relative to my home directory:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/ssh:username@www.cstuy.org:sc/testfile
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+If I just hit enter after the machine name and &lt;b&gt;&lt;b&gt;:&lt;/b&gt;&lt;/b&gt; - 
+&lt;/p&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/ssh:username@www.cstuy.org:
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+I end up in a dired buffer on the remote machine.
+&lt;/p&gt;
+
+&lt;p&gt;
+Likewise if I run a &lt;b&gt;&lt;b&gt;shell&lt;/b&gt;&lt;/b&gt; or &lt;b&gt;&lt;b&gt;eshell&lt;/b&gt;&lt;/b&gt; in the tramp buffer, it
+will run the shell on the remote machine. In the video I showed how
+shell didn't work because locally, I'm configured to use zsh and I
+don't have zsh installed remotely. Eshell, however, worked fine.
+&lt;/p&gt;
+
+&lt;p&gt;
+Using tramp in this way gives us all of the power of our local emacs
+configuration to edit a file on a remote machine.
+&lt;/p&gt;
+
+&lt;p&gt;
+You can also use tramp to edit local files as root using sudo:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo::/tmp/sc/rootfile
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Note the double colon. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Finally, you can do the double-whammy - remote root editing:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ssh::www.cstu.org|sudo:www.cstuy.org:/home/zamansky/sc/rootfile
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;
+If you use zsh and any of this freezes, just do a search on "zsh
+tramp" and the top couple of hits will tell you what to add to your
+configuration files to fix things.
+&lt;/p&gt;
+
+&lt;p&gt;
+Finally, I mentioned in the video that I don't use tramp all that much
+anymore. That's mostly because I don't do much remote editing
+anymore. I used it more when I was administering a number of machines
+at Stuyvesant. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I still use it periodically, but I also use &lt;a href="https://github.com/libfuse/sshfs"&gt;sshfs&lt;/a&gt;, a Linux tool (which
+may be available for other operating systems) that allows me to mount
+a directory tree from a remote machine and use it on my local machine.
+&lt;/p&gt;
+
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Iqh50fgbIVk" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The command I bind to the keyboard shortcut in my window manager:
+&lt;/p&gt;
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Iqh50fgbIVk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>Being productive between terms</title>
     <id>http://cestlaz.github.io/posts/between-semesters/</id>
@@ -652,150 +796,6 @@ students.
     <category term="cs" label="cs"/>
     <category term="pedagogy" label="pedagogy"/>
     <category term="programming" label="programming"/>
-  </entry>
-  <entry>
-    <title>Using Emacs - 25 - Tramp</title>
-    <id>http://cestlaz.github.io/posts/using-emacs-25-tramp/</id>
-    <updated>2016-12-03T15:45:26-05:00</updated>
-    <published>2016-12-03T15:45:26-05:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-25-tramp/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-Today's video talks about using emacs &lt;a href="https://www.emacswiki.org/emacs/TrampMode"&gt;Tramp&lt;/a&gt; mode.
-&lt;/p&gt;
-
-&lt;p&gt;
-Tramp mode allows you to edit remote files using your local emacs. I usually do this over ssh.
-&lt;/p&gt;
-
-&lt;p&gt;
-To edit a file on a machine &lt;b&gt;&lt;b&gt;www.cstuy.org&lt;/b&gt;&lt;/b&gt; I would first
-&lt;b&gt;&lt;b&gt;find-file&lt;/b&gt;&lt;/b&gt; using &lt;b&gt;&lt;b&gt;C-c C-f&lt;/b&gt;&lt;/b&gt; and then for the file name to open:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/ssh:www.cstuy.org:/home/zamansky/sc/testfile
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-this would open the file &lt;b&gt;&lt;b&gt;testfile&lt;/b&gt;&lt;/b&gt; in the absolute directory
-&lt;b&gt;&lt;b&gt;/home/zamansky/sc&lt;/b&gt;&lt;/b&gt;. If my username on the remote machine is
-different:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/ssh:username@www.cstuy.org:/home/zamansky/sc/testfile
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-And I can also work relative to my home directory:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/ssh:username@www.cstuy.org:sc/testfile
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-If I just hit enter after the machine name and &lt;b&gt;&lt;b&gt;:&lt;/b&gt;&lt;/b&gt; - 
-&lt;/p&gt;
-
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/ssh:username@www.cstuy.org:
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-I end up in a dired buffer on the remote machine.
-&lt;/p&gt;
-
-&lt;p&gt;
-Likewise if I run a &lt;b&gt;&lt;b&gt;shell&lt;/b&gt;&lt;/b&gt; or &lt;b&gt;&lt;b&gt;eshell&lt;/b&gt;&lt;/b&gt; in the tramp buffer, it
-will run the shell on the remote machine. In the video I showed how
-shell didn't work because locally, I'm configured to use zsh and I
-don't have zsh installed remotely. Eshell, however, worked fine.
-&lt;/p&gt;
-
-&lt;p&gt;
-Using tramp in this way gives us all of the power of our local emacs
-configuration to edit a file on a remote machine.
-&lt;/p&gt;
-
-&lt;p&gt;
-You can also use tramp to edit local files as root using sudo:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo::/tmp/sc/rootfile
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Note the double colon. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Finally, you can do the double-whammy - remote root editing:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ssh::www.cstu.org|sudo:www.cstuy.org:/home/zamansky/sc/rootfile
-&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;
-If you use zsh and any of this freezes, just do a search on "zsh
-tramp" and the top couple of hits will tell you what to add to your
-configuration files to fix things.
-&lt;/p&gt;
-
-&lt;p&gt;
-Finally, I mentioned in the video that I don't use tramp all that much
-anymore. That's mostly because I don't do much remote editing
-anymore. I used it more when I was administering a number of machines
-at Stuyvesant. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I still use it periodically, but I also use &lt;a href="https://github.com/libfuse/sshfs"&gt;sshfs&lt;/a&gt;, a Linux tool (which
-may be available for other operating systems) that allows me to mount
-a directory tree from a remote machine and use it on my local machine.
-&lt;/p&gt;
-
-
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Iqh50fgbIVk" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-The command I bind to the keyboard shortcut in my window manager:
-&lt;/p&gt;
-
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/gjr9mP01oWE" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
-&lt;p&gt;
-Relevant links:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Video series overview page:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Code:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="emacs" label="emacs"/>
-    <category term="tools" label="tools"/>
   </entry>
   <entry>
     <title>Using Emacs - 24 - Org Capture 2</title>
