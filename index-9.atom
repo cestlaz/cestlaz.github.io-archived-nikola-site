@@ -3,7 +3,7 @@
 <feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 9)</title>
   <id>http://cestlaz.github.io/index-9.atom</id>
-  <updated>2016-09-30T12:12:19Z</updated>
+  <updated>2016-12-18T00:23:12Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -118,7 +118,7 @@ point.&lt;/p&gt;
 platform on which you can look at many problem solving techniques.&lt;/p&gt;
 &lt;p&gt;We can look at the basic, straightforward , imperative solution:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight java %}
+&lt;p _="%" endhighlight&gt;{% highlight java %}
 public int fib1(int n) {
   int a=1,b=1;
   for (int i=0;i&amp;lt;n;i++){
@@ -182,7 +182,7 @@ have &lt;strong&gt;a&lt;/strong&gt; and &lt;strong&gt;b&lt;/strong&gt; as local 
 have new &lt;strong&gt;a&lt;/strong&gt; and &lt;strong&gt;b&lt;/strong&gt;s and no information will be transferred.&lt;/p&gt;
 &lt;p&gt;Since we're working in Java, it doesn't take long for some students to come up with the idea of using instance variables to store a and b and just use the recursion for the "loop.":&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight java %}
+&lt;p _="%" endhighlight&gt;{% highlight java %}
 public int a=1, b=1
 public int fib4(int n) {
     if (n==1)
@@ -197,7 +197,7 @@ public int fib4(int n) {
 &lt;/blockquote&gt;
 &lt;p&gt;Great, but using instance variables in this way is very inelegant and messy. Better, use extra parameters to store the values from call to call:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p _="%" endhighlight="endhighlight"&gt;{% highlight java %}
+&lt;p _="%" endhighlight&gt;{% highlight java %}
 public int fib5(int n,int a, int b) {
     if (n==1)
         return a;

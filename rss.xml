@@ -1,5 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 26 Dec 2016 16:02:56 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 25 - Tramp</title><link>http://cestlaz.github.io/posts/using-emacs-25-tramp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link rel="self" href="http://cestlaz.github.io/rss.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 02 Jan 2017 01:40:18 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>BS? - BA</title><link>http://cestlaz.github.io/posts/ba-bs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;blockquote&gt;
+&lt;p&gt;
+I didn't know Hunter College had computer science.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+I heard that refrain more than once during my fall visits to high
+schools. Part of the reason for this is due to Hunter CS's low
+profile and small size in spite of its high quality.
+&lt;/p&gt;
+
+&lt;p&gt;
+Part, though, was also because of some misconceptions about Computer
+Science programs. I'd hear things like "but they only offer a BA not a
+BS," or "but Hunter isn't an engineering school."
+&lt;/p&gt;
+
+&lt;p&gt;
+I've come to realize that we have to do a better job educating kids as
+to what can come next after high school.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not entirely sure why many assume that CS has to be under
+engineering. When I was applying to college, most of my choices were
+Arts and Science schools offering BAs in CS. Maybe it's because people don't
+disagregate STEM subjects. Even though it's not a computer science
+program many schools seem to associate FIRST robotics with computer
+science. Likewise any class with even a modicum of coding becomes
+computer science and as makerspaces and robotics are a percieved as
+easy entry STEM classes that appear to be CS (something I'll rant
+about in a future post), CS becomes associated with engineering.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's easy enough to explain the difference between a BA in CS and a BS
+in CS and it's equally easy to show that you can have tremendous
+success either way. All you have to do to show the validity of a BA in
+CS is look at succesful people from places like NYU, Courant, Columbia
+College (as opposed to Columbia Engineering), Cornell school of Arts
+and Sciences, etc to balance successful people from the engineering schools.
+&lt;/p&gt;
+
+&lt;p&gt;
+As I'm sure you know, I'm pretty high on Hunter CS and it's certainly
+one of the best value CS educations out there. Personally, I'm a big believer in a
+liberal arts education but in any case, as a community we have to do a
+better job educating the high schools so that graduating seniors are
+best informed when deciding on their futures.
+&lt;/p&gt;</description><category>cs</category><category>education</category><guid>http://cestlaz.github.io/posts/ba-bs/</guid><pubDate>Mon, 02 Jan 2017 01:14:25 GMT</pubDate></item><item><title>Using Emacs - 25 - Tramp</title><link>http://cestlaz.github.io/posts/using-emacs-25-tramp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -765,42 +815,4 @@ Relevant links:
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-24-capture-2/</guid><pubDate>Sat, 03 Dec 2016 20:45:26 GMT</pubDate></item><item><title>Advent of Code 2016</title><link>http://cestlaz.github.io/posts/advent-of-code-2016/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
-Once again, it's time for &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; - a series of small
-programming problems released once a day. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I wrote a bit about it &lt;a href="http://cestlaz.github.io/posts/2015-12-15-advent.html/"&gt;last&lt;/a&gt; &lt;a href="http://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/#.WEMqBB9ieYQ"&gt;year&lt;/a&gt; and you can still find last years
-problems &lt;a href="http://adventofcode.com/2015/"&gt;here&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's only day three but so far, all of the problems look really nice
-for students in APCS-A or any similar intro course. I'm thinking of
-looking at a couple of the problems this week with my class at Hunter.
-&lt;/p&gt;
-
-&lt;p&gt;
-I didn't think about this much last year but one thing I really like
-about the competition is that each problem comes in two parts. You're
-first presented with the problem and the input and once you put in the
-correct answer, you're presented with part two.
-&lt;/p&gt;
-
-&lt;p&gt;
-This can be annoying at times, particularly when it requires a large
-code rewrite but it also means that well designed, not too specific
-solutions are rewarded. 
-&lt;/p&gt;
-
-&lt;p&gt;
-It's not quite the same as changing the specs on a project mid way but
-it does encourage thinking about more than just solving a super
-specific problem.
-&lt;/p&gt;
-
-&lt;p&gt;
-Check out &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; and see if it's something you or your classes
-might enjoy.
-&lt;/p&gt;</description><category>apcs</category><category>cs</category><category>misc</category><guid>http://cestlaz.github.io/posts/advent-of-code-2016/</guid><pubDate>Sat, 03 Dec 2016 20:25:26 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-24-capture-2/</guid><pubDate>Sat, 03 Dec 2016 20:45:26 GMT</pubDate></item></channel></rss>
