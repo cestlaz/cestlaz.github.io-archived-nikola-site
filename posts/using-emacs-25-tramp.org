@@ -1,0 +1,97 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 25 - Tramp
+.. slug: using-emacs-25-tramp
+.. date: 2016-12-26 10:00:26 UTC-05:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+*  
+Today's video talks about using emacs [[https://www.emacswiki.org/emacs/TrampMode][Tramp]] mode.
+
+Tramp mode allows you to edit remote files using your local emacs. I usually do this over ssh.
+
+To edit a file on a machine **www.cstuy.org** I would first
+**find-file** using **C-c C-f** and then for the file name to open:
+
+#+BEGIN_SRC 
+/ssh:www.cstuy.org:/home/zamansky/sc/testfile
+#+END_SRC
+
+this would open the file **testfile** in the absolute directory
+**/home/zamansky/sc**. If my username on the remote machine is
+different:
+
+#+BEGIN_SRC 
+/ssh:username@www.cstuy.org:/home/zamansky/sc/testfile
+#+END_SRC
+
+And I can also work relative to my home directory:
+
+#+BEGIN_SRC 
+/ssh:username@www.cstuy.org:sc/testfile
+#+END_SRC
+
+If I just hit enter after the machine name and **:** - 
+
+
+#+BEGIN_SRC 
+/ssh:username@www.cstuy.org:
+#+END_SRC
+
+I end up in a dired buffer on the remote machine.
+
+Likewise if I run a **shell** or **eshell** in the tramp buffer, it
+will run the shell on the remote machine. In the video I showed how
+shell didn't work because locally, I'm configured to use zsh and I
+don't have zsh installed remotely. Eshell, however, worked fine.
+
+Using tramp in this way gives us all of the power of our local emacs
+configuration to edit a file on a remote machine.
+
+You can also use tramp to edit local files as root using sudo:
+
+#+BEGIN_SRC 
+sudo::/tmp/sc/rootfile
+#+END_SRC
+
+Note the double colon. 
+
+Finally, you can do the double-whammy - remote root editing:
+
+#+BEGIN_SRC 
+ssh::www.cstu.org|sudo:www.cstuy.org:/home/zamansky/sc/rootfile
+#+END_SRC
+If you use zsh and any of this freezes, just do a search on "zsh
+tramp" and the top couple of hits will tell you what to add to your
+configuration files to fix things.
+
+Finally, I mentioned in the video that I don't use tramp all that much
+anymore. That's mostly because I don't do much remote editing
+anymore. I used it more when I was administering a number of machines
+at Stuyvesant. 
+
+I still use it periodically, but I also use [[https://github.com/libfuse/sshfs][sshfs]], a Linux tool (which
+may be available for other operating systems) that allows me to mount
+a directory tree from a remote machine and use it on my local machine.
+
+
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Iqh50fgbIVk" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+
+
+
+* 
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+
