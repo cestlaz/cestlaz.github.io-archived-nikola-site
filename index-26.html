@@ -90,7 +90,143 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-24-capture-2/" class="u-url">Using Emacs - 24 - Org Capture 2</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/advent-code-2016-1/" class="u-url">A Teacher looks at Advent of Code 2016 #1</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/advent-code-2016-1/" rel="bookmark"><time class="published dt-published" datetime="2016-12-06T10:46:17-05:00" title="2016-12-06 10:46">2016-12-06 10:46</time></a></p>
+                <p class="commentline">            <a href="posts/advent-code-2016-1/#disqus_thread" data-disqus-identifier="cache/posts/advent-of-code-2016-1.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p>
+I recently <a href="http://cestlaz.github.io/posts/advent-of-code-2016/">posted</a> about <a href="http://adventofcode.com">Advent of Code</a> - a series of programming
+problems relseased one a day. While they vary in terms of level of
+difficulty, a number of them make nice problems for introductory to
+mid level programming classes.
+</p>
+
+<p>
+I thought I'd share some of my thoughts on a few of them starting with
+the first problem from this years competition.
+</p>
+
+<p>
+<a href="http://adventofcode.com/2016/day/1">Take a minute to read it over.</a>
+</p>
+
+<p>
+At first glance, it might seem to a young programmer that this problem
+requires a two dimensional array - all about (x,y) coordinates but
+then there's a problem - there are no limits on coordinates and we
+can't make an unlimited size array.
+</p>
+
+<p>
+After thinking a bit, hopefully the programmer realizes that all they
+need to do is keep track of the how the <b><b>(x,y)</b></b> location changes over
+time. In the solution below, we start at <b><b>(0,0)</b></b> and count the steps as
+we update two variables <b><b>x</b></b> and <b><b>y</b></b>.
+</p>
+
+<p>
+When we finish processing the moves, we have our current location in
+<b><b>(x,y)</b></b> and we have the number of steps taken to get there.
+</p>
+
+<p>
+The solution below hsa a couple of niceties that a beginning
+programmer might not know or use (and I'm not arguing that what's written is
+superior in any way, it's just what I ended up writing).
+</p>
+
+<p>
+I make use of tuple destructuring:
+</p>
+<div class="highlight"><pre><span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+
+<p>
+which assigns <b><b>x</b></b> to the first item in the tuple and <b><b>y</b></b> the
+second. I used that a number of times 
+</p>
+
+<p>
+I also use a list  I call <b><b>dirs</b></b> to hold dx and dy values for the
+four direcitons:
+</p>
+<div class="highlight"><pre><span></span><span class="n">dirs</span><span class="o">=</span><span class="p">[(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">),(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)]</span>
+</pre></div>
+
+<p>
+This made it easier to to update the location based on the 4
+directions. I could also have just used if statements.
+</p>
+
+<p>
+Here's all the code:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># assume our starting location is 0,0</span>
+
+<span class="c1"># we start with d=0 -&gt; facing north</span>
+<span class="c1"># as we turn left or right, we can just increment or decrement d</span>
+<span class="c1"># and dirs[d] will give us the appropriate dx and dy to update</span>
+<span class="c1"># our locatoin for the next step</span>
+<span class="n">dirs</span><span class="o">=</span><span class="p">[(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">),(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)]</span>   
+<span class="n">d</span><span class="o">=</span><span class="mi">0</span>
+
+<span class="c1"># This is only needed for part 2  - We track visited locations</span>
+<span class="c1"># by adding them to the dictionary. If we try to add a location</span>
+<span class="c1"># that's already been visited we know that we've found our final </span>
+<span class="c1"># location</span>
+<span class="c1"># locs={}  # uncomment this line for part 2</span>
+
+
+<span class="n">totalsteps</span><span class="o">=</span><span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+
+    <span class="c1"># the first char in i is the direction to turn in (L or R)</span>
+    <span class="c1"># the rest represents the number of steps.</span>
+    <span class="nb">dir</span><span class="o">=</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">steps</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+
+    <span class="k">if</span> <span class="nb">dir</span><span class="o">==</span><span class="s2">"L"</span><span class="p">:</span>
+	<span class="n">d</span> <span class="o">=</span> <span class="p">(</span><span class="n">d</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">4</span>
+    <span class="k">else</span><span class="p">:</span>
+	<span class="n">d</span> <span class="o">=</span> <span class="p">(</span><span class="n">d</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">4</span>
+    <span class="p">(</span><span class="n">dx</span><span class="p">,</span><span class="n">dy</span><span class="p">)</span> <span class="o">=</span> <span class="n">dirs</span><span class="p">[</span><span class="n">d</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">steps</span><span class="p">):</span>
+	<span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">dx</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="n">dy</span><span class="p">)</span>
+	<span class="n">totalsteps</span><span class="o">=</span><span class="n">totalsteps</span><span class="o">+</span><span class="mi">1</span>
+
+	<span class="c1"># Uncomment this block for part 2</span>
+	<span class="c1"># each time we have a new location, see if it's already in</span>
+	<span class="c1"># locs, if it isn't, add it.</span>
+	<span class="c1"># if it is, we're visiting somewhere twice so we're done.</span>
+	<span class="c1">#if ((x,y) not in locs):</span>
+	<span class="c1">#    locs[(x,y)]=1</span>
+	<span class="c1">#else:</span>
+	<span class="c1">#    print((x,y))</span>
+	<span class="c1">#    print(abs(x)+abs(y)) # the answer</span>
+	<span class="c1">#    sys.exit(0)</span>
+	<span class="c1">#    break</span>
+
+
+<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">+</span><span class="nb">abs</span><span class="p">(</span><span class="n">y</span><span class="p">))</span> <span class="c1"># the answer</span>
+</pre></div>
+
+
+<p>
+Overall, a nice little problem for beginning and intermediate
+students.
+</p>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-24-capture-2/" class="u-url">Using Emacs - 24 - Org Capture 2</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
