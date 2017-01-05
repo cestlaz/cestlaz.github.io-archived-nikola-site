@@ -2,6 +2,9 @@
 Name = import_jekyll
 Module = import_jekyll
 
+[Nikola]
+plugincategory = Command
+
 [Documentation]
 Author = Miguel Angel Garcia
 Version = 0.2
