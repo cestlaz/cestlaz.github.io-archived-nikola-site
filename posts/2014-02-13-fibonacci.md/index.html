@@ -124,7 +124,7 @@ point.</p>
 platform on which you can look at many problem solving techniques.</p>
 <p>We can look at the basic, straightforward , imperative solution:</p>
 <blockquote>
-<p _="%" endhighlight="endhighlight">{% highlight java %}
+<p _="%" endhighlight>{% highlight java %}
 public int fib1(int n) {
   int a=1,b=1;
   for (int i=0;i&lt;n;i++){
@@ -188,7 +188,7 @@ have <strong>a</strong> and <strong>b</strong> as local variables as each recurs
 have new <strong>a</strong> and <strong>b</strong>s and no information will be transferred.</p>
 <p>Since we're working in Java, it doesn't take long for some students to come up with the idea of using instance variables to store a and b and just use the recursion for the "loop.":</p>
 <blockquote>
-<p _="%" endhighlight="endhighlight">{% highlight java %}
+<p _="%" endhighlight>{% highlight java %}
 public int a=1, b=1
 public int fib4(int n) {
     if (n==1)
@@ -203,7 +203,7 @@ public int fib4(int n) {
 </blockquote>
 <p>Great, but using instance variables in this way is very inelegant and messy. Better, use extra parameters to store the values from call to call:</p>
 <blockquote>
-<p _="%" endhighlight="endhighlight">{% highlight java %}
+<p _="%" endhighlight>{% highlight java %}
 public int fib5(int n,int a, int b) {
     if (n==1)
         return a;
