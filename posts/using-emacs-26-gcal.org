@@ -1,18 +1,32 @@
 #+BEGIN_COMMENT
 .. title: Using Emacs - 26 - Google Calendar, Org Agenda
 .. slug: using-emacs-26-gcal
-.. date: 2017-01-04 10:00:26 UTC-05:00
-.. tags: emacs, tools, draft
+.. date: 2017-01-05 10:00:26 UTC-05:00
+.. tags: emacs, tools
 .. category:
 .. link: 
 .. description:
 .. type: text
 #+END_COMMENT
 
-* org-gcal  
+* 
+A while ago I did a couple of videos on how I use org-capture
+([[http://cestlaz.github.io/posts/using-emacs-23-capture-1/][part 1]], [[http://cestlaz.github.io/posts/using-emacs-24-capture-2/][part 2]]). I didn't get into a big part of org-capture - how I
+use org-mode and capture to manage my calendar and todo lists.
 
-https://github.com/myuhe/org-gcal.el
+I was waiting to see if I liked my current setup - using [[https://github.com/myuhe/org-gcal.el][org-gcal]] to
+sync with my Google Calendar for appointments while using my main org
+file for my todo list.
 
+Coincidentally, Rainer König recently put up a video on how he [[https://www.youtube.com/watch?v=cIzzjSaq2N8&amp;list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE&amp;index=33][syncs
+with his Google calendar]]. He uses a different method than the one I
+present in this video so make sure to check out his approach. In fact,
+you should check out his entire [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][series on org-mode]].
+
+Here's the code I use install org-gcal. The video steps through
+setting up things on the Google side. You'll have to replace the
+**client ID** and **client secrets** in the code below as well as use
+your calendar name and whatever org file you want to sync with.
 
 #+BEGIN_SRC emacs-lisp
   (setq package-check-signature nil)
@@ -25,13 +39,34 @@ https://github.com/myuhe/org-gcal.el
 	  org-gcal-client-secret "client secret"
 	  org-gcal-file-alist '(("zamansky@gmail.com" .  "~/Dropbox/orgfiles/gcal.org"))))
 
-  (add-hook 'org-capture-after-finalize-hook (lambda () (org-gcal-sync) ))
+
+#+END_SRC
+
+I use these two hooks to sync things semi-automatically. The first
+hook syncs whenever I load the agenda. Since this happens in the
+background, if I just added something to my calendar, I might have to
+reload the agenda by hitting **r** in the agenda view. 
+
+The second hook syncs with my Google calendar when I capture.
+
+#+BEGIN_SRC emacs-lisp
+
   (add-hook 'org-agenda-mode-hook (lambda () (org-gcal-sync) ))
+  (add-hook 'org-capture-after-finalize-hook (lambda () (org-gcal-sync) ))
 
 
 #+END_SRC
 
-* Capturing
+Here are the rest of my settings. The org files I want to include in
+my agenda views:
+- gcal.org -- the one I'm syncing
+- i.org -- my main org file for todo items (the todo capture places
+  things in here)
+- schedule.org -- my old schedule before I was syncing with
+  Google. Not active anymore. I should probably remove it.
+
+Also, my capture settings:
+
 
 #+BEGIN_SRC emacs-lisp
   (setq org-agenda-files (list "~/Dropbox/orgfiles/gcal.org"
@@ -54,17 +89,36 @@ https://github.com/myuhe/org-gcal.el
 	   "* %?\nEntered on %U\n  %i\n  %a")
 	  ("s" "Screencast" entry (file "~/Dropbox/orgfiles/screencastnotes.org")
 	   "* %?\n%i\n")))
+#+END_SRC
 
+
+
+The end result is that I can add an event in my Google calendar (or
+accept a calendar invite) and it appears in my org-mode
+agenda. Likewise, I can add a scheduled event using capture and it
+will sync up to Google. I can also just add an event by editing
+gcal.org but then would have to run **org-gcal-post-at-point** to send
+it up to Google.
+
+Now, I can use bring up a regular agenda **C-a a**, my todo list **C-a
+t** or by adding a custom agenda command:
+
+
+#+BEGIN_SRC emacs-lisp
   (setq org-agenda-custom-commands
 	'(("c" "Simple agenda view"
 	   ((agenda "")
 	    (alltodo "")))))
-
 #+END_SRC
 
-* Calfw
+a combined agenda and todo view using **C-a n**
+
+
+Finally, there's [[https://github.com/kiwanami/emacs-calfw][calfw]]. It's a nice tool to view calendars in
+Google. I don't use it much anymore but it is nice:
 
 #+BEGIN_SRC emacs-lisp
+
   (use-package calfw
     :ensure ;TODO: 
     :config
@@ -93,7 +147,11 @@ https://github.com/myuhe/org-gcal.el
 #+END_SRC
 
 
+Enjoy.
 
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RyNBtfu9AJ4" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
 
 *  
 
