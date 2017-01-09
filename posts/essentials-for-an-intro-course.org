@@ -1,0 +1,75 @@
+#+BEGIN_COMMENT
+.. title: Essential topics for an intro course (not)
+.. slug: essentials-for-an-intro-course
+.. date: 2017-01-09 15:56:08 UTC-05:00
+.. tags: curriculum, teaching cs
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+What essential topics should we teach in our intro courses? This seems
+to be a recurring topic recently. 
+
+It can be an important topic but, unfortunately, too often, it seems
+that people have too myopic a view
+
+I remember thinking about this years ago when APCS moved from C++ to
+Java. Both languages have good and bad points both for practical and
+educational use. A big loss in the move to Java was memory management
+and the topics you could cover when memory issues arose. 
+
+Of course one might say that memory management shouldn't be in the
+first year of CS. That's fine, as long as you put it back in somewhere
+later on - something that didn't seem to happen universally. 
+
+That's the myopic view - far too few look at the overall picture.
+
+C++ to Java ended up in removing a topic. I've also seen the reverse. 
+I was talking to a friend about intro topics. He told me that it was
+critical to cover (insert topic here) in an intro course. Why, I
+asked? Because the kids absolutely needed to know that material in the
+third year course he was teaching.
+
+I pressed a bit -- "how many kids actually remember (insert topic
+here) and do you have to reteach anything." The answer - pretty much
+no one remembered and he always retaught the subject.
+
+Did this mean that no one taught the topic in the earlier class?
+Unlikely. More likely is that the topic was taught without purpose or
+context, just because it was supposed to be taught and thus the
+knowledge wasn't retained. Sounds to me like the topic wasn't in the
+right place to begin with. Maybe it should have just been taught in
+that 300 level course to begin with.
+
+[[https://twitter.com/alfredtwo?ref_src=twsrc%255Etfw][Alfred Thompson]] wrote a post earlier today asking about [[http://blog.acthompson.net/2017/01/how-important-are-number-bases-for-pre.html][teaching
+number bases]]. 
+
+Is it important? Maybe. Is it essential for an intro course? Probably
+not. 
+
+Binary makes sense when you start talking about low level stuff. If
+your intro course never gets close to the machine then why muddy the water
+with a topic that's out of place. The topic probably won't be
+appreciated and retention and understanding will be low. 
+
+If your intro course gets close to the machine or if you decide to
+talk about compiled code or similar topics, you have an entre to talk
+binary which leads to the convenience of hexadecimal. At Stuyvesant,
+it was much more sensible to talk about number bases in our systems
+course when we looked at C code in a debugger rather than in our intro
+our AP course. 
+
+You also might work on some application where bitmaps or similar as
+useful. That might be another good time to talk about number bases.
+
+Is it important for a CS person to understand binary and it's relation
+to digital computers? Certainly. Does it have to be studied day one?
+Certainly not.
+
+We need to keep an eye on the big picture. You can't get everything
+into a single class or a single yea. The question to ask is - do our students know what they have to by the time they
+leave our charge?
+
+
