@@ -27,7 +27,7 @@ shell.
 
 I use a couple of packages to smooth over a couple of things.
 
-Virtualenvwrapper smooths things voer with the python virtaulenv and
+[[https://github.com/porterjamesj/virtualenvwrapper.el][Virtuelenvwrapper]] smooths things voer with the python virtaulenv and
 virtualenvwrapper linux packages:
 
 #+BEGIN_SRC emacs-lisp
@@ -40,7 +40,7 @@ virtualenvwrapper linux packages:
 
 Only relevant if you use Python and virtualenvs.
 
-and more importantly, better shell:
+and more importantly, [[https://github.com/killdash9/better-shell][better shell]]:
 
 #+BEGIN_SRC emacs-lisp
 (use-package better-shell
