@@ -1,0 +1,74 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 27 - shell and eshell
+.. slug: using-emacs-27-shell
+.. date: 2017-01-27 08:00:26 UTC-05:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description:
+.. type: text
+#+END_COMMENT
+
+* 
+While I use emacs for all all sorts of things, one of the things I
+haven't done much is run shells from within emacs. I'm not sure
+why. I'm a command line wonk and adding command line goodness and
+emacs together seems like a natural. Maybe it's because back in the
+day I spent a lot of time on MS-DOS systems. You could get a
+reasonable Unixy facsimile using tools like the [[https://en.wikipedia.org/wiki/MKS_Toolkit][MKS toolkit]] and I like
+so many other young computer scientists wrote our own small shells
+when we learned C so I used that insted of command.com. 
+
+In any event, I'm trying to use the shell within emacs more. 
+
+Here's a quick video showing both **shell**, which runs whatever your
+default shell is in an emacs buffer and **eshell** which is emacs own
+shell.
+
+I use a couple of packages to smooth over a couple of things.
+
+Virtualenvwrapper smooths things voer with the python virtaulenv and
+virtualenvwrapper linux packages:
+
+#+BEGIN_SRC emacs-lisp
+(use-package virtualenvwrapper
+      :ensure t
+      :config
+      (venv-initialize-interactive-shells)
+      (venv-initialize-eshell))
+#+END_SRC
+
+Only relevant if you use Python and virtualenvs.
+
+and more importantly, better shell:
+
+#+BEGIN_SRC emacs-lisp
+(use-package better-shell
+    :ensure t
+    :bind (("C-'" . better-shell-shell)
+           ("C-;" . better-shell-remote-open)))
+#+END_SRC
+
+cleans things up when using a termianl to connect to a remote machine.
+
+If you use a shell from within emacs as part of your workflow, please
+post how, or better, make a video!!!!
+
+Enjoy
+
+
+*  
+
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pjhRFMUxBB4" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+* 
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+

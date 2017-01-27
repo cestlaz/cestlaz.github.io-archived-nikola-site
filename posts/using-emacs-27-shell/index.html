@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Essential topics for an intro course (not) | C'est la Z</title>
+<title>Using Emacs - 27 - shell and eshell | C'est la Z</title>
 <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
@@ -16,24 +16,20 @@ article: http://ogp.me/ns/article#
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="../../index.atom">
-<link rel="canonical" href="http://cestlaz.github.io/posts/essentials-for-an-intro-course/">
+<link rel="canonical" href="http://cestlaz.github.io/posts/using-emacs-27-shell/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
-<link rel="prev" href="../using-emacs-26-gcal/" title="Using Emacs - 26 - Google Calendar, Org Agenda" type="text/html">
-<link rel="next" href="../using-emacs-27-shell/" title="Using Emacs - 27 - shell and eshell" type="text/html">
+<link rel="prev" href="../essentials-for-an-intro-course/" title="Essential topics for an intro course (not)" type="text/html">
 <meta property="og:site_name" content="C'est la Z">
-<meta property="og:title" content="Essential topics for an intro course (not)">
-<meta property="og:url" content="http://cestlaz.github.io/posts/essentials-for-an-intro-course/">
-<meta property="og:description" content="What essential topics should we teach in our intro courses? This seems
-to be a recurring topic recently. 
-
-
-
-It can be an important topic but, unfortunately, too often, it seems
-that people have too m">
+<meta property="og:title" content="Using Emacs - 27 - shell and eshell">
+<meta property="og:url" content="http://cestlaz.github.io/posts/using-emacs-27-shell/">
+<meta property="og:description" content="While I use emacs for all all sorts of things, one of the things I
+haven't done much is run shells from within emacs. I'm not sure
+why. I'm a command line wonk and adding command line goodness and
+ema">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2017-01-09T15:56:08-05:00">
-<meta property="article:tag" content="curriculum">
-<meta property="article:tag" content="teaching cs">
+<meta property="article:published_time" content="2017-01-27T08:00:26-05:00">
+<meta property="article:tag" content="emacs">
+<meta property="article:tag" content="tools">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -101,14 +97,14 @@ that people have too m">
 						<div class="col-md-8">
 				
 								
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Essential topics for an intro course (not)</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Using Emacs - 27 - shell and eshell</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                     Mike Zamansky
             </span></p>
-            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-01-09T15:56:08-05:00" itemprop="datePublished" title="2017-01-09 15:56">2017-01-09 15:56</time></a></p>
-                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/essentials-for-an-intro-course.html">Comments</a>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-01-27T08:00:26-05:00" itemprop="datePublished" title="2017-01-27 08:00">2017-01-27 08:00</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-27-shell.html">Comments</a>
 
 
             
@@ -116,98 +112,107 @@ that people have too m">
 </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>
-What essential topics should we teach in our intro courses? This seems
-to be a recurring topic recently. 
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+While I use emacs for all all sorts of things, one of the things I
+haven't done much is run shells from within emacs. I'm not sure
+why. I'm a command line wonk and adding command line goodness and
+emacs together seems like a natural. Maybe it's because back in the
+day I spent a lot of time on MS-DOS systems. You could get a
+reasonable Unixy facsimile using tools like the <a href="https://en.wikipedia.org/wiki/MKS_Toolkit">MKS toolkit</a> and I like
+so many other young computer scientists wrote our own small shells
+when we learned C so I used that insted of command.com. 
 </p>
 
 <p>
-It can be an important topic but, unfortunately, too often, it seems
-that people have too myopic a view
+In any event, I'm trying to use the shell within emacs more. 
 </p>
 
 <p>
-I remember thinking about this years ago when APCS moved from C++ to
-Java. Both languages have good and bad points both for practical and
-educational use. A big loss in the move to Java was memory management
-and the topics you could cover when memory issues arose. 
+Here's a quick video showing both <b><b>shell</b></b>, which runs whatever your
+default shell is in an emacs buffer and <b><b>eshell</b></b> which is emacs own
+shell.
 </p>
 
 <p>
-Of course one might say that memory management shouldn't be in the
-first year of CS. That's fine, as long as you put it back in somewhere
-later on - something that didn't seem to happen universally. 
+I use a couple of packages to smooth over a couple of things.
 </p>
 
 <p>
-That's the myopic view - far too few look at the overall picture.
+Virtualenvwrapper smooths things voer with the python virtaulenv and
+virtualenvwrapper linux packages:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">virtualenvwrapper</span>
+      <span class="nv">:ensure</span> <span class="nv">t</span>
+      <span class="nv">:config</span>
+      <span class="p">(</span><span class="nf">venv-initialize-interactive-shells</span><span class="p">)</span>
+      <span class="p">(</span><span class="nf">venv-initialize-eshell</span><span class="p">))</span>
+</pre></div>
+
+<p>
+Only relevant if you use Python and virtualenvs.
 </p>
 
 <p>
-C++ to Java ended up in removing a topic. I've also seen the reverse. 
-I was talking to a friend about intro topics. He told me that it was
-critical to cover (insert topic here) in an intro course. Why, I
-asked? Because the kids absolutely needed to know that material in the
-third year course he was teaching.
+and more importantly, better shell:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">better-shell</span>
+    <span class="nv">:ensure</span> <span class="nv">t</span>
+    <span class="nv">:bind</span> <span class="p">((</span><span class="s">"C-'"</span> <span class="o">.</span> <span class="nv">better-shell-shell</span><span class="p">)</span>
+	   <span class="p">(</span><span class="s">"C-;"</span> <span class="o">.</span> <span class="nv">better-shell-remote-open</span><span class="p">)))</span>
+</pre></div>
+
+<p>
+cleans things up when using a termianl to connect to a remote machine.
 </p>
 
 <p>
-I pressed a bit – "how many kids actually remember (insert topic
-here) and do you have to reteach anything." The answer - pretty much
-no one remembered and he always retaught the subject.
+If you use a shell from within emacs as part of your workflow, please
+post how, or better, make a video!!!!
 </p>
 
 <p>
-Did this mean that no one taught the topic in the earlier class?
-Unlikely. More likely is that the topic was taught without purpose or
-context, just because it was supposed to be taught and thus the
-knowledge wasn't retained. Sounds to me like the topic wasn't in the
-right place to begin with. Maybe it should have just been taught in
-that 300 level course to begin with.
+Enjoy
 </p>
+</div>
+</div>
 
-<p>
-<a href="https://twitter.com/alfredtwo?ref_src=twsrc%255Etfw">Alfred Thompson</a> wrote a post earlier today asking about <a href="http://blog.acthompson.net/2017/01/how-important-are-number-bases-for-pre.html">teaching
-number bases</a>. 
-</p>
 
-<p>
-Is it important? Maybe. Is it essential for an intro course? Probably
-not. 
-</p>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"></h2>
+<div class="outline-text-2" id="text-2">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pjhRFMUxBB4" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
 
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"></h2>
+<div class="outline-text-2" id="text-3">
 <p>
-Binary makes sense when you start talking about low level stuff. If
-your intro course never gets close to the machine then why muddy the water
-with a topic that's out of place. The topic probably won't be
-appreciated and retention and understanding will be low. 
+Relevant links:
 </p>
-
-<p>
-If your intro course gets close to the machine or if you decide to
-talk about compiled code or similar topics, you have an entre to talk
-binary which leads to the convenience of hexadecimal. At Stuyvesant,
-it was much more sensible to talk about number bases in our systems
-course when we looked at C code in a debugger rather than in our intro
-our AP course. 
-</p>
-
-<p>
-You also might work on some application where bitmaps or similar as
-useful. That might be another good time to talk about number bases.
-</p>
-
-<p>
-Is it important for a CS person to understand binary and it's relation
-to digital computers? Certainly. Does it have to be studied day one?
-Certainly not.
-</p>
-
-<p>
-We need to keep an eye on the big picture. You can't get everything
-into a single class or a single yea. The question to ask is - do our students know what they have to by the time they
-leave our charge?
-</p>
+<ul class="org-ul">
+<li>Video series overview page:
+<ul class="org-ul">
+<li>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</li>
+</ul>
+</li>
+<li>Code:
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
 
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
@@ -221,23 +226,20 @@ leave our charge?
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
 </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../categories/curriculum/" rel="tag">curriculum</a></li>
-            <li><a class="tag p-category" href="../../categories/teaching-cs/" rel="tag">teaching cs</a></li>
+<li><a class="tag p-category" href="../../categories/emacs/" rel="tag">emacs</a></li>
+            <li><a class="tag p-category" href="../../categories/tools/" rel="tag">tools</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../using-emacs-26-gcal/" rel="prev" title="Using Emacs - 26 - Google Calendar, Org Agenda">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../using-emacs-27-shell/" rel="next" title="Using Emacs - 27 - shell and eshell">Next post</a>
+                <a href="../essentials-for-an-intro-course/" rel="prev" title="Essential topics for an intro course (not)">Previous post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="cestlaz",
-            disqus_url="http://cestlaz.github.io/posts/essentials-for-an-intro-course/",
-        disqus_title="Essential topics for an intro course (not)",
-        disqus_identifier="cache/posts/essentials-for-an-intro-course.html",
+            disqus_url="http://cestlaz.github.io/posts/using-emacs-27-shell/",
+        disqus_title="Using Emacs - 27 - shell and eshell",
+        disqus_identifier="cache/posts/using-emacs-27-shell.html",
         disqus_config = function () {
             this.language = "en";
         };

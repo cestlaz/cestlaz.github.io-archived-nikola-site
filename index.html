@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-26.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/essentials-for-an-intro-course/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-27-shell/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -89,7 +89,121 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/essentials-for-an-intro-course/" class="u-url">Essential topics for an intro course (not)</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-27-shell/" class="u-url">Using Emacs - 27 - shell and eshell</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/using-emacs-27-shell/" rel="bookmark"><time class="published dt-published" datetime="2017-01-27T08:00:26-05:00" title="2017-01-27 08:00">2017-01-27 08:00</time></a></p>
+                <p class="commentline">            <a href="posts/using-emacs-27-shell/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-27-shell.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+While I use emacs for all all sorts of things, one of the things I
+haven't done much is run shells from within emacs. I'm not sure
+why. I'm a command line wonk and adding command line goodness and
+emacs together seems like a natural. Maybe it's because back in the
+day I spent a lot of time on MS-DOS systems. You could get a
+reasonable Unixy facsimile using tools like the <a href="https://en.wikipedia.org/wiki/MKS_Toolkit">MKS toolkit</a> and I like
+so many other young computer scientists wrote our own small shells
+when we learned C so I used that insted of command.com. 
+</p>
+
+<p>
+In any event, I'm trying to use the shell within emacs more. 
+</p>
+
+<p>
+Here's a quick video showing both <b><b>shell</b></b>, which runs whatever your
+default shell is in an emacs buffer and <b><b>eshell</b></b> which is emacs own
+shell.
+</p>
+
+<p>
+I use a couple of packages to smooth over a couple of things.
+</p>
+
+<p>
+Virtualenvwrapper smooths things voer with the python virtaulenv and
+virtualenvwrapper linux packages:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">virtualenvwrapper</span>
+      <span class="nv">:ensure</span> <span class="nv">t</span>
+      <span class="nv">:config</span>
+      <span class="p">(</span><span class="nf">venv-initialize-interactive-shells</span><span class="p">)</span>
+      <span class="p">(</span><span class="nf">venv-initialize-eshell</span><span class="p">))</span>
+</pre></div>
+
+<p>
+Only relevant if you use Python and virtualenvs.
+</p>
+
+<p>
+and more importantly, better shell:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">better-shell</span>
+    <span class="nv">:ensure</span> <span class="nv">t</span>
+    <span class="nv">:bind</span> <span class="p">((</span><span class="s">"C-'"</span> <span class="o">.</span> <span class="nv">better-shell-shell</span><span class="p">)</span>
+	   <span class="p">(</span><span class="s">"C-;"</span> <span class="o">.</span> <span class="nv">better-shell-remote-open</span><span class="p">)))</span>
+</pre></div>
+
+<p>
+cleans things up when using a termianl to connect to a remote machine.
+</p>
+
+<p>
+If you use a shell from within emacs as part of your workflow, please
+post how, or better, make a video!!!!
+</p>
+
+<p>
+Enjoy
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"></h2>
+<div class="outline-text-2" id="text-2">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pjhRFMUxBB4" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"></h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Relevant links:
+</p>
+<ul class="org-ul">
+<li>Video series overview page:
+<ul class="org-ul">
+<li>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</li>
+</ul>
+</li>
+<li>Code:
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/essentials-for-an-intro-course/" class="u-url">Essential topics for an intro course (not)</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
@@ -1106,88 +1220,6 @@ Teaching right, particularly in public schools with large classes  will
 always be an all in activity - certainly harder and more draining than
 anything I ever did in industry but it does get easier as you learn
 your school and students and develop your craft. 
-</p>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/advent-of-code-2016-check-data/" class="u-url">Advent of Code 2016 - Check your data</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/advent-of-code-2016-check-data/" rel="bookmark"><time class="published dt-published" datetime="2016-12-10T11:25:38-05:00" title="2016-12-10 11:25">2016-12-10 11:25</time></a></p>
-                <p class="commentline">            <a href="posts/advent-of-code-2016-check-data/#disqus_thread" data-disqus-identifier="cache/posts/advent-of-code-2016-check-data.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <p>
-I'm spending the weekend up in Michigan. Visiting my brother and is
-family. We're here to see the <a href="http://umgass.org">UMGASS</a> production of Gilbert and
-Sullivan's <a href="http://www.umgass.org/current-production">The Sorcerer</a>. Batya also came up from Cornell to join us so
-the two families are all togehter for the first time in about 10
-years.
-</p>
-
-<p>
-This hasn't left much time for <a href="http://adventofcode.com">Advent of Code</a> but I did manage to
-finish yesterday's challenge this morning.
-</p>
-
-<p>
-What took me so long? Much like last year, it was <a href="http://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/">because I'm an
-idiot</a>. 
-</p>
-
-<p>
-The <a href="http://adventofcode.com/2016/day/9">problem</a> seemed pretty straighforward. I coded a solution and it
-worked for all the test cases. I tried it on my data set but
-the grader said the answer was wrong. I went through the problem a
-number of times as well sa my code. I figured I either mis-interpreted
-the question or had some bug. I found neither to be true.
-</p>
-
-<p>
-After some frustration, I went over to the Advent of Code <a href="https://www.reddit.com/r/adventofcode/">subreddit</a>
-grabbed a couple of posted solutions (trying not to look at them) and
-ran both on my data - those solutions got the same answer on my data
-set as I did. 
-</p>
-
-<p>
-This morning, I asked Batya to look over my code and the problem (it's
-always good to have a daughter that's smarted than you are) but she
-saw no problems.
-</p>
-
-<p>
-Finally, I emailed my buddy JonAlf since I know he completed the problem. He sent back his answer along
-with his data set and I got the same answer as he did on his data.
-</p>
-
-<p>
-What could be the problem.
-</p>
-
-<p>
-His data set was about 12k characters long, mine was 4k. Something had
-to be wrong here. I went back to the Advent of Code site and grabbed
-the data set again. This time, I went to the page and did a "save-as"
-to save it - last time, I cut and pasted.
-</p>
-
-<p>
-The cut and paste version was 4k, the save-as was 12k. This time it
-worked and was accepted and I also finished part 2 in short order.
-</p>
-
-<p>
-The moral of the story – make sure you check the integrity of your
-data set - you'll never get the right answer if you're working with
-the wrong data.
-</p>
-
-<p>
-In case anyone's interested, you can find my AoC code <a href="https://github.com/zamansky/advent2016">here</a>.
 </p>
     </div>
     </article>

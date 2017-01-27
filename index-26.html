@@ -90,7 +90,89 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/advent-of-code-2016-2/" class="u-url">A Teacher looks at Advent of Code 2016 #2</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/advent-of-code-2016-check-data/" class="u-url">Advent of Code 2016 - Check your data</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/advent-of-code-2016-check-data/" rel="bookmark"><time class="published dt-published" datetime="2016-12-10T11:25:38-05:00" title="2016-12-10 11:25">2016-12-10 11:25</time></a></p>
+                <p class="commentline">            <a href="posts/advent-of-code-2016-check-data/#disqus_thread" data-disqus-identifier="cache/posts/advent-of-code-2016-check-data.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p>
+I'm spending the weekend up in Michigan. Visiting my brother and is
+family. We're here to see the <a href="http://umgass.org">UMGASS</a> production of Gilbert and
+Sullivan's <a href="http://www.umgass.org/current-production">The Sorcerer</a>. Batya also came up from Cornell to join us so
+the two families are all togehter for the first time in about 10
+years.
+</p>
+
+<p>
+This hasn't left much time for <a href="http://adventofcode.com">Advent of Code</a> but I did manage to
+finish yesterday's challenge this morning.
+</p>
+
+<p>
+What took me so long? Much like last year, it was <a href="http://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/">because I'm an
+idiot</a>. 
+</p>
+
+<p>
+The <a href="http://adventofcode.com/2016/day/9">problem</a> seemed pretty straighforward. I coded a solution and it
+worked for all the test cases. I tried it on my data set but
+the grader said the answer was wrong. I went through the problem a
+number of times as well sa my code. I figured I either mis-interpreted
+the question or had some bug. I found neither to be true.
+</p>
+
+<p>
+After some frustration, I went over to the Advent of Code <a href="https://www.reddit.com/r/adventofcode/">subreddit</a>
+grabbed a couple of posted solutions (trying not to look at them) and
+ran both on my data - those solutions got the same answer on my data
+set as I did. 
+</p>
+
+<p>
+This morning, I asked Batya to look over my code and the problem (it's
+always good to have a daughter that's smarted than you are) but she
+saw no problems.
+</p>
+
+<p>
+Finally, I emailed my buddy JonAlf since I know he completed the problem. He sent back his answer along
+with his data set and I got the same answer as he did on his data.
+</p>
+
+<p>
+What could be the problem.
+</p>
+
+<p>
+His data set was about 12k characters long, mine was 4k. Something had
+to be wrong here. I went back to the Advent of Code site and grabbed
+the data set again. This time, I went to the page and did a "save-as"
+to save it - last time, I cut and pasted.
+</p>
+
+<p>
+The cut and paste version was 4k, the save-as was 12k. This time it
+worked and was accepted and I also finished part 2 in short order.
+</p>
+
+<p>
+The moral of the story – make sure you check the integrity of your
+data set - you'll never get the right answer if you're working with
+the wrong data.
+</p>
+
+<p>
+In case anyone's interested, you can find my AoC code <a href="https://github.com/zamansky/advent2016">here</a>.
+</p>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/advent-of-code-2016-2/" class="u-url">A Teacher looks at Advent of Code 2016 #2</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
