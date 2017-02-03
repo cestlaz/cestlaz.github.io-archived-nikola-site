@@ -1031,7 +1031,7 @@ GENERATE_ATOM = True
 SEARCH_FORM = """
  <!-- DuckDuckGo custom search -->
  <form method="get" id="search" action="https://duckduckgo.com/"
-  class="navbar-form pull-right">
+  class="navbar-form">
  <input type="hidden" name="sites" value="%s">
  <input type="hidden" name="k8" value="#444444">
  <input type="hidden" name="k9" value="#D51920">
