@@ -90,7 +90,113 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/danny_jaye/" class="u-url">A couple of things I learned from Danny Jaye</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/it-gets-easier-advent19/" class="u-url">It gets easier (or advent of code 2016 day 19)</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/it-gets-easier-advent19/" rel="bookmark"><time class="published dt-published" datetime="2016-12-19T19:56:09-05:00" title="2016-12-19 19:56">2016-12-19 19:56</time></a></p>
+                <p class="commentline">            <a href="posts/it-gets-easier-advent19/#disqus_thread" data-disqus-identifier="cache/posts/it-gets-easier-advent19.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p>
+Today's <a href="http://adventofcode.com/2016/day/19">Advent of Code</a> problem was a variant on the <a href="http://mathworld.wolfram.com/JosephusProblem.html">Josephus
+problem</a>. 
+</p>
+
+<p>
+I recalled that there was a formula to figure out the 
+sole survivor but I decide to run a simulation rather than looking it
+up. I also decided to write it up in C++, well, really C with cout
+instead of printf.
+</p>
+
+<p>
+Part 1 was the traditional problem. Part 2 was a variant where at each
+iteration, you remove the elf opposite the elf being processed (see
+the <a href="http://adventofcode.com/2016/day/19">problem description</a> for details).
+</p>
+
+<p>
+For both solutions I coded up a circular doubly linked list:
+</p>
+
+<div class="highlight"><pre><span></span><span class="k">struct</span> <span class="n">node</span> <span class="o">*</span><span class="nf">make_ring</span><span class="p">(</span><span class="kt">int</span> <span class="n">size</span><span class="p">){</span>
+  <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+  <span class="k">struct</span> <span class="n">node</span> <span class="o">*</span><span class="n">n</span><span class="p">;</span>
+  <span class="k">struct</span> <span class="n">node</span> <span class="o">*</span><span class="n">current</span><span class="p">,</span><span class="o">*</span><span class="n">first</span><span class="p">;</span>
+
+  <span class="n">first</span> <span class="o">=</span> <span class="p">(</span><span class="k">struct</span> <span class="n">node</span> <span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">node</span><span class="p">));</span>
+  <span class="n">first</span><span class="o">-&gt;</span><span class="n">id</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+  <span class="n">current</span><span class="o">=</span><span class="n">first</span><span class="p">;</span>
+
+  <span class="k">for</span>  <span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">size</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="n">n</span><span class="o">=</span><span class="p">(</span><span class="k">struct</span> <span class="n">node</span> <span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="n">node</span><span class="p">));</span>
+    <span class="n">n</span><span class="o">-&gt;</span><span class="n">id</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+    <span class="n">n</span><span class="o">-&gt;</span><span class="n">prev</span><span class="o">=</span><span class="n">current</span><span class="p">;</span>
+    <span class="n">current</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">=</span><span class="n">n</span><span class="p">;</span>
+    <span class="n">current</span><span class="o">=</span><span class="n">n</span><span class="p">;</span>
+
+  <span class="p">}</span>
+  <span class="n">current</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">=</span><span class="n">first</span><span class="p">;</span>
+  <span class="n">first</span><span class="o">-&gt;</span><span class="n">prev</span><span class="o">=</span><span class="n">current</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">first</span><span class="p">;</span>
+
+<span class="p">}</span>
+</pre></div>
+
+<p>
+You can see my complete solutions <a href="https://github.com/zamansky/advent2016/blob/master/day19.cpp">here</a>.
+</p>
+
+<p>
+I was thinking about how I wrote the code – I just rolled it off the
+top of my head. The same was true for the earlier AoC problems where I
+had to implement a breadth first search or something similar. 
+</p>
+
+<p>
+I'm not making a statement about my amazing coding abilities - linked
+lists and graph searches are pretty basic, but rather than having done
+the CS thing for so long, these fundamentals have become somewhat
+routine. I haven't really written C code in years but other than a
+couple of typos (and a stupid mistake in calculating steps) things
+worked right off the bat. 
+</p>
+
+<p>
+I remember a time when I was in college or even a young professional
+when I would use an array and an index as a stack or queue - not
+because it made more sense but rather, because I wasn't fully
+comfortable with memory manipulation and linked lists. The same could
+be said for my first few years working with anything more than the
+simplest recursion.
+</p>
+
+<p>
+All of this is to say that it does get easier.
+</p>
+
+<p>
+Things that seem trivial to us now seemed
+insurmountable when we were beginners. Last year, I wrote about an overnight homework
+assignment I gave to my class that would have been a final project a
+year earlier (the post is <a href="http://cestlaz.github.io/posts/2015-02-11-taking-stock-self-assess.html/#.WFiGl99iekA">here</a> but the homework links are no longer
+active) and a few weeks ago I recall a fellow CS teacher talking about
+how much longer it takes his students to write a chunk of code than it
+takes the teacher.
+</p>
+
+<p>
+New things are challenging and take time but with practice and
+persistence techniques that were once daunting can become tools ready
+at our disposal to use on a whim.
+</p>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/danny_jaye/" class="u-url">A couple of things I learned from Danny Jaye</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky

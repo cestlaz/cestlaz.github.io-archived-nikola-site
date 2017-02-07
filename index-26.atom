@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 26)</title>
   <id>http://cestlaz.github.io/index-26.atom</id>
-  <updated>2017-02-06T22:07:22Z</updated>
+  <updated>2017-02-07T14:12:28Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,111 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-25.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-26.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>It gets easier (or advent of code 2016 day 19)</title>
+    <id>http://cestlaz.github.io/posts/it-gets-easier-advent19/</id>
+    <updated>2016-12-19T19:56:09-05:00</updated>
+    <published>2016-12-19T19:56:09-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/it-gets-easier-advent19/"/>
+    <summary type="html">&lt;p&gt;
+Today's &lt;a href="http://adventofcode.com/2016/day/19"&gt;Advent of Code&lt;/a&gt; problem was a variant on the &lt;a href="http://mathworld.wolfram.com/JosephusProblem.html"&gt;Josephus
+problem&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I recalled that there was a formula to figure out the 
+sole survivor but I decide to run a simulation rather than looking it
+up. I also decided to write it up in C++, well, really C with cout
+instead of printf.
+&lt;/p&gt;
+
+&lt;p&gt;
+Part 1 was the traditional problem. Part 2 was a variant where at each
+iteration, you remove the elf opposite the elf being processed (see
+the &lt;a href="http://adventofcode.com/2016/day/19"&gt;problem description&lt;/a&gt; for details).
+&lt;/p&gt;
+
+&lt;p&gt;
+For both solutions I coded up a circular doubly linked list:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nf"&gt;make_ring&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;current&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;first&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+  &lt;span class="n"&gt;first&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="n"&gt;malloc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;sizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+  &lt;span class="n"&gt;first&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;current&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;first&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+  &lt;span class="k"&gt;for&lt;/span&gt;  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+    &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="n"&gt;malloc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;sizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+    &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;prev&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;current&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;current&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;next&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;current&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="n"&gt;current&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;next&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;first&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;first&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;prev&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;current&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;first&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+You can see my complete solutions &lt;a href="https://github.com/zamansky/advent2016/blob/master/day19.cpp"&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+I was thinking about how I wrote the code – I just rolled it off the
+top of my head. The same was true for the earlier AoC problems where I
+had to implement a breadth first search or something similar. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not making a statement about my amazing coding abilities - linked
+lists and graph searches are pretty basic, but rather than having done
+the CS thing for so long, these fundamentals have become somewhat
+routine. I haven't really written C code in years but other than a
+couple of typos (and a stupid mistake in calculating steps) things
+worked right off the bat. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I remember a time when I was in college or even a young professional
+when I would use an array and an index as a stack or queue - not
+because it made more sense but rather, because I wasn't fully
+comfortable with memory manipulation and linked lists. The same could
+be said for my first few years working with anything more than the
+simplest recursion.
+&lt;/p&gt;
+
+&lt;p&gt;
+All of this is to say that it does get easier.
+&lt;/p&gt;
+
+&lt;p&gt;
+Things that seem trivial to us now seemed
+insurmountable when we were beginners. Last year, I wrote about an overnight homework
+assignment I gave to my class that would have been a final project a
+year earlier (the post is &lt;a href="http://cestlaz.github.io/posts/2015-02-11-taking-stock-self-assess.html/#.WFiGl99iekA"&gt;here&lt;/a&gt; but the homework links are no longer
+active) and a few weeks ago I recall a fellow CS teacher talking about
+how much longer it takes his students to write a chunk of code than it
+takes the teacher.
+&lt;/p&gt;
+
+&lt;p&gt;
+New things are challenging and take time but with practice and
+persistence techniques that were once daunting can become tools ready
+at our disposal to use on a whim.
+&lt;/p&gt;</summary>
+    <category term="coding" label="coding"/>
+    <category term="cs" label="cs"/>
+  </entry>
   <entry>
     <title>A couple of things I learned from Danny Jaye</title>
     <id>http://cestlaz.github.io/posts/danny_jaye/</id>

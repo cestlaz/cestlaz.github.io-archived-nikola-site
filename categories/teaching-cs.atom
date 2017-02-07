@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about teaching cs</title>
   <id>http://cestlaz.github.io/categories/teaching-cs.atom</id>
-  <updated>2017-01-09T22:01:41Z</updated>
+  <updated>2017-01-27T13:23:59Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -72,6 +72,44 @@ that 300 level course to begin with.
 &lt;p&gt;
 &lt;a href="https://twitter.com/alfredtwo?ref_src=twsrc%255Etfw"&gt;Alfred Thompson&lt;/a&gt; wrote a post earlier today asking about &lt;a href="http://blog.acthompson.net/2017/01/how-important-are-number-bases-for-pre.html"&gt;teaching
 number bases&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Is it important? Maybe. Is it essential for an intro course? Probably
+not. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Binary makes sense when you start talking about low level stuff. If
+your intro course never gets close to the machine then why muddy the water
+with a topic that's out of place. The topic probably won't be
+appreciated and retention and understanding will be low. 
+&lt;/p&gt;
+
+&lt;p&gt;
+If your intro course gets close to the machine or if you decide to
+talk about compiled code or similar topics, you have an entre to talk
+binary which leads to the convenience of hexadecimal. At Stuyvesant,
+it was much more sensible to talk about number bases in our systems
+course when we looked at C code in a debugger rather than in our intro
+our AP course. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You also might work on some application where bitmaps or similar as
+useful. That might be another good time to talk about number bases.
+&lt;/p&gt;
+
+&lt;p&gt;
+Is it important for a CS person to understand binary and it's relation
+to digital computers? Certainly. Does it have to be studied day one?
+Certainly not.
+&lt;/p&gt;
+
+&lt;p&gt;
+We need to keep an eye on the big picture. You can't get everything
+into a single class or a single yea. The question to ask is - do our students know what they have to by the time they
+leave our charge?
 &lt;/p&gt;</summary>
     <category term="curriculum" label="curriculum"/>
     <category term="teaching-cs" label="teaching cs"/>
