@@ -1,0 +1,52 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 28 -Rectangles
+.. slug: using-emacs-27-rectangles
+.. date: 2017-02-09 08:00:26 UTC-05:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description:
+.. type: text
+#+END_COMMENT
+
+* 
+One of my favorite but little used emacs features is rectangular
+editing. It's little used because I don't need it all that often. It's
+one of my favorites because when I do need it, it's just so amazingly
+useful.
+
+The idea is you can mark a rectangle of text, cut it and later paste
+it.  This means that if you have three columns of text:
+
+#+BEGIN_EXAMPLE
+a b c
+d e f
+g h i
+j k l
+#+END_EXAMPLE
+
+You can easily mark the middle column (b e h k) or even just the b e
+and h, cut it and paste it elsewhere as a rectangle. You can also open
+up a rectangular region (filled with whitespace). There are a couple
+of other niceties but that's the basic idea.
+
+Here's a link to all the functions:
+
+https://www.gnu.org/software/emacs/manual/html_node/emacs/Rectangles.html
+*  
+
+And the video:
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pcA5NeEudgU" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+Enjoy.
+* 
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+
