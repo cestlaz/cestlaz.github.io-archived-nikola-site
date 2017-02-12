@@ -22,7 +22,9 @@ article: http://ogp.me/ns/article#
 <meta property="og:site_name" content="C'est la Z">
 <meta property="og:title" content="Selecting a starting language - why not Javascript">
 <meta property="og:url" content="http://cestlaz.github.io/posts/draft-starting-with-js/">
-<meta property="og:description" content="Write your post here.">
+<meta property="og:description" content="I was catching up with the team at Stuy the other day and they
+mentioned that they were periodically getting pushback on their choice
+of languages, particularly in the intro class. The pushback was mo">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-02-11T08:45:48-05:00">
 <meta property="article:tag" content="cs">
@@ -110,9 +112,136 @@ article: http://ogp.me/ns/article#
 </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>
-Write your post here.
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+I was catching up with the team at Stuy the other day and they
+mentioned that they were periodically getting pushback on their choice
+of languages, particularly in the intro class. The pushback was mostly
+in the form of "why don't you start them with Javascript?" 
 </p>
+
+<p>
+Back in the day, when I created our intro class, where we use Scheme,
+NetLogo and then later Python, I'd get similar pushback but then it
+was "why not Java?" or "why not C?"
+</p>
+
+<p>
+We had a good discussion on this and I shared my thoughts as to why I
+don't like Javascript as a first language and I thought I'd share some
+of them here. I'll try to get around to the rationale behind Scheme
+and NetLogo in a later post.
+</p>
+
+<p>
+To start, let me say that as a language, I <b><b>Love</b></b> Javascript -
+particularly when approaching it as a functional language. I also
+think every school and situation is different so there are likely
+times when Javascript is the right beginner language for the job.
+</p>
+
+<p>
+Let's dive in.
+</p>
+
+<p>
+Why are some of the pluses for Javascript as an intro language.
+</p>
+
+<ul class="org-ul">
+<li>Ubiquity and availability
+
+<p>
+If you have a browser, you have Javascript - it's also available
+through online IDEs and online lightweight sites like <a href="https://jsfiddle.net/">JSFiddle</a>. 
+</p>
+</li>
+
+<li>Interactivity 
+
+<p>
+You can tweak websites almost live, use the HTML5 canvas pretty
+interactively and mode
+</p>
+</li>
+
+<li>It's mainstream
+</li>
+
+<li>It's quick to get up and running
+</li>
+</ul>
+<p>
+This is all true, but there are also downsides.
+</p>
+
+<p>
+One of my big problems with Javascript is the lack of simple
+solid tooling. I love tools like <a href="http://www.drjava.org/">DrJava</a>, <a href="http://drpython.sourceforge.net/">DrPython</a>, and <a href="https://racket-lang.org/">Racket</a> (formerly
+DrScheme). All simple learning IDEs. True, you can use a simple online
+IDE but I haven't found them to have as strong a learning
+interface. They also, generally, either keep you in an oversimplified
+programming sandbox or you have to deal with Javascript's relationship
+with other web technologies. I also prefer, where possible, to have
+kids learn locally so that they can learn something about the
+underlying operating system - even at a user level.
+</p>
+
+<p>
+A problem relating to the lack of tooling is the fact that a JS
+program can fail to run and not give you any meaningful feedback at
+all - this is a problem for a beginner. 
+</p>
+
+<p>
+Javascript also has all sorts of wonkiness. We have <code>=</code>, and <code>==</code>
+which is pretty conventional, but then there's also <code>===</code>. We have
+potentially confusing scoping issues and also some other real
+weirdness:
+</p>
+
+<div class="highlight"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">53</span><span class="o">-</span><span class="mi">3</span><span class="p">);</span> <span class="c1">//  50</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">53</span><span class="o">-</span><span class="s1">'3'</span><span class="p">);</span> <span class="c1">// 50</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'53'</span><span class="o">-</span><span class="mi">3</span><span class="p">);</span> <span class="c1">// 50 </span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'53'</span><span class="o">-</span><span class="s1">'3'</span><span class="p">;</span> <span class="c1">//50</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">53</span><span class="o">+</span><span class="mi">3</span><span class="p">);</span> <span class="c1">//  56</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">53</span><span class="o">+</span><span class="s1">'3'</span><span class="p">);</span> <span class="c1">// '533'</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'53'</span><span class="o">+</span><span class="mi">3</span><span class="p">);</span> <span class="c1">// '533</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'53'</span><span class="o">+</span><span class="s1">'3'</span><span class="p">;</span> <span class="c1">// '533'</span>
+</pre></div>
+
+<p>
+For more, check out the this <a href="https://www.destroyallsoftware.com/talks/wat">video</a>. Start watching at about 1:20 -
+it's a riot.
+</p>
+
+<p>
+All of this weirdness actually makes sense - just not to a beginner. 
+</p>
+
+<p>
+The last thing I don't like about Javascript as a first language is that
+there are too many ways to do something.  
+</p>
+
+<p>
+Loops, recursion, mapping functions - you name it, Javascript's got
+it. I like simpler languages for beginners because it's easier to get
+them thinking and problem solving in certain ways when there tool set
+is somewhat restricted (more on that when I write about Scheme).
+</p>
+
+<p>
+Let me say again that I love javascript as a language and before a
+student graduates Stuy they can learn all about Javascript, front end
+development, some functional programming, and more. It's just not the
+right language to start with.
+</p>
+</div>
+</div>
 
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
