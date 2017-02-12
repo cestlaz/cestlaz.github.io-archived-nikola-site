@@ -2,12 +2,102 @@
 .. title: Selecting a starting language - why not Javascript
 .. slug: draft-starting-with-js
 .. date: 2017-02-11 08:45:48 UTC-05:00
-.. tags: draft, cs, education, curriculum 
+.. tags:  draft, cs, education, curriculum 
 .. category: 
 .. link: 
 .. description: 
 .. type: text
 #+END_COMMENT
 
+* 
+I was catching up with the team at Stuy the other day and they
+mentioned that they were periodically getting pushback on their choice
+of languages, particularly in the intro class. The pushback was mostly
+in the form of "why don't you start them with Javascript?" 
 
-Write your post here.
+Back in the day, when I created our intro class, where we use Scheme,
+NetLogo and then later Python, I'd get similar pushback but then it
+was "why not Java?" or "why not C?"
+
+We had a good discussion on this and I shared my thoughts as to why I
+don't like Javascript as a first language and I thought I'd share some
+of them here. I'll try to get around to the rationale behind Scheme
+and NetLogo in a later post.
+
+To start, let me say that as a language, I **Love** Javascript -
+particularly when approaching it as a functional language. I also
+think every school and situation is different so there are likely
+times when Javascript is the right beginner language for the job.
+
+Let's dive in.
+
+Why are some of the pluses for Javascript as an intro language.
+
+- Ubiquity and availability
+
+  If you have a browser, you have Javascript - it's also available
+  through online IDEs and online lightweight sites like [[https://jsfiddle.net/][JSFiddle]]. 
+
+- Interactivity 
+
+  You can tweak websites almost live, use the HTML5 canvas pretty
+  interactively and mode
+ 
+- It's mainstream
+
+- It's quick to get up and running
+
+This is all true, but there are also downsides.
+
+One of my big problems with Javascript is the lack of simple
+solid tooling. I love tools like [[http://www.drjava.org/][DrJava]], [[http://drpython.sourceforge.net/][DrPython]], and [[https://racket-lang.org/][Racket]] (formerly
+DrScheme). All simple learning IDEs. True, you can use a simple online
+IDE but I haven't found them to have as strong a learning
+interface. They also, generally, either keep you in an oversimplified
+programming sandbox or you have to deal with Javascript's relationship
+with other web technologies. I also prefer, where possible, to have
+kids learn locally so that they can learn something about the
+underlying operating system - even at a user level.
+
+A problem relating to the lack of tooling is the fact that a JS
+program can fail to run and not give you any meaningful feedback at
+all - this is a problem for a beginner. 
+
+Javascript also has all sorts of wonkiness. We have ~=~, and ~==~
+which is pretty conventional, but then there's also ~===~. We have
+potentially confusing scoping issues and also some other real
+weirdness:
+
+#+BEGIN_SRC js
+console.log(53-3); //  50
+console.log(53-'3'); // 50
+console.log('53'-3); // 50 
+console.log('53'-'3'; //50
+
+console.log(53+3); //  56
+console.log(53+'3'); // '533'
+console.log('53'+3); // '533
+console.log('53'+'3'; // '533'
+#+END_SRC
+
+For more, check out the this [[https://www.destroyallsoftware.com/talks/wat][video]]. Start watching at about 1:20 -
+it's a riot.
+
+All of this weirdness actually makes sense - just not to a beginner. 
+
+The last thing I don't like about Javascript as a first language is that
+there are too many ways to do something.  
+
+Loops, recursion, mapping functions - you name it, Javascript's got
+it. I like simpler languages for beginners because it's easier to get
+them thinking and problem solving in certain ways when there tool set
+is somewhat restricted (more on that when I write about Scheme).
+
+Let me say again that I love javascript as a language and before a
+student graduates Stuy they can learn all about Javascript, front end
+development, some functional programming, and more. It's just not the
+right language to start with.
+
+
+
+#  LocalWords:  pushback
