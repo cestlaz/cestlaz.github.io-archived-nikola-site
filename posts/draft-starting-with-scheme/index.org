@@ -70,8 +70,49 @@ where ~(lambda (a b) (+ a b))~ returns a function that adds **a** and
 **b** and ~define~ associates it with the identifier **add2**. Now we
 can use the function: ~(add2 5 10)~ which evaluates to 15.
 
-
-
-              
 With lambda, define, if, and a few more basics, it's off to the
-races. 
+races. The simple, consistent syntax makes things easy for the kids
+and the constrained tool set lets us focus their way of thinking.
+
+Of course this wouldn't work had DrScheme (now [[https://racket-lang.org/][Racket]]) not
+existed. That gave us a nice learning IDE to work in.
+
+Using Scheme, we can not only cover the basics like conditionals,
+abstraction and such but also deeper concepts like recursion, map,
+filter, and reduce. When we move on from Scheme, the kids also have a
+frame of reference for all the other languages and paradigms they use.
+
+There are downsides, however. Outside help is harder to come by and
+there is some pushback from parents and it isn't as pretty and flashy
+as some other tool-sets. Scheme worked at Stuy for a number of
+reasons. When I created the class that used it, there were no good
+pre-AP classes in the school and I had a pretty good reputation as a
+teacher. The class also used multiple tools with [[https://ccl.northwestern.edu/netlogo/][NetLogo]] being the
+primary other one and tackled a variety of CS and non CS topics.
+First time through, reputation and buzz filled the classes and after
+that, the class developed a solid enough reputation to fill itself.
+
+It also didn't hurt that our program developed from the inside
+out. First, we had APCS-AB on the books as a junior year course, then
+I added our post AP senior year electives. Since it was easy to show
+what the kids were already graduating with, it was easy to diffuse any
+pushback from not using mainstream tools in the first class.
+
+Scheme worked at Stuy and I feel that it still does. Would I use
+Scheme for a first experience in a drop in program at an after-school
+where kids might not come back if they don't get to a payoff
+immediately? Probably not. Would I recommend it at a school where I
+want to integrate CS with some of the other subjects quickly, again,
+probably not (except for integration with algebra where [[http://www.bootstrapworld.org/][Bootstrapworld]]
+is a terrific program).
+
+In any event, if you're a high school CS teacher and  haven't played
+with scheme  or some other functional language, I highly recommend
+it - you might not actually ever teach it or use it but it can really
+help develop you as a programmer and an educator.
+
+
+
+
+
+#  LocalWords:  pushback
