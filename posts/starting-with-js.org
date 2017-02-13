@@ -76,12 +76,12 @@ weirdness:
 console.log(53-3); //  50
 console.log(53-'3'); // 50
 console.log('53'-3); // 50 
-console.log('53'-'3'; //50
+console.log('53'-'3'); //50
 
 console.log(53+3); //  56
 console.log(53+'3'); // '533'
 console.log('53'+3); // '533
-console.log('53'+'3'; // '533'
+console.log('53'+'3'); // '533'
 #+END_SRC
 
 For more, check out the this [[https://www.destroyallsoftware.com/talks/wat][video]]. Start watching at about 1:20 -
