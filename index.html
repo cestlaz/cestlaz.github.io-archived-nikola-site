@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-27.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/starting-with-js/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/starting-with-scheme/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -89,7 +89,144 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/starting-with-js/" class="u-url">Selecting a starting language - why not Javascript</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/starting-with-scheme/" class="u-url">Starting with scheme</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/starting-with-scheme/" rel="bookmark"><time class="published dt-published" datetime="2017-02-15T12:20:25-05:00" title="2017-02-15 12:20">2017-02-15 12:20</time></a></p>
+                <p class="commentline">            <a href="posts/starting-with-scheme/#disqus_thread" data-disqus-identifier="cache/posts/staring-with-scheme.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p>
+Scheme is one of the languages used in Stuy's intro CS course. Like
+any other language, there are pros and cons of using it to introduce
+students to CS. Here are some of the reasons why I like Scheme as a
+first language and why despite that,  I don't recommend it in many
+cases.
+</p>
+
+<p>
+Scheme certainly isn't mainstream. That's not the main reason why I
+like it but it is a side benefit. It's less likely kids come into
+class knowing it which creates a level playing field. The few times
+I've had a student with a background in Scheme, they've been good,
+helpful kids rather than ones that tried to show off and dominate the
+class. 
+</p>
+
+<p>
+I like scheme because it's simple. It looks different than other
+languages but is <code>(+ 3 4)</code> really that different than <code>add(3,4)</code> or
+<code>3+4</code>? 
+</p>
+
+<p>
+We can tell kids "everything's a function." While technically not
+true, and I tell my students that it isn't, it's close enough for our
+purposes. Everything's a function and the way we write a function is:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">f</span> <span class="nv">a</span> <span class="nv">b</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+
+<p>
+Apply function <b><b>f</b></b> on arguments <b><b>b c …</b></b>. So we have <code>(+ 2 3)</code> to
+add 2 and 3, <code>(and a b)</code> for logical and <code>(= 3 4)</code> to test to see if 3
+is equal to 4, etc. We also have the same basic notation for things
+like conditionals. In java, we might write:
+</p>
+
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="o">)</span> <span class="o">{</span>
+ <span class="k">return</span> <span class="mi">5</span><span class="o">;</span>
+<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+  <span class="k">return</span> <span class="mi">10</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></div>
+
+<p>
+In scheme, it would be:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">&gt; </span><span class="nv">a</span> <span class="mi">5</span><span class="p">)</span>
+  <span class="mi">5</span>
+  <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+<p>
+Even though we're fudging the rules, we can lay out a handful of rules
+for the kids such as lambda and define follow a similar form to create and
+name functions:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define </span><span class="nv">add2</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">a</span> <span class="nv">b</span><span class="p">)</span> <span class="p">(</span><span class="nb">+ </span><span class="nv">a</span> <span class="nv">b</span><span class="p">)))</span>
+</pre></div>
+
+<p>
+where <code>(lambda (a b) (+ a b))</code> returns a function that adds <b><b>a</b></b> and
+<b><b>b</b></b> and <code>define</code> associates it with the identifier <b><b>add2</b></b>. Now we
+can use the function: <code>(add2 5 10)</code> which evaluates to 15.
+</p>
+
+<p>
+With lambda, define, if, and a few more basics, it's off to the
+races. The simple, consistent syntax makes things easy for the kids
+and the constrained tool set lets us focus their way of thinking.
+</p>
+
+<p>
+Of course this wouldn't work had DrScheme (now <a href="https://racket-lang.org/">Racket</a>) not
+existed. That gave us a nice learning IDE to work in.
+</p>
+
+<p>
+Using Scheme, we can not only cover the basics like conditionals,
+abstraction and such but also deeper concepts like recursion, map,
+filter, and reduce. When we move on from Scheme, the kids also have a
+frame of reference for all the other languages and paradigms they use.
+</p>
+
+<p>
+There are downsides, however. Outside help is harder to come by and
+there is some pushback from parents and it isn't as pretty and flashy
+as some other tool-sets. Scheme worked at Stuy for a number of
+reasons. When I created the class that used it, there were no good
+pre-AP classes in the school and I had a pretty good reputation as a
+teacher. The class also used multiple tools with <a href="https://ccl.northwestern.edu/netlogo/">NetLogo</a> being the
+primary other one and tackled a variety of CS and non CS topics.
+First time through, reputation and buzz filled the classes and after
+that, the class developed a solid enough reputation to fill itself.
+</p>
+
+<p>
+It also didn't hurt that our program developed from the inside
+out. First, we had APCS-AB on the books as a junior year course, then
+I added our post AP senior year electives. Since it was easy to show
+what the kids were already graduating with, it was easy to diffuse any
+pushback from not using mainstream tools in the first class.
+</p>
+
+<p>
+Scheme worked at Stuy and I feel that it still does. Would I use
+Scheme for a first experience in a drop in program at an after-school
+where kids might not come back if they don't get to a payoff
+immediately? Probably not. Would I recommend it at a school where I
+want to integrate CS with some of the other subjects quickly, again,
+probably not (except for integration with algebra where <a href="http://www.bootstrapworld.org/">Bootstrapworld</a>
+is a terrific program).
+</p>
+
+<p>
+In any event, if you're a high school CS teacher and  haven't played
+with scheme  or some other functional language, I highly recommend
+it - you might not actually ever teach it or use it but it can really
+help develop you as a programmer and an educator.
+</p>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/starting-with-js/" class="u-url">Selecting a starting language - why not Javascript</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
@@ -1207,70 +1344,6 @@ to the possibilities so that they can make informed decisions.
 </div>
 </div>
 </div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/ba-bs/" class="u-url">BS? - BA</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/ba-bs/" rel="bookmark"><time class="published dt-published" datetime="2017-01-01T20:14:25-05:00" title="2017-01-01 20:14">2017-01-01 20:14</time></a></p>
-                <p class="commentline">            <a href="posts/ba-bs/#disqus_thread" data-disqus-identifier="cache/posts/ba-bs.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <blockquote>
-<p>
-I didn't know Hunter College had computer science.
-</p>
-</blockquote>
-
-<p>
-I heard that refrain more than once during my fall visits to high
-schools. Part of the reason for this is due to Hunter CS's low
-profile and small size in spite of its high quality.
-</p>
-
-<p>
-Part, though, was also because of some misconceptions about Computer
-Science programs. I'd hear things like "but they only offer a BA not a
-BS," or "but Hunter isn't an engineering school."
-</p>
-
-<p>
-I've come to realize that we have to do a better job educating kids as
-to what can come next after high school.
-</p>
-
-<p>
-I'm not entirely sure why many assume that CS has to be under
-engineering. When I was applying to college, most of my choices were
-Arts and Science schools offering BAs in CS. Maybe it's because people don't
-disagregate STEM subjects. Even though it's not a computer science
-program many schools seem to associate FIRST robotics with computer
-science. Likewise any class with even a modicum of coding becomes
-computer science and as makerspaces and robotics are a percieved as
-easy entry STEM classes that appear to be CS (something I'll rant
-about in a future post), CS becomes associated with engineering.
-</p>
-
-<p>
-It's easy enough to explain the difference between a BA in CS and a BS
-in CS and it's equally easy to show that you can have tremendous
-success either way. All you have to do to show the validity of a BA in
-CS is look at succesful people from places like NYU, Courant, Columbia
-College (as opposed to Columbia Engineering), Cornell school of Arts
-and Sciences, etc to balance successful people from the engineering schools.
-</p>
-
-<p>
-As I'm sure you know, I'm pretty high on Hunter CS and it's certainly
-one of the best value CS educations out there. Personally, I'm a big believer in a
-liberal arts education but in any case, as a community we have to do a
-better job educating the high schools so that graduating seniors are
-best informed when deciding on their futures.
-</p>
     </div>
     </article>
 </div>
