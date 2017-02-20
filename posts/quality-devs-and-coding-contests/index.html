@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Starting with scheme | C'est la Z</title>
+<title>Quality Devs and Coding Contests | C'est la Z</title>
 <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
@@ -16,20 +16,22 @@ article: http://ogp.me/ns/article#
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="../../index.atom">
-<link rel="canonical" href="http://cestlaz.github.io/posts/starting-with-scheme/">
+<link rel="canonical" href="http://cestlaz.github.io/posts/quality-devs-and-coding-contests/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
-<link rel="prev" href="../starting-with-js/" title="Selecting a starting language - why not Javascript" type="text/html">
-<link rel="next" href="../quality-devs-and-coding-contests/" title="Quality Devs and Coding Contests" type="text/html">
+<link rel="prev" href="../starting-with-scheme/" title="Starting with scheme" type="text/html">
 <meta property="og:site_name" content="C'est la Z">
-<meta property="og:title" content="Starting with scheme">
-<meta property="og:url" content="http://cestlaz.github.io/posts/starting-with-scheme/">
-<meta property="og:description" content="Scheme is one of the languages used in Stuy's intro CS course. Like
-any other language, there are pros and cons of using it to introduce
-students to CS. Here are some of the reasons why I like Scheme ">
+<meta property="og:title" content="Quality Devs and Coding Contests">
+<meta property="og:url" content="http://cestlaz.github.io/posts/quality-devs-and-coding-contests/">
+<meta property="og:description" content="I've been planning to put together a response to Alfred Thompson's
+recent post - Software Developers - Quantity vs Quality. 
+
+
+
+TL;DR, although it isn't really long and I do encourage you to read
+Alfr">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2017-02-15T12:20:25-05:00">
+<meta property="article:published_time" content="2017-02-19T16:53:56-05:00">
 <meta property="article:tag" content="cs">
-<meta property="article:tag" content="curriculum">
 <meta property="article:tag" content="education">
 </head>
 <body>
@@ -98,14 +100,14 @@ students to CS. Here are some of the reasons why I like Scheme ">
 						<div class="col-md-8">
 				
 								
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Starting with scheme</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Quality Devs and Coding Contests</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                     Mike Zamansky
             </span></p>
-            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-02-15T12:20:25-05:00" itemprop="datePublished" title="2017-02-15 12:20">2017-02-15 12:20</time></a></p>
-                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/staring-with-scheme.html">Comments</a>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-02-19T16:53:56-05:00" itemprop="datePublished" title="2017-02-19 16:53">2017-02-19 16:53</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/quality-devs-and-coding-contests.html">Comments</a>
 
 
             
@@ -114,129 +116,132 @@ students to CS. Here are some of the reasons why I like Scheme ">
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <p>
-Scheme is one of the languages used in Stuy's intro CS course. Like
-any other language, there are pros and cons of using it to introduce
-students to CS. Here are some of the reasons why I like Scheme as a
-first language and why despite that,  I don't recommend it in many
-cases.
+I've been planning to put together a response to <a href="https://twitter.com/alfredtwo">Alfred Thompson</a>'s
+recent post - <a href="http://blog.acthompson.net/2017/02/software-developersquantity-vs-quality.html'">Software Developers - Quantity vs Quality</a>. 
 </p>
 
 <p>
-Scheme certainly isn't mainstream. That's not the main reason why I
-like it but it is a side benefit. It's less likely kids come into
-class knowing it which creates a level playing field. The few times
-I've had a student with a background in Scheme, they've been good,
-helpful kids rather than ones that tried to show off and dominate the
-class. 
+TL;DR, although it isn't really long and I do encourage you to read
+Alfred's post: a couple of articles talk about how the U.S. has the most
+people entering CS competitions like HackerRank but Americans are not
+at the top of the leaderboard. does this mean that there's less talent
+in America? Does it even matter?
 </p>
 
 <p>
-I like scheme because it's simple. It looks different than other
-languages but is <code>(+ 3 4)</code> really that different than <code>add(3,4)</code> or
-<code>3+4</code>? 
+Before getting to "does it matter," I looked over at the Kaggle
+leaderboards. Looking at their top 10, 2 were from the US - no other
+country had more than 1. The 11th placing competitor was also from the
+US and then 12 was from China, giving them 2 in the top 12.  I also
+looked at recent <a href="http://stats.ioinformatics.org/delegations/2016?sort=total_desc">IOI results</a> and a quick glance seems to indicate that
+the USA seems to do reasonably well. In short, if you buy into ranking
+a country by these types of individual results on specific
+competitions then we're doing fine.
 </p>
 
 <p>
-We can tell kids "everything's a function." While technically not
-true, and I tell my students that it isn't, it's close enough for our
-purposes. Everything's a function and the way we write a function is:
-</p>
-
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">f</span> <span class="nv">a</span> <span class="nv">b</span> <span class="o">...</span><span class="p">)</span>
-</pre></div>
-
-<p>
-Apply function <b><b>f</b></b> on arguments <b><b>b c …</b></b>. So we have <code>(+ 2 3)</code> to
-add 2 and 3, <code>(and a b)</code> for logical and <code>(= 3 4)</code> to test to see if 3
-is equal to 4, etc. We also have the same basic notation for things
-like conditionals. In java, we might write:
-</p>
-
-<div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="o">)</span> <span class="o">{</span>
- <span class="k">return</span> <span class="mi">5</span><span class="o">;</span>
-<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
-  <span class="k">return</span> <span class="mi">10</span><span class="o">;</span>
-<span class="o">}</span>
-</pre></div>
-
-<p>
-In scheme, it would be:
-</p>
-
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">&gt; </span><span class="nv">a</span> <span class="mi">5</span><span class="p">)</span>
-  <span class="mi">5</span>
-  <span class="mi">10</span><span class="p">)</span>
-</pre></div>
-
-<p>
-Even though we're fudging the rules, we can lay out a handful of rules
-for the kids such as lambda and define follow a similar form to create and
-name functions:
-</p>
-
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define </span><span class="nv">add2</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">a</span> <span class="nv">b</span><span class="p">)</span> <span class="p">(</span><span class="nb">+ </span><span class="nv">a</span> <span class="nv">b</span><span class="p">)))</span>
-</pre></div>
-
-<p>
-where <code>(lambda (a b) (+ a b))</code> returns a function that adds <b><b>a</b></b> and
-<b><b>b</b></b> and <code>define</code> associates it with the identifier <b><b>add2</b></b>. Now we
-can use the function: <code>(add2 5 10)</code> which evaluates to 15.
+But, does filling the leaderboard mean a country's producing the best
+tech talent? Probably not.
 </p>
 
 <p>
-With lambda, define, if, and a few more basics, it's off to the
-races. The simple, consistent syntax makes things easy for the kids
-and the constrained tool set lets us focus their way of thinking.
+Coding competitions focus on a specific skill set. There are problem
+solving aspects but they also require speed, knowledge of data
+structures and algorithms, and, yes, even accurate, fast typing
+skills. They also require you work alone. They don't encourage well
+designed, architected, or written code, working on existing code bases
+or working with a team. 
 </p>
 
 <p>
-Of course this wouldn't work had DrScheme (now <a href="https://racket-lang.org/">Racket</a>) not
-existed. That gave us a nice learning IDE to work in.
+Over the years, I've known some very smart and talented individuals
+who've excelled at these types of competitions. If you extend the pool
+to math and science competitions, I've known quite a few. These
+individuals have by and large done well for themselves but as a group,
+you couldn't call them more successful than any other subset of my
+former students. A number of them have gone on and are doing well as
+professors or programmers but, by and large, they're not the ones
+who've gone on to found companies and provide jobs for scores or even
+hundreds of other people and they're not necessarily the ones who've
+led teams that have developed major platforms and projects<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup></p>
+
+<p>
+I don't argue that people who populate competition leaderboards are
+talented and a necessary part of our tech ecosystem but they're only a
+part. I probably want one of these programmers on my team, but not as
+the entire team (see Fake Grimlock's laws of startups - <a href="http://www.builtinchicago.org/blog/secret-laws-startups-part-2-build-right-team">law 9</a>).
+</p>
+
+
+<div align="center">
+<a href="http://www.builtinchicago.org/blog/secret-laws-startups-part-2-build-right-team">
+<img width="30%" src="http://media3.cdn.builtinchicago.org/sites/default/files/imagecache/Original/images/BATMAN-THEN-ROBIN.jpg"></a>
+</div>
+
+<p>
+Competitive programming is a piece of the puzzle as competitive
+programmers are a part of the population. So are project based events
+like <a href="https://dreamitcodeitwinit.wordpress.com/">Dream it. Code it. Win it.</a>, science fairs, and hackathons, which
+can be either cooperative, competitive, or a combination.
 </p>
 
 <p>
-Using Scheme, we can not only cover the basics like conditionals,
-abstraction and such but also deeper concepts like recursion, map,
-filter, and reduce. When we move on from Scheme, the kids also have a
-frame of reference for all the other languages and paradigms they use.
+What do we want? Balance. I think the Stuy program does it pretty
+well. StuyCS graduates who wish to take part in coding competitions
+can do so but if they want to excel at it, they have to work at it on
+their own time. At the same time, the students learn how to work in
+teams and take a project from idea to delivery all the while learning
+some good academic CS and software engineering practices. They'll
+learn more in college on the academic side and the rest on the
+job. I'd love to see better balance in the colleges between CS
+programs preparing kids for graduate programs and CS programs that
+prepare kids for industry. I'd also love to see CS minors that were
+more targeted towards CS+X rather than half of a CS major targeting
+students going to grad schools. 
 </p>
 
 <p>
-There are downsides, however. Outside help is harder to come by and
-there is some pushback from parents and it isn't as pretty and flashy
-as some other tool-sets. Scheme worked at Stuy for a number of
-reasons. When I created the class that used it, there were no good
-pre-AP classes in the school and I had a pretty good reputation as a
-teacher. The class also used multiple tools with <a href="https://ccl.northwestern.edu/netlogo/">NetLogo</a> being the
-primary other one and tackled a variety of CS and non CS topics.
-First time through, reputation and buzz filled the classes and after
-that, the class developed a solid enough reputation to fill itself.
+I also think there's a tremendous opportunity for community colleges
+to fill the role currently occupied by code schools. They could more
+easily strike a balance between academic depth and practical
+preparation.
 </p>
 
 <p>
-It also didn't hurt that our program developed from the inside
-out. First, we had APCS-AB on the books as a junior year course, then
-I added our post AP senior year electives. Since it was easy to show
-what the kids were already graduating with, it was easy to diffuse any
-pushback from not using mainstream tools in the first class.
+I'm working on building Hunter College's honors CS program and while I
+can't move the Hunter curriculum, I'm seeking that balance in my own
+way.
 </p>
 
 <p>
-Scheme worked at Stuy and I feel that it still does. Would I use
-Scheme for a first experience in a drop in program at an after-school
-where kids might not come back if they don't get to a payoff
-immediately? Probably not. Would I recommend it at a school where I
-want to integrate CS with some of the other subjects quickly, again,
-probably not (except for integration with algebra where <a href="http://www.bootstrapworld.org/">Bootstrapworld</a>
-is a terrific program).
+Will we get there? I don't know. Given the way education works, I
+figure at some point people will decide that we have to have more of a
+presence on the CS leaderboards and we'll see programs pop up with
+that in mind. I have no doubt that when that happens, we'll see many
+more Americans near the top. We have a large enough population that
+talent shouldn't be in question. This will be great for students to
+whom these competitions attract. It won't do much, however for the
+rest of the students. I'm not really concerned one way or
+another. Unlike math, where there's a natural progression through K12
+math classes with math team and math competitions being a natural add
+on, the driving forces in CS - be they from industry, government, or
+academia don't seem to have partaken in any code competition Kool-Aid
+so code competitions won't become a driving force in CS ed any time
+soon. 
 </p>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
 
-<p>
-In any event, if you're a high school CS teacher and  haven't played
-with scheme  or some other functional language, I highly recommend
-it - you might not actually ever teach it or use it but it can really
-help develop you as a programmer and an educator.
-</p>
+<div class="footdef">
+<sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup><p>Some
+are but probably a smaller percent from that group than from the
+general pool.</p>
+</div>
+
+
+</div>
+</div>
 
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
@@ -251,23 +256,19 @@ help develop you as a programmer and an educator.
 </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../categories/cs/" rel="tag">cs</a></li>
-            <li><a class="tag p-category" href="../../categories/curriculum/" rel="tag">curriculum</a></li>
             <li><a class="tag p-category" href="../../categories/education/" rel="tag">education</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../starting-with-js/" rel="prev" title="Selecting a starting language - why not Javascript">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../quality-devs-and-coding-contests/" rel="next" title="Quality Devs and Coding Contests">Next post</a>
+                <a href="../starting-with-scheme/" rel="prev" title="Starting with scheme">Previous post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="cestlaz",
-            disqus_url="http://cestlaz.github.io/posts/starting-with-scheme/",
-        disqus_title="Starting with scheme",
-        disqus_identifier="cache/posts/staring-with-scheme.html",
+            disqus_url="http://cestlaz.github.io/posts/quality-devs-and-coding-contests/",
+        disqus_title="Quality Devs and Coding Contests",
+        disqus_identifier="cache/posts/quality-devs-and-coding-contests.html",
         disqus_config = function () {
             this.language = "en";
         };
