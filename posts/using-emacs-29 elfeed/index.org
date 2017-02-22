@@ -1,0 +1,139 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 29 -elfeed part 1
+.. slug: using-emacs-29 elfeed
+.. date: 2017-02-22 08:00:26 UTC-05:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description:
+.. type: text
+#+END_COMMENT
+
+* 
+Since the demise of Google Reader, I've been using [[http://feedly.com][Feedly]] to read my
+streams. Feedly's a nice product and it's been working well for me for
+quite some time. 
+
+A few days ago, I decided to see what emacs had to offer on the feed
+reader front. One solution was Gnus but then I've never been able to
+get my head around Gnus. Another was [[https://github.com/skeeto/elfeed][elfeed]].
+
+I thought I'd give elfeed a go. 
+
+Combined with elfeed-goodies and elfeed-org it's a pretty nice
+solution. You can easily search by either keywords or tags and tags
+are particularly easy to set up with elfeed-org. 
+
+If I want to display all the items from the last month, I hit **s** (for
+search) and enter the query:
+#+BEGIN_SRC 
+@6-months-ago
+#+END_SRC
+
+For only unread posts:
+#+BEGIN_SRC 
+@6-months-ago +unread
+#+END_SRC
+
+For unread posts tagged emacs:
+#+BEGIN_SRC 
+@6-months-ago +unread +emacs
+#+END_SRC
+
+And for everything in the past 24 hours, read or not:
+
+#+BEGIN_SRC 
+@1-day-ago
+#+END_SRC
+
+It's pretty easy and pretty slick. The only thing missing is easy
+single key navigation. There's one solution to that problem over at
+[[http://pragmaticemacs.com/emacs/read-your-rss-feeds-in-emacs-with-elfeed/][Pragmatic Emacs]] and I'll present another one it the next two posts.
+
+I'm using some of the code from pragmatic emacs (the functions that start
+with **bjm**) which makes things easier when sharing the elfeed
+database on Dropbox (see the Pragmatic Emacs post above for details) and also a couple of routines I found via web
+search). 
+
+Here's my basic configuration:
+
+
+#+BEGIN_SRC emacs-lisp
+    (setq elfeed-db-directory "~/Dropbox/shared/elfeeddb")
+
+
+    (defun elfeed-mark-all-as-read ()
+	  (interactive)
+	  (mark-whole-buffer)
+	  (elfeed-search-untag-all-unread))
+
+
+    ;;functions to support syncing .elfeed between machines
+    ;;makes sure elfeed reads index from disk before launching
+    (defun bjm/elfeed-load-db-and-open ()
+      "Wrapper to load the elfeed db from disk before opening"
+      (interactive)
+      (elfeed-db-load)
+      (elfeed)
+      (elfeed-search-update--force))
+
+    ;;write to disk when quiting
+    (defun bjm/elfeed-save-db-and-bury ()
+      "Wrapper to save the elfeed db to disk before burying buffer"
+      (interactive)
+      (elfeed-db-save)
+      (quit-window))
+
+
+
+    (defalias 'elfeed-toggle-star
+      (elfeed-expose #'elfeed-search-toggle-all 'star))
+
+    (use-package elfeed
+      :ensure t
+      :bind (:map elfeed-search-mode-map
+		  ("q" . bjm/elfeed-save-db-and-bury)
+		  ("Q" . bjm/elfeed-save-db-and-bury)
+		  ("m" . elfeed-toggle-star)
+		  ("M" . elfeed-toggle-star)
+		  ("j" . mz/make-and-run-elfeed-hydra)
+		  ("J" . mz/make-and-run-elfeed-hydra)
+		  )
+      )
+
+    (use-package elfeed-goodies
+      :ensure t
+      :config
+      (elfeed-goodies/setup))
+
+
+    (use-package elfeed-org
+      :ensure t
+      :config
+      (elfeed-org)
+      (setq rmh-elfeed-org-files (list "~/Dropbox/shared/elfeed.org")))
+
+
+
+
+#+END_SRC
+
+Check out elfeed and make sure to go to the links provided on the main
+[[https://github.com/skeeto/elfeed][elfeed]] page.
+
+
+*  
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pOFqzK1Ymr4" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+Enjoy.
+* 
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+
