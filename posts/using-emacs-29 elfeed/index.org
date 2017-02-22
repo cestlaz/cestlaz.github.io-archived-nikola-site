@@ -96,8 +96,6 @@ Here's my basic configuration:
 		  ("Q" . bjm/elfeed-save-db-and-bury)
 		  ("m" . elfeed-toggle-star)
 		  ("M" . elfeed-toggle-star)
-		  ("j" . mz/make-and-run-elfeed-hydra)
-		  ("J" . mz/make-and-run-elfeed-hydra)
 		  )
       )
 
