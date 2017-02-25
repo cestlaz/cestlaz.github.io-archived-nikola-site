@@ -1,0 +1,141 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 30 - elfeed part 2 - Hydras
+.. slug: using-emacs-30-elfeed-2
+.. date: 2017-02-25 08:00:26 UTC-05:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description:
+.. type: text
+#+END_COMMENT
+
+* 
+In [[http://cestlaz.github.io/posts/using-emacs-29%2520elfeed/][part 1]], I talked about [[https://github.com/skeeto/elfeed][elfeed]], a really awesome feed reader for
+emacs. Generally, I'm really liking it but there's been one problem -
+not being able to navigate quickly between groups of feeds with a
+keystroke or two.
+
+It's emacs so there has to be a solution.
+
+Enter [[https://github.com/abo-abo/hydra][hydra]] - a terrific emacs package from the same guy who brought
+us [[https://github.com/abo-abo/hydra][swiper]], another one of my favorite emacs packages.
+
+Basically, Hydra allows us to create Hydras - a collection of emacs
+commands tied o a single prefix along with a nice interface and help
+system.
+
+Truth be told, I don't use hydra as much anymore since [[https://github.com/justbur/emacs-which-key][which-key]]
+does such a great job most of the time. Which-key, however, is no help
+here.
+
+Here's the code to install hydra along with a some of sample Hydra's
+I use:
+
+#+BEGIN_SRC emacs-lisp
+  (use-package hydra 
+    :ensure t)
+
+  ;; Hydra for modes that toggle on and off
+  (global-set-key
+   (kbd "C-x t")
+   (defhydra toggle (:color blue)
+     "toggle"
+     ("a" abbrev-mode "abbrev")
+     ("s" flyspell-mode "flyspell")
+     ("d" toggle-debug-on-error "debug")
+     ("c" fci-mode "fCi")
+     ("f" auto-fill-mode "fill")
+     ("t" toggle-truncate-lines "truncate")
+     ("w" whitespace-mode "whitespace")
+     ("q" nil "cancel")))
+
+  ;; Hydra for navigation
+  (global-set-key
+   (kbd "C-x j")
+   (defhydra gotoline 
+     ( :pre (linum-mode 1)
+	    :post (linum-mode -1))
+     "goto"
+     ("t" (lambda () (interactive)(move-to-window-line-top-bottom 0)) "top")
+     ("b" (lambda () (interactive)(move-to-window-line-top-bottom -1)) "bottom")
+     ("m" (lambda () (interactive)(move-to-window-line-top-bottom)) "middle")
+     ("e" (lambda () (interactive)(end-of-buffer)) "end")
+     ("c" recenter-top-bottom "recenter")
+     ("n" next-line "down")
+     ("p" (lambda () (interactive) (forward-line -1))  "up")
+     ("g" goto-line "goto-line")
+     ))
+  
+  ;; Hydra for some org-mode stuff
+  (global-set-key
+   (kbd "C-c t")
+   (defhydra hydra-global-org (:color blue)
+     "Org"
+     ("t" org-timer-start "Start Timer")
+     ("s" org-timer-stop "Stop Timer")
+     ("r" org-timer-set-timer "Set Timer") ; This one requires you be in an orgmode doc, as it sets the timer for the header
+     ("p" org-timer "Print Timer") ; output timer value to buffer
+     ("w" (org-clock-in '(4)) "Clock-In") ; used with (org-clock-persistence-insinuate) (setq org-clock-persist t)
+     ("o" org-clock-out "Clock-Out") ; you might also want (setq org-log-note-clock-out t)
+     ("j" org-clock-goto "Clock Goto") ; global visit the clocked task
+     ("c" org-capture "Capture") ; Don't forget to define the captures you want http://orgmode.org/manual/Capture.html
+     ("l" (or )rg-capture-goto-last-stored "Last Capture"))
+
+
+
+#+END_SRC
+
+Take a look at the [[https://github.com/abo-abo/hydra][Hydra]] home page for detailed information.
+
+With Hydra installed, I can creat one for navigating in elfeed:
+
+#+BEGIN_SRC emacs-lisp
+  `(defhydra mz/hydra-elfeed ()
+     "filter"
+     ("c" (elfeed-search-set-filter "@6-months-ago +cs") "cs")
+     ("e" (elfeed-search-set-filter "@6-months-ago +emacs") "emacs")
+     ("d" (elfeed-search-set-filter "@6-months-ago +education") "education")
+     ("*" (elfeed-search-set-filter "@6-months-ago +star") "Starred")
+     ("M" elfeed-toggle-star "Mark")
+     ("A" (elfeed-search-set-filter "@6-months-ago") "All")
+     ("T" (elfeed-search-set-filter "@1-day-ago") "Today")
+     ("Q" bjm/elfeed-save-db-and-bury "Quit Elfeed" :color blue)
+     ("q" nil "quit" :color blue)
+     )
+
+#+END_SRC
+
+and add a binding to the elfeed key map:
+
+#+BEGIN_SRC emacs-lisp
+  (use-package elfeed
+    :ensure t
+    :bind (:map elfeed-search-mode-map
+		("q" . bjm/elfeed-save-db-and-bury)
+		("Q" . bjm/elfeed-save-db-and-bury)
+		("m" . elfeed-toggle-star)
+		("M" . elfeed-toggle-star)
+		("j" . mz/hydra-elfeed/body)
+		("J" . mz/hydra-elfeed/body)))
+
+#+End_SRC
+
+This isn't the actual Hydra I use -- we'll get to that in the next
+installment where I'll show how to make a Hydra on the fly that
+contains keys for all your elfeed tags but this is a reasonable example.
+
+Here's the video:
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tjnK1rkO7RU" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+Enjoy.
+* 
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+

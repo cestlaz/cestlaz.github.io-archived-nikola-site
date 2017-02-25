@@ -1,5 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link rel="self" href="http://cestlaz.github.io/rss.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 22 Feb 2017 19:52:42 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 29 -elfeed part 1</title><link>http://cestlaz.github.io/posts/using-emacs-29%20elfeed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link rel="self" href="http://cestlaz.github.io/rss.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 25 Feb 2017 22:45:18 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 30 - elfeed part 2 - Hydras</title><link>http://cestlaz.github.io/posts/using-emacs-30-elfeed-2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+In &lt;a href="http://cestlaz.github.io/posts/using-emacs-29%2520elfeed/"&gt;part 1&lt;/a&gt;, I talked about &lt;a href="https://github.com/skeeto/elfeed"&gt;elfeed&lt;/a&gt;, a really awesome feed reader for
+emacs. Generally, I'm really liking it but there's been one problem -
+not being able to navigate quickly between groups of feeds with a
+keystroke or two.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's emacs so there has to be a solution.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enter &lt;a href="https://github.com/abo-abo/hydra"&gt;hydra&lt;/a&gt; - a terrific emacs package from the same guy who brought
+us &lt;a href="https://github.com/abo-abo/hydra"&gt;swiper&lt;/a&gt;, another one of my favorite emacs packages.
+&lt;/p&gt;
+
+&lt;p&gt;
+Basically, Hydra allows us to create Hydras - a collection of emacs
+commands tied o a single prefix along with a nice interface and help
+system.
+&lt;/p&gt;
+
+&lt;p&gt;
+Truth be told, I don't use hydra as much anymore since &lt;a href="https://github.com/justbur/emacs-which-key"&gt;which-key&lt;/a&gt;
+does such a great job most of the time. Which-key, however, is no help
+here.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the code to install hydra along with a some of sample Hydra's
+I use:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;hydra&lt;/span&gt; 
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; Hydra for modes that toggle on and off&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt;
+ &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-x t"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+ &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defhydra&lt;/span&gt; &lt;span class="nv"&gt;toggle&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:color&lt;/span&gt; &lt;span class="nv"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="s"&gt;"toggle"&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"a"&lt;/span&gt; &lt;span class="nv"&gt;abbrev-mode&lt;/span&gt; &lt;span class="s"&gt;"abbrev"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"s"&lt;/span&gt; &lt;span class="nv"&gt;flyspell-mode&lt;/span&gt; &lt;span class="s"&gt;"flyspell"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"d"&lt;/span&gt; &lt;span class="nv"&gt;toggle-debug-on-error&lt;/span&gt; &lt;span class="s"&gt;"debug"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"c"&lt;/span&gt; &lt;span class="nv"&gt;fci-mode&lt;/span&gt; &lt;span class="s"&gt;"fCi"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"f"&lt;/span&gt; &lt;span class="nv"&gt;auto-fill-mode&lt;/span&gt; &lt;span class="s"&gt;"fill"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"t"&lt;/span&gt; &lt;span class="nv"&gt;toggle-truncate-lines&lt;/span&gt; &lt;span class="s"&gt;"truncate"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"w"&lt;/span&gt; &lt;span class="nv"&gt;whitespace-mode&lt;/span&gt; &lt;span class="s"&gt;"whitespace"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"q"&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="s"&gt;"cancel"&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; Hydra for navigation&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt;
+ &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-x j"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+ &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defhydra&lt;/span&gt; &lt;span class="nv"&gt;gotoline&lt;/span&gt; 
+   &lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="nv"&gt;:pre&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;linum-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	  &lt;span class="nv"&gt;:post&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;linum-mode&lt;/span&gt; &lt;span class="mi"&gt;-1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+   &lt;span class="s"&gt;"goto"&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"t"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)(&lt;/span&gt;&lt;span class="nf"&gt;move-to-window-line-top-bottom&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="s"&gt;"top"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"b"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)(&lt;/span&gt;&lt;span class="nf"&gt;move-to-window-line-top-bottom&lt;/span&gt; &lt;span class="mi"&gt;-1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="s"&gt;"bottom"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"m"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)(&lt;/span&gt;&lt;span class="nf"&gt;move-to-window-line-top-bottom&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="s"&gt;"middle"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"e"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)(&lt;/span&gt;&lt;span class="nf"&gt;end-of-buffer&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="s"&gt;"end"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"c"&lt;/span&gt; &lt;span class="nv"&gt;recenter-top-bottom&lt;/span&gt; &lt;span class="s"&gt;"recenter"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"n"&lt;/span&gt; &lt;span class="nv"&gt;next-line&lt;/span&gt; &lt;span class="s"&gt;"down"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"p"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;forward-line&lt;/span&gt; &lt;span class="mi"&gt;-1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;  &lt;span class="s"&gt;"up"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"g"&lt;/span&gt; &lt;span class="nv"&gt;goto-line&lt;/span&gt; &lt;span class="s"&gt;"goto-line"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; Hydra for some org-mode stuff&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt;
+ &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-c t"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+ &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defhydra&lt;/span&gt; &lt;span class="nv"&gt;hydra-global-org&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:color&lt;/span&gt; &lt;span class="nv"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="s"&gt;"Org"&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"t"&lt;/span&gt; &lt;span class="nv"&gt;org-timer-start&lt;/span&gt; &lt;span class="s"&gt;"Start Timer"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"s"&lt;/span&gt; &lt;span class="nv"&gt;org-timer-stop&lt;/span&gt; &lt;span class="s"&gt;"Stop Timer"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"r"&lt;/span&gt; &lt;span class="nv"&gt;org-timer-set-timer&lt;/span&gt; &lt;span class="s"&gt;"Set Timer"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; This one requires you be in an orgmode doc, as it sets the timer for the header&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"p"&lt;/span&gt; &lt;span class="nv"&gt;org-timer&lt;/span&gt; &lt;span class="s"&gt;"Print Timer"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; output timer value to buffer&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"w"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;org-clock-in&lt;/span&gt; &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="s"&gt;"Clock-In"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; used with (org-clock-persistence-insinuate) (setq org-clock-persist t)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"o"&lt;/span&gt; &lt;span class="nv"&gt;org-clock-out&lt;/span&gt; &lt;span class="s"&gt;"Clock-Out"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; you might also want (setq org-log-note-clock-out t)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"j"&lt;/span&gt; &lt;span class="nv"&gt;org-clock-goto&lt;/span&gt; &lt;span class="s"&gt;"Clock Goto"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; global visit the clocked task&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"c"&lt;/span&gt; &lt;span class="nv"&gt;org-capture&lt;/span&gt; &lt;span class="s"&gt;"Capture"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; Don't forget to define the captures you want http://orgmode.org/manual/Capture.html&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"l"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;or &lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="nv"&gt;rg-capture-goto-last-stored&lt;/span&gt; &lt;span class="s"&gt;"Last Capture"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Take a look at the &lt;a href="https://github.com/abo-abo/hydra"&gt;Hydra&lt;/a&gt; home page for detailed information.
+&lt;/p&gt;
+
+&lt;p&gt;
+With Hydra installed, I can creat one for navigating in elfeed:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;`&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defhydra&lt;/span&gt; &lt;span class="nv"&gt;mz/hydra-elfeed&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+   &lt;span class="s"&gt;"filter"&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"c"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-set-filter&lt;/span&gt; &lt;span class="s"&gt;"@6-months-ago +cs"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="s"&gt;"cs"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"e"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-set-filter&lt;/span&gt; &lt;span class="s"&gt;"@6-months-ago +emacs"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="s"&gt;"emacs"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"d"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-set-filter&lt;/span&gt; &lt;span class="s"&gt;"@6-months-ago +education"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="s"&gt;"education"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-set-filter&lt;/span&gt; &lt;span class="s"&gt;"@6-months-ago +star"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="s"&gt;"Starred"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"M"&lt;/span&gt; &lt;span class="nv"&gt;elfeed-toggle-star&lt;/span&gt; &lt;span class="s"&gt;"Mark"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"A"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-set-filter&lt;/span&gt; &lt;span class="s"&gt;"@6-months-ago"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="s"&gt;"All"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"T"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-set-filter&lt;/span&gt; &lt;span class="s"&gt;"@1-day-ago"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="s"&gt;"Today"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Q"&lt;/span&gt; &lt;span class="nv"&gt;bjm/elfeed-save-db-and-bury&lt;/span&gt; &lt;span class="s"&gt;"Quit Elfeed"&lt;/span&gt; &lt;span class="nv"&gt;:color&lt;/span&gt; &lt;span class="nv"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"q"&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="s"&gt;"quit"&lt;/span&gt; &lt;span class="nv"&gt;:color&lt;/span&gt; &lt;span class="nv"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+and add a binding to the elfeed key map:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;elfeed&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:bind&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:map&lt;/span&gt; &lt;span class="nv"&gt;elfeed-search-mode-map&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"q"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;bjm/elfeed-save-db-and-bury&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Q"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;bjm/elfeed-save-db-and-bury&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"m"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;elfeed-toggle-star&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"M"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;elfeed-toggle-star&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"j"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;mz/hydra-elfeed/body&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"J"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;mz/hydra-elfeed/body&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+This isn't the actual Hydra I use – we'll get to that in the next
+installment where I'll show how to make a Hydra on the fly that
+contains keys for all your elfeed tags but this is a reasonable example.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the video:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/tjnK1rkO7RU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Enjoy.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-30-elfeed-2/</guid><pubDate>Sat, 25 Feb 2017 13:00:26 GMT</pubDate></item><item><title>Using Emacs - 29 -elfeed part 1</title><link>http://cestlaz.github.io/posts/using-emacs-29%20elfeed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -1013,95 +1174,4 @@ Relevant links:
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-27-shell/</guid><pubDate>Fri, 27 Jan 2017 13:00:26 GMT</pubDate></item><item><title>Essential topics for an intro course (not)</title><link>http://cestlaz.github.io/posts/essentials-for-an-intro-course/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
-What essential topics should we teach in our intro courses? This seems
-to be a recurring topic recently. 
-&lt;/p&gt;
-
-&lt;p&gt;
-It can be an important topic but, unfortunately, too often, it seems
-that people have too myopic a view
-&lt;/p&gt;
-
-&lt;p&gt;
-I remember thinking about this years ago when APCS moved from C++ to
-Java. Both languages have good and bad points both for practical and
-educational use. A big loss in the move to Java was memory management
-and the topics you could cover when memory issues arose. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Of course one might say that memory management shouldn't be in the
-first year of CS. That's fine, as long as you put it back in somewhere
-later on - something that didn't seem to happen universally. 
-&lt;/p&gt;
-
-&lt;p&gt;
-That's the myopic view - far too few look at the overall picture.
-&lt;/p&gt;
-
-&lt;p&gt;
-C++ to Java ended up in removing a topic. I've also seen the reverse. 
-I was talking to a friend about intro topics. He told me that it was
-critical to cover (insert topic here) in an intro course. Why, I
-asked? Because the kids absolutely needed to know that material in the
-third year course he was teaching.
-&lt;/p&gt;
-
-&lt;p&gt;
-I pressed a bit – "how many kids actually remember (insert topic
-here) and do you have to reteach anything." The answer - pretty much
-no one remembered and he always retaught the subject.
-&lt;/p&gt;
-
-&lt;p&gt;
-Did this mean that no one taught the topic in the earlier class?
-Unlikely. More likely is that the topic was taught without purpose or
-context, just because it was supposed to be taught and thus the
-knowledge wasn't retained. Sounds to me like the topic wasn't in the
-right place to begin with. Maybe it should have just been taught in
-that 300 level course to begin with.
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;a href="https://twitter.com/alfredtwo?ref_src=twsrc%255Etfw"&gt;Alfred Thompson&lt;/a&gt; wrote a post earlier today asking about &lt;a href="http://blog.acthompson.net/2017/01/how-important-are-number-bases-for-pre.html"&gt;teaching
-number bases&lt;/a&gt;. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Is it important? Maybe. Is it essential for an intro course? Probably
-not. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Binary makes sense when you start talking about low level stuff. If
-your intro course never gets close to the machine then why muddy the water
-with a topic that's out of place. The topic probably won't be
-appreciated and retention and understanding will be low. 
-&lt;/p&gt;
-
-&lt;p&gt;
-If your intro course gets close to the machine or if you decide to
-talk about compiled code or similar topics, you have an entre to talk
-binary which leads to the convenience of hexadecimal. At Stuyvesant,
-it was much more sensible to talk about number bases in our systems
-course when we looked at C code in a debugger rather than in our intro
-our AP course. 
-&lt;/p&gt;
-
-&lt;p&gt;
-You also might work on some application where bitmaps or similar as
-useful. That might be another good time to talk about number bases.
-&lt;/p&gt;
-
-&lt;p&gt;
-Is it important for a CS person to understand binary and it's relation
-to digital computers? Certainly. Does it have to be studied day one?
-Certainly not.
-&lt;/p&gt;
-
-&lt;p&gt;
-We need to keep an eye on the big picture. You can't get everything
-into a single class or a single yea. The question to ask is - do our students know what they have to by the time they
-leave our charge?
-&lt;/p&gt;</description><category>curriculum</category><category>teaching cs</category><guid>http://cestlaz.github.io/posts/essentials-for-an-intro-course/</guid><pubDate>Mon, 09 Jan 2017 20:56:08 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-27-shell/</guid><pubDate>Fri, 27 Jan 2017 13:00:26 GMT</pubDate></item></channel></rss>
