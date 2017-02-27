@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 27)</title>
   <id>http://cestlaz.github.io/index-27.atom</id>
-  <updated>2017-02-25T22:43:53Z</updated>
+  <updated>2017-02-27T14:56:12Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,117 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-26.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-27.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Using Emacs - 27 - shell and eshell</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-27-shell/</id>
+    <updated>2017-01-27T08:00:26-05:00</updated>
+    <published>2017-01-27T08:00:26-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-27-shell/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+While I use emacs for all all sorts of things, one of the things I
+haven't done much is run shells from within emacs. I'm not sure
+why. I'm a command line wonk and adding command line goodness and
+emacs together seems like a natural. Maybe it's because back in the
+day I spent a lot of time on MS-DOS systems. You could get a
+reasonable Unixy facsimile using tools like the &lt;a href="https://en.wikipedia.org/wiki/MKS_Toolkit"&gt;MKS toolkit&lt;/a&gt; and I like
+so many other young computer scientists wrote our own small shells
+when we learned C so I used that insted of command.com. 
+&lt;/p&gt;
+
+&lt;p&gt;
+In any event, I'm trying to use the shell within emacs more. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's a quick video showing both &lt;b&gt;&lt;b&gt;shell&lt;/b&gt;&lt;/b&gt;, which runs whatever your
+default shell is in an emacs buffer and &lt;b&gt;&lt;b&gt;eshell&lt;/b&gt;&lt;/b&gt; which is emacs own
+shell.
+&lt;/p&gt;
+
+&lt;p&gt;
+I use a couple of packages to smooth over a couple of things.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="https://github.com/porterjamesj/virtualenvwrapper.el"&gt;Virtuelenvwrapper&lt;/a&gt; smooths things voer with the python virtaulenv and
+virtualenvwrapper linux packages:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;virtualenvwrapper&lt;/span&gt;
+      &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+      &lt;span class="nv"&gt;:config&lt;/span&gt;
+      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;venv-initialize-interactive-shells&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;venv-initialize-eshell&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Only relevant if you use Python and virtualenvs.
+&lt;/p&gt;
+
+&lt;p&gt;
+and more importantly, &lt;a href="https://github.com/killdash9/better-shell"&gt;better shell&lt;/a&gt;:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;better-shell&lt;/span&gt;
+    &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+    &lt;span class="nv"&gt;:bind&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"C-'"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;better-shell-shell&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"C-;"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;better-shell-remote-open&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+cleans things up when using a termianl to connect to a remote machine.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you use a shell from within emacs as part of your workflow, please
+post how, or better, make a video!!!!
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/pjhRFMUxBB4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>Essential topics for an intro course (not)</title>
     <id>http://cestlaz.github.io/posts/essentials-for-an-intro-course/</id>
