@@ -1,0 +1,171 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 31 - elfeed part 3 - macros
+.. slug: using-emacs-31-elfeed-3
+.. date: 2017-03-01 08:00:26 UTC-05:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description:
+.. type: text
+#+END_COMMENT
+
+* 
+In [[%5B%5Bhttp://cestlaz.github.io/posts/using-emacs-30-elfeed-2/#.WLbi-d9idKQ%5D%5BIn%20][part 2]] I talked about how I used [[https://github.com/abo-abo/hydra][Hyrdas]] to quickly navigate through
+elfeed tags. It was a nice step up but the fact that I still had to
+manually edit my configuration code for every new tag to update the
+hydra was a problem.
+
+Basically, I had to somehow or other, take a list of all the active
+tags and with it build a **defhydra** command that will then make my
+Hydra.
+
+Fortunately, emacs, being a lisp, has macros. I'm not talking about
+keyboard macros which I talked about in [[http://cestlaz.github.io/posts/using-emacs-15-macros/#.WLbj5t9idKQ][episode 15]] but rather [[http://wiki.c2.com/?LispMacro][Lisp
+style macros]]. Macros let you transform code and then execute the
+transformed code. 
+
+The example I give in the video:
+
+
+#+BEGIN_SRC emacs-lisp
+(defmacro infix (a op b)
+  `(,op ,a ,b))
+
+(infix 3 + 8) ; evaluates to 11
+#+END_SRC
+
+This transforms the **3+8** into **(+ 3 8)** and then evaluates it to
+be 11.
+
+We can use this idea with our Hydra.
+
+We can use the call **elfeed-db-get-all-tags** to get a list of all
+the tags in our database. I decided that if I had an uppercase letter
+in the tag, I'd use the lowercase version of that letter as my "hotkey"
+and if it didn't, I'd just use the first letter.
+
+So, given a tag list of:
+
+#+BEGIN_SRC emacs-lisp
+    (active blogs cs eDucation emacs local misc sports star tech unread webcomics)
+#+END_SRC
+
+I'd want a "hotkey" of **b** for logs and **d** for eDucation.
+
+The routine **z/hasCap** tests to see if a tag has a capital letter in
+it and **z/get-hydra-option-key** returns the final "hotkey:"
+
+#+BEGIN_SRC 
+
+
+
+
+  (defun z/hasCap (s) ""
+	 (let ((case-fold-search nil))
+	 (string-match-p "[[:upper:]]" s)
+	 ))
+
+
+  (defun z/get-hydra-option-key (s)
+    "returns single upper case letter (converted to lower) or first"
+    (interactive)
+    (let ( (loc (z/hasCap s)))
+      (if loc
+	  (downcase (substring s loc (+ loc 1)))
+	(substring s 0 1)
+      )))
+
+#+END_SRC
+
+
+**mz/make-elfeed-cats** takes a list of tags and returns a list of
+items where each item is in the form expected by the hydra definition:
+
+#+BEGIN_SRC emacs-lisp
+("t" (elfeed-search-set-filter "@6-months-ago +tagname") "tagname")
+#+END_SRC
+
+#+BEGIN_SRC emacs-lisp
+
+  (defun mz/make-elfeed-cats (tags)
+    "Returns a list of lists. Each one is line for the hydra configuratio in the form
+       (c function hint)"
+    (interactive)
+    (mapcar (lambda (tag)
+	      (let* (
+		     (tagstring (symbol-name tag))
+		     (c (z/get-hydra-option-key tagstring))
+		     )
+		(list c (append '(elfeed-search-set-filter) (list (format "@6-months-ago +%s" tagstring) ))tagstring  )))
+	    tags))
+
+#+END_SRC
+
+Finally, here's our macro:
+
+#+BEGIN_SRC emacs-lisp
+
+
+  
+  (defmacro mz/make-elfeed-hydra ()
+    `(defhydra mz/hydra-elfeed ()
+       "filter"
+       ,@(mz/make-elfeed-cats (elfeed-db-get-all-tags))
+       ("*" (elfeed-search-set-filter "@6-months-ago +star") "Starred")
+       ("M" elfeed-toggle-star "Mark")
+       ("A" (elfeed-search-set-filter "@6-months-ago") "All")
+       ("T" (elfeed-search-set-filter "@1-day-ago") "Today")
+       ("Q" bjm/elfeed-save-db-and-bury "Quit Elfeed" :color blue)
+       ("q" nil "quit" :color blue)
+       ))
+
+
+#+END_SRC
+
+The line that starts with **,@** calls the routine that builds lines
+of code for all the tags in the database and the macro leaves me with
+the defhydra I need.
+
+
+I then redefine the hydra every time I need it, just in case tags
+changed:
+
+#+BEGIN_SRC 
+
+    (defun mz/make-and-run-elfeed-hydra ()
+      ""
+      (interactive)
+      (mz/make-elfeed-hydra)
+      (mz/hydra-elfeed/body))
+#+END_SRC
+
+
+and bind **mz/make-and-run-elfeed-hydra** to j and J in my elfeed
+keymap (this code goes in the bind section of my use-package elfeed
+section):
+#+BEGIN_SRC emacs-lisp
+		  ("j" . mz/make-and-run-elfeed-hydra)
+		  ("J" . mz/make-and-run-elfeed-hydra)
+#+END_SRC
+
+As long as I remember to name my tags in a way that they don't
+conflict with one another I can quickly navigate all around elfeed.
+
+Macros FTW!!!!
+
+
+Here's the video:
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5zuSUbAHH8c" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+Enjoy.
+* 
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+
