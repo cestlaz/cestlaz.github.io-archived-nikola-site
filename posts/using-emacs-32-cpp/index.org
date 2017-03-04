@@ -1,0 +1,154 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 32 - C++
+.. slug: using-emacs-32-cpp
+.. date: 2017-03-04 08:00:26 UTC-05:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description:
+.. type: text
+#+END_COMMENT
+
+* 
+This video is specifically for my students or any students out there
+who are starting with C++ and emacs. The videos also longer than usual, coming in
+at a little over 20 minutes.
+
+The big difference is instead of building on my [[https://github.com/zamansky/using-emacs][existing config]], the
+code at the bottom is a complete standalone configuration. It's all
+pulled from the main config with one additional package.
+
+By taking the code at the bottom and putting in into a file named **init.el** in a
+directory off of your home directory named **.emacs.d** and run emacs,
+it will install everything and you'll be good to go.
+
+If you've been following this series, the only new package is [[https://github.com/leoliu/ggtags][ggtags]]
+and the configuration code is:
+
+#+BEGIN_SRC emacs-lisp
+  ;; tags for code navigation
+  (use-package ggtags
+    :ensure t
+    :config 
+    (add-hook 'c-mode-common-hook
+	      (lambda ()
+		(when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
+		  (ggtags-mode 1))))
+    )
+#+END_SRC
+
+For people new to the series, the top section sets up the emacs
+package manager. After that we install:
+
+| Package       | Description                           |
+|---------------+---------------------------------------|
+| which-key     | brings up contextual key binding help |
+| auto-complete | just as the name says                 |
+| flycheck      | in line, live syntax checking         |
+| yasnippet     | snippets and expansion                |
+| ggtags        | source code navigation                |
+| color-theme   |                                       |
+| moe-theme     | just because                       |
+
+The video also show me using **counsel-ag** which is part of the
+swiper/counsel package. You can check that out [[http://cestlaz.github.io/posts/using-emacs-6-swiper][here]] as well as some
+other packages I use like **smartparens**, **hungry-delete** and
+probably a few more.
+
+You can look at my complete configuration or the other videos for
+details.
+
+If you're an experienced C++ developer and use emacs, please share
+tips, tricks, and suggestions. I haven't done serious C++ work in over
+a decade and while I did professional development in C in a past life,
+never in C++.
+
+The packages used here are not C++ specific - I use them for Java,
+Python, Clojure, and Javascript development as well.
+
+
+Here's the configuration code:
+
+#+BEGIN_SRC emacs-lisp
+
+  ;; set up package sources
+  (require 'package)
+  (setq package-enable-at-startup nil)
+  (add-to-list 'package-archives
+	       '("melpa" . "https://melpa.org/packages/"))
+  (package-initialize)
+
+  ;; Bootstrap `use-package'
+  (unless (package-installed-p 'use-package)
+    (package-refresh-contents)
+    (package-install 'use-package))
+
+  ;; small interface tweaks
+  (setq inhibit-startup-message t)
+  (tool-bar-mode -1)
+  (fset 'yes-or-no-p 'y-or-n-p)
+  (global-set-key (kbd "<f5>") 'revert-buffer)
+
+  ;; bring up help for key bindings
+  (use-package which-key
+    :ensure t 
+    :config
+    (which-key-mode))
+
+
+  ;; Auto completion
+  (use-package auto-complete
+    :ensure t
+    :init
+    (progn
+      (ac-config-default)
+      (global-auto-complete-mode t)
+      ))
+
+
+  ;; on the fly syntax checking
+  (use-package flycheck
+    :ensure t
+    :init
+    (global-flycheck-mode t))
+
+  ;; snippets and snippet expansion
+  (use-package yasnippet
+    :ensure t
+    :init
+    (yas-global-mode 1))
+
+
+  ;; tags for code navigation
+  (use-package ggtags
+    :ensure t
+    :config 
+    (add-hook 'c-mode-common-hook
+	      (lambda ()
+		(when (derived-mode-p 'c-mode 'c++-mode 'java-mode)
+		  (ggtags-mode 1))))
+    )
+
+
+  ;; Theme
+  (use-package color-theme
+    :ensure t)
+  (use-package moe-theme
+    :ensure t)
+  (moe-light)
+
+
+#+END_SRC
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7SQmleA4EMo" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+Enjoy.
+* 
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+
