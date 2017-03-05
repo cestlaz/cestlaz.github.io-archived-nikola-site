@@ -1,5 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 04 Mar 2017 22:55:39 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Quality Devs and Coding Contests</title><link>http://cestlaz.github.io/posts/quality-devs-and-coding-contests/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 05 Mar 2017 20:34:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Whiteboard interviews</title><link>http://cestlaz.github.io/posts/whiteboard-interviews/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+A few days ago, I saw a &lt;a href="https://theoutline.com/post/1166/programmers-are-confessing-their-coding-sins-to-protest-a-broken-job-interview-process%0A"&gt;piece&lt;/a&gt; on &lt;a href="https://twitter.com/dhh"&gt;David Heinemeier Hansson's&lt;/a&gt; tweet on
+whiteboard interviews:
+&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Hello, my name is David. I would fail to write bubble sort on a whiteboard. I look code up on the internet all the time. I don't do riddles.&lt;/p&gt;— DHH (@dhh) &lt;a href="https://twitter.com/dhh/status/834146806594433025"&gt;February 21, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;p&gt;
+I'm not a huge fan of the whiteboard interview but I think many of the
+tweets missed the point. Most of the whiteboard interviews I'm
+aware of involve algorithmic problem solving while the tweets, at
+least the ones I've seen all refer to things that indeed one would
+look up. Things like API calls - not things that whiteboard interviewers
+typically care about.
+&lt;/p&gt;
+
+&lt;p&gt;
+Tim Bray takes that point of view and shared his thoughts in a
+&lt;a href="https://www.tbray.org/ongoing/When/201x/2017/03/04/Whiteboard-Interviews"&gt;recent blog post&lt;/a&gt;.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+The idea behind the whiteboard interview isn't all bad. The
+interviewer has an opportunity to see how the candidate thinks and
+works through a problem and in an ideal situation the interviewer is,
+at least to a point, coaching the candidate to help them through the
+process. It seems to me that the problem lies more in the types of
+questions asked and the skill of the interviewer rather than the idea
+that candidates work through a problem live.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'd imagine that whiteboard interview success skew towards candidates
+who work well in isolation in a short period of time, have a good
+amount of exposure to these types of algorithmic problems. Also those
+who have practiced and trained specifically for the interview will
+have a huge edge. For people new to the process, it can be very
+stressful. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Once a candidate has accepted a position, they'll likely be working
+with a team, with additional resources, and with time to solve
+problems. This is a very different environment.  The whiteboard
+interview, much like the SAT is thus something of an arbitrary
+gatekeeper that a candidate must prepare for and conquer rather than a
+skill that they must develop that will make them a more productive
+team member.
+&lt;/p&gt;
+
+&lt;p&gt;
+This whole process tends to advantage those with the time and
+background to prepare - this is one of the places where the argument
+that whiteboard interview hurt diversity come from.
+&lt;/p&gt;
+
+&lt;p&gt;
+I could be totally wrong but I seem to recall that the whiteboard
+interview, at least in terms of external visibility grew out of the
+legendary Google puzzle interview questions. 
+&lt;/p&gt;
+
+&lt;p&gt;
+A tech giant like Google can interview however they like and they'll
+still get the talent. They go to the most selective institutions where
+candidates have already been culled for success. If they then interview 100
+candidates and 10 of them would be good fits, as long as a couple
+thrive through the whiteboard interview process, they'll get their
+engineer. They'll miss out on a lot of great talent but they can cast
+such a large net they'll fill there seats with productive employees. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand, smaller companies will certainly miss out on great
+talent if they follow the same approach.
+&lt;/p&gt;
+
+&lt;p&gt;
+Is there a better way?
+&lt;/p&gt;
+
+&lt;p&gt;
+Some companies pre-assign mini projects and then discuss that at the
+interview. Pairing could also be a lower stress alternative to the
+technical interview. Another option would be to look at a candidates
+existing projects. 
+&lt;/p&gt;
+
+&lt;p&gt;
+An interesting question is "why do so many companies use the
+whiteboard interview?" I can't say for certain but I wouldn't be
+surprised if it was a simple as "because Google does it."
+&lt;/p&gt;
+
+&lt;p&gt;
+For over 100 years, Stuyvesant high school required students study
+mechanical drawing (drafting). The relevance of the subject lessened over the
+decades and what was taught in many ways has become a joke. A typical
+class during the CAD parts of the class might be going over the
+&lt;b&gt;&lt;b&gt;cylinder&lt;/b&gt;&lt;/b&gt; command in CadKey. That's like spending a day studying
+the &lt;b&gt;&lt;b&gt;edit&lt;/b&gt;&lt;/b&gt; menu in Microsoft Word in an English class. If you can't
+tell, I'm not a fan. Drafting at Stuyvesant is the vestigial organ of
+the course of study. 
+&lt;/p&gt;
+
+&lt;p&gt;
+My point isn't to bash drafting at Stuy but rather that there have
+been any number of schools that require their students take drafting
+even though it doesn't prepare students for, nor lead them to anything
+else in the schools curriculum (which now can be said for Stuy's
+drafting requirement). I've spoken to teachers and principals at these
+schools and we go back and forth as I press them for the reason for
+the requirement and ultimately, they tell me that their school
+requires drafting "because Stuyvesant does." 
+&lt;/p&gt;
+
+&lt;p&gt;
+Why do so many small companies employ the whiteboard interview?
+Because the big kids do. The trouble is that the big kids can get away
+with it, the smaller players on the other hand, are hurting
+themselves. Even the bigger players would be well served to 
+try to come up with an interview process that better assesses fit
+rather than a course filter that while it does pull in talent misses
+talent as well.
+&lt;/p&gt;</description><category>cs</category><category>interviews</category><category>jobs</category><guid>http://cestlaz.github.io/posts/whiteboard-interviews/</guid><pubDate>Sun, 05 Mar 2017 13:54:10 GMT</pubDate></item><item><title>Quality Devs and Coding Contests</title><link>http://cestlaz.github.io/posts/quality-devs-and-coding-contests/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 I've been planning to put together a response to &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt;'s
 recent post - &lt;a href="http://blog.acthompson.net/2017/02/software-developersquantity-vs-quality.html"&gt;Software Developers - Quantity vs Quality&lt;/a&gt;. 
 &lt;/p&gt;
@@ -894,42 +1020,4 @@ Here's all the code:
 &lt;p&gt;
 Overall, a nice little problem for beginning and intermediate
 students.
-&lt;/p&gt;</description><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-code-2016-1/</guid><pubDate>Tue, 06 Dec 2016 15:46:17 GMT</pubDate></item><item><title>Advent of Code 2016</title><link>http://cestlaz.github.io/posts/advent-of-code-2016/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
-Once again, it's time for &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; - a series of small
-programming problems released once a day. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I wrote a bit about it &lt;a href="http://cestlaz.github.io/posts/2015-12-15-advent.html/"&gt;last&lt;/a&gt; &lt;a href="http://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/#.WEMqBB9ieYQ"&gt;year&lt;/a&gt; and you can still find last years
-problems &lt;a href="http://adventofcode.com/2015/"&gt;here&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's only day three but so far, all of the problems look really nice
-for students in APCS-A or any similar intro course. I'm thinking of
-looking at a couple of the problems this week with my class at Hunter.
-&lt;/p&gt;
-
-&lt;p&gt;
-I didn't think about this much last year but one thing I really like
-about the competition is that each problem comes in two parts. You're
-first presented with the problem and the input and once you put in the
-correct answer, you're presented with part two.
-&lt;/p&gt;
-
-&lt;p&gt;
-This can be annoying at times, particularly when it requires a large
-code rewrite but it also means that well designed, not too specific
-solutions are rewarded. 
-&lt;/p&gt;
-
-&lt;p&gt;
-It's not quite the same as changing the specs on a project mid way but
-it does encourage thinking about more than just solving a super
-specific problem.
-&lt;/p&gt;
-
-&lt;p&gt;
-Check out &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; and see if it's something you or your classes
-might enjoy.
-&lt;/p&gt;</description><category>apcs</category><category>cs</category><category>misc</category><guid>http://cestlaz.github.io/posts/advent-of-code-2016/</guid><pubDate>Sat, 03 Dec 2016 20:25:26 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;</description><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-code-2016-1/</guid><pubDate>Tue, 06 Dec 2016 15:46:17 GMT</pubDate></item></channel></rss>
