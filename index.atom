@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2017-03-05T20:34:54Z</updated>
+  <updated>2017-03-07T21:39:32Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,62 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-27.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>SIGSCE 2017</title>
+    <id>http://cestlaz.github.io/posts/sigcse-2017/</id>
+    <updated>2017-03-07T16:18:41-05:00</updated>
+    <published>2017-03-07T16:18:41-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse-2017/"/>
+    <summary type="html">&lt;p&gt;
+Tomorrow morning I fly out to Seattle for SIGCSE 2017. For those of
+you not in the CS Education space, SIGCSE is the ACM (Association for
+Computing Machinery) special interest group for computer science education.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've wanted to go for years but have never been able. It's hard for a
+high school teacher to miss a week in mid March, particularly in
+places with a school calendar similar to New York. NY city schools are
+already closed for a week in February and then Spring Break is right
+around the corner. If you're teaching an AP course with the exam in
+early May, losing a week in March is really not an option. Even if you
+can take the time, you'll probably have to foot the bill out of
+pocket. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Now that I'm at Hunter, I've got more flexibility in terms of schedule
+and attending is probably even more important given my current roles.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm looking forward to the talks and events but probably even more
+looking forward to seeing old friends, meeting new ones and seeing
+face to face friends that til now I've only known through the web.
+&lt;/p&gt;
+
+&lt;p&gt;
+On Saturday I'll be part of a panel (thanks &lt;a href="https://twitter.com/cscheerleader"&gt;Ria&lt;/a&gt;) titled "Tools we
+can't live without." I'll probably talk about the way I use git and
+GitHub and how I get my students up to speed but there are lots of
+tools I can talk about.
+&lt;/p&gt;
+
+&lt;p&gt;
+I plan to write up a series of posts on how I use GitHub (and how it
+evolved from other versioning systems) as well as thoughts about other
+tools I've used and some I've struggled with.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you're going to be at SIGCSE drop me a line, I'd love to connect.
+&lt;/p&gt;</summary>
+    <category term="cseducation" label="cseducation"/>
+    <category term="education" label="education"/>
+  </entry>
   <entry>
     <title>Whiteboard interviews</title>
     <id>http://cestlaz.github.io/posts/whiteboard-interviews/</id>
@@ -1500,91 +1556,5 @@ right language to start with - at least not at Stuy.
     <category term="curriculum" label="curriculum"/>
     <category term="education" label="education"/>
     <category term="languages" label="languages"/>
-  </entry>
-  <entry>
-    <title>Using Emacs - 28 -Rectangles</title>
-    <id>http://cestlaz.github.io/posts/using-emacs-27-rectangles/</id>
-    <updated>2017-02-09T08:00:26-05:00</updated>
-    <published>2017-02-09T08:00:26-05:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-27-rectangles/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-One of my favorite but little used emacs features is rectangular
-editing. It's little used because I don't need it all that often. It's
-one of my favorites because when I do need it, it's just so amazingly
-useful.
-&lt;/p&gt;
-
-&lt;p&gt;
-The idea is you can mark a rectangle of text, cut it and later paste
-it.  This means that if you have three columns of text:
-&lt;/p&gt;
-
-&lt;pre class="example"&gt;
-a b c
-d e f
-g h i
-j k l
-&lt;/pre&gt;
-
-&lt;p&gt;
-You can easily mark the middle column (b e h k) or even just the b e
-and h, cut it and paste it elsewhere as a rectangle. You can also open
-up a rectangular region (filled with whitespace). There are a couple
-of other niceties but that's the basic idea.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here's a link to all the functions:
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Rectangles.html"&gt;https://www.gnu.org/software/emacs/manual/html_node/emacs/Rectangles.html&lt;/a&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
-&lt;p&gt;
-And the video:
-&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/pcA5NeEudgU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;
-Enjoy.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-3" class="outline-2"&gt;
-&lt;h2 id="sec-3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-3"&gt;
-&lt;p&gt;
-Relevant links:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Video series overview page:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Code:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="emacs" label="emacs"/>
-    <category term="tools" label="tools"/>
   </entry>
 </feed>
