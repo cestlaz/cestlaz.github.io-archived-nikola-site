@@ -1,0 +1,135 @@
+#+BEGIN_COMMENT
+.. title: SIGCSE 2017 - a path to github part 1
+.. slug: sigcse-2017-github-1
+.. date: 2017-03-15 10:11:00 UTC-04:00
+.. tags:  draft, tools
+.. category:
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+Both at and prior to SIGCSE 2017, I promised to write up the steps I
+take to introduce and use revision control systems in my classes. 
+
+Here's part one. 
+
+I'm doing this with git and GitHub but there's no reason why other
+systems and hosts can't be used. I'd also recommend that any educator
+or student sign up for the assorted [[https://education.github.com/][discounts]] offered by GitHub.
+
+I've followed this basic idea multiple times and done it over the
+course of a single semester, a year, and even two years. Regardless of
+time frame, the idea is the same. Make each step simple and relevant
+and introduce complexity and roadblocks a piece at a time.
+
+* Step 1 - code distribution
+
+To start, I don't even talk about version control. We start with code
+distribution. For years, I've looked for efficient ways of sharing
+code with my classes. Both code developed in class and code for
+assignments. 
+
+I've tried things like NFS, Dropbox, online code repositories like the
+files section of systems like Moodle or Blackboard.
+
+At Stuy, we've always had efficiency problems with NFS and Dropbox has
+multiple problems ranging from students not being able to install the
+client on school machines to the problems of the network hit when a
+room full of kids are syncing at the same time.
+
+Uploading to a CMS system was also problematic - I'm a command line
+wonk and hate going through slow web page menus to navigate a
+filesystem and upload files. I also had to remember to get the files
+off of whatever machine I was working on in class and then transfer
+them to he CMS when I had a free moment.
+
+Enter git. Now, of course, if you're going to use git in the classroom
+you have to know it. There are plenty of resources out there. Online
+courses, articles, videos, and tutorials. Here are a couple:
+
+- https://try.github.io/
+- https://www.youtube.com/watch?v=0fKg7e37bQE
+
+I also want to point out that I just use raw command line git along
+with native GitHub. GitHub has rolled out [[https://classroom.github.com/][GitHub Classroom]] which adds
+a layer of support for educators. I don't use it because, as I said,
+I'm an old school command line wonk and also because I figured out a
+sequence that worked for me and my students before GitHub Classroom
+existed. Were I starting now, I'd take some time to look at their
+current offerings before jumping in.
+
+** Set up
+
+Before starting, make sure you register your ssh keys. [[https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/][This]] help page
+has more information. You'll want to register an ssh key from every
+machine you use - home, work, laptop. 
+
+
+Now go over to GitHub and make a new repository. I usually name it
+**classcode**. **BEGINNER NOTE:** when creating the repo, make sure to
+check the "initialize this repository with a README" box. If you don't
+you'll be given a set of instructions on how to set things up once you
+click **Create repository** but it's easier and easier to follow if
+you start with an initialized repo with a README.
+
+I make the repo public -- it's code I'm distributing -- nothing to
+hide here. If you aren't comfortable with that, just make the repo
+private. If you've registered as a teacher with GitHub, you can set up
+an organization and you'll be able to set up free private repos within
+it.
+
+** Teacher use 
+
+Next, clone out the repo. **BEGINNER NOTE:** Make sure you check out
+the ssh version not the https version. Just make sure that when you
+click the **clone** button, it says "Clone with SSH." If not, just
+clock the "Use SSH" link in the same box.
+
+From the teacher point of view, you can just start using the repo. My
+work flow is typically:
+
+1. **git pull** at the start of class
+2. write code throughout class
+3. **git add**, **git commit**, and **git push** at the end of class
+
+I use a similar flow when I want to add files in my office or at home.
+** Student use
+From the student point of view, assuming a public repo, they just have to clone the repo and
+at the beginning of every class or work session, do a **git
+pull**. That's all there is to it.
+
+If you are using a private repo, you'll have to add your students as
+collaborators from the projects **settings** page but once you do
+that, the workflows are the same.
+
+** Thoughts 
+
+That's it. The kids are now using GitHub -- they're probably looking
+at and poking around on the web site as well as pulling files to their
+machines. You can also, in class, show things like **git status**,
+**git log**, and **git diff** to set the stage for step 2 of this
+process and beyond.
+
+Since the students aren't adding, committing or pushing, you probably won't
+get any errors. 
+
+The only problem that could reasonably occur is if a student places a
+file in their local copy of the repo with the same name as something
+they haven't pulled yet. This is pretty easy to address and provides a
+nice stepping stone lesson to again, set the stage for more complex
+operations.
+
+
+I'm happy with this as a first step towards git using GitHub. It's
+provide a nice way of sharing class code while gently introducing the
+students to the tool.
+
+The next step  is having the students add files to a repo. That's the
+next post in this series.
+
+
+
+#  LocalWords:  Moodle Dropbox NFS CMS filesystem classcode repo
+#  LocalWords:  workflows
