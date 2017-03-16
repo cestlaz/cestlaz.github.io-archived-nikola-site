@@ -18,7 +18,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="../../index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/posts/sigcse-2017-github-1/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
-<meta name="robots" content="noindex">
+<link rel="prev" href="../sigcse-2017-recap/" title="SIGCSE 2017 - Recap" type="text/html">
 <meta property="og:site_name" content="C'est la Z">
 <meta property="og:title" content="SIGCSE 2017 - a path to github part 1">
 <meta property="og:url" content="http://cestlaz.github.io/posts/sigcse-2017-github-1/">
@@ -27,13 +27,10 @@ take to introduce and use revision control systems in my classes.
 
 
 
-Here's part one. 
-
-
-
-I'm doing this with git and GitHub but t">
+This series is not meant to be a git or GitHub tutorial. Ther">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2017-03-15T10:11:00-04:00">
+<meta property="article:published_time" content="2017-03-16T09:11:00-04:00">
+<meta property="article:tag" content="cs">
 <meta property="article:tag" content="tools">
 </head>
 <body>
@@ -108,7 +105,7 @@ I'm doing this with git and GitHub but t">
             <p class="byline author vcard"><span class="byline-name fn">
                     Mike Zamansky
             </span></p>
-            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-03-15T10:11:00-04:00" itemprop="datePublished" title="2017-03-15 10:11">2017-03-15 10:11</time></a></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-03-16T09:11:00-04:00" itemprop="datePublished" title="2017-03-16 09:11">2017-03-16 09:11</time></a></p>
                 <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/sigcse-2017-github-1.html">Comments</a>
 
 
@@ -124,6 +121,26 @@ I'm doing this with git and GitHub but t">
 Both at and prior to SIGCSE 2017, I promised to write up the steps I
 take to introduce and use revision control systems in my classes. 
 </p>
+
+<p>
+This series is not meant to be a git or <a href="http://github.com">GitHub</a> tutorial. There are
+plenty of those already (two of which I've linked to below).  This is
+about the process I use with my students to get them up to speed. 
+</p>
+
+<p>
+As with any new tool, there will be some resistance but once git saves
+them once, they get religion. There will also be some bumps in the
+road but at the end of the day, the students will be using a valuable
+and necessary tool. 
+</p>
+
+<p>
+I was also surprised at the ancillary benefits I got as a teacher by
+using GitHub in particular. I'll talk about that at the end of the
+series.
+</p>
+
 
 <p>
 Here's part one. 
@@ -223,7 +240,9 @@ I make the repo public – it's code I'm distributing – nothing to
 hide here. If you aren't comfortable with that, just make the repo
 private. If you've registered as a teacher with GitHub, you can set up
 an organization and you'll be able to set up free private repos within
-it.
+it. The other downside here is that you'll have to individually give
+each student access to the repo. That's a mild annoyance but it only
+has to be done once.
 </p>
 </div>
 </div>
@@ -235,7 +254,8 @@ it.
 Next, clone out the repo. <b><b>BEGINNER NOTE:</b></b> Make sure you check out
 the ssh version not the https version. Just make sure that when you
 click the <b><b>clone</b></b> button, it says "Clone with SSH." If not, just
-clock the "Use SSH" link in the same box.
+clock the "Use SSH" link in the same box. Students will clone the
+using https.
 </p>
 
 <p>
@@ -265,12 +285,6 @@ I use a similar flow when I want to add files in my office or at home.
 From the student point of view, assuming a public repo, they just have to clone the repo and
 at the beginning of every class or work session, do a <b><b>git
 pull</b></b>. That's all there is to it.
-</p>
-
-<p>
-If you are using a private repo, you'll have to add your students as
-collaborators from the projects <b><b>settings</b></b> page but once you do
-that, the workflows are the same.
 </p>
 </div>
 </div>
@@ -326,7 +340,13 @@ next post in this series.
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
 </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../categories/tools/" rel="tag">tools</a></li>
+<li><a class="tag p-category" href="../../categories/cs/" rel="tag">cs</a></li>
+            <li><a class="tag p-category" href="../../categories/tools/" rel="tag">tools</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../sigcse-2017-recap/" rel="prev" title="SIGCSE 2017 - Recap">Previous post</a>
+            </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                         <div id="disqus_thread"></div>
         <script>
