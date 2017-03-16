@@ -1,8 +1,8 @@
 #+BEGIN_COMMENT
 .. title: SIGCSE 2017 - a path to github part 1
 .. slug: sigcse-2017-github-1
-.. date: 2017-03-15 10:11:00 UTC-04:00
-.. tags:  draft, tools
+.. date: 2017-03-16 09:11:00 UTC-04:00
+.. tags:  tools, cs
 .. category:
 .. link: 
 .. description: 
@@ -12,6 +12,20 @@
 * 
 Both at and prior to SIGCSE 2017, I promised to write up the steps I
 take to introduce and use revision control systems in my classes. 
+
+This series is not meant to be a git or [[http://github.com][GitHub]] tutorial. There are
+plenty of those already (two of which I've linked to below).  This is
+about the process I use with my students to get them up to speed. 
+
+As with any new tool, there will be some resistance but once git saves
+them once, they get religion. There will also be some bumps in the
+road but at the end of the day, the students will be using a valuable
+and necessary tool. 
+
+I was also surprised at the ancillary benefits I got as a teacher by
+using GitHub in particular. I'll talk about that at the end of the
+series.
+
 
 Here's part one. 
 
@@ -78,14 +92,17 @@ I make the repo public -- it's code I'm distributing -- nothing to
 hide here. If you aren't comfortable with that, just make the repo
 private. If you've registered as a teacher with GitHub, you can set up
 an organization and you'll be able to set up free private repos within
-it.
+it. The other downside here is that you'll have to individually give
+each student access to the repo. That's a mild annoyance but it only
+has to be done once.
 
 ** Teacher use 
 
 Next, clone out the repo. **BEGINNER NOTE:** Make sure you check out
 the ssh version not the https version. Just make sure that when you
 click the **clone** button, it says "Clone with SSH." If not, just
-clock the "Use SSH" link in the same box.
+clock the "Use SSH" link in the same box. Students will clone the
+using https.
 
 From the teacher point of view, you can just start using the repo. My
 work flow is typically:
@@ -99,10 +116,6 @@ I use a similar flow when I want to add files in my office or at home.
 From the student point of view, assuming a public repo, they just have to clone the repo and
 at the beginning of every class or work session, do a **git
 pull**. That's all there is to it.
-
-If you are using a private repo, you'll have to add your students as
-collaborators from the projects **settings** page but once you do
-that, the workflows are the same.
 
 ** Thoughts 
 
