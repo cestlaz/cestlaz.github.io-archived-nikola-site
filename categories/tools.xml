@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>C'est la Z (Posts about tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link rel="self" href="http://cestlaz.github.io/categories/tools.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 16 Mar 2017 13:49:51 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SIGCSE 2017 - a path to github part 1</title><link>http://cestlaz.github.io/posts/sigcse-2017-github-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/tools.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 17 Mar 2017 11:07:47 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>SIGCSE 2017 - a path to github part 1</title><link>http://cestlaz.github.io/posts/sigcse-2017-github-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -73,7 +73,7 @@ Uploading to a CMS system was also problematic - I'm a command line
 wonk and hate going through slow web page menus to navigate a
 filesystem and upload files. I also had to remember to get the files
 off of whatever machine I was working on in class and then transfer
-them to he CMS when I had a free moment.
+them to the CMS when I had a free moment.
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -138,7 +138,7 @@ has to be done once.
 Next, clone out the repo. &lt;b&gt;&lt;b&gt;BEGINNER NOTE:&lt;/b&gt;&lt;/b&gt; Make sure you check out
 the ssh version not the https version. Just make sure that when you
 click the &lt;b&gt;&lt;b&gt;clone&lt;/b&gt;&lt;/b&gt; button, it says "Clone with SSH." If not, just
-clock the "Use SSH" link in the same box. Students will clone the
+click the "Use SSH" link in the same box. Students will clone the
 using https.
 &lt;/p&gt;
 
@@ -198,8 +198,8 @@ operations.
 
 
 &lt;p&gt;
-I'm happy with this as a first step towards git using GitHub. It's
-provide a nice way of sharing class code while gently introducing the
+I'm happy with this as a first step towards git using GitHub. It
+provides a nice way of sharing class code while gently introducing the
 students to the tool.
 &lt;/p&gt;
 
