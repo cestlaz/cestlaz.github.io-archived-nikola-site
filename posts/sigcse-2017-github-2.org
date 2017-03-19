@@ -10,8 +10,86 @@
 #+END_COMMENT
 
 * 
+Now that your students have been pulling the classcode repo regularly
+it's time to move to the next step - adding and pushing files to a
+repo.
 
+I don't claim to do this the "right way" or the best way but it's
+worked for me.
+
+I ease my students into adding and pushing files using git through
+homework submission. I create a single repo, usually named
+**submissions** and make a folder for each student underneath looking
+something like this:
+#+OPTIONS: ^:nil
+#+BEGIN_VERSE
+.
+└── submissions
+    ├── abram_sarah
+    ├── chen_stuart
+    └── thompson_steve
+#+END_VERSE
+
+Before going any further, let me clear up one thing. The repo is
+public so all the students have access to each others work. I'm OK
+with that. We could have each student make their own repo and use git
+[[https://git-scm.com/book/en/v2/Git-Tools-Submodules][submodules]] to make a submissions repo but administration is much
+trickier and we lose the chance to build a culture of cooperation and
+trust. We can lock down our submission systems as much as we want. If
+students want to share assignments there's nothing we can do about
+it. 
+
+My preference is to try to build a culture that minimizes bad
+behavior and rewards good behavior. I'd rather see an incorrect
+homework so that I can tell what we need to work on than a copied
+perfect assignment. I'd rather see students cite each other, share
+properly, and support each other than copy in the shadows. 
+
+I'm not naive enough to believe that copying doesn't happen in my
+classes but I still prefer erring on the side of openness.
+
+Once the repo is set up, I give all the students access. This is a
+little onerous since I have to type each of their GitHub usernames
+under the collaborators section of the submissions repo but I only
+have to do this once a semester.
+
+Then I teach the workflow. Assignments go into a file or folder under
+their directory named ##_name where ## is the assignment number
+(01,02,03, etc) and name is the assignment name. The student workflow
+is:
+1. git pull
+2. git add (sometimes)
+3. git commit
+4. git push
+
+Since every student is working in their own directory, things
+basically work.
+
+The first issue that students come up with is when another student
+pushes before another student. The second student merely has to do
+another **git pull** before proceeding. This provides an easy
+introduction to dealing with the distributed nature of git.
+
+There will occasionally be other issues when students don't follow
+procedure exactly so I'll have to fix the repo every now and then but
+nothing too bad and each time is a opportunity to show the class:
+1. you can pretty much always restore and fix things once you commit
+   them.
+2. the specifics to fix things.
+
+There will be a few bumps in the road but after a few assignments the
+sailing will be pretty smooth.
+
+At the end of the day, the students are a little closer to being fully
+fluent using git, they're hopefully using each others code as
+resources but in a proper way and since the students are all using a
+consistent assignment naming convention I can use simple scripts and
+shell commands to do all sorts of processing on assignments.
+
+That's the end of phase two. The next step  brings us to small
+projects using git.
 
 
 #  LocalWords:  Moodle Dropbox NFS CMS filesystem classcode repo
 #  LocalWords:  workflows
+
