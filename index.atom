@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2017-03-19T20:14:10Z</updated>
+  <updated>2017-03-19T20:23:50Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,149 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-28.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>SIGCSE 2017 - a path to github part 2</title>
+    <id>http://cestlaz.github.io/posts/sigcse-2017-github-2/</id>
+    <updated>2017-03-19T10:11:00-04:00</updated>
+    <published>2017-03-19T10:11:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse-2017-github-2/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;Note:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Just for some quick context. The process I started to describe in the
+last post and continue here chronicles what I did at Stuy with high
+schoolers. Now that I'm at Hunter college, I'm adapting the process
+but the overarching themes remain the same.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;Post starts here:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Now that your students have been pulling the classcode repo regularly
+it's time to move to the next step - adding and pushing files to a
+repo.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't claim to do this the "right way" or the best way but it's
+worked for me and it's gotten my students up to speed.
+&lt;/p&gt;
+
+&lt;p&gt;
+I ease my students into adding and pushing files using git through
+homework submission. I create a single repo, usually named
+&lt;b&gt;&lt;b&gt;submissions&lt;/b&gt;&lt;/b&gt; and make a folder for each student underneath looking
+something like this:
+&lt;/p&gt;
+&lt;p class="verse"&gt;
+.&lt;br&gt;
+└── submissions&lt;br&gt;
+    ├── abram_sarah&lt;br&gt;
+    ├── chen_stuart&lt;br&gt;
+    └── thompson_steve&lt;br&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Before going any further, let me clear up one thing. The repo is
+public so all the students have access to each others work. I'm OK
+with that. We could have each student make their own repo and use git
+&lt;a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules"&gt;submodules&lt;/a&gt; to make a submissions repo but administration is much
+trickier and we lose the chance to build a culture of cooperation and
+trust. We can lock down our submission systems as much as we want. If
+students want to share assignments there's nothing we can do about
+it. 
+&lt;/p&gt;
+
+&lt;p&gt;
+My preference is to try to build a culture that minimizes bad
+behavior and rewards good behavior. I'd rather see an incorrect
+homework so that I can tell what we need to work on than a copied
+perfect assignment. I'd rather see students cite each other, share
+properly, and support each other than copy in the shadows. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not naive enough to believe that copying doesn't happen in my
+classes but I still prefer erring on the side of openness.
+&lt;/p&gt;
+
+&lt;p&gt;
+Once the repo is set up, I give all the students access. This is a
+little onerous since I have to type each of their GitHub usernames
+under the collaborators section of the submissions repo but I only
+have to do this once a semester.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then I teach the workflow. Assignments go into a file or folder under
+their directory named ##_name where ## is the assignment number
+(01,02,03, etc) and name is the assignment name. The student workflow
+is:
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;git pull
+&lt;/li&gt;
+&lt;li&gt;git add (sometimes)
+&lt;/li&gt;
+&lt;li&gt;git commit
+&lt;/li&gt;
+&lt;li&gt;git push
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+Since every student is working in their own directory, things
+basically work.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first issue that students come up with is when another student
+pushes before another student. The second student merely has to do
+another &lt;b&gt;&lt;b&gt;git pull&lt;/b&gt;&lt;/b&gt; before proceeding. This provides an easy
+introduction to dealing with the distributed nature of git.
+&lt;/p&gt;
+
+&lt;p&gt;
+There will occasionally be other issues when students don't follow
+procedure exactly so I'll have to fix the repo every now and then but
+nothing too bad and each time is a opportunity to show the class:
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;you can pretty much always restore and fix things once you commit
+them.
+&lt;/li&gt;
+&lt;li&gt;the specifics to fix things.
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+There will be a few bumps in the road but after a few assignments the
+sailing will be pretty smooth.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the end of the day, the students are a little closer to being fully
+fluent using git, they're hopefully using each others code as
+resources but in a proper way and since the students are all using a
+consistent assignment naming convention I can use simple scripts and
+shell commands to do all sorts of processing on assignments.
+&lt;/p&gt;
+
+&lt;p&gt;
+That's the end of phase two. The next step  brings us to small
+projects using git.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>SIGCSE 2017 - a path to github part 1</title>
     <id>http://cestlaz.github.io/posts/sigcse-2017-github-1/</id>
@@ -1509,144 +1652,5 @@ Relevant links:
 &lt;/div&gt;</summary>
     <category term="emacs" label="emacs"/>
     <category term="tools" label="tools"/>
-  </entry>
-  <entry>
-    <title>Quality Devs and Coding Contests</title>
-    <id>http://cestlaz.github.io/posts/quality-devs-and-coding-contests/</id>
-    <updated>2017-02-19T16:53:56-05:00</updated>
-    <published>2017-02-19T16:53:56-05:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/quality-devs-and-coding-contests/"/>
-    <summary type="html">&lt;p&gt;
-I've been planning to put together a response to &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt;'s
-recent post - &lt;a href="http://blog.acthompson.net/2017/02/software-developersquantity-vs-quality.html"&gt;Software Developers - Quantity vs Quality&lt;/a&gt;. 
-&lt;/p&gt;
-
-&lt;p&gt;
-TL;DR, although it isn't really long and I do encourage you to read
-Alfred's post: a couple of articles talk about how the U.S. has the most
-people entering CS competitions like HackerRank but Americans are not
-at the top of the leaderboard. does this mean that there's less talent
-in America? Does it even matter?
-&lt;/p&gt;
-
-&lt;p&gt;
-Before getting to "does it matter," I looked over at the Kaggle
-leaderboards. Looking at their top 10, 2 were from the US - no other
-country had more than 1. The 11th placing competitor was also from the
-US and then 12 was from China, giving them 2 in the top 12.  I also
-looked at recent &lt;a href="http://stats.ioinformatics.org/delegations/2016?sort=total_desc"&gt;IOI results&lt;/a&gt; and a quick glance seems to indicate that
-the USA seems to do reasonably well. In short, if you buy into ranking
-a country by these types of individual results on specific
-competitions then we're doing fine.
-&lt;/p&gt;
-
-&lt;p&gt;
-But, does filling the leaderboard mean a country's producing the best
-tech talent? Probably not.
-&lt;/p&gt;
-
-&lt;p&gt;
-Coding competitions focus on a specific skill set. There are problem
-solving aspects but they also require speed, knowledge of data
-structures and algorithms, and, yes, even accurate, fast typing
-skills. They also require you work alone. They don't encourage well
-designed, architected, or written code, working on existing code bases
-or working with a team. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Over the years, I've known some very smart and talented individuals
-who've excelled at these types of competitions. If you extend the pool
-to math and science competitions, I've known quite a few. These
-individuals have by and large done well for themselves but as a group,
-you couldn't call them more successful than any other subset of my
-former students. A number of them have gone on and are doing well as
-professors or programmers but, by and large, they're not the ones
-who've gone on to found companies and provide jobs for scores or even
-hundreds of other people and they're not necessarily the ones who've
-led teams that have developed major platforms and projects&lt;sup&gt;&lt;a id="fnr.1" name="fnr.1" class="footref" href="http://cestlaz.github.io/posts/quality-devs-and-coding-contests/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-I don't argue that people who populate competition leaderboards are
-talented and a necessary part of our tech ecosystem but they're only a
-part. I probably want one of these programmers on my team, but not as
-the entire team (see Fake Grimlock's laws of startups - &lt;a href="http://www.builtinchicago.org/blog/secret-laws-startups-part-2-build-right-team"&gt;law 9&lt;/a&gt;).
-&lt;/p&gt;
-
-
-&lt;div align="center"&gt;
-&lt;a href="http://www.builtinchicago.org/blog/secret-laws-startups-part-2-build-right-team"&gt;
-&lt;img width="30%" src="http://media3.cdn.builtinchicago.org/sites/default/files/imagecache/Original/images/BATMAN-THEN-ROBIN.jpg"&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-Competitive programming is a piece of the puzzle as competitive
-programmers are a part of the population. So are project based events
-like &lt;a href="https://dreamitcodeitwinit.wordpress.com/"&gt;Dream it. Code it. Win it.&lt;/a&gt;, science fairs, and hackathons, which
-can be either cooperative, competitive, or a combination.
-&lt;/p&gt;
-
-&lt;p&gt;
-What do we want? Balance. I think the Stuy program does it pretty
-well. StuyCS graduates who wish to take part in coding competitions
-can do so but if they want to excel at it, they have to work at it on
-their own time. At the same time, the students learn how to work in
-teams and take a project from idea to delivery all the while learning
-some good academic CS and software engineering practices. They'll
-learn more in college on the academic side and the rest on the
-job. I'd love to see better balance in the colleges between CS
-programs preparing kids for graduate programs and CS programs that
-prepare kids for industry. I'd also love to see CS minors that were
-more targeted towards CS+X rather than half of a CS major targeting
-students going to grad schools. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I also think there's a tremendous opportunity for community colleges
-to fill the role currently occupied by code schools. They could more
-easily strike a balance between academic depth and practical
-preparation.
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm working on building Hunter College's honors CS program and while I
-can't move the Hunter curriculum, I'm seeking that balance in my own
-way.
-&lt;/p&gt;
-
-&lt;p&gt;
-Will we get there? I don't know. Given the way education works, I
-figure at some point people will decide that we have to have more of a
-presence on the CS leaderboards and we'll see programs pop up with
-that in mind. I have no doubt that when that happens, we'll see many
-more Americans near the top. We have a large enough population that
-talent shouldn't be in question. This will be great for students to
-whom these competitions attract. It won't do much, however for the
-rest of the students. I'm not really concerned one way or
-another. Unlike math, where there's a natural progression through K12
-math classes with math team and math competitions being a natural add
-on, the driving forces in CS - be they from industry, government, or
-academia don't seem to have partaken in any code competition Kool-Aid
-so code competitions won't become a driving force in CS ed any time
-soon. 
-&lt;/p&gt;
-&lt;div id="footnotes"&gt;
-&lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
-&lt;div id="text-footnotes"&gt;
-
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" name="fn.1" class="footnum" href="http://cestlaz.github.io/posts/quality-devs-and-coding-contests/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;p&gt;Some
-are but probably a smaller percent from that group than from the
-general pool.&lt;/p&gt;&lt;/div&gt;
-
-
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="cs" label="cs"/>
-    <category term="education" label="education"/>
   </entry>
 </feed>
