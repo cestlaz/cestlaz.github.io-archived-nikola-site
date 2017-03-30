@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 28)</title>
   <id>http://cestlaz.github.io/index-28.atom</id>
-  <updated>2017-03-22T17:01:45Z</updated>
+  <updated>2017-03-30T18:10:47Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,180 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-27.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-28.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Using Emacs - 29 -elfeed part 1</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-29%20elfeed/</id>
+    <updated>2017-02-22T08:00:26-05:00</updated>
+    <published>2017-02-22T08:00:26-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-29%20elfeed/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Since the demise of Google Reader, I've been using &lt;a href="http://feedly.com"&gt;Feedly&lt;/a&gt; to read my
+streams. Feedly's a nice product and it's been working well for me for
+quite some time. 
+&lt;/p&gt;
+
+&lt;p&gt;
+A few days ago, I decided to see what emacs had to offer on the feed
+reader front. One solution was Gnus but then I've never been able to
+get my head around Gnus. Another was &lt;a href="https://github.com/skeeto/elfeed"&gt;elfeed&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+I thought I'd give elfeed a go. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Combined with elfeed-goodies and elfeed-org it's a pretty nice
+solution. You can easily search by either keywords or tags and tags
+are particularly easy to set up with elfeed-org. 
+&lt;/p&gt;
+
+&lt;p&gt;
+If I want to display all the items from the last month, I hit &lt;b&gt;&lt;b&gt;s&lt;/b&gt;&lt;/b&gt; (for
+search) and enter the query:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;@6-months-ago
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+For only unread posts:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;@6-months-ago +unread
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+For unread posts tagged emacs:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;@6-months-ago +unread +emacs
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+And for everything in the past 24 hours, read or not:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;@1-day-ago
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+It's pretty easy and pretty slick. The only thing missing is easy
+single key navigation. There's one solution to that problem over at
+&lt;a href="http://pragmaticemacs.com/emacs/read-your-rss-feeds-in-emacs-with-elfeed/"&gt;Pragmatic Emacs&lt;/a&gt; and I'll present another one in the next two posts.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm using some of the code from pragmatic emacs (the functions that start
+with &lt;b&gt;&lt;b&gt;bjm&lt;/b&gt;&lt;/b&gt;) which makes things easier when sharing the elfeed
+database on Dropbox (see the Pragmatic Emacs post above for details) and also a couple of routines I found via web
+search). 
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's my basic configuration:
+&lt;/p&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;elfeed-db-directory&lt;/span&gt; &lt;span class="s"&gt;"~/Dropbox/shared/elfeeddb"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;elfeed-mark-all-as-read&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;mark-whole-buffer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-untag-all-unread&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+
+&lt;span class="c1"&gt;;;functions to support syncing .elfeed between machines&lt;/span&gt;
+&lt;span class="c1"&gt;;;makes sure elfeed reads index from disk before launching&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;bjm/elfeed-load-db-and-open&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+  &lt;span class="s"&gt;"Wrapper to load the elfeed db from disk before opening"&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-db-load&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-update--force&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="c1"&gt;;;write to disk when quiting&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;bjm/elfeed-save-db-and-bury&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+  &lt;span class="s"&gt;"Wrapper to save the elfeed db to disk before burying buffer"&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-db-save&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;quit-window&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defalias&lt;/span&gt; &lt;span class="ss"&gt;'elfeed-toggle-star&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-expose&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="ss"&gt;'elfeed-search-toggle-all&lt;/span&gt; &lt;span class="ss"&gt;'star&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;elfeed&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:bind&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:map&lt;/span&gt; &lt;span class="nv"&gt;elfeed-search-mode-map&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"q"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;bjm/elfeed-save-db-and-bury&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Q"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;bjm/elfeed-save-db-and-bury&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"m"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;elfeed-toggle-star&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"M"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;elfeed-toggle-star&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;elfeed-goodies&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-goodies/setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;elfeed-org&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-org&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;rmh-elfeed-org-files&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;list &lt;/span&gt;&lt;span class="s"&gt;"~/Dropbox/shared/elfeed.org"&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Check out elfeed and make sure to go to the links provided on the main
+&lt;a href="https://github.com/skeeto/elfeed"&gt;elfeed&lt;/a&gt; page.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/pOFqzK1Ymr4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Enjoy.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>Quality Devs and Coding Contests</title>
     <id>http://cestlaz.github.io/posts/quality-devs-and-coding-contests/</id>

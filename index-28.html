@@ -90,7 +90,184 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/quality-devs-and-coding-contests/" class="u-url">Quality Devs and Coding Contests</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-29%20elfeed/" class="u-url">Using Emacs - 29 -elfeed part 1</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/using-emacs-29%20elfeed/" rel="bookmark"><time class="published dt-published" datetime="2017-02-22T08:00:26-05:00" title="2017-02-22 08:00">2017-02-22 08:00</time></a></p>
+                <p class="commentline">            <a href="posts/using-emacs-29%20elfeed/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-29-elfeed.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Since the demise of Google Reader, I've been using <a href="http://feedly.com">Feedly</a> to read my
+streams. Feedly's a nice product and it's been working well for me for
+quite some time. 
+</p>
+
+<p>
+A few days ago, I decided to see what emacs had to offer on the feed
+reader front. One solution was Gnus but then I've never been able to
+get my head around Gnus. Another was <a href="https://github.com/skeeto/elfeed">elfeed</a>.
+</p>
+
+<p>
+I thought I'd give elfeed a go. 
+</p>
+
+<p>
+Combined with elfeed-goodies and elfeed-org it's a pretty nice
+solution. You can easily search by either keywords or tags and tags
+are particularly easy to set up with elfeed-org. 
+</p>
+
+<p>
+If I want to display all the items from the last month, I hit <b><b>s</b></b> (for
+search) and enter the query:
+</p>
+<div class="highlight"><pre><span></span>@6-months-ago
+</pre></div>
+
+<p>
+For only unread posts:
+</p>
+<div class="highlight"><pre><span></span>@6-months-ago +unread
+</pre></div>
+
+<p>
+For unread posts tagged emacs:
+</p>
+<div class="highlight"><pre><span></span>@6-months-ago +unread +emacs
+</pre></div>
+
+<p>
+And for everything in the past 24 hours, read or not:
+</p>
+
+<div class="highlight"><pre><span></span>@1-day-ago
+</pre></div>
+
+<p>
+It's pretty easy and pretty slick. The only thing missing is easy
+single key navigation. There's one solution to that problem over at
+<a href="http://pragmaticemacs.com/emacs/read-your-rss-feeds-in-emacs-with-elfeed/">Pragmatic Emacs</a> and I'll present another one in the next two posts.
+</p>
+
+<p>
+I'm using some of the code from pragmatic emacs (the functions that start
+with <b><b>bjm</b></b>) which makes things easier when sharing the elfeed
+database on Dropbox (see the Pragmatic Emacs post above for details) and also a couple of routines I found via web
+search). 
+</p>
+
+<p>
+Here's my basic configuration:
+</p>
+
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">setq</span> <span class="nv">elfeed-db-directory</span> <span class="s">"~/Dropbox/shared/elfeeddb"</span><span class="p">)</span>
+
+
+<span class="p">(</span><span class="nf">defun</span> <span class="nv">elfeed-mark-all-as-read</span> <span class="p">()</span>
+      <span class="p">(</span><span class="nf">interactive</span><span class="p">)</span>
+      <span class="p">(</span><span class="nf">mark-whole-buffer</span><span class="p">)</span>
+      <span class="p">(</span><span class="nf">elfeed-search-untag-all-unread</span><span class="p">))</span>
+
+
+<span class="c1">;;functions to support syncing .elfeed between machines</span>
+<span class="c1">;;makes sure elfeed reads index from disk before launching</span>
+<span class="p">(</span><span class="nf">defun</span> <span class="nv">bjm/elfeed-load-db-and-open</span> <span class="p">()</span>
+  <span class="s">"Wrapper to load the elfeed db from disk before opening"</span>
+  <span class="p">(</span><span class="nf">interactive</span><span class="p">)</span>
+  <span class="p">(</span><span class="nf">elfeed-db-load</span><span class="p">)</span>
+  <span class="p">(</span><span class="nf">elfeed</span><span class="p">)</span>
+  <span class="p">(</span><span class="nf">elfeed-search-update--force</span><span class="p">))</span>
+
+<span class="c1">;;write to disk when quiting</span>
+<span class="p">(</span><span class="nf">defun</span> <span class="nv">bjm/elfeed-save-db-and-bury</span> <span class="p">()</span>
+  <span class="s">"Wrapper to save the elfeed db to disk before burying buffer"</span>
+  <span class="p">(</span><span class="nf">interactive</span><span class="p">)</span>
+  <span class="p">(</span><span class="nf">elfeed-db-save</span><span class="p">)</span>
+  <span class="p">(</span><span class="nf">quit-window</span><span class="p">))</span>
+
+
+
+<span class="p">(</span><span class="nf">defalias</span> <span class="ss">'elfeed-toggle-star</span>
+  <span class="p">(</span><span class="nf">elfeed-expose</span> <span class="o">#</span><span class="ss">'elfeed-search-toggle-all</span> <span class="ss">'star</span><span class="p">))</span>
+
+<span class="p">(</span><span class="nf">use-package</span> <span class="nv">elfeed</span>
+  <span class="nv">:ensure</span> <span class="nv">t</span>
+  <span class="nv">:bind</span> <span class="p">(</span><span class="nf">:map</span> <span class="nv">elfeed-search-mode-map</span>
+	      <span class="p">(</span><span class="s">"q"</span> <span class="o">.</span> <span class="nv">bjm/elfeed-save-db-and-bury</span><span class="p">)</span>
+	      <span class="p">(</span><span class="s">"Q"</span> <span class="o">.</span> <span class="nv">bjm/elfeed-save-db-and-bury</span><span class="p">)</span>
+	      <span class="p">(</span><span class="s">"m"</span> <span class="o">.</span> <span class="nv">elfeed-toggle-star</span><span class="p">)</span>
+	      <span class="p">(</span><span class="s">"M"</span> <span class="o">.</span> <span class="nv">elfeed-toggle-star</span><span class="p">)</span>
+	      <span class="p">)</span>
+  <span class="p">)</span>
+
+<span class="p">(</span><span class="nf">use-package</span> <span class="nv">elfeed-goodies</span>
+  <span class="nv">:ensure</span> <span class="nv">t</span>
+  <span class="nv">:config</span>
+  <span class="p">(</span><span class="nf">elfeed-goodies/setup</span><span class="p">))</span>
+
+
+<span class="p">(</span><span class="nf">use-package</span> <span class="nv">elfeed-org</span>
+  <span class="nv">:ensure</span> <span class="nv">t</span>
+  <span class="nv">:config</span>
+  <span class="p">(</span><span class="nf">elfeed-org</span><span class="p">)</span>
+  <span class="p">(</span><span class="nf">setq</span> <span class="nv">rmh-elfeed-org-files</span> <span class="p">(</span><span class="nb">list </span><span class="s">"~/Dropbox/shared/elfeed.org"</span><span class="p">)))</span>
+</pre></div>
+
+<p>
+Check out elfeed and make sure to go to the links provided on the main
+<a href="https://github.com/skeeto/elfeed">elfeed</a> page.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"></h2>
+<div class="outline-text-2" id="text-2">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pOFqzK1Ymr4" frameborder="0" allowfullscreen></iframe>
+
+<p>
+Enjoy.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"></h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Relevant links:
+</p>
+<ul class="org-ul">
+<li>Video series overview page:
+<ul class="org-ul">
+<li>
+<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
+</li>
+</ul>
+</li>
+<li>Code:
+<ul class="org-ul">
+<li>
+<a href="https://github.com/zamansky/using-emacs/tree/master"></a><a href="https://github.com/zamansky/using-emacs/tree/master">https://github.com/zamansky/using-emacs/tree/master</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/quality-devs-and-coding-contests/" class="u-url">Quality Devs and Coding Contests</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
