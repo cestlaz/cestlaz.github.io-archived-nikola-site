@@ -1,0 +1,136 @@
+#+BEGIN_COMMENT
+.. title: SIGCSE 2017 - a path to github part 3
+.. slug: sigcse-2017-github-3
+.. date: 2017-03-30 14:02:31 UTC-04:00
+.. tags: tools
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+* 
+I wanted to write this up earlier but, as so frequently happens all my
+dormant work projects decided it was time to rise up and demand
+instant attention.
+
+When we left off, we had students pulling code and submitting homework
+via github.
+
+Form here, it's an easy step to have them working on a small project
+in their own repo. In fact, sometimes, I'll jump right to a two person
+project where one person creates the repo and invites the other (and
+me) as a collaborator.
+
+Once here, it's important to emphasize the normal workflow:
+1. ~git pull~
+2. edit stuff with an occasional ~git add~, ~git rm~,  or ~got mv~
+3. commit
+4. and an occasional ~git push~
+
+Regardless of how much you emphasize the workflow you're now going to
+have to cover merges as well how to recover from problems by going to
+an earlier revision.
+
+For going back to earlier versions or otherwise recovering from
+disasters, I don't show them the "right" way of doing things. I show
+them a way that's easy to remember and reliably works without tons of
+searching for answers.
+
+First, given some repo, I have them clone a version under another
+name:
+
+#+BEGIN_SRC sh
+git clone git@github.com:hunterdaedalus/classcode.git newdirname
+#+END_SRC
+
+Now, they have the original repo and a clone under the directory
+**newdirname**.
+
+I have them go into that new copy and use ~git log~ to go through the
+logs to find an earlier version that they want to go back to.
+
+The log will look something like this:
+
+#+BEGIN_VERSE
+commit 67eceb5e0a01ca5f5fb54ace65a4fe134f71edae
+Author: Mike Zamansky <zamansky@gmail.com>
+Date:   Sat Feb 25 12:32:26 2017 -0500
+
+    updated Makefile
+
+commit 7efed10eb6015276b0cb82874ce786dc68a683ae
+Author: Mike Zamansky <zamansky@gmail.com>
+Date:   Sat Feb 25 08:45:34 2017 -0500
+
+    broke out main --> main and shapes
+
+commit e8b5c240123a7cb17920d52b4aba9cf5787ddab2
+Author: Mike Zamansky <zamansky@gmail.com>
+Date:   Sat Feb 25 08:36:29 2017 -0500
+
+    added lab3 code
+
+commit 6d5bcf866306334ddc5c6a48e8f49fb39ddbcb18
+Author: Some other coder <somone@somewhere.net>
+Date:   Sun Feb 19 19:29:51 2017 -0500
+
+#+END_VERSE
+
+
+Find the hash that they want to get back to and **checkout** that
+version (you normally only have to use the first few characters of
+the hash):
+
+#+BEGIN_SRC sh
+git checkout 7efed10
+#+END_SRC
+
+Now they can grab what they want, copy it into the working copy of the
+repo, **commit** the changes and **push** them back.
+
+
+For Merging, I start by having them do it manually. I'll have them
+load the file in question into their editor and look for the chunks
+that look like this:
+
+#+BEGIN_VERSE
+<<<<<<< A
+lines in file A
+=======
+lines in file B
+>>>>>>> B
+#+END_VERSE
+
+They'll manually make the changes, then save, commit and push back.
+
+Later, I'll show them a couple of tools to help along the way. I
+usually show ediff in emacs along with meld.
+
+Once they've been doing this for a while, it's easy to expand group
+sizes. After that, I'll introduce **issues** via the github interface.
+
+The last big topic is branches.
+
+First I show basic branches and merging. Here's a pretty good [[https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging][run
+through]]. Afterwards, I'll show how branching works in conjunction with
+github. This is also a good time to emphasize that students have to
+actually read the messages that git gives them when things don't  go
+well. In most cases, the message will contain the exact thing to type
+to fix the problem (such as linking a branch with a branch up on
+github).
+
+Now is also the time to introduce pull requests and how to use them to
+support code review. The general setup I recommend is one branch per
+group member and a main "deployment" branch with group members
+creating more branches as they see fit.
+
+That's about it. I've followed this process, more or less, over a
+semester, over a year, and over multiple years. It's worked for me, I
+hope some of this helps you as well.
+
+In the next and probably last git/github post I'll talk about the
+educational benefits that I've discovered along the way. After that,
+I'll get back to some emacs videos, other SIGCSE stuff and my normal rants.
+
+
+
