@@ -1,5 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about pedagogy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/pedagogy.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 10 Feb 2017 15:19:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Teacher looks at Advent of Code 2016 #2</title><link>http://cestlaz.github.io/posts/advent-of-code-2016-2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about pedagogy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link type="application/rss+xml" href="http://cestlaz.github.io/categories/pedagogy.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 02 Apr 2017 14:26:48 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A free multi-state clicker with built in redundency</title><link>http://cestlaz.github.io/posts/thumb_clickers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Last Friday, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about the woes of &lt;a href="https://computinged.wordpress.com/2017/03/31/the-need-for-better-software-and-systems-to-support-active-cs-learning/%0A"&gt;using clickers&lt;/a&gt; in a
+class. The amount of effort required to use his school's approved
+clicker technology sounds ridiculous so while we need tools to better
+engage students in large class settings we need better tools that can
+be integrated into our classes more easily.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've never used clickers. On top of stories like Mark's, there are  a
+number of problems with using clickers in a public school.
+&lt;/p&gt;
+
+&lt;p&gt;
+You can't force students to buy them and in NYC, until recently,
+students couldn't use their phones (which they also might not have).
+Forgetting the expense, if the school provides them, is it one per
+student? If so, who's going to administer the clicker to student
+mapping and how will that be communicated to the teachers. If college
+tech infrastructures are sometimes lacking, high schools are orders of
+magnitudes worse. The resources just aren't there. Then we have to
+deal with loss and breakage.
+&lt;/p&gt;
+
+&lt;p&gt;
+If a teacher somehow gets a class set of clickers, they have to deal
+with mapping clickers to students for all of their classes and make
+sure the right student has the right clicker. Again, loss  and
+breakage is a problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then you have to create the question content and hope that everything
+works in class.
+&lt;/p&gt;
+
+&lt;p&gt;
+The value added given the overhead just doesn't seem worth it
+particularly since high school classes, while large, are not in the
+hundreds and there are other methods of student engagement.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's what I use instead. It's not perfect but it's low cost and low
+effort with a pretty high return.
+&lt;/p&gt;
+
+&lt;p&gt;
+The basic configuration, is a simple three state broadcast device.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's not without its problems and I don't think it would work as well
+in a large lecture but given the cost, it's well worth it.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, what is it?
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/thumbs/fonzup.jpg" alt="fonzup.jpg" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+Thumbs.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Periodically, I'll poll my class.
+&lt;/p&gt;
+
+&lt;span&gt;
+&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/sidethumb.png"&gt;
+&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/upthumb.jpg"&gt;
+&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/downthumb.jpg"&gt;
+
+
+&lt;p&gt;
+Thumb to the side? Everything's OK. Keep going as you're going. I get
+it. Basically, things are good.
+&lt;/p&gt;
+
+&lt;p&gt;
+Thumb up? Speed up, you're going too slow, I got it five minutes ago or
+some similar big positive.
+&lt;/p&gt;
+
+&lt;p&gt;
+Thumb down? I have no idea what you're talking about.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's cheap, easy, quick, and once you can get your class to buy in,
+you can get a quick sense of the class.
+&lt;/p&gt;
+
+&lt;p&gt;
+The downsides?
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;The class has to have a level of comfort so that students vote
+honestly and don't just give you positive feedback.
+&lt;/li&gt;
+&lt;li&gt;No data collection.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;
+The upsides?
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;quick
+&lt;/li&gt;
+&lt;li&gt;cheap
+&lt;/li&gt;
+&lt;li&gt;works on any topic on the fly
+&lt;/li&gt;
+&lt;li&gt;even if the votes are artificially skewed towards positive, it does
+forces the class to be at least a little attentive and to engage in
+some physical response
+&lt;/li&gt;
+&lt;li&gt;can get analog responses by allowing students to adjust wrist
+rotation
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+As to the redundancy? I've never had a kid leave their thumb at home
+or lose it and even if they did, they've got a second hand.
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/thumbs/fonztwo.jpg" alt="fonztwo.jpg" align="center" height="200"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+This also works in extreme environments. Try using a clicker or mobile
+app with gloves or mittens on or underwater.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't teach large lectures so I don't know how this would work in a
+huge class. I'd imagine it's still worth it given that it's so low
+friction and low cost of entry even if it's not perfect.
+&lt;/p&gt;
+&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;</description><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/thumb_clickers/</guid><pubDate>Sat, 01 Apr 2017 21:23:21 GMT</pubDate></item><item><title>A Teacher looks at Advent of Code 2016 #2</title><link>http://cestlaz.github.io/posts/advent-of-code-2016-2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 Today we're looking at &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; 2016 &lt;a href="http://adventofcode.com/2016/day/2"&gt;number 2&lt;/a&gt;.
 &lt;/p&gt;
 
@@ -1024,228 +1184,4 @@ to begin with.
 So, you learn to figure it out. It's something I learned not to be
 afraid of a long time ago. I hope that it's something I've been able
 to convey to my students.
-&lt;/p&gt;</description><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2016-01-31-devops.html/</guid><pubDate>Sun, 31 Jan 2016 05:00:00 GMT</pubDate></item><item><title>Debugging deployment</title><link>http://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;style&gt;
-div.center {text-align:center;}
-&lt;/style&gt;
-
-&lt;p&gt;
-SoftDev students are hard at work on their final projects. By now,
-they all have fairly complex code bases. This limits how much I can
-help them with debugging.
-&lt;/p&gt;
-
-&lt;p&gt;
-There are some problems, though, that they have to contend with that
-even with experience, are hard to spot. Notably because the very
-tools you use to debug these errors are part of the problem.
-&lt;/p&gt;
-
-&lt;p&gt;
-Last week, this happened twice. Both cases were brought to me by
-really strong students which just goes to underscore how insidious
-these problems can be.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-Here's a fake code snippet of a &lt;a href="http://flask.pocoo.org/"&gt;Flask&lt;/a&gt; application that illustrates
-both problems.
-&lt;/p&gt;
-
-
-&lt;div class="org-src-container"&gt;
-
-&lt;pre class="src src-python"&gt;&lt;span class="linenr"&gt; 1: &lt;/span&gt;from flask import Flask, render_template
-&lt;span class="linenr"&gt; 2: &lt;/span&gt;
-&lt;span class="linenr"&gt; 3: &lt;/span&gt;app = Flask(__name__)
-&lt;span class="linenr"&gt; 4: &lt;/span&gt;
-&lt;span class="linenr"&gt; 5: &lt;/span&gt;@app.route("/")
-&lt;span class="linenr"&gt; 6: &lt;/span&gt;def index():
-&lt;span class="linenr"&gt; 7: &lt;/span&gt;    return "hello"
-&lt;span class="linenr"&gt; 8: &lt;/span&gt;
-&lt;span class="linenr"&gt; 9: &lt;/span&gt;@app.route('/test/&amp;lt;some_data&amp;gt;')
-&lt;span class="linenr"&gt;10: &lt;/span&gt;def test():
-&lt;span class="linenr"&gt;11: &lt;/span&gt;    picture_url = build_url(some_data)
-&lt;span class="linenr"&gt;12: &lt;/span&gt;    result = api_test(picture_url)
-&lt;span class="linenr"&gt;13: &lt;/span&gt;    do_something(result)
-&lt;span class="linenr"&gt;14: &lt;/span&gt;
-&lt;span class="linenr"&gt;15: &lt;/span&gt;if __name__ == "__main__":
-&lt;span class="linenr"&gt;16: &lt;/span&gt;   app.debug = True
-&lt;span class="linenr"&gt;17: &lt;/span&gt;   app.secret_key = "some secret key"
-&lt;span class="linenr"&gt;18: &lt;/span&gt;   app.run(host="0.0.0.0", port=8000)
-&lt;/pre&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;
-First, the "easy" one. The student was trying to deploy the
-application. We use &lt;a href="http://gunicorn.org/"&gt;Green Unicorn&lt;/a&gt; to deploy our applications,
-ultimately on &lt;a href="http://digitalocean.com/"&gt;Digital Ocean&lt;/a&gt; servers in the cloud. 
-&lt;/p&gt;
-
-&lt;p&gt;
-The student was using the correct command:
-&lt;/p&gt;
-
-&lt;div class="org-src-container"&gt;
-
-&lt;pre class="src src-shell"&gt;gunicorn -W 4 -b 0.0.0.0:8000 app:app
-&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-but it wasn't working. It ran, but whenever he went to the site, it
-came back with an error.
-&lt;/p&gt;
-
-&lt;p&gt;
-The problem?
-&lt;/p&gt;
-
-&lt;p&gt;
-He had to change:
-&lt;/p&gt;
-&lt;div class="org-src-container"&gt;
-
-&lt;pre class="src src-python"&gt;if __name__ == "__main__":
-   app.debug = True
-   app.secret_key = "some secret key"
-   app.run(host="0.0.0.0", port=8000)
-&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-to
-&lt;/p&gt;
-
-&lt;div class="org-src-container"&gt;
-
-&lt;pre class="src src-python"&gt;app.secret_key = "some secret key"
-if __name__ == "__main__":
-    app.debug = True
-    app.run(host="0.0.0.0", port=8000)
-&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-Normally, when developing and testing our applications, we use the
-test server that's bundled with Flask. The line that reads
-"app.run…" takes care of this.
-&lt;/p&gt;
-
-&lt;p&gt;
-When running the application as a "main program" - "python app.py" the
-if statement is true and it runs the indented lines, setting the
-secret key which is required for session management.
-&lt;/p&gt;
-
-&lt;p&gt;
-When running under &lt;b&gt;&lt;b&gt;gunicorn&lt;/b&gt;&lt;/b&gt;, the &lt;b&gt;&lt;b&gt;gunicorn&lt;/b&gt;&lt;/b&gt; server loads the
-application as a module and then runs it. In this case name isn't main
-so it never sets secret key and so we have a problem.
-&lt;/p&gt;
-
-&lt;p&gt;
-Pretty subtle and even though we did cover this in class, it comes up
-pretty rarely so it's not an easy catch.
-&lt;/p&gt;
-
-&lt;p&gt;
-Then there was this problem.
-&lt;/p&gt;
-
-&lt;p&gt;
-The setup for this one's a little more complicated. The group was
-using a facial recognition api. You provide the API with the url to an
-image, it fetches it and does recognition.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's also important to note that when Flask is running, it will serve
-files from a static directory, so, if I'm running my flask server on
-myhost, port 800 and you stored an image named picture.jpg in the
-static directory, going to:
-&lt;/p&gt;
-
-&lt;verbatim&gt;
- http://myhost:8000/static/picture.jpg
-&lt;/verbatim&gt;
-&lt;br&gt;&lt;br&gt;
-
-
-&lt;p&gt;
-would get that image.
-&lt;/p&gt;
-
-&lt;p&gt;
-The group did things right. They ran the Flask test server to serve
-the static files and then wrote a small python program to test the
-api:
-&lt;/p&gt;
-
-&lt;div class="org-src-container"&gt;
-
-&lt;pre class="src src-python"&gt;picture_url = build_url(some_data)
-result = api_test(picture_url)
-do_something(result)
-&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-Everything worked fine. 
-&lt;/p&gt;
-
-&lt;p&gt;
-But, when they put this code in as a route in their web app (as in the
-top code fragment), it froze. 
-&lt;/p&gt;
-
-&lt;p&gt;
-They couldn't figure it out.
-&lt;/p&gt;
-
-&lt;p&gt;
-The code worked as a "stand alone" but not in the web app.
-&lt;/p&gt;
-
-&lt;p&gt;
-The problem?
-&lt;/p&gt;
-
-&lt;p&gt;
-Once again, the built in Flask development server.
-&lt;/p&gt;
-
-&lt;p&gt;
-The development server runs in a single thread / process. This means
-it can only do one thing at a time. When they ran their test as a
-separate program, the api they used made a request to their app to
-serve up the static picture file and it worked.
-&lt;/p&gt;
-
-&lt;p&gt;
-When they ran from the Flask application itself, their app made a call
-to the web api (line 12) and then blocked while waiting for the
-response. The web api tried to request the image from the Flask app
-but it was blocked – &lt;b&gt;&lt;b&gt;deadlock&lt;/b&gt;&lt;/b&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-Again, the solution was to run the web app using a server that could
-handle multiple requests - gunicorn.
-&lt;/p&gt;
-
-&lt;p&gt;
-Once again, that solved the problem.
-&lt;/p&gt;
-
-&lt;p&gt;
-Both of these problems were fairly subtle and very hard to catch -
-even with experience. I remember the hours I lost when I was learning
-this stuff.
-&lt;/p&gt;
-
-&lt;p&gt;
-Some times kids get caught up in algorithms or poor code design but
-sometimes, it's just the tools.
-&lt;/p&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</guid><pubDate>Sat, 23 Jan 2016 05:00:00 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;</description><category>pedagogy</category><guid>http://cestlaz.github.io/posts/2016-01-31-devops.html/</guid><pubDate>Sun, 31 Jan 2016 05:00:00 GMT</pubDate></item></channel></rss>
