@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GitHib as an tool for education | C'est la Z</title>
+<title>GitHib as a tool for education | C'est la Z</title>
 <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
@@ -18,17 +18,14 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="../../index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/posts/sigcse-2017-github-4/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
-<meta name="robots" content="noindex">
+<link rel="prev" href="../thumb_clickers/" title="A free multi-state clicker with built in redundency" type="text/html">
 <meta property="og:site_name" content="C'est la Z">
-<meta property="og:title" content="GitHib as an tool for education">
+<meta property="og:title" content="GitHib as a tool for education">
 <meta property="og:url" content="http://cestlaz.github.io/posts/sigcse-2017-github-4/">
-<meta property="og:description" content="http://cestlaz.github.io/posts/sigcse-2017-github-3
-http://cestlaz.github.io/posts/sigcse-2017-github-2
-http://cestlaz.github.io/posts/sigcse-2017-github-1
-
-
-
-githubgraph.png  githubgraph2.png  timema">
+<meta property="og:description" content="When I started using git and GitHub with my students it was a natural
+progression having started with started with CVS and then, as
+technology changed moving through Subversion and then Mercurial. It
+">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-04-11T19:11:30-04:00">
 <meta property="article:tag" content="pedagogy">
@@ -100,7 +97,7 @@ githubgraph.png  githubgraph2.png  timema">
 						<div class="col-md-8">
 				
 								
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">GitHib as an tool for education</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">GitHib as a tool for education</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
@@ -116,13 +113,93 @@ githubgraph.png  githubgraph2.png  timema">
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <p>
-<a href="http://cestlaz.github.io/posts/sigcse-2017-github-3">http://cestlaz.github.io/posts/sigcse-2017-github-3</a>
-<a href="http://cestlaz.github.io/posts/sigcse-2017-github-2">http://cestlaz.github.io/posts/sigcse-2017-github-2</a>
-<a href="http://cestlaz.github.io/posts/sigcse-2017-github-1">http://cestlaz.github.io/posts/sigcse-2017-github-1</a>
+When I started using git and GitHub with my students it was a natural
+progression having started with started with CVS and then, as
+technology changed moving through Subversion and then Mercurial. It
+was all about using sensible professional software development
+techniques while making it easier for students to submit work and for
+me to evaluate their submissions.
 </p>
 
 <p>
-githubgraph.png  githubgraph2.png  timemachine.gif
+Over time, I found that git and GitHub in fact provided some extra
+support for educators right out of the box.
+</p>
+
+<p>
+In my <a href="http://cestlaz.github.io/posts/sigcse-2017-github-3">last github post</a> I talked about using the results of <code>git log</code>
+and looking at diffs. Both provide ways of seeing what a student did
+and when. The commit log and history make it easier to hold students accountable to working
+through a project and not leavings for the last minute. The diffs make
+it easier to see what's changed both to see progress and also to help
+support students as they develop their projects.
+</p>
+
+<p>
+If you use Emacs, as I do, you can use the <a href="https://github.com/pidu/git-timemachine">git timemachine</a> package
+which does a great job visualizing changes:
+</p>
+
+
+<div class="figure">
+<p><img src="../../img/sigcse-github/timemachine.gif" alt="timemachine.gif" align="center"></p>
+</div>
+
+<p>
+Other editors might have a similar feature.
+</p>
+
+<p>
+The contribution graphs also provide a quick snapshot which shows what
+team members are contributing and when:
+</p>
+
+
+<div class="figure">
+<p><img src="../../img/sigcse-github/githubgraph.png" alt="githubgraph.png" align="center"></p>
+</div>
+
+<p>
+The punchcard graph is also useful to see when students actually do
+their work.
+</p>
+
+
+<div class="figure">
+<p><img src="../../img/sigcse-github/githubgraph2.png" alt="githubgraph2.png" align="center"></p>
+</div>
+
+<p>
+GitHub also make it easy to set up starter code or to have students
+"take over" each others projects by forking.
+</p>
+
+<p>
+I'm very happy using git and GitHub as is but if you want more
+support, check out <a href="https://classroom.github.com/">GitHub Classroom</a>. Had it existed when I started,
+I'd probably have used it but since I had already gotten used to my
+work flows I've stuck with raw git and github.
+</p>
+
+<p>
+In case you missed the earlier posts describing the process I use to
+introduce github to my classes here they are:
+</p>
+
+<ul class="org-ul">
+<li>
+<a href="http://cestlaz.github.io/posts/sigcse-2017-github-1">Part 1</a>
+</li>
+<li>
+<a href="http://cestlaz.github.io/posts/sigcse-2017-github-2">Part 2</a>
+</li>
+<li>
+<a href="http://cestlaz.github.io/posts/sigcse-2017-github-3">Part 3</a>
+</li>
+</ul>
+<p>
+I'm hoping some of you have found this set of four posts useful or at
+least interesting.
 </p>
 
 <!-- AddThis Button BEGIN -->
@@ -139,12 +216,17 @@ githubgraph.png  githubgraph2.png  timemachine.gif
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
 <li><a class="tag p-category" href="../../categories/pedagogy/" rel="tag">pedagogy</a></li>
             <li><a class="tag p-category" href="../../categories/tools/" rel="tag">tools</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../thumb_clickers/" rel="prev" title="A free multi-state clicker with built in redundency">Previous post</a>
+            </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="cestlaz",
             disqus_url="http://cestlaz.github.io/posts/sigcse-2017-github-4/",
-        disqus_title="GitHib as an tool for education",
+        disqus_title="GitHib as a tool for education",
         disqus_identifier="cache/posts/sigcse-2017-github-4.html",
         disqus_config = function () {
             this.language = "en";
