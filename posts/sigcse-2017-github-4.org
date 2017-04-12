@@ -1,17 +1,66 @@
 #+BEGIN_COMMENT
-.. title: GitHib as an tool for education
+.. title: GitHib as a tool for education
 .. slug: sigcse-2017-github-4
 .. date: 2017-04-11 19:11:30 UTC-04:00
-.. tags: draft, tools, pedagogy
+.. tags: tools, pedagogy
 .. category: 
 .. link: 
 .. description: 
 .. type: text
 #+END_COMMENT
 
+When I started using git and GitHub with my students it was a natural
+progression having started with started with CVS and then, as
+technology changed moving through Subversion and then Mercurial. It
+was all about using sensible professional software development
+techniques while making it easier for students to submit work and for
+me to evaluate their submissions.
 
-http://cestlaz.github.io/posts/sigcse-2017-github-3
-http://cestlaz.github.io/posts/sigcse-2017-github-2
-http://cestlaz.github.io/posts/sigcse-2017-github-1
+Over time, I found that git and GitHub in fact provided some extra
+support for educators right out of the box.
 
-githubgraph.png  githubgraph2.png  timemachine.gif
+In my [[http://cestlaz.github.io/posts/sigcse-2017-github-3][last github post]] I talked about using the results of ~git log~
+and looking at diffs. Both provide ways of seeing what a student did
+and when. The commit log and history make it easier to hold students accountable to working
+through a project and not leavings for the last minute. The diffs make
+it easier to see what's changed both to see progress and also to help
+support students as they develop their projects.
+
+If you use Emacs, as I do, you can use the [[https://github.com/pidu/git-timemachine][git timemachine]] package
+which does a great job visualizing changes:
+
+#+ATTR_HTML: :align center
+[[../../img/sigcse-github/timemachine.gif]]
+
+Other editors might have a similar feature.
+
+The contribution graphs also provide a quick snapshot which shows what
+team members are contributing and when:
+ 
+#+ATTR_HTML: :align center
+[[../../img/sigcse-github/githubgraph.png]]
+
+The punchcard graph is also useful to see when students actually do
+their work.
+
+#+ATTR_HTML: :align center
+[[../../img/sigcse-github/githubgraph2.png]]
+
+GitHub also make it easy to set up starter code or to have students
+"take over" each others projects by forking.
+
+I'm very happy using git and GitHub as is but if you want more
+support, check out [[https://classroom.github.com/][GitHub Classroom]]. Had it existed when I started,
+I'd probably have used it but since I had already gotten used to my
+work flows I've stuck with raw git and github.
+
+In case you missed the earlier posts describing the process I use to
+introduce github to my classes here they are:
+
+- [[http://cestlaz.github.io/posts/sigcse-2017-github-1][Part 1]]
+- [[http://cestlaz.github.io/posts/sigcse-2017-github-2][Part 2]]
+- [[http://cestlaz.github.io/posts/sigcse-2017-github-3][Part 3]]
+
+I'm hoping some of you have found this set of four posts useful or at
+least interesting.
+
