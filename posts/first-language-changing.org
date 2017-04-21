@@ -1,0 +1,88 @@
+#+BEGIN_COMMENT
+.. title: A new first language? What's the follow up plan?
+.. slug: first-language-changing
+.. date: 2017-04-21 14:46:07 UTC-04:00
+.. tags: pedagogy, cs, langauges
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+This morning, [[https://twitter.com/guzdial][Mark Guzdial]] wrote about Stanford possibly [[https://computinged.wordpress.com/2017/04/21/cs-department-updates-introductory-courses-java-is-gone/][moving away
+from Java]] as their intro language. This comes on the heels of a
+semi-regular thread on one of the lists I'm on asking about what
+languages are used at assorted colleges around the country. Invariably
+the Pascal -> C++ -> Java progression of APCS turns up in these
+threads.
+
+There are plenty of arguments to be made both for and against pretty
+much any language or platform. There's no single best universal
+answer. Each choice giveth and each choice taketh away. 
+
+What I'm really curious about is who's looking at intro languages in
+the context of complete programs or even complete educations that
+could span multiple institutions.
+
+Early language choices can make a big difference in engaging and
+exciting newcomers but there are ramifications later on that few seem
+to consider.
+
+Take the APCS change from C++ to Java. It removed memory management
+from the first year course. It also simplified issues relating to
+pass by value vs pass by reference (or, rather, passing address by
+value), bought much more strongly into OOP and moved more towards
+using built in implementations of data structures like Lists rather
+than rolling your own.
+
+Removing memory management from the first year course in and of itself
+isn't a problem as long as it's taught and taught effectively
+somewhere later on. It could be argued that "memory is already covered
+in our required systems course." That could be the case, but there are
+many concepts that kids don't get the first time around. Is an
+institution that covered memory management in CS1/2 and then came back
+to it in a later Systems course giving their students the same
+understanding now that they've eliminated the CS1/2 experience? 
+
+What about OOP buy in. Personally, I've never been a big OOP fan but
+that's neither here nor there. What I have found is that depending on
+how a student is exposed to programming in CS1/CS2 can have a big
+influence on how they approach problems later. Did the move to Java
+cause more of our students to try to use shoehorn OOP into a problem
+that really shouldn't be approached in an OOP manner?
+
+I suspect that the use of built in data structures has had a
+negative impact. A few years after the switch to Java, I was talking
+to a senior tech worker. He was having a bad day - interviewing
+potential internees and full time engineers. My friend was complaining
+that the kids couldn't come up with solutions to what he thought were
+pretty straightforward questions. He felt that had the kids actually
+implemented algorithms like the nlogn sorts rather than just learning
+java .sort method and just talking about the algorithm they'd be
+better prepared. I've heard this sentiment repeated over and over
+throughout the years.
+
+This is not to say that Java is a horrible language or horrible for
+teaching - that's another debate. The point is that you can't just
+look at the intro class and who it draws in. You have to consider how
+it will prepare students for the next level and you have to look at
+the big picture -- will our students get everything they need by the
+time they leave us.
+
+Many schools have moved to Python. Will that effect students take on
+type systems later on? Will the flexibility and constructs like list
+comprehensions make it harder to teach recursion since there are
+"easier" ways to do it? 
+
+None of these are really problems so long as the CS1/2 (or even CS0)
+isn't taught in a vacuum. 
+
+I fear, however that too often we're paying attention to the intake of
+the pipe and not so much the output.
+
+
+
+
+
+
