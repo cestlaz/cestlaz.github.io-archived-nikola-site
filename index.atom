@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2017-04-28T20:53:38Z</updated>
+  <updated>2017-04-28T22:07:36Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -54,7 +54,7 @@ Here's my configuration:
 &lt;p&gt;
 Projectile considers a sub-directory tree to be a project if it's a
 git or other source control repo, if it's created by tool like lein,
-maven, or sbt, or if you put an empty file named &lt;b&gt;&lt;b&gt;.projectfile&lt;/b&gt;&lt;/b&gt; in
+maven, or sbt, or if you put an empty file named &lt;b&gt;&lt;b&gt;.projectile&lt;/b&gt;&lt;/b&gt; in
 the root directory of the project.
 &lt;/p&gt;
 
