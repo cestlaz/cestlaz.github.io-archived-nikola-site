@@ -1,0 +1,93 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 33 - projectile, dumb-jump
+.. slug: using-emacs-33-projectile-jump
+.. date: 2017-04-28 08:00:26 UTC-05:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description:
+.. type: text
+#+END_COMMENT
+
+* 
+If you keep Emacs open all the time you end up accumulating lots of
+buffers. That can make navigating a little bit awkward.
+
+[[https://github.com/bbatsov/projectile][Projectile]] is a really nice package that makes navigating in and
+between projects much easier. I also have [[https://github.com/ericdanan/counsel-projectile][counsel-projectile]]
+installed.
+
+Here's my configuration:
+
+#+BEGIN_SRC emacs-lisp
+;; projectile
+(use-package projectile
+  :ensure t
+  :config
+  (projectile-global-mode)
+(setq projectile-completion-system 'ivy))
+
+(use-package counsel-projectile
+  :ensure t
+  :config
+  (counsel-projectile-on))
+#+END_SRC
+
+Projectile considers a sub-directory tree to be a project if it's a
+git or other source control repo, if it's created by tool like lein,
+maven, or sbt, or if you put an empty file named **.projectfile** in
+the root directory of the project.
+
+Projectile learns about projects when you open a file in that project
+and then stores that information in an Emacs bookmark file in your
+.emacs.d directory.
+
+You can switch between projects using ^C-p p^ and when in a project,
+load another file using ^C-p f^. If you use the **which-key** package
+as I do, just type ^C-p^ - the projectile prefix and then which-key
+will bring up help.
+
+The video goes through some of my favorite features and you can find
+the full documentation can be found [[http://projectile.readthedocs.io/en/latest/][here]].
+
+
+The other package I show is [[https://github.com/jacktasia/dumb-jump][dumb-jump]]. It's basically a zero (or
+almost zero) configuration tags replacement. Really nice.
+
+Here's my current config:
+
+#+BEGIN_SRC emacs-lisp
+(use-package dumb-jump
+  :bind (("M-g o" . dumb-jump-go-other-window)
+         ("M-g j" . dumb-jump-go)
+         ("M-g x" . dumb-jump-go-prefer-external)
+         ("M-g z" . dumb-jump-go-prefer-external-other-window))
+   :config (setq dumb-jump-selector 'ivy) ;; (setq dumb-jump-selector 'helm)
+  :ensure)
+
+  :config 
+;; (setq dumb-jump-selector 'ivy) ;; (setq dumb-jump-selector 'helm)
+:init
+(dumb-jump-mode)
+  :ensure
+)
+#+END_SRC
+
+
+Enjoy.
+
+
+
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wBfZzaff77g" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+* 
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+
