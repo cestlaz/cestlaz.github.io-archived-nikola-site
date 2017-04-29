@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2017-04-28T22:07:36Z</updated>
+  <updated>2017-04-29T09:37:39Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -65,9 +65,9 @@ and then stores that information in an Emacs bookmark file in your
 &lt;/p&gt;
 
 &lt;p&gt;
-You can switch between projects using ^C-p p^ and when in a project,
-load another file using ^C-p f^. If you use the &lt;b&gt;&lt;b&gt;which-key&lt;/b&gt;&lt;/b&gt; package
-as I do, just type ^C-p^ - the projectile prefix and then which-key
+You can switch between projects using &lt;code&gt;C-c p&lt;/code&gt; and when in a project,
+load another file using &lt;code&gt;C-c f&lt;/code&gt;. If you use the &lt;b&gt;&lt;b&gt;which-key&lt;/b&gt;&lt;/b&gt; package
+as I do, just type &lt;code&gt;C-c&lt;/code&gt; - the projectile prefix and then which-key
 will bring up help.
 &lt;/p&gt;
 
