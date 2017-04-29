@@ -42,9 +42,9 @@ Projectile learns about projects when you open a file in that project
 and then stores that information in an Emacs bookmark file in your
 .emacs.d directory.
 
-You can switch between projects using ^C-p p^ and when in a project,
-load another file using ^C-p f^. If you use the **which-key** package
-as I do, just type ^C-p^ - the projectile prefix and then which-key
+You can switch between projects using ~C-c p~ and when in a project,
+load another file using ~C-c f~. If you use the **which-key** package
+as I do, just type ~C-c~ - the projectile prefix and then which-key
 will bring up help.
 
 The video goes through some of my favorite features and you can find
