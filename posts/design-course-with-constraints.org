@@ -1,0 +1,98 @@
+#+BEGIN_COMMENT
+.. title: Designing a course with constraints
+.. slug: design-course-with-constraints
+.. date: 2017-05-19 11:38:20 UTC-04:00
+.. tags: curriculum, teaching
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+* 
+One of the hats I wear at Hunter is to build a new [[https://cestlaz.github.io/posts/2016-03-29-hunter-cs.html][CS Honors program]]
+and to bring my particular brand of insanity to [[https://cestlaz.github.io/posts/hunter-cs-important][Hunter College CS]] as a
+whole.
+
+Yesterday was my last class for the semester so I thought I'd write a
+bit about the course.
+
+For the Fall semester, I taught an intro programming course to the
+entire cohort. For some in the cohort, this was their first exposure
+to CS. Others had one or more classes under their belt. It was a
+Python based programming class and a big part of it was to start
+building the cohort into a community. I'm going to work on tweaking
+what I taught for next time around but the constraints of designing
+such a course are pretty common -- an intro course where the students
+all want to be there the level of previous experience varies to some degree.
+
+Second semester was more of a challenge. The "next" course was CSCI
+135, CS 100 - like APCS but in C++. I could teach that but since some
+of my students had APCS credit, they didn't need 135. This would break
+up the group. There was also the issue of the students getting credit
+for the course without showing any proficiency in C++.
+
+Fortunately, Hunter requires students in 135 to take CSCI 136. A 1
+credit programming lab. It meets once a week in a computer lab and the
+students complete a weekly programming assignment. The lab meets for 2
+hours. The instructor goes over anything that's needed for the lab
+that hasn't been covered yet and then the students work independently
+(with the instructors support) on the lab. Overall it works well. It
+makes sure the students are spending at least a couple of hours a week
+coding in a supported environment.
+
+
+How did 136 help me? I taught a 3 credit course where 1 day was
+basically the lab component (what the students were to do in 136) and
+one day was enrichment - the stuff I was going to do with them. This
+enabled us keeping the cohort together and it also made sure that by
+taking the class, the honors cohort members with AP credit would
+indeed get up to speed in C++.
+
+I was happy with the basic structure. I was able to cover some topics
+in project development, testing, debugging, and software engineering but the
+designing and teaching the class proved to be challenging for a number
+of reasons.
+
+One was timing. The lab class meets 1 day a week for 1 hour. My class,
+2 days a week for 1 hour 15. This meant that if we were to keep the
+lab to one day either the students would have less time or I'd have to
+impose on them to stay late or come early. I wasn't happy with that
+but given the inconsistency in the way the other sections handled lab
+timings, I think it worked out OK.
+
+Some of the other difficulties included:
+
+** The language was C++:
+Since the labs were to be done in C++, I had to use that as the
+language for the class. That meant no "fun" libraries or frameworks.
+** The labs were solo assignments:
+Since the labs were solo projects and there was one per week it made
+it very difficult to structure group experiences. I wanted to cover
+things like group development, code review, working off of other
+peoples code bases but this proved difficult with an outside separate
+lab being handed down each week.
+** Someone else dictated the language sequence: 
+The labs were designed to support what the students were learning in
+135 and were only distributed a day or two before the week was to
+start. This meant that I couldn't plan too far ahead and had to adjust
+frequently. This should be easier next year.
+** Labs didn't match the supplemental material:
+The best example of this was when we were talking about testing. We
+ended up using [[https://github.com/philsquared/Catch][Catch]] as a testing framework. The problem was that
+right afterwards the lab (and also 135 project) didn't lend themselves
+to using a testing framework like catch. 
+
+There were more challenges but overall I think the class went fairly
+well. I'll know more when I get feedback from the students and when we
+all look back next year with some perspective.
+
+It's been an interesting experience designing a class that had to
+interleave with another, existing class. I've designed many classes
+over the years and I know that whatever you plan, it probably changes
+once you're actually in the classroom and working with the kids, or as
+Mike Tyson said: "Everyone has a plan until they get punched in the
+mouth." This has been a little more of a challenge but I think the
+first go through went well and that the course will get better and be
+better defined as we go through a couple more iterations. 
+
+
