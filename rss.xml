@@ -1,5 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 17 May 2017 23:39:45 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>It feels good to be helpful</title><link>http://cestlaz.github.io/posts/feels-good-to-be-helpful/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 19 May 2017 17:32:55 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Designing a course with constraints</title><link>http://cestlaz.github.io/posts/design-course-with-constraints/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+One of the hats I wear at Hunter is to build a new &lt;a href="https://cestlaz.github.io/posts/2016-03-29-hunter-cs.html"&gt;CS Honors program&lt;/a&gt;
+and to bring my particular brand of insanity to &lt;a href="https://cestlaz.github.io/posts/hunter-cs-important"&gt;Hunter College CS&lt;/a&gt; as a
+whole.
+&lt;/p&gt;
+
+&lt;p&gt;
+Yesterday was my last class for the semester so I thought I'd write a
+bit about the course.
+&lt;/p&gt;
+
+&lt;p&gt;
+For the Fall semester, I taught an intro programming course to the
+entire cohort. For some in the cohort, this was their first exposure
+to CS. Others had one or more classes under their belt. It was a
+Python based programming class and a big part of it was to start
+building the cohort into a community. I'm going to work on tweaking
+what I taught for next time around but the constraints of designing
+such a course are pretty common – an intro course where the students
+all want to be there the level of previous experience varies to some degree.
+&lt;/p&gt;
+
+&lt;p&gt;
+Second semester was more of a challenge. The "next" course was CSCI
+135, CS 100 - like APCS but in C++. I could teach that but since some
+of my students had APCS credit, they didn't need 135. This would break
+up the group. There was also the issue of the students getting credit
+for the course without showing any proficiency in C++.
+&lt;/p&gt;
+
+&lt;p&gt;
+Fortunately, Hunter requires students in 135 to take CSCI 136. A 1
+credit programming lab. It meets once a week in a computer lab and the
+students complete a weekly programming assignment. The lab meets for 2
+hours. The instructor goes over anything that's needed for the lab
+that hasn't been covered yet and then the students work independently
+(with the instructors support) on the lab. Overall it works well. It
+makes sure the students are spending at least a couple of hours a week
+coding in a supported environment.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+How did 136 help me? I taught a 3 credit course where 1 day was
+basically the lab component (what the students were to do in 136) and
+one day was enrichment - the stuff I was going to do with them. This
+enabled us keeping the cohort together and it also made sure that by
+taking the class, the honors cohort members with AP credit would
+indeed get up to speed in C++.
+&lt;/p&gt;
+
+&lt;p&gt;
+I was happy with the basic structure. I was able to cover some topics
+in project development, testing, debugging, and software engineering but the
+designing and teaching the class proved to be challenging for a number
+of reasons.
+&lt;/p&gt;
+
+&lt;p&gt;
+One was timing. The lab class meets 1 day a week for 1 hour. My class,
+2 days a week for 1 hour 15. This meant that if we were to keep the
+lab to one day either the students would have less time or I'd have to
+impose on them to stay late or come early. I wasn't happy with that
+but given the inconsistency in the way the other sections handled lab
+timings, I think it worked out OK.
+&lt;/p&gt;
+
+&lt;p&gt;
+Some of the other difficulties included:
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
+&lt;h3 id="sec-1-1"&gt;The language was C++:&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-1"&gt;
+&lt;p&gt;
+Since the labs were to be done in C++, I had to use that as the
+language for the class. That meant no "fun" libraries or frameworks.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
+&lt;h3 id="sec-1-2"&gt;The labs were solo assignments:&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-2"&gt;
+&lt;p&gt;
+Since the labs were solo projects and there was one per week it made
+it very difficult to structure group experiences. I wanted to cover
+things like group development, code review, working off of other
+peoples code bases but this proved difficult with an outside separate
+lab being handed down each week.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-3" class="outline-3"&gt;
+&lt;h3 id="sec-1-3"&gt;Someone else dictated the language sequence:&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-3"&gt;
+&lt;p&gt;
+The labs were designed to support what the students were learning in
+135 and were only distributed a day or two before the week was to
+start. This meant that I couldn't plan too far ahead and had to adjust
+frequently. This should be easier next year.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-1-4" class="outline-3"&gt;
+&lt;h3 id="sec-1-4"&gt;Labs didn't match the supplemental material:&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-4"&gt;
+&lt;p&gt;
+The best example of this was when we were talking about testing. We
+ended up using &lt;a href="https://github.com/philsquared/Catch"&gt;Catch&lt;/a&gt; as a testing framework. The problem was that
+right afterwards the lab (and also 135 project) didn't lend themselves
+to using a testing framework like catch. 
+&lt;/p&gt;
+
+&lt;p&gt;
+There were more challenges but overall I think the class went fairly
+well. I'll know more when I get feedback from the students and when we
+all look back next year with some perspective.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's been an interesting experience designing a class that had to
+interleave with another, existing class. I've designed many classes
+over the years and I know that whatever you plan, it probably changes
+once you're actually in the classroom and working with the kids, or as
+Mike Tyson said: "Everyone has a plan until they get punched in the
+mouth." This has been a little more of a challenge but I think the
+first go through went well and that the course will get better and be
+better defined as we go through a couple more iterations. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>curriculum</category><category>teaching</category><guid>http://cestlaz.github.io/posts/design-course-with-constraints/</guid><pubDate>Fri, 19 May 2017 15:38:20 GMT</pubDate></item><item><title>It feels good to be helpful</title><link>http://cestlaz.github.io/posts/feels-good-to-be-helpful/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 I got some nice feedback today from a couple of disparate places. It
 was another reminder that being a teacher isn't just about the kids
 currently in your class but it's about who you are and everyone you
@@ -1097,154 +1232,4 @@ next post in this series.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-1/</guid><pubDate>Thu, 16 Mar 2017 13:11:00 GMT</pubDate></item><item><title>SIGCSE 2017 - Recap</title><link>http://cestlaz.github.io/posts/sigcse-2017-recap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-As a high school teacher, I was never able to attend SIGCSE, the
-conference of the ACM's Special Interest Group on Computer Science
-Education. Between the number of instructional days I would lose and
-the cost, I could never justify going. Instead I looked over the
-proceedings and read many of the papers.
-&lt;/p&gt;
-
-&lt;p&gt;
-Now that I'm at Hunter, I was finally able to attend. This year in
-Seattle, the conference ran from Wednesday through Saturday. I was
-part of a panel on "Tools we can't live without." Over the next few
-weeks, I hope to blog about a number of things I thought and talked
-with people about over the conference including:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;The path I use to teach git and why GitHub a good teaching tool
-(my talk).
-&lt;/li&gt;
-&lt;li&gt;The relationship of different CS Ed stakeholders - teachers,
-researchers, organizations, etc.
-&lt;/li&gt;
-&lt;li&gt;Teaching at the high school level vs college - perceptions and
-reality.
-&lt;/li&gt;
-&lt;li&gt;The challenges of tech tool adoption in schools.
-&lt;/li&gt;
-&lt;li&gt;What's going on in K12 CS Certification.
-&lt;/li&gt;
-&lt;li&gt;Maybe some other stuff.
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-Today, some overall thoughts.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;The good&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
-&lt;p&gt;
-As with many conferences, the "hallway track" along with receptions
-sponsored by &lt;a href="https://csnyc.org/our-work/cs4all"&gt;the CS4All consurtium&lt;/a&gt;, &lt;a href="http://tealsk12.org"&gt;TEALS&lt;/a&gt;, &lt;a href="http://code.org"&gt;Code.org&lt;/a&gt; were terrific. I
-was able to finally meet in person many people who I've only known
-virtually and got to know many more as well. I left the conference
-with a much larger address book and a long list of follow up
-items. Being in Seattle, I also enjoyed being able to spend time with
-people from &lt;a href="http://tealsk12.org"&gt;TEALS&lt;/a&gt; and &lt;a href="http://code.org"&gt;Code.org&lt;/a&gt;, two of the CS Ed groups working hard
-to do some real good (yes - I do like and support these guys even
-though I call them out on things I disagree with, but that's the
-subject of another post). 
-&lt;/p&gt;
-
-&lt;p&gt;
-I attended sessions on CS certification, teacher preparation,
-assessments, POGIL based instruction to name a few. They ranged from
-valuable to interesting and to be honest, a couple of "what were they
-thinking" but the overall experience was very much worth the trip. I
-also got to speak to a number of wonderful students at the
-poster sessions.
-&lt;/p&gt;
-
-&lt;p&gt;
-The keynotes are also well worth a read (sorry if you don't have ACM
-digital library access). &lt;a href="http://dl.acm.org/citation.cfm?id=3025045&amp;amp;CFID=738971273&amp;amp;CFTOKEN=22106692"&gt;Jeannette Wing&lt;/a&gt; talked about the importance of
-probability and statistics in CS Ed, and aspects of  &lt;a href="http://dl.acm.org/citation.cfm?id=3025047&amp;amp;CFID=738971273&amp;amp;CFTOKEN=22106692"&gt;Gail Chapman&lt;/a&gt;'s talk
-"Inspire, Innovate, and Improve…" keynote and &lt;a href="http://dl.acm.org/citation.cfm?id=3025046&amp;amp;CFID=738971273&amp;amp;CFTOKEN=22106692"&gt;Mitch Resnick&lt;/a&gt;'s
-"Fulfilling Papert's Dream" both spoke to the educator inside me. 
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-3" class="outline-2"&gt;
-&lt;h2 id="sec-3"&gt;The bad&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-3"&gt;
-&lt;p&gt;
-The biggest downside to me was that I found very little value added in
-a number of the paper sessions over just reading the papers. Part of
-this is probably because of my own over-inflated expectations given the
-number of years I've waited to attend. Part of it though, was the fact
-that sessions were so tightly packed that I didn't have time to follow
-up with presenters before having to run to the next
-thing. Unfortunately, in some
-cases, it was because the presenter merely
-"read" the paper much as a professor sometimes just reads the slides
-or the book to his class.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-4" class="outline-2"&gt;
-&lt;h2 id="sec-4"&gt;Other thoughts&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-4"&gt;
-&lt;p&gt;
-One paper presentation I very much liked was &lt;a href="http://dl.acm.org/citation.cfm?id=3017701&amp;amp;CFID=738971273&amp;amp;CFTOKEN=22106692"&gt;Exam Wrappers: Not a
-Silver Bullet&lt;/a&gt; presented by &lt;a href="https://michellecraig.github.io/"&gt;Michelle Craig&lt;/a&gt; and &lt;a href="http://pages.cpsc.ucalgary.ca/~bdstephe/"&gt;Ben Stephenson&lt;/a&gt;. I
-actually came in late since I was hustling over from the Code.org
-lunch. The result was that I didn't actually know what "Exam Wrappers"
-were until well after the talk when I ran into &lt;a href="https://twitter.com/jkhuggins"&gt;Jim Huggins&lt;/a&gt;. Exam
-wrappers, in short, are merely when you require the students fill out something
-for some credit when picking up their exams. The funny thing is that
-it's a strategy that high school teachers have used for years without
-a special name and we already knew the good and bad of it without the
-research but that's not what I want to get at here. What I loved about
-the talk, besides the fact that Ben and Michelle are clearly strong
-presenters is that this was a negative result that was being
-presented. I also loved the fact that they didn't present their
-research as gospel but rather pointed out the strengths and weaknesses
-of their approach - they made a case to what and why we should pay
-attention to and what should be taken with a grain of salt.
-&lt;/p&gt;
-
-&lt;p&gt;
-This was a major breath of fresh air after being exposed to so much
-education 'research' over the course of my life that the author or
-presenter felt was just as strong as a mathematical proof rather than
-an indication based on a specific experience or small set of
-experiences.
-&lt;/p&gt;
-
-&lt;p&gt;
-I also felt a little weird at times during the week when west coast people seemed
-to know me. I know I'm a loud mouthed curmudgeon and I go on my
-periodic ed rants but given the dearth of comments on this blog I was
-really surprised to get as many as "great to meet you in person after
-reading your blog" or "we know you and your work" all week. It was
-weird and somewhat humbling.
-&lt;/p&gt;
-
-&lt;p&gt;
-Finally, another highlight f`or me was that I got to catch up with
-some of family.
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/sigcse-seattle.jpg" alt="sigcse-seattle.jpg" align="center"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;
-Already planning to submit something to present at SIGCSE 2018 in Baltimore.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>csed</category><category>cseducation</category><category>teaching cs</category><guid>http://cestlaz.github.io/posts/sigcse-2017-recap/</guid><pubDate>Tue, 14 Mar 2017 12:19:18 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>cs</category><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-1/</guid><pubDate>Thu, 16 Mar 2017 13:11:00 GMT</pubDate></item></channel></rss>
