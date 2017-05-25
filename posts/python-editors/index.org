@@ -2,24 +2,105 @@
 .. title: Python - Editor or IDE
 .. slug: python-editors
 .. date: 2017-05-25 15:47:37 UTC-04:00
-.. tags: draft, tools, teaching
+.. tags: tools, teaching
 .. category: 
 .. link: 
 .. description: 
 .. type: text
 #+END_COMMENT
 
+* 
 
-Write your post here.
+Earlier today I read Garth Flint's latest post on [[https://gflint.wordpress.com/2017/05/25/python-editors-simple-wins/%0A][choosing a Python
+environment for his classes]]. While our classes and populations are
+different it looks like Garth and I share a lot of thoughts on the
+subject.
 
-https://www.ncwit.org/summit/2017-ncwit-summit-women-and-it
+I started to write a comment to leave on Garth's blog but since it was
+getting a little long I thought I'd write it up as a post.
+
+The question of development environment can be an important one and
+can make a big difference. When I designed the intro course at Stuy,
+the fact that Dr. Scheme existed made the use of Scheme in the class
+an option. Without it as a supportive and simple environment for the
+students I probably wouldn't have been able to use Scheme even though
+I really liked it as a teaching and learning tool.
+
+Garth writes about issues relating to choosing a local development
+environment so that's what I'm going to stick to here. If you want an
+online environment check out [[http://codesters.com][Codesters]] - a terrific online Python
+environment with lots of educational support materials and features
+and [[http://repl.it][repl.it]] - an online environment that supports many languages and
+is also developing great teacher and class support -- I very much like
+both of these platforms.
+
+The first question is editor or IDE?
+
+As a user, I'm very pro editor. Learn a tool that you can customize to
+your tastes and that will work for all sorts of text editing chores
+from coding to document preparation to scheduling and more and you're
+in great shape. Personally, I'm an [[http://cestlaz.github.io/stories/emacs][Emacs wonk]] but there are other
+choices as well.
+
+As a teacher, though, Emacs or another programmers editor can be
+overwhelming for younger students and rank beginners. 
+
+This can make IDEs attractive.
+
+Some IDEs are too big and cumbersome and can add even more cognitive
+load than an editor - think Eclipse for Java development. If you think
+writing
+
+#+BEGIN_SRC java
+public static void main(String[] args)
+#+END_SRC
+
+is a lot of overhead, just wait until you have a novice try to start a
+Java project in Eclipse.
+
+Other IDEs are more streamlined. One common choice is
+Idle. It's big advantage is that it's always available and is "part"
+of Python. On the other hand, it doesn't seem to add much to a bare
+editor and I've found that it can be somewhat confusing.
+
+Garth seems to have settled on [[https://www.jetbrains.com/pycharm/][PyCharm]] from [[https://jetbrains.com][JetBrains]]. It's pretty
+streamlined and really easy to get up and running. JetBrains also
+provides a free community edition as well as a heavier professional
+one available for purchase. Garth notes that it's a Python only IDE
+but JetBrains has similar IDEs for a whole bunch of languages and I
+seem to recall you can add plugins across their IDEs to basically make
+them multi-language development environments.
+
+I really like the JetBrains products and if I used an IDE I'm pretty
+sure I'd use their products. As a teacher though, I find their IDEs a
+little too powerful for my tastes. I want a learner IDE to provide the
+bare minimum of features - an interactive REPL, a code window, run and
+debug buttons, some completion and help - but to make those features
+really easy to use. JetBrains does a little too much. 
+
+What I ended up using in the past is [[http://drpython.sourceforge.net/][Dr Python]]. For me it hit the
+sweet spot. As an added bonus we were already using Dr. Racket (nee
+Dr. Scheme) and Dr. Java so our students had a similar environment
+across languages and even NetLogo looked and behaved similarly. 
+
+Is there a right answer? Probably not. Just as with choosing a first
+language there are always trade offs. Besides, if you don't have the
+right solution, there will be another one next week. Just recently I
+saw [[http://thonny.org/][this project]]. A new beginners IDE for python. It looks interesting
+and worth checking out.
+
+The right IDE can make a big difference while keeping the overhead low
+and giving just the right amount of support. For me, the last time
+around it was Dr. Python. For Garth, it looks like PyCharm fits the
+bill. Looking at the overall plan, I usually start the kids off with a
+simple learners IDE and then transition them to a programmers editor
+like Emacs as they gain more comfort and experience.
+
+As a postscript, let me share these links on how I use Emacs for
+Python development (each with a video) as well as my series on how I
+use Emacs in general:
+- http://cestlaz.github.io/stories/emacs/
+- http://cestlaz.github.io/posts/using-emacs-12-python
+- http://cestlaz.github.io/posts/using-emacs-13-yasnippet
 
 
-https://gflint.wordpress.com/2017/05/25/python-editors-simple-wins/
-
-http://thonny.org/
-http://drpython.sourceforge.net/
-
-http://cestlaz.github.io/stories/emacs/
-http://cestlaz.github.io/posts/using-emacs-12-python/#.WSc0_N_6yAk
-http://cestlaz.github.io/posts/using-emacs-13-yasnippet/#.WSc0_d_6yAk

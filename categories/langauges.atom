@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about langauges</title>
   <id>http://cestlaz.github.io/categories/langauges.atom</id>
-  <updated>2017-04-21T20:43:54Z</updated>
+  <updated>2017-05-14T00:41:35Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -34,7 +34,7 @@ threads.
 &lt;p&gt;
 There are plenty of arguments to be made both for and against pretty
 much any language or platform. There's no single best universal
-answer. Each choice gives and each choice taketh away. 
+answer. Each choice giveth and each choice taketh away. 
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -53,7 +53,7 @@ to consider.
 Take the APCS change from C++ to Java. It removed memory management
 from the first year course. It also simplified issues relating to
 pass by value vs pass by reference (or, rather, passing address by
-value), bought much more strongly into OOP and also moved more towards
+value), bought much more strongly into OOP and moved more towards
 using built in implementations of data structures like Lists rather
 than rolling your own.
 &lt;/p&gt;
@@ -79,13 +79,13 @@ that really shouldn't be approached in an OOP manner?
 &lt;/p&gt;
 
 &lt;p&gt;
-I think that the use of built in data structures certainly has had a
+I suspect that the use of built in data structures has had a
 negative impact. A few years after the switch to Java, I was talking
 to a senior tech worker. He was having a bad day - interviewing
 potential internees and full time engineers. My friend was complaining
 that the kids couldn't come up with solutions to what he thought were
 pretty straightforward questions. He felt that had the kids actually
-implemented algorithms like the \(nlogn\) sorts rather than just learning
+implemented algorithms like the nlogn sorts rather than just learning
 java .sort method and just talking about the algorithm they'd be
 better prepared. I've heard this sentiment repeated over and over
 throughout the years.
@@ -98,6 +98,23 @@ look at the intro class and who it draws in. You have to consider how
 it will prepare students for the next level and you have to look at
 the big picture – will our students get everything they need by the
 time they leave us.
+&lt;/p&gt;
+
+&lt;p&gt;
+Many schools have moved to Python. Will that effect students take on
+type systems later on? Will the flexibility and constructs like list
+comprehensions make it harder to teach recursion since there are
+"easier" ways to do it? 
+&lt;/p&gt;
+
+&lt;p&gt;
+None of these are really problems so long as the CS1/2 (or even CS0)
+isn't taught in a vacuum. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I fear, however that too often we're paying attention to the intake of
+the pipe and not so much the output.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
