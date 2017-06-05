@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 29)</title>
   <id>http://cestlaz.github.io/index-29.atom</id>
-  <updated>2017-05-25T23:15:33Z</updated>
+  <updated>2017-06-05T22:48:32Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,149 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-28.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-29.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>SIGCSE 2017 - a path to github part 2</title>
+    <id>http://cestlaz.github.io/posts/sigcse-2017-github-2/</id>
+    <updated>2017-03-19T10:11:00-04:00</updated>
+    <published>2017-03-19T10:11:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse-2017-github-2/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;Note:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Just for some quick context. The process I started to describe in the
+last post and continue here chronicles what I did at Stuy with high
+schoolers. Now that I'm at Hunter college, I'm adapting the process
+but the overarching themes remain the same.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;Post starts here:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Now that your students have been pulling the classcode repo regularly
+it's time to move to the next step - adding and pushing files to a
+repo.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't claim to do this the "right way" or the best way but it's
+worked for me and it's gotten my students up to speed.
+&lt;/p&gt;
+
+&lt;p&gt;
+I ease my students into adding and pushing files using git through
+homework submission. I create a single repo, usually named
+&lt;b&gt;&lt;b&gt;submissions&lt;/b&gt;&lt;/b&gt; and make a folder for each student underneath looking
+something like this:
+&lt;/p&gt;
+&lt;p class="verse"&gt;
+.&lt;br&gt;
+└── submissions&lt;br&gt;
+    ├── abram_sarah&lt;br&gt;
+    ├── chen_stuart&lt;br&gt;
+    └── thompson_steve&lt;br&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Before going any further, let me clear up one thing. The repo is
+public so all the students have access to each others work. I'm OK
+with that. We could have each student make their own repo and use git
+&lt;a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules"&gt;submodules&lt;/a&gt; to make a submissions repo but administration is much
+trickier and we lose the chance to build a culture of cooperation and
+trust. We can lock down our submission systems as much as we want. If
+students want to share assignments there's nothing we can do about
+it. 
+&lt;/p&gt;
+
+&lt;p&gt;
+My preference is to try to build a culture that minimizes bad
+behavior and rewards good behavior. I'd rather see an incorrect
+homework so that I can tell what we need to work on than a copied
+perfect assignment. I'd rather see students cite each other, share
+properly, and support each other than copy in the shadows. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not naive enough to believe that copying doesn't happen in my
+classes but I still prefer erring on the side of openness.
+&lt;/p&gt;
+
+&lt;p&gt;
+Once the repo is set up, I give all the students access. This is a
+little onerous since I have to type each of their GitHub usernames
+under the collaborators section of the submissions repo but I only
+have to do this once a semester.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then I teach the workflow. Assignments go into a file or folder under
+their directory named ##_name where ## is the assignment number
+(01,02,03, etc) and name is the assignment name. The student workflow
+is:
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;git pull
+&lt;/li&gt;
+&lt;li&gt;git add (sometimes)
+&lt;/li&gt;
+&lt;li&gt;git commit
+&lt;/li&gt;
+&lt;li&gt;git push
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+Since every student is working in their own directory, things
+basically work.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first issue that students come up with is when another student
+pushes before another student. The second student merely has to do
+another &lt;b&gt;&lt;b&gt;git pull&lt;/b&gt;&lt;/b&gt; before proceeding. This provides an easy
+introduction to dealing with the distributed nature of git.
+&lt;/p&gt;
+
+&lt;p&gt;
+There will occasionally be other issues when students don't follow
+procedure exactly so I'll have to fix the repo every now and then but
+nothing too bad and each time is a opportunity to show the class:
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;you can pretty much always restore and fix things once you commit
+them.
+&lt;/li&gt;
+&lt;li&gt;the specifics to fix things.
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+There will be a few bumps in the road but after a few assignments the
+sailing will be pretty smooth.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the end of the day, the students are a little closer to being fully
+fluent using git, they're hopefully using each others code as
+resources but in a proper way and since the students are all using a
+consistent assignment naming convention I can use simple scripts and
+shell commands to do all sorts of processing on assignments.
+&lt;/p&gt;
+
+&lt;p&gt;
+That's the end of phase two. The next step  brings us to small
+projects using git.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>SIGCSE 2017 - a path to github part 1</title>
     <id>http://cestlaz.github.io/posts/sigcse-2017-github-1/</id>
