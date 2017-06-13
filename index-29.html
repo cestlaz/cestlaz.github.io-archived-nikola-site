@@ -90,7 +90,183 @@ article: http://ogp.me/ns/article#
 								
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sigcse-2017-github-2/" class="u-url">SIGCSE 2017 - a path to github part 2</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sigcse-2017-github-3/" class="u-url">SIGCSE 2017 - a path to github part 3</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/sigcse-2017-github-3/" rel="bookmark"><time class="published dt-published" datetime="2017-03-30T14:02:31-04:00" title="2017-03-30 14:02">2017-03-30 14:02</time></a></p>
+                <p class="commentline">            <a href="posts/sigcse-2017-github-3/#disqus_thread" data-disqus-identifier="cache/posts/sigcse-2017-github-3.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+I wanted to write this up earlier but, as so frequently happens all my
+dormant work projects decided it was time to rise up and demand
+instant attention.
+</p>
+
+<p>
+When we left off, we had students pulling code and submitting homework
+via github.
+</p>
+
+<p>
+Form here, it's an easy step to have them working on a small project
+in their own repo. In fact, sometimes, I'll jump right to a two person
+project where one person creates the repo and invites the other (and
+me) as a collaborator.
+</p>
+
+<p>
+Once here, it's important to emphasize the normal workflow:
+</p>
+<ol class="org-ol">
+<li>
+<code>git pull</code>
+</li>
+<li>edit stuff with an occasional <code>git add</code>, <code>git rm</code>,  or <code>got mv</code>
+</li>
+<li>commit
+</li>
+<li>and an occasional <code>git push</code>
+</li>
+</ol>
+<p>
+Regardless of how much you emphasize the workflow you're now going to
+have to cover merges as well how to recover from problems by going to
+an earlier revision.
+</p>
+
+<p>
+For going back to earlier versions or otherwise recovering from
+disasters, I don't show them the "right" way of doing things. I show
+them a way that's easy to remember and reliably works without tons of
+searching for answers.
+</p>
+
+<p>
+First, given some repo, I have them clone a version under another
+name:
+</p>
+
+<div class="highlight"><pre><span></span>git clone git@github.com:hunterdaedalus/classcode.git newdirname
+</pre></div>
+
+<p>
+Now, they have the original repo and a clone under the directory
+<b><b>newdirname</b></b>.
+</p>
+
+<p>
+I have them go into that new copy and use <code>git log</code> to go through the
+logs to find an earlier version that they want to go back to.
+</p>
+
+<p>
+The log will look something like this:
+</p>
+
+<p class="verse">
+commit 67eceb5e0a01ca5f5fb54ace65a4fe134f71edae<br>
+Author: Mike Zamansky &lt;zamansky@gmail.com&gt;<br>
+Date:   Sat Feb 25 12:32:26 2017 -0500<br><br>
+    updated Makefile<br><br>
+commit 7efed10eb6015276b0cb82874ce786dc68a683ae<br>
+Author: Mike Zamansky &lt;zamansky@gmail.com&gt;<br>
+Date:   Sat Feb 25 08:45:34 2017 -0500<br><br>
+    broke out main –&gt; main and shapes<br><br>
+commit e8b5c240123a7cb17920d52b4aba9cf5787ddab2<br>
+Author: Mike Zamansky &lt;zamansky@gmail.com&gt;<br>
+Date:   Sat Feb 25 08:36:29 2017 -0500<br><br>
+    added lab3 code<br><br>
+commit 6d5bcf866306334ddc5c6a48e8f49fb39ddbcb18<br>
+Author: Some other coder &lt;somone@somewhere.net&gt;<br>
+Date:   Sun Feb 19 19:29:51 2017 -0500<br><br></p>
+
+
+<p>
+Find the hash that they want to get back to and <b><b>checkout</b></b> that
+version (you normally only have to use the first few characters of
+the hash):
+</p>
+
+<div class="highlight"><pre><span></span>git checkout 7efed10
+</pre></div>
+
+<p>
+Now they can grab what they want, copy it into the working copy of the
+repo, <b><b>commit</b></b> the changes and <b><b>push</b></b> them back.
+</p>
+
+
+<p>
+For Merging, I start by having them do it manually. I'll have them
+load the file in question into their editor and look for the chunks
+that look like this:
+</p>
+
+<p class="verse">
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; A<br>
+lines in file A<br><code>=====</code><br>
+lines in file B<br>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; B<br></p>
+
+<p>
+They'll manually make the changes, then save, commit and push back.
+</p>
+
+<p>
+Later, I'll show them a couple of tools to help along the way. I
+usually show ediff in emacs along with meld.
+</p>
+
+<p>
+Once they've been doing this for a while, it's easy to expand group
+sizes. After that, I'll introduce <b><b>issues</b></b> via the github interface.
+</p>
+
+<p>
+The last big topic is branches.
+</p>
+
+<p>
+First I show basic branches and merging. Here's a pretty good <a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging">run
+through</a>. Afterwards, I'll show how branching works in conjunction with
+github. This is also a good time to emphasize that students have to
+actually read the messages that git gives them when things don't  go
+well. In most cases, the message will contain the exact thing to type
+to fix the problem (such as linking a branch with a branch up on
+github).
+</p>
+
+<p>
+Now is also the time to introduce pull requests and how to use them to
+support code review. The general setup I recommend is one branch per
+group member and a main "deployment" branch with group members
+creating more branches as they see fit.
+</p>
+
+<p>
+That's about it. I've followed this process, more or less, over a
+semester, over a year, and over multiple years. It's worked for me, I
+hope some of this helps you as well.
+</p>
+
+<p>
+In the next and probably last git/github post I'll talk about the
+educational benefits that I've discovered along the way. After that,
+I'll get back to some emacs videos, other SIGCSE stuff and my normal rants.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sigcse-2017-github-2/" class="u-url">SIGCSE 2017 - a path to github part 2</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">
                 Mike Zamansky
