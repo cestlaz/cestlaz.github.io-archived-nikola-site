@@ -3,13 +3,400 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about pedagogy</title>
   <id>http://cestlaz.github.io/categories/pedagogy.atom</id>
-  <updated>2017-02-10T15:19:09Z</updated>
+  <updated>2017-06-15T09:37:34Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/pedagogy.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/pedagogy/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>A new first language? What's the follow up plan?</title>
+    <id>http://cestlaz.github.io/posts/first-language-changing/</id>
+    <updated>2017-04-21T14:46:07-04:00</updated>
+    <published>2017-04-21T14:46:07-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/first-language-changing/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+This morning, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about Stanford possibly &lt;a href="https://computinged.wordpress.com/2017/04/21/cs-department-updates-introductory-courses-java-is-gone/"&gt;moving away
+from Java&lt;/a&gt; as their intro language. This comes on the heels of a
+semi-regular thread on one of the lists I'm on asking about what
+languages are used at assorted colleges around the country. Invariably
+the Pascal -&amp;gt; C++ -&amp;gt; Java progression of APCS turns up in these
+threads.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are plenty of arguments to be made both for and against pretty
+much any language or platform. There's no single best universal
+answer. Each choice giveth and each choice taketh away. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I'm really curious about is who's looking at intro languages in
+the context of complete programs or even complete educations that
+could span multiple institutions.
+&lt;/p&gt;
+
+&lt;p&gt;
+Early language choices can make a big difference in engaging and
+exciting newcomers but there are ramifications later on that few seem
+to consider.
+&lt;/p&gt;
+
+&lt;p&gt;
+Take the APCS change from C++ to Java. It removed memory management
+from the first year course. It also simplified issues relating to
+pass by value vs pass by reference (or, rather, passing address by
+value), bought much more strongly into OOP and moved more towards
+using built in implementations of data structures like Lists rather
+than rolling your own.
+&lt;/p&gt;
+
+&lt;p&gt;
+Removing memory management from the first year course in and of itself
+isn't a problem as long as it's taught and taught effectively
+somewhere later on. It could be argued that "memory is already covered
+in our required systems course." That could be the case, but there are
+many concepts that kids don't get the first time around. Is an
+institution that covered memory management in CS1/2 and then came back
+to it in a later Systems course giving their students the same
+understanding now that they've eliminated the CS1/2 experience? 
+&lt;/p&gt;
+
+&lt;p&gt;
+What about OOP buy in. Personally, I've never been a big OOP fan but
+that's neither here nor there. What I have found is that depending on
+how a student is exposed to programming in CS1/CS2 can have a big
+influence on how they approach problems later. Did the move to Java
+cause more of our students to try to use shoehorn OOP into a problem
+that really shouldn't be approached in an OOP manner?
+&lt;/p&gt;
+
+&lt;p&gt;
+I suspect that the use of built in data structures has had a
+negative impact. A few years after the switch to Java, I was talking
+to a senior tech worker. He was having a bad day - interviewing
+potential internees and full time engineers. My friend was complaining
+that the kids couldn't come up with solutions to what he thought were
+pretty straightforward questions. He felt that had the kids actually
+implemented algorithms like the nlogn sorts rather than just learning
+java .sort method and just talking about the algorithm they'd be
+better prepared. I've heard this sentiment repeated over and over
+throughout the years.
+&lt;/p&gt;
+
+&lt;p&gt;
+This is not to say that Java is a horrible language or horrible for
+teaching - that's another debate. The point is that you can't just
+look at the intro class and who it draws in. You have to consider how
+it will prepare students for the next level and you have to look at
+the big picture – will our students get everything they need by the
+time they leave us.
+&lt;/p&gt;
+
+&lt;p&gt;
+Many schools have moved to Python. Will that effect students take on
+type systems later on? Will the flexibility and constructs like list
+comprehensions make it harder to teach recursion since there are
+"easier" ways to do it? 
+&lt;/p&gt;
+
+&lt;p&gt;
+None of these are really problems so long as the CS1/2 (or even CS0)
+isn't taught in a vacuum. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I fear, however that too often we're paying attention to the intake of
+the pipe and not so much the output.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="langauges" label="langauges"/>
+    <category term="pedagogy" label="pedagogy"/>
+  </entry>
+  <entry>
+    <title>GitHub as a tool for education</title>
+    <id>http://cestlaz.github.io/posts/sigcse-2017-github-4/</id>
+    <updated>2017-04-11T19:11:30-04:00</updated>
+    <published>2017-04-11T19:11:30-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse-2017-github-4/"/>
+    <summary type="html">&lt;p&gt;
+When I started using git and GitHub with my students it was a natural
+progression having started with started with CVS and then, as
+technology changed moving through Subversion and then Mercurial. It
+was all about using sensible professional software development
+techniques while making it easier for students to submit work and for
+me to evaluate their submissions.
+&lt;/p&gt;
+
+&lt;p&gt;
+Over time, I found that git and GitHub in fact provided some extra
+support for educators right out of the box.
+&lt;/p&gt;
+
+&lt;p&gt;
+In my &lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-3"&gt;last github post&lt;/a&gt; I talked about using the results of &lt;code&gt;git log&lt;/code&gt;
+and looking at diffs. Both provide ways of seeing what a student did
+and when. The commit log and history make it easier to hold students accountable to working
+through a project and not leavings for the last minute. The diffs make
+it easier to see what's changed both to see progress and also to help
+support students as they develop their projects.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you use Emacs, as I do, you can use the &lt;a href="https://github.com/pidu/git-timemachine"&gt;git timemachine&lt;/a&gt; package
+which does a great job visualizing changes:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/sigcse-github/timemachine.gif" alt="timemachine.gif" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Other editors might have a similar feature.
+&lt;/p&gt;
+
+&lt;p&gt;
+The contribution graphs also provide a quick snapshot which shows what
+team members are contributing and when:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/sigcse-github/githubgraph.png" alt="githubgraph.png" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+The punchcard graph is also useful to see when students actually do
+their work.
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/sigcse-github/githubgraph2.png" alt="githubgraph2.png" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+GitHub also make it easy to set up starter code or to have students
+"take over" each others projects by forking.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm very happy using git and GitHub as is but if you want more
+support, check out &lt;a href="https://classroom.github.com/"&gt;GitHub Classroom&lt;/a&gt;. Had it existed when I started,
+I'd probably have used it but since I had already gotten used to my
+work flows I've stuck with raw git and github.
+&lt;/p&gt;
+
+&lt;p&gt;
+In case you missed the earlier posts describing the process I use to
+introduce github to my classes here they are:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-1"&gt;Part 1&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-2"&gt;Part 2&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-3"&gt;Part 3&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+I'm hoping some of you have found this set of four posts useful or at
+least interesting.
+&lt;/p&gt;</summary>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>A free multi-state clicker with built in redundency</title>
+    <id>http://cestlaz.github.io/posts/thumb_clickers/</id>
+    <updated>2017-04-01T17:23:21-04:00</updated>
+    <published>2017-04-01T17:23:21-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/thumb_clickers/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Last Friday, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about the woes of &lt;a href="https://computinged.wordpress.com/2017/03/31/the-need-for-better-software-and-systems-to-support-active-cs-learning/%0A"&gt;using clickers&lt;/a&gt; in a
+class. The amount of effort required to use his school's approved
+clicker technology sounds ridiculous so while we need tools to better
+engage students in large class settings we need better tools that can
+be integrated into our classes more easily.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've never used clickers. On top of stories like Mark's, there are  a
+number of problems with using clickers in a public school.
+&lt;/p&gt;
+
+&lt;p&gt;
+You can't force students to buy them and in NYC, until recently,
+students couldn't use their phones (which they also might not have).
+Forgetting the expense, if the school provides them, is it one per
+student? If so, who's going to administer the clicker to student
+mapping and how will that be communicated to the teachers. If college
+tech infrastructures are sometimes lacking, high schools are orders of
+magnitudes worse. The resources just aren't there. Then we have to
+deal with loss and breakage.
+&lt;/p&gt;
+
+&lt;p&gt;
+If a teacher somehow gets a class set of clickers, they have to deal
+with mapping clickers to students for all of their classes and make
+sure the right student has the right clicker. Again, loss  and
+breakage is a problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then you have to create the question content and hope that everything
+works in class.
+&lt;/p&gt;
+
+&lt;p&gt;
+The value added given the overhead just doesn't seem worth it
+particularly since high school classes, while large, are not in the
+hundreds and there are other methods of student engagement.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's what I use instead. It's not perfect but it's low cost and low
+effort with a pretty high return.
+&lt;/p&gt;
+
+&lt;p&gt;
+The basic configuration, is a simple three state broadcast device.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's not without its problems and I don't think it would work as well
+in a large lecture but given the cost, it's well worth it.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, what is it?
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/thumbs/fonzup.jpg" alt="fonzup.jpg" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+Thumbs.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Periodically, I'll poll my class.
+&lt;/p&gt;
+
+&lt;span&gt;
+&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/sidethumb.png"&gt;
+&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/upthumb.jpg"&gt;
+&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/downthumb.jpg"&gt;
+
+
+&lt;p&gt;
+Thumb to the side? Everything's OK. Keep going as you're going. I get
+it. Basically, things are good.
+&lt;/p&gt;
+
+&lt;p&gt;
+Thumb up? Speed up, you're going too slow, I got it five minutes ago or
+some similar big positive.
+&lt;/p&gt;
+
+&lt;p&gt;
+Thumb down? I have no idea what you're talking about.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's cheap, easy, quick, and once you can get your class to buy in,
+you can get a quick sense of the class.
+&lt;/p&gt;
+
+&lt;p&gt;
+The downsides?
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;The class has to have a level of comfort so that students vote
+honestly and don't just give you positive feedback.
+&lt;/li&gt;
+&lt;li&gt;No data collection.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;
+The upsides?
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;quick
+&lt;/li&gt;
+&lt;li&gt;cheap
+&lt;/li&gt;
+&lt;li&gt;works on any topic on the fly
+&lt;/li&gt;
+&lt;li&gt;even if the votes are artificially skewed towards positive, it does
+forces the class to be at least a little attentive and to engage in
+some physical response
+&lt;/li&gt;
+&lt;li&gt;can get analog responses by allowing students to adjust wrist
+rotation
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+As to the redundancy? I've never had a kid leave their thumb at home
+or lose it and even if they did, they've got a second hand.
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/thumbs/fonztwo.jpg" alt="fonztwo.jpg" align="center" height="200"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+This also works in extreme environments. Try using a clicker or mobile
+app with gloves or mittens on or underwater.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't teach large lectures so I don't know how this would work in a
+huge class. I'd imagine it's still worth it given that it's so low
+friction and low cost of entry even if it's not perfect.
+&lt;/p&gt;
+&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="teaching" label="teaching"/>
+  </entry>
   <entry>
     <title>A Teacher looks at Advent of Code 2016 #2</title>
     <id>http://cestlaz.github.io/posts/advent-of-code-2016-2/</id>
@@ -831,7 +1218,7 @@ education spend any time thinking about this bigger picture.
   <entry>
     <title>IDE or the Cloud</title>
     <id>http://cestlaz.github.io/posts/2016-04-12-ide-or-cloud.html/</id>
-    <updated>2016-04-12T00:00:00</updated>
+    <updated>2016-04-12T00:00:00-04:00</updated>
     <published>2016-04-12T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -1018,7 +1405,7 @@ and to lead the student down the path.
   <entry>
     <title>DevOps, or You don't know what the F you're doing!</title>
     <id>http://cestlaz.github.io/posts/2016-01-31-devops.html/</id>
-    <updated>2016-01-31T00:00:00</updated>
+    <updated>2016-01-31T00:00:00-05:00</updated>
     <published>2016-01-31T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -1162,7 +1549,7 @@ to convey to my students.
   <entry>
     <title>Debugging deployment</title>
     <id>http://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</id>
-    <updated>2016-01-23T00:00:00</updated>
+    <updated>2016-01-23T00:00:00-05:00</updated>
     <published>2016-01-23T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -1399,7 +1786,7 @@ sometimes, it's just the tools.
   <entry>
     <title>Cellular Automata for Pathfinding in NetLogo</title>
     <id>http://cestlaz.github.io/posts/2016-01-17-maze-ca.html/</id>
-    <updated>2016-01-17T00:00:00</updated>
+    <updated>2016-01-17T00:00:00-05:00</updated>
     <published>2016-01-17T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -1606,7 +1993,7 @@ unsolved.&lt;/li&gt;
   <entry>
     <title>Cellular Automata, NetLogo and real problems</title>
     <id>http://cestlaz.github.io/posts/2016-01-15-shift-image.html/</id>
-    <updated>2016-01-15T00:00:00</updated>
+    <updated>2016-01-15T00:00:00-05:00</updated>
     <published>2016-01-15T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -1804,7 +2191,7 @@ automaton that can solve a maze.
   <entry>
     <title>Teaching Coding - getting beyond superficial syntax</title>
     <id>http://cestlaz.github.io/posts/2016-01-01-different-languages.html/</id>
-    <updated>2016-01-01T00:00:00</updated>
+    <updated>2016-01-01T00:00:00-05:00</updated>
     <published>2016-01-01T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -1944,7 +2331,7 @@ stuff and are willing to continue to learn.
   <entry>
     <title>Advent of Code - because I'm an idiot</title>
     <id>http://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/</id>
-    <updated>2015-12-17T00:00:00</updated>
+    <updated>2015-12-17T00:00:00-05:00</updated>
     <published>2015-12-17T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -2047,7 +2434,7 @@ on &lt;a href="https://github.com/zamansky/adventofcodeclojure"&gt;GitHub&lt;/a&
   <entry>
     <title>Other People's Code</title>
     <id>http://cestlaz.github.io/posts/2015-11-11-other-peoples-code.html/</id>
-    <updated>2015-11-11T00:00:00</updated>
+    <updated>2015-11-11T00:00:00-05:00</updated>
     <published>2015-11-11T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -2154,7 +2541,7 @@ out.
   <entry>
     <title>Interview questions and tests</title>
     <id>http://cestlaz.github.io/posts/2015-11-04-tests-and-interviews.html/</id>
-    <updated>2015-11-04T00:00:00</updated>
+    <updated>2015-11-04T00:00:00-05:00</updated>
     <published>2015-11-04T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -2239,7 +2626,7 @@ supposed to pull everyone along.
   <entry>
     <title>Alan Alda on Teaching Science</title>
     <id>http://cestlaz.github.io/posts/2015-10-20-alda.html/</id>
-    <updated>2015-10-20T00:00:00</updated>
+    <updated>2015-10-20T00:00:00-04:00</updated>
     <published>2015-10-20T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -2332,7 +2719,7 @@ Communicating Science&lt;/a&gt; at Stony Brook University.
   <entry>
     <title>Looking under the hood</title>
     <id>http://cestlaz.github.io/posts/2015-10-17-under-the-hood.html/</id>
-    <updated>2015-10-17T00:00:00</updated>
+    <updated>2015-10-17T00:00:00-04:00</updated>
     <published>2015-10-17T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -2409,7 +2796,7 @@ mentors special.
   <entry>
     <title>Grading Autograders</title>
     <id>http://cestlaz.github.io/posts/2015-10-16-graders.html/</id>
-    <updated>2015-10-16T00:00:00</updated>
+    <updated>2015-10-16T00:00:00-04:00</updated>
     <published>2015-10-16T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -2509,7 +2896,7 @@ div.center {text-align:center;}
   <entry>
     <title>Setting kids up to fail - CS edition</title>
     <id>http://cestlaz.github.io/posts/2015-08-17-setting-up-to-fail-cs.html/</id>
-    <updated>2015-08-17T00:00:00</updated>
+    <updated>2015-08-17T00:00:00-04:00</updated>
     <published>2015-08-17T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -2642,7 +3029,7 @@ as CS becomes more mainstream.
   <entry>
     <title>Shipping a product</title>
     <id>http://cestlaz.github.io/posts/2015-06-19-shipping-product.html/</id>
-    <updated>2015-06-19T00:00:00</updated>
+    <updated>2015-06-19T00:00:00-04:00</updated>
     <published>2015-06-19T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -2787,7 +3174,7 @@ So proud of the work they all did this year.
   <entry>
     <title>Jazz Hands!!!!!!</title>
     <id>http://cestlaz.github.io/posts/2015-06-11-jazz-hands.html/</id>
-    <updated>2015-06-11T00:00:00</updated>
+    <updated>2015-06-11T00:00:00-04:00</updated>
     <published>2015-06-11T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -2906,7 +3293,7 @@ positive feedback or the complaints.
   <entry>
     <title>Taking stock and tracking progress</title>
     <id>http://cestlaz.github.io/posts/2015-02-11-taking-stock-self-assess.html/</id>
-    <updated>2015-02-11T00:00:00</updated>
+    <updated>2015-02-11T00:00:00-05:00</updated>
     <published>2015-02-11T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -3058,7 +3445,7 @@ Enjoy…
   <entry>
     <title>Kids these days -- they don't know nuttin</title>
     <id>http://cestlaz.github.io/posts/2015-01-15-kids-know-nuttin.html/</id>
-    <updated>2015-01-15T00:00:00</updated>
+    <updated>2015-01-15T00:00:00-05:00</updated>
     <published>2015-01-15T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -3175,7 +3562,7 @@ culture, the good, the bad, and the ugly.
   <entry>
     <title>Little details we take for granted</title>
     <id>http://cestlaz.github.io/posts/2014-11-21-little-details.html/</id>
-    <updated>2014-11-21T00:00:00</updated>
+    <updated>2014-11-21T00:00:00-05:00</updated>
     <published>2014-11-21T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -3347,7 +3734,7 @@ ponder the issue.
   <entry>
     <title>Hidden Complexity</title>
     <id>http://cestlaz.github.io/posts/2014-11-17-hidden-complexity.html/</id>
-    <updated>2014-11-17T00:00:00</updated>
+    <updated>2014-11-17T00:00:00-05:00</updated>
     <published>2014-11-17T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -3566,7 +3953,7 @@ hood can make a big difference.
   <entry>
     <title>Forty minutes to the punch line or "we'll never look at functions the same way again""</title>
     <id>http://cestlaz.github.io/posts/2014-11-12-decorators.html/</id>
-    <updated>2014-11-12T00:00:00</updated>
+    <updated>2014-11-12T00:00:00-05:00</updated>
     <published>2014-11-12T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -3822,7 +4209,7 @@ start doing some fun stuff with these concepts.
   <entry>
     <title>Using easy assignments to introduce deep concepts</title>
     <id>http://cestlaz.github.io/posts/2014-10-05-easy-assignments.html/</id>
-    <updated>2014-10-05T00:00:00</updated>
+    <updated>2014-10-05T00:00:00-04:00</updated>
     <published>2014-10-05T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -3966,7 +4353,7 @@ Let's say height = 5
   <entry>
     <title>Wait, I know that!!!!</title>
     <id>http://cestlaz.github.io/posts/2014-09-23-I-know-that.html/</id>
-    <updated>2014-09-23T00:00:00</updated>
+    <updated>2014-09-23T00:00:00-04:00</updated>
     <published>2014-09-23T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -4104,7 +4491,7 @@ It's still a long road before they graduate, but we're getting there.
   <entry>
     <title>Building a SHIP - Outreach</title>
     <id>http://cestlaz.github.io/posts/2014-07-20-ship-outreach.html/</id>
-    <updated>2014-07-20T00:00:00</updated>
+    <updated>2014-07-20T00:00:00-04:00</updated>
     <published>2014-07-20T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -4248,7 +4635,7 @@ advanced work.
   <entry>
     <title>Twitch Coding</title>
     <id>http://cestlaz.github.io/posts/2014-04-10-twitch-coding.html/</id>
-    <updated>2014-04-10T00:00:00</updated>
+    <updated>2014-04-10T00:00:00-04:00</updated>
     <published>2014-04-10T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -4380,7 +4767,7 @@ coding some more in the coming months.
   <entry>
     <title>Sorting - Subtle Errors</title>
     <id>http://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting.html/</id>
-    <updated>2014-03-17T00:00:00</updated>
+    <updated>2014-03-17T00:00:00-04:00</updated>
     <published>2014-03-17T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -4551,7 +4938,7 @@ it's been a fun couple of weeks
   <entry>
     <title>From selection to sorting</title>
     <id>http://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/</id>
-    <updated>2014-03-12T00:00:00</updated>
+    <updated>2014-03-12T00:00:00-04:00</updated>
     <published>2014-03-12T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -4721,7 +5108,7 @@ of partitioning to Java code. Java makes it somewhat of a bear.
   <entry>
     <title>Be the ball</title>
     <id>http://cestlaz.github.io/posts/2014-03-09-be-the-ball.html/</id>
-    <updated>2014-03-09T00:00:00</updated>
+    <updated>2014-03-09T00:00:00-05:00</updated>
     <published>2014-03-09T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -4830,7 +5217,7 @@ for years but only now discovering how amazing a tool it is.
   <entry>
     <title>I guess I'm a dumbass</title>
     <id>http://cestlaz.github.io/posts/2014-02-27-dumbass.md/</id>
-    <updated>2014-02-27T00:00:00</updated>
+    <updated>2014-02-27T00:00:00-05:00</updated>
     <published>2014-02-27T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -4884,7 +5271,7 @@ where the line is.&lt;/p&gt;&lt;/div&gt;</summary>
   <entry>
     <title>Change the data</title>
     <id>http://cestlaz.github.io/posts/2014-02-26-change-the-data.md/</id>
-    <updated>2014-02-26T00:00:00</updated>
+    <updated>2014-02-26T00:00:00-05:00</updated>
     <published>2014-02-26T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -4967,7 +5354,7 @@ case of index out of bounds.&lt;/p&gt;
   <entry>
     <title>Fibonacci by the tail</title>
     <id>http://cestlaz.github.io/posts/2014-02-13-fibonacci.md/</id>
-    <updated>2014-02-13T00:00:00</updated>
+    <updated>2014-02-13T00:00:00-05:00</updated>
     <published>2014-02-13T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5094,7 +5481,7 @@ public int fib5(int n,int a, int b) {
   <entry>
     <title>Rot13 - Gateway &lt;s&gt;Drugs&lt;/s&gt; Techniques</title>
     <id>http://cestlaz.github.io/posts/2014-01-07-rot13-gateway.md/</id>
-    <updated>2014-01-07T00:00:00</updated>
+    <updated>2014-01-07T00:00:00-05:00</updated>
     <published>2014-01-07T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5198,7 +5585,7 @@ closest vector is pobably our solution.&lt;/p&gt;
   <entry>
     <title>Bucket Sorting</title>
     <id>http://cestlaz.github.io/posts/2013-11-27-bucket-sorts.md/</id>
-    <updated>2013-11-27T00:00:00</updated>
+    <updated>2013-11-27T00:00:00-05:00</updated>
     <published>2013-11-27T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5267,7 +5654,7 @@ was a detour well worth taking.&lt;/p&gt;&lt;/div&gt;</summary>
   <entry>
     <title>Teaching Languages</title>
     <id>http://cestlaz.github.io/posts/2013-11-23-teaching-languages.md/</id>
-    <updated>2013-11-23T00:00:00</updated>
+    <updated>2013-11-23T00:00:00-05:00</updated>
     <published>2013-11-23T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5340,7 +5727,7 @@ fight the implementation language.&lt;/p&gt;&lt;/div&gt;</summary>
   <entry>
     <title>Build it first</title>
     <id>http://cestlaz.github.io/posts/2013-11-19-build_it.md/</id>
-    <updated>2013-11-19T00:00:00</updated>
+    <updated>2013-11-19T00:00:00-05:00</updated>
     <published>2013-11-19T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5407,7 +5794,7 @@ they'll really understand what's going on under the hood.&lt;/p&gt;&lt;/div&gt;<
   <entry>
     <title>Stuyablo II</title>
     <id>http://cestlaz.github.io/posts/2013-10-27-stuyabloII.md/</id>
-    <updated>2013-10-27T00:00:00</updated>
+    <updated>2013-10-27T00:00:00-04:00</updated>
     <published>2013-10-27T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5469,7 +5856,7 @@ writing this thing.&lt;/p&gt;
   <entry>
     <title>Databases - the next day</title>
     <id>http://cestlaz.github.io/posts/2013-10-09-database-followup.md/</id>
-    <updated>2013-10-09T00:00:00</updated>
+    <updated>2013-10-09T00:00:00-04:00</updated>
     <published>2013-10-09T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5513,7 +5900,7 @@ student id, a class, grade, teacher, and date.&lt;/p&gt;
   <entry>
     <title>Databases - putting it all together</title>
     <id>http://cestlaz.github.io/posts/2013-10-07-databases.md/</id>
-    <updated>2013-10-07T00:00:00</updated>
+    <updated>2013-10-07T00:00:00-04:00</updated>
     <published>2013-10-07T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5570,7 +5957,7 @@ concerns the students had.&lt;/p&gt;
   <entry>
     <title>Real Data - Part II</title>
     <id>http://cestlaz.github.io/posts/2013-05-20-Real_Data_Part_II.md/</id>
-    <updated>2013-05-20T00:00:00</updated>
+    <updated>2013-05-20T00:00:00-04:00</updated>
     <published>2013-05-20T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5613,7 +6000,7 @@ well beyond what we've covered in class.&lt;/p&gt;
   <entry>
     <title>Madlib Madness</title>
     <id>http://cestlaz.github.io/posts/2013-04-30-Madlib_Madness.md/</id>
-    <updated>2013-04-30T00:00:00</updated>
+    <updated>2013-04-30T00:00:00-04:00</updated>
     <published>2013-04-30T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5658,7 +6045,7 @@ assortment of categorized lists. &lt;/p&gt;
   <entry>
     <title>Real Data</title>
     <id>http://cestlaz.github.io/posts/2013-04-14-Real_Data.md/</id>
-    <updated>2013-04-14T00:00:00</updated>
+    <updated>2013-04-14T00:00:00-04:00</updated>
     <published>2013-04-14T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5735,7 +6122,7 @@ their SAT math scores far surpassed the English ones).&lt;/p&gt;
   <entry>
     <title>Who won the election -- Quadratic to Linear Time!!!!!</title>
     <id>http://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md/</id>
-    <updated>2013-03-23T00:00:00</updated>
+    <updated>2013-03-23T00:00:00-04:00</updated>
     <published>2013-03-23T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5843,7 +6230,7 @@ here we got to one million without breaking a sweat.&lt;/p&gt;
   <entry>
     <title>Layers of a lesson</title>
     <id>http://cestlaz.github.io/posts/2012-12-17-layers-of-a-lesson.html/</id>
-    <updated>2012-12-17T00:00:00</updated>
+    <updated>2012-12-17T00:00:00-05:00</updated>
     <published>2012-12-17T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5958,7 +6345,7 @@ concepts.</summary>
   <entry>
     <title>Real Projects</title>
     <id>http://cestlaz.github.io/posts/2012-12-09-real-projects.html/</id>
-    <updated>2012-12-09T00:00:00</updated>
+    <updated>2012-12-09T00:00:00-05:00</updated>
     <published>2012-12-09T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -6070,7 +6457,7 @@ Special thanks to Ben, Moisey and the entire &lt;a href="http://digitalocean.com
   <entry>
     <title>Sorting from the top and from the bottom</title>
     <id>http://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom.html/</id>
-    <updated>2010-03-14T00:00:00</updated>
+    <updated>2010-03-14T00:00:00-05:00</updated>
     <published>2010-03-14T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -6083,7 +6470,7 @@ Special thanks to Ben, Moisey and the entire &lt;a href="http://digitalocean.com
   <entry>
     <title>What's Next</title>
     <id>http://cestlaz.github.io/posts/2010-02-18-whats-next.html/</id>
-    <updated>2010-02-18T00:00:00</updated>
+    <updated>2010-02-18T00:00:00-05:00</updated>
     <published>2010-02-18T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -6096,7 +6483,7 @@ Special thanks to Ben, Moisey and the entire &lt;a href="http://digitalocean.com
   <entry>
     <title>Towers of Hanoi</title>
     <id>http://cestlaz.github.io/posts/2010-01-10-towers-of-hanoi.html/</id>
-    <updated>2010-01-10T00:00:00</updated>
+    <updated>2010-01-10T00:00:00-05:00</updated>
     <published>2010-01-10T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -6108,7 +6495,7 @@ Special thanks to Ben, Moisey and the entire &lt;a href="http://digitalocean.com
   <entry>
     <title>Looking for interesting questions</title>
     <id>http://cestlaz.github.io/posts/2010-01-03-looking-for-interesting-questions.html/</id>
-    <updated>2010-01-03T00:00:00</updated>
+    <updated>2010-01-03T00:00:00-05:00</updated>
     <published>2010-01-03T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>

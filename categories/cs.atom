@@ -3,13 +3,1330 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about cs</title>
   <id>http://cestlaz.github.io/categories/cs.atom</id>
-  <updated>2017-02-10T15:19:11Z</updated>
+  <updated>2017-06-15T09:37:30Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/cs.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/cs/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Disclosing Bugs - requiring a project roadmap</title>
+    <id>http://cestlaz.github.io/posts/disclosing-bugs/</id>
+    <updated>2017-06-13T16:30:27-04:00</updated>
+    <published>2017-06-13T16:30:27-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/disclosing-bugs/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Over on Facebook, a fellow CS educator &lt;sup&gt;&lt;a id="fnr.1" name="fnr.1" class="footref" href="http://cestlaz.github.io/posts/disclosing-bugs/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt; made a comment on something he
+wanted to try with his students this summer: having the students
+pre-disclose bugs when they submit their projects.
+&lt;/p&gt;
+
+&lt;p&gt;
+The post was asking for any links to "the literature." I can't speak
+to that but I I've done something similar to what the post was asking
+about so, as per usual, I thought I'd write about it here. It may not
+be "research" but I'm more interested in teacher practices than ivory
+towers anyway so here goes…
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+At a very basic level, I ask my students to provide a roadmap to any
+project they submit - usually in a readme file. I basically ask:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;How to use the project
+&lt;/li&gt;
+&lt;li&gt;What's cool and I should make sure to check out
+&lt;/li&gt;
+&lt;li&gt;What doesn't work, where were the sticking points and what's the
+status.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+I tell my students that when I test the project, I'm not "out to get
+them" and by their telling me how to navigate the project, it makes
+sure I see things in the best possible light. I also tell them that I
+will be more harsh on bugs that they don't tell me about -
+particularly bugs that only occur some of the time.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+I also encourage (and sometimes require) that students maintain a
+changelog in their repo and also sometimes encourage them to have a
+todo list and list of bugs and for longer projects, I expect to see
+these and the readme updated over the course of the project (which
+should always be up to date on &lt;a href="https://cestlaz.github.io/posts/sigcse-2017-github-4"&gt;GitHub&lt;/a&gt;, Dropbox or wherever the project
+is living). 
+&lt;/p&gt;
+
+&lt;p&gt;
+When the students provide a good write up it makes evaluating the
+project much easier.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+When students buy in, they're hopefully thinking more deeply about
+their projects in terms of design and implementation and also from the
+point of view of someone else using their product. When they maintain
+the readme and other files over time, it also enables me to better
+support them.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;p&gt;
+So, does this work? Yes but with some caveats. It works better once
+the class and teacher know each other. If the students trust the
+teacher they're more likely to be open and honest when they write up
+the project. On the other hand, there will always be some students to
+"phone it in" and do the bare minimum in terms of writing up their
+projects.
+&lt;/p&gt;
+
+&lt;p&gt;
+The bottom line is that having the students do this is has a low cost
+and is beneficial to both the students and the teacher. When it works,
+it's great and when it doesn't, it's still pretty good.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="footnotes"&gt;
+&lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
+&lt;div id="text-footnotes"&gt;
+
+&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" name="fn.1" class="footnum" href="http://cestlaz.github.io/posts/disclosing-bugs/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;p class="footpara"&gt;
+I'm not sharing names from the Facebook post because it was
+made in a semi-private forum and I haven't asked permission.
+&lt;/p&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="teaching" label="teaching"/>
+  </entry>
+  <entry>
+    <title>A* is born</title>
+    <id>http://cestlaz.github.io/posts/a-star-is-born/</id>
+    <updated>2017-06-05T18:42:55-04:00</updated>
+    <published>2017-06-05T18:42:55-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/a-star-is-born/"/>
+    <summary type="html">&lt;p&gt;
+Over on the &lt;a href="https://cseducators.stackexchange.com/"&gt;CS Educator StachExchange&lt;/a&gt;, which is in private beta for a
+few more days, I saw a post asking about how to introduce the &lt;a href="https://en.wikipedia.org/wiki/A*_search_algorithm"&gt;A*
+search algorithm&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I taught A* as part of the APCS class at Stuy so I thought I'd talk
+about what I did here.
+&lt;/p&gt;
+
+&lt;p&gt;
+Some time around mid year, we get to intermediate recursion. This is
+about the time, give or take, when we talk about the nlogn sorts.
+&lt;/p&gt;
+
+&lt;p&gt;
+We also build a recursive maze solver. It's a nice algorithm and a
+nice little program. It's around 15 lines of code to perform a
+recursive depth first search:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/astar/dfs.gif" alt="dfs.gif" align="center" height="200px"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+The basic algorithm is:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/* solve the maze from an x,ylocation */&lt;/span&gt;
+&lt;span class="n"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;we&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;re&lt;/span&gt; &lt;span class="n"&gt;at&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;exit&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;Yay&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt; &lt;span class="n"&gt;We&lt;/span&gt; &lt;span class="n"&gt;found&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;exit&lt;/span&gt;
+  &lt;span class="nf"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;we&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;re&lt;/span&gt; &lt;span class="n"&gt;at&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;wall&lt;/span&gt; &lt;span class="n"&gt;or&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;visited&lt;/span&gt; &lt;span class="n"&gt;space&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;previous&lt;/span&gt; &lt;span class="n"&gt;step&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+  &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+     &lt;span class="n"&gt;mark&lt;/span&gt; &lt;span class="n"&gt;current&lt;/span&gt; &lt;span class="n"&gt;space&lt;/span&gt; &lt;span class="n"&gt;as&lt;/span&gt; &lt;span class="n"&gt;visited&lt;/span&gt;
+     &lt;span class="nf"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+     &lt;span class="n"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+     &lt;span class="n"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+     &lt;span class="n"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+  &lt;span class="o"&gt;}&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+It's a nice lesson because in addition to all the recursion stuff, we
+also get to talk about state space, state space search, backtracking,
+efficiency concerns and much more. After we finish the maze solver, we also talk about
+other problems that can be similarly examined using state-space search
+like the knights tour and N-queens problems. 
+&lt;/p&gt;
+
+&lt;p&gt;
+A month or so later, when we're learning about stacks and queues as
+data structures, we revisit the maze solver. This time we solve the
+problem in a more general way. We talk about using a data structure to
+hold the set of nodes that we're aware of and that we want to visit
+next. 
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="n"&gt;structure&lt;/span&gt;
+&lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="n"&gt;structure&lt;/span&gt; &lt;span class="n"&gt;not&lt;/span&gt; &lt;span class="n"&gt;empty&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;current&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;remove&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt; &lt;span class="n"&gt;from&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="n"&gt;structure&lt;/span&gt;
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;current&lt;/span&gt; &lt;span class="n"&gt;is&lt;/span&gt; &lt;span class="n"&gt;goal&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;we&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;re&lt;/span&gt; &lt;span class="n"&gt;done&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;every&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="n"&gt;adjacent&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;current&lt;/span&gt; &lt;span class="n"&gt;that&lt;/span&gt; &lt;span class="n"&gt;isn&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="n"&gt;yet&lt;/span&gt; &lt;span class="n"&gt;visited&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
+     &lt;span class="n"&gt;mark&lt;/span&gt; &lt;span class="n"&gt;that&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="n"&gt;as&lt;/span&gt; &lt;span class="n"&gt;visited&lt;/span&gt;
+     &lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="n"&gt;structure&lt;/span&gt;
+  &lt;span class="o"&gt;}&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+As we write the solution, we see that using a queue for this
+data structure yields a breadth first search:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/astar/bfs.gif" alt="bfs.gif" align="center" height="200px"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+while using a stack yields depth first. 
+&lt;/p&gt;
+
+&lt;p&gt;
+All of this leads to a discussion as to how deciding on which
+locations to look at next can greatly influence the steps to the
+exit. From here it's easy to see that you can use a heuristic to order
+the nodes in our data structure so that we explore "better"
+possibilities first. The data structure becomes a priority queue and
+we finally get to both "best first" and A* search:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/astar/astar.gif" alt="astar.gif" align="center" height="200px"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+It's a nice sequence of lessons, albeit lessons spread out over
+months. The end result is that the students see both the need and
+motivation for something like A* and they see that it's not hard to
+implement. One basic routine where you can plug in one of three data
+structures - stack, queue, or priority queue to get very different
+results.
+&lt;/p&gt;</summary>
+    <category term="algorithms" label="algorithms"/>
+    <category term="cs" label="cs"/>
+    <category term="data-structures" label="data structures"/>
+    <category term="programming" label="programming"/>
+  </entry>
+  <entry>
+    <title>A new first language? What's the follow up plan?</title>
+    <id>http://cestlaz.github.io/posts/first-language-changing/</id>
+    <updated>2017-04-21T14:46:07-04:00</updated>
+    <published>2017-04-21T14:46:07-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/first-language-changing/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+This morning, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about Stanford possibly &lt;a href="https://computinged.wordpress.com/2017/04/21/cs-department-updates-introductory-courses-java-is-gone/"&gt;moving away
+from Java&lt;/a&gt; as their intro language. This comes on the heels of a
+semi-regular thread on one of the lists I'm on asking about what
+languages are used at assorted colleges around the country. Invariably
+the Pascal -&amp;gt; C++ -&amp;gt; Java progression of APCS turns up in these
+threads.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are plenty of arguments to be made both for and against pretty
+much any language or platform. There's no single best universal
+answer. Each choice giveth and each choice taketh away. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I'm really curious about is who's looking at intro languages in
+the context of complete programs or even complete educations that
+could span multiple institutions.
+&lt;/p&gt;
+
+&lt;p&gt;
+Early language choices can make a big difference in engaging and
+exciting newcomers but there are ramifications later on that few seem
+to consider.
+&lt;/p&gt;
+
+&lt;p&gt;
+Take the APCS change from C++ to Java. It removed memory management
+from the first year course. It also simplified issues relating to
+pass by value vs pass by reference (or, rather, passing address by
+value), bought much more strongly into OOP and moved more towards
+using built in implementations of data structures like Lists rather
+than rolling your own.
+&lt;/p&gt;
+
+&lt;p&gt;
+Removing memory management from the first year course in and of itself
+isn't a problem as long as it's taught and taught effectively
+somewhere later on. It could be argued that "memory is already covered
+in our required systems course." That could be the case, but there are
+many concepts that kids don't get the first time around. Is an
+institution that covered memory management in CS1/2 and then came back
+to it in a later Systems course giving their students the same
+understanding now that they've eliminated the CS1/2 experience? 
+&lt;/p&gt;
+
+&lt;p&gt;
+What about OOP buy in. Personally, I've never been a big OOP fan but
+that's neither here nor there. What I have found is that depending on
+how a student is exposed to programming in CS1/CS2 can have a big
+influence on how they approach problems later. Did the move to Java
+cause more of our students to try to use shoehorn OOP into a problem
+that really shouldn't be approached in an OOP manner?
+&lt;/p&gt;
+
+&lt;p&gt;
+I suspect that the use of built in data structures has had a
+negative impact. A few years after the switch to Java, I was talking
+to a senior tech worker. He was having a bad day - interviewing
+potential internees and full time engineers. My friend was complaining
+that the kids couldn't come up with solutions to what he thought were
+pretty straightforward questions. He felt that had the kids actually
+implemented algorithms like the nlogn sorts rather than just learning
+java .sort method and just talking about the algorithm they'd be
+better prepared. I've heard this sentiment repeated over and over
+throughout the years.
+&lt;/p&gt;
+
+&lt;p&gt;
+This is not to say that Java is a horrible language or horrible for
+teaching - that's another debate. The point is that you can't just
+look at the intro class and who it draws in. You have to consider how
+it will prepare students for the next level and you have to look at
+the big picture – will our students get everything they need by the
+time they leave us.
+&lt;/p&gt;
+
+&lt;p&gt;
+Many schools have moved to Python. Will that effect students take on
+type systems later on? Will the flexibility and constructs like list
+comprehensions make it harder to teach recursion since there are
+"easier" ways to do it? 
+&lt;/p&gt;
+
+&lt;p&gt;
+None of these are really problems so long as the CS1/2 (or even CS0)
+isn't taught in a vacuum. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I fear, however that too often we're paying attention to the intake of
+the pipe and not so much the output.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="langauges" label="langauges"/>
+    <category term="pedagogy" label="pedagogy"/>
+  </entry>
+  <entry>
+    <title>SIGCSE 2017 - a path to github part 1</title>
+    <id>http://cestlaz.github.io/posts/sigcse-2017-github-1/</id>
+    <updated>2017-03-16T09:11:00-04:00</updated>
+    <published>2017-03-16T09:11:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse-2017-github-1/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Both at and prior to SIGCSE 2017, I promised to write up the steps I
+take to introduce and use revision control systems in my classes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This series is not meant to be a git or &lt;a href="http://github.com"&gt;GitHub&lt;/a&gt; tutorial. There are
+plenty of those already (two of which I've linked to below).  This is
+about the process I use with my students to get them up to speed. 
+&lt;/p&gt;
+
+&lt;p&gt;
+As with any new tool, there will be some resistance but once git saves
+them once, they get religion. There will also be some bumps in the
+road but at the end of the day, the students will be using a valuable
+and necessary tool. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I was also surprised at the ancillary benefits I got as a teacher by
+using GitHub in particular. I'll talk about that at the end of the
+series.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Here's part one. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm doing this with git and GitHub but there's no reason why other
+systems and hosts can't be used. I'd also recommend that any educator
+or student sign up for the assorted &lt;a href="https://education.github.com/"&gt;discounts&lt;/a&gt; offered by GitHub.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've followed this basic idea multiple times and done it over the
+course of a single semester, a year, and even two years. Regardless of
+time frame, the idea is the same. Make each step simple and relevant
+and introduce complexity and roadblocks a piece at a time.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;Step 1 - code distribution&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+To start, I don't even talk about version control. We start with code
+distribution. For years, I've looked for efficient ways of sharing
+code with my classes. Both code developed in class and code for
+assignments. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I've tried things like NFS, Dropbox, online code repositories like the
+files section of systems like Moodle or Blackboard.
+&lt;/p&gt;
+
+&lt;p&gt;
+At Stuy, we've always had efficiency problems with NFS and Dropbox has
+multiple problems ranging from students not being able to install the
+client on school machines to the problems of the network hit when a
+room full of kids are syncing at the same time.
+&lt;/p&gt;
+
+&lt;p&gt;
+Uploading to a CMS system was also problematic - I'm a command line
+wonk and hate going through slow web page menus to navigate a
+filesystem and upload files. I also had to remember to get the files
+off of whatever machine I was working on in class and then transfer
+them to the CMS when I had a free moment.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enter git. Now, of course, if you're going to use git in the classroom
+you have to know it. There are plenty of resources out there. Online
+courses, articles, videos, and tutorials. Here are a couple:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://try.github.io/"&gt;https://try.github.io/&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=0fKg7e37bQE"&gt;https://www.youtube.com/watch?v=0fKg7e37bQE&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+I also want to point out that I just use raw command line git along
+with native GitHub. GitHub has rolled out &lt;a href="https://classroom.github.com/"&gt;GitHub Classroom&lt;/a&gt; which adds
+a layer of support for educators. I don't use it because, as I said,
+I'm an old school command line wonk and also because I figured out a
+sequence that worked for me and my students before GitHub Classroom
+existed. Were I starting now, I'd take some time to look at their
+current offerings before jumping in.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2-1" class="outline-3"&gt;
+&lt;h3 id="sec-2-1"&gt;Set up&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-1"&gt;
+&lt;p&gt;
+Before starting, make sure you register your ssh keys. &lt;a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/"&gt;This&lt;/a&gt; help page
+has more information. You'll want to register an ssh key from every
+machine you use - home, work, laptop. 
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Now go over to GitHub and make a new repository. I usually name it
+&lt;b&gt;&lt;b&gt;classcode&lt;/b&gt;&lt;/b&gt;. &lt;b&gt;&lt;b&gt;BEGINNER NOTE:&lt;/b&gt;&lt;/b&gt; when creating the repo, make sure to
+check the "initialize this repository with a README" box. If you don't
+you'll be given a set of instructions on how to set things up once you
+click &lt;b&gt;&lt;b&gt;Create repository&lt;/b&gt;&lt;/b&gt; but it's easier and easier to follow if
+you start with an initialized repo with a README.
+&lt;/p&gt;
+
+&lt;p&gt;
+I make the repo public – it's code I'm distributing – nothing to
+hide here. If you aren't comfortable with that, just make the repo
+private. If you've registered as a teacher with GitHub, you can set up
+an organization and you'll be able to set up free private repos within
+it. The other downside here is that you'll have to individually give
+each student access to the repo. That's a mild annoyance but it only
+has to be done once.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2-2" class="outline-3"&gt;
+&lt;h3 id="sec-2-2"&gt;Teacher use&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-2"&gt;
+&lt;p&gt;
+Next, clone out the repo. &lt;b&gt;&lt;b&gt;BEGINNER NOTE:&lt;/b&gt;&lt;/b&gt; Make sure you check out
+the ssh version not the https version. Just make sure that when you
+click the &lt;b&gt;&lt;b&gt;clone&lt;/b&gt;&lt;/b&gt; button, it says "Clone with SSH." If not, just
+click the "Use SSH" link in the same box. Students will clone the
+using https.
+&lt;/p&gt;
+
+&lt;p&gt;
+From the teacher point of view, you can just start using the repo. My
+work flow is typically:
+&lt;/p&gt;
+
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;git pull&lt;/b&gt;&lt;/b&gt; at the start of class
+&lt;/li&gt;
+&lt;li&gt;write code throughout class
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;git add&lt;/b&gt;&lt;/b&gt;, &lt;b&gt;&lt;b&gt;git commit&lt;/b&gt;&lt;/b&gt;, and &lt;b&gt;&lt;b&gt;git push&lt;/b&gt;&lt;/b&gt; at the end of class
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+I use a similar flow when I want to add files in my office or at home.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-3" class="outline-3"&gt;
+&lt;h3 id="sec-2-3"&gt;Student use&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-3"&gt;
+&lt;p&gt;
+From the student point of view, assuming a public repo, they just have to clone the repo and
+at the beginning of every class or work session, do a &lt;b&gt;&lt;b&gt;git
+pull&lt;/b&gt;&lt;/b&gt;. That's all there is to it.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2-4" class="outline-3"&gt;
+&lt;h3 id="sec-2-4"&gt;Thoughts&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-4"&gt;
+&lt;p&gt;
+That's it. The kids are now using GitHub – they're probably looking
+at and poking around on the web site as well as pulling files to their
+machines. You can also, in class, show things like &lt;b&gt;&lt;b&gt;git status&lt;/b&gt;&lt;/b&gt;,
+&lt;b&gt;&lt;b&gt;git log&lt;/b&gt;&lt;/b&gt;, and &lt;b&gt;&lt;b&gt;git diff&lt;/b&gt;&lt;/b&gt; to set the stage for step 2 of this
+process and beyond.
+&lt;/p&gt;
+
+&lt;p&gt;
+Since the students aren't adding, committing or pushing, you probably won't
+get any errors. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The only problem that could reasonably occur is if a student places a
+file in their local copy of the repo with the same name as something
+they haven't pulled yet. This is pretty easy to address and provides a
+nice stepping stone lesson to again, set the stage for more complex
+operations.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+I'm happy with this as a first step towards git using GitHub. It
+provides a nice way of sharing class code while gently introducing the
+students to the tool.
+&lt;/p&gt;
+
+&lt;p&gt;
+The next step  is having the students add files to a repo. That's the
+next post in this series.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>SIGCSE 2017 - Recap</title>
+    <id>http://cestlaz.github.io/posts/sigcse-2017-recap/</id>
+    <updated>2017-03-14T08:19:18-04:00</updated>
+    <published>2017-03-14T08:19:18-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse-2017-recap/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+As a high school teacher, I was never able to attend SIGCSE, the
+conference of the ACM's Special Interest Group on Computer Science
+Education. Between the number of instructional days I would lose and
+the cost, I could never justify going. Instead I looked over the
+proceedings and read many of the papers.
+&lt;/p&gt;
+
+&lt;p&gt;
+Now that I'm at Hunter, I was finally able to attend. This year in
+Seattle, the conference ran from Wednesday through Saturday. I was
+part of a panel on "Tools we can't live without." Over the next few
+weeks, I hope to blog about a number of things I thought and talked
+with people about over the conference including:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;The path I use to teach git and why GitHub a good teaching tool
+(my talk).
+&lt;/li&gt;
+&lt;li&gt;The relationship of different CS Ed stakeholders - teachers,
+researchers, organizations, etc.
+&lt;/li&gt;
+&lt;li&gt;Teaching at the high school level vs college - perceptions and
+reality.
+&lt;/li&gt;
+&lt;li&gt;The challenges of tech tool adoption in schools.
+&lt;/li&gt;
+&lt;li&gt;What's going on in K12 CS Certification.
+&lt;/li&gt;
+&lt;li&gt;Maybe some other stuff.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Today, some overall thoughts.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;The good&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+As with many conferences, the "hallway track" along with receptions
+sponsored by &lt;a href="https://csnyc.org/our-work/cs4all"&gt;the CS4All consurtium&lt;/a&gt;, &lt;a href="http://tealsk12.org"&gt;TEALS&lt;/a&gt;, &lt;a href="http://code.org"&gt;Code.org&lt;/a&gt; were terrific. I
+was able to finally meet in person many people who I've only known
+virtually and got to know many more as well. I left the conference
+with a much larger address book and a long list of follow up
+items. Being in Seattle, I also enjoyed being able to spend time with
+people from &lt;a href="http://tealsk12.org"&gt;TEALS&lt;/a&gt; and &lt;a href="http://code.org"&gt;Code.org&lt;/a&gt;, two of the CS Ed groups working hard
+to do some real good (yes - I do like and support these guys even
+though I call them out on things I disagree with, but that's the
+subject of another post). 
+&lt;/p&gt;
+
+&lt;p&gt;
+I attended sessions on CS certification, teacher preparation,
+assessments, POGIL based instruction to name a few. They ranged from
+valuable to interesting and to be honest, a couple of "what were they
+thinking" but the overall experience was very much worth the trip. I
+also got to speak to a number of wonderful students at the
+poster sessions.
+&lt;/p&gt;
+
+&lt;p&gt;
+The keynotes are also well worth a read (sorry if you don't have ACM
+digital library access). &lt;a href="http://dl.acm.org/citation.cfm?id=3025045&amp;amp;CFID=738971273&amp;amp;CFTOKEN=22106692"&gt;Jeannette Wing&lt;/a&gt; talked about the importance of
+probability and statistics in CS Ed, and aspects of  &lt;a href="http://dl.acm.org/citation.cfm?id=3025047&amp;amp;CFID=738971273&amp;amp;CFTOKEN=22106692"&gt;Gail Chapman&lt;/a&gt;'s talk
+"Inspire, Innovate, and Improve…" keynote and &lt;a href="http://dl.acm.org/citation.cfm?id=3025046&amp;amp;CFID=738971273&amp;amp;CFTOKEN=22106692"&gt;Mitch Resnick&lt;/a&gt;'s
+"Fulfilling Papert's Dream" both spoke to the educator inside me. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;The bad&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;p&gt;
+The biggest downside to me was that I found very little value added in
+a number of the paper sessions over just reading the papers. Part of
+this is probably because of my own over-inflated expectations given the
+number of years I've waited to attend. Part of it though, was the fact
+that sessions were so tightly packed that I didn't have time to follow
+up with presenters before having to run to the next
+thing. Unfortunately, in some
+cases, it was because the presenter merely
+"read" the paper much as a professor sometimes just reads the slides
+or the book to his class.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-4" class="outline-2"&gt;
+&lt;h2 id="sec-4"&gt;Other thoughts&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-4"&gt;
+&lt;p&gt;
+One paper presentation I very much liked was &lt;a href="http://dl.acm.org/citation.cfm?id=3017701&amp;amp;CFID=738971273&amp;amp;CFTOKEN=22106692"&gt;Exam Wrappers: Not a
+Silver Bullet&lt;/a&gt; presented by &lt;a href="https://michellecraig.github.io/"&gt;Michelle Craig&lt;/a&gt; and &lt;a href="http://pages.cpsc.ucalgary.ca/~bdstephe/"&gt;Ben Stephenson&lt;/a&gt;. I
+actually came in late since I was hustling over from the Code.org
+lunch. The result was that I didn't actually know what "Exam Wrappers"
+were until well after the talk when I ran into &lt;a href="https://twitter.com/jkhuggins"&gt;Jim Huggins&lt;/a&gt;. Exam
+wrappers, in short, are merely when you require the students fill out something
+for some credit when picking up their exams. The funny thing is that
+it's a strategy that high school teachers have used for years without
+a special name and we already knew the good and bad of it without the
+research but that's not what I want to get at here. What I loved about
+the talk, besides the fact that Ben and Michelle are clearly strong
+presenters is that this was a negative result that was being
+presented. I also loved the fact that they didn't present their
+research as gospel but rather pointed out the strengths and weaknesses
+of their approach - they made a case to what and why we should pay
+attention to and what should be taken with a grain of salt.
+&lt;/p&gt;
+
+&lt;p&gt;
+This was a major breath of fresh air after being exposed to so much
+education 'research' over the course of my life that the author or
+presenter felt was just as strong as a mathematical proof rather than
+an indication based on a specific experience or small set of
+experiences.
+&lt;/p&gt;
+
+&lt;p&gt;
+I also felt a little weird at times during the week when west coast people seemed
+to know me. I know I'm a loud mouthed curmudgeon and I go on my
+periodic ed rants but given the dearth of comments on this blog I was
+really surprised to get as many as "great to meet you in person after
+reading your blog" or "we know you and your work" all week. It was
+weird and somewhat humbling.
+&lt;/p&gt;
+
+&lt;p&gt;
+Finally, another highlight f`or me was that I got to catch up with
+some of family.
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/sigcse-seattle.jpg" alt="sigcse-seattle.jpg" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+Already planning to submit something to present at SIGCSE 2018 in Baltimore.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="csed" label="csed"/>
+    <category term="cseducation" label="cseducation"/>
+    <category term="teaching-cs" label="teaching cs"/>
+  </entry>
+  <entry>
+    <title>Whiteboard interviews</title>
+    <id>http://cestlaz.github.io/posts/whiteboard-interviews/</id>
+    <updated>2017-03-05T08:54:10-05:00</updated>
+    <published>2017-03-05T08:54:10-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/whiteboard-interviews/"/>
+    <summary type="html">&lt;p&gt;
+A few days ago, I saw a &lt;a href="https://theoutline.com/post/1166/programmers-are-confessing-their-coding-sins-to-protest-a-broken-job-interview-process%0A"&gt;piece&lt;/a&gt; on &lt;a href="https://twitter.com/dhh"&gt;David Heinemeier Hansson's&lt;/a&gt; tweet on
+whiteboard interviews:
+&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Hello, my name is David. I would fail to write bubble sort on a whiteboard. I look code up on the internet all the time. I don't do riddles.&lt;/p&gt;— DHH (@dhh) &lt;a href="https://twitter.com/dhh/status/834146806594433025"&gt;February 21, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;p&gt;
+I'm not a huge fan of the whiteboard interview but I think many of the
+tweets missed the point. Most of the whiteboard interviews I'm
+aware of involve algorithmic problem solving while the tweets, at
+least the ones I've seen all refer to things that indeed one would
+look up. Things like API calls - not things that whiteboard interviewers
+typically care about.
+&lt;/p&gt;
+
+&lt;p&gt;
+Tim Bray takes that point of view and shared his thoughts in a
+&lt;a href="https://www.tbray.org/ongoing/When/201x/2017/03/04/Whiteboard-Interviews"&gt;recent blog post&lt;/a&gt;.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+The idea behind the whiteboard interview isn't all bad. The
+interviewer has an opportunity to see how the candidate thinks and
+works through a problem and in an ideal situation the interviewer is,
+at least to a point, coaching the candidate to help them through the
+process. It seems to me that the problem lies more in the types of
+questions asked and the skill of the interviewer rather than the idea
+that candidates work through a problem live.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'd imagine that whiteboard interview success skew towards candidates
+who work well in isolation in a short period of time, have a good
+amount of exposure to these types of algorithmic problems. Also those
+who have practiced and trained specifically for the interview will
+have a huge edge. For people new to the process, it can be very
+stressful. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Once a candidate has accepted a position, they'll likely be working
+with a team, with additional resources, and with time to solve
+problems. This is a very different environment.  The whiteboard
+interview, much like the SAT is thus something of an arbitrary
+gatekeeper that a candidate must prepare for and conquer rather than a
+skill that they must develop that will make them a more productive
+team member.
+&lt;/p&gt;
+
+&lt;p&gt;
+This whole process tends to advantage those with the time and
+background to prepare - this is one of the places where the argument
+that whiteboard interview hurt diversity come from.
+&lt;/p&gt;
+
+&lt;p&gt;
+I could be totally wrong but I seem to recall that the whiteboard
+interview, at least in terms of external visibility grew out of the
+legendary Google puzzle interview questions. 
+&lt;/p&gt;
+
+&lt;p&gt;
+A tech giant like Google can interview however they like and they'll
+still get the talent. They go to the most selective institutions where
+candidates have already been culled for success. If they then interview 100
+candidates and 10 of them would be good fits, as long as a couple
+thrive through the whiteboard interview process, they'll get their
+engineer. They'll miss out on a lot of great talent but they can cast
+such a large net they'll fill there seats with productive employees. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand, smaller companies will certainly miss out on great
+talent if they follow the same approach.
+&lt;/p&gt;
+
+&lt;p&gt;
+Is there a better way?
+&lt;/p&gt;
+
+&lt;p&gt;
+Some companies pre-assign mini projects and then discuss that at the
+interview. Pairing could also be a lower stress alternative to the
+technical interview. Another option would be to look at a candidates
+existing projects. 
+&lt;/p&gt;
+
+&lt;p&gt;
+An interesting question is "why do so many companies use the
+whiteboard interview?" I can't say for certain but I wouldn't be
+surprised if it was a simple as "because Google does it."
+&lt;/p&gt;
+
+&lt;p&gt;
+For over 100 years, Stuyvesant high school required students study
+mechanical drawing (drafting). The relevance of the subject lessened over the
+decades and what was taught in many ways has become a joke. A typical
+class during the CAD parts of the class might be going over the
+&lt;b&gt;&lt;b&gt;cylinder&lt;/b&gt;&lt;/b&gt; command in CadKey. That's like spending a day studying
+the &lt;b&gt;&lt;b&gt;edit&lt;/b&gt;&lt;/b&gt; menu in Microsoft Word in an English class. If you can't
+tell, I'm not a fan. Drafting at Stuyvesant is the vestigial organ of
+the course of study. 
+&lt;/p&gt;
+
+&lt;p&gt;
+My point isn't to bash drafting at Stuy but rather that there have
+been any number of schools that require their students take drafting
+even though it doesn't prepare students for, nor lead them to anything
+else in the schools curriculum (which now can be said for Stuy's
+drafting requirement). I've spoken to teachers and principals at these
+schools and we go back and forth as I press them for the reason for
+the requirement and ultimately, they tell me that their school
+requires drafting "because Stuyvesant does." 
+&lt;/p&gt;
+
+&lt;p&gt;
+Why do so many small companies employ the whiteboard interview?
+Because the big kids do. The trouble is that the big kids can get away
+with it, the smaller players on the other hand, are hurting
+themselves. Even the bigger players would be well served to 
+try to come up with an interview process that better assesses fit
+rather than a course filter that while it does pull in talent misses
+talent as well.
+&lt;/p&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="interviews" label="interviews"/>
+    <category term="jobs" label="jobs"/>
+  </entry>
+  <entry>
+    <title>Quality Devs and Coding Contests</title>
+    <id>http://cestlaz.github.io/posts/quality-devs-and-coding-contests/</id>
+    <updated>2017-02-19T16:53:56-05:00</updated>
+    <published>2017-02-19T16:53:56-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/quality-devs-and-coding-contests/"/>
+    <summary type="html">&lt;p&gt;
+I've been planning to put together a response to &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt;'s
+recent post - &lt;a href="http://blog.acthompson.net/2017/02/software-developersquantity-vs-quality.html"&gt;Software Developers - Quantity vs Quality&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+TL;DR, although it isn't really long and I do encourage you to read
+Alfred's post: a couple of articles talk about how the U.S. has the most
+people entering CS competitions like HackerRank but Americans are not
+at the top of the leaderboard. does this mean that there's less talent
+in America? Does it even matter?
+&lt;/p&gt;
+
+&lt;p&gt;
+Before getting to "does it matter," I looked over at the Kaggle
+leaderboards. Looking at their top 10, 2 were from the US - no other
+country had more than 1. The 11th placing competitor was also from the
+US and then 12 was from China, giving them 2 in the top 12.  I also
+looked at recent &lt;a href="http://stats.ioinformatics.org/delegations/2016?sort=total_desc"&gt;IOI results&lt;/a&gt; and a quick glance seems to indicate that
+the USA seems to do reasonably well. In short, if you buy into ranking
+a country by these types of individual results on specific
+competitions then we're doing fine.
+&lt;/p&gt;
+
+&lt;p&gt;
+But, does filling the leaderboard mean a country's producing the best
+tech talent? Probably not.
+&lt;/p&gt;
+
+&lt;p&gt;
+Coding competitions focus on a specific skill set. There are problem
+solving aspects but they also require speed, knowledge of data
+structures and algorithms, and, yes, even accurate, fast typing
+skills. They also require you work alone. They don't encourage well
+designed, architected, or written code, working on existing code bases
+or working with a team. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Over the years, I've known some very smart and talented individuals
+who've excelled at these types of competitions. If you extend the pool
+to math and science competitions, I've known quite a few. These
+individuals have by and large done well for themselves but as a group,
+you couldn't call them more successful than any other subset of my
+former students. A number of them have gone on and are doing well as
+professors or programmers but, by and large, they're not the ones
+who've gone on to found companies and provide jobs for scores or even
+hundreds of other people and they're not necessarily the ones who've
+led teams that have developed major platforms and projects&lt;sup&gt;&lt;a id="fnr.1" name="fnr.1" class="footref" href="http://cestlaz.github.io/posts/quality-devs-and-coding-contests/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't argue that people who populate competition leaderboards are
+talented and a necessary part of our tech ecosystem but they're only a
+part. I probably want one of these programmers on my team, but not as
+the entire team (see Fake Grimlock's laws of startups - &lt;a href="http://www.builtinchicago.org/blog/secret-laws-startups-part-2-build-right-team"&gt;law 9&lt;/a&gt;).
+&lt;/p&gt;
+
+
+&lt;div align="center"&gt;
+&lt;a href="http://www.builtinchicago.org/blog/secret-laws-startups-part-2-build-right-team"&gt;
+&lt;img width="30%" src="http://media3.cdn.builtinchicago.org/sites/default/files/imagecache/Original/images/BATMAN-THEN-ROBIN.jpg"&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Competitive programming is a piece of the puzzle as competitive
+programmers are a part of the population. So are project based events
+like &lt;a href="https://dreamitcodeitwinit.wordpress.com/"&gt;Dream it. Code it. Win it.&lt;/a&gt;, science fairs, and hackathons, which
+can be either cooperative, competitive, or a combination.
+&lt;/p&gt;
+
+&lt;p&gt;
+What do we want? Balance. I think the Stuy program does it pretty
+well. StuyCS graduates who wish to take part in coding competitions
+can do so but if they want to excel at it, they have to work at it on
+their own time. At the same time, the students learn how to work in
+teams and take a project from idea to delivery all the while learning
+some good academic CS and software engineering practices. They'll
+learn more in college on the academic side and the rest on the
+job. I'd love to see better balance in the colleges between CS
+programs preparing kids for graduate programs and CS programs that
+prepare kids for industry. I'd also love to see CS minors that were
+more targeted towards CS+X rather than half of a CS major targeting
+students going to grad schools. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I also think there's a tremendous opportunity for community colleges
+to fill the role currently occupied by code schools. They could more
+easily strike a balance between academic depth and practical
+preparation.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm working on building Hunter College's honors CS program and while I
+can't move the Hunter curriculum, I'm seeking that balance in my own
+way.
+&lt;/p&gt;
+
+&lt;p&gt;
+Will we get there? I don't know. Given the way education works, I
+figure at some point people will decide that we have to have more of a
+presence on the CS leaderboards and we'll see programs pop up with
+that in mind. I have no doubt that when that happens, we'll see many
+more Americans near the top. We have a large enough population that
+talent shouldn't be in question. This will be great for students to
+whom these competitions attract. It won't do much, however for the
+rest of the students. I'm not really concerned one way or
+another. Unlike math, where there's a natural progression through K12
+math classes with math team and math competitions being a natural add
+on, the driving forces in CS - be they from industry, government, or
+academia don't seem to have partaken in any code competition Kool-Aid
+so code competitions won't become a driving force in CS ed any time
+soon. 
+&lt;/p&gt;
+&lt;div id="footnotes"&gt;
+&lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
+&lt;div id="text-footnotes"&gt;
+
+&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" name="fn.1" class="footnum" href="http://cestlaz.github.io/posts/quality-devs-and-coding-contests/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;p&gt;Some
+are but probably a smaller percent from that group than from the
+general pool.&lt;/p&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="education" label="education"/>
+  </entry>
+  <entry>
+    <title>Starting with scheme</title>
+    <id>http://cestlaz.github.io/posts/starting-with-scheme/</id>
+    <updated>2017-02-15T12:20:25-05:00</updated>
+    <published>2017-02-15T12:20:25-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/starting-with-scheme/"/>
+    <summary type="html">&lt;p&gt;
+Scheme is one of the languages used in Stuy's intro CS course. Like
+any other language, there are pros and cons of using it to introduce
+students to CS. Here are some of the reasons why I like Scheme as a
+first language and why despite that,  I don't recommend it in many
+cases.
+&lt;/p&gt;
+
+&lt;p&gt;
+Scheme certainly isn't mainstream. That's not the main reason why I
+like it but it is a side benefit. It's less likely kids come into
+class knowing it which creates a level playing field. The few times
+I've had a student with a background in Scheme, they've been good,
+helpful kids rather than ones that tried to show off and dominate the
+class. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I like scheme because it's simple. It looks different than other
+languages but is &lt;code&gt;(+ 3 4)&lt;/code&gt; really that different than &lt;code&gt;add(3,4)&lt;/code&gt; or
+&lt;code&gt;3+4&lt;/code&gt;? 
+&lt;/p&gt;
+
+&lt;p&gt;
+We can tell kids "everything's a function." While technically not
+true, and I tell my students that it isn't, it's close enough for our
+purposes. Everything's a function and the way we write a function is:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;f&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;b&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Apply function &lt;b&gt;&lt;b&gt;f&lt;/b&gt;&lt;/b&gt; on arguments &lt;b&gt;&lt;b&gt;b c …&lt;/b&gt;&lt;/b&gt;. So we have &lt;code&gt;(+ 2 3)&lt;/code&gt; to
+add 2 and 3, &lt;code&gt;(and a b)&lt;/code&gt; for logical and &lt;code&gt;(= 3 4)&lt;/code&gt; to test to see if 3
+is equal to 4, etc. We also have the same basic notation for things
+like conditionals. In java, we might write:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+ &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+In scheme, it would be:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;if &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;&amp;gt; &lt;/span&gt;&lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="mi"&gt;5&lt;/span&gt;
+  &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Even though we're fudging the rules, we can lay out a handful of rules
+for the kids such as lambda and define follow a similar form to create and
+name functions:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;define &lt;/span&gt;&lt;span class="nv"&gt;add2&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;b&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;+ &lt;/span&gt;&lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;b&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+where &lt;code&gt;(lambda (a b) (+ a b))&lt;/code&gt; returns a function that adds &lt;b&gt;&lt;b&gt;a&lt;/b&gt;&lt;/b&gt; and
+&lt;b&gt;&lt;b&gt;b&lt;/b&gt;&lt;/b&gt; and &lt;code&gt;define&lt;/code&gt; associates it with the identifier &lt;b&gt;&lt;b&gt;add2&lt;/b&gt;&lt;/b&gt;. Now we
+can use the function: &lt;code&gt;(add2 5 10)&lt;/code&gt; which evaluates to 15.
+&lt;/p&gt;
+
+&lt;p&gt;
+With lambda, define, if, and a few more basics, it's off to the
+races. The simple, consistent syntax makes things easy for the kids
+and the constrained tool set lets us focus their way of thinking.
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course this wouldn't work had DrScheme (now &lt;a href="https://racket-lang.org/"&gt;Racket&lt;/a&gt;) not
+existed. That gave us a nice learning IDE to work in.
+&lt;/p&gt;
+
+&lt;p&gt;
+Using Scheme, we can not only cover the basics like conditionals,
+abstraction and such but also deeper concepts like recursion, map,
+filter, and reduce. When we move on from Scheme, the kids also have a
+frame of reference for all the other languages and paradigms they use.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are downsides, however. Outside help is harder to come by and
+there is some pushback from parents and it isn't as pretty and flashy
+as some other tool-sets. Scheme worked at Stuy for a number of
+reasons. When I created the class that used it, there were no good
+pre-AP classes in the school and I had a pretty good reputation as a
+teacher. The class also used multiple tools with &lt;a href="https://ccl.northwestern.edu/netlogo/"&gt;NetLogo&lt;/a&gt; being the
+primary other one and tackled a variety of CS and non CS topics.
+First time through, reputation and buzz filled the classes and after
+that, the class developed a solid enough reputation to fill itself.
+&lt;/p&gt;
+
+&lt;p&gt;
+It also didn't hurt that our program developed from the inside
+out. First, we had APCS-AB on the books as a junior year course, then
+I added our post AP senior year electives. Since it was easy to show
+what the kids were already graduating with, it was easy to diffuse any
+pushback from not using mainstream tools in the first class.
+&lt;/p&gt;
+
+&lt;p&gt;
+Scheme worked at Stuy and I feel that it still does. Would I use
+Scheme for a first experience in a drop in program at an after-school
+where kids might not come back if they don't get to a payoff
+immediately? Probably not. Would I recommend it at a school where I
+want to integrate CS with some of the other subjects quickly, again,
+probably not (except for integration with algebra where &lt;a href="http://www.bootstrapworld.org/"&gt;Bootstrapworld&lt;/a&gt;
+is a terrific program).
+&lt;/p&gt;
+
+&lt;p&gt;
+In any event, if you're a high school CS teacher and  haven't played
+with scheme  or some other functional language, I highly recommend
+it - you might not actually ever teach it or use it but it can really
+help develop you as a programmer and an educator.
+&lt;/p&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="curriculum" label="curriculum"/>
+    <category term="education" label="education"/>
+  </entry>
+  <entry>
+    <title>Selecting a starting language - why not Javascript</title>
+    <id>http://cestlaz.github.io/posts/starting-with-js/</id>
+    <updated>2017-02-13T08:45:48-05:00</updated>
+    <published>2017-02-13T08:45:48-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/starting-with-js/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+I was catching up with the team at Stuy the other day and they
+mentioned that they were periodically getting pushback on their choice
+of languages, particularly in the intro class. The pushback was mostly
+in the form of "why don't you start them with Javascript?" 
+&lt;/p&gt;
+
+&lt;p&gt;
+Back in the day, when I created our intro class where we use Scheme,
+NetLogo and then later Python, I'd get similar pushback but then it
+was "why not Java?", "why not C?", or "whu not C++?"
+&lt;/p&gt;
+
+&lt;p&gt;
+We had a good discussion on this and I shared my thoughts as to why I
+don't like Javascript as a first language and I thought I'd share some
+of them here. I'll try to get around to the rationale behind Scheme
+and NetLogo in a later post.
+&lt;/p&gt;
+
+&lt;p&gt;
+To start, let me say that I &lt;b&gt;&lt;b&gt;Love&lt;/b&gt;&lt;/b&gt; Javascript -
+particularly when approaching it as a functional language. I also
+think every school and situation is different so there are likely
+times when Javascript is the right beginner language for the job.
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's dive in.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why are some of the pluses for Javascript as an intro language.
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Ubiquity and availability:
+
+&lt;p&gt;
+If you have a browser, you have Javascript - it's also available
+through online IDEs and online lightweight sites like &lt;a href="https://jsfiddle.net/"&gt;JSFiddle&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;Interactivity:
+
+&lt;p&gt;
+You can tweak websites almost live, use the HTML5 canvas pretty
+interactively and mode
+&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;It's mainstream
+&lt;/li&gt;
+
+&lt;li&gt;It's quick to get up and running
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+This is all true, but there are also downsides.
+&lt;/p&gt;
+
+&lt;p&gt;
+One of my big problems with Javascript is the lack of simple solid
+educational tooling. I love to use tools like &lt;a href="http://www.drjava.org/"&gt;DrJava&lt;/a&gt;, &lt;a href="http://drpython.sourceforge.net/"&gt;DrPython&lt;/a&gt;, and
+&lt;a href="https://racket-lang.org/"&gt;Racket&lt;/a&gt; (formerly DrScheme) with beginners. All simple learning
+IDEs. True, you can use a simple online IDE but I haven't found them
+to have as strong a learning interface. They also, generally, keep you
+in an oversimplified programming sandbox. There's no clean transition
+from the sandbox to the real deal - particularly given the non-trivial
+state of js build tools and environments. These simple learning IDEs
+set the stage and then we can transition to more powerful development environments.
+&lt;/p&gt;
+
+&lt;p&gt;
+I also prefer, where possible, to have kids learn locally so that they
+can learn something about the underlying operating system even if
+only at a user level.
+&lt;/p&gt;
+
+&lt;p&gt;
+A problem relating to the lack of tooling is the fact that a JS
+program can fail to run and not give you any meaningful feedback at
+all - this is a problem for a beginner. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Javascript also has all sorts of wonkiness. We have &lt;code&gt;=&lt;/code&gt;, and &lt;code&gt;==&lt;/code&gt;
+which is pretty conventional, but then there's also &lt;code&gt;===&lt;/code&gt;. We have
+potentially confusing scoping issues and also some other real
+weirdness:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;53&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//  50&lt;/span&gt;
+&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;53&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s1"&gt;'3'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// 50&lt;/span&gt;
+&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'53'&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// 50 &lt;/span&gt;
+&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'53'&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s1"&gt;'3'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//50&lt;/span&gt;
+
+&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;53&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//  56&lt;/span&gt;
+&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;53&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;'3'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// '533'&lt;/span&gt;
+&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'53'&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// '533&lt;/span&gt;
+&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'53'&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;'3'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// '533'&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+For more, check out the this &lt;a href="https://www.destroyallsoftware.com/talks/wat"&gt;video&lt;/a&gt;. Start watching at about 1:20 -
+it's a riot.
+&lt;/p&gt;
+
+&lt;p&gt;
+All of this weirdness actually makes sense - just not to a beginner. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Javascript also gives plenty of freedom - there are many ways to do
+things. This can be great for the developer but not necessarily ideal
+for the learner. Loops, recursion, mapping functions - you name it,
+Javascript's got it. I like simpler languages for beginners because
+it's easier to get them thinking and problem solving in certain ways
+when there tool set is somewhat restricted (more on that when I write
+about Scheme).
+&lt;/p&gt;
+
+&lt;p&gt;
+Finally, the fact that Javascript's a mainstream language can be a
+minus. Given its popularity, a beginner class could have at  least a
+few kid who've at least played with the language. This can lead them
+to think they know more than they do and more importantly, this can
+be intimidating to the real newbies who develop the impression that
+"everyone knows this but me." A less mainstream language puts everyone
+on a level playing field.
+&lt;/p&gt;
+
+&lt;p&gt;
+Let me say again that I love javascript as a language and before a
+student graduates Stuy they can learn all about Javascript, front end
+development, some functional programming, and more. It's just not the
+right language to start with - at least not at Stuy.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="curriculum" label="curriculum"/>
+    <category term="education" label="education"/>
+    <category term="languages" label="languages"/>
+  </entry>
   <entry>
     <title>Should CS Ed be in bed with the College Board</title>
     <id>http://cestlaz.github.io/posts/cs-ed-in-bed-college-board/</id>

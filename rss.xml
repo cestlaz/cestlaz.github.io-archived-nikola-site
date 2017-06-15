@@ -1,5 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 13 Jun 2017 21:27:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Disclosing Bugs - requiring a project roadmap</title><link>http://cestlaz.github.io/posts/disclosing-bugs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link type="application/rss+xml" href="http://cestlaz.github.io/rss.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 15 Jun 2017 12:42:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>CS Educators StackExchange</title><link>http://cestlaz.github.io/posts/cs-educators-stackexchange/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+The &lt;a href="https://cseducators.stackexchange.com/"&gt;CS Educators StackExchange&lt;/a&gt; is now in public beta. For those of you
+who are not in tech, &lt;a href="https://en.wikipedia.org/wiki/Stack_Exchange"&gt;StackExchange&lt;/a&gt; is a network of question answering
+sites. &lt;a href="http://stackoverflow.com"&gt;StackOverflow&lt;/a&gt; is probably the most famous - many peoples go to
+site for computer science and programming questions and answers. 
+&lt;/p&gt;
+
+&lt;p&gt;
+During this period of public beta the site will be working on defining
+itself and also on developing a critical mass of users. I hope the
+site succeeds and I encourage everyone to &lt;a href="https://cseducators.stackexchange.com/"&gt;check it out&lt;/a&gt;, ask questions,
+answer some and let's all see where this goes.
+&lt;/p&gt;
+
+&lt;p&gt;
+An interesting difference between StackExchanges and most other
+communities is that it's a question answering site not a discussion
+board or shared resource collection. This works well for programming
+questions where you can share a code snippet, algorithm, or derivation
+which can be shown to be correct. We'll see how it works for something
+more nebulous like education. The voting system should help but the CS
+education community is already awash with anointed thought leaders
+with little or no teaching or CS experience. It will also be
+interesting to see how things develop given that, by and large, K12
+educators know a whole lot more about teaching than those in higher ed
+while the on the flip side, the professors are generally much
+more knowledgeable about the subject matter and then you have the
+education researcher which is another beast altogether. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Part of me thinks that discussion could be more valuable than answers
+and in fact, I'm finding the comments which are more discussion like
+to be more interesting, but that's just me. 
+&lt;/p&gt;
+
+&lt;p&gt;
+A side thing I noticed was that the moderators have taken to asking
+contributors not to link to other sites but to either write self
+contained answers. I understand this desire to have everything under
+your roof but it strikes me as wanting to use their silo instead of
+someone else's silo. This happened to me on an answer because I had
+already written a series of blog posts on the subject. Admittedly, I
+just put up four links and could have (and will) provide more context
+but I also had no desire to rewrite my content just to share info that
+was already out there. Likewise there was a question that was posed on
+A* which led to &lt;a href="http://cestlaz.github.io/posts/a-star-is-born/"&gt;this post&lt;/a&gt;. I wanted to share my thoughts with "my"
+community as well as on the stackexchange and didn't want to have to
+do the same thing twice.
+&lt;/p&gt;
+
+&lt;p&gt;
+One of the moderators claims is that a link might not be
+permanent. This is true. My blog might not be around in 5 years but
+then the CS Educators StackExchange might not as well. I hope both are
+around and thriving but time will tell.
+&lt;/p&gt;
+
+&lt;p&gt;
+This also got me thinking about the  mish mash of
+CS Educator communities floating around. I'm familiar with and a
+member of:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;A few Facebook groups (CS Education, CS Education Discussion, AP
+Comp Sci, APCSP)
+&lt;/li&gt;
+&lt;li&gt;The CS Education subreddit
+&lt;/li&gt;
+&lt;li&gt;A couple of mailing lists (the College Board AP Community, SIGCSE)
+&lt;/li&gt;
+&lt;li&gt;A few blogs are kind of communities in that there's a core group of
+readers but discussion is pretty sparse.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Are there others I'm not aware of?
+&lt;/p&gt;
+
+&lt;p&gt;
+This has led to a lot of duplication and some fragmentation and there
+is a concern about silos. The Facebook groups are very much a silo and
+to a certain extent so are the mailing lists. I guess the SIGCSE list
+is more community run than the College Board one, but still. Blogs are
+our own personal islands so while I wish more people would both blog
+and comment about CS Ed they're not necessarily open and permanent
+either. At least with some blogs and with the subreddit and
+stackexchange we can, if we want, download all of the data if we want
+and preserve it for posterity.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't know if there's a solution - maybe we should set up a &lt;a href="https://github.com/discourse/discourse"&gt;discourse&lt;/a&gt;
+instance - something really open and accessible.
+&lt;/p&gt;
+
+&lt;p&gt;
+In any event, please do check out the &lt;a href="https://cseducators.stackexchange.com/"&gt;CS Educators StackExchange&lt;/a&gt; and
+let's all help it become the best question answering resource it can
+be for our community.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>community</category><category>CS Education</category><guid>http://cestlaz.github.io/posts/cs-educators-stackexchange/</guid><pubDate>Thu, 15 Jun 2017 11:57:02 GMT</pubDate></item><item><title>Disclosing Bugs - requiring a project roadmap</title><link>http://cestlaz.github.io/posts/disclosing-bugs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -906,164 +1012,4 @@ introduce github to my classes here they are:
 &lt;p&gt;
 I'm hoping some of you have found this set of four posts useful or at
 least interesting.
-&lt;/p&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-4/</guid><pubDate>Tue, 11 Apr 2017 23:11:30 GMT</pubDate></item><item><title>A free multi-state clicker with built in redundency</title><link>http://cestlaz.github.io/posts/thumb_clickers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-Last Friday, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about the woes of &lt;a href="https://computinged.wordpress.com/2017/03/31/the-need-for-better-software-and-systems-to-support-active-cs-learning/%0A"&gt;using clickers&lt;/a&gt; in a
-class. The amount of effort required to use his school's approved
-clicker technology sounds ridiculous so while we need tools to better
-engage students in large class settings we need better tools that can
-be integrated into our classes more easily.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've never used clickers. On top of stories like Mark's, there are  a
-number of problems with using clickers in a public school.
-&lt;/p&gt;
-
-&lt;p&gt;
-You can't force students to buy them and in NYC, until recently,
-students couldn't use their phones (which they also might not have).
-Forgetting the expense, if the school provides them, is it one per
-student? If so, who's going to administer the clicker to student
-mapping and how will that be communicated to the teachers. If college
-tech infrastructures are sometimes lacking, high schools are orders of
-magnitudes worse. The resources just aren't there. Then we have to
-deal with loss and breakage.
-&lt;/p&gt;
-
-&lt;p&gt;
-If a teacher somehow gets a class set of clickers, they have to deal
-with mapping clickers to students for all of their classes and make
-sure the right student has the right clicker. Again, loss  and
-breakage is a problem.
-&lt;/p&gt;
-
-&lt;p&gt;
-Then you have to create the question content and hope that everything
-works in class.
-&lt;/p&gt;
-
-&lt;p&gt;
-The value added given the overhead just doesn't seem worth it
-particularly since high school classes, while large, are not in the
-hundreds and there are other methods of student engagement.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here's what I use instead. It's not perfect but it's low cost and low
-effort with a pretty high return.
-&lt;/p&gt;
-
-&lt;p&gt;
-The basic configuration, is a simple three state broadcast device.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's not without its problems and I don't think it would work as well
-in a large lecture but given the cost, it's well worth it.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, what is it?
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/thumbs/fonzup.jpg" alt="fonzup.jpg" align="center"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;
-Thumbs.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
-&lt;p&gt;
-Periodically, I'll poll my class.
-&lt;/p&gt;
-
-&lt;span&gt;
-&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/sidethumb.png"&gt;
-&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/upthumb.jpg"&gt;
-&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/downthumb.jpg"&gt;
-
-
-&lt;p&gt;
-Thumb to the side? Everything's OK. Keep going as you're going. I get
-it. Basically, things are good.
-&lt;/p&gt;
-
-&lt;p&gt;
-Thumb up? Speed up, you're going too slow, I got it five minutes ago or
-some similar big positive.
-&lt;/p&gt;
-
-&lt;p&gt;
-Thumb down? I have no idea what you're talking about.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's cheap, easy, quick, and once you can get your class to buy in,
-you can get a quick sense of the class.
-&lt;/p&gt;
-
-&lt;p&gt;
-The downsides?
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;The class has to have a level of comfort so that students vote
-honestly and don't just give you positive feedback.
-&lt;/li&gt;
-&lt;li&gt;No data collection.
-&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;
-The upsides?
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;quick
-&lt;/li&gt;
-&lt;li&gt;cheap
-&lt;/li&gt;
-&lt;li&gt;works on any topic on the fly
-&lt;/li&gt;
-&lt;li&gt;even if the votes are artificially skewed towards positive, it does
-forces the class to be at least a little attentive and to engage in
-some physical response
-&lt;/li&gt;
-&lt;li&gt;can get analog responses by allowing students to adjust wrist
-rotation
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-As to the redundancy? I've never had a kid leave their thumb at home
-or lose it and even if they did, they've got a second hand.
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/thumbs/fonztwo.jpg" alt="fonztwo.jpg" align="center" height="200"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-This also works in extreme environments. Try using a clicker or mobile
-app with gloves or mittens on or underwater.
-&lt;/p&gt;
-
-&lt;p&gt;
-I don't teach large lectures so I don't know how this would work in a
-huge class. I'd imagine it's still worth it given that it's so low
-friction and low cost of entry even if it's not perfect.
-&lt;/p&gt;
-&lt;/span&gt;&lt;/div&gt;
-&lt;/div&gt;</description><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/thumb_clickers/</guid><pubDate>Sat, 01 Apr 2017 21:23:21 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-4/</guid><pubDate>Tue, 11 Apr 2017 23:11:30 GMT</pubDate></item></channel></rss>

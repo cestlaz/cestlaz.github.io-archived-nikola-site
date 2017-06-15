@@ -3,13 +3,1722 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about tools</title>
   <id>http://cestlaz.github.io/categories/tools.atom</id>
-  <updated>2017-02-10T15:19:10Z</updated>
+  <updated>2017-06-15T09:37:32Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/tools.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/tools/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Python - Editor or IDE</title>
+    <id>http://cestlaz.github.io/posts/python-editors/</id>
+    <updated>2017-05-25T15:47:37-04:00</updated>
+    <published>2017-05-25T15:47:37-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/python-editors/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Earlier today I read Garth Flint's latest post on &lt;a href="https://gflint.wordpress.com/2017/05/25/python-editors-simple-wins/%0A"&gt;choosing a Python
+environment for his classes&lt;/a&gt;. While our classes and populations are
+different it looks like Garth and I share a lot of thoughts on the
+subject.
+&lt;/p&gt;
+
+&lt;p&gt;
+I started to write a comment to leave on Garth's blog but since it was
+getting a little long I thought I'd write it up as a post.
+&lt;/p&gt;
+
+&lt;p&gt;
+The question of development environment can be an important one and
+can make a big difference. When I designed the intro course at Stuy,
+the fact that Dr. Scheme existed made the use of Scheme in the class
+an option. Without it as a supportive and simple environment for the
+students I probably wouldn't have been able to use Scheme even though
+I really liked it as a teaching and learning tool.
+&lt;/p&gt;
+
+&lt;p&gt;
+Garth writes about issues relating to choosing a local development
+environment so that's what I'm going to stick to here. If you want an
+online environment check out &lt;a href="http://codesters.com"&gt;Codesters&lt;/a&gt; - a terrific online Python
+environment with lots of educational support materials and features
+and &lt;a href="http://repl.it"&gt;repl.it&lt;/a&gt; - an online environment that supports many languages and
+is also developing great teacher and class support – I very much like
+both of these platforms.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first question is editor or IDE?
+&lt;/p&gt;
+
+&lt;p&gt;
+As a user, I'm very pro editor. Learn a tool that you can customize to
+your tastes and that will work for all sorts of text editing chores
+from coding to document preparation to scheduling and more and you're
+in great shape. Personally, I'm an &lt;a href="http://cestlaz.github.io/stories/emacs"&gt;Emacs wonk&lt;/a&gt; but there are other
+choices as well.
+&lt;/p&gt;
+
+&lt;p&gt;
+As a teacher, though, Emacs or another programmers editor can be
+overwhelming for younger students and rank beginners. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This can make IDEs attractive.
+&lt;/p&gt;
+
+&lt;p&gt;
+Some IDEs are too big and cumbersome and can add even more cognitive
+load than an editor - think Eclipse for Java development. If you think
+writing
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;[]&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+is a lot of overhead, just wait until you have a novice try to start a
+Java project in Eclipse.
+&lt;/p&gt;
+
+&lt;p&gt;
+Other IDEs are more streamlined. One common choice is
+Idle. It's big advantage is that it's always available and is "part"
+of Python. On the other hand, it doesn't seem to add much to a bare
+editor and I've found that it can be somewhat confusing.
+&lt;/p&gt;
+
+&lt;p&gt;
+Garth seems to have settled on &lt;a href="https://www.jetbrains.com/pycharm/"&gt;PyCharm&lt;/a&gt; from &lt;a href="https://jetbrains.com"&gt;JetBrains&lt;/a&gt;. It's pretty
+streamlined and really easy to get up and running. JetBrains also
+provides a free community edition as well as a heavier professional
+one available for purchase. Garth notes that it's a Python only IDE
+but JetBrains has similar IDEs for a whole bunch of languages and I
+seem to recall you can add plugins across their IDEs to basically make
+them multi-language development environments.
+&lt;/p&gt;
+
+&lt;p&gt;
+I really like the JetBrains products and if I used an IDE I'm pretty
+sure I'd use their products. As a teacher though, I find their IDEs a
+little too powerful for my tastes. I want a learner IDE to provide the
+bare minimum of features - an interactive REPL, a code window, run and
+debug buttons, some completion and help - but to make those features
+really easy to use. JetBrains does a little too much. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I ended up using in the past is &lt;a href="http://drpython.sourceforge.net/"&gt;Dr Python&lt;/a&gt;. For me it hit the
+sweet spot. As an added bonus we were already using Dr. Racket (nee
+Dr. Scheme) and Dr. Java so our students had a similar environment
+across languages and even NetLogo looked and behaved similarly. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Is there a right answer? Probably not. Just as with choosing a first
+language there are always trade offs. Besides, if you don't have the
+right solution, there will be another one next week. Just recently I
+saw &lt;a href="http://thonny.org/"&gt;this project&lt;/a&gt;. A new beginners IDE for python. It looks interesting
+and worth checking out.
+&lt;/p&gt;
+
+&lt;p&gt;
+The right IDE can make a big difference while keeping the overhead low
+and giving just the right amount of support. For me, the last time
+around it was Dr. Python. For Garth, it looks like PyCharm fits the
+bill. Looking at the overall plan, I usually start the kids off with a
+simple learners IDE and then transition them to a programmers editor
+like Emacs as they gain more comfort and experience.
+&lt;/p&gt;
+
+&lt;p&gt;
+As a postscript, let me share these links on how I use Emacs for
+Python development (each with a video) as well as my series on how I
+use Emacs in general:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs/"&gt;http://cestlaz.github.io/stories/emacs/&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/using-emacs-12-python"&gt;http://cestlaz.github.io/posts/using-emacs-12-python&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/using-emacs-13-yasnippet"&gt;http://cestlaz.github.io/posts/using-emacs-13-yasnippet&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="teaching" label="teaching"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - 33 - projectile, dumb-jump</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-33-projectile-jump/</id>
+    <updated>2017-04-28T08:00:26-05:00</updated>
+    <published>2017-04-28T08:00:26-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-33-projectile-jump/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+If you keep Emacs open all the time you end up accumulating lots of
+buffers. That can make navigating a little bit awkward.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="https://github.com/bbatsov/projectile"&gt;Projectile&lt;/a&gt; is a really nice package that makes navigating in and
+between projects much easier. I also have &lt;a href="https://github.com/ericdanan/counsel-projectile"&gt;counsel-projectile&lt;/a&gt;
+installed.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's my configuration:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;;; projectile&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;projectile&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;projectile-global-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;projectile-completion-system&lt;/span&gt; &lt;span class="ss"&gt;'ivy&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;counsel-projectile&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;counsel-projectile-on&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Projectile considers a sub-directory tree to be a project if it's a
+git or other source control repo, if it's created by tool like lein,
+maven, or sbt, or if you put an empty file named &lt;b&gt;&lt;b&gt;.projectile&lt;/b&gt;&lt;/b&gt; in
+the root directory of the project.
+&lt;/p&gt;
+
+&lt;p&gt;
+Projectile learns about projects when you open a file in that project
+and then stores that information in an Emacs bookmark file in your
+.emacs.d directory.
+&lt;/p&gt;
+
+&lt;p&gt;
+You can switch between projects using &lt;code&gt;C-c p&lt;/code&gt; and when in a project,
+load another file using &lt;code&gt;C-c f&lt;/code&gt;. If you use the &lt;b&gt;&lt;b&gt;which-key&lt;/b&gt;&lt;/b&gt; package
+as I do, just type &lt;code&gt;C-c&lt;/code&gt; - the projectile prefix and then which-key
+will bring up help.
+&lt;/p&gt;
+
+&lt;p&gt;
+The video goes through some of my favorite features and you can find
+the full documentation can be found &lt;a href="http://projectile.readthedocs.io/en/latest/"&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+The other package I show is &lt;a href="https://github.com/jacktasia/dumb-jump"&gt;dumb-jump&lt;/a&gt;. It's basically a zero (or
+almost zero) configuration tags replacement. Really nice.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's my current config:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;dumb-jump&lt;/span&gt;
+  &lt;span class="nv"&gt;:bind&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"M-g o"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;dumb-jump-go-other-window&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"M-g j"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;dumb-jump-go&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"M-g x"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;dumb-jump-go-prefer-external&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"M-g z"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;dumb-jump-go-prefer-external-other-window&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+   &lt;span class="nv"&gt;:config&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;dumb-jump-selector&lt;/span&gt; &lt;span class="ss"&gt;'ivy&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;;; (setq dumb-jump-selector 'helm)&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="nv"&gt;:config&lt;/span&gt; 
+&lt;span class="c1"&gt;;; (setq dumb-jump-selector 'ivy) ;; (setq dumb-jump-selector 'helm)&lt;/span&gt;
+&lt;span class="nv"&gt;:init&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;dumb-jump-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+Enjoy.
+&lt;/p&gt;
+
+
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/wBfZzaff77g" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>GitHub as a tool for education</title>
+    <id>http://cestlaz.github.io/posts/sigcse-2017-github-4/</id>
+    <updated>2017-04-11T19:11:30-04:00</updated>
+    <published>2017-04-11T19:11:30-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse-2017-github-4/"/>
+    <summary type="html">&lt;p&gt;
+When I started using git and GitHub with my students it was a natural
+progression having started with started with CVS and then, as
+technology changed moving through Subversion and then Mercurial. It
+was all about using sensible professional software development
+techniques while making it easier for students to submit work and for
+me to evaluate their submissions.
+&lt;/p&gt;
+
+&lt;p&gt;
+Over time, I found that git and GitHub in fact provided some extra
+support for educators right out of the box.
+&lt;/p&gt;
+
+&lt;p&gt;
+In my &lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-3"&gt;last github post&lt;/a&gt; I talked about using the results of &lt;code&gt;git log&lt;/code&gt;
+and looking at diffs. Both provide ways of seeing what a student did
+and when. The commit log and history make it easier to hold students accountable to working
+through a project and not leavings for the last minute. The diffs make
+it easier to see what's changed both to see progress and also to help
+support students as they develop their projects.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you use Emacs, as I do, you can use the &lt;a href="https://github.com/pidu/git-timemachine"&gt;git timemachine&lt;/a&gt; package
+which does a great job visualizing changes:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/sigcse-github/timemachine.gif" alt="timemachine.gif" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Other editors might have a similar feature.
+&lt;/p&gt;
+
+&lt;p&gt;
+The contribution graphs also provide a quick snapshot which shows what
+team members are contributing and when:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/sigcse-github/githubgraph.png" alt="githubgraph.png" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+The punchcard graph is also useful to see when students actually do
+their work.
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/sigcse-github/githubgraph2.png" alt="githubgraph2.png" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+GitHub also make it easy to set up starter code or to have students
+"take over" each others projects by forking.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm very happy using git and GitHub as is but if you want more
+support, check out &lt;a href="https://classroom.github.com/"&gt;GitHub Classroom&lt;/a&gt;. Had it existed when I started,
+I'd probably have used it but since I had already gotten used to my
+work flows I've stuck with raw git and github.
+&lt;/p&gt;
+
+&lt;p&gt;
+In case you missed the earlier posts describing the process I use to
+introduce github to my classes here they are:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-1"&gt;Part 1&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-2"&gt;Part 2&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-3"&gt;Part 3&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+I'm hoping some of you have found this set of four posts useful or at
+least interesting.
+&lt;/p&gt;</summary>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>SIGCSE 2017 - a path to github part 3</title>
+    <id>http://cestlaz.github.io/posts/sigcse-2017-github-3/</id>
+    <updated>2017-03-30T14:02:31-04:00</updated>
+    <published>2017-03-30T14:02:31-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse-2017-github-3/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+I wanted to write this up earlier but, as so frequently happens all my
+dormant work projects decided it was time to rise up and demand
+instant attention.
+&lt;/p&gt;
+
+&lt;p&gt;
+When we left off, we had students pulling code and submitting homework
+via github.
+&lt;/p&gt;
+
+&lt;p&gt;
+Form here, it's an easy step to have them working on a small project
+in their own repo. In fact, sometimes, I'll jump right to a two person
+project where one person creates the repo and invites the other (and
+me) as a collaborator.
+&lt;/p&gt;
+
+&lt;p&gt;
+Once here, it's important to emphasize the normal workflow:
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;&lt;code&gt;git pull&lt;/code&gt;
+&lt;/li&gt;
+&lt;li&gt;edit stuff with an occasional &lt;code&gt;git add&lt;/code&gt;, &lt;code&gt;git rm&lt;/code&gt;,  or &lt;code&gt;got mv&lt;/code&gt;
+&lt;/li&gt;
+&lt;li&gt;commit
+&lt;/li&gt;
+&lt;li&gt;and an occasional &lt;code&gt;git push&lt;/code&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+Regardless of how much you emphasize the workflow you're now going to
+have to cover merges as well how to recover from problems by going to
+an earlier revision.
+&lt;/p&gt;
+
+&lt;p&gt;
+For going back to earlier versions or otherwise recovering from
+disasters, I don't show them the "right" way of doing things. I show
+them a way that's easy to remember and reliably works without tons of
+searching for answers.
+&lt;/p&gt;
+
+&lt;p&gt;
+First, given some repo, I have them clone a version under another
+name:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone git@github.com:hunterdaedalus/classcode.git newdirname
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Now, they have the original repo and a clone under the directory
+&lt;b&gt;&lt;b&gt;newdirname&lt;/b&gt;&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+I have them go into that new copy and use &lt;code&gt;git log&lt;/code&gt; to go through the
+logs to find an earlier version that they want to go back to.
+&lt;/p&gt;
+
+&lt;p&gt;
+The log will look something like this:
+&lt;/p&gt;
+
+&lt;p class="verse"&gt;
+commit 67eceb5e0a01ca5f5fb54ace65a4fe134f71edae&lt;br&gt;
+Author: Mike Zamansky &amp;lt;zamansky@gmail.com&amp;gt;&lt;br&gt;
+Date:   Sat Feb 25 12:32:26 2017 -0500&lt;br&gt;
+&lt;br&gt;
+    updated Makefile&lt;br&gt;
+&lt;br&gt;
+commit 7efed10eb6015276b0cb82874ce786dc68a683ae&lt;br&gt;
+Author: Mike Zamansky &amp;lt;zamansky@gmail.com&amp;gt;&lt;br&gt;
+Date:   Sat Feb 25 08:45:34 2017 -0500&lt;br&gt;
+&lt;br&gt;
+    broke out main –&amp;gt; main and shapes&lt;br&gt;
+&lt;br&gt;
+commit e8b5c240123a7cb17920d52b4aba9cf5787ddab2&lt;br&gt;
+Author: Mike Zamansky &amp;lt;zamansky@gmail.com&amp;gt;&lt;br&gt;
+Date:   Sat Feb 25 08:36:29 2017 -0500&lt;br&gt;
+&lt;br&gt;
+    added lab3 code&lt;br&gt;
+&lt;br&gt;
+commit 6d5bcf866306334ddc5c6a48e8f49fb39ddbcb18&lt;br&gt;
+Author: Some other coder &amp;lt;somone@somewhere.net&amp;gt;&lt;br&gt;
+Date:   Sun Feb 19 19:29:51 2017 -0500&lt;br&gt;
+&lt;br&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Find the hash that they want to get back to and &lt;b&gt;&lt;b&gt;checkout&lt;/b&gt;&lt;/b&gt; that
+version (you normally only have to use the first few characters of
+the hash):
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git checkout 7efed10
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Now they can grab what they want, copy it into the working copy of the
+repo, &lt;b&gt;&lt;b&gt;commit&lt;/b&gt;&lt;/b&gt; the changes and &lt;b&gt;&lt;b&gt;push&lt;/b&gt;&lt;/b&gt; them back.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+For Merging, I start by having them do it manually. I'll have them
+load the file in question into their editor and look for the chunks
+that look like this:
+&lt;/p&gt;
+
+&lt;p class="verse"&gt;
+&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; A&lt;br&gt;
+lines in file A&lt;br&gt;
+&lt;code&gt;=====&lt;/code&gt;&lt;br&gt;
+lines in file B&lt;br&gt;
+&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; B&lt;br&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+They'll manually make the changes, then save, commit and push back.
+&lt;/p&gt;
+
+&lt;p&gt;
+Later, I'll show them a couple of tools to help along the way. I
+usually show ediff in emacs along with meld.
+&lt;/p&gt;
+
+&lt;p&gt;
+Once they've been doing this for a while, it's easy to expand group
+sizes. After that, I'll introduce &lt;b&gt;&lt;b&gt;issues&lt;/b&gt;&lt;/b&gt; via the github interface.
+&lt;/p&gt;
+
+&lt;p&gt;
+The last big topic is branches.
+&lt;/p&gt;
+
+&lt;p&gt;
+First I show basic branches and merging. Here's a pretty good &lt;a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging"&gt;run
+through&lt;/a&gt;. Afterwards, I'll show how branching works in conjunction with
+github. This is also a good time to emphasize that students have to
+actually read the messages that git gives them when things don't  go
+well. In most cases, the message will contain the exact thing to type
+to fix the problem (such as linking a branch with a branch up on
+github).
+&lt;/p&gt;
+
+&lt;p&gt;
+Now is also the time to introduce pull requests and how to use them to
+support code review. The general setup I recommend is one branch per
+group member and a main "deployment" branch with group members
+creating more branches as they see fit.
+&lt;/p&gt;
+
+&lt;p&gt;
+That's about it. I've followed this process, more or less, over a
+semester, over a year, and over multiple years. It's worked for me, I
+hope some of this helps you as well.
+&lt;/p&gt;
+
+&lt;p&gt;
+In the next and probably last git/github post I'll talk about the
+educational benefits that I've discovered along the way. After that,
+I'll get back to some emacs videos, other SIGCSE stuff and my normal rants.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>SIGCSE 2017 - a path to github part 2</title>
+    <id>http://cestlaz.github.io/posts/sigcse-2017-github-2/</id>
+    <updated>2017-03-19T10:11:00-04:00</updated>
+    <published>2017-03-19T10:11:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse-2017-github-2/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;Note:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Just for some quick context. The process I started to describe in the
+last post and continue here chronicles what I did at Stuy with high
+schoolers. Now that I'm at Hunter college, I'm adapting the process
+but the overarching themes remain the same.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;Post starts here:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Now that your students have been pulling the classcode repo regularly
+it's time to move to the next step - adding and pushing files to a
+repo.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't claim to do this the "right way" or the best way but it's
+worked for me and it's gotten my students up to speed.
+&lt;/p&gt;
+
+&lt;p&gt;
+I ease my students into adding and pushing files using git through
+homework submission. I create a single repo, usually named
+&lt;b&gt;&lt;b&gt;submissions&lt;/b&gt;&lt;/b&gt; and make a folder for each student underneath looking
+something like this:
+&lt;/p&gt;
+&lt;p class="verse"&gt;
+.&lt;br&gt;
+└── submissions&lt;br&gt;
+    ├── abram_sarah&lt;br&gt;
+    ├── chen_stuart&lt;br&gt;
+    └── thompson_steve&lt;br&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Before going any further, let me clear up one thing. The repo is
+public so all the students have access to each others work. I'm OK
+with that. We could have each student make their own repo and use git
+&lt;a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules"&gt;submodules&lt;/a&gt; to make a submissions repo but administration is much
+trickier and we lose the chance to build a culture of cooperation and
+trust. We can lock down our submission systems as much as we want. If
+students want to share assignments there's nothing we can do about
+it. 
+&lt;/p&gt;
+
+&lt;p&gt;
+My preference is to try to build a culture that minimizes bad
+behavior and rewards good behavior. I'd rather see an incorrect
+homework so that I can tell what we need to work on than a copied
+perfect assignment. I'd rather see students cite each other, share
+properly, and support each other than copy in the shadows. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not naive enough to believe that copying doesn't happen in my
+classes but I still prefer erring on the side of openness.
+&lt;/p&gt;
+
+&lt;p&gt;
+Once the repo is set up, I give all the students access. This is a
+little onerous since I have to type each of their GitHub usernames
+under the collaborators section of the submissions repo but I only
+have to do this once a semester.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then I teach the workflow. Assignments go into a file or folder under
+their directory named ##_name where ## is the assignment number
+(01,02,03, etc) and name is the assignment name. The student workflow
+is:
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;git pull
+&lt;/li&gt;
+&lt;li&gt;git add (sometimes)
+&lt;/li&gt;
+&lt;li&gt;git commit
+&lt;/li&gt;
+&lt;li&gt;git push
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+Since every student is working in their own directory, things
+basically work.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first issue that students come up with is when another student
+pushes before another student. The second student merely has to do
+another &lt;b&gt;&lt;b&gt;git pull&lt;/b&gt;&lt;/b&gt; before proceeding. This provides an easy
+introduction to dealing with the distributed nature of git.
+&lt;/p&gt;
+
+&lt;p&gt;
+There will occasionally be other issues when students don't follow
+procedure exactly so I'll have to fix the repo every now and then but
+nothing too bad and each time is a opportunity to show the class:
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;you can pretty much always restore and fix things once you commit
+them.
+&lt;/li&gt;
+&lt;li&gt;the specifics to fix things.
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+There will be a few bumps in the road but after a few assignments the
+sailing will be pretty smooth.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the end of the day, the students are a little closer to being fully
+fluent using git, they're hopefully using each others code as
+resources but in a proper way and since the students are all using a
+consistent assignment naming convention I can use simple scripts and
+shell commands to do all sorts of processing on assignments.
+&lt;/p&gt;
+
+&lt;p&gt;
+That's the end of phase two. The next step  brings us to small
+projects using git.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>SIGCSE 2017 - a path to github part 1</title>
+    <id>http://cestlaz.github.io/posts/sigcse-2017-github-1/</id>
+    <updated>2017-03-16T09:11:00-04:00</updated>
+    <published>2017-03-16T09:11:00-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse-2017-github-1/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Both at and prior to SIGCSE 2017, I promised to write up the steps I
+take to introduce and use revision control systems in my classes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This series is not meant to be a git or &lt;a href="http://github.com"&gt;GitHub&lt;/a&gt; tutorial. There are
+plenty of those already (two of which I've linked to below).  This is
+about the process I use with my students to get them up to speed. 
+&lt;/p&gt;
+
+&lt;p&gt;
+As with any new tool, there will be some resistance but once git saves
+them once, they get religion. There will also be some bumps in the
+road but at the end of the day, the students will be using a valuable
+and necessary tool. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I was also surprised at the ancillary benefits I got as a teacher by
+using GitHub in particular. I'll talk about that at the end of the
+series.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Here's part one. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm doing this with git and GitHub but there's no reason why other
+systems and hosts can't be used. I'd also recommend that any educator
+or student sign up for the assorted &lt;a href="https://education.github.com/"&gt;discounts&lt;/a&gt; offered by GitHub.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've followed this basic idea multiple times and done it over the
+course of a single semester, a year, and even two years. Regardless of
+time frame, the idea is the same. Make each step simple and relevant
+and introduce complexity and roadblocks a piece at a time.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;Step 1 - code distribution&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+To start, I don't even talk about version control. We start with code
+distribution. For years, I've looked for efficient ways of sharing
+code with my classes. Both code developed in class and code for
+assignments. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I've tried things like NFS, Dropbox, online code repositories like the
+files section of systems like Moodle or Blackboard.
+&lt;/p&gt;
+
+&lt;p&gt;
+At Stuy, we've always had efficiency problems with NFS and Dropbox has
+multiple problems ranging from students not being able to install the
+client on school machines to the problems of the network hit when a
+room full of kids are syncing at the same time.
+&lt;/p&gt;
+
+&lt;p&gt;
+Uploading to a CMS system was also problematic - I'm a command line
+wonk and hate going through slow web page menus to navigate a
+filesystem and upload files. I also had to remember to get the files
+off of whatever machine I was working on in class and then transfer
+them to the CMS when I had a free moment.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enter git. Now, of course, if you're going to use git in the classroom
+you have to know it. There are plenty of resources out there. Online
+courses, articles, videos, and tutorials. Here are a couple:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://try.github.io/"&gt;https://try.github.io/&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=0fKg7e37bQE"&gt;https://www.youtube.com/watch?v=0fKg7e37bQE&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+I also want to point out that I just use raw command line git along
+with native GitHub. GitHub has rolled out &lt;a href="https://classroom.github.com/"&gt;GitHub Classroom&lt;/a&gt; which adds
+a layer of support for educators. I don't use it because, as I said,
+I'm an old school command line wonk and also because I figured out a
+sequence that worked for me and my students before GitHub Classroom
+existed. Were I starting now, I'd take some time to look at their
+current offerings before jumping in.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2-1" class="outline-3"&gt;
+&lt;h3 id="sec-2-1"&gt;Set up&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-1"&gt;
+&lt;p&gt;
+Before starting, make sure you register your ssh keys. &lt;a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/"&gt;This&lt;/a&gt; help page
+has more information. You'll want to register an ssh key from every
+machine you use - home, work, laptop. 
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Now go over to GitHub and make a new repository. I usually name it
+&lt;b&gt;&lt;b&gt;classcode&lt;/b&gt;&lt;/b&gt;. &lt;b&gt;&lt;b&gt;BEGINNER NOTE:&lt;/b&gt;&lt;/b&gt; when creating the repo, make sure to
+check the "initialize this repository with a README" box. If you don't
+you'll be given a set of instructions on how to set things up once you
+click &lt;b&gt;&lt;b&gt;Create repository&lt;/b&gt;&lt;/b&gt; but it's easier and easier to follow if
+you start with an initialized repo with a README.
+&lt;/p&gt;
+
+&lt;p&gt;
+I make the repo public – it's code I'm distributing – nothing to
+hide here. If you aren't comfortable with that, just make the repo
+private. If you've registered as a teacher with GitHub, you can set up
+an organization and you'll be able to set up free private repos within
+it. The other downside here is that you'll have to individually give
+each student access to the repo. That's a mild annoyance but it only
+has to be done once.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2-2" class="outline-3"&gt;
+&lt;h3 id="sec-2-2"&gt;Teacher use&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-2"&gt;
+&lt;p&gt;
+Next, clone out the repo. &lt;b&gt;&lt;b&gt;BEGINNER NOTE:&lt;/b&gt;&lt;/b&gt; Make sure you check out
+the ssh version not the https version. Just make sure that when you
+click the &lt;b&gt;&lt;b&gt;clone&lt;/b&gt;&lt;/b&gt; button, it says "Clone with SSH." If not, just
+click the "Use SSH" link in the same box. Students will clone the
+using https.
+&lt;/p&gt;
+
+&lt;p&gt;
+From the teacher point of view, you can just start using the repo. My
+work flow is typically:
+&lt;/p&gt;
+
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;git pull&lt;/b&gt;&lt;/b&gt; at the start of class
+&lt;/li&gt;
+&lt;li&gt;write code throughout class
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;&lt;b&gt;git add&lt;/b&gt;&lt;/b&gt;, &lt;b&gt;&lt;b&gt;git commit&lt;/b&gt;&lt;/b&gt;, and &lt;b&gt;&lt;b&gt;git push&lt;/b&gt;&lt;/b&gt; at the end of class
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+I use a similar flow when I want to add files in my office or at home.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2-3" class="outline-3"&gt;
+&lt;h3 id="sec-2-3"&gt;Student use&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-3"&gt;
+&lt;p&gt;
+From the student point of view, assuming a public repo, they just have to clone the repo and
+at the beginning of every class or work session, do a &lt;b&gt;&lt;b&gt;git
+pull&lt;/b&gt;&lt;/b&gt;. That's all there is to it.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2-4" class="outline-3"&gt;
+&lt;h3 id="sec-2-4"&gt;Thoughts&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-2-4"&gt;
+&lt;p&gt;
+That's it. The kids are now using GitHub – they're probably looking
+at and poking around on the web site as well as pulling files to their
+machines. You can also, in class, show things like &lt;b&gt;&lt;b&gt;git status&lt;/b&gt;&lt;/b&gt;,
+&lt;b&gt;&lt;b&gt;git log&lt;/b&gt;&lt;/b&gt;, and &lt;b&gt;&lt;b&gt;git diff&lt;/b&gt;&lt;/b&gt; to set the stage for step 2 of this
+process and beyond.
+&lt;/p&gt;
+
+&lt;p&gt;
+Since the students aren't adding, committing or pushing, you probably won't
+get any errors. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The only problem that could reasonably occur is if a student places a
+file in their local copy of the repo with the same name as something
+they haven't pulled yet. This is pretty easy to address and provides a
+nice stepping stone lesson to again, set the stage for more complex
+operations.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+I'm happy with this as a first step towards git using GitHub. It
+provides a nice way of sharing class code while gently introducing the
+students to the tool.
+&lt;/p&gt;
+
+&lt;p&gt;
+The next step  is having the students add files to a repo. That's the
+next post in this series.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - 32 - C++</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-32-cpp/</id>
+    <updated>2017-03-04T08:00:26-05:00</updated>
+    <published>2017-03-04T08:00:26-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-32-cpp/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+This video is specifically for my students or any students out there
+who are starting with C++ and emacs. The videos also longer than usual, coming in
+at a little over 20 minutes.
+&lt;/p&gt;
+
+&lt;p&gt;
+The big difference is instead of building on my &lt;a href="https://github.com/zamansky/using-emacs"&gt;existing config&lt;/a&gt;, the
+code at the bottom is a complete standalone configuration. It's all
+pulled from the main config with one additional package.
+&lt;/p&gt;
+
+&lt;p&gt;
+By taking the code at the bottom and putting in into a file named &lt;b&gt;&lt;b&gt;init.el&lt;/b&gt;&lt;/b&gt; in a
+directory off of your home directory named &lt;b&gt;&lt;b&gt;.emacs.d&lt;/b&gt;&lt;/b&gt; and run emacs,
+it will install everything and you'll be good to go.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you've been following this series, the only new package is &lt;a href="https://github.com/leoliu/ggtags"&gt;ggtags&lt;/a&gt;
+and the configuration code is:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;;; tags for code navigation&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;ggtags&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt; 
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'c-mode-common-hook&lt;/span&gt;
+	    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;when&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;derived-mode-p&lt;/span&gt; &lt;span class="ss"&gt;'c-mode&lt;/span&gt; &lt;span class="ss"&gt;'c++-mode&lt;/span&gt; &lt;span class="ss"&gt;'java-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+		&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ggtags-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;
+  &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+For people new to the series, the top section sets up the emacs
+package manager. After that we install:
+&lt;/p&gt;
+
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col class="left"&gt;
+
+&lt;col class="left"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col" class="left"&gt;Package&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="left"&gt;which-key&lt;/td&gt;
+&lt;td class="left"&gt;brings up contextual key binding help&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;auto-complete&lt;/td&gt;
+&lt;td class="left"&gt;just as the name says&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;flycheck&lt;/td&gt;
+&lt;td class="left"&gt;in line, live syntax checking&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;yasnippet&lt;/td&gt;
+&lt;td class="left"&gt;snippets and expansion&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;ggtags&lt;/td&gt;
+&lt;td class="left"&gt;source code navigation&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;color-theme&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="left"&gt;moe-theme&lt;/td&gt;
+&lt;td class="left"&gt;just because&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;
+The video also show me using &lt;b&gt;&lt;b&gt;counsel-ag&lt;/b&gt;&lt;/b&gt; which is part of the
+swiper/counsel package. You can check that out &lt;a href="http://cestlaz.github.io/posts/using-emacs-6-swiper"&gt;here&lt;/a&gt; as well as some
+other packages I use like &lt;b&gt;&lt;b&gt;smartparens&lt;/b&gt;&lt;/b&gt;, &lt;b&gt;&lt;b&gt;hungry-delete&lt;/b&gt;&lt;/b&gt; and
+probably a few more.
+&lt;/p&gt;
+
+&lt;p&gt;
+You can look at my complete configuration or the other videos for
+details.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you're an experienced C++ developer and use emacs, please share
+tips, tricks, and suggestions. I haven't done serious C++ work in over
+a decade and while I did professional development in C in a past life,
+never in C++.
+&lt;/p&gt;
+
+&lt;p&gt;
+The packages used here are not C++ specific - I use them for Java,
+Python, Clojure, and Javascript development as well.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Here's the configuration code:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;;; set up package sources&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;require&lt;/span&gt; &lt;span class="ss"&gt;'package&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;package-enable-at-startup&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'package-archives&lt;/span&gt;
+	     &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"melpa"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"https://melpa.org/packages/"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-initialize&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; Bootstrap `use-package'&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;unless&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-installed-p&lt;/span&gt; &lt;span class="ss"&gt;'use-package&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-refresh-contents&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;package-install&lt;/span&gt; &lt;span class="ss"&gt;'use-package&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; small interface tweaks&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;inhibit-startup-message&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;tool-bar-mode&lt;/span&gt; &lt;span class="mi"&gt;-1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;fset&lt;/span&gt; &lt;span class="ss"&gt;'yes-or-no-p&lt;/span&gt; &lt;span class="ss"&gt;'y-or-n-p&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"&amp;lt;f5&amp;gt;"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'revert-buffer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; bring up help for key bindings&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;which-key&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt; 
+  &lt;span class="nv"&gt;:config&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;which-key-mode&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+
+&lt;span class="c1"&gt;;; Auto completion&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;auto-complete&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:init&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;progn&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ac-config-default&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-auto-complete-mode&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;))&lt;/span&gt;
+
+
+&lt;span class="c1"&gt;;; on the fly syntax checking&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;flycheck&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:init&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-flycheck-mode&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; snippets and snippet expansion&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;yasnippet&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:init&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;yas-global-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+
+&lt;span class="c1"&gt;;; tags for code navigation&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;ggtags&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt; 
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'c-mode-common-hook&lt;/span&gt;
+	    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;when&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;derived-mode-p&lt;/span&gt; &lt;span class="ss"&gt;'c-mode&lt;/span&gt; &lt;span class="ss"&gt;'c++-mode&lt;/span&gt; &lt;span class="ss"&gt;'java-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+		&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ggtags-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))))&lt;/span&gt;
+  &lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="c1"&gt;;; Theme&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;color-theme&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;moe-theme&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;moe-light&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/7SQmleA4EMo" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Enjoy.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - 31 - elfeed part 3 - macros</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-31-elfeed-3/</id>
+    <updated>2017-03-01T08:00:26-05:00</updated>
+    <published>2017-03-01T08:00:26-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-31-elfeed-3/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+In &lt;i&gt;part 2&lt;/i&gt; I talked about how I used &lt;a href="https://github.com/abo-abo/hydra"&gt;Hyrdas&lt;/a&gt; to quickly navigate through
+elfeed tags. It was a nice step up but the fact that I still had to
+manually edit my configuration code for every new tag to update the
+hydra was a problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+Basically, I had to somehow or other, take a list of all the active
+tags and with it build a &lt;b&gt;&lt;b&gt;defhydra&lt;/b&gt;&lt;/b&gt; command that will then make my
+Hydra.
+&lt;/p&gt;
+
+&lt;p&gt;
+Fortunately, emacs, being a lisp, has macros. I'm not talking about
+keyboard macros which I talked about in &lt;a href="http://cestlaz.github.io/posts/using-emacs-15-macros/#.WLbj5t9idKQ"&gt;episode 15&lt;/a&gt; but rather &lt;a href="http://wiki.c2.com/?LispMacro"&gt;Lisp
+style macros&lt;/a&gt;. Macros let you transform code and then execute the
+transformed code. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The example I give in the video:
+&lt;/p&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defmacro&lt;/span&gt; &lt;span class="nv"&gt;infix&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;op&lt;/span&gt; &lt;span class="nv"&gt;b&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="o"&gt;`&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="nv"&gt;op&lt;/span&gt; &lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="nv"&gt;b&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;infix&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="nv"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; evaluates to 11&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+This transforms the &lt;b&gt;&lt;b&gt;3+8&lt;/b&gt;&lt;/b&gt; into &lt;b&gt;&lt;b&gt;(+ 3 8)&lt;/b&gt;&lt;/b&gt; and then evaluates it to
+be 11.
+&lt;/p&gt;
+
+&lt;p&gt;
+We can use this idea with our Hydra.
+&lt;/p&gt;
+
+&lt;p&gt;
+We can use the call &lt;b&gt;&lt;b&gt;elfeed-db-get-all-tags&lt;/b&gt;&lt;/b&gt; to get a list of all
+the tags in our database. I decided that if I had an uppercase letter
+in the tag, I'd use the lowercase version of that letter as my "hotkey"
+and if it didn't, I'd just use the first letter.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, given a tag list of:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;active&lt;/span&gt; &lt;span class="nv"&gt;blogs&lt;/span&gt; &lt;span class="nv"&gt;cs&lt;/span&gt; &lt;span class="nv"&gt;eDucation&lt;/span&gt; &lt;span class="nv"&gt;emacs&lt;/span&gt; &lt;span class="nv"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;misc&lt;/span&gt; &lt;span class="nv"&gt;sports&lt;/span&gt; &lt;span class="nv"&gt;star&lt;/span&gt; &lt;span class="nv"&gt;tech&lt;/span&gt; &lt;span class="nv"&gt;unread&lt;/span&gt; &lt;span class="nv"&gt;webcomics&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+I'd want a "hotkey" of &lt;b&gt;&lt;b&gt;b&lt;/b&gt;&lt;/b&gt; for logs and &lt;b&gt;&lt;b&gt;d&lt;/b&gt;&lt;/b&gt; for eDucation.
+&lt;/p&gt;
+
+&lt;p&gt;
+The routine &lt;b&gt;&lt;b&gt;z/hasCap&lt;/b&gt;&lt;/b&gt; tests to see if a tag has a capital letter in
+it and &lt;b&gt;&lt;b&gt;z/get-hydra-option-key&lt;/b&gt;&lt;/b&gt; returns the final "hotkey:"
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(defun z/hasCap (s) ""
+       (let ((case-fold-search nil))
+       (string-match-p "[[:upper:]]" s)
+       ))
+
+
+(defun z/get-hydra-option-key (s)
+  "returns single upper case letter (converted to lower) or first"
+  (interactive)
+  (let ( (loc (z/hasCap s)))
+    (if loc
+	(downcase (substring s loc (+ loc 1)))
+      (substring s 0 1)
+    )))
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+&lt;b&gt;&lt;b&gt;mz/make-elfeed-cats&lt;/b&gt;&lt;/b&gt; takes a list of tags and returns a list of
+items where each item is in the form expected by the hydra definition:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"t"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-set-filter&lt;/span&gt; &lt;span class="s"&gt;"@6-months-ago +tagname"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="s"&gt;"tagname"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;mz/make-elfeed-cats&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;tags&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="s"&gt;"Returns a list of lists. Each one is line for the hydra configuratio in the form&lt;/span&gt;
+&lt;span class="s"&gt;     (c function hint)"&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;mapcar&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;tag&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;let* &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;
+		   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;tagstring&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;symbol-name&lt;/span&gt; &lt;span class="nv"&gt;tag&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+		   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;c&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;z/get-hydra-option-key&lt;/span&gt; &lt;span class="nv"&gt;tagstring&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+		   &lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;list &lt;/span&gt;&lt;span class="nv"&gt;c&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;append &lt;/span&gt;&lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nv"&gt;elfeed-search-set-filter&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;list &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;format&lt;/span&gt; &lt;span class="s"&gt;"@6-months-ago +%s"&lt;/span&gt; &lt;span class="nv"&gt;tagstring&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="nv"&gt;tagstring&lt;/span&gt;  &lt;span class="p"&gt;)))&lt;/span&gt;
+	  &lt;span class="nv"&gt;tags&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Finally, here's our macro:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defmacro&lt;/span&gt; &lt;span class="nv"&gt;mz/make-elfeed-hydra&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+  &lt;span class="o"&gt;`&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defhydra&lt;/span&gt; &lt;span class="nv"&gt;mz/hydra-elfeed&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+     &lt;span class="s"&gt;"filter"&lt;/span&gt;
+     &lt;span class="o"&gt;,@&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;mz/make-elfeed-cats&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-db-get-all-tags&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-set-filter&lt;/span&gt; &lt;span class="s"&gt;"@6-months-ago +star"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="s"&gt;"Starred"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"M"&lt;/span&gt; &lt;span class="nv"&gt;elfeed-toggle-star&lt;/span&gt; &lt;span class="s"&gt;"Mark"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"A"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-set-filter&lt;/span&gt; &lt;span class="s"&gt;"@6-months-ago"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="s"&gt;"All"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"T"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-set-filter&lt;/span&gt; &lt;span class="s"&gt;"@1-day-ago"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="s"&gt;"Today"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Q"&lt;/span&gt; &lt;span class="nv"&gt;bjm/elfeed-save-db-and-bury&lt;/span&gt; &lt;span class="s"&gt;"Quit Elfeed"&lt;/span&gt; &lt;span class="nv"&gt;:color&lt;/span&gt; &lt;span class="nv"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"q"&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="s"&gt;"quit"&lt;/span&gt; &lt;span class="nv"&gt;:color&lt;/span&gt; &lt;span class="nv"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+     &lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The line that starts with &lt;b&gt;*,@*&lt;/b&gt; calls the routine that builds lines
+of code for all the tags in the database and the macro leaves me with
+the defhydra I need.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+I then redefine the hydra every time I need it, just in case tags
+changed:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(defun mz/make-and-run-elfeed-hydra ()
+  ""
+  (interactive)
+  (mz/make-elfeed-hydra)
+  (mz/hydra-elfeed/body))
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+and bind &lt;b&gt;&lt;b&gt;mz/make-and-run-elfeed-hydra&lt;/b&gt;&lt;/b&gt; to j and J in my elfeed
+keymap (this code goes in the bind section of my use-package elfeed
+section):
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"j"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;mz/make-and-run-elfeed-hydra&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"J"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;mz/make-and-run-elfeed-hydra&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+As long as I remember to name my tags in a way that they don't
+conflict with one another I can quickly navigate all around elfeed.
+&lt;/p&gt;
+
+&lt;p&gt;
+Macros FTW!!!!
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Here's the video:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/5zuSUbAHH8c" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Enjoy.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - 30 - elfeed part 2 - Hydras</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-30-elfeed-2/</id>
+    <updated>2017-02-25T08:00:26-05:00</updated>
+    <published>2017-02-25T08:00:26-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-30-elfeed-2/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+In &lt;a href="http://cestlaz.github.io/posts/using-emacs-29%2520elfeed/"&gt;part 1&lt;/a&gt;, I talked about &lt;a href="https://github.com/skeeto/elfeed"&gt;elfeed&lt;/a&gt;, a really awesome feed reader for
+emacs. Generally, I'm really liking it but there's been one problem -
+not being able to navigate quickly between groups of feeds with a
+keystroke or two.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's emacs so there has to be a solution.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enter &lt;a href="https://github.com/abo-abo/hydra"&gt;hydra&lt;/a&gt; - a terrific emacs package from the same guy who brought
+us &lt;a href="https://github.com/abo-abo/hydra"&gt;swiper&lt;/a&gt;, another one of my favorite emacs packages.
+&lt;/p&gt;
+
+&lt;p&gt;
+Basically, Hydra allows us to create Hydras - a collection of emacs
+commands tied o a single prefix along with a nice interface and help
+system.
+&lt;/p&gt;
+
+&lt;p&gt;
+Truth be told, I don't use hydra as much anymore since &lt;a href="https://github.com/justbur/emacs-which-key"&gt;which-key&lt;/a&gt;
+does such a great job most of the time. Which-key, however, is no help
+here.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the code to install hydra along with a some of sample Hydra's
+I use:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;hydra&lt;/span&gt; 
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; Hydra for modes that toggle on and off&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt;
+ &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-x t"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+ &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defhydra&lt;/span&gt; &lt;span class="nv"&gt;toggle&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:color&lt;/span&gt; &lt;span class="nv"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="s"&gt;"toggle"&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"a"&lt;/span&gt; &lt;span class="nv"&gt;abbrev-mode&lt;/span&gt; &lt;span class="s"&gt;"abbrev"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"s"&lt;/span&gt; &lt;span class="nv"&gt;flyspell-mode&lt;/span&gt; &lt;span class="s"&gt;"flyspell"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"d"&lt;/span&gt; &lt;span class="nv"&gt;toggle-debug-on-error&lt;/span&gt; &lt;span class="s"&gt;"debug"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"c"&lt;/span&gt; &lt;span class="nv"&gt;fci-mode&lt;/span&gt; &lt;span class="s"&gt;"fCi"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"f"&lt;/span&gt; &lt;span class="nv"&gt;auto-fill-mode&lt;/span&gt; &lt;span class="s"&gt;"fill"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"t"&lt;/span&gt; &lt;span class="nv"&gt;toggle-truncate-lines&lt;/span&gt; &lt;span class="s"&gt;"truncate"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"w"&lt;/span&gt; &lt;span class="nv"&gt;whitespace-mode&lt;/span&gt; &lt;span class="s"&gt;"whitespace"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"q"&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="s"&gt;"cancel"&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; Hydra for navigation&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt;
+ &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-x j"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+ &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defhydra&lt;/span&gt; &lt;span class="nv"&gt;gotoline&lt;/span&gt; 
+   &lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="nv"&gt;:pre&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;linum-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	  &lt;span class="nv"&gt;:post&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;linum-mode&lt;/span&gt; &lt;span class="mi"&gt;-1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+   &lt;span class="s"&gt;"goto"&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"t"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)(&lt;/span&gt;&lt;span class="nf"&gt;move-to-window-line-top-bottom&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="s"&gt;"top"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"b"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)(&lt;/span&gt;&lt;span class="nf"&gt;move-to-window-line-top-bottom&lt;/span&gt; &lt;span class="mi"&gt;-1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="s"&gt;"bottom"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"m"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)(&lt;/span&gt;&lt;span class="nf"&gt;move-to-window-line-top-bottom&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="s"&gt;"middle"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"e"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)(&lt;/span&gt;&lt;span class="nf"&gt;end-of-buffer&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="s"&gt;"end"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"c"&lt;/span&gt; &lt;span class="nv"&gt;recenter-top-bottom&lt;/span&gt; &lt;span class="s"&gt;"recenter"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"n"&lt;/span&gt; &lt;span class="nv"&gt;next-line&lt;/span&gt; &lt;span class="s"&gt;"down"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"p"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;forward-line&lt;/span&gt; &lt;span class="mi"&gt;-1&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;  &lt;span class="s"&gt;"up"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"g"&lt;/span&gt; &lt;span class="nv"&gt;goto-line&lt;/span&gt; &lt;span class="s"&gt;"goto-line"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; Hydra for some org-mode stuff&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt;
+ &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-c t"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+ &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defhydra&lt;/span&gt; &lt;span class="nv"&gt;hydra-global-org&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:color&lt;/span&gt; &lt;span class="nv"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="s"&gt;"Org"&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"t"&lt;/span&gt; &lt;span class="nv"&gt;org-timer-start&lt;/span&gt; &lt;span class="s"&gt;"Start Timer"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"s"&lt;/span&gt; &lt;span class="nv"&gt;org-timer-stop&lt;/span&gt; &lt;span class="s"&gt;"Stop Timer"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"r"&lt;/span&gt; &lt;span class="nv"&gt;org-timer-set-timer&lt;/span&gt; &lt;span class="s"&gt;"Set Timer"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; This one requires you be in an orgmode doc, as it sets the timer for the header&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"p"&lt;/span&gt; &lt;span class="nv"&gt;org-timer&lt;/span&gt; &lt;span class="s"&gt;"Print Timer"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; output timer value to buffer&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"w"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;org-clock-in&lt;/span&gt; &lt;span class="o"&gt;'&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="s"&gt;"Clock-In"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; used with (org-clock-persistence-insinuate) (setq org-clock-persist t)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"o"&lt;/span&gt; &lt;span class="nv"&gt;org-clock-out&lt;/span&gt; &lt;span class="s"&gt;"Clock-Out"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; you might also want (setq org-log-note-clock-out t)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"j"&lt;/span&gt; &lt;span class="nv"&gt;org-clock-goto&lt;/span&gt; &lt;span class="s"&gt;"Clock Goto"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; global visit the clocked task&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"c"&lt;/span&gt; &lt;span class="nv"&gt;org-capture&lt;/span&gt; &lt;span class="s"&gt;"Capture"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;; Don't forget to define the captures you want http://orgmode.org/manual/Capture.html&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"l"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;or &lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="nv"&gt;rg-capture-goto-last-stored&lt;/span&gt; &lt;span class="s"&gt;"Last Capture"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Take a look at the &lt;a href="https://github.com/abo-abo/hydra"&gt;Hydra&lt;/a&gt; home page for detailed information.
+&lt;/p&gt;
+
+&lt;p&gt;
+With Hydra installed, I can creat one for navigating in elfeed:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;`&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defhydra&lt;/span&gt; &lt;span class="nv"&gt;mz/hydra-elfeed&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+   &lt;span class="s"&gt;"filter"&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"c"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-set-filter&lt;/span&gt; &lt;span class="s"&gt;"@6-months-ago +cs"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="s"&gt;"cs"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"e"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-set-filter&lt;/span&gt; &lt;span class="s"&gt;"@6-months-ago +emacs"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="s"&gt;"emacs"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"d"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-set-filter&lt;/span&gt; &lt;span class="s"&gt;"@6-months-ago +education"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="s"&gt;"education"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-set-filter&lt;/span&gt; &lt;span class="s"&gt;"@6-months-ago +star"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="s"&gt;"Starred"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"M"&lt;/span&gt; &lt;span class="nv"&gt;elfeed-toggle-star&lt;/span&gt; &lt;span class="s"&gt;"Mark"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"A"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-set-filter&lt;/span&gt; &lt;span class="s"&gt;"@6-months-ago"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="s"&gt;"All"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"T"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-set-filter&lt;/span&gt; &lt;span class="s"&gt;"@1-day-ago"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="s"&gt;"Today"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Q"&lt;/span&gt; &lt;span class="nv"&gt;bjm/elfeed-save-db-and-bury&lt;/span&gt; &lt;span class="s"&gt;"Quit Elfeed"&lt;/span&gt; &lt;span class="nv"&gt;:color&lt;/span&gt; &lt;span class="nv"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"q"&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt; &lt;span class="s"&gt;"quit"&lt;/span&gt; &lt;span class="nv"&gt;:color&lt;/span&gt; &lt;span class="nv"&gt;blue&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+   &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+and add a binding to the elfeed key map:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;elfeed&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:bind&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:map&lt;/span&gt; &lt;span class="nv"&gt;elfeed-search-mode-map&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"q"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;bjm/elfeed-save-db-and-bury&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Q"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;bjm/elfeed-save-db-and-bury&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"m"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;elfeed-toggle-star&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"M"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;elfeed-toggle-star&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"j"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;mz/hydra-elfeed/body&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"J"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;mz/hydra-elfeed/body&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+This isn't the actual Hydra I use – we'll get to that in the next
+installment where I'll show how to make a Hydra on the fly that
+contains keys for all your elfeed tags but this is a reasonable example.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the video:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/tjnK1rkO7RU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Enjoy.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs - 29 -elfeed part 1</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-29%20elfeed/</id>
+    <updated>2017-02-22T08:00:26-05:00</updated>
+    <published>2017-02-22T08:00:26-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-29%20elfeed/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Since the demise of Google Reader, I've been using &lt;a href="http://feedly.com"&gt;Feedly&lt;/a&gt; to read my
+streams. Feedly's a nice product and it's been working well for me for
+quite some time. 
+&lt;/p&gt;
+
+&lt;p&gt;
+A few days ago, I decided to see what emacs had to offer on the feed
+reader front. One solution was Gnus but then I've never been able to
+get my head around Gnus. Another was &lt;a href="https://github.com/skeeto/elfeed"&gt;elfeed&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+I thought I'd give elfeed a go. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Combined with elfeed-goodies and elfeed-org it's a pretty nice
+solution. You can easily search by either keywords or tags and tags
+are particularly easy to set up with elfeed-org. 
+&lt;/p&gt;
+
+&lt;p&gt;
+If I want to display all the items from the last month, I hit &lt;b&gt;&lt;b&gt;s&lt;/b&gt;&lt;/b&gt; (for
+search) and enter the query:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;@6-months-ago
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+For only unread posts:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;@6-months-ago +unread
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+For unread posts tagged emacs:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;@6-months-ago +unread +emacs
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+And for everything in the past 24 hours, read or not:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;@1-day-ago
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+It's pretty easy and pretty slick. The only thing missing is easy
+single key navigation. There's one solution to that problem over at
+&lt;a href="http://pragmaticemacs.com/emacs/read-your-rss-feeds-in-emacs-with-elfeed/"&gt;Pragmatic Emacs&lt;/a&gt; and I'll present another one in the next two posts.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm using some of the code from pragmatic emacs (the functions that start
+with &lt;b&gt;&lt;b&gt;bjm&lt;/b&gt;&lt;/b&gt;) which makes things easier when sharing the elfeed
+database on Dropbox (see the Pragmatic Emacs post above for details) and also a couple of routines I found via web
+search). 
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's my basic configuration:
+&lt;/p&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;elfeed-db-directory&lt;/span&gt; &lt;span class="s"&gt;"~/Dropbox/shared/elfeeddb"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;elfeed-mark-all-as-read&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;mark-whole-buffer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-untag-all-unread&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+
+&lt;span class="c1"&gt;;;functions to support syncing .elfeed between machines&lt;/span&gt;
+&lt;span class="c1"&gt;;;makes sure elfeed reads index from disk before launching&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;bjm/elfeed-load-db-and-open&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+  &lt;span class="s"&gt;"Wrapper to load the elfeed db from disk before opening"&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-db-load&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-search-update--force&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="c1"&gt;;;write to disk when quiting&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;bjm/elfeed-save-db-and-bury&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+  &lt;span class="s"&gt;"Wrapper to save the elfeed db to disk before burying buffer"&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-db-save&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;quit-window&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defalias&lt;/span&gt; &lt;span class="ss"&gt;'elfeed-toggle-star&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-expose&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="ss"&gt;'elfeed-search-toggle-all&lt;/span&gt; &lt;span class="ss"&gt;'star&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;elfeed&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:bind&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;:map&lt;/span&gt; &lt;span class="nv"&gt;elfeed-search-mode-map&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"q"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;bjm/elfeed-save-db-and-bury&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Q"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;bjm/elfeed-save-db-and-bury&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"m"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;elfeed-toggle-star&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"M"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;elfeed-toggle-star&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	      &lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;elfeed-goodies&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-goodies/setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;elfeed-org&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;elfeed-org&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;rmh-elfeed-org-files&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;list &lt;/span&gt;&lt;span class="s"&gt;"~/Dropbox/shared/elfeed.org"&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Check out elfeed and make sure to go to the links provided on the main
+&lt;a href="https://github.com/skeeto/elfeed"&gt;elfeed&lt;/a&gt; page.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/pOFqzK1Ymr4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;
+Enjoy.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>Using Emacs - 28 -Rectangles</title>
     <id>http://cestlaz.github.io/posts/using-emacs-27-rectangles/</id>
@@ -2092,7 +3801,7 @@ systems but I'm glad to have repl.it in my teaching arsenal.
   <entry>
     <title>Using Emacs - 14 - Thoughts</title>
     <id>http://cestlaz.github.io/posts/using-emacs-14-thoughts/</id>
-    <updated>2016-08-17T00:00:00</updated>
+    <updated>2016-08-17T00:00:00-04:00</updated>
     <published>2016-08-17T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -2152,7 +3861,7 @@ Relevant links:
   <entry>
     <title>Using Emacs - 13 - Yasnippet</title>
     <id>http://cestlaz.github.io/posts/using-emacs-13-yasnippet/</id>
-    <updated>2016-08-04T00:00:00</updated>
+    <updated>2016-08-04T00:00:00-04:00</updated>
     <published>2016-08-04T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -2270,7 +3979,7 @@ Relevant links:
   <entry>
     <title>Using Emacs - 12 - Flycheck, Jedi, Python</title>
     <id>http://cestlaz.github.io/posts/using-emacs-12-python/</id>
-    <updated>2016-07-27T00:00:00</updated>
+    <updated>2016-07-27T00:00:00-04:00</updated>
     <published>2016-07-27T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -2542,7 +4251,7 @@ Relevant links:
   <entry>
     <title>Using Emacs - 10 - org init files</title>
     <id>http://cestlaz.github.io/posts/using-emacs-10-org-init/</id>
-    <updated>2016-07-01T00:00:00</updated>
+    <updated>2016-07-01T00:00:00-04:00</updated>
     <published>2016-07-01T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -2730,7 +4439,7 @@ Relevant links:
   <entry>
     <title>Using Emacs - 9 - Themes</title>
     <id>http://cestlaz.github.io/posts/using-emacs-9-themes/</id>
-    <updated>2016-06-28T00:00:00</updated>
+    <updated>2016-06-28T00:00:00-04:00</updated>
     <published>2016-06-28T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -2836,7 +4545,7 @@ Relevant links:
   <entry>
     <title>Using Emacs - 8 - Autocomplete</title>
     <id>http://cestlaz.github.io/posts/using-emacs-8-autocomplete/</id>
-    <updated>2016-06-26T00:00:00</updated>
+    <updated>2016-06-26T00:00:00-04:00</updated>
     <published>2016-06-26T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -2938,7 +4647,7 @@ Relevant links:
   <entry>
     <title>Using Emacs - 7- Navigation with Avy</title>
     <id>http://cestlaz.github.io/posts/using-emacs-7-avy/</id>
-    <updated>2016-06-24T00:00:00</updated>
+    <updated>2016-06-24T00:00:00-04:00</updated>
     <published>2016-06-24T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -3137,7 +4846,7 @@ fully working, more properly done solution:
   <entry>
     <title>Using Emacs - 6 - Searching a Swiper</title>
     <id>http://cestlaz.github.io/posts/using-emacs-6-swiper/</id>
-    <updated>2016-06-20T00:00:00</updated>
+    <updated>2016-06-20T00:00:00-04:00</updated>
     <published>2016-06-20T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -3347,7 +5056,7 @@ leave a comment for anything that the form doesn't cover?
   <entry>
     <title>Using Emacs - 5 - Windows</title>
     <id>http://cestlaz.github.io/posts/using-emacs-5-windows/</id>
-    <updated>2016-06-14T00:00:00</updated>
+    <updated>2016-06-14T00:00:00-04:00</updated>
     <published>2016-06-14T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5120,7 +6829,7 @@ So far, I'm pretty happy with the setup.
   <entry>
     <title>I hate ruby or why I'm switching blogging platforms</title>
     <id>http://cestlaz.github.io/posts/2016-04-14-i-hate-ruby/</id>
-    <updated>2016-04-14T00:00:00</updated>
+    <updated>2016-04-14T00:00:00-04:00</updated>
     <published>2016-04-14T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5255,7 +6964,7 @@ So far, I'm pretty happy with the setup.
   <entry>
     <title>IDE or the Cloud</title>
     <id>http://cestlaz.github.io/posts/2016-04-12-ide-or-cloud.html/</id>
-    <updated>2016-04-12T00:00:00</updated>
+    <updated>2016-04-12T00:00:00-04:00</updated>
     <published>2016-04-12T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5442,7 +7151,7 @@ and to lead the student down the path.
   <entry>
     <title>Debugging deployment</title>
     <id>http://cestlaz.github.io/posts/2016-01-23-debugging-deployment.html/</id>
-    <updated>2016-01-23T00:00:00</updated>
+    <updated>2016-01-23T00:00:00-05:00</updated>
     <published>2016-01-23T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5679,7 +7388,7 @@ sometimes, it's just the tools.
   <entry>
     <title>Know your tools - intermediate Emacs</title>
     <id>http://cestlaz.github.io/posts/2015-10-28-emacs-intermediate.html/</id>
-    <updated>2015-10-28T00:00:00</updated>
+    <updated>2015-10-28T00:00:00-04:00</updated>
     <published>2015-10-28T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5878,7 +7587,7 @@ org-mode but I think this will do for a start.
   <entry>
     <title>Shell games - who confirmed attendence</title>
     <id>http://cestlaz.github.io/posts/2015-03-19-duplicate-emails.html/</id>
-    <updated>2015-03-19T00:00:00</updated>
+    <updated>2015-03-19T00:00:00-04:00</updated>
     <published>2015-03-19T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -5939,7 +7648,7 @@ all the original applicants, the second those that confirmed.
   <entry>
     <title>Spreadsheet? I'd rather use the command line.</title>
     <id>http://cestlaz.github.io/posts/2014-07-06-spreadsheet-vs-cli.html/</id>
-    <updated>2014-07-06T00:00:00</updated>
+    <updated>2014-07-06T00:00:00-04:00</updated>
     <published>2014-07-06T00:00:00-04:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -6121,7 +7830,7 @@ command line.
   <entry>
     <title>Shell Games - an introduction</title>
     <id>http://cestlaz.github.io/posts/2014-02-04-shellgames-1-intro.md/</id>
-    <updated>2014-02-04T00:00:00</updated>
+    <updated>2014-02-04T00:00:00-05:00</updated>
     <published>2014-02-04T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -6222,7 +7931,7 @@ cat students.tsv | grep MKS22X | sed "s/\t/,/g" | cut -d, -f10 &amp;gt; emails
   <entry>
     <title>Subversion for Homework part II and the start of the new term</title>
     <id>http://cestlaz.github.io/posts/2010-02-01-subversion-for-homework-part-ii-and.html/</id>
-    <updated>2010-02-01T00:00:00</updated>
+    <updated>2010-02-01T00:00:00-05:00</updated>
     <published>2010-02-01T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>
@@ -6235,7 +7944,7 @@ cat students.tsv | grep MKS22X | sed "s/\t/,/g" | cut -d, -f10 &amp;gt; emails
   <entry>
     <title>Subversion in the classroom</title>
     <id>http://cestlaz.github.io/posts/2010-01-19-subversion-in-classroom.html/</id>
-    <updated>2010-01-19T00:00:00</updated>
+    <updated>2010-01-19T00:00:00-05:00</updated>
     <published>2010-01-19T00:00:00-05:00</published>
     <author>
       <name>Mike Zamansky</name>

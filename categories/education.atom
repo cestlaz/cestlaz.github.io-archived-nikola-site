@@ -3,13 +3,636 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about education</title>
   <id>http://cestlaz.github.io/categories/education.atom</id>
-  <updated>2017-02-10T15:19:12Z</updated>
+  <updated>2017-06-15T09:37:32Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/education.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/education/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>SIGCSE 2017</title>
+    <id>http://cestlaz.github.io/posts/sigcse-2017/</id>
+    <updated>2017-03-07T16:18:41-05:00</updated>
+    <published>2017-03-07T16:18:41-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse-2017/"/>
+    <summary type="html">&lt;p&gt;
+Tomorrow morning I fly out to Seattle for SIGCSE 2017. For those of
+you not in the CS Education space, SIGCSE is the ACM (Association for
+Computing Machinery) special interest group for computer science education.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've wanted to go for years but have never been able. It's hard for a
+high school teacher to miss a week in mid March, particularly in
+places with a school calendar similar to New York. NY city schools are
+already closed for a week in February and then Spring Break is right
+around the corner. If you're teaching an AP course with the exam in
+early May, losing a week in March is really not an option. Even if you
+can take the time, you'll probably have to foot the bill out of
+pocket. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Now that I'm at Hunter, I've got more flexibility in terms of schedule
+and attending is probably even more important given my current roles.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm looking forward to the talks and events but probably even more
+looking forward to seeing old friends, meeting new ones and seeing
+face to face friends that til now I've only known through the web.
+&lt;/p&gt;
+
+&lt;p&gt;
+On Saturday I'll be part of a panel (thanks &lt;a href="https://twitter.com/cscheerleader"&gt;Ria&lt;/a&gt;) titled "Tools we
+can't live without." I'll probably talk about the way I use git and
+GitHub and how I get my students up to speed but there are lots of
+tools I can talk about.
+&lt;/p&gt;
+
+&lt;p&gt;
+I plan to write up a series of posts on how I use GitHub (and how it
+evolved from other versioning systems) as well as thoughts about other
+tools I've used and some I've struggled with.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you're going to be at SIGCSE drop me a line, I'd love to connect.
+&lt;/p&gt;</summary>
+    <category term="cseducation" label="cseducation"/>
+    <category term="education" label="education"/>
+  </entry>
+  <entry>
+    <title>Will we lose CS teachers to industry?</title>
+    <id>http://cestlaz.github.io/posts/will-we-lose-cs-teachers-to-industry/</id>
+    <updated>2017-02-27T06:41:27-05:00</updated>
+    <published>2017-02-27T06:41:27-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/will-we-lose-cs-teachers-to-industry/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+If we properly prepare CS teachers, won't they just jump ship and take
+tech industry jobs?
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+I hear that a lot.
+&lt;/p&gt;
+
+&lt;p&gt;
+Tech pays big. Teaching? Not so much. Tech workers are respected and
+have flexible jobs. Teaching? Again, not so much.
+&lt;/p&gt;
+
+&lt;p&gt;
+Those chanting these refrains advocate the current simple teacher
+"training" - scripted lessons, minimal pedagogical content knowledge,
+even less real content knowledge. That  will keep them in the classroom.
+&lt;/p&gt;
+
+&lt;p&gt;
+They're wrong.
+&lt;/p&gt;
+
+&lt;p&gt;
+People fearing an exodus of prepared CS teachers don't get
+education. True, many young CS teachers will leave the profession but
+that's because &lt;b&gt;&lt;b&gt;many young teachers leave the profession&lt;/b&gt;&lt;/b&gt;. Why do young
+teachers leave? Regardless of subject area some of the reasons are:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;It's much harder than everyone thinks it is
+&lt;/li&gt;
+&lt;li&gt;Low pay
+&lt;/li&gt;
+&lt;li&gt;Lack of respect
+&lt;/li&gt;
+&lt;li&gt;Overworked
+&lt;/li&gt;
+&lt;li&gt;Lack of autonomy
+&lt;/li&gt;
+&lt;li&gt;Being scapegoated for poverty
+&lt;/li&gt;
+&lt;li&gt;It's become about testing, not teaching
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+None of these are unique to computer science teachers so the argument
+that CS teachers who know too much will leave is really saying, "we
+have to keep our teachers dumb enough to stay - make sure they don't
+have outside options" rather than "let's make teaching a desirable
+profession to be in."  
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course, this is bred from a lack of understanding about what drives
+teachers. It's typical of politicians and business leaders and short
+term temps like TFAers who came in for a cup of coffee and now know
+how to solve the education problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+Teacher don't become teachers to
+get rich or to do better than the other guy – I know I didn't. We
+enter it to do good - to uplift the have nots. This is why business
+models like stack ranking and bonus or merit pay just don't work. A
+school is a team and we're all in it together. Our job is to take care
+of our kids, not to be better than that other guy. We wish we had more
+time to work together and to improve things for our entire population.
+&lt;/p&gt;
+
+&lt;p&gt;
+Back to computer science.
+&lt;/p&gt;
+
+&lt;p&gt;
+My contention is that you might lose some teachers to industry but
+they either weren't meant to be teachers anyway or they couldn't
+afford to be teachers or the system beat them down. None of these are
+reasons not to properly prepare them. Besides, all teachers in all
+subject areas could work their way into an entry level tech job via a
+summer coding boot camp.
+&lt;/p&gt;
+
+&lt;p&gt;
+We can also look to the past to allay concerns. While it's true that
+for hiring purposes, English teachers are a dime a dozen and
+candidates typically
+have fewer outside options (although great English teachers are harder
+to find), Math and Science teachers generally have options. I know
+many top Math and Science teachers who could easily get non teaching
+jobs - the Math teachers in finance the science, certainly in
+pharmaceutical companies over in NJ. These options exist yet we manage
+to populate our classes with teachers. True, it's difficult at times,
+particularly in Physics, but these are due to the lack of respect
+teaching gets as a profession.
+&lt;/p&gt;
+
+&lt;p&gt;
+If we prepare CS teachers properly, yes, we'll lose some, but we'll
+keep the ones we're supposed to or if we lose them it will be due to
+other factors. Additionally, by having proper CS teacher
+preparation programs, we'll also provide an entry path to those people
+meant to be teachers but prior had no way of getting in.
+&lt;/p&gt;
+
+&lt;p&gt;
+As a nation, we're moving away from prepared, knowledgeable teachers
+and towards drill-masters. Let's not let CS Education go the way of
+all ed.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="education" label="education"/>
+    <category term="policy" label="policy"/>
+  </entry>
+  <entry>
+    <title>Quality Devs and Coding Contests</title>
+    <id>http://cestlaz.github.io/posts/quality-devs-and-coding-contests/</id>
+    <updated>2017-02-19T16:53:56-05:00</updated>
+    <published>2017-02-19T16:53:56-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/quality-devs-and-coding-contests/"/>
+    <summary type="html">&lt;p&gt;
+I've been planning to put together a response to &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt;'s
+recent post - &lt;a href="http://blog.acthompson.net/2017/02/software-developersquantity-vs-quality.html"&gt;Software Developers - Quantity vs Quality&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+TL;DR, although it isn't really long and I do encourage you to read
+Alfred's post: a couple of articles talk about how the U.S. has the most
+people entering CS competitions like HackerRank but Americans are not
+at the top of the leaderboard. does this mean that there's less talent
+in America? Does it even matter?
+&lt;/p&gt;
+
+&lt;p&gt;
+Before getting to "does it matter," I looked over at the Kaggle
+leaderboards. Looking at their top 10, 2 were from the US - no other
+country had more than 1. The 11th placing competitor was also from the
+US and then 12 was from China, giving them 2 in the top 12.  I also
+looked at recent &lt;a href="http://stats.ioinformatics.org/delegations/2016?sort=total_desc"&gt;IOI results&lt;/a&gt; and a quick glance seems to indicate that
+the USA seems to do reasonably well. In short, if you buy into ranking
+a country by these types of individual results on specific
+competitions then we're doing fine.
+&lt;/p&gt;
+
+&lt;p&gt;
+But, does filling the leaderboard mean a country's producing the best
+tech talent? Probably not.
+&lt;/p&gt;
+
+&lt;p&gt;
+Coding competitions focus on a specific skill set. There are problem
+solving aspects but they also require speed, knowledge of data
+structures and algorithms, and, yes, even accurate, fast typing
+skills. They also require you work alone. They don't encourage well
+designed, architected, or written code, working on existing code bases
+or working with a team. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Over the years, I've known some very smart and talented individuals
+who've excelled at these types of competitions. If you extend the pool
+to math and science competitions, I've known quite a few. These
+individuals have by and large done well for themselves but as a group,
+you couldn't call them more successful than any other subset of my
+former students. A number of them have gone on and are doing well as
+professors or programmers but, by and large, they're not the ones
+who've gone on to found companies and provide jobs for scores or even
+hundreds of other people and they're not necessarily the ones who've
+led teams that have developed major platforms and projects&lt;sup&gt;&lt;a id="fnr.1" name="fnr.1" class="footref" href="http://cestlaz.github.io/posts/quality-devs-and-coding-contests/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't argue that people who populate competition leaderboards are
+talented and a necessary part of our tech ecosystem but they're only a
+part. I probably want one of these programmers on my team, but not as
+the entire team (see Fake Grimlock's laws of startups - &lt;a href="http://www.builtinchicago.org/blog/secret-laws-startups-part-2-build-right-team"&gt;law 9&lt;/a&gt;).
+&lt;/p&gt;
+
+
+&lt;div align="center"&gt;
+&lt;a href="http://www.builtinchicago.org/blog/secret-laws-startups-part-2-build-right-team"&gt;
+&lt;img width="30%" src="http://media3.cdn.builtinchicago.org/sites/default/files/imagecache/Original/images/BATMAN-THEN-ROBIN.jpg"&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Competitive programming is a piece of the puzzle as competitive
+programmers are a part of the population. So are project based events
+like &lt;a href="https://dreamitcodeitwinit.wordpress.com/"&gt;Dream it. Code it. Win it.&lt;/a&gt;, science fairs, and hackathons, which
+can be either cooperative, competitive, or a combination.
+&lt;/p&gt;
+
+&lt;p&gt;
+What do we want? Balance. I think the Stuy program does it pretty
+well. StuyCS graduates who wish to take part in coding competitions
+can do so but if they want to excel at it, they have to work at it on
+their own time. At the same time, the students learn how to work in
+teams and take a project from idea to delivery all the while learning
+some good academic CS and software engineering practices. They'll
+learn more in college on the academic side and the rest on the
+job. I'd love to see better balance in the colleges between CS
+programs preparing kids for graduate programs and CS programs that
+prepare kids for industry. I'd also love to see CS minors that were
+more targeted towards CS+X rather than half of a CS major targeting
+students going to grad schools. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I also think there's a tremendous opportunity for community colleges
+to fill the role currently occupied by code schools. They could more
+easily strike a balance between academic depth and practical
+preparation.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm working on building Hunter College's honors CS program and while I
+can't move the Hunter curriculum, I'm seeking that balance in my own
+way.
+&lt;/p&gt;
+
+&lt;p&gt;
+Will we get there? I don't know. Given the way education works, I
+figure at some point people will decide that we have to have more of a
+presence on the CS leaderboards and we'll see programs pop up with
+that in mind. I have no doubt that when that happens, we'll see many
+more Americans near the top. We have a large enough population that
+talent shouldn't be in question. This will be great for students to
+whom these competitions attract. It won't do much, however for the
+rest of the students. I'm not really concerned one way or
+another. Unlike math, where there's a natural progression through K12
+math classes with math team and math competitions being a natural add
+on, the driving forces in CS - be they from industry, government, or
+academia don't seem to have partaken in any code competition Kool-Aid
+so code competitions won't become a driving force in CS ed any time
+soon. 
+&lt;/p&gt;
+&lt;div id="footnotes"&gt;
+&lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
+&lt;div id="text-footnotes"&gt;
+
+&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" name="fn.1" class="footnum" href="http://cestlaz.github.io/posts/quality-devs-and-coding-contests/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;p&gt;Some
+are but probably a smaller percent from that group than from the
+general pool.&lt;/p&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="education" label="education"/>
+  </entry>
+  <entry>
+    <title>Starting with scheme</title>
+    <id>http://cestlaz.github.io/posts/starting-with-scheme/</id>
+    <updated>2017-02-15T12:20:25-05:00</updated>
+    <published>2017-02-15T12:20:25-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/starting-with-scheme/"/>
+    <summary type="html">&lt;p&gt;
+Scheme is one of the languages used in Stuy's intro CS course. Like
+any other language, there are pros and cons of using it to introduce
+students to CS. Here are some of the reasons why I like Scheme as a
+first language and why despite that,  I don't recommend it in many
+cases.
+&lt;/p&gt;
+
+&lt;p&gt;
+Scheme certainly isn't mainstream. That's not the main reason why I
+like it but it is a side benefit. It's less likely kids come into
+class knowing it which creates a level playing field. The few times
+I've had a student with a background in Scheme, they've been good,
+helpful kids rather than ones that tried to show off and dominate the
+class. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I like scheme because it's simple. It looks different than other
+languages but is &lt;code&gt;(+ 3 4)&lt;/code&gt; really that different than &lt;code&gt;add(3,4)&lt;/code&gt; or
+&lt;code&gt;3+4&lt;/code&gt;? 
+&lt;/p&gt;
+
+&lt;p&gt;
+We can tell kids "everything's a function." While technically not
+true, and I tell my students that it isn't, it's close enough for our
+purposes. Everything's a function and the way we write a function is:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;f&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;b&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Apply function &lt;b&gt;&lt;b&gt;f&lt;/b&gt;&lt;/b&gt; on arguments &lt;b&gt;&lt;b&gt;b c …&lt;/b&gt;&lt;/b&gt;. So we have &lt;code&gt;(+ 2 3)&lt;/code&gt; to
+add 2 and 3, &lt;code&gt;(and a b)&lt;/code&gt; for logical and &lt;code&gt;(= 3 4)&lt;/code&gt; to test to see if 3
+is equal to 4, etc. We also have the same basic notation for things
+like conditionals. In java, we might write:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+ &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+In scheme, it would be:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;if &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;&amp;gt; &lt;/span&gt;&lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="mi"&gt;5&lt;/span&gt;
+  &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Even though we're fudging the rules, we can lay out a handful of rules
+for the kids such as lambda and define follow a similar form to create and
+name functions:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;define &lt;/span&gt;&lt;span class="nv"&gt;add2&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;b&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;+ &lt;/span&gt;&lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;b&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+where &lt;code&gt;(lambda (a b) (+ a b))&lt;/code&gt; returns a function that adds &lt;b&gt;&lt;b&gt;a&lt;/b&gt;&lt;/b&gt; and
+&lt;b&gt;&lt;b&gt;b&lt;/b&gt;&lt;/b&gt; and &lt;code&gt;define&lt;/code&gt; associates it with the identifier &lt;b&gt;&lt;b&gt;add2&lt;/b&gt;&lt;/b&gt;. Now we
+can use the function: &lt;code&gt;(add2 5 10)&lt;/code&gt; which evaluates to 15.
+&lt;/p&gt;
+
+&lt;p&gt;
+With lambda, define, if, and a few more basics, it's off to the
+races. The simple, consistent syntax makes things easy for the kids
+and the constrained tool set lets us focus their way of thinking.
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course this wouldn't work had DrScheme (now &lt;a href="https://racket-lang.org/"&gt;Racket&lt;/a&gt;) not
+existed. That gave us a nice learning IDE to work in.
+&lt;/p&gt;
+
+&lt;p&gt;
+Using Scheme, we can not only cover the basics like conditionals,
+abstraction and such but also deeper concepts like recursion, map,
+filter, and reduce. When we move on from Scheme, the kids also have a
+frame of reference for all the other languages and paradigms they use.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are downsides, however. Outside help is harder to come by and
+there is some pushback from parents and it isn't as pretty and flashy
+as some other tool-sets. Scheme worked at Stuy for a number of
+reasons. When I created the class that used it, there were no good
+pre-AP classes in the school and I had a pretty good reputation as a
+teacher. The class also used multiple tools with &lt;a href="https://ccl.northwestern.edu/netlogo/"&gt;NetLogo&lt;/a&gt; being the
+primary other one and tackled a variety of CS and non CS topics.
+First time through, reputation and buzz filled the classes and after
+that, the class developed a solid enough reputation to fill itself.
+&lt;/p&gt;
+
+&lt;p&gt;
+It also didn't hurt that our program developed from the inside
+out. First, we had APCS-AB on the books as a junior year course, then
+I added our post AP senior year electives. Since it was easy to show
+what the kids were already graduating with, it was easy to diffuse any
+pushback from not using mainstream tools in the first class.
+&lt;/p&gt;
+
+&lt;p&gt;
+Scheme worked at Stuy and I feel that it still does. Would I use
+Scheme for a first experience in a drop in program at an after-school
+where kids might not come back if they don't get to a payoff
+immediately? Probably not. Would I recommend it at a school where I
+want to integrate CS with some of the other subjects quickly, again,
+probably not (except for integration with algebra where &lt;a href="http://www.bootstrapworld.org/"&gt;Bootstrapworld&lt;/a&gt;
+is a terrific program).
+&lt;/p&gt;
+
+&lt;p&gt;
+In any event, if you're a high school CS teacher and  haven't played
+with scheme  or some other functional language, I highly recommend
+it - you might not actually ever teach it or use it but it can really
+help develop you as a programmer and an educator.
+&lt;/p&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="curriculum" label="curriculum"/>
+    <category term="education" label="education"/>
+  </entry>
+  <entry>
+    <title>Selecting a starting language - why not Javascript</title>
+    <id>http://cestlaz.github.io/posts/starting-with-js/</id>
+    <updated>2017-02-13T08:45:48-05:00</updated>
+    <published>2017-02-13T08:45:48-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/starting-with-js/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+I was catching up with the team at Stuy the other day and they
+mentioned that they were periodically getting pushback on their choice
+of languages, particularly in the intro class. The pushback was mostly
+in the form of "why don't you start them with Javascript?" 
+&lt;/p&gt;
+
+&lt;p&gt;
+Back in the day, when I created our intro class where we use Scheme,
+NetLogo and then later Python, I'd get similar pushback but then it
+was "why not Java?", "why not C?", or "whu not C++?"
+&lt;/p&gt;
+
+&lt;p&gt;
+We had a good discussion on this and I shared my thoughts as to why I
+don't like Javascript as a first language and I thought I'd share some
+of them here. I'll try to get around to the rationale behind Scheme
+and NetLogo in a later post.
+&lt;/p&gt;
+
+&lt;p&gt;
+To start, let me say that I &lt;b&gt;&lt;b&gt;Love&lt;/b&gt;&lt;/b&gt; Javascript -
+particularly when approaching it as a functional language. I also
+think every school and situation is different so there are likely
+times when Javascript is the right beginner language for the job.
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's dive in.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why are some of the pluses for Javascript as an intro language.
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Ubiquity and availability:
+
+&lt;p&gt;
+If you have a browser, you have Javascript - it's also available
+through online IDEs and online lightweight sites like &lt;a href="https://jsfiddle.net/"&gt;JSFiddle&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;Interactivity:
+
+&lt;p&gt;
+You can tweak websites almost live, use the HTML5 canvas pretty
+interactively and mode
+&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;It's mainstream
+&lt;/li&gt;
+
+&lt;li&gt;It's quick to get up and running
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+This is all true, but there are also downsides.
+&lt;/p&gt;
+
+&lt;p&gt;
+One of my big problems with Javascript is the lack of simple solid
+educational tooling. I love to use tools like &lt;a href="http://www.drjava.org/"&gt;DrJava&lt;/a&gt;, &lt;a href="http://drpython.sourceforge.net/"&gt;DrPython&lt;/a&gt;, and
+&lt;a href="https://racket-lang.org/"&gt;Racket&lt;/a&gt; (formerly DrScheme) with beginners. All simple learning
+IDEs. True, you can use a simple online IDE but I haven't found them
+to have as strong a learning interface. They also, generally, keep you
+in an oversimplified programming sandbox. There's no clean transition
+from the sandbox to the real deal - particularly given the non-trivial
+state of js build tools and environments. These simple learning IDEs
+set the stage and then we can transition to more powerful development environments.
+&lt;/p&gt;
+
+&lt;p&gt;
+I also prefer, where possible, to have kids learn locally so that they
+can learn something about the underlying operating system even if
+only at a user level.
+&lt;/p&gt;
+
+&lt;p&gt;
+A problem relating to the lack of tooling is the fact that a JS
+program can fail to run and not give you any meaningful feedback at
+all - this is a problem for a beginner. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Javascript also has all sorts of wonkiness. We have &lt;code&gt;=&lt;/code&gt;, and &lt;code&gt;==&lt;/code&gt;
+which is pretty conventional, but then there's also &lt;code&gt;===&lt;/code&gt;. We have
+potentially confusing scoping issues and also some other real
+weirdness:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;53&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//  50&lt;/span&gt;
+&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;53&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s1"&gt;'3'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// 50&lt;/span&gt;
+&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'53'&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// 50 &lt;/span&gt;
+&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'53'&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="s1"&gt;'3'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//50&lt;/span&gt;
+
+&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;53&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;//  56&lt;/span&gt;
+&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;53&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;'3'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// '533'&lt;/span&gt;
+&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'53'&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// '533&lt;/span&gt;
+&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'53'&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s1"&gt;'3'&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt; &lt;span class="c1"&gt;// '533'&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+For more, check out the this &lt;a href="https://www.destroyallsoftware.com/talks/wat"&gt;video&lt;/a&gt;. Start watching at about 1:20 -
+it's a riot.
+&lt;/p&gt;
+
+&lt;p&gt;
+All of this weirdness actually makes sense - just not to a beginner. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Javascript also gives plenty of freedom - there are many ways to do
+things. This can be great for the developer but not necessarily ideal
+for the learner. Loops, recursion, mapping functions - you name it,
+Javascript's got it. I like simpler languages for beginners because
+it's easier to get them thinking and problem solving in certain ways
+when there tool set is somewhat restricted (more on that when I write
+about Scheme).
+&lt;/p&gt;
+
+&lt;p&gt;
+Finally, the fact that Javascript's a mainstream language can be a
+minus. Given its popularity, a beginner class could have at  least a
+few kid who've at least played with the language. This can lead them
+to think they know more than they do and more importantly, this can
+be intimidating to the real newbies who develop the impression that
+"everyone knows this but me." A less mainstream language puts everyone
+on a level playing field.
+&lt;/p&gt;
+
+&lt;p&gt;
+Let me say again that I love javascript as a language and before a
+student graduates Stuy they can learn all about Javascript, front end
+development, some functional programming, and more. It's just not the
+right language to start with - at least not at Stuy.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="curriculum" label="curriculum"/>
+    <category term="education" label="education"/>
+    <category term="languages" label="languages"/>
+  </entry>
   <entry>
     <title>Should CS Ed be in bed with the College Board</title>
     <id>http://cestlaz.github.io/posts/cs-ed-in-bed-college-board/</id>

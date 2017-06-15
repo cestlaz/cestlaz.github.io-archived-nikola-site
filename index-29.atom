@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 29)</title>
   <id>http://cestlaz.github.io/index-29.atom</id>
-  <updated>2017-06-13T21:10:28Z</updated>
+  <updated>2017-06-15T12:42:01Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,179 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-28.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-29.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>A free multi-state clicker with built in redundency</title>
+    <id>http://cestlaz.github.io/posts/thumb_clickers/</id>
+    <updated>2017-04-01T17:23:21-04:00</updated>
+    <published>2017-04-01T17:23:21-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/thumb_clickers/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Last Friday, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about the woes of &lt;a href="https://computinged.wordpress.com/2017/03/31/the-need-for-better-software-and-systems-to-support-active-cs-learning/%0A"&gt;using clickers&lt;/a&gt; in a
+class. The amount of effort required to use his school's approved
+clicker technology sounds ridiculous so while we need tools to better
+engage students in large class settings we need better tools that can
+be integrated into our classes more easily.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've never used clickers. On top of stories like Mark's, there are  a
+number of problems with using clickers in a public school.
+&lt;/p&gt;
+
+&lt;p&gt;
+You can't force students to buy them and in NYC, until recently,
+students couldn't use their phones (which they also might not have).
+Forgetting the expense, if the school provides them, is it one per
+student? If so, who's going to administer the clicker to student
+mapping and how will that be communicated to the teachers. If college
+tech infrastructures are sometimes lacking, high schools are orders of
+magnitudes worse. The resources just aren't there. Then we have to
+deal with loss and breakage.
+&lt;/p&gt;
+
+&lt;p&gt;
+If a teacher somehow gets a class set of clickers, they have to deal
+with mapping clickers to students for all of their classes and make
+sure the right student has the right clicker. Again, loss  and
+breakage is a problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+Then you have to create the question content and hope that everything
+works in class.
+&lt;/p&gt;
+
+&lt;p&gt;
+The value added given the overhead just doesn't seem worth it
+particularly since high school classes, while large, are not in the
+hundreds and there are other methods of student engagement.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's what I use instead. It's not perfect but it's low cost and low
+effort with a pretty high return.
+&lt;/p&gt;
+
+&lt;p&gt;
+The basic configuration, is a simple three state broadcast device.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's not without its problems and I don't think it would work as well
+in a large lecture but given the cost, it's well worth it.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, what is it?
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/thumbs/fonzup.jpg" alt="fonzup.jpg" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+Thumbs.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+Periodically, I'll poll my class.
+&lt;/p&gt;
+
+&lt;span&gt;
+&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/sidethumb.png"&gt;
+&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/upthumb.jpg"&gt;
+&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/downthumb.jpg"&gt;
+
+
+&lt;p&gt;
+Thumb to the side? Everything's OK. Keep going as you're going. I get
+it. Basically, things are good.
+&lt;/p&gt;
+
+&lt;p&gt;
+Thumb up? Speed up, you're going too slow, I got it five minutes ago or
+some similar big positive.
+&lt;/p&gt;
+
+&lt;p&gt;
+Thumb down? I have no idea what you're talking about.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's cheap, easy, quick, and once you can get your class to buy in,
+you can get a quick sense of the class.
+&lt;/p&gt;
+
+&lt;p&gt;
+The downsides?
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;The class has to have a level of comfort so that students vote
+honestly and don't just give you positive feedback.
+&lt;/li&gt;
+&lt;li&gt;No data collection.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;
+The upsides?
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;quick
+&lt;/li&gt;
+&lt;li&gt;cheap
+&lt;/li&gt;
+&lt;li&gt;works on any topic on the fly
+&lt;/li&gt;
+&lt;li&gt;even if the votes are artificially skewed towards positive, it does
+forces the class to be at least a little attentive and to engage in
+some physical response
+&lt;/li&gt;
+&lt;li&gt;can get analog responses by allowing students to adjust wrist
+rotation
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+As to the redundancy? I've never had a kid leave their thumb at home
+or lose it and even if they did, they've got a second hand.
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/thumbs/fonztwo.jpg" alt="fonztwo.jpg" align="center" height="200"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+This also works in extreme environments. Try using a clicker or mobile
+app with gloves or mittens on or underwater.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't teach large lectures so I don't know how this would work in a
+huge class. I'd imagine it's still worth it given that it's so low
+friction and low cost of entry even if it's not perfect.
+&lt;/p&gt;
+&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="teaching" label="teaching"/>
+  </entry>
   <entry>
     <title>SIGCSE 2017 - a path to github part 3</title>
     <id>http://cestlaz.github.io/posts/sigcse-2017-github-3/</id>
