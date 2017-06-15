@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 29)</title>
   <id>http://cestlaz.github.io/index-29.atom</id>
-  <updated>2017-06-15T12:42:01Z</updated>
+  <updated>2017-06-15T20:23:10Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,108 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-28.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-29.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>GitHub as a tool for education</title>
+    <id>http://cestlaz.github.io/posts/sigcse-2017-github-4/</id>
+    <updated>2017-04-11T19:11:30-04:00</updated>
+    <published>2017-04-11T19:11:30-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse-2017-github-4/"/>
+    <summary type="html">&lt;p&gt;
+When I started using git and GitHub with my students it was a natural
+progression having started with started with CVS and then, as
+technology changed moving through Subversion and then Mercurial. It
+was all about using sensible professional software development
+techniques while making it easier for students to submit work and for
+me to evaluate their submissions.
+&lt;/p&gt;
+
+&lt;p&gt;
+Over time, I found that git and GitHub in fact provided some extra
+support for educators right out of the box.
+&lt;/p&gt;
+
+&lt;p&gt;
+In my &lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-3"&gt;last github post&lt;/a&gt; I talked about using the results of &lt;code&gt;git log&lt;/code&gt;
+and looking at diffs. Both provide ways of seeing what a student did
+and when. The commit log and history make it easier to hold students accountable to working
+through a project and not leavings for the last minute. The diffs make
+it easier to see what's changed both to see progress and also to help
+support students as they develop their projects.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you use Emacs, as I do, you can use the &lt;a href="https://github.com/pidu/git-timemachine"&gt;git timemachine&lt;/a&gt; package
+which does a great job visualizing changes:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/sigcse-github/timemachine.gif" alt="timemachine.gif" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Other editors might have a similar feature.
+&lt;/p&gt;
+
+&lt;p&gt;
+The contribution graphs also provide a quick snapshot which shows what
+team members are contributing and when:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/sigcse-github/githubgraph.png" alt="githubgraph.png" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+The punchcard graph is also useful to see when students actually do
+their work.
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/sigcse-github/githubgraph2.png" alt="githubgraph2.png" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+GitHub also make it easy to set up starter code or to have students
+"take over" each others projects by forking.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm very happy using git and GitHub as is but if you want more
+support, check out &lt;a href="https://classroom.github.com/"&gt;GitHub Classroom&lt;/a&gt;. Had it existed when I started,
+I'd probably have used it but since I had already gotten used to my
+work flows I've stuck with raw git and github.
+&lt;/p&gt;
+
+&lt;p&gt;
+In case you missed the earlier posts describing the process I use to
+introduce github to my classes here they are:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-1"&gt;Part 1&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-2"&gt;Part 2&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-3"&gt;Part 3&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+I'm hoping some of you have found this set of four posts useful or at
+least interesting.
+&lt;/p&gt;</summary>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>A free multi-state clicker with built in redundency</title>
     <id>http://cestlaz.github.io/posts/thumb_clickers/</id>

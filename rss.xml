@@ -1,5 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link type="application/rss+xml" href="http://cestlaz.github.io/rss.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 15 Jun 2017 12:42:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>CS Educators StackExchange</title><link>http://cestlaz.github.io/posts/cs-educators-stackexchange/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link rel="self" href="http://cestlaz.github.io/rss.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 15 Jun 2017 20:26:14 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs - 34 - ibuffer and emmet</title><link>http://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+A couple of quick, unrelated packages today.
+&lt;/p&gt;
+
+&lt;p&gt;
+first up, ibuffer. If you keep Emacs open all the time, you'll start
+to accumulate buffers. Last time, I talked about using &lt;a href="http://cestlaz.github.io/posts/using-emacs-33-projectile-jump"&gt;projectile&lt;/a&gt; and
+how that can help when navigating between buffers. IBuffer is another
+one.
+&lt;/p&gt;
+
+&lt;p&gt;
+Out of the box, &lt;code&gt;C-x C-b&lt;/code&gt; is bound to the Emacs &lt;b&gt;&lt;b&gt;list-buffers&lt;/b&gt;&lt;/b&gt;
+command. It brings up a buffer with all the buffers listed inside
+it. You can navigate that buffer and hit enter on a particular buffer
+to go to it. You can also mark buffers and then operate on all the
+marked buffers. Hitting &lt;b&gt;&lt;b&gt;h&lt;/b&gt;&lt;/b&gt; in the list-buffers buffer brings up
+more details. 
+&lt;/p&gt;
+
+&lt;p&gt;
+IBuffer is like list-buffers on steroids. It looks much nicer and I
+think it has more functionality (again hitting &lt;b&gt;&lt;b&gt;h&lt;/b&gt;&lt;/b&gt; in the buffer
+brings up help). 
+&lt;/p&gt;
+
+&lt;p&gt;
+IBuffer really shines though, once you start customizing it. I found
+&lt;a href="http://martinowen.net/blog/2010/02/03/tips-for-emacs-ibuffer.html"&gt;this&lt;/a&gt; post by Martin Owen which shows how to customize the way ibuffer
+appears. You can group buffers however you want or even omit some from
+the listing.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's my configuration (mostly stolen from Owen):
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-set-key&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"C-x C-b"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'ibuffer&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;ibuffer-saved-filter-groups&lt;/span&gt;
+      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;quote &lt;/span&gt;&lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"default"&lt;/span&gt;
+	       &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"dired"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;mode&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;dired-mode&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+	       &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"org"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;name&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"^.*org$"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+	       &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"web"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;or &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;mode&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;web-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;mode&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;js2-mode&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+	       &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"shell"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;or &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;mode&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;eshell-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;mode&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;shell-mode&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+	       &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"mu4e"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;name&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"\*mu4e\*"&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+	       &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"programming"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt;
+			       &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;mode&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;python-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+			       &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;mode&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;c++-mode&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+	       &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"emacs"&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;or&lt;/span&gt;
+			 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;name&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"^\\*scratch\\*$"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+			 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;name&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s"&gt;"^\\*Messages\\*$"&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+	       &lt;span class="p"&gt;))))&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'ibuffer-mode-hook&lt;/span&gt;
+	  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+	    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ibuffer-auto-mode&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ibuffer-switch-to-saved-filter-groups&lt;/span&gt; &lt;span class="s"&gt;"default"&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; don't show these&lt;/span&gt;
+					&lt;span class="c1"&gt;;(add-to-list 'ibuffer-never-show-predicates "zowie")&lt;/span&gt;
+&lt;span class="c1"&gt;;; Don't show filter groups if there are no buffers in that group&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;ibuffer-show-empty-filter-groups&lt;/span&gt; &lt;span class="nv"&gt;nil&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;;; Don't ask for confirmation to delete marked buffers&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;ibuffer-expert&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;p&gt;
+The video also shows &lt;a href="https://github.com/smihica/emmet-mode%0A"&gt;emmet&lt;/a&gt; mode. A terrific mode for quickly creating
+HTML and CSS. I tried it a long time ago when it was called zencoding
+and found it lacking but after watching &lt;a href="https://www.youtube.com/watch?v=gGPv7jsQGpc&amp;amp;t=329s"&gt;this video&lt;/a&gt; at Build Fun Things
+I started playing with it again. It's a real winner.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Here's the config I'm using:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;emmet-mode&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'sgml-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'emmet-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;;; Auto-start on any markup modes&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'web-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'emmet-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;;; Auto-start on any markup modes&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'css-mode-hook&lt;/span&gt;  &lt;span class="ss"&gt;'emmet-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;;; enable Emmet's css abbreviation.&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Check them both out:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/yUfA-7wWNKA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;p&gt;
+Relevant links:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Video series overview page:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Code:
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/</guid><pubDate>Thu, 15 Jun 2017 19:00:26 GMT</pubDate></item><item><title>CS Educators StackExchange</title><link>http://cestlaz.github.io/posts/cs-educators-stackexchange/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -923,93 +1048,4 @@ I fear, however that too often we're paying attention to the intake of
 the pipe and not so much the output.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>langauges</category><category>pedagogy</category><guid>http://cestlaz.github.io/posts/first-language-changing/</guid><pubDate>Fri, 21 Apr 2017 18:46:07 GMT</pubDate></item><item><title>GitHub as a tool for education</title><link>http://cestlaz.github.io/posts/sigcse-2017-github-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
-When I started using git and GitHub with my students it was a natural
-progression having started with started with CVS and then, as
-technology changed moving through Subversion and then Mercurial. It
-was all about using sensible professional software development
-techniques while making it easier for students to submit work and for
-me to evaluate their submissions.
-&lt;/p&gt;
-
-&lt;p&gt;
-Over time, I found that git and GitHub in fact provided some extra
-support for educators right out of the box.
-&lt;/p&gt;
-
-&lt;p&gt;
-In my &lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-3"&gt;last github post&lt;/a&gt; I talked about using the results of &lt;code&gt;git log&lt;/code&gt;
-and looking at diffs. Both provide ways of seeing what a student did
-and when. The commit log and history make it easier to hold students accountable to working
-through a project and not leavings for the last minute. The diffs make
-it easier to see what's changed both to see progress and also to help
-support students as they develop their projects.
-&lt;/p&gt;
-
-&lt;p&gt;
-If you use Emacs, as I do, you can use the &lt;a href="https://github.com/pidu/git-timemachine"&gt;git timemachine&lt;/a&gt; package
-which does a great job visualizing changes:
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/sigcse-github/timemachine.gif" alt="timemachine.gif" align="center"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-Other editors might have a similar feature.
-&lt;/p&gt;
-
-&lt;p&gt;
-The contribution graphs also provide a quick snapshot which shows what
-team members are contributing and when:
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/sigcse-github/githubgraph.png" alt="githubgraph.png" align="center"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-The punchcard graph is also useful to see when students actually do
-their work.
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/sigcse-github/githubgraph2.png" alt="githubgraph2.png" align="center"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-GitHub also make it easy to set up starter code or to have students
-"take over" each others projects by forking.
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm very happy using git and GitHub as is but if you want more
-support, check out &lt;a href="https://classroom.github.com/"&gt;GitHub Classroom&lt;/a&gt;. Had it existed when I started,
-I'd probably have used it but since I had already gotten used to my
-work flows I've stuck with raw git and github.
-&lt;/p&gt;
-
-&lt;p&gt;
-In case you missed the earlier posts describing the process I use to
-introduce github to my classes here they are:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-1"&gt;Part 1&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-2"&gt;Part 2&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-3"&gt;Part 3&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-I'm hoping some of you have found this set of four posts useful or at
-least interesting.
-&lt;/p&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-4/</guid><pubDate>Tue, 11 Apr 2017 23:11:30 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>cs</category><category>langauges</category><category>pedagogy</category><guid>http://cestlaz.github.io/posts/first-language-changing/</guid><pubDate>Fri, 21 Apr 2017 18:46:07 GMT</pubDate></item></channel></rss>

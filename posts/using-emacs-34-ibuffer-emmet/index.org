@@ -1,0 +1,102 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs - 34 - ibuffer and emmet
+.. slug: using-emacs-34-ibuffer-emmet
+.. date: 2017-06-15 14:00:26 UTC-05:00
+.. tags: emacs, tools
+.. category:
+.. link: 
+.. description:
+.. type: text
+#+END_COMMENT
+
+* 
+A couple of quick, unrelated packages today.
+
+first up, ibuffer. If you keep Emacs open all the time, you'll start
+to accumulate buffers. Last time, I talked about using [[http://cestlaz.github.io/posts/using-emacs-33-projectile-jump][projectile]] and
+how that can help when navigating between buffers. IBuffer is another
+one.
+
+Out of the box, ~C-x C-b~ is bound to the Emacs **list-buffers**
+command. It brings up a buffer with all the buffers listed inside
+it. You can navigate that buffer and hit enter on a particular buffer
+to go to it. You can also mark buffers and then operate on all the
+marked buffers. Hitting **h** in the list-buffers buffer brings up
+more details. 
+
+IBuffer is like list-buffers on steroids. It looks much nicer and I
+think it has more functionality (again hitting **h** in the buffer
+brings up help). 
+
+IBuffer really shines though, once you start customizing it. I found
+[[http://martinowen.net/blog/2010/02/03/tips-for-emacs-ibuffer.html][this]] post by Martin Owen which shows how to customize the way ibuffer
+appears. You can group buffers however you want or even omit some from
+the listing.
+
+Here's my configuration (mostly stolen from Owen):
+
+#+BEGIN_SRC emacs-lisp
+  (global-set-key (kbd "C-x C-b") 'ibuffer)
+  (setq ibuffer-saved-filter-groups
+	(quote (("default"
+		 ("dired" (mode . dired-mode))
+		 ("org" (name . "^.*org$"))
+	       
+		 ("web" (or (mode . web-mode) (mode . js2-mode)))
+		 ("shell" (or (mode . eshell-mode) (mode . shell-mode)))
+		 ("mu4e" (name . "\*mu4e\*"))
+		 ("programming" (or
+				 (mode . python-mode)
+				 (mode . c++-mode)))
+		 ("emacs" (or
+			   (name . "^\\*scratch\\*$")
+			   (name . "^\\*Messages\\*$")))
+		 ))))
+  (add-hook 'ibuffer-mode-hook
+	    (lambda ()
+	      (ibuffer-auto-mode 1)
+	      (ibuffer-switch-to-saved-filter-groups "default")))
+
+  ;; don't show these
+					  ;(add-to-list 'ibuffer-never-show-predicates "zowie")
+  ;; Don't show filter groups if there are no buffers in that group
+  (setq ibuffer-show-empty-filter-groups nil)
+
+  ;; Don't ask for confirmation to delete marked buffers
+  (setq ibuffer-expert t)
+
+#+END_SRC
+
+* 
+The video also shows [[https://github.com/smihica/emmet-mode%0A][emmet]] mode. A terrific mode for quickly creating
+HTML and CSS. I tried it a long time ago when it was called zencoding
+and found it lacking but after watching [[https://www.youtube.com/watch?v=gGPv7jsQGpc&t=329s][this video]] at Build Fun Things
+I started playing with it again. It's a real winner.
+
+
+Here's the config I'm using:
+
+#+BEGIN_SRC emacs-lisp
+(use-package emmet-mode
+:ensure t
+:config
+(add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
+(add-hook 'web-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
+(add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
+)
+#+END_SRC
+
+Check them both out:
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yUfA-7wWNKA" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+* 
+Relevant links:
+- Video series overview page:
+  - http://cestlaz.github.io/stories/emacs
+- Code:
+  - [[https://github.com/zamansky/using-emacs/tree/master][https://github.com/zamansky/using-emacs/tree/master]]
+
+
