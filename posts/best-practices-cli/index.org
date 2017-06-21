@@ -1,0 +1,129 @@
+#+BEGIN_COMMENT
+.. title: Are best practices always the best?
+.. slug: best-practices-cli
+.. date: 2017-06-21 16:30:35 UTC-04:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+* 
+I've been trying to be an active participant on the [[https://cseducators.stackexchange.com/][CS Educators
+StackExchange]]. You should try to as well!!!
+
+I answered a question about using the command line which led to a back
+and forth. I gave an example of something I might do in class to
+illustrate the power of using the command line and linked to some of
+my past [[http://cestlaz.github.io/categories/cli/][posts]]. There was some back and forth in the comments - some of
+the participants weren't happy with my code as they felt it was filled
+with poor coding practices.
+
+I'm not going to comment on the discussion other than to say that I
+make no apologies for how I use the Linux tools and the command line
+as my methods have served me well over the years. I also make no
+apologies on how I teach my students as I seem to have by and large
+done right by them over the years as well.
+
+The crux was that I was showing what I might type in a class without
+any of the class commentary. It wasn't meant to be a script in a file
+let alone reusable code or a full blown program.
+
+I don't want to spend time here talking about "best practices" for
+shell scripting. There are plenty of [[https://jvns.ca/blog/2017/03/26/bash-quirks/][resources]] a search engine away.
+
+The question is that how universal are best practices and is it more
+important that we teach specific best practices or rather that we have
+a discussion with our students about best practices.
+
+Some general best practices are probably pretty universal -- "write
+clear code" but I've seen best practices that when followed
+religiously just don't always make sense:
+- never break out of a loop
+- one return statement per function
+- always or never do anything in particular
+- all code should be commented
+- always use an ORM 
+
+to list a few.
+
+So, best practices aren't always best. More like guidelines to think
+about when you're programming and then you and your team can make
+smart decisions.
+
+So, when I wrote those lines over on StackExchange, was I really
+showing my students how to code badly? The code:
+
+
+#+BEGIN_SRC bash
+ls *gif | while read i 
+do
+  f=`basename $i .gif`
+  convert $i -resize 200x200 smaller-$f.gif
+done
+#+END_SRC
+
+doesn't exist in a vacuum. We start with an ls to see the directory,
+we use the **echo** throughout to test things before we run it live
+and then we run it live in such a way that it can't be
+destructive. I've been using the command line this way for decades and
+while I've screwed plenty of things up, it's never been due to a bad
+command line shell practice. 
+
+The important part is the discussion with the class:
+- would this be appropriate in a script file?
+- what are the dangers
+- why and when is it ok?
+etc.
+
+It's not our job to dictate to our students which best practices to
+follow but rather to prepare them to make smart decisions.
+
+This year, I'm back to using C++ in class after maybe two decades. I'm
+not up on current C++ best practices. I was wondering what was best:
+
+
+#+BEGIN_SRC C++
+  #include <iostream>
+
+  using namespace std;
+
+  int main(int argc, char *argv[])
+  {
+    cout << "something" << endl;
+    return 0;
+  }
+#+END_SRC
+
+#+BEGIN_SRC C++
+  #include <iostream>
+
+  int main(int argc, char *argv[])
+  {
+    std::cout << "something" << stdendl;
+    return 0;
+  }
+#+END_SRC
+
+#+BEGIN_SRC C++
+  #include <iostream>
+
+  using std::cout;
+  using std::end;
+
+  int main(int argc, char *argv[])
+  {
+    cout << "something" << endl;
+    return 0;
+  }
+#+END_SRC
+
+or even if we should use "\n" vs endl.
+
+I did my research, presented the results to my students and we talked
+about what they should consider when making their decision.
+
+Students don't need us to blindly 
+spout best practices. They can read them online or in a book. They do
+need us to guide them towards critically thinking about them.
+
