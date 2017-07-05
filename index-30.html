@@ -91,7 +91,130 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/python-editors/" class="u-url">Python - Editor or IDE</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/a-star-is-born/" class="u-url">A* is born</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/a-star-is-born/" rel="bookmark"><time class="published dt-published" datetime="2017-06-05T18:42:55-04:00" title="2017-06-05 18:42">2017-06-05 18:42</time></a></p>
+                <p class="commentline">            <a href="posts/a-star-is-born/#disqus_thread" data-disqus-identifier="cache/posts/a-star-is-born.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <p>
+Over on the <a href="https://cseducators.stackexchange.com/">CS Educator StachExchange</a>, which is in private beta for a
+few more days, I saw a post asking about how to introduce the <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A*
+search algorithm</a>. 
+</p>
+
+<p>
+I taught A* as part of the APCS class at Stuy so I thought I'd talk
+about what I did here.
+</p>
+
+<p>
+Some time around mid year, we get to intermediate recursion. This is
+about the time, give or take, when we talk about the nlogn sorts.
+</p>
+
+<p>
+We also build a recursive maze solver. It's a nice algorithm and a
+nice little program. It's around 15 lines of code to perform a
+recursive depth first search:
+</p>
+
+
+<div class="figure">
+<p><img src="img/astar/dfs.gif" alt="dfs.gif" align="center" height="200px"></p>
+</div>
+
+<p>
+The basic algorithm is:
+</p>
+<div class="highlight"><pre><span></span><span class="cm">/* solve the maze from an x,ylocation */</span>
+<span class="n">solve</span><span class="o">(</span><span class="n">x</span><span class="o">,</span><span class="n">y</span><span class="o">){</span>
+  <span class="k">if</span> <span class="o">(</span><span class="n">we</span><span class="err">'</span><span class="n">re</span> <span class="n">at</span> <span class="n">the</span> <span class="n">exit</span><span class="o">)</span>
+    <span class="n">Yay</span><span class="o">!</span> <span class="n">We</span> <span class="n">found</span> <span class="n">the</span> <span class="n">exit</span>
+  <span class="nf">if</span> <span class="o">(</span><span class="n">we</span><span class="err">'</span><span class="n">re</span> <span class="n">at</span> <span class="n">a</span> <span class="n">wall</span> <span class="n">or</span> <span class="n">a</span> <span class="n">visited</span> <span class="n">space</span><span class="o">)</span>
+    <span class="k">return</span> <span class="o">(</span><span class="n">to</span> <span class="n">previous</span> <span class="n">step</span><span class="o">)</span>
+  <span class="k">else</span> <span class="o">{</span>
+     <span class="n">mark</span> <span class="n">current</span> <span class="n">space</span> <span class="n">as</span> <span class="n">visited</span>
+     <span class="nf">solve</span><span class="o">(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="o">,</span><span class="n">y</span><span class="o">)</span>
+     <span class="n">solve</span><span class="o">(</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="o">,</span><span class="n">y</span><span class="o">)</span>
+     <span class="n">solve</span><span class="o">(</span><span class="n">x</span><span class="o">,</span><span class="n">y</span><span class="o">+</span><span class="mi">1</span><span class="o">)</span>
+     <span class="n">solve</span><span class="o">(</span><span class="n">x</span><span class="o">,</span><span class="n">y</span><span class="o">-</span><span class="mi">1</span><span class="o">)</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+
+<p>
+It's a nice lesson because in addition to all the recursion stuff, we
+also get to talk about state space, state space search, backtracking,
+efficiency concerns and much more. After we finish the maze solver, we also talk about
+other problems that can be similarly examined using state-space search
+like the knights tour and N-queens problems. 
+</p>
+
+<p>
+A month or so later, when we're learning about stacks and queues as
+data structures, we revisit the maze solver. This time we solve the
+problem in a more general way. We talk about using a data structure to
+hold the set of nodes that we're aware of and that we want to visit
+next. 
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">add</span> <span class="n">start</span> <span class="n">node</span> <span class="n">to</span> <span class="n">data</span> <span class="n">structure</span>
+<span class="k">while</span> <span class="n">data</span> <span class="n">structure</span> <span class="n">not</span> <span class="n">empty</span><span class="o">{</span>
+  <span class="n">current</span> <span class="o">=</span> <span class="n">remove</span> <span class="n">item</span> <span class="n">from</span> <span class="n">data</span> <span class="n">structure</span>
+  <span class="k">if</span> <span class="n">current</span> <span class="n">is</span> <span class="n">goal</span><span class="o">,</span> <span class="k">return</span> <span class="o">(</span><span class="n">we</span><span class="err">'</span><span class="n">re</span> <span class="n">done</span><span class="o">)</span>
+
+  <span class="k">for</span> <span class="n">every</span> <span class="n">node</span> <span class="n">adjacent</span> <span class="n">to</span> <span class="n">current</span> <span class="n">that</span> <span class="n">isn</span><span class="err">'</span><span class="n">t</span> <span class="n">yet</span> <span class="n">visited</span><span class="o">{</span>
+     <span class="n">mark</span> <span class="n">that</span> <span class="n">node</span> <span class="n">as</span> <span class="n">visited</span>
+     <span class="n">add</span> <span class="n">node</span> <span class="n">to</span> <span class="n">data</span> <span class="n">structure</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+
+<p>
+As we write the solution, we see that using a queue for this
+data structure yields a breadth first search:
+</p>
+
+
+<div class="figure">
+<p><img src="img/astar/bfs.gif" alt="bfs.gif" align="center" height="200px"></p>
+</div>
+
+<p>
+while using a stack yields depth first. 
+</p>
+
+<p>
+All of this leads to a discussion as to how deciding on which
+locations to look at next can greatly influence the steps to the
+exit. From here it's easy to see that you can use a heuristic to order
+the nodes in our data structure so that we explore "better"
+possibilities first. The data structure becomes a priority queue and
+we finally get to both "best first" and A* search:
+</p>
+
+
+<div class="figure">
+<p><img src="img/astar/astar.gif" alt="astar.gif" align="center" height="200px"></p>
+</div>
+
+<p>
+It's a nice sequence of lessons, albeit lessons spread out over
+months. The end result is that the students see both the need and
+motivation for something like A* and they see that it's not hard to
+implement. One basic routine where you can plug in one of three data
+structures - stack, queue, or priority queue to get very different
+results.
+</p>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/python-editors/" class="u-url">Python - Editor or IDE</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky

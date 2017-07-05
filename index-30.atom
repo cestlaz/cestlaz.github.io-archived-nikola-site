@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 30)</title>
   <id>http://cestlaz.github.io/index-30.atom</id>
-  <updated>2017-06-27T15:01:53Z</updated>
+  <updated>2017-07-05T00:25:05Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,133 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-29.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-30.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>A* is born</title>
+    <id>http://cestlaz.github.io/posts/a-star-is-born/</id>
+    <updated>2017-06-05T18:42:55-04:00</updated>
+    <published>2017-06-05T18:42:55-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/a-star-is-born/"/>
+    <summary type="html">&lt;p&gt;
+Over on the &lt;a href="https://cseducators.stackexchange.com/"&gt;CS Educator StachExchange&lt;/a&gt;, which is in private beta for a
+few more days, I saw a post asking about how to introduce the &lt;a href="https://en.wikipedia.org/wiki/A*_search_algorithm"&gt;A*
+search algorithm&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I taught A* as part of the APCS class at Stuy so I thought I'd talk
+about what I did here.
+&lt;/p&gt;
+
+&lt;p&gt;
+Some time around mid year, we get to intermediate recursion. This is
+about the time, give or take, when we talk about the nlogn sorts.
+&lt;/p&gt;
+
+&lt;p&gt;
+We also build a recursive maze solver. It's a nice algorithm and a
+nice little program. It's around 15 lines of code to perform a
+recursive depth first search:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/astar/dfs.gif" alt="dfs.gif" align="center" height="200px"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+The basic algorithm is:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/* solve the maze from an x,ylocation */&lt;/span&gt;
+&lt;span class="n"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;we&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;re&lt;/span&gt; &lt;span class="n"&gt;at&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;exit&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;Yay&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt; &lt;span class="n"&gt;We&lt;/span&gt; &lt;span class="n"&gt;found&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;exit&lt;/span&gt;
+  &lt;span class="nf"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;we&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;re&lt;/span&gt; &lt;span class="n"&gt;at&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;wall&lt;/span&gt; &lt;span class="n"&gt;or&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;visited&lt;/span&gt; &lt;span class="n"&gt;space&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;previous&lt;/span&gt; &lt;span class="n"&gt;step&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+  &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+     &lt;span class="n"&gt;mark&lt;/span&gt; &lt;span class="n"&gt;current&lt;/span&gt; &lt;span class="n"&gt;space&lt;/span&gt; &lt;span class="n"&gt;as&lt;/span&gt; &lt;span class="n"&gt;visited&lt;/span&gt;
+     &lt;span class="nf"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+     &lt;span class="n"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+     &lt;span class="n"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+     &lt;span class="n"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+  &lt;span class="o"&gt;}&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+It's a nice lesson because in addition to all the recursion stuff, we
+also get to talk about state space, state space search, backtracking,
+efficiency concerns and much more. After we finish the maze solver, we also talk about
+other problems that can be similarly examined using state-space search
+like the knights tour and N-queens problems. 
+&lt;/p&gt;
+
+&lt;p&gt;
+A month or so later, when we're learning about stacks and queues as
+data structures, we revisit the maze solver. This time we solve the
+problem in a more general way. We talk about using a data structure to
+hold the set of nodes that we're aware of and that we want to visit
+next. 
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="n"&gt;structure&lt;/span&gt;
+&lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="n"&gt;structure&lt;/span&gt; &lt;span class="n"&gt;not&lt;/span&gt; &lt;span class="n"&gt;empty&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;current&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;remove&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt; &lt;span class="n"&gt;from&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="n"&gt;structure&lt;/span&gt;
+  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;current&lt;/span&gt; &lt;span class="n"&gt;is&lt;/span&gt; &lt;span class="n"&gt;goal&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;we&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;re&lt;/span&gt; &lt;span class="n"&gt;done&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
+
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;every&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="n"&gt;adjacent&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;current&lt;/span&gt; &lt;span class="n"&gt;that&lt;/span&gt; &lt;span class="n"&gt;isn&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="n"&gt;yet&lt;/span&gt; &lt;span class="n"&gt;visited&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
+     &lt;span class="n"&gt;mark&lt;/span&gt; &lt;span class="n"&gt;that&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="n"&gt;as&lt;/span&gt; &lt;span class="n"&gt;visited&lt;/span&gt;
+     &lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="n"&gt;structure&lt;/span&gt;
+  &lt;span class="o"&gt;}&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+As we write the solution, we see that using a queue for this
+data structure yields a breadth first search:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/astar/bfs.gif" alt="bfs.gif" align="center" height="200px"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+while using a stack yields depth first. 
+&lt;/p&gt;
+
+&lt;p&gt;
+All of this leads to a discussion as to how deciding on which
+locations to look at next can greatly influence the steps to the
+exit. From here it's easy to see that you can use a heuristic to order
+the nodes in our data structure so that we explore "better"
+possibilities first. The data structure becomes a priority queue and
+we finally get to both "best first" and A* search:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/astar/astar.gif" alt="astar.gif" align="center" height="200px"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+It's a nice sequence of lessons, albeit lessons spread out over
+months. The end result is that the students see both the need and
+motivation for something like A* and they see that it's not hard to
+implement. One basic routine where you can plug in one of three data
+structures - stack, queue, or priority queue to get very different
+results.
+&lt;/p&gt;</summary>
+    <category term="algorithms" label="algorithms"/>
+    <category term="cs" label="cs"/>
+    <category term="data-structures" label="data structures"/>
+    <category term="programming" label="programming"/>
+  </entry>
   <entry>
     <title>Python - Editor or IDE</title>
     <id>http://cestlaz.github.io/posts/python-editors/</id>

@@ -1,5 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 27 Jun 2017 20:08:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 35 - Blogging</title><link>http://cestlaz.github.io/posts/using-emacs-35-blogging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 05 Jul 2017 00:31:50 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>CS Teachers - teacher first or content first</title><link>http://cestlaz.github.io/posts/teacher-to-cs-or-cs-to-teacher/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Is it easier to take CS people and teach them to teach or is it easier
+to take teachers and teach them CS?
+&lt;/p&gt;
+
+&lt;p&gt;
+The question gets batted around from time to time.
+&lt;/p&gt;
+
+&lt;p&gt;
+This time via twitter:
+&lt;/p&gt;
+
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Some think it's easier to teach a teacher to teach CS than to teach a CS pro to teach. &lt;a href="https://twitter.com/alfredtwo"&gt;@alfredtwo&lt;/a&gt; is not one of them &lt;a href="https://t.co/QCUP8d8llZ"&gt;https://t.co/QCUP8d8llZ&lt;/a&gt;&lt;/p&gt;— Diane Levitt (@diane_levitt) &lt;a href="https://twitter.com/diane_levitt/status/881874056911388673"&gt;July 3, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Agreed. It takes a lot of work. More than a week long workshop.&lt;/p&gt;— Alfred Thompson (@alfredtwo) &lt;a href="https://twitter.com/alfredtwo/status/882243591090962432"&gt;July 4, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;p&gt;
+The conversation was referring to blog posts by &lt;a href="http://blog.acthompson.net/2017/06/become-computer-science-teacher-in-five.html?spref=tw&amp;amp;m=1"&gt;Alfred Thompson&lt;/a&gt; and &lt;a href="https://gflint.wordpress.com/2017/06/20/a-week-of-in-service-another-python-course/"&gt;Garth flint&lt;/a&gt;. 
+Alfred's key point - one that I've spoken about before is that short
+term professional development does not a CS teacher make.
+&lt;/p&gt;
+
+&lt;p&gt;
+As to the lead in question? I've seen both routes succeed and both
+routes fail. Both can be heavy lifts but there's a missing part of the
+equation that's never addressed.
+&lt;/p&gt;
+
+&lt;p&gt;
+The claim is that it's easier to teach CS to a non-CS teacher because
+they already know how to teach. The problem is, particularly in the
+later grades that teachers of different subject areas have very
+different tool sets. Sure, there are common factors – get the kids
+involved, layer, spiral, etc. but you don't teach a CS lesson the same
+way you teach a math lesson let alone a literature, history, language
+lesson. 
+&lt;/p&gt;
+
+&lt;p&gt;
+In a math class, it's common to have students write solutions to
+problems up on the board. If you try that in a CS class, you'll be
+waiting 20 minutes while the kids transcribe the problems. Likewise,
+math homework will likely consist of a certain amount of repetitive
+practice problems whereas a CS class won't have something directly
+analogous. This is not to say that you don't have opportunities for
+students to present at the board in CS class or that there isn't
+worthwhile homework but rather that even at this simple level, there
+are differences. 
+&lt;/p&gt;
+
+&lt;p&gt;
+So, if we're going to teach a non-CS teacher the CS content, beyond
+the challenge of giving them the necessary depth and breadth of
+content knowledge we have to teach them how to teach CS.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've inventoried some of the techniques my colleagues and I have used
+in our classes and the collected methods could easily fill a couple of
+graduate education courses. 
+&lt;/p&gt;
+
+&lt;p&gt;
+So, what's the answer to the question? It doesn't matter where you
+start but if we want to do right by our kids we need to prepare them
+in not two but three areas:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;CS Content
+&lt;/li&gt;
+&lt;li&gt;CS Pedagogy
+&lt;/li&gt;
+&lt;li&gt;General education and pedagogy
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Short term PD (professional development) won't do it and neither will
+scripts for "teachers" to follow. It's going to take time, will, and
+effort.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's hoping that municipalities look at the long game. It's fine to
+do PD now to get something started but it's not enough. I wanted my
+kids math teachers to know math and how to teach it. We should demand
+no less from our CS teachers.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>education</category><category>policy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/teacher-to-cs-or-cs-to-teacher/</guid><pubDate>Tue, 04 Jul 2017 20:39:43 GMT</pubDate></item><item><title>Using Emacs 35 - Blogging</title><link>http://cestlaz.github.io/posts/using-emacs-35-blogging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -968,116 +1065,4 @@ made in a semi-private forum and I haven't asked permission.
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>teaching</category><guid>http://cestlaz.github.io/posts/disclosing-bugs/</guid><pubDate>Tue, 13 Jun 2017 20:30:27 GMT</pubDate></item><item><title>A* is born</title><link>http://cestlaz.github.io/posts/a-star-is-born/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
-Over on the &lt;a href="https://cseducators.stackexchange.com/"&gt;CS Educator StachExchange&lt;/a&gt;, which is in private beta for a
-few more days, I saw a post asking about how to introduce the &lt;a href="https://en.wikipedia.org/wiki/A*_search_algorithm"&gt;A*
-search algorithm&lt;/a&gt;. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I taught A* as part of the APCS class at Stuy so I thought I'd talk
-about what I did here.
-&lt;/p&gt;
-
-&lt;p&gt;
-Some time around mid year, we get to intermediate recursion. This is
-about the time, give or take, when we talk about the nlogn sorts.
-&lt;/p&gt;
-
-&lt;p&gt;
-We also build a recursive maze solver. It's a nice algorithm and a
-nice little program. It's around 15 lines of code to perform a
-recursive depth first search:
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/astar/dfs.gif" alt="dfs.gif" align="center" height="200px"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-The basic algorithm is:
-&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/* solve the maze from an x,ylocation */&lt;/span&gt;
-&lt;span class="n"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
-  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;we&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;re&lt;/span&gt; &lt;span class="n"&gt;at&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;exit&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;Yay&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt; &lt;span class="n"&gt;We&lt;/span&gt; &lt;span class="n"&gt;found&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;exit&lt;/span&gt;
-  &lt;span class="nf"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;we&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;re&lt;/span&gt; &lt;span class="n"&gt;at&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;wall&lt;/span&gt; &lt;span class="n"&gt;or&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;visited&lt;/span&gt; &lt;span class="n"&gt;space&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;previous&lt;/span&gt; &lt;span class="n"&gt;step&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-  &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-     &lt;span class="n"&gt;mark&lt;/span&gt; &lt;span class="n"&gt;current&lt;/span&gt; &lt;span class="n"&gt;space&lt;/span&gt; &lt;span class="n"&gt;as&lt;/span&gt; &lt;span class="n"&gt;visited&lt;/span&gt;
-     &lt;span class="nf"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-     &lt;span class="n"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-     &lt;span class="n"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-     &lt;span class="n"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-  &lt;span class="o"&gt;}&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-It's a nice lesson because in addition to all the recursion stuff, we
-also get to talk about state space, state space search, backtracking,
-efficiency concerns and much more. After we finish the maze solver, we also talk about
-other problems that can be similarly examined using state-space search
-like the knights tour and N-queens problems. 
-&lt;/p&gt;
-
-&lt;p&gt;
-A month or so later, when we're learning about stacks and queues as
-data structures, we revisit the maze solver. This time we solve the
-problem in a more general way. We talk about using a data structure to
-hold the set of nodes that we're aware of and that we want to visit
-next. 
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="n"&gt;structure&lt;/span&gt;
-&lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="n"&gt;structure&lt;/span&gt; &lt;span class="n"&gt;not&lt;/span&gt; &lt;span class="n"&gt;empty&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
-  &lt;span class="n"&gt;current&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;remove&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt; &lt;span class="n"&gt;from&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="n"&gt;structure&lt;/span&gt;
-  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;current&lt;/span&gt; &lt;span class="n"&gt;is&lt;/span&gt; &lt;span class="n"&gt;goal&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;we&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;re&lt;/span&gt; &lt;span class="n"&gt;done&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-
-  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;every&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="n"&gt;adjacent&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;current&lt;/span&gt; &lt;span class="n"&gt;that&lt;/span&gt; &lt;span class="n"&gt;isn&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="n"&gt;yet&lt;/span&gt; &lt;span class="n"&gt;visited&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
-     &lt;span class="n"&gt;mark&lt;/span&gt; &lt;span class="n"&gt;that&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="n"&gt;as&lt;/span&gt; &lt;span class="n"&gt;visited&lt;/span&gt;
-     &lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="n"&gt;structure&lt;/span&gt;
-  &lt;span class="o"&gt;}&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-As we write the solution, we see that using a queue for this
-data structure yields a breadth first search:
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/astar/bfs.gif" alt="bfs.gif" align="center" height="200px"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-while using a stack yields depth first. 
-&lt;/p&gt;
-
-&lt;p&gt;
-All of this leads to a discussion as to how deciding on which
-locations to look at next can greatly influence the steps to the
-exit. From here it's easy to see that you can use a heuristic to order
-the nodes in our data structure so that we explore "better"
-possibilities first. The data structure becomes a priority queue and
-we finally get to both "best first" and A* search:
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/astar/astar.gif" alt="astar.gif" align="center" height="200px"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-It's a nice sequence of lessons, albeit lessons spread out over
-months. The end result is that the students see both the need and
-motivation for something like A* and they see that it's not hard to
-implement. One basic routine where you can plug in one of three data
-structures - stack, queue, or priority queue to get very different
-results.
-&lt;/p&gt;</description><category>algorithms</category><category>cs</category><category>data structures</category><category>programming</category><guid>http://cestlaz.github.io/posts/a-star-is-born/</guid><pubDate>Mon, 05 Jun 2017 22:42:55 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>cs</category><category>teaching</category><guid>http://cestlaz.github.io/posts/disclosing-bugs/</guid><pubDate>Tue, 13 Jun 2017 20:30:27 GMT</pubDate></item></channel></rss>
