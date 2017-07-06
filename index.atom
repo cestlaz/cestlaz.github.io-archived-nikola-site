@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2017-07-05T00:31:50Z</updated>
+  <updated>2017-07-06T23:11:20Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,109 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-30.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>A Plea to AP teachers- don't measure yourself by your scores</title>
+    <id>http://cestlaz.github.io/posts/teachers-you-arent-your-test-scores/</id>
+    <updated>2017-07-06T17:22:10-04:00</updated>
+    <published>2017-07-06T17:22:10-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/teachers-you-arent-your-test-scores/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+AP scores just came out. As usual, I see the posts and take part in
+conversations where teachers talk about their results. Some are happy
+about their results, some aren't, some don't really care.
+&lt;/p&gt;
+
+&lt;p&gt;
+I just want to make a plea to all AP teachers out there:
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;b&gt;&lt;b&gt;Don't let your value be dictated by the college board or any other
+  exam.&lt;/b&gt;&lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+I never really cared much about my students' actual AP scores. There
+were a number of years when I never even saw the results. Of course, I
+had a population that would do reasonably well regardless of teacher
+so I was never placed under any pressure to "do better." One year -
+while the APCS-AB exam was still offered, my principal called me down
+to discuss the results to see if we could get more kids scoring 4s and
+5s (which most of the kids already did). I told him that I thought
+we were doing fine, explained why I couldn't advocate more teaching to
+the test (such as more than paying lip service to the case study or
+more rote practice on the multiple choice), and told him how I
+measured our success as a program. He was happy with my answer and
+that was that. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The AP exam is one test on one day and in my opinion the least
+valuable measure of my students' achievement. This is one of
+the reasons I was so dismayed by the CSEd community's efforts in
+pushing the AP exams - not the class or the subject but the actual exam.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, how should you judge your success? That's up to you. I can only
+tell you how I judge myself.
+&lt;/p&gt;
+
+&lt;p&gt;
+First and foremost - and I know this sounds cheesy - are you a "force
+for good" in your student's lives. Do you leave them in a better
+place? Have you opened the door to a possible future for them? Have
+you helped them grow? Beyond that, have they progressed in your
+subject and as students in general.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've had kids "fail" the AP exam and go on to wonderful careers in
+tech and come back to thank me for giving them their start. I've also
+had kids that have gone into other fields but appreciate what we've
+done for them. I've also had my failures and I do mean my
+failures. Students I couldn't reach or couldn't figure out how to
+help.
+&lt;/p&gt;
+
+&lt;p&gt;
+As teachers, we work day to day trying to improve but we can get a
+great overview of how we're doing by using a much longer feedback
+loop - looking at what our graduates are up to. When young teachers
+would comment on former students coming back or running into them at
+tech events that they would have graduates of their own in a few years
+and invariably they do.
+&lt;/p&gt;
+
+&lt;p&gt;
+To really evaluate how you're doing you have to go with the long
+game. Very few people get that. I remember talking to a Google
+Executive while I was designing CAPE 2010. He said something to the
+effect of "I know we won't know if this program works for about ten
+years but we'll have to come up with something short term to satisfy
+the powers that be."  That so few "get it" and need instant feedback
+is one of the reasons that our society is so test driven. We shouldn't
+be. Our focus should be on helping the students learn and progress.
+&lt;/p&gt;
+
+&lt;p&gt;
+So don't get distressed over AP results and don't get to high on them
+either. Certainly don't use them to drive what and how you teach. Let
+your students and your conscience be your guide.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="ap" label="ap"/>
+    <category term="apcs" label="apcs"/>
+    <category term="csed" label="csed"/>
+    <category term="education" label="education"/>
+  </entry>
   <entry>
     <title>CS Teachers - teacher first or content first</title>
     <id>http://cestlaz.github.io/posts/teacher-to-cs-or-cs-to-teacher/</id>
@@ -1089,120 +1192,5 @@ be for our community.
 &lt;/div&gt;</summary>
     <category term="community" label="community"/>
     <category term="cs-education" label="CS Education"/>
-  </entry>
-  <entry>
-    <title>Disclosing Bugs - requiring a project roadmap</title>
-    <id>http://cestlaz.github.io/posts/disclosing-bugs/</id>
-    <updated>2017-06-13T16:30:27-04:00</updated>
-    <published>2017-06-13T16:30:27-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/disclosing-bugs/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-Over on Facebook, a fellow CS educator &lt;sup&gt;&lt;a id="fnr.1" name="fnr.1" class="footref" href="http://cestlaz.github.io/posts/disclosing-bugs/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt; made a comment on something he
-wanted to try with his students this summer: having the students
-pre-disclose bugs when they submit their projects.
-&lt;/p&gt;
-
-&lt;p&gt;
-The post was asking for any links to "the literature." I can't speak
-to that but I I've done something similar to what the post was asking
-about so, as per usual, I thought I'd write about it here. It may not
-be "research" but I'm more interested in teacher practices than ivory
-towers anyway so here goes…
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
-&lt;p&gt;
-At a very basic level, I ask my students to provide a roadmap to any
-project they submit - usually in a readme file. I basically ask:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;How to use the project
-&lt;/li&gt;
-&lt;li&gt;What's cool and I should make sure to check out
-&lt;/li&gt;
-&lt;li&gt;What doesn't work, where were the sticking points and what's the
-status.
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-I tell my students that when I test the project, I'm not "out to get
-them" and by their telling me how to navigate the project, it makes
-sure I see things in the best possible light. I also tell them that I
-will be more harsh on bugs that they don't tell me about -
-particularly bugs that only occur some of the time.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-I also encourage (and sometimes require) that students maintain a
-changelog in their repo and also sometimes encourage them to have a
-todo list and list of bugs and for longer projects, I expect to see
-these and the readme updated over the course of the project (which
-should always be up to date on &lt;a href="https://cestlaz.github.io/posts/sigcse-2017-github-4"&gt;GitHub&lt;/a&gt;, Dropbox or wherever the project
-is living). 
-&lt;/p&gt;
-
-&lt;p&gt;
-When the students provide a good write up it makes evaluating the
-project much easier.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-When students buy in, they're hopefully thinking more deeply about
-their projects in terms of design and implementation and also from the
-point of view of someone else using their product. When they maintain
-the readme and other files over time, it also enables me to better
-support them.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div id="outline-container-sec-3" class="outline-2"&gt;
-&lt;h2 id="sec-3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-3"&gt;
-&lt;p&gt;
-So, does this work? Yes but with some caveats. It works better once
-the class and teacher know each other. If the students trust the
-teacher they're more likely to be open and honest when they write up
-the project. On the other hand, there will always be some students to
-"phone it in" and do the bare minimum in terms of writing up their
-projects.
-&lt;/p&gt;
-
-&lt;p&gt;
-The bottom line is that having the students do this is has a low cost
-and is beneficial to both the students and the teacher. When it works,
-it's great and when it doesn't, it's still pretty good.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="footnotes"&gt;
-&lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
-&lt;div id="text-footnotes"&gt;
-
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" name="fn.1" class="footnum" href="http://cestlaz.github.io/posts/disclosing-bugs/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;p class="footpara"&gt;
-I'm not sharing names from the Facebook post because it was
-made in a semi-private forum and I haven't asked permission.
-&lt;/p&gt;&lt;/div&gt;
-
-
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="cs" label="cs"/>
-    <category term="teaching" label="teaching"/>
   </entry>
 </feed>
