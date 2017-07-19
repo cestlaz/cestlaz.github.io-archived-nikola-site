@@ -1,5 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about policy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link rel="self" type="application/rss+xml" href="http://cestlaz.github.io/categories/policy.xml"></atom:link><language>en</language><lastBuildDate>Fri, 07 Jul 2017 20:57:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Self Certification - not a good idea</title><link>http://cestlaz.github.io/posts/dont-self-certify/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about policy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://cestlaz.github.io/categories/policy.xml"></atom:link><language>en</language><lastBuildDate>Wed, 19 Jul 2017 00:39:46 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>CS Ed advocates should pay attention to greater ed issues</title><link>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+For anyone involved in K12 CS education, the past few years have been
+a wild ride. When I first tried to make inroads in the DOE decades ago
+I couldn't get through the door. Now, CS Education is everyone's
+darling. It's really amazing. It's been a combination of grass roots
+efforts by teachers, non profit education efforts such as &lt;a href="http://teals12k.org"&gt;TEALS&lt;/a&gt;, advocacy of
+groups like &lt;a href="http://code.org"&gt;Code.org&lt;/a&gt; and amazing individuals like &lt;a href="http://avc.com/2017/06/bearing-witness/"&gt;Fred Wilson&lt;/a&gt; who has
+probably done more to move the needle of CS Ed in NY than any other 10
+people combined.
+&lt;/p&gt;
+
+&lt;p&gt;
+While everyone agrees that to do CS education right at the K12 level
+we need great teachers and lots of them, everyone also knows that
+teachers voices are often unheard. The voices with the greatest weight
+belong to the large non-profits, principals, superintendents and
+local politicians. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Today's post is a plea to those with voices to think about the effects
+of their advocacy for CS Ed to the greater education landscape.
+&lt;/p&gt;
+
+&lt;p&gt;
+I started thinking about this recently as I've been developing the
+CS teacher certification programs for Hunter College. As I spoke to
+people across the nation I found that many of the efforts to
+developing teacher certification are what I call the "you take it you
+teach it" model. You take an abbreviated version of APCS-A and APCS-P
+and you're a certified CS teacher. Just about every real educator feels
+that this is ludicrous. Some feel that this can be a first step - get
+these credentials to get in the door and then you have three to five
+years to really learn your subject and craft. I'm good with that but I
+have a problem with anyone who says "you take it you teach it" is good
+enough and I've heard of a number of regions that are seriously
+considering it.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why is this so bad and, I'd argue, dangerous? Not merely because we'll
+end up with substandard CS teachers for the foreseeable future but
+also because it undermines the teaching profession as a whole.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's no secret that public education is under attack. A number of
+states including Wisconsin, Arizona, Oklahoma, New York and Michigan
+have considered relaxing the standards to become a teacher to address
+a teacher shortage. In their twisted logic, the politicians and
+"reformers" say that we can't find enough qualified teachers because
+we've made it an untenable career so let's lower standards. You can
+argue that any current state's requirements are overly cumbersome but
+that's another conversation.
+&lt;/p&gt;
+
+&lt;p&gt;
+When CS Educators say that all that's needed to teach CS is to sit in
+on a two week APCS institute is saying that to teach any subject you
+don't need content expertise. This is dangerous to education as a
+whole and when power players in the CS Ed movement don't speak up
+otherwise or even worse that the stance that "you take it you teach
+it" is OK, we're undermining teaching as a profession. 
+&lt;/p&gt;
+
+&lt;p&gt;
+We need our heavy hitters to publicly and privately say that we need a
+short term entry into the profession but we absolutely need plans and
+pathways so that at the end of the day we have the best prepared
+teachers in our schools for CS and for all subjects.
+&lt;/p&gt;
+
+&lt;p&gt;
+Another issue is when as CS Educators we don't pay attention to the
+whole child. I was at a meeting of CSTA people  from about thirty
+states a few years ago. Someone asked "how can we advocate for CS when
+the school might use it as an excuse to get rid of music?" Cameron
+Wilson, at the time a lobbyist for the CSTA said something to the
+effect of "I'm not concerned with other subjects, my concern is
+getting CS into the schools." I get it, he was employed to stump CS
+but we have to remember that we're only a piece of the puzzle. We want
+a seat at the table but we have to make sure that the table is
+populated with everyone needed to provide a great education for our
+kids. 
+&lt;/p&gt;
+
+&lt;p&gt;
+A final issue I'll mention here is how so many CS educators are so
+close to the College Board. It was very disturbing that so many CS Ed
+players were pushing for more students to take the APCS exam. Not the
+class, not some other CS class but the APCS exam. AP is an extremely
+controversial subject among teachers and many of us feel that too many
+kids take too many AP classes and certainly too many exams. Remember,
+the College Board is the organization that pushes things like the
+PSAT8/9 another meaningless but high stakes exam inflicted upon our
+kids at taxpayer expense. I understand that AP makes things easy -
+they have courses, curricula, etc. but we've given the college board
+an outsized influence on CS education and we're not paying attention
+to their outsized influence on education in general. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm just a small time teacher. I don't have a national voice. I'm
+urging those that do:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Look into what's going on in greater education. Look at the way
+public education has been under attack and why.
+&lt;/li&gt;
+&lt;li&gt;Look at the side affects of our choices - who we partner with and
+what policies we push.
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+We might not agree on the right path but everyone with a voice in CS
+Education should be having hard conversations about this and then
+strongly advocating for the positions they feel correct.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</guid><pubDate>Tue, 18 Jul 2017 23:51:40 GMT</pubDate></item><item><title>Self Certification - not a good idea</title><link>http://cestlaz.github.io/posts/dont-self-certify/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -1184,80 +1307,4 @@ If principals were actually accountable in a reasonable
 way they'd have incentive to have the best teachers. Then we can get
 back to the old system which was indeed the way the "real world"
 works.
-&lt;/p&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/evaluating-teachers/</guid><pubDate>Sat, 19 Nov 2016 21:47:32 GMT</pubDate></item><item><title>Why Hunter CS is so important to NYC</title><link>http://cestlaz.github.io/posts/hunter-cs-important/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
-If you know me you know that my morning reads include a visit over to
-&lt;a href="http://avc.com"&gt;avc.com&lt;/a&gt;, Today, &lt;a href="http://avc.com/2016/10/cranes/"&gt;Fred's post&lt;/a&gt; talked about development and progress,
-evolution, if you would, in the city. Although not directly related,
-it got me thinking about gentrification. 
-&lt;/p&gt;
-
-&lt;p&gt;
-To me, gentrification all too often seems to result in pushing out
-people and business that were there during the hard times.
-&lt;/p&gt;
-
-&lt;p&gt;
-We don't need to force out long time residents that can no longer make
-rent - we need to uplift communities with pathways to towards greater
-economic opportunity.
-&lt;/p&gt;
-
-&lt;p&gt;
-Those of us in CS Education, each in our own way, are trying to help
-build those pathways.
-&lt;/p&gt;
-
-&lt;p&gt;
-Return readers know that I've ranted about some of the popular magic
-bullets. I've periodically talked about my concerns over code schools
-but even at their best they represent a workforce program for the well
-to do. I've also talked about efforts like P-Tech which sound good,
-but besides the fact that &lt;a href="https://garyrubinstein.wordpress.com/2016/10/06/p-tech-principal-responds/"&gt;the emperor has no clothes&lt;/a&gt;, is the school
-really preparing kids for opportunities in their own neighborhoods or
-in data centers far from home?
-&lt;/p&gt;
-
-&lt;p&gt;
-There are some workforce programs like &lt;a href="https://perscholas.org/"&gt;Per Scholas&lt;/a&gt; that I really like
-and respect but they're limited in what they can do.
-&lt;/p&gt;
-
-&lt;p&gt;
-What does that leave us with? The traditional path – college.
-&lt;/p&gt;
-
-&lt;p&gt;
-In terms of tech, New York City has some amazing colleges. You ask
-most people, they'll come back with NYU, Columbia. Great institutions
-but &lt;b&gt;&lt;b&gt;very&lt;/b&gt;&lt;/b&gt; expensive.  Not everyone can afford $75,000 a year and
-not everyone can afford to go into hundreds of thousands of debt.
-&lt;/p&gt;
-
-&lt;p&gt;
-This is why Hunter CS is so important. Actually CUNY but I can only
-affect my little corner of the world. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Hunter College has a really nice CS program and department. It's small
-and has flown under the radar but it's one of the reasons I came over
-to Hunter. 
-&lt;/p&gt;
-
-&lt;p&gt;
-One of my responsibilities at Hunter is to develop our new honors CS
-program and to connect all of  Hunter CS to the tech sector in NY. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I haven't written much about what's been going on but that will change
-int the months to come. Suffice it to say that to uplift our
-communities we need real, affordable educational opportunities and in
-terms of tech, education that leads to real opportunities in
-our city's tech sector.
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm convinced that Hunter College can be a game changer for the wealth
-of young talent we have in New York and for our tech sector.
-&lt;/p&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/hunter-cs-important/</guid><pubDate>Sun, 30 Oct 2016 23:13:23 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/evaluating-teachers/</guid><pubDate>Sat, 19 Nov 2016 21:47:32 GMT</pubDate></item></channel></rss>
