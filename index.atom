@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2017-07-21T22:45:53Z</updated>
+  <updated>2017-07-29T15:45:34Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,80 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-30.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Thoughts on outside influences on CS Education</title>
+    <id>http://cestlaz.github.io/posts/outside-influences-on-cs-ed/</id>
+    <updated>2017-07-29T11:40:02-04:00</updated>
+    <published>2017-07-29T11:40:02-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/outside-influences-on-cs-ed/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Yesterday &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; blogged about a NY Times piece discussing
+&lt;a href="https://computinged.wordpress.com/2017/07/28/silicon-valley-pushing-coding-into-american-classrooms-through-code-org-nytimes/"&gt;Silicon Valleys influence on education through Code.org&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Mark questioned the validity of the piece. If you don't read Mark's
+blog and you're in CS Ed you probably should. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I tried to leave a comment on Mark's blog - not about the NY Times
+article but rather my thoughts on why I think it's important that we
+remain wary and vigilant to industry and outsiders influence and
+impact on CS education and on education in general.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't know if my comment is sitting waiting for Mark to moderate or
+if I'm experiencing WordPress weirdness but since it hasn't shown up
+there, I thought I'd share it here:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;
+While the article might not make a strong case it's important to be wary of outside influences on education policies. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm a fan of a lot of what code.org does but speaking about outsiders in general…
+&lt;/p&gt;
+
+&lt;p&gt;
+Bill Gates and Co. directly or indirecty gave us such delights like stack ranking teachers, improving, I mean evaluating, I mean firing teachers based on test scores of students they don't teach, more and more high stakes nonsense testing for kids, and  at least in NY the destruction of neighborhood schools. 
+&lt;/p&gt;
+
+&lt;p&gt;
+They've also pushed the current charter movement that, aided by misleading stats appear successful but in truth are no better and frequently worse than public schools while not sharing back a single "best practice."
+&lt;/p&gt;
+
+&lt;p&gt;
+Then we have private companies like the College Board and Pearson both of whom have an outsized influence on US Ed policy and curriculum.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't doubt the good intentions of code.org - as I said, I'm a fan. I am concerned when they and others take actions that can affect ed policy. I'm concerned when code.org representative pushes students to take an AP exam - not a great CS course with a great CS teacher but the actual exam. I'm even more concerned when code.org offers free PD when a school signs up for the PSAT8/9 - another high stakes meaningless test at taxpayer expense. For code.org it's a means to  get more CS ed out there. To me it's setting up a new cash cow for the college board at my expense and at students expense.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've seen many Ed Tech people, armed with the best intentions, enter the lions den – a school, district, or municipality only to see their best intentions corrupted in the name of cost cutting, profits, or politics.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="education" label="education"/>
+    <category term="policy" label="policy"/>
+  </entry>
   <entry>
     <title>Three strikes and you're out or third time's a charm</title>
     <id>http://cestlaz.github.io/posts/three-times/</id>
@@ -1078,160 +1152,6 @@ vacation now and again.
 &lt;p&gt;
 It's not too much to ask but in this day and age it's apparently too
 much to give.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="education" label="education"/>
-    <category term="policy" label="policy"/>
-  </entry>
-  <entry>
-    <title>Mayoral Control - only when your guy's the mayor</title>
-    <id>http://cestlaz.github.io/posts/mayoral-control/</id>
-    <updated>2017-06-22T07:54:46-04:00</updated>
-    <published>2017-06-22T07:54:46-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/mayoral-control/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-The hot debate this past week in NY Education circles is Mayoral
-Control. When I started teaching, New York City schools were
-controlled by the Board of Education. The board appointed a
-chancellor. The system was supposed to balance community control as
-well as some centralized decision making. The system was created in
-the late 60s and was entrenched through my schooling. By the time I
-was a teacher I think it was pretty much a given that the system
-didn't work.
-&lt;/p&gt;
-
-&lt;p&gt;
-In 2002, everything changed with Mayoral control under Michael
-Bloomberg. Under mayoral control, the mayor appoints the chancellor
-who appoints superintendents an on down the line. This was supposed to
-create a chain of accountability leading up to and including the
-mayor. To address concerns that parents voices would be heard, we had
-the Panel for Educational Policy or PEP which was supposed to vet and
-vote on policy and initiatives.
-&lt;/p&gt;
-
-&lt;p&gt;
-Sounds good.
-&lt;/p&gt;
-
-&lt;p&gt;
-Of course, it was all a farce. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Parents may or may not have had a voice under the old system but they
-certainly didn't have a voice with mayoral control. The majority of
-members of the panel were mayoral appointees and if they didn't vote
-100% in line with their masters wishes, they were removed for someone
-who would. Schools were closed and initiatives were passed that were
-wildly unpopular with parents.
-&lt;/p&gt;
-
-&lt;p&gt;
-What did we get under mayoral control? There was some good, but we
-also got: 
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;100% buy in to the pet education theories of non-educators like Bill
-gates.
-&lt;/li&gt;
-&lt;li&gt;School leaders who barely taught and had little experience as
-educators. 
-&lt;/li&gt;
-&lt;li&gt;Destruction of neighborhood schools 
-&lt;/li&gt;
-&lt;li&gt;Destruction of just about all of the large comprehensive high schools
-&lt;/li&gt;
-&lt;li&gt;Open doors for private charter schools that follow questionable
-practices.
-&lt;/li&gt;
-&lt;li&gt;Flawed (at best)  school and teacher evaluation models 
-&lt;/li&gt;
-&lt;li&gt;The ATR pool 
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-Of course, reformers - those out to privatize education loved mayoral
-control under Bloomberg. It destabilized teaching as a career
-&lt;/p&gt;
-
-&lt;p&gt;
-Did results improve?
-&lt;/p&gt;
-
-&lt;p&gt;
-Some would say yes but it's debatable. Graduation rates and test
-scores are controlled by the politicians. When you have tests made,
-graded, and curved in secret (except for those charter schools that
-are exempt or grade their own tests), you've got to question any gains
-or losses.
-&lt;/p&gt;
-
-&lt;p&gt;
-Bloomberg's failing was (and possibly still is) that he and his
-appointees didn't understand education or teachers. Education not a
-business and can't be treated the same way.  
-&lt;/p&gt;
-
-&lt;p&gt;
-Did this help with accountability? To quote Mr. Bloomberg: "They can
-boo me at parades." 
-&lt;/p&gt;
-
-&lt;p&gt;
-Fast forward to the de Blasio administration. Personally, I was not a
-fan of Bloomberg's educational policy and I also feel that de Blasio's
-also doing a poor job. Regardless of my opinion, Mayoral control under
-de Blasio has certainly felt more community friendly. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This hasn't sat well with the reformers upstate and while Michael
-Bloomberg was granted mayoral control for his entire term, Bill de
-Blasio has had to fight for it every year and every year control has
-come with strings attached – generally involving the flow of money
-into private charter schools - still with questionable practices and
-results.
-&lt;/p&gt;
-
-&lt;p&gt;
-The funny thing is that many of those saying mayoral control was bad
-during the Bloomberg era say it's a necessity now  and many against it
-under Bloomberg are fans under de Blasio.  
-&lt;/p&gt;
-
-&lt;p&gt;
-What's even funnier, in a tragic way is that it isn't really even
-control. So much is really controlled in Albany under Governor
-Cuomo. When de Blasio wanted to charge private charters for space
-(rightfully so, in my opinion), Albany stepped in and gave the
-charters a free pass. How is that mayoral control?
-&lt;/p&gt;
-
-&lt;p&gt;
-Regardless of your political leanings, it's pretty clear that mayoral
-control is only a good thing when the mayor is your guy. We need
-something brand new that supports our communities. I was at the
-&lt;a href="https://personaldemocracy.com/conference"&gt;Personal Democracy Forum 2017&lt;/a&gt; a couple of weeks ago and a recurring
-theme, one which we really need now for our schools is:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-&lt;b&gt;&lt;b&gt;build with, not for&lt;/b&gt;&lt;/b&gt;.
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-If we don't get there we'll be stuck booing our politicians at parades.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>

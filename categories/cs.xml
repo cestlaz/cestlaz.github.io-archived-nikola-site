@@ -1,5 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 21 Jul 2017 22:45:53 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>CS Ed advocates should pay attention to greater ed issues</title><link>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 29 Jul 2017 15:46:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Thoughts on non educator  influences on CS Education</title><link>http://cestlaz.github.io/posts/outside-influences-on-cs-ed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Yesterday &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; blogged about a NY Times piece discussing
+&lt;a href="https://computinged.wordpress.com/2017/07/28/silicon-valley-pushing-coding-into-american-classrooms-through-code-org-nytimes/"&gt;Silicon Valleys influence on education through Code.org&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Mark questioned the validity of the piece. If you don't read Mark's
+blog and you're in CS Ed you probably should. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I tried to leave a comment on Mark's blog - not about the NY Times
+article but rather my thoughts on why I think it's important that we
+remain wary and vigilant to industry and outsiders influence and
+impact on CS education and on education in general.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't know if my comment is sitting waiting for Mark to moderate or
+if I'm experiencing WordPress weirdness but since it hasn't shown up
+there, I thought I'd share it here:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;
+While the article might not make a strong case it's important to be wary of outside influences on education policies. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm a fan of a lot of what code.org does but speaking about outsiders in general…
+&lt;/p&gt;
+
+&lt;p&gt;
+Bill Gates and Co. directly or indirecty gave us such delights like stack ranking teachers, improving, I mean evaluating, I mean firing teachers based on test scores of students they don't teach, more and more high stakes nonsense testing for kids, and  at least in NY the destruction of neighborhood schools. 
+&lt;/p&gt;
+
+&lt;p&gt;
+They've also pushed the current charter movement that, aided by misleading stats appear successful but in truth are no better and frequently worse than public schools while not sharing back a single "best practice."
+&lt;/p&gt;
+
+&lt;p&gt;
+Then we have private companies like the College Board and Pearson both of whom have an outsized influence on US Ed policy and curriculum.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't doubt the good intentions of code.org - as I said, I'm a fan. I am concerned when they and others take actions that can affect ed policy. I'm concerned when code.org representative pushes students to take an AP exam - not a great CS course with a great CS teacher but the actual exam. I'm even more concerned when code.org offers free PD when a school signs up for the PSAT8/9 - another high stakes meaningless test at taxpayer expense. For code.org it's a means to  get more CS ed out there. To me it's setting up a new cash cow for the college board at my expense and at students expense.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've seen many Ed Tech people, armed with the best intentions, enter the lions den – a school, district, or municipality only to see their best intentions corrupted in the name of cost cutting, profits, or politics.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/outside-influences-on-cs-ed/</guid><pubDate>Sat, 29 Jul 2017 15:40:02 GMT</pubDate></item><item><title>CS Ed advocates should pay attention to greater ed issues</title><link>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -1123,127 +1183,4 @@ general pool.&lt;/p&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><guid>http://cestlaz.github.io/posts/quality-devs-and-coding-contests/</guid><pubDate>Sun, 19 Feb 2017 21:53:56 GMT</pubDate></item><item><title>Starting with scheme</title><link>http://cestlaz.github.io/posts/starting-with-scheme/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
-Scheme is one of the languages used in Stuy's intro CS course. Like
-any other language, there are pros and cons of using it to introduce
-students to CS. Here are some of the reasons why I like Scheme as a
-first language and why despite that,  I don't recommend it in many
-cases.
-&lt;/p&gt;
-
-&lt;p&gt;
-Scheme certainly isn't mainstream. That's not the main reason why I
-like it but it is a side benefit. It's less likely kids come into
-class knowing it which creates a level playing field. The few times
-I've had a student with a background in Scheme, they've been good,
-helpful kids rather than ones that tried to show off and dominate the
-class. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I like scheme because it's simple. It looks different than other
-languages but is &lt;code&gt;(+ 3 4)&lt;/code&gt; really that different than &lt;code&gt;add(3,4)&lt;/code&gt; or
-&lt;code&gt;3+4&lt;/code&gt;? 
-&lt;/p&gt;
-
-&lt;p&gt;
-We can tell kids "everything's a function." While technically not
-true, and I tell my students that it isn't, it's close enough for our
-purposes. Everything's a function and the way we write a function is:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;f&lt;/span&gt; &lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;b&lt;/span&gt; &lt;span class="o"&gt;...&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Apply function &lt;b&gt;&lt;b&gt;f&lt;/b&gt;&lt;/b&gt; on arguments &lt;b&gt;&lt;b&gt;b c …&lt;/b&gt;&lt;/b&gt;. So we have &lt;code&gt;(+ 2 3)&lt;/code&gt; to
-add 2 and 3, &lt;code&gt;(and a b)&lt;/code&gt; for logical and &lt;code&gt;(= 3 4)&lt;/code&gt; to test to see if 3
-is equal to 4, etc. We also have the same basic notation for things
-like conditionals. In java, we might write:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
- &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-In scheme, it would be:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;if &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;&amp;gt; &lt;/span&gt;&lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-  &lt;span class="mi"&gt;5&lt;/span&gt;
-  &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Even though we're fudging the rules, we can lay out a handful of rules
-for the kids such as lambda and define follow a similar form to create and
-name functions:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;define &lt;/span&gt;&lt;span class="nv"&gt;add2&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;b&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;+ &lt;/span&gt;&lt;span class="nv"&gt;a&lt;/span&gt; &lt;span class="nv"&gt;b&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-where &lt;code&gt;(lambda (a b) (+ a b))&lt;/code&gt; returns a function that adds &lt;b&gt;&lt;b&gt;a&lt;/b&gt;&lt;/b&gt; and
-&lt;b&gt;&lt;b&gt;b&lt;/b&gt;&lt;/b&gt; and &lt;code&gt;define&lt;/code&gt; associates it with the identifier &lt;b&gt;&lt;b&gt;add2&lt;/b&gt;&lt;/b&gt;. Now we
-can use the function: &lt;code&gt;(add2 5 10)&lt;/code&gt; which evaluates to 15.
-&lt;/p&gt;
-
-&lt;p&gt;
-With lambda, define, if, and a few more basics, it's off to the
-races. The simple, consistent syntax makes things easy for the kids
-and the constrained tool set lets us focus their way of thinking.
-&lt;/p&gt;
-
-&lt;p&gt;
-Of course this wouldn't work had DrScheme (now &lt;a href="https://racket-lang.org/"&gt;Racket&lt;/a&gt;) not
-existed. That gave us a nice learning IDE to work in.
-&lt;/p&gt;
-
-&lt;p&gt;
-Using Scheme, we can not only cover the basics like conditionals,
-abstraction and such but also deeper concepts like recursion, map,
-filter, and reduce. When we move on from Scheme, the kids also have a
-frame of reference for all the other languages and paradigms they use.
-&lt;/p&gt;
-
-&lt;p&gt;
-There are downsides, however. Outside help is harder to come by and
-there is some pushback from parents and it isn't as pretty and flashy
-as some other tool-sets. Scheme worked at Stuy for a number of
-reasons. When I created the class that used it, there were no good
-pre-AP classes in the school and I had a pretty good reputation as a
-teacher. The class also used multiple tools with &lt;a href="https://ccl.northwestern.edu/netlogo/"&gt;NetLogo&lt;/a&gt; being the
-primary other one and tackled a variety of CS and non CS topics.
-First time through, reputation and buzz filled the classes and after
-that, the class developed a solid enough reputation to fill itself.
-&lt;/p&gt;
-
-&lt;p&gt;
-It also didn't hurt that our program developed from the inside
-out. First, we had APCS-AB on the books as a junior year course, then
-I added our post AP senior year electives. Since it was easy to show
-what the kids were already graduating with, it was easy to diffuse any
-pushback from not using mainstream tools in the first class.
-&lt;/p&gt;
-
-&lt;p&gt;
-Scheme worked at Stuy and I feel that it still does. Would I use
-Scheme for a first experience in a drop in program at an after-school
-where kids might not come back if they don't get to a payoff
-immediately? Probably not. Would I recommend it at a school where I
-want to integrate CS with some of the other subjects quickly, again,
-probably not (except for integration with algebra where &lt;a href="http://www.bootstrapworld.org/"&gt;Bootstrapworld&lt;/a&gt;
-is a terrific program).
-&lt;/p&gt;
-
-&lt;p&gt;
-In any event, if you're a high school CS teacher and  haven't played
-with scheme  or some other functional language, I highly recommend
-it - you might not actually ever teach it or use it but it can really
-help develop you as a programmer and an educator.
-&lt;/p&gt;</description><category>cs</category><category>curriculum</category><category>education</category><guid>http://cestlaz.github.io/posts/starting-with-scheme/</guid><pubDate>Wed, 15 Feb 2017 17:20:25 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>cs</category><category>education</category><guid>http://cestlaz.github.io/posts/quality-devs-and-coding-contests/</guid><pubDate>Sun, 19 Feb 2017 21:53:56 GMT</pubDate></item></channel></rss>
