@@ -1,0 +1,117 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs 36 - A Touch of Elisp
+.. slug: using-emacs-36-touch-of-elisp
+.. date: 2017-07-30 11:22:54 UTC-04:00
+.. tags: emacs, learning, tools
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+
+I've been working on a vue.js project this summer. During the school
+year I really can't dive into code so it's been fun.
+
+I've already showed you most of the Emacs tools I use for
+development. Projectile, Ace-Window, IBuffer, Swiper / Ivy and
+all. One thing I couldn't easily do was arrange windows the way I
+wanted.
+
+I've been setting up Emacs with one large window and a couple of
+smaller ones:
+
+#+BEGIN_SRC ditaa :file ../files/img/touch-elisp.png :exports none
+
+
++----------------------------------+------------+
+|                                  |            |
+|                                  |  B         |
+|                                  |            |
+|                                  |            |
+|    A                             +------------+
+|                                  |            |
+|                                  |     C      |
+|                                  |            |
+|                                  |            |
+|                                  |            |
++----------------------------------+------------+
+
+#+END_SRC
+
+#+RESULTS:
+[[file:../files/img/touch-elisp.png]]
+
+[[../../img/touch-elisp.png]]
+
+I can easily switch the buffer in the window and I can easily switch
+windows but what I wanted to do was swap the buffer in the large
+window with one of the smaller buffers and leave focus in the larger
+buffer:
+
+
+#+BEGIN_SRC ditaa :file ../files/img/touch-elisp2.png :exports none
+
+
++----------------------------------+------------+
+|                                  |            |
+|                                  |  A         |
+|                                  |            |
+|                                  |            |
+|    B                             +------------+
+|                                  |            |
+|                                  |     C      |
+|                                  |            |
+|                                  |            |
+|                                  |            |
++----------------------------------+------------+
+
+#+END_SRC
+
+#+RESULTS:
+[[file:../files/img/touch-elisp2.png]]
+
+[[../../img/touch-elisp2.png]]
+
+
+I started looking at perspective mode and persp mode but neither work
+with the latest Emacs. After poking around at other packages I
+realized that ace-window does most of what I wanted. Ace-window has a
+function that swaps the buffers in two windows named
+~ace-swap-window~. The only problem is that it leaves the focus on the
+window you swap to not the one you started in. Ace-window also has
+~aw-flip-window~ which then returns the cursor to the previous window.
+
+With a little elisp, we get the behavior I was looking for which I
+then bound to ~C-1 z~:
+
+#+BEGIN_SRC emacs-lisp
+(defun z/swap-windowsn ()
+""
+(interactive)
+(ace-swap-window)
+(aw-flip-window)
+)
+
+(define-key z-map (kbd "w") 'z/swap-windows)
+
+#+END_SRC
+
+
+The video goes into more details but it shows that if you're not
+afraid to explore a bit you can pretty much get Emacs to do whatever
+you want.
+
+
+#+BEGIN_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NQhud2ZNd1w" frameborder="0" allowfullscreen></iframe>
+#+END_HTML
+
+
+
+
+
+
+
+
