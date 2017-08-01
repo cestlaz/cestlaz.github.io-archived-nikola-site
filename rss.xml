@@ -1,5 +1,194 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 31 Jul 2017 20:16:47 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 36 - A Touch of Elisp</title><link>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link rel="self" href="http://cestlaz.github.io/rss.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 01 Aug 2017 00:57:02 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Grit: A Kind Word and a Gun</title><link>http://cestlaz.github.io/posts/grit-kind-word-gun/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Back in May, I read this &lt;a href="http://avc.com/2017/05/grit/"&gt;post&lt;/a&gt; about Angela Duckworth and &lt;a href="https://www.amazon.com/Grit-Passion-Perseverance-Angela-Duckworth-ebook/dp/B010MH9V3W/ref=sr_1_1?ie=UTF8&amp;amp;qid=1501543669&amp;amp;sr=8-1&amp;amp;keywords=Grit"&gt;Grit&lt;/a&gt;. Grit
+has become an education buzzword in the past few years so I figured I
+should read Duckworth's book. It took this long because there was a
+long waiting list at the New York Public Library to get the ebook. I'm
+still not quite finished with the book but I thought I'd share some of
+my thoughts on the book and the buzz.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first big takeaway is "you can get much further with a kind word
+and a gun than with a kind word alone." Or in grit terms Duckworth
+says a number of times that Grit is important but that other factors
+such as talent do indeed come into play and towards the end of the
+book she lists other character qualities that are arguably more
+important than grit. I'll get back to grit + other qualities towards
+the end of this post.  On the buzz side, all of that's forgotten - in
+the ed reform world it's all grit all the time. We must teach it at
+our low income schools and we should include grit in our evaluation of
+teachers and schools.
+&lt;/p&gt;
+
+&lt;p&gt;
+Duckworth recently has come out to say grit shouldn't be used in
+evaluating schools and teachers but as I mentioned &lt;a href="http://cestlaz.github.io/posts/outside-influences-on-cs-ed/"&gt;a few days ago&lt;/a&gt;,
+ed reformers have ways of taking arguably good ideas and using them towards
+awful ends.
+&lt;/p&gt;
+
+&lt;p&gt;
+So we have a basic premise that hard work and sticktoitiveness is
+important but so is talent. Talent alone won't get you as far as
+talent and grit. 
+&lt;/p&gt;
+
+&lt;p&gt;
+So in spite of the "ed reformers" take on grit, given Duckworth's
+balanced perspective, I was hooked.
+&lt;/p&gt;
+
+&lt;p&gt;
+Where Duckworth started to lose me, however is when she dove into the
+education landscape for examples.
+&lt;/p&gt;
+
+&lt;p&gt;
+First up is Teach for America. Certainly the founder, Wendy Kopp is
+full of grit and Duckworth talks about teachers needing to be gritty
+but when you talk about TFA, you're talking about a group that:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;has a 5 week training program - not nearly enough to learn to teach
+&lt;/li&gt;
+&lt;li&gt;has a 2 year commitment before moving to "better things"
+&lt;/li&gt;
+&lt;li&gt;encourages practices like scripted lessons
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+None of this sounds particularly gritty to me. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Duckworth also highlights the KIPP charter chain as an terrific
+example of grit and the success that follows. She touts KIPP's
+graduation rate neglecting to mention that like most other charters
+claiming miracles, KIPP's stats should be eyed with scrutiny (&lt;a href="http://garyrubinstein.teachforus.org/2011/07/08/kipp-on-trickin-looking-at-the-raw-data/"&gt;link&lt;/a&gt;, &lt;a href="https://garyrubinstein.wordpress.com/2016/01/22/whatever-happened-to-kipp/%0A"&gt;link&lt;/a&gt;,
+&lt;a href="https://garyrubinstein.wordpress.com/2017/04/28/4th-best-high-school-in-new-york-is-a-kipp-school-that-doesnt-exist/"&gt;link&lt;/a&gt;). I would have expected a researcher to dig a little deeper.
+&lt;/p&gt;
+
+&lt;p&gt;
+My friend, former colleague, and TFA alum Gary Rubinstein visited a
+KIPP school in NY a few years ago. His take:
+&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+So what I saw there was not very impressive.  I didn’t see any classes
+where teachers were getting that mythical period and half of growth in
+one period.  I saw some good teaching, mostly average teaching, and
+even some very bad teaching.  I saw a novice teacher struggle to
+control a class of nine students.  They were walking all over him and
+accomplished very little that period.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+And in terms of KIPP's grit training:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;I also saw the ‘grit’ training program which amounted to the students
+getting the teacher to define very clearly how little homework they
+would have to do to still get their candy bar rewards.
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Finally, Duckworth holds up Geoffrey Canada's as another shiny example
+failing to notice that again, the &lt;a href="http://garyrubinstein.teachforus.org/2013/05/12/canadas-legend-ary-ted-talk-lie/"&gt;Emperor has no clothes&lt;/a&gt; and if you
+look at attrition, the results are far from stellar.  
+&lt;/p&gt;
+
+&lt;p&gt;
+All of this left me thinking that if Duckworth was so off base with
+these three example where I have some details of the behind the scenes
+going on, how much can I trust the rest of the book?
+&lt;/p&gt;
+
+&lt;p&gt;
+In spite of this, I still agreed with Duckworth's basic premise so I
+read on.
+&lt;/p&gt;
+
+&lt;p&gt;
+Later in the book, Duckworth talks about developing grit. This quote struck me:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Like a lot of parents I had a strong intuition that grit is enahnced
+by doing activities like ballet… or piano … or football…
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+It struck me because it seemed funny coming from a researcher. It
+reminded me of Christopher Alexander's "A Timeless Way of Building," a
+book on architecture that is sometimes credit as the root source for
+Object Oriented Programming. Alexander talks about how societies
+throughout history and throughout the world "knew" how to build
+certain structures – barns, homes with certain features, even
+towns. Back in the day we didn't have engineering and architecture
+schools but we figured out how to do these things and we figured it
+out pretty much universally. Duckworth is basically saying "parents
+know." It reminded me of my belief - "teachers know." This applies to
+teaching content and teaching skills like grit. You can't script a
+grit lesson. A good teacher knows when a student needs encouragement,
+when a student needs to be coddled and when a student needs to be
+redirected. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This post has been something of a ramble but I want to get back to 
+grit and other qualities and how people are talking about grit as the
+be all and end all and not just a component.
+&lt;/p&gt;
+
+&lt;p&gt;
+Over on &lt;a href="http://avc.com"&gt;AVC&lt;/a&gt;, in the post that got me to read Grit, Fred closed with:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;If you hire and manage people, if you run start and run companies, if
+you invest in people and their projects, then Grit is a book you
+should read.
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+He's absolutely right but remember the whole person and what you've
+prescreened for before you consider grit.
+&lt;/p&gt;
+
+&lt;p&gt;
+Way back when discussions were ongoing about the design for &lt;a href="https://www.afsenyc.org/"&gt;AFSE&lt;/a&gt; -
+before the DOE stopped returning my emails and froze me out of the
+process I was at am meeting. A bunch of tech industry heavy hitters
+were there. We were arguing over admission screening - did the school
+need one. My position was that if you wanted to produce "Google ready"
+engineers after high school you needed one. If that wasn't the goal
+you didn't. One of the DOE representatives posed a question to the
+tech people: "what qualities do you look for in a hire?" This elicited
+responses like hard working, able to work with others, able to
+communicate. The DOE person was proud to have made his point that
+these tech companies weren't looking for talent, advanced skills
+anything similar - grit was all you needed. I followed up - "and from
+what schools do you look for the kids with these qualities?" - MIT,
+Harvard, Cornell… and the tech people got it - they were already
+screening for the academic stuff so all that was left to look for were
+the other skills. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Should we look at grit? Certainly. Just remember that it's a piece of
+the puzzle just like everything else.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>education</category><category>soft skills</category><guid>http://cestlaz.github.io/posts/grit-kind-word-gun/</guid><pubDate>Mon, 31 Jul 2017 11:19:11 GMT</pubDate></item><item><title>Using Emacs 36 - A Touch of Elisp</title><link>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
@@ -924,31 +1113,4 @@ kids math teachers to know math and how to teach it. We should demand
 no less from our CS teachers.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>policy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/teacher-to-cs-or-cs-to-teacher/</guid><pubDate>Tue, 04 Jul 2017 20:39:43 GMT</pubDate></item><item><title>Using Emacs 35 - Blogging</title><link>http://cestlaz.github.io/posts/using-emacs-35-blogging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-Very little new Emacs in today's episode of Using Emacs. The video
-shows my old blogging workflow and what I'm playing with now.
-&lt;/p&gt;
-
-&lt;p&gt;
-The only new Emacs covered is the &lt;a href="https://github.com/rejeep/prodigy.el"&gt;prodigy&lt;/a&gt; package which lets you run
-services under Emacs. I use it to run &lt;a href="https://getnikola.com/blog/index.html"&gt;Nikola&lt;/a&gt;'s development server but
-I think prodigy will also be useful when I start writing that knitting
-application I promised my wife.
-&lt;/p&gt;
-
-&lt;p&gt;
-When I started this blog, I used Jekyll. It was simple and worked with
-GitHub pages. I wrote about why I transitioned to Nikola &lt;a href="https://cestlaz.github.io/posts/2016-04-14-i-hate-ruby/"&gt;here&lt;/a&gt; and
-&lt;a href="https://cestlaz.github.io/posts/2016-04-17-emacs-jekyll-nikola/"&gt;here&lt;/a&gt;. 
-&lt;/p&gt;
-
-&lt;p&gt;
-There's not much more to say here so enjoy the video:
-&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/wSeTic9obKw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-35-blogging/</guid><pubDate>Tue, 27 Jun 2017 15:22:54 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>education</category><category>policy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/teacher-to-cs-or-cs-to-teacher/</guid><pubDate>Tue, 04 Jul 2017 20:39:43 GMT</pubDate></item></channel></rss>

@@ -18,24 +18,17 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="../../index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/posts/grit-kind-word-gun/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
-<meta name="robots" content="noindex">
+<link rel="prev" href="../using-emacs-36-touch-of-elisp/" title="Using Emacs 36 - A Touch of Elisp" type="text/html">
 <meta property="og:site_name" content="C'est la Z">
 <meta property="og:title" content="Grit: A Kind Word and a Gun">
 <meta property="og:url" content="http://cestlaz.github.io/posts/grit-kind-word-gun/">
-<meta property="og:description" content="http://avc.com/2017/05/grit/ - 
-
-
-
-Fred's quote:
-If you hire and manage people, if you run start and run companies, if
-you invest in people and their projects, then Grit is a book you
-should read.
-
-
-
-">
+<meta property="og:description" content="Back in May, I read this post about Angela Duckworth and Grit. Grit
+has become an education buzzword in the past few years so I figured I
+should read Duckworth's book. It took this long because there ">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-07-31T07:19:11-04:00">
+<meta property="article:tag" content="education">
+<meta property="article:tag" content="soft skills">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -122,134 +115,188 @@ should read.
 <h2 id="sec-1"></h2>
 <div class="outline-text-2" id="text-1">
 <p>
-<a href="http://avc.com/2017/05/grit/">http://avc.com/2017/05/grit/</a> - 
+Back in May, I read this <a href="http://avc.com/2017/05/grit/">post</a> about Angela Duckworth and <a href="https://www.amazon.com/Grit-Passion-Perseverance-Angela-Duckworth-ebook/dp/B010MH9V3W/ref=sr_1_1?ie=UTF8&amp;qid=1501543669&amp;sr=8-1&amp;keywords=Grit">Grit</a>. Grit
+has become an education buzzword in the past few years so I figured I
+should read Duckworth's book. It took this long because there was a
+long waiting list at the New York Public Library to get the ebook. I'm
+still not quite finished with the book but I thought I'd share some of
+my thoughts on the book and the buzz.
 </p>
 
 <p>
-Fred's quote:
-If you hire and manage people, if you run start and run companies, if
+The first big takeaway is "you can get much further with a kind word
+and a gun than with a kind word alone." Or in grit terms Duckworth
+says a number of times that Grit is important but that other factors
+such as talent do indeed come into play and towards the end of the
+book she lists other character qualities that are arguably more
+important than grit. I'll get back to grit + other qualities towards
+the end of this post.  On the buzz side, all of that's forgotten - in
+the ed reform world it's all grit all the time. We must teach it at
+our low income schools and we should include grit in our evaluation of
+teachers and schools.
+</p>
+
+<p>
+Duckworth recently has come out to say grit shouldn't be used in
+evaluating schools and teachers but as I mentioned <a href="http://cestlaz.github.io/posts/outside-influences-on-cs-ed/">a few days ago</a>,
+ed reformers have ways of taking arguably good ideas and using them towards
+awful ends.
+</p>
+
+<p>
+So we have a basic premise that hard work and sticktoitiveness is
+important but so is talent. Talent alone won't get you as far as
+talent and grit. 
+</p>
+
+<p>
+So in spite of the "ed reformers" take on grit, given Duckworth's
+balanced perspective, I was hooked.
+</p>
+
+<p>
+Where Duckworth started to lose me, however is when she dove into the
+education landscape for examples.
+</p>
+
+<p>
+First up is Teach for America. Certainly the founder, Wendy Kopp is
+full of grit and Duckworth talks about teachers needing to be gritty
+but when you talk about TFA, you're talking about a group that:
+</p>
+<ul class="org-ul">
+<li>has a 5 week training program - not nearly enough to learn to teach
+</li>
+<li>has a 2 year commitment before moving to "better things"
+</li>
+<li>encourages practices like scripted lessons
+</li>
+</ul>
+<p>
+None of this sounds particularly gritty to me. 
+</p>
+
+<p>
+Duckworth also highlights the KIPP charter chain as an terrific
+example of grit and the success that follows. She touts KIPP's
+graduation rate neglecting to mention that like most other charters
+claiming miracles, KIPP's stats should be eyed with scrutiny (<a href="http://garyrubinstein.teachforus.org/2011/07/08/kipp-on-trickin-looking-at-the-raw-data/">link</a>, <a href="https://garyrubinstein.wordpress.com/2016/01/22/whatever-happened-to-kipp/%0A">link</a>,
+<a href="https://garyrubinstein.wordpress.com/2017/04/28/4th-best-high-school-in-new-york-is-a-kipp-school-that-doesnt-exist/">link</a>). I would have expected a researcher to dig a little deeper.
+</p>
+
+<p>
+My friend, former colleague, and TFA alum Gary Rubinstein visited a
+KIPP school in NY a few years ago. His take:
+</p>
+
+
+<blockquote>
+<p>
+So what I saw there was not very impressive.  I didn’t see any classes
+where teachers were getting that mythical period and half of growth in
+one period.  I saw some good teaching, mostly average teaching, and
+even some very bad teaching.  I saw a novice teacher struggle to
+control a class of nine students.  They were walking all over him and
+accomplished very little that period.
+</p>
+</blockquote>
+
+<p>
+And in terms of KIPP's grit training:
+</p>
+
+<div class="highlight"><pre><span></span>I also saw the ‘grit’ training program which amounted to the students
+getting the teacher to define very clearly how little homework they
+would have to do to still get their candy bar rewards.
+</pre></div>
+
+<p>
+Finally, Duckworth holds up Geoffrey Canada's as another shiny example
+failing to notice that again, the <a href="http://garyrubinstein.teachforus.org/2013/05/12/canadas-legend-ary-ted-talk-lie/">Emperor has no clothes</a> and if you
+look at attrition, the results are far from stellar.  
+</p>
+
+<p>
+All of this left me thinking that if Duckworth was so off base with
+these three example where I have some details of the behind the scenes
+going on, how much can I trust the rest of the book?
+</p>
+
+<p>
+In spite of this, I still agreed with Duckworth's basic premise so I
+read on.
+</p>
+
+<p>
+Later in the book, Duckworth talks about developing grit. This quote struck me:
+</p>
+
+<blockquote>
+<p>
+Like a lot of parents I had a strong intuition that grit is enahnced
+by doing activities like ballet… or piano … or football…
+</p>
+</blockquote>
+
+<p>
+It struck me because it seemed funny coming from a researcher. It
+reminded me of Christopher Alexander's "A Timeless Way of Building," a
+book on architecture that is sometimes credit as the root source for
+Object Oriented Programming. Alexander talks about how societies
+throughout history and throughout the world "knew" how to build
+certain structures – barns, homes with certain features, even
+towns. Back in the day we didn't have engineering and architecture
+schools but we figured out how to do these things and we figured it
+out pretty much universally. Duckworth is basically saying "parents
+know." It reminded me of my belief - "teachers know." This applies to
+teaching content and teaching skills like grit. You can't script a
+grit lesson. A good teacher knows when a student needs encouragement,
+when a student needs to be coddled and when a student needs to be
+redirected. 
+</p>
+
+<p>
+This post has been something of a ramble but I want to get back to 
+grit and other qualities and how people are talking about grit as the
+be all and end all and not just a component.
+</p>
+
+<p>
+Over on <a href="http://avc.com">AVC</a>, in the post that got me to read Grit, Fred closed with:
+</p>
+
+<div class="highlight"><pre><span></span>If you hire and manage people, if you run start and run companies, if
 you invest in people and their projects, then Grit is a book you
 should read.
+</pre></div>
+
+<p>
+He's absolutely right but remember the whole person and what you've
+prescreened for before you consider grit.
 </p>
 
 <p>
-but people are already looking at the talent pool.
+Way back when discussions were ongoing about the design for <a href="https://www.afsenyc.org/">AFSE</a> -
+before the DOE stopped returning my emails and froze me out of the
+process I was at am meeting. A bunch of tech industry heavy hitters
+were there. We were arguing over admission screening - did the school
+need one. My position was that if you wanted to produce "Google ready"
+engineers after high school you needed one. If that wasn't the goal
+you didn't. One of the DOE representatives posed a question to the
+tech people: "what qualities do you look for in a hire?" This elicited
+responses like hard working, able to work with others, able to
+communicate. The DOE person was proud to have made his point that
+these tech companies weren't looking for talent, advanced skills
+anything similar - grit was all you needed. I followed up - "and from
+what schools do you look for the kids with these qualities?" - MIT,
+Harvard, Cornell… and the tech people got it - they were already
+screening for the academic stuff so all that was left to look for were
+the other skills. 
 </p>
 
 <p>
-Like Harvard saying so many students are admitted because of grit
-related things.
-</p>
-
-<hr>
-<p>
-So far all Duckworth's work on rich people
-</p>
-
-
-<p>
-Geoffrey Canada's results
-</p>
-
-
-
-
-<p>
-Kipp - 80% graduation rate claimed
-<a href="https://garyrubinstein.wordpress.com/2016/01/22/whatever-happened-to-kipp/">https://garyrubinstein.wordpress.com/2016/01/22/whatever-happened-to-kipp/</a>
-<a href="https://garyrubinstein.wordpress.com/2017/04/28/4th-best-high-school-in-new-york-is-a-kipp-school-that-doesnt-exist/">https://garyrubinstein.wordpress.com/2017/04/28/4th-best-high-school-in-new-york-is-a-kipp-school-that-doesnt-exist/</a>
-</p>
-
-
-<p>
-I visited one of KIPPs ‘study skills’ classes.  I had read about how
-KIPP had developed a program for building skills like resilience and
-‘grit’ which were even more important than academics.  So I was very
-surprised to see that a big part of the class I saw was dedicated to
-explaining a new reward system where the five students in that class
-would earn a candy bar each day for a week that they completed just
-one of their required homework assignments.  There is no way that Paul
-Tough was writing about this when he wrote about how KIPP is
-developing character in his latest book.
-</p>
-
-<p>
-But my assessment is that this school is a somewhat better than
-average, but by no means a place where miracles are happening.  One
-thing that makes them better is surely the tiny class size and the
-fact that the teachers only teach four classes, which leaves them a
-lot of time to help kids individually.  I’ve sometimes thought that as
-a reward for teaching a high needs population, all teachers in a
-school with high poverty should teach just four classes.  Maybe this
-is something we can learn from KIPP.
-</p>
-
-
-<p>
-Gary On TFA:
-The most creative,dedicated, driven people can work really hard. and a
-few will have the natural ability in addition to these traits that
-make them good teachers. But to assume that grit and creativity can
-make up for lack of knowledge devalues the education that it takes to
-be a teacher. and I include interning and learning from master
-teachers in that education.ñ
-</p>
-
-
-<p>
-Duckworth on TFA:
-Teachers require grit and lauds TFA but TFAs are temps - so if they
-enter profession with goal of 2 years are they really good teachers
-and if they're gritty teachers why don't they stay + scripted
-curriculum and 5 weeks training - formulaic grit?
-</p>
-
-
-<p>
-Duckworth:
-Like a lot of parents I had a strong intuition that grit is enahnced
-by doing activities like balet… orpiano … or football…
-</p>
-
-
-<p>
-says ETS is all about developing tests that predict achievement in
-college and workplace 
-</p>
-
-
-<p>
-<a href="https://www.washingtonpost.com/news/answer-sheet/wp/2016/05/10/the-problem-with-teaching-grit-to-poor-kids-they-already-have-it-heres-what-they-really-need/?utm_term=.261d5a0381c8">https://www.washingtonpost.com/news/answer-sheet/wp/2016/05/10/the-problem-with-teaching-grit-to-poor-kids-they-already-have-it-heres-what-they-really-need/?utm_term=.261d5a0381c8</a>
-</p>
-
-
-<p>
-Neurobio - almost failed a class for her major then became her major -
-maybe took it too early.
-</p>
-
-
-<p>
-Kipp attrition rateshttp://garyrubinstein.teachforus.org/2011/07/08/kipp-on-trickin-looking-at-the-raw-data/
-</p>
-
-
-<p>
-<a href="https://www.washingtonpost.com/blogs/answer-sheet/post/grit-becoming-new-reform-mantra--unfortunately/2012/10/02/bff269a6-0bd5-11e2-bb5e-492c0d30bff6_blog.html?utm_term=.f0a5db8cfc93">https://www.washingtonpost.com/blogs/answer-sheet/post/grit-becoming-new-reform-mantra--unfortunately/2012/10/02/bff269a6-0bd5-11e2-bb5e-492c0d30bff6_blog.html?utm_term=.f0a5db8cfc93</a>
-</p>
-
-<p>
-Alfie Kohn on to concerns over grit
-<a href="https://www.washingtonpost.com/news/answer-sheet/wp/2014/04/08/ten-concerns-about-the-lets-teach-them-grit-fad/?utm_term=.3206eb46e0f7">https://www.washingtonpost.com/news/answer-sheet/wp/2014/04/08/ten-concerns-about-the-lets-teach-them-grit-fad/?utm_term=.3206eb46e0f7</a>
-</p>
-
-
-
-<p>
-Duckworth in 2016 - don't grade teachers and students on grit:
-<a href="https://www.nytimes.com/2016/03/27/opinion/sunday/dont-grade-schools-on-grit.html?smid=nytcore-ipad-share&amp;smprod=nytcore-ipa">https://www.nytimes.com/2016/03/27/opinion/sunday/dont-grade-schools-on-grit.html?smid=nytcore-ipad-share&amp;smprod=nytcore-ipa</a>
-d
-(setq golden-ratio-auto-scale t)
+Should we look at grit? Certainly. Just remember that it's a piece of
+the puzzle just like everything else.
 </p>
 </div>
 </div>
@@ -265,7 +312,15 @@ d
 </div>
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
 </div>
-    <aside class="postpromonav"><nav></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/education/" rel="tag">education</a></li>
+            <li><a class="tag p-category" href="../../categories/soft-skills/" rel="tag">soft skills</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../using-emacs-36-touch-of-elisp/" rel="prev" title="Using Emacs 36 - A Touch of Elisp">Previous post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="cestlaz",
