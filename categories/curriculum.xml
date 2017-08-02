@@ -1,5 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>C'est la Z (Posts about curriculum)</title><link>http://cestlaz.github.io/</link><description></description><atom:link rel="self" type="application/rss+xml" href="http://cestlaz.github.io/categories/curriculum.xml"></atom:link><language>en</language><lastBuildDate>Thu, 15 Jun 2017 00:04:49 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Designing a course with constraints</title><link>http://cestlaz.github.io/posts/design-course-with-constraints/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about curriculum)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/curriculum.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 02 Aug 2017 12:09:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Ethics, Cybersecurity, ethics, curricula  and standards</title><link>http://cestlaz.github.io/posts/ethics-cybersecurity-curricula-standards/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+This morning, I read &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt;'s post on &lt;a href="http://blog.acthompson.net/2017/08/cybersecuritythis-summers-computer.html"&gt;teaching
+cybersecurity&lt;/a&gt;. as Alfred says, it's something of a CS Ed buzzword this
+summer.
+&lt;/p&gt;
+
+&lt;p&gt;
+Another hot topic in K12 CS Ed this summer is the inclusion of ethics
+in our CS courses courtesy of efforts like the #ethicalCS twitter chat every
+Wednesday at 8:00 Eastern time  hosted by &lt;a href="https://twitter.com/ed_saber"&gt;Saber Khan&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Discussions about both topics include "where should we be doing this?"
+"What should we be doing?" and of course "How?" 
+&lt;/p&gt;
+
+&lt;p&gt;
+This got me thinking about designing curriculum from the top down -
+that is, as dictated by outside forces: principals, superintendents,
+states, industry or bottom up: a teacher sees a need and designs
+something for their students.
+&lt;/p&gt;
+
+&lt;p&gt;
+The best classes I've seen are those designed by a passionate teacher
+from the ground up. I met  &lt;a href="https://twitter.com/dougbergmanUSA"&gt;Doug Bergman&lt;/a&gt; at this past year's CSTA conference. He's terrific. I
+think he came to the conference wanting to find out more about what
+cybersecurity really meant. By the second day, he was raving about all
+the amazing possibilities. I'd love to be in the class he develops.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand, when topics or standards are forced down from
+above, I've seen something entirely different.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've observed and been involved in cybersecurity discussions  with CS
+teachers. The discussion goes something like this:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Well, we do memory allocation in course XYZ so we can give a
+homework assignment there.
+&lt;/li&gt;
+&lt;li&gt;We can rewrite the story (theme) for the assignment in our data
+structures class.
+&lt;/li&gt;
+&lt;li&gt;We already do a crypto assignment in algorithms so we're already
+doing it.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+I've seen the same with groups of math teachers discussing
+implementing common core. They talk about resequencing topics,
+rewriting a few word problems or homework assignments but at the core,
+the feeling is "we already know how to teach math."
+&lt;/p&gt;
+
+&lt;p&gt;
+It gets worse when there's a standardized or high stakes test at the
+end of the tunnel and you get the "you need this for the test" type
+units.
+&lt;/p&gt;
+
+&lt;p&gt;
+This might not be as big of a problem in K12 CS right now because so many
+teachers are just learning their craft but in established fields such
+as math or college CS, when an edict comes from above telling a
+teacher how to teach, unless the teacher really believes in it, the
+teacher will only pay lip service to it. If it isn't an issue in CS Ed
+right now, it will eventually become one as our field develops legs.
+&lt;/p&gt;
+
+&lt;p&gt;
+This is arguably a bigger issue with Ethical CS than cybersecurity. If
+the teacher doesn't really believe it's an important topic, we'll get
+lip service at best and in the case of ethics, unless the teacher
+really believes it and models it, the students will be able to tell
+that it's a show.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't have an answer other than what my friend and mentor Herb
+Greenhut told me many years ago "Solving the education problem is
+easy. Hire good teachers and get the f*ck out of the way."
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>curriculum</category><category>education</category><guid>http://cestlaz.github.io/posts/ethics-cybersecurity-curricula-standards/</guid><pubDate>Wed, 02 Aug 2017 11:43:24 GMT</pubDate></item><item><title>Designing a course with constraints</title><link>http://cestlaz.github.io/posts/design-course-with-constraints/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
