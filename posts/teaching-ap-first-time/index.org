@@ -1,0 +1,100 @@
+#+BEGIN_COMMENT
+.. title: Teaching APCS-A for the first time
+.. slug: teaching-ap-first-time
+.. date: 2017-08-23 15:56:46 UTC-04:00
+.. tags: cs, apcs, ap, teaching, education
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+I got  an email from a friend the other day. Among other things, he
+mentioned that he would be teaching APCS-A for the first time this
+year. He's a little trepidatious. He knows his stuff but he hasn't
+really done much using Java.
+
+I was going to respond in an email but thought I might share here
+instead.
+
+#+BEGIN_QUOTE
+TL;DR - for all you APCS teachers who are new or new to Java - learn
+your core CS, lean on your resources and support and it's OK to tell
+your kids "I don't know, I'll get back to you.". Don't worry, you'll be great.
+#+END_QUOTE
+
+The first time I taught APCS was some time around 1991 or 1992. It was at
+[[http://www.sewardparkhs.com/Famous-Alumni/][Seward Park]] [[http://www.sewardparkhs.com/History/][High School]]. It was the AB curriculum - that is one
+semester of programming in Pascal and one semester of Data Structures
+and Algorithms.  Being a computer science major the core material was
+never a concern. I had taken APCS the first time it was offered in May
+1984 in Pascal and while most of my college and pre-teaching professional work
+was in C, my college started it's CS sequence with Pascal. I was more
+concerned with the actual teaching part. I had taught math for a year
+and a half at that point but never CS and by any measure I was still
+wet behind the ears. I never finished that first experience because I
+was excessed to Stuy mid semester. I wasn't particularly happy with my
+performance but looking back, I think I did a pretty good job given
+the situation and my experience.
+
+After teaching math for a year and a half I was back in APCS at
+Stuy. Still in Pascal. I spent the next few years figuring out how to
+teach CS and APCS in particular along with starting a couple of new
+classes. When the College Board decided to move the AP class to C++ I
+was happy, sad and a little worried. Pascal had a bunch of limitations
+but I had never used C++. True, I was a C programmer at heart but I
+had never really done the OOP thing. I did, as it turned out, design a
+number of my C systems in an Object Typed design: I would use a single
+file per "class" where local variables were de facto instance
+variables and functions in the file were methods and each file was a
+singleton class. I read [[https://www.amazon.com/Object-Oriented-Analysis-Design-Applications-3rd/dp/020189551X/ref=sr_1_1?ie=UTF8&qid=1503519770&sr=8-1&keywords=Grady+Booch][Booch]] and [[https://www.amazon.com/Object-Oriented-Software-Construction-Book-CD-ROM/dp/0136291554/ref=asap_bc?ie=UTF8][Meyer]] on my own but I had no
+schooling in OOP and no professional experience.
+
+As it turned out, I didn't have to worry. I knew my CS and while it
+took me a while to become comfortable with OOP, the class, and of
+course I knew this from the get go, started from nothing and built
+up complexity a step at a time. The worst that might have happened is
+that some of my solutions might have been more C-esque than C++.
+
+The move to Java was a little more jarring. Now we had a totally new
+language. I couldn't fall back on C. It removed memory management and
+explicit pointers and it had to be used in an Object Oriented
+manner. I remember asking Mike Schidlowsky, a former student turned
+friend who was the Java consultant on the Java edition of Sedgewick's
+[[https://www.amazon.com/Robert-Sedgewick-Algorithms-Fundamentals-Structures/dp/B008VR3ZH4/ref=sr_1_4?ie=UTF8&qid=1503520269&sr=8-4&keywords=schidlowsky][Algorithms]] book how to do something. It had to do with passing and
+modifying arrays. In C there were a number of ways to accomplish what
+I wanted to do. In Java, I couldn't figure out how to do it the way I
+wanted. My friend Mike told me "you just don't do it that way in
+Java." Again, it turned out that I didn't have to worry. The basic
+coding was still the same as were the data structures and
+algorithms. The only challenge was that I had to get into a Java OOP
+mindset which it turned out wasn't that hard. 
+
+While I never really warmed up to OOP - I find other paradigms more
+natural for me, I knew my CS and got more and more comfortable with
+the Java (or C++) way of doing things as time wore on. Sometimes I
+would say "I don't know" or "let's figure it out" but that's OK.
+
+Nowadays, there are many more resources available for CS teachers. If
+you're new, lean on them. Use the mailing lists, stackexchange,
+facebook groups. Online resources like repl.it, codehs.com etc. Yes,
+it's true that you'll be better next time around and even better years
+down the road but right now, you're probably better than you think.
+
+A number of my former students volunteer for [[https://www.tealsk12.org/][TEALS]] - a really great
+program that brings software engineers into the classroom to work with
+non-CS teachers to deliver instruction. A number of my kids have
+shared the following sentiment: 
+
+#+BEGIN_QUOTE
+
+I don't know if I'm really helping
+the teacher to become self sufficient or if I'm a great teacher but I
+do know one thing - while I'm there, the kids are getting a hell of a
+lot more than if I wasn't there." 
+
+
+#+END_QUOTE
+
+-- Remember that as well.

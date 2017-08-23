@@ -1,5 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about apcs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link type="application/rss+xml" href="http://cestlaz.github.io/categories/apcs.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 12 Jul 2017 12:01:27 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A Plea to AP teachers- don't measure yourself by your scores</title><link>http://cestlaz.github.io/posts/teachers-you-arent-your-test-scores/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>C'est la Z (Posts about apcs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link rel="self" href="http://cestlaz.github.io/categories/apcs.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 23 Aug 2017 21:07:20 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Teaching APCS-A for the first time</title><link>http://cestlaz.github.io/posts/teaching-ap-first-time/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+I got  an email from a friend the other day. Among other things, he
+mentioned that he would be teaching APCS-A for the first time this
+year. He's a little trepidatious. He knows his stuff but he hasn't
+really done much using Java.
+&lt;/p&gt;
+
+&lt;p&gt;
+I was going to respond in an email but thought I might share here
+instead.
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+TL;DR - for all you APCS teachers who are new or new to Java - learn
+your core CS, lean on your resources and support and it's OK to tell
+your kids "I don't know, I'll get back to you.". Don't worry, you'll be great.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+The first time I taught APCS was some time around 1991 or 1992. It was at
+&lt;a href="http://www.sewardparkhs.com/Famous-Alumni/"&gt;Seward Park&lt;/a&gt; &lt;a href="http://www.sewardparkhs.com/History/"&gt;High School&lt;/a&gt;. It was the AB curriculum - that is one
+semester of programming in Pascal and one semester of Data Structures
+and Algorithms.  Being a computer science major the core material was
+never a concern. I had taken APCS the first time it was offered in May
+1984 in Pascal and while most of my college and pre-teaching professional work
+was in C, my college started it's CS sequence with Pascal. I was more
+concerned with the actual teaching part. I had taught math for a year
+and a half at that point but never CS and by any measure I was still
+wet behind the ears. I never finished that first experience because I
+was excessed to Stuy mid semester. I wasn't particularly happy with my
+performance but looking back, I think I did a pretty good job given
+the situation and my experience.
+&lt;/p&gt;
+
+&lt;p&gt;
+After teaching math for a year and a half I was back in APCS at
+Stuy. Still in Pascal. I spent the next few years figuring out how to
+teach CS and APCS in particular along with starting a couple of new
+classes. When the College Board decided to move the AP class to C++ I
+was happy, sad and a little worried. Pascal had a bunch of limitations
+but I had never used C++. True, I was a C programmer at heart but I
+had never really done the OOP thing. I did, as it turned out, design a
+number of my C systems in an Object Typed design: I would use a single
+file per "class" where local variables were de facto instance
+variables and functions in the file were methods and each file was a
+singleton class. I read &lt;a href="https://www.amazon.com/Object-Oriented-Analysis-Design-Applications-3rd/dp/020189551X/ref=sr_1_1?ie=UTF8&amp;amp;qid=1503519770&amp;amp;sr=8-1&amp;amp;keywords=Grady+Booch"&gt;Booch&lt;/a&gt; and &lt;a href="https://www.amazon.com/Object-Oriented-Software-Construction-Book-CD-ROM/dp/0136291554/ref=asap_bc?ie=UTF8"&gt;Meyer&lt;/a&gt; on my own but I had no
+schooling in OOP and no professional experience.
+&lt;/p&gt;
+
+&lt;p&gt;
+As it turned out, I didn't have to worry. I knew my CS and while it
+took me a while to become comfortable with OOP, the class, and of
+course I knew this from the get go, started from nothing and built
+up complexity a step at a time. The worst that might have happened is
+that some of my solutions might have been more C-esque than C++.
+&lt;/p&gt;
+
+&lt;p&gt;
+The move to Java was a little more jarring. Now we had a totally new
+language. I couldn't fall back on C. It removed memory management and
+explicit pointers and it had to be used in an Object Oriented
+manner. I remember asking Mike Schidlowsky, a former student turned
+friend who was the Java consultant on the Java edition of Sedgewick's
+&lt;a href="https://www.amazon.com/Robert-Sedgewick-Algorithms-Fundamentals-Structures/dp/B008VR3ZH4/ref=sr_1_4?ie=UTF8&amp;amp;qid=1503520269&amp;amp;sr=8-4&amp;amp;keywords=schidlowsky"&gt;Algorithms&lt;/a&gt; book how to do something. It had to do with passing and
+modifying arrays. In C there were a number of ways to accomplish what
+I wanted to do. In Java, I couldn't figure out how to do it the way I
+wanted. My friend Mike told me "you just don't do it that way in
+Java." Again, it turned out that I didn't have to worry. The basic
+coding was still the same as were the data structures and
+algorithms. The only challenge was that I had to get into a Java OOP
+mindset which it turned out wasn't that hard. 
+&lt;/p&gt;
+
+&lt;p&gt;
+While I never really warmed up to OOP - I find other paradigms more
+natural for me, I knew my CS and got more and more comfortable with
+the Java (or C++) way of doing things as time wore on. Sometimes I
+would say "I don't know" or "let's figure it out" but that's OK.
+&lt;/p&gt;
+
+&lt;p&gt;
+Nowadays, there are many more resources available for CS teachers. If
+you're new, lean on them. Use the mailing lists, stackexchange,
+facebook groups. Online resources like repl.it, codehs.com etc. Yes,
+it's true that you'll be better next time around and even better years
+down the road but right now, you're probably better than you think.
+&lt;/p&gt;
+
+&lt;p&gt;
+A number of my former students volunteer for &lt;a href="https://www.tealsk12.org/"&gt;TEALS&lt;/a&gt; - a really great
+program that brings software engineers into the classroom to work with
+non-CS teachers to deliver instruction. A number of my kids have
+shared the following sentiment: 
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't know if I'm really helping
+the teacher to become self sufficient or if I'm a great teacher but I
+do know one thing - while I'm there, the kids are getting a hell of a
+lot more than if I wasn't there." 
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+– Remember that as well.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>ap</category><category>apcs</category><category>cs</category><category>education</category><category>teaching</category><guid>http://cestlaz.github.io/posts/teaching-ap-first-time/</guid><pubDate>Wed, 23 Aug 2017 19:56:46 GMT</pubDate></item><item><title>A Plea to AP teachers- don't measure yourself by your scores</title><link>http://cestlaz.github.io/posts/teachers-you-arent-your-test-scores/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
 &lt;h2 id="sec-1"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
