@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 31)</title>
   <id>http://cestlaz.github.io/index-31.atom</id>
-  <updated>2017-08-25T20:41:45Z</updated>
+  <updated>2017-09-05T22:57:45Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,155 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-30.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-31.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Observing CS Teachers</title>
+    <id>http://cestlaz.github.io/posts/cs-teacher-eval/</id>
+    <updated>2017-07-15T20:13:38-04:00</updated>
+    <published>2017-07-15T20:13:38-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/cs-teacher-eval/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+Another set of tweets god me thinking:
+&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;How do we help school administrators help and evaluate CS
+teachers? asks &lt;a href="https://twitter.com/lsudol"&gt;@lsudol&lt;/a&gt; of &lt;a href="https://twitter.com/CSForAll"&gt;@CSForAll&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/csta2017?src=hash"&gt;#csta2017&lt;/a&gt;
+Many don't understand CS&lt;/p&gt;— Alfred Thompson (@alfredtwo)
+&lt;a href="https://twitter.com/alfredtwo/status/884427047635795969"&gt;July
+10, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;If the current system is any indication, checklists are not
+the answer&lt;/p&gt;— Mike Zamansky (@zamansky) &lt;a href="https://twitter.com/zamansky/status/886220912110043136"&gt;July 15,
+2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;p&gt;
+I get the intent. CS teachers should be evaluated by people who have
+some clue about the subject. Leigh Ann's reporting that some people
+are working on checklists got me wondering if it really matters? Sure,
+it matters if teacher observations were actually set up to improve
+instruction but given what we have in NY does it really?
+&lt;/p&gt;
+
+&lt;p&gt;
+In New York City, teacher observations are a major part of a teacher's
+annual rating and the other part is still &lt;a href="https://cestlaz.github.io/posts/2013-09-06-why_i_might_no_longer_be_an_effective_teacher.md/#.WWqzc9_6yEI"&gt;that standardized test
+nonsense&lt;/a&gt;. Teachers are observed at least 4 and commonly 6 times
+or more per year. There might be pre and
+post observation conferences.
+&lt;/p&gt;
+
+&lt;p&gt;
+Sounds good but the system is amazingly flawed.
+&lt;/p&gt;
+
+&lt;p&gt;
+To start, the DOE uses the &lt;a href="http://schools.nyc.gov/NR/rdonlyres/8A4A25F0-BCEE-4484-9311-B5BB7A51D7F1/0/TeacherEffectivenessProgram1314Rubric201308142.pdf"&gt;Danielson Framework&lt;/a&gt; which provides a basis
+for teacher evaluation. The framework is at best &lt;a href="https://tedmorrissey.wordpress.com/2014/03/23/fatal-flaws-of-the-danielson-framework/"&gt;flawed&lt;/a&gt; with even
+Danielson coming out to say &lt;a href="https://tedmorrissey.wordpress.com/2016/04/27/danielson-framework-criticized-by-charlotte-danielson/"&gt;it's being misused&lt;/a&gt;. Of course I'm sure she
+protested all the way to the bank. A teacher can be a "Danielson
+style" teacher and be great but a teacher can also check all
+the Danielson boxes and be mediocre at best. Likewise, some of the
+best teachers I know break the Danielson mold and if a supervisor
+rigidly adheres to the framework these great teachers would be found
+ineffective.
+&lt;/p&gt;
+
+&lt;p&gt;
+To make matters worse, the rubric is so large that the DOE just
+focuses on small parts which means even if the framework was
+comprehensive and correct, teachers are only evaluated on a small
+part.
+&lt;/p&gt;
+
+&lt;p&gt;
+When a supervisor evaluates a teacher, they have a checklist with the
+rubric where they can rate a teacher 1 (ineffective), 2 (developing),
+3 (effective), and 4 (highly effective) and write down some notes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I guess the hope was to have some consistency but the truth is the
+process is very subjective. I know a supervisor who gave a teacher a
+ratings of 2 (which is basically failing) for the professional
+development category even though the teacher fulfilled all contractual
+obligations and then some. There are also supervisors who won't give a
+rating of 4 out of principle. On the other side, I've met supervisors
+loathe to give low scores.
+&lt;/p&gt;
+
+&lt;p&gt;
+The tweets at the top of this post refer to the current situation
+where CS teachers are never observed and evaluated by supervisors who
+are knowledgeable about CS. Even if someone designs a checklist -
+something I'm skeptical about given the fact that there are so few
+people strong in CS, experienced as teachers and with an eye for
+teacher evaluation out there, if the application of the Danielson
+framework is any indication, a CS checklist won't help.
+&lt;/p&gt;
+
+&lt;p&gt;
+Besides, CS won't be any different from any other subject. Since the
+destruction of the comprehensive neighborhood high school we've had a
+proliferation of small schools. Some people think that small schools
+are universally better. They're wrong. You need a mix. One of the
+problems with small schools is that you don't have subject area
+supervisors. You have a principal and an assistant principal. The
+result is that most teachers are evaluated by supervisors with no
+subject area expertise and no subject area pedagogical expertise.
+&lt;/p&gt;
+
+&lt;p&gt;
+The old system, even though it was also subject to abuses was much
+better - at least in the hands of a good supervisor. The observation
+system is inherently flawed. Observations are snapshots out of context
+and the mere presence of an observer changes the tone of the
+room. That said, if a supervisor knows the heartbeat of their school
+and has ongoing conversations with their staff, they can both ensure
+teachers are doing an honest job and also help them to improve.
+&lt;/p&gt;
+
+&lt;p&gt;
+The method of observation also doesn't have to be complicated. My
+first supervisor made it very simple. He said he looked for one basic
+thing - "was learning going on?" The conversation would then go from
+there. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Sometimes you have to look beyond the lesson. In my first year, I
+frequently observed a friend's history class. One day the class seemed
+to do very little. It seemed like all talk and play. I talked to the
+teacher about this. He said "that was what they needed today." He was
+a master and he was right. You might drop in on his class to see
+amazing instruction or you might come in and wonder why he wasn't
+fired long ago but at the end of the year when you looked at how much
+his kid learned and loved his class you realized that he was an
+amazing teacher. No rubric or framework needed. Just the eyeball test.
+&lt;/p&gt;
+
+&lt;p&gt;
+They also used to have more peer observations.They had to be coordinated
+by the department supervisor and he or she had to be in the loop but
+the peer observation model helped cross pollinate ideas in a
+department, build camaraderie and it also eased the workload of the
+supervisor.
+&lt;/p&gt;
+
+&lt;p&gt;
+To answer Alfred's question from his tweet, how do we help
+administrators help CS teachers? Get other teachers involved, keep an
+open mind and look at the big picture.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="supervision" label="supervision"/>
+    <category term="teaching" label="teaching"/>
+  </entry>
   <entry>
     <title>A friendly reminder to use the right language when describing CS</title>
     <id>http://cestlaz.github.io/posts/languages-or-cs/</id>
