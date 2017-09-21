@@ -1,0 +1,43 @@
+#+BEGIN_COMMENT
+.. title: New Term New Tool - Thonny, a Python IDE
+.. slug: new-tool-thonny
+.. date: 2017-09-21 07:31:42 UTC-04:00
+.. tags: tools, cs, teaching
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+Last year I [[https://cestlaz.github.io/posts/new-term-new-tool-replit][wrote about]] [[http://repl.it][repl.it]], an online IDE that supports multiple
+languages. At the time it had some rudimentary classroom support and
+since I started using it, repl.it has become better and better. I
+used it last year with my class because I had to start the year in a
+lab where I couldn't easily install my own software. I'll continue to
+use repl.it - mostly for it's ability to schedule publish and manage
+assignments but when possible, I like having my students work
+locally. 
+
+This year I'm excited about another tool - [[http://thonny.org][Thonny]]. Thonny's a simple
+Python IDE designed for beginners. I discovered it last year but at a
+time when it was impractical for me to use with my students. This
+year I can and I'm really liking it. I'm still an Emacs guy and will
+continue to use Emacs for my python development ([[http://cestlaz.github.io/posts/using-emacs-12-python/][video 1]], [[http://cestlaz.github.io/posts/using-emacs-13-yasnippet][video 2]]) but
+for beginners I think Thonny is the way to go.
+
+Some of Thonny's highlights:
+- An integrated Python 3 virtual environment making for ease of
+  installation and consistency across student installs
+- A debugger that shows how expressions are evaluated
+- Great visualizations of function calls that make it easier to
+  understand the call stack and scope
+- The ability to look at memory to understand references.
+
+Rather than go into the gory details in text, I put together this
+video:
+
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lWaCl0WjNZI" frameborder="0" allowfullscreen></iframe>
+
+#+END_EXPORT
