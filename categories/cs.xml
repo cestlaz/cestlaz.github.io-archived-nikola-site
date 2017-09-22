@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://cestlaz.github.io/categories/cs.xml"></atom:link><language>en</language><lastBuildDate>Fri, 22 Sep 2017 00:44:40 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Awesome Cs Revisited</title><link>http://cestlaz.github.io/posts/awesome-cs-revisted/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 22 Sep 2017 13:42:02 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Awesome Cs Revisited</title><link>http://cestlaz.github.io/posts/awesome-cs-revisted/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org574d0b9" class="outline-2"&gt;
+&lt;h2 id="org574d0b9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org574d0b9"&gt;
 &lt;p&gt;
 Saw this tweet the other day so I though I would try to plug the
-&lt;a href="https://github.com/zamansky/awesome"&gt;Awesome CS Education&lt;/a&gt; list I started on GitHub:
+&lt;a href="https://github.com/zamansky/awesome-cs-education"&gt;Awesome CS Education&lt;/a&gt; list I started on GitHub:
 &lt;/p&gt;
 
-&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;&lt;a href="https://twitter.com/hashtag/csteachers?src=hash"&gt;#csteachers&lt;/a&gt;...didn't I see a list of CS teacher blogs here recently?&lt;/p&gt;— Pam Whitlock (@PamWhitlock1) &lt;a href="https://twitter.com/PamWhitlock1/status/910662628757864448"&gt;September 21, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;div class="HTML"&gt;
+&lt;p&gt;
+&amp;lt;blockquote class="twitter-tweet" data-lang="en"&amp;gt;&amp;lt;p lang="en" dir="ltr"&amp;gt;&amp;lt;a href="&lt;a href="https://twitter.com/hashtag/csteachers?src=hash"&gt;https://twitter.com/hashtag/csteachers?src=hash&lt;/a&gt;"&amp;gt;#csteachers&amp;lt;/a&amp;gt;…didn&amp;amp;#39;t I see a list of CS teacher blogs here recently?&amp;lt;/p&amp;gt;&amp;amp;mdash; Pam Whitlock (@PamWhitlock1) &amp;lt;a href="&lt;a href="https://twitter.com/PamWhitlock1/status/910662628757864448"&gt;https://twitter.com/PamWhitlock1/status/910662628757864448&lt;/a&gt;"&amp;gt;September 21, 2017&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt;
+&amp;lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;
 
 &lt;p&gt;
 To answer the tweet, the closet thing I know to a list is &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred
@@ -23,24 +28,19 @@ is community driven and anyone can suggest additions and edits.
 &lt;/p&gt;
 
 &lt;p&gt;
-I put up a starter &lt;a href="https://github.com/zamansky/awesome"&gt;here&lt;/a&gt; and a few people have contributed but I'd love
+I put up a starter &lt;a href="https://github.com/zamansky/awesome-cs-education"&gt;here&lt;/a&gt; and a few people have contributed but I'd love
 to get more people involved. Awesome lists have a number of advantages
 over other repositories.
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;Unlike blog posts, the site is easy to find.
-&lt;/li&gt;
-&lt;li&gt;Unlike private mailing lists or Facebook, anyone can see the content.
-&lt;/li&gt;
+&lt;li&gt;Unlike blog posts, the site is easy to find.&lt;/li&gt;
+&lt;li&gt;Unlike private mailing lists or Facebook, anyone can see the content.&lt;/li&gt;
 &lt;li&gt;Anyone can suggest additions (although you need to create a Github
-account).
-&lt;/li&gt;
-&lt;li&gt;Anyone can download or fork the site.
-&lt;/li&gt;
+account).&lt;/li&gt;
+&lt;li&gt;Anyone can download or fork the site.&lt;/li&gt;
 &lt;li&gt;It's essentially plain text and is easy to edit (just read the
-&lt;a href="https://github.com/zamansky/awesome/blob/master/contributing.md"&gt;contribution guide&lt;/a&gt;).
-&lt;/li&gt;
+&lt;a href="https://github.com/zamansky/awesome/blob/master/contributing.md"&gt;contribution guide&lt;/a&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -49,9 +49,9 @@ submit a pull request. Over time this could be a terrific single
 starting point for educators to get to a wealth of resources.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pd</category><category>resources</category><guid>http://cestlaz.github.io/posts/awesome-cs-revisted/</guid><pubDate>Thu, 21 Sep 2017 20:34:36 GMT</pubDate></item><item><title>New Term New Tool - Thonny, a Python IDE</title><link>http://cestlaz.github.io/posts/new-tool-thonny/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pd</category><category>resources</category><guid>http://cestlaz.github.io/posts/awesome-cs-revisted/</guid><pubDate>Thu, 21 Sep 2017 20:34:36 GMT</pubDate></item><item><title>New Term New Tool - Thonny, a Python IDE</title><link>http://cestlaz.github.io/posts/new-tool-thonny/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7d9397b" class="outline-2"&gt;
+&lt;h2 id="org7d9397b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7d9397b"&gt;
 &lt;p&gt;
 Last year I &lt;a href="https://cestlaz.github.io/posts/new-term-new-tool-replit"&gt;wrote about&lt;/a&gt; &lt;a href="http://repl.it"&gt;repl.it&lt;/a&gt;, an online IDE that supports multiple
 languages. At the time it had some rudimentary classroom support and
@@ -77,15 +77,11 @@ Some of Thonny's highlights:
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;An integrated Python 3 virtual environment making for ease of
-installation and consistency across student installs
-&lt;/li&gt;
-&lt;li&gt;A debugger that shows how expressions are evaluated
-&lt;/li&gt;
+installation and consistency across student installs&lt;/li&gt;
+&lt;li&gt;A debugger that shows how expressions are evaluated&lt;/li&gt;
 &lt;li&gt;Great visualizations of function calls that make it easier to
-understand the call stack and scope
-&lt;/li&gt;
-&lt;li&gt;The ability to look at memory to understand references.
-&lt;/li&gt;
+understand the call stack and scope&lt;/li&gt;
+&lt;li&gt;The ability to look at memory to understand references.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -93,16 +89,11 @@ Rather than go into the gory details in text, I put together this
 video:
 &lt;/p&gt;
 
-&lt;div class="export"&gt;
-&lt;p&gt;
-&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/lWaCl0WjNZI"&gt;https://www.youtube.com/embed/lWaCl0WjNZI&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
-&lt;/p&gt;
-
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lWaCl0WjNZI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-tool-thonny/</guid><pubDate>Thu, 21 Sep 2017 11:31:42 GMT</pubDate></item><item><title>I Believe CS Teachers are Smart and Capable</title><link>http://cestlaz.github.io/posts/cs-teachers-smart/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;</description><category>cs</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-tool-thonny/</guid><pubDate>Thu, 21 Sep 2017 11:31:42 GMT</pubDate></item><item><title>I Believe CS Teachers are Smart and Capable</title><link>http://cestlaz.github.io/posts/cs-teachers-smart/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org78ee12a" class="outline-2"&gt;
+&lt;h2 id="org78ee12a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org78ee12a"&gt;
 &lt;p&gt;
 People sometimes accuse me of being an elitist CS snob that I feel that CS
 teachers have to have advanced CS degrees. 
@@ -120,7 +111,7 @@ after a reasonable period of time, they know their stuff.
 &lt;p&gt;
 This is why I hate it when I hear people in the CS Ed community say
 something is too hard. Git's too hard. The command line is too
-hard. Functional programming's too hard &lt;sup&gt;&lt;a id="fnr.1" name="fnr.1" class="footref" href="http://cestlaz.github.io/posts/cs-teachers-smart/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;. That's all nonsense. At last
+hard. Functional programming's too hard &lt;sup&gt;&lt;a id="fnr.1" class="footref" href="http://cestlaz.github.io/posts/cs-teachers-smart/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;. That's all nonsense. At last
 year's SIGCSE conference people from a state, I forget which, was
 considering not using the Praxis exam for CS teacher certification
 even though the state uses the Praxis exam for other subject
@@ -135,7 +126,7 @@ areas. They claimed that the praxis was too hard for CS teachers.
 
 &lt;p&gt;
 I haven't taken the Praxis exam but some friends have. It doesn't
-appear to be unreasonable at all&lt;sup&gt;&lt;a id="fnr.2" name="fnr.2" class="footref" href="http://cestlaz.github.io/posts/cs-teachers-smart/#fn.2"&gt;2&lt;/a&gt;&lt;/sup&gt;.
+appear to be unreasonable at all&lt;sup&gt;&lt;a id="fnr.2" class="footref" href="http://cestlaz.github.io/posts/cs-teachers-smart/#fn.2"&gt;2&lt;/a&gt;&lt;/sup&gt;.
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -147,7 +138,7 @@ insist that they ultimately get to real mastery.
 &lt;p&gt;
 A math teacher generally has to know math beyond calculus. Science
 teachers have to have gotten through Orgo. English teachers have to
-understand Joyce. **THIS IS HARD STUFF!!!!**&lt;sup&gt;&lt;a id="fnr.3" name="fnr.3" class="footref" href="http://cestlaz.github.io/posts/cs-teachers-smart/#fn.3"&gt;3&lt;/a&gt;&lt;/sup&gt;
+understand Joyce. &lt;b&gt;&lt;b&gt;THIS IS HARD STUFF!!!!&lt;/b&gt;&lt;/b&gt;&lt;sup&gt;&lt;a id="fnr.3" class="footref" href="http://cestlaz.github.io/posts/cs-teachers-smart/#fn.3"&gt;3&lt;/a&gt;&lt;/sup&gt;
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -161,22 +152,22 @@ the same in their subject area.
 &lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
 &lt;div id="text-footnotes"&gt;
 
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" name="fn.1" class="footnum" href="http://cestlaz.github.io/posts/cs-teachers-smart/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;p&gt;whether or not any of
+&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" class="footnum" href="http://cestlaz.github.io/posts/cs-teachers-smart/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;whether or not any of
 these topics are appropriate for a particular course is discussion for
-another time&lt;/p&gt;&lt;/div&gt;
+another time&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.2" name="fn.2" class="footnum" href="http://cestlaz.github.io/posts/cs-teachers-smart/#fnr.2"&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;p&gt;although I'm not a big believer
-in standardized exams for certification or in general.&lt;/p&gt;&lt;/div&gt;
+&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.2" class="footnum" href="http://cestlaz.github.io/posts/cs-teachers-smart/#fnr.2"&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;although I'm not a big believer
+in standardized exams for certification or in general.&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.3" name="fn.3" class="footnum" href="http://cestlaz.github.io/posts/cs-teachers-smart/#fnr.3"&gt;3&lt;/a&gt;&lt;/sup&gt; &lt;p&gt;There are plenty of
+&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.3" class="footnum" href="http://cestlaz.github.io/posts/cs-teachers-smart/#fnr.3"&gt;3&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;There are plenty of
 lousy teacher prep programs that don't ensure teachers learn the
-subject matter they should but the good ones do.&lt;/p&gt;&lt;/div&gt;
+subject matter they should but the good ones do.&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><guid>http://cestlaz.github.io/posts/cs-teachers-smart/</guid><pubDate>Fri, 15 Sep 2017 22:17:21 GMT</pubDate></item><item><title>Theseus's Curriculum</title><link>http://cestlaz.github.io/posts/theseus%27s-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;</description><category>cs</category><category>education</category><guid>http://cestlaz.github.io/posts/cs-teachers-smart/</guid><pubDate>Fri, 15 Sep 2017 22:17:21 GMT</pubDate></item><item><title>Theseus's Curriculum</title><link>http://cestlaz.github.io/posts/theseus%27s-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org09b8735" class="outline-2"&gt;
+&lt;h2 id="org09b8735"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org09b8735"&gt;
 &lt;p&gt;
 With the school year starting I was originally planning on writing
 about my class rules. 
@@ -198,7 +189,7 @@ curriculum. It probably also isn't really teaching.
 
 &lt;p&gt;
 What about the more common case. Math curricula has basically been set
-for years. Algebra, Geometry &lt;sup&gt;&lt;a id="fnr.1" name="fnr.1" class="footref" href="http://cestlaz.github.io/posts/theseus%27s-curriculum/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;, and then Algebra 2
+for years. Algebra, Geometry &lt;sup&gt;&lt;a id="fnr.1" class="footref" href="http://cestlaz.github.io/posts/theseus%27s-curriculum/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;, and then Algebra 2
 and Trigonometry. Most books seem to be sequenced in a similar way
 and at least in the schools I know about, the math department has some
 document listing a day by day list of topics. This makes sense since
@@ -270,14 +261,14 @@ well.
 &lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
 &lt;div id="text-footnotes"&gt;
 
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" name="fn.1" class="footnum" href="http://cestlaz.github.io/posts/theseus%27s-curriculum/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;p&gt;which is really logic and deductive
-reasoning using Euclidean Geometry as platform&lt;/p&gt;&lt;/div&gt;
+&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" class="footnum" href="http://cestlaz.github.io/posts/theseus%27s-curriculum/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;which is really logic and deductive
+reasoning using Euclidean Geometry as platform&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>currulum</category><category>teaching</category><guid>http://cestlaz.github.io/posts/theseus%27s-curriculum/</guid><pubDate>Tue, 05 Sep 2017 22:41:14 GMT</pubDate></item><item><title>CS Teachers - we need you to blog</title><link>http://cestlaz.github.io/posts/cs-teachers-blog/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;</description><category>cs</category><category>currulum</category><category>teaching</category><guid>http://cestlaz.github.io/posts/theseus%27s-curriculum/</guid><pubDate>Tue, 05 Sep 2017 22:41:14 GMT</pubDate></item><item><title>CS Teachers - we need you to blog</title><link>http://cestlaz.github.io/posts/cs-teachers-blog/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3c344ff" class="outline-2"&gt;
+&lt;h2 id="org3c344ff"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3c344ff"&gt;
 &lt;p&gt;
 At this past year's CSTA conference, a few of us huddled in a corner
 voiced a very common lament - "it would be great if more CS teachers
@@ -300,7 +291,7 @@ who at the time was blogging about her &lt;a href="http://squid-knits.blogspot.c
 to share my thoughts after meeting some fellow CS teachers from across
 the country at a &lt;a href="http://cestlaz.github.io/posts/2010-01-02-welcome.html"&gt;CSTA event in Chicago&lt;/a&gt;. It was stop and go for a while
 and then I took a break. I was re-inspired months later after meeting
-a couple of CS teachers at another CSTA event - &lt;a href="https://twitter.com/search?q=ben%2520chun&amp;amp;src=typd"&gt;Ben Chun&lt;/a&gt; and &lt;a href="https://twitter.com/purplespatula"&gt;Helene
+a couple of CS teachers at another CSTA event - &lt;a href="https://twitter.com/search?q=ben%20chun&amp;amp;src=typd"&gt;Ben Chun&lt;/a&gt; and &lt;a href="https://twitter.com/purplespatula"&gt;Helene
 Martin.&lt;/a&gt; Both terrific high school CS teachers at the time who are
 unfortunately no longer in the classroom (unfortunate for the kids, I
 wish Ben and Helene all happiness and success in all their
@@ -383,17 +374,14 @@ blog. In the meantime, there are a lot of easy ways to start out.
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://blogger.com"&gt;http://blogger.com&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://wordpress.com"&gt;http://wordpress.com&lt;/a&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://blogger.com"&gt;http://blogger.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://wordpress.com"&gt;http://wordpress.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 and for those who want total control
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://jekyllrb.com/"&gt;Jekyll&lt;/a&gt; with &lt;a href="https://pages.github.com/"&gt;GitHub pages&lt;/a&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://jekyllrb.com/"&gt;Jekyll&lt;/a&gt; with &lt;a href="https://pages.github.com/"&gt;GitHub pages&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -402,9 +390,9 @@ please consider blogging. I assure you, we will all appreciate it and
 benefit from it.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>community</category><category>cs</category><guid>http://cestlaz.github.io/posts/cs-teachers-blog/</guid><pubDate>Fri, 25 Aug 2017 19:52:23 GMT</pubDate></item><item><title>Teaching APCS-A for the first time</title><link>http://cestlaz.github.io/posts/teaching-ap-first-time/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;</description><category>community</category><category>cs</category><guid>http://cestlaz.github.io/posts/cs-teachers-blog/</guid><pubDate>Fri, 25 Aug 2017 19:52:23 GMT</pubDate></item><item><title>Teaching APCS-A for the first time</title><link>http://cestlaz.github.io/posts/teaching-ap-first-time/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc7e6c06" class="outline-2"&gt;
+&lt;h2 id="orgc7e6c06"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc7e6c06"&gt;
 &lt;p&gt;
 I got  an email from a friend the other day. Among other things, he
 mentioned that he would be teaching APCS-A for the first time this

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about teaching)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/teaching.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 21 Sep 2017 21:02:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>New Term New Tool - Thonny, a Python IDE</title><link>http://cestlaz.github.io/posts/new-tool-thonny/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about teaching)</title><link>http://cestlaz.github.io/</link><description></description><atom:link rel="self" type="application/rss+xml" href="http://cestlaz.github.io/categories/teaching.xml"></atom:link><language>en</language><lastBuildDate>Thu, 21 Sep 2017 18:02:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>New Term New Tool - Thonny, a Python IDE</title><link>http://cestlaz.github.io/posts/new-tool-thonny/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7d9397b" class="outline-2"&gt;
+&lt;h2 id="org7d9397b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7d9397b"&gt;
 &lt;p&gt;
 Last year I &lt;a href="https://cestlaz.github.io/posts/new-term-new-tool-replit"&gt;wrote about&lt;/a&gt; &lt;a href="http://repl.it"&gt;repl.it&lt;/a&gt;, an online IDE that supports multiple
 languages. At the time it had some rudimentary classroom support and
@@ -27,15 +27,11 @@ Some of Thonny's highlights:
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;An integrated Python 3 virtual environment making for ease of
-installation and consistency across student installs
-&lt;/li&gt;
-&lt;li&gt;A debugger that shows how expressions are evaluated
-&lt;/li&gt;
+installation and consistency across student installs&lt;/li&gt;
+&lt;li&gt;A debugger that shows how expressions are evaluated&lt;/li&gt;
 &lt;li&gt;Great visualizations of function calls that make it easier to
-understand the call stack and scope
-&lt;/li&gt;
-&lt;li&gt;The ability to look at memory to understand references.
-&lt;/li&gt;
+understand the call stack and scope&lt;/li&gt;
+&lt;li&gt;The ability to look at memory to understand references.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -43,16 +39,11 @@ Rather than go into the gory details in text, I put together this
 video:
 &lt;/p&gt;
 
-&lt;div class="export"&gt;
-&lt;p&gt;
-&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/lWaCl0WjNZI"&gt;https://www.youtube.com/embed/lWaCl0WjNZI&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
-&lt;/p&gt;
-
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lWaCl0WjNZI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-tool-thonny/</guid><pubDate>Thu, 21 Sep 2017 11:31:42 GMT</pubDate></item><item><title>Theseus's Curriculum</title><link>http://cestlaz.github.io/posts/theseus%27s-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;</description><category>cs</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-tool-thonny/</guid><pubDate>Thu, 21 Sep 2017 11:31:42 GMT</pubDate></item><item><title>Theseus's Curriculum</title><link>http://cestlaz.github.io/posts/theseus%27s-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org09b8735" class="outline-2"&gt;
+&lt;h2 id="org09b8735"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org09b8735"&gt;
 &lt;p&gt;
 With the school year starting I was originally planning on writing
 about my class rules. 
@@ -74,7 +65,7 @@ curriculum. It probably also isn't really teaching.
 
 &lt;p&gt;
 What about the more common case. Math curricula has basically been set
-for years. Algebra, Geometry &lt;sup&gt;&lt;a id="fnr.1" name="fnr.1" class="footref" href="http://cestlaz.github.io/posts/theseus%27s-curriculum/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;, and then Algebra 2
+for years. Algebra, Geometry &lt;sup&gt;&lt;a id="fnr.1" class="footref" href="http://cestlaz.github.io/posts/theseus%27s-curriculum/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;, and then Algebra 2
 and Trigonometry. Most books seem to be sequenced in a similar way
 and at least in the schools I know about, the math department has some
 document listing a day by day list of topics. This makes sense since
@@ -146,14 +137,14 @@ well.
 &lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
 &lt;div id="text-footnotes"&gt;
 
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" name="fn.1" class="footnum" href="http://cestlaz.github.io/posts/theseus%27s-curriculum/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;p&gt;which is really logic and deductive
-reasoning using Euclidean Geometry as platform&lt;/p&gt;&lt;/div&gt;
+&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" class="footnum" href="http://cestlaz.github.io/posts/theseus%27s-curriculum/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;which is really logic and deductive
+reasoning using Euclidean Geometry as platform&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>currulum</category><category>teaching</category><guid>http://cestlaz.github.io/posts/theseus%27s-curriculum/</guid><pubDate>Tue, 05 Sep 2017 22:41:14 GMT</pubDate></item><item><title>Teaching APCS-A for the first time</title><link>http://cestlaz.github.io/posts/teaching-ap-first-time/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;</description><category>cs</category><category>currulum</category><category>teaching</category><guid>http://cestlaz.github.io/posts/theseus%27s-curriculum/</guid><pubDate>Tue, 05 Sep 2017 22:41:14 GMT</pubDate></item><item><title>Teaching APCS-A for the first time</title><link>http://cestlaz.github.io/posts/teaching-ap-first-time/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc7e6c06" class="outline-2"&gt;
+&lt;h2 id="orgc7e6c06"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc7e6c06"&gt;
 &lt;p&gt;
 I got  an email from a friend the other day. Among other things, he
 mentioned that he would be teaching APCS-A for the first time this
