@@ -10,7 +10,7 @@
 #+END_COMMENT
 
 * 
-In [[%5B%5Bhttp://cestlaz.github.io/posts/using-emacs-30-elfeed-2/#.WLbi-d9idKQ%5D%5BIn%20][part 2]] I talked about how I used [[https://github.com/abo-abo/hydra][Hyrdas]] to quickly navigate through
+In [[http://cestlaz.github.io/posts/using-emacs-30-elfeed-2][part 2]] I talked about how I used [[https://github.com/abo-abo/hydra][Hyrdas]] to quickly navigate through
 elfeed tags. It was a nice step up but the fact that I still had to
 manually edit my configuration code for every new tag to update the
 hydra was a problem.
@@ -55,7 +55,7 @@ I'd want a "hotkey" of **b** for logs and **d** for eDucation.
 The routine **z/hasCap** tests to see if a tag has a capital letter in
 it and **z/get-hydra-option-key** returns the final "hotkey:"
 
-#+BEGIN_SRC 
+#+BEGIN_SRC emacs-lisp
 
 
 
@@ -130,7 +130,7 @@ the defhydra I need.
 I then redefine the hydra every time I need it, just in case tags
 changed:
 
-#+BEGIN_SRC 
+#+BEGIN_SRC emacs-lisp
 
     (defun mz/make-and-run-elfeed-hydra ()
       ""
@@ -156,12 +156,12 @@ Macros FTW!!!!
 
 Here's the video:
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT HTML
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5zuSUbAHH8c" frameborder="0" allowfullscreen></iframe>
-#+END_HTML
+#+END_EXPORT
 
 Enjoy.
-* 
+** 
 Relevant links:
 - Video series overview page:
   - http://cestlaz.github.io/stories/emacs

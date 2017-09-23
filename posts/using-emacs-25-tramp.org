@@ -17,7 +17,7 @@ Tramp mode allows you to edit remote files using your local emacs. I usually do 
 To edit a file on a machine **www.cstuy.org** I would first
 **find-file** using **C-c C-f** and then for the file name to open:
 
-#+BEGIN_SRC 
+#+BEGIN_SRC emacs-lisp
 /ssh:www.cstuy.org:/home/zamansky/sc/testfile
 #+END_SRC
 
@@ -25,20 +25,20 @@ this would open the file **testfile** in the absolute directory
 **/home/zamansky/sc**. If my username on the remote machine is
 different:
 
-#+BEGIN_SRC 
+#+BEGIN_SRC emacs-lisp
 /ssh:username@www.cstuy.org:/home/zamansky/sc/testfile
 #+END_SRC
 
 And I can also work relative to my home directory:
 
-#+BEGIN_SRC 
+#+BEGIN_SRC emacs-lisp
 /ssh:username@www.cstuy.org:sc/testfile
 #+END_SRC
 
 If I just hit enter after the machine name and **:** - 
 
 
-#+BEGIN_SRC 
+#+BEGIN_SRC emacs-lisp
 /ssh:username@www.cstuy.org:
 #+END_SRC
 
@@ -54,7 +54,7 @@ configuration to edit a file on a remote machine.
 
 You can also use tramp to edit local files as root using sudo:
 
-#+BEGIN_SRC 
+#+BEGIN_SRC emacs-lisp
 sudo::/tmp/sc/rootfile
 #+END_SRC
 
@@ -62,7 +62,7 @@ Note the double colon.
 
 Finally, you can do the double-whammy - remote root editing:
 
-#+BEGIN_SRC 
+#+BEGIN_SRC emacs-lisp
 ssh::www.cstu.org|sudo:www.cstuy.org:/home/zamansky/sc/rootfile
 #+END_SRC
 If you use zsh and any of this freezes, just do a search on "zsh
@@ -80,9 +80,9 @@ a directory tree from a remote machine and use it on my local machine.
 
 
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT HTML
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Iqh50fgbIVk" frameborder="0" allowfullscreen></iframe>
-#+END_HTML
+#+END_EXPORT
 
 
 

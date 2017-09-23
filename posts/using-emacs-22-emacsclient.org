@@ -24,7 +24,7 @@ still nice to leave emacs around all the time.
 
 That's where running emacs as a server comes in.. I set up a keyboard shortcut my window manager to run:
 
-#+BEGIN_SRC 
+#+BEGIN_SRC sh
 emacsclient -a "" -c
 #+END_SRC
 
@@ -42,9 +42,9 @@ forever since you just keep emacs up and running.
 
 
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT HTML
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9AHGsCtsClg" frameborder="0" allowfullscreen></iframe>
-#+END_HTML
+#+END_EXPORT
 
 
 * 
