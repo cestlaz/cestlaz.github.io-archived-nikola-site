@@ -9,13 +9,13 @@
 .. type: text
 #+END_COMMENT
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT HTML
 <style>
 .figure-number {
     display: none;
 }
 </style>
-#+END_HTML
+#+END_EXPORT
 #+CAPTION[something]: Peter Boyce imparting VC Wisdom on the Daedalus Scholars
 #+ATTR_HTML: :align center :height 250
 [[../../img/peter-boyce-talk.jpg]]

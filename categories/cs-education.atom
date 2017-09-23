@@ -3,13 +3,74 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about CS Education</title>
   <id>http://cestlaz.github.io/categories/cs-education.atom</id>
-  <updated>2017-06-15T20:23:09Z</updated>
+  <updated>2017-09-23T13:00:39Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/cs-education.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/cs-education/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>A Community Curated List of CS Education Resources</title>
+    <id>http://cestlaz.github.io/posts/awesome-cs/</id>
+    <updated>2017-06-16T12:39:20-04:00</updated>
+    <published>2017-06-16T12:39:20-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/awesome-cs/"/>
+    <summary type="html">&lt;p&gt;
+One of the things I mentioned in my post on the &lt;a href="http://cestlaz.github.io/posts/cs-educators-stackexchange/"&gt;CS Educators
+StackExchange&lt;/a&gt; was the fragmentation of resources for CS Educators. My
+friend and fellow CS teacher Ben pointed out that this is appropriate
+as we're so young as a community. He's absolutely right but until we
+mature, discover-ability can be a problem. We all have our resources
+and I for one am frequently surprised when talking to a friend and
+discovering that they don't know about a site or a mailing list that
+I've known about for years. Likewise, I'm appreciative when others
+share resources with me.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are some collections of information, for instance, &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred
+Thompson&lt;/a&gt; has a list of CS Education bloggers but it's not so easy to
+discover and it certainly shouldn't fall on Alfred to maintain such
+a list making sure the links are all active and always being
+responsible for adding new ones.
+&lt;/p&gt;
+
+&lt;p&gt;
+Recently I've noticed a proliferation of &lt;b&gt;&lt;b&gt;awesome&lt;/b&gt;&lt;/b&gt;
+lists. These are community curated lists hosted up on GitHub for a
+variety of projects. I find myself using &lt;a href="https://github.com/emacs-tw/awesome-emacs"&gt;awesome-emacs&lt;/a&gt; and
+&lt;a href="https://github.com/vinta/awesome-python"&gt;awesome-python&lt;/a&gt; more and more and there are tons of other such lists.
+&lt;/p&gt;
+
+&lt;p&gt;
+I thought we, as a community could benefit from such a list. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I started one off. It's over at
+&lt;a href="https://github.com/zamansky/awesome-cs-education"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/awesome-cs-education"&gt;https://github.com/zamansky/awesome-cs-education&lt;/a&gt; with instructions on
+contributing at
+&lt;a href="https://github.com/zamansky/awesome-cs-education/blob/master/contributing.org"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/awesome-cs-education/blob/master/contributing.org"&gt;https://github.com/zamansky/awesome-cs-education/blob/master/contributing.org&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+I seeded it with a few items but I'd love everyone to get involved. I
+also started it with a few categories and a specific format but I'd
+love to see that evolve into something most useful for the community
+as well.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you agree that this could be something useful, please contribute to
+it and help spread the word.
+&lt;/p&gt;</summary>
+    <category term="cs-education" label="CS Education"/>
+    <category term="resources" label="resources"/>
+  </entry>
   <entry>
     <title>CS Educators StackExchange</title>
     <id>http://cestlaz.github.io/posts/cs-educators-stackexchange/</id>
@@ -19,9 +80,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/cs-educators-stackexchange/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-orgf877689" class="outline-2"&gt;
+&lt;h2 id="orgf877689"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf877689"&gt;
 &lt;p&gt;
 The &lt;a href="https://cseducators.stackexchange.com/"&gt;CS Educators StackExchange&lt;/a&gt; is now in public beta. For those of you
 who are not in tech, &lt;a href="https://en.wikipedia.org/wiki/Stack_Exchange"&gt;StackExchange&lt;/a&gt; is a network of question answering
@@ -87,15 +148,11 @@ member of:
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;A few Facebook groups (CS Education, CS Education Discussion, AP
-Comp Sci, APCSP)
-&lt;/li&gt;
-&lt;li&gt;The CS Education subreddit
-&lt;/li&gt;
-&lt;li&gt;A couple of mailing lists (the College Board AP Community, SIGCSE)
-&lt;/li&gt;
+Comp Sci, APCSP)&lt;/li&gt;
+&lt;li&gt;The CS Education subreddit&lt;/li&gt;
+&lt;li&gt;A couple of mailing lists (the College Board AP Community, SIGCSE)&lt;/li&gt;
 &lt;li&gt;A few blogs are kind of communities in that there's a core group of
-readers but discussion is pretty sparse.
-&lt;/li&gt;
+readers but discussion is pretty sparse.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;

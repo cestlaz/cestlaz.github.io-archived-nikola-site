@@ -115,9 +115,9 @@ capture even if emacs isn't on scr">
 </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"></h2>
-<div class="outline-text-2" id="text-1">
+    <div id="outline-container-orgabd968e" class="outline-2">
+<h2 id="orgabd968e"></h2>
+<div class="outline-text-2" id="text-orgabd968e">
 <p>
 Not much in today's actual post. The video is a continuation of the last one on <a href="http://cestlaz.github.io/posts/using-emacs-23-capture-1">org-capture</a>.
 </p>
@@ -138,28 +138,28 @@ where credit's due:
 </p>
 
 
-<div class="highlight"><pre><span></span>(defadvice org-capture-finalize 
-    (after delete-capture-frame activate)  
-  "Advise capture-finalize to close the frame"  
-  (if (equal "capture" (frame-parameter nil 'name))  
-    (delete-frame)))
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">defadvice</span> <span class="nv">org-capture-finalize</span> 
+    <span class="p">(</span><span class="nf">after</span> <span class="nv">delete-capture-frame</span> <span class="nv">activate</span><span class="p">)</span>  
+  <span class="s">"Advise capture-finalize to close the frame"</span>  
+  <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nf">equal</span> <span class="s">"capture"</span> <span class="p">(</span><span class="nf">frame-parameter</span> <span class="nv">nil</span> <span class="ss">'name</span><span class="p">))</span>  
+    <span class="p">(</span><span class="nf">delete-frame</span><span class="p">)))</span>
 
-(defadvice org-capture-destroy 
-    (after delete-capture-frame activate)  
-  "Advise capture-destroy to close the frame"  
-  (if (equal "capture" (frame-parameter nil 'name))  
-    (delete-frame)))  
+<span class="p">(</span><span class="nf">defadvice</span> <span class="nv">org-capture-destroy</span> 
+    <span class="p">(</span><span class="nf">after</span> <span class="nv">delete-capture-frame</span> <span class="nv">activate</span><span class="p">)</span>  
+  <span class="s">"Advise capture-destroy to close the frame"</span>  
+  <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nf">equal</span> <span class="s">"capture"</span> <span class="p">(</span><span class="nf">frame-parameter</span> <span class="nv">nil</span> <span class="ss">'name</span><span class="p">))</span>  
+    <span class="p">(</span><span class="nf">delete-frame</span><span class="p">)))</span>  
 
-(use-package noflet
-  :ensure t )
-(defun make-capture-frame ()
-  "Create a new frame and run org-capture."
-  (interactive)
-  (make-frame '((name . "capture")))
-  (select-frame-by-name "capture")
-  (delete-other-windows)
-  (noflet ((switch-to-buffer-other-window (buf) (switch-to-buffer buf)))
-    (org-capture)))
+<span class="p">(</span><span class="nf">use-package</span> <span class="nv">noflet</span>
+  <span class="nv">:ensure</span> <span class="nv">t</span> <span class="p">)</span>
+<span class="p">(</span><span class="nf">defun</span> <span class="nv">make-capture-frame</span> <span class="p">()</span>
+  <span class="s">"Create a new frame and run org-capture."</span>
+  <span class="p">(</span><span class="nf">interactive</span><span class="p">)</span>
+  <span class="p">(</span><span class="nf">make-frame</span> <span class="o">'</span><span class="p">((</span><span class="nf">name</span> <span class="o">.</span> <span class="s">"capture"</span><span class="p">)))</span>
+  <span class="p">(</span><span class="nf">select-frame-by-name</span> <span class="s">"capture"</span><span class="p">)</span>
+  <span class="p">(</span><span class="nf">delete-other-windows</span><span class="p">)</span>
+  <span class="p">(</span><span class="nf">noflet</span> <span class="p">((</span><span class="nf">switch-to-buffer-other-window</span> <span class="p">(</span><span class="nf">buf</span><span class="p">)</span> <span class="p">(</span><span class="nf">switch-to-buffer</span> <span class="nv">buf</span><span class="p">)))</span>
+    <span class="p">(</span><span class="nf">org-capture</span><span class="p">)))</span>
 </pre></div>
 
 <p>
@@ -181,18 +181,16 @@ with before making that video.
 </div>
 
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"></h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orgd96e9c1" class="outline-2">
+<h2 id="orgd96e9c1"></h2>
+<div class="outline-text-2" id="text-orgd96e9c1">
 <p>
 Relevant links:
 </p>
 <ul class="org-ul">
 <li>Video series overview page:
 <ul class="org-ul">
-<li>
-<a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a>
-</li>
+<li><a href="http://cestlaz.github.io/stories/emacs">http://cestlaz.github.io/stories/emacs</a></li>
 </ul>
 </li>
 <li>Code:

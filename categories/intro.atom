@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about intro</title>
   <id>http://cestlaz.github.io/categories/intro.atom</id>
-  <updated>2017-06-15T00:04:49Z</updated>
+  <updated>2017-09-23T13:00:39Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -19,9 +19,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/inverted-index/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-orgdb185ec" class="outline-2"&gt;
+&lt;h2 id="orgdb185ec"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgdb185ec"&gt;
 &lt;p&gt;
 I haven't spoken much about the class I've been teaching this
 semester. It's an intro CS course - a programming heavy intro. I
@@ -53,49 +53,49 @@ example, given the following four one line files:
 
 
 &lt;colgroup&gt;
-&lt;col class="left"&gt;
+&lt;col class="org-left"&gt;
 
-&lt;col class="left"&gt;
+&lt;col class="org-left"&gt;
 
-&lt;col class="left"&gt;
+&lt;col class="org-left"&gt;
 
-&lt;col class="left"&gt;
+&lt;col class="org-left"&gt;
 &lt;/colgroup&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th scope="col" class="left"&gt;files&lt;/th&gt;
-&lt;th scope="col" class="left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="left"&gt;contents&lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt;files&lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt;contents&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td class="left"&gt;file.01&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;if you prick us do we not bleed&lt;/td&gt;
+&lt;td class="org-left"&gt;file.01&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;if you prick us do we not bleed&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="left"&gt;file.02&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;if you tickle us do we not laugh&lt;/td&gt;
+&lt;td class="org-left"&gt;file.02&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;if you tickle us do we not laugh&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="left"&gt;file.03&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;if you poison us do we not die and&lt;/td&gt;
+&lt;td class="org-left"&gt;file.03&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;if you poison us do we not die and&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="left"&gt;file.04&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;if you wrong us shall we not revenge&lt;/td&gt;
+&lt;td class="org-left"&gt;file.04&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;if you wrong us shall we not revenge&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -111,48 +111,48 @@ that contain it (partially shown here),
 
 
 &lt;colgroup&gt;
-&lt;col class="left"&gt;
+&lt;col class="org-left"&gt;
 
-&lt;col class="left"&gt;
+&lt;col class="org-left"&gt;
 
-&lt;col class="left"&gt;
+&lt;col class="org-left"&gt;
 &lt;/colgroup&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th scope="col" class="left"&gt;Word&lt;/th&gt;
-&lt;th scope="col" class="left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="left"&gt;Files containing It's&lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt;Word&lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt;Files containing It's&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td class="left"&gt;if&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;td class="org-left"&gt;if&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="left"&gt;you&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;td class="org-left"&gt;you&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="left"&gt;prick&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;file.01&lt;/td&gt;
+&lt;td class="org-left"&gt;prick&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;file.01&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="left"&gt;us&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;td class="org-left"&gt;us&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="left"&gt;do&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;file.01 file.02 file.03&lt;/td&gt;
+&lt;td class="org-left"&gt;do&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;file.01 file.02 file.03&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

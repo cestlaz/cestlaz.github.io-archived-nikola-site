@@ -26,23 +26,23 @@ are particularly easy to set up with elfeed-org.
 
 If I want to display all the items from the last month, I hit **s** (for
 search) and enter the query:
-#+BEGIN_SRC 
+#+BEGIN_SRC emacs-lisp
 @6-months-ago
 #+END_SRC
 
 For only unread posts:
-#+BEGIN_SRC 
+#+BEGIN_SRC emacs-lisp
 @6-months-ago +unread
 #+END_SRC
 
 For unread posts tagged emacs:
-#+BEGIN_SRC 
+#+BEGIN_SRC emacs-lisp
 @6-months-ago +unread +emacs
 #+END_SRC
 
 And for everything in the past 24 hours, read or not:
 
-#+BEGIN_SRC 
+#+BEGIN_SRC emacs-lisp
 @1-day-ago
 #+END_SRC
 
@@ -122,9 +122,9 @@ Check out elfeed and make sure to go to the links provided on the main
 
 *  
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT HTML
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pOFqzK1Ymr4" frameborder="0" allowfullscreen></iframe>
-#+END_HTML
+#+END_EXPORT
 
 Enjoy.
 * 

@@ -24,7 +24,7 @@ on. If anyone knows, please leave a comment - I'd like to give credit
 where credit's due:
 
 
-#+BEGIN_SRC 
+#+BEGIN_SRC emacs-lisp
 
     (defadvice org-capture-finalize 
         (after delete-capture-frame activate)  
@@ -62,9 +62,9 @@ about scheduling and agendas. Right now, I'm playing with org-gcal to
 sync with my Google calendar and want to figure out a config I'm happy
 with before making that video.
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT HTML
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gjr9mP01oWE" frameborder="0" allowfullscreen></iframe>
-#+END_HTML
+#+END_EXPORT
 
 
 * 

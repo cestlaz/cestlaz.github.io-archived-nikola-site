@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about pedagogy</title>
   <id>http://cestlaz.github.io/categories/pedagogy.atom</id>
-  <updated>2017-06-15T00:04:47Z</updated>
+  <updated>2017-09-23T13:00:42Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -19,9 +19,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/first-language-changing/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-orgb940abe" class="outline-2"&gt;
+&lt;h2 id="orgb940abe"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb940abe"&gt;
 &lt;p&gt;
 This morning, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about Stanford possibly &lt;a href="https://computinged.wordpress.com/2017/04/21/cs-department-updates-introductory-courses-java-is-gone/"&gt;moving away
 from Java&lt;/a&gt; as their intro language. This comes on the heels of a
@@ -209,12 +209,9 @@ introduce github to my classes here they are:
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-1"&gt;Part 1&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-2"&gt;Part 2&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-3"&gt;Part 3&lt;/a&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-1"&gt;Part 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-2"&gt;Part 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-3"&gt;Part 3&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -233,9 +230,9 @@ least interesting.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/thumb_clickers/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-org0ec603b" class="outline-2"&gt;
+&lt;h2 id="org0ec603b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0ec603b"&gt;
 &lt;p&gt;
 Last Friday, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about the woes of &lt;a href="https://computinged.wordpress.com/2017/03/31/the-need-for-better-software-and-systems-to-support-active-cs-learning/%0A"&gt;using clickers&lt;/a&gt; in a
 class. The amount of effort required to use his school's approved
@@ -308,18 +305,23 @@ Thumbs.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;div id="outline-container-org9787899" class="outline-2"&gt;
+&lt;h2 id="org9787899"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9787899"&gt;
 &lt;p&gt;
 Periodically, I'll poll my class.
 &lt;/p&gt;
 
-&lt;span&gt;
-&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/sidethumb.png"&gt;
-&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/upthumb.jpg"&gt;
-&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/downthumb.jpg"&gt;
+&lt;div class="HTML"&gt;
+&lt;p&gt;
+&amp;lt;span&amp;gt;
+&amp;lt;img width="30%"src="../../img/thumbs/sidethumb.png"&amp;gt;
+&amp;lt;img width="30%" src="../../img/thumbs/upthumb.jpg"&amp;gt;
+&amp;lt;img width="30%" src="../../img/thumbs/downthumb.jpg"&amp;gt;
+&amp;lt;/spam&amp;gt;
+&lt;/p&gt;
 
+&lt;/div&gt;
 
 &lt;p&gt;
 Thumb to the side? Everything's OK. Keep going as you're going. I get
@@ -345,10 +347,8 @@ The downsides?
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;The class has to have a level of comfort so that students vote
-honestly and don't just give you positive feedback.
-&lt;/li&gt;
-&lt;li&gt;No data collection.
-&lt;/li&gt;
+honestly and don't just give you positive feedback.&lt;/li&gt;
+&lt;li&gt;No data collection.&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -356,19 +356,14 @@ honestly and don't just give you positive feedback.
 The upsides?
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;quick
-&lt;/li&gt;
-&lt;li&gt;cheap
-&lt;/li&gt;
-&lt;li&gt;works on any topic on the fly
-&lt;/li&gt;
+&lt;li&gt;quick&lt;/li&gt;
+&lt;li&gt;cheap&lt;/li&gt;
+&lt;li&gt;works on any topic on the fly&lt;/li&gt;
 &lt;li&gt;even if the votes are artificially skewed towards positive, it does
 forces the class to be at least a little attentive and to engage in
-some physical response
-&lt;/li&gt;
+some physical response&lt;/li&gt;
 &lt;li&gt;can get analog responses by allowing students to adjust wrist
-rotation
-&lt;/li&gt;
+rotation&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -392,7 +387,7 @@ I don't teach large lectures so I don't know how this would work in a
 huge class. I'd imagine it's still worth it given that it's so low
 friction and low cost of entry even if it's not perfect.
 &lt;/p&gt;
-&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;</summary>
     <category term="pedagogy" label="pedagogy"/>
     <category term="teaching" label="teaching"/>
@@ -440,7 +435,12 @@ Part two of this problem is a perfect time to use that technique.
 Here's the video, I hope you enjoy it:
 &lt;/p&gt;
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/EC8gSrYQ11g" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary>
+&lt;div class="HTML"&gt;
+&lt;p&gt;
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/EC8gSrYQ11g"&gt;https://www.youtube.com/embed/EC8gSrYQ11g&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;</summary>
     <category term="cs" label="cs"/>
     <category term="pedagogy" label="pedagogy"/>
     <category term="programming" label="programming"/>
@@ -590,9 +590,9 @@ students.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/new-term-new-tool-replit/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-orgf66c3eb" class="outline-2"&gt;
+&lt;h2 id="orgf66c3eb"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf66c3eb"&gt;
 &lt;p&gt;
 We're now a week in to my first class at Hunter. It's a little early
 for me to really compare and contrast the high school to college
@@ -641,17 +641,18 @@ I'm really liking things so far. Some of the things I like include:
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;a simple clean interface.
-&lt;/li&gt;
-&lt;li&gt;sharing and embedding code:
-&lt;/li&gt;
+&lt;li&gt;a simple clean interface.&lt;/li&gt;
+&lt;li&gt;sharing and embedding code:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;script src="//repl.it/embed/DF3m/19.js"&gt;&lt;/script&gt;
+&lt;div class="HTML"&gt;
+&lt;p&gt;
+&amp;lt;script src="//repl.it/embed/DF3m/19.js"&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;project mode which allows multi file projects
-&lt;/li&gt;
-&lt;li&gt;examples to get you started
-&lt;/li&gt;
+&lt;li&gt;project mode which allows multi file projects&lt;/li&gt;
+&lt;li&gt;examples to get you started&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -665,12 +666,9 @@ I had two extra minutes in class yesterday and in that time, I was
 able to:
 &lt;/p&gt;
 &lt;ol class="org-ol"&gt;
-&lt;li&gt;Make a classroom
-&lt;/li&gt;
-&lt;li&gt;Invite all my students by email
-&lt;/li&gt;
-&lt;li&gt;Create 2 quick assignments.
-&lt;/li&gt;
+&lt;li&gt;Make a classroom&lt;/li&gt;
+&lt;li&gt;Invite all my students by email&lt;/li&gt;
+&lt;li&gt;Create 2 quick assignments.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;
@@ -706,9 +704,9 @@ systems but I'm glad to have repl.it in my teaching arsenal.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/lesson-plans/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-orgecaa969" class="outline-2"&gt;
+&lt;h2 id="orgecaa969"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgecaa969"&gt;
 &lt;p&gt;
 I spent last Saturday up at the Microsoft offices in Times Square
 observing a &lt;a href="https://www.tealsk12.org/"&gt;TEALS&lt;/a&gt; training session. My fried &lt;a href="https://twitter.com/nathanielgranor"&gt;Nathaniel Granor&lt;/a&gt;, Teals
@@ -742,21 +740,16 @@ The lesson plan form was pretty traditional and pretty formulaic:
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;warm up
-&lt;/li&gt;
-&lt;li&gt;hook
-&lt;/li&gt;
-&lt;li&gt;instruction 
-&lt;/li&gt;
-&lt;li&gt;practice
-&lt;/li&gt;
-&lt;li&gt;Assessment
-&lt;/li&gt;
+&lt;li&gt;warm up&lt;/li&gt;
+&lt;li&gt;hook&lt;/li&gt;
+&lt;li&gt;instruction&lt;/li&gt;
+&lt;li&gt;practice&lt;/li&gt;
+&lt;li&gt;Assessment&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
 Very similar to what I was shown back in the day during my two day
-"teaching boot camp" that kicked off my career &lt;sup&gt;&lt;a id="fnr.1" name="fnr.1" class="footref" href="http://cestlaz.github.io/posts/lesson-plans/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt; and very
+"teaching boot camp" that kicked off my career &lt;sup&gt;&lt;a id="fnr.1" class="footref" href="http://cestlaz.github.io/posts/lesson-plans/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt; and very
 appropriate as an effective and efficient way to prepare these
 volunteers for their first days. 
 &lt;/p&gt;
@@ -881,9 +874,9 @@ close to the work of a master educator and craftsman.
 &lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
 &lt;div id="text-footnotes"&gt;
 
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" name="fn.1" class="footnum" href="http://cestlaz.github.io/posts/lesson-plans/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;p&gt;full disclosure: I
+&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" class="footnum" href="http://cestlaz.github.io/posts/lesson-plans/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;full disclosure: I
 came in to teaching with zero education credentials and took the
-minimum number of ed classes for my license after I started.&lt;/p&gt;&lt;/div&gt;
+minimum number of ed classes for my license after I started.&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
@@ -975,7 +968,12 @@ leave a comment for anything that the form doesn't cover?
 &lt;/p&gt;
 
 
-&lt;iframe src="https://docs.google.com/forms/d/1FlppDbeiK8uPxh_RkXoCbbdE_UDY_4qXmZWbXlZ0gGg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading...&lt;/iframe&gt;</summary>
+&lt;div class="HTML"&gt;
+&lt;p&gt;
+&amp;lt;iframe src="&lt;a href="https://docs.google.com/forms/d/1FlppDbeiK8uPxh_RkXoCbbdE_UDY_4qXmZWbXlZ0gGg/viewform?embedded=true"&gt;https://docs.google.com/forms/d/1FlppDbeiK8uPxh_RkXoCbbdE_UDY_4qXmZWbXlZ0gGg/viewform?embedded=true&lt;/a&gt;" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0"&amp;gt;Loading…&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;</summary>
     <category term="hardware" label="hardware"/>
     <category term="pedagogy" label="pedagogy"/>
     <category term="robotics" label="robotics"/>
@@ -1100,9 +1098,9 @@ and culture to our regular classes.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/semaphores/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;Edit:&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-org93cca7c" class="outline-2"&gt;
+&lt;h2 id="org93cca7c"&gt;Edit:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org93cca7c"&gt;
 &lt;p&gt;
 Just a brief note to clarify a couple of things. As indicated in the
 comments, this post isn't  about what's appropriate for HS CS. It's
@@ -1122,9 +1120,9 @@ The two examples are just to illustrate the point.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;Original Post:&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;div id="outline-container-org0571c9c" class="outline-2"&gt;
+&lt;h2 id="org0571c9c"&gt;Original Post:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0571c9c"&gt;
 &lt;p&gt;
 I enjoy reading blogs. It's one of the ways I keep current. Not only
 in terms of what's going on in CS Education, but also trends in CS -
