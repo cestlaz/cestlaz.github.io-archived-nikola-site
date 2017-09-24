@@ -1,0 +1,41 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs 37 - Treemacs file browser
+.. slug: using-emacs-37-treemacs
+.. date: 2017-09-24 11:22:54 UTC-04:00
+.. tags: emacs, learning, tools
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+I've been meaning to get back to making Emacs videos but I've been
+having trouble figuring out what to record.
+
+People have asked for [[https://github.com/magit/magit][Magit]] but I only use the basics and I think
+there are already some great videos on it out there. I'd also like to
+get more comfortable with DIRED mode and then do a video on it but I'm
+not there yet. I've also been looking into packages that manage
+workspaces like Eyebrowse and Persp-mode but neither are really doing
+it for my workflow.
+
+This morning I saw an post on the [[https://www.reddit.com/r/emacs/comments/7249jt/introducing_treemacs_a_modern_file_project/][Emacs subreddit]] about [[https://github.com/Alexander-Miller/treemacs#treemacs---a-tree-layout-file-explorer-for-emacs][Treemacs]] - a
+sidebar file browser similar to what the Atom editor has. It's pretty
+slick. I particularly like the integration with [[https://github.com/bbatsov/projectile][projectile]]. 
+
+I suspect I won't integrate a file browser side bar into my workflow -
+I've probably spent too many years with Emacs built in buffer commands
+but if like that type of interface, definitely check Treemacs out.
+
+#+BEGIN_EXPORT HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ACg6RnVdw8k" frameborder="0" allowfullscreen></iframe>
+#+END_EXPORT
+
+
+
+
+
+
+
+

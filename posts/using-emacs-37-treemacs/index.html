@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Observing CS Teachers | C'est la Z</title>
+<title>Using Emacs 37 - Treemacs file browser | C'est la Z</title>
 <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
@@ -16,24 +16,24 @@ article: http://ogp.me/ns/article#
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="../../index.atom">
-<link rel="canonical" href="http://cestlaz.github.io/posts/cs-teacher-eval/">
+<link rel="canonical" href="http://cestlaz.github.io/posts/using-emacs-37-treemacs/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
-<link rel="prev" href="../languages-or-cs/" title="A friendly reminder to use the right language when describing CS" type="text/html">
-<link rel="next" href="../cd-ed-and-all-ed/" title="CS Ed advocates should pay attention to greater ed issues" type="text/html">
+<link rel="prev" href="../awesome-cs-revisted/" title="Awesome Cs Revisited" type="text/html">
 <meta property="og:site_name" content="C'est la Z">
-<meta property="og:title" content="Observing CS Teachers">
-<meta property="og:url" content="http://cestlaz.github.io/posts/cs-teacher-eval/">
-<meta property="og:description" content="Another set of tweets god me thinking:
+<meta property="og:title" content="Using Emacs 37 - Treemacs file browser">
+<meta property="og:url" content="http://cestlaz.github.io/posts/using-emacs-37-treemacs/">
+<meta property="og:description" content="I've been meaning to get back to making Emacs videos but I've been
+having trouble figuring out what to record.
 
 
-How do we help school administrators help and evaluate CS
-teachers? asks @lsudol of @CSForAll #csta2017
-Many don't understand CS— Alfred Thompson (@alfredtwo)
-">
+
+People have asked for Magit but I only use the basics and I think
+there are already so">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2017-07-15T20:13:38-04:00">
-<meta property="article:tag" content="supervision">
-<meta property="article:tag" content="teaching">
+<meta property="article:published_time" content="2017-09-24T11:22:54-04:00">
+<meta property="article:tag" content="emacs">
+<meta property="article:tag" content="learning">
+<meta property="article:tag" content="tools">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -101,14 +101,14 @@ Many don't understand CS— Alfred Thompson (@alfredtwo)
 						<div class="col-md-8">
 				
 								
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Observing CS Teachers</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Using Emacs 37 - Treemacs file browser</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                     Mike Zamansky
             </span></p>
-            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-07-15T20:13:38-04:00" itemprop="datePublished" title="2017-07-15 20:13">2017-07-15 20:13</time></a></p>
-                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/cs-teacher-eval.html">Comments</a>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-09-24T11:22:54-04:00" itemprop="datePublished" title="2017-09-24 11:22">2017-09-24 11:22</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-37-treemacs.html">Comments</a>
 
 
             
@@ -116,141 +116,36 @@ Many don't understand CS— Alfred Thompson (@alfredtwo)
 </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div id="outline-container-org4cec776" class="outline-2">
-<h2 id="org4cec776"></h2>
-<div class="outline-text-2" id="text-org4cec776">
+    <div id="outline-container-orgb6a0cee" class="outline-2">
+<h2 id="orgb6a0cee"></h2>
+<div class="outline-text-2" id="text-orgb6a0cee">
 <p>
-Another set of tweets god me thinking:
-</p>
-
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">How do we help school administrators help and evaluate CS
-teachers? asks <a href="https://twitter.com/lsudol">@lsudol</a> of <a href="https://twitter.com/CSForAll">@CSForAll</a> <a href="https://twitter.com/hashtag/csta2017?src=hash">#csta2017</a>
-Many don't understand CS</p>— Alfred Thompson (@alfredtwo)
-<a href="https://twitter.com/alfredtwo/status/884427047635795969">July
-10, 2017</a>
-</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">If the current system is any indication, checklists are not
-the answer</p>— Mike Zamansky (@zamansky) <a href="https://twitter.com/zamansky/status/886220912110043136">July 15,
-2017</a>
-</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script><p>
-I get the intent. CS teachers should be evaluated by people who have
-some clue about the subject. Leigh Ann's reporting that some people
-are working on checklists got me wondering if it really matters? Sure,
-it matters if teacher observations were actually set up to improve
-instruction but given what we have in NY does it really?
+I've been meaning to get back to making Emacs videos but I've been
+having trouble figuring out what to record.
 </p>
 
 <p>
-In New York City, teacher observations are a major part of a teacher's
-annual rating and the other part is still <a href="https://cestlaz.github.io/posts/2013-09-06-why_i_might_no_longer_be_an_effective_teacher.md/#.WWqzc9_6yEI">that standardized test
-nonsense</a>. Teachers are observed at least 4 and commonly 6 times
-or more per year. There might be pre and
-post observation conferences.
+People have asked for <a href="https://github.com/magit/magit">Magit</a> but I only use the basics and I think
+there are already some great videos on it out there. I'd also like to
+get more comfortable with DIRED mode and then do a video on it but I'm
+not there yet. I've also been looking into packages that manage
+workspaces like Eyebrowse and Persp-mode but neither are really doing
+it for my workflow.
 </p>
 
 <p>
-Sounds good but the system is amazingly flawed.
+This morning I saw an post on the <a href="https://www.reddit.com/r/emacs/comments/7249jt/introducing_treemacs_a_modern_file_project/">Emacs subreddit</a> about <a href="https://github.com/Alexander-Miller/treemacs#treemacs---a-tree-layout-file-explorer-for-emacs">Treemacs</a> - a
+sidebar file browser similar to what the Atom editor has. It's pretty
+slick. I particularly like the integration with <a href="https://github.com/bbatsov/projectile">projectile</a>. 
 </p>
 
 <p>
-To start, the DOE uses the <a href="http://schools.nyc.gov/NR/rdonlyres/8A4A25F0-BCEE-4484-9311-B5BB7A51D7F1/0/TeacherEffectivenessProgram1314Rubric201308142.pdf">Danielson Framework</a> which provides a basis
-for teacher evaluation. The framework is at best <a href="https://tedmorrissey.wordpress.com/2014/03/23/fatal-flaws-of-the-danielson-framework/">flawed</a> with even
-Danielson coming out to say <a href="https://tedmorrissey.wordpress.com/2016/04/27/danielson-framework-criticized-by-charlotte-danielson/">it's being misused</a>. Of course I'm sure she
-protested all the way to the bank. A teacher can be a "Danielson
-style" teacher and be great but a teacher can also check all
-the Danielson boxes and be mediocre at best. Likewise, some of the
-best teachers I know break the Danielson mold and if a supervisor
-rigidly adheres to the framework these great teachers would be found
-ineffective.
+I suspect I won't integrate a file browser side bar into my workflow -
+I've probably spent too many years with Emacs built in buffer commands
+but if like that type of interface, definitely check Treemacs out.
 </p>
 
-<p>
-To make matters worse, the rubric is so large that the DOE just
-focuses on small parts which means even if the framework was
-comprehensive and correct, teachers are only evaluated on a small
-part.
-</p>
-
-<p>
-When a supervisor evaluates a teacher, they have a checklist with the
-rubric where they can rate a teacher 1 (ineffective), 2 (developing),
-3 (effective), and 4 (highly effective) and write down some notes. 
-</p>
-
-<p>
-I guess the hope was to have some consistency but the truth is the
-process is very subjective. I know a supervisor who gave a teacher a
-ratings of 2 (which is basically failing) for the professional
-development category even though the teacher fulfilled all contractual
-obligations and then some. There are also supervisors who won't give a
-rating of 4 out of principle. On the other side, I've met supervisors
-loathe to give low scores.
-</p>
-
-<p>
-The tweets at the top of this post refer to the current situation
-where CS teachers are never observed and evaluated by supervisors who
-are knowledgeable about CS. Even if someone designs a checklist -
-something I'm skeptical about given the fact that there are so few
-people strong in CS, experienced as teachers and with an eye for
-teacher evaluation out there, if the application of the Danielson
-framework is any indication, a CS checklist won't help.
-</p>
-
-<p>
-Besides, CS won't be any different from any other subject. Since the
-destruction of the comprehensive neighborhood high school we've had a
-proliferation of small schools. Some people think that small schools
-are universally better. They're wrong. You need a mix. One of the
-problems with small schools is that you don't have subject area
-supervisors. You have a principal and an assistant principal. The
-result is that most teachers are evaluated by supervisors with no
-subject area expertise and no subject area pedagogical expertise.
-</p>
-
-<p>
-The old system, even though it was also subject to abuses was much
-better - at least in the hands of a good supervisor. The observation
-system is inherently flawed. Observations are snapshots out of context
-and the mere presence of an observer changes the tone of the
-room. That said, if a supervisor knows the heartbeat of their school
-and has ongoing conversations with their staff, they can both ensure
-teachers are doing an honest job and also help them to improve.
-</p>
-
-<p>
-The method of observation also doesn't have to be complicated. My
-first supervisor made it very simple. He said he looked for one basic
-thing - "was learning going on?" The conversation would then go from
-there. 
-</p>
-
-<p>
-Sometimes you have to look beyond the lesson. In my first year, I
-frequently observed a friend's history class. One day the class seemed
-to do very little. It seemed like all talk and play. I talked to the
-teacher about this. He said "that was what they needed today." He was
-a master and he was right. You might drop in on his class to see
-amazing instruction or you might come in and wonder why he wasn't
-fired long ago but at the end of the year when you looked at how much
-his kid learned and loved his class you realized that he was an
-amazing teacher. No rubric or framework needed. Just the eyeball test.
-</p>
-
-<p>
-They also used to have more peer observations.They had to be coordinated
-by the department supervisor and he or she had to be in the loop but
-the peer observation model helped cross pollinate ideas in a
-department, build camaraderie and it also eased the workload of the
-supervisor.
-</p>
-
-<p>
-To answer Alfred's question from his tweet, how do we help
-administrators help CS teachers? Get other teachers involved, keep an
-open mind and look at the big picture.
-</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ACg6RnVdw8k" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
 
@@ -266,23 +161,21 @@ open mind and look at the big picture.
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
 </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../categories/supervision/" rel="tag">supervision</a></li>
-            <li><a class="tag p-category" href="../../categories/teaching/" rel="tag">teaching</a></li>
+<li><a class="tag p-category" href="../../categories/emacs/" rel="tag">emacs</a></li>
+            <li><a class="tag p-category" href="../../categories/learning/" rel="tag">learning</a></li>
+            <li><a class="tag p-category" href="../../categories/tools/" rel="tag">tools</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../languages-or-cs/" rel="prev" title="A friendly reminder to use the right language when describing CS">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../cd-ed-and-all-ed/" rel="next" title="CS Ed advocates should pay attention to greater ed issues">Next post</a>
+                <a href="../awesome-cs-revisted/" rel="prev" title="Awesome Cs Revisited">Previous post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="cestlaz",
-            disqus_url="http://cestlaz.github.io/posts/cs-teacher-eval/",
-        disqus_title="Observing CS Teachers",
-        disqus_identifier="cache/posts/cs-teacher-eval.html",
+            disqus_url="http://cestlaz.github.io/posts/using-emacs-37-treemacs/",
+        disqus_title="Using Emacs 37 - Treemacs file browser",
+        disqus_identifier="cache/posts/using-emacs-37-treemacs.html",
         disqus_config = function () {
             this.language = "en";
         };

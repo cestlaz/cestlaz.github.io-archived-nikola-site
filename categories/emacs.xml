@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about emacs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link rel="self" href="http://cestlaz.github.io/categories/emacs.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 23 Sep 2017 13:09:47 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 36 - A Touch of Elisp</title><link>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd15dba9" class="outline-2"&gt;
-&lt;h2 id="orgd15dba9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd15dba9"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about emacs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/emacs.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 24 Sep 2017 16:03:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 37 - Treemacs file browser</title><link>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgb6a0cee" class="outline-2"&gt;
+&lt;h2 id="orgb6a0cee"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb6a0cee"&gt;
+&lt;p&gt;
+I've been meaning to get back to making Emacs videos but I've been
+having trouble figuring out what to record.
+&lt;/p&gt;
+
+&lt;p&gt;
+People have asked for &lt;a href="https://github.com/magit/magit"&gt;Magit&lt;/a&gt; but I only use the basics and I think
+there are already some great videos on it out there. I'd also like to
+get more comfortable with DIRED mode and then do a video on it but I'm
+not there yet. I've also been looking into packages that manage
+workspaces like Eyebrowse and Persp-mode but neither are really doing
+it for my workflow.
+&lt;/p&gt;
+
+&lt;p&gt;
+This morning I saw an post on the &lt;a href="https://www.reddit.com/r/emacs/comments/7249jt/introducing_treemacs_a_modern_file_project/"&gt;Emacs subreddit&lt;/a&gt; about &lt;a href="https://github.com/Alexander-Miller/treemacs#treemacs---a-tree-layout-file-explorer-for-emacs"&gt;Treemacs&lt;/a&gt; - a
+sidebar file browser similar to what the Atom editor has. It's pretty
+slick. I particularly like the integration with &lt;a href="https://github.com/bbatsov/projectile"&gt;projectile&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I suspect I won't integrate a file browser side bar into my workflow -
+I've probably spent too many years with Emacs built in buffer commands
+but if like that type of interface, definitely check Treemacs out.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ACg6RnVdw8k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</guid><pubDate>Sun, 24 Sep 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs 36 - A Touch of Elisp</title><link>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6a6c0a4" class="outline-2"&gt;
+&lt;h2 id="org6a6c0a4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6a6c0a4"&gt;
 &lt;p&gt;
 I've been working on a vue.js project this summer. During the school
 year I really can't dive into code so it's been fun.
@@ -75,9 +106,9 @@ you want.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/NQhud2ZNd1w" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</guid><pubDate>Sun, 30 Jul 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs 35 - Blogging</title><link>http://cestlaz.github.io/posts/using-emacs-35-blogging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org2ae74e3" class="outline-2"&gt;
-&lt;h2 id="org2ae74e3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org2ae74e3"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</guid><pubDate>Sun, 30 Jul 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs 35 - Blogging</title><link>http://cestlaz.github.io/posts/using-emacs-35-blogging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org31cac48" class="outline-2"&gt;
+&lt;h2 id="org31cac48"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org31cac48"&gt;
 &lt;p&gt;
 Very little new Emacs in today's episode of Using Emacs. The video
 shows my old blogging workflow and what I'm playing with now.
@@ -102,9 +133,9 @@ There's not much more to say here so enjoy the video:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/wSeTic9obKw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-35-blogging/</guid><pubDate>Tue, 27 Jun 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs - 34 - ibuffer and emmet</title><link>http://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8ed7fca" class="outline-2"&gt;
-&lt;h2 id="org8ed7fca"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8ed7fca"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-35-blogging/</guid><pubDate>Tue, 27 Jun 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs - 34 - ibuffer and emmet</title><link>http://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org81e0ff9" class="outline-2"&gt;
+&lt;h2 id="org81e0ff9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org81e0ff9"&gt;
 &lt;p&gt;
 A couple of quick, unrelated packages today.
 &lt;/p&gt;
@@ -174,9 +205,9 @@ Here's my configuration (mostly stolen from Owen):
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org809ff88" class="outline-2"&gt;
-&lt;h2 id="org809ff88"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org809ff88"&gt;
+&lt;div id="outline-container-orgad3e19a" class="outline-2"&gt;
+&lt;h2 id="orgad3e19a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgad3e19a"&gt;
 &lt;p&gt;
 The video also shows &lt;a href="https://github.com/smihica/emmet-mode"&gt;emmet&lt;/a&gt; mode. A terrific mode for quickly creating
 HTML and CSS. I tried it a long time ago when it was called zencoding
@@ -206,9 +237,9 @@ Check them both out:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org1503004" class="outline-2"&gt;
-&lt;h2 id="org1503004"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1503004"&gt;
+&lt;div id="outline-container-org1901293" class="outline-2"&gt;
+&lt;h2 id="org1901293"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1901293"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -223,9 +254,9 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/</guid><pubDate>Thu, 15 Jun 2017 19:00:26 GMT</pubDate></item><item><title>Using Emacs - 33 - projectile, dumb-jump</title><link>http://cestlaz.github.io/posts/using-emacs-33-projectile-jump/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf6fd870" class="outline-2"&gt;
-&lt;h2 id="orgf6fd870"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf6fd870"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/</guid><pubDate>Thu, 15 Jun 2017 19:00:26 GMT</pubDate></item><item><title>Using Emacs - 33 - projectile, dumb-jump</title><link>http://cestlaz.github.io/posts/using-emacs-33-projectile-jump/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc2b8696" class="outline-2"&gt;
+&lt;h2 id="orgc2b8696"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc2b8696"&gt;
 &lt;p&gt;
 If you keep Emacs open all the time you end up accumulating lots of
 buffers. That can make navigating a little bit awkward.
@@ -317,9 +348,9 @@ Enjoy.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orga68506c" class="outline-2"&gt;
-&lt;h2 id="orga68506c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga68506c"&gt;
+&lt;div id="outline-container-org2475118" class="outline-2"&gt;
+&lt;h2 id="org2475118"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org2475118"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -334,9 +365,9 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-33-projectile-jump/</guid><pubDate>Fri, 28 Apr 2017 13:00:26 GMT</pubDate></item><item><title>Using Emacs - 32 - C++</title><link>http://cestlaz.github.io/posts/using-emacs-32-cpp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf64939d" class="outline-2"&gt;
-&lt;h2 id="orgf64939d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf64939d"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-33-projectile-jump/</guid><pubDate>Fri, 28 Apr 2017 13:00:26 GMT</pubDate></item><item><title>Using Emacs - 32 - C++</title><link>http://cestlaz.github.io/posts/using-emacs-32-cpp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgba9a4c5" class="outline-2"&gt;
+&lt;h2 id="orgba9a4c5"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgba9a4c5"&gt;
 &lt;p&gt;
 This video is specifically for my students or any students out there
 who are starting with C++ and emacs. The videos also longer than usual, coming in
@@ -530,9 +561,9 @@ Enjoy.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgba45b3f" class="outline-2"&gt;
-&lt;h2 id="orgba45b3f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgba45b3f"&gt;
+&lt;div id="outline-container-org586d381" class="outline-2"&gt;
+&lt;h2 id="org586d381"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org586d381"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -547,9 +578,9 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-32-cpp/</guid><pubDate>Sat, 04 Mar 2017 13:00:26 GMT</pubDate></item><item><title>Using Emacs - 31 - elfeed part 3 - macros</title><link>http://cestlaz.github.io/posts/using-emacs-31-elfeed-3/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9e61d72" class="outline-2"&gt;
-&lt;h2 id="org9e61d72"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9e61d72"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-32-cpp/</guid><pubDate>Sat, 04 Mar 2017 13:00:26 GMT</pubDate></item><item><title>Using Emacs - 31 - elfeed part 3 - macros</title><link>http://cestlaz.github.io/posts/using-emacs-31-elfeed-3/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgcb53759" class="outline-2"&gt;
+&lt;h2 id="orgcb53759"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgcb53759"&gt;
 &lt;p&gt;
 In &lt;a href="http://cestlaz.github.io/posts/using-emacs-30-elfeed-2"&gt;part 2&lt;/a&gt; I talked about how I used &lt;a href="https://github.com/abo-abo/hydra"&gt;Hyrdas&lt;/a&gt; to quickly navigate through
 elfeed tags. It was a nice step up but the fact that I still had to
@@ -717,9 +748,9 @@ Here's the video:
 Enjoy.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org61bb604" class="outline-3"&gt;
-&lt;h3 id="org61bb604"&gt;&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org61bb604"&gt;
+&lt;div id="outline-container-org49f725b" class="outline-3"&gt;
+&lt;h3 id="org49f725b"&gt;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org49f725b"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -735,9 +766,9 @@ Relevant links:
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-31-elfeed-3/</guid><pubDate>Wed, 01 Mar 2017 13:00:26 GMT</pubDate></item><item><title>Using Emacs - 30 - elfeed part 2 - Hydras</title><link>http://cestlaz.github.io/posts/using-emacs-30-elfeed-2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd5ee32a" class="outline-2"&gt;
-&lt;h2 id="orgd5ee32a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd5ee32a"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-31-elfeed-3/</guid><pubDate>Wed, 01 Mar 2017 13:00:26 GMT</pubDate></item><item><title>Using Emacs - 30 - elfeed part 2 - Hydras</title><link>http://cestlaz.github.io/posts/using-emacs-30-elfeed-2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3f8deb2" class="outline-2"&gt;
+&lt;h2 id="org3f8deb2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3f8deb2"&gt;
 &lt;p&gt;
 In &lt;a href="http://cestlaz.github.io/posts/using-emacs-29%20elfeed/"&gt;part 1&lt;/a&gt;, I talked about &lt;a href="https://github.com/skeeto/elfeed"&gt;elfeed&lt;/a&gt;, a really awesome feed reader for
 emacs. Generally, I'm really liking it but there's been one problem -
@@ -875,9 +906,9 @@ Enjoy.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org47cc000" class="outline-2"&gt;
-&lt;h2 id="org47cc000"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org47cc000"&gt;
+&lt;div id="outline-container-org1dafb7e" class="outline-2"&gt;
+&lt;h2 id="org1dafb7e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1dafb7e"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -892,9 +923,9 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-30-elfeed-2/</guid><pubDate>Sat, 25 Feb 2017 13:00:26 GMT</pubDate></item><item><title>Using Emacs - 29 -elfeed part 1</title><link>http://cestlaz.github.io/posts/using-emacs-29%20elfeed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgb36a41f" class="outline-2"&gt;
-&lt;h2 id="orgb36a41f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb36a41f"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-30-elfeed-2/</guid><pubDate>Sat, 25 Feb 2017 13:00:26 GMT</pubDate></item><item><title>Using Emacs - 29 -elfeed part 1</title><link>http://cestlaz.github.io/posts/using-emacs-29%20elfeed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org2c24489" class="outline-2"&gt;
+&lt;h2 id="org2c24489"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org2c24489"&gt;
 &lt;p&gt;
 Since the demise of Google Reader, I've been using &lt;a href="http://feedly.com"&gt;Feedly&lt;/a&gt; to read my
 streams. Feedly's a nice product and it's been working well for me for
@@ -1022,9 +1053,9 @@ Check out elfeed and make sure to go to the links provided on the main
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-orga8da052" class="outline-2"&gt;
-&lt;h2 id="orga8da052"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga8da052"&gt;
+&lt;div id="outline-container-orgb8facb0" class="outline-2"&gt;
+&lt;h2 id="orgb8facb0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb8facb0"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/pOFqzK1Ymr4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;
@@ -1032,9 +1063,9 @@ Enjoy.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org04eb067" class="outline-2"&gt;
-&lt;h2 id="org04eb067"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org04eb067"&gt;
+&lt;div id="outline-container-orgafaa9e1" class="outline-2"&gt;
+&lt;h2 id="orgafaa9e1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgafaa9e1"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -1049,9 +1080,9 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-29%20elfeed/</guid><pubDate>Wed, 22 Feb 2017 13:00:26 GMT</pubDate></item><item><title>Using Emacs - 28 -Rectangles</title><link>http://cestlaz.github.io/posts/using-emacs-27-rectangles/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd3ebbf6" class="outline-2"&gt;
-&lt;h2 id="orgd3ebbf6"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd3ebbf6"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-29%20elfeed/</guid><pubDate>Wed, 22 Feb 2017 13:00:26 GMT</pubDate></item><item><title>Using Emacs - 28 -Rectangles</title><link>http://cestlaz.github.io/posts/using-emacs-27-rectangles/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7b83b5e" class="outline-2"&gt;
+&lt;h2 id="org7b83b5e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7b83b5e"&gt;
 &lt;p&gt;
 One of my favorite but little used emacs features is rectangular
 editing. It's little used because I don't need it all that often. It's
@@ -1087,9 +1118,9 @@ Here's a link to all the functions:
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgadec383" class="outline-2"&gt;
-&lt;h2 id="orgadec383"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgadec383"&gt;
+&lt;div id="outline-container-orgb1996d9" class="outline-2"&gt;
+&lt;h2 id="orgb1996d9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb1996d9"&gt;
 &lt;p&gt;
 And the video:
 &lt;/p&gt;
@@ -1101,9 +1132,9 @@ Enjoy.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org55d7312" class="outline-2"&gt;
-&lt;h2 id="org55d7312"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org55d7312"&gt;
+&lt;div id="outline-container-org323648c" class="outline-2"&gt;
+&lt;h2 id="org323648c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org323648c"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -1118,98 +1149,4 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-27-rectangles/</guid><pubDate>Thu, 09 Feb 2017 13:00:26 GMT</pubDate></item><item><title>Using Emacs - 27 - shell and eshell</title><link>http://cestlaz.github.io/posts/using-emacs-27-shell/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7324580" class="outline-2"&gt;
-&lt;h2 id="org7324580"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7324580"&gt;
-&lt;p&gt;
-While I use emacs for all all sorts of things, one of the things I
-haven't done much is run shells from within emacs. I'm not sure
-why. I'm a command line wonk and adding command line goodness and
-emacs together seems like a natural. Maybe it's because back in the
-day I spent a lot of time on MS-DOS systems. You could get a
-reasonable Unixy facsimile using tools like the &lt;a href="https://en.wikipedia.org/wiki/MKS_Toolkit"&gt;MKS toolkit&lt;/a&gt; and I like
-so many other young computer scientists wrote our own small shells
-when we learned C so I used that insted of command.com. 
-&lt;/p&gt;
-
-&lt;p&gt;
-In any event, I'm trying to use the shell within emacs more. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Here's a quick video showing both &lt;b&gt;&lt;b&gt;shell&lt;/b&gt;&lt;/b&gt;, which runs whatever your
-default shell is in an emacs buffer and &lt;b&gt;&lt;b&gt;eshell&lt;/b&gt;&lt;/b&gt; which is emacs own
-shell.
-&lt;/p&gt;
-
-&lt;p&gt;
-I use a couple of packages to smooth over a couple of things.
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;a href="https://github.com/porterjamesj/virtualenvwrapper.el"&gt;Virtuelenvwrapper&lt;/a&gt; smooths things voer with the python virtaulenv and
-virtualenvwrapper linux packages:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;virtualenvwrapper&lt;/span&gt;
-      &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-      &lt;span class="nv"&gt;:config&lt;/span&gt;
-      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;venv-initialize-interactive-shells&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-      &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;venv-initialize-eshell&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Only relevant if you use Python and virtualenvs.
-&lt;/p&gt;
-
-&lt;p&gt;
-and more importantly, &lt;a href="https://github.com/killdash9/better-shell"&gt;better shell&lt;/a&gt;:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;better-shell&lt;/span&gt;
-    &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-    &lt;span class="nv"&gt;:bind&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"C-'"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;better-shell-shell&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	   &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"C-;"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;better-shell-remote-open&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-cleans things up when using a termianl to connect to a remote machine.
-&lt;/p&gt;
-
-&lt;p&gt;
-If you use a shell from within emacs as part of your workflow, please
-post how, or better, make a video!!!!
-&lt;/p&gt;
-
-&lt;p&gt;
-Enjoy
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div id="outline-container-orgd78e1b0" class="outline-2"&gt;
-&lt;h2 id="orgd78e1b0"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd78e1b0"&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/pjhRFMUxBB4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-org6f866a0" class="outline-2"&gt;
-&lt;h2 id="org6f866a0"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6f866a0"&gt;
-&lt;p&gt;
-Relevant links:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Video series overview page:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Code:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-27-shell/</guid><pubDate>Fri, 27 Jan 2017 13:00:26 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-27-rectangles/</guid><pubDate>Thu, 09 Feb 2017 13:00:26 GMT</pubDate></item></channel></rss>

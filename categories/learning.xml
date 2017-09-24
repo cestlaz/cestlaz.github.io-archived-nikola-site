@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about learning)</title><link>http://cestlaz.github.io/</link><description></description><atom:link rel="self" href="http://cestlaz.github.io/categories/learning.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 23 Sep 2017 13:09:46 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 36 - A Touch of Elisp</title><link>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd15dba9" class="outline-2"&gt;
-&lt;h2 id="orgd15dba9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd15dba9"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about learning)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/learning.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 24 Sep 2017 16:03:11 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 37 - Treemacs file browser</title><link>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgb6a0cee" class="outline-2"&gt;
+&lt;h2 id="orgb6a0cee"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb6a0cee"&gt;
+&lt;p&gt;
+I've been meaning to get back to making Emacs videos but I've been
+having trouble figuring out what to record.
+&lt;/p&gt;
+
+&lt;p&gt;
+People have asked for &lt;a href="https://github.com/magit/magit"&gt;Magit&lt;/a&gt; but I only use the basics and I think
+there are already some great videos on it out there. I'd also like to
+get more comfortable with DIRED mode and then do a video on it but I'm
+not there yet. I've also been looking into packages that manage
+workspaces like Eyebrowse and Persp-mode but neither are really doing
+it for my workflow.
+&lt;/p&gt;
+
+&lt;p&gt;
+This morning I saw an post on the &lt;a href="https://www.reddit.com/r/emacs/comments/7249jt/introducing_treemacs_a_modern_file_project/"&gt;Emacs subreddit&lt;/a&gt; about &lt;a href="https://github.com/Alexander-Miller/treemacs#treemacs---a-tree-layout-file-explorer-for-emacs"&gt;Treemacs&lt;/a&gt; - a
+sidebar file browser similar to what the Atom editor has. It's pretty
+slick. I particularly like the integration with &lt;a href="https://github.com/bbatsov/projectile"&gt;projectile&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I suspect I won't integrate a file browser side bar into my workflow -
+I've probably spent too many years with Emacs built in buffer commands
+but if like that type of interface, definitely check Treemacs out.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ACg6RnVdw8k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</guid><pubDate>Sun, 24 Sep 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs 36 - A Touch of Elisp</title><link>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6a6c0a4" class="outline-2"&gt;
+&lt;h2 id="org6a6c0a4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6a6c0a4"&gt;
 &lt;p&gt;
 I've been working on a vue.js project this summer. During the school
 year I really can't dive into code so it's been fun.
@@ -75,9 +106,9 @@ you want.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/NQhud2ZNd1w" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</guid><pubDate>Sun, 30 Jul 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs 35 - Blogging</title><link>http://cestlaz.github.io/posts/using-emacs-35-blogging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org2ae74e3" class="outline-2"&gt;
-&lt;h2 id="org2ae74e3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org2ae74e3"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</guid><pubDate>Sun, 30 Jul 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs 35 - Blogging</title><link>http://cestlaz.github.io/posts/using-emacs-35-blogging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org31cac48" class="outline-2"&gt;
+&lt;h2 id="org31cac48"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org31cac48"&gt;
 &lt;p&gt;
 Very little new Emacs in today's episode of Using Emacs. The video
 shows my old blogging workflow and what I'm playing with now.

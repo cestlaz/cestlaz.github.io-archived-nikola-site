@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about devops)</title><link>http://cestlaz.github.io/</link><description></description><atom:link rel="self" href="http://cestlaz.github.io/categories/devops.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 23 Sep 2017 13:09:47 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Flask - deploying to DigitalOcean</title><link>http://cestlaz.github.io/posts/digitaloceanflask/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgec0fa80" class="outline-2"&gt;
-&lt;h2 id="orgec0fa80"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgec0fa80"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about devops)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/devops.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 23 Sep 2017 16:59:45 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Flask - deploying to DigitalOcean</title><link>http://cestlaz.github.io/posts/digitaloceanflask/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6ad4d5e" class="outline-2"&gt;
+&lt;h2 id="org6ad4d5e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6ad4d5e"&gt;
 &lt;p&gt;
 This post points to the next three videos in the Flask series.
 &lt;/p&gt;
@@ -32,23 +32,23 @@ In general, there are lots of great tutorials and guides at the
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgaa9e989" class="outline-2"&gt;
-&lt;h2 id="orgaa9e989"&gt;Setting up a Droplet&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgaa9e989"&gt;
+&lt;div id="outline-container-org582f65a" class="outline-2"&gt;
+&lt;h2 id="org582f65a"&gt;Setting up a Droplet&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org582f65a"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LOS8PscXhz8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org6f181ec" class="outline-2"&gt;
-&lt;h2 id="org6f181ec"&gt;Deploying with Gunicorn&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6f181ec"&gt;
+&lt;div id="outline-container-org4910380" class="outline-2"&gt;
+&lt;h2 id="org4910380"&gt;Deploying with Gunicorn&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4910380"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/oum5Kh-69pg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgfb97d5b" class="outline-2"&gt;
-&lt;h2 id="orgfb97d5b"&gt;sshfs and FreeDNS&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgfb97d5b"&gt;
+&lt;div id="outline-container-org6ea7e26" class="outline-2"&gt;
+&lt;h2 id="org6ea7e26"&gt;sshfs and FreeDNS&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6ea7e26"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/aha2r5I18i0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description><category>devops</category><category>python</category><category>tools</category><guid>http://cestlaz.github.io/posts/digitaloceanflask/</guid><pubDate>Tue, 08 Nov 2016 19:35:52 GMT</pubDate></item></channel></rss>

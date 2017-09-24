@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link rel="self" href="http://cestlaz.github.io/categories/tools.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 23 Sep 2017 13:09:47 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>New Term New Tool - Thonny, a Python IDE</title><link>http://cestlaz.github.io/posts/new-tool-thonny/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org14a9408" class="outline-2"&gt;
-&lt;h2 id="org14a9408"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org14a9408"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/tools.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 24 Sep 2017 16:03:12 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 37 - Treemacs file browser</title><link>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgb6a0cee" class="outline-2"&gt;
+&lt;h2 id="orgb6a0cee"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb6a0cee"&gt;
+&lt;p&gt;
+I've been meaning to get back to making Emacs videos but I've been
+having trouble figuring out what to record.
+&lt;/p&gt;
+
+&lt;p&gt;
+People have asked for &lt;a href="https://github.com/magit/magit"&gt;Magit&lt;/a&gt; but I only use the basics and I think
+there are already some great videos on it out there. I'd also like to
+get more comfortable with DIRED mode and then do a video on it but I'm
+not there yet. I've also been looking into packages that manage
+workspaces like Eyebrowse and Persp-mode but neither are really doing
+it for my workflow.
+&lt;/p&gt;
+
+&lt;p&gt;
+This morning I saw an post on the &lt;a href="https://www.reddit.com/r/emacs/comments/7249jt/introducing_treemacs_a_modern_file_project/"&gt;Emacs subreddit&lt;/a&gt; about &lt;a href="https://github.com/Alexander-Miller/treemacs#treemacs---a-tree-layout-file-explorer-for-emacs"&gt;Treemacs&lt;/a&gt; - a
+sidebar file browser similar to what the Atom editor has. It's pretty
+slick. I particularly like the integration with &lt;a href="https://github.com/bbatsov/projectile"&gt;projectile&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I suspect I won't integrate a file browser side bar into my workflow -
+I've probably spent too many years with Emacs built in buffer commands
+but if like that type of interface, definitely check Treemacs out.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ACg6RnVdw8k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</guid><pubDate>Sun, 24 Sep 2017 15:22:54 GMT</pubDate></item><item><title>New Term New Tool - Thonny, a Python IDE</title><link>http://cestlaz.github.io/posts/new-tool-thonny/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgddcb71a" class="outline-2"&gt;
+&lt;h2 id="orgddcb71a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgddcb71a"&gt;
 &lt;p&gt;
 Last year I &lt;a href="https://cestlaz.github.io/posts/new-term-new-tool-replit"&gt;wrote about&lt;/a&gt; &lt;a href="http://repl.it"&gt;repl.it&lt;/a&gt;, an online IDE that supports multiple
 languages. At the time it had some rudimentary classroom support and
@@ -43,9 +74,9 @@ video:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lWaCl0WjNZI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-tool-thonny/</guid><pubDate>Thu, 21 Sep 2017 11:31:42 GMT</pubDate></item><item><title>Using Emacs 36 - A Touch of Elisp</title><link>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd15dba9" class="outline-2"&gt;
-&lt;h2 id="orgd15dba9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd15dba9"&gt;
+&lt;/div&gt;</description><category>cs</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-tool-thonny/</guid><pubDate>Thu, 21 Sep 2017 11:31:42 GMT</pubDate></item><item><title>Using Emacs 36 - A Touch of Elisp</title><link>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6a6c0a4" class="outline-2"&gt;
+&lt;h2 id="org6a6c0a4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6a6c0a4"&gt;
 &lt;p&gt;
 I've been working on a vue.js project this summer. During the school
 year I really can't dive into code so it's been fun.
@@ -119,9 +150,9 @@ you want.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/NQhud2ZNd1w" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</guid><pubDate>Sun, 30 Jul 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs 35 - Blogging</title><link>http://cestlaz.github.io/posts/using-emacs-35-blogging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org2ae74e3" class="outline-2"&gt;
-&lt;h2 id="org2ae74e3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org2ae74e3"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</guid><pubDate>Sun, 30 Jul 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs 35 - Blogging</title><link>http://cestlaz.github.io/posts/using-emacs-35-blogging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org31cac48" class="outline-2"&gt;
+&lt;h2 id="org31cac48"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org31cac48"&gt;
 &lt;p&gt;
 Very little new Emacs in today's episode of Using Emacs. The video
 shows my old blogging workflow and what I'm playing with now.
@@ -146,9 +177,9 @@ There's not much more to say here so enjoy the video:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/wSeTic9obKw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-35-blogging/</guid><pubDate>Tue, 27 Jun 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs - 34 - ibuffer and emmet</title><link>http://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8ed7fca" class="outline-2"&gt;
-&lt;h2 id="org8ed7fca"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8ed7fca"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-35-blogging/</guid><pubDate>Tue, 27 Jun 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs - 34 - ibuffer and emmet</title><link>http://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org81e0ff9" class="outline-2"&gt;
+&lt;h2 id="org81e0ff9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org81e0ff9"&gt;
 &lt;p&gt;
 A couple of quick, unrelated packages today.
 &lt;/p&gt;
@@ -218,9 +249,9 @@ Here's my configuration (mostly stolen from Owen):
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org809ff88" class="outline-2"&gt;
-&lt;h2 id="org809ff88"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org809ff88"&gt;
+&lt;div id="outline-container-orgad3e19a" class="outline-2"&gt;
+&lt;h2 id="orgad3e19a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgad3e19a"&gt;
 &lt;p&gt;
 The video also shows &lt;a href="https://github.com/smihica/emmet-mode"&gt;emmet&lt;/a&gt; mode. A terrific mode for quickly creating
 HTML and CSS. I tried it a long time ago when it was called zencoding
@@ -250,9 +281,9 @@ Check them both out:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org1503004" class="outline-2"&gt;
-&lt;h2 id="org1503004"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1503004"&gt;
+&lt;div id="outline-container-org1901293" class="outline-2"&gt;
+&lt;h2 id="org1901293"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1901293"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -267,9 +298,9 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/</guid><pubDate>Thu, 15 Jun 2017 19:00:26 GMT</pubDate></item><item><title>Python - Editor or IDE</title><link>http://cestlaz.github.io/posts/python-editors/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgac15f0f" class="outline-2"&gt;
-&lt;h2 id="orgac15f0f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgac15f0f"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/</guid><pubDate>Thu, 15 Jun 2017 19:00:26 GMT</pubDate></item><item><title>Python - Editor or IDE</title><link>http://cestlaz.github.io/posts/python-editors/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org66495d8" class="outline-2"&gt;
+&lt;h2 id="org66495d8"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org66495d8"&gt;
 &lt;p&gt;
 Earlier today I read Garth Flint's latest post on &lt;a href="https://gflint.wordpress.com/2017/05/25/python-editors-simple-wins/%0A"&gt;choosing a Python
 environment for his classes&lt;/a&gt;. While our classes and populations are
@@ -397,9 +428,9 @@ use Emacs in general:
 &lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/using-emacs-13-yasnippet"&gt;http://cestlaz.github.io/posts/using-emacs-13-yasnippet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/python-editors/</guid><pubDate>Thu, 25 May 2017 19:47:37 GMT</pubDate></item><item><title>Using Emacs - 33 - projectile, dumb-jump</title><link>http://cestlaz.github.io/posts/using-emacs-33-projectile-jump/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf6fd870" class="outline-2"&gt;
-&lt;h2 id="orgf6fd870"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf6fd870"&gt;
+&lt;/div&gt;</description><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/python-editors/</guid><pubDate>Thu, 25 May 2017 19:47:37 GMT</pubDate></item><item><title>Using Emacs - 33 - projectile, dumb-jump</title><link>http://cestlaz.github.io/posts/using-emacs-33-projectile-jump/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc2b8696" class="outline-2"&gt;
+&lt;h2 id="orgc2b8696"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc2b8696"&gt;
 &lt;p&gt;
 If you keep Emacs open all the time you end up accumulating lots of
 buffers. That can make navigating a little bit awkward.
@@ -491,9 +522,9 @@ Enjoy.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orga68506c" class="outline-2"&gt;
-&lt;h2 id="orga68506c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga68506c"&gt;
+&lt;div id="outline-container-org2475118" class="outline-2"&gt;
+&lt;h2 id="org2475118"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org2475118"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -594,9 +625,9 @@ introduce github to my classes here they are:
 &lt;p&gt;
 I'm hoping some of you have found this set of four posts useful or at
 least interesting.
-&lt;/p&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-4/</guid><pubDate>Tue, 11 Apr 2017 23:11:30 GMT</pubDate></item><item><title>SIGCSE 2017 - a path to github part 3</title><link>http://cestlaz.github.io/posts/sigcse-2017-github-3/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7f9d255" class="outline-2"&gt;
-&lt;h2 id="org7f9d255"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7f9d255"&gt;
+&lt;/p&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-4/</guid><pubDate>Tue, 11 Apr 2017 23:11:30 GMT</pubDate></item><item><title>SIGCSE 2017 - a path to github part 3</title><link>http://cestlaz.github.io/posts/sigcse-2017-github-3/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7d73b69" class="outline-2"&gt;
+&lt;h2 id="org7d73b69"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7d73b69"&gt;
 &lt;p&gt;
 I wanted to write this up earlier but, as so frequently happens all my
 dormant work projects decided it was time to rise up and demand
@@ -762,9 +793,9 @@ educational benefits that I've discovered along the way. After that,
 I'll get back to some emacs videos, other SIGCSE stuff and my normal rants.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-3/</guid><pubDate>Thu, 30 Mar 2017 18:02:31 GMT</pubDate></item><item><title>SIGCSE 2017 - a path to github part 2</title><link>http://cestlaz.github.io/posts/sigcse-2017-github-2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgad870e4" class="outline-2"&gt;
-&lt;h2 id="orgad870e4"&gt;Note:&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgad870e4"&gt;
+&lt;/div&gt;</description><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-3/</guid><pubDate>Thu, 30 Mar 2017 18:02:31 GMT</pubDate></item><item><title>SIGCSE 2017 - a path to github part 2</title><link>http://cestlaz.github.io/posts/sigcse-2017-github-2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge11cfe1" class="outline-2"&gt;
+&lt;h2 id="orge11cfe1"&gt;Note:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge11cfe1"&gt;
 &lt;p&gt;
 Just for some quick context. The process I started to describe in the
 last post and continue here chronicles what I did at Stuy with high
@@ -774,9 +805,9 @@ but the overarching themes remain the same.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org79094f4" class="outline-2"&gt;
-&lt;h2 id="org79094f4"&gt;Post starts here:&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org79094f4"&gt;
+&lt;div id="outline-container-org85dc047" class="outline-2"&gt;
+&lt;h2 id="org85dc047"&gt;Post starts here:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org85dc047"&gt;
 &lt;p&gt;
 Now that your students have been pulling the classcode repo regularly
 it's time to move to the next step - adding and pushing files to a
@@ -887,209 +918,4 @@ That's the end of phase two. The next step  brings us to small
 projects using git.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-2/</guid><pubDate>Sun, 19 Mar 2017 14:11:00 GMT</pubDate></item><item><title>SIGCSE 2017 - a path to github part 1</title><link>http://cestlaz.github.io/posts/sigcse-2017-github-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org2fa76af" class="outline-2"&gt;
-&lt;h2 id="org2fa76af"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org2fa76af"&gt;
-&lt;p&gt;
-Both at and prior to SIGCSE 2017, I promised to write up the steps I
-take to introduce and use revision control systems in my classes. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This series is not meant to be a git or &lt;a href="http://github.com"&gt;GitHub&lt;/a&gt; tutorial. There are
-plenty of those already (two of which I've linked to below).  This is
-about the process I use with my students to get them up to speed. 
-&lt;/p&gt;
-
-&lt;p&gt;
-As with any new tool, there will be some resistance but once git saves
-them once, they get religion. There will also be some bumps in the
-road but at the end of the day, the students will be using a valuable
-and necessary tool. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I was also surprised at the ancillary benefits I got as a teacher by
-using GitHub in particular. I'll talk about that at the end of the
-series.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-Here's part one. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm doing this with git and GitHub but there's no reason why other
-systems and hosts can't be used. I'd also recommend that any educator
-or student sign up for the assorted &lt;a href="https://education.github.com/"&gt;discounts&lt;/a&gt; offered by GitHub.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've followed this basic idea multiple times and done it over the
-course of a single semester, a year, and even two years. Regardless of
-time frame, the idea is the same. Make each step simple and relevant
-and introduce complexity and roadblocks a piece at a time.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-orgebc3b3c" class="outline-2"&gt;
-&lt;h2 id="orgebc3b3c"&gt;Step 1 - code distribution&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgebc3b3c"&gt;
-&lt;p&gt;
-To start, I don't even talk about version control. We start with code
-distribution. For years, I've looked for efficient ways of sharing
-code with my classes. Both code developed in class and code for
-assignments. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I've tried things like NFS, Dropbox, online code repositories like the
-files section of systems like Moodle or Blackboard.
-&lt;/p&gt;
-
-&lt;p&gt;
-At Stuy, we've always had efficiency problems with NFS and Dropbox has
-multiple problems ranging from students not being able to install the
-client on school machines to the problems of the network hit when a
-room full of kids are syncing at the same time.
-&lt;/p&gt;
-
-&lt;p&gt;
-Uploading to a CMS system was also problematic - I'm a command line
-wonk and hate going through slow web page menus to navigate a
-filesystem and upload files. I also had to remember to get the files
-off of whatever machine I was working on in class and then transfer
-them to the CMS when I had a free moment.
-&lt;/p&gt;
-
-&lt;p&gt;
-Enter git. Now, of course, if you're going to use git in the classroom
-you have to know it. There are plenty of resources out there. Online
-courses, articles, videos, and tutorials. Here are a couple:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://try.github.io/"&gt;https://try.github.io/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=0fKg7e37bQE"&gt;https://www.youtube.com/watch?v=0fKg7e37bQE&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-I also want to point out that I just use raw command line git along
-with native GitHub. GitHub has rolled out &lt;a href="https://classroom.github.com/"&gt;GitHub Classroom&lt;/a&gt; which adds
-a layer of support for educators. I don't use it because, as I said,
-I'm an old school command line wonk and also because I figured out a
-sequence that worked for me and my students before GitHub Classroom
-existed. Were I starting now, I'd take some time to look at their
-current offerings before jumping in.
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-org59876c4" class="outline-3"&gt;
-&lt;h3 id="org59876c4"&gt;Set up&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org59876c4"&gt;
-&lt;p&gt;
-Before starting, make sure you register your ssh keys. &lt;a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/"&gt;This&lt;/a&gt; help page
-has more information. You'll want to register an ssh key from every
-machine you use - home, work, laptop. 
-&lt;/p&gt;
-
-
-&lt;p&gt;
-Now go over to GitHub and make a new repository. I usually name it
-&lt;b&gt;&lt;b&gt;classcode&lt;/b&gt;&lt;/b&gt;. &lt;b&gt;&lt;b&gt;BEGINNER NOTE:&lt;/b&gt;&lt;/b&gt; when creating the repo, make sure to
-check the "initialize this repository with a README" box. If you don't
-you'll be given a set of instructions on how to set things up once you
-click &lt;b&gt;&lt;b&gt;Create repository&lt;/b&gt;&lt;/b&gt; but it's easier and easier to follow if
-you start with an initialized repo with a README.
-&lt;/p&gt;
-
-&lt;p&gt;
-I make the repo public – it's code I'm distributing – nothing to
-hide here. If you aren't comfortable with that, just make the repo
-private. If you've registered as a teacher with GitHub, you can set up
-an organization and you'll be able to set up free private repos within
-it. The other downside here is that you'll have to individually give
-each student access to the repo. That's a mild annoyance but it only
-has to be done once.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-org1c2518e" class="outline-3"&gt;
-&lt;h3 id="org1c2518e"&gt;Teacher use&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org1c2518e"&gt;
-&lt;p&gt;
-Next, clone out the repo. &lt;b&gt;&lt;b&gt;BEGINNER NOTE:&lt;/b&gt;&lt;/b&gt; Make sure you check out
-the ssh version not the https version. Just make sure that when you
-click the &lt;b&gt;&lt;b&gt;clone&lt;/b&gt;&lt;/b&gt; button, it says "Clone with SSH." If not, just
-click the "Use SSH" link in the same box. Students will clone the
-using https.
-&lt;/p&gt;
-
-&lt;p&gt;
-From the teacher point of view, you can just start using the repo. My
-work flow is typically:
-&lt;/p&gt;
-
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;&lt;b&gt;&lt;b&gt;git pull&lt;/b&gt;&lt;/b&gt; at the start of class&lt;/li&gt;
-&lt;li&gt;write code throughout class&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;&lt;b&gt;git add&lt;/b&gt;&lt;/b&gt;, &lt;b&gt;&lt;b&gt;git commit&lt;/b&gt;&lt;/b&gt;, and &lt;b&gt;&lt;b&gt;git push&lt;/b&gt;&lt;/b&gt; at the end of class&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;
-I use a similar flow when I want to add files in my office or at home.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-org37b6638" class="outline-3"&gt;
-&lt;h3 id="org37b6638"&gt;Student use&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org37b6638"&gt;
-&lt;p&gt;
-From the student point of view, assuming a public repo, they just have to clone the repo and
-at the beginning of every class or work session, do a &lt;b&gt;&lt;b&gt;git
-pull&lt;/b&gt;&lt;/b&gt;. That's all there is to it.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-org01f9636" class="outline-3"&gt;
-&lt;h3 id="org01f9636"&gt;Thoughts&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org01f9636"&gt;
-&lt;p&gt;
-That's it. The kids are now using GitHub – they're probably looking
-at and poking around on the web site as well as pulling files to their
-machines. You can also, in class, show things like &lt;b&gt;&lt;b&gt;git status&lt;/b&gt;&lt;/b&gt;,
-&lt;b&gt;&lt;b&gt;git log&lt;/b&gt;&lt;/b&gt;, and &lt;b&gt;&lt;b&gt;git diff&lt;/b&gt;&lt;/b&gt; to set the stage for step 2 of this
-process and beyond.
-&lt;/p&gt;
-
-&lt;p&gt;
-Since the students aren't adding, committing or pushing, you probably won't
-get any errors. 
-&lt;/p&gt;
-
-&lt;p&gt;
-The only problem that could reasonably occur is if a student places a
-file in their local copy of the repo with the same name as something
-they haven't pulled yet. This is pretty easy to address and provides a
-nice stepping stone lesson to again, set the stage for more complex
-operations.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-I'm happy with this as a first step towards git using GitHub. It
-provides a nice way of sharing class code while gently introducing the
-students to the tool.
-&lt;/p&gt;
-
-&lt;p&gt;
-The next step  is having the students add files to a repo. That's the
-next post in this series.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-1/</guid><pubDate>Thu, 16 Mar 2017 13:11:00 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-2/</guid><pubDate>Sun, 19 Mar 2017 14:11:00 GMT</pubDate></item></channel></rss>
