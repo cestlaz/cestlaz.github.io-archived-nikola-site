@@ -66,7 +66,7 @@ class CompileOrgmode(PageCompiler):
                 '--eval', '(nikola-html-export "{0}" "{1}")'.format(
                     abspath(source), abspath(dest))
             ]
-            print(" ".join(command))
+
             # Dirty walkaround for this plugin to run on Windows platform.
             if os.name == 'nt':
                 command[5] = command[5].replace("\\", "\\\\")
