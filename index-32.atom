@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 32)</title>
   <id>http://cestlaz.github.io/index-32.atom</id>
-  <updated>2017-09-29T14:39:55Z</updated>
+  <updated>2017-09-29T20:54:14Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -15,6 +15,111 @@
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-32.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
+    <title>Ethics, Cybersecurity, ethics, curricula  and standards</title>
+    <id>http://cestlaz.github.io/posts/ethics-cybersecurity-curricula-standards/</id>
+    <updated>2017-08-02T07:43:24-04:00</updated>
+    <published>2017-08-02T07:43:24-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/ethics-cybersecurity-curricula-standards/"/>
+    <summary type="html">&lt;div id="outline-container-org3b85648" class="outline-2"&gt;
+&lt;h2 id="org3b85648"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3b85648"&gt;
+&lt;p&gt;
+This morning, I read &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt;'s post on &lt;a href="http://blog.acthompson.net/2017/08/cybersecuritythis-summers-computer.html"&gt;teaching
+cybersecurity&lt;/a&gt;. as Alfred says, it's something of a CS Ed buzzword this
+summer.
+&lt;/p&gt;
+
+&lt;p&gt;
+Another hot topic in K12 CS Ed this summer is the inclusion of ethics
+in our CS courses courtesy of efforts like the #ethicalCS twitter chat every
+Wednesday at 8:00 Eastern time  hosted by &lt;a href="https://twitter.com/ed_saber"&gt;Saber Khan&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Discussions about both topics include "where should we be doing this?"
+"What should we be doing?" and of course "How?" 
+&lt;/p&gt;
+
+&lt;p&gt;
+This got me thinking about designing curriculum from the top down -
+that is, as dictated by outside forces: principals, superintendents,
+states, industry or bottom up: a teacher sees a need and designs
+something for their students.
+&lt;/p&gt;
+
+&lt;p&gt;
+The best classes I've seen are those designed by a passionate teacher
+from the ground up. I met  &lt;a href="https://twitter.com/dougbergmanUSA"&gt;Doug Bergman&lt;/a&gt; at this past year's CSTA conference. He's terrific. I
+think he came to the conference wanting to find out more about what
+cybersecurity really meant. By the second day, he was raving about all
+the amazing possibilities. I'd love to be in the class he develops.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand, when topics or standards are forced down from
+above, I've seen something entirely different.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've observed and been involved in cybersecurity discussions  with CS
+teachers. The discussion goes something like this:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Well, we do memory allocation in course XYZ so we can give a
+homework assignment there.&lt;/li&gt;
+&lt;li&gt;We can rewrite the story (theme) for the assignment in our data
+structures class.&lt;/li&gt;
+&lt;li&gt;We already do a crypto assignment in algorithms so we're already
+doing it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+I've seen the same with groups of math teachers discussing
+implementing common core. They talk about resequencing topics,
+rewriting a few word problems or homework assignments but at the core,
+the feeling is "we already know how to teach math."
+&lt;/p&gt;
+
+&lt;p&gt;
+It gets worse when there's a standardized or high stakes test at the
+end of the tunnel and you get the "you need this for the test" type
+units.
+&lt;/p&gt;
+
+&lt;p&gt;
+This might not be as big of a problem in K12 CS right now because so many
+teachers are just learning their craft but in established fields such
+as math or college CS, when an edict comes from above telling a
+teacher how to teach, unless the teacher really believes in it, the
+teacher will only pay lip service to it. If it isn't an issue in CS Ed
+right now, it will eventually become one as our field develops legs.
+&lt;/p&gt;
+
+&lt;p&gt;
+This is arguably a bigger issue with Ethical CS than cybersecurity. If
+the teacher doesn't really believe it's an important topic, we'll get
+lip service at best and in the case of ethics, unless the teacher
+really believes it and models it, the students will be able to tell
+that it's a show.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't have an answer other than what my friend and mentor Herb
+Greenhut told me many years ago "Solving the education problem is
+easy. Hire good teachers and get the f*ck out of the way."
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="curriculum" label="curriculum"/>
+    <category term="education" label="education"/>
+  </entry>
+  <entry>
     <title>Grit: A Kind Word and a Gun</title>
     <id>http://cestlaz.github.io/posts/grit-kind-word-gun/</id>
     <updated>2017-07-31T07:19:11-04:00</updated>
@@ -23,9 +128,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/grit-kind-word-gun/"/>
-    <summary type="html">&lt;div id="outline-container-org704a17d" class="outline-2"&gt;
-&lt;h2 id="org704a17d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org704a17d"&gt;
+    <summary type="html">&lt;div id="outline-container-org01c30ed" class="outline-2"&gt;
+&lt;h2 id="org01c30ed"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org01c30ed"&gt;
 &lt;p&gt;
 Back in May, I read this &lt;a href="http://avc.com/2017/05/grit/"&gt;post&lt;/a&gt; about Angela Duckworth and &lt;a href="https://www.amazon.com/Grit-Passion-Perseverance-Angela-Duckworth-ebook/dp/B010MH9V3W/ref=sr_1_1?ie=UTF8&amp;amp;qid=1501543669&amp;amp;sr=8-1&amp;amp;keywords=Grit"&gt;Grit&lt;/a&gt;. Grit
 has become an education buzzword in the past few years so I figured I
@@ -238,9 +343,9 @@ the puzzle just like everything else.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/"/>
-    <summary type="html">&lt;div id="outline-container-org6733305" class="outline-2"&gt;
-&lt;h2 id="org6733305"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6733305"&gt;
+    <summary type="html">&lt;div id="outline-container-org6a6c0a4" class="outline-2"&gt;
+&lt;h2 id="org6a6c0a4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6a6c0a4"&gt;
 &lt;p&gt;
 I've been working on a vue.js project this summer. During the school
 year I really can't dive into code so it's been fun.
