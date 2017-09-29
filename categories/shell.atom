@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about shell</title>
   <id>http://cestlaz.github.io/categories/shell.atom</id>
-  <updated>2017-09-23T16:59:41Z</updated>
+  <updated>2017-09-23T16:15:35Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -19,9 +19,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/user-friendly/"/>
-    <summary type="html">&lt;div id="outline-container-org80c4aa8" class="outline-2"&gt;
-&lt;h2 id="org80c4aa8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org80c4aa8"&gt;
+    <summary type="html">&lt;div id="outline-container-org2c3ddb9" class="outline-2"&gt;
+&lt;h2 id="org2c3ddb9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org2c3ddb9"&gt;
 &lt;p&gt;
 Saw this post the other day: &lt;a href="https://pupeno.com/2016/09/26/emacs-is-hurting-clojure/"&gt;Emacs is hurting Clojure&lt;/a&gt; and this response: &lt;a href="http://irreal.org/blog/?p=5597"&gt;Is Emacs Really HJard to Learn / Use&lt;/a&gt;.
 &lt;/p&gt;
@@ -170,9 +170,9 @@ the path to learning the useful ones.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/shell-short-tagging/"/>
-    <summary type="html">&lt;div id="outline-container-orga52325c" class="outline-2"&gt;
-&lt;h2 id="orga52325c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga52325c"&gt;
+    <summary type="html">&lt;div id="outline-container-org74f92c3" class="outline-2"&gt;
+&lt;h2 id="org74f92c3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org74f92c3"&gt;
 &lt;p&gt;
 Quick post to add to the recent command line fu I've been writing
 about.
@@ -241,17 +241,17 @@ done
 A line at a time:
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgee7b4eb" class="outline-3"&gt;
-&lt;h3 id="orgee7b4eb"&gt;ls *md *html&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgee7b4eb"&gt;
+&lt;div id="outline-container-orgc314d8c" class="outline-3"&gt;
+&lt;h3 id="orgc314d8c"&gt;ls *md *html&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgc314d8c"&gt;
 &lt;p&gt;
 This lists all the files with that end in &lt;b&gt;&lt;b&gt;md&lt;/b&gt;&lt;/b&gt; or &lt;b&gt;&lt;b&gt;html&lt;/b&gt;&lt;/b&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgf8cc630" class="outline-3"&gt;
-&lt;h3 id="orgf8cc630"&gt;| while read filename&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgf8cc630"&gt;
+&lt;div id="outline-container-org6b9acdc" class="outline-3"&gt;
+&lt;h3 id="org6b9acdc"&gt;| while read filename&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org6b9acdc"&gt;
 &lt;p&gt;
 The vertical bar (pipe) sends the output of &lt;b&gt;&lt;b&gt;ls&lt;/b&gt;&lt;/b&gt; into the &lt;b&gt;&lt;b&gt;while read&lt;/b&gt;&lt;/b&gt;
 command. The &lt;b&gt;&lt;b&gt;while&lt;/b&gt;&lt;/b&gt; command sets up a loop which, each time
@@ -261,9 +261,9 @@ through, reads the next input and places into the variable
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orge307a6c" class="outline-3"&gt;
-&lt;h3 id="orge307a6c"&gt;sed "/ type: text/  i .. tags: " $filename&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orge307a6c"&gt;
+&lt;div id="outline-container-orgc853c6f" class="outline-3"&gt;
+&lt;h3 id="orgc853c6f"&gt;sed "/ type: text/  i .. tags: " $filename&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgc853c6f"&gt;
 &lt;p&gt;
 Sed is the stream editor. The stuff between the slashes finds the line
 with the text &lt;b&gt;&lt;b&gt;type: text&lt;/b&gt;&lt;/b&gt; in it. The &lt;b&gt;&lt;b&gt;i&lt;/b&gt;&lt;/b&gt; inserts a line above and
@@ -275,9 +275,9 @@ loop.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org8061779" class="outline-2"&gt;
-&lt;h2 id="org8061779"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8061779"&gt;
+&lt;div id="outline-container-org9a1b561" class="outline-2"&gt;
+&lt;h2 id="org9a1b561"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9a1b561"&gt;
 &lt;p&gt;
 Now all of my files have blank &lt;b&gt;&lt;b&gt;tag&lt;/b&gt;&lt;/b&gt; slugs so I can find my netlogo
 posts and tag them:
@@ -323,18 +323,18 @@ You can find all those posts &lt;a href="http://cestlaz.github.io/categories/net
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/duplicate-emails/"/>
-    <summary type="html">&lt;div id="outline-container-orgb0676e6" class="outline-2"&gt;
-&lt;h2 id="orgb0676e6"&gt;Repost&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb0676e6"&gt;
+    <summary type="html">&lt;div id="outline-container-orgc399056" class="outline-2"&gt;
+&lt;h2 id="orgc399056"&gt;Repost&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc399056"&gt;
 &lt;p&gt;
 This is a repost from March 2015. It didn't transfer when I rebooted the blog.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org197c35a" class="outline-2"&gt;
-&lt;h2 id="org197c35a"&gt;Original&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org197c35a"&gt;
+&lt;div id="outline-container-org924ff5c" class="outline-2"&gt;
+&lt;h2 id="org924ff5c"&gt;Original&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org924ff5c"&gt;
 &lt;p&gt;
 Quick post on why I love the Unix command line.
 &lt;/p&gt;
@@ -533,9 +533,9 @@ manner of text manipulation problems become pretty easy.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/bash-scripting/"/>
-    <summary type="html">&lt;div id="outline-container-orgefce4d8" class="outline-2"&gt;
-&lt;h2 id="orgefce4d8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgefce4d8"&gt;
+    <summary type="html">&lt;div id="outline-container-org50011ca" class="outline-2"&gt;
+&lt;h2 id="org50011ca"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org50011ca"&gt;
 &lt;p&gt;
 Over in the Facebook AP Computer Science Teachers group someone asked
 for thoughts on covering BASH scripting as a post AP topic.
@@ -692,9 +692,9 @@ In terms of tools, I get a lot of mileage out of:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgea8843e" class="outline-2"&gt;
-&lt;h2 id="orgea8843e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgea8843e"&gt;
+&lt;div id="outline-container-org29c7b48" class="outline-2"&gt;
+&lt;h2 id="org29c7b48"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org29c7b48"&gt;
 &lt;p&gt;
 A nice simple thing you can do with these is clean data. Let's say you
 want to do some analytics on a book from Project Gutenberg. You might

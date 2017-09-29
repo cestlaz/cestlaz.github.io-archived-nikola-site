@@ -3,7 +3,7 @@
 <feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 24)</title>
   <id>http://cestlaz.github.io/index-24.atom</id>
-  <updated>2017-09-23T16:59:42Z</updated>
+  <updated>2017-09-23T16:15:33Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -100,9 +100,9 @@ the future.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/halloween-2016/"/>
-    <summary type="html">&lt;div id="outline-container-org8d38611" class="outline-2"&gt;
-&lt;h2 id="org8d38611"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8d38611"&gt;
+    <summary type="html">&lt;div id="outline-container-org639e26d" class="outline-2"&gt;
+&lt;h2 id="org639e26d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org639e26d"&gt;
 &lt;p&gt;
 It's Halloween and for the first time in 21 years, I'm not at work in costume.
 &lt;/p&gt;
@@ -274,9 +274,9 @@ of young talent we have in New York and for our tech sector.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-17-misc/"/>
-    <summary type="html">&lt;div id="outline-container-org7094a8b" class="outline-2"&gt;
-&lt;h2 id="org7094a8b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7094a8b"&gt;
+    <summary type="html">&lt;div id="outline-container-orgb071da6" class="outline-2"&gt;
+&lt;h2 id="orgb071da6"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb071da6"&gt;
 &lt;p&gt;
 I'm working on getting enough of my real configuration into this
 series so that I can dump my current one and use this one all them
@@ -293,9 +293,9 @@ time.
 &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgae8dfd5" class="outline-3"&gt;
-&lt;h3 id="orgae8dfd5"&gt;Highlight line Mode&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgae8dfd5"&gt;
+&lt;div id="outline-container-org4a0e327" class="outline-3"&gt;
+&lt;h3 id="org4a0e327"&gt;Highlight line Mode&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org4a0e327"&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(global-hl-line-mode t)
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -306,9 +306,9 @@ the cursor's on. Nothing huge, I just like it.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org8646533" class="outline-3"&gt;
-&lt;h3 id="org8646533"&gt;&lt;a href="https://github.com/Malabarba/beacon"&gt;Beacon mode&lt;/a&gt;&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org8646533"&gt;
+&lt;div id="outline-container-org0070f24" class="outline-3"&gt;
+&lt;h3 id="org0070f24"&gt;&lt;a href="https://github.com/Malabarba/beacon"&gt;Beacon mode&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org0070f24"&gt;
 &lt;p&gt;
 &lt;a href="https://github.com/Malabarba/beacon"&gt;Beacon mode&lt;/a&gt; flashes the cursor whenever you scroll. It makes things
 easy to locate the cursor when scrolling
@@ -328,9 +328,9 @@ easy to locate the cursor when scrolling
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org2d8cf4a" class="outline-3"&gt;
-&lt;h3 id="org2d8cf4a"&gt;&lt;a href="https://github.com/nflath/hungry-delete"&gt;Hungry Delete mode&lt;/a&gt;&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org2d8cf4a"&gt;
+&lt;div id="outline-container-orga54d1c5" class="outline-3"&gt;
+&lt;h3 id="orga54d1c5"&gt;&lt;a href="https://github.com/nflath/hungry-delete"&gt;Hungry Delete mode&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orga54d1c5"&gt;
 &lt;p&gt;
 &lt;a href="https://github.com/nflath/hungry-delete"&gt;This mode&lt;/a&gt; deletes all the whitespace after the cursor (or before it)
 when you use delete or backspace.
@@ -345,9 +345,9 @@ when you use delete or backspace.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org1be979d" class="outline-3"&gt;
-&lt;h3 id="org1be979d"&gt;&lt;a href="https://github.com/magnars/expand-region.el"&gt;Expand Region&lt;/a&gt;&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org1be979d"&gt;
+&lt;div id="outline-container-org429df82" class="outline-3"&gt;
+&lt;h3 id="org429df82"&gt;&lt;a href="https://github.com/magnars/expand-region.el"&gt;Expand Region&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org429df82"&gt;
 &lt;p&gt;
 &lt;a href="https://github.com/magnars"&gt;Magnar Sveen's&lt;/a&gt; awesome expand region mode is a must have. He also
 wrote the amazing &lt;a href="https://github.com/magnars/multiple-cursors.el"&gt;multiple cursors&lt;/a&gt; package. I highly recommend
@@ -378,9 +378,9 @@ so we'll come back to that later.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-orgfa15f5c" class="outline-2"&gt;
-&lt;h2 id="orgfa15f5c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgfa15f5c"&gt;
+&lt;div id="outline-container-org0fdf17e" class="outline-2"&gt;
+&lt;h2 id="org0fdf17e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0fdf17e"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -408,9 +408,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/knitting-tech-conference/"/>
-    <summary type="html">&lt;div id="outline-container-org6304fad" class="outline-2"&gt;
-&lt;h2 id="org6304fad"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6304fad"&gt;
+    <summary type="html">&lt;div id="outline-container-org9fec388" class="outline-2"&gt;
+&lt;h2 id="org9fec388"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9fec388"&gt;
 
 &lt;div class="figure"&gt;
 &lt;p&gt;&lt;img src="http://cestlaz.github.io/img/knitting-tech-conference/top.jpg" alt="top.jpg" align="center"&gt;
@@ -617,9 +617,9 @@ Nothing much to say about this other then check out the video:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/flask-setup-virtualenv/"/>
-    <summary type="html">&lt;div id="outline-container-org0323d54" class="outline-2"&gt;
-&lt;h2 id="org0323d54"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0323d54"&gt;
+    <summary type="html">&lt;div id="outline-container-org9cc462c" class="outline-2"&gt;
+&lt;h2 id="org9cc462c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9cc462c"&gt;
 &lt;p&gt;
 Those laptops that my Hunter students were supposed to get have
 finally arrived. We're distributing them on Monday. Each student will
@@ -743,9 +743,9 @@ environment.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-16-undo-tree/"/>
-    <summary type="html">&lt;div id="outline-container-org24f6c69" class="outline-2"&gt;
-&lt;h2 id="org24f6c69"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org24f6c69"&gt;
+    <summary type="html">&lt;div id="outline-container-orgd9f7d80" class="outline-2"&gt;
+&lt;h2 id="orgd9f7d80"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd9f7d80"&gt;
 &lt;p&gt;
 If you use emacs, you should keep an eye on Jon Snader's &lt;a href="http://irreal.org/blog/"&gt;blog&lt;/a&gt;,
 &lt;a href="http://irreal.org/blog/"&gt;irreal.org&lt;/a&gt;. A few days he posted on &lt;a href="http://irreal.org/blog/?p=5621"&gt;Undo Tree&lt;/a&gt; - a package that extends
