@@ -2,7 +2,7 @@
 .. title: NYC CS4All - This Is Not The CS We're Looking For
 .. slug: this-is-not-the-cs-were-looking-for
 .. date: 2017-09-29 10:40:24 UTC-04:00
-.. tags: draft, curriculum, csed
+.. tags: curriculum, csed
 .. category: 
 .. link: 
 .. description: 
@@ -12,43 +12,108 @@
 * 
 It's no secret that I'm something of an old curmudgeon in the K12 CS
 Education world and I've been critical of a number of initiatives and
-organizations over the years. 
+organizations over the years but I've been pretty quiet on the CS4All
+movement in NYC Department of Education. I've had and any number of
+concerns though.
 
-This past week, 
-This has been a big year for K12 CS Education. Over the summer, the
-CSTA announced their standards (something I've been meaning to blog
-about 
+This past week at the inaugural meeting of New York City's CSTA
+chapter we got a taste of the [[http://blueprint.cs4all.nyc/][NYC CS4All Blueprint]]. A highlight was
+this video:
 
-http://blueprint.cs4all.nyc/resources/3/
+#+BEGIN_EXPORT htmln
+<iframe src="https://player.vimeo.com/video/224494221" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+#+END_EXPORT
 
+Along with the [[http://blueprint.cs4all.nyc/resources/3/%0A][supporting web page]]. 
 
-Unplugged but still HTML only --
-http://blueprint.cs4all.nyc/resources/5/
+TL;DR - in a elementary school CS class, the students kept tapping out
+drumbeats on the desk because they had drumming class the period
+prior. Now the drumming teacher is teaching rhythms that match
+segments of HTML so the students can tap and chant the line as a
+memory aid. 
 
+Sure, it's nice when teachers can work together to support each other
+but at the end of the day this is a mnemonic aid to memorize
+HTML. Nothing particularly innovative here. Mnemonics like this are
+great until there are too many to keep track of or ones that are too
+similar. 
 
+The part that saddened me was that this is was the video that was
+chosen to show us as a highlight, an exemplar. It was OK but there was
+nothing new or innovative. What was worse was that there was no
+computer science.
 
+The kids were memorizing HTML. As we watched the video, my neighbor
+nudged me and asked "why are they memorizing HTML?" I would ask the
+same question. Now, I do think that HTML or some other mechanism to
+create content that can be shared with the world is important. Having
+students get there work out in the word can be tremendously rewarding
+and motivating. Also, although I'm not sold on it, some say that HTML
+is a good stepping stone to CS but still. 
 
-http://blueprint.cs4all.nyc/resources/15/
+Let's try an experiment.
 
-Just like math class- do now, lesson, work, sow
+Imagine that lesson but instead of HTML the kids were learning
+Microsoft word so instead of a chant for ~<href a=""></a>~ you have a
+chant for putting a link into a word document or instead of a chant
+for ~<b>somethingbold</b>~ you have a change like
+~control-b-typestuff-then-control-b~. Same lesson, same technique,
+still no CS. You could also say that this was just one video and maybe
+most of the year is about real CS. Maybe, but then why highlight this
+on the CS4All web site as a featured resource.
 
-Warm-Up (5 minutes): Something that reviews previous knowledge (ideally something that is required for today’s lesson).
+This was disappointing but not surprising. 
 
-Mini lesson (5–10 minutes): Introduce one or two concepts, such as how to complete a task or two. Include as many examples as you can.
+Some will say that kids aren't ready for hardcore CS at that
+age. That's fine. We can have that discussion but if CS is appropriate
+for whatever grade was in the video then it should be real CS. We can
+also have endless discussing about what that is but memorizing HTML is
+not it.
 
-Independent Work Time (25–30 minutes): Provide a tiered problem (or multiple problems) that requires the use of the new concepts in a creative, relevant, and/or interesting fashion.
+I wondered if the video was representative so I looked at [[http://blueprint.cs4all.nyc/resources/5/][another]]. It
+turned out this was also a lesson on HTML and again the video could of
+been about any number of subject areas. I will give this one credit
+for highlighting that you can do "unplugged" activities but it wasn't
+really a CS activity.
 
-Share Session (5 minutes): Group share or discussion of solutions created in the workshop.
+Then there was [[http://blueprint.cs4all.nyc/resources/15/][this one]]. No video here but how we structure a CS
+lesson. We have this outline:
 
+- Warm-up
+- Mini lesson
+- Independent work time
+- Share session
 
+Or, as we used to say back in the stone age:
 
-http://blueprint.cs4all.nyc/resources/16/
+- Do Now
+- Instructional activity
+- practice
+- summary
 
-comp literacy
+Nothing new and nothing CS here. I used that model when I taught math
+but deviated from it more and more as I developed my CS teaching
+chops.
 
+Finally I looked at [[http://blueprint.cs4all.nyc/resources/24/%0A][this one]]. For full disclosure I have to say that
+Eric, the teacher, is a friend of mine and I **know** he's a dynamite
+teacher and I know he knows his stuff.
 
-Differntiation
-http://blueprint.cs4all.nyc/resources/24/
+This video, however was all about differentiation. Just like the other
+resources, there's nothing wrong with them per se but there's not
+really about CS. You could reskin them for any subject. 
 
-Eric's class -different starting points
+I also agree with a lot of what Eric says in the video but as CS
+Standards take hold and standardized exams become the norm we'll find
+that individualized instruction and meeting students where they are
+is in direct conflict with the testing that comes with standards. I'll
+talk more about that in my standards rant that I keep putting off
+writing.
+
+ 
+Sure, the resources site has  a page with concepts like algorithms and
+many schools, for better or worse, in the upper grades just fall back
+on AP offerings but the more I dig the more it's apparent to me that
+CS4All in NY will be more about getting something into every classroom
+rather than something appropriate and good.
 
