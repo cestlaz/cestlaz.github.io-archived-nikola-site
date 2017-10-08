@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-32.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/this-is-not-the-cs-were-looking-for/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/programming-idioms/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,120 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/this-is-not-the-cs-were-looking-for/" class="u-url">NYC CS4All - This Is Not The CS We're Looking For</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/programming-idioms/" class="u-url">Programming Idioms</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/programming-idioms/" rel="bookmark"><time class="published dt-published" datetime="2017-10-08T11:51:46-04:00" title="2017-10-08 11:51">2017-10-08 11:51</time></a></p>
+                <p class="commentline">            <a href="posts/programming-idioms/#disqus_thread" data-disqus-identifier="cache/posts/programming-idioms.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-orgc41506c" class="outline-2">
+<h2 id="orgc41506c"></h2>
+<div class="outline-text-2" id="text-orgc41506c">
+<p>
+I just read Jeff Yearout's recent post titled <a href="http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html">The Beginner's Garden of
+Concepts</a>. Not directly related but it got me thinking about
+programming idioms.
+</p>
+
+<p>
+I've been using the phrase "programming idiom" for years to describe a
+short useful recurring code construct. I didn't realize that it was
+officially "a thing" until doing a web search on the phrase years
+later.
+</p>
+
+<p>
+As our students grow from newbies on I think it's helpful for them to
+see recurring and related patterns and programming idioms gives us a
+name to apply to many beginner patterns. An early idiom might be
+"finding the smallest in a list:"
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span>
+
+<span class="n">min_index</span>  <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">dataset</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">dataset</span><span class="p">[</span><span class="n">min_index</span><span class="p">]:</span>
+	<span class="n">min_index</span> <span class="o">=</span> <span class="n">i</span>
+</pre></div>
+
+<p>
+Another is the very similar and more general "do something on every
+item in a list:"
+</p>
+
+<div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="p">)):</span>
+    <span class="c1"># do something to or with dataset[i]</span>
+</pre></div>
+
+<p>
+By talking about constructs like these as idioms it helps students see
+and develop coding patterns. It also helps them to build mental
+abstractions. Each of the above idioms are a few lines of code but
+each are also a single concept. Students learn to think of them as the
+concept.
+</p>
+
+
+<p>
+When students learn about list comprehensions in python they'll
+rewrite the "do something…" more like this:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">[</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">]</span>
+</pre></div>
+
+<p>
+but the pattern or idea is the same.
+</p>
+
+<p>
+Other early idioms might include swapping variables:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">tmp</span> <span class="o">=</span> <span class="n">a</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">tmp</span>
+</pre></div>
+
+<p>
+and loops until an exit condition are met:
+</p>
+
+
+<div class="highlight"><pre><span></span><span class="k">while</span> <span class="p">(</span><span class="n">not_exit_condidtion</span><span class="p">):</span>
+    <span class="c1"># do stuff</span>
+    <span class="n">modify</span> <span class="n">variable</span> <span class="n">that</span> <span class="n">checks</span> <span class="nb">exit</span> <span class="n">condition</span>
+</pre></div>
+
+<p>
+Even more difficult concepts like recursion can be described in an
+idiomatic way:
+</p>
+
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">BASE_CASE</span><span class="p">:</span>
+	<span class="k">return</span> <span class="n">something</span>
+    <span class="k">else</span><span class="p">:</span>
+	<span class="n">new_x</span> <span class="o">=</span> <span class="n">modify_to_eventually_get_to_base_case</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+	<span class="n">f</span><span class="p">(</span><span class="n">new_x</span><span class="p">)</span>
+</pre></div>
+
+<p>
+Patterns like these, or idioms, come up over and over again. We don't
+have to explicitly mention them in our teaching but I think it's
+helpful to our students if we do.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/this-is-not-the-cs-were-looking-for/" class="u-url">NYC CS4All - This Is Not The CS We're Looking For</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -986,110 +1099,6 @@ lot more than if I wasn't there."
 
 <p>
 – Remember that as well.
-</p>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/cost-of-ap-exams/" class="u-url">The Cost of AP Exams</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/cost-of-ap-exams/" rel="bookmark"><time class="published dt-published" datetime="2017-08-17T07:07:12-04:00" title="2017-08-17 07:07">2017-08-17 07:07</time></a></p>
-                <p class="commentline">            <a href="posts/cost-of-ap-exams/#disqus_thread" data-disqus-identifier="cache/posts/cost-of-ap-exams.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-org86800f2" class="outline-2">
-<h2 id="org86800f2"></h2>
-<div class="outline-text-2" id="text-org86800f2">
-<p>
-Now that I'm back from vacation and summer's winding down I thought
-I'd start getting back to more classroom related posts. I still have a
-few summer topics I want to write about – standards and side projects
-in particular but I'm also looking forward to talking more about the
-classroom since, after all, at my core, I'm a teacher. When I saw <a href="http://www.slate.com/articles/technology/future_tense/2017/08/how_online_textbooks_could_help_more_students_take_ap_exams.html">this</a>
-article in my inbox this morning I thought I'd talk about it.
-</p>
-
-<p>
-In the piece, Lindsey Tepe since more kids are taking AP classes and
-they're very expensive, schools should look to lower other costs
-related to AP classes so as to provide financial support so that
-students can take that oh so important end of year exam:
-</p>
-
-<blockquote>
-<p>
-While the College Board continues to reimburse about one-third of the
-test cost for eligible low-income students, only about half of states
-are now offering any further financial assistance for students.
-</p>
-</blockquote>
-
-<p>
-Ms. Tepe's solution? Lower text book costs. As a way of lowering
-school costs, I'm all for it. I've used free online resources in lieu
-of textbooks for years but the savings should go somewhere where it
-can make a difference. Perhaps lowering class sizes. The fatal flaw in
-Ms. Teps's piece is that it continues spinning the misplaced narrative
-that AP Exams are a very important part of a child's education.
-</p>
-
-<p>
-Let's be reminded of something: The AP Exam is one thing - an exam - a
-single test at the end of the year. 
-</p>
-
-<p>
-The narrative is that students should take more and more AP classes,
-that they're somehow better for kids. Part of this is due to the
-potential college credit and part is because the public has been
-bamboozled by the ridiculous school ratings that give credit for AP
-classes taken. Back in "the day," AP classes were basically early
-college. You could then argue that they were the most rigorous classes
-offered in a school. AP Calc was basically college Calc. Same for
-APCS-AB, AP-Bio and the rest. Now, with classes like APCS-P aimed to
-be accessible to typical high school students in the lower grades,
-they can't (but still will) make that claim. In fact, at Stuy, my
-former school, there are plenty of non AP classes that are more
-rigorous than AP classes and the best AP teachers don't always cover
-the whole syllabus because they're more concerned with their students
-actually learning rather than scoring 5 on an exam.
-</p>
-
-<p>
-On the college credit front, if a student has a high probability of
-saving money through AP credit then I'm all for it but otherwise, it's
-just money going to the college board.
-</p>
-
-<p>
-It seems ridiculous for me to have to write this but the important
-part of a class is, you know, the class. Not the single exam given by
-an outside agency at the end and graded after the semester concludes.
-</p>
-
-<p>
-My suggestion? Offer college level work to students that are ready for
-it but don't push the AP exam. This would save a ton of money. What value
-does the college board actually bring to the table? Remember, they're
-making a pretty penny on all of this testing. A math teacher should be
-able to teach calculus with or without AP. A good text being used by
-that teacher in class - be it free or paid for is actually much more
-important to a student learning calculus than a single exam taken at
-the end of the year. I'd go further and say that I'd trust the
-teacher's exam more than the college board's. If a teacher knows the
-math but needs to see some sample syllabi, they're a web search
-way. The same is true for most other college courses that have AP
-equivalents and maybe even more so for computer science.
-</p>
-
-<p>
-At the end of the day it should be about students learning not about
-students taking high stakes exams.
 </p>
 </div>
 </div>

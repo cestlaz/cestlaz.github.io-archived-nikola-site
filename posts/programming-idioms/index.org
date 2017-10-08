@@ -1,0 +1,100 @@
+#+BEGIN_COMMENT
+.. title: Programming Idioms
+.. slug: programming-idioms
+.. date: 2017-10-08 11:51:46 UTC-04:00
+.. tags: programming, teaching, cs
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+I just read Jeff Yearout's recent post titled [[http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html][The Beginner's Garden of
+Concepts]]. Not directly related but it got me thinking about
+programming idioms.
+
+I've been using the phrase "programming idiom" for years to describe a
+short useful recurring code construct. I didn't realize that it was
+officially "a thing" until doing a web search on the phrase years
+later.
+
+As our students grow from newbies on I think it's helpful for them to
+see recurring and related patterns and programming idioms gives us a
+name to apply to many beginner patterns. An early idiom might be
+"finding the smallest in a list:"
+
+#+BEGIN_SRC python
+
+
+  dataset = [5,3,8,12,2,7]
+
+  min_index  = 0
+  for i in range(1,len(dataset)):
+      if dataset[i] < dataset[min_index]:
+          min_index = i
+
+#+END_SRC
+
+Another is the very similar and more general "do something on every
+item in a list:"
+
+#+BEGIN_SRC python
+  for i in range(len(dataset)):
+      # do something to or with dataset[i]
+#+END_SRC
+
+By talking about constructs like these as idioms it helps students see
+and develop coding patterns. It also helps them to build mental
+abstractions. Each of the above idioms are a few lines of code but
+each are also a single concept. Students learn to think of them as the
+concept.
+
+
+When students learn about list comprehensions in python they'll
+rewrite the "do something..." more like this:
+
+#+BEGIN_SRC python
+[ f(x) for x in dataset]
+#+END_SRC
+
+but the pattern or idea is the same.
+
+Other early idioms might include swapping variables:
+
+#+BEGIN_SRC python
+tmp = a
+a = b
+b = tmp
+#+END_SRC
+
+and loops until an exit condition are met:
+
+
+#+BEGIN_SRC python
+
+  while (not_exit_condidtion):
+      # do stuff
+      modify variable that checks exit condition
+    
+
+#+END_SRC
+
+Even more difficult concepts like recursion can be described in an
+idiomatic way:
+
+#+BEGIN_SRC python 
+  def f(x):
+      if BASE_CASE:
+          return something
+      else:
+          new_x = modify_to_eventually_get_to_base_case(x)
+          f(new_x)
+        
+
+#+END_SRC
+
+Patterns like these, or idioms, come up over and over again. We don't
+have to explicitly mention them in our teaching but I think it's
+helpful to our students if we do.
+

@@ -1,5 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about teaching)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/teaching.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 23 Sep 2017 16:59:43 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>New Term New Tool - Thonny, a Python IDE</title><link>http://cestlaz.github.io/posts/new-tool-thonny/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgddcb71a" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about teaching)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/teaching.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 08 Oct 2017 16:24:40 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Programming Idioms</title><link>http://cestlaz.github.io/posts/programming-idioms/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc41506c" class="outline-2"&gt;
+&lt;h2 id="orgc41506c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc41506c"&gt;
+&lt;p&gt;
+I just read Jeff Yearout's recent post titled &lt;a href="http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html"&gt;The Beginner's Garden of
+Concepts&lt;/a&gt;. Not directly related but it got me thinking about
+programming idioms.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've been using the phrase "programming idiom" for years to describe a
+short useful recurring code construct. I didn't realize that it was
+officially "a thing" until doing a web search on the phrase years
+later.
+&lt;/p&gt;
+
+&lt;p&gt;
+As our students grow from newbies on I think it's helpful for them to
+see recurring and related patterns and programming idioms gives us a
+name to apply to many beginner patterns. An early idiom might be
+"finding the smallest in a list:"
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;dataset&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+
+&lt;span class="n"&gt;min_index&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;)):&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;min_index&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
+	&lt;span class="n"&gt;min_index&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Another is the very similar and more general "do something on every
+item in a list:"
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;)):&lt;/span&gt;
+    &lt;span class="c1"&gt;# do something to or with dataset[i]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+By talking about constructs like these as idioms it helps students see
+and develop coding patterns. It also helps them to build mental
+abstractions. Each of the above idioms are a few lines of code but
+each are also a single concept. Students learn to think of them as the
+concept.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+When students learn about list comprehensions in python they'll
+rewrite the "do something…" more like this:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+but the pattern or idea is the same.
+&lt;/p&gt;
+
+&lt;p&gt;
+Other early idioms might include swapping variables:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;tmp&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;
+&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;
+&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;tmp&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+and loops until an exit condition are met:
+&lt;/p&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;not_exit_condidtion&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="c1"&gt;# do stuff&lt;/span&gt;
+    &lt;span class="n"&gt;modify&lt;/span&gt; &lt;span class="n"&gt;variable&lt;/span&gt; &lt;span class="n"&gt;that&lt;/span&gt; &lt;span class="n"&gt;checks&lt;/span&gt; &lt;span class="nb"&gt;exit&lt;/span&gt; &lt;span class="n"&gt;condition&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Even more difficult concepts like recursion can be described in an
+idiomatic way:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;BASE_CASE&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;something&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="n"&gt;new_x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;modify_to_eventually_get_to_base_case&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;new_x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Patterns like these, or idioms, come up over and over again. We don't
+have to explicitly mention them in our teaching but I think it's
+helpful to our students if we do.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>programming</category><category>teaching</category><guid>http://cestlaz.github.io/posts/programming-idioms/</guid><pubDate>Sun, 08 Oct 2017 15:51:46 GMT</pubDate></item><item><title>New Term New Tool - Thonny, a Python IDE</title><link>http://cestlaz.github.io/posts/new-tool-thonny/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgddcb71a" class="outline-2"&gt;
 &lt;h2 id="orgddcb71a"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-orgddcb71a"&gt;
 &lt;p&gt;
@@ -953,58 +1052,4 @@ better defined as we go through a couple more iterations.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>curriculum</category><category>teaching</category><guid>http://cestlaz.github.io/posts/design-course-with-constraints/</guid><pubDate>Fri, 19 May 2017 15:38:20 GMT</pubDate></item><item><title>It feels good to be helpful</title><link>http://cestlaz.github.io/posts/feels-good-to-be-helpful/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
-I got some nice feedback today from a couple of disparate places. It
-was another reminder that being a teacher isn't just about the kids
-currently in your class but it's about who you are and everyone you
-interact with. It's not just about teaching a subject but rather about
-helping people get to where they can potentially go. 
-&lt;/p&gt;
-
-&lt;p&gt;
-About a year ago I started putting together a &lt;a href="http://cestlaz.github.io/posts/using-emacs-introduction"&gt;series of posts and videos&lt;/a&gt; showing
-how I use Emacs. There were a couple of motivating factors. One, I
-wanted to put together some resources for my students - something that
-would take them from the Emacs tutorial to a point where they would
-hopefully see the power of the environment and not buy into the IDE or
-editor of the month hype but either really use Emacs proficiently or
-use another editor (Atom, Vim) in a similar fashion.
-&lt;/p&gt;
-
-&lt;p&gt;
-The other reason was that I wanted to give something back to the
-Emacs community. I don't create Emacs packages or otherwise contribute
-but I figured, I'm a teacher, I can do what I do.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, earlier today I got an email thanking me for my videos and also
-noticed that over on &lt;a href="http://irreal.org/blog/?p=6218"&gt;irreal.org&lt;/a&gt;, jcs wrote about moving over to
-dumb-jump after seeing one of my videos. It's been nice seeing that
-I've been of some value to jcs since I've learned a lot from his
-blog. Emails, comments, and notes like this have driven me to continue
-the series (even though It's been a busy couple of months). It's
-gratifying that even without writing a line of code, one can give
-something back to a community that they've found value in for years.
-&lt;/p&gt;
-
-&lt;p&gt;
-A month or so ago, I had a chat with a former student who's finishing
-up his last year in college. He was having trouble finding a job, I
-couldn't figure out why he wasn't getting offers - he's really
-talented. I tried to give him words of encouragement and reminded him
-that I was available to help him - as I try to be for the entire
-"family" in any way I could.
-&lt;/p&gt;
-
-&lt;p&gt;
-Fast forward to today - I got an email telling me that he got a job
-that he's very excited about. He felt the interviews with this company
-were going well so he was waiting for them to resolve before reaching
-out to me. He also told me that our talk was very helpful to him. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Sometimes it's not just in a class where we can have a positive effect
-but sometimes just a talk on the side. Sometimes many years later.
-&lt;/p&gt;</description><category>teaching</category><guid>http://cestlaz.github.io/posts/feels-good-to-be-helpful/</guid><pubDate>Wed, 17 May 2017 23:12:03 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>curriculum</category><category>teaching</category><guid>http://cestlaz.github.io/posts/design-course-with-constraints/</guid><pubDate>Fri, 19 May 2017 15:38:20 GMT</pubDate></item></channel></rss>
