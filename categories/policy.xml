@@ -1,7 +1,289 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about policy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/policy.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sat, 23 Sep 2017 16:59:43 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Is the new Secret Sauce ever better?</title><link>http://cestlaz.github.io/posts/is-the-new-secret-sauce-ever-better/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3ba1fa0" class="outline-2"&gt;
-&lt;h2 id="org3ba1fa0"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3ba1fa0"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about policy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/policy.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 10 Oct 2017 18:20:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Standards - Who are they for?</title><link>http://cestlaz.github.io/posts/standards-who-for/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8f6985d" class="outline-2"&gt;
+&lt;h2 id="org8f6985d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8f6985d"&gt;
+&lt;p&gt;
+The big push at last year's CSTA conference was the release of the new
+CSTA K12 standards. It seemed that every other session was pushing
+them in one way or another. I've been meaning to share my thoughts
+about them or, more specifically, learning standards in general for a
+while but with announcement about federal funding for CS coming from
+the White House last week I thought it was time.
+&lt;/p&gt;
+
+&lt;p&gt;
+Before diving into CS standards lets talk about math.
+&lt;/p&gt;
+
+&lt;p&gt;
+To start I have yet to meet a math teacher that needs
+"the Standards" to know what to teach. Some how or other math teachers know
+they're supposed to teach in an algebra or geometry class. When NY
+moved to "integrated math" teachers were able to re-sequence classes
+without the benefit of "the standards" and when NY went back to
+Algebra, Geometry, then Alg 2 and Trig, teachers had no problem
+reorganizing classes again.
+&lt;/p&gt;
+
+&lt;p&gt;
+New teachers didn't go to "the Standards" to learn the ropes. Schools
+defined syllabi, teachers observed each other, shared resources, used
+lesson plan books and in general knew what they were supposed to teach
+and at what level.
+&lt;/p&gt;
+
+&lt;p&gt;
+In my quarter century of teaching, always in a math department we
+spent a lot of time talking about what we taught, when we taught it,
+how we taught it and at what level but until common core was forced
+down our throats we NEVER discussed "the Standards." We discussed our
+students, where we thought we could take them, and how to get them
+there. Somehow our students did alright.
+&lt;/p&gt;
+
+&lt;p&gt;
+More recently, the push has been on "The Standards," common core in particular.
+&lt;/p&gt;
+
+&lt;p&gt;
+Common standards sound good - kids in every school will learn the same
+things at the same level - but I contend that they aren't about
+learning. They're about testing.
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's look at a few of the math standards. These were pulled directly
+from the Common Core:
+&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Derive the equation of a circle of given center and radius using the
+Pythagorean Theorem; complete the square to find the center and radius
+of a circle given by an equation.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Use coordinates to prove simple geometric theorems algebraically. For
+example, prove or disprove that a figure defined by four given points
+in the coordinate plane is a rectangle; prove or disprove that the
+point (1, √3) lies on the circle centered at the origin and containing
+the point (0, 2).
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;
+Derive using similarity the fact that the length of the arc
+intercepted by an angle is proportional to the radius, and define the
+radian measure of the angle as the constant of proportionality; derive
+the formula for the area of a sector.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+These aren't about deep thinking and problem solving. They're about
+very specific skills or techniques. They're also easy to put on a
+test. Much easier then assessing a students real problem solving ability.
+&lt;/p&gt;
+
+&lt;p&gt;
+Common Core comes hand in hand with standardized testing which is then
+used to punish students, teachers, and schools. 
+&lt;/p&gt;
+
+&lt;p&gt;
+We keep hearing about individualized instruction - meeting the kids
+where they are but the standards tell us that kids MUST know specific
+things at specific times. You can't have both. In the best case, with
+"the standards" we can only meet students "where they are" within
+annual bands.
+&lt;/p&gt;
+
+&lt;p&gt;
+What has this led to? Narrowing curriculum for one thing. Since schools are
+evaluated based on the standardized exam in core subjects focus
+narrows and other subjects fall by the wayside. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Arguably worse is selective teaching within common core subjects.
+&lt;/p&gt;
+
+&lt;p&gt;
+Take for example, Geometry. The course is really "Logic and Deductive
+Reasoning using Euclidean Geometry as a Platform" but it's generally
+called Geometry. This class is supposed to be about getting kids to
+think. I've already shared a few standards above but let me tell you
+about an open secret - many schools don't really teach proof -
+arguably the most important part of the class.
+&lt;/p&gt;
+
+&lt;p&gt;
+In my last year at Stuy I graded Geometry regents for the city. I
+graded exams for two highly regarded unscreened schools. One that was
+lauded in a State of the Union address and the other equally hyped. I
+graded all of each school's students geometry regents so it wasn't
+just a sampling. Out of all the papers, only two or three scored more
+than 2 out of 9 points for the proof question and most were entirely
+left blank.
+&lt;/p&gt;
+
+&lt;p&gt;
+What happened? Proof is hard to teach and hard to learn but it's also
+only a small part of the standardized exam. It's critical for a
+school's survival and for the student to graduate that a passing score
+is earned. Rather than spending a large amount of time on few points
+and probably get a limited return I've been told that many schools
+spend much more time on topics that area easier to teach and have more
+weight on the exam. This makes the school look better and helps the
+student graduate but arguably the most important aspect of the course
+has been minimized.
+&lt;/p&gt;
+
+&lt;p&gt;
+High stakes testing leads to gaming the system. Common core standards
+come hand in hand with high stakes testing. We see the same with AP
+exams - there are schools that force students to take exams even when
+they are woefully prepared and mostly fail because this helps the
+school shoot up in the ratings.
+&lt;/p&gt;
+
+&lt;p&gt;
+This is what the common core math standards have given us. They're not
+for teachers - we don't need them - we know what to teach and only
+wish that the bean counters would indeed allow us to meet students
+where they are. Standards are about testing.
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's move on to CS standards. 
+&lt;/p&gt;
+
+&lt;p&gt;
+It might not be fair to compare CS to math since K12 math education
+has been around much longer and is more well defined and in theory
+having a set of standards gives us a common language to discuss,
+compare, and contrast all the content providers and curriculum
+developers out there. On the other hand, I also believe that with well
+prepared teachers who understand content and pedagogy the value isn't
+all that great. It's also worth considering the fact that nothing
+really makes the CSTA Standard  writers special. There's no reason to
+think that another group - be they a handful of teachers or a content
+provider can't do a comparable job.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here are some selections from the CSTA standards:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Design and develop a software artifact working in a team. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Compare and contrast various software licensing schemes (e.g., open source, freeware,
+commercial). 
+&lt;/p&gt;
+
+&lt;p&gt;
+Design, develop, and implement a computing artifact that responds to an event (e.g., robot
+that responds to a sensor, mobile app that responds to a text message, sprite that responds
+to a broadcas
+&lt;/p&gt;
+
+&lt;p&gt;
+Demonstrate the value of abstraction for managing problem complexity (e.g., using a list
+instead of discrete variables). 
+&lt;/p&gt;
+
+&lt;p&gt;
+Design algorithms u sing sequence, selection, and iteration. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Discuss techniques used to store, process, and retrieve different amounts of information
+(e.g., files, databases, data warehouses). 
+&lt;/p&gt;
+
+&lt;p&gt;
+Compare and debate the positive and negative impacts of computing on behavior and
+culture (e.g., evolution from hitchhiking to ridesharing apps, online accommodation rental
+services). 
+&lt;/p&gt;
+
+&lt;p&gt;
+Use simple encryption and decryption algorithms to transmit/receive an encrypted
+message. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Decompose a problem by creating new data types, functions, or classes.
+&lt;/p&gt;
+
+&lt;p&gt;
+Evaluate algorithms (e.g., sorting, searching) in terms of their efficiency, correctness, and
+clarity. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Use data analysis to identify significant patterns in complex systems (e.g., take existing data
+sets and make sense of them). 
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+There's nothing wrong with these. They aren't specific enough to
+develop lessons from but, they can provide a
+consistent framework to discuss different offerings. Were the much
+more specific, we'd have the same issue I railed about with the math
+standards so this is a good thing. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Actually, in general, I don't have a problem with these standards. I
+might agree with some parts and disagree with others but that's
+neither here nor there.
+&lt;/p&gt;
+
+&lt;p&gt;
+To me the big concern on standards is what will they actually be used
+for. It's nice to think that it's a set of guidelines from which we
+can develop strong local experiences but I think this is somewhat
+naive. As states and the federal government bring CS Education into
+the fold there's no reason to believe that CS will be special. CS Ed
+will go the way of other subject areas. That means that whatever
+standards governments adopt, they will likely be used for high stakes
+tests rather than for true education. If you look to see how the
+sausage is made you can see the harm standards and standardized
+testing has wrought  in subjects like math. CS Ed won't be far behind.
+&lt;/p&gt;
+
+&lt;p&gt;
+While we should be proud of all the work that's going on in our
+community it's more important now than ever to keep an eye on the
+overall big picture and be aware of how work intended for one purpose
+within the community can be used very differently by those outside of
+it. This is particularly important for advocates  not in public schools. Public
+schools educate the majority of American students so CS4All means
+public schools. Standardized testing won't affect private schools (or
+private charters in many cases) nor will they affect colleges and in
+fact will be a boon to EdTech companies selling there wares. Many of
+the loudest voices in CSEd come from these contingents - it's
+important that they look to the greater issues, form their own
+opinions, and then act on what they believe is right.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>ed</category><category>policy</category><category>standards</category><guid>http://cestlaz.github.io/posts/standards-who-for/</guid><pubDate>Tue, 10 Oct 2017 18:05:35 GMT</pubDate></item><item><title>Is the new Secret Sauce ever better?</title><link>http://cestlaz.github.io/posts/is-the-new-secret-sauce-ever-better/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga4ec6ec" class="outline-2"&gt;
+&lt;h2 id="orga4ec6ec"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga4ec6ec"&gt;
 &lt;p&gt;
 I read &lt;a href="http://nancyebailey.com/2017/09/05/xq-super-schools-business-working-to-end-public-high-schools/"&gt;this&lt;/a&gt; piece earlier today on &lt;a href="https://twitter.com/NancyEBailey1"&gt;Nancy Bailey&lt;/a&gt;'s blog. 
 &lt;/p&gt;
@@ -83,9 +365,9 @@ own children?
 Just some Friday food for thought.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>policy</category><category>STEM</category><guid>http://cestlaz.github.io/posts/is-the-new-secret-sauce-ever-better/</guid><pubDate>Fri, 08 Sep 2017 16:32:22 GMT</pubDate></item><item><title>The Cost of AP Exams</title><link>http://cestlaz.github.io/posts/cost-of-ap-exams/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org86800f2" class="outline-2"&gt;
-&lt;h2 id="org86800f2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org86800f2"&gt;
+&lt;/div&gt;</description><category>education</category><category>policy</category><category>STEM</category><guid>http://cestlaz.github.io/posts/is-the-new-secret-sauce-ever-better/</guid><pubDate>Fri, 08 Sep 2017 16:32:22 GMT</pubDate></item><item><title>The Cost of AP Exams</title><link>http://cestlaz.github.io/posts/cost-of-ap-exams/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8c82fc3" class="outline-2"&gt;
+&lt;h2 id="org8c82fc3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8c82fc3"&gt;
 &lt;p&gt;
 Now that I'm back from vacation and summer's winding down I thought
 I'd start getting back to more classroom related posts. I still have a
@@ -173,9 +455,9 @@ At the end of the day it should be about students learning not about
 students taking high stakes exams.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>ap</category><category>csed</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/cost-of-ap-exams/</guid><pubDate>Thu, 17 Aug 2017 11:07:12 GMT</pubDate></item><item><title>Thoughts on non educator  influences on CS Education</title><link>http://cestlaz.github.io/posts/outside-influences-on-cs-ed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org66d4ddc" class="outline-2"&gt;
-&lt;h2 id="org66d4ddc"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org66d4ddc"&gt;
+&lt;/div&gt;</description><category>ap</category><category>csed</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/cost-of-ap-exams/</guid><pubDate>Thu, 17 Aug 2017 11:07:12 GMT</pubDate></item><item><title>Thoughts on non educator  influences on CS Education</title><link>http://cestlaz.github.io/posts/outside-influences-on-cs-ed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org21c555f" class="outline-2"&gt;
+&lt;h2 id="org21c555f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org21c555f"&gt;
 &lt;p&gt;
 Yesterday &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; blogged about a NY Times piece discussing
 &lt;a href="https://computinged.wordpress.com/2017/07/28/silicon-valley-pushing-coding-into-american-classrooms-through-code-org-nytimes/"&gt;Silicon Valleys influence on education through Code.org&lt;/a&gt;.
@@ -233,9 +515,9 @@ I've seen many Ed Tech people, armed with the best intentions, enter the lions d
 &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/outside-influences-on-cs-ed/</guid><pubDate>Sat, 29 Jul 2017 15:40:02 GMT</pubDate></item><item><title>CS Ed advocates should pay attention to greater ed issues</title><link>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga67b0d8" class="outline-2"&gt;
-&lt;h2 id="orga67b0d8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga67b0d8"&gt;
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/outside-influences-on-cs-ed/</guid><pubDate>Sat, 29 Jul 2017 15:40:02 GMT</pubDate></item><item><title>CS Ed advocates should pay attention to greater ed issues</title><link>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3ffb853" class="outline-2"&gt;
+&lt;h2 id="org3ffb853"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3ffb853"&gt;
 &lt;p&gt;
 For anyone involved in K12 CS education, the past few years have been
 a wild ride. When I first tried to make inroads in the DOE decades ago
@@ -354,9 +636,9 @@ Education should be having hard conversations about this and then
 strongly advocating for the positions they feel correct.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</guid><pubDate>Tue, 18 Jul 2017 23:51:40 GMT</pubDate></item><item><title>Self Certification - not a good idea</title><link>http://cestlaz.github.io/posts/dont-self-certify/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge830274" class="outline-2"&gt;
-&lt;h2 id="orge830274"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge830274"&gt;
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</guid><pubDate>Tue, 18 Jul 2017 23:51:40 GMT</pubDate></item><item><title>Self Certification - not a good idea</title><link>http://cestlaz.github.io/posts/dont-self-certify/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd25c817" class="outline-2"&gt;
+&lt;h2 id="orgd25c817"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd25c817"&gt;
 &lt;p&gt;
 You've probably seen an image like this:
 &lt;/p&gt;
@@ -507,9 +789,9 @@ and then 'teach' our students without much greater scrutiny.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-orgd690b8e" class="outline-2"&gt;
-&lt;h2 id="orgd690b8e"&gt;Addendum:&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd690b8e"&gt;
+&lt;div id="outline-container-org5a9004e" class="outline-2"&gt;
+&lt;h2 id="org5a9004e"&gt;Addendum:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5a9004e"&gt;
 &lt;p&gt;
 I'm sure some of my friends will point out that private schools aren't
 held to any particular standard for teacher certification. This is
@@ -520,9 +802,9 @@ operate as private entities. As such they should be held under the
 greatest of scrutiny and standards – they aren't
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>certification</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/dont-self-certify/</guid><pubDate>Fri, 07 Jul 2017 19:34:19 GMT</pubDate></item><item><title>CS Teachers - teacher first or content first</title><link>http://cestlaz.github.io/posts/teacher-to-cs-or-cs-to-teacher/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org73bbb68" class="outline-2"&gt;
-&lt;h2 id="org73bbb68"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org73bbb68"&gt;
+&lt;/div&gt;</description><category>certification</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/dont-self-certify/</guid><pubDate>Fri, 07 Jul 2017 19:34:19 GMT</pubDate></item><item><title>CS Teachers - teacher first or content first</title><link>http://cestlaz.github.io/posts/teacher-to-cs-or-cs-to-teacher/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org5506823" class="outline-2"&gt;
+&lt;h2 id="org5506823"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5506823"&gt;
 &lt;p&gt;
 Is it easier to take CS people and teach them to teach or is it easier
 to take teachers and teach them CS?
@@ -614,9 +896,9 @@ kids math teachers to know math and how to teach it. We should demand
 no less from our CS teachers.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>policy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/teacher-to-cs-or-cs-to-teacher/</guid><pubDate>Tue, 04 Jul 2017 20:39:43 GMT</pubDate></item><item><title>On Retaining Teachers</title><link>http://cestlaz.github.io/posts/on-retaining-teachers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc5b7964" class="outline-2"&gt;
-&lt;h2 id="orgc5b7964"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc5b7964"&gt;
+&lt;/div&gt;</description><category>education</category><category>policy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/teacher-to-cs-or-cs-to-teacher/</guid><pubDate>Tue, 04 Jul 2017 20:39:43 GMT</pubDate></item><item><title>On Retaining Teachers</title><link>http://cestlaz.github.io/posts/on-retaining-teachers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgce5f1eb" class="outline-2"&gt;
+&lt;h2 id="orgce5f1eb"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgce5f1eb"&gt;
 &lt;p&gt;
 Back in February, I shared my thoughts on &lt;a href="https://cestlaz.github.io/posts/will-we-lose-cs-teachers-to-industry"&gt;losing CS teachers to the
 tech industy&lt;/a&gt;. TL;DR - I don't think it will be a CS Ed problem. 
@@ -747,9 +1029,9 @@ It's not too much to ask but in this day and age it's apparently too
 much to give.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/on-retaining-teachers/</guid><pubDate>Sun, 25 Jun 2017 15:35:08 GMT</pubDate></item><item><title>Mayoral Control - only when your guy's the mayor</title><link>http://cestlaz.github.io/posts/mayoral-control/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4976054" class="outline-2"&gt;
-&lt;h2 id="org4976054"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4976054"&gt;
+&lt;/div&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/on-retaining-teachers/</guid><pubDate>Sun, 25 Jun 2017 15:35:08 GMT</pubDate></item><item><title>Mayoral Control - only when your guy's the mayor</title><link>http://cestlaz.github.io/posts/mayoral-control/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org5520320" class="outline-2"&gt;
+&lt;h2 id="org5520320"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5520320"&gt;
 &lt;p&gt;
 The hot debate this past week in NY Education circles is Mayoral
 Control. When I started teaching, New York City schools were
@@ -881,9 +1163,9 @@ theme, one which we really need now for our schools is:
 If we don't get there we'll be stuck booing our politicians at parades.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/mayoral-control/</guid><pubDate>Thu, 22 Jun 2017 11:54:46 GMT</pubDate></item><item><title>Will we lose CS teachers to industry?</title><link>http://cestlaz.github.io/posts/will-we-lose-cs-teachers-to-industry/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org48303ec" class="outline-2"&gt;
-&lt;h2 id="org48303ec"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org48303ec"&gt;
+&lt;/div&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/mayoral-control/</guid><pubDate>Thu, 22 Jun 2017 11:54:46 GMT</pubDate></item><item><title>Will we lose CS teachers to industry?</title><link>http://cestlaz.github.io/posts/will-we-lose-cs-teachers-to-industry/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org0a9a646" class="outline-2"&gt;
+&lt;h2 id="org0a9a646"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0a9a646"&gt;
 &lt;blockquote&gt;
 &lt;p&gt;
 If we properly prepare CS teachers, won't they just jump ship and take
@@ -993,136 +1275,4 @@ and towards drill-masters. Let's not let CS Education go the way of
 all ed.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/will-we-lose-cs-teachers-to-industry/</guid><pubDate>Mon, 27 Feb 2017 11:41:27 GMT</pubDate></item><item><title>Should CS Ed be in bed with the College Board</title><link>http://cestlaz.github.io/posts/cs-ed-in-bed-college-board/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf098a61" class="outline-2"&gt;
-&lt;h2 id="orgf098a61"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf098a61"&gt;
-&lt;p&gt;
-I'm guessing my views  on this aren't very popular -that's OK, every
-community needs a curmudgeon.
-&lt;/p&gt;
-
-&lt;p&gt;
-A few years ago, I cautioned if we weren't careful, once the big
-players got involved, CS Ed would go the way of other disciplines, and
-not in a good way. It looks like indeed we're well on our way down
-that road.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've ranted before about things like non-profits, drop in and summer
-programs. &lt;a href="https://cestlaz.github.io/posts/2015-05-07-learning-takes-time.html/#.WJXSS99vHmE"&gt;STEM Oil Salesmen&lt;/a&gt; &lt;sup&gt;&lt;a id="fnr.1" class="footref" href="http://cestlaz.github.io/posts/cs-ed-in-bed-college-board/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;
-selling easy fixes, exciting kids and parents, using the Think Method
-just like Professor Harold Hill only to send the kids off where they
-can blame a future teacher for failure.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've also ranted about teacher preparation and how all the rage is
-short term, &lt;a href="https://cestlaz.github.io/posts/scotland/#.WJXT999vHmE"&gt;Superficial PD and scripted curricula&lt;/a&gt;  and my concern that   
-once the politicians can say CS is in the schools, &lt;a href="https://cestlaz.github.io/posts/2015-03-04-expedient-vs-good.html/#.WJXT7d9vHmE"&gt;we'll be done&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've been working towards getting CS to all students for most of my
-career and while it's wonderful to see us getting closer to the goal,
-I'm seeing more and more signs that my caution is becoming
-reality. and CS Ed is going the way of other Ed - aligned to testing
-and more to the whims of the power players and politicians than to
-teachers and students.
-&lt;/p&gt;
-
-&lt;p&gt;
-The other week I noticed, &lt;a href="http://teacherblog.code.org/post/156278055294/ap-cs-principles-could-make-history-how-can-we"&gt;this post&lt;/a&gt; by Code.org trying to encourage
-more students to take the APCSP exam - not encourage more students
-take the class or some other class or to have more students be exposed
-to CS but to actually sit for the APCSP exam. That post was followed
-by &lt;a href="http://teacherblog.code.org/post/156689658029/ask-your-cs-principles-students-to-star-in-our"&gt;this one&lt;/a&gt; which also highlights actually taking the exam.
-&lt;/p&gt;
-
-&lt;p&gt;
-This didn't sit well with me. 
-&lt;/p&gt;
-
-&lt;p&gt;
-What does the exam do for the kid? It doesn't drive instruction - by
-that time, any good teacher knows their student and is better served
-by using their own &lt;a href="https://cestlaz.github.io/posts/ap-we-dont-trust-teachers/#.WJXbA99vHmE"&gt;assessments&lt;/a&gt;. The college credit thing? I'm
-skeptical. Fewer and fewer schools are giving credit for APCSA let
-alone this new CS0 non major course. Blanket credit? Since full time
-students pay for a range of credits, I'm still skeptical
-here. Placement? It's a course for non-majors - what exactly are you
-placing out of?
-&lt;/p&gt;
-
-&lt;p&gt;
-Reasons not to take the exam?
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;If it doesn't do anything for the kid, why take it&lt;/li&gt;
-&lt;li&gt;Stress of taking the exam&lt;/li&gt;
-&lt;li&gt;There are other ways of placing out of courses once in college&lt;/li&gt;
-&lt;li&gt;Save the expense&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-As a general rule, I'm against forcing students to sit for
-AP exams. At the extreme case, since we've been brainwashed to think
-that a school that has lots of kids sitting for exams is good, I've
-seen at least one case of a principal having all his kids sit for, and
-just about all &lt;b&gt;&lt;b&gt;fail&lt;/b&gt;&lt;/b&gt; AP Calculus - that is, get a 1 or 2 on the exam. This
-principal had all his students take the exam, and only 2 scores were 3
-or higher. This principal then parlayed his success into a higher
-profile gig - he's moved up in the world while setting up his students
-to fail.
-&lt;/p&gt;
-
-&lt;p&gt;
-This follows last year's announcement that code.org was &lt;a href="https://cestlaz.github.io/posts/2015-05-19-code-org-college-board.html/#.WJXbm99vHmE"&gt;partnering with
-the College Board&lt;/a&gt; - offering PD to teachers for free if the schools
-signed up their students for the PSAT 8/9 - another meaningless
-exam. So, we get teacher training light &lt;sup&gt;&lt;a id="fnr.2" class="footref" href="http://cestlaz.github.io/posts/cs-ed-in-bed-college-board/#fn.2"&gt;2&lt;/a&gt;&lt;/sup&gt; as long as the school pays for
-the PSAT8/9 for every kid so that the kid can take yet another test
-with really no value&lt;sup&gt;&lt;a id="fnr.3" class="footref" href="http://cestlaz.github.io/posts/cs-ed-in-bed-college-board/#fn.3"&gt;3&lt;/a&gt;&lt;/sup&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-Why should students pay for an AP exam that doesn't do anything for
-them? Why should Jane Q Taxpayer pay for exams that only server to
-enrich the College Board.
-&lt;/p&gt;
-
-&lt;p&gt;
-True, The College Board is a big player. They already have much more
-influence of American High School education than they should. It's
-easy to climb on board the AP train for entre into our schools. The
-question is, should we use positions of influence to push efforts that
-might help our end but leave collateral damage to students and the public.
-&lt;/p&gt;
-
-&lt;p&gt;
-I don't doubt code.org's sincerity in wanting good CS in all schools
-nor the efforts or value as an advocate for CS Education. I'm
-concerned that the desire to win big and win now is moving us in a
-direction that we'll regret years from now.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="footnotes"&gt;
-&lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
-&lt;div id="text-footnotes"&gt;
-
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" class="footnum" href="http://cestlaz.github.io/posts/cs-ed-in-bed-college-board/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;Not my term, but I really like it&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.2" class="footnum" href="http://cestlaz.github.io/posts/cs-ed-in-bed-college-board/#fnr.2"&gt;2&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;If you think that PD based
-teacher training is OK, ask yourself if you want your own child's
-chemistry teacher to be a history teacher with a few weeks summer
-training in chemistry&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.3" class="footnum" href="http://cestlaz.github.io/posts/cs-ed-in-bed-college-board/#fnr.3"&gt;3&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;And I'm guessing the exam will be offered
-during the day so teachers will proctor for free rather than be
-allowed to, you know, teach their students.&lt;/div&gt;&lt;/div&gt;
-
-
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/cs-ed-in-bed-college-board/</guid><pubDate>Sat, 04 Feb 2017 11:00:00 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/will-we-lose-cs-teachers-to-industry/</guid><pubDate>Mon, 27 Feb 2017 11:41:27 GMT</pubDate></item></channel></rss>

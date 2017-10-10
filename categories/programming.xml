@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about programming)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/programming.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 08 Oct 2017 16:24:40 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Programming Idioms</title><link>http://cestlaz.github.io/posts/programming-idioms/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc41506c" class="outline-2"&gt;
-&lt;h2 id="orgc41506c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc41506c"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about programming)</title><link>http://cestlaz.github.io/</link><description></description><atom:link type="application/rss+xml" href="http://cestlaz.github.io/categories/programming.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 10 Oct 2017 18:06:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Programming Idioms</title><link>http://cestlaz.github.io/posts/programming-idioms/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc49d4ee" class="outline-2"&gt;
+&lt;h2 id="orgc49d4ee"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc49d4ee"&gt;
 &lt;p&gt;
 I just read Jeff Yearout's recent post titled &lt;a href="http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html"&gt;The Beginner's Garden of
 Concepts&lt;/a&gt;. Not directly related but it got me thinking about
@@ -21,6 +21,7 @@ see recurring and related patterns and programming idioms gives us a
 name to apply to many beginner patterns. An early idiom might be
 "finding the smallest in a list:"
 &lt;/p&gt;
+
 
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;dataset&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 
@@ -434,9 +435,9 @@ Here's all the code:
 &lt;p&gt;
 Overall, a nice little problem for beginning and intermediate
 students.
-&lt;/p&gt;</description><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-code-2016-1/</guid><pubDate>Tue, 06 Dec 2016 15:46:17 GMT</pubDate></item><item><title>Inverted Index Project</title><link>http://cestlaz.github.io/posts/inverted-index/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org5d6c4c2" class="outline-2"&gt;
-&lt;h2 id="org5d6c4c2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5d6c4c2"&gt;
+&lt;/p&gt;</description><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-code-2016-1/</guid><pubDate>Tue, 06 Dec 2016 15:46:17 GMT</pubDate></item><item><title>Inverted Index Project</title><link>http://cestlaz.github.io/posts/inverted-index/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org30baeed" class="outline-2"&gt;
+&lt;h2 id="org30baeed"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org30baeed"&gt;
 &lt;p&gt;
 I haven't spoken much about the class I've been teaching this
 semester. It's an intro CS course - a programming heavy intro. I

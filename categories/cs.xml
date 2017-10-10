@@ -1,7 +1,289 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 08 Oct 2017 16:24:40 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Programming Idioms</title><link>http://cestlaz.github.io/posts/programming-idioms/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc41506c" class="outline-2"&gt;
-&lt;h2 id="orgc41506c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc41506c"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 10 Oct 2017 18:20:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Standards - Who are they for?</title><link>http://cestlaz.github.io/posts/standards-who-for/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8f6985d" class="outline-2"&gt;
+&lt;h2 id="org8f6985d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8f6985d"&gt;
+&lt;p&gt;
+The big push at last year's CSTA conference was the release of the new
+CSTA K12 standards. It seemed that every other session was pushing
+them in one way or another. I've been meaning to share my thoughts
+about them or, more specifically, learning standards in general for a
+while but with announcement about federal funding for CS coming from
+the White House last week I thought it was time.
+&lt;/p&gt;
+
+&lt;p&gt;
+Before diving into CS standards lets talk about math.
+&lt;/p&gt;
+
+&lt;p&gt;
+To start I have yet to meet a math teacher that needs
+"the Standards" to know what to teach. Some how or other math teachers know
+they're supposed to teach in an algebra or geometry class. When NY
+moved to "integrated math" teachers were able to re-sequence classes
+without the benefit of "the standards" and when NY went back to
+Algebra, Geometry, then Alg 2 and Trig, teachers had no problem
+reorganizing classes again.
+&lt;/p&gt;
+
+&lt;p&gt;
+New teachers didn't go to "the Standards" to learn the ropes. Schools
+defined syllabi, teachers observed each other, shared resources, used
+lesson plan books and in general knew what they were supposed to teach
+and at what level.
+&lt;/p&gt;
+
+&lt;p&gt;
+In my quarter century of teaching, always in a math department we
+spent a lot of time talking about what we taught, when we taught it,
+how we taught it and at what level but until common core was forced
+down our throats we NEVER discussed "the Standards." We discussed our
+students, where we thought we could take them, and how to get them
+there. Somehow our students did alright.
+&lt;/p&gt;
+
+&lt;p&gt;
+More recently, the push has been on "The Standards," common core in particular.
+&lt;/p&gt;
+
+&lt;p&gt;
+Common standards sound good - kids in every school will learn the same
+things at the same level - but I contend that they aren't about
+learning. They're about testing.
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's look at a few of the math standards. These were pulled directly
+from the Common Core:
+&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Derive the equation of a circle of given center and radius using the
+Pythagorean Theorem; complete the square to find the center and radius
+of a circle given by an equation.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Use coordinates to prove simple geometric theorems algebraically. For
+example, prove or disprove that a figure defined by four given points
+in the coordinate plane is a rectangle; prove or disprove that the
+point (1, √3) lies on the circle centered at the origin and containing
+the point (0, 2).
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;
+Derive using similarity the fact that the length of the arc
+intercepted by an angle is proportional to the radius, and define the
+radian measure of the angle as the constant of proportionality; derive
+the formula for the area of a sector.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+These aren't about deep thinking and problem solving. They're about
+very specific skills or techniques. They're also easy to put on a
+test. Much easier then assessing a students real problem solving ability.
+&lt;/p&gt;
+
+&lt;p&gt;
+Common Core comes hand in hand with standardized testing which is then
+used to punish students, teachers, and schools. 
+&lt;/p&gt;
+
+&lt;p&gt;
+We keep hearing about individualized instruction - meeting the kids
+where they are but the standards tell us that kids MUST know specific
+things at specific times. You can't have both. In the best case, with
+"the standards" we can only meet students "where they are" within
+annual bands.
+&lt;/p&gt;
+
+&lt;p&gt;
+What has this led to? Narrowing curriculum for one thing. Since schools are
+evaluated based on the standardized exam in core subjects focus
+narrows and other subjects fall by the wayside. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Arguably worse is selective teaching within common core subjects.
+&lt;/p&gt;
+
+&lt;p&gt;
+Take for example, Geometry. The course is really "Logic and Deductive
+Reasoning using Euclidean Geometry as a Platform" but it's generally
+called Geometry. This class is supposed to be about getting kids to
+think. I've already shared a few standards above but let me tell you
+about an open secret - many schools don't really teach proof -
+arguably the most important part of the class.
+&lt;/p&gt;
+
+&lt;p&gt;
+In my last year at Stuy I graded Geometry regents for the city. I
+graded exams for two highly regarded unscreened schools. One that was
+lauded in a State of the Union address and the other equally hyped. I
+graded all of each school's students geometry regents so it wasn't
+just a sampling. Out of all the papers, only two or three scored more
+than 2 out of 9 points for the proof question and most were entirely
+left blank.
+&lt;/p&gt;
+
+&lt;p&gt;
+What happened? Proof is hard to teach and hard to learn but it's also
+only a small part of the standardized exam. It's critical for a
+school's survival and for the student to graduate that a passing score
+is earned. Rather than spending a large amount of time on few points
+and probably get a limited return I've been told that many schools
+spend much more time on topics that area easier to teach and have more
+weight on the exam. This makes the school look better and helps the
+student graduate but arguably the most important aspect of the course
+has been minimized.
+&lt;/p&gt;
+
+&lt;p&gt;
+High stakes testing leads to gaming the system. Common core standards
+come hand in hand with high stakes testing. We see the same with AP
+exams - there are schools that force students to take exams even when
+they are woefully prepared and mostly fail because this helps the
+school shoot up in the ratings.
+&lt;/p&gt;
+
+&lt;p&gt;
+This is what the common core math standards have given us. They're not
+for teachers - we don't need them - we know what to teach and only
+wish that the bean counters would indeed allow us to meet students
+where they are. Standards are about testing.
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's move on to CS standards. 
+&lt;/p&gt;
+
+&lt;p&gt;
+It might not be fair to compare CS to math since K12 math education
+has been around much longer and is more well defined and in theory
+having a set of standards gives us a common language to discuss,
+compare, and contrast all the content providers and curriculum
+developers out there. On the other hand, I also believe that with well
+prepared teachers who understand content and pedagogy the value isn't
+all that great. It's also worth considering the fact that nothing
+really makes the CSTA Standard  writers special. There's no reason to
+think that another group - be they a handful of teachers or a content
+provider can't do a comparable job.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here are some selections from the CSTA standards:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Design and develop a software artifact working in a team. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Compare and contrast various software licensing schemes (e.g., open source, freeware,
+commercial). 
+&lt;/p&gt;
+
+&lt;p&gt;
+Design, develop, and implement a computing artifact that responds to an event (e.g., robot
+that responds to a sensor, mobile app that responds to a text message, sprite that responds
+to a broadcas
+&lt;/p&gt;
+
+&lt;p&gt;
+Demonstrate the value of abstraction for managing problem complexity (e.g., using a list
+instead of discrete variables). 
+&lt;/p&gt;
+
+&lt;p&gt;
+Design algorithms u sing sequence, selection, and iteration. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Discuss techniques used to store, process, and retrieve different amounts of information
+(e.g., files, databases, data warehouses). 
+&lt;/p&gt;
+
+&lt;p&gt;
+Compare and debate the positive and negative impacts of computing on behavior and
+culture (e.g., evolution from hitchhiking to ridesharing apps, online accommodation rental
+services). 
+&lt;/p&gt;
+
+&lt;p&gt;
+Use simple encryption and decryption algorithms to transmit/receive an encrypted
+message. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Decompose a problem by creating new data types, functions, or classes.
+&lt;/p&gt;
+
+&lt;p&gt;
+Evaluate algorithms (e.g., sorting, searching) in terms of their efficiency, correctness, and
+clarity. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Use data analysis to identify significant patterns in complex systems (e.g., take existing data
+sets and make sense of them). 
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+There's nothing wrong with these. They aren't specific enough to
+develop lessons from but, they can provide a
+consistent framework to discuss different offerings. Were the much
+more specific, we'd have the same issue I railed about with the math
+standards so this is a good thing. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Actually, in general, I don't have a problem with these standards. I
+might agree with some parts and disagree with others but that's
+neither here nor there.
+&lt;/p&gt;
+
+&lt;p&gt;
+To me the big concern on standards is what will they actually be used
+for. It's nice to think that it's a set of guidelines from which we
+can develop strong local experiences but I think this is somewhat
+naive. As states and the federal government bring CS Education into
+the fold there's no reason to believe that CS will be special. CS Ed
+will go the way of other subject areas. That means that whatever
+standards governments adopt, they will likely be used for high stakes
+tests rather than for true education. If you look to see how the
+sausage is made you can see the harm standards and standardized
+testing has wrought  in subjects like math. CS Ed won't be far behind.
+&lt;/p&gt;
+
+&lt;p&gt;
+While we should be proud of all the work that's going on in our
+community it's more important now than ever to keep an eye on the
+overall big picture and be aware of how work intended for one purpose
+within the community can be used very differently by those outside of
+it. This is particularly important for advocates  not in public schools. Public
+schools educate the majority of American students so CS4All means
+public schools. Standardized testing won't affect private schools (or
+private charters in many cases) nor will they affect colleges and in
+fact will be a boon to EdTech companies selling there wares. Many of
+the loudest voices in CSEd come from these contingents - it's
+important that they look to the greater issues, form their own
+opinions, and then act on what they believe is right.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>ed</category><category>policy</category><category>standards</category><guid>http://cestlaz.github.io/posts/standards-who-for/</guid><pubDate>Tue, 10 Oct 2017 18:05:35 GMT</pubDate></item><item><title>Programming Idioms</title><link>http://cestlaz.github.io/posts/programming-idioms/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc49d4ee" class="outline-2"&gt;
+&lt;h2 id="orgc49d4ee"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc49d4ee"&gt;
 &lt;p&gt;
 I just read Jeff Yearout's recent post titled &lt;a href="http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html"&gt;The Beginner's Garden of
 Concepts&lt;/a&gt;. Not directly related but it got me thinking about
@@ -21,6 +303,7 @@ see recurring and related patterns and programming idioms gives us a
 name to apply to many beginner patterns. An early idiom might be
 "finding the smallest in a list:"
 &lt;/p&gt;
+
 
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;dataset&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 
@@ -98,9 +381,9 @@ have to explicitly mention them in our teaching but I think it's
 helpful to our students if we do.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>programming</category><category>teaching</category><guid>http://cestlaz.github.io/posts/programming-idioms/</guid><pubDate>Sun, 08 Oct 2017 15:51:46 GMT</pubDate></item><item><title>Awesome Cs Revisited</title><link>http://cestlaz.github.io/posts/awesome-cs-revisted/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf865a3f" class="outline-2"&gt;
-&lt;h2 id="orgf865a3f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf865a3f"&gt;
+&lt;/div&gt;</description><category>cs</category><category>programming</category><category>teaching</category><guid>http://cestlaz.github.io/posts/programming-idioms/</guid><pubDate>Sun, 08 Oct 2017 15:51:46 GMT</pubDate></item><item><title>Awesome Cs Revisited</title><link>http://cestlaz.github.io/posts/awesome-cs-revisted/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org0486a3b" class="outline-2"&gt;
+&lt;h2 id="org0486a3b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0486a3b"&gt;
 &lt;p&gt;
 Saw this tweet the other day so I though I would try to plug the
 &lt;a href="https://github.com/zamansky/awesome-cs-education"&gt;Awesome CS Education&lt;/a&gt; list I started on GitHub:
@@ -149,9 +432,9 @@ submit a pull request. Over time this could be a terrific single
 starting point for educators to get to a wealth of resources.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pd</category><category>resources</category><guid>http://cestlaz.github.io/posts/awesome-cs-revisted/</guid><pubDate>Thu, 21 Sep 2017 20:34:36 GMT</pubDate></item><item><title>New Term New Tool - Thonny, a Python IDE</title><link>http://cestlaz.github.io/posts/new-tool-thonny/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgddcb71a" class="outline-2"&gt;
-&lt;h2 id="orgddcb71a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgddcb71a"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pd</category><category>resources</category><guid>http://cestlaz.github.io/posts/awesome-cs-revisted/</guid><pubDate>Thu, 21 Sep 2017 20:34:36 GMT</pubDate></item><item><title>New Term New Tool - Thonny, a Python IDE</title><link>http://cestlaz.github.io/posts/new-tool-thonny/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4d99735" class="outline-2"&gt;
+&lt;h2 id="org4d99735"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4d99735"&gt;
 &lt;p&gt;
 Last year I &lt;a href="https://cestlaz.github.io/posts/new-term-new-tool-replit"&gt;wrote about&lt;/a&gt; &lt;a href="http://repl.it"&gt;repl.it&lt;/a&gt;, an online IDE that supports multiple
 languages. At the time it had some rudimentary classroom support and
@@ -193,9 +476,9 @@ video:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lWaCl0WjNZI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-tool-thonny/</guid><pubDate>Thu, 21 Sep 2017 11:31:42 GMT</pubDate></item><item><title>I Believe CS Teachers are Smart and Capable</title><link>http://cestlaz.github.io/posts/cs-teachers-smart/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga7bb940" class="outline-2"&gt;
-&lt;h2 id="orga7bb940"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga7bb940"&gt;
+&lt;/div&gt;</description><category>cs</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-tool-thonny/</guid><pubDate>Thu, 21 Sep 2017 11:31:42 GMT</pubDate></item><item><title>I Believe CS Teachers are Smart and Capable</title><link>http://cestlaz.github.io/posts/cs-teachers-smart/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6880554" class="outline-2"&gt;
+&lt;h2 id="org6880554"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6880554"&gt;
 &lt;p&gt;
 People sometimes accuse me of being an elitist CS snob that I feel that CS
 teachers have to have advanced CS degrees. 
@@ -267,9 +550,9 @@ subject matter they should but the good ones do.&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><guid>http://cestlaz.github.io/posts/cs-teachers-smart/</guid><pubDate>Fri, 15 Sep 2017 22:17:21 GMT</pubDate></item><item><title>Theseus's Curriculum</title><link>http://cestlaz.github.io/posts/theseus%27s-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org944fd51" class="outline-2"&gt;
-&lt;h2 id="org944fd51"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org944fd51"&gt;
+&lt;/div&gt;</description><category>cs</category><category>education</category><guid>http://cestlaz.github.io/posts/cs-teachers-smart/</guid><pubDate>Fri, 15 Sep 2017 22:17:21 GMT</pubDate></item><item><title>Theseus's Curriculum</title><link>http://cestlaz.github.io/posts/theseus%27s-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd031b2b" class="outline-2"&gt;
+&lt;h2 id="orgd031b2b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd031b2b"&gt;
 &lt;p&gt;
 With the school year starting I was originally planning on writing
 about my class rules. 
@@ -368,9 +651,9 @@ reasoning using Euclidean Geometry as platform&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>currulum</category><category>teaching</category><guid>http://cestlaz.github.io/posts/theseus%27s-curriculum/</guid><pubDate>Tue, 05 Sep 2017 22:41:14 GMT</pubDate></item><item><title>CS Teachers - we need you to blog</title><link>http://cestlaz.github.io/posts/cs-teachers-blog/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgebe6d01" class="outline-2"&gt;
-&lt;h2 id="orgebe6d01"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgebe6d01"&gt;
+&lt;/div&gt;</description><category>cs</category><category>currulum</category><category>teaching</category><guid>http://cestlaz.github.io/posts/theseus%27s-curriculum/</guid><pubDate>Tue, 05 Sep 2017 22:41:14 GMT</pubDate></item><item><title>CS Teachers - we need you to blog</title><link>http://cestlaz.github.io/posts/cs-teachers-blog/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8a53e1d" class="outline-2"&gt;
+&lt;h2 id="org8a53e1d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8a53e1d"&gt;
 &lt;p&gt;
 At this past year's CSTA conference, a few of us huddled in a corner
 voiced a very common lament - "it would be great if more CS teachers
@@ -492,9 +775,9 @@ please consider blogging. I assure you, we will all appreciate it and
 benefit from it.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>community</category><category>cs</category><guid>http://cestlaz.github.io/posts/cs-teachers-blog/</guid><pubDate>Fri, 25 Aug 2017 19:52:23 GMT</pubDate></item><item><title>Teaching APCS-A for the first time</title><link>http://cestlaz.github.io/posts/teaching-ap-first-time/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6338bcd" class="outline-2"&gt;
-&lt;h2 id="org6338bcd"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6338bcd"&gt;
+&lt;/div&gt;</description><category>community</category><category>cs</category><guid>http://cestlaz.github.io/posts/cs-teachers-blog/</guid><pubDate>Fri, 25 Aug 2017 19:52:23 GMT</pubDate></item><item><title>Teaching APCS-A for the first time</title><link>http://cestlaz.github.io/posts/teaching-ap-first-time/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgfdc8a48" class="outline-2"&gt;
+&lt;h2 id="orgfdc8a48"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgfdc8a48"&gt;
 &lt;p&gt;
 I got  an email from a friend the other day. Among other things, he
 mentioned that he would be teaching APCS-A for the first time this
@@ -609,9 +892,9 @@ lot more than if I wasn't there."
 – Remember that as well.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>ap</category><category>apcs</category><category>cs</category><category>education</category><category>teaching</category><guid>http://cestlaz.github.io/posts/teaching-ap-first-time/</guid><pubDate>Wed, 23 Aug 2017 19:56:46 GMT</pubDate></item><item><title>Thoughts on non educator  influences on CS Education</title><link>http://cestlaz.github.io/posts/outside-influences-on-cs-ed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org66d4ddc" class="outline-2"&gt;
-&lt;h2 id="org66d4ddc"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org66d4ddc"&gt;
+&lt;/div&gt;</description><category>ap</category><category>apcs</category><category>cs</category><category>education</category><category>teaching</category><guid>http://cestlaz.github.io/posts/teaching-ap-first-time/</guid><pubDate>Wed, 23 Aug 2017 19:56:46 GMT</pubDate></item><item><title>Thoughts on non educator  influences on CS Education</title><link>http://cestlaz.github.io/posts/outside-influences-on-cs-ed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org21c555f" class="outline-2"&gt;
+&lt;h2 id="org21c555f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org21c555f"&gt;
 &lt;p&gt;
 Yesterday &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; blogged about a NY Times piece discussing
 &lt;a href="https://computinged.wordpress.com/2017/07/28/silicon-valley-pushing-coding-into-american-classrooms-through-code-org-nytimes/"&gt;Silicon Valleys influence on education through Code.org&lt;/a&gt;.
@@ -669,9 +952,9 @@ I've seen many Ed Tech people, armed with the best intentions, enter the lions d
 &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/outside-influences-on-cs-ed/</guid><pubDate>Sat, 29 Jul 2017 15:40:02 GMT</pubDate></item><item><title>CS Ed advocates should pay attention to greater ed issues</title><link>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga67b0d8" class="outline-2"&gt;
-&lt;h2 id="orga67b0d8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga67b0d8"&gt;
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/outside-influences-on-cs-ed/</guid><pubDate>Sat, 29 Jul 2017 15:40:02 GMT</pubDate></item><item><title>CS Ed advocates should pay attention to greater ed issues</title><link>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3ffb853" class="outline-2"&gt;
+&lt;h2 id="org3ffb853"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3ffb853"&gt;
 &lt;p&gt;
 For anyone involved in K12 CS education, the past few years have been
 a wild ride. When I first tried to make inroads in the DOE decades ago
@@ -790,81 +1073,4 @@ Education should be having hard conversations about this and then
 strongly advocating for the positions they feel correct.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</guid><pubDate>Tue, 18 Jul 2017 23:51:40 GMT</pubDate></item><item><title>A friendly reminder to use the right language when describing CS</title><link>http://cestlaz.github.io/posts/languages-or-cs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga2f76fd" class="outline-2"&gt;
-&lt;h2 id="orga2f76fd"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga2f76fd"&gt;
-&lt;p&gt;
-I was part of this conversation the other day:
-&lt;/p&gt;
-
-&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;When science teachers asked me if I taught AP Java I'd always respond by asking them if they taught AP Microscope.&lt;/p&gt;— Mike Zamansky (@zamansky) &lt;a href="https://twitter.com/zamansky/status/883327927831711745"&gt;July 7, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-
-&lt;p&gt;
-I always use that line to emphasize that I teach CS - a way of
-thinking and problem solving and looking at the world. The languages
-we use in our classes are tools to help us communicate ideas not the
-ends but rather a means.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've spent the past couple of days at the CSTA conference. It's been a
-lot of fun. I've been spending the time with old friends and meeting
-new ones and as everyone who knows me knows - I love talking shop. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I overheard a conversation today. One CS teacher describing what they
-did to a few others. I overheard:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-We teach Scratch then Swift and C++ and also teach Python
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-I heard statements like this describing programs more than a couple of
-times. I know we're at a conference of CS Educators but even in this
-community we have everything from beginners getting their feet wet to
-hardcore computer scientists to everything in between.
-&lt;/p&gt;
-
-&lt;p&gt;
-We shouldn't be teaching languages as an ends unto themselves and the
-majority of us don't.
-&lt;/p&gt;
-
-&lt;p&gt;
-What many of us do, though, is take the easy path and use the name of
-a programming language to describe what we do rather than really
-define what we do. This is why we hear "I teach Java" or "I teach a
-class in Swift" even when the teacher teaching Java might really be
-teaching Object Oriented program design and development or data
-structures or something similar just using Java as the language or
-tool.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-I too fall into this trap but I try to catch myself. I try not to say
-"I teach Scheme" but rather I'll say "I teach Scheme. Actually, we're
-studying functional programming using Scheme as the language but for
-convenience, I'll just say Scheme for the rest of this talk…."
-&lt;/p&gt;
-
-&lt;p&gt;
-The words we use to describe our field set the tone. If we're sloppy
-and say "we teach Java," it's just like biology teacher saying "I
-teach microscope." 
-&lt;/p&gt;
-
-&lt;p&gt;
-As we try to define our field in the K12 space and seek equal footing
-with established subject areas it's important that we use the right
-language so that other educators and policy makers don't get the wrong
-idea.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>csed</category><category>education</category><guid>http://cestlaz.github.io/posts/languages-or-cs/</guid><pubDate>Tue, 11 Jul 2017 01:17:47 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</guid><pubDate>Tue, 18 Jul 2017 23:51:40 GMT</pubDate></item></channel></rss>
