@@ -1,5 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>C'est la Z (Posts about education)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/education.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 16 Oct 2017 00:44:48 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A test result is just a test result</title><link>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgcbf7542" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>C'est la Z (Posts about education)</title><link>http://cestlaz.github.io/</link><description></description><atom:link type="application/rss+xml" href="http://cestlaz.github.io/categories/education.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 18 Oct 2017 19:09:38 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>There's always something to learn (from your students)</title><link>http://cestlaz.github.io/posts/when-they-change-the-script/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd32e828" class="outline-2"&gt;
+&lt;h2 id="orgd32e828"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd32e828"&gt;
+&lt;p&gt;
+One thing I've learned from teaching is that there's always something
+new to learn. For the kids, yes, but I'm talking about for the
+teacher.
+&lt;/p&gt;
+
+&lt;p&gt;
+The other day, I taught a lesson I've taught many times. Find the mode
+of a data set. That's the problem that they solve but the lesson is
+really about run time complexity, hidden complexity and using data
+structures in alternate ways.
+&lt;/p&gt;
+
+&lt;p&gt;
+I blogged about this &lt;a href="https://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md"&gt;before&lt;/a&gt; so you can get an earlier take there
+although the code isn't formatted correctly due to blog conversions.
+&lt;/p&gt;
+
+&lt;p&gt;
+As with the last time, the students  had already written code to find
+the largest value in a list and also to find the frequency of an item
+in a list.
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;random&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;build_list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;low&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;high&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[]&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;randrange&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;low&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;high&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;get_max_value&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;max_index&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;
+    &lt;span class="n"&gt;max_val&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;enumerate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;max_val&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	    &lt;span class="n"&gt;max_index&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;
+	    &lt;span class="n"&gt;max_val&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;max_val&lt;/span&gt;
+
+&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;get_freq&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;requested_val&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;requested_val&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	    &lt;span class="n"&gt;count&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;count&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;count&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+They had to write mode prior to the class. In the past, students would
+generally come up with something like this:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;get_mode_1&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;mode_val&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;mode_freq&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_freq&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;mode_val&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;enumerate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_freq&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;mode_freq&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	    &lt;span class="n"&gt;mode_freq&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;
+	    &lt;span class="n"&gt;mode_val&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;mode_val&lt;/span&gt;
+
+&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;build_list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;get_mode_1&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+They'd use their existing knowledge and the 'find the largest' idiom
+to find the mode by:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;find the frequency of the first item and assume it's the mode so far&lt;/li&gt;
+&lt;li&gt;for each item in the list
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;find the frequency of that idem&lt;/li&gt;
+&lt;li&gt;if it occurs more than the mode so far then it becomes the new
+mode so far&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+There's a lot of good in this solution. The kids incrementally develop
+a solution, they use and exctend code and concepts they already know
+and understand and it's clear and understandable.
+&lt;/p&gt;
+
+&lt;p&gt;
+We would then run the code on larger and larger data sets and notice
+that it gets slow pretty quickly. This leads to an informal discussion
+of run time and the fact that there's hidden complexity – the call to
+&lt;code&gt;freq&lt;/code&gt; in the main loop introduces a linear component so we have a
+loop within a loop and an N&lt;sup&gt;2&lt;/sup&gt; routine.
+&lt;/p&gt;
+
+&lt;p&gt;
+The big takeaway is get a feel for run time and to be aware of hidden
+complexity. We then move to a linear solution by using a list as
+buckets. You can read more about that in the &lt;a href="https://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md"&gt;original post&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+What was interesting this time around was that most of the kids came
+up with a solution more like this:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;get_mode_2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="n"&gt;freqs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[]&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+       &lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_freq&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;item&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+       &lt;span class="n"&gt;freqs&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;mode_count&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;freqs&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="n"&gt;mode_value&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;enumerate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;freqs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+       &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;mode_count&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	   &lt;span class="n"&gt;mode_count&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;
+	   &lt;span class="n"&gt;mode_value&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;mode_value&lt;/span&gt;
+
+&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;build_list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_mode_2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Instead of calculating the frequency inside the loop they made a list
+of frequencies. &lt;code&gt;freq[0]&lt;/code&gt; had the frequency of &lt;code&gt;l[0]&lt;/code&gt;, &lt;code&gt;freq[1]&lt;/code&gt; the
+frequency of &lt;code&gt;l[1]&lt;/code&gt; etc. They then loop through that &lt;code&gt;freq&lt;/code&gt; list to
+find the largest element and that's the index of the mode value in the
+original list.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's functionally the same as the first solution but in some ways it's
+very different. They built the data set they needed ahead of time
+instead of calculating the data on the fly and they used the concept
+of parallel lists.
+&lt;/p&gt;
+
+&lt;p&gt;
+I like the solution and it didn't prevent us from getting to the run
+time stuff but this did give me something to think about. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Why did this class led them largely to a different solution than the
+classes I've taught in the class. There are a lot of things to ponder
+since it's a college class that meets twice a week with kids from a
+range of backgrounds (CS and otherwise) vs a high school class that
+meets 5 days a week and the kids all had the same in class experience
+prior to this lesson. Did I do something differently before hand? Some
+assignments? Something I modeled?  I'm not sure but it's something I'm
+going to ponder.
+&lt;/p&gt;
+
+&lt;p&gt;
+It will interesting to see if this was a one shot deal and my current
+class will solve problems as I predict moving forward or if I'm going
+to get to see a lot of new things.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>lessons</category><guid>http://cestlaz.github.io/posts/when-they-change-the-script/</guid><pubDate>Wed, 18 Oct 2017 15:41:49 GMT</pubDate></item><item><title>A test result is just a test result</title><link>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgcbf7542" class="outline-2"&gt;
 &lt;h2 id="orgcbf7542"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-orgcbf7542"&gt;
 &lt;p&gt;
@@ -925,125 +1091,4 @@ teach and to learn the subject area but at the same time, I think it's
 reasonable to require that they do so given the resources.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>teaching</category><guid>http://cestlaz.github.io/posts/three-times/</guid><pubDate>Fri, 21 Jul 2017 21:38:19 GMT</pubDate></item><item><title>CS Ed advocates should pay attention to greater ed issues</title><link>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3ffb853" class="outline-2"&gt;
-&lt;h2 id="org3ffb853"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3ffb853"&gt;
-&lt;p&gt;
-For anyone involved in K12 CS education, the past few years have been
-a wild ride. When I first tried to make inroads in the DOE decades ago
-I couldn't get through the door. Now, CS Education is everyone's
-darling. It's really amazing. It's been a combination of grass roots
-efforts by teachers, non profit education efforts such as &lt;a href="http://teals12k.org"&gt;TEALS&lt;/a&gt;, advocacy of
-groups like &lt;a href="http://code.org"&gt;Code.org&lt;/a&gt; and amazing individuals like &lt;a href="http://avc.com/2017/06/bearing-witness/"&gt;Fred Wilson&lt;/a&gt; who has
-probably done more to move the needle of CS Ed in NY than any other 10
-people combined.
-&lt;/p&gt;
-
-&lt;p&gt;
-While everyone agrees that to do CS education right at the K12 level
-we need great teachers and lots of them, everyone also knows that
-teachers voices are often unheard. The voices with the greatest weight
-belong to the large non-profits, principals, superintendents and
-local politicians. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Today's post is a plea to those with voices to think about the effects
-of their advocacy for CS Ed to the greater education landscape.
-&lt;/p&gt;
-
-&lt;p&gt;
-I started thinking about this recently as I've been developing the
-CS teacher certification programs for Hunter College. As I spoke to
-people across the nation I found that many of the efforts to
-developing teacher certification are what I call the "you take it you
-teach it" model. You take an abbreviated version of APCS-A and APCS-P
-and you're a certified CS teacher. Just about every real educator feels
-that this is ludicrous. Some feel that this can be a first step - get
-these credentials to get in the door and then you have three to five
-years to really learn your subject and craft. I'm good with that but I
-have a problem with anyone who says "you take it you teach it" is good
-enough and I've heard of a number of regions that are seriously
-considering it.
-&lt;/p&gt;
-
-&lt;p&gt;
-Why is this so bad and, I'd argue, dangerous? Not merely because we'll
-end up with substandard CS teachers for the foreseeable future but
-also because it undermines the teaching profession as a whole.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's no secret that public education is under attack. A number of
-states including Wisconsin, Arizona, Oklahoma, New York and Michigan
-have considered relaxing the standards to become a teacher to address
-a teacher shortage. In their twisted logic, the politicians and
-"reformers" say that we can't find enough qualified teachers because
-we've made it an untenable career so let's lower standards. You can
-argue that any current state's requirements are overly cumbersome but
-that's another conversation.
-&lt;/p&gt;
-
-&lt;p&gt;
-When CS Educators say that all that's needed to teach CS is to sit in
-on a two week APCS institute is saying that to teach any subject you
-don't need content expertise. This is dangerous to education as a
-whole and when power players in the CS Ed movement don't speak up
-otherwise or even worse that the stance that "you take it you teach
-it" is OK, we're undermining teaching as a profession. 
-&lt;/p&gt;
-
-&lt;p&gt;
-We need our heavy hitters to publicly and privately say that we need a
-short term entry into the profession but we absolutely need plans and
-pathways so that at the end of the day we have the best prepared
-teachers in our schools for CS and for all subjects.
-&lt;/p&gt;
-
-&lt;p&gt;
-Another issue is when as CS Educators we don't pay attention to the
-whole child. I was at a meeting of CSTA people  from about thirty
-states a few years ago. Someone asked "how can we advocate for CS when
-the school might use it as an excuse to get rid of music?" Cameron
-Wilson, at the time a lobbyist for the ACM said something to the
-effect of "I'm not concerned with other subjects, my concern is
-getting CS into the schools." I get it, he was employed to stump CS
-but we have to remember that we're only a piece of the puzzle. We want
-a seat at the table but we have to make sure that the table is
-populated with everyone needed to provide a great education for our
-kids. 
-&lt;/p&gt;
-
-&lt;p&gt;
-A final issue I'll mention here is how so many CS educators are so
-close to the College Board. It was very disturbing that so many CS Ed
-players were pushing for more students to take the APCS exam. Not the
-class, not some other CS class but the APCS exam. AP is an extremely
-controversial subject among teachers and many of us feel that too many
-kids take too many AP classes and certainly too many exams. Remember,
-the College Board is the organization that pushes things like the
-PSAT8/9 another meaningless but high stakes exam inflicted upon our
-kids at taxpayer expense. I understand that AP makes things easy -
-they have courses, curricula, etc. but we've given the college board
-an outsized influence on CS education and we're not paying attention
-to their outsized influence on education in general. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm just a small time teacher. I don't have a national voice. I'm
-urging those that do:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Look into what's going on in greater education. Look at the way
-public education has been under attack and why.&lt;/li&gt;
-&lt;li&gt;Look at the side affects of our choices - who we partner with and
-what policies we push.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-We might not agree on the right path but everyone with a voice in CS
-Education should be having hard conversations about this and then
-strongly advocating for the positions they feel correct.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</guid><pubDate>Tue, 18 Jul 2017 23:51:40 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>education</category><category>teaching</category><guid>http://cestlaz.github.io/posts/three-times/</guid><pubDate>Fri, 21 Jul 2017 21:38:19 GMT</pubDate></item></channel></rss>
