@@ -1,0 +1,146 @@
+#+BEGIN_COMMENT
+.. title: There's always something to learn (from your students)
+.. slug: when-they-change-the-script
+.. date: 2017-10-18 11:41:49 UTC-04:00
+.. tags: cs, education, lessons
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+One thing I've learned from teaching is that there's always something
+new to learn. For the kids, yes, but I'm talking about for the
+teacher.
+
+The other day, I taught a lesson I've taught many times. Find the mode
+of a data set. That's the problem that they solve but the lesson is
+really about run time complexity, hidden complexity and using data
+structures in alternate ways.
+
+I blogged about this [[https://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md][before]] so you can get an earlier take there
+although the code isn't formatted correctly due to blog conversions.
+
+As with the last time, the students  had already written code to find
+the largest value in a list and also to find the frequency of an item
+in a list.
+
+#+BEGIN_SRC python :results output :session
+  import random
+
+  def build_list(size,low,high):
+      l=[]
+      for i in range(size):
+          l.append(random.randrange(low,high))
+      return l
+
+  def get_max_value(l):
+      max_index=0
+      max_val=l[0]
+      for index,value in enumerate(l):
+          if value > max_val:
+              max_index = index
+              max_val = value
+      return max_val
+
+  def get_freq(l,requested_val):
+      count=0
+      for value in l:
+          if requested_val == value:
+              count = count + 1
+      return count
+
+#+END_SRC
+
+They had to write mode prior to the class. In the past, students would
+generally come up with something like this:
+
+#+BEGIN_SRC python :results output :session
+  def get_mode_1(l):
+      mode_val = l[0]
+      mode_freq = get_freq(l,mode_val)
+      for index,value in enumerate(l):
+          f = get_freq(l,value)
+          if f > mode_freq:
+              mode_freq = f
+              mode_val = value
+      return mode_val
+
+  l=build_list(20,1,20)
+  m=get_mode_1(l)
+#+END_SRC
+
+They'd use their existing knowledge and the 'find the largest' idiom
+to find the mode by:
+- find the frequency of the first item and assume it's the mode so far
+- for each item in the list
+  - find the frequency of that idem
+  - if it occurs more than the mode so far then it becomes the new
+    mode so far
+
+There's a lot of good in this solution. The kids incrementally develop
+a solution, they use and exctend code and concepts they already know
+and understand and it's clear and understandable.
+
+We would then run the code on larger and larger data sets and notice
+that it gets slow pretty quickly. This leads to an informal discussion
+of run time and the fact that there's hidden complexity -- the call to
+~freq~ in the main loop introduces a linear component so we have a
+loop within a loop and an N^2 routine.
+
+The big takeaway is get a feel for run time and to be aware of hidden
+complexity. We then move to a linear solution by using a list as
+buckets. You can read more about that in the [[https://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md][original post]].
+
+What was interesting this time around was that most of the kids came
+up with a solution more like this:
+
+#+BEGIN_SRC python :results output :session
+    def get_mode_2(l):
+        freqs = []
+        for item in l:
+           f = get_freq(l,item)
+           freqs.append(f)
+        mode_count  = freqs[0]
+        mode_value = l[0]
+        for index,value in enumerate(freqs):
+           if value > mode_count:
+               mode_count = value
+               mode_value = l[index]
+        return mode_value
+
+    l = build_list(20,1,20)
+    print(l)
+    m = get_mode_2(l)
+    print(m)
+#+END_SRC
+
+Instead of calculating the frequency inside the loop they made a list
+of frequencies. ~freq[0]~ had the frequency of ~l[0]~, ~freq[1]~ the
+frequency of ~l[1]~ etc. They then loop through that ~freq~ list to
+find the largest element and that's the index of the mode value in the
+original list.
+
+It's functionally the same as the first solution but in some ways it's
+very different. They built the data set they needed ahead of time
+instead of calculating the data on the fly and they used the concept
+of parallel lists.
+
+I like the solution and it didn't prevent us from getting to the run
+time stuff but this did give me something to think about. 
+
+Why did this class led them largely to a different solution than the
+classes I've taught in the class. There are a lot of things to ponder
+since it's a college class that meets twice a week with kids from a
+range of backgrounds (CS and otherwise) vs a high school class that
+meets 5 days a week and the kids all had the same in class experience
+prior to this lesson. Did I do something differently before hand? Some
+assignments? Something I modeled?  I'm not sure but it's something I'm
+going to ponder.
+
+It will interesting to see if this was a one shot deal and my current
+class will solve problems as I predict moving forward or if I'm going
+to get to see a lot of new things.
+
+
