@@ -3,103 +3,13 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about learning</title>
   <id>http://cestlaz.github.io/categories/learning.atom</id>
-  <updated>2017-09-23T16:15:33Z</updated>
+  <updated>2017-06-29T16:40:54Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/learning.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/learning/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
-  <entry>
-    <title>Using Emacs 36 - A Touch of Elisp</title>
-    <id>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</id>
-    <updated>2017-07-30T11:22:54-04:00</updated>
-    <published>2017-07-30T11:22:54-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/"/>
-    <summary type="html">&lt;div id="outline-container-org6733305" class="outline-2"&gt;
-&lt;h2 id="org6733305"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6733305"&gt;
-&lt;p&gt;
-I've been working on a vue.js project this summer. During the school
-year I really can't dive into code so it's been fun.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've already showed you most of the Emacs tools I use for
-development. Projectile, Ace-Window, IBuffer, Swiper / Ivy and
-all. One thing I couldn't easily do was arrange windows the way I
-wanted.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've been setting up Emacs with one large window and a couple of
-smaller ones:
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/touch-elisp.png" alt="touch-elisp.png"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-I can easily switch the buffer in the window and I can easily switch
-windows but what I wanted to do was swap the buffer in the large
-window with one of the smaller buffers and leave focus in the larger
-buffer:
-&lt;/p&gt;
-
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/touch-elisp2.png" alt="touch-elisp2.png"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;
-I started looking at perspective mode and persp mode but neither work
-with the latest Emacs. After poking around at other packages I
-realized that ace-window does most of what I wanted. Ace-window has a
-function that swaps the buffers in two windows named
-&lt;code&gt;ace-swap-window&lt;/code&gt;. The only problem is that it leaves the focus on the
-window you swap to not the one you started in. Ace-window also has
-&lt;code&gt;aw-flip-window&lt;/code&gt; which then returns the cursor to the previous window.
-&lt;/p&gt;
-
-&lt;p&gt;
-With a little elisp, we get the behavior I was looking for which I
-then bound to &lt;code&gt;C-1 z&lt;/code&gt;:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;z/swap-windowsn&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="s"&gt;""&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;interactive&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ace-swap-window&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;aw-flip-window&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;define-key&lt;/span&gt; &lt;span class="nv"&gt;z-map&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;kbd&lt;/span&gt; &lt;span class="s"&gt;"w"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="ss"&gt;'z/swap-windows&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;
-The video goes into more details but it shows that if you're not
-afraid to explore a bit you can pretty much get Emacs to do whatever
-you want.
-&lt;/p&gt;
-
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/NQhud2ZNd1w" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="emacs" label="emacs"/>
-    <category term="learning" label="learning"/>
-    <category term="tools" label="tools"/>
-  </entry>
   <entry>
     <title>Using Emacs 35 - Blogging</title>
     <id>http://cestlaz.github.io/posts/using-emacs-35-blogging/</id>
@@ -109,9 +19,9 @@ you want.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-35-blogging/"/>
-    <summary type="html">&lt;div id="outline-container-orged67dc5" class="outline-2"&gt;
-&lt;h2 id="orged67dc5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orged67dc5"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 Very little new Emacs in today's episode of Using Emacs. The video
 shows my old blogging workflow and what I'm playing with now.
