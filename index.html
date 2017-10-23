@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-32.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/catskills-2017/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/happy_ladybug/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,192 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/catskills-2017/" class="u-url">Catskills Conf 2017</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/happy_ladybug/" class="u-url">Early Interesting Problems - Happy Ladybugs</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/happy_ladybug/" rel="bookmark"><time class="published dt-published" datetime="2017-10-23T08:47:46-04:00" title="2017-10-23 08:47">2017-10-23 08:47</time></a></p>
+                <p class="commentline">            <a href="posts/happy_ladybug/#disqus_thread" data-disqus-identifier="cache/posts/happy_ladybug.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org367aeb0" class="outline-2">
+<h2 id="org367aeb0"></h2>
+<div class="outline-text-2" id="text-org367aeb0">
+<p>
+We all love interesting problems. The trouble is that it's hard to
+find suitably interesting problems for students when they're just
+learning the basics. In the very beginning the problems practically
+dictate the solution:
+</p>
+
+<ul class="org-ul">
+<li>loop over a list and add all the elements or calculate the sum of a
+list of integers.</li>
+<li>Determine if  number is prime</li>
+<li>Convert a word into pig-Latin</li>
+</ul>
+<p>
+It's not that there's no thought involved in solving these but the
+students already know the mechanics of solving these by hand so it's a
+direct translation into a program.
+</p>
+
+<p>
+This isn't a bad thing and it is important but it's fun when we get to the next
+level. I've found that a number of the <a href="http://hackerrank.com">Hacker Rank</a> archived
+competitions have "easy" problems that can be a good fit for
+beginners. One that I found and really like is <a href="https://www.hackerrank.com/challenges/happy-ladybugs">Happy Ladybugs</a> problem.
+</p>
+
+<p>
+The problems is basically as follows:
+</p>
+
+<p>
+You get a string of letters. Each letter represents a ladybug of a
+different color. Each letter also represents a location of the
+ladybug.  A space (or underscore in the actual problem) represents a
+free space. For example "AABC DDA" is a line of 2 A colored ladybugs
+followed by a B colored one, C colored one, a blank space, 2 D colored and then one
+more A colored. 
+</p>
+
+<p>
+You can rearrange the line of ladybugs by swapping any ladybug with a
+blank space.
+</p>
+
+<p>
+A ladybug is happy if it is next to another ladybug of the same
+color. The challenge is to determine if all the ladybugs can be made
+happy.
+</p>
+
+<p>
+I like this problem because while it is non-trivial it is very
+approachable. 
+</p>
+
+<p>
+To me, the key is that while you can rearrange the list you
+don't have to. You only have to determine if it is possible to make
+the ladybugs happy. You don't actually have to do so.
+</p>
+
+<p>
+The edge cases are pretty easy to deal with - a string of length one
+or two but then a little thought is required.
+</p>
+
+<p>
+The first insight is that if there are no spaces, you can't rearrange
+the ladybugs so all you have to do is scan through the string to test
+to see if every ladybug has a neighbor of the same color.
+</p>
+
+<p>
+The next insight, and the big one is that if you have at least one
+space you can arbitrarily re-order the string. You can show this is
+possible  by using a single space to swap any two elements. 
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">space</span> <span class="o">=</span> <span class="n">someletter</span>
+<span class="n">someletter</span> <span class="o">=</span> <span class="n">someotherletter</span>
+<span class="n">someotherletter</span> <span class="o">=</span> <span class="n">space</span>
+</pre></div>
+
+<p>
+The final insight is that since you can arbitrarily re-order the
+ladybugs as long as you have at least 2 of each color, you can make
+them all happy.
+</p>
+
+<p>
+Since my class is currently just starting dictionaries in Python we
+solved this with lists and then transitioned to dictionaries.
+</p>
+
+<p>
+Here's a dictionary based solution:
+</p>
+
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">are_happy</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="sd">'''</span>
+<span class="sd">    This might miss some of the real edge cases in the hackerrank</span>
+<span class="sd">    problem. I haven't read the problem carefully in over a year and </span>
+<span class="sd">    forget what it specified for things like lists of only spaces,</span>
+<span class="sd">    lists with only one bug etc.</span>
+
+<span class="sd">    Also, the Hackerrank question uses an underscore (_) instead of a space.</span>
+<span class="sd">    '''</span>
+    <span class="c1"># handle a string of less than 2 ladybugs</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">&lt;</span><span class="mi">2</span><span class="p">:</span>
+	<span class="k">return</span> <span class="bp">False</span>
+
+    <span class="c1"># handle the string of 2 ladybugs - both must be the same and not a space</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">==</span><span class="mi">2</span><span class="p">:</span>
+	<span class="k">return</span> <span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">and</span> <span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">' '</span>
+
+
+    <span class="c1"># handle the case of no spaces </span>
+    <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">' '</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+	<span class="c1"># no spaces, every item must be next to one of the same color</span>
+	<span class="c1"># so we loop from 1 to len-1 and for each item</span>
+	<span class="c1"># check the one before and the one after</span>
+	<span class="c1"># if we ever have an unhappy bug, we can just return False</span>
+	<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+	    <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+		<span class="k">return</span> <span class="bp">False</span>
+
+	<span class="c1"># if we ever get here every bug has at least one neighbor of the same color</span>
+	<span class="k">return</span> <span class="bp">True</span>
+
+    <span class="c1"># if we get here it means there's at least one space so we can rearrange the bugs</span>
+    <span class="c1"># however we please so as long as there are at least 2 bugs of each color</span>
+    <span class="c1"># we can make them all happy</span>
+
+    <span class="c1"># replace the spaces with "" since we don't want to count them</span>
+    <span class="c1"># Since we know they were in the string we can rearrange but</span>
+    <span class="c1"># they're no longer needed</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">" "</span><span class="p">,</span><span class="s2">""</span><span class="p">)</span>
+
+    <span class="c1"># tally up all the bugs to see if there are at least 2 of each</span>
+    <span class="n">bugcounts</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">bug</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+	<span class="n">bugcounts</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">bug</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># set to 0 the first time we see this key</span>
+	<span class="n">bugcounts</span><span class="p">[</span><span class="n">bug</span><span class="p">]</span><span class="o">=</span><span class="n">bugcounts</span><span class="p">[</span><span class="n">bug</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span>
+
+
+    <span class="n">counts</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">bugcounts</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+
+    <span class="c1"># if there is any value of 1 in the counts then there's a lone ladybug</span>
+    <span class="c1"># that can't be made happy</span>
+    <span class="c1"># so we return True (happy) if there are 0 counts of 1 in our list </span>
+    <span class="k">return</span> <span class="n">counts</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> 
+
+
+<span class="n">bugs</span><span class="o">=</span><span class="s2">"abaccbe ff eggggggg"</span>
+<span class="k">print</span><span class="p">(</span><span class="n">bugs</span><span class="p">)</span>
+<span class="n">are_happy</span><span class="p">(</span><span class="n">bugs</span><span class="p">)</span>
+</pre></div>
+
+<p>
+I love problems like these. 
+</p>
+
+<p>
+I just wish there was an easy way to find all contest problems of a
+certain level like "easy" or "medium." If anybody knows please share
+in the comments.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/catskills-2017/" class="u-url">Catskills Conf 2017</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -102,9 +287,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgfe78469" class="outline-2">
-<h2 id="orgfe78469"></h2>
-<div class="outline-text-2" id="text-orgfe78469">
+    <div id="outline-container-org8b4f41a" class="outline-2">
+<h2 id="org8b4f41a"></h2>
+<div class="outline-text-2" id="text-org8b4f41a">
 
 <div class="figure">
 <p><img src="img/cc-2017/cc1.JPG" alt="cc1.JPG"></p>
@@ -228,9 +413,9 @@ hoping that the tradition can continue for many more.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgd706874" class="outline-2">
-<h2 id="orgd706874"></h2>
-<div class="outline-text-2" id="text-orgd706874">
+    <div id="outline-container-org302a44d" class="outline-2">
+<h2 id="org302a44d"></h2>
+<div class="outline-text-2" id="text-org302a44d">
 <p>
 Today was my 50th Birthday. I'm usually pretty low key on birthdays
 and today was no different. I got up, exercised, went to work, taught
@@ -265,9 +450,9 @@ pretty terrific as a teacher.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org903f3a8" class="outline-2">
-<h2 id="org903f3a8"></h2>
-<div class="outline-text-2" id="text-org903f3a8">
+    <div id="outline-container-org26939e9" class="outline-2">
+<h2 id="org26939e9"></h2>
+<div class="outline-text-2" id="text-org26939e9">
 <p>
 One thing I've learned from teaching is that there's always something
 new to learn. For the kids, yes, but I'm talking about for the
@@ -445,9 +630,9 @@ to get to see a lot of new things.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orge28ce54" class="outline-2">
-<h2 id="orge28ce54"></h2>
-<div class="outline-text-2" id="text-orge28ce54">
+    <div id="outline-container-org249e92a" class="outline-2">
+<h2 id="org249e92a"></h2>
+<div class="outline-text-2" id="text-org249e92a">
 <p>
 This past weekend was <a href="http://catskillsconf.com">Catskillsconf</a> - my favorite event of the
 year. I spent the weekend up in Ulster County with a bunch of my
@@ -463,9 +648,9 @@ are indicative of a good curriculum or good professional development (PD).
 </div>
 </div>
 
-<div id="outline-container-org6694b72" class="outline-2">
-<h2 id="org6694b72">TL;DR - NO!!!!!</h2>
-<div class="outline-text-2" id="text-org6694b72">
+<div id="outline-container-orgb89d619" class="outline-2">
+<h2 id="orgb89d619">TL;DR - NO!!!!!</h2>
+<div class="outline-text-2" id="text-orgb89d619">
 <p>
 Further, anyone who thinks that a set of exam results can tell you
 that a particular PD sequence or curriculum is good shouldn't be
@@ -568,9 +753,9 @@ there, there's lots of good stuff to read.</div>
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org31b2896" class="outline-2">
-<h2 id="org31b2896"></h2>
-<div class="outline-text-2" id="text-org31b2896">
+    <div id="outline-container-org9086a26" class="outline-2">
+<h2 id="org9086a26"></h2>
+<div class="outline-text-2" id="text-org9086a26">
 <p>
 The big push at last year's CSTA conference was the release of the new
 CSTA K12 standards. It seemed that every other session was pushing
@@ -864,9 +1049,9 @@ opinions, and then act on what they believe is right.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org5533ee1" class="outline-2">
-<h2 id="org5533ee1"></h2>
-<div class="outline-text-2" id="text-org5533ee1">
+    <div id="outline-container-orga16f212" class="outline-2">
+<h2 id="orga16f212"></h2>
+<div class="outline-text-2" id="text-orga16f212">
 <p>
 I just read Jeff Yearout's recent post titled <a href="http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html">The Beginner's Garden of
 Concepts</a>. Not directly related but it got me thinking about
@@ -978,9 +1163,9 @@ helpful to our students if we do.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgc30b2b8" class="outline-2">
-<h2 id="orgc30b2b8"></h2>
-<div class="outline-text-2" id="text-orgc30b2b8">
+    <div id="outline-container-org89192d3" class="outline-2">
+<h2 id="org89192d3"></h2>
+<div class="outline-text-2" id="text-org89192d3">
 <p>
 It's no secret that I'm something of an old curmudgeon in the K12 CS
 Education world and I've been critical of a number of initiatives and
@@ -1140,9 +1325,9 @@ rather than something appropriate and good.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgb6a0cee" class="outline-2">
-<h2 id="orgb6a0cee"></h2>
-<div class="outline-text-2" id="text-orgb6a0cee">
+    <div id="outline-container-org717bfbf" class="outline-2">
+<h2 id="org717bfbf"></h2>
+<div class="outline-text-2" id="text-org717bfbf">
 <p>
 I've been meaning to get back to making Emacs videos but I've been
 having trouble figuring out what to record.
@@ -1185,9 +1370,9 @@ but if like that type of interface, definitely check Treemacs out.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgf865a3f" class="outline-2">
-<h2 id="orgf865a3f"></h2>
-<div class="outline-text-2" id="text-orgf865a3f">
+    <div id="outline-container-org6b3cf9d" class="outline-2">
+<h2 id="org6b3cf9d"></h2>
+<div class="outline-text-2" id="text-org6b3cf9d">
 <p>
 Saw this tweet the other day so I though I would try to plug the
 <a href="https://github.com/zamansky/awesome-cs-education">Awesome CS Education</a> list I started on GitHub:
@@ -1230,63 +1415,6 @@ So, there you have it. If you have a blog or resource to share please
 submit a pull request. Over time this could be a terrific single
 starting point for educators to get to a wealth of resources.
 </p>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/new-tool-thonny/" class="u-url">New Term New Tool - Thonny, a Python IDE</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/new-tool-thonny/" rel="bookmark"><time class="published dt-published" datetime="2017-09-21T07:31:42-04:00" title="2017-09-21 07:31">2017-09-21 07:31</time></a></p>
-                <p class="commentline">            <a href="posts/new-tool-thonny/#disqus_thread" data-disqus-identifier="cache/posts/new-tool-thonny.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-orgddcb71a" class="outline-2">
-<h2 id="orgddcb71a"></h2>
-<div class="outline-text-2" id="text-orgddcb71a">
-<p>
-Last year I <a href="https://cestlaz.github.io/posts/new-term-new-tool-replit">wrote about</a> <a href="http://repl.it">repl.it</a>, an online IDE that supports multiple
-languages. At the time it had some rudimentary classroom support and
-since I started using it, repl.it has become better and better. I
-used it last year with my class because I had to start the year in a
-lab where I couldn't easily install my own software. I'll continue to
-use repl.it - mostly for it's ability to schedule publish and manage
-assignments but when possible, I like having my students work
-locally. 
-</p>
-
-<p>
-This year I'm excited about another tool - <a href="http://thonny.org">Thonny</a>. Thonny's a simple
-Python IDE designed for beginners. I discovered it last year but at a
-time when it was impractical for me to use with my students. This
-year I can and I'm really liking it. I'm still an Emacs guy and will
-continue to use Emacs for my python development (<a href="http://cestlaz.github.io/posts/using-emacs-12-python/">video 1</a>, <a href="http://cestlaz.github.io/posts/using-emacs-13-yasnippet">video 2</a>) but
-for beginners I think Thonny is the way to go.
-</p>
-
-<p>
-Some of Thonny's highlights:
-</p>
-<ul class="org-ul">
-<li>An integrated Python 3 virtual environment making for ease of
-installation and consistency across student installs</li>
-<li>A debugger that shows how expressions are evaluated</li>
-<li>Great visualizations of function calls that make it easier to
-understand the call stack and scope</li>
-<li>The ability to look at memory to understand references.</li>
-</ul>
-<p>
-Rather than go into the gory details in text, I put together this
-video:
-</p>
-
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lWaCl0WjNZI" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
     </div>

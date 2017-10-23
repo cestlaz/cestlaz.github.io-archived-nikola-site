@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Early Interesting Problems - Happy Ladybugs | C'est la Z</title>
+<link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/theme.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/custom.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="../../index.atom">
+<link rel="canonical" href="http://cestlaz.github.io/posts/happy_ladybug/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
+<link rel="prev" href="../catskills-2017/" title="Catskills Conf 2017" type="text/html">
+<meta property="og:site_name" content="C'est la Z">
+<meta property="og:title" content="Early Interesting Problems - Happy Ladybugs">
+<meta property="og:url" content="http://cestlaz.github.io/posts/happy_ladybug/">
+<meta property="og:description" content="We all love interesting problems. The trouble is that it's hard to
+find suitably interesting problems for students when they're just
+learning the basics. In the very beginning the problems practically">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-10-23T08:47:46-04:00">
+<meta property="article:tag" content="cs">
+<meta property="article:tag" content="problems">
+<meta property="article:tag" content="teaching">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+
+
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cestlaz.github.io/">
+						<img class="zlogo" src="../../assets/images/thluffy.jpg" id="logo"><span class="zname" id="blog-title">C'est la Z</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav navbar-right zmenu">
+<li class="zitem">
+<a href="../../categories">Tags</a>
+                </li>
+<li class="zitem">
+<a href="../../stories/emacs">Emacs</a>
+                </li>
+<li class="zitem">
+<a href="../../stories/flask">Flask</a>
+                </li>
+<li class="zitem">
+<a href="http://github.com/zamansky">GitHub</a>
+                </li>
+<li class="zitem">
+<a href="../../archive.html">Archive</a>
+                </li>
+<li class="zitem">
+<a href="../../stories/about">About</a>
+                </li>
+<li class="zitem">
+<a href="../../rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><h2 class="text-center">
+		Musings about education, computer science,</h2>
+		<h3 class="text-center">and maybe a few other miscellaneous topics.
+</h3>
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+		<div class="body-content">
+				<!--Body content-->
+				<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-8">
+				
+								
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Early Interesting Problems - Happy Ladybugs</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                    Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-10-23T08:47:46-04:00" itemprop="datePublished" title="2017-10-23 08:47">2017-10-23 08:47</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/happy_ladybug.html">Comments</a>
+
+
+            
+        </p>
+</div>
+        
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div id="outline-container-org367aeb0" class="outline-2">
+<h2 id="org367aeb0"></h2>
+<div class="outline-text-2" id="text-org367aeb0">
+<p>
+We all love interesting problems. The trouble is that it's hard to
+find suitably interesting problems for students when they're just
+learning the basics. In the very beginning the problems practically
+dictate the solution:
+</p>
+
+<ul class="org-ul">
+<li>loop over a list and add all the elements or calculate the sum of a
+list of integers.</li>
+<li>Determine if  number is prime</li>
+<li>Convert a word into pig-Latin</li>
+</ul>
+<p>
+It's not that there's no thought involved in solving these but the
+students already know the mechanics of solving these by hand so it's a
+direct translation into a program.
+</p>
+
+<p>
+This isn't a bad thing and it is important but it's fun when we get to the next
+level. I've found that a number of the <a href="http://hackerrank.com">Hacker Rank</a> archived
+competitions have "easy" problems that can be a good fit for
+beginners. One that I found and really like is <a href="https://www.hackerrank.com/challenges/happy-ladybugs">Happy Ladybugs</a> problem.
+</p>
+
+<p>
+The problems is basically as follows:
+</p>
+
+<p>
+You get a string of letters. Each letter represents a ladybug of a
+different color. Each letter also represents a location of the
+ladybug.  A space (or underscore in the actual problem) represents a
+free space. For example "AABC DDA" is a line of 2 A colored ladybugs
+followed by a B colored one, C colored one, a blank space, 2 D colored and then one
+more A colored. 
+</p>
+
+<p>
+You can rearrange the line of ladybugs by swapping any ladybug with a
+blank space.
+</p>
+
+<p>
+A ladybug is happy if it is next to another ladybug of the same
+color. The challenge is to determine if all the ladybugs can be made
+happy.
+</p>
+
+<p>
+I like this problem because while it is non-trivial it is very
+approachable. 
+</p>
+
+<p>
+To me, the key is that while you can rearrange the list you
+don't have to. You only have to determine if it is possible to make
+the ladybugs happy. You don't actually have to do so.
+</p>
+
+<p>
+The edge cases are pretty easy to deal with - a string of length one
+or two but then a little thought is required.
+</p>
+
+<p>
+The first insight is that if there are no spaces, you can't rearrange
+the ladybugs so all you have to do is scan through the string to test
+to see if every ladybug has a neighbor of the same color.
+</p>
+
+<p>
+The next insight, and the big one is that if you have at least one
+space you can arbitrarily re-order the string. You can show this is
+possible  by using a single space to swap any two elements. 
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">space</span> <span class="o">=</span> <span class="n">someletter</span>
+<span class="n">someletter</span> <span class="o">=</span> <span class="n">someotherletter</span>
+<span class="n">someotherletter</span> <span class="o">=</span> <span class="n">space</span>
+</pre></div>
+
+<p>
+The final insight is that since you can arbitrarily re-order the
+ladybugs as long as you have at least 2 of each color, you can make
+them all happy.
+</p>
+
+<p>
+Since my class is currently just starting dictionaries in Python we
+solved this with lists and then transitioned to dictionaries.
+</p>
+
+<p>
+Here's a dictionary based solution:
+</p>
+
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">are_happy</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="sd">'''</span>
+<span class="sd">    This might miss some of the real edge cases in the hackerrank</span>
+<span class="sd">    problem. I haven't read the problem carefully in over a year and </span>
+<span class="sd">    forget what it specified for things like lists of only spaces,</span>
+<span class="sd">    lists with only one bug etc.</span>
+
+<span class="sd">    Also, the Hackerrank question uses an underscore (_) instead of a space.</span>
+<span class="sd">    '''</span>
+    <span class="c1"># handle a string of less than 2 ladybugs</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">&lt;</span><span class="mi">2</span><span class="p">:</span>
+	<span class="k">return</span> <span class="bp">False</span>
+
+    <span class="c1"># handle the string of 2 ladybugs - both must be the same and not a space</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">==</span><span class="mi">2</span><span class="p">:</span>
+	<span class="k">return</span> <span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">and</span> <span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">' '</span>
+
+
+    <span class="c1"># handle the case of no spaces </span>
+    <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">' '</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+	<span class="c1"># no spaces, every item must be next to one of the same color</span>
+	<span class="c1"># so we loop from 1 to len-1 and for each item</span>
+	<span class="c1"># check the one before and the one after</span>
+	<span class="c1"># if we ever have an unhappy bug, we can just return False</span>
+	<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+	    <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+		<span class="k">return</span> <span class="bp">False</span>
+
+	<span class="c1"># if we ever get here every bug has at least one neighbor of the same color</span>
+	<span class="k">return</span> <span class="bp">True</span>
+
+    <span class="c1"># if we get here it means there's at least one space so we can rearrange the bugs</span>
+    <span class="c1"># however we please so as long as there are at least 2 bugs of each color</span>
+    <span class="c1"># we can make them all happy</span>
+
+    <span class="c1"># replace the spaces with "" since we don't want to count them</span>
+    <span class="c1"># Since we know they were in the string we can rearrange but</span>
+    <span class="c1"># they're no longer needed</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">" "</span><span class="p">,</span><span class="s2">""</span><span class="p">)</span>
+
+    <span class="c1"># tally up all the bugs to see if there are at least 2 of each</span>
+    <span class="n">bugcounts</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">bug</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+	<span class="n">bugcounts</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">bug</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># set to 0 the first time we see this key</span>
+	<span class="n">bugcounts</span><span class="p">[</span><span class="n">bug</span><span class="p">]</span><span class="o">=</span><span class="n">bugcounts</span><span class="p">[</span><span class="n">bug</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span>
+
+
+    <span class="n">counts</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">bugcounts</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+
+    <span class="c1"># if there is any value of 1 in the counts then there's a lone ladybug</span>
+    <span class="c1"># that can't be made happy</span>
+    <span class="c1"># so we return True (happy) if there are 0 counts of 1 in our list </span>
+    <span class="k">return</span> <span class="n">counts</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> 
+
+
+<span class="n">bugs</span><span class="o">=</span><span class="s2">"abaccbe ff eggggggg"</span>
+<span class="k">print</span><span class="p">(</span><span class="n">bugs</span><span class="p">)</span>
+<span class="n">are_happy</span><span class="p">(</span><span class="n">bugs</span><span class="p">)</span>
+</pre></div>
+
+<p>
+I love problems like these. 
+</p>
+
+<p>
+I just wish there was an easy way to find all contest problems of a
+certain level like "easy" or "medium." If anybody knows please share
+in the comments.
+</p>
+</div>
+</div>
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_google_plusone_share"></a>
+<a class="addthis_button_hackernews"></a>
+<a class="addthis_button_reddit"></a>
+<a class="addthis_button_gmail"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
+</div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/cs/" rel="tag">cs</a></li>
+            <li><a class="tag p-category" href="../../categories/problems/" rel="tag">problems</a></li>
+            <li><a class="tag p-category" href="../../categories/teaching/" rel="tag">teaching</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../catskills-2017/" rel="prev" title="Catskills Conf 2017">Previous post</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
+                        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="cestlaz",
+            disqus_url="http://cestlaz.github.io/posts/happy_ladybug/",
+        disqus_title="Early Interesting Problems - Happy Ladybugs",
+        disqus_identifier="cache/posts/happy_ladybug.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+						<div class="col-md-3">
+                                                <br><div>
+ <!-- DuckDuckGo custom search -->
+ <form method="get" id="search" action="https://duckduckgo.com/" class="navbar-form pull-left">
+ <input type="hidden" name="sites" value="http://cestlaz.github.io"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+ <!-- End of custom search -->
+ </div>
+<br><br><!-- feedburner subscribe via email --><form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CestLaZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+<p>Enter your email address:</p>
+<p><input type="text" style="width:140px" name="email"></p>
+<input type="hidden" value="CestLaZ" name="uri"><input type="hidden" name="loc" value="en_US"><input type="submit" value="Subscribe"><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p>
+</form>
+								<!--  feedburner subscribe end -->
+
+
+<!-- Twitter sidebar start -->
+								<table class="table"><tr><td>
+												<a class="twitter-timeline" href="https://twitter.com/zamansky" data-widget-id="251117725303312385">Tweets by @zamansky</a>
+												<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</td></tr></table>
+<!-- Twitter sidebar end -->
+</div>
+						<!--End of body content-->
+
+						<footer id="footer">
+								Contents © 2017         <a href="mailto:zamansky@gmail.com">Mike Zamansky</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+								
+						</footer>
+</div>
+		</div>
+
+		<div>
+				<!-- analytics MZ -->
+
+
+<!-- statcounter start -->
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11478370; 
+var sc_invisible=1; 
+var sc_security="c7fbcace"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="real time web
+analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11478370/0/c7fbcace/1/" alt="real
+time web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+<!-- statcounted end -->
+
+				<!-- getclicky tracking code -->
+				<a title="Google Analytics Alternative" href="http://clicky.com/100530816"><img alt="Google Analytics Alternative" src="//static.getclicky.com/media/links/badge.gif" border="0"></a>
+				<script src="//static.getclicky.com/js" type="text/javascript"></script><script type="text/javascript">try{ clicky.init(100530816); }catch(e){}</script><noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100530816ns.gif"></p></noscript>
+				<!-- endgetclicky -->
+
+				<!-- google analytics code -->
+				<script type="text/javascript">
+				 var _gaq = _gaq || [];
+				 _gaq.push(['_setAccount', 'UA-35203750-1']);
+				 _gaq.push(['_trackPageview']);
+				 (function() {
+						 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+						 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+						 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				 })();
+				</script><!-- end google analytics -->
+</div>
+		
+		            <script src="../../assets/js/jquery.min.js"></script><script src="../../assets/js/bootstrap.min.js"></script><script src="../../assets/js/moment-with-locales.min.js"></script><script src="../../assets/js/fancydates.js"></script><script src="../../assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+		 moment.locale("en");
+		 fancydates(0, "YYYY-MM-DD HH:mm");
+		</script><!-- end fancy dates -->
+</div>
+</body>
+</html>

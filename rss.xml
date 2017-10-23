@@ -1,7 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link type="application/rss+xml" href="http://cestlaz.github.io/rss.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 22 Oct 2017 00:52:55 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Catskills Conf 2017</title><link>http://cestlaz.github.io/posts/catskills-2017/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgfe78469" class="outline-2"&gt;
-&lt;h2 id="orgfe78469"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgfe78469"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link type="application/rss+xml" rel="self" href="http://cestlaz.github.io/rss.xml"></atom:link><language>en</language><lastBuildDate>Mon, 23 Oct 2017 12:51:43 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Early Interesting Problems - Happy Ladybugs</title><link>http://cestlaz.github.io/posts/happy_ladybug/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org367aeb0" class="outline-2"&gt;
+&lt;h2 id="org367aeb0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org367aeb0"&gt;
+&lt;p&gt;
+We all love interesting problems. The trouble is that it's hard to
+find suitably interesting problems for students when they're just
+learning the basics. In the very beginning the problems practically
+dictate the solution:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;loop over a list and add all the elements or calculate the sum of a
+list of integers.&lt;/li&gt;
+&lt;li&gt;Determine if  number is prime&lt;/li&gt;
+&lt;li&gt;Convert a word into pig-Latin&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+It's not that there's no thought involved in solving these but the
+students already know the mechanics of solving these by hand so it's a
+direct translation into a program.
+&lt;/p&gt;
+
+&lt;p&gt;
+This isn't a bad thing and it is important but it's fun when we get to the next
+level. I've found that a number of the &lt;a href="http://hackerrank.com"&gt;Hacker Rank&lt;/a&gt; archived
+competitions have "easy" problems that can be a good fit for
+beginners. One that I found and really like is &lt;a href="https://www.hackerrank.com/challenges/happy-ladybugs"&gt;Happy Ladybugs&lt;/a&gt; problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+The problems is basically as follows:
+&lt;/p&gt;
+
+&lt;p&gt;
+You get a string of letters. Each letter represents a ladybug of a
+different color. Each letter also represents a location of the
+ladybug.  A space (or underscore in the actual problem) represents a
+free space. For example "AABC DDA" is a line of 2 A colored ladybugs
+followed by a B colored one, C colored one, a blank space, 2 D colored and then one
+more A colored. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You can rearrange the line of ladybugs by swapping any ladybug with a
+blank space.
+&lt;/p&gt;
+
+&lt;p&gt;
+A ladybug is happy if it is next to another ladybug of the same
+color. The challenge is to determine if all the ladybugs can be made
+happy.
+&lt;/p&gt;
+
+&lt;p&gt;
+I like this problem because while it is non-trivial it is very
+approachable. 
+&lt;/p&gt;
+
+&lt;p&gt;
+To me, the key is that while you can rearrange the list you
+don't have to. You only have to determine if it is possible to make
+the ladybugs happy. You don't actually have to do so.
+&lt;/p&gt;
+
+&lt;p&gt;
+The edge cases are pretty easy to deal with - a string of length one
+or two but then a little thought is required.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first insight is that if there are no spaces, you can't rearrange
+the ladybugs so all you have to do is scan through the string to test
+to see if every ladybug has a neighbor of the same color.
+&lt;/p&gt;
+
+&lt;p&gt;
+The next insight, and the big one is that if you have at least one
+space you can arbitrarily re-order the string. You can show this is
+possible  by using a single space to swap any two elements. 
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;space&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;someletter&lt;/span&gt;
+&lt;span class="n"&gt;someletter&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;someotherletter&lt;/span&gt;
+&lt;span class="n"&gt;someotherletter&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;space&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The final insight is that since you can arbitrarily re-order the
+ladybugs as long as you have at least 2 of each color, you can make
+them all happy.
+&lt;/p&gt;
+
+&lt;p&gt;
+Since my class is currently just starting dictionaries in Python we
+solved this with lists and then transitioned to dictionaries.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's a dictionary based solution:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;are_happy&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;'''&lt;/span&gt;
+&lt;span class="sd"&gt;    This might miss some of the real edge cases in the hackerrank&lt;/span&gt;
+&lt;span class="sd"&gt;    problem. I haven't read the problem carefully in over a year and &lt;/span&gt;
+&lt;span class="sd"&gt;    forget what it specified for things like lists of only spaces,&lt;/span&gt;
+&lt;span class="sd"&gt;    lists with only one bug etc.&lt;/span&gt;
+
+&lt;span class="sd"&gt;    Also, the Hackerrank question uses an underscore (_) instead of a space.&lt;/span&gt;
+&lt;span class="sd"&gt;    '''&lt;/span&gt;
+    &lt;span class="c1"&gt;# handle a string of less than 2 ladybugs&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;False&lt;/span&gt;
+
+    &lt;span class="c1"&gt;# handle the string of 2 ladybugs - both must be the same and not a space&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="s1"&gt;' '&lt;/span&gt;
+
+
+    &lt;span class="c1"&gt;# handle the case of no spaces &lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;' '&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="c1"&gt;# no spaces, every item must be next to one of the same color&lt;/span&gt;
+	&lt;span class="c1"&gt;# so we loop from 1 to len-1 and for each item&lt;/span&gt;
+	&lt;span class="c1"&gt;# check the one before and the one after&lt;/span&gt;
+	&lt;span class="c1"&gt;# if we ever have an unhappy bug, we can just return False&lt;/span&gt;
+	&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
+		&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;False&lt;/span&gt;
+
+	&lt;span class="c1"&gt;# if we ever get here every bug has at least one neighbor of the same color&lt;/span&gt;
+	&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;
+
+    &lt;span class="c1"&gt;# if we get here it means there's at least one space so we can rearrange the bugs&lt;/span&gt;
+    &lt;span class="c1"&gt;# however we please so as long as there are at least 2 bugs of each color&lt;/span&gt;
+    &lt;span class="c1"&gt;# we can make them all happy&lt;/span&gt;
+
+    &lt;span class="c1"&gt;# replace the spaces with "" since we don't want to count them&lt;/span&gt;
+    &lt;span class="c1"&gt;# Since we know they were in the string we can rearrange but&lt;/span&gt;
+    &lt;span class="c1"&gt;# they're no longer needed&lt;/span&gt;
+    &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;" "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s2"&gt;""&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="c1"&gt;# tally up all the bugs to see if there are at least 2 of each&lt;/span&gt;
+    &lt;span class="n"&gt;bugcounts&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;bug&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="n"&gt;bugcounts&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setdefault&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bug&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# set to 0 the first time we see this key&lt;/span&gt;
+	&lt;span class="n"&gt;bugcounts&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;bug&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;bugcounts&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;bug&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+
+
+    &lt;span class="n"&gt;counts&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bugcounts&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;values&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+
+    &lt;span class="c1"&gt;# if there is any value of 1 in the counts then there's a lone ladybug&lt;/span&gt;
+    &lt;span class="c1"&gt;# that can't be made happy&lt;/span&gt;
+    &lt;span class="c1"&gt;# so we return True (happy) if there are 0 counts of 1 in our list &lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;counts&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; 
+
+
+&lt;span class="n"&gt;bugs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"abaccbe ff eggggggg"&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bugs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;are_happy&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bugs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+I love problems like these. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I just wish there was an easy way to find all contest problems of a
+certain level like "easy" or "medium." If anybody knows please share
+in the comments.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>problems</category><category>teaching</category><guid>http://cestlaz.github.io/posts/happy_ladybug/</guid><pubDate>Mon, 23 Oct 2017 12:47:46 GMT</pubDate></item><item><title>Catskills Conf 2017</title><link>http://cestlaz.github.io/posts/catskills-2017/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8b4f41a" class="outline-2"&gt;
+&lt;h2 id="org8b4f41a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8b4f41a"&gt;
 
 &lt;div class="figure"&gt;
 &lt;p&gt;&lt;img src="http://cestlaz.github.io/img/cc-2017/cc1.JPG" alt="cc1.JPG"&gt;
@@ -117,9 +289,9 @@ Catskills Conf in the Fall for each of the last three years. Here's
 hoping that the tradition can continue for many more.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/catskills-2017/</guid><pubDate>Sun, 22 Oct 2017 00:46:49 GMT</pubDate></item><item><title>It's nice to be appreciated</title><link>http://cestlaz.github.io/posts/nice-appreciated/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd706874" class="outline-2"&gt;
-&lt;h2 id="orgd706874"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd706874"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/catskills-2017/</guid><pubDate>Sun, 22 Oct 2017 00:46:49 GMT</pubDate></item><item><title>It's nice to be appreciated</title><link>http://cestlaz.github.io/posts/nice-appreciated/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org302a44d" class="outline-2"&gt;
+&lt;h2 id="org302a44d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org302a44d"&gt;
 &lt;p&gt;
 Today was my 50th Birthday. I'm usually pretty low key on birthdays
 and today was no different. I got up, exercised, went to work, taught
@@ -141,9 +313,9 @@ We don't make the big bucks but little things like this make me feel
 pretty terrific as a teacher.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/nice-appreciated/</guid><pubDate>Thu, 19 Oct 2017 21:27:53 GMT</pubDate></item><item><title>There's always something to learn (from your students)</title><link>http://cestlaz.github.io/posts/when-they-change-the-script/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org903f3a8" class="outline-2"&gt;
-&lt;h2 id="org903f3a8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org903f3a8"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/nice-appreciated/</guid><pubDate>Thu, 19 Oct 2017 21:27:53 GMT</pubDate></item><item><title>There's always something to learn (from your students)</title><link>http://cestlaz.github.io/posts/when-they-change-the-script/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org26939e9" class="outline-2"&gt;
+&lt;h2 id="org26939e9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org26939e9"&gt;
 &lt;p&gt;
 One thing I've learned from teaching is that there's always something
 new to learn. For the kids, yes, but I'm talking about for the
@@ -307,9 +479,9 @@ class will solve problems as I predict moving forward or if I'm going
 to get to see a lot of new things.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><category>lessons</category><guid>http://cestlaz.github.io/posts/when-they-change-the-script/</guid><pubDate>Wed, 18 Oct 2017 15:41:49 GMT</pubDate></item><item><title>A test result is just a test result</title><link>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge28ce54" class="outline-2"&gt;
-&lt;h2 id="orge28ce54"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge28ce54"&gt;
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>lessons</category><guid>http://cestlaz.github.io/posts/when-they-change-the-script/</guid><pubDate>Wed, 18 Oct 2017 15:41:49 GMT</pubDate></item><item><title>A test result is just a test result</title><link>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org249e92a" class="outline-2"&gt;
+&lt;h2 id="org249e92a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org249e92a"&gt;
 &lt;p&gt;
 This past weekend was &lt;a href="http://catskillsconf.com"&gt;Catskillsconf&lt;/a&gt; - my favorite event of the
 year. I spent the weekend up in Ulster County with a bunch of my
@@ -325,9 +497,9 @@ are indicative of a good curriculum or good professional development (PD).
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org6694b72" class="outline-2"&gt;
-&lt;h2 id="org6694b72"&gt;TL;DR - NO!!!!!&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6694b72"&gt;
+&lt;div id="outline-container-orgb89d619" class="outline-2"&gt;
+&lt;h2 id="orgb89d619"&gt;TL;DR - NO!!!!!&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb89d619"&gt;
 &lt;p&gt;
 Further, anyone who thinks that a set of exam results can tell you
 that a particular PD sequence or curriculum is good shouldn't be
@@ -416,9 +588,9 @@ there, there's lots of good stuff to read.&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><category>assessment</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</guid><pubDate>Mon, 16 Oct 2017 00:17:21 GMT</pubDate></item><item><title>Standards - Who are they for?</title><link>http://cestlaz.github.io/posts/standards-who-for/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org31b2896" class="outline-2"&gt;
-&lt;h2 id="org31b2896"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org31b2896"&gt;
+&lt;/div&gt;</description><category>assessment</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</guid><pubDate>Mon, 16 Oct 2017 00:17:21 GMT</pubDate></item><item><title>Standards - Who are they for?</title><link>http://cestlaz.github.io/posts/standards-who-for/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9086a26" class="outline-2"&gt;
+&lt;h2 id="org9086a26"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9086a26"&gt;
 &lt;p&gt;
 The big push at last year's CSTA conference was the release of the new
 CSTA K12 standards. It seemed that every other session was pushing
@@ -698,9 +870,9 @@ important that they look to the greater issues, form their own
 opinions, and then act on what they believe is right.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>ed</category><category>policy</category><category>standards</category><guid>http://cestlaz.github.io/posts/standards-who-for/</guid><pubDate>Tue, 10 Oct 2017 18:05:35 GMT</pubDate></item><item><title>Programming Idioms</title><link>http://cestlaz.github.io/posts/programming-idioms/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org5533ee1" class="outline-2"&gt;
-&lt;h2 id="org5533ee1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5533ee1"&gt;
+&lt;/div&gt;</description><category>cs</category><category>ed</category><category>policy</category><category>standards</category><guid>http://cestlaz.github.io/posts/standards-who-for/</guid><pubDate>Tue, 10 Oct 2017 18:05:35 GMT</pubDate></item><item><title>Programming Idioms</title><link>http://cestlaz.github.io/posts/programming-idioms/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga16f212" class="outline-2"&gt;
+&lt;h2 id="orga16f212"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga16f212"&gt;
 &lt;p&gt;
 I just read Jeff Yearout's recent post titled &lt;a href="http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html"&gt;The Beginner's Garden of
 Concepts&lt;/a&gt;. Not directly related but it got me thinking about
@@ -798,9 +970,9 @@ have to explicitly mention them in our teaching but I think it's
 helpful to our students if we do.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>programming</category><category>teaching</category><guid>http://cestlaz.github.io/posts/programming-idioms/</guid><pubDate>Sun, 08 Oct 2017 15:51:46 GMT</pubDate></item><item><title>NYC CS4All - This Is Not The CS We're Looking For</title><link>http://cestlaz.github.io/posts/this-is-not-the-cs-were-looking-for/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc30b2b8" class="outline-2"&gt;
-&lt;h2 id="orgc30b2b8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc30b2b8"&gt;
+&lt;/div&gt;</description><category>cs</category><category>programming</category><category>teaching</category><guid>http://cestlaz.github.io/posts/programming-idioms/</guid><pubDate>Sun, 08 Oct 2017 15:51:46 GMT</pubDate></item><item><title>NYC CS4All - This Is Not The CS We're Looking For</title><link>http://cestlaz.github.io/posts/this-is-not-the-cs-were-looking-for/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org89192d3" class="outline-2"&gt;
+&lt;h2 id="org89192d3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org89192d3"&gt;
 &lt;p&gt;
 It's no secret that I'm something of an old curmudgeon in the K12 CS
 Education world and I've been critical of a number of initiatives and
@@ -948,9 +1120,9 @@ CS4All in NY will be more about getting something into every classroom
 rather than something appropriate and good.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>csed</category><category>curriculum</category><guid>http://cestlaz.github.io/posts/this-is-not-the-cs-were-looking-for/</guid><pubDate>Fri, 29 Sep 2017 14:40:24 GMT</pubDate></item><item><title>Using Emacs 37 - Treemacs file browser</title><link>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgb6a0cee" class="outline-2"&gt;
-&lt;h2 id="orgb6a0cee"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb6a0cee"&gt;
+&lt;/div&gt;</description><category>csed</category><category>curriculum</category><guid>http://cestlaz.github.io/posts/this-is-not-the-cs-were-looking-for/</guid><pubDate>Fri, 29 Sep 2017 14:40:24 GMT</pubDate></item><item><title>Using Emacs 37 - Treemacs file browser</title><link>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org717bfbf" class="outline-2"&gt;
+&lt;h2 id="org717bfbf"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org717bfbf"&gt;
 &lt;p&gt;
 I've been meaning to get back to making Emacs videos but I've been
 having trouble figuring out what to record.
@@ -979,9 +1151,9 @@ but if like that type of interface, definitely check Treemacs out.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ACg6RnVdw8k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</guid><pubDate>Sun, 24 Sep 2017 15:22:54 GMT</pubDate></item><item><title>Awesome Cs Revisited</title><link>http://cestlaz.github.io/posts/awesome-cs-revisted/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf865a3f" class="outline-2"&gt;
-&lt;h2 id="orgf865a3f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf865a3f"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</guid><pubDate>Sun, 24 Sep 2017 15:22:54 GMT</pubDate></item><item><title>Awesome Cs Revisited</title><link>http://cestlaz.github.io/posts/awesome-cs-revisted/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6b3cf9d" class="outline-2"&gt;
+&lt;h2 id="org6b3cf9d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6b3cf9d"&gt;
 &lt;p&gt;
 Saw this tweet the other day so I though I would try to plug the
 &lt;a href="https://github.com/zamansky/awesome-cs-education"&gt;Awesome CS Education&lt;/a&gt; list I started on GitHub:
@@ -1030,48 +1202,4 @@ submit a pull request. Over time this could be a terrific single
 starting point for educators to get to a wealth of resources.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pd</category><category>resources</category><guid>http://cestlaz.github.io/posts/awesome-cs-revisted/</guid><pubDate>Thu, 21 Sep 2017 20:34:36 GMT</pubDate></item><item><title>New Term New Tool - Thonny, a Python IDE</title><link>http://cestlaz.github.io/posts/new-tool-thonny/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgddcb71a" class="outline-2"&gt;
-&lt;h2 id="orgddcb71a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgddcb71a"&gt;
-&lt;p&gt;
-Last year I &lt;a href="https://cestlaz.github.io/posts/new-term-new-tool-replit"&gt;wrote about&lt;/a&gt; &lt;a href="http://repl.it"&gt;repl.it&lt;/a&gt;, an online IDE that supports multiple
-languages. At the time it had some rudimentary classroom support and
-since I started using it, repl.it has become better and better. I
-used it last year with my class because I had to start the year in a
-lab where I couldn't easily install my own software. I'll continue to
-use repl.it - mostly for it's ability to schedule publish and manage
-assignments but when possible, I like having my students work
-locally. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This year I'm excited about another tool - &lt;a href="http://thonny.org"&gt;Thonny&lt;/a&gt;. Thonny's a simple
-Python IDE designed for beginners. I discovered it last year but at a
-time when it was impractical for me to use with my students. This
-year I can and I'm really liking it. I'm still an Emacs guy and will
-continue to use Emacs for my python development (&lt;a href="http://cestlaz.github.io/posts/using-emacs-12-python/"&gt;video 1&lt;/a&gt;, &lt;a href="http://cestlaz.github.io/posts/using-emacs-13-yasnippet"&gt;video 2&lt;/a&gt;) but
-for beginners I think Thonny is the way to go.
-&lt;/p&gt;
-
-&lt;p&gt;
-Some of Thonny's highlights:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;An integrated Python 3 virtual environment making for ease of
-installation and consistency across student installs&lt;/li&gt;
-&lt;li&gt;A debugger that shows how expressions are evaluated&lt;/li&gt;
-&lt;li&gt;Great visualizations of function calls that make it easier to
-understand the call stack and scope&lt;/li&gt;
-&lt;li&gt;The ability to look at memory to understand references.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-Rather than go into the gory details in text, I put together this
-video:
-&lt;/p&gt;
-
-
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lWaCl0WjNZI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-tool-thonny/</guid><pubDate>Thu, 21 Sep 2017 11:31:42 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>cs</category><category>pd</category><category>resources</category><guid>http://cestlaz.github.io/posts/awesome-cs-revisted/</guid><pubDate>Thu, 21 Sep 2017 20:34:36 GMT</pubDate></item></channel></rss>

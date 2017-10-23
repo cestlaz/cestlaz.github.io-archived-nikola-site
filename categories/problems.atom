@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>Posts about problems</title>
+  <id>http://cestlaz.github.io/categories/problems.atom</id>
+  <updated>2017-10-23T12:48:50Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/problems.atom"/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/problems/"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Early Interesting Problems - Happy Ladybugs</title>
+    <id>http://cestlaz.github.io/posts/happy_ladybug/</id>
+    <updated>2017-10-23T08:47:46-04:00</updated>
+    <published>2017-10-23T08:47:46-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/happy_ladybug/"/>
+    <summary type="html">&lt;div id="outline-container-org4edf082" class="outline-2"&gt;
+&lt;h2 id="org4edf082"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4edf082"&gt;
+&lt;p&gt;
+We all love interesting problems. The trouble is that it's hard to
+find suitably interesting problems for students when they're just
+learning the basics. In the very beginning the problems practically
+dictate the solution:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;loop over a list and add all the elements or calculate the sum of a
+list of integers.&lt;/li&gt;
+&lt;li&gt;Determine if  number is prime&lt;/li&gt;
+&lt;li&gt;Convert a word into pig-Latin&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+It's not that there's no thought involved in solving these but the
+students already know the mechanics of solving these by hand so it's a
+direct translation into a program.
+&lt;/p&gt;
+
+&lt;p&gt;
+This isn't a bad thing but it's fun when we get to the next
+level. I've found that a number of the &lt;a href="http://hackerrank.com"&gt;Hacker Rank&lt;/a&gt; archived
+competitions have "easy" problems that can be a good fit for
+beginners. One that I found and really like is &lt;a href="https://www.hackerrank.com/challenges/happy-ladybugs"&gt;Happy Ladybugs&lt;/a&gt; problem.
+&lt;/p&gt;
+
+&lt;p&gt;
+The problems is basically as follows:
+&lt;/p&gt;
+
+&lt;p&gt;
+You get a string of letters. Each letter represents a ladybug of a
+different color. Each letter also represents a location of the
+ladybug.  A space (or underscore in the actual problem) represents a
+free space. For example "AABC DDA" is a line of 2 A colored ladybugs
+followed by a C colored one, a blank space, 2 D colored and then one
+more A colored. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You can rearrange the line of ladybugs by swapping any ladybug with a
+blank space.
+&lt;/p&gt;
+
+&lt;p&gt;
+A ladybug is happy if it is next to another ladybug of the same
+color. The challenge is to determine if all the ladybugs can be made
+happy.
+&lt;/p&gt;
+
+&lt;p&gt;
+I like this problem because while it is non-trivial it is very
+approachable. 
+&lt;/p&gt;
+
+&lt;p&gt;
+To me, the key insight is that while you can rearrange the list you
+don't have to. You only have to determine if it is possible to make
+the ladybugs happy. You don't actually have to do so.
+&lt;/p&gt;
+
+&lt;p&gt;
+The edge cases are pretty easy to deal with - a string of length one
+or two but then a little thought is required.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first insight is that if there are no spaces, you can't rearrange
+the ladybugs so all you have to do is scan through the string to test
+to see if every ladybug has a neighbor of the same color.
+&lt;/p&gt;
+
+&lt;p&gt;
+The next insight, and the big one is that if you have at least one
+space you can arbitrarily re-order the string. You can show this is
+possible  by using a single space to swap any two elements. 
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;space&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;someletter&lt;/span&gt;
+&lt;span class="n"&gt;someletter&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;someotherletter&lt;/span&gt;
+&lt;span class="n"&gt;someotherletter&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;space&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The final insight is that since you can arbitrarily re-order the
+ladybugs as long as you have at least 2 of each color, you can make
+them all happy.
+&lt;/p&gt;
+
+&lt;p&gt;
+Since my class is currently just starting dictionaries in Python we
+solved this with lists and then transitioned to dictionaries.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's a dictionary based solution:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;are_happy&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;'''&lt;/span&gt;
+&lt;span class="sd"&gt;    This might miss some of the real edge cases in the hackerrank&lt;/span&gt;
+&lt;span class="sd"&gt;    problem. I haven't read the problem carefully in over a year and &lt;/span&gt;
+&lt;span class="sd"&gt;    forget what it specified for things like lists of only spaces,&lt;/span&gt;
+&lt;span class="sd"&gt;    lists with only one bug etc.&lt;/span&gt;
+
+&lt;span class="sd"&gt;    Also, the Hackerrank question uses an underscore (_) instead of a space.&lt;/span&gt;
+&lt;span class="sd"&gt;    '''&lt;/span&gt;
+    &lt;span class="c1"&gt;# handle a string of less than 2 ladybugs&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;False&lt;/span&gt;
+
+    &lt;span class="c1"&gt;# handle the string of 2 ladybugs - both must be the same and not a space&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="s1"&gt;' '&lt;/span&gt;
+
+
+    &lt;span class="c1"&gt;# handle the case of no spaces &lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;' '&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="c1"&gt;# no spaces, every item must be next to one of the same color&lt;/span&gt;
+	&lt;span class="c1"&gt;# so we loop from 1 to len-1 and for each item&lt;/span&gt;
+	&lt;span class="c1"&gt;# check the one before and the one after&lt;/span&gt;
+	&lt;span class="c1"&gt;# if we ever have an unhappy bug, we can just return False&lt;/span&gt;
+	&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
+		&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;False&lt;/span&gt;
+
+	&lt;span class="c1"&gt;# if we ever get here every bug has at least one neighbor of the same color&lt;/span&gt;
+	&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;
+
+    &lt;span class="c1"&gt;# if we get here it means there's at least one space so we can rearrange the bugs&lt;/span&gt;
+    &lt;span class="c1"&gt;# however we please so as long as there are at least 2 bugs of each color&lt;/span&gt;
+    &lt;span class="c1"&gt;# we can make them all happy&lt;/span&gt;
+
+    &lt;span class="c1"&gt;# replace the spaces with "" since we don't want to count them&lt;/span&gt;
+    &lt;span class="c1"&gt;# Since we know they were in the string we can rearrange but&lt;/span&gt;
+    &lt;span class="c1"&gt;# they're no longer needed&lt;/span&gt;
+    &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;" "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s2"&gt;""&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="c1"&gt;# tally up all the bugs to see if there are at least 2 of each&lt;/span&gt;
+    &lt;span class="n"&gt;bugcounts&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;bug&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="n"&gt;bugcounts&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setdefault&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bug&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# set to 0 the first time we see this key&lt;/span&gt;
+	&lt;span class="n"&gt;bugcounts&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;bug&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;bugcounts&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;bug&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+
+
+    &lt;span class="n"&gt;counts&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bugcounts&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;values&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+
+    &lt;span class="c1"&gt;# if there is any value of 1 in the counts then there's a lone ladybug&lt;/span&gt;
+    &lt;span class="c1"&gt;# that can't be made happy&lt;/span&gt;
+    &lt;span class="c1"&gt;# so we return True (happy) if there are 0 counts of 1 in our list &lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;counts&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; 
+
+
+&lt;span class="n"&gt;bugs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"abaccbe ff eggggggg"&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bugs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;are_happy&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bugs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+I love problems like these. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I just wish there was an easy way to find all contest problems of a
+certain level like "easy" or "medium." If anybody knows please share
+in the comments.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="problems" label="problems"/>
+    <category term="teaching" label="teaching"/>
+  </entry>
+</feed>
