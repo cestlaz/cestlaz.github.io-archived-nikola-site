@@ -1,7 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://cestlaz.github.io/categories/cs.xml"></atom:link><language>en</language><lastBuildDate>Mon, 23 Oct 2017 12:51:43 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Early Interesting Problems - Happy Ladybugs</title><link>http://cestlaz.github.io/posts/happy_ladybug/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org367aeb0" class="outline-2"&gt;
-&lt;h2 id="org367aeb0"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org367aeb0"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link type="application/rss+xml" href="http://cestlaz.github.io/categories/cs.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 08 Nov 2017 00:45:03 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Professional Development beyond Scratch</title><link>http://cestlaz.github.io/posts/election-day-pd-2017/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd193e2c" class="outline-2"&gt;
+&lt;h2 id="orgd193e2c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd193e2c"&gt;
+&lt;p&gt;
+Today was Election Day. One of the few days each year when students
+stay home and teachers spend all day attending what is generously
+known as professional development.
+&lt;/p&gt;
+
+&lt;p&gt;
+Years ago I was in a room with a few colleagues when my friend Dave -
+one of the best math teachers I know said "you know, every time we
+have a PD day in NJ and my wife and I have to scramble to take care of
+the kids I get a little annoyed but then think I shouldn't get annoyed
+since they're spending the day doing all sorts of valuable PD." He
+then said "but then I realize that their PD is probably about as
+useful as our PD and I get really angry."
+&lt;/p&gt;
+
+&lt;p&gt;
+There you have it. This is not to say that there is no good PD but it
+seems that the professional development opportunities provided by our
+schools have over the years ranged from useless to insulting with
+maybe a small bright spot here and there. Historically it's been worse
+for CS teachers because we get lumped in with math teachers and have
+to spend the day learning about tools and techniques we'll never use
+or discussing curricula we never teach.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, when I spoke to JonAlf about rescuing the Stuy teachers for the
+day and hosting them at Hunter, he and the other CS teachers were
+pretty excited. It wasn't as though I had the magic PD answer but I
+was going to provide a space and we'd figure out together what would
+be productive and valuable for them.
+&lt;/p&gt;
+
+&lt;p&gt;
+As it turns out, I've been spending a good amount of time these past
+few weeks visiting high schools to talk about Hunter CS and when I was
+at Bronx Science the topic of Election Day PD came up and I thought
+that it would be nice to get the Bronx Science and Stuy teachers
+together. After thinking about it more, I recalled that there were few
+good PD opportunities for CS teachers who taught advanced classes as
+opposed to all the CS PD floating around these days at more of a
+beginner level.
+&lt;/p&gt;
+
+&lt;p&gt;
+I thought that we could change this. In the end, I hosted PD today and
+had teachers from Stuyvesant, Bronx Science, Brooklyn Tech, and the
+Manhattan Hunter Science High School in attendance. I invited teachers
+from a few more schools but in the end we had those four schools and
+seventeen teachers.
+&lt;/p&gt;
+
+&lt;p&gt;
+The original agenda was:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;09:00 - 10:00 : Each school describes it's program and courses&lt;/li&gt;
+&lt;li&gt;10:00 - 11:00 : An intro to Git and GitHub for the classroom&lt;/li&gt;
+&lt;li&gt;10:00 - 11:45 : Sharing neat lessons&lt;/li&gt;
+&lt;li&gt;11:45 - 12:00 : Presentation by &lt;a href="http://chicktech.org"&gt;ChickTech&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;12:00 - 01:00 : Lunch&lt;/li&gt;
+&lt;li&gt;01:00 - End   : Small group lesson and curriculum work&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Oh boy did I mess up on the timing. The description and
+discussion of school programs took all morning. It was interesting to
+hear how each school's program evolved and how they fit into the
+school's culture. Brooklyn Tech, for instance is a school where
+students declare majors. This has a big impact on what classes kids
+have to take and are able to take. This is very different from Stuy or
+Science where kids programs are more open ended or MHSHS which is a
+much smaller school and has restrictions related to size. It was also
+interesting to note Brooklyn Tech's decision to have every student
+take APCS-P. Interesting because Brooklyn Tech is one of the country's
+largest high schools and most of them should have done well on the
+exam. That gave NYC around 1,400 passing AP scores in one shot. On
+the other hand none of the other schools present today offered APCS-P
+but did have their own intro CS class that students took prior to
+APCS-A.
+&lt;/p&gt;
+
+&lt;p&gt;
+We finished the morning with a visit by Heather from
+&lt;a href="http://chicktech.org"&gt;ChickTech&lt;/a&gt;. ChickTech is a non-profit dedicated to retaining women in
+Tech. It works with both girls in K12 and also those in industry. My
+hope was to get a conversation started and see if there were some
+potential avenues of partnership between the organization and the
+schools.
+&lt;/p&gt;
+
+&lt;p&gt;
+After lunch, the group decided that we should do the Git/GitHub
+workshop and JonAlf obliged.
+&lt;/p&gt;
+
+&lt;p&gt;
+Overall I think the day was a success. 
+&lt;/p&gt;
+
+&lt;p&gt;
+My hope is that today's attendees can form a core group of CS teachers
+who teach more advanced courses and we can form something of a support
+group for each other. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I plan to try to facilitate future meetings and hopefully we'll be
+able to attract more teachers to our group.
+&lt;/p&gt;
+
+&lt;p&gt;
+All in all I'm very happy with how the day went.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>pd</category><guid>http://cestlaz.github.io/posts/election-day-pd-2017/</guid><pubDate>Tue, 07 Nov 2017 23:08:58 GMT</pubDate></item><item><title>Early Interesting Problems - Happy Ladybugs</title><link>http://cestlaz.github.io/posts/happy_ladybug/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org15750a4" class="outline-2"&gt;
+&lt;h2 id="org15750a4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org15750a4"&gt;
 &lt;p&gt;
 We all love interesting problems. The trouble is that it's hard to
 find suitably interesting problems for students when they're just
@@ -171,9 +291,9 @@ certain level like "easy" or "medium." If anybody knows please share
 in the comments.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>problems</category><category>teaching</category><guid>http://cestlaz.github.io/posts/happy_ladybug/</guid><pubDate>Mon, 23 Oct 2017 12:47:46 GMT</pubDate></item><item><title>There's always something to learn (from your students)</title><link>http://cestlaz.github.io/posts/when-they-change-the-script/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org26939e9" class="outline-2"&gt;
-&lt;h2 id="org26939e9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org26939e9"&gt;
+&lt;/div&gt;</description><category>cs</category><category>problems</category><category>teaching</category><guid>http://cestlaz.github.io/posts/happy_ladybug/</guid><pubDate>Mon, 23 Oct 2017 12:47:46 GMT</pubDate></item><item><title>There's always something to learn (from your students)</title><link>http://cestlaz.github.io/posts/when-they-change-the-script/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd32e828" class="outline-2"&gt;
+&lt;h2 id="orgd32e828"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd32e828"&gt;
 &lt;p&gt;
 One thing I've learned from teaching is that there's always something
 new to learn. For the kids, yes, but I'm talking about for the
@@ -337,9 +457,9 @@ class will solve problems as I predict moving forward or if I'm going
 to get to see a lot of new things.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><category>lessons</category><guid>http://cestlaz.github.io/posts/when-they-change-the-script/</guid><pubDate>Wed, 18 Oct 2017 15:41:49 GMT</pubDate></item><item><title>A test result is just a test result</title><link>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org249e92a" class="outline-2"&gt;
-&lt;h2 id="org249e92a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org249e92a"&gt;
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>lessons</category><guid>http://cestlaz.github.io/posts/when-they-change-the-script/</guid><pubDate>Wed, 18 Oct 2017 15:41:49 GMT</pubDate></item><item><title>A test result is just a test result</title><link>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgcbf7542" class="outline-2"&gt;
+&lt;h2 id="orgcbf7542"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgcbf7542"&gt;
 &lt;p&gt;
 This past weekend was &lt;a href="http://catskillsconf.com"&gt;Catskillsconf&lt;/a&gt; - my favorite event of the
 year. I spent the weekend up in Ulster County with a bunch of my
@@ -355,9 +475,9 @@ are indicative of a good curriculum or good professional development (PD).
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgb89d619" class="outline-2"&gt;
-&lt;h2 id="orgb89d619"&gt;TL;DR - NO!!!!!&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb89d619"&gt;
+&lt;div id="outline-container-org875035c" class="outline-2"&gt;
+&lt;h2 id="org875035c"&gt;TL;DR - NO!!!!!&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org875035c"&gt;
 &lt;p&gt;
 Further, anyone who thinks that a set of exam results can tell you
 that a particular PD sequence or curriculum is good shouldn't be
@@ -446,9 +566,9 @@ there, there's lots of good stuff to read.&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><category>assessment</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</guid><pubDate>Mon, 16 Oct 2017 00:17:21 GMT</pubDate></item><item><title>Standards - Who are they for?</title><link>http://cestlaz.github.io/posts/standards-who-for/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9086a26" class="outline-2"&gt;
-&lt;h2 id="org9086a26"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9086a26"&gt;
+&lt;/div&gt;</description><category>assessment</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</guid><pubDate>Mon, 16 Oct 2017 00:17:21 GMT</pubDate></item><item><title>Standards - Who are they for?</title><link>http://cestlaz.github.io/posts/standards-who-for/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8f6985d" class="outline-2"&gt;
+&lt;h2 id="org8f6985d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8f6985d"&gt;
 &lt;p&gt;
 The big push at last year's CSTA conference was the release of the new
 CSTA K12 standards. It seemed that every other session was pushing
@@ -728,9 +848,9 @@ important that they look to the greater issues, form their own
 opinions, and then act on what they believe is right.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>ed</category><category>policy</category><category>standards</category><guid>http://cestlaz.github.io/posts/standards-who-for/</guid><pubDate>Tue, 10 Oct 2017 18:05:35 GMT</pubDate></item><item><title>Programming Idioms</title><link>http://cestlaz.github.io/posts/programming-idioms/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga16f212" class="outline-2"&gt;
-&lt;h2 id="orga16f212"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga16f212"&gt;
+&lt;/div&gt;</description><category>cs</category><category>ed</category><category>policy</category><category>standards</category><guid>http://cestlaz.github.io/posts/standards-who-for/</guid><pubDate>Tue, 10 Oct 2017 18:05:35 GMT</pubDate></item><item><title>Programming Idioms</title><link>http://cestlaz.github.io/posts/programming-idioms/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc49d4ee" class="outline-2"&gt;
+&lt;h2 id="orgc49d4ee"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc49d4ee"&gt;
 &lt;p&gt;
 I just read Jeff Yearout's recent post titled &lt;a href="http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html"&gt;The Beginner's Garden of
 Concepts&lt;/a&gt;. Not directly related but it got me thinking about
@@ -828,9 +948,9 @@ have to explicitly mention them in our teaching but I think it's
 helpful to our students if we do.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>programming</category><category>teaching</category><guid>http://cestlaz.github.io/posts/programming-idioms/</guid><pubDate>Sun, 08 Oct 2017 15:51:46 GMT</pubDate></item><item><title>Awesome Cs Revisited</title><link>http://cestlaz.github.io/posts/awesome-cs-revisted/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6b3cf9d" class="outline-2"&gt;
-&lt;h2 id="org6b3cf9d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6b3cf9d"&gt;
+&lt;/div&gt;</description><category>cs</category><category>programming</category><category>teaching</category><guid>http://cestlaz.github.io/posts/programming-idioms/</guid><pubDate>Sun, 08 Oct 2017 15:51:46 GMT</pubDate></item><item><title>Awesome Cs Revisited</title><link>http://cestlaz.github.io/posts/awesome-cs-revisted/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org0486a3b" class="outline-2"&gt;
+&lt;h2 id="org0486a3b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0486a3b"&gt;
 &lt;p&gt;
 Saw this tweet the other day so I though I would try to plug the
 &lt;a href="https://github.com/zamansky/awesome-cs-education"&gt;Awesome CS Education&lt;/a&gt; list I started on GitHub:
@@ -879,9 +999,9 @@ submit a pull request. Over time this could be a terrific single
 starting point for educators to get to a wealth of resources.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pd</category><category>resources</category><guid>http://cestlaz.github.io/posts/awesome-cs-revisted/</guid><pubDate>Thu, 21 Sep 2017 20:34:36 GMT</pubDate></item><item><title>New Term New Tool - Thonny, a Python IDE</title><link>http://cestlaz.github.io/posts/new-tool-thonny/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6348b05" class="outline-2"&gt;
-&lt;h2 id="org6348b05"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6348b05"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pd</category><category>resources</category><guid>http://cestlaz.github.io/posts/awesome-cs-revisted/</guid><pubDate>Thu, 21 Sep 2017 20:34:36 GMT</pubDate></item><item><title>New Term New Tool - Thonny, a Python IDE</title><link>http://cestlaz.github.io/posts/new-tool-thonny/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4d99735" class="outline-2"&gt;
+&lt;h2 id="org4d99735"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4d99735"&gt;
 &lt;p&gt;
 Last year I &lt;a href="https://cestlaz.github.io/posts/new-term-new-tool-replit"&gt;wrote about&lt;/a&gt; &lt;a href="http://repl.it"&gt;repl.it&lt;/a&gt;, an online IDE that supports multiple
 languages. At the time it had some rudimentary classroom support and
@@ -923,9 +1043,9 @@ video:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lWaCl0WjNZI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-tool-thonny/</guid><pubDate>Thu, 21 Sep 2017 11:31:42 GMT</pubDate></item><item><title>I Believe CS Teachers are Smart and Capable</title><link>http://cestlaz.github.io/posts/cs-teachers-smart/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org151115c" class="outline-2"&gt;
-&lt;h2 id="org151115c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org151115c"&gt;
+&lt;/div&gt;</description><category>cs</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-tool-thonny/</guid><pubDate>Thu, 21 Sep 2017 11:31:42 GMT</pubDate></item><item><title>I Believe CS Teachers are Smart and Capable</title><link>http://cestlaz.github.io/posts/cs-teachers-smart/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6880554" class="outline-2"&gt;
+&lt;h2 id="org6880554"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6880554"&gt;
 &lt;p&gt;
 People sometimes accuse me of being an elitist CS snob that I feel that CS
 teachers have to have advanced CS degrees. 
@@ -997,9 +1117,9 @@ subject matter they should but the good ones do.&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><guid>http://cestlaz.github.io/posts/cs-teachers-smart/</guid><pubDate>Fri, 15 Sep 2017 22:17:21 GMT</pubDate></item><item><title>Theseus's Curriculum</title><link>http://cestlaz.github.io/posts/theseus%27s-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org145dbdf" class="outline-2"&gt;
-&lt;h2 id="org145dbdf"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org145dbdf"&gt;
+&lt;/div&gt;</description><category>cs</category><category>education</category><guid>http://cestlaz.github.io/posts/cs-teachers-smart/</guid><pubDate>Fri, 15 Sep 2017 22:17:21 GMT</pubDate></item><item><title>Theseus's Curriculum</title><link>http://cestlaz.github.io/posts/theseus%27s-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd031b2b" class="outline-2"&gt;
+&lt;h2 id="orgd031b2b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd031b2b"&gt;
 &lt;p&gt;
 With the school year starting I was originally planning on writing
 about my class rules. 
@@ -1098,128 +1218,4 @@ reasoning using Euclidean Geometry as platform&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>currulum</category><category>teaching</category><guid>http://cestlaz.github.io/posts/theseus%27s-curriculum/</guid><pubDate>Tue, 05 Sep 2017 22:41:14 GMT</pubDate></item><item><title>CS Teachers - we need you to blog</title><link>http://cestlaz.github.io/posts/cs-teachers-blog/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org1688082" class="outline-2"&gt;
-&lt;h2 id="org1688082"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1688082"&gt;
-&lt;p&gt;
-At this past year's CSTA conference, a few of us huddled in a corner
-voiced a very common lament - "it would be great if more CS teachers
-blogged." It really would be. We're still a relatively small
-community and while there's some good conversation going on on
-mailing lists and on Facebook, those aren't easily discoverable or
-accessible and in the case of Facebook, there's a question of
-ownership and permanence.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've been blogging on and off since 2010. Around 300 posts. Not super prolific
-but I've been doing it long enough to maybe be able to share a bit of
-perspective.
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm not sure exactly why I started. In part I was inspired by my wife
-who at the time was blogging about her &lt;a href="http://squid-knits.blogspot.com/"&gt;knitting&lt;/a&gt;. I was also inspired
-to share my thoughts after meeting some fellow CS teachers from across
-the country at a &lt;a href="http://cestlaz.github.io/posts/2010-01-02-welcome.html"&gt;CSTA event in Chicago&lt;/a&gt;. It was stop and go for a while
-and then I took a break. I was re-inspired months later after meeting
-a couple of CS teachers at another CSTA event - &lt;a href="https://twitter.com/search?q=ben%20chun&amp;amp;src=typd"&gt;Ben Chun&lt;/a&gt; and &lt;a href="https://twitter.com/purplespatula"&gt;Helene
-Martin.&lt;/a&gt; Both terrific high school CS teachers at the time who are
-unfortunately no longer in the classroom (unfortunate for the kids, I
-wish Ben and Helene all happiness and success in all their
-endeavors). We all agreed to try to write more and that got me started
-again. I've been posting around 50 times a year since.
-&lt;/p&gt;
-
-&lt;p&gt;
-Looking back to when I used blogger, I had 30 - 50 hits on some early
-posts and that was mostly just me hitting the site. It didn't matter.
-Writing has let me work through my thoughts. It also creates a record of
-my thoughts and on how my thinking evolves over time. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Over time, people have told me that they've found some of the things
-I've written useful or helpful and I'd argue that when people disagree
-with something I write, even if they don't comment and I've all I've
-evoked is a reaction of "Z's full of crap," it's gotten them to
-re-evaluate their own thoughts on whatever the subject and if it's
-confirmation of their original beliefs, that's OK.
-&lt;/p&gt;
-
-&lt;p&gt;
-The important thing is that by blogging I'm getting my thoughts down
-"on paper" and sharing them for the world to take or leave as they
-please and the more of us who do this, the more we expand the sum
-knowledge of CS teaches. 
-&lt;/p&gt;
-
-&lt;p&gt;
-As a dispersed community of CS teachers across the country, we need
-more people blogging on public platforms not in silos like Facebook.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've heard reasons why teachers don't blog:
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;b&gt;&lt;b&gt;I'm new and have nothing to write about&lt;/b&gt;&lt;/b&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-Sure you do – write a paragraph about your plans for the days lesson
-or how it went. Vent your frustrations (but be careful not to get
-yourself in trouble). Rave about some students work.
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;b&gt;&lt;b&gt;I don't have time&lt;/b&gt;&lt;/b&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-Yes, this is a tough one. If you have to do PD time, maybe your
-supervisor will let you use it for blogging. To be honest, when I'm
-writing regularly it doesn't take that long. When I haven't written in
-a while it takes longer. In any event. It's important and posts don't
-have to be long
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;b&gt;&lt;b&gt;I'm not a great writer&lt;/b&gt;&lt;/b&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-This blog is proof that you don't have to be. I'm stilted and ramble
-and certainly no Shakespeare. I am the weakest writer in my household
-and it's not even close. Even so, we all have something to share.
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;b&gt;&lt;b&gt;I don't know how&lt;/b&gt;&lt;/b&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-I was thinking about proposing a session at next years CSTA conference
-where I'd work the group through creating a github pages based
-blog. In the meantime, there are a lot of easy ways to start out.
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://blogger.com"&gt;http://blogger.com&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://wordpress.com"&gt;http://wordpress.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-and for those who want total control
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://jekyllrb.com/"&gt;Jekyll&lt;/a&gt; with &lt;a href="https://pages.github.com/"&gt;GitHub pages&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-So, there's my plea. If you're a CS teacher and you're reading this
-please consider blogging. I assure you, we will all appreciate it and
-benefit from it.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>community</category><category>cs</category><guid>http://cestlaz.github.io/posts/cs-teachers-blog/</guid><pubDate>Fri, 25 Aug 2017 19:52:23 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>cs</category><category>currulum</category><category>teaching</category><guid>http://cestlaz.github.io/posts/theseus%27s-curriculum/</guid><pubDate>Tue, 05 Sep 2017 22:41:14 GMT</pubDate></item></channel></rss>
