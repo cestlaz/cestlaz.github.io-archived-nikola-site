@@ -1,5 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link type="application/rss+xml" href="http://cestlaz.github.io/rss.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 08 Nov 2017 00:45:03 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Professional Development beyond Scratch</title><link>http://cestlaz.github.io/posts/election-day-pd-2017/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd193e2c" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 10 Nov 2017 13:25:38 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Moocs - High Production value, Bad Questions</title><link>http://cestlaz.github.io/posts/moocs-bad-questions/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org152c49a" class="outline-2"&gt;
+&lt;h2 id="org152c49a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org152c49a"&gt;
+&lt;p&gt;
+Most mornings, I start my day with a workout. Sometimes I run,
+sometimes I use my bike trainer. Dealing with plantar Plantar
+fasciitis since last June, it's mostly been the bike. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I occupy the time by either watching YouTube videos or catching up on
+&lt;a href="https://cacm.acm.org/"&gt;Communications of the ACM&lt;/a&gt; or &lt;a href="https://www.americanscientist.org/"&gt;American Scientist&lt;/a&gt;. I'm about 6 months
+behind on both.
+&lt;/p&gt;
+
+&lt;p&gt;
+Inspired by some talk in one of the CS Ed Facebook groups, I thought
+I'd use the time to start going through some MOOCs. I started with
+Udacity's Intro to Information Security. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm only in lesson 4 but it's pretty light weight and generally well
+presented but I keep seeing the same thing that pisses me off about
+moocs. At the end of the day the video is just a lecture and what's
+worse, a lecture with no feedback loop. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Don't get me wrong, I love the fact that Udacity and the others have
+their material up online and that I can get to it free of charge but I
+don't love the fact there are people that still believe putting a computer
+in front of a kid is better than a teacher.
+&lt;/p&gt;
+
+&lt;p&gt;
+I think this quiz question is pretty representative of what I'm
+talking about. 
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/mooc-question.png" alt="mooc-question.png" align="center" height="400"&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;span class="figure-number"&gt;Figure 1: &lt;/span&gt;Typically bad mooc question&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+It's just a silly inline quiz question and not a particularly
+important one but it pisses me off.
+&lt;/p&gt;
+
+&lt;p&gt;
+To start with, it uses the word  &lt;b&gt;&lt;b&gt;could&lt;/b&gt;&lt;/b&gt;  not &lt;b&gt;&lt;b&gt;did&lt;/b&gt;&lt;/b&gt;. That means
+that every answer is correct. In fact an asnwer  choice like
+"we're more secure because we have this really good engineer named
+Stanley" could be given and would be a correct answer since  the
+vendor &lt;b&gt;&lt;b&gt;could&lt;/b&gt;&lt;/b&gt; base their claim on Stanley's awesomness, it would
+just be a bad idea. Unless you remember the specific add campaign, you won't
+know the answer  and even if you did, internally, they could use any
+justification they want.
+&lt;/p&gt;
+
+&lt;p&gt;
+It reminds me of when my brother was in grade school and he had a test
+question of:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Can you name all 50 states in the United States of America?
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+My brother's answer was "no." He was correct. I don't remember if the
+teacher agreed.
+&lt;/p&gt;
+
+&lt;p&gt;
+To be fair, I'm just watching the videos and it's possible that the
+readings clarified the question but even so, this is a very bad
+question.
+&lt;/p&gt;
+
+&lt;p&gt;
+Yes, it's just a silly quiz but it is indicative of the problem with
+any online learning resource and I and I'm sure others find it
+frustrating. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't want to come down hard on the lecturer or whomever made the
+quiz question. In a class I might ask a question poorly but I have an
+immediate feedback loop and can fix things right then and
+there. Frustration doesn't build and in the case of holes in  important
+conceptual material deficiencies don't develop.
+&lt;/p&gt;
+
+&lt;p&gt;
+I also don't want to come down on free resources that I use and
+benefit from.
+&lt;/p&gt;
+
+&lt;p&gt;
+These types of issues seem small and the autodidacts that succeed in
+using MOOCS work around them but if you look at these materials
+critically as a teacher it's plain to see that their no substitute for
+the real thing.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/moocs-bad-questions/</guid><pubDate>Fri, 10 Nov 2017 11:55:09 GMT</pubDate></item><item><title>Professional Development beyond Scratch</title><link>http://cestlaz.github.io/posts/election-day-pd-2017/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd193e2c" class="outline-2"&gt;
 &lt;h2 id="orgd193e2c"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-orgd193e2c"&gt;
 &lt;p&gt;
@@ -1240,35 +1351,4 @@ CS4All in NY will be more about getting something into every classroom
 rather than something appropriate and good.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>csed</category><category>curriculum</category><guid>http://cestlaz.github.io/posts/this-is-not-the-cs-were-looking-for/</guid><pubDate>Fri, 29 Sep 2017 14:40:24 GMT</pubDate></item><item><title>Using Emacs 37 - Treemacs file browser</title><link>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org635a407" class="outline-2"&gt;
-&lt;h2 id="org635a407"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org635a407"&gt;
-&lt;p&gt;
-I've been meaning to get back to making Emacs videos but I've been
-having trouble figuring out what to record.
-&lt;/p&gt;
-
-&lt;p&gt;
-People have asked for &lt;a href="https://github.com/magit/magit"&gt;Magit&lt;/a&gt; but I only use the basics and I think
-there are already some great videos on it out there. I'd also like to
-get more comfortable with DIRED mode and then do a video on it but I'm
-not there yet. I've also been looking into packages that manage
-workspaces like Eyebrowse and Persp-mode but neither are really doing
-it for my workflow.
-&lt;/p&gt;
-
-&lt;p&gt;
-This morning I saw an post on the &lt;a href="https://www.reddit.com/r/emacs/comments/7249jt/introducing_treemacs_a_modern_file_project/"&gt;Emacs subreddit&lt;/a&gt; about &lt;a href="https://github.com/Alexander-Miller/treemacs#treemacs---a-tree-layout-file-explorer-for-emacs"&gt;Treemacs&lt;/a&gt; - a
-sidebar file browser similar to what the Atom editor has. It's pretty
-slick. I particularly like the integration with &lt;a href="https://github.com/bbatsov/projectile"&gt;projectile&lt;/a&gt;. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I suspect I won't integrate a file browser side bar into my workflow -
-I've probably spent too many years with Emacs built in buffer commands
-but if like that type of interface, definitely check Treemacs out.
-&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ACg6RnVdw8k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</guid><pubDate>Sun, 24 Sep 2017 15:22:54 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>csed</category><category>curriculum</category><guid>http://cestlaz.github.io/posts/this-is-not-the-cs-were-looking-for/</guid><pubDate>Fri, 29 Sep 2017 14:40:24 GMT</pubDate></item></channel></rss>

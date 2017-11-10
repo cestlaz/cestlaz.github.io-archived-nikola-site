@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 33)</title>
   <id>http://cestlaz.github.io/index-33.atom</id>
-  <updated>2017-11-08T00:22:01Z</updated>
+  <updated>2017-11-10T13:12:40Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,51 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-32.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-33.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Using Emacs 37 - Treemacs file browser</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</id>
+    <updated>2017-09-24T11:22:54-04:00</updated>
+    <published>2017-09-24T11:22:54-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-37-treemacs/"/>
+    <summary type="html">&lt;div id="outline-container-org635a407" class="outline-2"&gt;
+&lt;h2 id="org635a407"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org635a407"&gt;
+&lt;p&gt;
+I've been meaning to get back to making Emacs videos but I've been
+having trouble figuring out what to record.
+&lt;/p&gt;
+
+&lt;p&gt;
+People have asked for &lt;a href="https://github.com/magit/magit"&gt;Magit&lt;/a&gt; but I only use the basics and I think
+there are already some great videos on it out there. I'd also like to
+get more comfortable with DIRED mode and then do a video on it but I'm
+not there yet. I've also been looking into packages that manage
+workspaces like Eyebrowse and Persp-mode but neither are really doing
+it for my workflow.
+&lt;/p&gt;
+
+&lt;p&gt;
+This morning I saw an post on the &lt;a href="https://www.reddit.com/r/emacs/comments/7249jt/introducing_treemacs_a_modern_file_project/"&gt;Emacs subreddit&lt;/a&gt; about &lt;a href="https://github.com/Alexander-Miller/treemacs#treemacs---a-tree-layout-file-explorer-for-emacs"&gt;Treemacs&lt;/a&gt; - a
+sidebar file browser similar to what the Atom editor has. It's pretty
+slick. I particularly like the integration with &lt;a href="https://github.com/bbatsov/projectile"&gt;projectile&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I suspect I won't integrate a file browser side bar into my workflow -
+I've probably spent too many years with Emacs built in buffer commands
+but if like that type of interface, definitely check Treemacs out.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ACg6RnVdw8k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="learning" label="learning"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>Awesome Cs Revisited</title>
     <id>http://cestlaz.github.io/posts/awesome-cs-revisted/</id>
