@@ -91,7 +91,121 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/this-is-not-the-cs-were-looking-for/" class="u-url">NYC CS4All - This Is Not The CS We're Looking For</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/programming-idioms/" class="u-url">Programming Idioms</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/programming-idioms/" rel="bookmark"><time class="published dt-published" datetime="2017-10-08T11:51:46-04:00" title="2017-10-08 11:51">2017-10-08 11:51</time></a></p>
+                <p class="commentline">            <a href="posts/programming-idioms/#disqus_thread" data-disqus-identifier="cache/posts/programming-idioms.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-orga16f212" class="outline-2">
+<h2 id="orga16f212"></h2>
+<div class="outline-text-2" id="text-orga16f212">
+<p>
+I just read Jeff Yearout's recent post titled <a href="http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html">The Beginner's Garden of
+Concepts</a>. Not directly related but it got me thinking about
+programming idioms.
+</p>
+
+<p>
+I've been using the phrase "programming idiom" for years to describe a
+short useful recurring code construct. I didn't realize that it was
+officially "a thing" until doing a web search on the phrase years
+later.
+</p>
+
+<p>
+As our students grow from newbies on I think it's helpful for them to
+see recurring and related patterns and programming idioms gives us a
+name to apply to many beginner patterns. An early idiom might be
+"finding the smallest in a list:"
+</p>
+
+
+<div class="highlight"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span>
+
+<span class="n">min_index</span>  <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">dataset</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">dataset</span><span class="p">[</span><span class="n">min_index</span><span class="p">]:</span>
+	<span class="n">min_index</span> <span class="o">=</span> <span class="n">i</span>
+</pre></div>
+
+<p>
+Another is the very similar and more general "do something on every
+item in a list:"
+</p>
+
+<div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="p">)):</span>
+    <span class="c1"># do something to or with dataset[i]</span>
+</pre></div>
+
+<p>
+By talking about constructs like these as idioms it helps students see
+and develop coding patterns. It also helps them to build mental
+abstractions. Each of the above idioms are a few lines of code but
+each are also a single concept. Students learn to think of them as the
+concept.
+</p>
+
+
+<p>
+When students learn about list comprehensions in python they'll
+rewrite the "do something…" more like this:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">[</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">]</span>
+</pre></div>
+
+<p>
+but the pattern or idea is the same.
+</p>
+
+<p>
+Other early idioms might include swapping variables:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">tmp</span> <span class="o">=</span> <span class="n">a</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">tmp</span>
+</pre></div>
+
+<p>
+and loops until an exit condition are met:
+</p>
+
+
+<div class="highlight"><pre><span></span><span class="k">while</span> <span class="p">(</span><span class="n">not_exit_condidtion</span><span class="p">):</span>
+    <span class="c1"># do stuff</span>
+    <span class="n">modify</span> <span class="n">variable</span> <span class="n">that</span> <span class="n">checks</span> <span class="nb">exit</span> <span class="n">condition</span>
+</pre></div>
+
+<p>
+Even more difficult concepts like recursion can be described in an
+idiomatic way:
+</p>
+
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">BASE_CASE</span><span class="p">:</span>
+	<span class="k">return</span> <span class="n">something</span>
+    <span class="k">else</span><span class="p">:</span>
+	<span class="n">new_x</span> <span class="o">=</span> <span class="n">modify_to_eventually_get_to_base_case</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+	<span class="n">f</span><span class="p">(</span><span class="n">new_x</span><span class="p">)</span>
+</pre></div>
+
+<p>
+Patterns like these, or idioms, come up over and over again. We don't
+have to explicitly mention them in our teaching but I think it's
+helpful to our students if we do.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/this-is-not-the-cs-were-looking-for/" class="u-url">NYC CS4All - This Is Not The CS We're Looking For</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -103,9 +217,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgc30b2b8" class="outline-2">
-<h2 id="orgc30b2b8"></h2>
-<div class="outline-text-2" id="text-orgc30b2b8">
+    <div id="outline-container-org89192d3" class="outline-2">
+<h2 id="org89192d3"></h2>
+<div class="outline-text-2" id="text-org89192d3">
 <p>
 It's no secret that I'm something of an old curmudgeon in the K12 CS
 Education world and I've been critical of a number of initiatives and
@@ -265,9 +379,9 @@ rather than something appropriate and good.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgb6a0cee" class="outline-2">
-<h2 id="orgb6a0cee"></h2>
-<div class="outline-text-2" id="text-orgb6a0cee">
+    <div id="outline-container-org717bfbf" class="outline-2">
+<h2 id="org717bfbf"></h2>
+<div class="outline-text-2" id="text-org717bfbf">
 <p>
 I've been meaning to get back to making Emacs videos but I've been
 having trouble figuring out what to record.
@@ -310,9 +424,9 @@ but if like that type of interface, definitely check Treemacs out.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgf865a3f" class="outline-2">
-<h2 id="orgf865a3f"></h2>
-<div class="outline-text-2" id="text-orgf865a3f">
+    <div id="outline-container-org6b3cf9d" class="outline-2">
+<h2 id="org6b3cf9d"></h2>
+<div class="outline-text-2" id="text-org6b3cf9d">
 <p>
 Saw this tweet the other day so I though I would try to plug the
 <a href="https://github.com/zamansky/awesome-cs-education">Awesome CS Education</a> list I started on GitHub:

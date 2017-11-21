@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-33.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/hunter-tech-kickoff/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/quick-sort-starting/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,102 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/hunter-tech-kickoff/" class="u-url">Hunter CS and NY Tech - it takes a village</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/quick-sort-starting/" class="u-url">Motivating and understanding quicksort</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/quick-sort-starting/" rel="bookmark"><time class="published dt-published" datetime="2017-11-21T10:34:05-04:00" title="2017-11-21 10:34">2017-11-21 10:34</time></a></p>
+                <p class="commentline">            <a href="posts/quick-sort-starting/#disqus_thread" data-disqus-identifier="cache/posts/quick-sort-starting.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org05af1e6" class="outline-2">
+<h2 id="org05af1e6"></h2>
+<div class="outline-text-2" id="text-org05af1e6">
+<p>
+Thks question was posed the other day - how can one get students to
+truly understand the quicksort algorithm?
+</p>
+
+<p>
+I've written a few posts about quicksort. The last time I did a <a href="https://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/">lesson
+writeup</a> on the subject I wrote about first looking and quickselect and
+then moving to the quicksort. The class was first faced with the
+problem of writing a routine to find the Kth smallest item in an
+unsorted data set. The first solution was n<sup>2</sup> and then refined to a
+quickselect. This led directly to the quicksort. 
+</p>
+
+<p>
+I liked the lesson and I think it worked well when I taught it but
+that was partly due to the overall tenor of that particular group of
+students.
+</p>
+
+<p>
+A similar approach develops the quicksort in a similar way but is
+both more direct and accessible.
+</p>
+
+<p>
+The motivating problem is to put one item in a data set in its proper
+place. You could select one person in class and arrange the class so
+that the selected student is in their proper size place, that is
+everyone shorter on one side, taller on the other. You could also do
+this for age. A similar exercise could be done with any number of
+manipulatives.
+</p>
+
+<p>
+This operation of arranging the rest of the set around one selected
+item or person is very easy and in fact it's trivial to show that this
+can be done in linear time. 
+</p>
+
+<p>
+Once we've done this arrangement, we can discuss what we can infer
+from this new arrangement. We can now tell that:
+</p>
+
+<ul class="org-ul">
+<li>everyone to the left of the "pivot" is less than the pivot</li>
+<li>everyone to the right is greater</li>
+<li>The pivot element is at its true location if the list were
+sorted. That is, if we started arranging around item k, then we've
+moved item k to the kth location in the dataset.</li>
+</ul>
+<p>
+From here it's a small jump to the quicksort algorithm, just repeat
+the process on the left and right data sets.
+</p>
+
+<p>
+This approach not only makes the algorithm and its development clear
+and simple but it also can be used to illustrate the worst case n<sup>2</sup>
+behavior. 
+</p>
+
+<p>
+The whole thing, minus the coding, can also be done as an unplugged activity.
+</p>
+
+<p>
+In case anyone's interested, I also wrote a post on subtle
+implementation errors when writing the quicksort (<a href="https://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting.html">here</a>) and also
+looking at the qucksort from the point of view of different
+programming paradigms (<a href="https://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom.html">here</a>).
+</p>
+
+<p>
+Enjoy.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/hunter-tech-kickoff/" class="u-url">Hunter CS and NY Tech - it takes a village</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -102,9 +197,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org2163607" class="outline-2">
-<h2 id="org2163607"></h2>
-<div class="outline-text-2" id="text-org2163607">
+    <div id="outline-container-org8f38951" class="outline-2">
+<h2 id="org8f38951"></h2>
+<div class="outline-text-2" id="text-org8f38951">
 
 <div class="figure">
 <p><img src="img/hunter-tech/hunter-tech1.jpg" alt="hunter-tech1.jpg" align="center" height="400"></p>
@@ -207,9 +302,9 @@ a Hunter CS to Tech Community pipeline that's second to none.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org5d0254c" class="outline-2">
-<h2 id="org5d0254c"></h2>
-<div class="outline-text-2" id="text-org5d0254c">
+    <div id="outline-container-org2b6761a" class="outline-2">
+<h2 id="org2b6761a"></h2>
+<div class="outline-text-2" id="text-org2b6761a">
 <p>
 Most mornings, I start my day with a workout. Sometimes I run,
 sometimes I use my bike trainer. Dealing with plantar
@@ -331,9 +426,9 @@ the real thing.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org30b65f3" class="outline-2">
-<h2 id="org30b65f3"></h2>
-<div class="outline-text-2" id="text-org30b65f3">
+    <div id="outline-container-org195d489" class="outline-2">
+<h2 id="org195d489"></h2>
+<div class="outline-text-2" id="text-org195d489">
 <p>
 Today was Election Day. One of the few days each year when students
 stay home and teachers spend all day attending what is generously
@@ -465,9 +560,9 @@ All in all I'm very happy with how the day went.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgc15e726" class="outline-2">
-<h2 id="orgc15e726"></h2>
-<div class="outline-text-2" id="text-orgc15e726">
+    <div id="outline-container-org367aeb0" class="outline-2">
+<h2 id="org367aeb0"></h2>
+<div class="outline-text-2" id="text-org367aeb0">
 <p>
 We all love interesting problems. The trouble is that it's hard to
 find suitably interesting problems for students when they're just
@@ -650,9 +745,9 @@ in the comments.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgfe78469" class="outline-2">
-<h2 id="orgfe78469"></h2>
-<div class="outline-text-2" id="text-orgfe78469">
+    <div id="outline-container-org8b4f41a" class="outline-2">
+<h2 id="org8b4f41a"></h2>
+<div class="outline-text-2" id="text-org8b4f41a">
 
 <div class="figure">
 <p><img src="img/cc-2017/cc1.JPG" alt="cc1.JPG"></p>
@@ -776,9 +871,9 @@ hoping that the tradition can continue for many more.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgd706874" class="outline-2">
-<h2 id="orgd706874"></h2>
-<div class="outline-text-2" id="text-orgd706874">
+    <div id="outline-container-org302a44d" class="outline-2">
+<h2 id="org302a44d"></h2>
+<div class="outline-text-2" id="text-org302a44d">
 <p>
 Today was my 50th Birthday. I'm usually pretty low key on birthdays
 and today was no different. I got up, exercised, went to work, taught
@@ -813,9 +908,9 @@ pretty terrific as a teacher.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org903f3a8" class="outline-2">
-<h2 id="org903f3a8"></h2>
-<div class="outline-text-2" id="text-org903f3a8">
+    <div id="outline-container-org26939e9" class="outline-2">
+<h2 id="org26939e9"></h2>
+<div class="outline-text-2" id="text-org26939e9">
 <p>
 One thing I've learned from teaching is that there's always something
 new to learn. For the kids, yes, but I'm talking about for the
@@ -993,9 +1088,9 @@ to get to see a lot of new things.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orge28ce54" class="outline-2">
-<h2 id="orge28ce54"></h2>
-<div class="outline-text-2" id="text-orge28ce54">
+    <div id="outline-container-org249e92a" class="outline-2">
+<h2 id="org249e92a"></h2>
+<div class="outline-text-2" id="text-org249e92a">
 <p>
 This past weekend was <a href="http://catskillsconf.com">Catskillsconf</a> - my favorite event of the
 year. I spent the weekend up in Ulster County with a bunch of my
@@ -1011,9 +1106,9 @@ are indicative of a good curriculum or good professional development (PD).
 </div>
 </div>
 
-<div id="outline-container-org6694b72" class="outline-2">
-<h2 id="org6694b72">TL;DR - NO!!!!!</h2>
-<div class="outline-text-2" id="text-org6694b72">
+<div id="outline-container-orgb89d619" class="outline-2">
+<h2 id="orgb89d619">TL;DR - NO!!!!!</h2>
+<div class="outline-text-2" id="text-orgb89d619">
 <p>
 Further, anyone who thinks that a set of exam results can tell you
 that a particular PD sequence or curriculum is good shouldn't be
@@ -1116,9 +1211,9 @@ there, there's lots of good stuff to read.</div>
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org31b2896" class="outline-2">
-<h2 id="org31b2896"></h2>
-<div class="outline-text-2" id="text-org31b2896">
+    <div id="outline-container-org9086a26" class="outline-2">
+<h2 id="org9086a26"></h2>
+<div class="outline-text-2" id="text-org9086a26">
 <p>
 The big push at last year's CSTA conference was the release of the new
 CSTA K12 standards. It seemed that every other session was pushing
@@ -1396,120 +1491,6 @@ fact will be a boon to EdTech companies selling there wares. Many of
 the loudest voices in CSEd come from these contingents - it's
 important that they look to the greater issues, form their own
 opinions, and then act on what they believe is right.
-</p>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/programming-idioms/" class="u-url">Programming Idioms</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/programming-idioms/" rel="bookmark"><time class="published dt-published" datetime="2017-10-08T11:51:46-04:00" title="2017-10-08 11:51">2017-10-08 11:51</time></a></p>
-                <p class="commentline">            <a href="posts/programming-idioms/#disqus_thread" data-disqus-identifier="cache/posts/programming-idioms.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-org5533ee1" class="outline-2">
-<h2 id="org5533ee1"></h2>
-<div class="outline-text-2" id="text-org5533ee1">
-<p>
-I just read Jeff Yearout's recent post titled <a href="http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html">The Beginner's Garden of
-Concepts</a>. Not directly related but it got me thinking about
-programming idioms.
-</p>
-
-<p>
-I've been using the phrase "programming idiom" for years to describe a
-short useful recurring code construct. I didn't realize that it was
-officially "a thing" until doing a web search on the phrase years
-later.
-</p>
-
-<p>
-As our students grow from newbies on I think it's helpful for them to
-see recurring and related patterns and programming idioms gives us a
-name to apply to many beginner patterns. An early idiom might be
-"finding the smallest in a list:"
-</p>
-
-
-<div class="highlight"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span>
-
-<span class="n">min_index</span>  <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="p">)):</span>
-    <span class="k">if</span> <span class="n">dataset</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">dataset</span><span class="p">[</span><span class="n">min_index</span><span class="p">]:</span>
-	<span class="n">min_index</span> <span class="o">=</span> <span class="n">i</span>
-</pre></div>
-
-<p>
-Another is the very similar and more general "do something on every
-item in a list:"
-</p>
-
-<div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="p">)):</span>
-    <span class="c1"># do something to or with dataset[i]</span>
-</pre></div>
-
-<p>
-By talking about constructs like these as idioms it helps students see
-and develop coding patterns. It also helps them to build mental
-abstractions. Each of the above idioms are a few lines of code but
-each are also a single concept. Students learn to think of them as the
-concept.
-</p>
-
-
-<p>
-When students learn about list comprehensions in python they'll
-rewrite the "do something…" more like this:
-</p>
-
-<div class="highlight"><pre><span></span><span class="p">[</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">]</span>
-</pre></div>
-
-<p>
-but the pattern or idea is the same.
-</p>
-
-<p>
-Other early idioms might include swapping variables:
-</p>
-
-<div class="highlight"><pre><span></span><span class="n">tmp</span> <span class="o">=</span> <span class="n">a</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">tmp</span>
-</pre></div>
-
-<p>
-and loops until an exit condition are met:
-</p>
-
-
-<div class="highlight"><pre><span></span><span class="k">while</span> <span class="p">(</span><span class="n">not_exit_condidtion</span><span class="p">):</span>
-    <span class="c1"># do stuff</span>
-    <span class="n">modify</span> <span class="n">variable</span> <span class="n">that</span> <span class="n">checks</span> <span class="nb">exit</span> <span class="n">condition</span>
-</pre></div>
-
-<p>
-Even more difficult concepts like recursion can be described in an
-idiomatic way:
-</p>
-
-<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">BASE_CASE</span><span class="p">:</span>
-	<span class="k">return</span> <span class="n">something</span>
-    <span class="k">else</span><span class="p">:</span>
-	<span class="n">new_x</span> <span class="o">=</span> <span class="n">modify_to_eventually_get_to_base_case</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-	<span class="n">f</span><span class="p">(</span><span class="n">new_x</span><span class="p">)</span>
-</pre></div>
-
-<p>
-Patterns like these, or idioms, come up over and over again. We don't
-have to explicitly mention them in our teaching but I think it's
-helpful to our students if we do.
 </p>
 </div>
 </div>

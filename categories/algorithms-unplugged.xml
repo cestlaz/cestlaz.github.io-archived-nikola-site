@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about algorithms. unplugged)</title><link>http://cestlaz.github.io/</link><description></description><atom:link rel="self" href="http://cestlaz.github.io/categories/algorithms-unplugged.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 21 Nov 2017 15:57:34 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Motivating and understanding quicksort</title><link>http://cestlaz.github.io/posts/quick-sort-starting/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org05af1e6" class="outline-2"&gt;
+&lt;h2 id="org05af1e6"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org05af1e6"&gt;
+&lt;p&gt;
+Thks question was posed the other day - how can one get students to
+truly understand the quicksort algorithm?
+&lt;/p&gt;
+
+&lt;p&gt;
+I've written a few posts about quicksort. The last time I did a &lt;a href="https://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/"&gt;lesson
+writeup&lt;/a&gt; on the subject I wrote about first looking and quickselect and
+then moving to the quicksort. The class was first faced with the
+problem of writing a routine to find the Kth smallest item in an
+unsorted data set. The first solution was n&lt;sup&gt;2&lt;/sup&gt; and then refined to a
+quickselect. This led directly to the quicksort. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I liked the lesson and I think it worked well when I taught it but
+that was partly due to the overall tenor of that particular group of
+students.
+&lt;/p&gt;
+
+&lt;p&gt;
+A similar approach develops the quicksort in a similar way but is
+both more direct and accessible.
+&lt;/p&gt;
+
+&lt;p&gt;
+The motivating problem is to put one item in a data set in its proper
+place. You could select one person in class and arrange the class so
+that the selected student is in their proper size place, that is
+everyone shorter on one side, taller on the other. You could also do
+this for age. A similar exercise could be done with any number of
+manipulatives.
+&lt;/p&gt;
+
+&lt;p&gt;
+This operation of arranging the rest of the set around one selected
+item or person is very easy and in fact it's trivial to show that this
+can be done in linear time. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Once we've done this arrangement, we can discuss what we can infer
+from this new arrangement. We can now tell that:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;everyone to the left of the "pivot" is less than the pivot&lt;/li&gt;
+&lt;li&gt;everyone to the right is greater&lt;/li&gt;
+&lt;li&gt;The pivot element is at its true location if the list were
+sorted. That is, if we started arranging around item k, then we've
+moved item k to the kth location in the dataset.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+From here it's a small jump to the quicksort algorithm, just repeat
+the process on the left and right data sets.
+&lt;/p&gt;
+
+&lt;p&gt;
+This approach not only makes the algorithm and its development clear
+and simple but it also can be used to illustrate the worst case n&lt;sup&gt;2&lt;/sup&gt;
+behavior. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The whole thing, minus the coding, can also be done as an unplugged activity.
+&lt;/p&gt;
+
+&lt;p&gt;
+In case anyone's interested, I also wrote a post on subtle
+implementation errors when writing the quicksort (&lt;a href="https://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting.html"&gt;here&lt;/a&gt;) and also
+looking at the qucksort from the point of view of different
+programming paradigms (&lt;a href="https://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom.html"&gt;here&lt;/a&gt;).
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>algorithms. unplugged</category><category>cs</category><category>programming</category><guid>http://cestlaz.github.io/posts/quick-sort-starting/</guid><pubDate>Tue, 21 Nov 2017 14:34:05 GMT</pubDate></item></channel></rss>
