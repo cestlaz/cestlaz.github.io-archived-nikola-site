@@ -1,0 +1,84 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs 38 - dired
+.. slug: using-emacs-38-dired
+.. date: 2017-11-24 09:00:00 UTC-04:00
+.. tags: emacs, learning, tools
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+The 38th installment of Using Emacs is about **dired**, Emacs' built
+in mode for navigating and working with directories.
+
+I'm not a dired power user and in fact am just now making a real
+effort to explore it and work it into my daily workflow and
+with that in mind, I'd love to hear some configuration and
+use suggestions from people who use it regularly.
+
+Here's the configuration I use:
+
+#+BEGIN_SRC emacs-lisp
+
+  (use-package dired+
+    :ensure t
+    :config (require 'dired+)
+    )
+
+
+#+END_SRC
+
+which merely adds dired+ into the mix.
+
+I also started playing with [[https://github.com/joddie/pcre2el][pcre2el]] which allows me to use the more
+usual regex syntax in place of Emacs regex syntax in both dired and
+other places. This is a big win for me since I never remember all the
+escaping rules for Emacs regex.
+
+#+BEGIN_SRC emacs-lisp
+(use-package pcre2el
+:ensure t
+:config 
+(pcre-mode)
+)
+
+#+END_SRC
+
+
+Finally, abo-abo and jcs have both written about new features in ,
+Ivy/Swiper/Counsel that allow you to use ivy-occur to dump results
+into a dired buffer ([[http://irreal.org/blog/?p=6760][link]], [[https://oremacs.com/2017/11/18/dired-occur/][link]]) but to get that to work, I needed to
+install [[https://github.com/mhayashi1120/Emacs-wgrep][wgrep]] and also had to install and setup [[https://github.com/junegunn/fzf][fzf]] which looks to be
+useful.
+
+#+BEGIN_SRC emacs-lisp
+
+  (use-package wgrep
+    :ensure t
+    )
+
+(setq counsel-fzf-cmd "/home/zamansky/.fzf/bin/fzf -f %s")
+
+
+#+END_SRC
+
+To help get started here are links to a couple of cheat sheets:
+- [[https://www.gnu.org/software/emacs/refcards/pdf/dired-ref.pdf][dired reference card]]
+- [[https://harryrschwartz.com/assets/documents/dired-cheatsheet.pdf][another dired cheat sheet]]
+
+I'll probably use dired more frequently but again, would love to hear
+how other people are using it.
+
+#+BEGIN_EXPORT HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Fg7HmmRYWy8" frameborder="0" allowfullscreen></iframe>
+#+END_EXPORT
+
+
+
+
+
+
+
+
