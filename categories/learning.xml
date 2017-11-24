@@ -1,7 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about learning)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/learning.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 25 Sep 2017 12:49:24 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 37 - Treemacs file browser</title><link>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org717bfbf" class="outline-2"&gt;
-&lt;h2 id="org717bfbf"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org717bfbf"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about learning)</title><link>http://cestlaz.github.io/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://cestlaz.github.io/categories/learning.xml"></atom:link><language>en</language><lastBuildDate>Fri, 24 Nov 2017 15:03:24 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 38 - dired</title><link>http://cestlaz.github.io/posts/using-emacs-38-dired/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org48b9f45" class="outline-2"&gt;
+&lt;h2 id="org48b9f45"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org48b9f45"&gt;
+&lt;p&gt;
+The 38th installment of Using Emacs is about &lt;b&gt;&lt;b&gt;dired&lt;/b&gt;&lt;/b&gt;, Emacs' built
+in mode for navigating and working with directories.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not a dired power user and in fact am just now making a real
+effort to explore it and work it into my daily workflow and
+with that in mind, I'd love to hear some configuration and
+use suggestions from people who use it regularly.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the configuration I use:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;dired+&lt;/span&gt;
+  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+  &lt;span class="nv"&gt;:config&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;require&lt;/span&gt; &lt;span class="ss"&gt;'dired+&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+which merely adds dired+ into the mix.
+&lt;/p&gt;
+
+&lt;p&gt;
+I also started playing with &lt;a href="https://github.com/joddie/pcre2el"&gt;pcre2el&lt;/a&gt; which allows me to use the more
+usual regex syntax in place of Emacs regex syntax in both dired and
+other places. This is a big win for me since I never remember all the
+escaping rules for Emacs regex.
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;pcre2el&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt; 
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;pcre-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+Finally, abo-abo and jcs have both written about new features in ,
+Ivy/Swiper/Counsel that allow you to use ivy-occur to dump results
+into a dired buffer (&lt;a href="http://irreal.org/blog/?p=6760"&gt;link&lt;/a&gt;, &lt;a href="https://oremacs.com/2017/11/18/dired-occur/"&gt;link&lt;/a&gt;) but to get that to work, I needed to
+install &lt;a href="https://github.com/mhayashi1120/Emacs-wgrep"&gt;wgrep&lt;/a&gt; and also had to install and setup &lt;a href="https://github.com/junegunn/fzf"&gt;fzf&lt;/a&gt; which looks to be
+useful.
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;wgrep&lt;/span&gt;
+    &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+    &lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;counsel-fzf-cmd&lt;/span&gt; &lt;span class="s"&gt;"/home/zamansky/.fzf/bin/fzf -f %s"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+To help get started here are links to a couple of cheat sheets:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://www.gnu.org/software/emacs/refcards/pdf/dired-ref.pdf"&gt;dired reference card&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://harryrschwartz.com/assets/documents/dired-cheatsheet.pdf"&gt;another dired cheat sheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+I'll probably use dired more frequently but again, would love to hear
+how other people are using it.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Fg7HmmRYWy8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-38-dired/</guid><pubDate>Fri, 24 Nov 2017 13:00:00 GMT</pubDate></item><item><title>Using Emacs 37 - Treemacs file browser</title><link>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org635a407" class="outline-2"&gt;
+&lt;h2 id="org635a407"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org635a407"&gt;
 &lt;p&gt;
 I've been meaning to get back to making Emacs videos but I've been
 having trouble figuring out what to record.
@@ -30,9 +104,9 @@ but if like that type of interface, definitely check Treemacs out.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ACg6RnVdw8k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</guid><pubDate>Sun, 24 Sep 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs 36 - A Touch of Elisp</title><link>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9c673e1" class="outline-2"&gt;
-&lt;h2 id="org9c673e1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9c673e1"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</guid><pubDate>Sun, 24 Sep 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs 36 - A Touch of Elisp</title><link>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6733305" class="outline-2"&gt;
+&lt;h2 id="org6733305"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6733305"&gt;
 &lt;p&gt;
 I've been working on a vue.js project this summer. During the school
 year I really can't dive into code so it's been fun.
@@ -106,9 +180,9 @@ you want.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/NQhud2ZNd1w" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</guid><pubDate>Sun, 30 Jul 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs 35 - Blogging</title><link>http://cestlaz.github.io/posts/using-emacs-35-blogging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4ba0b90" class="outline-2"&gt;
-&lt;h2 id="org4ba0b90"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4ba0b90"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</guid><pubDate>Sun, 30 Jul 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs 35 - Blogging</title><link>http://cestlaz.github.io/posts/using-emacs-35-blogging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orged67dc5" class="outline-2"&gt;
+&lt;h2 id="orged67dc5"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orged67dc5"&gt;
 &lt;p&gt;
 Very little new Emacs in today's episode of Using Emacs. The video
 shows my old blogging workflow and what I'm playing with now.

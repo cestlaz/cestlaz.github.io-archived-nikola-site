@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-33.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/quick-sort-starting/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-38-dired/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,94 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/quick-sort-starting/" class="u-url">Motivating and understanding quicksort</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-38-dired/" class="u-url">Using Emacs 38 - dired</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/using-emacs-38-dired/" rel="bookmark"><time class="published dt-published" datetime="2017-11-24T09:00:00-04:00" title="2017-11-24 09:00">2017-11-24 09:00</time></a></p>
+                <p class="commentline">            <a href="posts/using-emacs-38-dired/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-38-dired.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org48b9f45" class="outline-2">
+<h2 id="org48b9f45"></h2>
+<div class="outline-text-2" id="text-org48b9f45">
+<p>
+The 38th installment of Using Emacs is about <b><b>dired</b></b>, Emacs' built
+in mode for navigating and working with directories.
+</p>
+
+<p>
+I'm not a dired power user and in fact am just now making a real
+effort to explore it and work it into my daily workflow and
+with that in mind, I'd love to hear some configuration and
+use suggestions from people who use it regularly.
+</p>
+
+<p>
+Here's the configuration I use:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">dired+</span>
+  <span class="nv">:ensure</span> <span class="nv">t</span>
+  <span class="nv">:config</span> <span class="p">(</span><span class="nf">require</span> <span class="ss">'dired+</span><span class="p">)</span>
+  <span class="p">)</span>
+</pre></div>
+
+<p>
+which merely adds dired+ into the mix.
+</p>
+
+<p>
+I also started playing with <a href="https://github.com/joddie/pcre2el">pcre2el</a> which allows me to use the more
+usual regex syntax in place of Emacs regex syntax in both dired and
+other places. This is a big win for me since I never remember all the
+escaping rules for Emacs regex.
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">pcre2el</span>
+<span class="nv">:ensure</span> <span class="nv">t</span>
+<span class="nv">:config</span> 
+<span class="p">(</span><span class="nf">pcre-mode</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+
+
+<p>
+Finally, abo-abo and jcs have both written about new features in ,
+Ivy/Swiper/Counsel that allow you to use ivy-occur to dump results
+into a dired buffer (<a href="http://irreal.org/blog/?p=6760">link</a>, <a href="https://oremacs.com/2017/11/18/dired-occur/">link</a>) but to get that to work, I needed to
+install <a href="https://github.com/mhayashi1120/Emacs-wgrep">wgrep</a> and also had to install and setup <a href="https://github.com/junegunn/fzf">fzf</a> which looks to be
+useful.
+</p>
+
+<div class="highlight"><pre><span></span>  <span class="p">(</span><span class="nf">use-package</span> <span class="nv">wgrep</span>
+    <span class="nv">:ensure</span> <span class="nv">t</span>
+    <span class="p">)</span>
+
+<span class="p">(</span><span class="nf">setq</span> <span class="nv">counsel-fzf-cmd</span> <span class="s">"/home/zamansky/.fzf/bin/fzf -f %s"</span><span class="p">)</span>
+</pre></div>
+
+<p>
+To help get started here are links to a couple of cheat sheets:
+</p>
+<ul class="org-ul">
+<li><a href="https://www.gnu.org/software/emacs/refcards/pdf/dired-ref.pdf">dired reference card</a></li>
+<li><a href="https://harryrschwartz.com/assets/documents/dired-cheatsheet.pdf">another dired cheat sheet</a></li>
+</ul>
+<p>
+I'll probably use dired more frequently but again, would love to hear
+how other people are using it.
+</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Fg7HmmRYWy8" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/quick-sort-starting/" class="u-url">Motivating and understanding quicksort</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -102,9 +189,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org05af1e6" class="outline-2">
-<h2 id="org05af1e6"></h2>
-<div class="outline-text-2" id="text-org05af1e6">
+    <div id="outline-container-org5a8f8dd" class="outline-2">
+<h2 id="org5a8f8dd"></h2>
+<div class="outline-text-2" id="text-org5a8f8dd">
 <p>
 Thks question was posed the other day - how can one get students to
 truly understand the quicksort algorithm?
@@ -197,9 +284,9 @@ Enjoy.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org8f38951" class="outline-2">
-<h2 id="org8f38951"></h2>
-<div class="outline-text-2" id="text-org8f38951">
+    <div id="outline-container-orgf3adf97" class="outline-2">
+<h2 id="orgf3adf97"></h2>
+<div class="outline-text-2" id="text-orgf3adf97">
 
 <div class="figure">
 <p><img src="img/hunter-tech/hunter-tech1.jpg" alt="hunter-tech1.jpg" align="center" height="400"></p>
@@ -302,9 +389,9 @@ a Hunter CS to Tech Community pipeline that's second to none.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org2b6761a" class="outline-2">
-<h2 id="org2b6761a"></h2>
-<div class="outline-text-2" id="text-org2b6761a">
+    <div id="outline-container-orgef0eda1" class="outline-2">
+<h2 id="orgef0eda1"></h2>
+<div class="outline-text-2" id="text-orgef0eda1">
 <p>
 Most mornings, I start my day with a workout. Sometimes I run,
 sometimes I use my bike trainer. Dealing with plantar
@@ -426,9 +513,9 @@ the real thing.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org195d489" class="outline-2">
-<h2 id="org195d489"></h2>
-<div class="outline-text-2" id="text-org195d489">
+    <div id="outline-container-orgd193e2c" class="outline-2">
+<h2 id="orgd193e2c"></h2>
+<div class="outline-text-2" id="text-orgd193e2c">
 <p>
 Today was Election Day. One of the few days each year when students
 stay home and teachers spend all day attending what is generously
@@ -560,9 +647,9 @@ All in all I'm very happy with how the day went.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org367aeb0" class="outline-2">
-<h2 id="org367aeb0"></h2>
-<div class="outline-text-2" id="text-org367aeb0">
+    <div id="outline-container-org15750a4" class="outline-2">
+<h2 id="org15750a4"></h2>
+<div class="outline-text-2" id="text-org15750a4">
 <p>
 We all love interesting problems. The trouble is that it's hard to
 find suitably interesting problems for students when they're just
@@ -745,9 +832,9 @@ in the comments.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org8b4f41a" class="outline-2">
-<h2 id="org8b4f41a"></h2>
-<div class="outline-text-2" id="text-org8b4f41a">
+    <div id="outline-container-orgb083e2a" class="outline-2">
+<h2 id="orgb083e2a"></h2>
+<div class="outline-text-2" id="text-orgb083e2a">
 
 <div class="figure">
 <p><img src="img/cc-2017/cc1.JPG" alt="cc1.JPG"></p>
@@ -871,9 +958,9 @@ hoping that the tradition can continue for many more.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org302a44d" class="outline-2">
-<h2 id="org302a44d"></h2>
-<div class="outline-text-2" id="text-org302a44d">
+    <div id="outline-container-org05df3a1" class="outline-2">
+<h2 id="org05df3a1"></h2>
+<div class="outline-text-2" id="text-org05df3a1">
 <p>
 Today was my 50th Birthday. I'm usually pretty low key on birthdays
 and today was no different. I got up, exercised, went to work, taught
@@ -908,9 +995,9 @@ pretty terrific as a teacher.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org26939e9" class="outline-2">
-<h2 id="org26939e9"></h2>
-<div class="outline-text-2" id="text-org26939e9">
+    <div id="outline-container-orgd32e828" class="outline-2">
+<h2 id="orgd32e828"></h2>
+<div class="outline-text-2" id="text-orgd32e828">
 <p>
 One thing I've learned from teaching is that there's always something
 new to learn. For the kids, yes, but I'm talking about for the
@@ -1088,9 +1175,9 @@ to get to see a lot of new things.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org249e92a" class="outline-2">
-<h2 id="org249e92a"></h2>
-<div class="outline-text-2" id="text-org249e92a">
+    <div id="outline-container-orgcbf7542" class="outline-2">
+<h2 id="orgcbf7542"></h2>
+<div class="outline-text-2" id="text-orgcbf7542">
 <p>
 This past weekend was <a href="http://catskillsconf.com">Catskillsconf</a> - my favorite event of the
 year. I spent the weekend up in Ulster County with a bunch of my
@@ -1106,9 +1193,9 @@ are indicative of a good curriculum or good professional development (PD).
 </div>
 </div>
 
-<div id="outline-container-orgb89d619" class="outline-2">
-<h2 id="orgb89d619">TL;DR - NO!!!!!</h2>
-<div class="outline-text-2" id="text-orgb89d619">
+<div id="outline-container-org875035c" class="outline-2">
+<h2 id="org875035c">TL;DR - NO!!!!!</h2>
+<div class="outline-text-2" id="text-org875035c">
 <p>
 Further, anyone who thinks that a set of exam results can tell you
 that a particular PD sequence or curriculum is good shouldn't be
@@ -1196,302 +1283,6 @@ there, there's lots of good stuff to read.</div>
 </div>
 
 
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/standards-who-for/" class="u-url">Standards - Who are they for?</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/standards-who-for/" rel="bookmark"><time class="published dt-published" datetime="2017-10-10T14:05:35-04:00" title="2017-10-10 14:05">2017-10-10 14:05</time></a></p>
-                <p class="commentline">            <a href="posts/standards-who-for/#disqus_thread" data-disqus-identifier="cache/posts/standards-who-for.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-org9086a26" class="outline-2">
-<h2 id="org9086a26"></h2>
-<div class="outline-text-2" id="text-org9086a26">
-<p>
-The big push at last year's CSTA conference was the release of the new
-CSTA K12 standards. It seemed that every other session was pushing
-them in one way or another. I've been meaning to share my thoughts
-about them or, more specifically, learning standards in general for a
-while but with announcement about federal funding for CS coming from
-the White House last week I thought it was time.
-</p>
-
-<p>
-Before diving into CS standards lets talk about math.
-</p>
-
-<p>
-To start I have yet to meet a math teacher that needs
-"the Standards" to know what to teach. Some how or other math teachers know
-they're supposed to teach in an algebra or geometry class. When NY
-moved to "integrated math" teachers were able to re-sequence classes
-without the benefit of "the standards" and when NY went back to
-Algebra, Geometry, then Alg 2 and Trig, teachers had no problem
-reorganizing classes again.
-</p>
-
-<p>
-New teachers didn't go to "the Standards" to learn the ropes. Schools
-defined syllabi, teachers observed each other, shared resources, used
-lesson plan books and in general knew what they were supposed to teach
-and at what level.
-</p>
-
-<p>
-In my quarter century of teaching, always in a math department we
-spent a lot of time talking about what we taught, when we taught it,
-how we taught it and at what level but until common core was forced
-down our throats we NEVER discussed "the Standards." We discussed our
-students, where we thought we could take them, and how to get them
-there. Somehow our students did alright.
-</p>
-
-<p>
-More recently, the push has been on "The Standards," common core in particular.
-</p>
-
-<p>
-Common standards sound good - kids in every school will learn the same
-things at the same level - but I contend that they aren't about
-learning. They're about testing.
-</p>
-
-<p>
-Let's look at a few of the math standards. These were pulled directly
-from the Common Core:
-</p>
-
-
-<blockquote>
-<p>
-Derive the equation of a circle of given center and radius using the
-Pythagorean Theorem; complete the square to find the center and radius
-of a circle given by an equation.
-</p>
-</blockquote>
-
-<blockquote>
-<p>
-Use coordinates to prove simple geometric theorems algebraically. For
-example, prove or disprove that a figure defined by four given points
-in the coordinate plane is a rectangle; prove or disprove that the
-point (1, √3) lies on the circle centered at the origin and containing
-the point (0, 2).
-</p>
-</blockquote>
-<blockquote>
-<p>
-
-</p>
-
-<p>
-Derive using similarity the fact that the length of the arc
-intercepted by an angle is proportional to the radius, and define the
-radian measure of the angle as the constant of proportionality; derive
-the formula for the area of a sector.
-</p>
-</blockquote>
-
-<p>
-These aren't about deep thinking and problem solving. They're about
-very specific skills or techniques. They're also easy to put on a
-test. Much easier then assessing a students real problem solving ability.
-</p>
-
-<p>
-Common Core comes hand in hand with standardized testing which is then
-used to punish students, teachers, and schools. 
-</p>
-
-<p>
-We keep hearing about individualized instruction - meeting the kids
-where they are but the standards tell us that kids MUST know specific
-things at specific times. You can't have both. In the best case, with
-"the standards" we can only meet students "where they are" within
-annual bands.
-</p>
-
-<p>
-What has this led to? Narrowing curriculum for one thing. Since schools are
-evaluated based on the standardized exam in core subjects focus
-narrows and other subjects fall by the wayside. 
-</p>
-
-<p>
-Arguably worse is selective teaching within common core subjects.
-</p>
-
-<p>
-Take for example, Geometry. The course is really "Logic and Deductive
-Reasoning using Euclidean Geometry as a Platform" but it's generally
-called Geometry. This class is supposed to be about getting kids to
-think. I've already shared a few standards above but let me tell you
-about an open secret - many schools don't really teach proof -
-arguably the most important part of the class.
-</p>
-
-<p>
-In my last year at Stuy I graded Geometry regents for the city. I
-graded exams for two highly regarded unscreened schools. One that was
-lauded in a State of the Union address and the other equally hyped. I
-graded all of each school's students geometry regents so it wasn't
-just a sampling. Out of all the papers, only two or three scored more
-than 2 out of 9 points for the proof question and most were entirely
-left blank.
-</p>
-
-<p>
-What happened? Proof is hard to teach and hard to learn but it's also
-only a small part of the standardized exam. It's critical for a
-school's survival and for the student to graduate that a passing score
-is earned. Rather than spending a large amount of time on few points
-and probably get a limited return I've been told that many schools
-spend much more time on topics that area easier to teach and have more
-weight on the exam. This makes the school look better and helps the
-student graduate but arguably the most important aspect of the course
-has been minimized.
-</p>
-
-<p>
-High stakes testing leads to gaming the system. Common core standards
-come hand in hand with high stakes testing. We see the same with AP
-exams - there are schools that force students to take exams even when
-they are woefully prepared and mostly fail because this helps the
-school shoot up in the ratings.
-</p>
-
-<p>
-This is what the common core math standards have given us. They're not
-for teachers - we don't need them - we know what to teach and only
-wish that the bean counters would indeed allow us to meet students
-where they are. Standards are about testing.
-</p>
-
-<p>
-Let's move on to CS standards. 
-</p>
-
-<p>
-It might not be fair to compare CS to math since K12 math education
-has been around much longer and is more well defined and in theory
-having a set of standards gives us a common language to discuss,
-compare, and contrast all the content providers and curriculum
-developers out there. On the other hand, I also believe that with well
-prepared teachers who understand content and pedagogy the value isn't
-all that great. It's also worth considering the fact that nothing
-really makes the CSTA Standard  writers special. There's no reason to
-think that another group - be they a handful of teachers or a content
-provider can't do a comparable job.
-</p>
-
-<p>
-Here are some selections from the CSTA standards:
-</p>
-
-<blockquote>
-<p>
-Design and develop a software artifact working in a team. 
-</p>
-
-<p>
-Compare and contrast various software licensing schemes (e.g., open source, freeware,
-commercial). 
-</p>
-
-<p>
-Design, develop, and implement a computing artifact that responds to an event (e.g., robot
-that responds to a sensor, mobile app that responds to a text message, sprite that responds
-to a broadcas
-</p>
-
-<p>
-Demonstrate the value of abstraction for managing problem complexity (e.g., using a list
-instead of discrete variables). 
-</p>
-
-<p>
-Design algorithms u sing sequence, selection, and iteration. 
-</p>
-
-<p>
-Discuss techniques used to store, process, and retrieve different amounts of information
-(e.g., files, databases, data warehouses). 
-</p>
-
-<p>
-Compare and debate the positive and negative impacts of computing on behavior and
-culture (e.g., evolution from hitchhiking to ridesharing apps, online accommodation rental
-services). 
-</p>
-
-<p>
-Use simple encryption and decryption algorithms to transmit/receive an encrypted
-message. 
-</p>
-
-<p>
-Decompose a problem by creating new data types, functions, or classes.
-</p>
-
-<p>
-Evaluate algorithms (e.g., sorting, searching) in terms of their efficiency, correctness, and
-clarity. 
-</p>
-
-<p>
-Use data analysis to identify significant patterns in complex systems (e.g., take existing data
-sets and make sense of them). 
-</p>
-</blockquote>
-
-<p>
-There's nothing wrong with these. They aren't specific enough to
-develop lessons from but, they can provide a
-consistent framework to discuss different offerings. Were the much
-more specific, we'd have the same issue I railed about with the math
-standards so this is a good thing. 
-</p>
-
-<p>
-Actually, in general, I don't have a problem with these standards. I
-might agree with some parts and disagree with others but that's
-neither here nor there.
-</p>
-
-<p>
-To me the big concern on standards is what will they actually be used
-for. It's nice to think that it's a set of guidelines from which we
-can develop strong local experiences but I think this is somewhat
-naive. As states and the federal government bring CS Education into
-the fold there's no reason to believe that CS will be special. CS Ed
-will go the way of other subject areas. That means that whatever
-standards governments adopt, they will likely be used for high stakes
-tests rather than for true education. If you look to see how the
-sausage is made you can see the harm standards and standardized
-testing has wrought  in subjects like math. CS Ed won't be far behind.
-</p>
-
-<p>
-While we should be proud of all the work that's going on in our
-community it's more important now than ever to keep an eye on the
-overall big picture and be aware of how work intended for one purpose
-within the community can be used very differently by those outside of
-it. This is particularly important for advocates  not in public schools. Public
-schools educate the majority of American students so CS4All means
-public schools. Standardized testing won't affect private schools (or
-private charters in many cases) nor will they affect colleges and in
-fact will be a boon to EdTech companies selling there wares. Many of
-the loudest voices in CSEd come from these contingents - it's
-important that they look to the greater issues, form their own
-opinions, and then act on what they believe is right.
-</p>
 </div>
 </div>
     </div>
