@@ -91,7 +91,187 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/ap-results-measure-of-curriculum/" class="u-url">A test result is just a test result</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/when-they-change-the-script/" class="u-url">There's always something to learn (from your students)</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/when-they-change-the-script/" rel="bookmark"><time class="published dt-published" datetime="2017-10-18T11:41:49-04:00" title="2017-10-18 11:41">2017-10-18 11:41</time></a></p>
+                <p class="commentline">            <a href="posts/when-they-change-the-script/#disqus_thread" data-disqus-identifier="cache/posts/when-they-change-the-script.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org903f3a8" class="outline-2">
+<h2 id="org903f3a8"></h2>
+<div class="outline-text-2" id="text-org903f3a8">
+<p>
+One thing I've learned from teaching is that there's always something
+new to learn. For the kids, yes, but I'm talking about for the
+teacher.
+</p>
+
+<p>
+The other day, I taught a lesson I've taught many times. Find the mode
+of a data set. That's the problem that they solve but the lesson is
+really about run time complexity, hidden complexity and using data
+structures in alternate ways.
+</p>
+
+<p>
+I blogged about this <a href="https://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md">before</a> so you can get an earlier take there
+although the code isn't formatted correctly due to blog conversions.
+</p>
+
+<p>
+As with the last time, the students  had already written code to find
+the largest value in a list and also to find the frequency of an item
+in a list.
+</p>
+
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="k">def</span> <span class="nf">build_list</span><span class="p">(</span><span class="n">size</span><span class="p">,</span><span class="n">low</span><span class="p">,</span><span class="n">high</span><span class="p">):</span>
+    <span class="n">l</span><span class="o">=</span><span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">size</span><span class="p">):</span>
+	<span class="n">l</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="n">low</span><span class="p">,</span><span class="n">high</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">l</span>
+
+<span class="k">def</span> <span class="nf">get_max_value</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+    <span class="n">max_index</span><span class="o">=</span><span class="mi">0</span>
+    <span class="n">max_val</span><span class="o">=</span><span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span><span class="n">value</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+	<span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="n">max_val</span><span class="p">:</span>
+	    <span class="n">max_index</span> <span class="o">=</span> <span class="n">index</span>
+	    <span class="n">max_val</span> <span class="o">=</span> <span class="n">value</span>
+    <span class="k">return</span> <span class="n">max_val</span>
+
+<span class="k">def</span> <span class="nf">get_freq</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="n">requested_val</span><span class="p">):</span>
+    <span class="n">count</span><span class="o">=</span><span class="mi">0</span>
+    <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+	<span class="k">if</span> <span class="n">requested_val</span> <span class="o">==</span> <span class="n">value</span><span class="p">:</span>
+	    <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">count</span>
+</pre></div>
+
+<p>
+They had to write mode prior to the class. In the past, students would
+generally come up with something like this:
+</p>
+
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_mode_1</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+    <span class="n">mode_val</span> <span class="o">=</span> <span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">mode_freq</span> <span class="o">=</span> <span class="n">get_freq</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="n">mode_val</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span><span class="n">value</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+	<span class="n">f</span> <span class="o">=</span> <span class="n">get_freq</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="n">value</span><span class="p">)</span>
+	<span class="k">if</span> <span class="n">f</span> <span class="o">&gt;</span> <span class="n">mode_freq</span><span class="p">:</span>
+	    <span class="n">mode_freq</span> <span class="o">=</span> <span class="n">f</span>
+	    <span class="n">mode_val</span> <span class="o">=</span> <span class="n">value</span>
+    <span class="k">return</span> <span class="n">mode_val</span>
+
+<span class="n">l</span><span class="o">=</span><span class="n">build_list</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">m</span><span class="o">=</span><span class="n">get_mode_1</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+</pre></div>
+
+<p>
+They'd use their existing knowledge and the 'find the largest' idiom
+to find the mode by:
+</p>
+<ul class="org-ul">
+<li>find the frequency of the first item and assume it's the mode so far</li>
+<li>for each item in the list
+<ul class="org-ul">
+<li>find the frequency of that idem</li>
+<li>if it occurs more than the mode so far then it becomes the new
+mode so far</li>
+</ul>
+</li>
+</ul>
+<p>
+There's a lot of good in this solution. The kids incrementally develop
+a solution, they use and exctend code and concepts they already know
+and understand and it's clear and understandable.
+</p>
+
+<p>
+We would then run the code on larger and larger data sets and notice
+that it gets slow pretty quickly. This leads to an informal discussion
+of run time and the fact that there's hidden complexity – the call to
+<code>freq</code> in the main loop introduces a linear component so we have a
+loop within a loop and an N<sup>2</sup> routine.
+</p>
+
+<p>
+The big takeaway is get a feel for run time and to be aware of hidden
+complexity. We then move to a linear solution by using a list as
+buckets. You can read more about that in the <a href="https://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md">original post</a>.
+</p>
+
+<p>
+What was interesting this time around was that most of the kids came
+up with a solution more like this:
+</p>
+
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_mode_2</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+    <span class="n">freqs</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+       <span class="n">f</span> <span class="o">=</span> <span class="n">get_freq</span><span class="p">(</span><span class="n">l</span><span class="p">,</span><span class="n">item</span><span class="p">)</span>
+       <span class="n">freqs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+    <span class="n">mode_count</span>  <span class="o">=</span> <span class="n">freqs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">mode_value</span> <span class="o">=</span> <span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span><span class="n">value</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">freqs</span><span class="p">):</span>
+       <span class="k">if</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="n">mode_count</span><span class="p">:</span>
+	   <span class="n">mode_count</span> <span class="o">=</span> <span class="n">value</span>
+	   <span class="n">mode_value</span> <span class="o">=</span> <span class="n">l</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">mode_value</span>
+
+<span class="n">l</span> <span class="o">=</span> <span class="n">build_list</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">get_mode_2</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+</pre></div>
+
+<p>
+Instead of calculating the frequency inside the loop they made a list
+of frequencies. <code>freq[0]</code> had the frequency of <code>l[0]</code>, <code>freq[1]</code> the
+frequency of <code>l[1]</code> etc. They then loop through that <code>freq</code> list to
+find the largest element and that's the index of the mode value in the
+original list.
+</p>
+
+<p>
+It's functionally the same as the first solution but in some ways it's
+very different. They built the data set they needed ahead of time
+instead of calculating the data on the fly and they used the concept
+of parallel lists.
+</p>
+
+<p>
+I like the solution and it didn't prevent us from getting to the run
+time stuff but this did give me something to think about. 
+</p>
+
+<p>
+Why did this class led them largely to a different solution than the
+classes I've taught in the class. There are a lot of things to ponder
+since it's a college class that meets twice a week with kids from a
+range of backgrounds (CS and otherwise) vs a high school class that
+meets 5 days a week and the kids all had the same in class experience
+prior to this lesson. Did I do something differently before hand? Some
+assignments? Something I modeled?  I'm not sure but it's something I'm
+going to ponder.
+</p>
+
+<p>
+It will interesting to see if this was a one shot deal and my current
+class will solve problems as I predict moving forward or if I'm going
+to get to see a lot of new things.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/ap-results-measure-of-curriculum/" class="u-url">A test result is just a test result</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -103,9 +283,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgcbf7542" class="outline-2">
-<h2 id="orgcbf7542"></h2>
-<div class="outline-text-2" id="text-orgcbf7542">
+    <div id="outline-container-orge28ce54" class="outline-2">
+<h2 id="orge28ce54"></h2>
+<div class="outline-text-2" id="text-orge28ce54">
 <p>
 This past weekend was <a href="http://catskillsconf.com">Catskillsconf</a> - my favorite event of the
 year. I spent the weekend up in Ulster County with a bunch of my
@@ -121,9 +301,9 @@ are indicative of a good curriculum or good professional development (PD).
 </div>
 </div>
 
-<div id="outline-container-org875035c" class="outline-2">
-<h2 id="org875035c">TL;DR - NO!!!!!</h2>
-<div class="outline-text-2" id="text-org875035c">
+<div id="outline-container-org6694b72" class="outline-2">
+<h2 id="org6694b72">TL;DR - NO!!!!!</h2>
+<div class="outline-text-2" id="text-org6694b72">
 <p>
 Further, anyone who thinks that a set of exam results can tell you
 that a particular PD sequence or curriculum is good shouldn't be
@@ -226,9 +406,9 @@ there, there's lots of good stuff to read.</div>
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org8f6985d" class="outline-2">
-<h2 id="org8f6985d"></h2>
-<div class="outline-text-2" id="text-org8f6985d">
+    <div id="outline-container-org31b2896" class="outline-2">
+<h2 id="org31b2896"></h2>
+<div class="outline-text-2" id="text-org31b2896">
 <p>
 The big push at last year's CSTA conference was the release of the new
 CSTA K12 standards. It seemed that every other session was pushing
@@ -522,9 +702,9 @@ opinions, and then act on what they believe is right.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgc49d4ee" class="outline-2">
-<h2 id="orgc49d4ee"></h2>
-<div class="outline-text-2" id="text-orgc49d4ee">
+    <div id="outline-container-org5533ee1" class="outline-2">
+<h2 id="org5533ee1"></h2>
+<div class="outline-text-2" id="text-org5533ee1">
 <p>
 I just read Jeff Yearout's recent post titled <a href="http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html">The Beginner's Garden of
 Concepts</a>. Not directly related but it got me thinking about
@@ -636,9 +816,9 @@ helpful to our students if we do.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org910de83" class="outline-2">
-<h2 id="org910de83"></h2>
-<div class="outline-text-2" id="text-org910de83">
+    <div id="outline-container-orgc30b2b8" class="outline-2">
+<h2 id="orgc30b2b8"></h2>
+<div class="outline-text-2" id="text-orgc30b2b8">
 <p>
 It's no secret that I'm something of an old curmudgeon in the K12 CS
 Education world and I've been critical of a number of initiatives and
@@ -798,9 +978,9 @@ rather than something appropriate and good.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org635a407" class="outline-2">
-<h2 id="org635a407"></h2>
-<div class="outline-text-2" id="text-org635a407">
+    <div id="outline-container-orgb6a0cee" class="outline-2">
+<h2 id="orgb6a0cee"></h2>
+<div class="outline-text-2" id="text-orgb6a0cee">
 <p>
 I've been meaning to get back to making Emacs videos but I've been
 having trouble figuring out what to record.
@@ -843,9 +1023,9 @@ but if like that type of interface, definitely check Treemacs out.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org0486a3b" class="outline-2">
-<h2 id="org0486a3b"></h2>
-<div class="outline-text-2" id="text-org0486a3b">
+    <div id="outline-container-orgf865a3f" class="outline-2">
+<h2 id="orgf865a3f"></h2>
+<div class="outline-text-2" id="text-orgf865a3f">
 <p>
 Saw this tweet the other day so I though I would try to plug the
 <a href="https://github.com/zamansky/awesome-cs-education">Awesome CS Education</a> list I started on GitHub:

@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2017-11-26T13:31:50Z</updated>
+  <updated>2017-11-30T01:43:34Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,114 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-33.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>You have to trust the kids</title>
+    <id>http://cestlaz.github.io/posts/trust-the-kids/</id>
+    <updated>2017-11-29T19:53:30-04:00</updated>
+    <published>2017-11-29T19:53:30-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/trust-the-kids/"/>
+    <summary type="html">&lt;div id="outline-container-org45ea67b" class="outline-2"&gt;
+&lt;h2 id="org45ea67b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org45ea67b"&gt;
+&lt;p&gt;
+A week or so ago I wrote about the event we had to kick off 
+&lt;a href="http://cestlaz.github.io/posts/hunter-tech-kickoff"&gt;Hunter College's partnering with the NY tech community&lt;/a&gt; to build a
+Hunter to tech pipeline. Each table had two Hunter students and a
+group of tech professionals. Each table discussed the Hunter CS
+experience and how the tech community can help support the
+students. Towards the end of the event a colleague commented that it
+was a great idea to have the students essentially run the tables and
+how effective it was. I didn't see any other way to do it. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You have to trust the students. Put them in situations where they can
+grow.
+&lt;/p&gt;
+
+&lt;p&gt;
+In addition to the event being a success overall, I think that for the
+students it helped to break down barriers. These kids are soon to be
+joining the tech community. They'll be interviewing for
+internships and then jobs and the whole process can be rather
+intimidating. By the end of the event the other week, there weren't
+tables of students and professionals but rather tables of people all
+having discussions on equal footing. It seems like a small thing. A
+minor choice on how to run an event but it can have a subtle but
+substantial impact in ways that are hard to see unless you look.
+&lt;/p&gt;
+
+&lt;p&gt;
+I was also reminded of this when reading Alfred Thompson's post on 
+&lt;a href="http://blog.acthompson.net/2017/11/how-some-schools-sabotage-computer.html"&gt;school tech management teams and CS teachers&lt;/a&gt;. Alfred wrote about the
+possible tension between the needs of CS teachers and the needs of the
+rest of the school and the obligations of the people that actually set
+up and maintain the technology in a school.
+&lt;/p&gt;
+
+&lt;p&gt;
+Years ago, at Stuy, I skirted the issue by taking on the
+obligation of maintaining my own labs. This let me run Linux and
+basically do whatever I felt we needed. It also meant my labs wouldn't
+be set up for things like standardized testing. This came at a
+price. I had to maintain it all myself. This is not to say that the
+tech people haven't helped over the years. Some of them have been
+terrific but other than swapping out bad machines it all fell on me.
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course this wouldn't have been possible if it really all fell to
+me. It only worked because I was able to enlist the aid of students
+who wanted to learn about building and running a Linux network. Sure I
+showed them some things but largely we &lt;a href="https://cestlaz.github.io/posts/2016-01-31-devops.html"&gt;figured it out
+together&lt;/a&gt;. Basically I trusted the kids with access and control and
+gave them a safe place to learn and explore. 
+&lt;/p&gt;
+
+&lt;p&gt;
+It worked amazingly well. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course there were plenty of headaches. There was the time when we
+only had one AI/X server for the school and Jon somehow erased all the
+shared libraries or the time when I think Paul or Ilya took away read
+and execute access from all the system executables. I lost plenty of
+sleep and pulled out much hair recovering from these messes and others
+but I couldn't get too upset. They were learning, no one got hurt, and
+truthfully they never committed any blunders worse than my own.
+&lt;/p&gt;
+
+&lt;p&gt;
+Giving up control to the kids can be nerve wracking at times but it's
+worth it. It's why I always found coaching more stressful than
+competing back when I fenced. You can do everything to prepare your
+athletes but when they're out on the strip, there's nothing you can do
+to help. It's all on them. On the other hand, I've always been more
+gratified with my athletes or students successes than with my
+own. There's something special about enabling others.
+&lt;/p&gt;
+
+&lt;p&gt;
+This is not to say that we just turn our students loose.  We have to
+set our students up to succeed. Set up the environment and the
+circumstance and give the students the tools to work with. At the
+event two weeks ago I knew that everyone in the room was a friend or
+when I have students plan a hackathon and have them cold call a
+company, maybe the company expects the call. There are all sorts of
+things we can do behind the scenes to set out students up for success.
+&lt;/p&gt;
+
+&lt;p&gt;
+We set the stage and if we do it right, the kids won't
+fail to impress.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
   <entry>
     <title>Reunion Season</title>
     <id>http://cestlaz.github.io/posts/reunion-season/</id>
@@ -20,9 +128,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/reunion-season/"/>
-    <summary type="html">&lt;div id="outline-container-orgd90c5a3" class="outline-2"&gt;
-&lt;h2 id="orgd90c5a3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd90c5a3"&gt;
+    <summary type="html">&lt;div id="outline-container-org393708d" class="outline-2"&gt;
+&lt;h2 id="org393708d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org393708d"&gt;
 &lt;p&gt;
 Thanksgiving is reunion season. Stuyvesant and I'm guessing other high
 schools traditionally hold their reunions, at least the five and ten
@@ -103,9 +211,9 @@ years to come.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-38-dired/"/>
-    <summary type="html">&lt;div id="outline-container-org48b9f45" class="outline-2"&gt;
-&lt;h2 id="org48b9f45"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org48b9f45"&gt;
+    <summary type="html">&lt;div id="outline-container-org119355a" class="outline-2"&gt;
+&lt;h2 id="org119355a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org119355a"&gt;
 &lt;p&gt;
 The 38th installment of Using Emacs is about &lt;b&gt;&lt;b&gt;dired&lt;/b&gt;&lt;/b&gt;, Emacs' built
 in mode for navigating and working with directories.
@@ -191,9 +299,9 @@ how other people are using it.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/quick-sort-starting/"/>
-    <summary type="html">&lt;div id="outline-container-org5a8f8dd" class="outline-2"&gt;
-&lt;h2 id="org5a8f8dd"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5a8f8dd"&gt;
+    <summary type="html">&lt;div id="outline-container-org2eb047e" class="outline-2"&gt;
+&lt;h2 id="org2eb047e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org2eb047e"&gt;
 &lt;p&gt;
 Thks question was posed the other day - how can one get students to
 truly understand the quicksort algorithm?
@@ -287,9 +395,9 @@ Enjoy.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/hunter-tech-kickoff/"/>
-    <summary type="html">&lt;div id="outline-container-orgf3adf97" class="outline-2"&gt;
-&lt;h2 id="orgf3adf97"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf3adf97"&gt;
+    <summary type="html">&lt;div id="outline-container-org2163607" class="outline-2"&gt;
+&lt;h2 id="org2163607"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org2163607"&gt;
 
 &lt;div class="figure"&gt;
 &lt;p&gt;&lt;img src="http://cestlaz.github.io/img/hunter-tech/hunter-tech1.jpg" alt="hunter-tech1.jpg" align="center" height="400"&gt;
@@ -393,9 +501,9 @@ a Hunter CS to Tech Community pipeline that's second to none.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/moocs-bad-questions/"/>
-    <summary type="html">&lt;div id="outline-container-orgef0eda1" class="outline-2"&gt;
-&lt;h2 id="orgef0eda1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgef0eda1"&gt;
+    <summary type="html">&lt;div id="outline-container-org5d0254c" class="outline-2"&gt;
+&lt;h2 id="org5d0254c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5d0254c"&gt;
 &lt;p&gt;
 Most mornings, I start my day with a workout. Sometimes I run,
 sometimes I use my bike trainer. Dealing with plantar
@@ -515,9 +623,9 @@ the real thing.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/election-day-pd-2017/"/>
-    <summary type="html">&lt;div id="outline-container-orgd193e2c" class="outline-2"&gt;
-&lt;h2 id="orgd193e2c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd193e2c"&gt;
+    <summary type="html">&lt;div id="outline-container-org30b65f3" class="outline-2"&gt;
+&lt;h2 id="org30b65f3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org30b65f3"&gt;
 &lt;p&gt;
 Today was Election Day. One of the few days each year when students
 stay home and teachers spend all day attending what is generously
@@ -649,9 +757,9 @@ All in all I'm very happy with how the day went.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/happy_ladybug/"/>
-    <summary type="html">&lt;div id="outline-container-org15750a4" class="outline-2"&gt;
-&lt;h2 id="org15750a4"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org15750a4"&gt;
+    <summary type="html">&lt;div id="outline-container-orgc15e726" class="outline-2"&gt;
+&lt;h2 id="orgc15e726"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc15e726"&gt;
 &lt;p&gt;
 We all love interesting problems. The trouble is that it's hard to
 find suitably interesting problems for students when they're just
@@ -835,9 +943,9 @@ in the comments.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/catskills-2017/"/>
-    <summary type="html">&lt;div id="outline-container-orgb083e2a" class="outline-2"&gt;
-&lt;h2 id="orgb083e2a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb083e2a"&gt;
+    <summary type="html">&lt;div id="outline-container-orgfe78469" class="outline-2"&gt;
+&lt;h2 id="orgfe78469"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgfe78469"&gt;
 
 &lt;div class="figure"&gt;
 &lt;p&gt;&lt;img src="http://cestlaz.github.io/img/cc-2017/cc1.JPG" alt="cc1.JPG"&gt;
@@ -964,9 +1072,9 @@ hoping that the tradition can continue for many more.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/nice-appreciated/"/>
-    <summary type="html">&lt;div id="outline-container-org05df3a1" class="outline-2"&gt;
-&lt;h2 id="org05df3a1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org05df3a1"&gt;
+    <summary type="html">&lt;div id="outline-container-orgd706874" class="outline-2"&gt;
+&lt;h2 id="orgd706874"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd706874"&gt;
 &lt;p&gt;
 Today was my 50th Birthday. I'm usually pretty low key on birthdays
 and today was no different. I got up, exercised, went to work, taught
@@ -989,185 +1097,5 @@ pretty terrific as a teacher.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
-  </entry>
-  <entry>
-    <title>There's always something to learn (from your students)</title>
-    <id>http://cestlaz.github.io/posts/when-they-change-the-script/</id>
-    <updated>2017-10-18T11:41:49-04:00</updated>
-    <published>2017-10-18T11:41:49-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/when-they-change-the-script/"/>
-    <summary type="html">&lt;div id="outline-container-orgd32e828" class="outline-2"&gt;
-&lt;h2 id="orgd32e828"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd32e828"&gt;
-&lt;p&gt;
-One thing I've learned from teaching is that there's always something
-new to learn. For the kids, yes, but I'm talking about for the
-teacher.
-&lt;/p&gt;
-
-&lt;p&gt;
-The other day, I taught a lesson I've taught many times. Find the mode
-of a data set. That's the problem that they solve but the lesson is
-really about run time complexity, hidden complexity and using data
-structures in alternate ways.
-&lt;/p&gt;
-
-&lt;p&gt;
-I blogged about this &lt;a href="https://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md"&gt;before&lt;/a&gt; so you can get an earlier take there
-although the code isn't formatted correctly due to blog conversions.
-&lt;/p&gt;
-
-&lt;p&gt;
-As with the last time, the students  had already written code to find
-the largest value in a list and also to find the frequency of an item
-in a list.
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;random&lt;/span&gt;
-
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;build_list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;low&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;high&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;[]&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-	&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;randrange&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;low&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;high&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;
-
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;get_max_value&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="n"&gt;max_index&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;
-    &lt;span class="n"&gt;max_val&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;enumerate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-	&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;max_val&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-	    &lt;span class="n"&gt;max_index&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;
-	    &lt;span class="n"&gt;max_val&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;max_val&lt;/span&gt;
-
-&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;get_freq&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;requested_val&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-	&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;requested_val&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-	    &lt;span class="n"&gt;count&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;count&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;count&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-They had to write mode prior to the class. In the past, students would
-generally come up with something like this:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;get_mode_1&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="n"&gt;mode_val&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-    &lt;span class="n"&gt;mode_freq&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_freq&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;mode_val&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;enumerate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-	&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_freq&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;mode_freq&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-	    &lt;span class="n"&gt;mode_freq&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;
-	    &lt;span class="n"&gt;mode_val&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;mode_val&lt;/span&gt;
-
-&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;build_list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;get_mode_1&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-They'd use their existing knowledge and the 'find the largest' idiom
-to find the mode by:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;find the frequency of the first item and assume it's the mode so far&lt;/li&gt;
-&lt;li&gt;for each item in the list
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;find the frequency of that idem&lt;/li&gt;
-&lt;li&gt;if it occurs more than the mode so far then it becomes the new
-mode so far&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-There's a lot of good in this solution. The kids incrementally develop
-a solution, they use and exctend code and concepts they already know
-and understand and it's clear and understandable.
-&lt;/p&gt;
-
-&lt;p&gt;
-We would then run the code on larger and larger data sets and notice
-that it gets slow pretty quickly. This leads to an informal discussion
-of run time and the fact that there's hidden complexity – the call to
-&lt;code&gt;freq&lt;/code&gt; in the main loop introduces a linear component so we have a
-loop within a loop and an N&lt;sup&gt;2&lt;/sup&gt; routine.
-&lt;/p&gt;
-
-&lt;p&gt;
-The big takeaway is get a feel for run time and to be aware of hidden
-complexity. We then move to a linear solution by using a list as
-buckets. You can read more about that in the &lt;a href="https://cestlaz.github.io/posts/2013-03-23-Who_won_the_election-Quadratic_to_Linear_Time.md"&gt;original post&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-What was interesting this time around was that most of the kids came
-up with a solution more like this:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;get_mode_2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="n"&gt;freqs&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[]&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-       &lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_freq&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;item&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-       &lt;span class="n"&gt;freqs&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;mode_count&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;freqs&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-    &lt;span class="n"&gt;mode_value&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;enumerate&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;freqs&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-       &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;mode_count&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-	   &lt;span class="n"&gt;mode_count&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;value&lt;/span&gt;
-	   &lt;span class="n"&gt;mode_value&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;index&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;mode_value&lt;/span&gt;
-
-&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;build_list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_mode_2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Instead of calculating the frequency inside the loop they made a list
-of frequencies. &lt;code&gt;freq[0]&lt;/code&gt; had the frequency of &lt;code&gt;l[0]&lt;/code&gt;, &lt;code&gt;freq[1]&lt;/code&gt; the
-frequency of &lt;code&gt;l[1]&lt;/code&gt; etc. They then loop through that &lt;code&gt;freq&lt;/code&gt; list to
-find the largest element and that's the index of the mode value in the
-original list.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's functionally the same as the first solution but in some ways it's
-very different. They built the data set they needed ahead of time
-instead of calculating the data on the fly and they used the concept
-of parallel lists.
-&lt;/p&gt;
-
-&lt;p&gt;
-I like the solution and it didn't prevent us from getting to the run
-time stuff but this did give me something to think about. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Why did this class led them largely to a different solution than the
-classes I've taught in the class. There are a lot of things to ponder
-since it's a college class that meets twice a week with kids from a
-range of backgrounds (CS and otherwise) vs a high school class that
-meets 5 days a week and the kids all had the same in class experience
-prior to this lesson. Did I do something differently before hand? Some
-assignments? Something I modeled?  I'm not sure but it's something I'm
-going to ponder.
-&lt;/p&gt;
-
-&lt;p&gt;
-It will interesting to see if this was a one shot deal and my current
-class will solve problems as I predict moving forward or if I'm going
-to get to see a lot of new things.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="cs" label="cs"/>
-    <category term="education" label="education"/>
-    <category term="lessons" label="lessons"/>
   </entry>
 </feed>
