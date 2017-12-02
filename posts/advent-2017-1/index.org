@@ -1,0 +1,159 @@
+#+BEGIN_COMMENT
+.. title: Advent of Code 2017 - Day 1
+.. slug: advent-2017-1
+.. date: 2017-12-02 08:27:02 UTC-04:00
+.. tags: python, programming, cs
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+It's once again time for [[http://adventofcode.com][Advent of Code]]. That one a day programming
+competition that's been running now for three years.
+
+Here are some thoughts on [[http://adventofcode.com/2017/day/1][day 1]]. The core of the problem is that you
+have a large string of digits and you have to calculate a
+checksum. This is done by adding the sum of a subset of the
+digits. Only the ones that are identical to the digit to their
+right. To make it a little more interesting, the last digit wraps
+around to the first for checksum purposes.
+
+For example, the input **2234335** leads to the calculate ~2 + 3~ or
+~5~. The input **234445662** leads to ~4+4+6+2~ or ~16~. We add 4 for
+twice because the first four is adjacent the second and the second the
+third. We add the 2 at the end because it wraps around to match the
+one at the front.
+
+We first read in the data and strip off the trailing newline
+
+#+BEGIN_SRC python
+f = open("input.txt")
+origdata = f.readline()
+
+origdata = origdata.strip()
+data = origdata
+#+END_SRC
+
+Then, since we can access the elements of the string as a list (or
+array) it's a simple loop to calculate the sum:
+
+#+BEGIN_SRC python
+  s = 0
+  l = len(data)
+  for i in range(l-1):
+      if data[i]==data[i+1]:
+          s = s + int(data[i]) # Don't forget to turn the string into an int
+
+  # data[-1] is the python way of getting the last element - here we check the wraparound
+  if data[0] == data[-1]:
+      s = s + int(data[0])
+  print("Checksum: ",s)
+#+END_SRC
+
+Pretty straightforward but I don't like the special case of checking
+the last element for the wraparound. Sometimes it's possible to get
+rid of edge cases like this by [[https://cestlaz.github.io/posts/2014-02-26-change-the-data.md][changing the data]]. We can do that here
+by simply appending a copy of the first character to the end of the
+list.
+
+This leads to a slightly cleaner solution:
+
+#+BEGIN_SRC python
+data = data + data[0]
+
+s = 0
+l = len(data)
+for i in range(l-1):
+    if data[i]==data[i+1]:
+        s = s + int(data[i]) #don't forget to turn the string into an int
+print("Checksum: ",s)
+
+#+END_SRC
+
+This is pretty much what I'd expect from a Python programmer that's
+just starting out. We can use a couple of more advanced Python
+features to make what I consider a more elegant solution.
+
+Python's **zip** function takes two lists and interleaves them.
+~zip("abc","def")~ will yield ~[ (a,d), (b,e), (c,f)]~. If the lists
+are of different length, it just zips up until the shorter list is
+exhausted. We can use array slicing to zip the input string with it's
+neighbor by using ~new_list = zip(data,data[1:])~. For the string "122344'
+zipping gives us ~[(1,2),(2,2),(2,3),(3,4),(4,4)]~. We can put this in
+a list comprehension that only keeps the tuples representing an
+element with an identical neighbor and also converts it to an int:
+~new_list = [int(a) for a,b in new_list if a==b]~.
+
+Finally, we can just calculate the sum. This leads to the following
+complete solution:
+
+#+BEGIN_SRC python
+f = open("input.txt")
+data = f.readline().strip()
+data = data + data[0]
+
+checksum= sum([ int(a) for a,b in zip(data,data[1:]) if a==b])
+
+print(checksum)
+
+
+#+END_SRC
+
+List comprehensions for the win!!!!
+
+Each Advent of Code problem has two parts. You unlock the second by
+solving the first. Here, the wrinkle is that instead of checking each
+digit with it's neighbor to the right, you check it with the one
+that's halfway around the list. 
+
+With loops, the solution is just a quick modification of part 1. We
+just add half the length and use mod to find the digit to compare with:
+
+#+BEGIN_SRC python
+f = open("input.txt")
+data = f.readline().strip()
+data = data + data[0]
+
+s = 0
+l = len(data)
+for i in range(l-1):
+    if data[i]==data[(i+l//2)%l]: # check halfway around instead of adjacent
+        s = s + int(data[i])
+print("part 2loop version: ",s)
+
+
+#+END_SRC
+
+I wanted to see if I could do this with a list comprehension
+though. The trick was to figure out how to make two lists to zip
+together to get the pairs to check then add. Here's the solution:
+#+BEGIN_SRC python
+ 
+f = open("input.txt")
+data = f.readline().strip()
+l = len(data)
+d2 = data[l//2:]+data
+checksum = sum([ int(a) for a,b in zip(data,d2)if a==b])
+print(checksum)
+#+END_SRC
+
+The insight was that we could just make a second list that starts
+halfway through and then wraps around. I did this by adding
+~data[l//2:] + data~. ~l//2~ is the integer division of the length (in
+Python3). ~data[l//2:]~ represents the second half of data (from the
+midway point to the end). Technically I should have only added the second
+half of data: ~data[l//2:] + data[:l//2]~ where ~data[:l//2]~ gives us
+the first half of the list but since zip will just stop when it
+exhausts the shorter list, this wasn't necessary.
+
+Day 2 also has a nice list comprehension based solution. Maybe I'll
+write that up later.
+
+
+
+
+
+
+

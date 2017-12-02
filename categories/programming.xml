@@ -1,7 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about programming)</title><link>http://cestlaz.github.io/</link><description></description><atom:link rel="self" href="http://cestlaz.github.io/categories/programming.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 30 Nov 2017 01:32:42 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Motivating and understanding quicksort</title><link>http://cestlaz.github.io/posts/quick-sort-starting/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org2eb047e" class="outline-2"&gt;
-&lt;h2 id="org2eb047e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org2eb047e"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about programming)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/programming.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 02 Dec 2017 13:53:52 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Advent of Code 2017 - Day 1</title><link>http://cestlaz.github.io/posts/advent-2017-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3d9cfbf" class="outline-2"&gt;
+&lt;h2 id="org3d9cfbf"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3d9cfbf"&gt;
+&lt;p&gt;
+It's once again time for &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. That one a day programming
+competition that's been running now for three years.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here are some thoughts on &lt;a href="http://adventofcode.com/2017/day/1"&gt;day 1&lt;/a&gt;. The core of the problem is that you
+have a large string of digits and you have to calculate a
+checksum. This is done by adding the sum of a subset of the
+digits. Only the ones that are identical to the digit to their
+right. To make it a little more interesting, the last digit wraps
+around to the first for checksum purposes.
+&lt;/p&gt;
+
+&lt;p&gt;
+For example, the input &lt;b&gt;&lt;b&gt;2234335&lt;/b&gt;&lt;/b&gt; leads to the calculate &lt;code&gt;2 + 3&lt;/code&gt; or
+&lt;code&gt;5&lt;/code&gt;. The input &lt;b&gt;&lt;b&gt;234445662&lt;/b&gt;&lt;/b&gt; leads to &lt;code&gt;4+4+6+2&lt;/code&gt; or &lt;code&gt;16&lt;/code&gt;. We add 4 for
+twice because the first four is adjacent the second and the second the
+third. We add the 2 at the end because it wraps around to match the
+one at the front.
+&lt;/p&gt;
+
+&lt;p&gt;
+We first read in the data and strip off the trailing newline
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"input.txt"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;origdata&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readline&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="n"&gt;origdata&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;origdata&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;origdata&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Then, since we can access the elements of the string as a list (or
+array) it's a simple loop to calculate the sum:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
+	&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="c1"&gt;# Don't forget to turn the string into an int&lt;/span&gt;
+
+&lt;span class="c1"&gt;# data[-1] is the python way of getting the last element - here we check the wraparound&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
+    &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Checksum: "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Pretty straightforward but I don't like the special case of checking
+the last element for the wraparound. Sometimes it's possible to get
+rid of edge cases like this by &lt;a href="https://cestlaz.github.io/posts/2014-02-26-change-the-data.md"&gt;changing the data&lt;/a&gt;. We can do that here
+by simply appending a copy of the first character to the end of the
+list.
+&lt;/p&gt;
+
+&lt;p&gt;
+This leads to a slightly cleaner solution:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+
+&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
+	&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="c1"&gt;#don't forget to turn the string into an int&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Checksum: "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+This is pretty much what I'd expect from a Python programmer that's
+just starting out. We can use a couple of more advanced Python
+features to make what I consider a more elegant solution.
+&lt;/p&gt;
+
+&lt;p&gt;
+Python's &lt;b&gt;&lt;b&gt;zip&lt;/b&gt;&lt;/b&gt; function takes two lists and interleaves them.
+&lt;code&gt;zip("abc","def")&lt;/code&gt; will yield &lt;code&gt;[ (a,d), (b,e), (c,f)]&lt;/code&gt;. If the lists
+are of different length, it just zips up until the shorter list is
+exhausted. We can use array slicing to zip the input string with it's
+neighbor by using &lt;code&gt;new_list = zip(data,data[1:])&lt;/code&gt;. For the string "122344'
+zipping gives us &lt;code&gt;[(1,2),(2,2),(2,3),(3,4),(4,4)]&lt;/code&gt;. We can put this in
+a list comprehension that only keeps the tuples representing an
+element with an identical neighbor and also converts it to an int:
+&lt;code&gt;new_list = [int(a) for a,b in new_list if a==b]&lt;/code&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Finally, we can just calculate the sum. This leads to the following
+complete solution:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"input.txt"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readline&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+
+&lt;span class="n"&gt;checksum&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:])&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;checksum&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+List comprehensions for the win!!!!
+&lt;/p&gt;
+
+&lt;p&gt;
+Each Advent of Code problem has two parts. You unlock the second by
+solving the first. Here, the wrinkle is that instead of checking each
+digit with it's neighbor to the right, you check it with the one
+that's halfway around the list. 
+&lt;/p&gt;
+
+&lt;p&gt;
+With loops, the solution is just a quick modification of part 1. We
+just add half the length and use mod to find the digit to compare with:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"input.txt"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readline&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+
+&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="c1"&gt;# check halfway around instead of adjacent&lt;/span&gt;
+	&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"part 2loop version: "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+I wanted to see if I could do this with a list comprehension
+though. The trick was to figure out how to make two lists to zip
+together to get the pairs to check then add. Here's the solution:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"input.txt"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readline&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;d2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:]&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;
+&lt;span class="n"&gt;checksum&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;d2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;checksum&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The insight was that we could just make a second list that starts
+halfway through and then wraps around. I did this by adding
+&lt;code&gt;data[l//2:] + data&lt;/code&gt;. &lt;code&gt;l//2&lt;/code&gt; is the integer division of the length (in
+Python3). &lt;code&gt;data[l//2:]&lt;/code&gt; represents the second half of data (from the
+midway point to the end). Technically I should have only added the second
+half of data: &lt;code&gt;data[l//2:] + data[:l//2]&lt;/code&gt; where &lt;code&gt;data[:l//2]&lt;/code&gt; gives us
+the first half of the list but since zip will just stop when it
+exhausts the shorter list, this wasn't necessary.
+&lt;/p&gt;
+
+&lt;p&gt;
+Day 2 also has a nice list comprehension based solution. Maybe I'll
+write that up later.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>programming</category><category>python</category><guid>http://cestlaz.github.io/posts/advent-2017-1/</guid><pubDate>Sat, 02 Dec 2017 12:27:02 GMT</pubDate></item><item><title>Motivating and understanding quicksort</title><link>http://cestlaz.github.io/posts/quick-sort-starting/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org5a8f8dd" class="outline-2"&gt;
+&lt;h2 id="org5a8f8dd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5a8f8dd"&gt;
 &lt;p&gt;
 Thks question was posed the other day - how can one get students to
 truly understand the quicksort algorithm?
@@ -81,9 +245,9 @@ programming paradigms (&lt;a href="https://cestlaz.github.io/posts/2010-03-14-so
 Enjoy.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>algorithms. unplugged</category><category>cs</category><category>programming</category><guid>http://cestlaz.github.io/posts/quick-sort-starting/</guid><pubDate>Tue, 21 Nov 2017 14:34:05 GMT</pubDate></item><item><title>Programming Idioms</title><link>http://cestlaz.github.io/posts/programming-idioms/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org5533ee1" class="outline-2"&gt;
-&lt;h2 id="org5533ee1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5533ee1"&gt;
+&lt;/div&gt;</description><category>algorithms. unplugged</category><category>cs</category><category>programming</category><guid>http://cestlaz.github.io/posts/quick-sort-starting/</guid><pubDate>Tue, 21 Nov 2017 14:34:05 GMT</pubDate></item><item><title>Programming Idioms</title><link>http://cestlaz.github.io/posts/programming-idioms/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc49d4ee" class="outline-2"&gt;
+&lt;h2 id="orgc49d4ee"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc49d4ee"&gt;
 &lt;p&gt;
 I just read Jeff Yearout's recent post titled &lt;a href="http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html"&gt;The Beginner's Garden of
 Concepts&lt;/a&gt;. Not directly related but it got me thinking about
@@ -517,9 +681,9 @@ Here's all the code:
 &lt;p&gt;
 Overall, a nice little problem for beginning and intermediate
 students.
-&lt;/p&gt;</description><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-code-2016-1/</guid><pubDate>Tue, 06 Dec 2016 15:46:17 GMT</pubDate></item><item><title>Inverted Index Project</title><link>http://cestlaz.github.io/posts/inverted-index/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org5d6c4c2" class="outline-2"&gt;
-&lt;h2 id="org5d6c4c2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5d6c4c2"&gt;
+&lt;/p&gt;</description><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-code-2016-1/</guid><pubDate>Tue, 06 Dec 2016 15:46:17 GMT</pubDate></item><item><title>Inverted Index Project</title><link>http://cestlaz.github.io/posts/inverted-index/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org30baeed" class="outline-2"&gt;
+&lt;h2 id="org30baeed"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org30baeed"&gt;
 &lt;p&gt;
 I haven't spoken much about the class I've been teaching this
 semester. It's an intro CS course - a programming heavy intro. I
