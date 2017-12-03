@@ -1,5 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about programming)</title><link>http://cestlaz.github.io/</link><description></description><atom:link rel="self" href="http://cestlaz.github.io/categories/programming.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 03 Dec 2017 13:49:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Advent of Code 2017 - Day 1</title><link>http://cestlaz.github.io/posts/advent-2017-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org1e498ab" class="outline-2"&gt;
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>Posts about adventofcode</title>
+  <id>http://cestlaz.github.io/categories/adventofcode.atom</id>
+  <updated>2017-12-03T13:49:33Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/adventofcode.atom"/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/adventofcode/"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Advent of Code 2017 - Day 1</title>
+    <id>http://cestlaz.github.io/posts/advent-2017-1/</id>
+    <updated>2017-12-02T08:27:02-04:00</updated>
+    <published>2017-12-02T08:27:02-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-2017-1/"/>
+    <summary type="html">&lt;div id="outline-container-org1e498ab" class="outline-2"&gt;
 &lt;h2 id="org1e498ab"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-org1e498ab"&gt;
 &lt;p&gt;
@@ -163,301 +183,128 @@ Day 2 also has a nice list comprehension based solution. Maybe I'll
 write that up later.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>adventofcode</category><category>cs</category><category>programming</category><category>python</category><guid>http://cestlaz.github.io/posts/advent-2017-1/</guid><pubDate>Sat, 02 Dec 2017 12:27:02 GMT</pubDate></item><item><title>Motivating and understanding quicksort</title><link>http://cestlaz.github.io/posts/quick-sort-starting/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org5a8f8dd" class="outline-2"&gt;
-&lt;h2 id="org5a8f8dd"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5a8f8dd"&gt;
-&lt;p&gt;
-Thks question was posed the other day - how can one get students to
-truly understand the quicksort algorithm?
+&lt;/div&gt;</summary>
+    <category term="adventofcode" label="adventofcode"/>
+    <category term="cs" label="cs"/>
+    <category term="programming" label="programming"/>
+    <category term="python" label="python"/>
+  </entry>
+  <entry>
+    <title>It gets easier (or advent of code 2016 day 19)</title>
+    <id>http://cestlaz.github.io/posts/it-gets-easier-advent19/</id>
+    <updated>2016-12-19T19:56:09-05:00</updated>
+    <published>2016-12-19T19:56:09-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/it-gets-easier-advent19/"/>
+    <summary type="html">&lt;p&gt;
+Today's &lt;a href="http://adventofcode.com/2016/day/19"&gt;Advent of Code&lt;/a&gt; problem was a variant on the &lt;a href="http://mathworld.wolfram.com/JosephusProblem.html"&gt;Josephus
+problem&lt;/a&gt;. 
 &lt;/p&gt;
 
 &lt;p&gt;
-I've written a few posts about quicksort. The last time I did a &lt;a href="https://cestlaz.github.io/posts/2014-03-12-select-to-sort.html/"&gt;lesson
-writeup&lt;/a&gt; on the subject I wrote about first looking and quickselect and
-then moving to the quicksort. The class was first faced with the
-problem of writing a routine to find the Kth smallest item in an
-unsorted data set. The first solution was n&lt;sup&gt;2&lt;/sup&gt; and then refined to a
-quickselect. This led directly to the quicksort. 
+I recalled that there was a formula to figure out the 
+sole survivor but I decide to run a simulation rather than looking it
+up. I also decided to write it up in C++, well, really C with cout
+instead of printf.
 &lt;/p&gt;
 
 &lt;p&gt;
-I liked the lesson and I think it worked well when I taught it but
-that was partly due to the overall tenor of that particular group of
-students.
+Part 1 was the traditional problem. Part 2 was a variant where at each
+iteration, you remove the elf opposite the elf being processed (see
+the &lt;a href="http://adventofcode.com/2016/day/19"&gt;problem description&lt;/a&gt; for details).
 &lt;/p&gt;
 
 &lt;p&gt;
-A similar approach develops the quicksort in a similar way but is
-both more direct and accessible.
+For both solutions I coded up a circular doubly linked list:
 &lt;/p&gt;
 
-&lt;p&gt;
-The motivating problem is to put one item in a data set in its proper
-place. You could select one person in class and arrange the class so
-that the selected student is in their proper size place, that is
-everyone shorter on one side, taller on the other. You could also do
-this for age. A similar exercise could be done with any number of
-manipulatives.
-&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nf"&gt;make_ring&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;current&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;first&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
-&lt;p&gt;
-This operation of arranging the rest of the set around one selected
-item or person is very easy and in fact it's trivial to show that this
-can be done in linear time. 
-&lt;/p&gt;
+  &lt;span class="n"&gt;first&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="n"&gt;malloc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;sizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+  &lt;span class="n"&gt;first&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;current&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;first&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
-&lt;p&gt;
-Once we've done this arrangement, we can discuss what we can infer
-from this new arrangement. We can now tell that:
-&lt;/p&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt;  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;size&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+    &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="n"&gt;malloc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;sizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+    &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;prev&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;current&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;current&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;next&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;current&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;everyone to the left of the "pivot" is less than the pivot&lt;/li&gt;
-&lt;li&gt;everyone to the right is greater&lt;/li&gt;
-&lt;li&gt;The pivot element is at its true location if the list were
-sorted. That is, if we started arranging around item k, then we've
-moved item k to the kth location in the dataset.&lt;/li&gt;
-&lt;/ul&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="n"&gt;current&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;next&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;first&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="n"&gt;first&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;prev&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;current&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;first&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
-&lt;p&gt;
-From here it's a small jump to the quicksort algorithm, just repeat
-the process on the left and right data sets.
-&lt;/p&gt;
-
-&lt;p&gt;
-This approach not only makes the algorithm and its development clear
-and simple but it also can be used to illustrate the worst case n&lt;sup&gt;2&lt;/sup&gt;
-behavior. 
-&lt;/p&gt;
-
-&lt;p&gt;
-The whole thing, minus the coding, can also be done as an unplugged activity.
-&lt;/p&gt;
-
-&lt;p&gt;
-In case anyone's interested, I also wrote a post on subtle
-implementation errors when writing the quicksort (&lt;a href="https://cestlaz.github.io/posts/2014-03-17-subtle-errors-sorting.html"&gt;here&lt;/a&gt;) and also
-looking at the qucksort from the point of view of different
-programming paradigms (&lt;a href="https://cestlaz.github.io/posts/2010-03-14-sorting-from-top-and-from-bottom.html"&gt;here&lt;/a&gt;).
-&lt;/p&gt;
-
-&lt;p&gt;
-Enjoy.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>algorithms. unplugged</category><category>cs</category><category>programming</category><guid>http://cestlaz.github.io/posts/quick-sort-starting/</guid><pubDate>Tue, 21 Nov 2017 14:34:05 GMT</pubDate></item><item><title>Programming Idioms</title><link>http://cestlaz.github.io/posts/programming-idioms/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc49d4ee" class="outline-2"&gt;
-&lt;h2 id="orgc49d4ee"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc49d4ee"&gt;
-&lt;p&gt;
-I just read Jeff Yearout's recent post titled &lt;a href="http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html"&gt;The Beginner's Garden of
-Concepts&lt;/a&gt;. Not directly related but it got me thinking about
-programming idioms.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've been using the phrase "programming idiom" for years to describe a
-short useful recurring code construct. I didn't realize that it was
-officially "a thing" until doing a web search on the phrase years
-later.
-&lt;/p&gt;
-
-&lt;p&gt;
-As our students grow from newbies on I think it's helpful for them to
-see recurring and related patterns and programming idioms gives us a
-name to apply to many beginner patterns. An early idiom might be
-"finding the smallest in a list:"
-&lt;/p&gt;
-
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;dataset&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-
-&lt;span class="n"&gt;min_index&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;)):&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;min_index&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
-	&lt;span class="n"&gt;min_index&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;
-Another is the very similar and more general "do something on every
-item in a list:"
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;)):&lt;/span&gt;
-    &lt;span class="c1"&gt;# do something to or with dataset[i]&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-By talking about constructs like these as idioms it helps students see
-and develop coding patterns. It also helps them to build mental
-abstractions. Each of the above idioms are a few lines of code but
-each are also a single concept. Students learn to think of them as the
-concept.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-When students learn about list comprehensions in python they'll
-rewrite the "do something…" more like this:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-but the pattern or idea is the same.
+You can see my complete solutions &lt;a href="https://github.com/zamansky/advent2016/blob/master/day19.cpp"&gt;here&lt;/a&gt;.
 &lt;/p&gt;
 
 &lt;p&gt;
-Other early idioms might include swapping variables:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;tmp&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;
-&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;
-&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;tmp&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-and loops until an exit condition are met:
-&lt;/p&gt;
-
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;not_exit_condidtion&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="c1"&gt;# do stuff&lt;/span&gt;
-    &lt;span class="n"&gt;modify&lt;/span&gt; &lt;span class="n"&gt;variable&lt;/span&gt; &lt;span class="n"&gt;that&lt;/span&gt; &lt;span class="n"&gt;checks&lt;/span&gt; &lt;span class="nb"&gt;exit&lt;/span&gt; &lt;span class="n"&gt;condition&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Even more difficult concepts like recursion can be described in an
-idiomatic way:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;BASE_CASE&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-	&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;something&lt;/span&gt;
-    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-	&lt;span class="n"&gt;new_x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;modify_to_eventually_get_to_base_case&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;new_x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Patterns like these, or idioms, come up over and over again. We don't
-have to explicitly mention them in our teaching but I think it's
-helpful to our students if we do.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>programming</category><category>teaching</category><guid>http://cestlaz.github.io/posts/programming-idioms/</guid><pubDate>Sun, 08 Oct 2017 15:51:46 GMT</pubDate></item><item><title>A* is born</title><link>http://cestlaz.github.io/posts/a-star-is-born/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
-Over on the &lt;a href="https://cseducators.stackexchange.com/"&gt;CS Educator StachExchange&lt;/a&gt;, which is in private beta for a
-few more days, I saw a post asking about how to introduce the &lt;a href="https://en.wikipedia.org/wiki/A*_search_algorithm"&gt;A*
-search algorithm&lt;/a&gt;. 
+I was thinking about how I wrote the code – I just rolled it off the
+top of my head. The same was true for the earlier AoC problems where I
+had to implement a breadth first search or something similar. 
 &lt;/p&gt;
 
 &lt;p&gt;
-I taught A* as part of the APCS class at Stuy so I thought I'd talk
-about what I did here.
+I'm not making a statement about my amazing coding abilities - linked
+lists and graph searches are pretty basic, but rather than having done
+the CS thing for so long, these fundamentals have become somewhat
+routine. I haven't really written C code in years but other than a
+couple of typos (and a stupid mistake in calculating steps) things
+worked right off the bat. 
 &lt;/p&gt;
 
 &lt;p&gt;
-Some time around mid year, we get to intermediate recursion. This is
-about the time, give or take, when we talk about the nlogn sorts.
+I remember a time when I was in college or even a young professional
+when I would use an array and an index as a stack or queue - not
+because it made more sense but rather, because I wasn't fully
+comfortable with memory manipulation and linked lists. The same could
+be said for my first few years working with anything more than the
+simplest recursion.
 &lt;/p&gt;
 
 &lt;p&gt;
-We also build a recursive maze solver. It's a nice algorithm and a
-nice little program. It's around 15 lines of code to perform a
-recursive depth first search:
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/astar/dfs.gif" alt="dfs.gif" align="center" height="200px"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-The basic algorithm is:
-&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/* solve the maze from an x,ylocation */&lt;/span&gt;
-&lt;span class="n"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
-  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;we&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;re&lt;/span&gt; &lt;span class="n"&gt;at&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;exit&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-    &lt;span class="n"&gt;Yay&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt; &lt;span class="n"&gt;We&lt;/span&gt; &lt;span class="n"&gt;found&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;exit&lt;/span&gt;
-  &lt;span class="nf"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;we&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;re&lt;/span&gt; &lt;span class="n"&gt;at&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;wall&lt;/span&gt; &lt;span class="n"&gt;or&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="n"&gt;visited&lt;/span&gt; &lt;span class="n"&gt;space&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;previous&lt;/span&gt; &lt;span class="n"&gt;step&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-  &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-     &lt;span class="n"&gt;mark&lt;/span&gt; &lt;span class="n"&gt;current&lt;/span&gt; &lt;span class="n"&gt;space&lt;/span&gt; &lt;span class="n"&gt;as&lt;/span&gt; &lt;span class="n"&gt;visited&lt;/span&gt;
-     &lt;span class="nf"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-     &lt;span class="n"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-     &lt;span class="n"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-     &lt;span class="n"&gt;solve&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="n"&gt;y&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-  &lt;span class="o"&gt;}&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-It's a nice lesson because in addition to all the recursion stuff, we
-also get to talk about state space, state space search, backtracking,
-efficiency concerns and much more. After we finish the maze solver, we also talk about
-other problems that can be similarly examined using state-space search
-like the knights tour and N-queens problems. 
+All of this is to say that it does get easier.
 &lt;/p&gt;
 
 &lt;p&gt;
-A month or so later, when we're learning about stacks and queues as
-data structures, we revisit the maze solver. This time we solve the
-problem in a more general way. We talk about using a data structure to
-hold the set of nodes that we're aware of and that we want to visit
-next. 
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="n"&gt;start&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="n"&gt;structure&lt;/span&gt;
-&lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="n"&gt;structure&lt;/span&gt; &lt;span class="n"&gt;not&lt;/span&gt; &lt;span class="n"&gt;empty&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
-  &lt;span class="n"&gt;current&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;remove&lt;/span&gt; &lt;span class="n"&gt;item&lt;/span&gt; &lt;span class="n"&gt;from&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="n"&gt;structure&lt;/span&gt;
-  &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;current&lt;/span&gt; &lt;span class="n"&gt;is&lt;/span&gt; &lt;span class="n"&gt;goal&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;we&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;re&lt;/span&gt; &lt;span class="n"&gt;done&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;
-
-  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;every&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="n"&gt;adjacent&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;current&lt;/span&gt; &lt;span class="n"&gt;that&lt;/span&gt; &lt;span class="n"&gt;isn&lt;/span&gt;&lt;span class="err"&gt;'&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt; &lt;span class="n"&gt;yet&lt;/span&gt; &lt;span class="n"&gt;visited&lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;
-     &lt;span class="n"&gt;mark&lt;/span&gt; &lt;span class="n"&gt;that&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="n"&gt;as&lt;/span&gt; &lt;span class="n"&gt;visited&lt;/span&gt;
-     &lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="n"&gt;node&lt;/span&gt; &lt;span class="n"&gt;to&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="n"&gt;structure&lt;/span&gt;
-  &lt;span class="o"&gt;}&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-As we write the solution, we see that using a queue for this
-data structure yields a breadth first search:
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/astar/bfs.gif" alt="bfs.gif" align="center" height="200px"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-while using a stack yields depth first. 
+Things that seem trivial to us now seemed
+insurmountable when we were beginners. Last year, I wrote about an overnight homework
+assignment I gave to my class that would have been a final project a
+year earlier (the post is &lt;a href="http://cestlaz.github.io/posts/2015-02-11-taking-stock-self-assess.html/#.WFiGl99iekA"&gt;here&lt;/a&gt; but the homework links are no longer
+active) and a few weeks ago I recall a fellow CS teacher talking about
+how much longer it takes his students to write a chunk of code than it
+takes the teacher.
 &lt;/p&gt;
 
 &lt;p&gt;
-All of this leads to a discussion as to how deciding on which
-locations to look at next can greatly influence the steps to the
-exit. From here it's easy to see that you can use a heuristic to order
-the nodes in our data structure so that we explore "better"
-possibilities first. The data structure becomes a priority queue and
-we finally get to both "best first" and A* search:
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/astar/astar.gif" alt="astar.gif" align="center" height="200px"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-It's a nice sequence of lessons, albeit lessons spread out over
-months. The end result is that the students see both the need and
-motivation for something like A* and they see that it's not hard to
-implement. One basic routine where you can plug in one of three data
-structures - stack, queue, or priority queue to get very different
-results.
-&lt;/p&gt;</description><category>algorithms</category><category>cs</category><category>data structures</category><category>programming</category><guid>http://cestlaz.github.io/posts/a-star-is-born/</guid><pubDate>Mon, 05 Jun 2017 22:42:55 GMT</pubDate></item><item><title>Advent of Code 2016 - Check your data</title><link>http://cestlaz.github.io/posts/advent-of-code-2016-check-data/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+New things are challenging and take time but with practice and
+persistence techniques that were once daunting can become tools ready
+at our disposal to use on a whim.
+&lt;/p&gt;</summary>
+    <category term="adventofcode" label="adventofcode"/>
+    <category term="coding" label="coding"/>
+    <category term="cs" label="cs"/>
+  </entry>
+  <entry>
+    <title>Advent of Code 2016 - Check your data</title>
+    <id>http://cestlaz.github.io/posts/advent-of-code-2016-check-data/</id>
+    <updated>2016-12-10T11:25:38-05:00</updated>
+    <published>2016-12-10T11:25:38-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-of-code-2016-check-data/"/>
+    <summary type="html">&lt;p&gt;
 I'm spending the weekend up in Michigan. Visiting my brother and is
 family. We're here to see the &lt;a href="http://umgass.org"&gt;UMGASS&lt;/a&gt; production of Gilbert and
 Sullivan's &lt;a href="http://www.umgass.org/current-production"&gt;The Sorcerer&lt;/a&gt;. Batya also came up from Cornell to join us so
@@ -525,7 +372,21 @@ the wrong data.
 
 &lt;p&gt;
 In case anyone's interested, you can find my AoC code &lt;a href="https://github.com/zamansky/advent2016"&gt;here&lt;/a&gt;.
-&lt;/p&gt;</description><category>adventofcode</category><category>cs</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-of-code-2016-check-data/</guid><pubDate>Sat, 10 Dec 2016 16:25:38 GMT</pubDate></item><item><title>A Teacher looks at Advent of Code 2016 #2</title><link>http://cestlaz.github.io/posts/advent-of-code-2016-2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+&lt;/p&gt;</summary>
+    <category term="adventofcode" label="adventofcode"/>
+    <category term="cs" label="cs"/>
+    <category term="programming" label="programming"/>
+  </entry>
+  <entry>
+    <title>A Teacher looks at Advent of Code 2016 #2</title>
+    <id>http://cestlaz.github.io/posts/advent-of-code-2016-2/</id>
+    <updated>2016-12-08T08:40:49-05:00</updated>
+    <published>2016-12-08T08:40:49-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-of-code-2016-2/"/>
+    <summary type="html">&lt;p&gt;
 Today we're looking at &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; 2016 &lt;a href="http://adventofcode.com/2016/day/2"&gt;number 2&lt;/a&gt;.
 &lt;/p&gt;
 
@@ -559,7 +420,22 @@ Part two of this problem is a perfect time to use that technique.
 Here's the video, I hope you enjoy it:
 &lt;/p&gt;
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/EC8gSrYQ11g" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</description><category>adventofcode</category><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-of-code-2016-2/</guid><pubDate>Thu, 08 Dec 2016 13:40:49 GMT</pubDate></item><item><title>A Teacher looks at Advent of Code 2016 #1</title><link>http://cestlaz.github.io/posts/advent-code-2016-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/EC8gSrYQ11g" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary>
+    <category term="adventofcode" label="adventofcode"/>
+    <category term="cs" label="cs"/>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="programming" label="programming"/>
+  </entry>
+  <entry>
+    <title>A Teacher looks at Advent of Code 2016 #1</title>
+    <id>http://cestlaz.github.io/posts/advent-code-2016-1/</id>
+    <updated>2016-12-06T10:46:17-05:00</updated>
+    <published>2016-12-06T10:46:17-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-code-2016-1/"/>
+    <summary type="html">&lt;p&gt;
 I recently &lt;a href="http://cestlaz.github.io/posts/advent-of-code-2016/"&gt;posted&lt;/a&gt; about &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; - a series of programming
 problems relseased one a day. While they vary in terms of level of
 difficulty, a number of them make nice problems for introductory to
@@ -681,218 +557,63 @@ Here's all the code:
 &lt;p&gt;
 Overall, a nice little problem for beginning and intermediate
 students.
-&lt;/p&gt;</description><category>adventofcode</category><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-code-2016-1/</guid><pubDate>Tue, 06 Dec 2016 15:46:17 GMT</pubDate></item><item><title>Inverted Index Project</title><link>http://cestlaz.github.io/posts/inverted-index/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org30baeed" class="outline-2"&gt;
-&lt;h2 id="org30baeed"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org30baeed"&gt;
-&lt;p&gt;
-I haven't spoken much about the class I've been teaching this
-semester. It's an intro CS course - a programming heavy intro. I
-decided to use Python with a transition at the end to C++. The
-transition is to mirror Hunter's normal first CS course that ends with
-a C++ intro to prepare the students for next semester's CS course
-which is a more intense OOP class using C++ - the language we use in
-our core courses.
+&lt;/p&gt;</summary>
+    <category term="adventofcode" label="adventofcode"/>
+    <category term="cs" label="cs"/>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="programming" label="programming"/>
+  </entry>
+  <entry>
+    <title>Advent of Code 2016</title>
+    <id>http://cestlaz.github.io/posts/advent-of-code-2016/</id>
+    <updated>2016-12-03T15:25:26-05:00</updated>
+    <published>2016-12-03T15:25:26-05:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-of-code-2016/"/>
+    <summary type="html">&lt;p&gt;
+Once again, it's time for &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; - a series of small
+programming problems released once a day. 
 &lt;/p&gt;
 
 &lt;p&gt;
-Throughout the semester I've tried to use a variety of interesting
-application areas so as to try to give the students some idea of the
-possibilities that studying CS will open up for them.
+I wrote a bit about it &lt;a href="http://cestlaz.github.io/posts/2015-12-15-advent.html/"&gt;last&lt;/a&gt; &lt;a href="http://cestlaz.github.io/posts/2015-12-17-im-an-idiot.html/#.WEMqBB9ieYQ"&gt;year&lt;/a&gt; and you can still find last years
+problems &lt;a href="http://adventofcode.com/2015/"&gt;here&lt;/a&gt;.
 &lt;/p&gt;
 
 &lt;p&gt;
-After covering Python dictionaries and lists I thought we'd play by
-building an inverted Index.
+It's only day three but so far, all of the problems look really nice
+for students in APCS-A or any similar intro course. I'm thinking of
+looking at a couple of the problems this week with my class at Hunter.
 &lt;/p&gt;
 
 &lt;p&gt;
-The basic idea is to map a set of words back to source files. For
-example, given the following four one line files:
-&lt;/p&gt;
-
-
-&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
-
-
-&lt;colgroup&gt;
-&lt;col class="org-left"&gt;
-
-&lt;col class="org-left"&gt;
-
-&lt;col class="org-left"&gt;
-
-&lt;col class="org-left"&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th scope="col" class="org-left"&gt;files&lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt;contents&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class="org-left"&gt;file.01&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;if you prick us do we not bleed&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="org-left"&gt;file.02&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;if you tickle us do we not laugh&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="org-left"&gt;file.03&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;if you poison us do we not die and&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="org-left"&gt;file.04&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;if you wrong us shall we not revenge&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-
-
-&lt;p&gt;
-You could build a data structure mapping each word back to the file(s)
-that contain it (partially shown here),
-&lt;/p&gt;
-
-&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
-
-
-&lt;colgroup&gt;
-&lt;col class="org-left"&gt;
-
-&lt;col class="org-left"&gt;
-
-&lt;col class="org-left"&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th scope="col" class="org-left"&gt;Word&lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt;Files containing It's&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class="org-left"&gt;if&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="org-left"&gt;you&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="org-left"&gt;prick&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="org-left"&gt;us&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="org-left"&gt;do&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01 file.02 file.03&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-
-&lt;p&gt;
-You can, of course, store more information - how many times a word
-appears in a file, where it appears, etc.
+I didn't think about this much last year but one thing I really like
+about the competition is that each problem comes in two parts. You're
+first presented with the problem and the input and once you put in the
+correct answer, you're presented with part two.
 &lt;/p&gt;
 
 &lt;p&gt;
-This is a fairly easy structure to build. A dictionary where the keys
-are the words in the file and the values are lists of the documents
-containing the words.
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="n"&gt;inverted_index&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="s1"&gt;'if'&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'file.01'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.02'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.03'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.04'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
-      &lt;span class="s1"&gt;'you'&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'file.01'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.02'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.03'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.04'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
-      &lt;span class="s1"&gt;'prick'&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'file.01'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
-      &lt;span class="s1"&gt;'us'&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'file.01'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.02'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.03'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.04'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
-      &lt;span class="s1"&gt;'do'&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'file.01'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.02'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s1"&gt;'file.03'&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;
-      &lt;span class="o"&gt;...&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-In addition to letting us work with dictionaries and lists, we can
-also review file access and even the python CSV module if we want.
+This can be annoying at times, particularly when it requires a large
+code rewrite but it also means that well designed, not too specific
+solutions are rewarded. 
 &lt;/p&gt;
 
 &lt;p&gt;
-We can immediately write simple queries – "what document(s) contain
-the word 'prick,' but things get more interesting if you write
-functions to perform &lt;b&gt;&lt;b&gt;and&lt;/b&gt;&lt;/b&gt; and &lt;b&gt;&lt;b&gt;or&lt;/b&gt;&lt;/b&gt; queries - "what document(s)
-contain the words 'prick' &lt;b&gt;&lt;b&gt;or&lt;/b&gt;&lt;/b&gt; 'do'" for instance.
+It's not quite the same as changing the specs on a project mid way but
+it does encourage thinking about more than just solving a super
+specific problem.
 &lt;/p&gt;
 
 &lt;p&gt;
-Why are we building this (besides as a data structure and programming
-exercise)? I've seen a number of references to using an inverted index
-when building a web search engine. In fact, I think that's something
-you do early on in the Udacity Mooc. I just wanted to play with
-information retrieval.
-&lt;/p&gt;
-
-&lt;p&gt;
-I remembered that there was a collection of information, including
-last statements from &lt;a href="https://www.tdcj.state.tx.us/death_row/dr_executed_offenders.html"&gt;executed offenders in Texas&lt;/a&gt;. Someone conveniently
-converted it into a &lt;a href="https://docs.google.com/spreadsheets/d/1HAjZTtPriClY-X3n9whTkA4i5D7bn3bmtHnLoaVICvI/edit#gid=1"&gt;Google Spreadsheet&lt;/a&gt;. The format's a little
-different from our simple four file example but then there's more
-data. It's straightforward enough to download the spreadsheet as a CSV
-file and then read it with a Python program that builds it into an
-inverted index.
-&lt;/p&gt;
-
-&lt;p&gt;
-Now we have some interesting data to play with.
-&lt;/p&gt;
-
-&lt;p&gt;
-How many offenders used words like "sorry" or "apologize?" How about
-references to religion? We can do all sorts of &lt;b&gt;&lt;b&gt;and&lt;/b&gt;&lt;/b&gt; and &lt;b&gt;&lt;b&gt;or&lt;/b&gt;&lt;/b&gt;
-queries. 
-&lt;/p&gt;
-
-&lt;p&gt;
-We just played with this a bit but I could see all sorts of
-explorations. What about taking some great work of literature and
-turning it into an inverted index by chapter. You could query
-characters or certain words and see where and when they appear in the
-book. A new and different way of exploring literature.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, there you have it - an interesting little project we played with
-this past semester. We did it in an intro Python course but I could
-see it as an interesting project in AP CS A using hashmaps and lists.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>intro</category><category>programming</category><category>python</category><guid>http://cestlaz.github.io/posts/inverted-index/</guid><pubDate>Sat, 26 Nov 2016 21:52:56 GMT</pubDate></item></channel></rss>
+Check out &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; and see if it's something you or your classes
+might enjoy.
+&lt;/p&gt;</summary>
+    <category term="adventofcode" label="adventofcode"/>
+    <category term="apcs" label="apcs"/>
+    <category term="cs" label="cs"/>
+    <category term="misc" label="misc"/>
+  </entry>
+</feed>
