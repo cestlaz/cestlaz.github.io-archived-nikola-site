@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about pedagogy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link rel="self" href="http://cestlaz.github.io/categories/pedagogy.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 03 Dec 2017 13:49:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A new first language? What's the follow up plan?</title><link>http://cestlaz.github.io/posts/first-language-changing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org596047c" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about pedagogy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/pedagogy.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 06 Dec 2017 21:18:40 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org136619b" class="outline-2"&gt;
+&lt;h2 id="org136619b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org136619b"&gt;
+&lt;p&gt;
+I've been having fun with this years &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; competition. So
+far, I've been able to keep up but with I expect that to change in
+another couple of days since I'll be traveling for the weekend.
+&lt;/p&gt;
+
+&lt;p&gt;
+After solving a problem, I like looking over some of the other
+solutions on the Advent of Code &lt;a href="https://www.reddit.com/r/adventofcode/"&gt;subreddit&lt;/a&gt;. Even with similar
+agorithmic solutions there's a decent amount of variation in the
+actual code and solutions in different languages can look radically
+different.
+&lt;/p&gt;
+
+&lt;p&gt;
+That got me thinking about how the tools we know and use both shape the ways we
+approach solving problems and creating things and either limit or
+empower us to go from a mental model of a solution or creation to an
+actual artifact. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Relating to this are the common themes that come up in the CS
+Education world. The idea that it's computer science not programming
+and certainly not merely coding. That's true but the tools and
+languages we use shape the whole thinking part and can also give the
+students a valuable practical tool that they can leverage to great
+advantage in both future classes and work and life endeavors.
+&lt;/p&gt;
+
+&lt;p&gt;
+I decided to do this rant as a video. I hope you enjoy it:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Jdid2eOPX_w" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>A new first language? What's the follow up plan?</title><link>http://cestlaz.github.io/posts/first-language-changing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org596047c" class="outline-2"&gt;
 &lt;h2 id="org596047c"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-org596047c"&gt;
 &lt;p&gt;
@@ -932,115 +971,4 @@ Until we win back public education it's important to support programs
 like Math Circles (and, if I do say so myself, programs like our own
 &lt;a href="http://cstuy.org"&gt;CSTUY&lt;/a&gt;) and it's also critical that we work to try to bring community
 and culture to our regular classes.
-&lt;/p&gt;</description><category>curriculum</category><category>education</category><category>pedagogy</category><category>policy</category><guid>http://cestlaz.github.io/posts/navajo-circles/</guid><pubDate>Wed, 08 Jun 2016 11:03:55 GMT</pubDate></item><item><title>As curricula changes, what's falling through the cracks?</title><link>http://cestlaz.github.io/posts/semaphores/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org54d6adb" class="outline-2"&gt;
-&lt;h2 id="org54d6adb"&gt;Edit:&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org54d6adb"&gt;
-&lt;p&gt;
-Just a brief note to clarify a couple of things. As indicated in the
-comments, this post isn't  about what's appropriate for HS CS. It's
-more about what kids have after they finish their education - be it
-high school, college, code school, or other. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Some of my thoughts are the results of pondering on the exacerbations
-of friends after interviewing people for entry level positions.
-&lt;/p&gt;
-
-&lt;p&gt;
-The two examples are just to illustrate the point. 
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div id="outline-container-orgc952293" class="outline-2"&gt;
-&lt;h2 id="orgc952293"&gt;Original Post:&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc952293"&gt;
-&lt;p&gt;
-I enjoy reading blogs. It's one of the ways I keep current. Not only
-in terms of what's going on in CS Education, but also trends in CS -
-academic or professional as well as on a range of other topics.
-&lt;/p&gt;
-
-&lt;p&gt;
-One of the blogs I enjoy is authored by &lt;a href="https://twitter.com/b0rk"&gt;Julia Evans&lt;/a&gt;. I don't know
-Julia, but we do have some mutual friends. I've enjoyed her &lt;a href="http://jvns.ca"&gt;blog&lt;/a&gt;. She
-does a nice job talking about any number of systems related
-issue. I've tried to leave comments a few times but for some reason,
-my comments always end up deleted or otherwise not showing up.
-&lt;/p&gt;
-
-&lt;p&gt;
-One recent post, one on &lt;a href="http://jvns.ca/blog/2016/03/29/thread-pools-part-ii-i-love-blocking/"&gt;concurrency&lt;/a&gt; got me thinking. Since the comment
-I left there didn't take, I thought I'd write about it here.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's a nice post but the thing that caught my eye was when Julia
-said that she " didn't know what a semaphore was until I read this
-code and I was like OH THIS IS AMAZING AND SO USEFUL AND WOW." I was a
-little surprised, semaphores seem to be one of those basic concepts
-that you just know but that is, of course incorrect. I first learned
-about semaphores in my honors Systems class with my mentor, the late
-&lt;a href="https://en.wikipedia.org/wiki/Robert_Dewar"&gt;Robert Dewar&lt;/a&gt;. We started from test and set and worked our way up. I
-had two other undergraduate classes that at least mentioned the topic.
-&lt;/p&gt;
-
-&lt;p&gt;
-Then again, I knew that many undergrads would never get a good
-treatment of concurrency so I tried to build a bit in to the System
-Level Programming  course I designed while at Stuy.
-&lt;/p&gt;
-
-&lt;p&gt;
-This got me thinking - according to her linked in, Julia was a CS
-major at McGill - a university that I hold in high regard but either
-semaphores were never covered or their treatment didn't make enough of
-an impact to be worth remembering. What topics do we cover in our
-classes that kids just let fall to the wayside and what topics do we
-end up losing as curricula change and we don't have an eye on the big
-picture.
-&lt;/p&gt;
-
-&lt;p&gt;
-One big one is memory management. When APCS and college 101 classes
-went to Java, memory management went out the window. Not a problem, as
-long as memory issues are covered in some other course. Unfortunately
-the don't seem to be. You can make a case that kids don't need to
-understand memory management or anything about garbage collection but
-I'd argue that while one might never have to do their own memory
-management a good CS person should have some understanding of what's
-going on under the hood or as my friend Gerry says "never use a
-technology you couldn't write yourself."
-&lt;/p&gt;
-
-&lt;p&gt;
-Another biggie that I lived through was the IBM PC era. Prior to the
-mid to late 80's when the IBM PC ruled the world, kids learned about
-CS on timesharing systems. Once the PC took hold, every kid learning
-programming or studying CS was working on their own machine. They had
-full access to everything and the machine just supported a single
-thread. 
-&lt;/p&gt;
-
-&lt;p&gt;
-On the one hand, it was nice since you could easily play with low
-level programming and hardware but on the other hand, a hole
-generation didn't learn about the complexities of multiple users and
-multiple processes. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Early in my career I designed courses and only later did I realize
-that you can't just design a course, you have to look at the full arc
-of a students education. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I think it's interesting to think about what concepts are getting left
-on the side of the road and I wonder if the big players driving CS
-education spend any time thinking about this bigger picture.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>pedagogy</category><category>policy</category><guid>http://cestlaz.github.io/posts/semaphores/</guid><pubDate>Sun, 01 May 2016 13:08:36 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;</description><category>curriculum</category><category>education</category><category>pedagogy</category><category>policy</category><guid>http://cestlaz.github.io/posts/navajo-circles/</guid><pubDate>Wed, 08 Jun 2016 11:03:55 GMT</pubDate></item></channel></rss>

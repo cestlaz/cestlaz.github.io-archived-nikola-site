@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about teaching)</title><link>http://cestlaz.github.io/</link><description></description><atom:link type="application/rss+xml" href="http://cestlaz.github.io/categories/teaching.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Sun, 03 Dec 2017 15:10:46 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Thoughts On A Hackathon</title><link>http://cestlaz.github.io/posts/thoughts-on-a-hackathon/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgfa3fa62" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about teaching)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/teaching.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 06 Dec 2017 21:18:40 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org136619b" class="outline-2"&gt;
+&lt;h2 id="org136619b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org136619b"&gt;
+&lt;p&gt;
+I've been having fun with this years &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; competition. So
+far, I've been able to keep up but with I expect that to change in
+another couple of days since I'll be traveling for the weekend.
+&lt;/p&gt;
+
+&lt;p&gt;
+After solving a problem, I like looking over some of the other
+solutions on the Advent of Code &lt;a href="https://www.reddit.com/r/adventofcode/"&gt;subreddit&lt;/a&gt;. Even with similar
+agorithmic solutions there's a decent amount of variation in the
+actual code and solutions in different languages can look radically
+different.
+&lt;/p&gt;
+
+&lt;p&gt;
+That got me thinking about how the tools we know and use both shape the ways we
+approach solving problems and creating things and either limit or
+empower us to go from a mental model of a solution or creation to an
+actual artifact. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Relating to this are the common themes that come up in the CS
+Education world. The idea that it's computer science not programming
+and certainly not merely coding. That's true but the tools and
+languages we use shape the whole thinking part and can also give the
+students a valuable practical tool that they can leverage to great
+advantage in both future classes and work and life endeavors.
+&lt;/p&gt;
+
+&lt;p&gt;
+I decided to do this rant as a video. I hope you enjoy it:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Jdid2eOPX_w" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>Thoughts On A Hackathon</title><link>http://cestlaz.github.io/posts/thoughts-on-a-hackathon/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgfa3fa62" class="outline-2"&gt;
 &lt;h2 id="orgfa3fa62"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-orgfa3fa62"&gt;
 &lt;p&gt;
@@ -976,103 +1015,4 @@ kids math teachers to know math and how to teach it. We should demand
 no less from our CS teachers.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>policy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/teacher-to-cs-or-cs-to-teacher/</guid><pubDate>Tue, 04 Jul 2017 20:39:43 GMT</pubDate></item><item><title>Disclosing Bugs - requiring a project roadmap</title><link>http://cestlaz.github.io/posts/disclosing-bugs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7448796" class="outline-2"&gt;
-&lt;h2 id="org7448796"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7448796"&gt;
-&lt;p&gt;
-Over on Facebook, a fellow CS educator &lt;sup&gt;&lt;a id="fnr.1" class="footref" href="http://cestlaz.github.io/posts/disclosing-bugs/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt; made a comment on something he
-wanted to try with his students this summer: having the students
-pre-disclose bugs when they submit their projects.
-&lt;/p&gt;
-
-&lt;p&gt;
-The post was asking for any links to "the literature." I can't speak
-to that but I I've done something similar to what the post was asking
-about so, as per usual, I thought I'd write about it here. It may not
-be "research" but I'm more interested in teacher practices than ivory
-towers anyway so here goes…
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-org0478403" class="outline-2"&gt;
-&lt;h2 id="org0478403"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0478403"&gt;
-&lt;p&gt;
-At a very basic level, I ask my students to provide a roadmap to any
-project they submit - usually in a readme file. I basically ask:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;How to use the project&lt;/li&gt;
-&lt;li&gt;What's cool and I should make sure to check out&lt;/li&gt;
-&lt;li&gt;What doesn't work, where were the sticking points and what's the
-status.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-I tell my students that when I test the project, I'm not "out to get
-them" and by their telling me how to navigate the project, it makes
-sure I see things in the best possible light. I also tell them that I
-will be more harsh on bugs that they don't tell me about -
-particularly bugs that only occur some of the time.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-I also encourage (and sometimes require) that students maintain a
-changelog in their repo and also sometimes encourage them to have a
-todo list and list of bugs and for longer projects, I expect to see
-these and the readme updated over the course of the project (which
-should always be up to date on &lt;a href="https://cestlaz.github.io/posts/sigcse-2017-github-4"&gt;GitHub&lt;/a&gt;, Dropbox or wherever the project
-is living). 
-&lt;/p&gt;
-
-&lt;p&gt;
-When the students provide a good write up it makes evaluating the
-project much easier.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-When students buy in, they're hopefully thinking more deeply about
-their projects in terms of design and implementation and also from the
-point of view of someone else using their product. When they maintain
-the readme and other files over time, it also enables me to better
-support them.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div id="outline-container-orgd31d93c" class="outline-2"&gt;
-&lt;h2 id="orgd31d93c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd31d93c"&gt;
-&lt;p&gt;
-So, does this work? Yes but with some caveats. It works better once
-the class and teacher know each other. If the students trust the
-teacher they're more likely to be open and honest when they write up
-the project. On the other hand, there will always be some students to
-"phone it in" and do the bare minimum in terms of writing up their
-projects.
-&lt;/p&gt;
-
-&lt;p&gt;
-The bottom line is that having the students do this is has a low cost
-and is beneficial to both the students and the teacher. When it works,
-it's great and when it doesn't, it's still pretty good.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="footnotes"&gt;
-&lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
-&lt;div id="text-footnotes"&gt;
-
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" class="footnum" href="http://cestlaz.github.io/posts/disclosing-bugs/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;&lt;p class="footpara"&gt;
-I'm not sharing names from the Facebook post because it was
-made in a semi-private forum and I haven't asked permission.
-&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
-
-
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>teaching</category><guid>http://cestlaz.github.io/posts/disclosing-bugs/</guid><pubDate>Tue, 13 Jun 2017 20:30:27 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>education</category><category>policy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/teacher-to-cs-or-cs-to-teacher/</guid><pubDate>Tue, 04 Jul 2017 20:39:43 GMT</pubDate></item></channel></rss>
