@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link rel="self" href="http://cestlaz.github.io/categories/tools.xml" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 06 Dec 2017 21:22:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 38 - dired</title><link>http://cestlaz.github.io/posts/using-emacs-38-dired/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org48b9f45" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>C'est la Z (Posts about tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/tools.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 06 Dec 2017 22:33:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4c7caf5" class="outline-2"&gt;
+&lt;h2 id="org4c7caf5"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4c7caf5"&gt;
+&lt;p&gt;
+I've been having fun with this years &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; competition. So
+far, I've been able to keep up but with I expect that to change in
+another couple of days since I'll be traveling for the weekend.
+&lt;/p&gt;
+
+&lt;p&gt;
+After solving a problem, I like looking over some of the other
+solutions on the Advent of Code &lt;a href="https://www.reddit.com/r/adventofcode/"&gt;subreddit&lt;/a&gt;. Even with similar
+agorithmic solutions there's a decent amount of variation in the
+actual code and solutions in different languages can look radically
+different.
+&lt;/p&gt;
+
+&lt;p&gt;
+That got me thinking about how the tools we know and use both shape the ways we
+approach solving problems and creating things and either limit or
+empower us to go from a mental model of a solution or creation to an
+actual artifact. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Relating to this are the common themes that come up in the CS
+Education world. The idea that it's computer science not programming
+and certainly not merely coding. That's true but the tools and
+languages we use shape the whole thinking part and can also give the
+students a valuable practical tool that they can leverage to great
+advantage in both future classes and work and life endeavors.
+&lt;/p&gt;
+
+&lt;p&gt;
+I decided to do this rant as a video. I hope you enjoy it:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x8cZgEogWNw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>Using Emacs 38 - dired</title><link>http://cestlaz.github.io/posts/using-emacs-38-dired/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org48b9f45" class="outline-2"&gt;
 &lt;h2 id="org48b9f45"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-org48b9f45"&gt;
 &lt;p&gt;
@@ -699,172 +738,4 @@ introduce github to my classes here they are:
 &lt;p&gt;
 I'm hoping some of you have found this set of four posts useful or at
 least interesting.
-&lt;/p&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-4/</guid><pubDate>Tue, 11 Apr 2017 23:11:30 GMT</pubDate></item><item><title>SIGCSE 2017 - a path to github part 3</title><link>http://cestlaz.github.io/posts/sigcse-2017-github-3/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org1cf60d3" class="outline-2"&gt;
-&lt;h2 id="org1cf60d3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1cf60d3"&gt;
-&lt;p&gt;
-I wanted to write this up earlier but, as so frequently happens all my
-dormant work projects decided it was time to rise up and demand
-instant attention.
-&lt;/p&gt;
-
-&lt;p&gt;
-When we left off, we had students pulling code and submitting homework
-via github.
-&lt;/p&gt;
-
-&lt;p&gt;
-Form here, it's an easy step to have them working on a small project
-in their own repo. In fact, sometimes, I'll jump right to a two person
-project where one person creates the repo and invites the other (and
-me) as a collaborator.
-&lt;/p&gt;
-
-&lt;p&gt;
-Once here, it's important to emphasize the normal workflow:
-&lt;/p&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;&lt;code&gt;git pull&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;edit stuff with an occasional &lt;code&gt;git add&lt;/code&gt;, &lt;code&gt;git rm&lt;/code&gt;,  or &lt;code&gt;got mv&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;commit&lt;/li&gt;
-&lt;li&gt;and an occasional &lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;
-Regardless of how much you emphasize the workflow you're now going to
-have to cover merges as well how to recover from problems by going to
-an earlier revision.
-&lt;/p&gt;
-
-&lt;p&gt;
-For going back to earlier versions or otherwise recovering from
-disasters, I don't show them the "right" way of doing things. I show
-them a way that's easy to remember and reliably works without tons of
-searching for answers.
-&lt;/p&gt;
-
-&lt;p&gt;
-First, given some repo, I have them clone a version under another
-name:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone git@github.com:hunterdaedalus/classcode.git newdirname
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Now, they have the original repo and a clone under the directory
-&lt;b&gt;&lt;b&gt;newdirname&lt;/b&gt;&lt;/b&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-I have them go into that new copy and use &lt;code&gt;git log&lt;/code&gt; to go through the
-logs to find an earlier version that they want to go back to.
-&lt;/p&gt;
-
-&lt;p&gt;
-The log will look something like this:
-&lt;/p&gt;
-
-&lt;p class="verse"&gt;
-commit 67eceb5e0a01ca5f5fb54ace65a4fe134f71edae&lt;br&gt;
-Author: Mike Zamansky &amp;lt;zamansky@gmail.com&amp;gt;&lt;br&gt;
-Date:   Sat Feb 25 12:32:26 2017 -0500&lt;br&gt;
-&lt;br&gt;
-    updated Makefile&lt;br&gt;
-&lt;br&gt;
-commit 7efed10eb6015276b0cb82874ce786dc68a683ae&lt;br&gt;
-Author: Mike Zamansky &amp;lt;zamansky@gmail.com&amp;gt;&lt;br&gt;
-Date:   Sat Feb 25 08:45:34 2017 -0500&lt;br&gt;
-&lt;br&gt;
-    broke out main –&amp;gt; main and shapes&lt;br&gt;
-&lt;br&gt;
-commit e8b5c240123a7cb17920d52b4aba9cf5787ddab2&lt;br&gt;
-Author: Mike Zamansky &amp;lt;zamansky@gmail.com&amp;gt;&lt;br&gt;
-Date:   Sat Feb 25 08:36:29 2017 -0500&lt;br&gt;
-&lt;br&gt;
-    added lab3 code&lt;br&gt;
-&lt;br&gt;
-commit 6d5bcf866306334ddc5c6a48e8f49fb39ddbcb18&lt;br&gt;
-Author: Some other coder &amp;lt;somone@somewhere.net&amp;gt;&lt;br&gt;
-Date:   Sun Feb 19 19:29:51 2017 -0500&lt;br&gt;
-&lt;br&gt;
-&lt;/p&gt;
-
-
-&lt;p&gt;
-Find the hash that they want to get back to and &lt;b&gt;&lt;b&gt;checkout&lt;/b&gt;&lt;/b&gt; that
-version (you normally only have to use the first few characters of
-the hash):
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git checkout 7efed10
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Now they can grab what they want, copy it into the working copy of the
-repo, &lt;b&gt;&lt;b&gt;commit&lt;/b&gt;&lt;/b&gt; the changes and &lt;b&gt;&lt;b&gt;push&lt;/b&gt;&lt;/b&gt; them back.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-For Merging, I start by having them do it manually. I'll have them
-load the file in question into their editor and look for the chunks
-that look like this:
-&lt;/p&gt;
-
-&lt;p class="verse"&gt;
-&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; A&lt;br&gt;
-lines in file A&lt;br&gt;
-&lt;code&gt;=====&lt;/code&gt;&lt;br&gt;
-lines in file B&lt;br&gt;
-&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; B&lt;br&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-They'll manually make the changes, then save, commit and push back.
-&lt;/p&gt;
-
-&lt;p&gt;
-Later, I'll show them a couple of tools to help along the way. I
-usually show ediff in emacs along with meld.
-&lt;/p&gt;
-
-&lt;p&gt;
-Once they've been doing this for a while, it's easy to expand group
-sizes. After that, I'll introduce &lt;b&gt;&lt;b&gt;issues&lt;/b&gt;&lt;/b&gt; via the github interface.
-&lt;/p&gt;
-
-&lt;p&gt;
-The last big topic is branches.
-&lt;/p&gt;
-
-&lt;p&gt;
-First I show basic branches and merging. Here's a pretty good &lt;a href="https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging"&gt;run
-through&lt;/a&gt;. Afterwards, I'll show how branching works in conjunction with
-github. This is also a good time to emphasize that students have to
-actually read the messages that git gives them when things don't  go
-well. In most cases, the message will contain the exact thing to type
-to fix the problem (such as linking a branch with a branch up on
-github).
-&lt;/p&gt;
-
-&lt;p&gt;
-Now is also the time to introduce pull requests and how to use them to
-support code review. The general setup I recommend is one branch per
-group member and a main "deployment" branch with group members
-creating more branches as they see fit.
-&lt;/p&gt;
-
-&lt;p&gt;
-That's about it. I've followed this process, more or less, over a
-semester, over a year, and over multiple years. It's worked for me, I
-hope some of this helps you as well.
-&lt;/p&gt;
-
-&lt;p&gt;
-In the next and probably last git/github post I'll talk about the
-educational benefits that I've discovered along the way. After that,
-I'll get back to some emacs videos, other SIGCSE stuff and my normal rants.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-3/</guid><pubDate>Thu, 30 Mar 2017 18:02:31 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-4/</guid><pubDate>Tue, 11 Apr 2017 23:11:30 GMT</pubDate></item></channel></rss>
