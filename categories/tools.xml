@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>C'est la Z (Posts about tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/tools.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Wed, 06 Dec 2017 22:33:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4c7caf5" class="outline-2"&gt;
-&lt;h2 id="org4c7caf5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4c7caf5"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>C'est la Z (Posts about tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link type="application/rss+xml" rel="self" href="http://cestlaz.github.io/categories/tools.xml"></atom:link><language>en</language><lastBuildDate>Mon, 11 Dec 2017 14:18:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org29cbf1f" class="outline-2"&gt;
+&lt;h2 id="org29cbf1f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org29cbf1f"&gt;
 &lt;p&gt;
 I've been having fun with this years &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; competition. So
 far, I've been able to keep up but with I expect that to change in
@@ -38,9 +38,9 @@ I decided to do this rant as a video. I hope you enjoy it:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x8cZgEogWNw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>Using Emacs 38 - dired</title><link>http://cestlaz.github.io/posts/using-emacs-38-dired/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org48b9f45" class="outline-2"&gt;
-&lt;h2 id="org48b9f45"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org48b9f45"&gt;
+&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>Using Emacs 38 - dired</title><link>http://cestlaz.github.io/posts/using-emacs-38-dired/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgb703bcd" class="outline-2"&gt;
+&lt;h2 id="orgb703bcd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb703bcd"&gt;
 &lt;p&gt;
 The 38th installment of Using Emacs is about &lt;b&gt;&lt;b&gt;dired&lt;/b&gt;&lt;/b&gt;, Emacs' built
 in mode for navigating and working with directories.
@@ -112,9 +112,9 @@ how other people are using it.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Fg7HmmRYWy8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-38-dired/</guid><pubDate>Fri, 24 Nov 2017 13:00:00 GMT</pubDate></item><item><title>Using Emacs 37 - Treemacs file browser</title><link>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org635a407" class="outline-2"&gt;
-&lt;h2 id="org635a407"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org635a407"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-38-dired/</guid><pubDate>Fri, 24 Nov 2017 13:00:00 GMT</pubDate></item><item><title>Using Emacs 37 - Treemacs file browser</title><link>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgb71eb90" class="outline-2"&gt;
+&lt;h2 id="orgb71eb90"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb71eb90"&gt;
 &lt;p&gt;
 I've been meaning to get back to making Emacs videos but I've been
 having trouble figuring out what to record.
@@ -143,9 +143,9 @@ but if like that type of interface, definitely check Treemacs out.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ACg6RnVdw8k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</guid><pubDate>Sun, 24 Sep 2017 15:22:54 GMT</pubDate></item><item><title>New Term New Tool - Thonny, a Python IDE</title><link>http://cestlaz.github.io/posts/new-tool-thonny/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4d99735" class="outline-2"&gt;
-&lt;h2 id="org4d99735"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4d99735"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</guid><pubDate>Sun, 24 Sep 2017 15:22:54 GMT</pubDate></item><item><title>New Term New Tool - Thonny, a Python IDE</title><link>http://cestlaz.github.io/posts/new-tool-thonny/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgdda4d0d" class="outline-2"&gt;
+&lt;h2 id="orgdda4d0d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgdda4d0d"&gt;
 &lt;p&gt;
 Last year I &lt;a href="https://cestlaz.github.io/posts/new-term-new-tool-replit"&gt;wrote about&lt;/a&gt; &lt;a href="http://repl.it"&gt;repl.it&lt;/a&gt;, an online IDE that supports multiple
 languages. At the time it had some rudimentary classroom support and
@@ -187,9 +187,9 @@ video:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lWaCl0WjNZI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-tool-thonny/</guid><pubDate>Thu, 21 Sep 2017 11:31:42 GMT</pubDate></item><item><title>Using Emacs 36 - A Touch of Elisp</title><link>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6733305" class="outline-2"&gt;
-&lt;h2 id="org6733305"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6733305"&gt;
+&lt;/div&gt;</description><category>cs</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-tool-thonny/</guid><pubDate>Thu, 21 Sep 2017 11:31:42 GMT</pubDate></item><item><title>Using Emacs 36 - A Touch of Elisp</title><link>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9905e19" class="outline-2"&gt;
+&lt;h2 id="org9905e19"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9905e19"&gt;
 &lt;p&gt;
 I've been working on a vue.js project this summer. During the school
 year I really can't dive into code so it's been fun.
@@ -263,9 +263,9 @@ you want.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/NQhud2ZNd1w" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</guid><pubDate>Sun, 30 Jul 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs 35 - Blogging</title><link>http://cestlaz.github.io/posts/using-emacs-35-blogging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orged67dc5" class="outline-2"&gt;
-&lt;h2 id="orged67dc5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orged67dc5"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/</guid><pubDate>Sun, 30 Jul 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs 35 - Blogging</title><link>http://cestlaz.github.io/posts/using-emacs-35-blogging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9a20e46" class="outline-2"&gt;
+&lt;h2 id="org9a20e46"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9a20e46"&gt;
 &lt;p&gt;
 Very little new Emacs in today's episode of Using Emacs. The video
 shows my old blogging workflow and what I'm playing with now.
@@ -290,9 +290,9 @@ There's not much more to say here so enjoy the video:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/wSeTic9obKw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-35-blogging/</guid><pubDate>Tue, 27 Jun 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs - 34 - ibuffer and emmet</title><link>http://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6353300" class="outline-2"&gt;
-&lt;h2 id="org6353300"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6353300"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-35-blogging/</guid><pubDate>Tue, 27 Jun 2017 15:22:54 GMT</pubDate></item><item><title>Using Emacs - 34 - ibuffer and emmet</title><link>http://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgffe8b36" class="outline-2"&gt;
+&lt;h2 id="orgffe8b36"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgffe8b36"&gt;
 &lt;p&gt;
 A couple of quick, unrelated packages today.
 &lt;/p&gt;
@@ -362,9 +362,9 @@ Here's my configuration (mostly stolen from Owen):
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org41ac2dd" class="outline-2"&gt;
-&lt;h2 id="org41ac2dd"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org41ac2dd"&gt;
+&lt;div id="outline-container-org0143b86" class="outline-2"&gt;
+&lt;h2 id="org0143b86"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0143b86"&gt;
 &lt;p&gt;
 The video also shows &lt;a href="https://github.com/smihica/emmet-mode"&gt;emmet&lt;/a&gt; mode. A terrific mode for quickly creating
 HTML and CSS. I tried it a long time ago when it was called zencoding
@@ -394,9 +394,9 @@ Check them both out:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org650191a" class="outline-2"&gt;
-&lt;h2 id="org650191a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org650191a"&gt;
+&lt;div id="outline-container-orgb692893" class="outline-2"&gt;
+&lt;h2 id="orgb692893"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb692893"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -411,9 +411,9 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/</guid><pubDate>Thu, 15 Jun 2017 19:00:26 GMT</pubDate></item><item><title>Python - Editor or IDE</title><link>http://cestlaz.github.io/posts/python-editors/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org440964b" class="outline-2"&gt;
-&lt;h2 id="org440964b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org440964b"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/</guid><pubDate>Thu, 15 Jun 2017 19:00:26 GMT</pubDate></item><item><title>Python - Editor or IDE</title><link>http://cestlaz.github.io/posts/python-editors/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgfd6379f" class="outline-2"&gt;
+&lt;h2 id="orgfd6379f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgfd6379f"&gt;
 &lt;p&gt;
 Earlier today I read Garth Flint's latest post on &lt;a href="https://gflint.wordpress.com/2017/05/25/python-editors-simple-wins/%0A"&gt;choosing a Python
 environment for his classes&lt;/a&gt;. While our classes and populations are
@@ -541,9 +541,9 @@ use Emacs in general:
 &lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/using-emacs-13-yasnippet"&gt;http://cestlaz.github.io/posts/using-emacs-13-yasnippet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/python-editors/</guid><pubDate>Thu, 25 May 2017 19:47:37 GMT</pubDate></item><item><title>Using Emacs - 33 - projectile, dumb-jump</title><link>http://cestlaz.github.io/posts/using-emacs-33-projectile-jump/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3ae4af7" class="outline-2"&gt;
-&lt;h2 id="org3ae4af7"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3ae4af7"&gt;
+&lt;/div&gt;</description><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/python-editors/</guid><pubDate>Thu, 25 May 2017 19:47:37 GMT</pubDate></item><item><title>Using Emacs - 33 - projectile, dumb-jump</title><link>http://cestlaz.github.io/posts/using-emacs-33-projectile-jump/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge215f62" class="outline-2"&gt;
+&lt;h2 id="orge215f62"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge215f62"&gt;
 &lt;p&gt;
 If you keep Emacs open all the time you end up accumulating lots of
 buffers. That can make navigating a little bit awkward.
@@ -635,9 +635,9 @@ Enjoy.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org5fd4a08" class="outline-2"&gt;
-&lt;h2 id="org5fd4a08"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5fd4a08"&gt;
+&lt;div id="outline-container-org218f6ae" class="outline-2"&gt;
+&lt;h2 id="org218f6ae"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org218f6ae"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
