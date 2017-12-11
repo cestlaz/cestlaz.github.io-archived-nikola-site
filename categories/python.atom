@@ -3,192 +3,13 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about python</title>
   <id>http://cestlaz.github.io/categories/python.atom</id>
-  <updated>2017-12-11T14:17:46Z</updated>
+  <updated>2017-06-29T16:40:55Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/python.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/python/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
-  <entry>
-    <title>Advent of Code 2017 - Day 1</title>
-    <id>http://cestlaz.github.io/posts/advent-2017-1/</id>
-    <updated>2017-12-02T08:27:02-04:00</updated>
-    <published>2017-12-02T08:27:02-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-2017-1/"/>
-    <summary type="html">&lt;div id="outline-container-orgdb1f86e" class="outline-2"&gt;
-&lt;h2 id="orgdb1f86e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgdb1f86e"&gt;
-&lt;p&gt;
-It's once again time for &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. That one a day programming
-competition that's been running now for three years.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here are some thoughts on &lt;a href="http://adventofcode.com/2017/day/1"&gt;day 1&lt;/a&gt;. The core of the problem is that you
-have a large string of digits and you have to calculate a
-checksum. This is done by adding the sum of a subset of the
-digits. Only the ones that are identical to the digit to their
-right. To make it a little more interesting, the last digit wraps
-around to the first for checksum purposes.
-&lt;/p&gt;
-
-&lt;p&gt;
-For example, the input &lt;b&gt;&lt;b&gt;2234335&lt;/b&gt;&lt;/b&gt; leads to the calculate &lt;code&gt;2 + 3&lt;/code&gt; or
-&lt;code&gt;5&lt;/code&gt;. The input &lt;b&gt;&lt;b&gt;234445662&lt;/b&gt;&lt;/b&gt; leads to &lt;code&gt;4+4+6+2&lt;/code&gt; or &lt;code&gt;16&lt;/code&gt;. We add 4 for
-twice because the first four is adjacent the second and the second the
-third. We add the 2 at the end because it wraps around to match the
-one at the front.
-&lt;/p&gt;
-
-&lt;p&gt;
-We first read in the data and strip off the trailing newline
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"input.txt"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;origdata&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readline&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-
-&lt;span class="n"&gt;origdata&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;origdata&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;origdata&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Then, since we can access the elements of the string as a list (or
-array) it's a simple loop to calculate the sum:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
-	&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="c1"&gt;# Don't forget to turn the string into an int&lt;/span&gt;
-
-&lt;span class="c1"&gt;# data[-1] is the python way of getting the last element - here we check the wraparound&lt;/span&gt;
-&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
-    &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Checksum: "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Pretty straightforward but I don't like the special case of checking
-the last element for the wraparound. Sometimes it's possible to get
-rid of edge cases like this by &lt;a href="https://cestlaz.github.io/posts/2014-02-26-change-the-data.md"&gt;changing the data&lt;/a&gt;. We can do that here
-by simply appending a copy of the first character to the end of the
-list.
-&lt;/p&gt;
-
-&lt;p&gt;
-This leads to a slightly cleaner solution:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-
-&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
-	&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="c1"&gt;#don't forget to turn the string into an int&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Checksum: "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-This is pretty much what I'd expect from a Python programmer that's
-just starting out. We can use a couple of more advanced Python
-features to make what I consider a more elegant solution.
-&lt;/p&gt;
-
-&lt;p&gt;
-Python's &lt;b&gt;&lt;b&gt;zip&lt;/b&gt;&lt;/b&gt; function takes two lists and interleaves them.
-&lt;code&gt;zip("abc","def")&lt;/code&gt; will yield &lt;code&gt;[ (a,d), (b,e), (c,f)]&lt;/code&gt;. If the lists
-are of different length, it just zips up until the shorter list is
-exhausted. We can use array slicing to zip the input string with it's
-neighbor by using &lt;code&gt;new_list = zip(data,data[1:])&lt;/code&gt;. For the string "122344'
-zipping gives us &lt;code&gt;[(1,2),(2,2),(2,3),(3,4),(4,4)]&lt;/code&gt;. We can put this in
-a list comprehension that only keeps the tuples representing an
-element with an identical neighbor and also converts it to an int:
-&lt;code&gt;new_list = [int(a) for a,b in new_list if a==b]&lt;/code&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-Finally, we can just calculate the sum. This leads to the following
-complete solution:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"input.txt"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readline&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-
-&lt;span class="n"&gt;checksum&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:])&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;checksum&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-List comprehensions for the win!!!!
-&lt;/p&gt;
-
-&lt;p&gt;
-Each Advent of Code problem has two parts. You unlock the second by
-solving the first. Here, the wrinkle is that instead of checking each
-digit with it's neighbor to the right, you check it with the one
-that's halfway around the list. 
-&lt;/p&gt;
-
-&lt;p&gt;
-With loops, the solution is just a quick modification of part 1. We
-just add half the length and use mod to find the digit to compare with:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"input.txt"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readline&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-
-&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="c1"&gt;# check halfway around instead of adjacent&lt;/span&gt;
-	&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"part 2loop version: "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-I wanted to see if I could do this with a list comprehension
-though. The trick was to figure out how to make two lists to zip
-together to get the pairs to check then add. Here's the solution:
-&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"input.txt"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readline&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;d2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:]&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;
-&lt;span class="n"&gt;checksum&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;d2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;checksum&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-The insight was that we could just make a second list that starts
-halfway through and then wraps around. I did this by adding
-&lt;code&gt;data[l//2:] + data&lt;/code&gt;. &lt;code&gt;l//2&lt;/code&gt; is the integer division of the length (in
-Python3). &lt;code&gt;data[l//2:]&lt;/code&gt; represents the second half of data (from the
-midway point to the end). Technically I should have only added the second
-half of data: &lt;code&gt;data[l//2:] + data[:l//2]&lt;/code&gt; where &lt;code&gt;data[:l//2]&lt;/code&gt; gives us
-the first half of the list but since zip will just stop when it
-exhausts the shorter list, this wasn't necessary.
-&lt;/p&gt;
-
-&lt;p&gt;
-Day 2 also has a nice list comprehension based solution. Maybe I'll
-write that up later.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="adventofcode" label="adventofcode"/>
-    <category term="cs" label="cs"/>
-    <category term="programming" label="programming"/>
-    <category term="python" label="python"/>
-  </entry>
   <entry>
     <title>Inverted Index Project</title>
     <id>http://cestlaz.github.io/posts/inverted-index/</id>
@@ -198,9 +19,9 @@ write that up later.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/inverted-index/"/>
-    <summary type="html">&lt;div id="outline-container-orgbea24e5" class="outline-2"&gt;
-&lt;h2 id="orgbea24e5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgbea24e5"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 I haven't spoken much about the class I've been teaching this
 semester. It's an intro CS course - a programming heavy intro. I
@@ -232,49 +53,49 @@ example, given the following four one line files:
 
 
 &lt;colgroup&gt;
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 &lt;/colgroup&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th scope="col" class="org-left"&gt;files&lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt;contents&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;files&lt;/th&gt;
+&lt;th scope="col" class="left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="left"&gt;contents&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td class="org-left"&gt;file.01&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;if you prick us do we not bleed&lt;/td&gt;
+&lt;td class="left"&gt;file.01&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;if you prick us do we not bleed&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;file.02&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;if you tickle us do we not laugh&lt;/td&gt;
+&lt;td class="left"&gt;file.02&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;if you tickle us do we not laugh&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;file.03&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;if you poison us do we not die and&lt;/td&gt;
+&lt;td class="left"&gt;file.03&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;if you poison us do we not die and&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;file.04&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;if you wrong us shall we not revenge&lt;/td&gt;
+&lt;td class="left"&gt;file.04&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;if you wrong us shall we not revenge&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -290,48 +111,48 @@ that contain it (partially shown here),
 
 
 &lt;colgroup&gt;
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 &lt;/colgroup&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th scope="col" class="org-left"&gt;Word&lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt;Files containing It's&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;Word&lt;/th&gt;
+&lt;th scope="col" class="left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="left"&gt;Files containing It's&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td class="org-left"&gt;if&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;td class="left"&gt;if&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;you&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;td class="left"&gt;you&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;prick&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01&lt;/td&gt;
+&lt;td class="left"&gt;prick&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;us&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;td class="left"&gt;us&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;do&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01 file.02 file.03&lt;/td&gt;
+&lt;td class="left"&gt;do&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01 file.02 file.03&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -427,9 +248,9 @@ see it as an interesting project in AP CS A using hashmaps and lists.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/digitaloceanflask/"/>
-    <summary type="html">&lt;div id="outline-container-org916cd9a" class="outline-2"&gt;
-&lt;h2 id="org916cd9a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org916cd9a"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 This post points to the next three videos in the Flask series.
 &lt;/p&gt;
@@ -447,10 +268,14 @@ their tutorials
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04"&gt;Server Setup (Ubuntu)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-connect-to-your-droplet-with-ssh%0A"&gt;Connecting to your droplet with ssh&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-sqet-up-ssh-keys--2"&gt;Setting up ssh keys&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorial_series/getting-started-with-linux"&gt;Getting started with Linux (series)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04"&gt;Server Setup (Ubuntu)&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-connect-to-your-droplet-with-ssh%0A"&gt;Connecting to your droplet with ssh&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-sqet-up-ssh-keys--2"&gt;Setting up ssh keys&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorial_series/getting-started-with-linux"&gt;Getting started with Linux (series)&lt;/a&gt; 
+&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -460,23 +285,23 @@ In general, there are lots of great tutorials and guides at the
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org2372ae9" class="outline-2"&gt;
-&lt;h2 id="org2372ae9"&gt;Setting up a Droplet&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org2372ae9"&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;Setting up a Droplet&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LOS8PscXhz8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org4f17a53" class="outline-2"&gt;
-&lt;h2 id="org4f17a53"&gt;Deploying with Gunicorn&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4f17a53"&gt;
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;Deploying with Gunicorn&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/oum5Kh-69pg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org158514a" class="outline-2"&gt;
-&lt;h2 id="org158514a"&gt;sshfs and FreeDNS&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org158514a"&gt;
+&lt;div id="outline-container-sec-4" class="outline-2"&gt;
+&lt;h2 id="sec-4"&gt;sshfs and FreeDNS&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-4"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/aha2r5I18i0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
@@ -515,9 +340,9 @@ Nothing much to say about this other then check out the video:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/flask-setup-virtualenv/"/>
-    <summary type="html">&lt;div id="outline-container-org533fefc" class="outline-2"&gt;
-&lt;h2 id="org533fefc"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org533fefc"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 Those laptops that my Hunter students were supposed to get have
 finally arrived. We're distributing them on Monday. Each student will
@@ -604,7 +429,8 @@ To create a python3 virtual environment
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;You can activate the envorinment (assuming you create the folder under&lt;/li&gt;
+&lt;li&gt;You can activate the envorinment (assuming you create the folder under
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 your home directory):
