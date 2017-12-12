@@ -3,13 +3,78 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about resources</title>
   <id>http://cestlaz.github.io/categories/resources.atom</id>
-  <updated>2017-06-29T16:40:58Z</updated>
+  <updated>2017-09-23T16:59:45Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/resources.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/resources/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Awesome Cs Revisited</title>
+    <id>http://cestlaz.github.io/posts/awesome-cs-revisted/</id>
+    <updated>2017-09-21T16:34:36-04:00</updated>
+    <published>2017-09-21T16:34:36-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/awesome-cs-revisted/"/>
+    <summary type="html">&lt;div id="outline-container-orgf865a3f" class="outline-2"&gt;
+&lt;h2 id="orgf865a3f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf865a3f"&gt;
+&lt;p&gt;
+Saw this tweet the other day so I though I would try to plug the
+&lt;a href="https://github.com/zamansky/awesome-cs-education"&gt;Awesome CS Education&lt;/a&gt; list I started on GitHub:
+&lt;/p&gt;
+
+
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;&lt;a href="https://twitter.com/hashtag/csteachers?src=hash"&gt;#csteachers&lt;/a&gt;...didn't I see a list of CS teacher blogs here recently?&lt;/p&gt;— Pam Whitlock (@PamWhitlock1) &lt;a href="https://twitter.com/PamWhitlock1/status/910662628757864448"&gt;September 21, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+
+
+
+
+&lt;p&gt;
+To answer the tweet, the closet thing I know to a list is &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred
+Thompson&lt;/a&gt;'s blog roll which is actually a post he wrote on his blog
+in 2012. Unfortunately his list can be hard to find and is somewhat
+out of date. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The idea of an "awesome" list is publicly hosting a simple site that
+is community driven and anyone can suggest additions and edits. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I put up a starter &lt;a href="https://github.com/zamansky/awesome-cs-education"&gt;here&lt;/a&gt; and a few people have contributed but I'd love
+to get more people involved. Awesome lists have a number of advantages
+over other repositories.
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Unlike blog posts, the site is easy to find.&lt;/li&gt;
+&lt;li&gt;Unlike private mailing lists or Facebook, anyone can see the content.&lt;/li&gt;
+&lt;li&gt;Anyone can suggest additions (although you need to create a Github
+account).&lt;/li&gt;
+&lt;li&gt;Anyone can download or fork the site.&lt;/li&gt;
+&lt;li&gt;It's essentially plain text and is easy to edit (just read the
+&lt;a href="https://github.com/zamansky/awesome-cs-education/blob/master/contributing.org"&gt;contribution guide&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+So, there you have it. If you have a blog or resource to share please
+submit a pull request. Over time this could be a terrific single
+starting point for educators to get to a wealth of resources.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="pd" label="pd"/>
+    <category term="resources" label="resources"/>
+  </entry>
   <entry>
     <title>A Community Curated List of CS Education Resources</title>
     <id>http://cestlaz.github.io/posts/awesome-cs/</id>

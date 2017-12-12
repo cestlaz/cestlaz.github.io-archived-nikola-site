@@ -3,7 +3,7 @@
 <feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 25)</title>
   <id>http://cestlaz.github.io/index-25.atom</id>
-  <updated>2017-10-19T21:26:55Z</updated>
+  <updated>2017-09-23T16:59:44Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -25,9 +25,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-23-capture-1/"/>
-    <summary type="html">&lt;div id="outline-container-org09037be" class="outline-2"&gt;
-&lt;h2 id="org09037be"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org09037be"&gt;
+    <summary type="html">&lt;div id="outline-container-org8d2154a" class="outline-2"&gt;
+&lt;h2 id="org8d2154a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8d2154a"&gt;
 &lt;p&gt;
 Org mode has an amazing feature - &lt;b&gt;&lt;b&gt;org-capture&lt;/b&gt;&lt;/b&gt;. I only started
 using it recently but it's really awesome. 
@@ -161,9 +161,9 @@ More information on capture templates can be found &lt;a href="http://orgmode.or
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org3bec5c7" class="outline-2"&gt;
-&lt;h2 id="org3bec5c7"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3bec5c7"&gt;
+&lt;div id="outline-container-orgdb808f4" class="outline-2"&gt;
+&lt;h2 id="orgdb808f4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgdb808f4"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -191,9 +191,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/inverted-index/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-org5d6c4c2" class="outline-2"&gt;
+&lt;h2 id="org5d6c4c2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5d6c4c2"&gt;
 &lt;p&gt;
 I haven't spoken much about the class I've been teaching this
 semester. It's an intro CS course - a programming heavy intro. I
@@ -225,49 +225,49 @@ example, given the following four one line files:
 
 
 &lt;colgroup&gt;
-&lt;col class="left"&gt;
+&lt;col class="org-left"&gt;
 
-&lt;col class="left"&gt;
+&lt;col class="org-left"&gt;
 
-&lt;col class="left"&gt;
+&lt;col class="org-left"&gt;
 
-&lt;col class="left"&gt;
+&lt;col class="org-left"&gt;
 &lt;/colgroup&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th scope="col" class="left"&gt;files&lt;/th&gt;
-&lt;th scope="col" class="left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="left"&gt;contents&lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt;files&lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt;contents&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td class="left"&gt;file.01&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;if you prick us do we not bleed&lt;/td&gt;
+&lt;td class="org-left"&gt;file.01&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;if you prick us do we not bleed&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="left"&gt;file.02&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;if you tickle us do we not laugh&lt;/td&gt;
+&lt;td class="org-left"&gt;file.02&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;if you tickle us do we not laugh&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="left"&gt;file.03&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;if you poison us do we not die and&lt;/td&gt;
+&lt;td class="org-left"&gt;file.03&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;if you poison us do we not die and&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="left"&gt;file.04&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;if you wrong us shall we not revenge&lt;/td&gt;
+&lt;td class="org-left"&gt;file.04&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;if you wrong us shall we not revenge&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -283,48 +283,48 @@ that contain it (partially shown here),
 
 
 &lt;colgroup&gt;
-&lt;col class="left"&gt;
+&lt;col class="org-left"&gt;
 
-&lt;col class="left"&gt;
+&lt;col class="org-left"&gt;
 
-&lt;col class="left"&gt;
+&lt;col class="org-left"&gt;
 &lt;/colgroup&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th scope="col" class="left"&gt;Word&lt;/th&gt;
-&lt;th scope="col" class="left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="left"&gt;Files containing It's&lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt;Word&lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt;Files containing It's&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td class="left"&gt;if&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;td class="org-left"&gt;if&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="left"&gt;you&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;td class="org-left"&gt;you&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="left"&gt;prick&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;file.01&lt;/td&gt;
+&lt;td class="org-left"&gt;prick&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;file.01&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="left"&gt;us&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;td class="org-left"&gt;us&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="left"&gt;do&lt;/td&gt;
-&lt;td class="left"&gt; &lt;/td&gt;
-&lt;td class="left"&gt;file.01 file.02 file.03&lt;/td&gt;
+&lt;td class="org-left"&gt;do&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-left"&gt;file.01 file.02 file.03&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -601,9 +601,9 @@ works.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-21-web-mode/"/>
-    <summary type="html">&lt;div id="outline-container-org9f3b9d3" class="outline-2"&gt;
-&lt;h2 id="org9f3b9d3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9f3b9d3"&gt;
+    <summary type="html">&lt;div id="outline-container-org56f2231" class="outline-2"&gt;
+&lt;h2 id="org56f2231"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org56f2231"&gt;
 &lt;p&gt;
 Quick post today. 
 &lt;/p&gt;
@@ -654,9 +654,9 @@ The web-mode &lt;a href="http://web-mode.org"&gt;documentation&lt;/a&gt; has mor
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-orgb4ea12f" class="outline-2"&gt;
-&lt;h2 id="orgb4ea12f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb4ea12f"&gt;
+&lt;div id="outline-container-org117c1a7" class="outline-2"&gt;
+&lt;h2 id="org117c1a7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org117c1a7"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -684,9 +684,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-22-emacsclient/"/>
-    <summary type="html">&lt;div id="outline-container-orgd5abda8" class="outline-2"&gt;
-&lt;h2 id="orgd5abda8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd5abda8"&gt;
+    <summary type="html">&lt;div id="outline-container-org3d15fad" class="outline-2"&gt;
+&lt;h2 id="org3d15fad"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3d15fad"&gt;
 &lt;p&gt;
 Another quick hit today.
 &lt;/p&gt;
@@ -739,9 +739,9 @@ forever since you just keep emacs up and running.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org7ece9b6" class="outline-2"&gt;
-&lt;h2 id="org7ece9b6"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7ece9b6"&gt;
+&lt;div id="outline-container-orge40fd93" class="outline-2"&gt;
+&lt;h2 id="orge40fd93"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge40fd93"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -769,9 +769,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-20-yanking/"/>
-    <summary type="html">&lt;div id="outline-container-org86f214a" class="outline-2"&gt;
-&lt;h2 id="org86f214a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org86f214a"&gt;
+    <summary type="html">&lt;div id="outline-container-orgf3352c2" class="outline-2"&gt;
+&lt;h2 id="orgf3352c2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf3352c2"&gt;
 &lt;p&gt;
 Today's video is a bit of a follow up on the last one as well as a few
 miscillaneous configuration.
@@ -823,9 +823,9 @@ files in a could based filesystem like Dropbox or Owncloud.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org95f25c7" class="outline-2"&gt;
-&lt;h2 id="org95f25c7"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org95f25c7"&gt;
+&lt;div id="outline-container-orgfde2b4c" class="outline-2"&gt;
+&lt;h2 id="orgfde2b4c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgfde2b4c"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -853,9 +853,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/dont-focus-on-sts/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-orgca67b7c" class="outline-2"&gt;
+&lt;h2 id="orgca67b7c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgca67b7c"&gt;
 &lt;p&gt;
 Over on Facebook, my Alma Mater and long time employer, Stuyvesant
 High School seems to be making a big push to up it's Regeneron Science
@@ -900,10 +900,8 @@ did he do it?
 
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;Identify Stuyvesant's top talent - the ones already most likely to
-succeed in the STS.
-&lt;/li&gt;
-&lt;li&gt;Pawn them off on a lab or professor.
-&lt;/li&gt;
+succeed in the STS.&lt;/li&gt;
+&lt;li&gt;Pawn them off on a lab or professor.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -950,9 +948,9 @@ about.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-19-live/"/>
-    <summary type="html">&lt;div id="outline-container-orge498e33" class="outline-2"&gt;
-&lt;h2 id="orge498e33"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge498e33"&gt;
+    <summary type="html">&lt;div id="outline-container-orgc7c6a74" class="outline-2"&gt;
+&lt;h2 id="orgc7c6a74"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc7c6a74"&gt;
 &lt;p&gt;
 Some of the videos I want to make are going to be much easier to do if
 I'm working in my own account where my whole file tree is available. 
@@ -986,9 +984,9 @@ everything.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org9c8081f" class="outline-2"&gt;
-&lt;h2 id="org9c8081f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9c8081f"&gt;
+&lt;div id="outline-container-org8152ec4" class="outline-2"&gt;
+&lt;h2 id="org8152ec4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8152ec4"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -1016,9 +1014,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/digitaloceanflask/"/>
-    <summary type="html">&lt;div id="outline-container-org8ab5b7e" class="outline-2"&gt;
-&lt;h2 id="org8ab5b7e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8ab5b7e"&gt;
+    <summary type="html">&lt;div id="outline-container-org6ad4d5e" class="outline-2"&gt;
+&lt;h2 id="org6ad4d5e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6ad4d5e"&gt;
 &lt;p&gt;
 This post points to the next three videos in the Flask series.
 &lt;/p&gt;
@@ -1049,23 +1047,23 @@ In general, there are lots of great tutorials and guides at the
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgcf46f15" class="outline-2"&gt;
-&lt;h2 id="orgcf46f15"&gt;Setting up a Droplet&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgcf46f15"&gt;
+&lt;div id="outline-container-org582f65a" class="outline-2"&gt;
+&lt;h2 id="org582f65a"&gt;Setting up a Droplet&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org582f65a"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LOS8PscXhz8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org1add282" class="outline-2"&gt;
-&lt;h2 id="org1add282"&gt;Deploying with Gunicorn&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1add282"&gt;
+&lt;div id="outline-container-org4910380" class="outline-2"&gt;
+&lt;h2 id="org4910380"&gt;Deploying with Gunicorn&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4910380"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/oum5Kh-69pg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org86b3656" class="outline-2"&gt;
-&lt;h2 id="org86b3656"&gt;sshfs and FreeDNS&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org86b3656"&gt;
+&lt;div id="outline-container-org6ea7e26" class="outline-2"&gt;
+&lt;h2 id="org6ea7e26"&gt;sshfs and FreeDNS&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6ea7e26"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/aha2r5I18i0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
@@ -1082,9 +1080,9 @@ In general, there are lots of great tutorials and guides at the
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-18-narrow/"/>
-    <summary type="html">&lt;div id="outline-container-org5c4d3e2" class="outline-2"&gt;
-&lt;h2 id="org5c4d3e2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5c4d3e2"&gt;
+    <summary type="html">&lt;div id="outline-container-org677743a" class="outline-2"&gt;
+&lt;h2 id="org677743a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org677743a"&gt;
 &lt;p&gt;
 I meant to cover these last time but decided not to so as to keep the
 videos to about 10 minutes each.
@@ -1161,9 +1159,9 @@ Enjoy
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-orged271ea" class="outline-2"&gt;
-&lt;h2 id="orged271ea"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orged271ea"&gt;
+&lt;div id="outline-container-org151849a" class="outline-2"&gt;
+&lt;h2 id="org151849a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org151849a"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;

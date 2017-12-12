@@ -1,7 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z (Posts about assessment)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/assessment.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 19 Oct 2017 21:26:57 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>A test result is just a test result</title><link>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org69746a4" class="outline-2"&gt;
-&lt;h2 id="org69746a4"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org69746a4"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about assessment)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/assessment.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 12 Dec 2017 01:14:05 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Making contest problems and writing tests</title><link>http://cestlaz.github.io/posts/advent-2017-making-tests/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org504ff73" class="outline-2"&gt;
+&lt;h2 id="org504ff73"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org504ff73"&gt;
+&lt;p&gt;
+I'm now well behind in &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. Traveling up to Michigan to see
+my son and my brother and his family will do that.
+&lt;/p&gt;
+
+&lt;p&gt;
+I was planning on working to catch up but got distracted earlier by
+&lt;a href="https://www.reddit.com/r/adventofcode/comments/7idn6k/question_why_does_the_difficulty_vary_so_much/"&gt;this thread&lt;/a&gt; on the Advent of Code subreddit. Specifically &lt;a href="https://www.reddit.com/r/adventofcode/comments/7idn6k/question_why_does_the_difficulty_vary_so_much/dqy08tk/"&gt;this comment&lt;/a&gt;
+by &lt;a href="http://was.tl/"&gt;Eric Wastl&lt;/a&gt;, the contest creator. The thread is about the level of
+difficulty of the various problems and Eric's comment talks about some
+of the factors that go into creating a good collection of problems for
+a contest and the difficulties involved.
+&lt;/p&gt;
+
+&lt;p&gt;
+It made me think of a conversation I had twenty years ago with Rob
+Kolstad. We were chatting at a programming competition while the
+students were hacking away. We were discussing that there were only so
+many questions that a typical high school or college competition can
+ask:
+&lt;/p&gt;
+
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;The Mathy question&lt;/li&gt;
+&lt;li&gt;Recursion / divide and conquer etc.&lt;/li&gt;
+&lt;li&gt;Graph stuff&lt;/li&gt;
+&lt;li&gt;Dynamic Programming&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+and I think one or two more. The actual questions were just window
+dressing on these fundamental question types. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You can see this in many competitions including Advent of Code -
+particularly if you look over all three years. This is not a
+criticism. I love Advent of Code and think that Eric and the people
+he's working with are doing a great job . Read Eric's comment to get a
+deeper dive into what he thinks about as a contest designer.
+&lt;/p&gt;
+
+&lt;p&gt;
+I also got to thinking how similar creating a competition is to
+creating an exam. Maybe that's because I'm currently writing the final
+my students will take in a couple of days. In class tests are
+certainly not the best of assessments but they do have their place and
+in any event, they're frequently  required by school or departmental
+policy.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are many similarities between what teachers consider when making
+tests to what contest designers consider. What concepts and techniques
+must the students use? Are the problems too similar? Do they ramp up
+in difficulty? Are they all or nothing or can a student incrementally
+work their way to a solution? Does one problem lead into another? 
+&lt;/p&gt;
+
+&lt;p&gt;
+There's no big reveal or surprise here today. Just something I've been
+thinking about. 
+&lt;/p&gt;
+
+&lt;p&gt;
+A couple of busy days coming up but maybe over the weekend I can get
+back to Advent of Code.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>assessment</category><category>contests</category><guid>http://cestlaz.github.io/posts/advent-2017-making-tests/</guid><pubDate>Mon, 11 Dec 2017 23:39:16 GMT</pubDate></item><item><title>A test result is just a test result</title><link>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge28ce54" class="outline-2"&gt;
+&lt;h2 id="orge28ce54"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge28ce54"&gt;
 &lt;p&gt;
 This past weekend was &lt;a href="http://catskillsconf.com"&gt;Catskillsconf&lt;/a&gt; - my favorite event of the
 year. I spent the weekend up in Ulster County with a bunch of my
@@ -17,9 +89,9 @@ are indicative of a good curriculum or good professional development (PD).
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org47b9b88" class="outline-2"&gt;
-&lt;h2 id="org47b9b88"&gt;TL;DR - NO!!!!!&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org47b9b88"&gt;
+&lt;div id="outline-container-org6694b72" class="outline-2"&gt;
+&lt;h2 id="org6694b72"&gt;TL;DR - NO!!!!!&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6694b72"&gt;
 &lt;p&gt;
 Further, anyone who thinks that a set of exam results can tell you
 that a particular PD sequence or curriculum is good shouldn't be

@@ -18,8 +18,8 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
-<link rel="next" href="index-33.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/advent-2016-6-4/" type="text/html">
+<link rel="next" href="index-34.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/advent-2017-making-tests/" type="text/html">
 <script src="%E2%80%9Chttps:/widget.battleforthenet.com/widget.js%E2%80%9D" async></script>
 </head>
 <body>
@@ -91,7 +91,92 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/advent-2016-6-4/" class="u-url">Tools can shape how we think</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/advent-2017-making-tests/" class="u-url">Making contest problems and writing tests</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/advent-2017-making-tests/" rel="bookmark"><time class="published dt-published" datetime="2017-12-11T19:39:16-04:00" title="2017-12-11 19:39">2017-12-11 19:39</time></a></p>
+                <p class="commentline">            <a href="posts/advent-2017-making-tests/#disqus_thread" data-disqus-identifier="cache/posts/advent-2017-making-tests.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org504ff73" class="outline-2">
+<h2 id="org504ff73"></h2>
+<div class="outline-text-2" id="text-org504ff73">
+<p>
+I'm now well behind in <a href="http://adventofcode.com">Advent of Code</a>. Traveling up to Michigan to see
+my son and my brother and his family will do that.
+</p>
+
+<p>
+I was planning on working to catch up but got distracted earlier by
+<a href="https://www.reddit.com/r/adventofcode/comments/7idn6k/question_why_does_the_difficulty_vary_so_much/">this thread</a> on the Advent of Code subreddit. Specifically <a href="https://www.reddit.com/r/adventofcode/comments/7idn6k/question_why_does_the_difficulty_vary_so_much/dqy08tk/">this comment</a>
+by <a href="http://was.tl/">Eric Wastl</a>, the contest creator. The thread is about the level of
+difficulty of the various problems and Eric's comment talks about some
+of the factors that go into creating a good collection of problems for
+a contest and the difficulties involved.
+</p>
+
+<p>
+It made me think of a conversation I had twenty years ago with Rob
+Kolstad. We were chatting at a programming competition while the
+students were hacking away. We were discussing that there were only so
+many questions that a typical high school or college competition can
+ask:
+</p>
+
+<ol class="org-ol">
+<li>The Mathy question</li>
+<li>Recursion / divide and conquer etc.</li>
+<li>Graph stuff</li>
+<li>Dynamic Programming</li>
+</ol>
+<p>
+and I think one or two more. The actual questions were just window
+dressing on these fundamental question types. 
+</p>
+
+<p>
+You can see this in many competitions including Advent of Code -
+particularly if you look over all three years. This is not a
+criticism. I love Advent of Code and think that Eric and the people
+he's working with are doing a great job . Read Eric's comment to get a
+deeper dive into what he thinks about as a contest designer.
+</p>
+
+<p>
+I also got to thinking how similar creating a competition is to
+creating an exam. Maybe that's because I'm currently writing the final
+my students will take in a couple of days. In class tests are
+certainly not the best of assessments but they do have their place and
+in any event, they're frequently  required by school or departmental
+policy.
+</p>
+
+<p>
+There are many similarities between what teachers consider when making
+tests to what contest designers consider. What concepts and techniques
+must the students use? Are the problems too similar? Do they ramp up
+in difficulty? Are they all or nothing or can a student incrementally
+work their way to a solution? Does one problem lead into another? 
+</p>
+
+<p>
+There's no big reveal or surprise here today. Just something I've been
+thinking about. 
+</p>
+
+<p>
+A couple of busy days coming up but maybe over the weekend I can get
+back to Advent of Code.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/advent-2016-6-4/" class="u-url">Tools can shape how we think</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -103,9 +188,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgdb648c4" class="outline-2">
-<h2 id="orgdb648c4"></h2>
-<div class="outline-text-2" id="text-orgdb648c4">
+    <div id="outline-container-orgc3f2da5" class="outline-2">
+<h2 id="orgc3f2da5"></h2>
+<div class="outline-text-2" id="text-orgc3f2da5">
 <p>
 I've been having fun with this years <a href="http://adventofcode.com">Advent of Code</a> competition. So
 far, I've been able to keep up but with I expect that to change in
@@ -156,9 +241,9 @@ I decided to do this rant as a video. I hope you enjoy it:
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org1f00f18" class="outline-2">
-<h2 id="org1f00f18"></h2>
-<div class="outline-text-2" id="text-org1f00f18">
+    <div id="outline-container-orgaf058ed" class="outline-2">
+<h2 id="orgaf058ed"></h2>
+<div class="outline-text-2" id="text-orgaf058ed">
 <p>
 Yesterday I was one of the judges at <a href="http://stuyhacks.com/">StuyHacks</a>. A one day hackathon at
 Stuyvesant run by and organized by the students. I don't have attendee
@@ -284,9 +369,9 @@ StuyHacks <a href="http://stuyhacks.com/">web page</a> and make sure to attend t
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org9b3e165" class="outline-2">
-<h2 id="org9b3e165"></h2>
-<div class="outline-text-2" id="text-org9b3e165">
+    <div id="outline-container-org75f1cf1" class="outline-2">
+<h2 id="org75f1cf1"></h2>
+<div class="outline-text-2" id="text-org75f1cf1">
 <p>
 It's once again time for <a href="http://adventofcode.com">Advent of Code</a>. That one a day programming
 competition that's been running now for three years.
@@ -462,9 +547,9 @@ write that up later.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org5830d60" class="outline-2">
-<h2 id="org5830d60"></h2>
-<div class="outline-text-2" id="text-org5830d60">
+    <div id="outline-container-org45ea67b" class="outline-2">
+<h2 id="org45ea67b"></h2>
+<div class="outline-text-2" id="text-org45ea67b">
 <p>
 A week or so ago I wrote about the event we had to kick off 
 <a href="http://cestlaz.github.io/posts/hunter-tech-kickoff">Hunter College's partnering with the NY tech community</a> to build a
@@ -573,9 +658,9 @@ fail to impress.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgfb7ae1b" class="outline-2">
-<h2 id="orgfb7ae1b"></h2>
-<div class="outline-text-2" id="text-orgfb7ae1b">
+    <div id="outline-container-org393708d" class="outline-2">
+<h2 id="org393708d"></h2>
+<div class="outline-text-2" id="text-org393708d">
 <p>
 Thanksgiving is reunion season. Stuyvesant and I'm guessing other high
 schools traditionally hold their reunions, at least the five and ten
@@ -656,9 +741,9 @@ years to come.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org089203a" class="outline-2">
-<h2 id="org089203a"></h2>
-<div class="outline-text-2" id="text-org089203a">
+    <div id="outline-container-org119355a" class="outline-2">
+<h2 id="org119355a"></h2>
+<div class="outline-text-2" id="text-org119355a">
 <p>
 The 38th installment of Using Emacs is about <b><b>dired</b></b>, Emacs' built
 in mode for navigating and working with directories.
@@ -743,9 +828,9 @@ how other people are using it.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orge1e75da" class="outline-2">
-<h2 id="orge1e75da"></h2>
-<div class="outline-text-2" id="text-orge1e75da">
+    <div id="outline-container-org2eb047e" class="outline-2">
+<h2 id="org2eb047e"></h2>
+<div class="outline-text-2" id="text-org2eb047e">
 <p>
 Thks question was posed the other day - how can one get students to
 truly understand the quicksort algorithm?
@@ -838,9 +923,9 @@ Enjoy.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org8d0ad6e" class="outline-2">
-<h2 id="org8d0ad6e"></h2>
-<div class="outline-text-2" id="text-org8d0ad6e">
+    <div id="outline-container-org2163607" class="outline-2">
+<h2 id="org2163607"></h2>
+<div class="outline-text-2" id="text-org2163607">
 
 <div class="figure">
 <p><img src="img/hunter-tech/hunter-tech1.jpg" alt="hunter-tech1.jpg" align="center" height="400"></p>
@@ -943,9 +1028,9 @@ a Hunter CS to Tech Community pipeline that's second to none.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgcb66f1d" class="outline-2">
-<h2 id="orgcb66f1d"></h2>
-<div class="outline-text-2" id="text-orgcb66f1d">
+    <div id="outline-container-org5d0254c" class="outline-2">
+<h2 id="org5d0254c"></h2>
+<div class="outline-text-2" id="text-org5d0254c">
 <p>
 Most mornings, I start my day with a workout. Sometimes I run,
 sometimes I use my bike trainer. Dealing with plantar
@@ -1055,145 +1140,11 @@ the real thing.
 </div>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/election-day-pd-2017/" class="u-url">Professional Development beyond Scratch</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/election-day-pd-2017/" rel="bookmark"><time class="published dt-published" datetime="2017-11-07T19:08:58-04:00" title="2017-11-07 19:08">2017-11-07 19:08</time></a></p>
-                <p class="commentline">            <a href="posts/election-day-pd-2017/#disqus_thread" data-disqus-identifier="cache/posts/election-day-pd-2017.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-orgc7b8e57" class="outline-2">
-<h2 id="orgc7b8e57"></h2>
-<div class="outline-text-2" id="text-orgc7b8e57">
-<p>
-Today was Election Day. One of the few days each year when students
-stay home and teachers spend all day attending what is generously
-known as professional development.
-</p>
-
-<p>
-Years ago I was in a room with a few colleagues when my friend Dave -
-one of the best math teachers I know said "you know, every time we
-have a PD day in NJ and my wife and I have to scramble to take care of
-the kids I get a little annoyed but then think I shouldn't get annoyed
-since they're spending the day doing all sorts of valuable PD." He
-then said "but then I realize that their PD is probably about as
-useful as our PD and I get really angry."
-</p>
-
-<p>
-There you have it. This is not to say that there is no good PD but it
-seems that the professional development opportunities provided by our
-schools have over the years ranged from useless to insulting with
-maybe a small bright spot here and there. Historically it's been worse
-for CS teachers because we get lumped in with math teachers and have
-to spend the day learning about tools and techniques we'll never use
-or discussing curricula we never teach.
-</p>
-
-<p>
-So, when I spoke to JonAlf about rescuing the Stuy teachers for the
-day and hosting them at Hunter, he and the other CS teachers were
-pretty excited. It wasn't as though I had the magic PD answer but I
-was going to provide a space and we'd figure out together what would
-be productive and valuable for them.
-</p>
-
-<p>
-As it turns out, I've been spending a good amount of time these past
-few weeks visiting high schools to talk about Hunter CS and when I was
-at Bronx Science the topic of Election Day PD came up and I thought
-that it would be nice to get the Bronx Science and Stuy teachers
-together. After thinking about it more, I recalled that there were few
-good PD opportunities for CS teachers who taught advanced classes as
-opposed to all the CS PD floating around these days at more of a
-beginner level.
-</p>
-
-<p>
-I thought that we could change this. In the end, I hosted PD today and
-had teachers from Stuyvesant, Bronx Science, Brooklyn Tech, and the
-Manhattan Hunter Science High School in attendance. I invited teachers
-from a few more schools but in the end we had those four schools and
-seventeen teachers.
-</p>
-
-<p>
-The original agenda was:
-</p>
-
-<ul class="org-ul">
-<li>09:00 - 10:00 : Each school describes it's program and courses</li>
-<li>10:00 - 11:00 : An intro to Git and GitHub for the classroom</li>
-<li>10:00 - 11:45 : Sharing neat lessons</li>
-<li>11:45 - 12:00 : Presentation by <a href="http://chicktech.org">ChickTech</a>
-</li>
-<li>12:00 - 01:00 : Lunch</li>
-<li>01:00 - End   : Small group lesson and curriculum work</li>
-</ul>
-<p>
-Oh boy did I mess up on the timing. The description and
-discussion of school programs took all morning. It was interesting to
-hear how each school's program evolved and how they fit into the
-school's culture. Brooklyn Tech, for instance is a school where
-students declare majors. This has a big impact on what classes kids
-have to take and are able to take. This is very different from Stuy or
-Science where kids programs are more open ended or MHSHS which is a
-much smaller school and has restrictions related to size. It was also
-interesting to note Brooklyn Tech's decision to have every student
-take APCS-P. Interesting because Brooklyn Tech is one of the country's
-largest high schools and most of them should have done well on the
-exam. That gave NYC around 1,400 passing AP scores in one shot. On
-the other hand none of the other schools present today offered APCS-P
-but did have their own intro CS class that students took prior to
-APCS-A.
-</p>
-
-<p>
-We finished the morning with a visit by Heather from
-<a href="http://chicktech.org">ChickTech</a>. ChickTech is a non-profit dedicated to retaining women in
-Tech. It works with both girls in K12 and also those in industry. My
-hope was to get a conversation started and see if there were some
-potential avenues of partnership between the organization and the
-schools.
-</p>
-
-<p>
-After lunch, the group decided that we should do the Git/GitHub
-workshop and JonAlf obliged.
-</p>
-
-<p>
-Overall I think the day was a success. 
-</p>
-
-<p>
-My hope is that today's attendees can form a core group of CS teachers
-who teach more advanced courses and we can form something of a support
-group for each other. 
-</p>
-
-<p>
-I plan to try to facilitate future meetings and hopefully we'll be
-able to attract more teachers to our group.
-</p>
-
-<p>
-All in all I'm very happy with how the day went.
-</p>
-</div>
-</div>
-    </div>
     </article>
 </div>
         <nav class="postindexpager"><ul class="pager">
 <li class="next">
-                <a href="index-33.html" rel="next">Older posts</a>
+                <a href="index-34.html" rel="next">Older posts</a>
             </li>
         </ul></nav><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
 </div>

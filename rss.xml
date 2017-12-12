@@ -1,7 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 11 Dec 2017 15:18:45 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgdb648c4" class="outline-2"&gt;
-&lt;h2 id="orgdb648c4"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgdb648c4"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 12 Dec 2017 01:14:05 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Making contest problems and writing tests</title><link>http://cestlaz.github.io/posts/advent-2017-making-tests/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org504ff73" class="outline-2"&gt;
+&lt;h2 id="org504ff73"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org504ff73"&gt;
+&lt;p&gt;
+I'm now well behind in &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. Traveling up to Michigan to see
+my son and my brother and his family will do that.
+&lt;/p&gt;
+
+&lt;p&gt;
+I was planning on working to catch up but got distracted earlier by
+&lt;a href="https://www.reddit.com/r/adventofcode/comments/7idn6k/question_why_does_the_difficulty_vary_so_much/"&gt;this thread&lt;/a&gt; on the Advent of Code subreddit. Specifically &lt;a href="https://www.reddit.com/r/adventofcode/comments/7idn6k/question_why_does_the_difficulty_vary_so_much/dqy08tk/"&gt;this comment&lt;/a&gt;
+by &lt;a href="http://was.tl/"&gt;Eric Wastl&lt;/a&gt;, the contest creator. The thread is about the level of
+difficulty of the various problems and Eric's comment talks about some
+of the factors that go into creating a good collection of problems for
+a contest and the difficulties involved.
+&lt;/p&gt;
+
+&lt;p&gt;
+It made me think of a conversation I had twenty years ago with Rob
+Kolstad. We were chatting at a programming competition while the
+students were hacking away. We were discussing that there were only so
+many questions that a typical high school or college competition can
+ask:
+&lt;/p&gt;
+
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;The Mathy question&lt;/li&gt;
+&lt;li&gt;Recursion / divide and conquer etc.&lt;/li&gt;
+&lt;li&gt;Graph stuff&lt;/li&gt;
+&lt;li&gt;Dynamic Programming&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+and I think one or two more. The actual questions were just window
+dressing on these fundamental question types. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You can see this in many competitions including Advent of Code -
+particularly if you look over all three years. This is not a
+criticism. I love Advent of Code and think that Eric and the people
+he's working with are doing a great job . Read Eric's comment to get a
+deeper dive into what he thinks about as a contest designer.
+&lt;/p&gt;
+
+&lt;p&gt;
+I also got to thinking how similar creating a competition is to
+creating an exam. Maybe that's because I'm currently writing the final
+my students will take in a couple of days. In class tests are
+certainly not the best of assessments but they do have their place and
+in any event, they're frequently  required by school or departmental
+policy.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are many similarities between what teachers consider when making
+tests to what contest designers consider. What concepts and techniques
+must the students use? Are the problems too similar? Do they ramp up
+in difficulty? Are they all or nothing or can a student incrementally
+work their way to a solution? Does one problem lead into another? 
+&lt;/p&gt;
+
+&lt;p&gt;
+There's no big reveal or surprise here today. Just something I've been
+thinking about. 
+&lt;/p&gt;
+
+&lt;p&gt;
+A couple of busy days coming up but maybe over the weekend I can get
+back to Advent of Code.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>assessment</category><category>contests</category><guid>http://cestlaz.github.io/posts/advent-2017-making-tests/</guid><pubDate>Mon, 11 Dec 2017 23:39:16 GMT</pubDate></item><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc3f2da5" class="outline-2"&gt;
+&lt;h2 id="orgc3f2da5"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc3f2da5"&gt;
 &lt;p&gt;
 I've been having fun with this years &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; competition. So
 far, I've been able to keep up but with I expect that to change in
@@ -38,9 +110,9 @@ I decided to do this rant as a video. I hope you enjoy it:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x8cZgEogWNw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>Thoughts On A Hackathon</title><link>http://cestlaz.github.io/posts/thoughts-on-a-hackathon/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org1f00f18" class="outline-2"&gt;
-&lt;h2 id="org1f00f18"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1f00f18"&gt;
+&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>Thoughts On A Hackathon</title><link>http://cestlaz.github.io/posts/thoughts-on-a-hackathon/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgaf058ed" class="outline-2"&gt;
+&lt;h2 id="orgaf058ed"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgaf058ed"&gt;
 &lt;p&gt;
 Yesterday I was one of the judges at &lt;a href="http://stuyhacks.com/"&gt;StuyHacks&lt;/a&gt;. A one day hackathon at
 Stuyvesant run by and organized by the students. I don't have attendee
@@ -153,9 +225,9 @@ you're a middle or high school student or know one, keep an eye on the
 StuyHacks &lt;a href="http://stuyhacks.com/"&gt;web page&lt;/a&gt; and make sure to attend their next event.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>hackathons</category><category>teaching</category><guid>http://cestlaz.github.io/posts/thoughts-on-a-hackathon/</guid><pubDate>Sun, 03 Dec 2017 12:47:34 GMT</pubDate></item><item><title>Advent of Code 2017 - Day 1</title><link>http://cestlaz.github.io/posts/advent-2017-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9b3e165" class="outline-2"&gt;
-&lt;h2 id="org9b3e165"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9b3e165"&gt;
+&lt;/div&gt;</description><category>hackathons</category><category>teaching</category><guid>http://cestlaz.github.io/posts/thoughts-on-a-hackathon/</guid><pubDate>Sun, 03 Dec 2017 12:47:34 GMT</pubDate></item><item><title>Advent of Code 2017 - Day 1</title><link>http://cestlaz.github.io/posts/advent-2017-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org75f1cf1" class="outline-2"&gt;
+&lt;h2 id="org75f1cf1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org75f1cf1"&gt;
 &lt;p&gt;
 It's once again time for &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. That one a day programming
 competition that's been running now for three years.
@@ -317,9 +389,9 @@ Day 2 also has a nice list comprehension based solution. Maybe I'll
 write that up later.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>adventofcode</category><category>cs</category><category>programming</category><category>python</category><guid>http://cestlaz.github.io/posts/advent-2017-1/</guid><pubDate>Sat, 02 Dec 2017 12:27:02 GMT</pubDate></item><item><title>You have to trust the kids</title><link>http://cestlaz.github.io/posts/trust-the-kids/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org5830d60" class="outline-2"&gt;
-&lt;h2 id="org5830d60"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5830d60"&gt;
+&lt;/div&gt;</description><category>adventofcode</category><category>cs</category><category>programming</category><category>python</category><guid>http://cestlaz.github.io/posts/advent-2017-1/</guid><pubDate>Sat, 02 Dec 2017 12:27:02 GMT</pubDate></item><item><title>You have to trust the kids</title><link>http://cestlaz.github.io/posts/trust-the-kids/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org45ea67b" class="outline-2"&gt;
+&lt;h2 id="org45ea67b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org45ea67b"&gt;
 &lt;p&gt;
 A week or so ago I wrote about the event we had to kick off 
 &lt;a href="http://cestlaz.github.io/posts/hunter-tech-kickoff"&gt;Hunter College's partnering with the NY tech community&lt;/a&gt; to build a
@@ -414,9 +486,9 @@ We set the stage and if we do it right, the kids won't
 fail to impress.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/trust-the-kids/</guid><pubDate>Wed, 29 Nov 2017 23:53:30 GMT</pubDate></item><item><title>Reunion Season</title><link>http://cestlaz.github.io/posts/reunion-season/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgfb7ae1b" class="outline-2"&gt;
-&lt;h2 id="orgfb7ae1b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgfb7ae1b"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/trust-the-kids/</guid><pubDate>Wed, 29 Nov 2017 23:53:30 GMT</pubDate></item><item><title>Reunion Season</title><link>http://cestlaz.github.io/posts/reunion-season/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org393708d" class="outline-2"&gt;
+&lt;h2 id="org393708d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org393708d"&gt;
 &lt;p&gt;
 Thanksgiving is reunion season. Stuyvesant and I'm guessing other high
 schools traditionally hold their reunions, at least the five and ten
@@ -483,9 +555,9 @@ being included in class reunions and hope to be invited to more in
 years to come.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>community</category><category>reunions</category><category>stuycs</category><guid>http://cestlaz.github.io/posts/reunion-season/</guid><pubDate>Sun, 26 Nov 2017 11:41:51 GMT</pubDate></item><item><title>Using Emacs 38 - dired</title><link>http://cestlaz.github.io/posts/using-emacs-38-dired/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org089203a" class="outline-2"&gt;
-&lt;h2 id="org089203a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org089203a"&gt;
+&lt;/div&gt;</description><category>community</category><category>reunions</category><category>stuycs</category><guid>http://cestlaz.github.io/posts/reunion-season/</guid><pubDate>Sun, 26 Nov 2017 11:41:51 GMT</pubDate></item><item><title>Using Emacs 38 - dired</title><link>http://cestlaz.github.io/posts/using-emacs-38-dired/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org119355a" class="outline-2"&gt;
+&lt;h2 id="org119355a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org119355a"&gt;
 &lt;p&gt;
 The 38th installment of Using Emacs is about &lt;b&gt;&lt;b&gt;dired&lt;/b&gt;&lt;/b&gt;, Emacs' built
 in mode for navigating and working with directories.
@@ -557,9 +629,9 @@ how other people are using it.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Fg7HmmRYWy8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-38-dired/</guid><pubDate>Fri, 24 Nov 2017 13:00:00 GMT</pubDate></item><item><title>Motivating and understanding quicksort</title><link>http://cestlaz.github.io/posts/quick-sort-starting/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge1e75da" class="outline-2"&gt;
-&lt;h2 id="orge1e75da"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge1e75da"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-38-dired/</guid><pubDate>Fri, 24 Nov 2017 13:00:00 GMT</pubDate></item><item><title>Motivating and understanding quicksort</title><link>http://cestlaz.github.io/posts/quick-sort-starting/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org2eb047e" class="outline-2"&gt;
+&lt;h2 id="org2eb047e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org2eb047e"&gt;
 &lt;p&gt;
 Thks question was posed the other day - how can one get students to
 truly understand the quicksort algorithm?
@@ -639,9 +711,9 @@ programming paradigms (&lt;a href="https://cestlaz.github.io/posts/2010-03-14-so
 Enjoy.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>algorithms. unplugged</category><category>cs</category><category>programming</category><guid>http://cestlaz.github.io/posts/quick-sort-starting/</guid><pubDate>Tue, 21 Nov 2017 14:34:05 GMT</pubDate></item><item><title>Hunter CS and NY Tech - it takes a village</title><link>http://cestlaz.github.io/posts/hunter-tech-kickoff/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8d0ad6e" class="outline-2"&gt;
-&lt;h2 id="org8d0ad6e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8d0ad6e"&gt;
+&lt;/div&gt;</description><category>algorithms. unplugged</category><category>cs</category><category>programming</category><guid>http://cestlaz.github.io/posts/quick-sort-starting/</guid><pubDate>Tue, 21 Nov 2017 14:34:05 GMT</pubDate></item><item><title>Hunter CS and NY Tech - it takes a village</title><link>http://cestlaz.github.io/posts/hunter-tech-kickoff/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org2163607" class="outline-2"&gt;
+&lt;h2 id="org2163607"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org2163607"&gt;
 
 &lt;div class="figure"&gt;
 &lt;p&gt;&lt;img src="http://cestlaz.github.io/img/hunter-tech/hunter-tech1.jpg" alt="hunter-tech1.jpg" align="center" height="400"&gt;
@@ -733,9 +805,9 @@ working with  them, my students and my colleagues  to create
 a Hunter CS to Tech Community pipeline that's second to none.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>tech community</category><guid>http://cestlaz.github.io/posts/hunter-tech-kickoff/</guid><pubDate>Sun, 19 Nov 2017 23:09:33 GMT</pubDate></item><item><title>Moocs - High Production value, Bad Questions</title><link>http://cestlaz.github.io/posts/moocs-bad-questions/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgcb66f1d" class="outline-2"&gt;
-&lt;h2 id="orgcb66f1d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgcb66f1d"&gt;
+&lt;/div&gt;</description><category>tech community</category><guid>http://cestlaz.github.io/posts/hunter-tech-kickoff/</guid><pubDate>Sun, 19 Nov 2017 23:09:33 GMT</pubDate></item><item><title>Moocs - High Production value, Bad Questions</title><link>http://cestlaz.github.io/posts/moocs-bad-questions/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org5d0254c" class="outline-2"&gt;
+&lt;h2 id="org5d0254c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5d0254c"&gt;
 &lt;p&gt;
 Most mornings, I start my day with a workout. Sometimes I run,
 sometimes I use my bike trainer. Dealing with plantar
@@ -844,124 +916,4 @@ critically as a teacher it's plain to see that their no substitute for
 the real thing.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/moocs-bad-questions/</guid><pubDate>Fri, 10 Nov 2017 11:55:09 GMT</pubDate></item><item><title>Professional Development beyond Scratch</title><link>http://cestlaz.github.io/posts/election-day-pd-2017/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc7b8e57" class="outline-2"&gt;
-&lt;h2 id="orgc7b8e57"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc7b8e57"&gt;
-&lt;p&gt;
-Today was Election Day. One of the few days each year when students
-stay home and teachers spend all day attending what is generously
-known as professional development.
-&lt;/p&gt;
-
-&lt;p&gt;
-Years ago I was in a room with a few colleagues when my friend Dave -
-one of the best math teachers I know said "you know, every time we
-have a PD day in NJ and my wife and I have to scramble to take care of
-the kids I get a little annoyed but then think I shouldn't get annoyed
-since they're spending the day doing all sorts of valuable PD." He
-then said "but then I realize that their PD is probably about as
-useful as our PD and I get really angry."
-&lt;/p&gt;
-
-&lt;p&gt;
-There you have it. This is not to say that there is no good PD but it
-seems that the professional development opportunities provided by our
-schools have over the years ranged from useless to insulting with
-maybe a small bright spot here and there. Historically it's been worse
-for CS teachers because we get lumped in with math teachers and have
-to spend the day learning about tools and techniques we'll never use
-or discussing curricula we never teach.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, when I spoke to JonAlf about rescuing the Stuy teachers for the
-day and hosting them at Hunter, he and the other CS teachers were
-pretty excited. It wasn't as though I had the magic PD answer but I
-was going to provide a space and we'd figure out together what would
-be productive and valuable for them.
-&lt;/p&gt;
-
-&lt;p&gt;
-As it turns out, I've been spending a good amount of time these past
-few weeks visiting high schools to talk about Hunter CS and when I was
-at Bronx Science the topic of Election Day PD came up and I thought
-that it would be nice to get the Bronx Science and Stuy teachers
-together. After thinking about it more, I recalled that there were few
-good PD opportunities for CS teachers who taught advanced classes as
-opposed to all the CS PD floating around these days at more of a
-beginner level.
-&lt;/p&gt;
-
-&lt;p&gt;
-I thought that we could change this. In the end, I hosted PD today and
-had teachers from Stuyvesant, Bronx Science, Brooklyn Tech, and the
-Manhattan Hunter Science High School in attendance. I invited teachers
-from a few more schools but in the end we had those four schools and
-seventeen teachers.
-&lt;/p&gt;
-
-&lt;p&gt;
-The original agenda was:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;09:00 - 10:00 : Each school describes it's program and courses&lt;/li&gt;
-&lt;li&gt;10:00 - 11:00 : An intro to Git and GitHub for the classroom&lt;/li&gt;
-&lt;li&gt;10:00 - 11:45 : Sharing neat lessons&lt;/li&gt;
-&lt;li&gt;11:45 - 12:00 : Presentation by &lt;a href="http://chicktech.org"&gt;ChickTech&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;12:00 - 01:00 : Lunch&lt;/li&gt;
-&lt;li&gt;01:00 - End   : Small group lesson and curriculum work&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-Oh boy did I mess up on the timing. The description and
-discussion of school programs took all morning. It was interesting to
-hear how each school's program evolved and how they fit into the
-school's culture. Brooklyn Tech, for instance is a school where
-students declare majors. This has a big impact on what classes kids
-have to take and are able to take. This is very different from Stuy or
-Science where kids programs are more open ended or MHSHS which is a
-much smaller school and has restrictions related to size. It was also
-interesting to note Brooklyn Tech's decision to have every student
-take APCS-P. Interesting because Brooklyn Tech is one of the country's
-largest high schools and most of them should have done well on the
-exam. That gave NYC around 1,400 passing AP scores in one shot. On
-the other hand none of the other schools present today offered APCS-P
-but did have their own intro CS class that students took prior to
-APCS-A.
-&lt;/p&gt;
-
-&lt;p&gt;
-We finished the morning with a visit by Heather from
-&lt;a href="http://chicktech.org"&gt;ChickTech&lt;/a&gt;. ChickTech is a non-profit dedicated to retaining women in
-Tech. It works with both girls in K12 and also those in industry. My
-hope was to get a conversation started and see if there were some
-potential avenues of partnership between the organization and the
-schools.
-&lt;/p&gt;
-
-&lt;p&gt;
-After lunch, the group decided that we should do the Git/GitHub
-workshop and JonAlf obliged.
-&lt;/p&gt;
-
-&lt;p&gt;
-Overall I think the day was a success. 
-&lt;/p&gt;
-
-&lt;p&gt;
-My hope is that today's attendees can form a core group of CS teachers
-who teach more advanced courses and we can form something of a support
-group for each other. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I plan to try to facilitate future meetings and hopefully we'll be
-able to attract more teachers to our group.
-&lt;/p&gt;
-
-&lt;p&gt;
-All in all I'm very happy with how the day went.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><category>pd</category><guid>http://cestlaz.github.io/posts/election-day-pd-2017/</guid><pubDate>Tue, 07 Nov 2017 23:08:58 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/moocs-bad-questions/</guid><pubDate>Fri, 10 Nov 2017 11:55:09 GMT</pubDate></item></channel></rss>

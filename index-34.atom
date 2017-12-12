@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>C'est la Z (old posts, page 34)</title>
+  <id>http://cestlaz.github.io/index-34.atom</id>
+  <updated>2017-12-12T01:10:53Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/index-34.atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-33.atom"/>
+  <link rel="previous" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
+  <link rel="current" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
+  <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-33.atom"/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-34.html"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Professional Development beyond Scratch</title>
+    <id>http://cestlaz.github.io/posts/election-day-pd-2017/</id>
+    <updated>2017-11-07T19:08:58-04:00</updated>
+    <published>2017-11-07T19:08:58-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/election-day-pd-2017/"/>
+    <summary type="html">&lt;div id="outline-container-org30b65f3" class="outline-2"&gt;
+&lt;h2 id="org30b65f3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org30b65f3"&gt;
+&lt;p&gt;
+Today was Election Day. One of the few days each year when students
+stay home and teachers spend all day attending what is generously
+known as professional development.
+&lt;/p&gt;
+
+&lt;p&gt;
+Years ago I was in a room with a few colleagues when my friend Dave -
+one of the best math teachers I know said "you know, every time we
+have a PD day in NJ and my wife and I have to scramble to take care of
+the kids I get a little annoyed but then think I shouldn't get annoyed
+since they're spending the day doing all sorts of valuable PD." He
+then said "but then I realize that their PD is probably about as
+useful as our PD and I get really angry."
+&lt;/p&gt;
+
+&lt;p&gt;
+There you have it. This is not to say that there is no good PD but it
+seems that the professional development opportunities provided by our
+schools have over the years ranged from useless to insulting with
+maybe a small bright spot here and there. Historically it's been worse
+for CS teachers because we get lumped in with math teachers and have
+to spend the day learning about tools and techniques we'll never use
+or discussing curricula we never teach.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, when I spoke to JonAlf about rescuing the Stuy teachers for the
+day and hosting them at Hunter, he and the other CS teachers were
+pretty excited. It wasn't as though I had the magic PD answer but I
+was going to provide a space and we'd figure out together what would
+be productive and valuable for them.
+&lt;/p&gt;
+
+&lt;p&gt;
+As it turns out, I've been spending a good amount of time these past
+few weeks visiting high schools to talk about Hunter CS and when I was
+at Bronx Science the topic of Election Day PD came up and I thought
+that it would be nice to get the Bronx Science and Stuy teachers
+together. After thinking about it more, I recalled that there were few
+good PD opportunities for CS teachers who taught advanced classes as
+opposed to all the CS PD floating around these days at more of a
+beginner level.
+&lt;/p&gt;
+
+&lt;p&gt;
+I thought that we could change this. In the end, I hosted PD today and
+had teachers from Stuyvesant, Bronx Science, Brooklyn Tech, and the
+Manhattan Hunter Science High School in attendance. I invited teachers
+from a few more schools but in the end we had those four schools and
+seventeen teachers.
+&lt;/p&gt;
+
+&lt;p&gt;
+The original agenda was:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;09:00 - 10:00 : Each school describes it's program and courses&lt;/li&gt;
+&lt;li&gt;10:00 - 11:00 : An intro to Git and GitHub for the classroom&lt;/li&gt;
+&lt;li&gt;10:00 - 11:45 : Sharing neat lessons&lt;/li&gt;
+&lt;li&gt;11:45 - 12:00 : Presentation by &lt;a href="http://chicktech.org"&gt;ChickTech&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;12:00 - 01:00 : Lunch&lt;/li&gt;
+&lt;li&gt;01:00 - End   : Small group lesson and curriculum work&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Oh boy did I mess up on the timing. The description and
+discussion of school programs took all morning. It was interesting to
+hear how each school's program evolved and how they fit into the
+school's culture. Brooklyn Tech, for instance is a school where
+students declare majors. This has a big impact on what classes kids
+have to take and are able to take. This is very different from Stuy or
+Science where kids programs are more open ended or MHSHS which is a
+much smaller school and has restrictions related to size. It was also
+interesting to note Brooklyn Tech's decision to have every student
+take APCS-P. Interesting because Brooklyn Tech is one of the country's
+largest high schools and most of them should have done well on the
+exam. That gave NYC around 1,400 passing AP scores in one shot. On
+the other hand none of the other schools present today offered APCS-P
+but did have their own intro CS class that students took prior to
+APCS-A.
+&lt;/p&gt;
+
+&lt;p&gt;
+We finished the morning with a visit by Heather from
+&lt;a href="http://chicktech.org"&gt;ChickTech&lt;/a&gt;. ChickTech is a non-profit dedicated to retaining women in
+Tech. It works with both girls in K12 and also those in industry. My
+hope was to get a conversation started and see if there were some
+potential avenues of partnership between the organization and the
+schools.
+&lt;/p&gt;
+
+&lt;p&gt;
+After lunch, the group decided that we should do the Git/GitHub
+workshop and JonAlf obliged.
+&lt;/p&gt;
+
+&lt;p&gt;
+Overall I think the day was a success. 
+&lt;/p&gt;
+
+&lt;p&gt;
+My hope is that today's attendees can form a core group of CS teachers
+who teach more advanced courses and we can form something of a support
+group for each other. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I plan to try to facilitate future meetings and hopefully we'll be
+able to attract more teachers to our group.
+&lt;/p&gt;
+
+&lt;p&gt;
+All in all I'm very happy with how the day went.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="education" label="education"/>
+    <category term="pd" label="pd"/>
+  </entry>
+</feed>
