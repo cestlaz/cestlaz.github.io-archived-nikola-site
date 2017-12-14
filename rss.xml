@@ -1,7 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link type="application/rss+xml" rel="self" href="http://cestlaz.github.io/rss.xml"></atom:link><language>en</language><lastBuildDate>Wed, 13 Dec 2017 01:53:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>New York State moving forward with CS Teacher Certification</title><link>http://cestlaz.github.io/posts/NY-CS-Certificate/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf6c667f" class="outline-2"&gt;
-&lt;h2 id="orgf6c667f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf6c667f"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Thu, 14 Dec 2017 17:33:45 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Breaking down problems and writing</title><link>http://cestlaz.github.io/posts/whats-next/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org452c8b8" class="outline-2"&gt;
+&lt;h2 id="org452c8b8"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org452c8b8"&gt;
+&lt;p&gt;
+This question appeared on Facebook a few days ago:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Does anyone have an effective way to teach students how to break down
+a problem into steps and then solve each step one by one? I think my
+students are struggling with a large question and breaking it in
+subsequent parts.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+There were some good suggestions. I wanted to add something but didn't
+have time then so I thought I'd write it up now.
+&lt;/p&gt;
+
+&lt;p&gt;
+As an aside, it took me forever to find the post again over on
+Facebook. If there's a way to mark posts or save a direct link I'd
+love to hear it. I had to look through all the CS Ed groups I belong
+to manually until I found it again.
+&lt;/p&gt;
+
+&lt;p&gt;
+When I read the program I was reminded of a PD session we had to
+attend back at Stuyvesant. Back then the fad was &lt;a href="https://en.wikipedia.org/wiki/Writing_across_the_curriculum"&gt;Writing Across the
+Curriculum&lt;/a&gt;. Every teacher in every class was to give some significant
+writing assignment, evaluate it and provide feedback. Let's forget the
+fact that most of us never had any training or preparation to do so.
+&lt;/p&gt;
+
+&lt;p&gt;
+On that PD day the guest speaker was &lt;a href="https://en.wikipedia.org/wiki/William_Zinsser"&gt;William Zinsser&lt;/a&gt;. The first thing
+he said was that what we were being asked to do by our principal was
+bunk. He then proceeded to give advice on  simple good writing.
+&lt;/p&gt;
+
+&lt;p&gt;
+The procedure he recommended following was to ask yourself (or have
+the student ask themselves) "what does my audience need to know next?"
+That's your next sentence. Then ask the question again. Rinse and
+repeat until done.
+&lt;/p&gt;
+
+&lt;p&gt;
+It was simple and it made sense. It also applied to introductory CS
+problems. When starting out, students have a limited CS / programming
+tool box so a good question for them to ask when trying to solve a
+problem is not only "what do I need to do next? but also "what can I
+do next?" 
+&lt;/p&gt;
+
+&lt;p&gt;
+When students have a limited CS vocabulary and set of idioms - loops,
+conditionals, functions, whatever, there will only be so many things
+they can do to move a problem along. If they go through the things the
+&lt;b&gt;&lt;b&gt;can&lt;/b&gt;&lt;/b&gt; do they will likely fall on to what they &lt;b&gt;&lt;b&gt;should&lt;/b&gt;&lt;/b&gt; do.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's similar to doing a proof in geometry. Students have a set of
+givens. Given that set, what can they do? They only know so many
+theorems at the beginning. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Over time, they'll recognize patterns and develop as problem solvers.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you're part of the AP CS A teachers facebook group you probably saw
+the question. Many good answers were posted. I just wanted to add this
+thought to the collection.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>problem solving</category><guid>http://cestlaz.github.io/posts/whats-next/</guid><pubDate>Thu, 14 Dec 2017 16:14:33 GMT</pubDate></item><item><title>New York State moving forward with CS Teacher Certification</title><link>http://cestlaz.github.io/posts/NY-CS-Certificate/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge83c39c" class="outline-2"&gt;
+&lt;h2 id="orge83c39c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge83c39c"&gt;
 &lt;p&gt;
 Last April I woke up early and trekked up to Albany along with a few
 of my Hunter College colleagues to share our thoughts on K12 Computer
@@ -100,9 +180,9 @@ you here to the NY State Board of Regents, Board of Education and
 State Education department.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>certification</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/NY-CS-Certificate/</guid><pubDate>Tue, 12 Dec 2017 23:57:37 GMT</pubDate></item><item><title>Making contest problems and writing tests</title><link>http://cestlaz.github.io/posts/advent-2017-making-tests/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge10ea5c" class="outline-2"&gt;
-&lt;h2 id="orge10ea5c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge10ea5c"&gt;
+&lt;/div&gt;</description><category>certification</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/NY-CS-Certificate/</guid><pubDate>Tue, 12 Dec 2017 23:57:37 GMT</pubDate></item><item><title>Making contest problems and writing tests</title><link>http://cestlaz.github.io/posts/advent-2017-making-tests/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org99f4fc1" class="outline-2"&gt;
+&lt;h2 id="org99f4fc1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org99f4fc1"&gt;
 &lt;p&gt;
 I'm now well behind in &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. Traveling up to Michigan to see
 my son and my brother and his family will do that.
@@ -172,9 +252,9 @@ A couple of busy days coming up but maybe over the weekend I can get
 back to Advent of Code.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>assessment</category><category>contests</category><guid>http://cestlaz.github.io/posts/advent-2017-making-tests/</guid><pubDate>Mon, 11 Dec 2017 23:39:16 GMT</pubDate></item><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4c7caf5" class="outline-2"&gt;
-&lt;h2 id="org4c7caf5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4c7caf5"&gt;
+&lt;/div&gt;</description><category>assessment</category><category>contests</category><guid>http://cestlaz.github.io/posts/advent-2017-making-tests/</guid><pubDate>Mon, 11 Dec 2017 23:39:16 GMT</pubDate></item><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgdb648c4" class="outline-2"&gt;
+&lt;h2 id="orgdb648c4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgdb648c4"&gt;
 &lt;p&gt;
 I've been having fun with this years &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; competition. So
 far, I've been able to keep up but with I expect that to change in
@@ -211,9 +291,9 @@ I decided to do this rant as a video. I hope you enjoy it:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x8cZgEogWNw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>Thoughts On A Hackathon</title><link>http://cestlaz.github.io/posts/thoughts-on-a-hackathon/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgfa3fa62" class="outline-2"&gt;
-&lt;h2 id="orgfa3fa62"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgfa3fa62"&gt;
+&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>Thoughts On A Hackathon</title><link>http://cestlaz.github.io/posts/thoughts-on-a-hackathon/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org1f00f18" class="outline-2"&gt;
+&lt;h2 id="org1f00f18"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1f00f18"&gt;
 &lt;p&gt;
 Yesterday I was one of the judges at &lt;a href="http://stuyhacks.com/"&gt;StuyHacks&lt;/a&gt;. A one day hackathon at
 Stuyvesant run by and organized by the students. I don't have attendee
@@ -326,9 +406,9 @@ you're a middle or high school student or know one, keep an eye on the
 StuyHacks &lt;a href="http://stuyhacks.com/"&gt;web page&lt;/a&gt; and make sure to attend their next event.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>hackathons</category><category>teaching</category><guid>http://cestlaz.github.io/posts/thoughts-on-a-hackathon/</guid><pubDate>Sun, 03 Dec 2017 12:47:34 GMT</pubDate></item><item><title>Advent of Code 2017 - Day 1</title><link>http://cestlaz.github.io/posts/advent-2017-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org1e498ab" class="outline-2"&gt;
-&lt;h2 id="org1e498ab"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1e498ab"&gt;
+&lt;/div&gt;</description><category>hackathons</category><category>teaching</category><guid>http://cestlaz.github.io/posts/thoughts-on-a-hackathon/</guid><pubDate>Sun, 03 Dec 2017 12:47:34 GMT</pubDate></item><item><title>Advent of Code 2017 - Day 1</title><link>http://cestlaz.github.io/posts/advent-2017-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9b3e165" class="outline-2"&gt;
+&lt;h2 id="org9b3e165"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9b3e165"&gt;
 &lt;p&gt;
 It's once again time for &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. That one a day programming
 competition that's been running now for three years.
@@ -490,9 +570,9 @@ Day 2 also has a nice list comprehension based solution. Maybe I'll
 write that up later.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>adventofcode</category><category>cs</category><category>programming</category><category>python</category><guid>http://cestlaz.github.io/posts/advent-2017-1/</guid><pubDate>Sat, 02 Dec 2017 12:27:02 GMT</pubDate></item><item><title>You have to trust the kids</title><link>http://cestlaz.github.io/posts/trust-the-kids/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4fed889" class="outline-2"&gt;
-&lt;h2 id="org4fed889"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4fed889"&gt;
+&lt;/div&gt;</description><category>adventofcode</category><category>cs</category><category>programming</category><category>python</category><guid>http://cestlaz.github.io/posts/advent-2017-1/</guid><pubDate>Sat, 02 Dec 2017 12:27:02 GMT</pubDate></item><item><title>You have to trust the kids</title><link>http://cestlaz.github.io/posts/trust-the-kids/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org5830d60" class="outline-2"&gt;
+&lt;h2 id="org5830d60"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5830d60"&gt;
 &lt;p&gt;
 A week or so ago I wrote about the event we had to kick off 
 &lt;a href="http://cestlaz.github.io/posts/hunter-tech-kickoff"&gt;Hunter College's partnering with the NY tech community&lt;/a&gt; to build a
@@ -587,9 +667,9 @@ We set the stage and if we do it right, the kids won't
 fail to impress.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/trust-the-kids/</guid><pubDate>Wed, 29 Nov 2017 23:53:30 GMT</pubDate></item><item><title>Reunion Season</title><link>http://cestlaz.github.io/posts/reunion-season/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd90c5a3" class="outline-2"&gt;
-&lt;h2 id="orgd90c5a3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd90c5a3"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/trust-the-kids/</guid><pubDate>Wed, 29 Nov 2017 23:53:30 GMT</pubDate></item><item><title>Reunion Season</title><link>http://cestlaz.github.io/posts/reunion-season/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgfb7ae1b" class="outline-2"&gt;
+&lt;h2 id="orgfb7ae1b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgfb7ae1b"&gt;
 &lt;p&gt;
 Thanksgiving is reunion season. Stuyvesant and I'm guessing other high
 schools traditionally hold their reunions, at least the five and ten
@@ -656,9 +736,9 @@ being included in class reunions and hope to be invited to more in
 years to come.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>community</category><category>reunions</category><category>stuycs</category><guid>http://cestlaz.github.io/posts/reunion-season/</guid><pubDate>Sun, 26 Nov 2017 11:41:51 GMT</pubDate></item><item><title>Using Emacs 38 - dired</title><link>http://cestlaz.github.io/posts/using-emacs-38-dired/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org48b9f45" class="outline-2"&gt;
-&lt;h2 id="org48b9f45"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org48b9f45"&gt;
+&lt;/div&gt;</description><category>community</category><category>reunions</category><category>stuycs</category><guid>http://cestlaz.github.io/posts/reunion-season/</guid><pubDate>Sun, 26 Nov 2017 11:41:51 GMT</pubDate></item><item><title>Using Emacs 38 - dired</title><link>http://cestlaz.github.io/posts/using-emacs-38-dired/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org089203a" class="outline-2"&gt;
+&lt;h2 id="org089203a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org089203a"&gt;
 &lt;p&gt;
 The 38th installment of Using Emacs is about &lt;b&gt;&lt;b&gt;dired&lt;/b&gt;&lt;/b&gt;, Emacs' built
 in mode for navigating and working with directories.
@@ -730,9 +810,9 @@ how other people are using it.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Fg7HmmRYWy8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-38-dired/</guid><pubDate>Fri, 24 Nov 2017 13:00:00 GMT</pubDate></item><item><title>Motivating and understanding quicksort</title><link>http://cestlaz.github.io/posts/quick-sort-starting/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org5a8f8dd" class="outline-2"&gt;
-&lt;h2 id="org5a8f8dd"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5a8f8dd"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-38-dired/</guid><pubDate>Fri, 24 Nov 2017 13:00:00 GMT</pubDate></item><item><title>Motivating and understanding quicksort</title><link>http://cestlaz.github.io/posts/quick-sort-starting/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge1e75da" class="outline-2"&gt;
+&lt;h2 id="orge1e75da"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge1e75da"&gt;
 &lt;p&gt;
 Thks question was posed the other day - how can one get students to
 truly understand the quicksort algorithm?
@@ -812,98 +892,4 @@ programming paradigms (&lt;a href="https://cestlaz.github.io/posts/2010-03-14-so
 Enjoy.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>algorithms. unplugged</category><category>cs</category><category>programming</category><guid>http://cestlaz.github.io/posts/quick-sort-starting/</guid><pubDate>Tue, 21 Nov 2017 14:34:05 GMT</pubDate></item><item><title>Hunter CS and NY Tech - it takes a village</title><link>http://cestlaz.github.io/posts/hunter-tech-kickoff/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf3adf97" class="outline-2"&gt;
-&lt;h2 id="orgf3adf97"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf3adf97"&gt;
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/hunter-tech/hunter-tech1.jpg" alt="hunter-tech1.jpg" align="center" height="400"&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;span class="figure-number"&gt;Figure 1: &lt;/span&gt;The NY Tech community and Hunter CS at Yext&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;
-One of my goals when I came over to Hunter was to help establish
-Hunter CS as the place to be for CS in the city. Hunter already had a
-solid CS program before I joined but it isn't well known. It also
-doesn't have an established tech culture.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's an ambitious goal but if it can be done, what a game changer. A
-lot of people talk about equity, diversity, and social justice but if
-we can establish Hunter as the place to be for CS in NY, what a
-win. An affordable, accessible institution where you can get a great
-CS education.
-&lt;/p&gt;
-
-&lt;p&gt;
-The truth of course is that I can't accomplish this - at least not by
-myself. I'm just one person. Fortunately, there are so many wonderful
-people in the New York Tech community that want to help bring
-opportunities to the kids.
-&lt;/p&gt;
-
-&lt;p&gt;
-Last Thursday evening we got the ball rolling. Twenty five
-representatives from the tech community got together at &lt;a href="http://yext.om"&gt;Yext&lt;/a&gt; with
-about a dozen of our Hunter College CS students. The conversation
-started with a discussion of perceptions of Hunter and the students
-sharing what their experiences were like. By the end we were all
-brainstorming as to how we can work together to best prepare Hunter
-students to become members of the New York Tech community. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I know the students left the evening energized and I did as well. I
-hope our friends in Tech felt the same.
-&lt;/p&gt;
-
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/hunter-tech/hunter-tech-max-jess.jpg" alt="hunter-tech-max-jess.jpg" align="center" height="400"&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;span class="figure-number"&gt;Figure 2: &lt;/span&gt;Max talking about Hunter to Jess and the rest of the table&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-We had representatives from (in alphabetical order)
-&lt;/p&gt;
-
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Animoto&lt;/li&gt;
-&lt;li&gt;Beeswax&lt;/li&gt;
-&lt;li&gt;Bloomberg&lt;/li&gt;
-&lt;li&gt;Civic Hall&lt;/li&gt;
-&lt;li&gt;eBay&lt;/li&gt;
-&lt;li&gt;Genacast Ventures&lt;/li&gt;
-&lt;li&gt;Google&lt;/li&gt;
-&lt;li&gt;JW Player&lt;/li&gt;
-&lt;li&gt;Meetup&lt;/li&gt;
-&lt;li&gt;MongoDB&lt;/li&gt;
-&lt;li&gt;Motivate (Citbike)&lt;/li&gt;
-&lt;li&gt;Quentin Road Ventures&lt;/li&gt;
-&lt;li&gt;Twitter&lt;/li&gt;
-&lt;li&gt;Two Sigma&lt;/li&gt;
-&lt;li&gt;Union Square Ventures&lt;/li&gt;
-&lt;li&gt;Workbench&lt;/li&gt;
-&lt;li&gt;Yext&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-at the event and then there were plenty of people who want to be part
-of this who couldn't make it on Thursday.
-&lt;/p&gt;
-
-&lt;p&gt;
-I told the participants at the event that I can't make this happen. I
-can merely get the people together who actually can. I'm grateful to
-all my friends who are now a part of this and I'm looking forward to
-working with  them, my students and my colleagues  to create 
-a Hunter CS to Tech Community pipeline that's second to none.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>tech community</category><guid>http://cestlaz.github.io/posts/hunter-tech-kickoff/</guid><pubDate>Sun, 19 Nov 2017 23:09:33 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>algorithms. unplugged</category><category>cs</category><category>programming</category><guid>http://cestlaz.github.io/posts/quick-sort-starting/</guid><pubDate>Tue, 21 Nov 2017 14:34:05 GMT</pubDate></item></channel></rss>

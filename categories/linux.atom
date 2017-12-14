@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about linux</title>
   <id>http://cestlaz.github.io/categories/linux.atom</id>
-  <updated>2017-09-23T16:15:33Z</updated>
+  <updated>2017-06-29T16:40:57Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -19,9 +19,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/flask-setup-virtualenv/"/>
-    <summary type="html">&lt;div id="outline-container-org9cc462c" class="outline-2"&gt;
-&lt;h2 id="org9cc462c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9cc462c"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 Those laptops that my Hunter students were supposed to get have
 finally arrived. We're distributing them on Monday. Each student will
@@ -108,7 +108,8 @@ To create a python3 virtual environment
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;You can activate the envorinment (assuming you create the folder under&lt;/li&gt;
+&lt;li&gt;You can activate the envorinment (assuming you create the folder under
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 your home directory):
@@ -145,9 +146,9 @@ environment.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/user-friendly/"/>
-    <summary type="html">&lt;div id="outline-container-org2c3ddb9" class="outline-2"&gt;
-&lt;h2 id="org2c3ddb9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org2c3ddb9"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 Saw this post the other day: &lt;a href="https://pupeno.com/2016/09/26/emacs-is-hurting-clojure/"&gt;Emacs is hurting Clojure&lt;/a&gt; and this response: &lt;a href="http://irreal.org/blog/?p=5597"&gt;Is Emacs Really HJard to Learn / Use&lt;/a&gt;.
 &lt;/p&gt;
@@ -244,30 +245,30 @@ and indeed, true user friendliness.
 
 
 &lt;colgroup&gt;
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 &lt;/colgroup&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt;Low Power&lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt;High Power&lt;/th&gt;
+&lt;th scope="col" class="left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="left"&gt;Low Power&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;High Power&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td class="org-left"&gt;&lt;b&gt;&lt;b&gt;Low Learnability&lt;/b&gt;&lt;/b&gt;&lt;/td&gt;
-&lt;td class="org-left"&gt;CP/M&lt;/td&gt;
-&lt;td class="org-left"&gt;Linux Shell, Mac Terminal&lt;/td&gt;
+&lt;td class="left"&gt;&lt;b&gt;&lt;b&gt;Low Learnability&lt;/b&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;td class="left"&gt;CP/M&lt;/td&gt;
+&lt;td class="left"&gt;Linux Shell, Mac Terminal&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;&lt;b&gt;&lt;b&gt;High Learnability&lt;/b&gt;&lt;/b&gt;&lt;/td&gt;
-&lt;td class="org-left"&gt;Windows / Mac OS GUI&lt;/td&gt;
-&lt;td class="org-left"&gt;Most editors, including Emacs&lt;/td&gt;
+&lt;td class="left"&gt;&lt;b&gt;&lt;b&gt;High Learnability&lt;/b&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;td class="left"&gt;Windows / Mac OS GUI&lt;/td&gt;
+&lt;td class="left"&gt;Most editors, including Emacs&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -296,9 +297,9 @@ the path to learning the useful ones.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/shell-short-tagging/"/>
-    <summary type="html">&lt;div id="outline-container-org74f92c3" class="outline-2"&gt;
-&lt;h2 id="org74f92c3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org74f92c3"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 Quick post to add to the recent command line fu I've been writing
 about.
@@ -367,17 +368,17 @@ done
 A line at a time:
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgc314d8c" class="outline-3"&gt;
-&lt;h3 id="orgc314d8c"&gt;ls *md *html&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgc314d8c"&gt;
+&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
+&lt;h3 id="sec-1-1"&gt;ls *md *html&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-1"&gt;
 &lt;p&gt;
 This lists all the files with that end in &lt;b&gt;&lt;b&gt;md&lt;/b&gt;&lt;/b&gt; or &lt;b&gt;&lt;b&gt;html&lt;/b&gt;&lt;/b&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org6b9acdc" class="outline-3"&gt;
-&lt;h3 id="org6b9acdc"&gt;| while read filename&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org6b9acdc"&gt;
+&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
+&lt;h3 id="sec-1-2"&gt;| while read filename&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-2"&gt;
 &lt;p&gt;
 The vertical bar (pipe) sends the output of &lt;b&gt;&lt;b&gt;ls&lt;/b&gt;&lt;/b&gt; into the &lt;b&gt;&lt;b&gt;while read&lt;/b&gt;&lt;/b&gt;
 command. The &lt;b&gt;&lt;b&gt;while&lt;/b&gt;&lt;/b&gt; command sets up a loop which, each time
@@ -387,9 +388,9 @@ through, reads the next input and places into the variable
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgc853c6f" class="outline-3"&gt;
-&lt;h3 id="orgc853c6f"&gt;sed "/ type: text/  i .. tags: " $filename&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgc853c6f"&gt;
+&lt;div id="outline-container-sec-1-3" class="outline-3"&gt;
+&lt;h3 id="sec-1-3"&gt;sed "/ type: text/  i .. tags: " $filename&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-1-3"&gt;
 &lt;p&gt;
 Sed is the stream editor. The stuff between the slashes finds the line
 with the text &lt;b&gt;&lt;b&gt;type: text&lt;/b&gt;&lt;/b&gt; in it. The &lt;b&gt;&lt;b&gt;i&lt;/b&gt;&lt;/b&gt; inserts a line above and
@@ -401,9 +402,9 @@ loop.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org9a1b561" class="outline-2"&gt;
-&lt;h2 id="org9a1b561"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9a1b561"&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
 &lt;p&gt;
 Now all of my files have blank &lt;b&gt;&lt;b&gt;tag&lt;/b&gt;&lt;/b&gt; slugs so I can find my netlogo
 posts and tag them:
@@ -425,8 +426,10 @@ all of them.
 So, just a bit of quick shell scripting and I've:
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;modified all old posts to accept tags.&lt;/li&gt;
-&lt;li&gt;added the netlogo tag to all my netlogo posts.&lt;/li&gt;
+&lt;li&gt;modified all old posts to accept tags.
+&lt;/li&gt;
+&lt;li&gt;added the netlogo tag to all my netlogo posts.
+&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -449,18 +452,18 @@ You can find all those posts &lt;a href="http://cestlaz.github.io/categories/net
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/duplicate-emails/"/>
-    <summary type="html">&lt;div id="outline-container-orgc399056" class="outline-2"&gt;
-&lt;h2 id="orgc399056"&gt;Repost&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc399056"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;Repost&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 This is a repost from March 2015. It didn't transfer when I rebooted the blog.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org924ff5c" class="outline-2"&gt;
-&lt;h2 id="org924ff5c"&gt;Original&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org924ff5c"&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;Original&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
 &lt;p&gt;
 Quick post on why I love the Unix command line.
 &lt;/p&gt;
@@ -506,66 +509,66 @@ all the original applicants, the second those that confirmed.
 
 
 &lt;colgroup&gt;
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 &lt;/colgroup&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th scope="col" class="org-left"&gt;e1&lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt;e2&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;e1&lt;/th&gt;
+&lt;th scope="col" class="left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="left"&gt;e2&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td class="org-left"&gt;a@a.com&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;b@b.com&lt;/td&gt;
+&lt;td class="left"&gt;a@a.com&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;b@b.com&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;b@b.com&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;F@f.com&lt;/td&gt;
+&lt;td class="left"&gt;b@b.com&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;F@f.com&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;c@c.com&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;c@c.com&lt;/td&gt;
+&lt;td class="left"&gt;c@c.com&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;c@c.com&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;d@d.com&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;d@d.com&lt;/td&gt;
+&lt;td class="left"&gt;d@d.com&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;d@d.com&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;e@e.com&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;e@e.com&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;f@f.com&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;f@f.com&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;g@g.com&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;g@g.com&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;h@h.com&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;h@h.com&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -577,7 +580,7 @@ indicate that it's the email of someone that confirmed entry. Here we
 use cat to catenate e1 and e2 and pipe them through sort.
 &lt;/p&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cat e1 e2 | sort 
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cat e1 e2 | sort
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;
@@ -659,9 +662,9 @@ manner of text manipulation problems become pretty easy.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/bash-scripting/"/>
-    <summary type="html">&lt;div id="outline-container-org50011ca" class="outline-2"&gt;
-&lt;h2 id="org50011ca"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org50011ca"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 Over in the Facebook AP Computer Science Teachers group someone asked
 for thoughts on covering BASH scripting as a post AP topic.
@@ -701,9 +704,12 @@ some Linux (or other Unix flavor):
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;There's something out there besides Windows and MacOS&lt;/li&gt;
-&lt;li&gt;All about free software&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Unix_philosophy"&gt;The Unix Philosophy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;There's something out there besides Windows and MacOS
+&lt;/li&gt;
+&lt;li&gt;All about free software
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Unix_philosophy"&gt;The Unix Philosophy&lt;/a&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -755,72 +761,72 @@ In terms of tools, I get a lot of mileage out of:
 
 
 &lt;colgroup&gt;
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 &lt;/colgroup&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th scope="col" class="org-left"&gt;command&lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt;description&lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt;example&lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt;explanation&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;command&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;description&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;example&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;explanation&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td class="org-left"&gt;cat&lt;/td&gt;
-&lt;td class="org-left"&gt;catenate or display a file&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;cat&lt;/td&gt;
+&lt;td class="left"&gt;catenate or display a file&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;tr&lt;/td&gt;
-&lt;td class="org-left"&gt;Translate characters&lt;/td&gt;
-&lt;td class="org-left"&gt;tr A-Z a-z&lt;/td&gt;
-&lt;td class="org-left"&gt;convert upper to lower case&lt;/td&gt;
+&lt;td class="left"&gt;tr&lt;/td&gt;
+&lt;td class="left"&gt;Translate characters&lt;/td&gt;
+&lt;td class="left"&gt;tr A-Z a-z&lt;/td&gt;
+&lt;td class="left"&gt;convert upper to lower case&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;sed&lt;/td&gt;
-&lt;td class="org-left"&gt;Stream editor&lt;/td&gt;
-&lt;td class="org-left"&gt;sed "s/a/b/g"&lt;/td&gt;
-&lt;td class="org-left"&gt;Replace all a with b&lt;/td&gt;
+&lt;td class="left"&gt;sed&lt;/td&gt;
+&lt;td class="left"&gt;Stream editor&lt;/td&gt;
+&lt;td class="left"&gt;sed "s/a/b/g"&lt;/td&gt;
+&lt;td class="left"&gt;Replace all a with b&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;wc&lt;/td&gt;
-&lt;td class="org-left"&gt;word count&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;counts words lines and chars&lt;/td&gt;
+&lt;td class="left"&gt;wc&lt;/td&gt;
+&lt;td class="left"&gt;word count&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;counts words lines and chars&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;cut&lt;/td&gt;
-&lt;td class="org-left"&gt;cut columns&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;cut&lt;/td&gt;
+&lt;td class="left"&gt;cut columns&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;sort&lt;/td&gt;
-&lt;td class="org-left"&gt;sort lines&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;sort&lt;/td&gt;
+&lt;td class="left"&gt;sort lines&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org29c7b48" class="outline-2"&gt;
-&lt;h2 id="org29c7b48"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org29c7b48"&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
 &lt;p&gt;
 A nice simple thing you can do with these is clean data. Let's say you
 want to do some analytics on a book from Project Gutenberg. You might
