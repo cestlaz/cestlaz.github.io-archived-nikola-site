@@ -1,7 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link rel="self" type="application/rss+xml" href="http://cestlaz.github.io/rss.xml"></atom:link><language>en</language><lastBuildDate>Fri, 22 Dec 2017 21:16:51 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Fixing the Absent Teacher Reserve (ATR) situation</title><link>http://cestlaz.github.io/posts/atrs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org001041b" class="outline-2"&gt;
-&lt;h2 id="org001041b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org001041b"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link type="application/rss+xml" rel="self" href="http://cestlaz.github.io/rss.xml"></atom:link><language>en</language><lastBuildDate>Sun, 24 Dec 2017 20:51:27 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 39 - mu4e</title><link>http://cestlaz.github.io/posts/using-emacs-39-mu4e/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org500ab7e" class="outline-2"&gt;
+&lt;h2 id="org500ab7e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org500ab7e"&gt;
+&lt;p&gt;
+I generally use three email accounts. My personal one, work one, and
+one for my non-profit. For a couple of years, I've been using mu4e
+under Emacs for both my work and non-profit email accounts and gmail
+for my personal account. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I've had lots of requests for a video on what I do but I've been
+hesitant for two reasons:
+&lt;/p&gt;
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;There are parts of my configuration that are copied from others and
+I really don't understand.&lt;/li&gt;
+&lt;li&gt;I wasn't happy with the complexity and some of the tooling.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+While there are still parts of my configuration that I'm not 100%
+clear on I've cleaned up the tooling and complexity by using mu4e only
+for my work email for the time being and by switching to mbsync. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's a writeup on configuring things with video at the end.
+&lt;/p&gt;
+
+&lt;p&gt;
+Unless you run an email server on your local machine using mu4e can be
+thought of as three parts.
+&lt;/p&gt;
+
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Get the email from the server to the local machine using IMAP.&lt;/li&gt;
+&lt;li&gt;Setting up mu.&lt;/li&gt;
+&lt;li&gt;Access the email locally from Emacs.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-orgc81cbd6" class="outline-3"&gt;
+&lt;h3 id="orgc81cbd6"&gt;Part 1 Getting the email to your local machine using mbsync&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgc81cbd6"&gt;
+&lt;p&gt;
+I found his terrific blog post by &lt;a href="https://twitter.com/robstewartUK"&gt;Rob Stewart&lt;/a&gt; on setting up &lt;a href="http://www.macs.hw.ac.uk/~rs46/posts/2014-01-13-mu4e-email-client.html%0A"&gt;mbsync and
+mu4e&lt;/a&gt;. Read it over. I basically followed his directions for setting up
+&lt;a href="https://sourceforge.net/p/isync/isync/ci/master/tree/"&gt;mbsync&lt;/a&gt;. To build from source under Linux, I used the sequence:
+&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;./autogen.sh
+./configure
+make
+sudo make install
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+I followed Rob's instructions basically verbatim for the password and
+authentication stuff so I suggest you do the same. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You'll also have to make sure to make the necessary email directories
+manually. I describe all of this in the video.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org1070d6e" class="outline-3"&gt;
+&lt;h3 id="org1070d6e"&gt;Part 2 - setting up mu.&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org1070d6e"&gt;
+&lt;p&gt;
+To set up mu, clone it from git://github.com/djcb/mu.git and build
+it. You can find dependencies &lt;a href="https://www.djcbsoftware.nl/code/mu/mu4e/Installation.html"&gt;here&lt;/a&gt; and then follow the same sequence
+used to build mbsync listed above.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Since I store my local email under a folder &lt;code&gt;Maildir&lt;/code&gt;  which is what
+mu defaults to I can start using it by indexing my emails:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mu index
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The video shows some examples of using mu from the command line and
+you can look at the mu cheatsheet &lt;a href="http://www.djcbsoftware.nl/code/mu/cheatsheet.html"&gt;here&lt;/a&gt;. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-org0672d92" class="outline-3"&gt;
+&lt;h3 id="org0672d92"&gt;Setting up mu4e in emacs&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org0672d92"&gt;
+&lt;p&gt;
+Finally, you can set up mu4e in emacs. Take a look at Rob's
+configuration in his post or my &lt;a href="https://github.com/zamansky/using-emacs/blob/master/mu4econfig-sample.el"&gt;sample&lt;/a&gt; config. You'll have to take a
+few minutes to go through either and make the appropriate changes but 
+the required changes should be cleared.
+&lt;/p&gt;
+
+&lt;p&gt;
+The video goes through all of this and then a brief demo of how I use
+mu4e.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm very happy with it and plan to integrate my non-profit email and
+maybe even personal email into it soon.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy:
+&lt;/p&gt;
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/newRHXKm4H4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-39-mu4e/</guid><pubDate>Sun, 24 Dec 2017 13:00:00 GMT</pubDate></item><item><title>Fixing the Absent Teacher Reserve (ATR) situation</title><link>http://cestlaz.github.io/posts/atrs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgdbe92b1" class="outline-2"&gt;
+&lt;h2 id="orgdbe92b1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgdbe92b1"&gt;
 &lt;p&gt;
 In the New York City department of education a recurring hot topic is
 the Absent Teacher Reserve or ATR pool. 
@@ -169,9 +291,9 @@ schools force the placement.&lt;/li&gt;
 That's it. Simple and solves the problem.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/atrs/</guid><pubDate>Fri, 22 Dec 2017 13:01:50 GMT</pubDate></item><item><title>Breaking down problems and writing</title><link>http://cestlaz.github.io/posts/whats-next/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga1706be" class="outline-2"&gt;
-&lt;h2 id="orga1706be"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga1706be"&gt;
+&lt;/div&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/atrs/</guid><pubDate>Fri, 22 Dec 2017 13:01:50 GMT</pubDate></item><item><title>Breaking down problems and writing</title><link>http://cestlaz.github.io/posts/whats-next/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc5ebedd" class="outline-2"&gt;
+&lt;h2 id="orgc5ebedd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc5ebedd"&gt;
 &lt;p&gt;
 This question appeared on Facebook a few days ago:
 &lt;/p&gt;
@@ -249,9 +371,9 @@ the question. Many good answers were posted. I just wanted to add this
 thought to the collection.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>problem solving</category><guid>http://cestlaz.github.io/posts/whats-next/</guid><pubDate>Thu, 14 Dec 2017 16:14:33 GMT</pubDate></item><item><title>New York State moving forward with CS Teacher Certification</title><link>http://cestlaz.github.io/posts/NY-CS-Certificate/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf6c667f" class="outline-2"&gt;
-&lt;h2 id="orgf6c667f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf6c667f"&gt;
+&lt;/div&gt;</description><category>cs</category><category>problem solving</category><guid>http://cestlaz.github.io/posts/whats-next/</guid><pubDate>Thu, 14 Dec 2017 16:14:33 GMT</pubDate></item><item><title>New York State moving forward with CS Teacher Certification</title><link>http://cestlaz.github.io/posts/NY-CS-Certificate/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgceffcf2" class="outline-2"&gt;
+&lt;h2 id="orgceffcf2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgceffcf2"&gt;
 &lt;p&gt;
 Last April I woke up early and trekked up to Albany along with a few
 of my Hunter College colleagues to share our thoughts on K12 Computer
@@ -350,9 +472,9 @@ you here to the NY State Board of Regents, Board of Education and
 State Education department.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>certification</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/NY-CS-Certificate/</guid><pubDate>Tue, 12 Dec 2017 23:57:37 GMT</pubDate></item><item><title>Making contest problems and writing tests</title><link>http://cestlaz.github.io/posts/advent-2017-making-tests/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge10ea5c" class="outline-2"&gt;
-&lt;h2 id="orge10ea5c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge10ea5c"&gt;
+&lt;/div&gt;</description><category>certification</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/NY-CS-Certificate/</guid><pubDate>Tue, 12 Dec 2017 23:57:37 GMT</pubDate></item><item><title>Making contest problems and writing tests</title><link>http://cestlaz.github.io/posts/advent-2017-making-tests/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org504ff73" class="outline-2"&gt;
+&lt;h2 id="org504ff73"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org504ff73"&gt;
 &lt;p&gt;
 I'm now well behind in &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. Traveling up to Michigan to see
 my son and my brother and his family will do that.
@@ -422,9 +544,9 @@ A couple of busy days coming up but maybe over the weekend I can get
 back to Advent of Code.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>assessment</category><category>contests</category><guid>http://cestlaz.github.io/posts/advent-2017-making-tests/</guid><pubDate>Mon, 11 Dec 2017 23:39:16 GMT</pubDate></item><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4c7caf5" class="outline-2"&gt;
-&lt;h2 id="org4c7caf5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4c7caf5"&gt;
+&lt;/div&gt;</description><category>assessment</category><category>contests</category><guid>http://cestlaz.github.io/posts/advent-2017-making-tests/</guid><pubDate>Mon, 11 Dec 2017 23:39:16 GMT</pubDate></item><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc3f2da5" class="outline-2"&gt;
+&lt;h2 id="orgc3f2da5"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc3f2da5"&gt;
 &lt;p&gt;
 I've been having fun with this years &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; competition. So
 far, I've been able to keep up but with I expect that to change in
@@ -461,9 +583,9 @@ I decided to do this rant as a video. I hope you enjoy it:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x8cZgEogWNw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>Thoughts On A Hackathon</title><link>http://cestlaz.github.io/posts/thoughts-on-a-hackathon/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgfa3fa62" class="outline-2"&gt;
-&lt;h2 id="orgfa3fa62"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgfa3fa62"&gt;
+&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>Thoughts On A Hackathon</title><link>http://cestlaz.github.io/posts/thoughts-on-a-hackathon/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgaf058ed" class="outline-2"&gt;
+&lt;h2 id="orgaf058ed"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgaf058ed"&gt;
 &lt;p&gt;
 Yesterday I was one of the judges at &lt;a href="http://stuyhacks.com/"&gt;StuyHacks&lt;/a&gt;. A one day hackathon at
 Stuyvesant run by and organized by the students. I don't have attendee
@@ -576,9 +698,9 @@ you're a middle or high school student or know one, keep an eye on the
 StuyHacks &lt;a href="http://stuyhacks.com/"&gt;web page&lt;/a&gt; and make sure to attend their next event.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>hackathons</category><category>teaching</category><guid>http://cestlaz.github.io/posts/thoughts-on-a-hackathon/</guid><pubDate>Sun, 03 Dec 2017 12:47:34 GMT</pubDate></item><item><title>Advent of Code 2017 - Day 1</title><link>http://cestlaz.github.io/posts/advent-2017-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org1e498ab" class="outline-2"&gt;
-&lt;h2 id="org1e498ab"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1e498ab"&gt;
+&lt;/div&gt;</description><category>hackathons</category><category>teaching</category><guid>http://cestlaz.github.io/posts/thoughts-on-a-hackathon/</guid><pubDate>Sun, 03 Dec 2017 12:47:34 GMT</pubDate></item><item><title>Advent of Code 2017 - Day 1</title><link>http://cestlaz.github.io/posts/advent-2017-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org75f1cf1" class="outline-2"&gt;
+&lt;h2 id="org75f1cf1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org75f1cf1"&gt;
 &lt;p&gt;
 It's once again time for &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. That one a day programming
 competition that's been running now for three years.
@@ -740,9 +862,9 @@ Day 2 also has a nice list comprehension based solution. Maybe I'll
 write that up later.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>adventofcode</category><category>cs</category><category>programming</category><category>python</category><guid>http://cestlaz.github.io/posts/advent-2017-1/</guid><pubDate>Sat, 02 Dec 2017 12:27:02 GMT</pubDate></item><item><title>You have to trust the kids</title><link>http://cestlaz.github.io/posts/trust-the-kids/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4fed889" class="outline-2"&gt;
-&lt;h2 id="org4fed889"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4fed889"&gt;
+&lt;/div&gt;</description><category>adventofcode</category><category>cs</category><category>programming</category><category>python</category><guid>http://cestlaz.github.io/posts/advent-2017-1/</guid><pubDate>Sat, 02 Dec 2017 12:27:02 GMT</pubDate></item><item><title>You have to trust the kids</title><link>http://cestlaz.github.io/posts/trust-the-kids/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org45ea67b" class="outline-2"&gt;
+&lt;h2 id="org45ea67b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org45ea67b"&gt;
 &lt;p&gt;
 A week or so ago I wrote about the event we had to kick off 
 &lt;a href="http://cestlaz.github.io/posts/hunter-tech-kickoff"&gt;Hunter College's partnering with the NY tech community&lt;/a&gt; to build a
@@ -837,9 +959,9 @@ We set the stage and if we do it right, the kids won't
 fail to impress.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/trust-the-kids/</guid><pubDate>Wed, 29 Nov 2017 23:53:30 GMT</pubDate></item><item><title>Reunion Season</title><link>http://cestlaz.github.io/posts/reunion-season/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd90c5a3" class="outline-2"&gt;
-&lt;h2 id="orgd90c5a3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd90c5a3"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/trust-the-kids/</guid><pubDate>Wed, 29 Nov 2017 23:53:30 GMT</pubDate></item><item><title>Reunion Season</title><link>http://cestlaz.github.io/posts/reunion-season/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org393708d" class="outline-2"&gt;
+&lt;h2 id="org393708d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org393708d"&gt;
 &lt;p&gt;
 Thanksgiving is reunion season. Stuyvesant and I'm guessing other high
 schools traditionally hold their reunions, at least the five and ten
@@ -906,78 +1028,4 @@ being included in class reunions and hope to be invited to more in
 years to come.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>community</category><category>reunions</category><category>stuycs</category><guid>http://cestlaz.github.io/posts/reunion-season/</guid><pubDate>Sun, 26 Nov 2017 11:41:51 GMT</pubDate></item><item><title>Using Emacs 38 - dired</title><link>http://cestlaz.github.io/posts/using-emacs-38-dired/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org48b9f45" class="outline-2"&gt;
-&lt;h2 id="org48b9f45"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org48b9f45"&gt;
-&lt;p&gt;
-The 38th installment of Using Emacs is about &lt;b&gt;&lt;b&gt;dired&lt;/b&gt;&lt;/b&gt;, Emacs' built
-in mode for navigating and working with directories.
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm not a dired power user and in fact am just now making a real
-effort to explore it and work it into my daily workflow and
-with that in mind, I'd love to hear some configuration and
-use suggestions from people who use it regularly.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here's the configuration I use:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;dired+&lt;/span&gt;
-  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-  &lt;span class="nv"&gt;:config&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;require&lt;/span&gt; &lt;span class="ss"&gt;'dired+&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-  &lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-which merely adds dired+ into the mix.
-&lt;/p&gt;
-
-&lt;p&gt;
-I also started playing with &lt;a href="https://github.com/joddie/pcre2el"&gt;pcre2el&lt;/a&gt; which allows me to use the more
-usual regex syntax in place of Emacs regex syntax in both dired and
-other places. This is a big win for me since I never remember all the
-escaping rules for Emacs regex.
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;pcre2el&lt;/span&gt;
-&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-&lt;span class="nv"&gt;:config&lt;/span&gt; 
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;pcre-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;
-Finally, abo-abo and jcs have both written about new features in ,
-Ivy/Swiper/Counsel that allow you to use ivy-occur to dump results
-into a dired buffer (&lt;a href="http://irreal.org/blog/?p=6760"&gt;link&lt;/a&gt;, &lt;a href="https://oremacs.com/2017/11/18/dired-occur/"&gt;link&lt;/a&gt;) but to get that to work, I needed to
-install &lt;a href="https://github.com/mhayashi1120/Emacs-wgrep"&gt;wgrep&lt;/a&gt; and also had to install and setup &lt;a href="https://github.com/junegunn/fzf"&gt;fzf&lt;/a&gt; which looks to be
-useful.
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;wgrep&lt;/span&gt;
-    &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-    &lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;counsel-fzf-cmd&lt;/span&gt; &lt;span class="s"&gt;"/home/zamansky/.fzf/bin/fzf -f %s"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-To help get started here are links to a couple of cheat sheets:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://www.gnu.org/software/emacs/refcards/pdf/dired-ref.pdf"&gt;dired reference card&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://harryrschwartz.com/assets/documents/dired-cheatsheet.pdf"&gt;another dired cheat sheet&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-I'll probably use dired more frequently but again, would love to hear
-how other people are using it.
-&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Fg7HmmRYWy8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-38-dired/</guid><pubDate>Fri, 24 Nov 2017 13:00:00 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>community</category><category>reunions</category><category>stuycs</category><guid>http://cestlaz.github.io/posts/reunion-season/</guid><pubDate>Sun, 26 Nov 2017 11:41:51 GMT</pubDate></item></channel></rss>
