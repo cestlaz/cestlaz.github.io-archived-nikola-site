@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Using Emacs 39 - mu4e | C'est la Z</title>
+<title>2017 in review - Hunter Undergraduate CS | C'est la Z</title>
 <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
@@ -16,21 +16,19 @@ article: http://ogp.me/ns/article#
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="../../index.atom">
-<link rel="canonical" href="http://cestlaz.github.io/posts/using-emacs-39-mu4e/">
+<link rel="canonical" href="http://cestlaz.github.io/posts/2017-review-hunter-cs/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
-<link rel="prev" href="../atrs/" title="Fixing the Absent Teacher Reserve (ATR) situation" type="text/html">
-<link rel="next" href="../2017-review-hunter-cs/" title="2017 in review - Hunter Undergraduate CS" type="text/html">
+<link rel="prev" href="../using-emacs-39-mu4e/" title="Using Emacs 39 - mu4e" type="text/html">
 <meta property="og:site_name" content="C'est la Z">
-<meta property="og:title" content="Using Emacs 39 - mu4e">
-<meta property="og:url" content="http://cestlaz.github.io/posts/using-emacs-39-mu4e/">
-<meta property="og:description" content="I generally use three email accounts. My personal one, work one, and
-one for my non-profit. For a couple of years, I've been using mu4e
-under Emacs for both my work and non-profit email accounts and g">
+<meta property="og:title" content="2017 in review - Hunter Undergraduate CS">
+<meta property="og:url" content="http://cestlaz.github.io/posts/2017-review-hunter-cs/">
+<meta property="og:description" content="I usually don't do year in review posts. At Stuy, not much changed
+year after year so I never felt it worth summarizing the past and
+projecting the future. At Hunter, now that I'm a couple of years in">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2017-12-24T09:00:00-04:00">
-<meta property="article:tag" content="emacs">
-<meta property="article:tag" content="learning">
-<meta property="article:tag" content="tools">
+<meta property="article:published_time" content="2017-12-26T11:05:52-04:00">
+<meta property="article:tag" content="cs">
+<meta property="article:tag" content="hunter">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -98,14 +96,14 @@ under Emacs for both my work and non-profit email accounts and g">
 						<div class="col-md-8">
 				
 								
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Using Emacs 39 - mu4e</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">2017 in review - Hunter Undergraduate CS</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                     Mike Zamansky
             </span></p>
-            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-12-24T09:00:00-04:00" itemprop="datePublished" title="2017-12-24 09:00">2017-12-24 09:00</time></a></p>
-                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-39-mu4e.html">Comments</a>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-12-26T11:05:52-04:00" itemprop="datePublished" title="2017-12-26 11:05">2017-12-26 11:05</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/2017-review-hunter-cs.html">Comments</a>
 
 
             
@@ -113,126 +111,214 @@ under Emacs for both my work and non-profit email accounts and g">
 </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div id="outline-container-org550ef0d" class="outline-2">
-<h2 id="org550ef0d"></h2>
-<div class="outline-text-2" id="text-org550ef0d">
+    <div id="outline-container-org80491be" class="outline-2">
+<h2 id="org80491be"></h2>
+<div class="outline-text-2" id="text-org80491be">
 <p>
-I generally use three email accounts. My personal one, work one, and
-one for my non-profit. For a couple of years, I've been using mu4e
-under Emacs for both my work and non-profit email accounts and gmail
-for my personal account. 
+I usually don't do year in review posts. At Stuy, not much changed
+year after year so I never felt it worth summarizing the past and
+projecting the future. At Hunter, now that I'm a couple of years in,
+projects are really picking up steam so I think it's worth talking
+about them.
 </p>
 
 <p>
-I've had lots of requests for a video on what I do but I've been
-hesitant for two reasons:
-</p>
-<ol class="org-ol">
-<li>There are parts of my configuration that are copied from others and
-I really don't understand.</li>
-<li>I wasn't happy with the complexity and some of the tooling.</li>
-</ol>
-<p>
-While there are still parts of my configuration that I'm not 100%
-clear on I've cleaned up the tooling and complexity by using mu4e only
-for my work email for the time being and by switching to mbsync. 
+One of my two major missions at Hunter was to build a CS Honors
+program and raise the profile of Hunter's undergraduate CS program in
+general. Hunter had a strong CS program before I joined the team it's
+just that few people knew about it.
 </p>
 
 <p>
-Here's a writeup on configuring things with video at the end.
+My goal is to see Hunter become the "go to" institution for
+undergraduate CS in New York City before my time is done.
 </p>
 
 <p>
-Unless you run an email server on your local machine using mu4e can be
-thought of as three parts.
+This is an extremely important mission. 
 </p>
 
-<ol class="org-ol">
-<li>Get the email from the server to the local machine using IMAP.</li>
-<li>Setting up mu.</li>
-<li>Access the email locally from Emacs.</li>
-</ol>
+<p>
+There are other strong CS options besides Hunter but compare the costs:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col class="org-left">
+<col class="org-left">
+<col class="org-left">
+<col class="org-left">
+<col class="org-left">
+<col class="org-left">
+<col class="org-left">
+</colgroup>
+<thead><tr>
+<th scope="col" class="org-left">Institution</th>
+<th scope="col" class="org-left"> </th>
+<th scope="col" class="org-left"> </th>
+<th scope="col" class="org-left"> </th>
+<th scope="col" class="org-left"> </th>
+<th scope="col" class="org-left"> </th>
+<th scope="col" class="org-left">Annual Tuition</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="org-left">NYU</td>
+<td class="org-left"> </td>
+<td class="org-left"> </td>
+<td class="org-left"> </td>
+<td class="org-left"> </td>
+<td class="org-left"> </td>
+<td class="org-left">$50,464</td>
+</tr>
+<tr>
+<td class="org-left">NYY Tandon</td>
+<td class="org-left"> </td>
+<td class="org-left"> </td>
+<td class="org-left"> </td>
+<td class="org-left"> </td>
+<td class="org-left"> </td>
+<td class="org-left">$48,750</td>
+</tr>
+<tr>
+<td class="org-left">Columbia</td>
+<td class="org-left"> </td>
+<td class="org-left"> </td>
+<td class="org-left"> </td>
+<td class="org-left"> </td>
+<td class="org-left"> </td>
+<td class="org-left">$54,504</td>
+</tr>
+</tbody>
+<tbody><tr>
+<td class="org-left">Hunter</td>
+<td class="org-left"> </td>
+<td class="org-left"> </td>
+<td class="org-left"> </td>
+<td class="org-left"> </td>
+<td class="org-left"> </td>
+<td class="org-left">$6,530</td>
+</tr></tbody>
+</table>
 </div>
-
-<div id="outline-container-org296a397" class="outline-3">
-<h3 id="org296a397">Part 1 Getting the email to your local machine using mbsync</h3>
-<div class="outline-text-3" id="text-org296a397">
-<p>
-I found his terrific blog post by <a href="https://twitter.com/robstewartUK">Rob Stewart</a> on setting up <a href="http://www.macs.hw.ac.uk/~rs46/posts/2014-01-13-mu4e-email-client.html">mbsync and
-mu4e</a>. Read it over. I basically followed his directions for setting up
-<a href="https://sourceforge.net/p/isync/isync/ci/master/tree/">mbsync</a>. To build from source under Linux, I used the sequence:
-</p>
-<div class="highlight"><pre><span></span>./autogen.sh
-./configure
-make
-sudo make install
-</pre></div>
-
-<p>
-I followed Rob's instructions basically verbatim for the password and
-authentication stuff so I suggest you do the same. 
-</p>
-
-<p>
-You'll also have to make sure to make the necessary email directories
-manually. I describe all of this in the video.
-</p>
 </div>
-</div>
-
-<div id="outline-container-org959dec7" class="outline-3">
-<h3 id="org959dec7">Part 2 - setting up mu.</h3>
-<div class="outline-text-3" id="text-org959dec7">
+<div id="outline-container-org579e945" class="outline-2">
+<h2 id="org579e945"></h2>
+<div class="outline-text-2" id="text-org579e945">
 <p>
-To set up mu, clone it from git://github.com/djcb/mu.git and build
-it. You can find dependencies <a href="https://www.djcbsoftware.nl/code/mu/mu4e/Installation.html">here</a> and then follow the same sequence
-used to build mbsync listed above.
-</p>
-
-
-<p>
-Since I store my local email under a folder <code>Maildir</code>  which is what
-mu defaults to I can start using it by indexing my emails:
-</p>
-
-<div class="highlight"><pre><span></span>mu index
-</pre></div>
-
-<p>
-The video shows some examples of using mu from the command line and
-you can look at the mu cheatsheet <a href="http://www.djcbsoftware.nl/code/mu/cheatsheet.html">here</a>. 
-</p>
-</div>
-</div>
-
-
-<div id="outline-container-org6c6e2c5" class="outline-3">
-<h3 id="org6c6e2c5">Setting up mu4e in emacs</h3>
-<div class="outline-text-3" id="text-org6c6e2c5">
-<p>
-Finally, you can set up mu4e in emacs. Take a look at Rob's
-configuration in his post or my <a href="https://github.com/zamansky/using-emacs/blob/master/mu4econfig-sample.el">sample</a> config. You'll have to take a
-few minutes to go through either and make the appropriate changes but 
-the required changes should be cleared.
+<b><b>Hunter is about one tenth the cost.</b></b>
 </p>
 
 <p>
-The video goes through all of this and then a brief demo of how I use
-mu4e.
+True, if you're wealthy this isn't a problem and if you're at the
+bottom of the economic ladder you might get a full ride but if you
+fall into that category where you earn more than the financial aid
+people think is "poor" but are clearly not rich you're left in a bad place. This seems
+particularly true for New Yorkers as our income seems higher than that
+of people from other parts of the country but our cost of living is
+higher as well.
 </p>
 
 <p>
-I'm very happy with it and plan to integrate my non-profit email and
-maybe even personal email into it soon.
+My wife and I are both career public educators. No one would confuse a
+family of two working teachers as upper class but we were granted no
+financial aid for our kids. The alternatives without a great public
+option are to have saved for our entire lives and now liquidate those
+savings or go into tremendous debt.
 </p>
 
 <p>
-Enjoy:
+This alone makes the mission critical. Add to that the accessibility
+issue - elite private institutions only have to concern themselves
+with whatever slice of the population they choose to accept. We are
+charged with providing a top flight education to all - be they the
+high achievers, the late bloomers, the struggling students or anyone 
+else.
 </p>
 
+<p>
+So, what's happened in the past year?
+</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/newRHXKm4H4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-</div>
+<p>
+First, the Daedalus honors program is developing nicely. In our first
+year we had a cohort of 12. This past year 27. I haven't seen the
+applicant pool yet - Hunter applications are open until the end of
+January, but I'm hoping to bring in an even larger cohort this year. I
+spent a good amount of time this fall visiting high schools to talk
+about Hunter CS and CS options in general. Not as many as I'd like but
+more than during year one. 
+</p>
+
+<p>
+We had classes, trips, and special events but more important was that
+the cohort is starting to form a community and the students want it to
+be a community that includes ALL of Hunter CS, not just the honors
+students.
+</p>
+
+<p>
+They've started a once a week Dojo where students can work on projects
+and interact and we're starting an evening speaker series in
+the Spring. 
+</p>
+
+<p>
+Overall there's a vibe of excitement and an energy around Hunter CS
+that I've been told hasn't been there before.
+</p>
+
+<p>
+In my class, I've been introducing a number of real world practices
+that are usually not covered in undergraduate CS and we're starting to
+talk about bringing those practices into the non-honors sections.
+</p>
+
+<p>
+Finally, we've started to partner with the New York Tech
+community. We're bringing together the Hunter students and the tech
+professionals to raise awareness outside of Hunter of what our
+students can do and to best prepare our students for their next
+steps. These partnerships, in addition to internship possibilities
+have led to us planning some great things this coming semester
+incuding:
+</p>
+<ul class="org-ul">
+<li>workshops such as how to work on an open source project or how to do
+a code review.</li>
+<li>Having industry mentors at our local Dojo sessions.</li>
+<li>Mixer events to educate our students as to the variety of pathways
+they can follow when they graduate.</li>
+<li>and more.</li>
+</ul>
+<p>
+This past year set the stage but there will be some challenges moving
+forward.
+</p>
+
+<p>
+The biggest one is continued outreach to high schools. Getting to the
+students and their parents to let them know that we have a great
+program. It's also about convincing them to come to Hunter. Back in
+the day CUNY was "the poor man's Harvard" but open enrollment in the
+1970s killed that reputation. CUNY has been making it's way back and
+Hunter has many excellent programs but reputations are decades in the
+making and at Hunter CS we're just starting to get the word out.
+</p>
+
+<p>
+The other big challenge will be with time. Right now, for the most
+part, I'm a team of one. I have tremendous support from my colleagues
+but they all have their own full time obligations and the overall
+growth in Hunter CS has already put a strain on personnel and
+resources.
+</p>
+
+<p>
+In spite of the challenges, I'm not complaining. This has been an
+exciting year for Hunter CS and an exciting year for me to be a part
+of it.
+</p>
 </div>
 </div>
 
@@ -248,24 +334,20 @@ Enjoy:
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
 </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../categories/emacs/" rel="tag">emacs</a></li>
-            <li><a class="tag p-category" href="../../categories/learning/" rel="tag">learning</a></li>
-            <li><a class="tag p-category" href="../../categories/tools/" rel="tag">tools</a></li>
+<li><a class="tag p-category" href="../../categories/cs/" rel="tag">cs</a></li>
+            <li><a class="tag p-category" href="../../categories/hunter/" rel="tag">hunter</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../atrs/" rel="prev" title="Fixing the Absent Teacher Reserve (ATR) situation">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../2017-review-hunter-cs/" rel="next" title="2017 in review - Hunter Undergraduate CS">Next post</a>
+                <a href="../using-emacs-39-mu4e/" rel="prev" title="Using Emacs 39 - mu4e">Previous post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="cestlaz",
-            disqus_url="http://cestlaz.github.io/posts/using-emacs-39-mu4e/",
-        disqus_title="Using Emacs 39 - mu4e",
-        disqus_identifier="cache/posts/using-emacs-39-mu4e.html",
+            disqus_url="http://cestlaz.github.io/posts/2017-review-hunter-cs/",
+        disqus_title="2017 in review - Hunter Undergraduate CS",
+        disqus_identifier="cache/posts/2017-review-hunter-cs.html",
         disqus_config = function () {
             this.language = "en";
         };
