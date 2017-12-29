@@ -2,7 +2,7 @@
 .. title: Using Emacs 2017 Recap
 .. slug: using-emacs-2017-recap
 .. date: 2017-12-29 14:17:53 UTC-04:00
-.. tags: draft, emacs
+.. tags: emacs
 .. category: 
 .. link: 
 .. description: 
@@ -10,22 +10,52 @@
 #+END_COMMENT
 
 * 
-I've been 
-- 2016 - 86 / 25 emacs / 61 other
-- 2017 - 86 / 14 emacs / 72 other
-** 
 
-** Using Emacs poll
-- non Emacs series (programming, cs etc. specify in reply)
-- magit and friends
-- calc
-- company mode (I use autocomplete)
-- More mu4e
-- org-mode (babel)
-- org-mode exporting
-- org-mode Other
-- elisp tutorial (not until summer)
-- gist Mode
-- helpful
-- modeline
-- multiple cursors
+
+This past year I recorded 14 Using Emacs videos. This is on top of the
+25 videos I made last year. The fall off in production is
+understandable. I got through my day to day configuration in the
+late 20s and since then the videos have just been on things I've
+rediscovered, things that became useful and things that I just found
+interesting. It was also a busier year.
+
+Why did I start the series? Mostly for my students. There's the built
+in Emacs tutorial and other beginner resources but how do you go from
+the basics to a real working configuration? For years I would show my
+kids Emacs and use it in class but there was never a path for them to
+follow from beginner to craftsman. I hoped the videos would fill the
+void.
+
+It probably didn't. I don't think I'm getting greater Emacs adoption
+from my students but on the other hand, I've found making the series
+rewarding for other reasons.
+
+First and foremost, it's allowed me to be an active contributing
+member of the Emacs community. I haven't written any Emacs packages
+nor am I an active guy on any Emacs forums but this is a way I can do
+my part. 
+
+Second, although there hasn't been a great deal of comments on the
+videos or blog posts I've gotten to know a few people that I wouldn't
+have gotten to know otherwise.
+
+It also shows that that if you put things out there people might find
+it useful. I don't know how many people saw my Emacs posts at the
+start but a year and half later I've got 1,700 YouTube
+subscribers. Sure, that's nothing compared to many YouTubers but 
+for a guy making schlocky videos at his desk about an as much as I hate to admit it
+non-maintream editor, I think it's pretty cool.
+
+The question is what to make videos on moving forward? 
+
+I thought I'd throw it out to the community. Here's an embedded
+poll. Feel free to suggest other topics either on the blog or
+as a Twitter reply.
+
+I can't promise I'll get to all or any but I'll certainly check out
+the popular suggestions.
+
+#+BEGIN_EXPORT html
+<script type="text/javascript" src="http://www.easypolls.net/ext/scripts/emPoll.js?p=5a46abd4e4b04ebe73ddc4de"></script><a class="OPP-powered-by" href="http://www.objectplanet.com/opinio/" style="text-decoration:none;"><div style="font: 9px arial; color: gray;">survey service</div></a>
+#+END_EXPORT
+
