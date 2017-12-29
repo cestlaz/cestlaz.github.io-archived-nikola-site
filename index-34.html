@@ -91,7 +91,185 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/trust-the-kids/" class="u-url">You have to trust the kids</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/advent-2017-1/" class="u-url">Advent of Code 2017 - Day 1</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/advent-2017-1/" rel="bookmark"><time class="published dt-published" datetime="2017-12-02T08:27:02-04:00" title="2017-12-02 08:27">2017-12-02 08:27</time></a></p>
+                <p class="commentline">            <a href="posts/advent-2017-1/#disqus_thread" data-disqus-identifier="cache/posts/advent-2017-1.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org75f1cf1" class="outline-2">
+<h2 id="org75f1cf1"></h2>
+<div class="outline-text-2" id="text-org75f1cf1">
+<p>
+It's once again time for <a href="http://adventofcode.com">Advent of Code</a>. That one a day programming
+competition that's been running now for three years.
+</p>
+
+<p>
+Here are some thoughts on <a href="http://adventofcode.com/2017/day/1">day 1</a>. The core of the problem is that you
+have a large string of digits and you have to calculate a
+checksum. This is done by adding the sum of a subset of the
+digits. Only the ones that are identical to the digit to their
+right. To make it a little more interesting, the last digit wraps
+around to the first for checksum purposes.
+</p>
+
+<p>
+For example, the input <b><b>2234335</b></b> leads to the calculate <code>2 + 3</code> or
+<code>5</code>. The input <b><b>234445662</b></b> leads to <code>4+4+6+2</code> or <code>16</code>. We add 4 for
+twice because the first four is adjacent the second and the second the
+third. We add the 2 at the end because it wraps around to match the
+one at the front.
+</p>
+
+<p>
+We first read in the data and strip off the trailing newline
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"input.txt"</span><span class="p">)</span>
+<span class="n">origdata</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+
+<span class="n">origdata</span> <span class="o">=</span> <span class="n">origdata</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">origdata</span>
+</pre></div>
+
+<p>
+Then, since we can access the elements of the string as a list (or
+array) it's a simple loop to calculate the sum:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">l</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">l</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]:</span>
+	<span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="c1"># Don't forget to turn the string into an int</span>
+
+<span class="c1"># data[-1] is the python way of getting the last element - here we check the wraparound</span>
+<span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">"Checksum: "</span><span class="p">,</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+
+<p>
+Pretty straightforward but I don't like the special case of checking
+the last element for the wraparound. Sometimes it's possible to get
+rid of edge cases like this by <a href="https://cestlaz.github.io/posts/2014-02-26-change-the-data.md">changing the data</a>. We can do that here
+by simply appending a copy of the first character to the end of the
+list.
+</p>
+
+<p>
+This leads to a slightly cleaner solution:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span> <span class="o">+</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">l</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">l</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]:</span>
+	<span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="c1">#don't forget to turn the string into an int</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">"Checksum: "</span><span class="p">,</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+
+<p>
+This is pretty much what I'd expect from a Python programmer that's
+just starting out. We can use a couple of more advanced Python
+features to make what I consider a more elegant solution.
+</p>
+
+<p>
+Python's <b><b>zip</b></b> function takes two lists and interleaves them.
+<code>zip("abc","def")</code> will yield <code>[ (a,d), (b,e), (c,f)]</code>. If the lists
+are of different length, it just zips up until the shorter list is
+exhausted. We can use array slicing to zip the input string with it's
+neighbor by using <code>new_list = zip(data,data[1:])</code>. For the string "122344'
+zipping gives us <code>[(1,2),(2,2),(2,3),(3,4),(4,4)]</code>. We can put this in
+a list comprehension that only keeps the tuples representing an
+element with an identical neighbor and also converts it to an int:
+<code>new_list = [int(a) for a,b in new_list if a==b]</code>.
+</p>
+
+<p>
+Finally, we can just calculate the sum. This leads to the following
+complete solution:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"input.txt"</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data</span> <span class="o">+</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">checksum</span><span class="o">=</span> <span class="nb">sum</span><span class="p">([</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="k">for</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span> <span class="k">if</span> <span class="n">a</span><span class="o">==</span><span class="n">b</span><span class="p">])</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">checksum</span><span class="p">)</span>
+</pre></div>
+
+<p>
+List comprehensions for the win!!!!
+</p>
+
+<p>
+Each Advent of Code problem has two parts. You unlock the second by
+solving the first. Here, the wrinkle is that instead of checking each
+digit with it's neighbor to the right, you check it with the one
+that's halfway around the list. 
+</p>
+
+<p>
+With loops, the solution is just a quick modification of part 1. We
+just add half the length and use mod to find the digit to compare with:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"input.txt"</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data</span> <span class="o">+</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">l</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">l</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">data</span><span class="p">[(</span><span class="n">i</span><span class="o">+</span><span class="n">l</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span><span class="o">%</span><span class="n">l</span><span class="p">]:</span> <span class="c1"># check halfway around instead of adjacent</span>
+	<span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">"part 2loop version: "</span><span class="p">,</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+
+<p>
+I wanted to see if I could do this with a list comprehension
+though. The trick was to figure out how to make two lists to zip
+together to get the pairs to check then add. Here's the solution:
+</p>
+<div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"input.txt"</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="n">l</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">d2</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">l</span><span class="o">//</span><span class="mi">2</span><span class="p">:]</span><span class="o">+</span><span class="n">data</span>
+<span class="n">checksum</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="k">for</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">d2</span><span class="p">)</span><span class="k">if</span> <span class="n">a</span><span class="o">==</span><span class="n">b</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">checksum</span><span class="p">)</span>
+</pre></div>
+
+<p>
+The insight was that we could just make a second list that starts
+halfway through and then wraps around. I did this by adding
+<code>data[l//2:] + data</code>. <code>l//2</code> is the integer division of the length (in
+Python3). <code>data[l//2:]</code> represents the second half of data (from the
+midway point to the end). Technically I should have only added the second
+half of data: <code>data[l//2:] + data[:l//2]</code> where <code>data[:l//2]</code> gives us
+the first half of the list but since zip will just stop when it
+exhausts the shorter list, this wasn't necessary.
+</p>
+
+<p>
+Day 2 also has a nice list comprehension based solution. Maybe I'll
+write that up later.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/trust-the-kids/" class="u-url">You have to trust the kids</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -103,9 +281,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org4fed889" class="outline-2">
-<h2 id="org4fed889"></h2>
-<div class="outline-text-2" id="text-org4fed889">
+    <div id="outline-container-org45ea67b" class="outline-2">
+<h2 id="org45ea67b"></h2>
+<div class="outline-text-2" id="text-org45ea67b">
 <p>
 A week or so ago I wrote about the event we had to kick off 
 <a href="http://cestlaz.github.io/posts/hunter-tech-kickoff">Hunter College's partnering with the NY tech community</a> to build a
@@ -214,9 +392,9 @@ fail to impress.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgd90c5a3" class="outline-2">
-<h2 id="orgd90c5a3"></h2>
-<div class="outline-text-2" id="text-orgd90c5a3">
+    <div id="outline-container-org393708d" class="outline-2">
+<h2 id="org393708d"></h2>
+<div class="outline-text-2" id="text-org393708d">
 <p>
 Thanksgiving is reunion season. Stuyvesant and I'm guessing other high
 schools traditionally hold their reunions, at least the five and ten
@@ -297,9 +475,9 @@ years to come.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org48b9f45" class="outline-2">
-<h2 id="org48b9f45"></h2>
-<div class="outline-text-2" id="text-org48b9f45">
+    <div id="outline-container-org119355a" class="outline-2">
+<h2 id="org119355a"></h2>
+<div class="outline-text-2" id="text-org119355a">
 <p>
 The 38th installment of Using Emacs is about <b><b>dired</b></b>, Emacs' built
 in mode for navigating and working with directories.
@@ -384,9 +562,9 @@ how other people are using it.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org5a8f8dd" class="outline-2">
-<h2 id="org5a8f8dd"></h2>
-<div class="outline-text-2" id="text-org5a8f8dd">
+    <div id="outline-container-org2eb047e" class="outline-2">
+<h2 id="org2eb047e"></h2>
+<div class="outline-text-2" id="text-org2eb047e">
 <p>
 Thks question was posed the other day - how can one get students to
 truly understand the quicksort algorithm?
@@ -479,9 +657,9 @@ Enjoy.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgf3adf97" class="outline-2">
-<h2 id="orgf3adf97"></h2>
-<div class="outline-text-2" id="text-orgf3adf97">
+    <div id="outline-container-org2163607" class="outline-2">
+<h2 id="org2163607"></h2>
+<div class="outline-text-2" id="text-org2163607">
 
 <div class="figure">
 <p><img src="img/hunter-tech/hunter-tech1.jpg" alt="hunter-tech1.jpg" align="center" height="400"></p>
@@ -584,9 +762,9 @@ a Hunter CS to Tech Community pipeline that's second to none.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgef0eda1" class="outline-2">
-<h2 id="orgef0eda1"></h2>
-<div class="outline-text-2" id="text-orgef0eda1">
+    <div id="outline-container-org5d0254c" class="outline-2">
+<h2 id="org5d0254c"></h2>
+<div class="outline-text-2" id="text-org5d0254c">
 <p>
 Most mornings, I start my day with a workout. Sometimes I run,
 sometimes I use my bike trainer. Dealing with plantar
@@ -708,9 +886,9 @@ the real thing.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgd193e2c" class="outline-2">
-<h2 id="orgd193e2c"></h2>
-<div class="outline-text-2" id="text-orgd193e2c">
+    <div id="outline-container-org30b65f3" class="outline-2">
+<h2 id="org30b65f3"></h2>
+<div class="outline-text-2" id="text-org30b65f3">
 <p>
 Today was Election Day. One of the few days each year when students
 stay home and teachers spend all day attending what is generously

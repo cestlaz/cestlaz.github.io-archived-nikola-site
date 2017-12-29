@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2017-12-29T19:47:13Z</updated>
+  <updated>2017-12-29T21:03:13Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,84 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-34.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Using Emacs 2017 Recap</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-2017-recap/</id>
+    <updated>2017-12-29T14:17:53-04:00</updated>
+    <published>2017-12-29T14:17:53-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-2017-recap/"/>
+    <summary type="html">&lt;div id="outline-container-orga6e2f1a" class="outline-2"&gt;
+&lt;h2 id="orga6e2f1a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga6e2f1a"&gt;
+&lt;p&gt;
+This past year I recorded 14 Using Emacs videos. This is on top of the
+25 videos I made last year. The fall off in production is
+understandable. I got through my day to day configuration in the
+late 20s and since then the videos have just been on things I've
+rediscovered, things that became useful and things that I just found
+interesting. It was also a busier year.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why did I start the series? Mostly for my students. There's the built
+in Emacs tutorial and other beginner resources but how do you go from
+the basics to a real working configuration? For years I would show my
+kids Emacs and use it in class but there was never a path for them to
+follow from beginner to craftsman. I hoped the videos would fill the
+void.
+&lt;/p&gt;
+
+&lt;p&gt;
+It probably didn't. I don't think I'm getting greater Emacs adoption
+from my students but on the other hand, I've found making the series
+rewarding for other reasons.
+&lt;/p&gt;
+
+&lt;p&gt;
+First and foremost, it's allowed me to be an active contributing
+member of the Emacs community. I haven't written any Emacs packages
+nor am I an active guy on any Emacs forums but this is a way I can do
+my part. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Second, although there hasn't been a great deal of comments on the
+videos or blog posts I've gotten to know a few people that I wouldn't
+have gotten to know otherwise.
+&lt;/p&gt;
+
+&lt;p&gt;
+It also shows that that if you put things out there people might find
+it useful. I don't know how many people saw my Emacs posts at the
+start but a year and half later I've got 1,700 YouTube
+subscribers. Sure, that's nothing compared to many YouTubers but 
+for a guy making schlocky videos at his desk about an as much as I hate to admit it
+non-maintream editor, I think it's pretty cool.
+&lt;/p&gt;
+
+&lt;p&gt;
+The question is what to make videos on moving forward? 
+&lt;/p&gt;
+
+&lt;p&gt;
+I thought I'd throw it out to the community. Here's an embedded
+poll. Feel free to suggest other topics either on the blog or
+as a Twitter reply.
+&lt;/p&gt;
+
+&lt;p&gt;
+I can't promise I'll get to all or any but I'll certainly check out
+the popular suggestions.
+&lt;/p&gt;
+
+&lt;script type="text/javascript" src="http://www.easypolls.net/ext/scripts/emPoll.js?p=5a46abd4e4b04ebe73ddc4de"&gt;&lt;/script&gt;&lt;a class="OPP-powered-by" href="http://www.objectplanet.com/opinio/" style="text-decoration:none;"&gt;&lt;div style="font: 9px arial; color: gray;"&gt;survey service&lt;/div&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+  </entry>
   <entry>
     <title>2017 in review - K12 CS Education</title>
     <id>http://cestlaz.github.io/posts/2017-review-k12CSEd/</id>
@@ -20,9 +98,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2017-review-k12CSEd/"/>
-    <summary type="html">&lt;div id="outline-container-orgf9eb9ed" class="outline-2"&gt;
-&lt;h2 id="orgf9eb9ed"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf9eb9ed"&gt;
+    <summary type="html">&lt;div id="outline-container-orge08351e" class="outline-2"&gt;
+&lt;h2 id="orge08351e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge08351e"&gt;
 &lt;p&gt;
 It's been a big year for K12 CS education. More and more states
 looking into CS as a K12 academic area and all that entails, the
@@ -110,9 +188,9 @@ education side and the CS side. It's been a good year and I expect
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2017-review-hunter-cs/"/>
-    <summary type="html">&lt;div id="outline-container-org80491be" class="outline-2"&gt;
-&lt;h2 id="org80491be"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org80491be"&gt;
+    <summary type="html">&lt;div id="outline-container-orgd2ea02b" class="outline-2"&gt;
+&lt;h2 id="orgd2ea02b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd2ea02b"&gt;
 &lt;p&gt;
 I usually don't do year in review posts. At Stuy, not much changed
 year after year so I never felt it worth summarizing the past and
@@ -215,9 +293,9 @@ There are other strong CS options besides Hunter but compare the costs:
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org579e945" class="outline-2"&gt;
-&lt;h2 id="org579e945"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org579e945"&gt;
+&lt;div id="outline-container-orgabcc198" class="outline-2"&gt;
+&lt;h2 id="orgabcc198"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgabcc198"&gt;
 &lt;p&gt;
 &lt;b&gt;&lt;b&gt;Hunter is about one tenth the cost.&lt;/b&gt;&lt;/b&gt;
 &lt;/p&gt;
@@ -347,9 +425,9 @@ of it.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-39-mu4e/"/>
-    <summary type="html">&lt;div id="outline-container-org550ef0d" class="outline-2"&gt;
-&lt;h2 id="org550ef0d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org550ef0d"&gt;
+    <summary type="html">&lt;div id="outline-container-orgb74a0f9" class="outline-2"&gt;
+&lt;h2 id="orgb74a0f9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb74a0f9"&gt;
 &lt;p&gt;
 I generally use three email accounts. My personal one, work one, and
 one for my non-profit. For a couple of years, I've been using mu4e
@@ -389,9 +467,9 @@ thought of as three parts.
 &lt;/ol&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org296a397" class="outline-3"&gt;
-&lt;h3 id="org296a397"&gt;Part 1 Getting the email to your local machine using mbsync&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org296a397"&gt;
+&lt;div id="outline-container-org1b64cf7" class="outline-3"&gt;
+&lt;h3 id="org1b64cf7"&gt;Part 1 Getting the email to your local machine using mbsync&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org1b64cf7"&gt;
 &lt;p&gt;
 I found his terrific blog post by &lt;a href="https://twitter.com/robstewartUK"&gt;Rob Stewart&lt;/a&gt; on setting up &lt;a href="http://www.macs.hw.ac.uk/~rs46/posts/2014-01-13-mu4e-email-client.html"&gt;mbsync and
 mu4e&lt;/a&gt;. Read it over. I basically followed his directions for setting up
@@ -415,9 +493,9 @@ manually. I describe all of this in the video.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org959dec7" class="outline-3"&gt;
-&lt;h3 id="org959dec7"&gt;Part 2 - setting up mu.&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org959dec7"&gt;
+&lt;div id="outline-container-orgb473065" class="outline-3"&gt;
+&lt;h3 id="orgb473065"&gt;Part 2 - setting up mu.&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgb473065"&gt;
 &lt;p&gt;
 To set up mu, clone it from git://github.com/djcb/mu.git and build
 it. You can find dependencies &lt;a href="https://www.djcbsoftware.nl/code/mu/mu4e/Installation.html"&gt;here&lt;/a&gt; and then follow the same sequence
@@ -441,9 +519,9 @@ you can look at the mu cheatsheet &lt;a href="http://www.djcbsoftware.nl/code/mu
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org6c6e2c5" class="outline-3"&gt;
-&lt;h3 id="org6c6e2c5"&gt;Setting up mu4e in emacs&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org6c6e2c5"&gt;
+&lt;div id="outline-container-orgc1a23f5" class="outline-3"&gt;
+&lt;h3 id="orgc1a23f5"&gt;Setting up mu4e in emacs&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgc1a23f5"&gt;
 &lt;p&gt;
 Finally, you can set up mu4e in emacs. Take a look at Rob's
 configuration in his post or my &lt;a href="https://github.com/zamansky/using-emacs/blob/master/mu4econfig-sample.el"&gt;sample&lt;/a&gt; config. You'll have to take a
@@ -483,9 +561,9 @@ Enjoy:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/atrs/"/>
-    <summary type="html">&lt;div id="outline-container-org001041b" class="outline-2"&gt;
-&lt;h2 id="org001041b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org001041b"&gt;
+    <summary type="html">&lt;div id="outline-container-orgdbe92b1" class="outline-2"&gt;
+&lt;h2 id="orgdbe92b1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgdbe92b1"&gt;
 &lt;p&gt;
 In the New York City department of education a recurring hot topic is
 the Absent Teacher Reserve or ATR pool. 
@@ -666,9 +744,9 @@ That's it. Simple and solves the problem.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/whats-next/"/>
-    <summary type="html">&lt;div id="outline-container-orga1706be" class="outline-2"&gt;
-&lt;h2 id="orga1706be"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga1706be"&gt;
+    <summary type="html">&lt;div id="outline-container-orgc5ebedd" class="outline-2"&gt;
+&lt;h2 id="orgc5ebedd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc5ebedd"&gt;
 &lt;p&gt;
 This question appeared on Facebook a few days ago:
 &lt;/p&gt;
@@ -759,9 +837,9 @@ thought to the collection.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/NY-CS-Certificate/"/>
-    <summary type="html">&lt;div id="outline-container-orgf6c667f" class="outline-2"&gt;
-&lt;h2 id="orgf6c667f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf6c667f"&gt;
+    <summary type="html">&lt;div id="outline-container-orgceffcf2" class="outline-2"&gt;
+&lt;h2 id="orgceffcf2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgceffcf2"&gt;
 &lt;p&gt;
 Last April I woke up early and trekked up to Albany along with a few
 of my Hunter College colleagues to share our thoughts on K12 Computer
@@ -875,9 +953,9 @@ State Education department.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-2017-making-tests/"/>
-    <summary type="html">&lt;div id="outline-container-orge10ea5c" class="outline-2"&gt;
-&lt;h2 id="orge10ea5c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge10ea5c"&gt;
+    <summary type="html">&lt;div id="outline-container-org504ff73" class="outline-2"&gt;
+&lt;h2 id="org504ff73"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org504ff73"&gt;
 &lt;p&gt;
 I'm now well behind in &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. Traveling up to Michigan to see
 my son and my brother and his family will do that.
@@ -960,9 +1038,9 @@ back to Advent of Code.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-2016-6-4/"/>
-    <summary type="html">&lt;div id="outline-container-org4c7caf5" class="outline-2"&gt;
-&lt;h2 id="org4c7caf5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4c7caf5"&gt;
+    <summary type="html">&lt;div id="outline-container-orgc3f2da5" class="outline-2"&gt;
+&lt;h2 id="orgc3f2da5"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc3f2da5"&gt;
 &lt;p&gt;
 I've been having fun with this years &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; competition. So
 far, I've been able to keep up but with I expect that to change in
@@ -1014,9 +1092,9 @@ I decided to do this rant as a video. I hope you enjoy it:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/thoughts-on-a-hackathon/"/>
-    <summary type="html">&lt;div id="outline-container-orgfa3fa62" class="outline-2"&gt;
-&lt;h2 id="orgfa3fa62"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgfa3fa62"&gt;
+    <summary type="html">&lt;div id="outline-container-orgaf058ed" class="outline-2"&gt;
+&lt;h2 id="orgaf058ed"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgaf058ed"&gt;
 &lt;p&gt;
 Yesterday I was one of the judges at &lt;a href="http://stuyhacks.com/"&gt;StuyHacks&lt;/a&gt;. A one day hackathon at
 Stuyvesant run by and organized by the students. I don't have attendee
@@ -1132,184 +1210,5 @@ StuyHacks &lt;a href="http://stuyhacks.com/"&gt;web page&lt;/a&gt; and make sure
 &lt;/div&gt;</summary>
     <category term="hackathons" label="hackathons"/>
     <category term="teaching" label="teaching"/>
-  </entry>
-  <entry>
-    <title>Advent of Code 2017 - Day 1</title>
-    <id>http://cestlaz.github.io/posts/advent-2017-1/</id>
-    <updated>2017-12-02T08:27:02-04:00</updated>
-    <published>2017-12-02T08:27:02-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-2017-1/"/>
-    <summary type="html">&lt;div id="outline-container-org1e498ab" class="outline-2"&gt;
-&lt;h2 id="org1e498ab"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1e498ab"&gt;
-&lt;p&gt;
-It's once again time for &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. That one a day programming
-competition that's been running now for three years.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here are some thoughts on &lt;a href="http://adventofcode.com/2017/day/1"&gt;day 1&lt;/a&gt;. The core of the problem is that you
-have a large string of digits and you have to calculate a
-checksum. This is done by adding the sum of a subset of the
-digits. Only the ones that are identical to the digit to their
-right. To make it a little more interesting, the last digit wraps
-around to the first for checksum purposes.
-&lt;/p&gt;
-
-&lt;p&gt;
-For example, the input &lt;b&gt;&lt;b&gt;2234335&lt;/b&gt;&lt;/b&gt; leads to the calculate &lt;code&gt;2 + 3&lt;/code&gt; or
-&lt;code&gt;5&lt;/code&gt;. The input &lt;b&gt;&lt;b&gt;234445662&lt;/b&gt;&lt;/b&gt; leads to &lt;code&gt;4+4+6+2&lt;/code&gt; or &lt;code&gt;16&lt;/code&gt;. We add 4 for
-twice because the first four is adjacent the second and the second the
-third. We add the 2 at the end because it wraps around to match the
-one at the front.
-&lt;/p&gt;
-
-&lt;p&gt;
-We first read in the data and strip off the trailing newline
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"input.txt"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;origdata&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readline&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-
-&lt;span class="n"&gt;origdata&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;origdata&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;origdata&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Then, since we can access the elements of the string as a list (or
-array) it's a simple loop to calculate the sum:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
-	&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="c1"&gt;# Don't forget to turn the string into an int&lt;/span&gt;
-
-&lt;span class="c1"&gt;# data[-1] is the python way of getting the last element - here we check the wraparound&lt;/span&gt;
-&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
-    &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Checksum: "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Pretty straightforward but I don't like the special case of checking
-the last element for the wraparound. Sometimes it's possible to get
-rid of edge cases like this by &lt;a href="https://cestlaz.github.io/posts/2014-02-26-change-the-data.md"&gt;changing the data&lt;/a&gt;. We can do that here
-by simply appending a copy of the first character to the end of the
-list.
-&lt;/p&gt;
-
-&lt;p&gt;
-This leads to a slightly cleaner solution:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-
-&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
-	&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="c1"&gt;#don't forget to turn the string into an int&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Checksum: "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-This is pretty much what I'd expect from a Python programmer that's
-just starting out. We can use a couple of more advanced Python
-features to make what I consider a more elegant solution.
-&lt;/p&gt;
-
-&lt;p&gt;
-Python's &lt;b&gt;&lt;b&gt;zip&lt;/b&gt;&lt;/b&gt; function takes two lists and interleaves them.
-&lt;code&gt;zip("abc","def")&lt;/code&gt; will yield &lt;code&gt;[ (a,d), (b,e), (c,f)]&lt;/code&gt;. If the lists
-are of different length, it just zips up until the shorter list is
-exhausted. We can use array slicing to zip the input string with it's
-neighbor by using &lt;code&gt;new_list = zip(data,data[1:])&lt;/code&gt;. For the string "122344'
-zipping gives us &lt;code&gt;[(1,2),(2,2),(2,3),(3,4),(4,4)]&lt;/code&gt;. We can put this in
-a list comprehension that only keeps the tuples representing an
-element with an identical neighbor and also converts it to an int:
-&lt;code&gt;new_list = [int(a) for a,b in new_list if a==b]&lt;/code&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-Finally, we can just calculate the sum. This leads to the following
-complete solution:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"input.txt"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readline&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-
-&lt;span class="n"&gt;checksum&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:])&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;checksum&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-List comprehensions for the win!!!!
-&lt;/p&gt;
-
-&lt;p&gt;
-Each Advent of Code problem has two parts. You unlock the second by
-solving the first. Here, the wrinkle is that instead of checking each
-digit with it's neighbor to the right, you check it with the one
-that's halfway around the list. 
-&lt;/p&gt;
-
-&lt;p&gt;
-With loops, the solution is just a quick modification of part 1. We
-just add half the length and use mod to find the digit to compare with:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"input.txt"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readline&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-
-&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="c1"&gt;# check halfway around instead of adjacent&lt;/span&gt;
-	&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"part 2loop version: "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-I wanted to see if I could do this with a list comprehension
-though. The trick was to figure out how to make two lists to zip
-together to get the pairs to check then add. Here's the solution:
-&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"input.txt"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readline&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;d2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:]&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;
-&lt;span class="n"&gt;checksum&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;d2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;checksum&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-The insight was that we could just make a second list that starts
-halfway through and then wraps around. I did this by adding
-&lt;code&gt;data[l//2:] + data&lt;/code&gt;. &lt;code&gt;l//2&lt;/code&gt; is the integer division of the length (in
-Python3). &lt;code&gt;data[l//2:]&lt;/code&gt; represents the second half of data (from the
-midway point to the end). Technically I should have only added the second
-half of data: &lt;code&gt;data[l//2:] + data[:l//2]&lt;/code&gt; where &lt;code&gt;data[:l//2]&lt;/code&gt; gives us
-the first half of the list but since zip will just stop when it
-exhausts the shorter list, this wasn't necessary.
-&lt;/p&gt;
-
-&lt;p&gt;
-Day 2 also has a nice list comprehension based solution. Maybe I'll
-write that up later.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="adventofcode" label="adventofcode"/>
-    <category term="cs" label="cs"/>
-    <category term="programming" label="programming"/>
-    <category term="python" label="python"/>
   </entry>
 </feed>
