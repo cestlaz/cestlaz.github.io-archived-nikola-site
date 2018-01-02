@@ -1,5 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link rel="self" type="application/rss+xml" href="http://cestlaz.github.io/rss.xml"></atom:link><language>en</language><lastBuildDate>Fri, 29 Dec 2017 21:03:13 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 2017 Recap</title><link>http://cestlaz.github.io/posts/using-emacs-2017-recap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga6e2f1a" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Tue, 02 Jan 2018 01:05:53 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>APCS-P -  Bigger Intake Or Leaky Pipe</title><link>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgbff84a9" class="outline-2"&gt;
+&lt;h2 id="orgbff84a9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgbff84a9"&gt;
+&lt;p&gt;
+Advanced Placement Computer Science got top billing on Alfred
+Thompson's &lt;a href="http://blog.acthompson.net/2018/01/computer-science-education-things-im.html"&gt;Things I'm Watching in 2017&lt;/a&gt; post. Alfred talks about how
+APCS-P exploded onto the scene and wonders what will happen with APCS
+this year. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I have some questions as well but mine won't be answered for years to
+come, if ever. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Like it or not, the College Board has an out sized influence on K12
+education. As long as people are convinced that AP=good there will be
+a push for more and more AP classes and APCS-P is a perfect class to
+push. CS is the hot topic in K12, the topic is getting a big push
+from both politicians and industry, the class has no pre-requisites
+and in spite of being called a college course is somehow appropriate
+for a typical tenth grader.
+&lt;/p&gt;
+
+&lt;p&gt;
+The concern here is that at the end of the day. APCS-P is an exam or
+rather an exam plus two other assessments. The quality can vary
+greatly. I've heard of APCS-P implementations that seem pretty
+rigorous and I've seen implementations that are, quite frankly, a
+joke. The question is this: is APCS-P both motivating kids to go on to
+the next level and just as importantly preparing them to succeed at
+that level? 
+&lt;/p&gt;
+
+&lt;p&gt;
+We might never know.
+&lt;/p&gt;
+
+&lt;p&gt;
+A high school might only offer APCS-P. If APCS-A isn't offered, we
+might not know if the student went on to take more CS and we won't
+know if the student succeeded or not. I've seen this with some very
+high profile, popular, after school/summer non-profits. The kids have
+a great time and the non-profits rave about how much their kids learn
+but then the kids take a real CS class in school and drop like
+flies. Was it the teacher/professor or did the non-profit set the kids up to
+fail by convincing them they knew a whole lot more than they did and
+that CS was super easy all the time. 
+&lt;/p&gt;
+
+&lt;p&gt;
+If credit is given for APCS-P, it looks like it will be blanket
+credit. CS majors and minors will still have to take all the same classes in
+college and CS so it will be very hard to tell if APCS-P is
+responsible for any uptick in CS. 
+&lt;/p&gt;
+
+&lt;p&gt;
+At the end of the day, the College Board is going to make a lot of
+money but if APCS-P becomes the standard high school CS course will
+this leave us with true, quality CS4All? I have my doubts.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>ap</category><category>cs</category><category>cs4all</category><guid>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</guid><pubDate>Mon, 01 Jan 2018 23:28:37 GMT</pubDate></item><item><title>Using Emacs 2017 Recap</title><link>http://cestlaz.github.io/posts/using-emacs-2017-recap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga6e2f1a" class="outline-2"&gt;
 &lt;h2 id="orga6e2f1a"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-orga6e2f1a"&gt;
 &lt;p&gt;
@@ -952,119 +1016,4 @@ I decided to do this rant as a video. I hope you enjoy it:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x8cZgEogWNw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>Thoughts On A Hackathon</title><link>http://cestlaz.github.io/posts/thoughts-on-a-hackathon/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgaf058ed" class="outline-2"&gt;
-&lt;h2 id="orgaf058ed"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgaf058ed"&gt;
-&lt;p&gt;
-Yesterday I was one of the judges at &lt;a href="http://stuyhacks.com/"&gt;StuyHacks&lt;/a&gt;. A one day hackathon at
-Stuyvesant run by and organized by the students. I don't have attendee
-stats but there were kids from all over the city and at least one team
-from New Jersey. The youngest student that I met was in sixth grade
-and the oldest were high school seniors. The judging was at the end
-but I decided to stop by earlier to see how the hackers were doing.
-&lt;/p&gt;
-
-&lt;p&gt;
-There was an incredible variety of projects using a wide array of
-tools. There were projects built with:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Java&lt;/li&gt;
-&lt;li&gt;Processing&lt;/li&gt;
-&lt;li&gt;C#&lt;/li&gt;
-&lt;li&gt;Scratch&lt;/li&gt;
-&lt;li&gt;A-Frame&lt;/li&gt;
-&lt;li&gt;Python / Flask&lt;/li&gt;
-&lt;li&gt;HTML/CSS/JS&lt;/li&gt;
-&lt;li&gt;and more&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-A personal highlight for me was running into Sophie - the daughter of
-two of my students from #Stuy95. Well, both a highlight and a reminder
-that I'm getting old.
-&lt;/p&gt;
-
-&lt;p&gt;
-The StuyHacks team did a terrific job running things and at the end I
-told them I'd love to help with future events.
-&lt;/p&gt;
-
-&lt;p&gt;
-I did notice a couple of things at the hackathon that echo things I've
-learned as a teacher over the years and I thought they were worth
-sharing.
-&lt;/p&gt;
-
-&lt;p&gt;
-The first was the a number of the beginner groups needed more
-direction. This didn't seem to be related to grade level or age as
-much as CS experience. This isn't a hackathon only issue. It exists in
-all learning environments. If as teachers we're too prescriptive
-students end up with a single formula to follow. Sure, that'll get
-them through a standardized exam like APCS-A but too much of it can
-hinder them in becoming creative problem solvers.
-&lt;/p&gt;
-
-&lt;p&gt;
-On the other hand, not enough structure will leave many kids staring
-at a blank page. I remember I gave a quiz years ago. It had one
-problem: "You have 20 minutes to prove to me that you learned
-something about the past unit on Cellular Autmata" or something like
-that. Some kids absolutely loved it but many hated it. Stuy kids are
-trained test takers. They're prepared for structure. This threw many
-for a loop.
-&lt;/p&gt;
-
-&lt;p&gt;
-I noticed this issue with some of the hackers at StuyHacks. Some
-beginners really had a hard time figuring out what they could do and
-what they should do.
-&lt;/p&gt;
-
-&lt;p&gt;
-A hackathon isn't a classroom so I think the problem is pretty easily
-remedied. Groups that were able to latch on to a good mentor seemed to
-get the guidance they needed. A beginners hackathon should make sure
-they have not only plenty of mentors but they should make sure that
-the mentors are prepped with a number of project ideas in a number of
-the standard beginner platforms. A hackathon could also provide an
-assortment of ideas in a list.
-&lt;/p&gt;
-
-&lt;p&gt;
-The second thing I noticed was at the end of the day as I was
-judging. It started with one particular group. They were pretty
-apologetic about their project. Basically because it wasn't
-finished. Personally, I thought what they accomplished in essentially
-7 hours was pretty impressive. What became clear as we talked is that
-this group was deathly afraid of failure. Their deepest fear at that
-moment was that I was going to give them high marks and they might
-have to show off their incomplete (yet rather impressive) project to a
-room full of strangers. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This fear of failure was prevalent in groups that ultimately didn't
-submit their projects for judging and it seemed to be common among
-students from high performing, high expectation schools where
-frequently one associates a test score or grade with ones value. I'm
-not happy to say that Stuy has always had this problem.
-&lt;/p&gt;
-
-&lt;p&gt;
-This isn't really a problem that a hackathon can or should be able to
-address. It's just something I noticed. It's a problem for schools and
-also for a society that's test obsessed.
-&lt;/p&gt;
-
-&lt;p&gt;
-I hope nobody reads too much into these observations. The day was a
-tremendous success. A whole bunch of kids had a great day working
-together to build cool things with technology. Congratulations to the
-StuyHacks team. They did a terrific job putting it all together. If
-you're a middle or high school student or know one, keep an eye on the
-StuyHacks &lt;a href="http://stuyhacks.com/"&gt;web page&lt;/a&gt; and make sure to attend their next event.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>hackathons</category><category>teaching</category><guid>http://cestlaz.github.io/posts/thoughts-on-a-hackathon/</guid><pubDate>Sun, 03 Dec 2017 12:47:34 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item></channel></rss>
