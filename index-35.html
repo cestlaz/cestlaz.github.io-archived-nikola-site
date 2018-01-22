@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="C'est la Z">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C'est la Z (old posts, page 35) | C'est la Z</title>
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="assets/css/theme.css" rel="stylesheet" type="text/css">
+<link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
+<link rel="canonical" href="http://cestlaz.github.io/index-35.html">
+<link rel="prev" href="." type="text/html">
+<link rel="next" href="index-34.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]-->
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+
+
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://cestlaz.github.io/">
+						<img class="zlogo" src="assets/images/thluffy.jpg" id="logo"><span class="zname" id="blog-title">C'est la Z</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav navbar-right zmenu">
+<li class="zitem">
+<a href="categories">Tags</a>
+                </li>
+<li class="zitem">
+<a href="stories/emacs">Emacs</a>
+                </li>
+<li class="zitem">
+<a href="stories/flask">Flask</a>
+                </li>
+<li class="zitem">
+<a href="http://github.com/zamansky">GitHub</a>
+                </li>
+<li class="zitem">
+<a href="archive.html">Archive</a>
+                </li>
+<li class="zitem">
+<a href="stories/about">About</a>
+                </li>
+<li class="zitem">
+<a href="rss.xml">RSS feed</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><h2 class="text-center">
+		Musings about education, computer science,</h2>
+		<h3 class="text-center">and maybe a few other miscellaneous topics.
+</h3>
+<!-- End of Menubar -->
+
+<div class="container" id="content" role="main">
+		<div class="body-content">
+				<!--Body content-->
+				<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-8">
+				
+								
+    
+    
+<div class="postindex">
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/advent-2017-making-tests/" class="u-url">Making contest problems and writing tests</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/advent-2017-making-tests/" rel="bookmark"><time class="published dt-published" datetime="2017-12-11T19:39:16-04:00" title="2017-12-11 19:39">2017-12-11 19:39</time></a></p>
+                <p class="commentline">            <a href="posts/advent-2017-making-tests/#disqus_thread" data-disqus-identifier="cache/posts/advent-2017-making-tests.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org504ff73" class="outline-2">
+<h2 id="org504ff73"></h2>
+<div class="outline-text-2" id="text-org504ff73">
+<p>
+I'm now well behind in <a href="http://adventofcode.com">Advent of Code</a>. Traveling up to Michigan to see
+my son and my brother and his family will do that.
+</p>
+
+<p>
+I was planning on working to catch up but got distracted earlier by
+<a href="https://www.reddit.com/r/adventofcode/comments/7idn6k/question_why_does_the_difficulty_vary_so_much/">this thread</a> on the Advent of Code subreddit. Specifically <a href="https://www.reddit.com/r/adventofcode/comments/7idn6k/question_why_does_the_difficulty_vary_so_much/dqy08tk/">this comment</a>
+by <a href="http://was.tl/">Eric Wastl</a>, the contest creator. The thread is about the level of
+difficulty of the various problems and Eric's comment talks about some
+of the factors that go into creating a good collection of problems for
+a contest and the difficulties involved.
+</p>
+
+<p>
+It made me think of a conversation I had twenty years ago with Rob
+Kolstad. We were chatting at a programming competition while the
+students were hacking away. We were discussing that there were only so
+many questions that a typical high school or college competition can
+ask:
+</p>
+
+<ol class="org-ol">
+<li>The Mathy question</li>
+<li>Recursion / divide and conquer etc.</li>
+<li>Graph stuff</li>
+<li>Dynamic Programming</li>
+</ol>
+<p>
+and I think one or two more. The actual questions were just window
+dressing on these fundamental question types. 
+</p>
+
+<p>
+You can see this in many competitions including Advent of Code -
+particularly if you look over all three years. This is not a
+criticism. I love Advent of Code and think that Eric and the people
+he's working with are doing a great job . Read Eric's comment to get a
+deeper dive into what he thinks about as a contest designer.
+</p>
+
+<p>
+I also got to thinking how similar creating a competition is to
+creating an exam. Maybe that's because I'm currently writing the final
+my students will take in a couple of days. In class tests are
+certainly not the best of assessments but they do have their place and
+in any event, they're frequently  required by school or departmental
+policy.
+</p>
+
+<p>
+There are many similarities between what teachers consider when making
+tests to what contest designers consider. What concepts and techniques
+must the students use? Are the problems too similar? Do they ramp up
+in difficulty? Are they all or nothing or can a student incrementally
+work their way to a solution? Does one problem lead into another? 
+</p>
+
+<p>
+There's no big reveal or surprise here today. Just something I've been
+thinking about. 
+</p>
+
+<p>
+A couple of busy days coming up but maybe over the weekend I can get
+back to Advent of Code.
+</p>
+</div>
+</div>
+    </div>
+    </article>
+</div>
+        <nav class="postindexpager"><ul class="pager">
+<li class="previous">
+                <a href="." rel="prev">Newer posts</a>
+            </li>
+            <li class="next">
+                <a href="index-34.html" rel="next">Older posts</a>
+            </li>
+        </ul></nav><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+						<div class="col-md-3">
+                                                <br><div>
+ <!-- DuckDuckGo custom search -->
+ <form method="get" id="search" action="https://duckduckgo.com/" class="navbar-form pull-left">
+ <input type="hidden" name="sites" value="http://cestlaz.github.io"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;">
+</form>
+ <!-- End of custom search -->
+ </div>
+<br><br><!-- feedburner subscribe via email --><form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CestLaZ', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+<p>Enter your email address:</p>
+<p><input type="text" style="width:140px" name="email"></p>
+<input type="hidden" value="CestLaZ" name="uri"><input type="hidden" name="loc" value="en_US"><input type="submit" value="Subscribe"><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p>
+</form>
+								<!--  feedburner subscribe end -->
+
+
+<!-- Twitter sidebar start -->
+								<table class="table"><tr><td>
+												<a class="twitter-timeline" href="https://twitter.com/zamansky" data-widget-id="251117725303312385">Tweets by @zamansky</a>
+												<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</td></tr></table>
+<!-- Twitter sidebar end -->
+</div>
+						<!--End of body content-->
+
+						<footer id="footer">
+								Contents © 2018         <a href="mailto:zamansky@gmail.com">Mike Zamansky</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+								
+						</footer>
+</div>
+		</div>
+
+		<div>
+				<!-- analytics MZ -->
+
+
+<!-- statcounter start -->
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11478370; 
+var sc_invisible=1; 
+var sc_security="c7fbcace"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script><noscript><div class="statcounter"><a title="real time web
+analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11478370/0/c7fbcace/1/" alt="real
+time web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+<!-- statcounted end -->
+
+				<!-- getclicky tracking code -->
+				<a title="Google Analytics Alternative" href="http://clicky.com/100530816"><img alt="Google Analytics Alternative" src="//static.getclicky.com/media/links/badge.gif" border="0"></a>
+				<script src="//static.getclicky.com/js" type="text/javascript"></script><script type="text/javascript">try{ clicky.init(100530816); }catch(e){}</script><noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100530816ns.gif"></p></noscript>
+				<!-- endgetclicky -->
+
+				<!-- google analytics code -->
+				<script type="text/javascript">
+				 var _gaq = _gaq || [];
+				 _gaq.push(['_setAccount', 'UA-35203750-1']);
+				 _gaq.push(['_trackPageview']);
+				 (function() {
+						 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+						 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+						 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				 })();
+				</script><!-- end google analytics -->
+</div>
+		
+		            <script src="assets/js/jquery.min.js"></script><script src="assets/js/bootstrap.min.js"></script><script src="assets/js/moment-with-locales.min.js"></script><script src="assets/js/fancydates.js"></script><script src="assets/js/jquery.colorbox-min.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+		 moment.locale("en");
+		 fancydates(0, "YYYY-MM-DD HH:mm");
+		</script><!-- end fancy dates -->
+</div>
+</body>
+</html>

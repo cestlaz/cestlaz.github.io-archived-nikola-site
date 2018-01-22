@@ -1,7 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link rel="self" type="application/rss+xml" href="http://cestlaz.github.io/rss.xml"></atom:link><language>en</language><lastBuildDate>Thu, 04 Jan 2018 15:24:07 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Reading and Writing Recs</title><link>http://cestlaz.github.io/posts/reading-and-writing-recs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf1bb60a" class="outline-2"&gt;
-&lt;h2 id="orgf1bb60a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf1bb60a"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link type="application/rss+xml" href="http://cestlaz.github.io/rss.xml" rel="self"></atom:link><language>en</language><lastBuildDate>Mon, 22 Jan 2018 00:24:44 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Is Teaching CS Hard?</title><link>http://cestlaz.github.io/posts/is-teaching-cs-hard/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org25144c9" class="outline-2"&gt;
+&lt;h2 id="org25144c9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org25144c9"&gt;
+&lt;p&gt;
+Last week, Mark Guzdial asked &lt;a href="https://computinged.wordpress.com/2018/01/19/what-does-it-mean-for-computer-science-to-be-harder-to-learn-than-other-stem-subjects/"&gt;What does it mean for Computer Science to be harder to learn
+than other STEM subjects?&lt;/a&gt; as a follow up to his &lt;a href="https://cacm.acm.org/blogs/blog-cacm/224105-learning-computer-science-is-different-than-learning-other-stem-disciplines/fulltext"&gt;ACM Blog post&lt;/a&gt; this
+month and the ensuing discussion.
+&lt;/p&gt;
+
+&lt;p&gt;
+You should read both posts but here's how Mark started off the follow
+up:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+I made an argument in my Blog@CACM Post for this month that “Learning
+Computer Science is Different than Learning Other STEM Disciplines,”
+and on Twitter, I explicitly added “It’s harder.”
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+When you talk about how hard or easy it is to teach a subject you can
+do so at many levels. college, high school, middle etc.. Since most of
+my career has been as a High School guy, let's focus there.
+&lt;/p&gt;
+
+&lt;p&gt;
+I do in fact believe that it is hard to teach CS, at least to do it
+well but is it harder to teach then other STEM subjects?
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's see how we're doing in those other subjects. I took a look at
+the New York State &lt;a href="https://data.nysed.gov/reportcard.php?instid=800000081568&amp;amp;year=2016&amp;amp;createreport=1&amp;amp;regents=1"&gt;Regents Exam&lt;/a&gt; results from 2015/2016. I'm certainly
+not a believer or supporter of standardized tests but they're a
+convenient measure for the sake of this post.
+&lt;/p&gt;
+
+&lt;p&gt;
+Only 58% of test takers scored 65 or higher on Integrated Algebra and
+only 41% scored 3 (proficient) or higher on the Common Core version
+with far more students taking the Common Core exam.
+&lt;/p&gt;
+
+&lt;p&gt;
+Higher performing schools frequently offer Algebra in 8th grade but in
+the lower performing districts, students frequently take it over the
+course of two years. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The Geometry regents boasts a passing rate of about 40%. Trig does a
+little better.
+&lt;/p&gt;
+
+&lt;p&gt;
+The science regents exams look a little better but overall, these are
+not terrific results, particularly on the classes that are required
+for graduation.
+&lt;/p&gt;
+
+&lt;p&gt;
+It seems that those other STEM fields aren't so easy to teach after all.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand we have CS. If you listen to all the press releases
+and media attention on APCS-P from this past year it would seem that
+CS is easy to teach and learn. We have all these high school students
+mastering a "college level" course and we can prepare teachers to be
+master CS instructions with just a bit of in-service professional
+development.
+&lt;/p&gt;
+
+&lt;p&gt;
+The truth is, of course that CS isn't easy to teach. When you're a
+summer or after school program or even an elective it's easy to create
+a fun experience using shiny tools to self selecting students but when
+you have to take everyone and prepare many of them to succeed in more
+advanced classes we have a real challenge. We really should be looking
+at retention in more advanced CS classes rather than just passing the
+intro ones. Most students won't go beyond the intro class in any given
+subject but the ones that do must be well prepared. Unfortunately, I
+fear that the people who will get the blame when kids drop CS later on
+will be the teachers of the more advanced classes regardless of who,
+if anyone, is at fault.
+&lt;/p&gt;
+
+&lt;p&gt;
+Teaching CS is hard. It's brand new and very open ended.  When
+programming a solution to a problem kids start with a blank
+slate. They don't have the library of patterns, vocabulary or &lt;a href="https://cestlaz.github.io/posts/programming-idioms"&gt;idioms&lt;/a&gt;
+needed to build solitions. There are many ways a teacher can scaffold
+the learning. Code tracing, analogies, Parsons problems and more but
+the truth is teachers strong in both content and pedagogical knowledge
+are still in rather short supply and as Mark wrote on his blog the
+body of knowledge on teaching CS is just not that mature.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand, Algebra students usually had a first look at some
+of the topics prior to the class and much of the class can be
+"learned" through memorizing relatively short procedures and
+patterns. This might not lead to a depth of understanding but it does
+get you past standardized tests. On the science side, the Living
+Environment exam is really just a reading test.  On the other hand,
+we're supposed to start teaching proof to students in Geometry and
+that's really hard to do.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, teaching in general is hard and teaching CS is no exception. At
+least it is if you're doing it right.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/is-teaching-cs-hard/</guid><pubDate>Sun, 21 Jan 2018 20:56:52 GMT</pubDate></item><item><title>Reading and Writing Recs</title><link>http://cestlaz.github.io/posts/reading-and-writing-recs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc1e86ec" class="outline-2"&gt;
+&lt;h2 id="orgc1e86ec"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc1e86ec"&gt;
 &lt;p&gt;
 I've been on both sides of the recommendation game. I currently read
 all the recommendations for students who apply to my &lt;a href="http://info.huntercs.org"&gt;honors CS program&lt;/a&gt;
@@ -128,9 +245,9 @@ both unfair and arbitrary but that's a discussion for another time.&lt;/div&gt;&
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/reading-and-writing-recs/</guid><pubDate>Thu, 04 Jan 2018 12:49:18 GMT</pubDate></item><item><title>APCS-P -  Bigger Intake Or Leaky Pipe</title><link>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org54ac178" class="outline-2"&gt;
-&lt;h2 id="org54ac178"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org54ac178"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/reading-and-writing-recs/</guid><pubDate>Thu, 04 Jan 2018 12:49:18 GMT</pubDate></item><item><title>APCS-P -  Bigger Intake Or Leaky Pipe</title><link>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgbff84a9" class="outline-2"&gt;
+&lt;h2 id="orgbff84a9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgbff84a9"&gt;
 &lt;p&gt;
 Advanced Placement Computer Science got top billing on Alfred
 Thompson's &lt;a href="http://blog.acthompson.net/2018/01/computer-science-education-things-im.html"&gt;Things I'm Watching in 2017&lt;/a&gt; post. Alfred talks about how
@@ -192,9 +309,9 @@ money but if APCS-P becomes the standard high school CS course will
 this leave us with true, quality CS4All? I have my doubts.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>ap</category><category>cs</category><category>cs4all</category><guid>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</guid><pubDate>Mon, 01 Jan 2018 23:28:37 GMT</pubDate></item><item><title>Using Emacs 2017 Recap</title><link>http://cestlaz.github.io/posts/using-emacs-2017-recap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7494781" class="outline-2"&gt;
-&lt;h2 id="org7494781"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7494781"&gt;
+&lt;/div&gt;</description><category>ap</category><category>cs</category><category>cs4all</category><guid>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</guid><pubDate>Mon, 01 Jan 2018 23:28:37 GMT</pubDate></item><item><title>Using Emacs 2017 Recap</title><link>http://cestlaz.github.io/posts/using-emacs-2017-recap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga6e2f1a" class="outline-2"&gt;
+&lt;h2 id="orga6e2f1a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga6e2f1a"&gt;
 &lt;p&gt;
 This past year I recorded 14 Using Emacs videos. This is on top of the
 25 videos I made last year. The fall off in production is
@@ -258,9 +375,9 @@ the popular suggestions.
 
 &lt;script type="text/javascript" src="http://www.easypolls.net/ext/scripts/emPoll.js?p=5a46abd4e4b04ebe73ddc4de"&gt;&lt;/script&gt;&lt;a class="OPP-powered-by" href="http://www.objectplanet.com/opinio/" style="text-decoration:none;"&gt;&lt;div style="font: 9px arial; color: gray;"&gt;survey service&lt;/div&gt;&lt;/a&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><guid>http://cestlaz.github.io/posts/using-emacs-2017-recap/</guid><pubDate>Fri, 29 Dec 2017 18:17:53 GMT</pubDate></item><item><title>2017 in review - K12 CS Education</title><link>http://cestlaz.github.io/posts/2017-review-k12CSEd/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf9eb9ed" class="outline-2"&gt;
-&lt;h2 id="orgf9eb9ed"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf9eb9ed"&gt;
+&lt;/div&gt;</description><category>emacs</category><guid>http://cestlaz.github.io/posts/using-emacs-2017-recap/</guid><pubDate>Fri, 29 Dec 2017 18:17:53 GMT</pubDate></item><item><title>2017 in review - K12 CS Education</title><link>http://cestlaz.github.io/posts/2017-review-k12CSEd/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge08351e" class="outline-2"&gt;
+&lt;h2 id="orge08351e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge08351e"&gt;
 &lt;p&gt;
 It's been a big year for K12 CS education. More and more states
 looking into CS as a K12 academic area and all that entails, the
@@ -337,9 +454,9 @@ education side and the CS side. It's been a good year and I expect
 2018 to be a better one.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/2017-review-k12CSEd/</guid><pubDate>Wed, 27 Dec 2017 15:05:52 GMT</pubDate></item><item><title>2017 in review - Hunter Undergraduate CS</title><link>http://cestlaz.github.io/posts/2017-review-hunter-cs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org80491be" class="outline-2"&gt;
-&lt;h2 id="org80491be"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org80491be"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/2017-review-k12CSEd/</guid><pubDate>Wed, 27 Dec 2017 15:05:52 GMT</pubDate></item><item><title>2017 in review - Hunter Undergraduate CS</title><link>http://cestlaz.github.io/posts/2017-review-hunter-cs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd2ea02b" class="outline-2"&gt;
+&lt;h2 id="orgd2ea02b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd2ea02b"&gt;
 &lt;p&gt;
 I usually don't do year in review posts. At Stuy, not much changed
 year after year so I never felt it worth summarizing the past and
@@ -442,9 +559,9 @@ There are other strong CS options besides Hunter but compare the costs:
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org579e945" class="outline-2"&gt;
-&lt;h2 id="org579e945"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org579e945"&gt;
+&lt;div id="outline-container-orgabcc198" class="outline-2"&gt;
+&lt;h2 id="orgabcc198"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgabcc198"&gt;
 &lt;p&gt;
 &lt;b&gt;&lt;b&gt;Hunter is about one tenth the cost.&lt;/b&gt;&lt;/b&gt;
 &lt;/p&gt;
@@ -561,9 +678,9 @@ exciting year for Hunter CS and an exciting year for me to be a part
 of it.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>hunter</category><guid>http://cestlaz.github.io/posts/2017-review-hunter-cs/</guid><pubDate>Tue, 26 Dec 2017 15:05:52 GMT</pubDate></item><item><title>Using Emacs 39 - mu4e</title><link>http://cestlaz.github.io/posts/using-emacs-39-mu4e/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org550ef0d" class="outline-2"&gt;
-&lt;h2 id="org550ef0d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org550ef0d"&gt;
+&lt;/div&gt;</description><category>cs</category><category>hunter</category><guid>http://cestlaz.github.io/posts/2017-review-hunter-cs/</guid><pubDate>Tue, 26 Dec 2017 15:05:52 GMT</pubDate></item><item><title>Using Emacs 39 - mu4e</title><link>http://cestlaz.github.io/posts/using-emacs-39-mu4e/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgb74a0f9" class="outline-2"&gt;
+&lt;h2 id="orgb74a0f9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb74a0f9"&gt;
 &lt;p&gt;
 I generally use three email accounts. My personal one, work one, and
 one for my non-profit. For a couple of years, I've been using mu4e
@@ -603,9 +720,9 @@ thought of as three parts.
 &lt;/ol&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org296a397" class="outline-3"&gt;
-&lt;h3 id="org296a397"&gt;Part 1 Getting the email to your local machine using mbsync&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org296a397"&gt;
+&lt;div id="outline-container-org1b64cf7" class="outline-3"&gt;
+&lt;h3 id="org1b64cf7"&gt;Part 1 Getting the email to your local machine using mbsync&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org1b64cf7"&gt;
 &lt;p&gt;
 I found his terrific blog post by &lt;a href="https://twitter.com/robstewartUK"&gt;Rob Stewart&lt;/a&gt; on setting up &lt;a href="http://www.macs.hw.ac.uk/~rs46/posts/2014-01-13-mu4e-email-client.html"&gt;mbsync and
 mu4e&lt;/a&gt;. Read it over. I basically followed his directions for setting up
@@ -629,9 +746,9 @@ manually. I describe all of this in the video.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org959dec7" class="outline-3"&gt;
-&lt;h3 id="org959dec7"&gt;Part 2 - setting up mu.&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org959dec7"&gt;
+&lt;div id="outline-container-orgb473065" class="outline-3"&gt;
+&lt;h3 id="orgb473065"&gt;Part 2 - setting up mu.&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgb473065"&gt;
 &lt;p&gt;
 To set up mu, clone it from git://github.com/djcb/mu.git and build
 it. You can find dependencies &lt;a href="https://www.djcbsoftware.nl/code/mu/mu4e/Installation.html"&gt;here&lt;/a&gt; and then follow the same sequence
@@ -655,9 +772,9 @@ you can look at the mu cheatsheet &lt;a href="http://www.djcbsoftware.nl/code/mu
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org6c6e2c5" class="outline-3"&gt;
-&lt;h3 id="org6c6e2c5"&gt;Setting up mu4e in emacs&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org6c6e2c5"&gt;
+&lt;div id="outline-container-orgc1a23f5" class="outline-3"&gt;
+&lt;h3 id="orgc1a23f5"&gt;Setting up mu4e in emacs&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgc1a23f5"&gt;
 &lt;p&gt;
 Finally, you can set up mu4e in emacs. Take a look at Rob's
 configuration in his post or my &lt;a href="https://github.com/zamansky/using-emacs/blob/master/mu4econfig-sample.el"&gt;sample&lt;/a&gt; config. You'll have to take a
@@ -683,9 +800,9 @@ Enjoy:
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/newRHXKm4H4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-39-mu4e/</guid><pubDate>Sun, 24 Dec 2017 13:00:00 GMT</pubDate></item><item><title>Fixing the Absent Teacher Reserve (ATR) situation</title><link>http://cestlaz.github.io/posts/atrs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org001041b" class="outline-2"&gt;
-&lt;h2 id="org001041b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org001041b"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-39-mu4e/</guid><pubDate>Sun, 24 Dec 2017 13:00:00 GMT</pubDate></item><item><title>Fixing the Absent Teacher Reserve (ATR) situation</title><link>http://cestlaz.github.io/posts/atrs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgdbe92b1" class="outline-2"&gt;
+&lt;h2 id="orgdbe92b1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgdbe92b1"&gt;
 &lt;p&gt;
 In the New York City department of education a recurring hot topic is
 the Absent Teacher Reserve or ATR pool. 
@@ -853,9 +970,9 @@ schools force the placement.&lt;/li&gt;
 That's it. Simple and solves the problem.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/atrs/</guid><pubDate>Fri, 22 Dec 2017 13:01:50 GMT</pubDate></item><item><title>Breaking down problems and writing</title><link>http://cestlaz.github.io/posts/whats-next/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga1706be" class="outline-2"&gt;
-&lt;h2 id="orga1706be"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga1706be"&gt;
+&lt;/div&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/atrs/</guid><pubDate>Fri, 22 Dec 2017 13:01:50 GMT</pubDate></item><item><title>Breaking down problems and writing</title><link>http://cestlaz.github.io/posts/whats-next/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc5ebedd" class="outline-2"&gt;
+&lt;h2 id="orgc5ebedd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc5ebedd"&gt;
 &lt;p&gt;
 This question appeared on Facebook a few days ago:
 &lt;/p&gt;
@@ -933,9 +1050,9 @@ the question. Many good answers were posted. I just wanted to add this
 thought to the collection.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>problem solving</category><guid>http://cestlaz.github.io/posts/whats-next/</guid><pubDate>Thu, 14 Dec 2017 16:14:33 GMT</pubDate></item><item><title>New York State moving forward with CS Teacher Certification</title><link>http://cestlaz.github.io/posts/NY-CS-Certificate/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf6c667f" class="outline-2"&gt;
-&lt;h2 id="orgf6c667f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf6c667f"&gt;
+&lt;/div&gt;</description><category>cs</category><category>problem solving</category><guid>http://cestlaz.github.io/posts/whats-next/</guid><pubDate>Thu, 14 Dec 2017 16:14:33 GMT</pubDate></item><item><title>New York State moving forward with CS Teacher Certification</title><link>http://cestlaz.github.io/posts/NY-CS-Certificate/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgceffcf2" class="outline-2"&gt;
+&lt;h2 id="orgceffcf2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgceffcf2"&gt;
 &lt;p&gt;
 Last April I woke up early and trekked up to Albany along with a few
 of my Hunter College colleagues to share our thoughts on K12 Computer
@@ -1034,76 +1151,4 @@ you here to the NY State Board of Regents, Board of Education and
 State Education department.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>certification</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/NY-CS-Certificate/</guid><pubDate>Tue, 12 Dec 2017 23:57:37 GMT</pubDate></item><item><title>Making contest problems and writing tests</title><link>http://cestlaz.github.io/posts/advent-2017-making-tests/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge10ea5c" class="outline-2"&gt;
-&lt;h2 id="orge10ea5c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge10ea5c"&gt;
-&lt;p&gt;
-I'm now well behind in &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. Traveling up to Michigan to see
-my son and my brother and his family will do that.
-&lt;/p&gt;
-
-&lt;p&gt;
-I was planning on working to catch up but got distracted earlier by
-&lt;a href="https://www.reddit.com/r/adventofcode/comments/7idn6k/question_why_does_the_difficulty_vary_so_much/"&gt;this thread&lt;/a&gt; on the Advent of Code subreddit. Specifically &lt;a href="https://www.reddit.com/r/adventofcode/comments/7idn6k/question_why_does_the_difficulty_vary_so_much/dqy08tk/"&gt;this comment&lt;/a&gt;
-by &lt;a href="http://was.tl/"&gt;Eric Wastl&lt;/a&gt;, the contest creator. The thread is about the level of
-difficulty of the various problems and Eric's comment talks about some
-of the factors that go into creating a good collection of problems for
-a contest and the difficulties involved.
-&lt;/p&gt;
-
-&lt;p&gt;
-It made me think of a conversation I had twenty years ago with Rob
-Kolstad. We were chatting at a programming competition while the
-students were hacking away. We were discussing that there were only so
-many questions that a typical high school or college competition can
-ask:
-&lt;/p&gt;
-
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;The Mathy question&lt;/li&gt;
-&lt;li&gt;Recursion / divide and conquer etc.&lt;/li&gt;
-&lt;li&gt;Graph stuff&lt;/li&gt;
-&lt;li&gt;Dynamic Programming&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;
-and I think one or two more. The actual questions were just window
-dressing on these fundamental question types. 
-&lt;/p&gt;
-
-&lt;p&gt;
-You can see this in many competitions including Advent of Code -
-particularly if you look over all three years. This is not a
-criticism. I love Advent of Code and think that Eric and the people
-he's working with are doing a great job . Read Eric's comment to get a
-deeper dive into what he thinks about as a contest designer.
-&lt;/p&gt;
-
-&lt;p&gt;
-I also got to thinking how similar creating a competition is to
-creating an exam. Maybe that's because I'm currently writing the final
-my students will take in a couple of days. In class tests are
-certainly not the best of assessments but they do have their place and
-in any event, they're frequently  required by school or departmental
-policy.
-&lt;/p&gt;
-
-&lt;p&gt;
-There are many similarities between what teachers consider when making
-tests to what contest designers consider. What concepts and techniques
-must the students use? Are the problems too similar? Do they ramp up
-in difficulty? Are they all or nothing or can a student incrementally
-work their way to a solution? Does one problem lead into another? 
-&lt;/p&gt;
-
-&lt;p&gt;
-There's no big reveal or surprise here today. Just something I've been
-thinking about. 
-&lt;/p&gt;
-
-&lt;p&gt;
-A couple of busy days coming up but maybe over the weekend I can get
-back to Advent of Code.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>assessment</category><category>contests</category><guid>http://cestlaz.github.io/posts/advent-2017-making-tests/</guid><pubDate>Mon, 11 Dec 2017 23:39:16 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>certification</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/NY-CS-Certificate/</guid><pubDate>Tue, 12 Dec 2017 23:57:37 GMT</pubDate></item></channel></rss>
