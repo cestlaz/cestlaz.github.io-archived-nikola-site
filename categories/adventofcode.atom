@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about adventofcode</title>
   <id>http://cestlaz.github.io/categories/adventofcode.atom</id>
-  <updated>2017-12-12T01:10:51Z</updated>
+  <updated>2017-12-22T12:59:42Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -19,9 +19,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-2016-6-4/"/>
-    <summary type="html">&lt;div id="outline-container-orgc3f2da5" class="outline-2"&gt;
-&lt;h2 id="orgc3f2da5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc3f2da5"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 I've been having fun with this years &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; competition. So
 far, I've been able to keep up but with I expect that to change in
@@ -56,7 +56,12 @@ advantage in both future classes and work and life endeavors.
 I decided to do this rant as a video. I hope you enjoy it:
 &lt;/p&gt;
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x8cZgEogWNw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/x8cZgEogWNw"&gt;https://www.youtube.com/embed/x8cZgEogWNw&lt;/a&gt;" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
     <category term="adventofcode" label="adventofcode"/>
@@ -73,9 +78,9 @@ I decided to do this rant as a video. I hope you enjoy it:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-2017-1/"/>
-    <summary type="html">&lt;div id="outline-container-org75f1cf1" class="outline-2"&gt;
-&lt;h2 id="org75f1cf1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org75f1cf1"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 It's once again time for &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. That one a day programming
 competition that's been running now for three years.
@@ -474,7 +479,12 @@ Part two of this problem is a perfect time to use that technique.
 Here's the video, I hope you enjoy it:
 &lt;/p&gt;
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/EC8gSrYQ11g" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary>
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/EC8gSrYQ11g"&gt;https://www.youtube.com/embed/EC8gSrYQ11g&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;</summary>
     <category term="adventofcode" label="adventofcode"/>
     <category term="cs" label="cs"/>
     <category term="pedagogy" label="pedagogy"/>

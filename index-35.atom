@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 35)</title>
   <id>http://cestlaz.github.io/index-35.atom</id>
-  <updated>2018-01-27T20:34:47Z</updated>
+  <updated>2018-01-31T13:04:55Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -15,6 +15,99 @@
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-35.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
+    <title>Breaking down problems and writing</title>
+    <id>http://cestlaz.github.io/posts/whats-next/</id>
+    <updated>2017-12-14T12:14:33-04:00</updated>
+    <published>2017-12-14T12:14:33-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/whats-next/"/>
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;p&gt;
+This question appeared on Facebook a few days ago:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Does anyone have an effective way to teach students how to break down
+a problem into steps and then solve each step one by one? I think my
+students are struggling with a large question and breaking it in
+subsequent parts.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+There were some good suggestions. I wanted to add something but didn't
+have time then so I thought I'd write it up now.
+&lt;/p&gt;
+
+&lt;p&gt;
+As an aside, it took me forever to find the post again over on
+Facebook. If there's a way to mark posts or save a direct link I'd
+love to hear it. I had to look through all the CS Ed groups I belong
+to manually until I found it again.
+&lt;/p&gt;
+
+&lt;p&gt;
+When I read the program I was reminded of a PD session we had to
+attend back at Stuyvesant. Back then the fad was &lt;a href="https://en.wikipedia.org/wiki/Writing_across_the_curriculum"&gt;Writing Across the
+Curriculum&lt;/a&gt;. Every teacher in every class was to give some significant
+writing assignment, evaluate it and provide feedback. Let's forget the
+fact that most of us never had any training or preparation to do so.
+&lt;/p&gt;
+
+&lt;p&gt;
+On that PD day the guest speaker was &lt;a href="https://en.wikipedia.org/wiki/William_Zinsser"&gt;William Zinsser&lt;/a&gt;. The first thing
+he said was that what we were being asked to do by our principal was
+bunk. He then proceeded to give advice on  simple good writing.
+&lt;/p&gt;
+
+&lt;p&gt;
+The procedure he recommended following was to ask yourself (or have
+the student ask themselves) "what does my audience need to know next?"
+That's your next sentence. Then ask the question again. Rinse and
+repeat until done.
+&lt;/p&gt;
+
+&lt;p&gt;
+It was simple and it made sense. It also applied to introductory CS
+problems. When starting out, students have a limited CS / programming
+tool box so a good question for them to ask when trying to solve a
+problem is not only "what do I need to do next? but also "what can I
+do next?" 
+&lt;/p&gt;
+
+&lt;p&gt;
+When students have a limited CS vocabulary and set of idioms - loops,
+conditionals, functions, whatever, there will only be so many things
+they can do to move a problem along. If they go through the things the
+&lt;b&gt;&lt;b&gt;can&lt;/b&gt;&lt;/b&gt; do they will likely fall on to what they &lt;b&gt;&lt;b&gt;should&lt;/b&gt;&lt;/b&gt; do.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's similar to doing a proof in geometry. Students have a set of
+givens. Given that set, what can they do? They only know so many
+theorems at the beginning. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Over time, they'll recognize patterns and develop as problem solvers.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you're part of the AP CS A teachers facebook group you probably saw
+the question. Many good answers were posted. I just wanted to add this
+thought to the collection.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="problem-solving" label="problem solving"/>
+  </entry>
+  <entry>
     <title>New York State moving forward with CS Teacher Certification</title>
     <id>http://cestlaz.github.io/posts/NY-CS-Certificate/</id>
     <updated>2017-12-12T19:57:37-04:00</updated>
@@ -23,9 +116,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/NY-CS-Certificate/"/>
-    <summary type="html">&lt;div id="outline-container-orgceffcf2" class="outline-2"&gt;
-&lt;h2 id="orgceffcf2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgceffcf2"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 Last April I woke up early and trekked up to Albany along with a few
 of my Hunter College colleagues to share our thoughts on K12 Computer
@@ -70,17 +163,24 @@ few key points came up:
 
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;As the proposal indicates this will be a subject area in which a
-teacher can be certified and be awarded tenure.&lt;/li&gt;
+teacher can be certified and be awarded tenure.
+&lt;/li&gt;
 &lt;li&gt;There will be a traditional pathway for new teachers - Bachelors /
-Masters degree&lt;/li&gt;
+Masters degree
+&lt;/li&gt;
 &lt;li&gt;There will be an alternative pathway for people entering from the
-workforce&lt;/li&gt;
+workforce
+&lt;/li&gt;
 &lt;li&gt;There will be an extension for teachers with another license so they
-won't have to give up tenure in their current license.&lt;/li&gt;
+won't have to give up tenure in their current license.
+&lt;/li&gt;
 &lt;li&gt;There will be an "individual evaluation" pathway which sounds to me
-like it could catch people who fall through the cracks.&lt;/li&gt;
-&lt;li&gt;There looks to be a sensible ramp up period - until September 2022&lt;/li&gt;
-&lt;li&gt;There's a grandfathering provision that looks to last 10 years.&lt;/li&gt;
+like it could catch people who fall through the cracks.
+&lt;/li&gt;
+&lt;li&gt;There looks to be a sensible ramp up period - until September 2022
+&lt;/li&gt;
+&lt;li&gt;There's a grandfathering provision that looks to last 10 years.
+&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -139,9 +239,9 @@ State Education department.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-2017-making-tests/"/>
-    <summary type="html">&lt;div id="outline-container-org504ff73" class="outline-2"&gt;
-&lt;h2 id="org504ff73"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org504ff73"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 I'm now well behind in &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. Traveling up to Michigan to see
 my son and my brother and his family will do that.
@@ -165,10 +265,14 @@ ask:
 &lt;/p&gt;
 
 &lt;ol class="org-ol"&gt;
-&lt;li&gt;The Mathy question&lt;/li&gt;
-&lt;li&gt;Recursion / divide and conquer etc.&lt;/li&gt;
-&lt;li&gt;Graph stuff&lt;/li&gt;
-&lt;li&gt;Dynamic Programming&lt;/li&gt;
+&lt;li&gt;The Mathy question
+&lt;/li&gt;
+&lt;li&gt;Recursion / divide and conquer etc.
+&lt;/li&gt;
+&lt;li&gt;Graph stuff
+&lt;/li&gt;
+&lt;li&gt;Dynamic Programming
+&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;
