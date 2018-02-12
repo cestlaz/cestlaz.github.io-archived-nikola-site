@@ -1,0 +1,99 @@
+#+BEGIN_COMMENT
+.. title: Google Sheets
+.. slug: google-sheets
+.. date: 2018-02-12 14:28:28 UTC-04:00
+.. tags: admin
+.. category:  
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+I make regular use of Google's office suite. I use Google forms all
+the time to collect data, Google docs when I have to leave Emacs for
+document preparation - usually when I have to collaborate with others
+online and I use Google Sheets as my greadebook.
+
+I don't do a lot of data processing using Google sheets. For that I
+download the data and write small scripts. On the other hand it turns
+out that you can do some pretty nifty things by scripting right in
+Google sheets. 
+
+Google sheets can be scripted using Javascript and Google's APIs. For
+example, adding "hello" and "world" to the two bottom leftmost cells
+in your active spreadsheet can be done by running a function like
+this:
+
+#+BEGIN_SRC javascript
+function addHello() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  ss.appendRow(['hello','world']);
+  }
+#+END_SRC
+
+In general, it's pretty easy to grab, modify, or otherwise manipulate
+cells from a spreadsheet with simple javascript.
+
+You can also send email from a Google app script. For me this was a
+big win. I use it for emailing grades to students and also as a poor
+man's mailmerge. The key call is:
+
+#+BEGIN_SRC javascript
+GmailApp.sendEmail(email , subject,msg);
+#+END_SRC
+
+Here's a video walking through sending emails to a list of people from
+a spreadsheet. The code is underneath.
+
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EvQC1N9JMs0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+#+END_EXPORT
+
+#+BEGIN_SRC javascript
+
+function sendEmail(to,subject,msg){
+
+  GmailApp.sendEmail(to,subject,msg)
+}
+
+
+function getSheetByName(name){
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheets = ss.getSheets();
+  for( var n in sheets){
+    if (name==sheets[n].getName()){
+     return sheets[n]; 
+    }
+  }
+    return sheets[0];
+}
+
+function prepareMessage(name){
+  var sheet = getSheetByName("Msg");
+  var oldSheet = SpreadsheetApp.getActiveSheet()
+  SpreadsheetApp.setActiveSheet(sheet)
+
+  var dataRange = sheet.getRange(1,1,1,1)
+  data = dataRange.getValues()
+  var msg = data[0][0]
+  msg = msg.replace("%FIRST%",name)
+  SpreadsheetApp.setActiveSheet(oldSheet)
+  return msg
+}
+
+function sendGrades(){
+  var sheet = getSheetByName("grades")
+  var rows = sheet.getLastRow()
+  var cols = sheet.getLastColumn()
+  var dataRange = sheet.getRange(2,1,rows-1,cols)
+  var data = dataRange.getValues();
+  for (i in data){
+    var name = data[i][0]
+    var to = data[i][1]
+    var msg = prepareMessage(name)
+    sendEmail(to,"Important Grade Info",msg)
+  }
+ 
+}
+#+END_SRC

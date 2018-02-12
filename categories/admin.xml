@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about admin)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/admin.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 12 Feb 2018 19:45:37 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Google Sheets</title><link>http://cestlaz.github.io/posts/google-sheets/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org694d5c8" class="outline-2"&gt;
+&lt;h2 id="org694d5c8"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org694d5c8"&gt;
+&lt;p&gt;
+I make regular use of Google's office suite. I use Google forms all
+the time to collect data, Google docs when I have to leave Emacs for
+document preparation - usually when I have to collaborate with others
+online and I use Google Sheets as my greadebook.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't do a lot of data processing using Google sheets. For that I
+download the data and write small scripts. On the other hand it turns
+out that you can do some pretty nifty things by scripting right in
+Google sheets. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Google sheets can be scripted using Javascript and Google's APIs. For
+example, adding "hello" and "world" to the two bottom leftmost cells
+in your active spreadsheet can be done by running a function like
+this:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;function addHello() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  ss.appendRow(['hello','world']);
+  }
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+In general, it's pretty easy to grab, modify, or otherwise manipulate
+cells from a spreadsheet with simple javascript.
+&lt;/p&gt;
+
+&lt;p&gt;
+You can also send email from a Google app script. For me this was a
+big win. I use it for emailing grades to students and also as a poor
+man's mailmerge. The key call is:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;GmailApp.sendEmail(email , subject,msg);
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Here's a video walking through sending emails to a list of people from
+a spreadsheet. The code is underneath.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/EvQC1N9JMs0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;function sendEmail(to,subject,msg){
+
+  GmailApp.sendEmail(to,subject,msg)
+}
+
+
+function getSheetByName(name){
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheets = ss.getSheets();
+  for( var n in sheets){
+    if (name==sheets[n].getName()){
+     return sheets[n]; 
+    }
+  }
+    return sheets[0];
+}
+
+function prepareMessage(name){
+  var sheet = getSheetByName("Msg");
+  var oldSheet = SpreadsheetApp.getActiveSheet()
+  SpreadsheetApp.setActiveSheet(sheet)
+
+  var dataRange = sheet.getRange(1,1,1,1)
+  data = dataRange.getValues()
+  var msg = data[0][0]
+  msg = msg.replace("%FIRST%",name)
+  SpreadsheetApp.setActiveSheet(oldSheet)
+  return msg
+}
+
+function sendGrades(){
+  var sheet = getSheetByName("grades")
+  var rows = sheet.getLastRow()
+  var cols = sheet.getLastColumn()
+  var dataRange = sheet.getRange(2,1,rows-1,cols)
+  var data = dataRange.getValues();
+  for (i in data){
+    var name = data[i][0]
+    var to = data[i][1]
+    var msg = prepareMessage(name)
+    sendEmail(to,"Important Grade Info",msg)
+  }
+
+}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>admin</category><guid>http://cestlaz.github.io/posts/google-sheets/</guid><pubDate>Mon, 12 Feb 2018 18:28:28 GMT</pubDate></item></channel></rss>
