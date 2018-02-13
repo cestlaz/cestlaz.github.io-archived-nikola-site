@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about pedagogy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/pedagogy.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 12 Feb 2018 19:18:11 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7ab1556" class="outline-2"&gt;
-&lt;h2 id="org7ab1556"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7ab1556"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about pedagogy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/pedagogy.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 22 Dec 2017 12:59:42 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 I've been having fun with this years &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; competition. So
 far, I've been able to keep up but with I expect that to change in
@@ -36,11 +36,16 @@ advantage in both future classes and work and life endeavors.
 I decided to do this rant as a video. I hope you enjoy it:
 &lt;/p&gt;
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x8cZgEogWNw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/x8cZgEogWNw"&gt;https://www.youtube.com/embed/x8cZgEogWNw&lt;/a&gt;" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
 &lt;/div&gt;
-&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>A new first language? What's the follow up plan?</title><link>http://cestlaz.github.io/posts/first-language-changing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org34a4687" class="outline-2"&gt;
-&lt;h2 id="org34a4687"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org34a4687"&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>A new first language? What's the follow up plan?</title><link>http://cestlaz.github.io/posts/first-language-changing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 This morning, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about Stanford possibly &lt;a href="https://computinged.wordpress.com/2017/04/21/cs-department-updates-introductory-courses-java-is-gone/"&gt;moving away
 from Java&lt;/a&gt; as their intro language. This comes on the heels of a
@@ -214,17 +219,20 @@ introduce github to my classes here they are:
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-1"&gt;Part 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-2"&gt;Part 2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-3"&gt;Part 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-1"&gt;Part 1&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-2"&gt;Part 2&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/sigcse-2017-github-3"&gt;Part 3&lt;/a&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
 I'm hoping some of you have found this set of four posts useful or at
 least interesting.
-&lt;/p&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-4/</guid><pubDate>Tue, 11 Apr 2017 23:11:30 GMT</pubDate></item><item><title>A free multi-state clicker with built in redundency</title><link>http://cestlaz.github.io/posts/thumb_clickers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org67e08c4" class="outline-2"&gt;
-&lt;h2 id="org67e08c4"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org67e08c4"&gt;
+&lt;/p&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-4/</guid><pubDate>Tue, 11 Apr 2017 23:11:30 GMT</pubDate></item><item><title>A free multi-state clicker with built in redundency</title><link>http://cestlaz.github.io/posts/thumb_clickers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 Last Friday, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about the woes of &lt;a href="https://computinged.wordpress.com/2017/03/31/the-need-for-better-software-and-systems-to-support-active-cs-learning/%0A"&gt;using clickers&lt;/a&gt; in a
 class. The amount of effort required to use his school's approved
@@ -297,18 +305,23 @@ Thumbs.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org7b082ed" class="outline-2"&gt;
-&lt;h2 id="org7b082ed"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7b082ed"&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
 &lt;p&gt;
 Periodically, I'll poll my class.
 &lt;/p&gt;
 
-&lt;span&gt;
-&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/sidethumb.png"&gt;
-&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/upthumb.jpg"&gt;
-&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/downthumb.jpg"&gt;
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;span&amp;gt;
+&amp;lt;img width="30%"src="../../img/thumbs/sidethumb.png"&amp;gt;
+&amp;lt;img width="30%" src="../../img/thumbs/upthumb.jpg"&amp;gt;
+&amp;lt;img width="30%" src="../../img/thumbs/downthumb.jpg"&amp;gt;
+&amp;lt;/spam&amp;gt;
+&lt;/p&gt;
 
+&lt;/div&gt;
 
 &lt;p&gt;
 Thumb to the side? Everything's OK. Keep going as you're going. I get
@@ -334,8 +347,10 @@ The downsides?
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;The class has to have a level of comfort so that students vote
-honestly and don't just give you positive feedback.&lt;/li&gt;
-&lt;li&gt;No data collection.&lt;/li&gt;
+honestly and don't just give you positive feedback.
+&lt;/li&gt;
+&lt;li&gt;No data collection.
+&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -343,14 +358,19 @@ honestly and don't just give you positive feedback.&lt;/li&gt;
 The upsides?
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;quick&lt;/li&gt;
-&lt;li&gt;cheap&lt;/li&gt;
-&lt;li&gt;works on any topic on the fly&lt;/li&gt;
+&lt;li&gt;quick
+&lt;/li&gt;
+&lt;li&gt;cheap
+&lt;/li&gt;
+&lt;li&gt;works on any topic on the fly
+&lt;/li&gt;
 &lt;li&gt;even if the votes are artificially skewed towards positive, it does
 forces the class to be at least a little attentive and to engage in
-some physical response&lt;/li&gt;
+some physical response
+&lt;/li&gt;
 &lt;li&gt;can get analog responses by allowing students to adjust wrist
-rotation&lt;/li&gt;
+rotation
+&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -374,7 +394,7 @@ I don't teach large lectures so I don't know how this would work in a
 huge class. I'd imagine it's still worth it given that it's so low
 friction and low cost of entry even if it's not perfect.
 &lt;/p&gt;
-&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;</description><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/thumb_clickers/</guid><pubDate>Sat, 01 Apr 2017 21:23:21 GMT</pubDate></item><item><title>A Teacher looks at Advent of Code 2016 #2</title><link>http://cestlaz.github.io/posts/advent-of-code-2016-2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 Today we're looking at &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; 2016 &lt;a href="http://adventofcode.com/2016/day/2"&gt;number 2&lt;/a&gt;.
 &lt;/p&gt;
@@ -409,7 +429,12 @@ Part two of this problem is a perfect time to use that technique.
 Here's the video, I hope you enjoy it:
 &lt;/p&gt;
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/EC8gSrYQ11g" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</description><category>adventofcode</category><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-of-code-2016-2/</guid><pubDate>Thu, 08 Dec 2016 13:40:49 GMT</pubDate></item><item><title>A Teacher looks at Advent of Code 2016 #1</title><link>http://cestlaz.github.io/posts/advent-code-2016-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/EC8gSrYQ11g"&gt;https://www.youtube.com/embed/EC8gSrYQ11g&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;</description><category>adventofcode</category><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-of-code-2016-2/</guid><pubDate>Thu, 08 Dec 2016 13:40:49 GMT</pubDate></item><item><title>A Teacher looks at Advent of Code 2016 #1</title><link>http://cestlaz.github.io/posts/advent-code-2016-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 I recently &lt;a href="http://cestlaz.github.io/posts/advent-of-code-2016/"&gt;posted&lt;/a&gt; about &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; - a series of programming
 problems relseased one a day. While they vary in terms of level of
 difficulty, a number of them make nice problems for introductory to
@@ -531,9 +556,9 @@ Here's all the code:
 &lt;p&gt;
 Overall, a nice little problem for beginning and intermediate
 students.
-&lt;/p&gt;</description><category>adventofcode</category><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-code-2016-1/</guid><pubDate>Tue, 06 Dec 2016 15:46:17 GMT</pubDate></item><item><title>New Term, New Tool - repl.it</title><link>http://cestlaz.github.io/posts/new-term-new-tool-replit/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org947b0d7" class="outline-2"&gt;
-&lt;h2 id="org947b0d7"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org947b0d7"&gt;
+&lt;/p&gt;</description><category>adventofcode</category><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-code-2016-1/</guid><pubDate>Tue, 06 Dec 2016 15:46:17 GMT</pubDate></item><item><title>New Term, New Tool - repl.it</title><link>http://cestlaz.github.io/posts/new-term-new-tool-replit/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 We're now a week in to my first class at Hunter. It's a little early
 for me to really compare and contrast the high school to college
@@ -582,13 +607,22 @@ I'm really liking things so far. Some of the things I like include:
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;a simple clean interface.&lt;/li&gt;
-&lt;li&gt;sharing and embedding code:&lt;/li&gt;
+&lt;li&gt;a simple clean interface.
+&lt;/li&gt;
+&lt;li&gt;sharing and embedding code:
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;script src="//repl.it/embed/DF3m/19.js"&gt;&lt;/script&gt;
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;script src="//repl.it/embed/DF3m/19.js"&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;project mode which allows multi file projects&lt;/li&gt;
-&lt;li&gt;examples to get you started&lt;/li&gt;
+&lt;li&gt;project mode which allows multi file projects
+&lt;/li&gt;
+&lt;li&gt;examples to get you started
+&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -602,9 +636,12 @@ I had two extra minutes in class yesterday and in that time, I was
 able to:
 &lt;/p&gt;
 &lt;ol class="org-ol"&gt;
-&lt;li&gt;Make a classroom&lt;/li&gt;
-&lt;li&gt;Invite all my students by email&lt;/li&gt;
-&lt;li&gt;Create 2 quick assignments.&lt;/li&gt;
+&lt;li&gt;Make a classroom
+&lt;/li&gt;
+&lt;li&gt;Invite all my students by email
+&lt;/li&gt;
+&lt;li&gt;Create 2 quick assignments.
+&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;
@@ -627,9 +664,9 @@ probably use it somewhat less as they start to learn to use their own
 systems but I'm glad to have repl.it in my teaching arsenal.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-term-new-tool-replit/</guid><pubDate>Fri, 02 Sep 2016 13:26:02 GMT</pubDate></item><item><title>Lesson plans - scripts to springboards</title><link>http://cestlaz.github.io/posts/lesson-plans/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org337d3ec" class="outline-2"&gt;
-&lt;h2 id="org337d3ec"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org337d3ec"&gt;
+&lt;/div&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-term-new-tool-replit/</guid><pubDate>Fri, 02 Sep 2016 13:26:02 GMT</pubDate></item><item><title>Lesson plans - scripts to springboards</title><link>http://cestlaz.github.io/posts/lesson-plans/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 I spent last Saturday up at the Microsoft offices in Times Square
 observing a &lt;a href="https://www.tealsk12.org/"&gt;TEALS&lt;/a&gt; training session. My fried &lt;a href="https://twitter.com/nathanielgranor"&gt;Nathaniel Granor&lt;/a&gt;, Teals
@@ -663,16 +700,21 @@ The lesson plan form was pretty traditional and pretty formulaic:
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;warm up&lt;/li&gt;
-&lt;li&gt;hook&lt;/li&gt;
-&lt;li&gt;instruction&lt;/li&gt;
-&lt;li&gt;practice&lt;/li&gt;
-&lt;li&gt;Assessment&lt;/li&gt;
+&lt;li&gt;warm up
+&lt;/li&gt;
+&lt;li&gt;hook
+&lt;/li&gt;
+&lt;li&gt;instruction 
+&lt;/li&gt;
+&lt;li&gt;practice
+&lt;/li&gt;
+&lt;li&gt;Assessment
+&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
 Very similar to what I was shown back in the day during my two day
-"teaching boot camp" that kicked off my career &lt;sup&gt;&lt;a id="fnr.1" class="footref" href="http://cestlaz.github.io/posts/lesson-plans/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt; and very
+"teaching boot camp" that kicked off my career &lt;sup&gt;&lt;a id="fnr.1" name="fnr.1" class="footref" href="http://cestlaz.github.io/posts/lesson-plans/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt; and very
 appropriate as an effective and efficient way to prepare these
 volunteers for their first days. 
 &lt;/p&gt;
@@ -797,9 +839,9 @@ close to the work of a master educator and craftsman.
 &lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
 &lt;div id="text-footnotes"&gt;
 
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" class="footnum" href="http://cestlaz.github.io/posts/lesson-plans/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;full disclosure: I
+&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" name="fn.1" class="footnum" href="http://cestlaz.github.io/posts/lesson-plans/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;p&gt;full disclosure: I
 came in to teaching with zero education credentials and took the
-minimum number of ed classes for my license after I started.&lt;/div&gt;&lt;/div&gt;
+minimum number of ed classes for my license after I started.&lt;/p&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
@@ -877,7 +919,12 @@ leave a comment for anything that the form doesn't cover?
 &lt;/p&gt;
 
 
-&lt;iframe src="https://docs.google.com/forms/d/1FlppDbeiK8uPxh_RkXoCbbdE_UDY_4qXmZWbXlZ0gGg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading...&lt;/iframe&gt;</description><category>hardware</category><category>pedagogy</category><category>robotics</category><category>robots</category><category>tools</category><guid>http://cestlaz.github.io/posts/robot-survey/</guid><pubDate>Wed, 15 Jun 2016 13:08:28 GMT</pubDate></item><item><title>Navajo Math Circles</title><link>http://cestlaz.github.io/posts/navajo-circles/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;iframe src="&lt;a href="https://docs.google.com/forms/d/1FlppDbeiK8uPxh_RkXoCbbdE_UDY_4qXmZWbXlZ0gGg/viewform?embedded=true"&gt;https://docs.google.com/forms/d/1FlppDbeiK8uPxh_RkXoCbbdE_UDY_4qXmZWbXlZ0gGg/viewform?embedded=true&lt;/a&gt;" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0"&amp;gt;Loading…&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;</description><category>hardware</category><category>pedagogy</category><category>robotics</category><category>robots</category><category>tools</category><guid>http://cestlaz.github.io/posts/robot-survey/</guid><pubDate>Wed, 15 Jun 2016 13:08:28 GMT</pubDate></item><item><title>Navajo Math Circles</title><link>http://cestlaz.github.io/posts/navajo-circles/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 Yesterday, I saw the New York Premiere of &lt;a href="http://www.zalafilms.com/navajo/"&gt;Navajo Math Circles&lt;/a&gt;, a
 documentary on a &lt;a href="http://www.mathcircles.org/"&gt;Math Circle&lt;/a&gt; put in place to support and enrich the
 currently under-served community in the Navajo educational system.
