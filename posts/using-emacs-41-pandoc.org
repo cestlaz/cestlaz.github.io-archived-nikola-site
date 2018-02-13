@@ -1,0 +1,64 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs 41 Pandoc
+.. slug: using-emacs-41-pandoc
+.. date: 2018-02-13 08:05:45 UTC-04:00
+.. tags: emacs
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+Another Emacs quick hit today. Actually, not really Emacs. Today's
+video is a quick, really quick, look at [[https://pandoc.org/][Pandoc]]. Pandoc is a document
+converter. 
+
+Here are the formats that Pandoc can covert read from:
+
+#+BEGIN_QUOTE
+ Markdown, CommonMark, PHP Markdown Extra, GitHub-Flavored Markdown,
+ MultiMarkdown, and (subsets of) Textile, reStructuredText, HTML,
+ LaTeX, MediaWiki markup, TWiki markup, TikiWiki markup, Creole 1.0,
+ Haddock markup, OPML, Emacs Org mode, DocBook, JATS, Muse, txt2tags,
+ Vimwiki, EPUB, ODT, and Word docx.
+#+END_QUOTE
+
+And here are the ones it can write to:
+
+#+BEGIN_QUOTE
+plain text, Markdown, CommonMark, PHP Markdown Extra, GitHub-Flavored
+Markdown, MultiMarkdown, reStructuredText, XHTML, HTML5, LaTeX
+(including beamer slide shows), ConTeXt, RTF, OPML, DocBook, JATS,
+OpenDocument, ODT, Word docx, GNU Texinfo, MediaWiki markup, DokuWiki
+markup, ZimWiki markup, Haddock markup, EPUB (v2 or v3), FictionBook2,
+Textile, groff man, groff ms, Emacs Org mode, AsciiDoc, InDesign ICML,
+TEI Simple, Muse, PowerPoint slide shows and Slidy, Slideous,
+DZSlides, reveal.js, PDF
+#+END_QUOTE
+
+
+That's pretty impressive
+
+I was faced with an html file describing a lab for all the CSCI13500
+students at Hunter. I wanted to modify it for my class and that was
+going to be a bear. I also wanted an easy way to have it render up on
+GitHub. With pandoc, it was trivial. I just typed:
+
+#+BEGIN_SRC bash
+pandoc -f html -t org -o lab3.org lab3.html
+#+END_SRC 
+
+which converted the file to org-mode. This was trivial to edit and
+then I uploaded it to GitHub as the lab's Readme.org file which GitHub
+automatically renders on the project page.
+
+Pandoc for the win.
+
+I've also used pandoc to move between org-mode and word files. 
+
+If you haven't checked out pandoc, you should.
+
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qVUZsH-MDRM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+#+END_EXPORT
