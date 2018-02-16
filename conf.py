@@ -170,6 +170,7 @@ THEME_COLOR = '#5670d4'
 # to feeds and are considered part of a blog, while PAGES are
 # just independent HTML pages.
 #
+# Add org files to your POSTS, PAGES
 
 POSTS = (
     ("posts/*.org", "posts","post.tmpl"),
@@ -1176,3 +1177,4 @@ GLOBAL_CONTEXT = {}
 # GLOBAL_CONTEXT as parameter when the template is about to be
 # rendered
 GLOBAL_CONTEXT_FILLER = []
+
