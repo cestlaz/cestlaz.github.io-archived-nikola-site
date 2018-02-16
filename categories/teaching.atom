@@ -3,511 +3,13 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about teaching</title>
   <id>http://cestlaz.github.io/categories/teaching.atom</id>
-  <updated>2017-12-22T12:59:42Z</updated>
+  <updated>2017-09-23T16:15:34Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/teaching.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/teaching/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
-  <entry>
-    <title>Tools can shape how we think</title>
-    <id>http://cestlaz.github.io/posts/advent-2016-6-4/</id>
-    <updated>2017-12-06T16:01:15-04:00</updated>
-    <published>2017-12-06T16:01:15-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-2016-6-4/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-I've been having fun with this years &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; competition. So
-far, I've been able to keep up but with I expect that to change in
-another couple of days since I'll be traveling for the weekend.
-&lt;/p&gt;
-
-&lt;p&gt;
-After solving a problem, I like looking over some of the other
-solutions on the Advent of Code &lt;a href="https://www.reddit.com/r/adventofcode/"&gt;subreddit&lt;/a&gt;. Even with similar
-agorithmic solutions there's a decent amount of variation in the
-actual code and solutions in different languages can look radically
-different.
-&lt;/p&gt;
-
-&lt;p&gt;
-That got me thinking about how the tools we know and use both shape the ways we
-approach solving problems and creating things and either limit or
-empower us to go from a mental model of a solution or creation to an
-actual artifact. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Relating to this are the common themes that come up in the CS
-Education world. The idea that it's computer science not programming
-and certainly not merely coding. That's true but the tools and
-languages we use shape the whole thinking part and can also give the
-students a valuable practical tool that they can leverage to great
-advantage in both future classes and work and life endeavors.
-&lt;/p&gt;
-
-&lt;p&gt;
-I decided to do this rant as a video. I hope you enjoy it:
-&lt;/p&gt;
-
-&lt;div class="export"&gt;
-&lt;p&gt;
-&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/x8cZgEogWNw"&gt;https://www.youtube.com/embed/x8cZgEogWNw&lt;/a&gt;" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
-&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="adventofcode" label="adventofcode"/>
-    <category term="pedagogy" label="pedagogy"/>
-    <category term="teaching" label="teaching"/>
-    <category term="tools" label="tools"/>
-  </entry>
-  <entry>
-    <title>Thoughts On A Hackathon</title>
-    <id>http://cestlaz.github.io/posts/thoughts-on-a-hackathon/</id>
-    <updated>2017-12-03T08:47:34-04:00</updated>
-    <published>2017-12-03T08:47:34-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/thoughts-on-a-hackathon/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-Yesterday I was one of the judges at &lt;a href="http://stuyhacks.com/"&gt;StuyHacks&lt;/a&gt;. A one day hackathon at
-Stuyvesant run by and organized by the students. I don't have attendee
-stats but there were kids from all over the city and at least one team
-from New Jersey. The youngest student that I met was in sixth grade
-and the oldest were high school seniors. The judging was at the end
-but I decided to stop by earlier to see how the hackers were doing.
-&lt;/p&gt;
-
-&lt;p&gt;
-There was an incredible variety of projects using a wide array of
-tools. There were projects built with:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Java
-&lt;/li&gt;
-&lt;li&gt;Processing
-&lt;/li&gt;
-&lt;li&gt;C#
-&lt;/li&gt;
-&lt;li&gt;Scratch
-&lt;/li&gt;
-&lt;li&gt;A-Frame
-&lt;/li&gt;
-&lt;li&gt;Python / Flask
-&lt;/li&gt;
-&lt;li&gt;HTML/CSS/JS
-&lt;/li&gt;
-&lt;li&gt;and more
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-A personal highlight for me was running into Sophie - the daughter of
-two of my students from #Stuy95. Well, both a highlight and a reminder
-that I'm getting old.
-&lt;/p&gt;
-
-&lt;p&gt;
-The StuyHacks team did a terrific job running things and at the end I
-told them I'd love to help with future events.
-&lt;/p&gt;
-
-&lt;p&gt;
-I did notice a couple of things at the hackathon that echo things I've
-learned as a teacher over the years and I thought they were worth
-sharing.
-&lt;/p&gt;
-
-&lt;p&gt;
-The first was the a number of the beginner groups needed more
-direction. This didn't seem to be related to grade level or age as
-much as CS experience. This isn't a hackathon only issue. It exists in
-all learning environments. If as teachers we're too prescriptive
-students end up with a single formula to follow. Sure, that'll get
-them through a standardized exam like APCS-A but too much of it can
-hinder them in becoming creative problem solvers.
-&lt;/p&gt;
-
-&lt;p&gt;
-On the other hand, not enough structure will leave many kids staring
-at a blank page. I remember I gave a quiz years ago. It had one
-problem: "You have 20 minutes to prove to me that you learned
-something about the past unit on Cellular Autmata" or something like
-that. Some kids absolutely loved it but many hated it. Stuy kids are
-trained test takers. They're prepared for structure. This threw many
-for a loop.
-&lt;/p&gt;
-
-&lt;p&gt;
-I noticed this issue with some of the hackers at StuyHacks. Some
-beginners really had a hard time figuring out what they could do and
-what they should do.
-&lt;/p&gt;
-
-&lt;p&gt;
-A hackathon isn't a classroom so I think the problem is pretty easily
-remedied. Groups that were able to latch on to a good mentor seemed to
-get the guidance they needed. A beginners hackathon should make sure
-they have not only plenty of mentors but they should make sure that
-the mentors are prepped with a number of project ideas in a number of
-the standard beginner platforms. A hackathon could also provide an
-assortment of ideas in a list.
-&lt;/p&gt;
-
-&lt;p&gt;
-The second thing I noticed was at the end of the day as I was
-judging. It started with one particular group. They were pretty
-apologetic about their project. Basically because it wasn't
-finished. Personally, I thought what they accomplished in essentially
-7 hours was pretty impressive. What became clear as we talked is that
-this group was deathly afraid of failure. Their deepest fear at that
-moment was that I was going to give them high marks and they might
-have to show off their incomplete (yet rather impressive) project to a
-room full of strangers. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This fear of failure was prevalent in groups that ultimately didn't
-submit their projects for judging and it seemed to be common among
-students from high performing, high expectation schools where
-frequently one associates a test score or grade with ones value. I'm
-not happy to say that Stuy has always had this problem.
-&lt;/p&gt;
-
-&lt;p&gt;
-This isn't really a problem that a hackathon can or should be able to
-address. It's just something I noticed. It's a problem for schools and
-also for a society that's test obsessed.
-&lt;/p&gt;
-
-&lt;p&gt;
-I hope nobody reads too much into these observations. The day was a
-tremendous success. A whole bunch of kids had a great day working
-together to build cool things with technology. Congratulations to the
-StuyHacks team. They did a terrific job putting it all together. If
-you're a middle or high school student or know one, keep an eye on the
-StuyHacks &lt;a href="http://stuyhacks.com/"&gt;web page&lt;/a&gt; and make sure to attend their next event.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="hackathons" label="hackathons"/>
-    <category term="teaching" label="teaching"/>
-  </entry>
-  <entry>
-    <title>Early Interesting Problems - Happy Ladybugs</title>
-    <id>http://cestlaz.github.io/posts/happy_ladybug/</id>
-    <updated>2017-10-23T08:47:46-04:00</updated>
-    <published>2017-10-23T08:47:46-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/happy_ladybug/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-We all love interesting problems. The trouble is that it's hard to
-find suitably interesting problems for students when they're just
-learning the basics. In the very beginning the problems practically
-dictate the solution:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;loop over a list and add all the elements or calculate the sum of a
-list of integers.
-&lt;/li&gt;
-&lt;li&gt;Determine if  number is prime
-&lt;/li&gt;
-&lt;li&gt;Convert a word into pig-Latin
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-It's not that there's no thought involved in solving these but the
-students already know the mechanics of solving these by hand so it's a
-direct translation into a program.
-&lt;/p&gt;
-
-&lt;p&gt;
-This isn't a bad thing and it is important but it's fun when we get to the next
-level. I've found that a number of the &lt;a href="http://hackerrank.com"&gt;Hacker Rank&lt;/a&gt; archived
-competitions have "easy" problems that can be a good fit for
-beginners. One that I found and really like is &lt;a href="https://www.hackerrank.com/challenges/happy-ladybugs"&gt;Happy Ladybugs&lt;/a&gt; problem.
-&lt;/p&gt;
-
-&lt;p&gt;
-The problems is basically as follows:
-&lt;/p&gt;
-
-&lt;p&gt;
-You get a string of letters. Each letter represents a ladybug of a
-different color. Each letter also represents a location of the
-ladybug.  A space (or underscore in the actual problem) represents a
-free space. For example "AABC DDA" is a line of 2 A colored ladybugs
-followed by a B colored one, C colored one, a blank space, 2 D colored and then one
-more A colored. 
-&lt;/p&gt;
-
-&lt;p&gt;
-You can rearrange the line of ladybugs by swapping any ladybug with a
-blank space.
-&lt;/p&gt;
-
-&lt;p&gt;
-A ladybug is happy if it is next to another ladybug of the same
-color. The challenge is to determine if all the ladybugs can be made
-happy.
-&lt;/p&gt;
-
-&lt;p&gt;
-I like this problem because while it is non-trivial it is very
-approachable. 
-&lt;/p&gt;
-
-&lt;p&gt;
-To me, the key is that while you can rearrange the list you
-don't have to. You only have to determine if it is possible to make
-the ladybugs happy. You don't actually have to do so.
-&lt;/p&gt;
-
-&lt;p&gt;
-The edge cases are pretty easy to deal with - a string of length one
-or two but then a little thought is required.
-&lt;/p&gt;
-
-&lt;p&gt;
-The first insight is that if there are no spaces, you can't rearrange
-the ladybugs so all you have to do is scan through the string to test
-to see if every ladybug has a neighbor of the same color.
-&lt;/p&gt;
-
-&lt;p&gt;
-The next insight, and the big one is that if you have at least one
-space you can arbitrarily re-order the string. You can show this is
-possible  by using a single space to swap any two elements. 
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;space&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;someletter&lt;/span&gt;
-&lt;span class="n"&gt;someletter&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;someotherletter&lt;/span&gt;
-&lt;span class="n"&gt;someotherletter&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;space&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-The final insight is that since you can arbitrarily re-order the
-ladybugs as long as you have at least 2 of each color, you can make
-them all happy.
-&lt;/p&gt;
-
-&lt;p&gt;
-Since my class is currently just starting dictionaries in Python we
-solved this with lists and then transitioned to dictionaries.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here's a dictionary based solution:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;are_happy&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="sd"&gt;'''&lt;/span&gt;
-&lt;span class="sd"&gt;    This might miss some of the real edge cases in the hackerrank&lt;/span&gt;
-&lt;span class="sd"&gt;    problem. I haven't read the problem carefully in over a year and &lt;/span&gt;
-&lt;span class="sd"&gt;    forget what it specified for things like lists of only spaces,&lt;/span&gt;
-&lt;span class="sd"&gt;    lists with only one bug etc.&lt;/span&gt;
-
-&lt;span class="sd"&gt;    Also, the Hackerrank question uses an underscore (_) instead of a space.&lt;/span&gt;
-&lt;span class="sd"&gt;    '''&lt;/span&gt;
-    &lt;span class="c1"&gt;# handle a string of less than 2 ladybugs&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-	&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;False&lt;/span&gt;
-
-    &lt;span class="c1"&gt;# handle the string of 2 ladybugs - both must be the same and not a space&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-	&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="s1"&gt;' '&lt;/span&gt;
-
-
-    &lt;span class="c1"&gt;# handle the case of no spaces &lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;' '&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-	&lt;span class="c1"&gt;# no spaces, every item must be next to one of the same color&lt;/span&gt;
-	&lt;span class="c1"&gt;# so we loop from 1 to len-1 and for each item&lt;/span&gt;
-	&lt;span class="c1"&gt;# check the one before and the one after&lt;/span&gt;
-	&lt;span class="c1"&gt;# if we ever have an unhappy bug, we can just return False&lt;/span&gt;
-	&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-	    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
-		&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;False&lt;/span&gt;
-
-	&lt;span class="c1"&gt;# if we ever get here every bug has at least one neighbor of the same color&lt;/span&gt;
-	&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;
-
-    &lt;span class="c1"&gt;# if we get here it means there's at least one space so we can rearrange the bugs&lt;/span&gt;
-    &lt;span class="c1"&gt;# however we please so as long as there are at least 2 bugs of each color&lt;/span&gt;
-    &lt;span class="c1"&gt;# we can make them all happy&lt;/span&gt;
-
-    &lt;span class="c1"&gt;# replace the spaces with "" since we don't want to count them&lt;/span&gt;
-    &lt;span class="c1"&gt;# Since we know they were in the string we can rearrange but&lt;/span&gt;
-    &lt;span class="c1"&gt;# they're no longer needed&lt;/span&gt;
-    &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;" "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s2"&gt;""&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-    &lt;span class="c1"&gt;# tally up all the bugs to see if there are at least 2 of each&lt;/span&gt;
-    &lt;span class="n"&gt;bugcounts&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;bug&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-	&lt;span class="n"&gt;bugcounts&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setdefault&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bug&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# set to 0 the first time we see this key&lt;/span&gt;
-	&lt;span class="n"&gt;bugcounts&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;bug&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;bugcounts&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;bug&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
-
-
-    &lt;span class="n"&gt;counts&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bugcounts&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;values&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
-
-    &lt;span class="c1"&gt;# if there is any value of 1 in the counts then there's a lone ladybug&lt;/span&gt;
-    &lt;span class="c1"&gt;# that can't be made happy&lt;/span&gt;
-    &lt;span class="c1"&gt;# so we return True (happy) if there are 0 counts of 1 in our list &lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;counts&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;count&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; 
-
-
-&lt;span class="n"&gt;bugs&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;"abaccbe ff eggggggg"&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bugs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;are_happy&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;bugs&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-I love problems like these. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I just wish there was an easy way to find all contest problems of a
-certain level like "easy" or "medium." If anybody knows please share
-in the comments.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="cs" label="cs"/>
-    <category term="problems" label="problems"/>
-    <category term="teaching" label="teaching"/>
-  </entry>
-  <entry>
-    <title>Programming Idioms</title>
-    <id>http://cestlaz.github.io/posts/programming-idioms/</id>
-    <updated>2017-10-08T11:51:46-04:00</updated>
-    <published>2017-10-08T11:51:46-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/programming-idioms/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-I just read Jeff Yearout's recent post titled &lt;a href="http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html"&gt;The Beginner's Garden of
-Concepts&lt;/a&gt;. Not directly related but it got me thinking about
-programming idioms.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've been using the phrase "programming idiom" for years to describe a
-short useful recurring code construct. I didn't realize that it was
-officially "a thing" until doing a web search on the phrase years
-later.
-&lt;/p&gt;
-
-&lt;p&gt;
-As our students grow from newbies on I think it's helpful for them to
-see recurring and related patterns and programming idioms gives us a
-name to apply to many beginner patterns. An early idiom might be
-"finding the smallest in a list:"
-&lt;/p&gt;
-
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;dataset&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;12&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-
-&lt;span class="n"&gt;min_index&lt;/span&gt;  &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;)):&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;min_index&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
-	&lt;span class="n"&gt;min_index&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Another is the very similar and more general "do something on every
-item in a list:"
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;)):&lt;/span&gt;
-    &lt;span class="c1"&gt;# do something to or with dataset[i]&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-By talking about constructs like these as idioms it helps students see
-and develop coding patterns. It also helps them to build mental
-abstractions. Each of the above idioms are a few lines of code but
-each are also a single concept. Students learn to think of them as the
-concept.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-When students learn about list comprehensions in python they'll
-rewrite the "do something…" more like this:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;dataset&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-but the pattern or idea is the same.
-&lt;/p&gt;
-
-&lt;p&gt;
-Other early idioms might include swapping variables:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;tmp&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;
-&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;
-&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;tmp&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-and loops until an exit condition are met:
-&lt;/p&gt;
-
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;not_exit_condidtion&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="c1"&gt;# do stuff&lt;/span&gt;
-    &lt;span class="n"&gt;modify&lt;/span&gt; &lt;span class="n"&gt;variable&lt;/span&gt; &lt;span class="n"&gt;that&lt;/span&gt; &lt;span class="n"&gt;checks&lt;/span&gt; &lt;span class="nb"&gt;exit&lt;/span&gt; &lt;span class="n"&gt;condition&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Even more difficult concepts like recursion can be described in an
-idiomatic way:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;BASE_CASE&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-	&lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;something&lt;/span&gt;
-    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-	&lt;span class="n"&gt;new_x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;modify_to_eventually_get_to_base_case&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	&lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;new_x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Patterns like these, or idioms, come up over and over again. We don't
-have to explicitly mention them in our teaching but I think it's
-helpful to our students if we do.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="cs" label="cs"/>
-    <category term="programming" label="programming"/>
-    <category term="teaching" label="teaching"/>
-  </entry>
   <entry>
     <title>New Term New Tool - Thonny, a Python IDE</title>
     <id>http://cestlaz.github.io/posts/new-tool-thonny/</id>
@@ -517,9 +19,9 @@ helpful to our students if we do.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/new-tool-thonny/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-org4d99735" class="outline-2"&gt;
+&lt;h2 id="org4d99735"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4d99735"&gt;
 &lt;p&gt;
 Last year I &lt;a href="https://cestlaz.github.io/posts/new-term-new-tool-replit"&gt;wrote about&lt;/a&gt; &lt;a href="http://repl.it"&gt;repl.it&lt;/a&gt;, an online IDE that supports multiple
 languages. At the time it had some rudimentary classroom support and
@@ -545,15 +47,11 @@ Some of Thonny's highlights:
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;An integrated Python 3 virtual environment making for ease of
-installation and consistency across student installs
-&lt;/li&gt;
-&lt;li&gt;A debugger that shows how expressions are evaluated
-&lt;/li&gt;
+installation and consistency across student installs&lt;/li&gt;
+&lt;li&gt;A debugger that shows how expressions are evaluated&lt;/li&gt;
 &lt;li&gt;Great visualizations of function calls that make it easier to
-understand the call stack and scope
-&lt;/li&gt;
-&lt;li&gt;The ability to look at memory to understand references.
-&lt;/li&gt;
+understand the call stack and scope&lt;/li&gt;
+&lt;li&gt;The ability to look at memory to understand references.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -561,17 +59,9 @@ Rather than go into the gory details in text, I put together this
 video:
 &lt;/p&gt;
 
-&lt;div class="export"&gt;
-&lt;p&gt;
-
-&lt;/p&gt;
 
 
-&lt;p&gt;
-&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/lWaCl0WjNZI"&gt;https://www.youtube.com/embed/lWaCl0WjNZI&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
-&lt;/p&gt;
-
-&lt;/div&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lWaCl0WjNZI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
     <category term="cs" label="cs"/>
@@ -587,9 +77,9 @@ video:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/theseus%27s-curriculum/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-orgd031b2b" class="outline-2"&gt;
+&lt;h2 id="orgd031b2b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd031b2b"&gt;
 &lt;p&gt;
 With the school year starting I was originally planning on writing
 about my class rules. 
@@ -611,7 +101,7 @@ curriculum. It probably also isn't really teaching.
 
 &lt;p&gt;
 What about the more common case. Math curricula has basically been set
-for years. Algebra, Geometry &lt;sup&gt;&lt;a id="fnr.1" name="fnr.1" class="footref" href="http://cestlaz.github.io/posts/theseus%27s-curriculum/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;, and then Algebra 2
+for years. Algebra, Geometry &lt;sup&gt;&lt;a id="fnr.1" class="footref" href="http://cestlaz.github.io/posts/theseus%27s-curriculum/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;, and then Algebra 2
 and Trigonometry. Most books seem to be sequenced in a similar way
 and at least in the schools I know about, the math department has some
 document listing a day by day list of topics. This makes sense since
@@ -683,8 +173,8 @@ well.
 &lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
 &lt;div id="text-footnotes"&gt;
 
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" name="fn.1" class="footnum" href="http://cestlaz.github.io/posts/theseus%27s-curriculum/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;p&gt;which is really logic and deductive
-reasoning using Euclidean Geometry as platform&lt;/p&gt;&lt;/div&gt;
+&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" class="footnum" href="http://cestlaz.github.io/posts/theseus%27s-curriculum/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;which is really logic and deductive
+reasoning using Euclidean Geometry as platform&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
@@ -702,9 +192,9 @@ reasoning using Euclidean Geometry as platform&lt;/p&gt;&lt;/div&gt;
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/teaching-ap-first-time/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-orgfdc8a48" class="outline-2"&gt;
+&lt;h2 id="orgfdc8a48"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgfdc8a48"&gt;
 &lt;p&gt;
 I got  an email from a friend the other day. Among other things, he
 mentioned that he would be teaching APCS-A for the first time this
@@ -835,9 +325,9 @@ lot more than if I wasn't there."
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/three-times/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-org0763220" class="outline-2"&gt;
+&lt;h2 id="org0763220"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0763220"&gt;
 &lt;p&gt;
 &lt;a href="https://twitter.com/CompSci4All/with_replies?lang=en"&gt;Brenda Wilkerson&lt;/a&gt;, Director of CS and IT education for Chicago public
 schools was one of the keynote speakers at this year's CSTA
@@ -946,36 +436,22 @@ reasonable to require that they do so given the resources.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/cs-teacher-eval/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-org62f8cca" class="outline-2"&gt;
+&lt;h2 id="org62f8cca"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org62f8cca"&gt;
 &lt;p&gt;
 Another set of tweets god me thinking:
 &lt;/p&gt;
 
-&lt;div class="export"&gt;
-&lt;p&gt;
-&amp;lt;blockquote class="twitter-tweet" data-lang="en"&amp;gt;&amp;lt;p lang="en"
-dir="ltr"&amp;gt;How do we help school administrators help and evaluate CS
-teachers? asks &amp;lt;a href="&lt;a href="https://twitter.com/lsudol"&gt;https://twitter.com/lsudol&lt;/a&gt;"&amp;gt;@lsudol&amp;lt;/a&amp;gt; of &amp;lt;a
-href="&lt;a href="https://twitter.com/CSForAll"&gt;https://twitter.com/CSForAll&lt;/a&gt;"&amp;gt;@CSForAll&amp;lt;/a&amp;gt; &amp;lt;a
-href="&lt;a href="https://twitter.com/hashtag/csta2017?src=hash"&gt;https://twitter.com/hashtag/csta2017?src=hash&lt;/a&gt;"&amp;gt;#csta2017&amp;lt;/a&amp;gt;
-Many don&amp;amp;#39;t understand CS&amp;lt;/p&amp;gt;&amp;amp;mdash; Alfred Thompson (@alfredtwo)
-&amp;lt;a href="&lt;a href="https://twitter.com/alfredtwo/status/884427047635795969"&gt;https://twitter.com/alfredtwo/status/884427047635795969&lt;/a&gt;"&amp;gt;July
-10, 2017&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt; &amp;lt;script async
-src="//platform.twitter.com/widgets.js" charset="utf-8"&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/p&gt;
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;How do we help school administrators help and evaluate CS
+teachers? asks &lt;a href="https://twitter.com/lsudol"&gt;@lsudol&lt;/a&gt; of &lt;a href="https://twitter.com/CSForAll"&gt;@CSForAll&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/csta2017?src=hash"&gt;#csta2017&lt;/a&gt;
+Many don't understand CS&lt;/p&gt;— Alfred Thompson (@alfredtwo)
+&lt;a href="https://twitter.com/alfredtwo/status/884427047635795969"&gt;July
+10, 2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
 
-&lt;p&gt;
-&amp;lt;blockquote class="twitter-tweet" data-lang="en"&amp;gt;&amp;lt;p lang="en"
-dir="ltr"&amp;gt;If the current system is any indication, checklists are not
-the answer&amp;lt;/p&amp;gt;&amp;amp;mdash; Mike Zamansky (@zamansky) &amp;lt;a
-href="&lt;a href="https://twitter.com/zamansky/status/886220912110043136"&gt;https://twitter.com/zamansky/status/886220912110043136&lt;/a&gt;"&amp;gt;July 15,
-2017&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt; &amp;lt;script async
-src="//platform.twitter.com/widgets.js" charset="utf-8"&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/p&gt;
-
-&lt;/div&gt;
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;If the current system is any indication, checklists are not
+the answer&lt;/p&gt;— Mike Zamansky (@zamansky) &lt;a href="https://twitter.com/zamansky/status/886220912110043136"&gt;July 15,
+2017&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
 
 &lt;p&gt;
 I get the intent. CS teachers should be evaluated by people who have
@@ -1109,9 +585,9 @@ open mind and look at the big picture.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/teacher-to-cs-or-cs-to-teacher/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-org5506823" class="outline-2"&gt;
+&lt;h2 id="org5506823"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5506823"&gt;
 &lt;p&gt;
 Is it easier to take CS people and teach them to teach or is it easier
 to take teachers and teach them CS?
@@ -1125,23 +601,12 @@ The question gets batted around from time to time.
 This time via twitter:
 &lt;/p&gt;
 
-&lt;div class="export"&gt;
-&lt;p&gt;
 
-&lt;/p&gt;
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Some think it's easier to teach a teacher to teach CS than to teach a CS pro to teach. &lt;a href="https://twitter.com/alfredtwo"&gt;@alfredtwo&lt;/a&gt; is not one of them &lt;a href="https://t.co/QCUP8d8llZ"&gt;https://t.co/QCUP8d8llZ&lt;/a&gt;&lt;/p&gt;— Diane Levitt (@diane_levitt) &lt;a href="https://twitter.com/diane_levitt/status/881874056911388673"&gt;July 3, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
 
-&lt;p&gt;
-&amp;lt;blockquote class="twitter-tweet" data-lang="en"&amp;gt;&amp;lt;p lang="en" dir="ltr"&amp;gt;Some think it&amp;amp;#39;s easier to teach a teacher to teach CS than to teach a CS pro to teach. &amp;lt;a href="&lt;a href="https://twitter.com/alfredtwo"&gt;https://twitter.com/alfredtwo&lt;/a&gt;"&amp;gt;@alfredtwo&amp;lt;/a&amp;gt; is not one of them &amp;lt;a href="&lt;a href="https://t.co/QCUP8d8llZ"&gt;https://t.co/QCUP8d8llZ&lt;/a&gt;"&amp;gt;&lt;a href="https://t.co/QCUP8d8llZ"&gt;https://t.co/QCUP8d8llZ&lt;/a&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&amp;amp;mdash; Diane Levitt (@diane&lt;sub&gt;levitt&lt;/sub&gt;) &amp;lt;a href="&lt;a href="https://twitter.com/diane_levitt/status/881874056911388673"&gt;https://twitter.com/diane_levitt/status/881874056911388673&lt;/a&gt;"&amp;gt;July 3, 2017&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt;
-&amp;lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-&amp;lt;blockquote class="twitter-tweet" data-lang="en"&amp;gt;&amp;lt;p lang="en" dir="ltr"&amp;gt;Agreed. It takes a lot of work. More than a week long workshop.&amp;lt;/p&amp;gt;&amp;amp;mdash; Alfred Thompson (@alfredtwo) &amp;lt;a href="&lt;a href="https://twitter.com/alfredtwo/status/882243591090962432"&gt;https://twitter.com/alfredtwo/status/882243591090962432&lt;/a&gt;"&amp;gt;July 4, 2017&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt;
-&amp;lt;script async src="//platform.twitter.com/widgets.js"
-charset="utf-8"&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/p&gt;
-
-&lt;/div&gt;
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Agreed. It takes a lot of work. More than a week long workshop.&lt;/p&gt;— Alfred Thompson (@alfredtwo) &lt;a href="https://twitter.com/alfredtwo/status/882243591090962432"&gt;July 4, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
 
 &lt;p&gt;
 The conversation was referring to blog posts by &lt;a href="http://blog.acthompson.net/2017/06/become-computer-science-teacher-in-five.html?spref=tw&amp;amp;m=1"&gt;Alfred Thompson&lt;/a&gt; and &lt;a href="https://gflint.wordpress.com/2017/06/20/a-week-of-in-service-another-python-course/"&gt;Garth flint&lt;/a&gt;. 
@@ -1196,12 +661,9 @@ in not two but three areas:
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;CS Content
-&lt;/li&gt;
-&lt;li&gt;CS Pedagogy
-&lt;/li&gt;
-&lt;li&gt;General education and pedagogy
-&lt;/li&gt;
+&lt;li&gt;CS Content&lt;/li&gt;
+&lt;li&gt;CS Pedagogy&lt;/li&gt;
+&lt;li&gt;General education and pedagogy&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -1231,11 +693,11 @@ no less from our CS teachers.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/disclosing-bugs/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-org7448796" class="outline-2"&gt;
+&lt;h2 id="org7448796"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7448796"&gt;
 &lt;p&gt;
-Over on Facebook, a fellow CS educator &lt;sup&gt;&lt;a id="fnr.1" name="fnr.1" class="footref" href="http://cestlaz.github.io/posts/disclosing-bugs/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt; made a comment on something he
+Over on Facebook, a fellow CS educator &lt;sup&gt;&lt;a id="fnr.1" class="footref" href="http://cestlaz.github.io/posts/disclosing-bugs/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt; made a comment on something he
 wanted to try with his students this summer: having the students
 pre-disclose bugs when they submit their projects.
 &lt;/p&gt;
@@ -1250,22 +712,19 @@ towers anyway so here goes…
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;div id="outline-container-org0478403" class="outline-2"&gt;
+&lt;h2 id="org0478403"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0478403"&gt;
 &lt;p&gt;
 At a very basic level, I ask my students to provide a roadmap to any
 project they submit - usually in a readme file. I basically ask:
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;How to use the project
-&lt;/li&gt;
-&lt;li&gt;What's cool and I should make sure to check out
-&lt;/li&gt;
+&lt;li&gt;How to use the project&lt;/li&gt;
+&lt;li&gt;What's cool and I should make sure to check out&lt;/li&gt;
 &lt;li&gt;What doesn't work, where were the sticking points and what's the
-status.
-&lt;/li&gt;
+status.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -1303,9 +762,9 @@ support them.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-sec-3" class="outline-2"&gt;
-&lt;h2 id="sec-3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;div id="outline-container-orgd31d93c" class="outline-2"&gt;
+&lt;h2 id="orgd31d93c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd31d93c"&gt;
 &lt;p&gt;
 So, does this work? Yes but with some caveats. It works better once
 the class and teacher know each other. If the students trust the
@@ -1326,10 +785,10 @@ it's great and when it doesn't, it's still pretty good.
 &lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
 &lt;div id="text-footnotes"&gt;
 
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" name="fn.1" class="footnum" href="http://cestlaz.github.io/posts/disclosing-bugs/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;p class="footpara"&gt;
+&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" class="footnum" href="http://cestlaz.github.io/posts/disclosing-bugs/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;&lt;p class="footpara"&gt;
 I'm not sharing names from the Facebook post because it was
 made in a semi-private forum and I haven't asked permission.
-&lt;/p&gt;&lt;/div&gt;
+&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
@@ -1346,9 +805,9 @@ made in a semi-private forum and I haven't asked permission.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/python-editors/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-org440964b" class="outline-2"&gt;
+&lt;h2 id="org440964b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org440964b"&gt;
 &lt;p&gt;
 Earlier today I read Garth Flint's latest post on &lt;a href="https://gflint.wordpress.com/2017/05/25/python-editors-simple-wins/%0A"&gt;choosing a Python
 environment for his classes&lt;/a&gt;. While our classes and populations are
@@ -1471,12 +930,9 @@ Python development (each with a video) as well as my series on how I
 use Emacs in general:
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs/"&gt;http://cestlaz.github.io/stories/emacs/&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/using-emacs-12-python"&gt;http://cestlaz.github.io/posts/using-emacs-12-python&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/using-emacs-13-yasnippet"&gt;http://cestlaz.github.io/posts/using-emacs-13-yasnippet&lt;/a&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs/"&gt;http://cestlaz.github.io/stories/emacs/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/using-emacs-12-python"&gt;http://cestlaz.github.io/posts/using-emacs-12-python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/posts/using-emacs-13-yasnippet"&gt;http://cestlaz.github.io/posts/using-emacs-13-yasnippet&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
@@ -1492,9 +948,9 @@ use Emacs in general:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/design-course-with-constraints/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-org6de3776" class="outline-2"&gt;
+&lt;h2 id="org6de3776"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6de3776"&gt;
 &lt;p&gt;
 One of the hats I wear at Hunter is to build a new &lt;a href="https://cestlaz.github.io/posts/2016-03-29-hunter-cs.html"&gt;CS Honors program&lt;/a&gt;
 and to bring my particular brand of insanity to &lt;a href="https://cestlaz.github.io/posts/hunter-cs-important"&gt;Hunter College CS&lt;/a&gt; as a
@@ -1567,18 +1023,18 @@ Some of the other difficulties included:
 &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-sec-1-1" class="outline-3"&gt;
-&lt;h3 id="sec-1-1"&gt;The language was C++:&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-1-1"&gt;
+&lt;div id="outline-container-org53ef7e9" class="outline-3"&gt;
+&lt;h3 id="org53ef7e9"&gt;The language was C++:&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org53ef7e9"&gt;
 &lt;p&gt;
 Since the labs were to be done in C++, I had to use that as the
 language for the class. That meant no "fun" libraries or frameworks.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-sec-1-2" class="outline-3"&gt;
-&lt;h3 id="sec-1-2"&gt;The labs were solo assignments:&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-1-2"&gt;
+&lt;div id="outline-container-org6f3d337" class="outline-3"&gt;
+&lt;h3 id="org6f3d337"&gt;The labs were solo assignments:&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org6f3d337"&gt;
 &lt;p&gt;
 Since the labs were solo projects and there was one per week it made
 it very difficult to structure group experiences. I wanted to cover
@@ -1588,9 +1044,9 @@ lab being handed down each week.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-sec-1-3" class="outline-3"&gt;
-&lt;h3 id="sec-1-3"&gt;Someone else dictated the language sequence:&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-1-3"&gt;
+&lt;div id="outline-container-org0adb1bd" class="outline-3"&gt;
+&lt;h3 id="org0adb1bd"&gt;Someone else dictated the language sequence:&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org0adb1bd"&gt;
 &lt;p&gt;
 The labs were designed to support what the students were learning in
 135 and were only distributed a day or two before the week was to
@@ -1599,9 +1055,9 @@ frequently. This should be easier next year.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-sec-1-4" class="outline-3"&gt;
-&lt;h3 id="sec-1-4"&gt;Labs didn't match the supplemental material:&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-1-4"&gt;
+&lt;div id="outline-container-org1680cdb" class="outline-3"&gt;
+&lt;h3 id="org1680cdb"&gt;Labs didn't match the supplemental material:&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org1680cdb"&gt;
 &lt;p&gt;
 The best example of this was when we were talking about testing. We
 ended up using &lt;a href="https://github.com/philsquared/Catch"&gt;Catch&lt;/a&gt; as a testing framework. The problem was that
@@ -1706,9 +1162,9 @@ but sometimes just a talk on the side. Sometimes many years later.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/thumb_clickers/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-orgac3d07b" class="outline-2"&gt;
+&lt;h2 id="orgac3d07b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgac3d07b"&gt;
 &lt;p&gt;
 Last Friday, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about the woes of &lt;a href="https://computinged.wordpress.com/2017/03/31/the-need-for-better-software-and-systems-to-support-active-cs-learning/%0A"&gt;using clickers&lt;/a&gt; in a
 class. The amount of effort required to use his school's approved
@@ -1781,23 +1237,18 @@ Thumbs.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;div id="outline-container-org8f17518" class="outline-2"&gt;
+&lt;h2 id="org8f17518"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8f17518"&gt;
 &lt;p&gt;
 Periodically, I'll poll my class.
 &lt;/p&gt;
 
-&lt;div class="export"&gt;
-&lt;p&gt;
-&amp;lt;span&amp;gt;
-&amp;lt;img width="30%"src="../../img/thumbs/sidethumb.png"&amp;gt;
-&amp;lt;img width="30%" src="../../img/thumbs/upthumb.jpg"&amp;gt;
-&amp;lt;img width="30%" src="../../img/thumbs/downthumb.jpg"&amp;gt;
-&amp;lt;/spam&amp;gt;
-&lt;/p&gt;
+&lt;span&gt;
+&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/sidethumb.png"&gt;
+&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/upthumb.jpg"&gt;
+&lt;img width="30%" src="http://cestlaz.github.io/img/thumbs/downthumb.jpg"&gt;
 
-&lt;/div&gt;
 
 &lt;p&gt;
 Thumb to the side? Everything's OK. Keep going as you're going. I get
@@ -1823,10 +1274,8 @@ The downsides?
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;The class has to have a level of comfort so that students vote
-honestly and don't just give you positive feedback.
-&lt;/li&gt;
-&lt;li&gt;No data collection.
-&lt;/li&gt;
+honestly and don't just give you positive feedback.&lt;/li&gt;
+&lt;li&gt;No data collection.&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -1834,19 +1283,14 @@ honestly and don't just give you positive feedback.
 The upsides?
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;quick
-&lt;/li&gt;
-&lt;li&gt;cheap
-&lt;/li&gt;
-&lt;li&gt;works on any topic on the fly
-&lt;/li&gt;
+&lt;li&gt;quick&lt;/li&gt;
+&lt;li&gt;cheap&lt;/li&gt;
+&lt;li&gt;works on any topic on the fly&lt;/li&gt;
 &lt;li&gt;even if the votes are artificially skewed towards positive, it does
 forces the class to be at least a little attentive and to engage in
-some physical response
-&lt;/li&gt;
+some physical response&lt;/li&gt;
 &lt;li&gt;can get analog responses by allowing students to adjust wrist
-rotation
-&lt;/li&gt;
+rotation&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -1870,7 +1314,7 @@ I don't teach large lectures so I don't know how this would work in a
 huge class. I'd imagine it's still worth it given that it's so low
 friction and low cost of entry even if it's not perfect.
 &lt;/p&gt;
-&lt;/div&gt;
+&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;</summary>
     <category term="pedagogy" label="pedagogy"/>
     <category term="teaching" label="teaching"/>
@@ -2025,15 +1469,15 @@ Day when the change really sinks in.
 Soon, I'll start posting CS teaching content again but for today, I
 want to tip my cap to all the public school teachers in NY that are
 going back to work today and who will shortly be teaching their five classes
-of thirty four kids each &lt;sup&gt;&lt;a id="fnr.1" name="fnr.1" class="footref" href="http://cestlaz.github.io/posts/first-day-back/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;.
+of thirty four kids each &lt;sup&gt;&lt;a id="fnr.1" class="footref" href="http://cestlaz.github.io/posts/first-day-back/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;.
 &lt;/p&gt;
 &lt;div id="footnotes"&gt;
 &lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
 &lt;div id="text-footnotes"&gt;
 
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" name="fn.1" class="footnum" href="http://cestlaz.github.io/posts/first-day-back/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;p&gt;also tipping my cap to my favorite TJ
+&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" class="footnum" href="http://cestlaz.github.io/posts/first-day-back/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;also tipping my cap to my favorite TJ
 teacher who's students are back today. I got called to task for
-failing to mention her on my facebook shoutout.&lt;/p&gt;&lt;/div&gt;
+failing to mention her on my facebook shoutout.&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
@@ -2049,9 +1493,9 @@ failing to mention her on my facebook shoutout.&lt;/p&gt;&lt;/div&gt;
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/end-to-act-1/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-org75e2bcb" class="outline-2"&gt;
+&lt;h2 id="org75e2bcb"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org75e2bcb"&gt;
 
 &lt;div class="figure"&gt;
 &lt;p&gt;&lt;img src="http://cestlaz.github.io/img/end-act-1/facebook.jpg" alt="facebook.jpg" align="center"&gt;

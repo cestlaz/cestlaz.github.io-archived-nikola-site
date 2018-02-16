@@ -3,189 +3,13 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about csed</title>
   <id>http://cestlaz.github.io/categories/csed.atom</id>
-  <updated>2017-12-22T12:59:44Z</updated>
+  <updated>2017-09-23T16:15:33Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/csed.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/csed/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
-  <entry>
-    <title>NYC CS4All - This Is Not The CS We're Looking For</title>
-    <id>http://cestlaz.github.io/posts/this-is-not-the-cs-were-looking-for/</id>
-    <updated>2017-09-29T10:40:24-04:00</updated>
-    <published>2017-09-29T10:40:24-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/this-is-not-the-cs-were-looking-for/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-It's no secret that I'm something of an old curmudgeon in the K12 CS
-Education world and I've been critical of a number of initiatives and
-organizations over the years but I've been pretty quiet on the CS4All
-movement in NYC Department of Education. I've had and any number of
-concerns though.
-&lt;/p&gt;
-
-&lt;p&gt;
-This past week at the inaugural meeting of New York City's CSTA
-chapter we got a taste of the &lt;a href="http://blueprint.cs4all.nyc/"&gt;NYC CS4All Blueprint&lt;/a&gt;. A highlight was
-this video:
-&lt;/p&gt;
-
-&lt;div class="export"&gt;
-&lt;p&gt;
-&amp;lt;iframe src="&lt;a href="https://player.vimeo.com/video/224494221"&gt;https://player.vimeo.com/video/224494221&lt;/a&gt;" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
-&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;
-Along with the &lt;a href="http://blueprint.cs4all.nyc/resources/3/%0A"&gt;supporting web page&lt;/a&gt;. 
-&lt;/p&gt;
-
-&lt;p&gt;
-TL;DR - in a elementary school CS class, the students kept tapping out
-drumbeats on the desk because they had drumming class the period
-prior. Now the drumming teacher is teaching rhythms that match
-segments of HTML so the students can tap and chant the line as a
-memory aid. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Sure, it's nice when teachers can work together to support each other
-but at the end of the day this is a mnemonic aid to memorize
-HTML. Nothing particularly innovative here. Mnemonics like this are
-great until there are too many to keep track of or ones that are too
-similar. 
-&lt;/p&gt;
-
-&lt;p&gt;
-The part that saddened me was that this  was the video that was
-chosen  as a highlight, an exemplar. It was OK but there was
-nothing new or innovative. What was worse was that there was no
-computer science.
-&lt;/p&gt;
-
-&lt;p&gt;
-The kids were memorizing HTML. As we watched the video, my neighbor
-nudged me and asked "why are they memorizing HTML?" I would ask the
-same question. Now, I do think that HTML or some other mechanism to
-create content that can be shared with the world is important. Having
-students get there work out in the word can be tremendously rewarding
-and motivating. Also, although I'm not sold on it, some say that HTML
-is a good stepping stone to CS but still. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Let's try an experiment.
-&lt;/p&gt;
-
-&lt;p&gt;
-Imagine that lesson but instead of HTML the kids were learning
-Microsoft word so instead of a chant for &lt;code&gt;&amp;lt;a href=""&amp;gt;&amp;lt;/a&amp;gt;&lt;/code&gt; you have a
-chant for putting a link into a word document or instead of a chant
-for &lt;code&gt;&amp;lt;b&amp;gt;somethingbold&amp;lt;/b&amp;gt;&lt;/code&gt; you have a chant like
-&lt;code&gt;control-b-typestuff-then-control-b&lt;/code&gt;. Same lesson, same technique,
-still no CS. You could also say that this was just one video and maybe
-most of the year is about real CS. Maybe, but then why highlight this
-on the CS4All web site as a featured resource.
-&lt;/p&gt;
-
-&lt;p&gt;
-This was disappointing but not surprising. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Some will say that kids aren't ready for hardcore CS at that
-age. That's fine. We can have that discussion but if CS is appropriate
-for whatever grade was in the video then it should be real CS. We can
-also have endless discussing about what that is but memorizing HTML is
-not it.
-&lt;/p&gt;
-
-&lt;p&gt;
-I wondered if the video was representative so I looked at &lt;a href="http://blueprint.cs4all.nyc/resources/5/"&gt;another&lt;/a&gt;. It
-turned out this was also a lesson on HTML and again the video could of
-been about any number of subject areas. I will give this one credit
-for highlighting that you can do "unplugged" activities but it wasn't
-really a CS activity.
-&lt;/p&gt;
-
-&lt;p&gt;
-Then there was &lt;a href="http://blueprint.cs4all.nyc/resources/15/"&gt;this one&lt;/a&gt;. No video here but how we structure a CS
-lesson. We have this outline:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Warm-up
-&lt;/li&gt;
-&lt;li&gt;Mini lesson
-&lt;/li&gt;
-&lt;li&gt;Independent work time
-&lt;/li&gt;
-&lt;li&gt;Share session
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-Or, as we used to say back in the stone age:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Do Now
-&lt;/li&gt;
-&lt;li&gt;Instructional activity
-&lt;/li&gt;
-&lt;li&gt;practice
-&lt;/li&gt;
-&lt;li&gt;summary
-&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-Nothing new and nothing CS here. I used that model when I taught math
-but deviated from it more and more as I developed my CS teaching
-chops.
-&lt;/p&gt;
-
-&lt;p&gt;
-Finally I looked at &lt;a href="http://blueprint.cs4all.nyc/resources/24/%0A"&gt;this one&lt;/a&gt;. For full disclosure I have to say that
-Eric, the teacher, is a friend of mine and I &lt;b&gt;&lt;b&gt;know&lt;/b&gt;&lt;/b&gt; he's a dynamite
-teacher and I know he knows his stuff.
-&lt;/p&gt;
-
-&lt;p&gt;
-This video, however was all about differentiation. Just like the other
-resources, there's nothing wrong with them per se but there's not
-really about CS. You could reskin them for any subject. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I also agree with a lot of what Eric says in the video but as CS
-Standards take hold and standardized exams become the norm we'll find
-that individualized instruction and meeting students where they are
-is in direct conflict with the testing that comes with standards. I'll
-talk more about that in my standards rant that I keep putting off
-writing.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-Sure, the resources site has  a page with concepts like algorithms and
-many schools, for better or worse, in the upper grades just fall back
-on AP offerings but the more I dig the more it's apparent to me that
-CS4All in NY will be more about getting something into every classroom
-rather than something appropriate and good.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="csed" label="csed"/>
-    <category term="curriculum" label="curriculum"/>
-  </entry>
   <entry>
     <title>The Cost of AP Exams</title>
     <id>http://cestlaz.github.io/posts/cost-of-ap-exams/</id>
@@ -195,9 +19,9 @@ rather than something appropriate and good.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/cost-of-ap-exams/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-org8c82fc3" class="outline-2"&gt;
+&lt;h2 id="org8c82fc3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8c82fc3"&gt;
 &lt;p&gt;
 Now that I'm back from vacation and summer's winding down I thought
 I'd start getting back to more classroom related posts. I still have a
@@ -300,20 +124,15 @@ students taking high stakes exams.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/languages-or-cs/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-org150339f" class="outline-2"&gt;
+&lt;h2 id="org150339f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org150339f"&gt;
 &lt;p&gt;
 I was part of this conversation the other day:
 &lt;/p&gt;
 
-&lt;div class="export"&gt;
-&lt;p&gt;
-&amp;lt;blockquote class="twitter-tweet" data-lang="en"&amp;gt;&amp;lt;p lang="en" dir="ltr"&amp;gt;When science teachers asked me if I taught AP Java I&amp;amp;#39;d always respond by asking them if they taught AP Microscope.&amp;lt;/p&amp;gt;&amp;amp;mdash; Mike Zamansky (@zamansky) &amp;lt;a href="&lt;a href="https://twitter.com/zamansky/status/883327927831711745"&gt;https://twitter.com/zamansky/status/883327927831711745&lt;/a&gt;"&amp;gt;July 7, 2017&amp;lt;/a&amp;gt;&amp;lt;/blockquote&amp;gt;
-&amp;lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&amp;gt;&amp;lt;/script&amp;gt;
-&lt;/p&gt;
-
-&lt;/div&gt;
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;When science teachers asked me if I taught AP Java I'd always respond by asking them if they taught AP Microscope.&lt;/p&gt;— Mike Zamansky (@zamansky) &lt;a href="https://twitter.com/zamansky/status/883327927831711745"&gt;July 7, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
 
 &lt;p&gt;
 I always use that line to emphasize that I teach CS - a way of
@@ -396,9 +215,9 @@ idea.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/teachers-you-arent-your-test-scores/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-orgf360c56" class="outline-2"&gt;
+&lt;h2 id="orgf360c56"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf360c56"&gt;
 &lt;p&gt;
 AP scores just came out. As usual, I see the posts and take part in
 conversations where teachers talk about their results. Some are happy
@@ -499,9 +318,9 @@ your students and your conscience be your guide.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse-2017-recap/"/>
-    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+    <summary type="html">&lt;div id="outline-container-org3fa26b0" class="outline-2"&gt;
+&lt;h2 id="org3fa26b0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3fa26b0"&gt;
 &lt;p&gt;
 As a high school teacher, I was never able to attend SIGCSE, the
 conference of the ACM's Special Interest Group on Computer Science
@@ -519,20 +338,14 @@ with people about over the conference including:
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;The path I use to teach git and why GitHub a good teaching tool
-(my talk).
-&lt;/li&gt;
+(my talk).&lt;/li&gt;
 &lt;li&gt;The relationship of different CS Ed stakeholders - teachers,
-researchers, organizations, etc.
-&lt;/li&gt;
+researchers, organizations, etc.&lt;/li&gt;
 &lt;li&gt;Teaching at the high school level vs college - perceptions and
-reality.
-&lt;/li&gt;
-&lt;li&gt;The challenges of tech tool adoption in schools.
-&lt;/li&gt;
-&lt;li&gt;What's going on in K12 CS Certification.
-&lt;/li&gt;
-&lt;li&gt;Maybe some other stuff.
-&lt;/li&gt;
+reality.&lt;/li&gt;
+&lt;li&gt;The challenges of tech tool adoption in schools.&lt;/li&gt;
+&lt;li&gt;What's going on in K12 CS Certification.&lt;/li&gt;
+&lt;li&gt;Maybe some other stuff.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -541,9 +354,9 @@ Today, some overall thoughts.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;The good&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;div id="outline-container-org0f25fd1" class="outline-2"&gt;
+&lt;h2 id="org0f25fd1"&gt;The good&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0f25fd1"&gt;
 &lt;p&gt;
 As with many conferences, the "hallway track" along with receptions
 sponsored by &lt;a href="https://csnyc.org/our-work/cs4all"&gt;the CS4All consurtium&lt;/a&gt;, &lt;a href="http://tealsk12.org"&gt;TEALS&lt;/a&gt;, &lt;a href="http://code.org"&gt;Code.org&lt;/a&gt; were terrific. I
@@ -576,9 +389,9 @@ probability and statistics in CS Ed, and aspects of  &lt;a href="http://dl.acm.o
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-sec-3" class="outline-2"&gt;
-&lt;h2 id="sec-3"&gt;The bad&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;div id="outline-container-org7d3809d" class="outline-2"&gt;
+&lt;h2 id="org7d3809d"&gt;The bad&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7d3809d"&gt;
 &lt;p&gt;
 The biggest downside to me was that I found very little value added in
 a number of the paper sessions over just reading the papers. Part of
@@ -594,9 +407,9 @@ or the book to his class.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-sec-4" class="outline-2"&gt;
-&lt;h2 id="sec-4"&gt;Other thoughts&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-4"&gt;
+&lt;div id="outline-container-orgc03e356" class="outline-2"&gt;
+&lt;h2 id="orgc03e356"&gt;Other thoughts&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc03e356"&gt;
 &lt;p&gt;
 One paper presentation I very much liked was &lt;a href="http://dl.acm.org/citation.cfm?id=3017701&amp;amp;CFID=738971273&amp;amp;CFTOKEN=22106692"&gt;Exam Wrappers: Not a
 Silver Bullet&lt;/a&gt; presented by &lt;a href="https://michellecraig.github.io/"&gt;Michelle Craig&lt;/a&gt; and &lt;a href="http://pages.cpsc.ucalgary.ca/~bdstephe/"&gt;Ben Stephenson&lt;/a&gt;. I
