@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link rel="self" type="application/rss+xml" href="http://cestlaz.github.io/rss.xml"></atom:link><language>en</language><lastBuildDate>Fri, 16 Feb 2018 13:02:27 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 41 Pandoc</title><link>http://cestlaz.github.io/posts/using-emacs-41-pandoc/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9c4127f" class="outline-2"&gt;
-&lt;h2 id="org9c4127f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9c4127f"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 16 Feb 2018 13:07:13 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 41 Pandoc</title><link>http://cestlaz.github.io/posts/using-emacs-41-pandoc/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org57c0c68" class="outline-2"&gt;
+&lt;h2 id="org57c0c68"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org57c0c68"&gt;
 &lt;p&gt;
 Another Emacs quick hit today. Actually, not really Emacs. Today's
 video is a quick, really quick, look at &lt;a href="https://pandoc.org/"&gt;Pandoc&lt;/a&gt;. Pandoc is a document
@@ -74,9 +74,9 @@ If you haven't checked out pandoc, you should.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/qVUZsH-MDRM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><guid>http://cestlaz.github.io/posts/using-emacs-41-pandoc/</guid><pubDate>Tue, 13 Feb 2018 12:05:45 GMT</pubDate></item><item><title>Google Sheets</title><link>http://cestlaz.github.io/posts/google-sheets/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org440254c" class="outline-2"&gt;
-&lt;h2 id="org440254c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org440254c"&gt;
+&lt;/div&gt;</description><category>emacs</category><guid>http://cestlaz.github.io/posts/using-emacs-41-pandoc/</guid><pubDate>Tue, 13 Feb 2018 12:05:45 GMT</pubDate></item><item><title>Google Sheets</title><link>http://cestlaz.github.io/posts/google-sheets/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3278464" class="outline-2"&gt;
+&lt;h2 id="org3278464"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3278464"&gt;
 &lt;p&gt;
 I make regular use of Google's office suite. I use Google forms all
 the time to collect data, Google docs when I have to leave Emacs for
@@ -171,9 +171,9 @@ function sendGrades(){
 }
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>admin</category><guid>http://cestlaz.github.io/posts/google-sheets/</guid><pubDate>Mon, 12 Feb 2018 18:28:28 GMT</pubDate></item><item><title>Using Emacs 40 - Atomic Chrome</title><link>http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf521984" class="outline-2"&gt;
-&lt;h2 id="orgf521984"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf521984"&gt;
+&lt;/div&gt;</description><category>admin</category><guid>http://cestlaz.github.io/posts/google-sheets/</guid><pubDate>Mon, 12 Feb 2018 18:28:28 GMT</pubDate></item><item><title>Using Emacs 40 - Atomic Chrome</title><link>http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org50706fc" class="outline-2"&gt;
+&lt;h2 id="org50706fc"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org50706fc"&gt;
 &lt;p&gt;
 Thanks to everyone who voted for topics or commented with suggestions
 for videos. I'll try to get to them in the coming months.
@@ -186,9 +186,9 @@ browser extension that allows you to edit web form inputs with Emacs.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgc86f7f8" class="outline-2"&gt;
-&lt;h2 id="orgc86f7f8"&gt;UPDATE&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc86f7f8"&gt;
+&lt;div id="outline-container-org3eef295" class="outline-2"&gt;
+&lt;h2 id="org3eef295"&gt;UPDATE&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3eef295"&gt;
 &lt;p&gt;
 I forgot to mention that you can set a shortcut key, at least in chrome rather than
 clicking on the icon. This makes things much smoother.
@@ -210,9 +210,9 @@ Enjoy:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/wyPZws66Sic" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/</guid><pubDate>Wed, 31 Jan 2018 11:00:00 GMT</pubDate></item><item><title>On Textbooks</title><link>http://cestlaz.github.io/posts/textbooks/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7ce6ce0" class="outline-2"&gt;
-&lt;h2 id="org7ce6ce0"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7ce6ce0"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/</guid><pubDate>Wed, 31 Jan 2018 11:00:00 GMT</pubDate></item><item><title>On Textbooks</title><link>http://cestlaz.github.io/posts/textbooks/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org949b15f" class="outline-2"&gt;
+&lt;h2 id="org949b15f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org949b15f"&gt;
 &lt;p&gt;
 I thought I'd answer Alfred Thompson's recent post on &lt;a href="http://blog.acthompson.net/2018/01/thinking-about-cs-textbooks.html"&gt;using
 textbooks&lt;/a&gt;. Like Alfred, I've never used textbooks particularly
@@ -289,9 +289,9 @@ be it but fortunately, in this day and age we have many great
 alternatives.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/textbooks/</guid><pubDate>Sat, 27 Jan 2018 18:28:44 GMT</pubDate></item><item><title>Is Teaching CS Hard?</title><link>http://cestlaz.github.io/posts/is-teaching-cs-hard/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd11c4cb" class="outline-2"&gt;
-&lt;h2 id="orgd11c4cb"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd11c4cb"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/textbooks/</guid><pubDate>Sat, 27 Jan 2018 18:28:44 GMT</pubDate></item><item><title>Is Teaching CS Hard?</title><link>http://cestlaz.github.io/posts/is-teaching-cs-hard/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf3701d9" class="outline-2"&gt;
+&lt;h2 id="orgf3701d9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf3701d9"&gt;
 &lt;p&gt;
 Last week, Mark Guzdial asked &lt;a href="https://computinged.wordpress.com/2018/01/19/what-does-it-mean-for-computer-science-to-be-harder-to-learn-than-other-stem-subjects/"&gt;What does it mean for Computer Science to be harder to learn
 than other STEM subjects?&lt;/a&gt; as a follow up to his &lt;a href="https://cacm.acm.org/blogs/blog-cacm/224105-learning-computer-science-is-different-than-learning-other-stem-disciplines/fulltext"&gt;ACM Blog post&lt;/a&gt; this
@@ -406,9 +406,9 @@ So, teaching in general is hard and teaching CS is no exception. At
 least it is if you're doing it right.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/is-teaching-cs-hard/</guid><pubDate>Sun, 21 Jan 2018 20:56:52 GMT</pubDate></item><item><title>Reading and Writing Recs</title><link>http://cestlaz.github.io/posts/reading-and-writing-recs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf1bb60a" class="outline-2"&gt;
-&lt;h2 id="orgf1bb60a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf1bb60a"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/is-teaching-cs-hard/</guid><pubDate>Sun, 21 Jan 2018 20:56:52 GMT</pubDate></item><item><title>Reading and Writing Recs</title><link>http://cestlaz.github.io/posts/reading-and-writing-recs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgfa90b7f" class="outline-2"&gt;
+&lt;h2 id="orgfa90b7f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgfa90b7f"&gt;
 &lt;p&gt;
 I've been on both sides of the recommendation game. I currently read
 all the recommendations for students who apply to my &lt;a href="http://info.huntercs.org"&gt;honors CS program&lt;/a&gt;
@@ -535,9 +535,9 @@ both unfair and arbitrary but that's a discussion for another time.&lt;/div&gt;&
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/reading-and-writing-recs/</guid><pubDate>Thu, 04 Jan 2018 12:49:18 GMT</pubDate></item><item><title>APCS-P -  Bigger Intake Or Leaky Pipe</title><link>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org54ac178" class="outline-2"&gt;
-&lt;h2 id="org54ac178"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org54ac178"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/reading-and-writing-recs/</guid><pubDate>Thu, 04 Jan 2018 12:49:18 GMT</pubDate></item><item><title>APCS-P -  Bigger Intake Or Leaky Pipe</title><link>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org11f2c1e" class="outline-2"&gt;
+&lt;h2 id="org11f2c1e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org11f2c1e"&gt;
 &lt;p&gt;
 Advanced Placement Computer Science got top billing on Alfred
 Thompson's &lt;a href="http://blog.acthompson.net/2018/01/computer-science-education-things-im.html"&gt;Things I'm Watching in 2017&lt;/a&gt; post. Alfred talks about how
@@ -599,9 +599,9 @@ money but if APCS-P becomes the standard high school CS course will
 this leave us with true, quality CS4All? I have my doubts.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>ap</category><category>cs</category><category>cs4all</category><guid>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</guid><pubDate>Mon, 01 Jan 2018 23:28:37 GMT</pubDate></item><item><title>Using Emacs 2017 Recap</title><link>http://cestlaz.github.io/posts/using-emacs-2017-recap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7494781" class="outline-2"&gt;
-&lt;h2 id="org7494781"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7494781"&gt;
+&lt;/div&gt;</description><category>ap</category><category>cs</category><category>cs4all</category><guid>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</guid><pubDate>Mon, 01 Jan 2018 23:28:37 GMT</pubDate></item><item><title>Using Emacs 2017 Recap</title><link>http://cestlaz.github.io/posts/using-emacs-2017-recap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3043aec" class="outline-2"&gt;
+&lt;h2 id="org3043aec"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3043aec"&gt;
 &lt;p&gt;
 This past year I recorded 14 Using Emacs videos. This is on top of the
 25 videos I made last year. The fall off in production is
@@ -665,9 +665,9 @@ the popular suggestions.
 
 &lt;script type="text/javascript" src="http://www.easypolls.net/ext/scripts/emPoll.js?p=5a46abd4e4b04ebe73ddc4de"&gt;&lt;/script&gt;&lt;a class="OPP-powered-by" href="http://www.objectplanet.com/opinio/" style="text-decoration:none;"&gt;&lt;div style="font: 9px arial; color: gray;"&gt;survey service&lt;/div&gt;&lt;/a&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><guid>http://cestlaz.github.io/posts/using-emacs-2017-recap/</guid><pubDate>Fri, 29 Dec 2017 18:17:53 GMT</pubDate></item><item><title>2017 in review - K12 CS Education</title><link>http://cestlaz.github.io/posts/2017-review-k12CSEd/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf9eb9ed" class="outline-2"&gt;
-&lt;h2 id="orgf9eb9ed"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf9eb9ed"&gt;
+&lt;/div&gt;</description><category>emacs</category><guid>http://cestlaz.github.io/posts/using-emacs-2017-recap/</guid><pubDate>Fri, 29 Dec 2017 18:17:53 GMT</pubDate></item><item><title>2017 in review - K12 CS Education</title><link>http://cestlaz.github.io/posts/2017-review-k12CSEd/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4ef47fb" class="outline-2"&gt;
+&lt;h2 id="org4ef47fb"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4ef47fb"&gt;
 &lt;p&gt;
 It's been a big year for K12 CS education. More and more states
 looking into CS as a K12 academic area and all that entails, the
@@ -744,9 +744,9 @@ education side and the CS side. It's been a good year and I expect
 2018 to be a better one.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/2017-review-k12CSEd/</guid><pubDate>Wed, 27 Dec 2017 15:05:52 GMT</pubDate></item><item><title>2017 in review - Hunter Undergraduate CS</title><link>http://cestlaz.github.io/posts/2017-review-hunter-cs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org80491be" class="outline-2"&gt;
-&lt;h2 id="org80491be"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org80491be"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/2017-review-k12CSEd/</guid><pubDate>Wed, 27 Dec 2017 15:05:52 GMT</pubDate></item><item><title>2017 in review - Hunter Undergraduate CS</title><link>http://cestlaz.github.io/posts/2017-review-hunter-cs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgbe9cba3" class="outline-2"&gt;
+&lt;h2 id="orgbe9cba3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgbe9cba3"&gt;
 &lt;p&gt;
 I usually don't do year in review posts. At Stuy, not much changed
 year after year so I never felt it worth summarizing the past and
@@ -849,9 +849,9 @@ There are other strong CS options besides Hunter but compare the costs:
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org579e945" class="outline-2"&gt;
-&lt;h2 id="org579e945"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org579e945"&gt;
+&lt;div id="outline-container-orgb06d08f" class="outline-2"&gt;
+&lt;h2 id="orgb06d08f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb06d08f"&gt;
 &lt;p&gt;
 &lt;b&gt;&lt;b&gt;Hunter is about one tenth the cost.&lt;/b&gt;&lt;/b&gt;
 &lt;/p&gt;
