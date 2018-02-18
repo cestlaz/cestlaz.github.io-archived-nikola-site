@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about emacs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/emacs.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 16 Feb 2018 13:07:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 41 Pandoc</title><link>http://cestlaz.github.io/posts/using-emacs-41-pandoc/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org57c0c68" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about emacs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/emacs.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 18 Feb 2018 22:14:36 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 42 - Git Gutter and Time Machine</title><link>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org53478fd" class="outline-2"&gt;
+&lt;h2 id="org53478fd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org53478fd"&gt;
+&lt;p&gt;
+One day I'll do a Magit video but since there are already some good
+ones out there I thought I'd share a couple of other great git related
+packages.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first is &lt;a href="https://github.com/syohex/emacs-git-gutter/tree/00c05264af046b5ce248e5b0bc42f117d9c27a09"&gt;Git Gutter&lt;/a&gt; which adds markers on the side gutter of your
+buffer so you know what's changed since you're last commit. I pretty
+much use it exclusively for that visual but it can also be used to
+cmmit and revert individual chunks of your changes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The second is &lt;a href="https://github.com/pidu/git-timemachine"&gt;Git Timemachine&lt;/a&gt; which lets you move forward and back
+between commits. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The video demos both. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy
+&lt;/p&gt;
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/P-mLxkb-EE8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>git</category><guid>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</guid><pubDate>Sun, 18 Feb 2018 12:05:45 GMT</pubDate></item><item><title>Using Emacs 41 Pandoc</title><link>http://cestlaz.github.io/posts/using-emacs-41-pandoc/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org57c0c68" class="outline-2"&gt;
 &lt;h2 id="org57c0c68"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-org57c0c68"&gt;
 &lt;p&gt;
@@ -630,115 +662,4 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/</guid><pubDate>Thu, 15 Jun 2017 19:00:26 GMT</pubDate></item><item><title>Using Emacs - 33 - projectile, dumb-jump</title><link>http://cestlaz.github.io/posts/using-emacs-33-projectile-jump/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org145d564" class="outline-2"&gt;
-&lt;h2 id="org145d564"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org145d564"&gt;
-&lt;p&gt;
-If you keep Emacs open all the time you end up accumulating lots of
-buffers. That can make navigating a little bit awkward.
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;a href="https://github.com/bbatsov/projectile"&gt;Projectile&lt;/a&gt; is a really nice package that makes navigating in and
-between projects much easier. I also have &lt;a href="https://github.com/ericdanan/counsel-projectile"&gt;counsel-projectile&lt;/a&gt;
-installed.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here's my configuration:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;;; projectile&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;projectile&lt;/span&gt;
-  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-  &lt;span class="nv"&gt;:config&lt;/span&gt;
-  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;projectile-global-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;projectile-completion-system&lt;/span&gt; &lt;span class="ss"&gt;'ivy&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;counsel-projectile&lt;/span&gt;
-  &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-  &lt;span class="nv"&gt;:config&lt;/span&gt;
-  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;counsel-projectile-on&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Projectile considers a sub-directory tree to be a project if it's a
-git or other source control repo, if it's created by tool like lein,
-maven, or sbt, or if you put an empty file named &lt;b&gt;&lt;b&gt;.projectile&lt;/b&gt;&lt;/b&gt; in
-the root directory of the project.
-&lt;/p&gt;
-
-&lt;p&gt;
-Projectile learns about projects when you open a file in that project
-and then stores that information in an Emacs bookmark file in your
-.emacs.d directory.
-&lt;/p&gt;
-
-&lt;p&gt;
-You can switch between projects using &lt;code&gt;C-c p&lt;/code&gt; and when in a project,
-load another file using &lt;code&gt;C-c f&lt;/code&gt;. If you use the &lt;b&gt;&lt;b&gt;which-key&lt;/b&gt;&lt;/b&gt; package
-as I do, just type &lt;code&gt;C-c&lt;/code&gt; - the projectile prefix and then which-key
-will bring up help.
-&lt;/p&gt;
-
-&lt;p&gt;
-The video goes through some of my favorite features and you can find
-the full documentation can be found &lt;a href="http://projectile.readthedocs.io/en/latest/"&gt;here&lt;/a&gt;.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-The other package I show is &lt;a href="https://github.com/jacktasia/dumb-jump"&gt;dumb-jump&lt;/a&gt;. It's basically a zero (or
-almost zero) configuration tags replacement. Really nice.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here's my current config:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;dumb-jump&lt;/span&gt;
-  &lt;span class="nv"&gt;:bind&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="s"&gt;"M-g o"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;dumb-jump-go-other-window&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"M-g j"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;dumb-jump-go&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"M-g x"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;dumb-jump-go-prefer-external&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-	 &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"M-g z"&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="nv"&gt;dumb-jump-go-prefer-external-other-window&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-   &lt;span class="nv"&gt;:config&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;dumb-jump-selector&lt;/span&gt; &lt;span class="ss"&gt;'ivy&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;;; (setq dumb-jump-selector 'helm)&lt;/span&gt;
-  &lt;span class="nv"&gt;:ensure&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-  &lt;span class="nv"&gt;:config&lt;/span&gt; 
-&lt;span class="c1"&gt;;; (setq dumb-jump-selector 'ivy) ;; (setq dumb-jump-selector 'helm)&lt;/span&gt;
-&lt;span class="nv"&gt;:init&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;dumb-jump-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-  &lt;span class="nv"&gt;:ensure&lt;/span&gt;
-&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;
-Enjoy.
-&lt;/p&gt;
-
-
-
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/wBfZzaff77g" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-org9fb61e5" class="outline-2"&gt;
-&lt;h2 id="org9fb61e5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9fb61e5"&gt;
-&lt;p&gt;
-Relevant links:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Video series overview page:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Code:
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-33-projectile-jump/</guid><pubDate>Fri, 28 Apr 2017 13:00:26 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/</guid><pubDate>Thu, 15 Jun 2017 19:00:26 GMT</pubDate></item></channel></rss>
