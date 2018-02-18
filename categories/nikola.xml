@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about nikola)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/nikola.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 16 Feb 2018 13:07:14 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Shell short - tagging old posts in Nikola</title><link>http://cestlaz.github.io/posts/shell-short-tagging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org122a046" class="outline-2"&gt;
-&lt;h2 id="org122a046"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org122a046"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about nikola)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/nikola.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 12 Feb 2018 19:18:15 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Shell short - tagging old posts in Nikola</title><link>http://cestlaz.github.io/posts/shell-short-tagging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7885517" class="outline-2"&gt;
+&lt;h2 id="org7885517"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7885517"&gt;
 &lt;p&gt;
 Quick post to add to the recent command line fu I've been writing
 about.
@@ -70,17 +70,17 @@ done
 A line at a time:
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgc5acfe6" class="outline-3"&gt;
-&lt;h3 id="orgc5acfe6"&gt;ls *md *html&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgc5acfe6"&gt;
+&lt;div id="outline-container-orgfdd36ca" class="outline-3"&gt;
+&lt;h3 id="orgfdd36ca"&gt;ls *md *html&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgfdd36ca"&gt;
 &lt;p&gt;
 This lists all the files with that end in &lt;b&gt;&lt;b&gt;md&lt;/b&gt;&lt;/b&gt; or &lt;b&gt;&lt;b&gt;html&lt;/b&gt;&lt;/b&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org19f69fd" class="outline-3"&gt;
-&lt;h3 id="org19f69fd"&gt;| while read filename&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org19f69fd"&gt;
+&lt;div id="outline-container-orga1556d5" class="outline-3"&gt;
+&lt;h3 id="orga1556d5"&gt;| while read filename&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orga1556d5"&gt;
 &lt;p&gt;
 The vertical bar (pipe) sends the output of &lt;b&gt;&lt;b&gt;ls&lt;/b&gt;&lt;/b&gt; into the &lt;b&gt;&lt;b&gt;while read&lt;/b&gt;&lt;/b&gt;
 command. The &lt;b&gt;&lt;b&gt;while&lt;/b&gt;&lt;/b&gt; command sets up a loop which, each time
@@ -90,9 +90,9 @@ through, reads the next input and places into the variable
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgd2f486f" class="outline-3"&gt;
-&lt;h3 id="orgd2f486f"&gt;sed "/ type: text/  i .. tags: " $filename&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgd2f486f"&gt;
+&lt;div id="outline-container-orgfb7818c" class="outline-3"&gt;
+&lt;h3 id="orgfb7818c"&gt;sed "/ type: text/  i .. tags: " $filename&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgfb7818c"&gt;
 &lt;p&gt;
 Sed is the stream editor. The stuff between the slashes finds the line
 with the text &lt;b&gt;&lt;b&gt;type: text&lt;/b&gt;&lt;/b&gt; in it. The &lt;b&gt;&lt;b&gt;i&lt;/b&gt;&lt;/b&gt; inserts a line above and
@@ -104,9 +104,9 @@ loop.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org13e26fe" class="outline-2"&gt;
-&lt;h2 id="org13e26fe"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org13e26fe"&gt;
+&lt;div id="outline-container-org6627200" class="outline-2"&gt;
+&lt;h2 id="org6627200"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6627200"&gt;
 &lt;p&gt;
 Now all of my files have blank &lt;b&gt;&lt;b&gt;tag&lt;/b&gt;&lt;/b&gt; slugs so I can find my netlogo
 posts and tag them:

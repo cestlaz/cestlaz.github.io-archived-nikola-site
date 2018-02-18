@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about git)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/git.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 16 Feb 2018 13:07:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Collaborative Coding or Cheating</title><link>http://cestlaz.github.io/posts/collaborative-coding-or-cheating/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org42323b6" class="outline-2"&gt;
-&lt;h2 id="org42323b6"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org42323b6"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about git)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/git.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 18 Feb 2018 15:02:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 42 - Git Gutter and Time Machine</title><link>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org164f2cb" class="outline-2"&gt;
+&lt;h2 id="org164f2cb"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org164f2cb"&gt;
+&lt;p&gt;
+One day I'll do a Magit video but since there are already some good
+ones out there I thought I'd share a couple of other great git related
+packages.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first is &lt;a href="https://github.com/syohex/emacs-git-gutter/tree/00c05264af046b5ce248e5b0bc42f117d9c27a09"&gt;Git Gutter&lt;/a&gt; which adds markers on the side gutter of your
+buffer so you know what's changed since you're last commit. I pretty
+much use it exclusively for that visual but it can also be used to
+cmmit and revert individual chunks of your changes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The second is &lt;a href="https://github.com/pidu/git-timemachine"&gt;Git Timemachine&lt;/a&gt; which lets you move forward and back
+between commits. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The video demos both. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy
+&lt;/p&gt;
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/2w2665aboCg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>git</category><guid>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</guid><pubDate>Sun, 18 Feb 2018 12:05:45 GMT</pubDate></item><item><title>Collaborative Coding or Cheating</title><link>http://cestlaz.github.io/posts/collaborative-coding-or-cheating/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org27ceac4" class="outline-2"&gt;
+&lt;h2 id="org27ceac4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org27ceac4"&gt;
 &lt;p&gt;
 I haven't been teaching this past semester. That's why I haven't been
 writing much about lessons. I miss working with students but that will
