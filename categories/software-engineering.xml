@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about software engineering)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/software-engineering.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 19 Feb 2018 14:56:22 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Testing, Testing</title><link>http://cestlaz.github.io/posts/testing-testing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org0394936" class="outline-2"&gt;
+&lt;h2 id="org0394936"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0394936"&gt;
+&lt;p&gt;
+With CS4All being the buzzword of the day we're paying a lot of
+attention to the fact that when we teach a CS class for all students,
+most of them won't end up studying CS or going directly
+into a tech heavy field. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Among those that do study CS though, there is another division. Those
+studying CS as an academic exercise or to go on to graduate studies
+and those who are going in to the tech sector. For those going into
+the tech field, it's important that they're prepared in terms of
+software development, design, and all those goodies not covered in CS
+classes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not advocating removing the good stuff currently in most colleg CS
+curricua, although I will say that most CS programs I've reveiwed could benefit by
+trimming some requriements and adding some electives. I am advocating
+doing more than telling your students "comment your code," - a refrain
+many undergrads have heard frequently with little guidance.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm advocating to begin by bringing in tools and practices that either
+don't detract from current CS classes or in fact can add to or
+streamline them.
+&lt;/p&gt;
+
+&lt;p&gt;
+Last year I wrote about &lt;a href="https://cestlaz.github.io/posts/sigcse-2017-github-4/"&gt;using Git and GitHub&lt;/a&gt; in my classes. Students
+have to submit projects anyway and frequently have to work in teams so
+using Git and a Git hosting service can actually make both student's
+and instructor's class experiences better while introducing them to an
+industry best practice.
+&lt;/p&gt;
+
+&lt;p&gt;
+Today I want to talk kabout testing. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Students are always told to test their code but frequently not given
+tremendous guidance. The results can be:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;projects that don't compile&lt;/li&gt;
+&lt;li&gt;projects that compile and run but not the way they're supposed to.&lt;/li&gt;
+&lt;li&gt;wonky input or interfaces&lt;/li&gt;
+&lt;li&gt;projects that don't work for all cases&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;
+On the instructor side, we have to evaluate the student's
+submissions and deal with all of this. Some teachers use auto graders
+to help. I have mixed feelings on them. On the one hand they can speed
+up grading but on the other hand it's important for me as the teacher
+to actually dive into the student's code. In any case, using an auto grader
+is actually somewhat similar to running a test suite.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why not have the students create their own test suites? If done right,
+this should encourage students to evaluate their own code more
+carefully and also cut down on the time it takes the intructor to
+evaluate a given submission. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This means that we have to use a testing framework with a very low
+cost of entry.
+&lt;/p&gt;
+
+&lt;p&gt;
+I ended up finding &lt;a href="https://github.com/onqtam/doctest"&gt;doctest&lt;/a&gt; for C++. It's really simple and just a
+single include file. This means that students don't have to actually
+install anything on their machines. Here's the example from the
+project page:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="https://github.com/onqtam/doctest/raw/master/scripts/data/using_doctest_888px_wide.gif" alt="using_doctest_888px_wide.gif"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Basically, the students can just start writing tests.
+&lt;/p&gt;
+
+&lt;p&gt;
+Python also has a couple of low friction testing options. One is to
+use the built in &lt;a href="https://docs.python.org/3/library/doctest.html"&gt;doctest&lt;/a&gt; facility. Basically you put sample runs in the doc
+string at the top of a function with the expected output:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;factorial&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;"""Return the factorial of n, an exact integer &amp;gt;= 0.&lt;/span&gt;
+
+&lt;span class="sd"&gt;    If the result is small enough to fit in an int, return an int.&lt;/span&gt;
+&lt;span class="sd"&gt;    Else return a long.&lt;/span&gt;
+
+&lt;span class="sd"&gt;    &amp;gt;&amp;gt;&amp;gt; [factorial(n) for n in range(6)]&lt;/span&gt;
+&lt;span class="sd"&gt;    [1, 1, 2, 6, 24, 120]&lt;/span&gt;
+&lt;span class="sd"&gt;    &amp;gt;&amp;gt;&amp;gt; factorial(30)&lt;/span&gt;
+&lt;span class="sd"&gt;    265252859812191058636308480000000&lt;/span&gt;
+&lt;span class="sd"&gt;     """&lt;/span&gt;
+
+    &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;math&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;ValueError&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"n must be &amp;gt;= 0"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;math&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;floor&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;ValueError&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"n must be exact integer"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;  &lt;span class="c1"&gt;# catch a value like 1e300&lt;/span&gt;
+	&lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;OverflowError&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"n too large"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;result&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+    &lt;span class="n"&gt;factor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+    &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;factor&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="n"&gt;result&lt;/span&gt; &lt;span class="o"&gt;*=&lt;/span&gt; &lt;span class="n"&gt;factor&lt;/span&gt;
+	&lt;span class="n"&gt;factor&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;result&lt;/span&gt;
+
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s2"&gt;"__main__"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;doctest&lt;/span&gt;
+    &lt;span class="n"&gt;doctest&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;testmod&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+This might seem a little cumbersome, particularly if you look at the
+example at the link. It also requires the tests go on top of each
+function and that the tests will print out as part of the docstring. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The other easy Python option is the built in &lt;a href="https://docs.python.org/3/library/unittest.html"&gt;unittest&lt;/a&gt; module. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's an example of testing strings from the link above:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;unittest&lt;/span&gt;
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;TestStringMethods&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;unittest&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;TestCase&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_upper&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;assertEqual&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'foo'&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;upper&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="s1"&gt;'FOO'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_isupper&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;assertTrue&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'FOO'&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isupper&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+	&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;assertFalse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Foo'&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isupper&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'hello world'&lt;/span&gt;
+	&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;assertEqual&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;split&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'hello'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'world'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+	&lt;span class="c1"&gt;# check that s.split fails when the separator is not a string&lt;/span&gt;
+	&lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;assertRaises&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ne"&gt;TypeError&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	    &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;'__main__'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;unittest&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+I havn't played with Java testing in years but I'd guess there's
+something similarly light weight.
+&lt;/p&gt;
+
+&lt;p&gt;
+Tomorrow I'm hoping to finish the groundwork on using C++ doctest with
+my class and I'll write another post afterwards. Probably after SIGCSE
+since I'll be attending that from Wednesday on.
+&lt;/p&gt;
+
+&lt;p&gt;
+We'll see how this goes but I'm guessing it will work well. If it
+does, it should make my life as a grader easier and also get the kids
+on track to using test frameworks - something they'll need wherever
+they end up.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-testing/</guid><pubDate>Mon, 19 Feb 2018 12:26:16 GMT</pubDate></item></channel></rss>

@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-35.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-42-git-gutter/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/testing-testing/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,207 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-42-git-gutter/" class="u-url">Using Emacs 42 - Git Gutter and Time Machine</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/testing-testing/" class="u-url">Testing, Testing</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/testing-testing/" rel="bookmark"><time class="published dt-published" datetime="2018-02-19T08:26:16-04:00" title="2018-02-19 08:26">2018-02-19 08:26</time></a></p>
+                <p class="commentline">            <a href="posts/testing-testing/#disqus_thread" data-disqus-identifier="cache/posts/testing-testing.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org0394936" class="outline-2">
+<h2 id="org0394936"></h2>
+<div class="outline-text-2" id="text-org0394936">
+<p>
+With CS4All being the buzzword of the day we're paying a lot of
+attention to the fact that when we teach a CS class for all students,
+most of them won't end up studying CS or going directly
+into a tech heavy field. 
+</p>
+
+<p>
+Among those that do study CS though, there is another division. Those
+studying CS as an academic exercise or to go on to graduate studies
+and those who are going in to the tech sector. For those going into
+the tech field, it's important that they're prepared in terms of
+software development, design, and all those goodies not covered in CS
+classes. 
+</p>
+
+<p>
+I'm not advocating removing the good stuff currently in most colleg CS
+curricua, although I will say that most CS programs I've reveiwed could benefit by
+trimming some requriements and adding some electives. I am advocating
+doing more than telling your students "comment your code," - a refrain
+many undergrads have heard frequently with little guidance.
+</p>
+
+<p>
+I'm advocating to begin by bringing in tools and practices that either
+don't detract from current CS classes or in fact can add to or
+streamline them.
+</p>
+
+<p>
+Last year I wrote about <a href="https://cestlaz.github.io/posts/sigcse-2017-github-4/">using Git and GitHub</a> in my classes. Students
+have to submit projects anyway and frequently have to work in teams so
+using Git and a Git hosting service can actually make both student's
+and instructor's class experiences better while introducing them to an
+industry best practice.
+</p>
+
+<p>
+Today I want to talk kabout testing. 
+</p>
+
+<p>
+Students are always told to test their code but frequently not given
+tremendous guidance. The results can be:
+</p>
+
+<ul class="org-ul">
+<li>projects that don't compile</li>
+<li>projects that compile and run but not the way they're supposed to.</li>
+<li>wonky input or interfaces</li>
+<li>projects that don't work for all cases</li>
+</ul>
+<p>
+On the instructor side, we have to evaluate the student's
+submissions and deal with all of this. Some teachers use auto graders
+to help. I have mixed feelings on them. On the one hand they can speed
+up grading but on the other hand it's important for me as the teacher
+to actually dive into the student's code. In any case, using an auto grader
+is actually somewhat similar to running a test suite.
+</p>
+
+<p>
+Why not have the students create their own test suites? If done right,
+this should encourage students to evaluate their own code more
+carefully and also cut down on the time it takes the intructor to
+evaluate a given submission. 
+</p>
+
+<p>
+This means that we have to use a testing framework with a very low
+cost of entry.
+</p>
+
+<p>
+I ended up finding <a href="https://github.com/onqtam/doctest">doctest</a> for C++. It's really simple and just a
+single include file. This means that students don't have to actually
+install anything on their machines. Here's the example from the
+project page:
+</p>
+
+
+<div class="figure">
+<p><img src="https://github.com/onqtam/doctest/raw/master/scripts/data/using_doctest_888px_wide.gif" alt="using_doctest_888px_wide.gif"></p>
+</div>
+
+<p>
+Basically, the students can just start writing tests.
+</p>
+
+<p>
+Python also has a couple of low friction testing options. One is to
+use the built in <a href="https://docs.python.org/3/library/doctest.html">doctest</a> facility. Basically you put sample runs in the doc
+string at the top of a function with the expected output:
+</p>
+
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="sd">"""Return the factorial of n, an exact integer &gt;= 0.</span>
+
+<span class="sd">    If the result is small enough to fit in an int, return an int.</span>
+<span class="sd">    Else return a long.</span>
+
+<span class="sd">    &gt;&gt;&gt; [factorial(n) for n in range(6)]</span>
+<span class="sd">    [1, 1, 2, 6, 24, 120]</span>
+<span class="sd">    &gt;&gt;&gt; factorial(30)</span>
+<span class="sd">    265252859812191058636308480000000</span>
+<span class="sd">     """</span>
+
+    <span class="kn">import</span> <span class="nn">math</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+	<span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"n must be &gt;= 0"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">!=</span> <span class="n">n</span><span class="p">:</span>
+	<span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"n must be exact integer"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span> <span class="o">==</span> <span class="n">n</span><span class="p">:</span>  <span class="c1"># catch a value like 1e300</span>
+	<span class="k">raise</span> <span class="ne">OverflowError</span><span class="p">(</span><span class="s2">"n too large"</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">factor</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="k">while</span> <span class="n">factor</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
+	<span class="n">result</span> <span class="o">*=</span> <span class="n">factor</span>
+	<span class="n">factor</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">doctest</span>
+    <span class="n">doctest</span><span class="o">.</span><span class="n">testmod</span><span class="p">()</span>
+</pre></div>
+
+<p>
+This might seem a little cumbersome, particularly if you look at the
+example at the link. It also requires the tests go on top of each
+function and that the tests will print out as part of the docstring. 
+</p>
+
+<p>
+The other easy Python option is the built in <a href="https://docs.python.org/3/library/unittest.html">unittest</a> module. 
+</p>
+
+<p>
+Here's an example of testing strings from the link above:
+</p>
+
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">unittest</span>
+
+<span class="k">class</span> <span class="nc">TestStringMethods</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">test_upper</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="s1">'foo'</span><span class="o">.</span><span class="n">upper</span><span class="p">(),</span> <span class="s1">'FOO'</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">test_isupper</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="s1">'FOO'</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
+	<span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="s1">'Foo'</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
+
+    <span class="k">def</span> <span class="nf">test_split</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+	<span class="n">s</span> <span class="o">=</span> <span class="s1">'hello world'</span>
+	<span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="p">[</span><span class="s1">'hello'</span><span class="p">,</span> <span class="s1">'world'</span><span class="p">])</span>
+	<span class="c1"># check that s.split fails when the separator is not a string</span>
+	<span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">TypeError</span><span class="p">):</span>
+	    <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+    <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+</pre></div>
+
+
+<p>
+I havn't played with Java testing in years but I'd guess there's
+something similarly light weight.
+</p>
+
+<p>
+Tomorrow I'm hoping to finish the groundwork on using C++ doctest with
+my class and I'll write another post afterwards. Probably after SIGCSE
+since I'll be attending that from Wednesday on.
+</p>
+
+<p>
+We'll see how this goes but I'm guessing it will work well. If it
+does, it should make my life as a grader easier and also get the kids
+on track to using test frameworks - something they'll need wherever
+they end up.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-42-git-gutter/" class="u-url">Using Emacs 42 - Git Gutter and Time Machine</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -102,9 +302,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org53478fd" class="outline-2">
-<h2 id="org53478fd"></h2>
-<div class="outline-text-2" id="text-org53478fd">
+    <div id="outline-container-org916ae49" class="outline-2">
+<h2 id="org916ae49"></h2>
+<div class="outline-text-2" id="text-org916ae49">
 <p>
 One day I'll do a Magit video but since there are already some good
 ones out there I thought I'd share a couple of other great git related
@@ -148,9 +348,9 @@ Enjoy
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org57c0c68" class="outline-2">
-<h2 id="org57c0c68"></h2>
-<div class="outline-text-2" id="text-org57c0c68">
+    <div id="outline-container-org9929ccd" class="outline-2">
+<h2 id="org9929ccd"></h2>
+<div class="outline-text-2" id="text-org9929ccd">
 <p>
 Another Emacs quick hit today. Actually, not really Emacs. Today's
 video is a quick, really quick, look at <a href="https://pandoc.org/">Pandoc</a>. Pandoc is a document
@@ -237,9 +437,9 @@ If you haven't checked out pandoc, you should.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org3278464" class="outline-2">
-<h2 id="org3278464"></h2>
-<div class="outline-text-2" id="text-org3278464">
+    <div id="outline-container-org694d5c8" class="outline-2">
+<h2 id="org694d5c8"></h2>
+<div class="outline-text-2" id="text-org694d5c8">
 <p>
 I make regular use of Google's office suite. I use Google forms all
 the time to collect data, Google docs when I have to leave Emacs for
@@ -348,9 +548,9 @@ function sendGrades(){
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org50706fc" class="outline-2">
-<h2 id="org50706fc"></h2>
-<div class="outline-text-2" id="text-org50706fc">
+    <div id="outline-container-org1432f66" class="outline-2">
+<h2 id="org1432f66"></h2>
+<div class="outline-text-2" id="text-org1432f66">
 <p>
 Thanks to everyone who voted for topics or commented with suggestions
 for videos. I'll try to get to them in the coming months.
@@ -363,9 +563,9 @@ browser extension that allows you to edit web form inputs with Emacs.
 </div>
 </div>
 
-<div id="outline-container-org3eef295" class="outline-2">
-<h2 id="org3eef295">UPDATE</h2>
-<div class="outline-text-2" id="text-org3eef295">
+<div id="outline-container-org1fd9c1a" class="outline-2">
+<h2 id="org1fd9c1a">UPDATE</h2>
+<div class="outline-text-2" id="text-org1fd9c1a">
 <p>
 I forgot to mention that you can set a shortcut key, at least in chrome rather than
 clicking on the icon. This makes things much smoother.
@@ -402,9 +602,9 @@ Enjoy:
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org949b15f" class="outline-2">
-<h2 id="org949b15f"></h2>
-<div class="outline-text-2" id="text-org949b15f">
+    <div id="outline-container-org0e22892" class="outline-2">
+<h2 id="org0e22892"></h2>
+<div class="outline-text-2" id="text-org0e22892">
 <p>
 I thought I'd answer Alfred Thompson's recent post on <a href="http://blog.acthompson.net/2018/01/thinking-about-cs-textbooks.html">using
 textbooks</a>. Like Alfred, I've never used textbooks particularly
@@ -495,9 +695,9 @@ alternatives.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgf3701d9" class="outline-2">
-<h2 id="orgf3701d9"></h2>
-<div class="outline-text-2" id="text-orgf3701d9">
+    <div id="outline-container-org60426af" class="outline-2">
+<h2 id="org60426af"></h2>
+<div class="outline-text-2" id="text-org60426af">
 <p>
 Last week, Mark Guzdial asked <a href="https://computinged.wordpress.com/2018/01/19/what-does-it-mean-for-computer-science-to-be-harder-to-learn-than-other-stem-subjects/">What does it mean for Computer Science to be harder to learn
 than other STEM subjects?</a> as a follow up to his <a href="https://cacm.acm.org/blogs/blog-cacm/224105-learning-computer-science-is-different-than-learning-other-stem-disciplines/fulltext">ACM Blog post</a> this
@@ -626,9 +826,9 @@ least it is if you're doing it right.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgfa90b7f" class="outline-2">
-<h2 id="orgfa90b7f"></h2>
-<div class="outline-text-2" id="text-orgfa90b7f">
+    <div id="outline-container-org8051c0a" class="outline-2">
+<h2 id="org8051c0a"></h2>
+<div class="outline-text-2" id="text-org8051c0a">
 <p>
 I've been on both sides of the recommendation game. I currently read
 all the recommendations for students who apply to my <a href="http://info.huntercs.org">honors CS program</a>
@@ -771,9 +971,9 @@ both unfair and arbitrary but that's a discussion for another time.</div>
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org11f2c1e" class="outline-2">
-<h2 id="org11f2c1e"></h2>
-<div class="outline-text-2" id="text-org11f2c1e">
+    <div id="outline-container-org8ff8e49" class="outline-2">
+<h2 id="org8ff8e49"></h2>
+<div class="outline-text-2" id="text-org8ff8e49">
 <p>
 Advanced Placement Computer Science got top billing on Alfred
 Thompson's <a href="http://blog.acthompson.net/2018/01/computer-science-education-things-im.html">Things I'm Watching in 2017</a> post. Alfred talks about how
@@ -849,9 +1049,9 @@ this leave us with true, quality CS4All? I have my doubts.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org3043aec" class="outline-2">
-<h2 id="org3043aec"></h2>
-<div class="outline-text-2" id="text-org3043aec">
+    <div id="outline-container-orged6e627" class="outline-2">
+<h2 id="orged6e627"></h2>
+<div class="outline-text-2" id="text-orged6e627">
 <p>
 This past year I recorded 14 Using Emacs videos. This is on top of the
 25 videos I made last year. The fall off in production is
@@ -914,99 +1114,6 @@ the popular suggestions.
 </p>
 
 <script type="text/javascript" src="http://www.easypolls.net/ext/scripts/emPoll.js?p=5a46abd4e4b04ebe73ddc4de"></script><a class="OPP-powered-by" href="http://www.objectplanet.com/opinio/" style="text-decoration:none;"><div style="font: 9px arial; color: gray;">survey service</div></a>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/2017-review-k12CSEd/" class="u-url">2017 in review - K12 CS Education</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/2017-review-k12CSEd/" rel="bookmark"><time class="published dt-published" datetime="2017-12-27T11:05:52-04:00" title="2017-12-27 11:05">2017-12-27 11:05</time></a></p>
-                <p class="commentline">            <a href="posts/2017-review-k12CSEd/#disqus_thread" data-disqus-identifier="cache/posts/2017-review-k12CSEd.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-org4ef47fb" class="outline-2">
-<h2 id="org4ef47fb"></h2>
-<div class="outline-text-2" id="text-org4ef47fb">
-<p>
-It's been a big year for K12 CS education. More and more states
-looking into CS as a K12 academic area and all that entails, the
-CS4All movement is well underway and the College Board launched a new
-exam. These are just three of many big things that happened in the
-past year.
-</p>
-
-<p>
-I'm excited about the overall growth but concerned about a number of
-issues. I've written about all of them in the past so won't rehash
-here and in any event, the issues I'm concerned about are issues I
-have no influence on.
-</p>
-
-<p>
-Instead I thought I'd look at some local CS Ed happenings. Things
-where I have been able to contribute.
-</p>
-
-<p>
-Probably the biggest thing happening that I've been involved with is
-New York State's <a href="http://cestlaz.github.io/posts/NY-CS-Certificate/">moving forward on CS teacher certification</a>. I
-developed CS teacher preparation programs at Hunter and Hunter's been
-one of the voices talking to the state. I'd like to believe I had some
-small positive voice in this effort.
-</p>
-
-<p>
-Related are the programs that are one piece of form and one committee
-short of being approved. Very soon Hunter will have CS teacher
-preparation programs - a full Masters program, a certificate program
-and an Alt Cert program. While no program is perfect, I'm very proud
-in what I designed and am confident that any teacher that completes
-a Hunter program will be amazingly well prepared to teach CS. Not
-just the popular curricula being offered today and not just the out of
-the box curricula being lauded by others. Our teachers will be
-empowered to create their own custom educational experiences
-appropriate for their kids.
-</p>
-
-<p>
-I've said before that I believe in teacher over curriculum. A great
-teacher can save the worst course but the best curriculum can't save a
-weak teacher. No matter what happens with CS Ed as a whole, I know
-that the CS teachers we prepare at Hunter will be top flight. Kids in
-their classes will be alright regardless of what the education machine
-tries to impose on them.
-</p>
-
-<p>
-The other thing I've been working on, albeit in a limited way is
-professional development. There's a lot of CS PD around but most of it
-seems to be either for the younger levels or the intro levels. Very
-little for APCS-A let alone beyond. This past November I was able to
-host teachers from a handful of schools on Election Day for what
-everyone felt was one of their more productive PD experiences. We're
-following this up with another one in the Spring but this time we're
-expanding. I've been talking to friends at <a href="http://tealsk12.org">TEALS</a> so as to get more
-teachers and schools involved. There's a lot of value in connecting
-teachers with each other and I hope that I'm helping to do that.
-</p>
-
-<p>
-I'm looking forward to 2018. I'm told that NYSED should vote on CS
-certification in March and my programs should also be on the books
-around then. The challenge will be building capacity since I can't do
-this as a one man show.
-</p>
-
-<p>
-I'm very proud of what we've accomplished at Hunter on both the
-education side and the CS side. It's been a good year and I expect
-2018 to be a better one.
-</p>
 </div>
 </div>
     </div>

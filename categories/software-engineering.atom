@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>Posts about software engineering</title>
+  <id>http://cestlaz.github.io/categories/software-engineering.atom</id>
+  <updated>2018-02-19T14:37:04Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/software-engineering.atom"/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/software-engineering/"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Testing, Testing</title>
+    <id>http://cestlaz.github.io/posts/testing-testing/</id>
+    <updated>2018-02-19T08:26:16-04:00</updated>
+    <published>2018-02-19T08:26:16-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/testing-testing/"/>
+    <summary type="html">&lt;div id="outline-container-orgfd6f350" class="outline-2"&gt;
+&lt;h2 id="orgfd6f350"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgfd6f350"&gt;
+&lt;p&gt;
+With CS4All being the buzzword of the day we're paying a lot of
+attention to the fact that when we teach a CS class for all students,
+most of them won't end up studying CS or going directly
+into a tech heavy field. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Among those that do study CS though, there is another division. Those
+studying CS as an academic exercise or to go on to graduate studies
+and those who are going in to the tech sector. For those going into
+the tech field, it's important that they're prepared in terms of
+software development, design, and all those goodies not covered in CS
+classes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not advocating removing the good stuff currently in most colleg CS
+curricua, although I will say that most CS programs I've reveiwed could benefit by
+trimming some requriements and adding some electives. I am advocating
+doing more than telling your students "comment your code," - a refrain
+many undergrads have heard frequently with little guidance.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm advocating to begin by bringing in tools and practices that either
+don't detract from current CS classes or in fact can add to or
+streamline them.
+&lt;/p&gt;
+
+&lt;p&gt;
+Last year I wrote about &lt;a href="https://cestlaz.github.io/posts/sigcse-2017-github-4/"&gt;using Git and GitHub&lt;/a&gt; in my classes. Students
+have to submit projects anyway and frequently have to work in teams so
+using Git and a Git hosting service can actually make both student's
+and instructor's class experiences better while introducing them to an
+industry best practice.
+&lt;/p&gt;
+
+&lt;p&gt;
+Today I want to talk kabout testing. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Students are always told to test their code but frequently not given
+tremendous guidance. The results can be:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;projects that don't compile&lt;/li&gt;
+&lt;li&gt;projects that compile and run but not the way they're supposed to.&lt;/li&gt;
+&lt;li&gt;wonky input or interfaces&lt;/li&gt;
+&lt;li&gt;projects that don't work for all cases&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;
+On the instructor side, we have to evaluate the student's
+submissions and deal with all of this. Some teachers use auto graders
+to help. I have mixed feelings on them. On the one hand they can speed
+up grading but on the other hand it's important for me as the teacher
+to actually dive into the student's code. In any case, using an auto grader
+is actually somewhat similar to running a test suite.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why not have the students create their own test suites? If done right,
+this should encourage students to evaluate their own code more
+carefully and also cut down on the time it takes the intructor to
+evaluate a given submission. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This means that we have to use a testing framework with a very low
+cost of entry.
+&lt;/p&gt;
+
+&lt;p&gt;
+I ended up finding &lt;a href="https://github.com/onqtam/doctest"&gt;doctest&lt;/a&gt; for C++. It's really simple and just a
+single include file. This means that students don't have to actually
+install anything on their machines. Here's the sample code from the
+project page:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="https://github.com/onqtam/doctest/blob/master/scripts/data/using_doctest_888px_wide.gif" alt="using_doctest_888px_wide.gif"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="software-engineering" label="software engineering"/>
+    <category term="tools" label="tools"/>
+  </entry>
+</feed>
