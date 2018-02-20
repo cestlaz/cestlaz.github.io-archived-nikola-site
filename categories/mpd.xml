@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about mpd)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/mpd.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Feb 2018 20:06:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 43 - Music with MPD</title><link>http://cestlaz.github.io/posts/using-emacs-43-music/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge9ac0b0" class="outline-2"&gt;
+&lt;h2 id="orge9ac0b0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge9ac0b0"&gt;
+&lt;p&gt;
+I like to listen to music at work. Sometimes I just stream from
+YouTube, Soundcloud, Spotify or some other online source but if you're
+a person of a certain age, like me, you probably have quite an mp3
+collection. All those CDs that have been ripped not to mention some
+converted vinyl.
+&lt;/p&gt;
+
+&lt;p&gt;
+I used to use the &lt;a href="https://www.musicpd.org/"&gt;Music Player Daemon&lt;/a&gt; or MPD back in the day. It would
+run in the background and you could connect to it using lots of
+&lt;a href="https://www.musicpd.org/clients/"&gt;clients&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+When I was running Ubuntu and Mint Linux, I had some trouble setting
+up MPD but the process is much smoother using Manjaro which is Arch
+based and I'm currently enjoying.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's a video on how I set up MPD and also use Emacs to control it.
+&lt;/p&gt;
+
+&lt;p&gt;
+Coincidentally, on the same day I recorded this, &lt;a href="https://www.youtube.com/channel/UCDEtZ7AKmwS0_GNJog01D2g/feed"&gt;Uncle Dave&lt;/a&gt; put up a
+similar &lt;a href="https://www.youtube.com/watch?v=xTVN8UDScqk"&gt;video&lt;/a&gt;. Dave also sets up MPD on an Arch based linux but he
+uses EMMS for his player. I ultimately end up with Simple-MPC with
+briefs stops at the built in MPC mode and Mingus along the way.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LWd60rc_rQ0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>mpd</category><category>music</category><guid>http://cestlaz.github.io/posts/using-emacs-43-music/</guid><pubDate>Tue, 20 Feb 2018 12:05:45 GMT</pubDate></item></channel></rss>

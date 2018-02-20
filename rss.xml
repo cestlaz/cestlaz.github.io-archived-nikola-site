@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 19 Feb 2018 22:18:55 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Testing, Testing</title><link>http://cestlaz.github.io/posts/testing-testing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga2d6f11" class="outline-2"&gt;
-&lt;h2 id="orga2d6f11"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga2d6f11"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 20 Feb 2018 20:06:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 43 - Music with MPD</title><link>http://cestlaz.github.io/posts/using-emacs-43-music/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge9ac0b0" class="outline-2"&gt;
+&lt;h2 id="orge9ac0b0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge9ac0b0"&gt;
+&lt;p&gt;
+I like to listen to music at work. Sometimes I just stream from
+YouTube, Soundcloud, Spotify or some other online source but if you're
+a person of a certain age, like me, you probably have quite an mp3
+collection. All those CDs that have been ripped not to mention some
+converted vinyl.
+&lt;/p&gt;
+
+&lt;p&gt;
+I used to use the &lt;a href="https://www.musicpd.org/"&gt;Music Player Daemon&lt;/a&gt; or MPD back in the day. It would
+run in the background and you could connect to it using lots of
+&lt;a href="https://www.musicpd.org/clients/"&gt;clients&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+When I was running Ubuntu and Mint Linux, I had some trouble setting
+up MPD but the process is much smoother using Manjaro which is Arch
+based and I'm currently enjoying.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's a video on how I set up MPD and also use Emacs to control it.
+&lt;/p&gt;
+
+&lt;p&gt;
+Coincidentally, on the same day I recorded this, &lt;a href="https://www.youtube.com/channel/UCDEtZ7AKmwS0_GNJog01D2g/feed"&gt;Uncle Dave&lt;/a&gt; put up a
+similar &lt;a href="https://www.youtube.com/watch?v=xTVN8UDScqk"&gt;video&lt;/a&gt;. Dave also sets up MPD on an Arch based linux but he
+uses EMMS for his player. I ultimately end up with Simple-MPC with
+briefs stops at the built in MPC mode and Mingus along the way.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LWd60rc_rQ0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>mpd</category><category>music</category><guid>http://cestlaz.github.io/posts/using-emacs-43-music/</guid><pubDate>Tue, 20 Feb 2018 12:05:45 GMT</pubDate></item><item><title>Testing, Testing</title><link>http://cestlaz.github.io/posts/testing-testing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8b3311b" class="outline-2"&gt;
+&lt;h2 id="org8b3311b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8b3311b"&gt;
 &lt;p&gt;
 With CS4All being the buzzword of the day we're paying a lot of
 attention to the fact that when we teach a CS class for all students,
@@ -188,9 +228,9 @@ on track to using test frameworks - something they'll need wherever
 they end up.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-testing/</guid><pubDate>Mon, 19 Feb 2018 12:26:16 GMT</pubDate></item><item><title>Using Emacs 42 - Git Gutter and Time Machine</title><link>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org916ae49" class="outline-2"&gt;
-&lt;h2 id="org916ae49"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org916ae49"&gt;
+&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-testing/</guid><pubDate>Mon, 19 Feb 2018 12:26:16 GMT</pubDate></item><item><title>Using Emacs 42 - Git Gutter and Time Machine</title><link>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org054b38f" class="outline-2"&gt;
+&lt;h2 id="org054b38f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org054b38f"&gt;
 &lt;p&gt;
 One day I'll do a Magit video but since there are already some good
 ones out there I thought I'd share a couple of other great git related
@@ -220,9 +260,9 @@ Enjoy
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/P-mLxkb-EE8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>git</category><guid>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</guid><pubDate>Sun, 18 Feb 2018 12:05:45 GMT</pubDate></item><item><title>Using Emacs 41 Pandoc</title><link>http://cestlaz.github.io/posts/using-emacs-41-pandoc/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9929ccd" class="outline-2"&gt;
-&lt;h2 id="org9929ccd"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9929ccd"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>git</category><guid>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</guid><pubDate>Sun, 18 Feb 2018 12:05:45 GMT</pubDate></item><item><title>Using Emacs 41 Pandoc</title><link>http://cestlaz.github.io/posts/using-emacs-41-pandoc/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org0bcccc1" class="outline-2"&gt;
+&lt;h2 id="org0bcccc1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0bcccc1"&gt;
 &lt;p&gt;
 Another Emacs quick hit today. Actually, not really Emacs. Today's
 video is a quick, really quick, look at &lt;a href="https://pandoc.org/"&gt;Pandoc&lt;/a&gt;. Pandoc is a document
@@ -295,9 +335,9 @@ If you haven't checked out pandoc, you should.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/qVUZsH-MDRM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><guid>http://cestlaz.github.io/posts/using-emacs-41-pandoc/</guid><pubDate>Tue, 13 Feb 2018 12:05:45 GMT</pubDate></item><item><title>Google Sheets</title><link>http://cestlaz.github.io/posts/google-sheets/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org694d5c8" class="outline-2"&gt;
-&lt;h2 id="org694d5c8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org694d5c8"&gt;
+&lt;/div&gt;</description><category>emacs</category><guid>http://cestlaz.github.io/posts/using-emacs-41-pandoc/</guid><pubDate>Tue, 13 Feb 2018 12:05:45 GMT</pubDate></item><item><title>Google Sheets</title><link>http://cestlaz.github.io/posts/google-sheets/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4ac0ea1" class="outline-2"&gt;
+&lt;h2 id="org4ac0ea1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4ac0ea1"&gt;
 &lt;p&gt;
 I make regular use of Google's office suite. I use Google forms all
 the time to collect data, Google docs when I have to leave Emacs for
@@ -392,9 +432,9 @@ function sendGrades(){
 }
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>admin</category><guid>http://cestlaz.github.io/posts/google-sheets/</guid><pubDate>Mon, 12 Feb 2018 18:28:28 GMT</pubDate></item><item><title>Using Emacs 40 - Atomic Chrome</title><link>http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org1432f66" class="outline-2"&gt;
-&lt;h2 id="org1432f66"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1432f66"&gt;
+&lt;/div&gt;</description><category>admin</category><guid>http://cestlaz.github.io/posts/google-sheets/</guid><pubDate>Mon, 12 Feb 2018 18:28:28 GMT</pubDate></item><item><title>Using Emacs 40 - Atomic Chrome</title><link>http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgfc1f822" class="outline-2"&gt;
+&lt;h2 id="orgfc1f822"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgfc1f822"&gt;
 &lt;p&gt;
 Thanks to everyone who voted for topics or commented with suggestions
 for videos. I'll try to get to them in the coming months.
@@ -407,9 +447,9 @@ browser extension that allows you to edit web form inputs with Emacs.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org1fd9c1a" class="outline-2"&gt;
-&lt;h2 id="org1fd9c1a"&gt;UPDATE&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1fd9c1a"&gt;
+&lt;div id="outline-container-orgde9309d" class="outline-2"&gt;
+&lt;h2 id="orgde9309d"&gt;UPDATE&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgde9309d"&gt;
 &lt;p&gt;
 I forgot to mention that you can set a shortcut key, at least in chrome rather than
 clicking on the icon. This makes things much smoother.
@@ -431,9 +471,9 @@ Enjoy:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/wyPZws66Sic" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/</guid><pubDate>Wed, 31 Jan 2018 11:00:00 GMT</pubDate></item><item><title>On Textbooks</title><link>http://cestlaz.github.io/posts/textbooks/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org0e22892" class="outline-2"&gt;
-&lt;h2 id="org0e22892"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0e22892"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/</guid><pubDate>Wed, 31 Jan 2018 11:00:00 GMT</pubDate></item><item><title>On Textbooks</title><link>http://cestlaz.github.io/posts/textbooks/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd62a4e7" class="outline-2"&gt;
+&lt;h2 id="orgd62a4e7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd62a4e7"&gt;
 &lt;p&gt;
 I thought I'd answer Alfred Thompson's recent post on &lt;a href="http://blog.acthompson.net/2018/01/thinking-about-cs-textbooks.html"&gt;using
 textbooks&lt;/a&gt;. Like Alfred, I've never used textbooks particularly
@@ -510,9 +550,9 @@ be it but fortunately, in this day and age we have many great
 alternatives.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/textbooks/</guid><pubDate>Sat, 27 Jan 2018 18:28:44 GMT</pubDate></item><item><title>Is Teaching CS Hard?</title><link>http://cestlaz.github.io/posts/is-teaching-cs-hard/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org60426af" class="outline-2"&gt;
-&lt;h2 id="org60426af"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org60426af"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/textbooks/</guid><pubDate>Sat, 27 Jan 2018 18:28:44 GMT</pubDate></item><item><title>Is Teaching CS Hard?</title><link>http://cestlaz.github.io/posts/is-teaching-cs-hard/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgb0215e3" class="outline-2"&gt;
+&lt;h2 id="orgb0215e3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb0215e3"&gt;
 &lt;p&gt;
 Last week, Mark Guzdial asked &lt;a href="https://computinged.wordpress.com/2018/01/19/what-does-it-mean-for-computer-science-to-be-harder-to-learn-than-other-stem-subjects/"&gt;What does it mean for Computer Science to be harder to learn
 than other STEM subjects?&lt;/a&gt; as a follow up to his &lt;a href="https://cacm.acm.org/blogs/blog-cacm/224105-learning-computer-science-is-different-than-learning-other-stem-disciplines/fulltext"&gt;ACM Blog post&lt;/a&gt; this
@@ -627,9 +667,9 @@ So, teaching in general is hard and teaching CS is no exception. At
 least it is if you're doing it right.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/is-teaching-cs-hard/</guid><pubDate>Sun, 21 Jan 2018 20:56:52 GMT</pubDate></item><item><title>Reading and Writing Recs</title><link>http://cestlaz.github.io/posts/reading-and-writing-recs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8051c0a" class="outline-2"&gt;
-&lt;h2 id="org8051c0a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8051c0a"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/is-teaching-cs-hard/</guid><pubDate>Sun, 21 Jan 2018 20:56:52 GMT</pubDate></item><item><title>Reading and Writing Recs</title><link>http://cestlaz.github.io/posts/reading-and-writing-recs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org025384e" class="outline-2"&gt;
+&lt;h2 id="org025384e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org025384e"&gt;
 &lt;p&gt;
 I've been on both sides of the recommendation game. I currently read
 all the recommendations for students who apply to my &lt;a href="http://info.huntercs.org"&gt;honors CS program&lt;/a&gt;
@@ -756,9 +796,9 @@ both unfair and arbitrary but that's a discussion for another time.&lt;/div&gt;&
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/reading-and-writing-recs/</guid><pubDate>Thu, 04 Jan 2018 12:49:18 GMT</pubDate></item><item><title>APCS-P -  Bigger Intake Or Leaky Pipe</title><link>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8ff8e49" class="outline-2"&gt;
-&lt;h2 id="org8ff8e49"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8ff8e49"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/reading-and-writing-recs/</guid><pubDate>Thu, 04 Jan 2018 12:49:18 GMT</pubDate></item><item><title>APCS-P -  Bigger Intake Or Leaky Pipe</title><link>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org45aa2c0" class="outline-2"&gt;
+&lt;h2 id="org45aa2c0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org45aa2c0"&gt;
 &lt;p&gt;
 Advanced Placement Computer Science got top billing on Alfred
 Thompson's &lt;a href="http://blog.acthompson.net/2018/01/computer-science-education-things-im.html"&gt;Things I'm Watching in 2017&lt;/a&gt; post. Alfred talks about how
@@ -820,70 +860,4 @@ money but if APCS-P becomes the standard high school CS course will
 this leave us with true, quality CS4All? I have my doubts.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>ap</category><category>cs</category><category>cs4all</category><guid>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</guid><pubDate>Mon, 01 Jan 2018 23:28:37 GMT</pubDate></item><item><title>Using Emacs 2017 Recap</title><link>http://cestlaz.github.io/posts/using-emacs-2017-recap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orged6e627" class="outline-2"&gt;
-&lt;h2 id="orged6e627"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orged6e627"&gt;
-&lt;p&gt;
-This past year I recorded 14 Using Emacs videos. This is on top of the
-25 videos I made last year. The fall off in production is
-understandable. I got through my day to day configuration in the
-late 20s and since then the videos have just been on things I've
-rediscovered, things that became useful and things that I just found
-interesting. It was also a busier year.
-&lt;/p&gt;
-
-&lt;p&gt;
-Why did I start the series? Mostly for my students. There's the built
-in Emacs tutorial and other beginner resources but how do you go from
-the basics to a real working configuration? For years I would show my
-kids Emacs and use it in class but there was never a path for them to
-follow from beginner to craftsman. I hoped the videos would fill the
-void.
-&lt;/p&gt;
-
-&lt;p&gt;
-It probably didn't. I don't think I'm getting greater Emacs adoption
-from my students but on the other hand, I've found making the series
-rewarding for other reasons.
-&lt;/p&gt;
-
-&lt;p&gt;
-First and foremost, it's allowed me to be an active contributing
-member of the Emacs community. I haven't written any Emacs packages
-nor am I an active guy on any Emacs forums but this is a way I can do
-my part. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Second, although there hasn't been a great deal of comments on the
-videos or blog posts I've gotten to know a few people that I wouldn't
-have gotten to know otherwise.
-&lt;/p&gt;
-
-&lt;p&gt;
-It also shows that that if you put things out there people might find
-it useful. I don't know how many people saw my Emacs posts at the
-start but a year and half later I've got 1,700 YouTube
-subscribers. Sure, that's nothing compared to many YouTubers but 
-for a guy making schlocky videos at his desk about an as much as I hate to admit it
-non-maintream editor, I think it's pretty cool.
-&lt;/p&gt;
-
-&lt;p&gt;
-The question is what to make videos on moving forward? 
-&lt;/p&gt;
-
-&lt;p&gt;
-I thought I'd throw it out to the community. Here's an embedded
-poll. Feel free to suggest other topics either on the blog or
-as a Twitter reply.
-&lt;/p&gt;
-
-&lt;p&gt;
-I can't promise I'll get to all or any but I'll certainly check out
-the popular suggestions.
-&lt;/p&gt;
-
-&lt;script type="text/javascript" src="http://www.easypolls.net/ext/scripts/emPoll.js?p=5a46abd4e4b04ebe73ddc4de"&gt;&lt;/script&gt;&lt;a class="OPP-powered-by" href="http://www.objectplanet.com/opinio/" style="text-decoration:none;"&gt;&lt;div style="font: 9px arial; color: gray;"&gt;survey service&lt;/div&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><guid>http://cestlaz.github.io/posts/using-emacs-2017-recap/</guid><pubDate>Fri, 29 Dec 2017 18:17:53 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>ap</category><category>cs</category><category>cs4all</category><guid>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</guid><pubDate>Mon, 01 Jan 2018 23:28:37 GMT</pubDate></item></channel></rss>
