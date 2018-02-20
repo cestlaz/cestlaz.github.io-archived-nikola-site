@@ -1,0 +1,38 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs 43 - Music with MPD
+.. slug: using-emacs-43-music
+.. date: 2018-02-20 08:05:45 UTC-04:00
+.. tags: emacs, music, mpd
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+I like to listen to music at work. Sometimes I just stream from
+YouTube, Soundcloud, Spotify or some other online source but if you're
+a person of a certain age, like me, you probably have quite an mp3
+collection. All those CDs that have been ripped not to mention some
+converted vinyl.
+
+I used to use the [[https://www.musicpd.org/][Music Player Daemon]] or MPD back in the day. It would
+run in the background and you could connect to it using lots of
+[[https://www.musicpd.org/clients/][clients]].
+
+When I was running Ubuntu and Mint Linux, I had some trouble setting
+up MPD but the process is much smoother using Manjaro which is Arch
+based and I'm currently enjoying.
+
+Here's a video on how I set up MPD and also use Emacs to control it.
+
+Coincidentally, on the same day I recorded this, [[https://www.youtube.com/channel/UCDEtZ7AKmwS0_GNJog01D2g/feed][Uncle Dave]] put up a
+similar [[https://www.youtube.com/watch?v=xTVN8UDScqk][video]]. Dave also sets up MPD on an Arch based linux but he
+uses EMMS for his player. I ultimately end up with Simple-MPC with
+briefs stops at the built in MPC mode and Mingus along the way.
+
+Enjoy.
+
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LWd60rc_rQ0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+#+END_EXPORT
