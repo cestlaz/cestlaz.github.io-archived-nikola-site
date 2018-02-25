@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2018-02-20T20:06:31Z</updated>
+  <updated>2018-02-25T20:08:32Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,92 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-35.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>SIGCSE 2018</title>
+    <id>http://cestlaz.github.io/posts/sigcse2018/</id>
+    <updated>2018-02-25T14:41:41-04:00</updated>
+    <published>2018-02-25T14:41:41-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018/"/>
+    <summary type="html">&lt;div id="outline-container-org8fe5214" class="outline-2"&gt;
+&lt;h2 id="org8fe5214"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8fe5214"&gt;
+&lt;p&gt;
+I just got back from SIGCSE2018 - the big annual conference on
+computer science education. Although I've been in this racket for
+decades, this was only my second SIGCSE and once again I had a blast.
+&lt;/p&gt;
+
+&lt;p&gt;
+As with most conferences, a highlight was the "hallway track" where I
+got to spend time with friends and colleagues from all over the
+country. I also got to check off a few names from the "people I've
+been following online and want to meet in person" list. There are a
+few more on the list but it's getting smaller.
+&lt;/p&gt;
+
+&lt;p&gt;
+The theme was &lt;b&gt;CS For All&lt;/b&gt; but the range of topics covered was both
+wide and deep.
+&lt;/p&gt;
+
+&lt;p&gt;
+For me, I left thinking about a few themes:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;College faculty can learn a lot from K12 teachers in terms of
+pedagogy and teaching.&lt;/li&gt;
+&lt;li&gt;So can "thought leaders," policy makers, and big companies.&lt;/li&gt;
+&lt;li&gt;Colleges face a huge challenge in both developing pedagogues and
+transfering pedagogical knowledge over to researchers.&lt;/li&gt;
+&lt;li&gt;Can you do both CS4All and have quality CS teachers in the short
+term (I doubt it)?&lt;/li&gt;
+&lt;li&gt;Researchers vs Practitioners and the value of listening to one or
+the other.&lt;/li&gt;
+&lt;li&gt;Nifty assignments are frequently regular assignments reskinned with
+graphics.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+There were a few sessions that dissapointed me but most of the ones I
+attende were terrific. I thought I'd blog about some of them in detail over
+the next few weeks. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Here are the sessions I'm planning on writing about:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;&lt;a href="https://dl.acm.org/citation.cfm?id=3159597"&gt;Implementing Malloc: Students and SYstems Programming&lt;/a&gt; presented by Brian
+Railing&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dl.acm.org/citation.cfm?id=3159471"&gt;Creativity, Customization, and Onwership: Game Design in Bootstrap:
+Algebra&lt;/a&gt;, presented by Kathi Fisher&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dl.acm.org/citation.cfm?id=3159527"&gt;An Explicit Strategy to Scaffold Novice Program Tracing&lt;/a&gt;, presented
+by Benjamin Xie&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dl.acm.org/citation.cfm?id=3159557"&gt;Strategies for Basing the CS Theory Course on Non-decision Problems&lt;/a&gt;,
+presented by John MacCormick&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dl.acm.org/citation.cfm?id=3159609"&gt;Connect the Dots to Prove It: A Novel Way to Learn Proof
+Construction&lt;/a&gt;, by McCartin-Lim, Woolf, and Mcregor&lt;/li&gt;
+&lt;li&gt;Google Supporter Session on Incorporating Machine Learning into
+University Courses.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dl.acm.org/citation.cfm?id=3159609"&gt;Nifty Assignments&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+I might talk about a few other sessions as well.
+&lt;/p&gt;
+
+&lt;p&gt;
+Overall it was a great conference. I look forward to sharing my
+experiences with all of you in the coming posts.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
   <entry>
     <title>Using Emacs 43 - Music with MPD</title>
     <id>http://cestlaz.github.io/posts/using-emacs-43-music/</id>
@@ -20,9 +106,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-43-music/"/>
-    <summary type="html">&lt;div id="outline-container-orge9ac0b0" class="outline-2"&gt;
-&lt;h2 id="orge9ac0b0"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge9ac0b0"&gt;
+    <summary type="html">&lt;div id="outline-container-org208ddec" class="outline-2"&gt;
+&lt;h2 id="org208ddec"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org208ddec"&gt;
 &lt;p&gt;
 I like to listen to music at work. Sometimes I just stream from
 YouTube, Soundcloud, Spotify or some other online source but if you're
@@ -74,9 +160,9 @@ Enjoy.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/testing-testing/"/>
-    <summary type="html">&lt;div id="outline-container-org8b3311b" class="outline-2"&gt;
-&lt;h2 id="org8b3311b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8b3311b"&gt;
+    <summary type="html">&lt;div id="outline-container-orga2d6f11" class="outline-2"&gt;
+&lt;h2 id="orga2d6f11"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga2d6f11"&gt;
 &lt;p&gt;
 With CS4All being the buzzword of the day we're paying a lot of
 attention to the fact that when we teach a CS class for all students,
@@ -277,9 +363,9 @@ they end up.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-42-git-gutter/"/>
-    <summary type="html">&lt;div id="outline-container-org054b38f" class="outline-2"&gt;
-&lt;h2 id="org054b38f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org054b38f"&gt;
+    <summary type="html">&lt;div id="outline-container-org916ae49" class="outline-2"&gt;
+&lt;h2 id="org916ae49"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org916ae49"&gt;
 &lt;p&gt;
 One day I'll do a Magit video but since there are already some good
 ones out there I thought I'd share a couple of other great git related
@@ -322,9 +408,9 @@ Enjoy
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-41-pandoc/"/>
-    <summary type="html">&lt;div id="outline-container-org0bcccc1" class="outline-2"&gt;
-&lt;h2 id="org0bcccc1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0bcccc1"&gt;
+    <summary type="html">&lt;div id="outline-container-org9929ccd" class="outline-2"&gt;
+&lt;h2 id="org9929ccd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9929ccd"&gt;
 &lt;p&gt;
 Another Emacs quick hit today. Actually, not really Emacs. Today's
 video is a quick, really quick, look at &lt;a href="https://pandoc.org/"&gt;Pandoc&lt;/a&gt;. Pandoc is a document
@@ -409,9 +495,9 @@ If you haven't checked out pandoc, you should.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/google-sheets/"/>
-    <summary type="html">&lt;div id="outline-container-org4ac0ea1" class="outline-2"&gt;
-&lt;h2 id="org4ac0ea1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4ac0ea1"&gt;
+    <summary type="html">&lt;div id="outline-container-org694d5c8" class="outline-2"&gt;
+&lt;h2 id="org694d5c8"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org694d5c8"&gt;
 &lt;p&gt;
 I make regular use of Google's office suite. I use Google forms all
 the time to collect data, Google docs when I have to leave Emacs for
@@ -518,9 +604,9 @@ function sendGrades(){
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/"/>
-    <summary type="html">&lt;div id="outline-container-orgfc1f822" class="outline-2"&gt;
-&lt;h2 id="orgfc1f822"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgfc1f822"&gt;
+    <summary type="html">&lt;div id="outline-container-org1432f66" class="outline-2"&gt;
+&lt;h2 id="org1432f66"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1432f66"&gt;
 &lt;p&gt;
 Thanks to everyone who voted for topics or commented with suggestions
 for videos. I'll try to get to them in the coming months.
@@ -533,9 +619,9 @@ browser extension that allows you to edit web form inputs with Emacs.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgde9309d" class="outline-2"&gt;
-&lt;h2 id="orgde9309d"&gt;UPDATE&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgde9309d"&gt;
+&lt;div id="outline-container-org1fd9c1a" class="outline-2"&gt;
+&lt;h2 id="org1fd9c1a"&gt;UPDATE&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1fd9c1a"&gt;
 &lt;p&gt;
 I forgot to mention that you can set a shortcut key, at least in chrome rather than
 clicking on the icon. This makes things much smoother.
@@ -571,9 +657,9 @@ Enjoy:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/textbooks/"/>
-    <summary type="html">&lt;div id="outline-container-orgd62a4e7" class="outline-2"&gt;
-&lt;h2 id="orgd62a4e7"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd62a4e7"&gt;
+    <summary type="html">&lt;div id="outline-container-org0e22892" class="outline-2"&gt;
+&lt;h2 id="org0e22892"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0e22892"&gt;
 &lt;p&gt;
 I thought I'd answer Alfred Thompson's recent post on &lt;a href="http://blog.acthompson.net/2018/01/thinking-about-cs-textbooks.html"&gt;using
 textbooks&lt;/a&gt;. Like Alfred, I've never used textbooks particularly
@@ -661,9 +747,9 @@ alternatives.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/is-teaching-cs-hard/"/>
-    <summary type="html">&lt;div id="outline-container-orgb0215e3" class="outline-2"&gt;
-&lt;h2 id="orgb0215e3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb0215e3"&gt;
+    <summary type="html">&lt;div id="outline-container-org60426af" class="outline-2"&gt;
+&lt;h2 id="org60426af"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org60426af"&gt;
 &lt;p&gt;
 Last week, Mark Guzdial asked &lt;a href="https://computinged.wordpress.com/2018/01/19/what-does-it-mean-for-computer-science-to-be-harder-to-learn-than-other-stem-subjects/"&gt;What does it mean for Computer Science to be harder to learn
 than other STEM subjects?&lt;/a&gt; as a follow up to his &lt;a href="https://cacm.acm.org/blogs/blog-cacm/224105-learning-computer-science-is-different-than-learning-other-stem-disciplines/fulltext"&gt;ACM Blog post&lt;/a&gt; this
@@ -789,9 +875,9 @@ least it is if you're doing it right.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/reading-and-writing-recs/"/>
-    <summary type="html">&lt;div id="outline-container-org025384e" class="outline-2"&gt;
-&lt;h2 id="org025384e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org025384e"&gt;
+    <summary type="html">&lt;div id="outline-container-org8051c0a" class="outline-2"&gt;
+&lt;h2 id="org8051c0a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8051c0a"&gt;
 &lt;p&gt;
 I've been on both sides of the recommendation game. I currently read
 all the recommendations for students who apply to my &lt;a href="http://info.huntercs.org"&gt;honors CS program&lt;/a&gt;
@@ -919,83 +1005,5 @@ both unfair and arbitrary but that's a discussion for another time.&lt;/div&gt;&
 
 &lt;/div&gt;
 &lt;/div&gt;</summary>
-  </entry>
-  <entry>
-    <title>APCS-P -  Bigger Intake Or Leaky Pipe</title>
-    <id>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</id>
-    <updated>2018-01-01T19:28:37-04:00</updated>
-    <published>2018-01-01T19:28:37-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/"/>
-    <summary type="html">&lt;div id="outline-container-org45aa2c0" class="outline-2"&gt;
-&lt;h2 id="org45aa2c0"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org45aa2c0"&gt;
-&lt;p&gt;
-Advanced Placement Computer Science got top billing on Alfred
-Thompson's &lt;a href="http://blog.acthompson.net/2018/01/computer-science-education-things-im.html"&gt;Things I'm Watching in 2017&lt;/a&gt; post. Alfred talks about how
-APCS-P exploded onto the scene and wonders what will happen with APCS
-this year. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I have some questions as well but mine won't be answered for years to
-come, if ever. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Like it or not, the College Board has an out sized influence on K12
-education. As long as people are convinced that AP=good there will be
-a push for more and more AP classes and APCS-P is a perfect class to
-push. CS is the hot topic in K12, the topic is getting a big push
-from both politicians and industry, the class has no pre-requisites
-and in spite of being called a college course is somehow appropriate
-for a typical tenth grader.
-&lt;/p&gt;
-
-&lt;p&gt;
-The concern here is that at the end of the day. APCS-P is an exam or
-rather an exam plus two other assessments. The quality can vary
-greatly. I've heard of APCS-P implementations that seem pretty
-rigorous and I've seen implementations that are, quite frankly, a
-joke. The question is this: is APCS-P both motivating kids to go on to
-the next level and just as importantly preparing them to succeed at
-that level? 
-&lt;/p&gt;
-
-&lt;p&gt;
-We might never know.
-&lt;/p&gt;
-
-&lt;p&gt;
-A high school might only offer APCS-P. If APCS-A isn't offered, we
-might not know if the student went on to take more CS and we won't
-know if the student succeeded or not. I've seen this with some very
-high profile, popular, after school/summer non-profits. The kids have
-a great time and the non-profits rave about how much their kids learn
-but then the kids take a real CS class in school and drop like
-flies. Was it the teacher/professor or did the non-profit set the kids up to
-fail by convincing them they knew a whole lot more than they did and
-that CS was super easy all the time. 
-&lt;/p&gt;
-
-&lt;p&gt;
-If credit is given for APCS-P, it looks like it will be blanket
-credit. CS majors and minors will still have to take all the same classes in
-college and CS so it will be very hard to tell if APCS-P is
-responsible for any uptick in CS. 
-&lt;/p&gt;
-
-&lt;p&gt;
-At the end of the day, the College Board is going to make a lot of
-money but if APCS-P becomes the standard high school CS course will
-this leave us with true, quality CS4All? I have my doubts.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="ap" label="ap"/>
-    <category term="cs" label="cs"/>
-    <category term="cs4all" label="cs4all"/>
   </entry>
 </feed>
