@@ -1,0 +1,120 @@
+#+BEGIN_COMMENT
+.. title: Sigcse2018 - Malloc Lab
+.. slug: sigcse2018-Malloc-Lab
+.. date: 2018-03-01 16:59:31 UTC-04:00
+.. tags: cs, pedagogy, systems
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+I wasn't going to go to this session. I started out in a panel on
+integrating social good into CS Ed. With the panel not meeting my
+expectations I moved over to my second choice - the system programming
+sessions where I saw [[https://dl.acm.org/citation.cfm?id=3159597][Implementing Malloc: Students and Systems
+Programming]], a paper presented by [[http://www.cs.cmu.edu/~bpr/][Brian Railing]] of CMU.
+
+I really liked both the paper and the talk.
+
+CMU computer science students all take a systems course that uses
+[[https://www.amazon.com/Computer-Systems-Programmers-Perspective-3/dp/9332573905/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&psc=1&refRID=Y5ZKG2V8ZYZZPZHQP8SQ][Computer Systems: A Programmer's Perspective]]. It's a great book. I
+read through the first edition years ago and felt it was great
+resource not only in a systems course but also for self study. One of
+the labs has the students implement their own memory allocation calls,
+or *malloc* for us old time C wonks. 
+
+There were a number of self perceived  deficiencies with the
+assignment such as encouraging bad programming style by modeling
+less than ideal practices but the biggest deficiency as that students
+could game the assignment. Students could do very well on the
+assignment by exploiting knowledge of the assignment rather than by
+writing a full and correct malloc implementation. One example is that
+students were able to figure out that no allocation would be more than
+100MB so they really didn't have to deal with 64 bit pointers. They
+could use smaller offsets thus simplifying the assignment. The
+assignment became more about figuring out how to get it through the
+grader and less about learning memory management. I'm sure I'm
+overstating it but that's the idea.
+
+Railing explained all of the deficiencies and then how they changed
+the assignment to address them.
+
+At the end of the day, the assignment had fewer loopholes to game so
+students had to really write the malloc library and presumably learn
+about memory management.
+
+They also added an intermediate deliverable so students couldn't leave
+everything for the last minute.
+
+Near the end of the talk, Railing discussed results where he pointed
+out that students final exam scores didn't change but they did better
+on the malloc questions. It wasn't clear if the overall scores didn't
+change, meaning that the students did better on the malloc questions
+but worse somewhere else or if they did similarly to past students on
+the other sections and in addition they scored better on the malloc
+questions. I'm not sold on the final exam questions being the best way
+to evaluate learning but it is an easy data point. 
+
+I loved the presentation and paper and I love what Railing is doing
+but my big takeaway was...
+
+Well, Duh...
+
+- students aren't doing as they should
+- teacher realizes students are gaming assignment
+- teacher reworks assignment
+- students do better
+
+Teachers do this all the time. Of course when we do it, it's not
+"research." This was a recurring theme for me at SIGCSE2018 and I
+tweeted it. While it's true that K12 teachers can learn a lot about CS
+content from higher ed, people in higher ed can learn a lot about
+teaching from teachers. 
+
+What Railing presented was terrific and important as changing
+assignments like this will now be considered by people who haven't
+thought about this before but this is second nature to a teacher. Of
+course I'm talking about a good teacher, not one who blindly follows
+scripted lessons.
+
+I don't mean this as a slight to professors. They're hired and
+promoted based on research so much of their job involves another skill
+set. I know many professors who care very much about teaching but they
+might only teach one or two classes a semester that meets once or
+twice a week while a typical high school teacher meets 150 students a
+day five days a week over five different classes a day.  Much more of
+an opportunity for deliberate practice.
+
+This presents a huge challenge. How can professors who are hired and
+promoted as researchers be given the time and ability to develop as
+teachers? What about adjuncts or Teaching Assistants? I'd imagine it's
+even harder for them. I know that colleges have lines for teaching
+faculty but from what I can see, those instructors are usually super
+overloaded with classes and students so that doesn't solve the
+problem. Even if you do have teaching faculty that have the time to
+develop their craft, how do you get those teaching chops over to the
+research faculty?
+
+After the session, I was talking about this with [[http://www.cs.cmu.edu/~mjs/][Mark Stehlik]],
+Assistant Dean at CMU's School of Computer Science. Mark was telling
+me about CMU's efforts to develop teaching faculty across the
+disciplines. I was happy to hear about the efforts CMU was taking but
+it sounds like they have the same challenges with respect to pedagogy
+as everyone else. If it's a challenge for CMU with all their
+resources, what does that mean for the rest of us?
+
+Still, it was encouraging to go to a number of sessions where it was
+clear that professors - both teaching and research faculty are serious
+about the craft of teaching and conferences like SIGCSE can bring them
+together with those of us who don't have the chops as researchers but
+do so as teachers.
+
+
+
+
+
+
+
+
