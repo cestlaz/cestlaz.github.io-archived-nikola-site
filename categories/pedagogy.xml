@@ -1,7 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about pedagogy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/pedagogy.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 16 Feb 2018 13:07:15 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9ef6fed" class="outline-2"&gt;
-&lt;h2 id="org9ef6fed"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9ef6fed"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about pedagogy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/pedagogy.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 01 Mar 2018 22:54:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sigcse2018 - Malloc Lab</title><link>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9ede4c6" class="outline-2"&gt;
+&lt;h2 id="org9ede4c6"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9ede4c6"&gt;
+&lt;p&gt;
+I wasn't going to go to this session. I started out in a panel on
+integrating social good into CS Ed. With the panel not meeting my
+expectations I moved over to my second choice - the system programming
+sessions where I saw &lt;a href="https://dl.acm.org/citation.cfm?id=3159597"&gt;Implementing Malloc: Students and Systems
+Programming&lt;/a&gt;, a paper presented by &lt;a href="http://www.cs.cmu.edu/~bpr/"&gt;Brian Railing&lt;/a&gt; of CMU.
+&lt;/p&gt;
+
+&lt;p&gt;
+I really liked both the paper and the talk.
+&lt;/p&gt;
+
+&lt;p&gt;
+CMU computer science students all take a systems course that uses
+&lt;a href="https://www.amazon.com/Computer-Systems-Programmers-Perspective-3/dp/9332573905/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=Y5ZKG2V8ZYZZPZHQP8SQ"&gt;Computer Systems: A Programmer's Perspective&lt;/a&gt;. It's a great book. I
+read through the first edition years ago and felt it was great
+resource not only in a systems course but also for self study. One of
+the labs has the students implement their own memory allocation calls,
+or &lt;b&gt;malloc&lt;/b&gt; for us old time C wonks. 
+&lt;/p&gt;
+
+&lt;p&gt;
+There were a number of self perceived  deficiencies with the
+assignment such as encouraging bad programming style by modeling
+less than ideal practices but the biggest deficiency as that students
+could game the assignment. Students could do very well on the
+assignment by exploiting knowledge of the assignment rather than by
+writing a full and correct malloc implementation. One example is that
+students were able to figure out that no allocation would be more than
+100MB so they really didn't have to deal with 64 bit pointers. They
+could use smaller offsets thus simplifying the assignment. The
+assignment became more about figuring out how to get it through the
+grader and less about learning memory management. I'm sure I'm
+overstating it but that's the idea.
+&lt;/p&gt;
+
+&lt;p&gt;
+Railing explained all of the deficiencies and then how they changed
+the assignment to address them.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the end of the day, the assignment had fewer loopholes to game so
+students had to really write the malloc library and presumably learn
+about memory management.
+&lt;/p&gt;
+
+&lt;p&gt;
+They also added an intermediate deliverable so students couldn't leave
+everything for the last minute.
+&lt;/p&gt;
+
+&lt;p&gt;
+Near the end of the talk, Railing discussed results where he pointed
+out that students final exam scores didn't change but they did better
+on the malloc questions. It wasn't clear if the overall scores didn't
+change, meaning that the students did better on the malloc questions
+but worse somewhere else or if they did similarly to past students on
+the other sections and in addition they scored better on the malloc
+questions. I'm not sold on the final exam questions being the best way
+to evaluate learning but it is an easy data point. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I loved the presentation and paper and I love what Railing is doing
+but my big takeaway was…
+&lt;/p&gt;
+
+&lt;p&gt;
+Well, Duh…
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;students aren't doing as they should&lt;/li&gt;
+&lt;li&gt;teacher realizes students are gaming assignment&lt;/li&gt;
+&lt;li&gt;teacher reworks assignment&lt;/li&gt;
+&lt;li&gt;students do better&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Teachers do this all the time. Of course when we do it, it's not
+"research." This was a recurring theme for me at SIGCSE2018 and I
+tweeted it. While it's true that K12 teachers can learn a lot about CS
+content from higher ed, people in higher ed can learn a lot about
+teaching from teachers. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What Railing presented was terrific and important as changing
+assignments like this will now be considered by people who haven't
+thought about this before but this is second nature to a teacher. Of
+course I'm talking about a good teacher, not one who blindly follows
+scripted lessons.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't mean this as a slight to professors. They're hired and
+promoted based on research so much of their job involves another skill
+set. I know many professors who care very much about teaching but they
+might only teach one or two classes a semester that meets once or
+twice a week while a typical high school teacher meets 150 students a
+day five days a week over five different classes a day.  Much more of
+an opportunity for deliberate practice.
+&lt;/p&gt;
+
+&lt;p&gt;
+This presents a huge challenge. How can professors who are hired and
+promoted as researchers be given the time and ability to develop as
+teachers? What about adjuncts or Teaching Assistants? I'd imagine it's
+even harder for them. I know that colleges have lines for teaching
+faculty but from what I can see, those instructors are usually super
+overloaded with classes and students so that doesn't solve the
+problem. Even if you do have teaching faculty that have the time to
+develop their craft, how do you get those teaching chops over to the
+research faculty?
+&lt;/p&gt;
+
+&lt;p&gt;
+After the session, I was talking about this with &lt;a href="http://www.cs.cmu.edu/~mjs/"&gt;Mark Stehlik&lt;/a&gt;,
+Assistant Dean at CMU's School of Computer Science. Mark was telling
+me about CMU's efforts to develop teaching faculty across the
+disciplines. I was happy to hear about the efforts CMU was taking but
+it sounds like they have the same challenges with respect to pedagogy
+as everyone else. If it's a challenge for CMU with all their
+resources, what does that mean for the rest of us?
+&lt;/p&gt;
+
+&lt;p&gt;
+Still, it was encouraging to go to a number of sessions where it was
+clear that professors - both teaching and research faculty are serious
+about the craft of teaching and conferences like SIGCSE can bring them
+together with those of us who don't have the chops as researchers but
+do so as teachers.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>systems</category><guid>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</guid><pubDate>Thu, 01 Mar 2018 20:59:31 GMT</pubDate></item><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7ab1556" class="outline-2"&gt;
+&lt;h2 id="org7ab1556"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7ab1556"&gt;
 &lt;p&gt;
 I've been having fun with this years &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; competition. So
 far, I've been able to keep up but with I expect that to change in
@@ -38,9 +176,9 @@ I decided to do this rant as a video. I hope you enjoy it:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x8cZgEogWNw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>A new first language? What's the follow up plan?</title><link>http://cestlaz.github.io/posts/first-language-changing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7e7a8ea" class="outline-2"&gt;
-&lt;h2 id="org7e7a8ea"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7e7a8ea"&gt;
+&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>A new first language? What's the follow up plan?</title><link>http://cestlaz.github.io/posts/first-language-changing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org34a4687" class="outline-2"&gt;
+&lt;h2 id="org34a4687"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org34a4687"&gt;
 &lt;p&gt;
 This morning, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about Stanford possibly &lt;a href="https://computinged.wordpress.com/2017/04/21/cs-department-updates-introductory-courses-java-is-gone/"&gt;moving away
 from Java&lt;/a&gt; as their intro language. This comes on the heels of a
@@ -222,9 +360,9 @@ introduce github to my classes here they are:
 &lt;p&gt;
 I'm hoping some of you have found this set of four posts useful or at
 least interesting.
-&lt;/p&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-4/</guid><pubDate>Tue, 11 Apr 2017 23:11:30 GMT</pubDate></item><item><title>A free multi-state clicker with built in redundency</title><link>http://cestlaz.github.io/posts/thumb_clickers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgb41ecb5" class="outline-2"&gt;
-&lt;h2 id="orgb41ecb5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb41ecb5"&gt;
+&lt;/p&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-4/</guid><pubDate>Tue, 11 Apr 2017 23:11:30 GMT</pubDate></item><item><title>A free multi-state clicker with built in redundency</title><link>http://cestlaz.github.io/posts/thumb_clickers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org67e08c4" class="outline-2"&gt;
+&lt;h2 id="org67e08c4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org67e08c4"&gt;
 &lt;p&gt;
 Last Friday, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about the woes of &lt;a href="https://computinged.wordpress.com/2017/03/31/the-need-for-better-software-and-systems-to-support-active-cs-learning/%0A"&gt;using clickers&lt;/a&gt; in a
 class. The amount of effort required to use his school's approved
@@ -297,9 +435,9 @@ Thumbs.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org912e666" class="outline-2"&gt;
-&lt;h2 id="org912e666"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org912e666"&gt;
+&lt;div id="outline-container-org7b082ed" class="outline-2"&gt;
+&lt;h2 id="org7b082ed"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7b082ed"&gt;
 &lt;p&gt;
 Periodically, I'll poll my class.
 &lt;/p&gt;
@@ -531,9 +669,9 @@ Here's all the code:
 &lt;p&gt;
 Overall, a nice little problem for beginning and intermediate
 students.
-&lt;/p&gt;</description><category>adventofcode</category><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-code-2016-1/</guid><pubDate>Tue, 06 Dec 2016 15:46:17 GMT</pubDate></item><item><title>New Term, New Tool - repl.it</title><link>http://cestlaz.github.io/posts/new-term-new-tool-replit/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge2142c1" class="outline-2"&gt;
-&lt;h2 id="orge2142c1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge2142c1"&gt;
+&lt;/p&gt;</description><category>adventofcode</category><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-code-2016-1/</guid><pubDate>Tue, 06 Dec 2016 15:46:17 GMT</pubDate></item><item><title>New Term, New Tool - repl.it</title><link>http://cestlaz.github.io/posts/new-term-new-tool-replit/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org947b0d7" class="outline-2"&gt;
+&lt;h2 id="org947b0d7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org947b0d7"&gt;
 &lt;p&gt;
 We're now a week in to my first class at Hunter. It's a little early
 for me to really compare and contrast the high school to college
@@ -627,9 +765,9 @@ probably use it somewhat less as they start to learn to use their own
 systems but I'm glad to have repl.it in my teaching arsenal.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-term-new-tool-replit/</guid><pubDate>Fri, 02 Sep 2016 13:26:02 GMT</pubDate></item><item><title>Lesson plans - scripts to springboards</title><link>http://cestlaz.github.io/posts/lesson-plans/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgb5840b4" class="outline-2"&gt;
-&lt;h2 id="orgb5840b4"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb5840b4"&gt;
+&lt;/div&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-term-new-tool-replit/</guid><pubDate>Fri, 02 Sep 2016 13:26:02 GMT</pubDate></item><item><title>Lesson plans - scripts to springboards</title><link>http://cestlaz.github.io/posts/lesson-plans/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org337d3ec" class="outline-2"&gt;
+&lt;h2 id="org337d3ec"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org337d3ec"&gt;
 &lt;p&gt;
 I spent last Saturday up at the Microsoft offices in Times Square
 observing a &lt;a href="https://www.tealsk12.org/"&gt;TEALS&lt;/a&gt; training session. My fried &lt;a href="https://twitter.com/nathanielgranor"&gt;Nathaniel Granor&lt;/a&gt;, Teals
@@ -877,98 +1015,4 @@ leave a comment for anything that the form doesn't cover?
 &lt;/p&gt;
 
 
-&lt;iframe src="https://docs.google.com/forms/d/1FlppDbeiK8uPxh_RkXoCbbdE_UDY_4qXmZWbXlZ0gGg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading...&lt;/iframe&gt;</description><category>hardware</category><category>pedagogy</category><category>robotics</category><category>robots</category><category>tools</category><guid>http://cestlaz.github.io/posts/robot-survey/</guid><pubDate>Wed, 15 Jun 2016 13:08:28 GMT</pubDate></item><item><title>Navajo Math Circles</title><link>http://cestlaz.github.io/posts/navajo-circles/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
-Yesterday, I saw the New York Premiere of &lt;a href="http://www.zalafilms.com/navajo/"&gt;Navajo Math Circles&lt;/a&gt;, a
-documentary on a &lt;a href="http://www.mathcircles.org/"&gt;Math Circle&lt;/a&gt; put in place to support and enrich the
-currently under-served community in the Navajo educational system.
-&lt;/p&gt;
-
-&lt;p&gt;
-At their core, Math Circles are math outreach and enrichment
-programs. I'm most familiar with the &lt;a href="https://www.nymathcircle.org/"&gt;New York Math Circle&lt;/a&gt;. I'm friends
-with many of their teachers and organizers and my son took part in
-their summer program for a couple of years.
-&lt;/p&gt;
-
-&lt;p&gt;
-Over in the southwest, these Math Circles have been bringing together
-students, frequently across great distances each day to explore
-problem solving and creativity through mathematics.
-&lt;/p&gt;
-
-&lt;p&gt;
-As someone who's worked hard to bring educational opportunities to the
-have nots, I love the program. Some of the highlights include the kids
-working on open ended problems, focusing on process and techniques
-more than specific results, working both collaboratively but also
-developing self sufficiency, and more. I also love the fact that
-they've started teacher math circles to help to bring some of that
-math circle magic to the everyday classroom.
-&lt;/p&gt;
-
-&lt;p&gt;
-I enjoyed the film and recommend you check it out to see what's
-possible and I want to share my two big takeaways.
-&lt;/p&gt;
-
-&lt;p&gt;
-First, early on in the film, one of the people running the program
-talked about developing a math enrichment program through and with
-Navajo traditions and culture. This is HUGE and I feel it's something
-we're losing. America is so diverse from coast to coast and here in
-New York City you can see radically different ways of life living
-right across the street from each other. Everyone pays lip service to
-"making the work interesting and relevant to the student" but few
-people walk the walk. These folk do.
-&lt;/p&gt;
-
-&lt;p&gt;
-Second, I left the documentary with a sour taste in my mouth. Not
-because of the program but because the Navajo Math Circle project and
-projects like it are scraping together what little resources they can
-to try to do what the school systems should be doing to begin with.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-As we move to scripted lessons, national standards, curricula dictated
-or at least influenced by large private concerns and standardized
-tests, our schools are moving further and further away from community
-and local culture.
-&lt;/p&gt;
-
-&lt;p&gt;
-In the documentary, one student pointed out that in math class, they
-have to use the textbook. They learn the process and then have to
-solve the problems. In Math Circle, there are no textbooks. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Afterwards, the students in from the Math Circle did some Q&amp;amp;A. I asked
-them to elaborate - what's the difference between there Math Circle
-experiences and their in school ones. I got:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-Math Circle is fun!!!!
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-I think that says it all.
-&lt;/p&gt;
-
-&lt;p&gt;
-I know many great teachers who try to bring culture and community to
-their classes. One of my son's best teachers, &lt;a href="http://www.heinemann.com/authors/828.aspx"&gt;Paula Rogovin&lt;/a&gt; did it all
-the time. Many of my friends and colleagues try to do so as well but
-the powers that be make it harder and harder. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Until we win back public education it's important to support programs
-like Math Circles (and, if I do say so myself, programs like our own
-&lt;a href="http://cstuy.org"&gt;CSTUY&lt;/a&gt;) and it's also critical that we work to try to bring community
-and culture to our regular classes.
-&lt;/p&gt;</description><category>curriculum</category><category>education</category><category>pedagogy</category><category>policy</category><guid>http://cestlaz.github.io/posts/navajo-circles/</guid><pubDate>Wed, 08 Jun 2016 11:03:55 GMT</pubDate></item></channel></rss>
+&lt;iframe src="https://docs.google.com/forms/d/1FlppDbeiK8uPxh_RkXoCbbdE_UDY_4qXmZWbXlZ0gGg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading...&lt;/iframe&gt;</description><category>hardware</category><category>pedagogy</category><category>robotics</category><category>robots</category><category>tools</category><guid>http://cestlaz.github.io/posts/robot-survey/</guid><pubDate>Wed, 15 Jun 2016 13:08:28 GMT</pubDate></item></channel></rss>

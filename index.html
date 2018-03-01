@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-35.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/sigcse2018/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/sigcse2018-Malloc-Lab/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,158 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sigcse2018/" class="u-url">SIGCSE 2018</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sigcse2018-Malloc-Lab/" class="u-url">Sigcse2018 - Malloc Lab</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/sigcse2018-Malloc-Lab/" rel="bookmark"><time class="published dt-published" datetime="2018-03-01T16:59:31-04:00" title="2018-03-01 16:59">2018-03-01 16:59</time></a></p>
+                <p class="commentline">            <a href="posts/sigcse2018-Malloc-Lab/#disqus_thread" data-disqus-identifier="cache/posts/sigcse2018-Malloc-Lab.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org9ede4c6" class="outline-2">
+<h2 id="org9ede4c6"></h2>
+<div class="outline-text-2" id="text-org9ede4c6">
+<p>
+I wasn't going to go to this session. I started out in a panel on
+integrating social good into CS Ed. With the panel not meeting my
+expectations I moved over to my second choice - the system programming
+sessions where I saw <a href="https://dl.acm.org/citation.cfm?id=3159597">Implementing Malloc: Students and Systems
+Programming</a>, a paper presented by <a href="http://www.cs.cmu.edu/~bpr/">Brian Railing</a> of CMU.
+</p>
+
+<p>
+I really liked both the paper and the talk.
+</p>
+
+<p>
+CMU computer science students all take a systems course that uses
+<a href="https://www.amazon.com/Computer-Systems-Programmers-Perspective-3/dp/9332573905/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&amp;psc=1&amp;refRID=Y5ZKG2V8ZYZZPZHQP8SQ">Computer Systems: A Programmer's Perspective</a>. It's a great book. I
+read through the first edition years ago and felt it was great
+resource not only in a systems course but also for self study. One of
+the labs has the students implement their own memory allocation calls,
+or <b>malloc</b> for us old time C wonks. 
+</p>
+
+<p>
+There were a number of self perceived  deficiencies with the
+assignment such as encouraging bad programming style by modeling
+less than ideal practices but the biggest deficiency as that students
+could game the assignment. Students could do very well on the
+assignment by exploiting knowledge of the assignment rather than by
+writing a full and correct malloc implementation. One example is that
+students were able to figure out that no allocation would be more than
+100MB so they really didn't have to deal with 64 bit pointers. They
+could use smaller offsets thus simplifying the assignment. The
+assignment became more about figuring out how to get it through the
+grader and less about learning memory management. I'm sure I'm
+overstating it but that's the idea.
+</p>
+
+<p>
+Railing explained all of the deficiencies and then how they changed
+the assignment to address them.
+</p>
+
+<p>
+At the end of the day, the assignment had fewer loopholes to game so
+students had to really write the malloc library and presumably learn
+about memory management.
+</p>
+
+<p>
+They also added an intermediate deliverable so students couldn't leave
+everything for the last minute.
+</p>
+
+<p>
+Near the end of the talk, Railing discussed results where he pointed
+out that students final exam scores didn't change but they did better
+on the malloc questions. It wasn't clear if the overall scores didn't
+change, meaning that the students did better on the malloc questions
+but worse somewhere else or if they did similarly to past students on
+the other sections and in addition they scored better on the malloc
+questions. I'm not sold on the final exam questions being the best way
+to evaluate learning but it is an easy data point. 
+</p>
+
+<p>
+I loved the presentation and paper and I love what Railing is doing
+but my big takeaway was…
+</p>
+
+<p>
+Well, Duh…
+</p>
+
+<ul class="org-ul">
+<li>students aren't doing as they should</li>
+<li>teacher realizes students are gaming assignment</li>
+<li>teacher reworks assignment</li>
+<li>students do better</li>
+</ul>
+<p>
+Teachers do this all the time. Of course when we do it, it's not
+"research." This was a recurring theme for me at SIGCSE2018 and I
+tweeted it. While it's true that K12 teachers can learn a lot about CS
+content from higher ed, people in higher ed can learn a lot about
+teaching from teachers. 
+</p>
+
+<p>
+What Railing presented was terrific and important as changing
+assignments like this will now be considered by people who haven't
+thought about this before but this is second nature to a teacher. Of
+course I'm talking about a good teacher, not one who blindly follows
+scripted lessons.
+</p>
+
+<p>
+I don't mean this as a slight to professors. They're hired and
+promoted based on research so much of their job involves another skill
+set. I know many professors who care very much about teaching but they
+might only teach one or two classes a semester that meets once or
+twice a week while a typical high school teacher meets 150 students a
+day five days a week over five different classes a day.  Much more of
+an opportunity for deliberate practice.
+</p>
+
+<p>
+This presents a huge challenge. How can professors who are hired and
+promoted as researchers be given the time and ability to develop as
+teachers? What about adjuncts or Teaching Assistants? I'd imagine it's
+even harder for them. I know that colleges have lines for teaching
+faculty but from what I can see, those instructors are usually super
+overloaded with classes and students so that doesn't solve the
+problem. Even if you do have teaching faculty that have the time to
+develop their craft, how do you get those teaching chops over to the
+research faculty?
+</p>
+
+<p>
+After the session, I was talking about this with <a href="http://www.cs.cmu.edu/~mjs/">Mark Stehlik</a>,
+Assistant Dean at CMU's School of Computer Science. Mark was telling
+me about CMU's efforts to develop teaching faculty across the
+disciplines. I was happy to hear about the efforts CMU was taking but
+it sounds like they have the same challenges with respect to pedagogy
+as everyone else. If it's a challenge for CMU with all their
+resources, what does that mean for the rest of us?
+</p>
+
+<p>
+Still, it was encouraging to go to a number of sessions where it was
+clear that professors - both teaching and research faculty are serious
+about the craft of teaching and conferences like SIGCSE can bring them
+together with those of us who don't have the chops as researchers but
+do so as teachers.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sigcse2018/" class="u-url">SIGCSE 2018</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -102,9 +253,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org80569fc" class="outline-2">
-<h2 id="org80569fc"></h2>
-<div class="outline-text-2" id="text-org80569fc">
+    <div id="outline-container-org553bd27" class="outline-2">
+<h2 id="org553bd27"></h2>
+<div class="outline-text-2" id="text-org553bd27">
 <p>
 I just got back from SIGCSE2018 - the big annual conference on
 computer science education. Although I've been in this racket for
@@ -194,9 +345,9 @@ experiences with all of you in the coming posts.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgdda820b" class="outline-2">
-<h2 id="orgdda820b"></h2>
-<div class="outline-text-2" id="text-orgdda820b">
+    <div id="outline-container-org208ddec" class="outline-2">
+<h2 id="org208ddec"></h2>
+<div class="outline-text-2" id="text-org208ddec">
 <p>
 I like to listen to music at work. Sometimes I just stream from
 YouTube, Soundcloud, Spotify or some other online source but if you're
@@ -248,9 +399,9 @@ Enjoy.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgf25da60" class="outline-2">
-<h2 id="orgf25da60"></h2>
-<div class="outline-text-2" id="text-orgf25da60">
+    <div id="outline-container-orga2d6f11" class="outline-2">
+<h2 id="orga2d6f11"></h2>
+<div class="outline-text-2" id="text-orga2d6f11">
 <p>
 With CS4All being the buzzword of the day we're paying a lot of
 attention to the fact that when we teach a CS class for all students,
@@ -448,9 +599,9 @@ they end up.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org53478fd" class="outline-2">
-<h2 id="org53478fd"></h2>
-<div class="outline-text-2" id="text-org53478fd">
+    <div id="outline-container-org916ae49" class="outline-2">
+<h2 id="org916ae49"></h2>
+<div class="outline-text-2" id="text-org916ae49">
 <p>
 One day I'll do a Magit video but since there are already some good
 ones out there I thought I'd share a couple of other great git related
@@ -494,9 +645,9 @@ Enjoy
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org57c0c68" class="outline-2">
-<h2 id="org57c0c68"></h2>
-<div class="outline-text-2" id="text-org57c0c68">
+    <div id="outline-container-org9929ccd" class="outline-2">
+<h2 id="org9929ccd"></h2>
+<div class="outline-text-2" id="text-org9929ccd">
 <p>
 Another Emacs quick hit today. Actually, not really Emacs. Today's
 video is a quick, really quick, look at <a href="https://pandoc.org/">Pandoc</a>. Pandoc is a document
@@ -583,9 +734,9 @@ If you haven't checked out pandoc, you should.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org3278464" class="outline-2">
-<h2 id="org3278464"></h2>
-<div class="outline-text-2" id="text-org3278464">
+    <div id="outline-container-org694d5c8" class="outline-2">
+<h2 id="org694d5c8"></h2>
+<div class="outline-text-2" id="text-org694d5c8">
 <p>
 I make regular use of Google's office suite. I use Google forms all
 the time to collect data, Google docs when I have to leave Emacs for
@@ -694,9 +845,9 @@ function sendGrades(){
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org50706fc" class="outline-2">
-<h2 id="org50706fc"></h2>
-<div class="outline-text-2" id="text-org50706fc">
+    <div id="outline-container-org1432f66" class="outline-2">
+<h2 id="org1432f66"></h2>
+<div class="outline-text-2" id="text-org1432f66">
 <p>
 Thanks to everyone who voted for topics or commented with suggestions
 for videos. I'll try to get to them in the coming months.
@@ -709,9 +860,9 @@ browser extension that allows you to edit web form inputs with Emacs.
 </div>
 </div>
 
-<div id="outline-container-org3eef295" class="outline-2">
-<h2 id="org3eef295">UPDATE</h2>
-<div class="outline-text-2" id="text-org3eef295">
+<div id="outline-container-org1fd9c1a" class="outline-2">
+<h2 id="org1fd9c1a">UPDATE</h2>
+<div class="outline-text-2" id="text-org1fd9c1a">
 <p>
 I forgot to mention that you can set a shortcut key, at least in chrome rather than
 clicking on the icon. This makes things much smoother.
@@ -748,9 +899,9 @@ Enjoy:
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org949b15f" class="outline-2">
-<h2 id="org949b15f"></h2>
-<div class="outline-text-2" id="text-org949b15f">
+    <div id="outline-container-org0e22892" class="outline-2">
+<h2 id="org0e22892"></h2>
+<div class="outline-text-2" id="text-org0e22892">
 <p>
 I thought I'd answer Alfred Thompson's recent post on <a href="http://blog.acthompson.net/2018/01/thinking-about-cs-textbooks.html">using
 textbooks</a>. Like Alfred, I've never used textbooks particularly
@@ -841,9 +992,9 @@ alternatives.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgf3701d9" class="outline-2">
-<h2 id="orgf3701d9"></h2>
-<div class="outline-text-2" id="text-orgf3701d9">
+    <div id="outline-container-org60426af" class="outline-2">
+<h2 id="org60426af"></h2>
+<div class="outline-text-2" id="text-org60426af">
 <p>
 Last week, Mark Guzdial asked <a href="https://computinged.wordpress.com/2018/01/19/what-does-it-mean-for-computer-science-to-be-harder-to-learn-than-other-stem-subjects/">What does it mean for Computer Science to be harder to learn
 than other STEM subjects?</a> as a follow up to his <a href="https://cacm.acm.org/blogs/blog-cacm/224105-learning-computer-science-is-different-than-learning-other-stem-disciplines/fulltext">ACM Blog post</a> this
@@ -957,151 +1108,6 @@ that's really hard to do.
 So, teaching in general is hard and teaching CS is no exception. At
 least it is if you're doing it right.
 </p>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/reading-and-writing-recs/" class="u-url">Reading and Writing Recs</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/reading-and-writing-recs/" rel="bookmark"><time class="published dt-published" datetime="2018-01-04T08:49:18-04:00" title="2018-01-04 08:49">2018-01-04 08:49</time></a></p>
-                <p class="commentline">            <a href="posts/reading-and-writing-recs/#disqus_thread" data-disqus-identifier="cache/posts/reading-and-writing-recs.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-orgfa90b7f" class="outline-2">
-<h2 id="orgfa90b7f"></h2>
-<div class="outline-text-2" id="text-orgfa90b7f">
-<p>
-I've been on both sides of the recommendation game. I currently read
-all the recommendations for students who apply to my <a href="http://info.huntercs.org">honors CS program</a>
-at Hunter and some of the ones written for the Macaulay Honors
-program. I also read some for the CSTUY summer program. On the other
-side, I've written hundreds if not thousands of recs for seniors when
-I was teaching at Stuy.
-</p>
-
-<p>
-I've been meaning to write about recs  and when I saw <a href="http://avc.com/2018/01/some-thoughts-on-checking-references/">yesterday's post</a>
-on AVC.com I thought now would be a good time. While the situation is
-not quite the same, much of what Fred wrote resonated strongly with
-me.
-</p>
-
-<p>
-I wrote a lot of recs at Stuy. In a year after I taught juniors I'd
-typically end up writing for anywhere between 40 and 75 kids and each
-kid would apply to between 5 and 15 schools. Some were accepted early
-and in many cases you use the same rec without tweaking for all the
-kid's applications but it's still an enormous load.
-</p>
-
-<p>
-I also don't think I'm particularly good at it. Writing doesn't come
-naturally to. That said, I try to do an honest job.
-</p>
-
-<p>
-The first and most important thing I do is make sure each student
-understands that I'm not trying to get that kid into their percieved
-dream school. My job writing a rec is to contribute to a picture of
-who they are as both a student and as a person. The hope is that the
-college admissions people will be looking for best fit students and
-that the picture the application creates makes the fit clear
-<sup><a id="fnr.1" class="footref" href="posts/reading-and-writing-recs/#fn.1">1</a></sup>.
-</p>
-
-<p>
-Beyond that, I try to say something personal in each rec. Recount a
-particular project or event. It's hard. It might be easier for
-English teachers - English classes allow for much freer discussions
-and assignments where students can reveal more about
-themselves. It's harder in subjects like Math and Computer
-Science. I'd invariably be asked to write recs for a number of kids –
-good kids that were quiet, did there thing but to be honest, never
-did much to stand out. I don't necessity mean stand out in terms of
-grades, I mean in terms of making themselves known - revealing who
-they were. I also try to keep recs short. Readers have a lot of these
-to go through. I don't want to add to their load.
-</p>
-
-<p>
-Many teachers, including myself try to address this problem. We
-interview the kids, have them write mini-essays and just plain
-struggle when it comes time to write.
-</p>
-
-<p>
-To make it more challenging, the deadlines are all together so you
-have to get them all done in a short period of time and at the same
-time not fall into the rut of having them sound all the same.
-</p>
-
-<p>
-On the reader side, similar to what Fred said about references, a lot
-of it is about what isn't written and about how it's written. The
-challenge is that my code as a reader might be different from the
-teacher writing the rec. 
-</p>
-
-<p>
-The key thing I look for when reading is a connection between the
-writer and the kid. Often I read a rec and could apply it equally well
-to every applicant in the stack. I also know that when I write recs
-I've been guilty of this and it really does nothing to help the
-student. 
-</p>
-
-<p>
-I also don't want to read about averages and test scores or anything
-that's already covered in the application. I already get the numbers
-and if a kid, let's say, volunteered at a community center, it's already on the
-application. I don't want a teacher to mention it unless they
-were involved or can otherwise add something that I wouldn't know just
-from reading the appkication. 
-</p>
-
-<p>
-If I come away feeling that there's a connection between the teacher
-and student that says a lot to me. It means the kid made an impression
-on the teacher.
-</p>
-
-<p>
-For my Hunter Honors program I have an advantage (or possibly curse)
-over when I read for other programs and this is similar to what Fred
-wrote about following up on references. I know some of the teachers
-writing the recs and I usually know teachers in the schools. Since the
-number of applications I'm dealing with isn't huge, I can reach out to
-my people and find out what's what. Last year I was able to justify
-accepting a student based on additional information I was able to get
-and now half a year later it's clear that the student is a terrific
-fit.
-</p>
-
-<p>
-This would all be simpler if we didn't have to play games with
-recommendations. When I was a teacher. rather than writing 50 - 70
-recommendations, I'd rather have 20ish phone calls. One with each
-school. I could briefly talk about the kids relative to each other and
-to former students who went to any given institution and that's
-that. It would be faster, easier, and fairer.
-</p>
-</div>
-</div>
-<div id="footnotes">
-<h2 class="footnotes">Footnotes: </h2>
-<div id="text-footnotes">
-
-<div class="footdef">
-<sup><a id="fn.1" class="footnum" href="posts/reading-and-writing-recs/#fnr.1">1</a></sup><div class="footpara">Personally, I think the whole college application process is
-both unfair and arbitrary but that's a discussion for another time.</div>
-</div>
-
-
 </div>
 </div>
     </div>

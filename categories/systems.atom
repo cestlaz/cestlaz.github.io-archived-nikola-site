@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>Posts about systems</title>
+  <id>http://cestlaz.github.io/categories/systems.atom</id>
+  <updated>2018-03-01T22:28:48Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/systems.atom"/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/systems/"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Sigcse2018 - Malloc Lab</title>
+    <id>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</id>
+    <updated>2018-03-01T16:59:31-04:00</updated>
+    <published>2018-03-01T16:59:31-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/"/>
+    <summary type="html">&lt;div id="outline-container-orgad9edaa" class="outline-2"&gt;
+&lt;h2 id="orgad9edaa"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgad9edaa"&gt;
+&lt;p&gt;
+I wasn't going to go to this session. I started out in a panel on
+integrating social good into CS Ed. With the panel not meeting my
+expectations I moved over to my second choice - the system programming
+sessions where I saw &lt;a href="https://dl.acm.org/citation.cfm?id=3159597"&gt;Implementing Malloc: Students and Systems
+Programming&lt;/a&gt;, a paper presented by &lt;a href="http://www.cs.cmu.edu/~bpr/"&gt;Brian Railing&lt;/a&gt; of CMU.
+&lt;/p&gt;
+
+&lt;p&gt;
+I really like both the paper and the talk.
+&lt;/p&gt;
+
+&lt;p&gt;
+CMU computer science students all take a systems course that uses
+&lt;a href="https://www.amazon.com/Computer-Systems-Programmers-Perspective-3/dp/9332573905/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=Y5ZKG2V8ZYZZPZHQP8SQ"&gt;Computer Systems: A Programmer's Perspective&lt;/a&gt;. It's a great book. I
+read through the first edition years ago and felt it was great
+resource not only in a systems course but also for self study. One of
+the labs has the students implement their own memory allocation calls,
+or &lt;b&gt;malloc&lt;/b&gt; for us old time C wonks. 
+&lt;/p&gt;
+
+&lt;p&gt;
+There were a number of self perceived  deficiencies with the
+assignment such as it encouraging bad programming style by modeling
+less than ideal practices but the biggest deficiency as that students
+could game the assignment. Students could do very well on the
+assignment by exploiting knowledge of the assignment rather than by
+writing a full and correct malloc implementation. One example is that
+students were able to figure out that no allocation would be more than
+100MB so they really didn't have to deal with 64 bit pointers. Tey
+could use smaller offsets thus simplifying the assignment. The
+assignment became more about figuring out how to get it through the
+grader and less about learning memory management. I'm sure I'm
+overstating it but that's the idea.
+&lt;/p&gt;
+
+&lt;p&gt;
+Railing explained all of the deficiencies and then how they changed
+the assignment to address them.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the end of the day, the assignment had fewer loopholes to game so
+students had to really write the malloc library and presumably learn
+about memory management.
+&lt;/p&gt;
+
+&lt;p&gt;
+They also added an intermediate deliverable so students couldn't leave
+everything for the last minute.
+&lt;/p&gt;
+
+&lt;p&gt;
+Near the end of the talk, Railing discussed results where he pointed
+out that students final exam scores didn't change but they did better
+on the malloc questions. It wasn't clear if the overall scores didn't
+change, meaning that the students did better on the malloc questions
+but worse somewhere else or if they did similarly to past students on
+the other sections and in addition they scored better on the malloc
+questions. I'm not sold on the final exam questions being the best way
+to evaluate learning but it is an easy data point. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I loved the presentation and paper and I love what Railing is doing
+but my big takeaway was…
+&lt;/p&gt;
+
+&lt;p&gt;
+Well, Duh…
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="systems" label="systems"/>
+  </entry>
+</feed>
