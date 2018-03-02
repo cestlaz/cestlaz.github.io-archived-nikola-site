@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>C'est la Z (old posts, page 36)</title>
+  <id>http://cestlaz.github.io/index-36.atom</id>
+  <updated>2018-03-02T15:53:37Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/index-36.atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-35.atom"/>
+  <link rel="previous" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
+  <link rel="current" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
+  <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-35.atom"/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-36.html"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Is Teaching CS Hard?</title>
+    <id>http://cestlaz.github.io/posts/is-teaching-cs-hard/</id>
+    <updated>2018-01-21T16:56:52-04:00</updated>
+    <published>2018-01-21T16:56:52-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/is-teaching-cs-hard/"/>
+    <summary type="html">&lt;div id="outline-container-org60426af" class="outline-2"&gt;
+&lt;h2 id="org60426af"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org60426af"&gt;
+&lt;p&gt;
+Last week, Mark Guzdial asked &lt;a href="https://computinged.wordpress.com/2018/01/19/what-does-it-mean-for-computer-science-to-be-harder-to-learn-than-other-stem-subjects/"&gt;What does it mean for Computer Science to be harder to learn
+than other STEM subjects?&lt;/a&gt; as a follow up to his &lt;a href="https://cacm.acm.org/blogs/blog-cacm/224105-learning-computer-science-is-different-than-learning-other-stem-disciplines/fulltext"&gt;ACM Blog post&lt;/a&gt; this
+month and the ensuing discussion.
+&lt;/p&gt;
+
+&lt;p&gt;
+You should read both posts but here's how Mark started off the follow
+up:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+I made an argument in my Blog@CACM Post for this month that “Learning
+Computer Science is Different than Learning Other STEM Disciplines,”
+and on Twitter, I explicitly added “It’s harder.”
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+When you talk about how hard or easy it is to teach a subject you can
+do so at many levels. college, high school, middle etc.. Since most of
+my career has been as a High School guy, let's focus there.
+&lt;/p&gt;
+
+&lt;p&gt;
+I do in fact believe that it is hard to teach CS, at least to do it
+well but is it harder to teach then other STEM subjects?
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's see how we're doing in those other subjects. I took a look at
+the New York State &lt;a href="https://data.nysed.gov/reportcard.php?instid=800000081568&amp;amp;year=2016&amp;amp;createreport=1&amp;amp;regents=1"&gt;Regents Exam&lt;/a&gt; results from 2015/2016. I'm certainly
+not a believer or supporter of standardized tests but they're a
+convenient measure for the sake of this post.
+&lt;/p&gt;
+
+&lt;p&gt;
+Only 58% of test takers scored 65 or higher on Integrated Algebra and
+only 41% scored 3 (proficient) or higher on the Common Core version
+with far more students taking the Common Core exam.
+&lt;/p&gt;
+
+&lt;p&gt;
+Higher performing schools frequently offer Algebra in 8th grade but in
+the lower performing districts, students frequently take it over the
+course of two years. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The Geometry regents boasts a passing rate of about 40%. Trig does a
+little better.
+&lt;/p&gt;
+
+&lt;p&gt;
+The science regents exams look a little better but overall, these are
+not terrific results, particularly on the classes that are required
+for graduation.
+&lt;/p&gt;
+
+&lt;p&gt;
+It seems that those other STEM fields aren't so easy to teach after all.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand we have CS. If you listen to all the press releases
+and media attention on APCS-P from this past year it would seem that
+CS is easy to teach and learn. We have all these high school students
+mastering a "college level" course and we can prepare teachers to be
+master CS instructions with just a bit of in-service professional
+development.
+&lt;/p&gt;
+
+&lt;p&gt;
+The truth is, of course that CS isn't easy to teach. When you're a
+summer or after school program or even an elective it's easy to create
+a fun experience using shiny tools to self selecting students but when
+you have to take everyone and prepare many of them to succeed in more
+advanced classes we have a real challenge. We really should be looking
+at retention in more advanced CS classes rather than just passing the
+intro ones. Most students won't go beyond the intro class in any given
+subject but the ones that do must be well prepared. Unfortunately, I
+fear that the people who will get the blame when kids drop CS later on
+will be the teachers of the more advanced classes regardless of who,
+if anyone, is at fault.
+&lt;/p&gt;
+
+&lt;p&gt;
+Teaching CS is hard. It's brand new and very open ended.  When
+programming a solution to a problem kids start with a blank
+slate. They don't have the library of patterns, vocabulary or &lt;a href="https://cestlaz.github.io/posts/programming-idioms"&gt;idioms&lt;/a&gt;
+needed to build solitions. There are many ways a teacher can scaffold
+the learning. Code tracing, analogies, Parsons problems and more but
+the truth is teachers strong in both content and pedagogical knowledge
+are still in rather short supply and as Mark wrote on his blog the
+body of knowledge on teaching CS is just not that mature.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand, Algebra students usually had a first look at some
+of the topics prior to the class and much of the class can be
+"learned" through memorizing relatively short procedures and
+patterns. This might not lead to a depth of understanding but it does
+get you past standardized tests. On the science side, the Living
+Environment exam is really just a reading test.  On the other hand,
+we're supposed to start teaching proof to students in Geometry and
+that's really hard to do.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, teaching in general is hard and teaching CS is no exception. At
+least it is if you're doing it right.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
+</feed>

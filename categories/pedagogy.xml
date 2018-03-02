@@ -1,5 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about pedagogy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/pedagogy.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 01 Mar 2018 22:54:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sigcse2018 - Malloc Lab</title><link>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9ede4c6" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about pedagogy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/pedagogy.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 02 Mar 2018 17:54:27 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title><link>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge428d07" class="outline-2"&gt;
+&lt;h2 id="orge428d07"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge428d07"&gt;
+&lt;p&gt;
+I really didn't know what to expect at the &lt;a href="https://dl.acm.org/citation.cfm?id=3159471"&gt;Creativity, Customization,
+and Ownership: Game Design in Bootstrap: Algebra&lt;/a&gt; session. I've been a
+big fan of &lt;a href="http://www.bootstrapworld.org/"&gt;Bootstrep&lt;/a&gt; for years and looking at the authors, &lt;a href="http://blog.acthompson.net/2017/10/cs-teacher-interview-emmanuel.html"&gt;Emmanuel
+Schanzer&lt;/a&gt;'s been a freind forever. I've never met &lt;a href="https://twitter.com/ShriramKMurthi"&gt;Shriram Krishnamurthi&lt;/a&gt;
+in person but am looking forward to it. We've traded emails and blog
+comments. I'd like to consider him a friend and I certainly respect
+him and his work even though we frequently disagree around the
+edges. The third author and presenter, Kathi Fisler was new to me.
+&lt;/p&gt;
+
+&lt;p&gt;
+The Bootstrap program is embedded in algebra classes. In it, students
+use Racket (nee scheme) to reinforce math skills while building
+computer science skills. The big student project is a graphical game.
+&lt;/p&gt;
+
+&lt;p&gt;
+When designing the project, students are asked to decide on and find
+four resources:
+&lt;/p&gt;
+
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;The background image&lt;/li&gt;
+&lt;li&gt;The player image&lt;/li&gt;
+&lt;li&gt;The target image&lt;/li&gt;
+&lt;li&gt;The enemy image&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+Students are given a short amount of time to decide on and find these
+four images. I think it was about ten minutes and that's it. That's
+all the "creativity" in the assignment. After that, all the students
+are essentially creating the same game with different skins.
+&lt;/p&gt;
+
+&lt;p&gt;
+This design makes sense. You can't have students going all over the
+place. Constraining the assignment in this way allows teachers who
+might now be strong in computer science to guide the kids through the
+program to completion.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the time I was thinking: I really like all of this but is it really
+open ended creativity and discovery with respect to math or computer
+science? As it turned out, Fisler addressed this point at the end of
+the talk in a way that made me vary happy.
+&lt;/p&gt;
+
+&lt;p&gt;
+Fisler went on to describe the rest of the student experience and then
+went on to talk about the statistics they gathered. 
+&lt;/p&gt;
+
+&lt;p&gt;
+One big takeaway was that while all the students were essentially
+writing the same game varying only the graphical elements, this
+encouraged students to create very different themes. They also created
+rich stories around their games. The project might not have been
+"creative" with respect to the CS or Math directions but it was certainly
+creative in other important areas. The other takeaway was that
+survey's indicated all sorts of positives from the program as a whole
+so the project didn't seem to have suffered by having the students
+essentially write the same program. Participants were proud of their
+work, they felt their games were different from their peers and in
+general the experience was good.
+&lt;/p&gt;
+
+&lt;p&gt;
+During questions, someone asked about adding a fifth element - a
+projectile or missile. It turns out that at one point the program had a
+projectile component but that led to the vast majority of projects to
+be themed in very similar ways. Even though not the same, it reminded me to something Randy
+Pausch said in his &lt;a href="https://www.youtube.com/watch?v=ji5_MqicxSo"&gt;Last Lecture&lt;/a&gt;:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+You make whatever you want. Two rules: no shooting violence and no
+pornography. Not because I’m opposed to those in particular, but you know, that’s been done with
+VR, right? [laughter] And you’d be amazed how many 19-year-old boys are completely out of ideas
+when you take those off the table.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+At the very end, Fisler addressed my questions about creativity and
+discovery. She posed these questions of her own: "Do we overstate the
+case for creativity?" and "Is pure constructivism a win?"
+&lt;/p&gt;
+
+&lt;p&gt;
+I've ranted on contructivism before. It can be great but a
+constructivist lesson takes a knowledgeable educator and a lot of time,
+preparation, and effort. It's a big ask for, say, a high school
+teacher who's already taking home hours of work every evening. Too
+often I've seen the following "contructivist" model instead:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Take an isntructor that doesn't know their craft, the content, or
+niether.&lt;/li&gt;
+&lt;li&gt;Let the kids play with stuff.&lt;/li&gt;
+&lt;li&gt;Show off the couple of autodidacts that figure it out as success
+stories.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+I'll rant more about this "model" with respect to the new buzz word
+"lead learner" at some point in the future.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the creativity side, it's important but there are also times for
+the instructor to lead and for guidelines to be followed.
+We want to foster creativity but that doesn't mean that it's 100%
+creativity 100% of the time. Education is like life, a balance. The
+Bootstrap program had to constrain the CS and math learning but
+allowed for creativity in other areas. It's smart and it's a win.
+&lt;/p&gt;
+
+&lt;p&gt;
+I still want to meet Shriram in person one day and now also Kathi
+Fisler. I didn't know what to expect walking in but I left the talk
+reminded of why I'm such a fan of Emmanuel, his team, and their work.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</guid><pubDate>Fri, 02 Mar 2018 13:27:33 GMT</pubDate></item><item><title>Sigcse2018 - Malloc Lab</title><link>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9ede4c6" class="outline-2"&gt;
 &lt;h2 id="org9ede4c6"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-org9ede4c6"&gt;
 &lt;p&gt;
@@ -941,78 +1072,4 @@ minimum number of ed classes for my license after I started.&lt;/div&gt;&lt;/div
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><category>curriculum</category><category>pedagogy</category><category>teals</category><guid>http://cestlaz.github.io/posts/lesson-plans/</guid><pubDate>Thu, 23 Jun 2016 23:31:11 GMT</pubDate></item><item><title>Robots platforms and practicalities</title><link>http://cestlaz.github.io/posts/robot-survey/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
-I received an email from a friend the other day asking me about a
-particular robotics platform she recently saw.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've played with robotics on and off over the years ranging from
-building them from (not using) scratch using Atmel chips and programming them in
-assembly to using Arduino based platforms to using pre-built robot
-platforms. They're really cool and since they interact with the real
-world you can do all sorts of interesting and motivational things with students.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've done these on my own as a hobbyist and also with students either
-individually or in small groups, but never as part of a class I had
-been teaching.
-&lt;/p&gt;
-
-&lt;p&gt;
-Why not?
-&lt;/p&gt;
-
-&lt;p&gt;
-The biggest reason is that the classes I've taught are already so
-packed full of CS goodness that we can't even get everything done
-that's theoretically on the syllabi.
-&lt;/p&gt;
-
-&lt;p&gt;
-The other has to do with practical concerns.
-&lt;/p&gt;
-
-&lt;p&gt;
-Equipment costs - Let's say we can get our platform at $100 a pop. I
-just can't see a public school with 34 kids in a class getting one per
-student or one for every two.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, what's the robot to student ratio and how much actual access do
-the kids get? If they're designing  building, do they all get to
-design and build? Same question with coding and operating.
-&lt;/p&gt;
-
-&lt;p&gt;
-Then there's space – if we're talking about a mobile platform as
-opposed to something that sits on the desk and is near stationary, we
-have a problem. The classrooms I've taught in can barely hold the
-students.
-&lt;/p&gt;
-
-&lt;p&gt;
-There are also issues with breakage, loss, theft and long term
-maintainability - will we be able to or even want to fill in with
-compatible units in a few years as needed or will we have to reboot
-the program from scratch.
-&lt;/p&gt;
-
-&lt;p&gt;
-All that to deal with before we even get to the fun of teaching and learning.
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm really curious about the experiences of those of you who do teach
-using robots and similar platforms. 
-&lt;/p&gt;
-
-&lt;p&gt;
-If you are such a teacher, could you please fill out this form or
-leave a comment for anything that the form doesn't cover?
-&lt;/p&gt;
-
-
-&lt;iframe src="https://docs.google.com/forms/d/1FlppDbeiK8uPxh_RkXoCbbdE_UDY_4qXmZWbXlZ0gGg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading...&lt;/iframe&gt;</description><category>hardware</category><category>pedagogy</category><category>robotics</category><category>robots</category><category>tools</category><guid>http://cestlaz.github.io/posts/robot-survey/</guid><pubDate>Wed, 15 Jun 2016 13:08:28 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>curriculum</category><category>pedagogy</category><category>teals</category><guid>http://cestlaz.github.io/posts/lesson-plans/</guid><pubDate>Thu, 23 Jun 2016 23:31:11 GMT</pubDate></item></channel></rss>

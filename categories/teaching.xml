@@ -1,5 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about teaching)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/teaching.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 12 Feb 2018 19:18:11 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7ab1556" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about teaching)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/teaching.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 02 Mar 2018 17:54:27 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title><link>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge428d07" class="outline-2"&gt;
+&lt;h2 id="orge428d07"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge428d07"&gt;
+&lt;p&gt;
+I really didn't know what to expect at the &lt;a href="https://dl.acm.org/citation.cfm?id=3159471"&gt;Creativity, Customization,
+and Ownership: Game Design in Bootstrap: Algebra&lt;/a&gt; session. I've been a
+big fan of &lt;a href="http://www.bootstrapworld.org/"&gt;Bootstrep&lt;/a&gt; for years and looking at the authors, &lt;a href="http://blog.acthompson.net/2017/10/cs-teacher-interview-emmanuel.html"&gt;Emmanuel
+Schanzer&lt;/a&gt;'s been a freind forever. I've never met &lt;a href="https://twitter.com/ShriramKMurthi"&gt;Shriram Krishnamurthi&lt;/a&gt;
+in person but am looking forward to it. We've traded emails and blog
+comments. I'd like to consider him a friend and I certainly respect
+him and his work even though we frequently disagree around the
+edges. The third author and presenter, Kathi Fisler was new to me.
+&lt;/p&gt;
+
+&lt;p&gt;
+The Bootstrap program is embedded in algebra classes. In it, students
+use Racket (nee scheme) to reinforce math skills while building
+computer science skills. The big student project is a graphical game.
+&lt;/p&gt;
+
+&lt;p&gt;
+When designing the project, students are asked to decide on and find
+four resources:
+&lt;/p&gt;
+
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;The background image&lt;/li&gt;
+&lt;li&gt;The player image&lt;/li&gt;
+&lt;li&gt;The target image&lt;/li&gt;
+&lt;li&gt;The enemy image&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+Students are given a short amount of time to decide on and find these
+four images. I think it was about ten minutes and that's it. That's
+all the "creativity" in the assignment. After that, all the students
+are essentially creating the same game with different skins.
+&lt;/p&gt;
+
+&lt;p&gt;
+This design makes sense. You can't have students going all over the
+place. Constraining the assignment in this way allows teachers who
+might now be strong in computer science to guide the kids through the
+program to completion.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the time I was thinking: I really like all of this but is it really
+open ended creativity and discovery with respect to math or computer
+science? As it turned out, Fisler addressed this point at the end of
+the talk in a way that made me vary happy.
+&lt;/p&gt;
+
+&lt;p&gt;
+Fisler went on to describe the rest of the student experience and then
+went on to talk about the statistics they gathered. 
+&lt;/p&gt;
+
+&lt;p&gt;
+One big takeaway was that while all the students were essentially
+writing the same game varying only the graphical elements, this
+encouraged students to create very different themes. They also created
+rich stories around their games. The project might not have been
+"creative" with respect to the CS or Math directions but it was certainly
+creative in other important areas. The other takeaway was that
+survey's indicated all sorts of positives from the program as a whole
+so the project didn't seem to have suffered by having the students
+essentially write the same program. Participants were proud of their
+work, they felt their games were different from their peers and in
+general the experience was good.
+&lt;/p&gt;
+
+&lt;p&gt;
+During questions, someone asked about adding a fifth element - a
+projectile or missile. It turns out that at one point the program had a
+projectile component but that led to the vast majority of projects to
+be themed in very similar ways. Even though not the same, it reminded me to something Randy
+Pausch said in his &lt;a href="https://www.youtube.com/watch?v=ji5_MqicxSo"&gt;Last Lecture&lt;/a&gt;:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+You make whatever you want. Two rules: no shooting violence and no
+pornography. Not because I’m opposed to those in particular, but you know, that’s been done with
+VR, right? [laughter] And you’d be amazed how many 19-year-old boys are completely out of ideas
+when you take those off the table.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+At the very end, Fisler addressed my questions about creativity and
+discovery. She posed these questions of her own: "Do we overstate the
+case for creativity?" and "Is pure constructivism a win?"
+&lt;/p&gt;
+
+&lt;p&gt;
+I've ranted on contructivism before. It can be great but a
+constructivist lesson takes a knowledgeable educator and a lot of time,
+preparation, and effort. It's a big ask for, say, a high school
+teacher who's already taking home hours of work every evening. Too
+often I've seen the following "contructivist" model instead:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Take an isntructor that doesn't know their craft, the content, or
+niether.&lt;/li&gt;
+&lt;li&gt;Let the kids play with stuff.&lt;/li&gt;
+&lt;li&gt;Show off the couple of autodidacts that figure it out as success
+stories.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+I'll rant more about this "model" with respect to the new buzz word
+"lead learner" at some point in the future.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the creativity side, it's important but there are also times for
+the instructor to lead and for guidelines to be followed.
+We want to foster creativity but that doesn't mean that it's 100%
+creativity 100% of the time. Education is like life, a balance. The
+Bootstrap program had to constrain the CS and math learning but
+allowed for creativity in other areas. It's smart and it's a win.
+&lt;/p&gt;
+
+&lt;p&gt;
+I still want to meet Shriram in person one day and now also Kathi
+Fisler. I didn't know what to expect walking in but I left the talk
+reminded of why I'm such a fan of Emmanuel, his team, and their work.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</guid><pubDate>Fri, 02 Mar 2018 13:27:33 GMT</pubDate></item><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7ab1556" class="outline-2"&gt;
 &lt;h2 id="org7ab1556"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-org7ab1556"&gt;
 &lt;p&gt;
@@ -921,98 +1052,4 @@ administrators help CS teachers? Get other teachers involved, keep an
 open mind and look at the big picture.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>supervision</category><category>teaching</category><guid>http://cestlaz.github.io/posts/cs-teacher-eval/</guid><pubDate>Sun, 16 Jul 2017 00:13:38 GMT</pubDate></item><item><title>CS Teachers - teacher first or content first</title><link>http://cestlaz.github.io/posts/teacher-to-cs-or-cs-to-teacher/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7dfef9d" class="outline-2"&gt;
-&lt;h2 id="org7dfef9d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7dfef9d"&gt;
-&lt;p&gt;
-Is it easier to take CS people and teach them to teach or is it easier
-to take teachers and teach them CS?
-&lt;/p&gt;
-
-&lt;p&gt;
-The question gets batted around from time to time.
-&lt;/p&gt;
-
-&lt;p&gt;
-This time via twitter:
-&lt;/p&gt;
-
-
-&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Some think it's easier to teach a teacher to teach CS than to teach a CS pro to teach. &lt;a href="https://twitter.com/alfredtwo"&gt;@alfredtwo&lt;/a&gt; is not one of them &lt;a href="https://t.co/QCUP8d8llZ"&gt;https://t.co/QCUP8d8llZ&lt;/a&gt;&lt;/p&gt;— Diane Levitt (@diane_levitt) &lt;a href="https://twitter.com/diane_levitt/status/881874056911388673"&gt;July 3, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-
-&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Agreed. It takes a lot of work. More than a week long workshop.&lt;/p&gt;— Alfred Thompson (@alfredtwo) &lt;a href="https://twitter.com/alfredtwo/status/882243591090962432"&gt;July 4, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-
-&lt;p&gt;
-The conversation was referring to blog posts by &lt;a href="http://blog.acthompson.net/2017/06/become-computer-science-teacher-in-five.html?spref=tw&amp;amp;m=1"&gt;Alfred Thompson&lt;/a&gt; and &lt;a href="https://gflint.wordpress.com/2017/06/20/a-week-of-in-service-another-python-course/"&gt;Garth flint&lt;/a&gt;. 
-Alfred's key point - one that I've spoken about before is that short
-term professional development does not a CS teacher make.
-&lt;/p&gt;
-
-&lt;p&gt;
-As to the lead in question? I've seen both routes succeed and both
-routes fail. Both can be heavy lifts but there's a missing part of the
-equation that's never addressed.
-&lt;/p&gt;
-
-&lt;p&gt;
-The claim is that it's easier to teach CS to a non-CS teacher because
-they already know how to teach. The problem is, particularly in the
-later grades that teachers of different subject areas have very
-different tool sets. Sure, there are common factors – get the kids
-involved, layer, spiral, etc. but you don't teach a CS lesson the same
-way you teach a math lesson let alone a literature, history, language
-lesson. 
-&lt;/p&gt;
-
-&lt;p&gt;
-In a math class, it's common to have students write solutions to
-problems up on the board. If you try that in a CS class, you'll be
-waiting 20 minutes while the kids transcribe the problems. Likewise,
-math homework will likely consist of a certain amount of repetitive
-practice problems whereas a CS class won't have something directly
-analogous. This is not to say that you don't have opportunities for
-students to present at the board in CS class or that there isn't
-worthwhile homework but rather that even at this simple level, there
-are differences. 
-&lt;/p&gt;
-
-&lt;p&gt;
-So, if we're going to teach a non-CS teacher the CS content, beyond
-the challenge of giving them the necessary depth and breadth of
-content knowledge we have to teach them how to teach CS.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've inventoried some of the techniques my colleagues and I have used
-in our classes and the collected methods could easily fill a couple of
-graduate education courses. 
-&lt;/p&gt;
-
-&lt;p&gt;
-So, what's the answer to the question? It doesn't matter where you
-start but if we want to do right by our kids we need to prepare them
-in not two but three areas:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;CS Content&lt;/li&gt;
-&lt;li&gt;CS Pedagogy&lt;/li&gt;
-&lt;li&gt;General education and pedagogy&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-Short term PD (professional development) won't do it and neither will
-scripts for "teachers" to follow. It's going to take time, will, and
-effort.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here's hoping that municipalities look at the long game. It's fine to
-do PD now to get something started but it's not enough. I wanted my
-kids math teachers to know math and how to teach it. We should demand
-no less from our CS teachers.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>policy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/teacher-to-cs-or-cs-to-teacher/</guid><pubDate>Tue, 04 Jul 2017 20:39:43 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>supervision</category><category>teaching</category><guid>http://cestlaz.github.io/posts/cs-teacher-eval/</guid><pubDate>Sun, 16 Jul 2017 00:13:38 GMT</pubDate></item></channel></rss>
