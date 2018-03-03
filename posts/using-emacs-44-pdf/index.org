@@ -1,0 +1,53 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs 44 - An org-mode workflow for application processing
+.. slug: using-emacs-44-pdf
+.. date: 2018-03-03 08:05:45 UTC-04:00
+.. tags: emacs, pdf, tools
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+One of my titles at Hunter College is Director of the Daedalus CS
+Honors program. It's something like a Hunter specific, CS specific
+version of the CUNY Macaulay Honors program. 
+
+Hunter gives all its students the ability to get a great computer
+science education at a fraction of the cost of a private institution
+and if you're a Daedalus scholar you also get a scholarship, a laptop,
+special classes (with me :-) ), activities and more. Just the other
+day we visited the [[http://samsungnext.com/][Samsung Next]] accelerator and earlier in the year we
+made our annual visit to [[http://www.catskillsconf.com/][Catskills Conf]], arguably my favorite event of
+the year. 
+
+When deciding on which students to recommend for acceptance, I try to
+glean as much information as I can about each applicant. When I feel
+there's information, I've been known to reach out to recommenders for
+more information but first I go through the applications. For each
+student, I'm provided with a pdf file with a bunch of data and also an
+entry in an internal Hunter online form with even more.
+
+For the first cohort, this wasn't a big deal. I hadn't even started at
+Hunter when the applications closed so there was o
+outreach. Everything was after the fact so there were very few
+students to evaluate.
+
+Last year, I was able to do some outreach and we had around 60 or so
+applications for a little over 20 spots.
+
+This year, there are well over 100 applicants (and we're looking to
+grow the program by a large number of students). All of a sudden, it
+wasn't so easy to navigate all the pdf files.
+
+Emacs to the rescue. Using a combination of org-mod,  [[https://github.com/politza/pdf-tools][pdf-tools]], and
+[[https://melpa.org/#/org-pdfview][org-pdfview]] I've come up with a workflow that I very much like.
+
+Take a look and let me know what you think:
+  
+
+
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LFO2UbzbZhA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+#+END_EXPORT
