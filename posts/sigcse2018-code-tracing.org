@@ -1,0 +1,120 @@
+#+BEGIN_COMMENT
+.. title: Sigcse2018 - Code Tracing
+.. slug: sigcse2018-code-tracing
+.. date: 2018-03-06 19:16:28 UTC-04:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+Next up from SIGCSE is [[https://dl.acm.org/citation.cfm?id=3159527][An Explicit Strategy to Scaffold Novice Program
+Tracing]] by Benjamin Xie, Greg Nelson and Andy Ko, presented by
+Benjamin Xie. 
+
+The core of Xie's presentation was that tracing through code is a good
+thing and that spending a short amount of time teaching code
+tracing can lead to improved student outcomes.
+
+The idea is simple. Walk through the code as though you were the
+computer running your program. Xie suggested that students frequently
+struggle with code tracing. They have a hard time keeping track of
+variables, they try to work entirely in their head and being novices,
+they don't have any good way of representing overall program
+state. Personally, I also think there's a resistance these days to
+doing thing by hand. Xie noted that students can trace through their
+programs using online tools such as debuggers with steppers but doing
+so is a passive process. The student just clicks next over and over
+again. They aren't actively engaged in the code tracing. 
+
+That last point is a very important one. That passive clicking through
+a stepper seems similar to me to students ignoring compiler warnings
+or students using robust auto completion or snippets which I believe
+retards their learning of fundamental constructs.
+
+Xie shared a simple directed strategy to enable students to "embody
+the computer:"
+
+#+BEGIN_QUOTE
+1. Read question: Understand what you are being asked to do. At the end of the problem instructions, write a check mark.
+2. Find where the program begins executing. At the start of that line, draw an arrow.
+3. Execute each line according to the rules of Java.
+   1. From the syntax, determine the rule for each part of the line.
+   2. Follow the rules.
+   3. Update memory table(s).
+   4. Find the code for the next part.
+   5. Repeat until the program terminates.
+
+When tracing through the code, a participant creates a memory
+table with each method call...
+#+END_QUOTE
+
+In additionn to the strategy, Xie produced a simple paper handout on
+which students could write down variable values and easily organize
+and store the computers state as they traced through a program.
+
+Xie noted that just a few minutes of instruction to give the kids a
+concrete method of code tracing can provide big postitive returns.
+
+The presentation was terrific and all true and I'm sure of tremendous
+value to anyone in the audience not familiar with code tracing but it
+was also the presentation that led me to compose this tweet:
+
+#+BEGIN_EXPORT html
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Loving the <a href="https://twitter.com/hashtag/sigcse2018?src=hash&amp;ref_src=twsrc%5Etfw">#sigcse2018</a> sessions but so many talks from higher Ed people remind me that while k12 can learn much about content from higher Ed, profs could learn so much from teachers about teaching</p>&mdash; Mike Zamansky (@zamansky) <a href="https://twitter.com/zamansky/status/967066702143000578?ref_src=twsrc%5Etfw">February 23, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+#+END_EXPORT
+
+While Xie's presentation was terrific, code tracing and teachers
+showing explicit code tracing strategies to kids is nothing new. I
+remember being taught about this back in the 80s. We called it a "desk
+check" back then. While it's true that maybe this was explicitly
+taught because we were using punch cards and our programs were run
+overnight, it was also taught to me by math teachers with very
+limited CS knowledge. It's also a practice that appears to be pretty
+common among High School CS teachers even when their content
+knowledge is spotty. We also frequently employ things like state
+diagrams, cons cell diagrams, and other techniques to capture state
+and assist in program tracing. 
+
+This seemed to me to be a great example of something that in my
+experience is a not uncommon technique for high school CS teachers but
+maybe isn't used as widely at the college level (?). 
+
+The other thing this made me think about was the divide between
+practitioners and researchers. I think everyone knows which camp I'm
+in. Andy Ko, Benji Xie's advisor and co-author mentioned this in his
+[[https://medium.com/bits-and-behavior/sigcse-2018-trip-report-cs-for-all-57f1cf94155f][SIGCSE summary]]. When I read the actual paper, it notes that they
+basically worked with 24 students and looked at the results. So,
+that's research. On the other hand, when I share a takeaway from
+looking at my 150 kids a year whom I met five days a week and look at
+this over decades, it's just an anecdote. Hmmmm. 
+
+One other side point is that in Andy's summary he notes his perception
+that SIGCSE is largely a teacher's conference as opposed to other
+conferences he goes to which he says are more researcher's
+conferences. I've only been to two SIGCSE's but my teacher friends tell
+me that they feel that SIGCSE is more of a researcher's conference and
+CSTA is more of a teacher's conference. I guess it's all a matter of
+perspective and frame of reference. Also possibly because I think of
+teacher as K12 teachers as teachers and professors as profressors be
+they research or teaching faculty.
+
+Finally ,given all of this, was the talk and paper of value?
+Tremendously so. I don't think it's a new technique and I think it's
+fairly well disseminated in the K12 space but that said, it's a good
+technique and it will be new to some. It's also hard to get students
+these days to meticulously do anything on paper and sharing a
+successful practice is always of great value. Finally, it left me
+thinking about extending online environments such as [[http://thonny.org/][Thonny]] to support
+restricted code tracing where the students would have to enter the
+state of all changed variables in a given line before the stepper
+would move to the next one.
+
+
+I very much enjoyed this SIGCSE session. You can read the paper linked
+at the top if you have access to the ACM Digital Library. If not, you
+can read Benji Xi's medium post [[https://medium.com/bits-and-behavior/teaching-a-strategy-for-reading-code-fbc9f4044cab][here]]. 
+
