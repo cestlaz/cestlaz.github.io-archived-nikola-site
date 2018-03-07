@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-36.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-44-pdf/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/sigcse2018-code-tracing/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,164 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-44-pdf/" class="u-url">Using Emacs 44 - An org-mode workflow for application processing</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sigcse2018-code-tracing/" class="u-url">Sigcse2018 - Code Tracing</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/sigcse2018-code-tracing/" rel="bookmark"><time class="published dt-published" datetime="2018-03-06T19:16:28-04:00" title="2018-03-06 19:16">2018-03-06 19:16</time></a></p>
+                <p class="commentline">            <a href="posts/sigcse2018-code-tracing/#disqus_thread" data-disqus-identifier="cache/posts/sigcse2018-code-tracing.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org45688ea" class="outline-2">
+<h2 id="org45688ea"></h2>
+<div class="outline-text-2" id="text-org45688ea">
+<p>
+Next up from SIGCSE is <a href="https://dl.acm.org/citation.cfm?id=3159527">An Explicit Strategy to Scaffold Novice Program
+Tracing</a> by Benjamin Xie, Greg Nelson and Andy Ko, presented by
+Benjamin Xie. 
+</p>
+
+<p>
+The core of Xie's presentation was that tracing through code is a good
+thing and that spending a short amount of time teaching code
+tracing can lead to improved student outcomes.
+</p>
+
+<p>
+The idea is simple. Walk through the code as though you were the
+computer running your program. Xie suggested that students frequently
+struggle with code tracing. They have a hard time keeping track of
+variables, they try to work entirely in their head and being novices,
+they don't have any good way of representing overall program
+state. Personally, I also think there's a resistance these days to
+doing thing by hand. Xie noted that students can trace through their
+programs using online tools such as debuggers with steppers but doing
+so is a passive process. The student just clicks next over and over
+again. They aren't actively engaged in the code tracing. 
+</p>
+
+<p>
+That last point is a very important one. That passive clicking through
+a stepper seems similar to me to students ignoring compiler warnings
+or students using robust auto completion or snippets which I believe
+retards their learning of fundamental constructs.
+</p>
+
+<p>
+Xie shared a simple directed strategy to enable students to "embody
+the computer:"
+</p>
+
+<blockquote>
+<ol class="org-ol">
+<li>Read question: Understand what you are being asked to do. At the end of the problem instructions, write a check mark.</li>
+<li>Find where the program begins executing. At the start of that line, draw an arrow.</li>
+<li>Execute each line according to the rules of Java.
+<ol class="org-ol">
+<li>From the syntax, determine the rule for each part of the line.</li>
+<li>Follow the rules.</li>
+<li>Update memory table(s).</li>
+<li>Find the code for the next part.</li>
+<li>Repeat until the program terminates.</li>
+</ol>
+</li>
+</ol>
+<p>
+When tracing through the code, a participant creates a memory
+table with each method call…
+</p>
+</blockquote>
+
+<p>
+In additionn to the strategy, Xie produced a simple paper handout on
+which students could write down variable values and easily organize
+and store the computers state as they traced through a program.
+</p>
+
+<p>
+Xie noted that just a few minutes of instruction to give the kids a
+concrete method of code tracing can provide big postitive returns.
+</p>
+
+<p>
+The presentation was terrific and all true and I'm sure of tremendous
+value to anyone in the audience not familiar with code tracing but it
+was also the presentation that led me to compose this tweet:
+</p>
+
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">Loving the <a href="https://twitter.com/hashtag/sigcse2018?src=hash&amp;ref_src=twsrc%5Etfw">#sigcse2018</a> sessions but so many talks from higher Ed people remind me that while k12 can learn much about content from higher Ed, profs could learn so much from teachers about teaching</p>— Mike Zamansky (@zamansky) <a href="https://twitter.com/zamansky/status/967066702143000578?ref_src=twsrc%5Etfw">February 23, 2018</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><p>
+While Xie's presentation was terrific, code tracing and teachers
+showing explicit code tracing strategies to kids is nothing new. I
+remember being taught about this back in the 80s. We called it a "desk
+check" back then. While it's true that maybe this was explicitly
+taught because we were using punch cards and our programs were run
+overnight, it was also taught to me by math teachers with very
+limited CS knowledge. It's also a practice that appears to be pretty
+common among High School CS teachers even when their content
+knowledge is spotty. We also frequently employ things like state
+diagrams, cons cell diagrams, and other techniques to capture state
+and assist in program tracing. 
+</p>
+
+<p>
+This seemed to me to be a great example of something that in my
+experience is a not uncommon technique for high school CS teachers but
+maybe isn't used as widely at the college level (?). 
+</p>
+
+<p>
+The other thing this made me think about was the divide between
+practitioners and researchers. I think everyone knows which camp I'm
+in. Andy Ko, Benji Xie's advisor and co-author mentioned this in his
+<a href="https://medium.com/bits-and-behavior/sigcse-2018-trip-report-cs-for-all-57f1cf94155f">SIGCSE summary</a>. When I read the actual paper, it notes that they
+basically worked with 24 students and looked at the results. So,
+that's research. On the other hand, when I share a takeaway from
+looking at my 150 kids a year whom I met five days a week and look at
+this over decades, it's just an anecdote. Hmmmm. 
+</p>
+
+<p>
+One other side point is that in Andy's summary he notes his perception
+that SIGCSE is largely a teacher's conference as opposed to other
+conferences he goes to which he says are more researcher's
+conferences. I've only been to two SIGCSE's but my teacher friends tell
+me that they feel that SIGCSE is more of a researcher's conference and
+CSTA is more of a teacher's conference. I guess it's all a matter of
+perspective and frame of reference. Also possibly because I think of
+teacher as K12 teachers as teachers and professors as profressors be
+they research or teaching faculty.
+</p>
+
+<p>
+Finally ,given all of this, was the talk and paper of value?
+Tremendously so. I don't think it's a new technique and I think it's
+fairly well disseminated in the K12 space but that said, it's a good
+technique and it will be new to some. It's also hard to get students
+these days to meticulously do anything on paper and sharing a
+successful practice is always of great value. Finally, it left me
+thinking about extending online environments such as <a href="http://thonny.org/">Thonny</a> to support
+restricted code tracing where the students would have to enter the
+state of all changed variables in a given line before the stepper
+would move to the next one.
+</p>
+
+
+<p>
+I very much enjoyed this SIGCSE session. You can read the paper linked
+at the top if you have access to the ACM Digital Library. If not, you
+can read Benji Xi's medium post <a href="https://medium.com/bits-and-behavior/teaching-a-strategy-for-reading-code-fbc9f4044cab">here</a>. 
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-44-pdf/" class="u-url">Using Emacs 44 - An org-mode workflow for application processing</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -102,9 +259,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org8ec625d" class="outline-2">
-<h2 id="org8ec625d"></h2>
-<div class="outline-text-2" id="text-org8ec625d">
+    <div id="outline-container-orga34b33a" class="outline-2">
+<h2 id="orga34b33a"></h2>
+<div class="outline-text-2" id="text-orga34b33a">
 <p>
 One of my titles at Hunter College is Director of the Daedalus CS
 Honors program. It's something like a Hunter specific, CS specific
@@ -176,9 +333,9 @@ Take a look and let me know what you think:
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgc43063e" class="outline-2">
-<h2 id="orgc43063e"></h2>
-<div class="outline-text-2" id="text-orgc43063e">
+    <div id="outline-container-orge428d07" class="outline-2">
+<h2 id="orge428d07"></h2>
+<div class="outline-text-2" id="text-orge428d07">
 <p>
 I really didn't know what to expect at the <a href="https://dl.acm.org/citation.cfm?id=3159471">Creativity, Customization,
 and Ownership: Game Design in Bootstrap: Algebra</a> session. I've been a
@@ -319,9 +476,9 @@ reminded of why I'm such a fan of Emmanuel, his team, and their work.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org3d0026d" class="outline-2">
-<h2 id="org3d0026d"></h2>
-<div class="outline-text-2" id="text-org3d0026d">
+    <div id="outline-container-org9ede4c6" class="outline-2">
+<h2 id="org9ede4c6"></h2>
+<div class="outline-text-2" id="text-org9ede4c6">
 <p>
 I wasn't going to go to this session. I started out in a panel on
 integrating social good into CS Ed. With the panel not meeting my
@@ -470,9 +627,9 @@ do so as teachers.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org80569fc" class="outline-2">
-<h2 id="org80569fc"></h2>
-<div class="outline-text-2" id="text-org80569fc">
+    <div id="outline-container-org553bd27" class="outline-2">
+<h2 id="org553bd27"></h2>
+<div class="outline-text-2" id="text-org553bd27">
 <p>
 I just got back from SIGCSE2018 - the big annual conference on
 computer science education. Although I've been in this racket for
@@ -562,9 +719,9 @@ experiences with all of you in the coming posts.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgdda820b" class="outline-2">
-<h2 id="orgdda820b"></h2>
-<div class="outline-text-2" id="text-orgdda820b">
+    <div id="outline-container-org208ddec" class="outline-2">
+<h2 id="org208ddec"></h2>
+<div class="outline-text-2" id="text-org208ddec">
 <p>
 I like to listen to music at work. Sometimes I just stream from
 YouTube, Soundcloud, Spotify or some other online source but if you're
@@ -616,9 +773,9 @@ Enjoy.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgf25da60" class="outline-2">
-<h2 id="orgf25da60"></h2>
-<div class="outline-text-2" id="text-orgf25da60">
+    <div id="outline-container-orga2d6f11" class="outline-2">
+<h2 id="orga2d6f11"></h2>
+<div class="outline-text-2" id="text-orga2d6f11">
 <p>
 With CS4All being the buzzword of the day we're paying a lot of
 attention to the fact that when we teach a CS class for all students,
@@ -816,9 +973,9 @@ they end up.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org53478fd" class="outline-2">
-<h2 id="org53478fd"></h2>
-<div class="outline-text-2" id="text-org53478fd">
+    <div id="outline-container-org916ae49" class="outline-2">
+<h2 id="org916ae49"></h2>
+<div class="outline-text-2" id="text-org916ae49">
 <p>
 One day I'll do a Magit video but since there are already some good
 ones out there I thought I'd share a couple of other great git related
@@ -862,9 +1019,9 @@ Enjoy
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org57c0c68" class="outline-2">
-<h2 id="org57c0c68"></h2>
-<div class="outline-text-2" id="text-org57c0c68">
+    <div id="outline-container-org9929ccd" class="outline-2">
+<h2 id="org9929ccd"></h2>
+<div class="outline-text-2" id="text-org9929ccd">
 <p>
 Another Emacs quick hit today. Actually, not really Emacs. Today's
 video is a quick, really quick, look at <a href="https://pandoc.org/">Pandoc</a>. Pandoc is a document
@@ -951,9 +1108,9 @@ If you haven't checked out pandoc, you should.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org3278464" class="outline-2">
-<h2 id="org3278464"></h2>
-<div class="outline-text-2" id="text-org3278464">
+    <div id="outline-container-org694d5c8" class="outline-2">
+<h2 id="org694d5c8"></h2>
+<div class="outline-text-2" id="text-org694d5c8">
 <p>
 I make regular use of Google's office suite. I use Google forms all
 the time to collect data, Google docs when I have to leave Emacs for
@@ -1047,60 +1204,6 @@ function sendGrades(){
 
 }
 </pre></div>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-40-atomic-chrome/" class="u-url">Using Emacs 40 - Atomic Chrome</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/using-emacs-40-atomic-chrome/" rel="bookmark"><time class="published dt-published" datetime="2018-01-31T07:00:00-04:00" title="2018-01-31 07:00">2018-01-31 07:00</time></a></p>
-                <p class="commentline">            <a href="posts/using-emacs-40-atomic-chrome/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-40-atomic-chrome.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-org50706fc" class="outline-2">
-<h2 id="org50706fc"></h2>
-<div class="outline-text-2" id="text-org50706fc">
-<p>
-Thanks to everyone who voted for topics or commented with suggestions
-for videos. I'll try to get to them in the coming months.
-</p>
-
-<p>
-Today is just a quick hit on Atomic Chrome - an Emacs package and
-browser extension that allows you to edit web form inputs with Emacs.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org3eef295" class="outline-2">
-<h2 id="org3eef295">UPDATE</h2>
-<div class="outline-text-2" id="text-org3eef295">
-<p>
-I forgot to mention that you can set a shortcut key, at least in chrome rather than
-clicking on the icon. This makes things much smoother.
-</p>
-
-<p>
-All you have to do is:
-</p>
-
-<ol class="org-ol">
-<li>Go to <b><b>chrome://extensions</b></b>
-</li>
-<li>On the bottom of the page you'll see a button to set <b><b>keyboard shortcuts</b></b>
-</li>
-<li>Set the shortcut for Atomic Chrome</li>
-</ol>
-<p>
-Enjoy:
-</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wyPZws66Sic" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 </div>
     </div>
