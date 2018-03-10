@@ -1,8 +1,8 @@
 #+BEGIN_COMMENT
-.. title: Practitioners And Researchers
+.. title: How my views on education research were shaped
 .. slug: practitioners-and-researchers
 .. date: 2018-03-07 19:41:16 UTC-04:00
-.. tags: draft
+.. tags: education, research 
 .. category: 
 .. link: 
 .. description: 
@@ -15,15 +15,104 @@ bit about practitioners vs researchers I thought I'd expand and
 expound a bit.
 
 While there are education researchers that I very much respect,
-overall, I've had far too many experiences that have left me cold.
+overall, I'm skeptical of education research. Note
+that I'm not talking specifically about CS Ed research but rather
+education research in general.
+
+Let's go back to the beginning. I entered teaching from
+industry. Goldman Sachs to be specific. I started in a shortage area -
+math and barely had the credentials to do so. The transcript evaluator
+at the DOE counted my Algorithms and Numerical Methods courses as Math
+courses to get me over the credit hump.
+
+I had zero ed courses under my belt and was thrown into the
+fire. Fortunately, I landed in a school, Seward Park High School, with
+a very supportive faculty. I wouldn't have survived my first year
+without Mike G, Bruce B, Jonathan G, and many others.
+
+Then, I had to start taking education credits to make my license
+permanent. Some classes were taught by professors some by
+adjuncts. The adjuncts were invariably experienced teachers and the
+professors were research faculty. In many classes, I had to read the
+latest research. 
+
+I found that what "the research" told us to do was contrary to what
+some of the best teachers did in practice. I kept hearing about the
+"right" way to teach but it frequently didn't jive with reality. When
+the true way worked, circumstances were right and the technique
+aligned with the teacher's natural tendencies. When it didn't, why
+not? Many reasons.
+
+- lack of prep time.
+- too many students (per class, per day, per term)
+- different populations than the one researched
+- factors the researcher didn't include (and there are tons of them)
+- teachers with different personalities and skill sets
+
+and each of the above points opens up to scores of specifics. 
 
 
-the one true way until the next one true  way
+This theme continued throughout my career. I'd ask teachers in other
+subject areas about the current state of the art research. What was
+the current trends in their fields. Generally the best teachers would
+summarize what was going on and then either say that it didn't work
+for them or that if it did, they didn't take it seriously because in
+five or ten years "the research" would tell them to do something
+different and then they would all of a sudden be bad teachers.
 
-Math teachers -- doing what works vs the research
+This was another point. The right way to do it has changed over and
+over during my career.
 
-in ed school - people who haven't taught telling me how to teach
+Then there's the reproducibility problem. Apparently it's pretty bad
+in education research. I mentioned in my [[http://cestlaz.github.io/posts/sigcse2018-code-tracing][earlier post]] that when a
+researched does it once on a small group it's research but when a
+teacher did it over and over it's an anecdote.
 
-many complex factors not accounted for
+When I was young I would listen to a master teacher tell me about how
+he set up some experience - the one I'm remembering now is an
+experiential / discovery lesson on triangle geometry. He'd talk about
+all the hard work that went into prepping his class for this type of
+lesson as well as the prep time for the lesson itself. He told me how
+he did it four years ago and it was great but then the year after it
+fell flat and how he changed it for the next year. How it worked in
+third period but not seventh and why he thought it played out the way
+it did. That's a lot more reproduction than most 'research' actually
+gets and this is what a master teacher does all the time.
 
-best research is "I tried this you might want to try this"
+Finally, I got tired of hearing how to do it by people who don't
+actually have to. If you're going to talk the talk, you should walk
+the walk. As a side, this problem is really bad with "thought leaders."
+
+All this sounds like I'm really down on education research or at least
+the overarching system. I probably am but there are many education
+researchers doing great work and I respect them immensely.
+
+They know they don't have a magic bullet:
+
+#+BEGIN_QUOTE
+This is what I tried with this population at this time and this is
+what happened. You might want to try it or a variation on it.
+#+END_QUOTE
+
+That's a far cry from "here's how to teach"
+
+The researchers who acknowledge that their experience as college
+researchers or even teaching faculty are different from a k12 teacher
+and that no matter how hard they try to work out all the variables
+they can only ever account for a tiny fraction of them.
+
+The key is that they're adding another drop into the bucket of
+knowledge. Over time it adds up. I have great respect for everyone
+doing this. 
+
+These researchers have to keep prodding us teachers to re-evaluate our
+practice and then either take or incorporate the research or reject it
+after determining if it would be good or not for our population. At
+the same time, it's up to practitioners to keep pushing back against
+magic bullet research and the one true way.
+
+We all have a role to play in this game.
+
+
+
+
