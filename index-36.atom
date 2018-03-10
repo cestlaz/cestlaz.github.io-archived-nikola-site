@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 36)</title>
   <id>http://cestlaz.github.io/index-36.atom</id>
-  <updated>2018-03-07T01:11:34Z</updated>
+  <updated>2018-03-10T20:57:16Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -15,6 +15,115 @@
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-36.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
+    <title>Google Sheets</title>
+    <id>http://cestlaz.github.io/posts/google-sheets/</id>
+    <updated>2018-02-12T14:28:28-04:00</updated>
+    <published>2018-02-12T14:28:28-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/google-sheets/"/>
+    <summary type="html">&lt;div id="outline-container-org3278464" class="outline-2"&gt;
+&lt;h2 id="org3278464"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3278464"&gt;
+&lt;p&gt;
+I make regular use of Google's office suite. I use Google forms all
+the time to collect data, Google docs when I have to leave Emacs for
+document preparation - usually when I have to collaborate with others
+online and I use Google Sheets as my greadebook.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't do a lot of data processing using Google sheets. For that I
+download the data and write small scripts. On the other hand it turns
+out that you can do some pretty nifty things by scripting right in
+Google sheets. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Google sheets can be scripted using Javascript and Google's APIs. For
+example, adding "hello" and "world" to the two bottom leftmost cells
+in your active spreadsheet can be done by running a function like
+this:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;function addHello() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  ss.appendRow(['hello','world']);
+  }
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+In general, it's pretty easy to grab, modify, or otherwise manipulate
+cells from a spreadsheet with simple javascript.
+&lt;/p&gt;
+
+&lt;p&gt;
+You can also send email from a Google app script. For me this was a
+big win. I use it for emailing grades to students and also as a poor
+man's mailmerge. The key call is:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;GmailApp.sendEmail(email , subject,msg);
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Here's a video walking through sending emails to a list of people from
+a spreadsheet. The code is underneath.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/EvQC1N9JMs0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;function sendEmail(to,subject,msg){
+
+  GmailApp.sendEmail(to,subject,msg)
+}
+
+
+function getSheetByName(name){
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheets = ss.getSheets();
+  for( var n in sheets){
+    if (name==sheets[n].getName()){
+     return sheets[n]; 
+    }
+  }
+    return sheets[0];
+}
+
+function prepareMessage(name){
+  var sheet = getSheetByName("Msg");
+  var oldSheet = SpreadsheetApp.getActiveSheet()
+  SpreadsheetApp.setActiveSheet(sheet)
+
+  var dataRange = sheet.getRange(1,1,1,1)
+  data = dataRange.getValues()
+  var msg = data[0][0]
+  msg = msg.replace("%FIRST%",name)
+  SpreadsheetApp.setActiveSheet(oldSheet)
+  return msg
+}
+
+function sendGrades(){
+  var sheet = getSheetByName("grades")
+  var rows = sheet.getLastRow()
+  var cols = sheet.getLastColumn()
+  var dataRange = sheet.getRange(2,1,rows-1,cols)
+  var data = dataRange.getValues();
+  for (i in data){
+    var name = data[i][0]
+    var to = data[i][1]
+    var msg = prepareMessage(name)
+    sendEmail(to,"Important Grade Info",msg)
+  }
+
+}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="admin" label="admin"/>
+  </entry>
+  <entry>
     <title>Using Emacs 40 - Atomic Chrome</title>
     <id>http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/</id>
     <updated>2018-01-31T07:00:00-04:00</updated>
@@ -23,9 +132,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/"/>
-    <summary type="html">&lt;div id="outline-container-org1432f66" class="outline-2"&gt;
-&lt;h2 id="org1432f66"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1432f66"&gt;
+    <summary type="html">&lt;div id="outline-container-org50706fc" class="outline-2"&gt;
+&lt;h2 id="org50706fc"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org50706fc"&gt;
 &lt;p&gt;
 Thanks to everyone who voted for topics or commented with suggestions
 for videos. I'll try to get to them in the coming months.
@@ -38,9 +147,9 @@ browser extension that allows you to edit web form inputs with Emacs.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org1fd9c1a" class="outline-2"&gt;
-&lt;h2 id="org1fd9c1a"&gt;UPDATE&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1fd9c1a"&gt;
+&lt;div id="outline-container-org3eef295" class="outline-2"&gt;
+&lt;h2 id="org3eef295"&gt;UPDATE&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3eef295"&gt;
 &lt;p&gt;
 I forgot to mention that you can set a shortcut key, at least in chrome rather than
 clicking on the icon. This makes things much smoother.
@@ -76,9 +185,9 @@ Enjoy:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/textbooks/"/>
-    <summary type="html">&lt;div id="outline-container-org0e22892" class="outline-2"&gt;
-&lt;h2 id="org0e22892"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0e22892"&gt;
+    <summary type="html">&lt;div id="outline-container-org949b15f" class="outline-2"&gt;
+&lt;h2 id="org949b15f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org949b15f"&gt;
 &lt;p&gt;
 I thought I'd answer Alfred Thompson's recent post on &lt;a href="http://blog.acthompson.net/2018/01/thinking-about-cs-textbooks.html"&gt;using
 textbooks&lt;/a&gt;. Like Alfred, I've never used textbooks particularly
@@ -166,9 +275,9 @@ alternatives.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/is-teaching-cs-hard/"/>
-    <summary type="html">&lt;div id="outline-container-org60426af" class="outline-2"&gt;
-&lt;h2 id="org60426af"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org60426af"&gt;
+    <summary type="html">&lt;div id="outline-container-orgf3701d9" class="outline-2"&gt;
+&lt;h2 id="orgf3701d9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf3701d9"&gt;
 &lt;p&gt;
 Last week, Mark Guzdial asked &lt;a href="https://computinged.wordpress.com/2018/01/19/what-does-it-mean-for-computer-science-to-be-harder-to-learn-than-other-stem-subjects/"&gt;What does it mean for Computer Science to be harder to learn
 than other STEM subjects?&lt;/a&gt; as a follow up to his &lt;a href="https://cacm.acm.org/blogs/blog-cacm/224105-learning-computer-science-is-different-than-learning-other-stem-disciplines/fulltext"&gt;ACM Blog post&lt;/a&gt; this
