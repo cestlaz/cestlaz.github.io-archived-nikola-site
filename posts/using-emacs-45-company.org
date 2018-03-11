@@ -1,0 +1,100 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs 45 - Company or Autocomplete
+.. slug: using-emacs-45-company
+.. date: 2018-03-11 08:05:45 UTC-04:00
+.. tags: emacs, tools
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+This is a good time to be an Emacs user. In addition to all of the
+great packages and tools being developed there seem to be more people
+regularly blogging and making videos about Emacs than ever before.
+
+[[http://planet.emacsen.org/][Planet Emacsen]] aggregates a ton of Emcas blogs and Emacs Legend Sacha
+Chua posts what's going on in emacs every week on her [[http://sachachua.com/blog/category/geek/emacs/][blog]].
+
+on the video front, [[https://www.youtube.com/channel/ucdetz7akmws0_gnjog01d2g][uncle dave]] has recently joined the ranks of emacs
+video producers. sometimes we'll cover the same topic. dave made a
+video on swiper the other week and i made one a year ago. the other
+week we both made videos on mpd almost on the same day but dave
+focussed on emms and i focussed on simple-mpc. i think this
+is great because it gives different perspectives.
+
+today, i watched dave's video on [[https://www.youtube.com/watch?v=xewzfruru6k&t=854s][company]] mode for auto
+completion. I've always used [[http://cestlaz.github.io/posts/using-emacs-8-autocomplete/][autocomplete]] mode. I thought it would be
+a good time for me to see how the other half lived.
+
+You can find my configurations up on GitHub
+([[https://github.com/zamansky/using-emacs][https://github.com/zamansky/using-emacs]]). The master branch is using
+autocomplete and the company-test branch for company. I've also pulled
+out the relevant code and am placing it down under the video.
+
+Here's what I've found so far:
+
+
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/srFQwTvbaxY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+#+END_EXPORT
+
+* Company config (so far):
+#+BEGIN_SRC emacs-lisp
+(use-package company
+:ensure t
+:config
+(setq company-idle-delay 0)
+(setq company-minimum-prefix-length 3)
+(global-company-mode t))
+
+(use-package company-irony
+:ensure t
+:config 
+(add-to-list 'company-backends 'company-irony))
+
+(use-package irony
+:ensure t
+:config
+(add-hook 'c++-mode-hook 'irony-mode)
+(add-hook 'c-mode-hook 'irony-mode)
+(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options))
+
+(use-package irony-eldoc
+:ensure t
+:config
+(add-hook 'irony-mode-hook #'irony-eldoc))
+
+(use-package company-jedi
+    :ensure t
+    :config
+    (add-hook 'python-mode-hook 'jedi:setup))
+
+(defun my/python-mode-hook ()
+  (add-to-list 'company-backends 'company-jedi))
+
+(add-hook 'python-mode-hook 'my/python-mode-hook)
+#+END_SRC
+
+* Autocomplete config
+#+BEGIN_SRC emacs-lisp
+(use-package auto-complete
+:ensure t
+:init
+(progn
+  (ac-config-default)
+  (global-auto-complete-mode t)
+  ))
+
+(setq py-python-command "python3")
+(setq python-shell-interpreter "python3")
+
+  (use-package jedi
+    :ensure t
+    :init
+    (add-hook 'python-mode-hook 'jedi:setup)
+    (add-hook 'python-mode-hook 'jedi:ac-setup))
+
+
+#+END_SRC
