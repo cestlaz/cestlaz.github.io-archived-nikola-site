@@ -1,7 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 10 Mar 2018 21:22:00 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>How my views on education research were shaped</title><link>http://cestlaz.github.io/posts/practitioners-and-researchers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgb4aede6" class="outline-2"&gt;
-&lt;h2 id="orgb4aede6"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb4aede6"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 11 Mar 2018 19:48:53 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 45 - Company or Autocomplete</title><link>http://cestlaz.github.io/posts/using-emacs-45-company/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org33b7b2c" class="outline-2"&gt;
+&lt;h2 id="org33b7b2c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org33b7b2c"&gt;
+&lt;p&gt;
+This is a good time to be an Emacs user. In addition to all of the
+great packages and tools being developed there seem to be more people
+regularly blogging and making videos about Emacs than ever before.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="http://planet.emacsen.org/"&gt;Planet Emacsen&lt;/a&gt; aggregates a ton of Emcas blogs and Emacs Legend Sacha
+Chua posts what's going on in emacs every week on her &lt;a href="http://sachachua.com/blog/category/geek/emacs/"&gt;blog&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+on the video front, &lt;a href="https://www.youtube.com/channel/ucdetz7akmws0_gnjog01d2g"&gt;uncle dave&lt;/a&gt; has recently joined the ranks of emacs
+video producers. sometimes we'll cover the same topic. dave made a
+video on swiper the other week and i made one a year ago. the other
+week we both made videos on mpd almost on the same day but dave
+focussed on emms and i focussed on simple-mpc. i think this
+is great because it gives different perspectives.
+&lt;/p&gt;
+
+&lt;p&gt;
+today, i watched dave's video on &lt;a href="https://www.youtube.com/watch?v=xewzfruru6k&amp;amp;t=854s"&gt;company&lt;/a&gt; mode for auto
+completion. I've always used &lt;a href="http://cestlaz.github.io/posts/using-emacs-8-autocomplete/"&gt;autocomplete&lt;/a&gt; mode. I thought it would be
+a good time for me to see how the other half lived.
+&lt;/p&gt;
+
+&lt;p&gt;
+You can find my configurations up on GitHub
+(&lt;a href="https://github.com/zamansky/using-emacs"&gt;https://github.com/zamansky/using-emacs&lt;/a&gt;). The master branch is using
+autocomplete and the company-test branch for company. I've also pulled
+out the relevant code and am placing it down under the video.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's what I've found so far:
+&lt;/p&gt;
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/srFQwTvbaxY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org0580de9" class="outline-2"&gt;
+&lt;h2 id="org0580de9"&gt;Company config (so far):&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0580de9"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;company-idle-delay&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;company-minimum-prefix-length&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-company-mode&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company-irony&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt; 
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'company-backends&lt;/span&gt; &lt;span class="ss"&gt;'company-irony&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;irony&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'c++-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'c-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-cdb-autosetup-compile-options&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;irony-eldoc&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode-hook&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="ss"&gt;'irony-eldoc&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company-jedi&lt;/span&gt;
+    &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+    &lt;span class="nv"&gt;:config&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;my/python-mode-hook&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'company-backends&lt;/span&gt; &lt;span class="ss"&gt;'company-jedi&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'my/python-mode-hook&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org67bf776" class="outline-2"&gt;
+&lt;h2 id="org67bf776"&gt;Autocomplete config&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org67bf776"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;auto-complete&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:init&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;progn&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ac-config-default&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-auto-complete-mode&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;py-python-command&lt;/span&gt; &lt;span class="s"&gt;"python3"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;python-shell-interpreter&lt;/span&gt; &lt;span class="s"&gt;"python3"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;jedi&lt;/span&gt;
+    &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+    &lt;span class="nv"&gt;:init&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:setup&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:ac-setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-45-company/</guid><pubDate>Sun, 11 Mar 2018 12:05:45 GMT</pubDate></item><item><title>How my views on education research were shaped</title><link>http://cestlaz.github.io/posts/practitioners-and-researchers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org2da317e" class="outline-2"&gt;
+&lt;h2 id="org2da317e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org2da317e"&gt;
 &lt;p&gt;
 After reading a couple of comments on my &lt;a href="http://cestlaz.github.io/posts/sigcse2018-code-tracing/"&gt;last post&lt;/a&gt; where I talked a
 bit about practitioners vs researchers I thought I'd expand and
@@ -147,9 +253,9 @@ magic bullet research and the one true way.
 We all have a role to play in this game.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>research</category><guid>http://cestlaz.github.io/posts/practitioners-and-researchers/</guid><pubDate>Wed, 07 Mar 2018 23:41:16 GMT</pubDate></item><item><title>Sigcse2018 - Code Tracing</title><link>http://cestlaz.github.io/posts/sigcse2018-code-tracing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org0fb6eb8" class="outline-2"&gt;
-&lt;h2 id="org0fb6eb8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0fb6eb8"&gt;
+&lt;/div&gt;</description><category>education</category><category>research</category><guid>http://cestlaz.github.io/posts/practitioners-and-researchers/</guid><pubDate>Wed, 07 Mar 2018 23:41:16 GMT</pubDate></item><item><title>Sigcse2018 - Code Tracing</title><link>http://cestlaz.github.io/posts/sigcse2018-code-tracing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org45688ea" class="outline-2"&gt;
+&lt;h2 id="org45688ea"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org45688ea"&gt;
 &lt;p&gt;
 Next up from SIGCSE is &lt;a href="https://dl.acm.org/citation.cfm?id=3159527"&gt;An Explicit Strategy to Scaffold Novice Program
 Tracing&lt;/a&gt; by Benjamin Xie, Greg Nelson and Andy Ko, presented by
@@ -290,9 +396,9 @@ at the top if you have access to the ACM Digital Library. If not, you
 can read Benji Xi's medium post &lt;a href="https://medium.com/bits-and-behavior/teaching-a-strategy-for-reading-code-fbc9f4044cab"&gt;here&lt;/a&gt;. 
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/sigcse2018-code-tracing/</guid><pubDate>Tue, 06 Mar 2018 23:16:28 GMT</pubDate></item><item><title>Using Emacs 44 - An org-mode workflow for application processing</title><link>http://cestlaz.github.io/posts/using-emacs-44-pdf/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8ec625d" class="outline-2"&gt;
-&lt;h2 id="org8ec625d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8ec625d"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/sigcse2018-code-tracing/</guid><pubDate>Tue, 06 Mar 2018 23:16:28 GMT</pubDate></item><item><title>Using Emacs 44 - An org-mode workflow for application processing</title><link>http://cestlaz.github.io/posts/using-emacs-44-pdf/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga34b33a" class="outline-2"&gt;
+&lt;h2 id="orga34b33a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga34b33a"&gt;
 &lt;p&gt;
 One of my titles at Hunter College is Director of the Daedalus CS
 Honors program. It's something like a Hunter specific, CS specific
@@ -350,9 +456,9 @@ Take a look and let me know what you think:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LFO2UbzbZhA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>pdf</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-44-pdf/</guid><pubDate>Sat, 03 Mar 2018 12:05:45 GMT</pubDate></item><item><title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title><link>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc43063e" class="outline-2"&gt;
-&lt;h2 id="orgc43063e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc43063e"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>pdf</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-44-pdf/</guid><pubDate>Sat, 03 Mar 2018 12:05:45 GMT</pubDate></item><item><title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title><link>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge428d07" class="outline-2"&gt;
+&lt;h2 id="orge428d07"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge428d07"&gt;
 &lt;p&gt;
 I really didn't know what to expect at the &lt;a href="https://dl.acm.org/citation.cfm?id=3159471"&gt;Creativity, Customization,
 and Ownership: Game Design in Bootstrap: Algebra&lt;/a&gt; session. I've been a
@@ -481,9 +587,9 @@ Fisler. I didn't know what to expect walking in but I left the talk
 reminded of why I'm such a fan of Emmanuel, his team, and their work.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</guid><pubDate>Fri, 02 Mar 2018 13:27:33 GMT</pubDate></item><item><title>Sigcse2018 - Malloc Lab</title><link>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3d0026d" class="outline-2"&gt;
-&lt;h2 id="org3d0026d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3d0026d"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</guid><pubDate>Fri, 02 Mar 2018 13:27:33 GMT</pubDate></item><item><title>Sigcse2018 - Malloc Lab</title><link>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9ede4c6" class="outline-2"&gt;
+&lt;h2 id="org9ede4c6"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9ede4c6"&gt;
 &lt;p&gt;
 I wasn't going to go to this session. I started out in a panel on
 integrating social good into CS Ed. With the panel not meeting my
@@ -619,9 +725,9 @@ together with those of us who don't have the chops as researchers but
 do so as teachers.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>systems</category><guid>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</guid><pubDate>Thu, 01 Mar 2018 20:59:31 GMT</pubDate></item><item><title>SIGCSE 2018</title><link>http://cestlaz.github.io/posts/sigcse2018/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org80569fc" class="outline-2"&gt;
-&lt;h2 id="org80569fc"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org80569fc"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>systems</category><guid>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</guid><pubDate>Thu, 01 Mar 2018 20:59:31 GMT</pubDate></item><item><title>SIGCSE 2018</title><link>http://cestlaz.github.io/posts/sigcse2018/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org553bd27" class="outline-2"&gt;
+&lt;h2 id="org553bd27"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org553bd27"&gt;
 &lt;p&gt;
 I just got back from SIGCSE2018 - the big annual conference on
 computer science education. Although I've been in this racket for
@@ -694,9 +800,9 @@ Overall it was a great conference. I look forward to sharing my
 experiences with all of you in the coming posts.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/sigcse2018/</guid><pubDate>Sun, 25 Feb 2018 18:41:41 GMT</pubDate></item><item><title>Using Emacs 43 - Music with MPD</title><link>http://cestlaz.github.io/posts/using-emacs-43-music/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgdda820b" class="outline-2"&gt;
-&lt;h2 id="orgdda820b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgdda820b"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/sigcse2018/</guid><pubDate>Sun, 25 Feb 2018 18:41:41 GMT</pubDate></item><item><title>Using Emacs 43 - Music with MPD</title><link>http://cestlaz.github.io/posts/using-emacs-43-music/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org208ddec" class="outline-2"&gt;
+&lt;h2 id="org208ddec"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org208ddec"&gt;
 &lt;p&gt;
 I like to listen to music at work. Sometimes I just stream from
 YouTube, Soundcloud, Spotify or some other online source but if you're
@@ -734,9 +840,9 @@ Enjoy.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LWd60rc_rQ0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>mpd</category><category>music</category><guid>http://cestlaz.github.io/posts/using-emacs-43-music/</guid><pubDate>Tue, 20 Feb 2018 12:05:45 GMT</pubDate></item><item><title>Testing, Testing</title><link>http://cestlaz.github.io/posts/testing-testing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf25da60" class="outline-2"&gt;
-&lt;h2 id="orgf25da60"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf25da60"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>mpd</category><category>music</category><guid>http://cestlaz.github.io/posts/using-emacs-43-music/</guid><pubDate>Tue, 20 Feb 2018 12:05:45 GMT</pubDate></item><item><title>Testing, Testing</title><link>http://cestlaz.github.io/posts/testing-testing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga2d6f11" class="outline-2"&gt;
+&lt;h2 id="orga2d6f11"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga2d6f11"&gt;
 &lt;p&gt;
 With CS4All being the buzzword of the day we're paying a lot of
 attention to the fact that when we teach a CS class for all students,
@@ -923,9 +1029,9 @@ on track to using test frameworks - something they'll need wherever
 they end up.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-testing/</guid><pubDate>Mon, 19 Feb 2018 12:26:16 GMT</pubDate></item><item><title>Using Emacs 42 - Git Gutter and Time Machine</title><link>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org53478fd" class="outline-2"&gt;
-&lt;h2 id="org53478fd"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org53478fd"&gt;
+&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-testing/</guid><pubDate>Mon, 19 Feb 2018 12:26:16 GMT</pubDate></item><item><title>Using Emacs 42 - Git Gutter and Time Machine</title><link>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org916ae49" class="outline-2"&gt;
+&lt;h2 id="org916ae49"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org916ae49"&gt;
 &lt;p&gt;
 One day I'll do a Magit video but since there are already some good
 ones out there I thought I'd share a couple of other great git related
@@ -955,79 +1061,4 @@ Enjoy
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/P-mLxkb-EE8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>git</category><guid>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</guid><pubDate>Sun, 18 Feb 2018 12:05:45 GMT</pubDate></item><item><title>Using Emacs 41 Pandoc</title><link>http://cestlaz.github.io/posts/using-emacs-41-pandoc/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org57c0c68" class="outline-2"&gt;
-&lt;h2 id="org57c0c68"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org57c0c68"&gt;
-&lt;p&gt;
-Another Emacs quick hit today. Actually, not really Emacs. Today's
-video is a quick, really quick, look at &lt;a href="https://pandoc.org/"&gt;Pandoc&lt;/a&gt;. Pandoc is a document
-converter. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Here are the formats that Pandoc can covert read from:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-Markdown, CommonMark, PHP Markdown Extra, GitHub-Flavored Markdown,
-MultiMarkdown, and (subsets of) Textile, reStructuredText, HTML,
-LaTeX, MediaWiki markup, TWiki markup, TikiWiki markup, Creole 1.0,
-Haddock markup, OPML, Emacs Org mode, DocBook, JATS, Muse, txt2tags,
-Vimwiki, EPUB, ODT, and Word docx.
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-And here are the ones it can write to:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-plain text, Markdown, CommonMark, PHP Markdown Extra, GitHub-Flavored
-Markdown, MultiMarkdown, reStructuredText, XHTML, HTML5, LaTeX
-(including beamer slide shows), ConTeXt, RTF, OPML, DocBook, JATS,
-OpenDocument, ODT, Word docx, GNU Texinfo, MediaWiki markup, DokuWiki
-markup, ZimWiki markup, Haddock markup, EPUB (v2 or v3), FictionBook2,
-Textile, groff man, groff ms, Emacs Org mode, AsciiDoc, InDesign ICML,
-TEI Simple, Muse, PowerPoint slide shows and Slidy, Slideous,
-DZSlides, reveal.js, PDF
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;
-That's pretty impressive
-&lt;/p&gt;
-
-&lt;p&gt;
-I was faced with an html file describing a lab for all the CSCI13500
-students at Hunter. I wanted to modify it for my class and that was
-going to be a bear. I also wanted an easy way to have it render up on
-GitHub. With pandoc, it was trivial. I just typed:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pandoc -f html -t org -o lab3.org lab3.html
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-which converted the file to org-mode. This was trivial to edit and
-then I uploaded it to GitHub as the lab's Readme.org file which GitHub
-automatically renders on the project page.
-&lt;/p&gt;
-
-&lt;p&gt;
-Pandoc for the win.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've also used pandoc to move between org-mode and word files. 
-&lt;/p&gt;
-
-&lt;p&gt;
-If you haven't checked out pandoc, you should.
-&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/qVUZsH-MDRM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><guid>http://cestlaz.github.io/posts/using-emacs-41-pandoc/</guid><pubDate>Tue, 13 Feb 2018 12:05:45 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>emacs</category><category>git</category><guid>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</guid><pubDate>Sun, 18 Feb 2018 12:05:45 GMT</pubDate></item></channel></rss>

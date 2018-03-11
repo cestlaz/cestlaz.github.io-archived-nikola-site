@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-36.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/practitioners-and-researchers/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-45-company/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,127 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/practitioners-and-researchers/" class="u-url">How my views on education research were shaped</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-45-company/" class="u-url">Using Emacs 45 - Company or Autocomplete</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/using-emacs-45-company/" rel="bookmark"><time class="published dt-published" datetime="2018-03-11T08:05:45-04:00" title="2018-03-11 08:05">2018-03-11 08:05</time></a></p>
+                <p class="commentline">            <a href="posts/using-emacs-45-company/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-45-company.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org33b7b2c" class="outline-2">
+<h2 id="org33b7b2c"></h2>
+<div class="outline-text-2" id="text-org33b7b2c">
+<p>
+This is a good time to be an Emacs user. In addition to all of the
+great packages and tools being developed there seem to be more people
+regularly blogging and making videos about Emacs than ever before.
+</p>
+
+<p>
+<a href="http://planet.emacsen.org/">Planet Emacsen</a> aggregates a ton of Emcas blogs and Emacs Legend Sacha
+Chua posts what's going on in emacs every week on her <a href="http://sachachua.com/blog/category/geek/emacs/">blog</a>.
+</p>
+
+<p>
+on the video front, <a href="https://www.youtube.com/channel/ucdetz7akmws0_gnjog01d2g">uncle dave</a> has recently joined the ranks of emacs
+video producers. sometimes we'll cover the same topic. dave made a
+video on swiper the other week and i made one a year ago. the other
+week we both made videos on mpd almost on the same day but dave
+focussed on emms and i focussed on simple-mpc. i think this
+is great because it gives different perspectives.
+</p>
+
+<p>
+today, i watched dave's video on <a href="https://www.youtube.com/watch?v=xewzfruru6k&amp;t=854s">company</a> mode for auto
+completion. I've always used <a href="http://cestlaz.github.io/posts/using-emacs-8-autocomplete/">autocomplete</a> mode. I thought it would be
+a good time for me to see how the other half lived.
+</p>
+
+<p>
+You can find my configurations up on GitHub
+(<a href="https://github.com/zamansky/using-emacs">https://github.com/zamansky/using-emacs</a>). The master branch is using
+autocomplete and the company-test branch for company. I've also pulled
+out the relevant code and am placing it down under the video.
+</p>
+
+<p>
+Here's what I've found so far:
+</p>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/srFQwTvbaxY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+
+<div id="outline-container-org0580de9" class="outline-2">
+<h2 id="org0580de9">Company config (so far):</h2>
+<div class="outline-text-2" id="text-org0580de9">
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">company</span>
+<span class="nv">:ensure</span> <span class="nv">t</span>
+<span class="nv">:config</span>
+<span class="p">(</span><span class="nf">setq</span> <span class="nv">company-idle-delay</span> <span class="mi">0</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">setq</span> <span class="nv">company-minimum-prefix-length</span> <span class="mi">3</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">global-company-mode</span> <span class="nv">t</span><span class="p">))</span>
+
+<span class="p">(</span><span class="nf">use-package</span> <span class="nv">company-irony</span>
+<span class="nv">:ensure</span> <span class="nv">t</span>
+<span class="nv">:config</span> 
+<span class="p">(</span><span class="nf">add-to-list</span> <span class="ss">'company-backends</span> <span class="ss">'company-irony</span><span class="p">))</span>
+
+<span class="p">(</span><span class="nf">use-package</span> <span class="nv">irony</span>
+<span class="nv">:ensure</span> <span class="nv">t</span>
+<span class="nv">:config</span>
+<span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'c++-mode-hook</span> <span class="ss">'irony-mode</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'c-mode-hook</span> <span class="ss">'irony-mode</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'irony-mode-hook</span> <span class="ss">'irony-cdb-autosetup-compile-options</span><span class="p">))</span>
+
+<span class="p">(</span><span class="nf">use-package</span> <span class="nv">irony-eldoc</span>
+<span class="nv">:ensure</span> <span class="nv">t</span>
+<span class="nv">:config</span>
+<span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'irony-mode-hook</span> <span class="o">#</span><span class="ss">'irony-eldoc</span><span class="p">))</span>
+
+<span class="p">(</span><span class="nf">use-package</span> <span class="nv">company-jedi</span>
+    <span class="nv">:ensure</span> <span class="nv">t</span>
+    <span class="nv">:config</span>
+    <span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'python-mode-hook</span> <span class="ss">'jedi:setup</span><span class="p">))</span>
+
+<span class="p">(</span><span class="nf">defun</span> <span class="nv">my/python-mode-hook</span> <span class="p">()</span>
+  <span class="p">(</span><span class="nf">add-to-list</span> <span class="ss">'company-backends</span> <span class="ss">'company-jedi</span><span class="p">))</span>
+
+<span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'python-mode-hook</span> <span class="ss">'my/python-mode-hook</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+
+<div id="outline-container-org67bf776" class="outline-2">
+<h2 id="org67bf776">Autocomplete config</h2>
+<div class="outline-text-2" id="text-org67bf776">
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">auto-complete</span>
+<span class="nv">:ensure</span> <span class="nv">t</span>
+<span class="nv">:init</span>
+<span class="p">(</span><span class="nf">progn</span>
+  <span class="p">(</span><span class="nf">ac-config-default</span><span class="p">)</span>
+  <span class="p">(</span><span class="nf">global-auto-complete-mode</span> <span class="nv">t</span><span class="p">)</span>
+  <span class="p">))</span>
+
+<span class="p">(</span><span class="nf">setq</span> <span class="nv">py-python-command</span> <span class="s">"python3"</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">setq</span> <span class="nv">python-shell-interpreter</span> <span class="s">"python3"</span><span class="p">)</span>
+
+  <span class="p">(</span><span class="nf">use-package</span> <span class="nv">jedi</span>
+    <span class="nv">:ensure</span> <span class="nv">t</span>
+    <span class="nv">:init</span>
+    <span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'python-mode-hook</span> <span class="ss">'jedi:setup</span><span class="p">)</span>
+    <span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'python-mode-hook</span> <span class="ss">'jedi:ac-setup</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/practitioners-and-researchers/" class="u-url">How my views on education research were shaped</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -102,9 +222,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgb4aede6" class="outline-2">
-<h2 id="orgb4aede6"></h2>
-<div class="outline-text-2" id="text-orgb4aede6">
+    <div id="outline-container-org2da317e" class="outline-2">
+<h2 id="org2da317e"></h2>
+<div class="outline-text-2" id="text-org2da317e">
 <p>
 After reading a couple of comments on my <a href="http://cestlaz.github.io/posts/sigcse2018-code-tracing/">last post</a> where I talked a
 bit about practitioners vs researchers I thought I'd expand and
@@ -263,9 +383,9 @@ We all have a role to play in this game.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org0fb6eb8" class="outline-2">
-<h2 id="org0fb6eb8"></h2>
-<div class="outline-text-2" id="text-org0fb6eb8">
+    <div id="outline-container-org45688ea" class="outline-2">
+<h2 id="org45688ea"></h2>
+<div class="outline-text-2" id="text-org45688ea">
 <p>
 Next up from SIGCSE is <a href="https://dl.acm.org/citation.cfm?id=3159527">An Explicit Strategy to Scaffold Novice Program
 Tracing</a> by Benjamin Xie, Greg Nelson and Andy Ko, presented by
@@ -420,9 +540,9 @@ can read Benji Xi's medium post <a href="https://medium.com/bits-and-behavior/te
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org8ec625d" class="outline-2">
-<h2 id="org8ec625d"></h2>
-<div class="outline-text-2" id="text-org8ec625d">
+    <div id="outline-container-orga34b33a" class="outline-2">
+<h2 id="orga34b33a"></h2>
+<div class="outline-text-2" id="text-orga34b33a">
 <p>
 One of my titles at Hunter College is Director of the Daedalus CS
 Honors program. It's something like a Hunter specific, CS specific
@@ -494,9 +614,9 @@ Take a look and let me know what you think:
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgc43063e" class="outline-2">
-<h2 id="orgc43063e"></h2>
-<div class="outline-text-2" id="text-orgc43063e">
+    <div id="outline-container-orge428d07" class="outline-2">
+<h2 id="orge428d07"></h2>
+<div class="outline-text-2" id="text-orge428d07">
 <p>
 I really didn't know what to expect at the <a href="https://dl.acm.org/citation.cfm?id=3159471">Creativity, Customization,
 and Ownership: Game Design in Bootstrap: Algebra</a> session. I've been a
@@ -637,9 +757,9 @@ reminded of why I'm such a fan of Emmanuel, his team, and their work.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org3d0026d" class="outline-2">
-<h2 id="org3d0026d"></h2>
-<div class="outline-text-2" id="text-org3d0026d">
+    <div id="outline-container-org9ede4c6" class="outline-2">
+<h2 id="org9ede4c6"></h2>
+<div class="outline-text-2" id="text-org9ede4c6">
 <p>
 I wasn't going to go to this session. I started out in a panel on
 integrating social good into CS Ed. With the panel not meeting my
@@ -788,9 +908,9 @@ do so as teachers.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org80569fc" class="outline-2">
-<h2 id="org80569fc"></h2>
-<div class="outline-text-2" id="text-org80569fc">
+    <div id="outline-container-org553bd27" class="outline-2">
+<h2 id="org553bd27"></h2>
+<div class="outline-text-2" id="text-org553bd27">
 <p>
 I just got back from SIGCSE2018 - the big annual conference on
 computer science education. Although I've been in this racket for
@@ -880,9 +1000,9 @@ experiences with all of you in the coming posts.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgdda820b" class="outline-2">
-<h2 id="orgdda820b"></h2>
-<div class="outline-text-2" id="text-orgdda820b">
+    <div id="outline-container-org208ddec" class="outline-2">
+<h2 id="org208ddec"></h2>
+<div class="outline-text-2" id="text-org208ddec">
 <p>
 I like to listen to music at work. Sometimes I just stream from
 YouTube, Soundcloud, Spotify or some other online source but if you're
@@ -934,9 +1054,9 @@ Enjoy.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgf25da60" class="outline-2">
-<h2 id="orgf25da60"></h2>
-<div class="outline-text-2" id="text-orgf25da60">
+    <div id="outline-container-orga2d6f11" class="outline-2">
+<h2 id="orga2d6f11"></h2>
+<div class="outline-text-2" id="text-orga2d6f11">
 <p>
 With CS4All being the buzzword of the day we're paying a lot of
 attention to the fact that when we teach a CS class for all students,
@@ -1134,9 +1254,9 @@ they end up.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org53478fd" class="outline-2">
-<h2 id="org53478fd"></h2>
-<div class="outline-text-2" id="text-org53478fd">
+    <div id="outline-container-org916ae49" class="outline-2">
+<h2 id="org916ae49"></h2>
+<div class="outline-text-2" id="text-org916ae49">
 <p>
 One day I'll do a Magit video but since there are already some good
 ones out there I thought I'd share a couple of other great git related
@@ -1165,95 +1285,6 @@ Enjoy
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/P-mLxkb-EE8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-41-pandoc/" class="u-url">Using Emacs 41 Pandoc</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/using-emacs-41-pandoc/" rel="bookmark"><time class="published dt-published" datetime="2018-02-13T08:05:45-04:00" title="2018-02-13 08:05">2018-02-13 08:05</time></a></p>
-                <p class="commentline">            <a href="posts/using-emacs-41-pandoc/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-41-pandoc.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-org57c0c68" class="outline-2">
-<h2 id="org57c0c68"></h2>
-<div class="outline-text-2" id="text-org57c0c68">
-<p>
-Another Emacs quick hit today. Actually, not really Emacs. Today's
-video is a quick, really quick, look at <a href="https://pandoc.org/">Pandoc</a>. Pandoc is a document
-converter. 
-</p>
-
-<p>
-Here are the formats that Pandoc can covert read from:
-</p>
-
-<blockquote>
-<p>
-Markdown, CommonMark, PHP Markdown Extra, GitHub-Flavored Markdown,
-MultiMarkdown, and (subsets of) Textile, reStructuredText, HTML,
-LaTeX, MediaWiki markup, TWiki markup, TikiWiki markup, Creole 1.0,
-Haddock markup, OPML, Emacs Org mode, DocBook, JATS, Muse, txt2tags,
-Vimwiki, EPUB, ODT, and Word docx.
-</p>
-</blockquote>
-
-<p>
-And here are the ones it can write to:
-</p>
-
-<blockquote>
-<p>
-plain text, Markdown, CommonMark, PHP Markdown Extra, GitHub-Flavored
-Markdown, MultiMarkdown, reStructuredText, XHTML, HTML5, LaTeX
-(including beamer slide shows), ConTeXt, RTF, OPML, DocBook, JATS,
-OpenDocument, ODT, Word docx, GNU Texinfo, MediaWiki markup, DokuWiki
-markup, ZimWiki markup, Haddock markup, EPUB (v2 or v3), FictionBook2,
-Textile, groff man, groff ms, Emacs Org mode, AsciiDoc, InDesign ICML,
-TEI Simple, Muse, PowerPoint slide shows and Slidy, Slideous,
-DZSlides, reveal.js, PDF
-</p>
-</blockquote>
-
-
-<p>
-That's pretty impressive
-</p>
-
-<p>
-I was faced with an html file describing a lab for all the CSCI13500
-students at Hunter. I wanted to modify it for my class and that was
-going to be a bear. I also wanted an easy way to have it render up on
-GitHub. With pandoc, it was trivial. I just typed:
-</p>
-
-<div class="highlight"><pre><span></span>pandoc -f html -t org -o lab3.org lab3.html
-</pre></div>
-
-<p>
-which converted the file to org-mode. This was trivial to edit and
-then I uploaded it to GitHub as the lab's Readme.org file which GitHub
-automatically renders on the project page.
-</p>
-
-<p>
-Pandoc for the win.
-</p>
-
-<p>
-I've also used pandoc to move between org-mode and word files. 
-</p>
-
-<p>
-If you haven't checked out pandoc, you should.
-</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qVUZsH-MDRM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 </div>
     </div>

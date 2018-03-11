@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 36)</title>
   <id>http://cestlaz.github.io/index-36.atom</id>
-  <updated>2018-03-10T20:57:16Z</updated>
+  <updated>2018-03-11T19:41:40Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -15,6 +15,93 @@
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-36.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
+    <title>Using Emacs 41 Pandoc</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-41-pandoc/</id>
+    <updated>2018-02-13T08:05:45-04:00</updated>
+    <published>2018-02-13T08:05:45-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-41-pandoc/"/>
+    <summary type="html">&lt;div id="outline-container-org9929ccd" class="outline-2"&gt;
+&lt;h2 id="org9929ccd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9929ccd"&gt;
+&lt;p&gt;
+Another Emacs quick hit today. Actually, not really Emacs. Today's
+video is a quick, really quick, look at &lt;a href="https://pandoc.org/"&gt;Pandoc&lt;/a&gt;. Pandoc is a document
+converter. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Here are the formats that Pandoc can covert read from:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Markdown, CommonMark, PHP Markdown Extra, GitHub-Flavored Markdown,
+MultiMarkdown, and (subsets of) Textile, reStructuredText, HTML,
+LaTeX, MediaWiki markup, TWiki markup, TikiWiki markup, Creole 1.0,
+Haddock markup, OPML, Emacs Org mode, DocBook, JATS, Muse, txt2tags,
+Vimwiki, EPUB, ODT, and Word docx.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+And here are the ones it can write to:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+plain text, Markdown, CommonMark, PHP Markdown Extra, GitHub-Flavored
+Markdown, MultiMarkdown, reStructuredText, XHTML, HTML5, LaTeX
+(including beamer slide shows), ConTeXt, RTF, OPML, DocBook, JATS,
+OpenDocument, ODT, Word docx, GNU Texinfo, MediaWiki markup, DokuWiki
+markup, ZimWiki markup, Haddock markup, EPUB (v2 or v3), FictionBook2,
+Textile, groff man, groff ms, Emacs Org mode, AsciiDoc, InDesign ICML,
+TEI Simple, Muse, PowerPoint slide shows and Slidy, Slideous,
+DZSlides, reveal.js, PDF
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+That's pretty impressive
+&lt;/p&gt;
+
+&lt;p&gt;
+I was faced with an html file describing a lab for all the CSCI13500
+students at Hunter. I wanted to modify it for my class and that was
+going to be a bear. I also wanted an easy way to have it render up on
+GitHub. With pandoc, it was trivial. I just typed:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pandoc -f html -t org -o lab3.org lab3.html
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+which converted the file to org-mode. This was trivial to edit and
+then I uploaded it to GitHub as the lab's Readme.org file which GitHub
+automatically renders on the project page.
+&lt;/p&gt;
+
+&lt;p&gt;
+Pandoc for the win.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've also used pandoc to move between org-mode and word files. 
+&lt;/p&gt;
+
+&lt;p&gt;
+If you haven't checked out pandoc, you should.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/qVUZsH-MDRM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+  </entry>
+  <entry>
     <title>Google Sheets</title>
     <id>http://cestlaz.github.io/posts/google-sheets/</id>
     <updated>2018-02-12T14:28:28-04:00</updated>
@@ -23,9 +110,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/google-sheets/"/>
-    <summary type="html">&lt;div id="outline-container-org3278464" class="outline-2"&gt;
-&lt;h2 id="org3278464"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3278464"&gt;
+    <summary type="html">&lt;div id="outline-container-org694d5c8" class="outline-2"&gt;
+&lt;h2 id="org694d5c8"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org694d5c8"&gt;
 &lt;p&gt;
 I make regular use of Google's office suite. I use Google forms all
 the time to collect data, Google docs when I have to leave Emacs for
@@ -132,9 +219,9 @@ function sendGrades(){
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/"/>
-    <summary type="html">&lt;div id="outline-container-org50706fc" class="outline-2"&gt;
-&lt;h2 id="org50706fc"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org50706fc"&gt;
+    <summary type="html">&lt;div id="outline-container-org1432f66" class="outline-2"&gt;
+&lt;h2 id="org1432f66"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1432f66"&gt;
 &lt;p&gt;
 Thanks to everyone who voted for topics or commented with suggestions
 for videos. I'll try to get to them in the coming months.
@@ -147,9 +234,9 @@ browser extension that allows you to edit web form inputs with Emacs.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org3eef295" class="outline-2"&gt;
-&lt;h2 id="org3eef295"&gt;UPDATE&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3eef295"&gt;
+&lt;div id="outline-container-org1fd9c1a" class="outline-2"&gt;
+&lt;h2 id="org1fd9c1a"&gt;UPDATE&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1fd9c1a"&gt;
 &lt;p&gt;
 I forgot to mention that you can set a shortcut key, at least in chrome rather than
 clicking on the icon. This makes things much smoother.
@@ -185,9 +272,9 @@ Enjoy:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/textbooks/"/>
-    <summary type="html">&lt;div id="outline-container-org949b15f" class="outline-2"&gt;
-&lt;h2 id="org949b15f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org949b15f"&gt;
+    <summary type="html">&lt;div id="outline-container-org0e22892" class="outline-2"&gt;
+&lt;h2 id="org0e22892"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0e22892"&gt;
 &lt;p&gt;
 I thought I'd answer Alfred Thompson's recent post on &lt;a href="http://blog.acthompson.net/2018/01/thinking-about-cs-textbooks.html"&gt;using
 textbooks&lt;/a&gt;. Like Alfred, I've never used textbooks particularly
@@ -275,9 +362,9 @@ alternatives.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/is-teaching-cs-hard/"/>
-    <summary type="html">&lt;div id="outline-container-orgf3701d9" class="outline-2"&gt;
-&lt;h2 id="orgf3701d9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf3701d9"&gt;
+    <summary type="html">&lt;div id="outline-container-org60426af" class="outline-2"&gt;
+&lt;h2 id="org60426af"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org60426af"&gt;
 &lt;p&gt;
 Last week, Mark Guzdial asked &lt;a href="https://computinged.wordpress.com/2018/01/19/what-does-it-mean-for-computer-science-to-be-harder-to-learn-than-other-stem-subjects/"&gt;What does it mean for Computer Science to be harder to learn
 than other STEM subjects?&lt;/a&gt; as a follow up to his &lt;a href="https://cacm.acm.org/blogs/blog-cacm/224105-learning-computer-science-is-different-than-learning-other-stem-disciplines/fulltext"&gt;ACM Blog post&lt;/a&gt; this
