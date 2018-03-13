@@ -1,5 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about education)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/education.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 11 Mar 2018 19:41:39 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>How my views on education research were shaped</title><link>http://cestlaz.github.io/posts/practitioners-and-researchers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org2da317e" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about education)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/education.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 13 Mar 2018 23:41:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sigcse2018 Making theory more acccesible</title><link>http://cestlaz.github.io/posts/sigcse2018-theory/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgaae4caa" class="outline-2"&gt;
+&lt;h2 id="orgaae4caa"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgaae4caa"&gt;
+&lt;p&gt;
+Next up from SIGCSE 2018 is John MacCormick's session on
+&lt;a href="https://dl.acm.org/citation.cfm?id=3159557"&gt;Strategies for Baing the CS Theory Course on Non-decision Problems&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+MacCormicks's stance is that CS theory  is tough the first time around
+and using non-decision problems is a viable approach to make theory
+more accessible to beginners. As MacCormick said in his paper:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+… a decision problem may ask the yes/no question, "Does this graph
+have a Hamilton cycle?" The corresponding non-decision problem is,
+"Please give me a Hamilton cycle of this graph if it has one."
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+This leads to writing programs to explore concepts in CS theory rather
+than just living in the world of proof. 
+&lt;/p&gt;
+
+&lt;p&gt;
+MacCormick goes on to say that:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+For this audience, the key advantage of non-decision problems
+is that they are more realistic: they match the previous programming
+and algorithms experience of undergraduates more closely.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+I love the idea. Writing a program can make an abstract problem more
+concrete and can lead to better understanding for those of us who are
+less math inclined.
+&lt;/p&gt;
+
+&lt;p&gt;
+My next thought was that this shouldn't just be a change implemented
+in theory courses. Some of these ideas should move down to more
+introductory CS classes. Not the hardcore stuff but light
+introductions to the topics so that we can layer the learning. If we
+introduce some of these concepts in CS 1 classes then when they get to
+the theory class it won't be the students first rodeo.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've had success with this when teaching recursion early. I've also
+done it with other concepts. When we teach the Towers of Hanoi, yes,
+it's a nice recursion problem but really it's to get the students
+thinking about run time and a bit of proof. likewise, when we do a
+maze solver in NetLogo we're alluding to dynamic programming, search,
+and path finding.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't have too much more to say on this topic right now. I'm not
+enough of a theory guy to sensibly design these experiences. The good
+news is that MacCormick has written an soon to be released &lt;a href="https://www.amazon.com/What-Can-Computed-Practical-Computation/dp/0691170665/ref=asap_bc?ie=UTF8"&gt;book&lt;/a&gt; on the subject. I
+signed up for a reviewer copy at SIGCSE and look forward to receiving
+a copy. Once I do I hope to be able to find some gems that I can work
+into CS 1 experiences.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>theory</category><guid>http://cestlaz.github.io/posts/sigcse2018-theory/</guid><pubDate>Tue, 13 Mar 2018 23:21:43 GMT</pubDate></item><item><title>How my views on education research were shaped</title><link>http://cestlaz.github.io/posts/practitioners-and-researchers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org2da317e" class="outline-2"&gt;
 &lt;h2 id="org2da317e"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-org2da317e"&gt;
 &lt;p&gt;
@@ -1088,94 +1160,4 @@ lot more than if I wasn't there."
 – Remember that as well.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>ap</category><category>apcs</category><category>cs</category><category>education</category><category>teaching</category><guid>http://cestlaz.github.io/posts/teaching-ap-first-time/</guid><pubDate>Wed, 23 Aug 2017 19:56:46 GMT</pubDate></item><item><title>The Cost of AP Exams</title><link>http://cestlaz.github.io/posts/cost-of-ap-exams/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org62263ae" class="outline-2"&gt;
-&lt;h2 id="org62263ae"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org62263ae"&gt;
-&lt;p&gt;
-Now that I'm back from vacation and summer's winding down I thought
-I'd start getting back to more classroom related posts. I still have a
-few summer topics I want to write about – standards and side projects
-in particular but I'm also looking forward to talking more about the
-classroom since, after all, at my core, I'm a teacher. When I saw &lt;a href="http://www.slate.com/articles/technology/future_tense/2017/08/how_online_textbooks_could_help_more_students_take_ap_exams.html"&gt;this&lt;/a&gt;
-article in my inbox this morning I thought I'd talk about it.
-&lt;/p&gt;
-
-&lt;p&gt;
-In the piece, Lindsey Tepe since more kids are taking AP classes and
-they're very expensive, schools should look to lower other costs
-related to AP classes so as to provide financial support so that
-students can take that oh so important end of year exam:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-While the College Board continues to reimburse about one-third of the
-test cost for eligible low-income students, only about half of states
-are now offering any further financial assistance for students.
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-Ms. Tepe's solution? Lower text book costs. As a way of lowering
-school costs, I'm all for it. I've used free online resources in lieu
-of textbooks for years but the savings should go somewhere where it
-can make a difference. Perhaps lowering class sizes. The fatal flaw in
-Ms. Teps's piece is that it continues spinning the misplaced narrative
-that AP Exams are a very important part of a child's education.
-&lt;/p&gt;
-
-&lt;p&gt;
-Let's be reminded of something: The AP Exam is one thing - an exam - a
-single test at the end of the year. 
-&lt;/p&gt;
-
-&lt;p&gt;
-The narrative is that students should take more and more AP classes,
-that they're somehow better for kids. Part of this is due to the
-potential college credit and part is because the public has been
-bamboozled by the ridiculous school ratings that give credit for AP
-classes taken. Back in "the day," AP classes were basically early
-college. You could then argue that they were the most rigorous classes
-offered in a school. AP Calc was basically college Calc. Same for
-APCS-AB, AP-Bio and the rest. Now, with classes like APCS-P aimed to
-be accessible to typical high school students in the lower grades,
-they can't (but still will) make that claim. In fact, at Stuy, my
-former school, there are plenty of non AP classes that are more
-rigorous than AP classes and the best AP teachers don't always cover
-the whole syllabus because they're more concerned with their students
-actually learning rather than scoring 5 on an exam.
-&lt;/p&gt;
-
-&lt;p&gt;
-On the college credit front, if a student has a high probability of
-saving money through AP credit then I'm all for it but otherwise, it's
-just money going to the college board.
-&lt;/p&gt;
-
-&lt;p&gt;
-It seems ridiculous for me to have to write this but the important
-part of a class is, you know, the class. Not the single exam given by
-an outside agency at the end and graded after the semester concludes.
-&lt;/p&gt;
-
-&lt;p&gt;
-My suggestion? Offer college level work to students that are ready for
-it but don't push the AP exam. This would save a ton of money. What value
-does the college board actually bring to the table? Remember, they're
-making a pretty penny on all of this testing. A math teacher should be
-able to teach calculus with or without AP. A good text being used by
-that teacher in class - be it free or paid for is actually much more
-important to a student learning calculus than a single exam taken at
-the end of the year. I'd go further and say that I'd trust the
-teacher's exam more than the college board's. If a teacher knows the
-math but needs to see some sample syllabi, they're a web search
-way. The same is true for most other college courses that have AP
-equivalents and maybe even more so for computer science.
-&lt;/p&gt;
-
-&lt;p&gt;
-At the end of the day it should be about students learning not about
-students taking high stakes exams.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>ap</category><category>csed</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/cost-of-ap-exams/</guid><pubDate>Thu, 17 Aug 2017 11:07:12 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>ap</category><category>apcs</category><category>cs</category><category>education</category><category>teaching</category><guid>http://cestlaz.github.io/posts/teaching-ap-first-time/</guid><pubDate>Wed, 23 Aug 2017 19:56:46 GMT</pubDate></item></channel></rss>

@@ -1,5 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 02 Mar 2018 17:54:27 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title><link>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge428d07" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 13 Mar 2018 23:41:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sigcse2018 Making theory more acccesible</title><link>http://cestlaz.github.io/posts/sigcse2018-theory/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgaae4caa" class="outline-2"&gt;
+&lt;h2 id="orgaae4caa"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgaae4caa"&gt;
+&lt;p&gt;
+Next up from SIGCSE 2018 is John MacCormick's session on
+&lt;a href="https://dl.acm.org/citation.cfm?id=3159557"&gt;Strategies for Baing the CS Theory Course on Non-decision Problems&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+MacCormicks's stance is that CS theory  is tough the first time around
+and using non-decision problems is a viable approach to make theory
+more accessible to beginners. As MacCormick said in his paper:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+… a decision problem may ask the yes/no question, "Does this graph
+have a Hamilton cycle?" The corresponding non-decision problem is,
+"Please give me a Hamilton cycle of this graph if it has one."
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+This leads to writing programs to explore concepts in CS theory rather
+than just living in the world of proof. 
+&lt;/p&gt;
+
+&lt;p&gt;
+MacCormick goes on to say that:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+For this audience, the key advantage of non-decision problems
+is that they are more realistic: they match the previous programming
+and algorithms experience of undergraduates more closely.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+I love the idea. Writing a program can make an abstract problem more
+concrete and can lead to better understanding for those of us who are
+less math inclined.
+&lt;/p&gt;
+
+&lt;p&gt;
+My next thought was that this shouldn't just be a change implemented
+in theory courses. Some of these ideas should move down to more
+introductory CS classes. Not the hardcore stuff but light
+introductions to the topics so that we can layer the learning. If we
+introduce some of these concepts in CS 1 classes then when they get to
+the theory class it won't be the students first rodeo.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've had success with this when teaching recursion early. I've also
+done it with other concepts. When we teach the Towers of Hanoi, yes,
+it's a nice recursion problem but really it's to get the students
+thinking about run time and a bit of proof. likewise, when we do a
+maze solver in NetLogo we're alluding to dynamic programming, search,
+and path finding.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't have too much more to say on this topic right now. I'm not
+enough of a theory guy to sensibly design these experiences. The good
+news is that MacCormick has written an soon to be released &lt;a href="https://www.amazon.com/What-Can-Computed-Practical-Computation/dp/0691170665/ref=asap_bc?ie=UTF8"&gt;book&lt;/a&gt; on the subject. I
+signed up for a reviewer copy at SIGCSE and look forward to receiving
+a copy. Once I do I hope to be able to find some gems that I can work
+into CS 1 experiences.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>theory</category><guid>http://cestlaz.github.io/posts/sigcse2018-theory/</guid><pubDate>Tue, 13 Mar 2018 23:21:43 GMT</pubDate></item><item><title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title><link>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge428d07" class="outline-2"&gt;
 &lt;h2 id="orge428d07"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-orge428d07"&gt;
 &lt;p&gt;
@@ -1172,124 +1244,4 @@ programming paradigms (&lt;a href="https://cestlaz.github.io/posts/2010-03-14-so
 Enjoy.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>algorithms. unplugged</category><category>cs</category><category>programming</category><guid>http://cestlaz.github.io/posts/quick-sort-starting/</guid><pubDate>Tue, 21 Nov 2017 14:34:05 GMT</pubDate></item><item><title>Professional Development beyond Scratch</title><link>http://cestlaz.github.io/posts/election-day-pd-2017/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgea17f65" class="outline-2"&gt;
-&lt;h2 id="orgea17f65"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgea17f65"&gt;
-&lt;p&gt;
-Today was Election Day. One of the few days each year when students
-stay home and teachers spend all day attending what is generously
-known as professional development.
-&lt;/p&gt;
-
-&lt;p&gt;
-Years ago I was in a room with a few colleagues when my friend Dave -
-one of the best math teachers I know said "you know, every time we
-have a PD day in NJ and my wife and I have to scramble to take care of
-the kids I get a little annoyed but then think I shouldn't get annoyed
-since they're spending the day doing all sorts of valuable PD." He
-then said "but then I realize that their PD is probably about as
-useful as our PD and I get really angry."
-&lt;/p&gt;
-
-&lt;p&gt;
-There you have it. This is not to say that there is no good PD but it
-seems that the professional development opportunities provided by our
-schools have over the years ranged from useless to insulting with
-maybe a small bright spot here and there. Historically it's been worse
-for CS teachers because we get lumped in with math teachers and have
-to spend the day learning about tools and techniques we'll never use
-or discussing curricula we never teach.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, when I spoke to JonAlf about rescuing the Stuy teachers for the
-day and hosting them at Hunter, he and the other CS teachers were
-pretty excited. It wasn't as though I had the magic PD answer but I
-was going to provide a space and we'd figure out together what would
-be productive and valuable for them.
-&lt;/p&gt;
-
-&lt;p&gt;
-As it turns out, I've been spending a good amount of time these past
-few weeks visiting high schools to talk about Hunter CS and when I was
-at Bronx Science the topic of Election Day PD came up and I thought
-that it would be nice to get the Bronx Science and Stuy teachers
-together. After thinking about it more, I recalled that there were few
-good PD opportunities for CS teachers who taught advanced classes as
-opposed to all the CS PD floating around these days at more of a
-beginner level.
-&lt;/p&gt;
-
-&lt;p&gt;
-I thought that we could change this. In the end, I hosted PD today and
-had teachers from Stuyvesant, Bronx Science, Brooklyn Tech, and the
-Manhattan Hunter Science High School in attendance. I invited teachers
-from a few more schools but in the end we had those four schools and
-seventeen teachers.
-&lt;/p&gt;
-
-&lt;p&gt;
-The original agenda was:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;09:00 - 10:00 : Each school describes it's program and courses&lt;/li&gt;
-&lt;li&gt;10:00 - 11:00 : An intro to Git and GitHub for the classroom&lt;/li&gt;
-&lt;li&gt;10:00 - 11:45 : Sharing neat lessons&lt;/li&gt;
-&lt;li&gt;11:45 - 12:00 : Presentation by &lt;a href="http://chicktech.org"&gt;ChickTech&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;12:00 - 01:00 : Lunch&lt;/li&gt;
-&lt;li&gt;01:00 - End   : Small group lesson and curriculum work&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-Oh boy did I mess up on the timing. The description and
-discussion of school programs took all morning. It was interesting to
-hear how each school's program evolved and how they fit into the
-school's culture. Brooklyn Tech, for instance is a school where
-students declare majors. This has a big impact on what classes kids
-have to take and are able to take. This is very different from Stuy or
-Science where kids programs are more open ended or MHSHS which is a
-much smaller school and has restrictions related to size. It was also
-interesting to note Brooklyn Tech's decision to have every student
-take APCS-P. Interesting because Brooklyn Tech is one of the country's
-largest high schools and most of them should have done well on the
-exam. That gave NYC around 1,400 passing AP scores in one shot. On
-the other hand none of the other schools present today offered APCS-P
-but did have their own intro CS class that students took prior to
-APCS-A.
-&lt;/p&gt;
-
-&lt;p&gt;
-We finished the morning with a visit by Heather from
-&lt;a href="http://chicktech.org"&gt;ChickTech&lt;/a&gt;. ChickTech is a non-profit dedicated to retaining women in
-Tech. It works with both girls in K12 and also those in industry. My
-hope was to get a conversation started and see if there were some
-potential avenues of partnership between the organization and the
-schools.
-&lt;/p&gt;
-
-&lt;p&gt;
-After lunch, the group decided that we should do the Git/GitHub
-workshop and JonAlf obliged.
-&lt;/p&gt;
-
-&lt;p&gt;
-Overall I think the day was a success. 
-&lt;/p&gt;
-
-&lt;p&gt;
-My hope is that today's attendees can form a core group of CS teachers
-who teach more advanced courses and we can form something of a support
-group for each other. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I plan to try to facilitate future meetings and hopefully we'll be
-able to attract more teachers to our group.
-&lt;/p&gt;
-
-&lt;p&gt;
-All in all I'm very happy with how the day went.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><category>pd</category><guid>http://cestlaz.github.io/posts/election-day-pd-2017/</guid><pubDate>Tue, 07 Nov 2017 23:08:58 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>algorithms. unplugged</category><category>cs</category><category>programming</category><guid>http://cestlaz.github.io/posts/quick-sort-starting/</guid><pubDate>Tue, 21 Nov 2017 14:34:05 GMT</pubDate></item></channel></rss>

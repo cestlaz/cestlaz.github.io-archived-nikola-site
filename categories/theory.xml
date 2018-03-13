@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about theory)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/theory.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 13 Mar 2018 23:41:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Sigcse2018 Making theory more acccesible</title><link>http://cestlaz.github.io/posts/sigcse2018-theory/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgaae4caa" class="outline-2"&gt;
+&lt;h2 id="orgaae4caa"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgaae4caa"&gt;
+&lt;p&gt;
+Next up from SIGCSE 2018 is John MacCormick's session on
+&lt;a href="https://dl.acm.org/citation.cfm?id=3159557"&gt;Strategies for Baing the CS Theory Course on Non-decision Problems&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+MacCormicks's stance is that CS theory  is tough the first time around
+and using non-decision problems is a viable approach to make theory
+more accessible to beginners. As MacCormick said in his paper:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+… a decision problem may ask the yes/no question, "Does this graph
+have a Hamilton cycle?" The corresponding non-decision problem is,
+"Please give me a Hamilton cycle of this graph if it has one."
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+This leads to writing programs to explore concepts in CS theory rather
+than just living in the world of proof. 
+&lt;/p&gt;
+
+&lt;p&gt;
+MacCormick goes on to say that:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+For this audience, the key advantage of non-decision problems
+is that they are more realistic: they match the previous programming
+and algorithms experience of undergraduates more closely.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+I love the idea. Writing a program can make an abstract problem more
+concrete and can lead to better understanding for those of us who are
+less math inclined.
+&lt;/p&gt;
+
+&lt;p&gt;
+My next thought was that this shouldn't just be a change implemented
+in theory courses. Some of these ideas should move down to more
+introductory CS classes. Not the hardcore stuff but light
+introductions to the topics so that we can layer the learning. If we
+introduce some of these concepts in CS 1 classes then when they get to
+the theory class it won't be the students first rodeo.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've had success with this when teaching recursion early. I've also
+done it with other concepts. When we teach the Towers of Hanoi, yes,
+it's a nice recursion problem but really it's to get the students
+thinking about run time and a bit of proof. likewise, when we do a
+maze solver in NetLogo we're alluding to dynamic programming, search,
+and path finding.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't have too much more to say on this topic right now. I'm not
+enough of a theory guy to sensibly design these experiences. The good
+news is that MacCormick has written an soon to be released &lt;a href="https://www.amazon.com/What-Can-Computed-Practical-Computation/dp/0691170665/ref=asap_bc?ie=UTF8"&gt;book&lt;/a&gt; on the subject. I
+signed up for a reviewer copy at SIGCSE and look forward to receiving
+a copy. Once I do I hope to be able to find some gems that I can work
+into CS 1 experiences.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>theory</category><guid>http://cestlaz.github.io/posts/sigcse2018-theory/</guid><pubDate>Tue, 13 Mar 2018 23:21:43 GMT</pubDate></item></channel></rss>

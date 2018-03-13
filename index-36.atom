@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 36)</title>
   <id>http://cestlaz.github.io/index-36.atom</id>
-  <updated>2018-03-11T19:41:40Z</updated>
+  <updated>2018-03-13T23:39:32Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,51 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-35.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-36.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Using Emacs 42 - Git Gutter and Time Machine</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</id>
+    <updated>2018-02-18T08:05:45-04:00</updated>
+    <published>2018-02-18T08:05:45-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-42-git-gutter/"/>
+    <summary type="html">&lt;div id="outline-container-org916ae49" class="outline-2"&gt;
+&lt;h2 id="org916ae49"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org916ae49"&gt;
+&lt;p&gt;
+One day I'll do a Magit video but since there are already some good
+ones out there I thought I'd share a couple of other great git related
+packages.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first is &lt;a href="https://github.com/syohex/emacs-git-gutter/tree/00c05264af046b5ce248e5b0bc42f117d9c27a09"&gt;Git Gutter&lt;/a&gt; which adds markers on the side gutter of your
+buffer so you know what's changed since you're last commit. I pretty
+much use it exclusively for that visual but it can also be used to
+cmmit and revert individual chunks of your changes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The second is &lt;a href="https://github.com/pidu/git-timemachine"&gt;Git Timemachine&lt;/a&gt; which lets you move forward and back
+between commits. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The video demos both. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy
+&lt;/p&gt;
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/P-mLxkb-EE8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="git" label="git"/>
+  </entry>
   <entry>
     <title>Using Emacs 41 Pandoc</title>
     <id>http://cestlaz.github.io/posts/using-emacs-41-pandoc/</id>
