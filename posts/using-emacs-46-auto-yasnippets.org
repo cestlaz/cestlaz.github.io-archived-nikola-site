@@ -1,0 +1,52 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs 46 Auto Yasnippets
+.. slug: using-emacs-46-auto-yasnippets
+.. date: 2018-03-15 20:05:36 UTC-04:00
+.. tags: emacs, tools, editing
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+
+The other day I discovered [[https://github.com/abo-abo/auto-yasnippet][auto-yasnippet]], another great package by
+[[https://github.com/abo-abo][Oleh Krehel]] or abo-abo.
+
+It looks like it's going to be a great way to solve a particular
+problem that come up now and again.
+
+There are plenty of times when I want to create a number of similar
+but slightly different blocks of text. The example on the project
+site  is:
+
+#+BEGIN_SRC c
+count_of_red = get_total("red");
+count_of_blue = get_total("blue");
+count_of_green = get_total("green");
+#+END_SRC
+
+You could use multiple cursors, a macro, or other methods to put in
+the common text but you still have to deal with the parts of each line
+that are unique, the red, green, and blue. 
+
+You could use a yasnippet but it's unlikely that you'll have a snippet
+for every occasion. This is where auto-yasnippet comes in. You would
+write the first line but add  a tilda as a placeholder:
+
+#+BEGIN_SRC c
+count_of~red = get_total("~red")
+#+END_SRC
+
+and then invoke ~aya-create~. This will get rid of the tildas and
+create the auto-snippet. Then when you run ~aya-expand~ it will put in
+the snippet with the tilda locations as placeholders.
+
+Very cool.
+
+Check out the video:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/utrMabxgXbg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+#+BEGIN_EXPORT html
+
+#+END_EXPORT
