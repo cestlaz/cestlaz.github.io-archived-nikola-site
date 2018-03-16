@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about editing)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/editing.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 16 Mar 2018 00:40:03 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 46 Auto Yasnippets</title><link>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4c51645" class="outline-2"&gt;
+&lt;h2 id="org4c51645"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4c51645"&gt;
+&lt;p&gt;
+The other day I discovered &lt;a href="https://github.com/abo-abo/auto-yasnippet"&gt;auto-yasnippet&lt;/a&gt;, another great package by
+&lt;a href="https://github.com/abo-abo"&gt;Oleh Krehel&lt;/a&gt; or abo-abo.
+&lt;/p&gt;
+
+&lt;p&gt;
+It looks like it's going to be a great way to solve a particular
+problem that come up now and again.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are plenty of times when I want to create a number of similar
+but slightly different blocks of text. The example on the project
+site  is:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;count_of_red&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_total&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"red"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="n"&gt;count_of_blue&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_total&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"blue"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="n"&gt;count_of_green&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_total&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"green"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+You could use multiple cursors, a macro, or other methods to put in
+the common text but you still have to deal with the parts of each line
+that are unique, the red, green, and blue. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You could use a yasnippet but it's unlikely that you'll have a snippet
+for every occasion. This is where auto-yasnippet comes in. You would
+write the first line but add  a tilda as a placeholder:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;count_of&lt;/span&gt;&lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;red&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_total&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"~red"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+and then invoke &lt;code&gt;aya-create&lt;/code&gt;. This will get rid of the tildas and
+create the auto-snippet. Then when you run &lt;code&gt;aya-expand&lt;/code&gt; it will put in
+the snippet with the tilda locations as placeholders.
+&lt;/p&gt;
+
+&lt;p&gt;
+Very cool.
+&lt;/p&gt;
+
+&lt;p&gt;
+Check out the video:
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/utrMabxgXbg"&gt;https://www.youtube.com/embed/utrMabxgXbg&lt;/a&gt;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</guid><pubDate>Fri, 16 Mar 2018 00:05:36 GMT</pubDate></item></channel></rss>

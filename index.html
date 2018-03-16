@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-36.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/sigcse2018-theory/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-46-auto-yasnippets/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,75 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sigcse2018-theory/" class="u-url">Sigcse2018 Making theory more acccesible</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-46-auto-yasnippets/" class="u-url">Using Emacs 46 Auto Yasnippets</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/using-emacs-46-auto-yasnippets/" rel="bookmark"><time class="published dt-published" datetime="2018-03-15T20:05:36-04:00" title="2018-03-15 20:05">2018-03-15 20:05</time></a></p>
+                <p class="commentline">            <a href="posts/using-emacs-46-auto-yasnippets/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-46-auto-yasnippets.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org4c51645" class="outline-2">
+<h2 id="org4c51645"></h2>
+<div class="outline-text-2" id="text-org4c51645">
+<p>
+The other day I discovered <a href="https://github.com/abo-abo/auto-yasnippet">auto-yasnippet</a>, another great package by
+<a href="https://github.com/abo-abo">Oleh Krehel</a> or abo-abo.
+</p>
+
+<p>
+It looks like it's going to be a great way to solve a particular
+problem that come up now and again.
+</p>
+
+<p>
+There are plenty of times when I want to create a number of similar
+but slightly different blocks of text. The example on the project
+site  is:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">count_of_red</span> <span class="o">=</span> <span class="n">get_total</span><span class="p">(</span><span class="s">"red"</span><span class="p">);</span>
+<span class="n">count_of_blue</span> <span class="o">=</span> <span class="n">get_total</span><span class="p">(</span><span class="s">"blue"</span><span class="p">);</span>
+<span class="n">count_of_green</span> <span class="o">=</span> <span class="n">get_total</span><span class="p">(</span><span class="s">"green"</span><span class="p">);</span>
+</pre></div>
+
+<p>
+You could use multiple cursors, a macro, or other methods to put in
+the common text but you still have to deal with the parts of each line
+that are unique, the red, green, and blue. 
+</p>
+
+<p>
+You could use a yasnippet but it's unlikely that you'll have a snippet
+for every occasion. This is where auto-yasnippet comes in. You would
+write the first line but add  a tilda as a placeholder:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">count_of</span><span class="o">~</span><span class="n">red</span> <span class="o">=</span> <span class="n">get_total</span><span class="p">(</span><span class="s">"~red"</span><span class="p">)</span>
+</pre></div>
+
+<p>
+and then invoke <code>aya-create</code>. This will get rid of the tildas and
+create the auto-snippet. Then when you run <code>aya-expand</code> it will put in
+the snippet with the tilda locations as placeholders.
+</p>
+
+<p>
+Very cool.
+</p>
+
+<p>
+Check out the video:
+&lt;iframe width="560" height="315" src="<a href="https://www.youtube.com/embed/utrMabxgXbg">https://www.youtube.com/embed/utrMabxgXbg</a>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sigcse2018-theory/" class="u-url">Sigcse2018 Making theory more acccesible</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -1125,206 +1193,6 @@ Enjoy.
 </p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LWd60rc_rQ0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/testing-testing/" class="u-url">Testing, Testing</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/testing-testing/" rel="bookmark"><time class="published dt-published" datetime="2018-02-19T08:26:16-04:00" title="2018-02-19 08:26">2018-02-19 08:26</time></a></p>
-                <p class="commentline">            <a href="posts/testing-testing/#disqus_thread" data-disqus-identifier="cache/posts/testing-testing.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-orga2d6f11" class="outline-2">
-<h2 id="orga2d6f11"></h2>
-<div class="outline-text-2" id="text-orga2d6f11">
-<p>
-With CS4All being the buzzword of the day we're paying a lot of
-attention to the fact that when we teach a CS class for all students,
-most of them won't end up studying CS or going directly
-into a tech heavy field. 
-</p>
-
-<p>
-Among those that do study CS though, there is another division. Those
-studying CS as an academic exercise or to go on to graduate studies
-and those who are going in to the tech sector. For those going into
-the tech field, it's important that they're prepared in terms of
-software development, design, and all those goodies not covered in CS
-classes. 
-</p>
-
-<p>
-I'm not advocating removing the good stuff currently in most colleg CS
-curricua, although I will say that most CS programs I've reveiwed could benefit by
-trimming some requriements and adding some electives. I am advocating
-doing more than telling your students "comment your code," - a refrain
-many undergrads have heard frequently with little guidance.
-</p>
-
-<p>
-I'm advocating to begin by bringing in tools and practices that either
-don't detract from current CS classes or in fact can add to or
-streamline them.
-</p>
-
-<p>
-Last year I wrote about <a href="https://cestlaz.github.io/posts/sigcse-2017-github-4/">using Git and GitHub</a> in my classes. Students
-have to submit projects anyway and frequently have to work in teams so
-using Git and a Git hosting service can actually make both student's
-and instructor's class experiences better while introducing them to an
-industry best practice.
-</p>
-
-<p>
-Today I want to talk about testing. 
-</p>
-
-<p>
-Students are always told to test their code but frequently not given
-tremendous guidance. The results can be:
-</p>
-
-<ul class="org-ul">
-<li>projects that don't compile</li>
-<li>projects that compile and run but not the way they're supposed to.</li>
-<li>wonky input or interfaces</li>
-<li>projects that don't work for all cases</li>
-</ul>
-<p>
-On the instructor side, we have to evaluate the student's
-submissions and deal with all of this. Some teachers use auto graders
-to help. I have mixed feelings on them. On the one hand they can speed
-up grading but on the other hand it's important for me as the teacher
-to actually dive into the student's code. In any case, using an auto grader
-is actually somewhat similar to running a test suite.
-</p>
-
-<p>
-Why not have the students create their own test suites? If done right,
-this should encourage students to evaluate their own code more
-carefully and also cut down on the time it takes the intructor to
-evaluate a given submission. 
-</p>
-
-<p>
-This means that we have to use a testing framework with a very low
-cost of entry.
-</p>
-
-<p>
-I ended up finding <a href="https://github.com/onqtam/doctest">doctest</a> for C++. It's really simple and just a
-single include file. This means that students don't have to actually
-install anything on their machines. Here's the example from the
-project page:
-</p>
-
-
-<div class="figure">
-<p><img src="https://github.com/onqtam/doctest/raw/master/scripts/data/using_doctest_888px_wide.gif" alt="using_doctest_888px_wide.gif"></p>
-</div>
-
-<p>
-Basically, the students can just start writing tests.
-</p>
-
-<p>
-Python also has a couple of low friction testing options. One is to
-use the built in <a href="https://docs.python.org/3/library/doctest.html">doctest</a> facility. Basically you put sample runs in the doc
-string at the top of a function with the expected output:
-</p>
-
-<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="sd">"""Return the factorial of n, an exact integer &gt;= 0.</span>
-
-<span class="sd">    If the result is small enough to fit in an int, return an int.</span>
-<span class="sd">    Else return a long.</span>
-
-<span class="sd">    &gt;&gt;&gt; [factorial(n) for n in range(6)]</span>
-<span class="sd">    [1, 1, 2, 6, 24, 120]</span>
-<span class="sd">    &gt;&gt;&gt; factorial(30)</span>
-<span class="sd">    265252859812191058636308480000000</span>
-<span class="sd">     """</span>
-
-    <span class="kn">import</span> <span class="nn">math</span>
-    <span class="k">if</span> <span class="ow">not</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
-	<span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"n must be &gt;= 0"</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">!=</span> <span class="n">n</span><span class="p">:</span>
-	<span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"n must be exact integer"</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span> <span class="o">==</span> <span class="n">n</span><span class="p">:</span>  <span class="c1"># catch a value like 1e300</span>
-	<span class="k">raise</span> <span class="ne">OverflowError</span><span class="p">(</span><span class="s2">"n too large"</span><span class="p">)</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="n">factor</span> <span class="o">=</span> <span class="mi">2</span>
-    <span class="k">while</span> <span class="n">factor</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
-	<span class="n">result</span> <span class="o">*=</span> <span class="n">factor</span>
-	<span class="n">factor</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="k">return</span> <span class="n">result</span>
-
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
-    <span class="kn">import</span> <span class="nn">doctest</span>
-    <span class="n">doctest</span><span class="o">.</span><span class="n">testmod</span><span class="p">()</span>
-</pre></div>
-
-<p>
-This might seem a little cumbersome, particularly if you look at the
-example at the link. It also requires the tests go on top of each
-function and that the tests will print out as part of the docstring. 
-</p>
-
-<p>
-The other easy Python option is the built in <a href="https://docs.python.org/3/library/unittest.html">unittest</a> module. 
-</p>
-
-<p>
-Here's an example of testing strings from the link above:
-</p>
-
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">unittest</span>
-
-<span class="k">class</span> <span class="nc">TestStringMethods</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
-
-    <span class="k">def</span> <span class="nf">test_upper</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-	<span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="s1">'foo'</span><span class="o">.</span><span class="n">upper</span><span class="p">(),</span> <span class="s1">'FOO'</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">test_isupper</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-	<span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="s1">'FOO'</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
-	<span class="bp">self</span><span class="o">.</span><span class="n">assertFalse</span><span class="p">(</span><span class="s1">'Foo'</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
-
-    <span class="k">def</span> <span class="nf">test_split</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-	<span class="n">s</span> <span class="o">=</span> <span class="s1">'hello world'</span>
-	<span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(),</span> <span class="p">[</span><span class="s1">'hello'</span><span class="p">,</span> <span class="s1">'world'</span><span class="p">])</span>
-	<span class="c1"># check that s.split fails when the separator is not a string</span>
-	<span class="k">with</span> <span class="bp">self</span><span class="o">.</span><span class="n">assertRaises</span><span class="p">(</span><span class="ne">TypeError</span><span class="p">):</span>
-	    <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
-    <span class="n">unittest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
-</pre></div>
-
-
-<p>
-I havn't played with Java testing in years but I'd guess there's
-something similarly light weight.
-</p>
-
-<p>
-Tomorrow I'm hoping to finish the groundwork on using C++ doctest with
-my class and I'll write another post afterwards. Probably after SIGCSE
-since I'll be attending that from Wednesday on.
-</p>
-
-<p>
-We'll see how this goes but I'm guessing it will work well. If it
-does, it should make my life as a grader easier and also get the kids
-on track to using test frameworks - something they'll need wherever
-they end up.
-</p>
 </div>
 </div>
     </div>
