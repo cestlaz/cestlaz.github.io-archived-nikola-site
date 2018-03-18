@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-36.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/on-prestigious-competitons-and-high-schools/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/testing-part2/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,136 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/on-prestigious-competitons-and-high-schools/" class="u-url">On Prestigious Competitons And High Schools</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/testing-part2/" class="u-url">Testing Part 2</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/testing-part2/" rel="bookmark"><time class="published dt-published" datetime="2018-03-18T17:04:04-04:00" title="2018-03-18 17:04">2018-03-18 17:04</time></a></p>
+                <p class="commentline">            <a href="posts/testing-part2/#disqus_thread" data-disqus-identifier="cache/posts/testing-part2.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org362281f" class="outline-2">
+<h2 id="org362281f"></h2>
+<div class="outline-text-2" id="text-org362281f">
+<p>
+A few weeks ago I wrote about <a href="https://cestlaz.github.io/posts/testing-testing/#.Wq7Ud3XwZhE">introducing testing</a> in CS classes,
+specifically using a testing framework. In that post I talked about
+the plan but now I can talk about the results.
+</p>
+
+<p>
+My class interleaves with Hunter's CSCI 13500 - Software Analysis and
+Design I class. One day each week, my students have complete a hands
+on lab focusing on whatever is being covered in the 13500 class. I
+decided to use one of those labs as a first foray into testing. 
+</p>
+
+<p>
+I had each student use a classmates lab solution. They were to examine
+their solution and write a test suite for the lab using the <a href="https://github.com/onqtam/doctest">doctest</a>
+C++ testing framework.
+</p>
+
+<p>
+I think this proved to be a valuable exercise. 
+</p>
+
+<p>
+Partway into the exercise, a few students independently had an issue -
+they couldn't even build the tests.
+</p>
+
+<p>
+The code looked right. Something like this:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">TEST_CASE</span><span class="p">(</span><span class="s">"Lab 4 Tests"</span><span class="p">){</span>
+  <span class="n">CHECK</span><span class="p">(</span><span class="n">getValue</span><span class="p">(</span><span class="s">"3/12/2016"</span><span class="p">)</span><span class="o">==</span><span class="mf">54.3</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>
+It looked like at textbook example of a test case but it wouldn't even
+compile.
+</p>
+
+<p>
+In all cases, the original student code compiled and ran and gave the
+correct result. All the students had code similar to this:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Testing getValue for 3/12/2016: "</span> <span class="o">&lt;&lt;</span> <span class="n">getValue</span><span class="p">(</span><span class="s">"3/12/2016"</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</pre></div>
+
+<p>
+This stumped everyone for a while - why wouldn't the test even
+compile.
+</p>
+
+<p>
+The answer was "data types." The lab specification required that
+getValue was supposed to return a <code>double</code> but in all the problem
+cases, the student returned a <code>std::string</code>. The lab appeared to work
+since <code>std::cout</code> handles strings as well as numeric data types but
+once they put it in to a test case that actually checked types the
+problem was apparent and easy to fix.
+</p>
+
+<p>
+As it turns out, I was pretty excited about this – even before
+finishign the tests, the act of writing tests revealed a problem. This
+is a good thing. 
+</p>
+
+<p>
+From there, it was pretty easy for students to finish writing the
+tests for their classmates labs.
+</p>
+
+<p>
+Fast forward a week. This was the first lab where I required
+the students to submit their own test suite as part of their lab. This
+didn't seem to slow anyone down by an appreciable and time will tell
+if this leads to better development practices but it certainly made my
+life easier. I was able to quickly move from repo to repo and type:
+</p>
+
+<div class="highlight"><pre><span></span>make tests
+./tests -s
+... watch the tests run
+make
+./main
+--- watch the program run
+</pre></div>
+
+<p>
+Easy peasy.
+</p>
+
+<p>
+Not only did it make it faster for me, it also gave me insights into
+their programs by seeing their decisions in terms of test writing.
+</p>
+
+<p>
+Is it a win? 
+</p>
+
+<p>
+At the very worst, they're learning an
+industry practice and at best, it's going to help them improve as
+software engineers. Add on the fact that it's making my life as a
+teacher easier both in terms of understanding the students work and in
+terms of speed of evaluation. Sounds like a win to me.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/on-prestigious-competitons-and-high-schools/" class="u-url">On Prestigious Competitons And High Schools</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -1248,98 +1377,6 @@ clear that professors - both teaching and research faculty are serious
 about the craft of teaching and conferences like SIGCSE can bring them
 together with those of us who don't have the chops as researchers but
 do so as teachers.
-</p>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sigcse2018/" class="u-url">SIGCSE 2018</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/sigcse2018/" rel="bookmark"><time class="published dt-published" datetime="2018-02-25T14:41:41-04:00" title="2018-02-25 14:41">2018-02-25 14:41</time></a></p>
-                <p class="commentline">            <a href="posts/sigcse2018/#disqus_thread" data-disqus-identifier="cache/posts/sigcse2018.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-org553bd27" class="outline-2">
-<h2 id="org553bd27"></h2>
-<div class="outline-text-2" id="text-org553bd27">
-<p>
-I just got back from SIGCSE2018 - the big annual conference on
-computer science education. Although I've been in this racket for
-decades, this was only my second SIGCSE and once again I had a blast.
-</p>
-
-<p>
-As with most conferences, a highlight was the "hallway track" where I
-got to spend time with friends and colleagues from all over the
-country. I also got to check off a few names from the "people I've
-been following online and want to meet in person" list. There are a
-few more on the list but it's getting smaller.
-</p>
-
-<p>
-The theme was <b>CS For All</b> but the range of topics covered was both
-wide and deep.
-</p>
-
-<p>
-For me, I left thinking about a few themes:
-</p>
-
-<ul class="org-ul">
-<li>College faculty can learn a lot from K12 teachers in terms of
-pedagogy and teaching.</li>
-<li>So can "thought leaders," policy makers, and big companies.</li>
-<li>Colleges face a huge challenge in both developing pedagogues and
-transfering pedagogical knowledge over to researchers.</li>
-<li>Can you do both CS4All and have quality CS teachers in the short
-term (I doubt it)?</li>
-<li>Researchers vs Practitioners and the value of listening to one or
-the other.</li>
-<li>Nifty assignments are frequently regular assignments reskinned with
-graphics.</li>
-</ul>
-<p>
-There were a few sessions that dissapointed me but most of the ones I
-attende were terrific. I thought I'd blog about some of them in detail over
-the next few weeks. 
-</p>
-
-<p>
-Here are the sessions I'm planning on writing about:
-</p>
-
-<ul class="org-ul">
-<li>
-<a href="https://dl.acm.org/citation.cfm?id=3159597">Implementing Malloc: Students and SYstems Programming</a> presented by Brian
-Railing</li>
-<li>
-<a href="https://dl.acm.org/citation.cfm?id=3159471">Creativity, Customization, and Onwership: Game Design in Bootstrap:
-Algebra</a>, presented by Kathi Fisher</li>
-<li>
-<a href="https://dl.acm.org/citation.cfm?id=3159527">An Explicit Strategy to Scaffold Novice Program Tracing</a>, presented
-by Benjamin Xie</li>
-<li>
-<a href="https://dl.acm.org/citation.cfm?id=3159557">Strategies for Basing the CS Theory Course on Non-decision Problems</a>,
-presented by John MacCormick</li>
-<li>
-<a href="https://dl.acm.org/citation.cfm?id=3159609">Connect the Dots to Prove It: A Novel Way to Learn Proof
-Construction</a>, by McCartin-Lim, Woolf, and Mcregor</li>
-<li>Google Supporter Session on Incorporating Machine Learning into
-University Courses.</li>
-<li><a href="https://dl.acm.org/citation.cfm?id=3170601">Nifty Assignments</a></li>
-</ul>
-<p>
-I might talk about a few other sessions as well.
-</p>
-
-<p>
-Overall it was a great conference. I look forward to sharing my
-experiences with all of you in the coming posts.
 </p>
 </div>
 </div>
