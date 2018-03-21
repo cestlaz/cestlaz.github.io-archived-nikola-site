@@ -1,7 +1,249 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 18 Mar 2018 21:32:18 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Testing Part 2</title><link>http://cestlaz.github.io/posts/testing-part2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org362281f" class="outline-2"&gt;
-&lt;h2 id="org362281f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org362281f"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 21 Mar 2018 13:18:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Refactoring</title><link>http://cestlaz.github.io/posts/refactoring/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org78c217e" class="outline-2"&gt;
+&lt;h2 id="org78c217e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org78c217e"&gt;
+&lt;p&gt;
+One of my laments on teaching computer science is that students are
+rarely taught and given the chance to develop  good programming
+practices. There's usually not enough time. Beginners work on small
+"toy" which don't lend themselves to good software development
+practices and later on, there's so much other material like
+algorithms, data structures etc. to teach and
+learn that programming practices usually amount to lines like:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+"Make sure to comment your code.."
+&lt;/p&gt;
+
+&lt;p&gt;
+"Indent properly…"
+&lt;/p&gt;
+
+&lt;p&gt;
+"Use functions…"
+&lt;/p&gt;
+
+&lt;p&gt;
+"It's important to test your code…"
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+so when I see an opportunity to use a simple example to drive home a
+good practice,  I try to jump on it.
+&lt;/p&gt;
+
+&lt;p&gt;
+Drawing shapes with text is a typical early project. I've seen it in
+text books and online and have been doing it for years. I recall doing
+it back in the 80s in Fortran IV when the programs we wrote were on &lt;a href="https://en.wikipedia.org/wiki/Punched_card"&gt;punch cards&lt;/a&gt;, run
+overnight on an &lt;a href="https://en.wikipedia.org/wiki/IBM_1130"&gt;IBM 1130&lt;/a&gt;, and printouts picked up the next day.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's a nice use of nested loops. The students will write functions to
+create assorted shapes out of asterisks  like rectangles and
+triangles. Typical solutions look like this:
+&lt;/p&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+
+
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;tri&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Which results in shapes like these:
+&lt;/p&gt;
+
+&lt;pre class="example"&gt;
+
+| ****            |    | *               |
+| ****            |    | **              |
+| ****            |    | ***             |
+| ****            |    | ****            |
+| ****            |    |                 |
+|                 |    |                 |
+|                 |    |                 |
+| *************** |    | *               |
+| *************** |    | **              |
+| *************** |    | ***             |
+| *************** |    | ****            |
+| *************** |    | *****           |
+| *************** |    | ******          |
+| *************** |    | *******         |
+
+&lt;/pre&gt;
+
+&lt;p&gt;
+Then there will be more interesting shapes including things like:
+&lt;/p&gt;
+
+&lt;pre class="example"&gt;
+
+   *       *            *****
+  **      ***           *   *            and more
+ ***     *****          *   *
+****      ***           *****
+           *   
+
+&lt;/pre&gt;
+
+&lt;p&gt;
+This is a great time to talk about refactoring.  All of the shape
+drawing functions follow the same pattern - there's an outer loop for
+the height and then one or more inner loops to draw each line. We can
+factor out the inner loops in to a separate &lt;code&gt;line()&lt;/code&gt; function.
+&lt;/p&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+
+
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;     &lt;span class="c1"&gt;//&lt;/span&gt;
+      &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;                    &lt;span class="c1"&gt;// &amp;lt;----- This can be factored out&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;                                 &lt;span class="c1"&gt;//&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;tri&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;    &lt;span class="c1"&gt;//&lt;/span&gt;
+      &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;                   &lt;span class="c1"&gt;// &amp;lt;---------------- along with this&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;                               &lt;span class="c1"&gt;//&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+It's just like factoring in algebra:
+&lt;/p&gt;
+
+&lt;div class="LATEX"&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;
+(RectangleOuterLoop × Line) + (TriangleOuterLoop × Line) ⇒ Line  (Rectangleouterloop × TriangleOuterloop)
+&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;
+We end up with:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;tri&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+It's simpler, cleaner, and also can lead us to thinking about the
+"harder" shapes in an interesting way. Instead of looking at the right
+justified triangle as a triangle, we can think of each level as two
+lines - one of spaces (shown here as dashes) followed by a line of
+stars:
+&lt;/p&gt;
+
+
+&lt;pre class="example"&gt;
+----*       *
+---**      **
+--***     ***
+-****    ****
+*****   *****
+
+&lt;/pre&gt;
+
+&lt;p&gt;
+Noticing that  for a height of 5, the dashed lines count down in
+length 4,3,2,1,0 and the star lines count up 1,2,3,4,5, we get:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;tri2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"-"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;tri2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Here we have typical early CS assignment that really lends itself to
+talking about structuring programs and refactoring. Where else can we
+inject good programming practices in ways that make sense early on?
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/refactoring/</guid><pubDate>Wed, 21 Mar 2018 12:11:38 GMT</pubDate></item><item><title>Testing Part 2</title><link>http://cestlaz.github.io/posts/testing-part2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9eba993" class="outline-2"&gt;
+&lt;h2 id="org9eba993"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9eba993"&gt;
 &lt;p&gt;
 A few weeks ago I wrote about &lt;a href="https://cestlaz.github.io/posts/testing-testing/#.Wq7Ud3XwZhE"&gt;introducing testing&lt;/a&gt; in CS classes,
 specifically using a testing framework. In that post I talked about
@@ -114,9 +356,9 @@ teacher easier both in terms of understanding the students work and in
 terms of speed of evaluation. Sounds like a win to me.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-part2/</guid><pubDate>Sun, 18 Mar 2018 21:04:04 GMT</pubDate></item><item><title>Sigcse2018 Making theory more acccesible</title><link>http://cestlaz.github.io/posts/sigcse2018-theory/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgaae4caa" class="outline-2"&gt;
-&lt;h2 id="orgaae4caa"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgaae4caa"&gt;
+&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-part2/</guid><pubDate>Sun, 18 Mar 2018 21:04:04 GMT</pubDate></item><item><title>Sigcse2018 Making theory more acccesible</title><link>http://cestlaz.github.io/posts/sigcse2018-theory/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf2eb3b3" class="outline-2"&gt;
+&lt;h2 id="orgf2eb3b3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf2eb3b3"&gt;
 &lt;p&gt;
 Next up from SIGCSE 2018 is John MacCormick's session on
 &lt;a href="https://dl.acm.org/citation.cfm?id=3159557"&gt;Strategies for Baing the CS Theory Course on Non-decision Problems&lt;/a&gt;
@@ -186,9 +428,9 @@ a copy. Once I do I hope to be able to find some gems that I can work
 into CS 1 experiences.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><category>theory</category><guid>http://cestlaz.github.io/posts/sigcse2018-theory/</guid><pubDate>Tue, 13 Mar 2018 23:21:43 GMT</pubDate></item><item><title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title><link>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge428d07" class="outline-2"&gt;
-&lt;h2 id="orge428d07"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge428d07"&gt;
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>theory</category><guid>http://cestlaz.github.io/posts/sigcse2018-theory/</guid><pubDate>Tue, 13 Mar 2018 23:21:43 GMT</pubDate></item><item><title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title><link>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc43063e" class="outline-2"&gt;
+&lt;h2 id="orgc43063e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc43063e"&gt;
 &lt;p&gt;
 I really didn't know what to expect at the &lt;a href="https://dl.acm.org/citation.cfm?id=3159471"&gt;Creativity, Customization,
 and Ownership: Game Design in Bootstrap: Algebra&lt;/a&gt; session. I've been a
@@ -317,9 +559,9 @@ Fisler. I didn't know what to expect walking in but I left the talk
 reminded of why I'm such a fan of Emmanuel, his team, and their work.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</guid><pubDate>Fri, 02 Mar 2018 13:27:33 GMT</pubDate></item><item><title>Sigcse2018 - Malloc Lab</title><link>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9ede4c6" class="outline-2"&gt;
-&lt;h2 id="org9ede4c6"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9ede4c6"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</guid><pubDate>Fri, 02 Mar 2018 13:27:33 GMT</pubDate></item><item><title>Sigcse2018 - Malloc Lab</title><link>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3d0026d" class="outline-2"&gt;
+&lt;h2 id="org3d0026d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3d0026d"&gt;
 &lt;p&gt;
 I wasn't going to go to this session. I started out in a panel on
 integrating social good into CS Ed. With the panel not meeting my
@@ -455,9 +697,9 @@ together with those of us who don't have the chops as researchers but
 do so as teachers.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>systems</category><guid>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</guid><pubDate>Thu, 01 Mar 2018 20:59:31 GMT</pubDate></item><item><title>Testing, Testing</title><link>http://cestlaz.github.io/posts/testing-testing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga2d6f11" class="outline-2"&gt;
-&lt;h2 id="orga2d6f11"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga2d6f11"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>systems</category><guid>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</guid><pubDate>Thu, 01 Mar 2018 20:59:31 GMT</pubDate></item><item><title>Testing, Testing</title><link>http://cestlaz.github.io/posts/testing-testing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf25da60" class="outline-2"&gt;
+&lt;h2 id="orgf25da60"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf25da60"&gt;
 &lt;p&gt;
 With CS4All being the buzzword of the day we're paying a lot of
 attention to the fact that when we teach a CS class for all students,
@@ -644,9 +886,9 @@ on track to using test frameworks - something they'll need wherever
 they end up.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-testing/</guid><pubDate>Mon, 19 Feb 2018 12:26:16 GMT</pubDate></item><item><title>APCS-P -  Bigger Intake Or Leaky Pipe</title><link>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8ff8e49" class="outline-2"&gt;
-&lt;h2 id="org8ff8e49"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8ff8e49"&gt;
+&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-testing/</guid><pubDate>Mon, 19 Feb 2018 12:26:16 GMT</pubDate></item><item><title>APCS-P -  Bigger Intake Or Leaky Pipe</title><link>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org11f2c1e" class="outline-2"&gt;
+&lt;h2 id="org11f2c1e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org11f2c1e"&gt;
 &lt;p&gt;
 Advanced Placement Computer Science got top billing on Alfred
 Thompson's &lt;a href="http://blog.acthompson.net/2018/01/computer-science-education-things-im.html"&gt;Things I'm Watching in 2017&lt;/a&gt; post. Alfred talks about how
@@ -708,9 +950,9 @@ money but if APCS-P becomes the standard high school CS course will
 this leave us with true, quality CS4All? I have my doubts.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>ap</category><category>cs</category><category>cs4all</category><guid>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</guid><pubDate>Mon, 01 Jan 2018 23:28:37 GMT</pubDate></item><item><title>2017 in review - Hunter Undergraduate CS</title><link>http://cestlaz.github.io/posts/2017-review-hunter-cs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6747314" class="outline-2"&gt;
-&lt;h2 id="org6747314"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6747314"&gt;
+&lt;/div&gt;</description><category>ap</category><category>cs</category><category>cs4all</category><guid>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</guid><pubDate>Mon, 01 Jan 2018 23:28:37 GMT</pubDate></item><item><title>2017 in review - Hunter Undergraduate CS</title><link>http://cestlaz.github.io/posts/2017-review-hunter-cs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgbe9cba3" class="outline-2"&gt;
+&lt;h2 id="orgbe9cba3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgbe9cba3"&gt;
 &lt;p&gt;
 I usually don't do year in review posts. At Stuy, not much changed
 year after year so I never felt it worth summarizing the past and
@@ -813,9 +1055,9 @@ There are other strong CS options besides Hunter but compare the costs:
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgc8d1b84" class="outline-2"&gt;
-&lt;h2 id="orgc8d1b84"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc8d1b84"&gt;
+&lt;div id="outline-container-orgb06d08f" class="outline-2"&gt;
+&lt;h2 id="orgb06d08f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb06d08f"&gt;
 &lt;p&gt;
 &lt;b&gt;&lt;b&gt;Hunter is about one tenth the cost.&lt;/b&gt;&lt;/b&gt;
 &lt;/p&gt;
@@ -932,9 +1174,9 @@ exciting year for Hunter CS and an exciting year for me to be a part
 of it.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>hunter</category><guid>http://cestlaz.github.io/posts/2017-review-hunter-cs/</guid><pubDate>Tue, 26 Dec 2017 15:05:52 GMT</pubDate></item><item><title>Breaking down problems and writing</title><link>http://cestlaz.github.io/posts/whats-next/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org923d898" class="outline-2"&gt;
-&lt;h2 id="org923d898"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org923d898"&gt;
+&lt;/div&gt;</description><category>cs</category><category>hunter</category><guid>http://cestlaz.github.io/posts/2017-review-hunter-cs/</guid><pubDate>Tue, 26 Dec 2017 15:05:52 GMT</pubDate></item><item><title>Breaking down problems and writing</title><link>http://cestlaz.github.io/posts/whats-next/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org053759c" class="outline-2"&gt;
+&lt;h2 id="org053759c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org053759c"&gt;
 &lt;p&gt;
 This question appeared on Facebook a few days ago:
 &lt;/p&gt;
@@ -1012,9 +1254,9 @@ the question. Many good answers were posted. I just wanted to add this
 thought to the collection.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>problem solving</category><guid>http://cestlaz.github.io/posts/whats-next/</guid><pubDate>Thu, 14 Dec 2017 16:14:33 GMT</pubDate></item><item><title>New York State moving forward with CS Teacher Certification</title><link>http://cestlaz.github.io/posts/NY-CS-Certificate/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org266c823" class="outline-2"&gt;
-&lt;h2 id="org266c823"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org266c823"&gt;
+&lt;/div&gt;</description><category>cs</category><category>problem solving</category><guid>http://cestlaz.github.io/posts/whats-next/</guid><pubDate>Thu, 14 Dec 2017 16:14:33 GMT</pubDate></item><item><title>New York State moving forward with CS Teacher Certification</title><link>http://cestlaz.github.io/posts/NY-CS-Certificate/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd92872d" class="outline-2"&gt;
+&lt;h2 id="orgd92872d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd92872d"&gt;
 &lt;p&gt;
 Last April I woke up early and trekked up to Albany along with a few
 of my Hunter College colleagues to share our thoughts on K12 Computer
@@ -1113,168 +1355,4 @@ you here to the NY State Board of Regents, Board of Education and
 State Education department.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>certification</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/NY-CS-Certificate/</guid><pubDate>Tue, 12 Dec 2017 23:57:37 GMT</pubDate></item><item><title>Advent of Code 2017 - Day 1</title><link>http://cestlaz.github.io/posts/advent-2017-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org5cf76f3" class="outline-2"&gt;
-&lt;h2 id="org5cf76f3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5cf76f3"&gt;
-&lt;p&gt;
-It's once again time for &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. That one a day programming
-competition that's been running now for three years.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here are some thoughts on &lt;a href="http://adventofcode.com/2017/day/1"&gt;day 1&lt;/a&gt;. The core of the problem is that you
-have a large string of digits and you have to calculate a
-checksum. This is done by adding the sum of a subset of the
-digits. Only the ones that are identical to the digit to their
-right. To make it a little more interesting, the last digit wraps
-around to the first for checksum purposes.
-&lt;/p&gt;
-
-&lt;p&gt;
-For example, the input &lt;b&gt;&lt;b&gt;2234335&lt;/b&gt;&lt;/b&gt; leads to the calculate &lt;code&gt;2 + 3&lt;/code&gt; or
-&lt;code&gt;5&lt;/code&gt;. The input &lt;b&gt;&lt;b&gt;234445662&lt;/b&gt;&lt;/b&gt; leads to &lt;code&gt;4+4+6+2&lt;/code&gt; or &lt;code&gt;16&lt;/code&gt;. We add 4 for
-twice because the first four is adjacent the second and the second the
-third. We add the 2 at the end because it wraps around to match the
-one at the front.
-&lt;/p&gt;
-
-&lt;p&gt;
-We first read in the data and strip off the trailing newline
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"input.txt"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;origdata&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readline&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-
-&lt;span class="n"&gt;origdata&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;origdata&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;origdata&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Then, since we can access the elements of the string as a list (or
-array) it's a simple loop to calculate the sum:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
-	&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="c1"&gt;# Don't forget to turn the string into an int&lt;/span&gt;
-
-&lt;span class="c1"&gt;# data[-1] is the python way of getting the last element - here we check the wraparound&lt;/span&gt;
-&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
-    &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Checksum: "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Pretty straightforward but I don't like the special case of checking
-the last element for the wraparound. Sometimes it's possible to get
-rid of edge cases like this by &lt;a href="https://cestlaz.github.io/posts/2014-02-26-change-the-data.md"&gt;changing the data&lt;/a&gt;. We can do that here
-by simply appending a copy of the first character to the end of the
-list.
-&lt;/p&gt;
-
-&lt;p&gt;
-This leads to a slightly cleaner solution:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-
-&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;
-	&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="c1"&gt;#don't forget to turn the string into an int&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Checksum: "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-This is pretty much what I'd expect from a Python programmer that's
-just starting out. We can use a couple of more advanced Python
-features to make what I consider a more elegant solution.
-&lt;/p&gt;
-
-&lt;p&gt;
-Python's &lt;b&gt;&lt;b&gt;zip&lt;/b&gt;&lt;/b&gt; function takes two lists and interleaves them.
-&lt;code&gt;zip("abc","def")&lt;/code&gt; will yield &lt;code&gt;[ (a,d), (b,e), (c,f)]&lt;/code&gt;. If the lists
-are of different length, it just zips up until the shorter list is
-exhausted. We can use array slicing to zip the input string with it's
-neighbor by using &lt;code&gt;new_list = zip(data,data[1:])&lt;/code&gt;. For the string "122344'
-zipping gives us &lt;code&gt;[(1,2),(2,2),(2,3),(3,4),(4,4)]&lt;/code&gt;. We can put this in
-a list comprehension that only keeps the tuples representing an
-element with an identical neighbor and also converts it to an int:
-&lt;code&gt;new_list = [int(a) for a,b in new_list if a==b]&lt;/code&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-Finally, we can just calculate the sum. This leads to the following
-complete solution:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"input.txt"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readline&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-
-&lt;span class="n"&gt;checksum&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:])&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;checksum&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-List comprehensions for the win!!!!
-&lt;/p&gt;
-
-&lt;p&gt;
-Each Advent of Code problem has two parts. You unlock the second by
-solving the first. Here, the wrinkle is that instead of checking each
-digit with it's neighbor to the right, you check it with the one
-that's halfway around the list. 
-&lt;/p&gt;
-
-&lt;p&gt;
-With loops, the solution is just a quick modification of part 1. We
-just add half the length and use mod to find the digit to compare with:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"input.txt"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readline&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-
-&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt; &lt;span class="c1"&gt;# check halfway around instead of adjacent&lt;/span&gt;
-	&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"part 2loop version: "&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-I wanted to see if I could do this with a list comprehension
-though. The trick was to figure out how to make two lists to zip
-together to get the pairs to check then add. Here's the solution:
-&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"input.txt"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;data&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;f&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;readline&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;strip&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;d2&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;:]&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;
-&lt;span class="n"&gt;checksum&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;zip&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;data&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;d2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;checksum&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-The insight was that we could just make a second list that starts
-halfway through and then wraps around. I did this by adding
-&lt;code&gt;data[l//2:] + data&lt;/code&gt;. &lt;code&gt;l//2&lt;/code&gt; is the integer division of the length (in
-Python3). &lt;code&gt;data[l//2:]&lt;/code&gt; represents the second half of data (from the
-midway point to the end). Technically I should have only added the second
-half of data: &lt;code&gt;data[l//2:] + data[:l//2]&lt;/code&gt; where &lt;code&gt;data[:l//2]&lt;/code&gt; gives us
-the first half of the list but since zip will just stop when it
-exhausts the shorter list, this wasn't necessary.
-&lt;/p&gt;
-
-&lt;p&gt;
-Day 2 also has a nice list comprehension based solution. Maybe I'll
-write that up later.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>adventofcode</category><category>cs</category><category>programming</category><category>python</category><guid>http://cestlaz.github.io/posts/advent-2017-1/</guid><pubDate>Sat, 02 Dec 2017 12:27:02 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>certification</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/NY-CS-Certificate/</guid><pubDate>Tue, 12 Dec 2017 23:57:37 GMT</pubDate></item></channel></rss>

@@ -3,7 +3,7 @@
 <feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 24)</title>
   <id>http://cestlaz.github.io/index-24.atom</id>
-  <updated>2018-02-12T19:18:15Z</updated>
+  <updated>2018-02-16T13:07:14Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -100,9 +100,9 @@ the future.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/halloween-2016/"/>
-    <summary type="html">&lt;div id="outline-container-orgb6299bb" class="outline-2"&gt;
-&lt;h2 id="orgb6299bb"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb6299bb"&gt;
+    <summary type="html">&lt;div id="outline-container-orgc0db84b" class="outline-2"&gt;
+&lt;h2 id="orgc0db84b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc0db84b"&gt;
 &lt;p&gt;
 It's Halloween and for the first time in 21 years, I'm not at work in costume.
 &lt;/p&gt;
@@ -274,9 +274,9 @@ of young talent we have in New York and for our tech sector.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-17-misc/"/>
-    <summary type="html">&lt;div id="outline-container-orga076b08" class="outline-2"&gt;
-&lt;h2 id="orga076b08"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga076b08"&gt;
+    <summary type="html">&lt;div id="outline-container-orgc0ee10f" class="outline-2"&gt;
+&lt;h2 id="orgc0ee10f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc0ee10f"&gt;
 &lt;p&gt;
 I'm working on getting enough of my real configuration into this
 series so that I can dump my current one and use this one all them
@@ -293,9 +293,9 @@ time.
 &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org2dfdf0d" class="outline-3"&gt;
-&lt;h3 id="org2dfdf0d"&gt;Highlight line Mode&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org2dfdf0d"&gt;
+&lt;div id="outline-container-org8c6f692" class="outline-3"&gt;
+&lt;h3 id="org8c6f692"&gt;Highlight line Mode&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org8c6f692"&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(global-hl-line-mode t)
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -306,9 +306,9 @@ the cursor's on. Nothing huge, I just like it.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org6aa7b69" class="outline-3"&gt;
-&lt;h3 id="org6aa7b69"&gt;&lt;a href="https://github.com/Malabarba/beacon"&gt;Beacon mode&lt;/a&gt;&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org6aa7b69"&gt;
+&lt;div id="outline-container-org0e6222b" class="outline-3"&gt;
+&lt;h3 id="org0e6222b"&gt;&lt;a href="https://github.com/Malabarba/beacon"&gt;Beacon mode&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org0e6222b"&gt;
 &lt;p&gt;
 &lt;a href="https://github.com/Malabarba/beacon"&gt;Beacon mode&lt;/a&gt; flashes the cursor whenever you scroll. It makes things
 easy to locate the cursor when scrolling
@@ -328,9 +328,9 @@ easy to locate the cursor when scrolling
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-orga067e3a" class="outline-3"&gt;
-&lt;h3 id="orga067e3a"&gt;&lt;a href="https://github.com/nflath/hungry-delete"&gt;Hungry Delete mode&lt;/a&gt;&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orga067e3a"&gt;
+&lt;div id="outline-container-org8c77c05" class="outline-3"&gt;
+&lt;h3 id="org8c77c05"&gt;&lt;a href="https://github.com/nflath/hungry-delete"&gt;Hungry Delete mode&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org8c77c05"&gt;
 &lt;p&gt;
 &lt;a href="https://github.com/nflath/hungry-delete"&gt;This mode&lt;/a&gt; deletes all the whitespace after the cursor (or before it)
 when you use delete or backspace.
@@ -345,9 +345,9 @@ when you use delete or backspace.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgd92936e" class="outline-3"&gt;
-&lt;h3 id="orgd92936e"&gt;&lt;a href="https://github.com/magnars/expand-region.el"&gt;Expand Region&lt;/a&gt;&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgd92936e"&gt;
+&lt;div id="outline-container-org4e5d5da" class="outline-3"&gt;
+&lt;h3 id="org4e5d5da"&gt;&lt;a href="https://github.com/magnars/expand-region.el"&gt;Expand Region&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org4e5d5da"&gt;
 &lt;p&gt;
 &lt;a href="https://github.com/magnars"&gt;Magnar Sveen's&lt;/a&gt; awesome expand region mode is a must have. He also
 wrote the amazing &lt;a href="https://github.com/magnars/multiple-cursors.el"&gt;multiple cursors&lt;/a&gt; package. I highly recommend
@@ -378,9 +378,9 @@ so we'll come back to that later.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org95ebb13" class="outline-2"&gt;
-&lt;h2 id="org95ebb13"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org95ebb13"&gt;
+&lt;div id="outline-container-org49cb07c" class="outline-2"&gt;
+&lt;h2 id="org49cb07c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org49cb07c"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -391,7 +391,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -408,9 +408,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/knitting-tech-conference/"/>
-    <summary type="html">&lt;div id="outline-container-orgafa0aaa" class="outline-2"&gt;
-&lt;h2 id="orgafa0aaa"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgafa0aaa"&gt;
+    <summary type="html">&lt;div id="outline-container-orgcadb0b2" class="outline-2"&gt;
+&lt;h2 id="orgcadb0b2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgcadb0b2"&gt;
 
 &lt;div class="figure"&gt;
 &lt;p&gt;&lt;img src="http://cestlaz.github.io/img/knitting-tech-conference/top.jpg" alt="top.jpg" align="center"&gt;
@@ -617,9 +617,9 @@ Nothing much to say about this other then check out the video:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/flask-setup-virtualenv/"/>
-    <summary type="html">&lt;div id="outline-container-org08e9023" class="outline-2"&gt;
-&lt;h2 id="org08e9023"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org08e9023"&gt;
+    <summary type="html">&lt;div id="outline-container-orgf5700d2" class="outline-2"&gt;
+&lt;h2 id="orgf5700d2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf5700d2"&gt;
 &lt;p&gt;
 Those laptops that my Hunter students were supposed to get have
 finally arrived. We're distributing them on Monday. Each student will
@@ -743,9 +743,9 @@ environment.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-16-undo-tree/"/>
-    <summary type="html">&lt;div id="outline-container-org1bc2542" class="outline-2"&gt;
-&lt;h2 id="org1bc2542"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1bc2542"&gt;
+    <summary type="html">&lt;div id="outline-container-org266d033" class="outline-2"&gt;
+&lt;h2 id="org266d033"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org266d033"&gt;
 &lt;p&gt;
 If you use emacs, you should keep an eye on Jon Snader's &lt;a href="http://irreal.org/blog/"&gt;blog&lt;/a&gt;,
 &lt;a href="http://irreal.org/blog/"&gt;irreal.org&lt;/a&gt;. A few days he posted on &lt;a href="http://irreal.org/blog/?p=5621"&gt;Undo Tree&lt;/a&gt; - a package that extends
@@ -806,7 +806,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;

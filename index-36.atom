@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 36)</title>
   <id>http://cestlaz.github.io/index-36.atom</id>
-  <updated>2018-03-18T21:31:51Z</updated>
+  <updated>2018-03-21T12:22:58Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -15,6 +15,158 @@
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-36.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
+    <title>Sigcse2018 - Malloc Lab</title>
+    <id>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</id>
+    <updated>2018-03-01T16:59:31-04:00</updated>
+    <published>2018-03-01T16:59:31-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/"/>
+    <summary type="html">&lt;div id="outline-container-org3d0026d" class="outline-2"&gt;
+&lt;h2 id="org3d0026d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3d0026d"&gt;
+&lt;p&gt;
+I wasn't going to go to this session. I started out in a panel on
+integrating social good into CS Ed. With the panel not meeting my
+expectations I moved over to my second choice - the system programming
+sessions where I saw &lt;a href="https://dl.acm.org/citation.cfm?id=3159597"&gt;Implementing Malloc: Students and Systems
+Programming&lt;/a&gt;, a paper presented by &lt;a href="http://www.cs.cmu.edu/~bpr/"&gt;Brian Railing&lt;/a&gt; of CMU.
+&lt;/p&gt;
+
+&lt;p&gt;
+I really liked both the paper and the talk.
+&lt;/p&gt;
+
+&lt;p&gt;
+CMU computer science students all take a systems course that uses
+&lt;a href="https://www.amazon.com/Computer-Systems-Programmers-Perspective-3/dp/9332573905/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=Y5ZKG2V8ZYZZPZHQP8SQ"&gt;Computer Systems: A Programmer's Perspective&lt;/a&gt;. It's a great book. I
+read through the first edition years ago and felt it was great
+resource not only in a systems course but also for self study. One of
+the labs has the students implement their own memory allocation calls,
+or &lt;b&gt;malloc&lt;/b&gt; for us old time C wonks. 
+&lt;/p&gt;
+
+&lt;p&gt;
+There were a number of self perceived  deficiencies with the
+assignment such as encouraging bad programming style by modeling
+less than ideal practices but the biggest deficiency as that students
+could game the assignment. Students could do very well on the
+assignment by exploiting knowledge of the assignment rather than by
+writing a full and correct malloc implementation. One example is that
+students were able to figure out that no allocation would be more than
+100MB so they really didn't have to deal with 64 bit pointers. They
+could use smaller offsets thus simplifying the assignment. The
+assignment became more about figuring out how to get it through the
+grader and less about learning memory management. I'm sure I'm
+overstating it but that's the idea.
+&lt;/p&gt;
+
+&lt;p&gt;
+Railing explained all of the deficiencies and then how they changed
+the assignment to address them.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the end of the day, the assignment had fewer loopholes to game so
+students had to really write the malloc library and presumably learn
+about memory management.
+&lt;/p&gt;
+
+&lt;p&gt;
+They also added an intermediate deliverable so students couldn't leave
+everything for the last minute.
+&lt;/p&gt;
+
+&lt;p&gt;
+Near the end of the talk, Railing discussed results where he pointed
+out that students final exam scores didn't change but they did better
+on the malloc questions. It wasn't clear if the overall scores didn't
+change, meaning that the students did better on the malloc questions
+but worse somewhere else or if they did similarly to past students on
+the other sections and in addition they scored better on the malloc
+questions. I'm not sold on the final exam questions being the best way
+to evaluate learning but it is an easy data point. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I loved the presentation and paper and I love what Railing is doing
+but my big takeaway was…
+&lt;/p&gt;
+
+&lt;p&gt;
+Well, Duh…
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;students aren't doing as they should&lt;/li&gt;
+&lt;li&gt;teacher realizes students are gaming assignment&lt;/li&gt;
+&lt;li&gt;teacher reworks assignment&lt;/li&gt;
+&lt;li&gt;students do better&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Teachers do this all the time. Of course when we do it, it's not
+"research." This was a recurring theme for me at SIGCSE2018 and I
+tweeted it. While it's true that K12 teachers can learn a lot about CS
+content from higher ed, people in higher ed can learn a lot about
+teaching from teachers. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What Railing presented was terrific and important as changing
+assignments like this will now be considered by people who haven't
+thought about this before but this is second nature to a teacher. Of
+course I'm talking about a good teacher, not one who blindly follows
+scripted lessons.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't mean this as a slight to professors. They're hired and
+promoted based on research so much of their job involves another skill
+set. I know many professors who care very much about teaching but they
+might only teach one or two classes a semester that meets once or
+twice a week while a typical high school teacher meets 150 students a
+day five days a week over five different classes a day.  Much more of
+an opportunity for deliberate practice.
+&lt;/p&gt;
+
+&lt;p&gt;
+This presents a huge challenge. How can professors who are hired and
+promoted as researchers be given the time and ability to develop as
+teachers? What about adjuncts or Teaching Assistants? I'd imagine it's
+even harder for them. I know that colleges have lines for teaching
+faculty but from what I can see, those instructors are usually super
+overloaded with classes and students so that doesn't solve the
+problem. Even if you do have teaching faculty that have the time to
+develop their craft, how do you get those teaching chops over to the
+research faculty?
+&lt;/p&gt;
+
+&lt;p&gt;
+After the session, I was talking about this with &lt;a href="http://www.cs.cmu.edu/~mjs/"&gt;Mark Stehlik&lt;/a&gt;,
+Assistant Dean at CMU's School of Computer Science. Mark was telling
+me about CMU's efforts to develop teaching faculty across the
+disciplines. I was happy to hear about the efforts CMU was taking but
+it sounds like they have the same challenges with respect to pedagogy
+as everyone else. If it's a challenge for CMU with all their
+resources, what does that mean for the rest of us?
+&lt;/p&gt;
+
+&lt;p&gt;
+Still, it was encouraging to go to a number of sessions where it was
+clear that professors - both teaching and research faculty are serious
+about the craft of teaching and conferences like SIGCSE can bring them
+together with those of us who don't have the chops as researchers but
+do so as teachers.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="systems" label="systems"/>
+  </entry>
+  <entry>
     <title>SIGCSE 2018</title>
     <id>http://cestlaz.github.io/posts/sigcse2018/</id>
     <updated>2018-02-25T14:41:41-04:00</updated>
@@ -23,9 +175,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018/"/>
-    <summary type="html">&lt;div id="outline-container-org553bd27" class="outline-2"&gt;
-&lt;h2 id="org553bd27"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org553bd27"&gt;
+    <summary type="html">&lt;div id="outline-container-org80569fc" class="outline-2"&gt;
+&lt;h2 id="org80569fc"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org80569fc"&gt;
 &lt;p&gt;
 I just got back from SIGCSE2018 - the big annual conference on
 computer science education. Although I've been in this racket for
@@ -109,9 +261,9 @@ experiences with all of you in the coming posts.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-43-music/"/>
-    <summary type="html">&lt;div id="outline-container-org208ddec" class="outline-2"&gt;
-&lt;h2 id="org208ddec"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org208ddec"&gt;
+    <summary type="html">&lt;div id="outline-container-orgdda820b" class="outline-2"&gt;
+&lt;h2 id="orgdda820b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgdda820b"&gt;
 &lt;p&gt;
 I like to listen to music at work. Sometimes I just stream from
 YouTube, Soundcloud, Spotify or some other online source but if you're
@@ -163,9 +315,9 @@ Enjoy.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/testing-testing/"/>
-    <summary type="html">&lt;div id="outline-container-orga2d6f11" class="outline-2"&gt;
-&lt;h2 id="orga2d6f11"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga2d6f11"&gt;
+    <summary type="html">&lt;div id="outline-container-orgf25da60" class="outline-2"&gt;
+&lt;h2 id="orgf25da60"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf25da60"&gt;
 &lt;p&gt;
 With CS4All being the buzzword of the day we're paying a lot of
 attention to the fact that when we teach a CS class for all students,
@@ -366,9 +518,9 @@ they end up.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-42-git-gutter/"/>
-    <summary type="html">&lt;div id="outline-container-org916ae49" class="outline-2"&gt;
-&lt;h2 id="org916ae49"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org916ae49"&gt;
+    <summary type="html">&lt;div id="outline-container-org53478fd" class="outline-2"&gt;
+&lt;h2 id="org53478fd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org53478fd"&gt;
 &lt;p&gt;
 One day I'll do a Magit video but since there are already some good
 ones out there I thought I'd share a couple of other great git related
@@ -411,9 +563,9 @@ Enjoy
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-41-pandoc/"/>
-    <summary type="html">&lt;div id="outline-container-org9929ccd" class="outline-2"&gt;
-&lt;h2 id="org9929ccd"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9929ccd"&gt;
+    <summary type="html">&lt;div id="outline-container-org57c0c68" class="outline-2"&gt;
+&lt;h2 id="org57c0c68"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org57c0c68"&gt;
 &lt;p&gt;
 Another Emacs quick hit today. Actually, not really Emacs. Today's
 video is a quick, really quick, look at &lt;a href="https://pandoc.org/"&gt;Pandoc&lt;/a&gt;. Pandoc is a document
@@ -498,9 +650,9 @@ If you haven't checked out pandoc, you should.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/google-sheets/"/>
-    <summary type="html">&lt;div id="outline-container-org694d5c8" class="outline-2"&gt;
-&lt;h2 id="org694d5c8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org694d5c8"&gt;
+    <summary type="html">&lt;div id="outline-container-org3278464" class="outline-2"&gt;
+&lt;h2 id="org3278464"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3278464"&gt;
 &lt;p&gt;
 I make regular use of Google's office suite. I use Google forms all
 the time to collect data, Google docs when I have to leave Emacs for
@@ -607,9 +759,9 @@ function sendGrades(){
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/"/>
-    <summary type="html">&lt;div id="outline-container-org1432f66" class="outline-2"&gt;
-&lt;h2 id="org1432f66"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1432f66"&gt;
+    <summary type="html">&lt;div id="outline-container-org50706fc" class="outline-2"&gt;
+&lt;h2 id="org50706fc"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org50706fc"&gt;
 &lt;p&gt;
 Thanks to everyone who voted for topics or commented with suggestions
 for videos. I'll try to get to them in the coming months.
@@ -622,9 +774,9 @@ browser extension that allows you to edit web form inputs with Emacs.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org1fd9c1a" class="outline-2"&gt;
-&lt;h2 id="org1fd9c1a"&gt;UPDATE&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1fd9c1a"&gt;
+&lt;div id="outline-container-org3eef295" class="outline-2"&gt;
+&lt;h2 id="org3eef295"&gt;UPDATE&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3eef295"&gt;
 &lt;p&gt;
 I forgot to mention that you can set a shortcut key, at least in chrome rather than
 clicking on the icon. This makes things much smoother.
@@ -660,9 +812,9 @@ Enjoy:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/textbooks/"/>
-    <summary type="html">&lt;div id="outline-container-org0e22892" class="outline-2"&gt;
-&lt;h2 id="org0e22892"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0e22892"&gt;
+    <summary type="html">&lt;div id="outline-container-org949b15f" class="outline-2"&gt;
+&lt;h2 id="org949b15f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org949b15f"&gt;
 &lt;p&gt;
 I thought I'd answer Alfred Thompson's recent post on &lt;a href="http://blog.acthompson.net/2018/01/thinking-about-cs-textbooks.html"&gt;using
 textbooks&lt;/a&gt;. Like Alfred, I've never used textbooks particularly
@@ -750,9 +902,9 @@ alternatives.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/is-teaching-cs-hard/"/>
-    <summary type="html">&lt;div id="outline-container-org60426af" class="outline-2"&gt;
-&lt;h2 id="org60426af"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org60426af"&gt;
+    <summary type="html">&lt;div id="outline-container-orgf3701d9" class="outline-2"&gt;
+&lt;h2 id="orgf3701d9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf3701d9"&gt;
 &lt;p&gt;
 Last week, Mark Guzdial asked &lt;a href="https://computinged.wordpress.com/2018/01/19/what-does-it-mean-for-computer-science-to-be-harder-to-learn-than-other-stem-subjects/"&gt;What does it mean for Computer Science to be harder to learn
 than other STEM subjects?&lt;/a&gt; as a follow up to his &lt;a href="https://cacm.acm.org/blogs/blog-cacm/224105-learning-computer-science-is-different-than-learning-other-stem-disciplines/fulltext"&gt;ACM Blog post&lt;/a&gt; this

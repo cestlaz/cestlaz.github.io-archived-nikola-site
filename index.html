@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-36.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/testing-part2/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/refactoring/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,263 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/testing-part2/" class="u-url">Testing Part 2</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/refactoring/" class="u-url">Refactoring</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/refactoring/" rel="bookmark"><time class="published dt-published" datetime="2018-03-21T08:11:38-04:00" title="2018-03-21 08:11">2018-03-21 08:11</time></a></p>
+                <p class="commentline">            <a href="posts/refactoring/#disqus_thread" data-disqus-identifier="cache/posts/refactoring.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org78c217e" class="outline-2">
+<h2 id="org78c217e"></h2>
+<div class="outline-text-2" id="text-org78c217e">
+<p>
+One of my laments on teaching computer science is that students are
+rarely taught and given the chance to develop  good programming
+practices. There's usually not enough time. Beginners work on small
+"toy" which don't lend themselves to good software development
+practices and later on, there's so much other material like
+algorithms, data structures etc. to teach and
+learn that programming practices usually amount to lines like:
+</p>
+
+<blockquote>
+<p>
+"Make sure to comment your code.."
+</p>
+
+<p>
+"Indent properly…"
+</p>
+
+<p>
+"Use functions…"
+</p>
+
+<p>
+"It's important to test your code…"
+</p>
+</blockquote>
+
+<p>
+so when I see an opportunity to use a simple example to drive home a
+good practice,  I try to jump on it.
+</p>
+
+<p>
+Drawing shapes with text is a typical early project. I've seen it in
+text books and online and have been doing it for years. I recall doing
+it back in the 80s in Fortran IV when the programs we wrote were on <a href="https://en.wikipedia.org/wiki/Punched_card">punch cards</a>, run
+overnight on an <a href="https://en.wikipedia.org/wiki/IBM_1130">IBM 1130</a>, and printouts picked up the next day.
+</p>
+
+<p>
+It's a nice use of nested loops. The students will write functions to
+create assorted shapes out of asterisks  like rectangles and
+triangles. Typical solutions look like this:
+</p>
+
+
+<div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+
+
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">box</span><span class="p">(</span><span class="kt">int</span> <span class="n">h</span><span class="p">,</span> <span class="kt">int</span> <span class="n">w</span><span class="p">){</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">r</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">h</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">w</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="s">"*"</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">tri</span><span class="p">(</span><span class="kt">int</span> <span class="n">h</span><span class="p">){</span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">r</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">h</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">i</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="s">"*"</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>
+Which results in shapes like these:
+</p>
+
+<pre class="example">
+
+| ****            |    | *               |
+| ****            |    | **              |
+| ****            |    | ***             |
+| ****            |    | ****            |
+| ****            |    |                 |
+|                 |    |                 |
+|                 |    |                 |
+| *************** |    | *               |
+| *************** |    | **              |
+| *************** |    | ***             |
+| *************** |    | ****            |
+| *************** |    | *****           |
+| *************** |    | ******          |
+| *************** |    | *******         |
+
+</pre>
+
+<p>
+Then there will be more interesting shapes including things like:
+</p>
+
+<pre class="example">
+
+   *       *            *****
+  **      ***           *   *            and more
+ ***     *****          *   *
+****      ***           *****
+           *   
+
+</pre>
+
+<p>
+This is a great time to talk about refactoring.  All of the shape
+drawing functions follow the same pattern - there's an outer loop for
+the height and then one or more inner loops to draw each line. We can
+factor out the inner loops in to a separate <code>line()</code> function.
+</p>
+
+
+<div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+
+
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">box</span><span class="p">(</span><span class="kt">int</span> <span class="n">h</span><span class="p">,</span> <span class="kt">int</span> <span class="n">w</span><span class="p">){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">r</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">h</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">w</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>     <span class="c1">//</span>
+      <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="s">"*"</span><span class="p">;</span>                    <span class="c1">// &lt;----- This can be factored out</span>
+    <span class="p">}</span>                                 <span class="c1">//</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">tri</span><span class="p">(</span><span class="kt">int</span> <span class="n">h</span><span class="p">){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">r</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">h</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">i</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>    <span class="c1">//</span>
+      <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="s">"*"</span><span class="p">;</span>                   <span class="c1">// &lt;---------------- along with this</span>
+    <span class="p">}</span>                               <span class="c1">//</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>
+It's just like factoring in algebra:
+</p>
+
+<div class="LATEX">
+<p>
+
+</p>
+
+<p>
+(RectangleOuterLoop × Line) + (TriangleOuterLoop × Line) ⇒ Line  (Rectangleouterloop × TriangleOuterloop)
+</p>
+
+</div>
+
+<p>
+We end up with:
+</p>
+
+<div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">line</span><span class="p">(</span><span class="kt">int</span> <span class="n">w</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">c</span><span class="p">){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">r</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">w</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="n">c</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">box</span><span class="p">(</span><span class="kt">int</span> <span class="n">h</span><span class="p">,</span> <span class="kt">int</span> <span class="n">w</span><span class="p">){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">r</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">h</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="n">line</span><span class="p">(</span><span class="n">w</span><span class="p">,</span><span class="s">"*"</span><span class="p">)</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">tri</span><span class="p">(</span><span class="kt">int</span> <span class="n">h</span><span class="p">){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">r</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">h</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="n">line</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="s">"*"</span><span class="p">)</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>
+It's simpler, cleaner, and also can lead us to thinking about the
+"harder" shapes in an interesting way. Instead of looking at the right
+justified triangle as a triangle, we can think of each level as two
+lines - one of spaces (shown here as dashes) followed by a line of
+stars:
+</p>
+
+
+<pre class="example">
+----*       *
+---**      **
+--***     ***
+-****    ****
+*****   *****
+
+</pre>
+
+<p>
+Noticing that  for a height of 5, the dashed lines count down in
+length 4,3,2,1,0 and the star lines count up 1,2,3,4,5, we get:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">tri2</span><span class="p">(</span><span class="kt">int</span> <span class="n">h</span><span class="p">){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">r</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">h</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="n">line</span><span class="p">(</span><span class="n">h</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s">"-"</span><span class="p">)</span> <span class="o">+</span> <span class="n">line</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="s">"*"</span><span class="p">)</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span>
+<span class="p">{</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">r</span> <span class="o">=</span> <span class="n">tri2</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">r</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>
+Here we have typical early CS assignment that really lends itself to
+talking about structuring programs and refactoring. Where else can we
+inject good programming practices in ways that make sense early on?
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/testing-part2/" class="u-url">Testing Part 2</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -102,9 +358,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org362281f" class="outline-2">
-<h2 id="org362281f"></h2>
-<div class="outline-text-2" id="text-org362281f">
+    <div id="outline-container-org9eba993" class="outline-2">
+<h2 id="org9eba993"></h2>
+<div class="outline-text-2" id="text-org9eba993">
 <p>
 A few weeks ago I wrote about <a href="https://cestlaz.github.io/posts/testing-testing/#.Wq7Ud3XwZhE">introducing testing</a> in CS classes,
 specifically using a testing framework. In that post I talked about
@@ -231,9 +487,9 @@ terms of speed of evaluation. Sounds like a win to me.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgcc60af9" class="outline-2">
-<h2 id="orgcc60af9"></h2>
-<div class="outline-text-2" id="text-orgcc60af9">
+    <div id="outline-container-org8b98398" class="outline-2">
+<h2 id="org8b98398"></h2>
+<div class="outline-text-2" id="text-org8b98398">
 <p>
 The ACM recently announced this year's winners of the Cutler-Bell
 Prize in High School Computing. Over on his blog, <a href="https://twitter.com/alfredtwo">Alfred Thompson</a>
@@ -431,9 +687,9 @@ couple of specific math teachers.</div>
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orge453c51" class="outline-2">
-<h2 id="orge453c51"></h2>
-<div class="outline-text-2" id="text-orge453c51">
+    <div id="outline-container-org1a8467e" class="outline-2">
+<h2 id="org1a8467e"></h2>
+<div class="outline-text-2" id="text-org1a8467e">
 <p>
 The other day I discovered <a href="https://github.com/abo-abo/auto-yasnippet">auto-yasnippet</a>, another great package by
 <a href="https://github.com/abo-abo">Oleh Krehel</a> or abo-abo.
@@ -501,9 +757,9 @@ Check out the video:
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgaae4caa" class="outline-2">
-<h2 id="orgaae4caa"></h2>
-<div class="outline-text-2" id="text-orgaae4caa">
+    <div id="outline-container-orgf2eb3b3" class="outline-2">
+<h2 id="orgf2eb3b3"></h2>
+<div class="outline-text-2" id="text-orgf2eb3b3">
 <p>
 Next up from SIGCSE 2018 is John MacCormick's session on
 <a href="https://dl.acm.org/citation.cfm?id=3159557">Strategies for Baing the CS Theory Course on Non-decision Problems</a>
@@ -587,9 +843,9 @@ into CS 1 experiences.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org33b7b2c" class="outline-2">
-<h2 id="org33b7b2c"></h2>
-<div class="outline-text-2" id="text-org33b7b2c">
+    <div id="outline-container-org4e48fa5" class="outline-2">
+<h2 id="org4e48fa5"></h2>
+<div class="outline-text-2" id="text-org4e48fa5">
 <p>
 This is a good time to be an Emacs user. In addition to all of the
 great packages and tools being developed there seem to be more people
@@ -632,9 +888,9 @@ Here's what I've found so far:
 </div>
 </div>
 
-<div id="outline-container-org0580de9" class="outline-2">
-<h2 id="org0580de9">Company config (so far):</h2>
-<div class="outline-text-2" id="text-org0580de9">
+<div id="outline-container-org1172c40" class="outline-2">
+<h2 id="org1172c40">Company config (so far):</h2>
+<div class="outline-text-2" id="text-org1172c40">
 <div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">company</span>
 <span class="nv">:ensure</span> <span class="nv">t</span>
 <span class="nv">:config</span>
@@ -672,9 +928,9 @@ Here's what I've found so far:
 </div>
 </div>
 
-<div id="outline-container-org67bf776" class="outline-2">
-<h2 id="org67bf776">Autocomplete config</h2>
-<div class="outline-text-2" id="text-org67bf776">
+<div id="outline-container-orgd2107d4" class="outline-2">
+<h2 id="orgd2107d4">Autocomplete config</h2>
+<div class="outline-text-2" id="text-orgd2107d4">
 <div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">auto-complete</span>
 <span class="nv">:ensure</span> <span class="nv">t</span>
 <span class="nv">:init</span>
@@ -707,9 +963,9 @@ Here's what I've found so far:
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org2da317e" class="outline-2">
-<h2 id="org2da317e"></h2>
-<div class="outline-text-2" id="text-org2da317e">
+    <div id="outline-container-orgb4aede6" class="outline-2">
+<h2 id="orgb4aede6"></h2>
+<div class="outline-text-2" id="text-orgb4aede6">
 <p>
 After reading a couple of comments on my <a href="http://cestlaz.github.io/posts/sigcse2018-code-tracing/">last post</a> where I talked a
 bit about practitioners vs researchers I thought I'd expand and
@@ -868,9 +1124,9 @@ We all have a role to play in this game.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org45688ea" class="outline-2">
-<h2 id="org45688ea"></h2>
-<div class="outline-text-2" id="text-org45688ea">
+    <div id="outline-container-org0fb6eb8" class="outline-2">
+<h2 id="org0fb6eb8"></h2>
+<div class="outline-text-2" id="text-org0fb6eb8">
 <p>
 Next up from SIGCSE is <a href="https://dl.acm.org/citation.cfm?id=3159527">An Explicit Strategy to Scaffold Novice Program
 Tracing</a> by Benjamin Xie, Greg Nelson and Andy Ko, presented by
@@ -1025,9 +1281,9 @@ can read Benji Xi's medium post <a href="https://medium.com/bits-and-behavior/te
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orga34b33a" class="outline-2">
-<h2 id="orga34b33a"></h2>
-<div class="outline-text-2" id="text-orga34b33a">
+    <div id="outline-container-org8ec625d" class="outline-2">
+<h2 id="org8ec625d"></h2>
+<div class="outline-text-2" id="text-org8ec625d">
 <p>
 One of my titles at Hunter College is Director of the Daedalus CS
 Honors program. It's something like a Hunter specific, CS specific
@@ -1099,9 +1355,9 @@ Take a look and let me know what you think:
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orge428d07" class="outline-2">
-<h2 id="orge428d07"></h2>
-<div class="outline-text-2" id="text-orge428d07">
+    <div id="outline-container-orgc43063e" class="outline-2">
+<h2 id="orgc43063e"></h2>
+<div class="outline-text-2" id="text-orgc43063e">
 <p>
 I really didn't know what to expect at the <a href="https://dl.acm.org/citation.cfm?id=3159471">Creativity, Customization,
 and Ownership: Game Design in Bootstrap: Algebra</a> session. I've been a
@@ -1226,157 +1482,6 @@ allowed for creativity in other areas. It's smart and it's a win.
 I still want to meet Shriram in person one day and now also Kathi
 Fisler. I didn't know what to expect walking in but I left the talk
 reminded of why I'm such a fan of Emmanuel, his team, and their work.
-</p>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sigcse2018-Malloc-Lab/" class="u-url">Sigcse2018 - Malloc Lab</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/sigcse2018-Malloc-Lab/" rel="bookmark"><time class="published dt-published" datetime="2018-03-01T16:59:31-04:00" title="2018-03-01 16:59">2018-03-01 16:59</time></a></p>
-                <p class="commentline">            <a href="posts/sigcse2018-Malloc-Lab/#disqus_thread" data-disqus-identifier="cache/posts/sigcse2018-Malloc-Lab.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-org9ede4c6" class="outline-2">
-<h2 id="org9ede4c6"></h2>
-<div class="outline-text-2" id="text-org9ede4c6">
-<p>
-I wasn't going to go to this session. I started out in a panel on
-integrating social good into CS Ed. With the panel not meeting my
-expectations I moved over to my second choice - the system programming
-sessions where I saw <a href="https://dl.acm.org/citation.cfm?id=3159597">Implementing Malloc: Students and Systems
-Programming</a>, a paper presented by <a href="http://www.cs.cmu.edu/~bpr/">Brian Railing</a> of CMU.
-</p>
-
-<p>
-I really liked both the paper and the talk.
-</p>
-
-<p>
-CMU computer science students all take a systems course that uses
-<a href="https://www.amazon.com/Computer-Systems-Programmers-Perspective-3/dp/9332573905/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&amp;psc=1&amp;refRID=Y5ZKG2V8ZYZZPZHQP8SQ">Computer Systems: A Programmer's Perspective</a>. It's a great book. I
-read through the first edition years ago and felt it was great
-resource not only in a systems course but also for self study. One of
-the labs has the students implement their own memory allocation calls,
-or <b>malloc</b> for us old time C wonks. 
-</p>
-
-<p>
-There were a number of self perceived  deficiencies with the
-assignment such as encouraging bad programming style by modeling
-less than ideal practices but the biggest deficiency as that students
-could game the assignment. Students could do very well on the
-assignment by exploiting knowledge of the assignment rather than by
-writing a full and correct malloc implementation. One example is that
-students were able to figure out that no allocation would be more than
-100MB so they really didn't have to deal with 64 bit pointers. They
-could use smaller offsets thus simplifying the assignment. The
-assignment became more about figuring out how to get it through the
-grader and less about learning memory management. I'm sure I'm
-overstating it but that's the idea.
-</p>
-
-<p>
-Railing explained all of the deficiencies and then how they changed
-the assignment to address them.
-</p>
-
-<p>
-At the end of the day, the assignment had fewer loopholes to game so
-students had to really write the malloc library and presumably learn
-about memory management.
-</p>
-
-<p>
-They also added an intermediate deliverable so students couldn't leave
-everything for the last minute.
-</p>
-
-<p>
-Near the end of the talk, Railing discussed results where he pointed
-out that students final exam scores didn't change but they did better
-on the malloc questions. It wasn't clear if the overall scores didn't
-change, meaning that the students did better on the malloc questions
-but worse somewhere else or if they did similarly to past students on
-the other sections and in addition they scored better on the malloc
-questions. I'm not sold on the final exam questions being the best way
-to evaluate learning but it is an easy data point. 
-</p>
-
-<p>
-I loved the presentation and paper and I love what Railing is doing
-but my big takeaway was…
-</p>
-
-<p>
-Well, Duh…
-</p>
-
-<ul class="org-ul">
-<li>students aren't doing as they should</li>
-<li>teacher realizes students are gaming assignment</li>
-<li>teacher reworks assignment</li>
-<li>students do better</li>
-</ul>
-<p>
-Teachers do this all the time. Of course when we do it, it's not
-"research." This was a recurring theme for me at SIGCSE2018 and I
-tweeted it. While it's true that K12 teachers can learn a lot about CS
-content from higher ed, people in higher ed can learn a lot about
-teaching from teachers. 
-</p>
-
-<p>
-What Railing presented was terrific and important as changing
-assignments like this will now be considered by people who haven't
-thought about this before but this is second nature to a teacher. Of
-course I'm talking about a good teacher, not one who blindly follows
-scripted lessons.
-</p>
-
-<p>
-I don't mean this as a slight to professors. They're hired and
-promoted based on research so much of their job involves another skill
-set. I know many professors who care very much about teaching but they
-might only teach one or two classes a semester that meets once or
-twice a week while a typical high school teacher meets 150 students a
-day five days a week over five different classes a day.  Much more of
-an opportunity for deliberate practice.
-</p>
-
-<p>
-This presents a huge challenge. How can professors who are hired and
-promoted as researchers be given the time and ability to develop as
-teachers? What about adjuncts or Teaching Assistants? I'd imagine it's
-even harder for them. I know that colleges have lines for teaching
-faculty but from what I can see, those instructors are usually super
-overloaded with classes and students so that doesn't solve the
-problem. Even if you do have teaching faculty that have the time to
-develop their craft, how do you get those teaching chops over to the
-research faculty?
-</p>
-
-<p>
-After the session, I was talking about this with <a href="http://www.cs.cmu.edu/~mjs/">Mark Stehlik</a>,
-Assistant Dean at CMU's School of Computer Science. Mark was telling
-me about CMU's efforts to develop teaching faculty across the
-disciplines. I was happy to hear about the efforts CMU was taking but
-it sounds like they have the same challenges with respect to pedagogy
-as everyone else. If it's a challenge for CMU with all their
-resources, what does that mean for the rest of us?
-</p>
-
-<p>
-Still, it was encouraging to go to a number of sessions where it was
-clear that professors - both teaching and research faculty are serious
-about the craft of teaching and conferences like SIGCSE can bring them
-together with those of us who don't have the chops as researchers but
-do so as teachers.
 </p>
 </div>
 </div>
