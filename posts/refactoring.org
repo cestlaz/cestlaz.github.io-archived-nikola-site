@@ -1,0 +1,224 @@
+#+BEGIN_COMMENT
+.. title: Refactoring
+.. slug: refactoring
+.. date: 2018-03-21 08:11:38 UTC-04:00
+.. tags: teaching, cs, pedagogy
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+One of my laments on teaching computer science is that students are
+rarely taught and given the chance to develop  good programming
+practices. There's usually not enough time. Beginners work on small
+"toy" which don't lend themselves to good software development
+practices and later on, there's so much other material like
+algorithms, data structures etc. to teach and
+learn that programming practices usually amount to lines like:
+
+#+BEGIN_QUOTE
+"Make sure to comment your code.."
+
+"Indent properly..."
+
+"Use functions..."
+
+"It's important to test your code..."
+#+END_QUOTE
+
+so when I see an opportunity to use a simple example to drive home a
+good practice,  I try to jump on it.
+
+Drawing shapes with text is a typical early project. I've seen it in
+text books and online and have been doing it for years. I recall doing
+it back in the 80s in Fortran IV when the programs we wrote were on [[https://en.wikipedia.org/wiki/Punched_card][punch cards]], run
+overnight on an [[https://en.wikipedia.org/wiki/IBM_1130][IBM 1130]], and printouts picked up the next day.
+
+It's a nice use of nested loops. The students will write functions to
+create assorted shapes out of asterisks  like rectangles and
+triangles. Typical solutions look like this:
+
+
+#+BEGIN_SRC C++ 
+  #include <iostream>
+
+
+  std::string box(int h, int w){
+  std::string r = "";
+    for (int i = 0; i < h; ++i) {
+      for (int j = 0; j < w; j++) {
+        r = r + "*";
+      }
+      r = r + "\n";
+    }
+    return r;
+  }
+
+
+  std::string tri(int h){
+  std::string r = "";
+    for (int i = 0; i < h; ++i) {
+      for (int j = 0; j < i; j++) {
+        r = r + "*";
+      }
+      r = r + "\n";
+    }
+    return r;
+  }
+
+#+END_SRC
+
+Which results in shapes like these:
+
+#+BEGIN_EXAMPLE
+
+| ****            |    | *               |
+| ****            |    | **              |
+| ****            |    | ***             |
+| ****            |    | ****            |
+| ****            |    |                 |
+|                 |    |                 |
+|                 |    |                 |
+| *************** |    | *               |
+| *************** |    | **              |
+| *************** |    | ***             |
+| *************** |    | ****            |
+| *************** |    | *****           |
+| *************** |    | ******          |
+| *************** |    | *******         |
+
+#+END_EXAMPLE
+
+Then there will be more interesting shapes including things like:
+
+#+BEGIN_EXAMPLE
+
+    *       *            *****
+   **      ***           *   *            and more
+  ***     *****          *   *
+ ****      ***           *****
+            *   
+
+#+END_EXAMPLE
+
+ This is a great time to talk about refactoring.  All of the shape
+ drawing functions follow the same pattern - there's an outer loop for
+ the height and then one or more inner loops to draw each line. We can
+ factor out the inner loops in to a separate ~line()~ function.
+
+
+#+BEGIN_SRC C++ 
+  #include <iostream>
+
+
+  std::string box(int h, int w){
+    std::string r = "";
+    for (int i = 0; i < h; ++i) {
+      for (int j = 0; j < w; j++) {     //
+        r = r + "*";                    // <----- This can be factored out
+      }                                 //
+      r = r + "\n";
+    }
+    return r;
+  }
+
+
+  std::string tri(int h){
+    std::string r = "";
+    for (int i = 0; i < h; ++i) {
+      for (int j = 0; j < i; j++) {    //
+        r = r + "*";                   // <---------------- along with this
+      }                               //
+      r = r + "\n";
+    }
+    return r;
+  }
+
+#+END_SRC
+
+It's just like factoring in algebra:
+
+#+BEGIN_LATEX
+
+(RectangleOuterLoop \times Line) + (TriangleOuterLoop \times Line) \Rightarrow Line  (Rectangleouterloop \times TriangleOuterloop)
+
+#+END_LATEX
+
+We end up with:
+
+#+BEGIN_SRC C++
+  #include <iostream>
+
+  std::string line(int w, std::string c){
+    std::string r = "";
+    for (int i = 0; i < w; ++i) {
+      r = r + c;
+    }
+    return r;
+  }
+
+  std::string box(int h, int w){
+    std::string r = "";
+    for (int i = 0; i < h; ++i) {
+      r = r + line(w,"*") + "\n";
+    }
+    return r;
+  }
+
+
+  std::string tri(int h){
+    std::string r = "";
+    for (int i = 0; i < h; ++i) {
+      r = r + line(i,"*") + "\n";
+    }
+    return r;
+  }
+
+
+#+END_SRC
+
+
+It's simpler, cleaner, and also can lead us to thinking about the
+"harder" shapes in an interesting way. Instead of looking at the right
+justified triangle as a triangle, we can think of each level as two
+lines - one of spaces (shown here as dashes) followed by a line of
+stars:
+
+
+#+BEGIN_EXAMPLE
+ ----*       *
+ ---**      **
+ --***     ***
+ -****    ****
+ *****   *****
+
+#+END_EXAMPLE
+ 
+Noticing that  for a height of 5, the dashed lines count down in
+length 4,3,2,1,0 and the star lines count up 1,2,3,4,5, we get:
+
+#+BEGIN_SRC C++
+
+  std::string tri2(int h){
+    std::string r = "";
+    for (int i = 0; i < h; ++i) {
+      r = r + line(h-i-1,"-") + line(i+1,"*") + "\n";
+    }
+    return r;
+  }
+
+  int main()
+  {
+    std::string r = tri2(5);
+    std::cout << r << std::endl;
+    return 0;
+  }
+#+END_SRC
+
+Here we have typical early CS assignment that really lends itself to
+talking about structuring programs and refactoring. Where else can we
+inject good programming practices in ways that make sense early on?
+
+ 
