@@ -1,0 +1,56 @@
+#+BEGIN_COMMENT
+.. title: Sigcse2018 Proof
+.. slug: sigcse2018-proof
+.. date: 2018-03-23 16:24:21 UTC-04:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+Next up from SIGCSE2018 is [[https://dl.acm.org/citation.cfm?id=3159609][Connect the Dots to Prove It]] presented by
+Mark McCartin-Lim. This paper was presented during the same papers
+session as [[http://cestlaz.github.io/posts/sigcse2018-theory][MacCormick]] paper I wrote up previously and my reaction to
+this one was similar to my reaction to MacCormick's.
+
+My reaction to MacCormick was - "This is awesome but while he's talking
+about redesigning existing theory courses, I think we can get a lot of
+mileage out of bringing these ideas into lower level CS courses."
+
+I felt similarly about this paper.
+
+The premise is simple - proof is hard and teaching proof is
+hard. Students don't know how to begin, what's allowed, what's not
+allowed, what's sufficient etc. McCartin-Lim and his team developed a
+software tool to present proof as a puzzle and to provide students
+with necessary support. 
+
+The tool allows students to interactively construct a graph of their
+proof. The graph helps students visualize the proof and the
+relationships between the assumptions and assertions.
+
+Here's an example:
+
+
+#+ATTR_HTML: :width 500px :align center
+[[../../img/sigcse2018-proof1.png]]
+
+And a more complex one:
+
+
+#+ATTR_HTML: :width 500px :align center
+[[../../img/sigcse2018-proof2.png]]
+
+My immediate thought was that this should be reskinned as a high
+school product and rolled out in Geometry classes. I've written before
+about the fact that proof is [[https://cestlaz.github.io/posts/standards-who-for/][rarely taught]] and rarely taught well even
+though it's supposed to be the star topic between Algebra and Trigonometry. A tool like this could
+probably help. This made me think further of the disconnect between
+K12 and higher education. McCartin-Lim talked about students having
+difficulty learning proof but lost in the conversation is that
+students should start building there proof related foundations in high
+school and supporting them in those early years can go a long way to
+alleviate problems that only surface at the college level.
+
