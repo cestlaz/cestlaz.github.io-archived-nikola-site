@@ -3,14 +3,94 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2018-03-21T18:43:53Z</updated>
+  <updated>2018-03-23T21:02:12Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
-  <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-36.atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-37.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Sigcse2018 Proof</title>
+    <id>http://cestlaz.github.io/posts/sigcse2018-proof/</id>
+    <updated>2018-03-23T16:24:21-04:00</updated>
+    <published>2018-03-23T16:24:21-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018-proof/"/>
+    <summary type="html">&lt;div id="outline-container-org0bf6c52" class="outline-2"&gt;
+&lt;h2 id="org0bf6c52"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0bf6c52"&gt;
+&lt;p&gt;
+Next up from SIGCSE2018 is &lt;a href="https://dl.acm.org/citation.cfm?id=3159609"&gt;Connect the Dots to Prove It&lt;/a&gt; presented by
+Mark McCartin-Lim. This paper was presented during the same papers
+session as &lt;a href="http://cestlaz.github.io/posts/sigcse2018-theory"&gt;MacCormick&lt;/a&gt; paper I wrote up previously and my reaction to
+this one was similar to my reaction to MacCormick's.
+&lt;/p&gt;
+
+&lt;p&gt;
+My reaction to MacCormick was - "This is awesome but while he's talking
+about redesigning existing theory courses, I think we can get a lot of
+mileage out of bringing these ideas into lower level CS courses."
+&lt;/p&gt;
+
+&lt;p&gt;
+I felt similarly about this paper.
+&lt;/p&gt;
+
+&lt;p&gt;
+The premise is simple - proof is hard and teaching proof is
+hard. Students don't know how to begin, what's allowed, what's not
+allowed, what's sufficient etc. McCartin-Lim and his team developed a
+software tool to present proof as a puzzle and to provide students
+with necessary support. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The tool allows students to interactively construct a graph of their
+proof. The graph helps students visualize the proof and the
+relationships between the assumptions and assertions.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's an example:
+&lt;/p&gt;
+
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/sigcse2018-proof1.png" alt="sigcse2018-proof1.png" width="500px" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+And a more complex one:
+&lt;/p&gt;
+
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/sigcse2018-proof2.png" alt="sigcse2018-proof2.png" width="500px" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+My immediate thought was that this should be reskinned as a high
+school product and rolled out in Geometry classes. I've written before
+about the fact that proof is &lt;a href="https://cestlaz.github.io/posts/standards-who-for/"&gt;rarely taught&lt;/a&gt; and rarely taught well even
+though it's supposed to be the star topic between Algebra and Trigonometry. A tool like this could
+probably help. This made me think further of the disconnect between
+K12 and higher education. McCartin-Lim talked about students having
+difficulty learning proof but lost in the conversation is that
+students should start building there proof related foundations in high
+school and supporting them in those early years can go a long way to
+alleviate problems that only surface at the college level.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
   <entry>
     <title>Refactoring</title>
     <id>http://cestlaz.github.io/posts/refactoring/</id>
@@ -20,9 +100,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/refactoring/"/>
-    <summary type="html">&lt;div id="outline-container-orge6d16aa" class="outline-2"&gt;
-&lt;h2 id="orge6d16aa"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge6d16aa"&gt;
+    <summary type="html">&lt;div id="outline-container-org955b391" class="outline-2"&gt;
+&lt;h2 id="org955b391"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org955b391"&gt;
 &lt;p&gt;
 One of my laments on teaching computer science is that students are
 rarely taught and given the chance to develop  good programming
@@ -276,9 +356,9 @@ inject good programming practices in ways that make sense early on?
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/testing-part2/"/>
-    <summary type="html">&lt;div id="outline-container-org9eba993" class="outline-2"&gt;
-&lt;h2 id="org9eba993"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9eba993"&gt;
+    <summary type="html">&lt;div id="outline-container-org362281f" class="outline-2"&gt;
+&lt;h2 id="org362281f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org362281f"&gt;
 &lt;p&gt;
 A few weeks ago I wrote about &lt;a href="https://cestlaz.github.io/posts/testing-testing/#.Wq7Ud3XwZhE"&gt;introducing testing&lt;/a&gt; in CS classes,
 specifically using a testing framework. In that post I talked about
@@ -405,9 +485,9 @@ terms of speed of evaluation. Sounds like a win to me.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/on-prestigious-competitons-and-high-schools/"/>
-    <summary type="html">&lt;div id="outline-container-org8b98398" class="outline-2"&gt;
-&lt;h2 id="org8b98398"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8b98398"&gt;
+    <summary type="html">&lt;div id="outline-container-orgcc60af9" class="outline-2"&gt;
+&lt;h2 id="orgcc60af9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgcc60af9"&gt;
 &lt;p&gt;
 The ACM recently announced this year's winners of the Cutler-Bell
 Prize in High School Computing. Over on his blog, &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt;
@@ -602,9 +682,9 @@ couple of specific math teachers.&lt;/div&gt;&lt;/div&gt;
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/"/>
-    <summary type="html">&lt;div id="outline-container-org1a8467e" class="outline-2"&gt;
-&lt;h2 id="org1a8467e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1a8467e"&gt;
+    <summary type="html">&lt;div id="outline-container-orge453c51" class="outline-2"&gt;
+&lt;h2 id="orge453c51"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge453c51"&gt;
 &lt;p&gt;
 The other day I discovered &lt;a href="https://github.com/abo-abo/auto-yasnippet"&gt;auto-yasnippet&lt;/a&gt;, another great package by
 &lt;a href="https://github.com/abo-abo"&gt;Oleh Krehel&lt;/a&gt; or abo-abo.
@@ -672,9 +752,9 @@ Check out the video:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018-theory/"/>
-    <summary type="html">&lt;div id="outline-container-orgf2eb3b3" class="outline-2"&gt;
-&lt;h2 id="orgf2eb3b3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf2eb3b3"&gt;
+    <summary type="html">&lt;div id="outline-container-orgaae4caa" class="outline-2"&gt;
+&lt;h2 id="orgaae4caa"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgaae4caa"&gt;
 &lt;p&gt;
 Next up from SIGCSE 2018 is John MacCormick's session on
 &lt;a href="https://dl.acm.org/citation.cfm?id=3159557"&gt;Strategies for Baing the CS Theory Course on Non-decision Problems&lt;/a&gt;
@@ -758,9 +838,9 @@ into CS 1 experiences.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-45-company/"/>
-    <summary type="html">&lt;div id="outline-container-org4e48fa5" class="outline-2"&gt;
-&lt;h2 id="org4e48fa5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4e48fa5"&gt;
+    <summary type="html">&lt;div id="outline-container-org33b7b2c" class="outline-2"&gt;
+&lt;h2 id="org33b7b2c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org33b7b2c"&gt;
 &lt;p&gt;
 This is a good time to be an Emacs user. In addition to all of the
 great packages and tools being developed there seem to be more people
@@ -803,9 +883,9 @@ Here's what I've found so far:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org1172c40" class="outline-2"&gt;
-&lt;h2 id="org1172c40"&gt;Company config (so far):&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1172c40"&gt;
+&lt;div id="outline-container-org0580de9" class="outline-2"&gt;
+&lt;h2 id="org0580de9"&gt;Company config (so far):&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0580de9"&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company&lt;/span&gt;
 &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
 &lt;span class="nv"&gt;:config&lt;/span&gt;
@@ -843,9 +923,9 @@ Here's what I've found so far:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgd2107d4" class="outline-2"&gt;
-&lt;h2 id="orgd2107d4"&gt;Autocomplete config&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd2107d4"&gt;
+&lt;div id="outline-container-org67bf776" class="outline-2"&gt;
+&lt;h2 id="org67bf776"&gt;Autocomplete config&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org67bf776"&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;auto-complete&lt;/span&gt;
 &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
 &lt;span class="nv"&gt;:init&lt;/span&gt;
@@ -877,9 +957,9 @@ Here's what I've found so far:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/practitioners-and-researchers/"/>
-    <summary type="html">&lt;div id="outline-container-orgb4aede6" class="outline-2"&gt;
-&lt;h2 id="orgb4aede6"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb4aede6"&gt;
+    <summary type="html">&lt;div id="outline-container-org2da317e" class="outline-2"&gt;
+&lt;h2 id="org2da317e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org2da317e"&gt;
 &lt;p&gt;
 After reading a couple of comments on my &lt;a href="http://cestlaz.github.io/posts/sigcse2018-code-tracing/"&gt;last post&lt;/a&gt; where I talked a
 bit about practitioners vs researchers I thought I'd expand and
@@ -1038,9 +1118,9 @@ We all have a role to play in this game.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018-code-tracing/"/>
-    <summary type="html">&lt;div id="outline-container-org0fb6eb8" class="outline-2"&gt;
-&lt;h2 id="org0fb6eb8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0fb6eb8"&gt;
+    <summary type="html">&lt;div id="outline-container-org45688ea" class="outline-2"&gt;
+&lt;h2 id="org45688ea"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org45688ea"&gt;
 &lt;p&gt;
 Next up from SIGCSE is &lt;a href="https://dl.acm.org/citation.cfm?id=3159527"&gt;An Explicit Strategy to Scaffold Novice Program
 Tracing&lt;/a&gt; by Benjamin Xie, Greg Nelson and Andy Ko, presented by
@@ -1192,9 +1272,9 @@ can read Benji Xi's medium post &lt;a href="https://medium.com/bits-and-behavior
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-44-pdf/"/>
-    <summary type="html">&lt;div id="outline-container-org8ec625d" class="outline-2"&gt;
-&lt;h2 id="org8ec625d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8ec625d"&gt;
+    <summary type="html">&lt;div id="outline-container-orga34b33a" class="outline-2"&gt;
+&lt;h2 id="orga34b33a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga34b33a"&gt;
 &lt;p&gt;
 One of my titles at Hunter College is Director of the Daedalus CS
 Honors program. It's something like a Hunter specific, CS specific
@@ -1256,150 +1336,5 @@ Take a look and let me know what you think:
     <category term="emacs" label="emacs"/>
     <category term="pdf" label="pdf"/>
     <category term="tools" label="tools"/>
-  </entry>
-  <entry>
-    <title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title>
-    <id>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</id>
-    <updated>2018-03-02T09:27:33-04:00</updated>
-    <published>2018-03-02T09:27:33-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018-bootstrap/"/>
-    <summary type="html">&lt;div id="outline-container-orgc43063e" class="outline-2"&gt;
-&lt;h2 id="orgc43063e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc43063e"&gt;
-&lt;p&gt;
-I really didn't know what to expect at the &lt;a href="https://dl.acm.org/citation.cfm?id=3159471"&gt;Creativity, Customization,
-and Ownership: Game Design in Bootstrap: Algebra&lt;/a&gt; session. I've been a
-big fan of &lt;a href="http://www.bootstrapworld.org/"&gt;Bootstrep&lt;/a&gt; for years and looking at the authors, &lt;a href="http://blog.acthompson.net/2017/10/cs-teacher-interview-emmanuel.html"&gt;Emmanuel
-Schanzer&lt;/a&gt;'s been a freind forever. I've never met &lt;a href="https://twitter.com/ShriramKMurthi"&gt;Shriram Krishnamurthi&lt;/a&gt;
-in person but am looking forward to it. We've traded emails and blog
-comments. I'd like to consider him a friend and I certainly respect
-him and his work even though we frequently disagree around the
-edges. The third author and presenter, Kathi Fisler was new to me.
-&lt;/p&gt;
-
-&lt;p&gt;
-The Bootstrap program is embedded in algebra classes. In it, students
-use Racket (nee scheme) to reinforce math skills while building
-computer science skills. The big student project is a graphical game.
-&lt;/p&gt;
-
-&lt;p&gt;
-When designing the project, students are asked to decide on and find
-four resources:
-&lt;/p&gt;
-
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;The background image&lt;/li&gt;
-&lt;li&gt;The player image&lt;/li&gt;
-&lt;li&gt;The target image&lt;/li&gt;
-&lt;li&gt;The enemy image&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;
-Students are given a short amount of time to decide on and find these
-four images. I think it was about ten minutes and that's it. That's
-all the "creativity" in the assignment. After that, all the students
-are essentially creating the same game with different skins.
-&lt;/p&gt;
-
-&lt;p&gt;
-This design makes sense. You can't have students going all over the
-place. Constraining the assignment in this way allows teachers who
-might now be strong in computer science to guide the kids through the
-program to completion.
-&lt;/p&gt;
-
-&lt;p&gt;
-At the time I was thinking: I really like all of this but is it really
-open ended creativity and discovery with respect to math or computer
-science? As it turned out, Fisler addressed this point at the end of
-the talk in a way that made me vary happy.
-&lt;/p&gt;
-
-&lt;p&gt;
-Fisler went on to describe the rest of the student experience and then
-went on to talk about the statistics they gathered. 
-&lt;/p&gt;
-
-&lt;p&gt;
-One big takeaway was that while all the students were essentially
-writing the same game varying only the graphical elements, this
-encouraged students to create very different themes. They also created
-rich stories around their games. The project might not have been
-"creative" with respect to the CS or Math directions but it was certainly
-creative in other important areas. The other takeaway was that
-survey's indicated all sorts of positives from the program as a whole
-so the project didn't seem to have suffered by having the students
-essentially write the same program. Participants were proud of their
-work, they felt their games were different from their peers and in
-general the experience was good.
-&lt;/p&gt;
-
-&lt;p&gt;
-During questions, someone asked about adding a fifth element - a
-projectile or missile. It turns out that at one point the program had a
-projectile component but that led to the vast majority of projects to
-be themed in very similar ways. Even though not the same, it reminded me to something Randy
-Pausch said in his &lt;a href="https://www.youtube.com/watch?v=ji5_MqicxSo"&gt;Last Lecture&lt;/a&gt;:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-You make whatever you want. Two rules: no shooting violence and no
-pornography. Not because I’m opposed to those in particular, but you know, that’s been done with
-VR, right? [laughter] And you’d be amazed how many 19-year-old boys are completely out of ideas
-when you take those off the table.
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-At the very end, Fisler addressed my questions about creativity and
-discovery. She posed these questions of her own: "Do we overstate the
-case for creativity?" and "Is pure constructivism a win?"
-&lt;/p&gt;
-
-&lt;p&gt;
-I've ranted on contructivism before. It can be great but a
-constructivist lesson takes a knowledgeable educator and a lot of time,
-preparation, and effort. It's a big ask for, say, a high school
-teacher who's already taking home hours of work every evening. Too
-often I've seen the following "contructivist" model instead:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Take an isntructor that doesn't know their craft, the content, or
-niether.&lt;/li&gt;
-&lt;li&gt;Let the kids play with stuff.&lt;/li&gt;
-&lt;li&gt;Show off the couple of autodidacts that figure it out as success
-stories.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-I'll rant more about this "model" with respect to the new buzz word
-"lead learner" at some point in the future.
-&lt;/p&gt;
-
-&lt;p&gt;
-On the creativity side, it's important but there are also times for
-the instructor to lead and for guidelines to be followed.
-We want to foster creativity but that doesn't mean that it's 100%
-creativity 100% of the time. Education is like life, a balance. The
-Bootstrap program had to constrain the CS and math learning but
-allowed for creativity in other areas. It's smart and it's a win.
-&lt;/p&gt;
-
-&lt;p&gt;
-I still want to meet Shriram in person one day and now also Kathi
-Fisler. I didn't know what to expect walking in but I left the talk
-reminded of why I'm such a fan of Emmanuel, his team, and their work.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="cs" label="cs"/>
-    <category term="pedagogy" label="pedagogy"/>
-    <category term="teaching" label="teaching"/>
   </entry>
 </feed>

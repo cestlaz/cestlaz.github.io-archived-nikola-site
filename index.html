@@ -18,8 +18,8 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
-<link rel="next" href="index-36.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/refactoring/" type="text/html">
+<link rel="next" href="index-37.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/sigcse2018-proof/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,88 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/refactoring/" class="u-url">Refactoring</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sigcse2018-proof/" class="u-url">Sigcse2018 Proof</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/sigcse2018-proof/" rel="bookmark"><time class="published dt-published" datetime="2018-03-23T16:24:21-04:00" title="2018-03-23 16:24">2018-03-23 16:24</time></a></p>
+                <p class="commentline">            <a href="posts/sigcse2018-proof/#disqus_thread" data-disqus-identifier="cache/posts/sigcse2018-proof.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org0bf6c52" class="outline-2">
+<h2 id="org0bf6c52"></h2>
+<div class="outline-text-2" id="text-org0bf6c52">
+<p>
+Next up from SIGCSE2018 is <a href="https://dl.acm.org/citation.cfm?id=3159609">Connect the Dots to Prove It</a> presented by
+Mark McCartin-Lim. This paper was presented during the same papers
+session as <a href="http://cestlaz.github.io/posts/sigcse2018-theory">MacCormick</a> paper I wrote up previously and my reaction to
+this one was similar to my reaction to MacCormick's.
+</p>
+
+<p>
+My reaction to MacCormick was - "This is awesome but while he's talking
+about redesigning existing theory courses, I think we can get a lot of
+mileage out of bringing these ideas into lower level CS courses."
+</p>
+
+<p>
+I felt similarly about this paper.
+</p>
+
+<p>
+The premise is simple - proof is hard and teaching proof is
+hard. Students don't know how to begin, what's allowed, what's not
+allowed, what's sufficient etc. McCartin-Lim and his team developed a
+software tool to present proof as a puzzle and to provide students
+with necessary support. 
+</p>
+
+<p>
+The tool allows students to interactively construct a graph of their
+proof. The graph helps students visualize the proof and the
+relationships between the assumptions and assertions.
+</p>
+
+<p>
+Here's an example:
+</p>
+
+
+
+<div class="figure">
+<p><img src="img/sigcse2018-proof1.png" alt="sigcse2018-proof1.png" width="500px" align="center"></p>
+</div>
+
+<p>
+And a more complex one:
+</p>
+
+
+
+<div class="figure">
+<p><img src="img/sigcse2018-proof2.png" alt="sigcse2018-proof2.png" width="500px" align="center"></p>
+</div>
+
+<p>
+My immediate thought was that this should be reskinned as a high
+school product and rolled out in Geometry classes. I've written before
+about the fact that proof is <a href="https://cestlaz.github.io/posts/standards-who-for/">rarely taught</a> and rarely taught well even
+though it's supposed to be the star topic between Algebra and Trigonometry. A tool like this could
+probably help. This made me think further of the disconnect between
+K12 and higher education. McCartin-Lim talked about students having
+difficulty learning proof but lost in the conversation is that
+students should start building there proof related foundations in high
+school and supporting them in those early years can go a long way to
+alleviate problems that only surface at the college level.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/refactoring/" class="u-url">Refactoring</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -102,9 +183,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orge6d16aa" class="outline-2">
-<h2 id="orge6d16aa"></h2>
-<div class="outline-text-2" id="text-orge6d16aa">
+    <div id="outline-container-org955b391" class="outline-2">
+<h2 id="org955b391"></h2>
+<div class="outline-text-2" id="text-org955b391">
 <p>
 One of my laments on teaching computer science is that students are
 rarely taught and given the chance to develop  good programming
@@ -358,9 +439,9 @@ inject good programming practices in ways that make sense early on?
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org9eba993" class="outline-2">
-<h2 id="org9eba993"></h2>
-<div class="outline-text-2" id="text-org9eba993">
+    <div id="outline-container-org362281f" class="outline-2">
+<h2 id="org362281f"></h2>
+<div class="outline-text-2" id="text-org362281f">
 <p>
 A few weeks ago I wrote about <a href="https://cestlaz.github.io/posts/testing-testing/#.Wq7Ud3XwZhE">introducing testing</a> in CS classes,
 specifically using a testing framework. In that post I talked about
@@ -487,9 +568,9 @@ terms of speed of evaluation. Sounds like a win to me.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org8b98398" class="outline-2">
-<h2 id="org8b98398"></h2>
-<div class="outline-text-2" id="text-org8b98398">
+    <div id="outline-container-orgcc60af9" class="outline-2">
+<h2 id="orgcc60af9"></h2>
+<div class="outline-text-2" id="text-orgcc60af9">
 <p>
 The ACM recently announced this year's winners of the Cutler-Bell
 Prize in High School Computing. Over on his blog, <a href="https://twitter.com/alfredtwo">Alfred Thompson</a>
@@ -687,9 +768,9 @@ couple of specific math teachers.</div>
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org1a8467e" class="outline-2">
-<h2 id="org1a8467e"></h2>
-<div class="outline-text-2" id="text-org1a8467e">
+    <div id="outline-container-orge453c51" class="outline-2">
+<h2 id="orge453c51"></h2>
+<div class="outline-text-2" id="text-orge453c51">
 <p>
 The other day I discovered <a href="https://github.com/abo-abo/auto-yasnippet">auto-yasnippet</a>, another great package by
 <a href="https://github.com/abo-abo">Oleh Krehel</a> or abo-abo.
@@ -757,9 +838,9 @@ Check out the video:
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgf2eb3b3" class="outline-2">
-<h2 id="orgf2eb3b3"></h2>
-<div class="outline-text-2" id="text-orgf2eb3b3">
+    <div id="outline-container-orgaae4caa" class="outline-2">
+<h2 id="orgaae4caa"></h2>
+<div class="outline-text-2" id="text-orgaae4caa">
 <p>
 Next up from SIGCSE 2018 is John MacCormick's session on
 <a href="https://dl.acm.org/citation.cfm?id=3159557">Strategies for Baing the CS Theory Course on Non-decision Problems</a>
@@ -843,9 +924,9 @@ into CS 1 experiences.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org4e48fa5" class="outline-2">
-<h2 id="org4e48fa5"></h2>
-<div class="outline-text-2" id="text-org4e48fa5">
+    <div id="outline-container-org33b7b2c" class="outline-2">
+<h2 id="org33b7b2c"></h2>
+<div class="outline-text-2" id="text-org33b7b2c">
 <p>
 This is a good time to be an Emacs user. In addition to all of the
 great packages and tools being developed there seem to be more people
@@ -888,9 +969,9 @@ Here's what I've found so far:
 </div>
 </div>
 
-<div id="outline-container-org1172c40" class="outline-2">
-<h2 id="org1172c40">Company config (so far):</h2>
-<div class="outline-text-2" id="text-org1172c40">
+<div id="outline-container-org0580de9" class="outline-2">
+<h2 id="org0580de9">Company config (so far):</h2>
+<div class="outline-text-2" id="text-org0580de9">
 <div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">company</span>
 <span class="nv">:ensure</span> <span class="nv">t</span>
 <span class="nv">:config</span>
@@ -928,9 +1009,9 @@ Here's what I've found so far:
 </div>
 </div>
 
-<div id="outline-container-orgd2107d4" class="outline-2">
-<h2 id="orgd2107d4">Autocomplete config</h2>
-<div class="outline-text-2" id="text-orgd2107d4">
+<div id="outline-container-org67bf776" class="outline-2">
+<h2 id="org67bf776">Autocomplete config</h2>
+<div class="outline-text-2" id="text-org67bf776">
 <div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">auto-complete</span>
 <span class="nv">:ensure</span> <span class="nv">t</span>
 <span class="nv">:init</span>
@@ -963,9 +1044,9 @@ Here's what I've found so far:
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgb4aede6" class="outline-2">
-<h2 id="orgb4aede6"></h2>
-<div class="outline-text-2" id="text-orgb4aede6">
+    <div id="outline-container-org2da317e" class="outline-2">
+<h2 id="org2da317e"></h2>
+<div class="outline-text-2" id="text-org2da317e">
 <p>
 After reading a couple of comments on my <a href="http://cestlaz.github.io/posts/sigcse2018-code-tracing/">last post</a> where I talked a
 bit about practitioners vs researchers I thought I'd expand and
@@ -1124,9 +1205,9 @@ We all have a role to play in this game.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org0fb6eb8" class="outline-2">
-<h2 id="org0fb6eb8"></h2>
-<div class="outline-text-2" id="text-org0fb6eb8">
+    <div id="outline-container-org45688ea" class="outline-2">
+<h2 id="org45688ea"></h2>
+<div class="outline-text-2" id="text-org45688ea">
 <p>
 Next up from SIGCSE is <a href="https://dl.acm.org/citation.cfm?id=3159527">An Explicit Strategy to Scaffold Novice Program
 Tracing</a> by Benjamin Xie, Greg Nelson and Andy Ko, presented by
@@ -1281,9 +1362,9 @@ can read Benji Xi's medium post <a href="https://medium.com/bits-and-behavior/te
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org8ec625d" class="outline-2">
-<h2 id="org8ec625d"></h2>
-<div class="outline-text-2" id="text-org8ec625d">
+    <div id="outline-container-orga34b33a" class="outline-2">
+<h2 id="orga34b33a"></h2>
+<div class="outline-text-2" id="text-orga34b33a">
 <p>
 One of my titles at Hunter College is Director of the Daedalus CS
 Honors program. It's something like a Hunter specific, CS specific
@@ -1343,154 +1424,11 @@ Take a look and let me know what you think:
 </div>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sigcse2018-bootstrap/" class="u-url">Sigcse2018 Bootstrapworld on Creativity in CS classes</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/sigcse2018-bootstrap/" rel="bookmark"><time class="published dt-published" datetime="2018-03-02T09:27:33-04:00" title="2018-03-02 09:27">2018-03-02 09:27</time></a></p>
-                <p class="commentline">            <a href="posts/sigcse2018-bootstrap/#disqus_thread" data-disqus-identifier="cache/posts/sigcse2018-bootstrap.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-orgc43063e" class="outline-2">
-<h2 id="orgc43063e"></h2>
-<div class="outline-text-2" id="text-orgc43063e">
-<p>
-I really didn't know what to expect at the <a href="https://dl.acm.org/citation.cfm?id=3159471">Creativity, Customization,
-and Ownership: Game Design in Bootstrap: Algebra</a> session. I've been a
-big fan of <a href="http://www.bootstrapworld.org/">Bootstrep</a> for years and looking at the authors, <a href="http://blog.acthompson.net/2017/10/cs-teacher-interview-emmanuel.html">Emmanuel
-Schanzer</a>'s been a freind forever. I've never met <a href="https://twitter.com/ShriramKMurthi">Shriram Krishnamurthi</a>
-in person but am looking forward to it. We've traded emails and blog
-comments. I'd like to consider him a friend and I certainly respect
-him and his work even though we frequently disagree around the
-edges. The third author and presenter, Kathi Fisler was new to me.
-</p>
-
-<p>
-The Bootstrap program is embedded in algebra classes. In it, students
-use Racket (nee scheme) to reinforce math skills while building
-computer science skills. The big student project is a graphical game.
-</p>
-
-<p>
-When designing the project, students are asked to decide on and find
-four resources:
-</p>
-
-<ol class="org-ol">
-<li>The background image</li>
-<li>The player image</li>
-<li>The target image</li>
-<li>The enemy image</li>
-</ol>
-<p>
-Students are given a short amount of time to decide on and find these
-four images. I think it was about ten minutes and that's it. That's
-all the "creativity" in the assignment. After that, all the students
-are essentially creating the same game with different skins.
-</p>
-
-<p>
-This design makes sense. You can't have students going all over the
-place. Constraining the assignment in this way allows teachers who
-might now be strong in computer science to guide the kids through the
-program to completion.
-</p>
-
-<p>
-At the time I was thinking: I really like all of this but is it really
-open ended creativity and discovery with respect to math or computer
-science? As it turned out, Fisler addressed this point at the end of
-the talk in a way that made me vary happy.
-</p>
-
-<p>
-Fisler went on to describe the rest of the student experience and then
-went on to talk about the statistics they gathered. 
-</p>
-
-<p>
-One big takeaway was that while all the students were essentially
-writing the same game varying only the graphical elements, this
-encouraged students to create very different themes. They also created
-rich stories around their games. The project might not have been
-"creative" with respect to the CS or Math directions but it was certainly
-creative in other important areas. The other takeaway was that
-survey's indicated all sorts of positives from the program as a whole
-so the project didn't seem to have suffered by having the students
-essentially write the same program. Participants were proud of their
-work, they felt their games were different from their peers and in
-general the experience was good.
-</p>
-
-<p>
-During questions, someone asked about adding a fifth element - a
-projectile or missile. It turns out that at one point the program had a
-projectile component but that led to the vast majority of projects to
-be themed in very similar ways. Even though not the same, it reminded me to something Randy
-Pausch said in his <a href="https://www.youtube.com/watch?v=ji5_MqicxSo">Last Lecture</a>:
-</p>
-
-<blockquote>
-<p>
-You make whatever you want. Two rules: no shooting violence and no
-pornography. Not because I’m opposed to those in particular, but you know, that’s been done with
-VR, right? [laughter] And you’d be amazed how many 19-year-old boys are completely out of ideas
-when you take those off the table.
-</p>
-</blockquote>
-
-<p>
-At the very end, Fisler addressed my questions about creativity and
-discovery. She posed these questions of her own: "Do we overstate the
-case for creativity?" and "Is pure constructivism a win?"
-</p>
-
-<p>
-I've ranted on contructivism before. It can be great but a
-constructivist lesson takes a knowledgeable educator and a lot of time,
-preparation, and effort. It's a big ask for, say, a high school
-teacher who's already taking home hours of work every evening. Too
-often I've seen the following "contructivist" model instead:
-</p>
-
-<ul class="org-ul">
-<li>Take an isntructor that doesn't know their craft, the content, or
-niether.</li>
-<li>Let the kids play with stuff.</li>
-<li>Show off the couple of autodidacts that figure it out as success
-stories.</li>
-</ul>
-<p>
-I'll rant more about this "model" with respect to the new buzz word
-"lead learner" at some point in the future.
-</p>
-
-<p>
-On the creativity side, it's important but there are also times for
-the instructor to lead and for guidelines to be followed.
-We want to foster creativity but that doesn't mean that it's 100%
-creativity 100% of the time. Education is like life, a balance. The
-Bootstrap program had to constrain the CS and math learning but
-allowed for creativity in other areas. It's smart and it's a win.
-</p>
-
-<p>
-I still want to meet Shriram in person one day and now also Kathi
-Fisler. I didn't know what to expect walking in but I left the talk
-reminded of why I'm such a fan of Emmanuel, his team, and their work.
-</p>
-</div>
-</div>
-    </div>
     </article>
 </div>
         <nav class="postindexpager"><ul class="pager">
 <li class="next">
-                <a href="index-36.html" rel="next">Older posts</a>
+                <a href="index-37.html" rel="next">Older posts</a>
             </li>
         </ul></nav><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
 </div>
