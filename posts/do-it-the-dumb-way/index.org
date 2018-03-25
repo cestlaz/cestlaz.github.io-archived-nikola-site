@@ -1,0 +1,124 @@
+#+BEGIN_COMMENT
+.. title: Do It The Dumb Way
+.. slug: do-it-the-dumb-way
+.. date: 2018-03-24 19:24:09 UTC-04:00
+.. tags: draft, cs, pedagogy, software engineering
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+
+There's so much I like about the shape drawing lessons I talked about
+in my [[http://cestlaz.github.io/posts/refactoring/][refactoring]] post that I thought I'd share a little more here.
+
+Arguably the most important things for a program to do is work. The
+most clever, elegant, creative program is worthless if it doesn't
+work. 
+
+This is not only an issue with hot shot beginners but rather can also
+be an issue for beginners in general.
+
+When doing the shape drawing lessons the first couple of shape are
+pretty easy
+
+#+BEGIN_EXAMPLE
+
+| ****            |    | *               |
+| ****            |    | **              |
+| ****            |    | ***             |
+| ****            |    | ****            |
+| ****            |    |                 |
+|                 |    |                 |
+#+END_EXAMPLE
+
+but things get more interesting with the right justified triangle:
+
+
+#+BEGIN_EXAMPLE
+ ----*       *
+ ---**      **
+ --***     ***
+ -****    ****
+ *****   *****
+
+#+END_EXAMPLE
+ 
+For this triangle, students want to come up with the formula for the
+number of spaces. They usually figure out something like this with
+~h-i-1~ spaces and ~i+1~ stars:
+
+#+BEGIN_SRC C++
+std::string tri2(int h){
+    std::string r = "";
+    for (int i = 0; i < h; ++i) {
+      r = r + line(h-i-1,"-") + line(i+1,"*") + "\n";
+    }
+    return r;
+  }
+#+END_SRC
+
+The formulas become harder to figure out as the shapes become more
+complex and sometimes students get stymied.
+
+The truth is that while they're struggling to find the perfect
+solution, it's sometimes better to do it the dumb way.
+
+Consider drawing a trapezoid like this example of height 5 and
+starting width 12:
+
+#+BEGIN_EXAMPLE
+************
+ **********
+  ********
+   ******
+    ****
+#+END_EXAMPLE
+
+A student could come up with the "formulas" for spaces and stars but
+sometimes there's a more straightforward way.
+
+Consider the number of spaces on each line on the left hand side of
+the shape. First line is 0 then 1, 2 etc. Why not start a variable
+~spaces~ at 0 and increment it on each loop iteration.
+
+For the number of stars, it's starting at the width and being reduced
+by 2 each time.
+
+This leads to a solution similar to this (using the line routine from
+the earlier refactoring post):
+
+#+BEGIN_SRC C++
+  std::string trap(int height, int width){
+    std::string r = "";
+
+    int spaces = 0;
+    int stars = width;
+    for (int i = 0 ; i < height; ++i) {
+      r = r + line(spaces," ") + lines(stars,"*") + "\n";
+      spaces = spaces + 1;
+      stars = stars - 2;
+    }
+    return r;
+  }
+#+END_SRC
+
+This solution is simple to construct, simple to understand, and quite
+frankly, hard to get wrong.
+
+It can also lead a student to discovering a pattern or "formula" such
+as what was used to solve the earlier problems. 
+
+This might seem to some as a cheap way out, the dumb approach -
+creating extra variables and have them count along the way but I
+don't. There's nothing wrong with simple and straightforward. Yes, you
+could come up with an elegant formula but the bottom line is you need
+something to count 0,1,2,3... so create a variable to do it. You need
+something to count 12,10,8,... create one for that as well.
+
+ Now, I'm not advocating writing 100 if statements rather than a loop
+but I think you get the idea.
+
+The best solution is one that works and Sometimes the "dumb" approach is the best approach.
