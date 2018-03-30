@@ -1,7 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 23 Mar 2018 20:52:13 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Refactoring</title><link>http://cestlaz.github.io/posts/refactoring/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org955b391" class="outline-2"&gt;
-&lt;h2 id="org955b391"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org955b391"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 30 Mar 2018 12:30:59 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Do It The Dumb Way</title><link>http://cestlaz.github.io/posts/do-it-the-dumb-way/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org50339e5" class="outline-2"&gt;
+&lt;h2 id="org50339e5"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org50339e5"&gt;
+&lt;p&gt;
+There's so much to like in the shape drawing lessons I talked about
+in my &lt;a href="http://cestlaz.github.io/posts/refactoring/"&gt;refactoring&lt;/a&gt; post that I thought I'd share a little more here.
+&lt;/p&gt;
+
+&lt;p&gt;
+It can be argued that the most important things for a program to do is work. The
+most clever, elegant, creative program is worthless if it doesn't
+produce the desired result. All too often, beginners and hot shot beginners in particular try to
+be too clever too early and get themselves into trouble. 
+&lt;/p&gt;
+
+&lt;p&gt;
+When doing the shape drawing lessons the first couple of shape are
+pretty easy
+&lt;/p&gt;
+
+&lt;pre class="example"&gt;
+
+| ****            |    | *               |
+| ****            |    | **              |
+| ****            |    | ***             |
+| ****            |    | ****            |
+| ****            |    |                 |
+|                 |    |                 |
+&lt;/pre&gt;
+
+&lt;p&gt;
+but things get more interesting with the right justified triangle:
+&lt;/p&gt;
+
+
+&lt;pre class="example"&gt;
+----*       *
+---**      **
+--***     ***
+-****    ****
+*****   *****
+
+&lt;/pre&gt;
+
+&lt;p&gt;
+For this triangle, students want to come up with the formula for the
+number of spaces. They usually figure out something like this with
+&lt;code&gt;h-i-1&lt;/code&gt; spaces and &lt;code&gt;i+1&lt;/code&gt; stars:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;tri2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+    &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"-"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The formulas become harder to figure out as the shapes become more
+complex and sometimes students get stymied.
+&lt;/p&gt;
+
+&lt;p&gt;
+The truth is that while they're struggling to find the perfect
+solution, it's sometimes better to do it the dumb way.
+&lt;/p&gt;
+
+&lt;p&gt;
+Consider drawing a trapezoid like this example of height 5 and
+starting width 12:
+&lt;/p&gt;
+
+&lt;pre class="example"&gt;
+************
+ **********
+  ********
+   ******
+    ****
+&lt;/pre&gt;
+
+&lt;p&gt;
+A student could come up with the "formulas" for spaces and stars but
+sometimes there's a more straightforward way.
+&lt;/p&gt;
+
+&lt;p&gt;
+Consider the number of spaces on each line on the left hand side of
+the shape. First line is 0 then 1, 2 etc. Why not start a variable
+&lt;code&gt;spaces&lt;/code&gt; at 0 and increment it on each loop iteration.
+&lt;/p&gt;
+
+&lt;p&gt;
+For the number of stars, it's starting at the width and being reduced
+by 2 each time.
+&lt;/p&gt;
+
+&lt;p&gt;
+This leads to a solution similar to this (using the line routine from
+the earlier refactoring post):
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;trap&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;height&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+  &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;spaces&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;stars&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;height&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;spaces&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;" "&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;lines&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;stars&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;spaces&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;spaces&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;stars&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;stars&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+This solution is simple to construct, simple to understand, and quite
+frankly, hard to get wrong.
+&lt;/p&gt;
+
+&lt;p&gt;
+It can also lead a student to discovering a pattern or "formula" such
+as what was used to solve the earlier problems. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This might seem to some as a cheap way out, the dumb approach -
+creating extra variables and have them count along the way but I
+don't. There's nothing wrong with simple and straightforward. Yes, you
+could come up with an elegant formula but the bottom line is you need
+something to count 0,1,2,3… so create a variable to do it. You need
+something to count 12,10,8,… create one for that as well.
+&lt;/p&gt;
+
+&lt;p&gt;
+ Now, I'm not advocating writing 100 if statements rather than a loop
+but I think you get the idea.
+&lt;/p&gt;
+
+&lt;p&gt;
+The best solution is one that works and Sometimes the "dumb" approach is the best approach.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>software engineering</category><guid>http://cestlaz.github.io/posts/do-it-the-dumb-way/</guid><pubDate>Fri, 30 Mar 2018 12:24:09 GMT</pubDate></item><item><title>Refactoring</title><link>http://cestlaz.github.io/posts/refactoring/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge6d16aa" class="outline-2"&gt;
+&lt;h2 id="orge6d16aa"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge6d16aa"&gt;
 &lt;p&gt;
 One of my laments on teaching computer science is that students are
 rarely taught and given the chance to develop  good programming
@@ -241,9 +386,9 @@ talking about structuring programs and refactoring. Where else can we
 inject good programming practices in ways that make sense early on?
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/refactoring/</guid><pubDate>Wed, 21 Mar 2018 12:11:38 GMT</pubDate></item><item><title>Testing Part 2</title><link>http://cestlaz.github.io/posts/testing-part2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org362281f" class="outline-2"&gt;
-&lt;h2 id="org362281f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org362281f"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/refactoring/</guid><pubDate>Wed, 21 Mar 2018 12:11:38 GMT</pubDate></item><item><title>Testing Part 2</title><link>http://cestlaz.github.io/posts/testing-part2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9eba993" class="outline-2"&gt;
+&lt;h2 id="org9eba993"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9eba993"&gt;
 &lt;p&gt;
 A few weeks ago I wrote about &lt;a href="https://cestlaz.github.io/posts/testing-testing/#.Wq7Ud3XwZhE"&gt;introducing testing&lt;/a&gt; in CS classes,
 specifically using a testing framework. In that post I talked about
@@ -356,9 +501,9 @@ teacher easier both in terms of understanding the students work and in
 terms of speed of evaluation. Sounds like a win to me.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-part2/</guid><pubDate>Sun, 18 Mar 2018 21:04:04 GMT</pubDate></item><item><title>Sigcse2018 Making theory more acccesible</title><link>http://cestlaz.github.io/posts/sigcse2018-theory/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgaae4caa" class="outline-2"&gt;
-&lt;h2 id="orgaae4caa"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgaae4caa"&gt;
+&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-part2/</guid><pubDate>Sun, 18 Mar 2018 21:04:04 GMT</pubDate></item><item><title>Sigcse2018 Making theory more acccesible</title><link>http://cestlaz.github.io/posts/sigcse2018-theory/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf2eb3b3" class="outline-2"&gt;
+&lt;h2 id="orgf2eb3b3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf2eb3b3"&gt;
 &lt;p&gt;
 Next up from SIGCSE 2018 is John MacCormick's session on
 &lt;a href="https://dl.acm.org/citation.cfm?id=3159557"&gt;Strategies for Baing the CS Theory Course on Non-decision Problems&lt;/a&gt;
@@ -428,9 +573,9 @@ a copy. Once I do I hope to be able to find some gems that I can work
 into CS 1 experiences.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><category>theory</category><guid>http://cestlaz.github.io/posts/sigcse2018-theory/</guid><pubDate>Tue, 13 Mar 2018 23:21:43 GMT</pubDate></item><item><title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title><link>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge428d07" class="outline-2"&gt;
-&lt;h2 id="orge428d07"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge428d07"&gt;
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>theory</category><guid>http://cestlaz.github.io/posts/sigcse2018-theory/</guid><pubDate>Tue, 13 Mar 2018 23:21:43 GMT</pubDate></item><item><title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title><link>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc43063e" class="outline-2"&gt;
+&lt;h2 id="orgc43063e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc43063e"&gt;
 &lt;p&gt;
 I really didn't know what to expect at the &lt;a href="https://dl.acm.org/citation.cfm?id=3159471"&gt;Creativity, Customization,
 and Ownership: Game Design in Bootstrap: Algebra&lt;/a&gt; session. I've been a
@@ -559,9 +704,9 @@ Fisler. I didn't know what to expect walking in but I left the talk
 reminded of why I'm such a fan of Emmanuel, his team, and their work.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</guid><pubDate>Fri, 02 Mar 2018 13:27:33 GMT</pubDate></item><item><title>Sigcse2018 - Malloc Lab</title><link>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9ede4c6" class="outline-2"&gt;
-&lt;h2 id="org9ede4c6"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9ede4c6"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</guid><pubDate>Fri, 02 Mar 2018 13:27:33 GMT</pubDate></item><item><title>Sigcse2018 - Malloc Lab</title><link>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3d0026d" class="outline-2"&gt;
+&lt;h2 id="org3d0026d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3d0026d"&gt;
 &lt;p&gt;
 I wasn't going to go to this session. I started out in a panel on
 integrating social good into CS Ed. With the panel not meeting my
@@ -697,9 +842,9 @@ together with those of us who don't have the chops as researchers but
 do so as teachers.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>systems</category><guid>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</guid><pubDate>Thu, 01 Mar 2018 20:59:31 GMT</pubDate></item><item><title>Testing, Testing</title><link>http://cestlaz.github.io/posts/testing-testing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga2d6f11" class="outline-2"&gt;
-&lt;h2 id="orga2d6f11"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga2d6f11"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>systems</category><guid>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</guid><pubDate>Thu, 01 Mar 2018 20:59:31 GMT</pubDate></item><item><title>Testing, Testing</title><link>http://cestlaz.github.io/posts/testing-testing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf25da60" class="outline-2"&gt;
+&lt;h2 id="orgf25da60"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf25da60"&gt;
 &lt;p&gt;
 With CS4All being the buzzword of the day we're paying a lot of
 attention to the fact that when we teach a CS class for all students,
@@ -886,9 +1031,9 @@ on track to using test frameworks - something they'll need wherever
 they end up.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-testing/</guid><pubDate>Mon, 19 Feb 2018 12:26:16 GMT</pubDate></item><item><title>APCS-P -  Bigger Intake Or Leaky Pipe</title><link>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8ff8e49" class="outline-2"&gt;
-&lt;h2 id="org8ff8e49"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8ff8e49"&gt;
+&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-testing/</guid><pubDate>Mon, 19 Feb 2018 12:26:16 GMT</pubDate></item><item><title>APCS-P -  Bigger Intake Or Leaky Pipe</title><link>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org11f2c1e" class="outline-2"&gt;
+&lt;h2 id="org11f2c1e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org11f2c1e"&gt;
 &lt;p&gt;
 Advanced Placement Computer Science got top billing on Alfred
 Thompson's &lt;a href="http://blog.acthompson.net/2018/01/computer-science-education-things-im.html"&gt;Things I'm Watching in 2017&lt;/a&gt; post. Alfred talks about how
@@ -950,9 +1095,9 @@ money but if APCS-P becomes the standard high school CS course will
 this leave us with true, quality CS4All? I have my doubts.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>ap</category><category>cs</category><category>cs4all</category><guid>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</guid><pubDate>Mon, 01 Jan 2018 23:28:37 GMT</pubDate></item><item><title>2017 in review - Hunter Undergraduate CS</title><link>http://cestlaz.github.io/posts/2017-review-hunter-cs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6747314" class="outline-2"&gt;
-&lt;h2 id="org6747314"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6747314"&gt;
+&lt;/div&gt;</description><category>ap</category><category>cs</category><category>cs4all</category><guid>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</guid><pubDate>Mon, 01 Jan 2018 23:28:37 GMT</pubDate></item><item><title>2017 in review - Hunter Undergraduate CS</title><link>http://cestlaz.github.io/posts/2017-review-hunter-cs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgbe9cba3" class="outline-2"&gt;
+&lt;h2 id="orgbe9cba3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgbe9cba3"&gt;
 &lt;p&gt;
 I usually don't do year in review posts. At Stuy, not much changed
 year after year so I never felt it worth summarizing the past and
@@ -1055,9 +1200,9 @@ There are other strong CS options besides Hunter but compare the costs:
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgc8d1b84" class="outline-2"&gt;
-&lt;h2 id="orgc8d1b84"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc8d1b84"&gt;
+&lt;div id="outline-container-orgb06d08f" class="outline-2"&gt;
+&lt;h2 id="orgb06d08f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb06d08f"&gt;
 &lt;p&gt;
 &lt;b&gt;&lt;b&gt;Hunter is about one tenth the cost.&lt;/b&gt;&lt;/b&gt;
 &lt;/p&gt;
@@ -1174,9 +1319,9 @@ exciting year for Hunter CS and an exciting year for me to be a part
 of it.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>hunter</category><guid>http://cestlaz.github.io/posts/2017-review-hunter-cs/</guid><pubDate>Tue, 26 Dec 2017 15:05:52 GMT</pubDate></item><item><title>Breaking down problems and writing</title><link>http://cestlaz.github.io/posts/whats-next/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org923d898" class="outline-2"&gt;
-&lt;h2 id="org923d898"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org923d898"&gt;
+&lt;/div&gt;</description><category>cs</category><category>hunter</category><guid>http://cestlaz.github.io/posts/2017-review-hunter-cs/</guid><pubDate>Tue, 26 Dec 2017 15:05:52 GMT</pubDate></item><item><title>Breaking down problems and writing</title><link>http://cestlaz.github.io/posts/whats-next/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org053759c" class="outline-2"&gt;
+&lt;h2 id="org053759c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org053759c"&gt;
 &lt;p&gt;
 This question appeared on Facebook a few days ago:
 &lt;/p&gt;
@@ -1254,105 +1399,4 @@ the question. Many good answers were posted. I just wanted to add this
 thought to the collection.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>problem solving</category><guid>http://cestlaz.github.io/posts/whats-next/</guid><pubDate>Thu, 14 Dec 2017 16:14:33 GMT</pubDate></item><item><title>New York State moving forward with CS Teacher Certification</title><link>http://cestlaz.github.io/posts/NY-CS-Certificate/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org266c823" class="outline-2"&gt;
-&lt;h2 id="org266c823"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org266c823"&gt;
-&lt;p&gt;
-Last April I woke up early and trekked up to Albany along with a few
-of my Hunter College colleagues to share our thoughts on K12 Computer
-Science teacher certification with the Board of Regents. We gave a
-presentation to the Regents Higher Education Committee and afterwards
-had a chance to talk with some of the Regents as well as other members
-of the New York State Department of Education.
-&lt;/p&gt;
-
-&lt;p&gt;
-I left feeling that our proposals were well received and I think
-everyone present - both the Hunter and NYSED contingents hoped that
-things would move forward on this important issue.
-&lt;/p&gt;
-
-&lt;p&gt;
-Fast forward to today, December 8, 2017. I was up at the crack
-of dawn. Driving in the dark in the snow from NYC to Albany to once
-again attend a Board of Regents Higher Education Committee
-meeting. This time, the agenda item was:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-Proposed Amendments to Part 30 of the Regents Rules and Section 52.21
-and Part 80 the Regulations of the Commissioner of Education Relating
-to a New Certification Area and Tenure Area for Computer Science 
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-No discussion or debate this time around just the proposal. If I
-understand the process correctly, this should come up again at the
-March meeting at which point it will be voted on. If approved, it
-looks like we'll have a pathway towards certification for CS teachers.
-&lt;/p&gt;
-
-&lt;p&gt;
-I haven't had a chance to dive into the details but at the meeting a
-few key points came up:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;As the proposal indicates this will be a subject area in which a
-teacher can be certified and be awarded tenure.&lt;/li&gt;
-&lt;li&gt;There will be a traditional pathway for new teachers - Bachelors /
-Masters degree&lt;/li&gt;
-&lt;li&gt;There will be an alternative pathway for people entering from the
-workforce&lt;/li&gt;
-&lt;li&gt;There will be an extension for teachers with another license so they
-won't have to give up tenure in their current license.&lt;/li&gt;
-&lt;li&gt;There will be an "individual evaluation" pathway which sounds to me
-like it could catch people who fall through the cracks.&lt;/li&gt;
-&lt;li&gt;There looks to be a sensible ramp up period - until September 2022&lt;/li&gt;
-&lt;li&gt;There's a grandfathering provision that looks to last 10 years.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-This sounds like a smart sensible plan. Multiple pathways, shallow
-ramp up and provisions to protect existing teachers.
-&lt;/p&gt;
-
-&lt;p&gt;
-Of course, the devil is in the details. What's an approved program?
-Can a grandfathered teacher teach all CS classes or just intro ones?
-etc.
-&lt;/p&gt;
-
-&lt;p&gt;
-As I said, I haven't had a chance to dive into the details yet but
-this is very exciting.
-&lt;/p&gt;
-
-&lt;p&gt;
-Prior to the meeting I was chatting with a few other people
-attending. One, a &lt;a href="http://www.uft.org/"&gt;UFT&lt;/a&gt; representative was very excited about the
-prospect. Another contingent, a group from &lt;a href="https://www.nysut.org/"&gt;NYSUT&lt;/a&gt; was very much against
-a new certification area. Their position was that this would create a
-teacher shortage because no one would have a CS license and no one
-would get one due to the difference in salary between teaching and the
-tech industry. I've already written on how I feel that this is a &lt;a href="https://cestlaz.github.io/posts/will-we-lose-cs-teachers-to-industry"&gt;red
-herring&lt;/a&gt;. What shocked me though was their feeling that "we already
-have many non-CS teachers effectively teaching CS across the
-state. They're doing a great job and don't need any additional content
-or pedagogical knowledge." I think they're wrong and I also think that
-when we as a community talk about how our summer professional
-development is all that's needed, we undercut CS education and
-the teaching profession as a whole.
-&lt;/p&gt;
-
-&lt;p&gt;
-In any event this was a big step for New York. I tried to individually
-thank as many of the participants as I could for helping shepherd this
-along but could only speak to a few so I'll just give a blanket thank
-you here to the NY State Board of Regents, Board of Education and
-State Education department.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>certification</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/NY-CS-Certificate/</guid><pubDate>Tue, 12 Dec 2017 23:57:37 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>cs</category><category>problem solving</category><guid>http://cestlaz.github.io/posts/whats-next/</guid><pubDate>Thu, 14 Dec 2017 16:14:33 GMT</pubDate></item></channel></rss>

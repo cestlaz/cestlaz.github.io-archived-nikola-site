@@ -1,7 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about pedagogy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/pedagogy.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 23 Mar 2018 20:52:13 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Refactoring</title><link>http://cestlaz.github.io/posts/refactoring/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org955b391" class="outline-2"&gt;
-&lt;h2 id="org955b391"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org955b391"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about pedagogy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/pedagogy.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 30 Mar 2018 12:30:59 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Do It The Dumb Way</title><link>http://cestlaz.github.io/posts/do-it-the-dumb-way/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org50339e5" class="outline-2"&gt;
+&lt;h2 id="org50339e5"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org50339e5"&gt;
+&lt;p&gt;
+There's so much to like in the shape drawing lessons I talked about
+in my &lt;a href="http://cestlaz.github.io/posts/refactoring/"&gt;refactoring&lt;/a&gt; post that I thought I'd share a little more here.
+&lt;/p&gt;
+
+&lt;p&gt;
+It can be argued that the most important things for a program to do is work. The
+most clever, elegant, creative program is worthless if it doesn't
+produce the desired result. All too often, beginners and hot shot beginners in particular try to
+be too clever too early and get themselves into trouble. 
+&lt;/p&gt;
+
+&lt;p&gt;
+When doing the shape drawing lessons the first couple of shape are
+pretty easy
+&lt;/p&gt;
+
+&lt;pre class="example"&gt;
+
+| ****            |    | *               |
+| ****            |    | **              |
+| ****            |    | ***             |
+| ****            |    | ****            |
+| ****            |    |                 |
+|                 |    |                 |
+&lt;/pre&gt;
+
+&lt;p&gt;
+but things get more interesting with the right justified triangle:
+&lt;/p&gt;
+
+
+&lt;pre class="example"&gt;
+----*       *
+---**      **
+--***     ***
+-****    ****
+*****   *****
+
+&lt;/pre&gt;
+
+&lt;p&gt;
+For this triangle, students want to come up with the formula for the
+number of spaces. They usually figure out something like this with
+&lt;code&gt;h-i-1&lt;/code&gt; spaces and &lt;code&gt;i+1&lt;/code&gt; stars:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;tri2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+    &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"-"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The formulas become harder to figure out as the shapes become more
+complex and sometimes students get stymied.
+&lt;/p&gt;
+
+&lt;p&gt;
+The truth is that while they're struggling to find the perfect
+solution, it's sometimes better to do it the dumb way.
+&lt;/p&gt;
+
+&lt;p&gt;
+Consider drawing a trapezoid like this example of height 5 and
+starting width 12:
+&lt;/p&gt;
+
+&lt;pre class="example"&gt;
+************
+ **********
+  ********
+   ******
+    ****
+&lt;/pre&gt;
+
+&lt;p&gt;
+A student could come up with the "formulas" for spaces and stars but
+sometimes there's a more straightforward way.
+&lt;/p&gt;
+
+&lt;p&gt;
+Consider the number of spaces on each line on the left hand side of
+the shape. First line is 0 then 1, 2 etc. Why not start a variable
+&lt;code&gt;spaces&lt;/code&gt; at 0 and increment it on each loop iteration.
+&lt;/p&gt;
+
+&lt;p&gt;
+For the number of stars, it's starting at the width and being reduced
+by 2 each time.
+&lt;/p&gt;
+
+&lt;p&gt;
+This leads to a solution similar to this (using the line routine from
+the earlier refactoring post):
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;trap&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;height&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+  &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;spaces&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;stars&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;height&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;spaces&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;" "&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;lines&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;stars&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;spaces&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;spaces&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;stars&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;stars&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+This solution is simple to construct, simple to understand, and quite
+frankly, hard to get wrong.
+&lt;/p&gt;
+
+&lt;p&gt;
+It can also lead a student to discovering a pattern or "formula" such
+as what was used to solve the earlier problems. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This might seem to some as a cheap way out, the dumb approach -
+creating extra variables and have them count along the way but I
+don't. There's nothing wrong with simple and straightforward. Yes, you
+could come up with an elegant formula but the bottom line is you need
+something to count 0,1,2,3… so create a variable to do it. You need
+something to count 12,10,8,… create one for that as well.
+&lt;/p&gt;
+
+&lt;p&gt;
+ Now, I'm not advocating writing 100 if statements rather than a loop
+but I think you get the idea.
+&lt;/p&gt;
+
+&lt;p&gt;
+The best solution is one that works and Sometimes the "dumb" approach is the best approach.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>software engineering</category><guid>http://cestlaz.github.io/posts/do-it-the-dumb-way/</guid><pubDate>Fri, 30 Mar 2018 12:24:09 GMT</pubDate></item><item><title>Refactoring</title><link>http://cestlaz.github.io/posts/refactoring/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge6d16aa" class="outline-2"&gt;
+&lt;h2 id="orge6d16aa"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge6d16aa"&gt;
 &lt;p&gt;
 One of my laments on teaching computer science is that students are
 rarely taught and given the chance to develop  good programming
@@ -241,9 +386,9 @@ talking about structuring programs and refactoring. Where else can we
 inject good programming practices in ways that make sense early on?
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/refactoring/</guid><pubDate>Wed, 21 Mar 2018 12:11:38 GMT</pubDate></item><item><title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title><link>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge428d07" class="outline-2"&gt;
-&lt;h2 id="orge428d07"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge428d07"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/refactoring/</guid><pubDate>Wed, 21 Mar 2018 12:11:38 GMT</pubDate></item><item><title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title><link>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc43063e" class="outline-2"&gt;
+&lt;h2 id="orgc43063e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc43063e"&gt;
 &lt;p&gt;
 I really didn't know what to expect at the &lt;a href="https://dl.acm.org/citation.cfm?id=3159471"&gt;Creativity, Customization,
 and Ownership: Game Design in Bootstrap: Algebra&lt;/a&gt; session. I've been a
@@ -372,9 +517,9 @@ Fisler. I didn't know what to expect walking in but I left the talk
 reminded of why I'm such a fan of Emmanuel, his team, and their work.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</guid><pubDate>Fri, 02 Mar 2018 13:27:33 GMT</pubDate></item><item><title>Sigcse2018 - Malloc Lab</title><link>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9ede4c6" class="outline-2"&gt;
-&lt;h2 id="org9ede4c6"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9ede4c6"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</guid><pubDate>Fri, 02 Mar 2018 13:27:33 GMT</pubDate></item><item><title>Sigcse2018 - Malloc Lab</title><link>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3d0026d" class="outline-2"&gt;
+&lt;h2 id="org3d0026d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3d0026d"&gt;
 &lt;p&gt;
 I wasn't going to go to this session. I started out in a panel on
 integrating social good into CS Ed. With the panel not meeting my
@@ -510,9 +655,9 @@ together with those of us who don't have the chops as researchers but
 do so as teachers.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>systems</category><guid>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</guid><pubDate>Thu, 01 Mar 2018 20:59:31 GMT</pubDate></item><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7ab1556" class="outline-2"&gt;
-&lt;h2 id="org7ab1556"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7ab1556"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>systems</category><guid>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</guid><pubDate>Thu, 01 Mar 2018 20:59:31 GMT</pubDate></item><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9ef6fed" class="outline-2"&gt;
+&lt;h2 id="org9ef6fed"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9ef6fed"&gt;
 &lt;p&gt;
 I've been having fun with this years &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; competition. So
 far, I've been able to keep up but with I expect that to change in
@@ -549,9 +694,9 @@ I decided to do this rant as a video. I hope you enjoy it:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x8cZgEogWNw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>A new first language? What's the follow up plan?</title><link>http://cestlaz.github.io/posts/first-language-changing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org34a4687" class="outline-2"&gt;
-&lt;h2 id="org34a4687"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org34a4687"&gt;
+&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>A new first language? What's the follow up plan?</title><link>http://cestlaz.github.io/posts/first-language-changing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7e7a8ea" class="outline-2"&gt;
+&lt;h2 id="org7e7a8ea"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7e7a8ea"&gt;
 &lt;p&gt;
 This morning, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about Stanford possibly &lt;a href="https://computinged.wordpress.com/2017/04/21/cs-department-updates-introductory-courses-java-is-gone/"&gt;moving away
 from Java&lt;/a&gt; as their intro language. This comes on the heels of a
@@ -733,9 +878,9 @@ introduce github to my classes here they are:
 &lt;p&gt;
 I'm hoping some of you have found this set of four posts useful or at
 least interesting.
-&lt;/p&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-4/</guid><pubDate>Tue, 11 Apr 2017 23:11:30 GMT</pubDate></item><item><title>A free multi-state clicker with built in redundency</title><link>http://cestlaz.github.io/posts/thumb_clickers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org67e08c4" class="outline-2"&gt;
-&lt;h2 id="org67e08c4"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org67e08c4"&gt;
+&lt;/p&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/sigcse-2017-github-4/</guid><pubDate>Tue, 11 Apr 2017 23:11:30 GMT</pubDate></item><item><title>A free multi-state clicker with built in redundency</title><link>http://cestlaz.github.io/posts/thumb_clickers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgb41ecb5" class="outline-2"&gt;
+&lt;h2 id="orgb41ecb5"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb41ecb5"&gt;
 &lt;p&gt;
 Last Friday, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about the woes of &lt;a href="https://computinged.wordpress.com/2017/03/31/the-need-for-better-software-and-systems-to-support-active-cs-learning/%0A"&gt;using clickers&lt;/a&gt; in a
 class. The amount of effort required to use his school's approved
@@ -808,9 +953,9 @@ Thumbs.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org7b082ed" class="outline-2"&gt;
-&lt;h2 id="org7b082ed"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7b082ed"&gt;
+&lt;div id="outline-container-org912e666" class="outline-2"&gt;
+&lt;h2 id="org912e666"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org912e666"&gt;
 &lt;p&gt;
 Periodically, I'll poll my class.
 &lt;/p&gt;
@@ -1042,100 +1187,4 @@ Here's all the code:
 &lt;p&gt;
 Overall, a nice little problem for beginning and intermediate
 students.
-&lt;/p&gt;</description><category>adventofcode</category><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-code-2016-1/</guid><pubDate>Tue, 06 Dec 2016 15:46:17 GMT</pubDate></item><item><title>New Term, New Tool - repl.it</title><link>http://cestlaz.github.io/posts/new-term-new-tool-replit/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org947b0d7" class="outline-2"&gt;
-&lt;h2 id="org947b0d7"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org947b0d7"&gt;
-&lt;p&gt;
-We're now a week in to my first class at Hunter. It's a little early
-for me to really compare and contrast the high school to college
-experience but I thought I'd share some thoughts on a tool that I've
-recently started to play with.
-&lt;/p&gt;
-
-&lt;p&gt;
-My students were all supposed to be issued laptops at the beginning of
-the semester. The plan was to have them learn Linux, the command line,
-and a little DevOps along the way. I guess I shouldn't have been too
-surprised to learn that the laptops weren't going to come in until
-late September.
-&lt;/p&gt;
-
-&lt;p&gt;
-Scratch all that advance lesson planning. A brief scramble and I was
-able to relocate the class into a computer lab but now we can't
-customize the kids environments. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Time to look for an online solution.
-&lt;/p&gt;
-
-&lt;p&gt;
-We're starting the kids off in Python, a choice that I'll talk about
-in some future post and normally my online go to for Python is
-&lt;a href="http://codesters.com"&gt;codesters.com&lt;/a&gt;. I'm a big fan of the codesters team and product. This
-time, though, I decided to try something else. Specifically &lt;a href="http://repl.it"&gt;repl.it&lt;/a&gt;. Partly because, as with
-codesters, I like the people behind it. It's also pretty simple and it
-supports a lot of different languages:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-APL, ES2015 ,Bloop, BrainF, C, CoffeeScript, C++, C++11, C#, Emoticon,
-Forth, F#, Go, Java, JavaScript, LOLCODE, Lua, Nodejs, PHP, Python,
-Python3, QBasic, Roy, Ruby, Rust, Scheme, Swift, Unlambda, and HTML, CSS, JS
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-It's still a pretty new product so there are occasional hiccups but
-I'm really liking things so far. Some of the things I like include:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;a simple clean interface.&lt;/li&gt;
-&lt;li&gt;sharing and embedding code:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script src="//repl.it/embed/DF3m/19.js"&gt;&lt;/script&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;project mode which allows multi file projects&lt;/li&gt;
-&lt;li&gt;examples to get you started&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-But the thing I'm really liking are the teacher features they're
-working on. The teacher interface isn't fancy. I like that. Things are
-simple and clean and they let me get the job done.
-&lt;/p&gt;
-
-&lt;p&gt;
-I had two extra minutes in class yesterday and in that time, I was
-able to:
-&lt;/p&gt;
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;Make a classroom&lt;/li&gt;
-&lt;li&gt;Invite all my students by email&lt;/li&gt;
-&lt;li&gt;Create 2 quick assignments.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;
-The assignment page lets you give starter code as well as instructions
-and it also lets you put in tests that are run when a student submits
-their work for instant feedback.
-&lt;/p&gt;
-
-&lt;p&gt;
-I really like the tests feature on projects. So far, I've only played
-with Python unit tests. Repl.it uses a really easy to follow
-interface and has a sample test to guide you. There's also an option
-for input/output matching which includes flexible matching and regular
-expressions but I haven't played with it yet.
-&lt;/p&gt;
-
-&lt;p&gt;
-Overall, I'm liking this tool. When the kids get their laptops we'll
-probably use it somewhat less as they start to learn to use their own
-systems but I'm glad to have repl.it in my teaching arsenal.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>pedagogy</category><category>tools</category><guid>http://cestlaz.github.io/posts/new-term-new-tool-replit/</guid><pubDate>Fri, 02 Sep 2016 13:26:02 GMT</pubDate></item></channel></rss>
+&lt;/p&gt;</description><category>adventofcode</category><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-code-2016-1/</guid><pubDate>Tue, 06 Dec 2016 15:46:17 GMT</pubDate></item></channel></rss>

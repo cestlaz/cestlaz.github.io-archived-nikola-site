@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-37.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/ethics-in-cs/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/do-it-the-dumb-way/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,166 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/ethics-in-cs/" class="u-url">Ethics In CS Education</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/do-it-the-dumb-way/" class="u-url">Do It The Dumb Way</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/do-it-the-dumb-way/" rel="bookmark"><time class="published dt-published" datetime="2018-03-30T08:24:09-04:00" title="2018-03-30 08:24">2018-03-30 08:24</time></a></p>
+                <p class="commentline">            <a href="posts/do-it-the-dumb-way/#disqus_thread" data-disqus-identifier="cache/posts/do-it-the-dumb-way.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org50339e5" class="outline-2">
+<h2 id="org50339e5"></h2>
+<div class="outline-text-2" id="text-org50339e5">
+<p>
+There's so much to like in the shape drawing lessons I talked about
+in my <a href="http://cestlaz.github.io/posts/refactoring/">refactoring</a> post that I thought I'd share a little more here.
+</p>
+
+<p>
+It can be argued that the most important things for a program to do is work. The
+most clever, elegant, creative program is worthless if it doesn't
+produce the desired result. All too often, beginners and hot shot beginners in particular try to
+be too clever too early and get themselves into trouble. 
+</p>
+
+<p>
+When doing the shape drawing lessons the first couple of shape are
+pretty easy
+</p>
+
+<pre class="example">
+
+| ****            |    | *               |
+| ****            |    | **              |
+| ****            |    | ***             |
+| ****            |    | ****            |
+| ****            |    |                 |
+|                 |    |                 |
+</pre>
+
+<p>
+but things get more interesting with the right justified triangle:
+</p>
+
+
+<pre class="example">
+----*       *
+---**      **
+--***     ***
+-****    ****
+*****   *****
+
+</pre>
+
+<p>
+For this triangle, students want to come up with the formula for the
+number of spaces. They usually figure out something like this with
+<code>h-i-1</code> spaces and <code>i+1</code> stars:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">tri2</span><span class="p">(</span><span class="kt">int</span> <span class="n">h</span><span class="p">){</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">r</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">h</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="n">line</span><span class="p">(</span><span class="n">h</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s">"-"</span><span class="p">)</span> <span class="o">+</span> <span class="n">line</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="s">"*"</span><span class="p">)</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+  <span class="p">}</span>
+</pre></div>
+
+<p>
+The formulas become harder to figure out as the shapes become more
+complex and sometimes students get stymied.
+</p>
+
+<p>
+The truth is that while they're struggling to find the perfect
+solution, it's sometimes better to do it the dumb way.
+</p>
+
+<p>
+Consider drawing a trapezoid like this example of height 5 and
+starting width 12:
+</p>
+
+<pre class="example">
+************
+ **********
+  ********
+   ******
+    ****
+</pre>
+
+<p>
+A student could come up with the "formulas" for spaces and stars but
+sometimes there's a more straightforward way.
+</p>
+
+<p>
+Consider the number of spaces on each line on the left hand side of
+the shape. First line is 0 then 1, 2 etc. Why not start a variable
+<code>spaces</code> at 0 and increment it on each loop iteration.
+</p>
+
+<p>
+For the number of stars, it's starting at the width and being reduced
+by 2 each time.
+</p>
+
+<p>
+This leads to a solution similar to this (using the line routine from
+the earlier refactoring post):
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">trap</span><span class="p">(</span><span class="kt">int</span> <span class="n">height</span><span class="p">,</span> <span class="kt">int</span> <span class="n">width</span><span class="p">){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">r</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
+
+  <span class="kt">int</span> <span class="n">spaces</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">stars</span> <span class="o">=</span> <span class="n">width</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">height</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="n">line</span><span class="p">(</span><span class="n">spaces</span><span class="p">,</span><span class="s">" "</span><span class="p">)</span> <span class="o">+</span> <span class="n">lines</span><span class="p">(</span><span class="n">stars</span><span class="p">,</span><span class="s">"*"</span><span class="p">)</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+    <span class="n">spaces</span> <span class="o">=</span> <span class="n">spaces</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">stars</span> <span class="o">=</span> <span class="n">stars</span> <span class="o">-</span> <span class="mi">2</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>
+This solution is simple to construct, simple to understand, and quite
+frankly, hard to get wrong.
+</p>
+
+<p>
+It can also lead a student to discovering a pattern or "formula" such
+as what was used to solve the earlier problems. 
+</p>
+
+<p>
+This might seem to some as a cheap way out, the dumb approach -
+creating extra variables and have them count along the way but I
+don't. There's nothing wrong with simple and straightforward. Yes, you
+could come up with an elegant formula but the bottom line is you need
+something to count 0,1,2,3… so create a variable to do it. You need
+something to count 12,10,8,… create one for that as well.
+</p>
+
+<p>
+ Now, I'm not advocating writing 100 if statements rather than a loop
+but I think you get the idea.
+</p>
+
+<p>
+The best solution is one that works and Sometimes the "dumb" approach is the best approach.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/ethics-in-cs/" class="u-url">Ethics In CS Education</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -102,9 +261,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org33777a9" class="outline-2">
-<h2 id="org33777a9"></h2>
-<div class="outline-text-2" id="text-org33777a9">
+    <div id="outline-container-org13c9eaa" class="outline-2">
+<h2 id="org13c9eaa"></h2>
+<div class="outline-text-2" id="text-org13c9eaa">
 <p>
 I've been meaning to write about ethics in CS education for a
 while. Probably since I saw <a href="https://www.nytimes.com/2018/02/12/business/computer-science-ethics-courses.html?smid=fb-share">this article</a> in the NY Times but got sidetracked.
@@ -215,9 +374,9 @@ create great teachers for which ethical CS is part of their core.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org0bf6c52" class="outline-2">
-<h2 id="org0bf6c52"></h2>
-<div class="outline-text-2" id="text-org0bf6c52">
+    <div id="outline-container-orgb62254a" class="outline-2">
+<h2 id="orgb62254a"></h2>
+<div class="outline-text-2" id="text-orgb62254a">
 <p>
 Next up from SIGCSE2018 is <a href="https://dl.acm.org/citation.cfm?id=3159609">Connect the Dots to Prove It</a> presented by
 Mark McCartin-Lim. This paper was presented during the same papers
@@ -296,9 +455,9 @@ alleviate problems that only surface at the college level.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org955b391" class="outline-2">
-<h2 id="org955b391"></h2>
-<div class="outline-text-2" id="text-org955b391">
+    <div id="outline-container-orge6d16aa" class="outline-2">
+<h2 id="orge6d16aa"></h2>
+<div class="outline-text-2" id="text-orge6d16aa">
 <p>
 One of my laments on teaching computer science is that students are
 rarely taught and given the chance to develop  good programming
@@ -552,9 +711,9 @@ inject good programming practices in ways that make sense early on?
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org362281f" class="outline-2">
-<h2 id="org362281f"></h2>
-<div class="outline-text-2" id="text-org362281f">
+    <div id="outline-container-org9eba993" class="outline-2">
+<h2 id="org9eba993"></h2>
+<div class="outline-text-2" id="text-org9eba993">
 <p>
 A few weeks ago I wrote about <a href="https://cestlaz.github.io/posts/testing-testing/#.Wq7Ud3XwZhE">introducing testing</a> in CS classes,
 specifically using a testing framework. In that post I talked about
@@ -681,9 +840,9 @@ terms of speed of evaluation. Sounds like a win to me.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgcc60af9" class="outline-2">
-<h2 id="orgcc60af9"></h2>
-<div class="outline-text-2" id="text-orgcc60af9">
+    <div id="outline-container-org8b98398" class="outline-2">
+<h2 id="org8b98398"></h2>
+<div class="outline-text-2" id="text-org8b98398">
 <p>
 The ACM recently announced this year's winners of the Cutler-Bell
 Prize in High School Computing. Over on his blog, <a href="https://twitter.com/alfredtwo">Alfred Thompson</a>
@@ -881,9 +1040,9 @@ couple of specific math teachers.</div>
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orge453c51" class="outline-2">
-<h2 id="orge453c51"></h2>
-<div class="outline-text-2" id="text-orge453c51">
+    <div id="outline-container-org1a8467e" class="outline-2">
+<h2 id="org1a8467e"></h2>
+<div class="outline-text-2" id="text-org1a8467e">
 <p>
 The other day I discovered <a href="https://github.com/abo-abo/auto-yasnippet">auto-yasnippet</a>, another great package by
 <a href="https://github.com/abo-abo">Oleh Krehel</a> or abo-abo.
@@ -951,9 +1110,9 @@ Check out the video:
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgaae4caa" class="outline-2">
-<h2 id="orgaae4caa"></h2>
-<div class="outline-text-2" id="text-orgaae4caa">
+    <div id="outline-container-orgf2eb3b3" class="outline-2">
+<h2 id="orgf2eb3b3"></h2>
+<div class="outline-text-2" id="text-orgf2eb3b3">
 <p>
 Next up from SIGCSE 2018 is John MacCormick's session on
 <a href="https://dl.acm.org/citation.cfm?id=3159557">Strategies for Baing the CS Theory Course on Non-decision Problems</a>
@@ -1037,9 +1196,9 @@ into CS 1 experiences.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org33b7b2c" class="outline-2">
-<h2 id="org33b7b2c"></h2>
-<div class="outline-text-2" id="text-org33b7b2c">
+    <div id="outline-container-org4e48fa5" class="outline-2">
+<h2 id="org4e48fa5"></h2>
+<div class="outline-text-2" id="text-org4e48fa5">
 <p>
 This is a good time to be an Emacs user. In addition to all of the
 great packages and tools being developed there seem to be more people
@@ -1082,9 +1241,9 @@ Here's what I've found so far:
 </div>
 </div>
 
-<div id="outline-container-org0580de9" class="outline-2">
-<h2 id="org0580de9">Company config (so far):</h2>
-<div class="outline-text-2" id="text-org0580de9">
+<div id="outline-container-org1172c40" class="outline-2">
+<h2 id="org1172c40">Company config (so far):</h2>
+<div class="outline-text-2" id="text-org1172c40">
 <div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">company</span>
 <span class="nv">:ensure</span> <span class="nv">t</span>
 <span class="nv">:config</span>
@@ -1122,9 +1281,9 @@ Here's what I've found so far:
 </div>
 </div>
 
-<div id="outline-container-org67bf776" class="outline-2">
-<h2 id="org67bf776">Autocomplete config</h2>
-<div class="outline-text-2" id="text-org67bf776">
+<div id="outline-container-orgd2107d4" class="outline-2">
+<h2 id="orgd2107d4">Autocomplete config</h2>
+<div class="outline-text-2" id="text-orgd2107d4">
 <div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">auto-complete</span>
 <span class="nv">:ensure</span> <span class="nv">t</span>
 <span class="nv">:init</span>
@@ -1157,9 +1316,9 @@ Here's what I've found so far:
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org2da317e" class="outline-2">
-<h2 id="org2da317e"></h2>
-<div class="outline-text-2" id="text-org2da317e">
+    <div id="outline-container-orgb4aede6" class="outline-2">
+<h2 id="orgb4aede6"></h2>
+<div class="outline-text-2" id="text-orgb4aede6">
 <p>
 After reading a couple of comments on my <a href="http://cestlaz.github.io/posts/sigcse2018-code-tracing/">last post</a> where I talked a
 bit about practitioners vs researchers I thought I'd expand and
@@ -1302,163 +1461,6 @@ magic bullet research and the one true way.
 
 <p>
 We all have a role to play in this game.
-</p>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sigcse2018-code-tracing/" class="u-url">Sigcse2018 - Code Tracing</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/sigcse2018-code-tracing/" rel="bookmark"><time class="published dt-published" datetime="2018-03-06T19:16:28-04:00" title="2018-03-06 19:16">2018-03-06 19:16</time></a></p>
-                <p class="commentline">            <a href="posts/sigcse2018-code-tracing/#disqus_thread" data-disqus-identifier="cache/posts/sigcse2018-code-tracing.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-org45688ea" class="outline-2">
-<h2 id="org45688ea"></h2>
-<div class="outline-text-2" id="text-org45688ea">
-<p>
-Next up from SIGCSE is <a href="https://dl.acm.org/citation.cfm?id=3159527">An Explicit Strategy to Scaffold Novice Program
-Tracing</a> by Benjamin Xie, Greg Nelson and Andy Ko, presented by
-Benjamin Xie. 
-</p>
-
-<p>
-The core of Xie's presentation was that tracing through code is a good
-thing and that spending a short amount of time teaching code
-tracing can lead to improved student outcomes.
-</p>
-
-<p>
-The idea is simple. Walk through the code as though you were the
-computer running your program. Xie suggested that students frequently
-struggle with code tracing. They have a hard time keeping track of
-variables, they try to work entirely in their head and being novices,
-they don't have any good way of representing overall program
-state. Personally, I also think there's a resistance these days to
-doing thing by hand. Xie noted that students can trace through their
-programs using online tools such as debuggers with steppers but doing
-so is a passive process. The student just clicks next over and over
-again. They aren't actively engaged in the code tracing. 
-</p>
-
-<p>
-That last point is a very important one. That passive clicking through
-a stepper seems similar to me to students ignoring compiler warnings
-or students using robust auto completion or snippets which I believe
-retards their learning of fundamental constructs.
-</p>
-
-<p>
-Xie shared a simple directed strategy to enable students to "embody
-the computer:"
-</p>
-
-<blockquote>
-<ol class="org-ol">
-<li>Read question: Understand what you are being asked to do. At the end of the problem instructions, write a check mark.</li>
-<li>Find where the program begins executing. At the start of that line, draw an arrow.</li>
-<li>Execute each line according to the rules of Java.
-<ol class="org-ol">
-<li>From the syntax, determine the rule for each part of the line.</li>
-<li>Follow the rules.</li>
-<li>Update memory table(s).</li>
-<li>Find the code for the next part.</li>
-<li>Repeat until the program terminates.</li>
-</ol>
-</li>
-</ol>
-<p>
-When tracing through the code, a participant creates a memory
-table with each method call…
-</p>
-</blockquote>
-
-<p>
-In additionn to the strategy, Xie produced a simple paper handout on
-which students could write down variable values and easily organize
-and store the computers state as they traced through a program.
-</p>
-
-<p>
-Xie noted that just a few minutes of instruction to give the kids a
-concrete method of code tracing can provide big postitive returns.
-</p>
-
-<p>
-The presentation was terrific and all true and I'm sure of tremendous
-value to anyone in the audience not familiar with code tracing but it
-was also the presentation that led me to compose this tweet:
-</p>
-
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">Loving the <a href="https://twitter.com/hashtag/sigcse2018?src=hash&amp;ref_src=twsrc%5Etfw">#sigcse2018</a> sessions but so many talks from higher Ed people remind me that while k12 can learn much about content from higher Ed, profs could learn so much from teachers about teaching</p>— Mike Zamansky (@zamansky) <a href="https://twitter.com/zamansky/status/967066702143000578?ref_src=twsrc%5Etfw">February 23, 2018</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><p>
-While Xie's presentation was terrific, code tracing and teachers
-showing explicit code tracing strategies to kids is nothing new. I
-remember being taught about this back in the 80s. We called it a "desk
-check" back then. While it's true that maybe this was explicitly
-taught because we were using punch cards and our programs were run
-overnight, it was also taught to me by math teachers with very
-limited CS knowledge. It's also a practice that appears to be pretty
-common among High School CS teachers even when their content
-knowledge is spotty. We also frequently employ things like state
-diagrams, cons cell diagrams, and other techniques to capture state
-and assist in program tracing. 
-</p>
-
-<p>
-This seemed to me to be a great example of something that in my
-experience is a not uncommon technique for high school CS teachers but
-maybe isn't used as widely at the college level (?). 
-</p>
-
-<p>
-The other thing this made me think about was the divide between
-practitioners and researchers. I think everyone knows which camp I'm
-in. Andy Ko, Benji Xie's advisor and co-author mentioned this in his
-<a href="https://medium.com/bits-and-behavior/sigcse-2018-trip-report-cs-for-all-57f1cf94155f">SIGCSE summary</a>. When I read the actual paper, it notes that they
-basically worked with 24 students and looked at the results. So,
-that's research. On the other hand, when I share a takeaway from
-looking at my 150 kids a year whom I met five days a week and look at
-this over decades, it's just an anecdote. Hmmmm. 
-</p>
-
-<p>
-One other side point is that in Andy's summary he notes his perception
-that SIGCSE is largely a teacher's conference as opposed to other
-conferences he goes to which he says are more researcher's
-conferences. I've only been to two SIGCSE's but my teacher friends tell
-me that they feel that SIGCSE is more of a researcher's conference and
-CSTA is more of a teacher's conference. I guess it's all a matter of
-perspective and frame of reference. Also possibly because I think of
-teacher as K12 teachers as teachers and professors as profressors be
-they research or teaching faculty.
-</p>
-
-<p>
-Finally ,given all of this, was the talk and paper of value?
-Tremendously so. I don't think it's a new technique and I think it's
-fairly well disseminated in the K12 space but that said, it's a good
-technique and it will be new to some. It's also hard to get students
-these days to meticulously do anything on paper and sharing a
-successful practice is always of great value. Finally, it left me
-thinking about extending online environments such as <a href="http://thonny.org/">Thonny</a> to support
-restricted code tracing where the students would have to enter the
-state of all changed variables in a given line before the stepper
-would move to the next one.
-</p>
-
-
-<p>
-I very much enjoyed this SIGCSE session. You can read the paper linked
-at the top if you have access to the ACM Digital Library. If not, you
-can read Benji Xi's medium post <a href="https://medium.com/bits-and-behavior/teaching-a-strategy-for-reading-code-fbc9f4044cab">here</a>. 
 </p>
 </div>
 </div>

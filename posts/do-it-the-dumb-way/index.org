@@ -1,8 +1,8 @@
 #+BEGIN_COMMENT
 .. title: Do It The Dumb Way
 .. slug: do-it-the-dumb-way
-.. date: 2018-03-24 19:24:09 UTC-04:00
-.. tags: draft, cs, pedagogy, software engineering
+.. date: 2018-03-30 08:24:09 UTC-04:00
+.. tags: cs, pedagogy, software engineering
 .. category: 
 .. link: 
 .. description: 
@@ -11,15 +11,13 @@
 
 * 
 
-There's so much I like about the shape drawing lessons I talked about
+There's so much to like in the shape drawing lessons I talked about
 in my [[http://cestlaz.github.io/posts/refactoring/][refactoring]] post that I thought I'd share a little more here.
 
-Arguably the most important things for a program to do is work. The
+It can be argued that the most important things for a program to do is work. The
 most clever, elegant, creative program is worthless if it doesn't
-work. 
-
-This is not only an issue with hot shot beginners but rather can also
-be an issue for beginners in general.
+produce the desired result. All too often, beginners and hot shot beginners in particular try to
+be too clever too early and get themselves into trouble. 
 
 When doing the shape drawing lessons the first couple of shape are
 pretty easy
