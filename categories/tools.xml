@@ -1,7 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/tools.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 21 Mar 2018 12:22:58 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Testing Part 2</title><link>http://cestlaz.github.io/posts/testing-part2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9eba993" class="outline-2"&gt;
-&lt;h2 id="org9eba993"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9eba993"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/tools.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 06 Apr 2018 00:18:28 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tools and Complexity</title><link>http://cestlaz.github.io/posts/tools-and-complexity/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org32ed0d7" class="outline-2"&gt;
+&lt;h2 id="org32ed0d7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org32ed0d7"&gt;
+&lt;p&gt;
+&lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; wrote about &lt;a href="http://blog.acthompson.net/2018/04/thoughts-on-where-cs-education-tools.html"&gt;CS education tools&lt;/a&gt; earlier today. I've
+also been meaning to write on the topic but from a different point of
+view.
+&lt;/p&gt;
+
+&lt;p&gt;
+I do my best to keep up with the latest and greatest in the CS world
+both on the academic side as well as the professional one. That's not
+really possible, but I do my best. When I have a small project to work
+on I'll some times use it as an excuse to play with some recent
+technology. Over December, I wanted to write an application viewer to
+use for company / student internship matching. I started by looking at
+&lt;a href="https://reactjs.org/"&gt;React&lt;/a&gt; but ended up using &lt;a href="https://vuejs.org/"&gt;Vue.js&lt;/a&gt; which I liked much more for a variety
+of reasons.
+&lt;/p&gt;
+
+&lt;p&gt;
+The viewer served it's purpose but I think it can be turned into a
+much more comprehensive student / employer internship platform. I
+tried to steal a few minutes over this past week's spring break to
+start a rewrite using another toolset, Clojure, Clojurescript and
+Reagent. I'm really liking the Clojure stack and using
+Emacs and Cider for the IDE is really blowing me away. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I've noticed is that for every new language of framework you also
+have to learn a whole set of ancillary tools.
+&lt;/p&gt;
+
+&lt;p&gt;
+It didn't used to be that way. Back in the day, things were much
+simpler. I remembering doing work at Goldman Sachs, it was as simple
+as typing something on the command line like &lt;code&gt;cc file1.c file2.c
+file3.c&lt;/code&gt;. I of course had to be cutting edge and use fancy modern
+tools like &lt;a href="https://www.gnu.org/software/make/"&gt;Make&lt;/a&gt;. What's more, the tools I used in industry were very
+similar to what I used in college. 
+&lt;/p&gt;
+
+&lt;p&gt;
+We now live in very different times.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you go to the getting started guides for React or Vue it's pretty easy to
+get hello world up and running but beyond that you start to fall in to
+the Javascript tooling hole. To start you need either &lt;b&gt;npm&lt;/b&gt; or &lt;b&gt;yarn&lt;/b&gt;
+just to manage packages and dependencies. Then you need a build system
+or bundler like &lt;b&gt;webpack&lt;/b&gt;, &lt;b&gt;browserify&lt;/b&gt;, or &lt;b&gt;parcel&lt;/b&gt; and that's not even
+considering older options like &lt;b&gt;gulp&lt;/b&gt; and &lt;b&gt;grunt&lt;/b&gt; and ancillary tools
+like &lt;b&gt;babel&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+A typical React or Vue project is going to need a &lt;a href="https://github.com/krasimir/react-webpack-starter/blob/master/package.json"&gt;project.json&lt;/a&gt; and
+&lt;a href="https://github.com/krasimir/react-webpack-starter/blob/master/webpack.config.js"&gt;webpack.config.js&lt;/a&gt; file and sometimes some other files as well. Check
+out the links. They're from a simple project template I found
+online. Far from simple.
+&lt;/p&gt;
+
+&lt;p&gt;
+When I was playing with Vue.js a couple of months ago, I ended up
+using Webpack to convert the source code into the final JS, take care
+of live-reloading, and in general manage the project. I still have no
+idea how most of it works. I don't know if it's just me but I'm very
+uncomfortable relying on tools that I really don't fully understand to
+build my systems. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The Clojure world is little better with Leiningen and Boot. If you
+don't believe me, try to make heads or tails of &lt;a href="https://github.com/bhauman/figwheel-template/blob/master/src/leiningen/new/figwheel/project.clj"&gt;this&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+While it's true that as a professional you'll likely use one set of
+tools on a day to day basis and you'll eventually get to know them
+that doesn't mean it's not a good idea to prepare kids for what's to
+come.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+On the K12 side we have drag and drop languages, specialized learning
+IDEs like BlueJ, simple cut down IDEs like Dr Racket and completely
+online environments like repl.it. All great starter tools that
+insulate beginners from the complexities to come. College's
+might get closer to the "real world" but just a tad. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Don't get me wrong, I like many of the tools used in K12
+classes and there's far too much complexity in the professional world to
+throw at beginners. If we look at a student's entire school
+career, classes are already so packed with material it would be hard to
+really prepare kids for the real world within their classes. You could
+take that tried and true teacher / professor technique of just
+requiring it and having the kids figure it out on their own but that's
+really just downright abusive.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't have an answer for this one. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I have my kids use tools like Git and GitHub early along with using
+testing frameworks and external libraries. I also try to move my
+students to a general purpose programmable platform like Emacs or
+Vim. I think these are sound practices but students will still have a
+big learning curve when they finally get to industry. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I really would love it to see the tooling become simpler and
+documentation better. &lt;a href="https://github.com/parcel-bundler/parcel"&gt;Parcel&lt;/a&gt;, a Javascript bundler is one of the newer
+kids on the block and is much simpler and cleaner than alternatives
+like Webpack. The new version of Clojure has it's own command line
+tool which is also simpler than the alternatives. Maybe we are already
+moving in the right direction and this entire rant will become moot in a couple of years.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>csed</category><category>education</category><category>tools</category><guid>http://cestlaz.github.io/posts/tools-and-complexity/</guid><pubDate>Thu, 05 Apr 2018 22:55:21 GMT</pubDate></item><item><title>Testing Part 2</title><link>http://cestlaz.github.io/posts/testing-part2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org362281f" class="outline-2"&gt;
+&lt;h2 id="org362281f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org362281f"&gt;
 &lt;p&gt;
 A few weeks ago I wrote about &lt;a href="https://cestlaz.github.io/posts/testing-testing/#.Wq7Ud3XwZhE"&gt;introducing testing&lt;/a&gt; in CS classes,
 specifically using a testing framework. In that post I talked about
@@ -114,9 +240,9 @@ teacher easier both in terms of understanding the students work and in
 terms of speed of evaluation. Sounds like a win to me.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-part2/</guid><pubDate>Sun, 18 Mar 2018 21:04:04 GMT</pubDate></item><item><title>Using Emacs 46 Auto Yasnippets</title><link>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org1a8467e" class="outline-2"&gt;
-&lt;h2 id="org1a8467e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1a8467e"&gt;
+&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-part2/</guid><pubDate>Sun, 18 Mar 2018 21:04:04 GMT</pubDate></item><item><title>Using Emacs 46 Auto Yasnippets</title><link>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge453c51" class="outline-2"&gt;
+&lt;h2 id="orge453c51"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge453c51"&gt;
 &lt;p&gt;
 The other day I discovered &lt;a href="https://github.com/abo-abo/auto-yasnippet"&gt;auto-yasnippet&lt;/a&gt;, another great package by
 &lt;a href="https://github.com/abo-abo"&gt;Oleh Krehel&lt;/a&gt; or abo-abo.
@@ -170,9 +296,9 @@ Check out the video:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/utrMabxgXbg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</guid><pubDate>Fri, 16 Mar 2018 00:05:36 GMT</pubDate></item><item><title>Using Emacs 45 - Company or Autocomplete</title><link>http://cestlaz.github.io/posts/using-emacs-45-company/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4e48fa5" class="outline-2"&gt;
-&lt;h2 id="org4e48fa5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4e48fa5"&gt;
+&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</guid><pubDate>Fri, 16 Mar 2018 00:05:36 GMT</pubDate></item><item><title>Using Emacs 45 - Company or Autocomplete</title><link>http://cestlaz.github.io/posts/using-emacs-45-company/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org33b7b2c" class="outline-2"&gt;
+&lt;h2 id="org33b7b2c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org33b7b2c"&gt;
 &lt;p&gt;
 This is a good time to be an Emacs user. In addition to all of the
 great packages and tools being developed there seem to be more people
@@ -215,9 +341,9 @@ Here's what I've found so far:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org1172c40" class="outline-2"&gt;
-&lt;h2 id="org1172c40"&gt;Company config (so far):&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1172c40"&gt;
+&lt;div id="outline-container-org0580de9" class="outline-2"&gt;
+&lt;h2 id="org0580de9"&gt;Company config (so far):&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0580de9"&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company&lt;/span&gt;
 &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
 &lt;span class="nv"&gt;:config&lt;/span&gt;
@@ -255,9 +381,9 @@ Here's what I've found so far:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgd2107d4" class="outline-2"&gt;
-&lt;h2 id="orgd2107d4"&gt;Autocomplete config&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd2107d4"&gt;
+&lt;div id="outline-container-org67bf776" class="outline-2"&gt;
+&lt;h2 id="org67bf776"&gt;Autocomplete config&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org67bf776"&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;auto-complete&lt;/span&gt;
 &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
 &lt;span class="nv"&gt;:init&lt;/span&gt;
@@ -276,9 +402,9 @@ Here's what I've found so far:
     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:ac-setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-45-company/</guid><pubDate>Sun, 11 Mar 2018 12:05:45 GMT</pubDate></item><item><title>Using Emacs 44 - An org-mode workflow for application processing</title><link>http://cestlaz.github.io/posts/using-emacs-44-pdf/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8ec625d" class="outline-2"&gt;
-&lt;h2 id="org8ec625d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8ec625d"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-45-company/</guid><pubDate>Sun, 11 Mar 2018 12:05:45 GMT</pubDate></item><item><title>Using Emacs 44 - An org-mode workflow for application processing</title><link>http://cestlaz.github.io/posts/using-emacs-44-pdf/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga34b33a" class="outline-2"&gt;
+&lt;h2 id="orga34b33a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga34b33a"&gt;
 &lt;p&gt;
 One of my titles at Hunter College is Director of the Daedalus CS
 Honors program. It's something like a Hunter specific, CS specific
@@ -336,9 +462,9 @@ Take a look and let me know what you think:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LFO2UbzbZhA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>pdf</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-44-pdf/</guid><pubDate>Sat, 03 Mar 2018 12:05:45 GMT</pubDate></item><item><title>Testing, Testing</title><link>http://cestlaz.github.io/posts/testing-testing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf25da60" class="outline-2"&gt;
-&lt;h2 id="orgf25da60"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf25da60"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>pdf</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-44-pdf/</guid><pubDate>Sat, 03 Mar 2018 12:05:45 GMT</pubDate></item><item><title>Testing, Testing</title><link>http://cestlaz.github.io/posts/testing-testing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga2d6f11" class="outline-2"&gt;
+&lt;h2 id="orga2d6f11"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga2d6f11"&gt;
 &lt;p&gt;
 With CS4All being the buzzword of the day we're paying a lot of
 attention to the fact that when we teach a CS class for all students,
@@ -525,9 +651,9 @@ on track to using test frameworks - something they'll need wherever
 they end up.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-testing/</guid><pubDate>Mon, 19 Feb 2018 12:26:16 GMT</pubDate></item><item><title>Using Emacs 40 - Atomic Chrome</title><link>http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org50706fc" class="outline-2"&gt;
-&lt;h2 id="org50706fc"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org50706fc"&gt;
+&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-testing/</guid><pubDate>Mon, 19 Feb 2018 12:26:16 GMT</pubDate></item><item><title>Using Emacs 40 - Atomic Chrome</title><link>http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org1432f66" class="outline-2"&gt;
+&lt;h2 id="org1432f66"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1432f66"&gt;
 &lt;p&gt;
 Thanks to everyone who voted for topics or commented with suggestions
 for videos. I'll try to get to them in the coming months.
@@ -540,9 +666,9 @@ browser extension that allows you to edit web form inputs with Emacs.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org3eef295" class="outline-2"&gt;
-&lt;h2 id="org3eef295"&gt;UPDATE&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3eef295"&gt;
+&lt;div id="outline-container-org1fd9c1a" class="outline-2"&gt;
+&lt;h2 id="org1fd9c1a"&gt;UPDATE&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1fd9c1a"&gt;
 &lt;p&gt;
 I forgot to mention that you can set a shortcut key, at least in chrome rather than
 clicking on the icon. This makes things much smoother.
@@ -564,9 +690,9 @@ Enjoy:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/wyPZws66Sic" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/</guid><pubDate>Wed, 31 Jan 2018 11:00:00 GMT</pubDate></item><item><title>Using Emacs 39 - mu4e</title><link>http://cestlaz.github.io/posts/using-emacs-39-mu4e/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgadbd9d3" class="outline-2"&gt;
-&lt;h2 id="orgadbd9d3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgadbd9d3"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/</guid><pubDate>Wed, 31 Jan 2018 11:00:00 GMT</pubDate></item><item><title>Using Emacs 39 - mu4e</title><link>http://cestlaz.github.io/posts/using-emacs-39-mu4e/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org5eebc40" class="outline-2"&gt;
+&lt;h2 id="org5eebc40"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5eebc40"&gt;
 &lt;p&gt;
 I generally use three email accounts. My personal one, work one, and
 one for my non-profit. For a couple of years, I've been using mu4e
@@ -606,9 +732,9 @@ thought of as three parts.
 &lt;/ol&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org91d0311" class="outline-3"&gt;
-&lt;h3 id="org91d0311"&gt;Part 1 Getting the email to your local machine using mbsync&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org91d0311"&gt;
+&lt;div id="outline-container-orga9335b9" class="outline-3"&gt;
+&lt;h3 id="orga9335b9"&gt;Part 1 Getting the email to your local machine using mbsync&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orga9335b9"&gt;
 &lt;p&gt;
 I found his terrific blog post by &lt;a href="https://twitter.com/robstewartUK"&gt;Rob Stewart&lt;/a&gt; on setting up &lt;a href="http://www.macs.hw.ac.uk/~rs46/posts/2014-01-13-mu4e-email-client.html"&gt;mbsync and
 mu4e&lt;/a&gt;. Read it over. I basically followed his directions for setting up
@@ -632,9 +758,9 @@ manually. I describe all of this in the video.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org2172028" class="outline-3"&gt;
-&lt;h3 id="org2172028"&gt;Part 2 - setting up mu.&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org2172028"&gt;
+&lt;div id="outline-container-orgbe8717f" class="outline-3"&gt;
+&lt;h3 id="orgbe8717f"&gt;Part 2 - setting up mu.&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgbe8717f"&gt;
 &lt;p&gt;
 To set up mu, clone it from git://github.com/djcb/mu.git and build
 it. You can find dependencies &lt;a href="https://www.djcbsoftware.nl/code/mu/mu4e/Installation.html"&gt;here&lt;/a&gt; and then follow the same sequence
@@ -658,9 +784,9 @@ you can look at the mu cheatsheet &lt;a href="http://www.djcbsoftware.nl/code/mu
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org8ae48a4" class="outline-3"&gt;
-&lt;h3 id="org8ae48a4"&gt;Setting up mu4e in emacs&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org8ae48a4"&gt;
+&lt;div id="outline-container-orgbcb229f" class="outline-3"&gt;
+&lt;h3 id="orgbcb229f"&gt;Setting up mu4e in emacs&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgbcb229f"&gt;
 &lt;p&gt;
 Finally, you can set up mu4e in emacs. Take a look at Rob's
 configuration in his post or my &lt;a href="https://github.com/zamansky/using-emacs/blob/master/mu4econfig-sample.el"&gt;sample&lt;/a&gt; config. You'll have to take a
@@ -686,9 +812,9 @@ Enjoy:
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/newRHXKm4H4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-39-mu4e/</guid><pubDate>Sun, 24 Dec 2017 13:00:00 GMT</pubDate></item><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9ef6fed" class="outline-2"&gt;
-&lt;h2 id="org9ef6fed"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9ef6fed"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-39-mu4e/</guid><pubDate>Sun, 24 Dec 2017 13:00:00 GMT</pubDate></item><item><title>Tools can shape how we think</title><link>http://cestlaz.github.io/posts/advent-2016-6-4/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7ab1556" class="outline-2"&gt;
+&lt;h2 id="org7ab1556"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7ab1556"&gt;
 &lt;p&gt;
 I've been having fun with this years &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; competition. So
 far, I've been able to keep up but with I expect that to change in
@@ -725,9 +851,9 @@ I decided to do this rant as a video. I hope you enjoy it:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x8cZgEogWNw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>Using Emacs 38 - dired</title><link>http://cestlaz.github.io/posts/using-emacs-38-dired/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge061962" class="outline-2"&gt;
-&lt;h2 id="orge061962"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge061962"&gt;
+&lt;/div&gt;</description><category>adventofcode</category><category>pedagogy</category><category>teaching</category><category>tools</category><guid>http://cestlaz.github.io/posts/advent-2016-6-4/</guid><pubDate>Wed, 06 Dec 2017 20:01:15 GMT</pubDate></item><item><title>Using Emacs 38 - dired</title><link>http://cestlaz.github.io/posts/using-emacs-38-dired/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8603a7a" class="outline-2"&gt;
+&lt;h2 id="org8603a7a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8603a7a"&gt;
 &lt;p&gt;
 The 38th installment of Using Emacs is about &lt;b&gt;&lt;b&gt;dired&lt;/b&gt;&lt;/b&gt;, Emacs' built
 in mode for navigating and working with directories.
@@ -799,35 +925,4 @@ how other people are using it.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Fg7HmmRYWy8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-38-dired/</guid><pubDate>Fri, 24 Nov 2017 13:00:00 GMT</pubDate></item><item><title>Using Emacs 37 - Treemacs file browser</title><link>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9bb7148" class="outline-2"&gt;
-&lt;h2 id="org9bb7148"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9bb7148"&gt;
-&lt;p&gt;
-I've been meaning to get back to making Emacs videos but I've been
-having trouble figuring out what to record.
-&lt;/p&gt;
-
-&lt;p&gt;
-People have asked for &lt;a href="https://github.com/magit/magit"&gt;Magit&lt;/a&gt; but I only use the basics and I think
-there are already some great videos on it out there. I'd also like to
-get more comfortable with DIRED mode and then do a video on it but I'm
-not there yet. I've also been looking into packages that manage
-workspaces like Eyebrowse and Persp-mode but neither are really doing
-it for my workflow.
-&lt;/p&gt;
-
-&lt;p&gt;
-This morning I saw an post on the &lt;a href="https://www.reddit.com/r/emacs/comments/7249jt/introducing_treemacs_a_modern_file_project/"&gt;Emacs subreddit&lt;/a&gt; about &lt;a href="https://github.com/Alexander-Miller/treemacs#treemacs---a-tree-layout-file-explorer-for-emacs"&gt;Treemacs&lt;/a&gt; - a
-sidebar file browser similar to what the Atom editor has. It's pretty
-slick. I particularly like the integration with &lt;a href="https://github.com/bbatsov/projectile"&gt;projectile&lt;/a&gt;. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I suspect I won't integrate a file browser side bar into my workflow -
-I've probably spent too many years with Emacs built in buffer commands
-but if like that type of interface, definitely check Treemacs out.
-&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ACg6RnVdw8k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-37-treemacs/</guid><pubDate>Sun, 24 Sep 2017 15:22:54 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-38-dired/</guid><pubDate>Fri, 24 Nov 2017 13:00:00 GMT</pubDate></item></channel></rss>

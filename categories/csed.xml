@@ -1,7 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>C'est la Z (Posts about csed)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/csed.xml" type="application/rss+xml" rel="self"></atom:link><language>en</language><lastBuildDate>Fri, 16 Feb 2018 13:07:14 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>NYC CS4All - This Is Not The CS We're Looking For</title><link>http://cestlaz.github.io/posts/this-is-not-the-cs-were-looking-for/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgcce11cb" class="outline-2"&gt;
-&lt;h2 id="orgcce11cb"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgcce11cb"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about csed)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/csed.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 06 Apr 2018 00:18:28 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tools and Complexity</title><link>http://cestlaz.github.io/posts/tools-and-complexity/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org32ed0d7" class="outline-2"&gt;
+&lt;h2 id="org32ed0d7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org32ed0d7"&gt;
+&lt;p&gt;
+&lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; wrote about &lt;a href="http://blog.acthompson.net/2018/04/thoughts-on-where-cs-education-tools.html"&gt;CS education tools&lt;/a&gt; earlier today. I've
+also been meaning to write on the topic but from a different point of
+view.
+&lt;/p&gt;
+
+&lt;p&gt;
+I do my best to keep up with the latest and greatest in the CS world
+both on the academic side as well as the professional one. That's not
+really possible, but I do my best. When I have a small project to work
+on I'll some times use it as an excuse to play with some recent
+technology. Over December, I wanted to write an application viewer to
+use for company / student internship matching. I started by looking at
+&lt;a href="https://reactjs.org/"&gt;React&lt;/a&gt; but ended up using &lt;a href="https://vuejs.org/"&gt;Vue.js&lt;/a&gt; which I liked much more for a variety
+of reasons.
+&lt;/p&gt;
+
+&lt;p&gt;
+The viewer served it's purpose but I think it can be turned into a
+much more comprehensive student / employer internship platform. I
+tried to steal a few minutes over this past week's spring break to
+start a rewrite using another toolset, Clojure, Clojurescript and
+Reagent. I'm really liking the Clojure stack and using
+Emacs and Cider for the IDE is really blowing me away. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I've noticed is that for every new language of framework you also
+have to learn a whole set of ancillary tools.
+&lt;/p&gt;
+
+&lt;p&gt;
+It didn't used to be that way. Back in the day, things were much
+simpler. I remembering doing work at Goldman Sachs, it was as simple
+as typing something on the command line like &lt;code&gt;cc file1.c file2.c
+file3.c&lt;/code&gt;. I of course had to be cutting edge and use fancy modern
+tools like &lt;a href="https://www.gnu.org/software/make/"&gt;Make&lt;/a&gt;. What's more, the tools I used in industry were very
+similar to what I used in college. 
+&lt;/p&gt;
+
+&lt;p&gt;
+We now live in very different times.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you go to the getting started guides for React or Vue it's pretty easy to
+get hello world up and running but beyond that you start to fall in to
+the Javascript tooling hole. To start you need either &lt;b&gt;npm&lt;/b&gt; or &lt;b&gt;yarn&lt;/b&gt;
+just to manage packages and dependencies. Then you need a build system
+or bundler like &lt;b&gt;webpack&lt;/b&gt;, &lt;b&gt;browserify&lt;/b&gt;, or &lt;b&gt;parcel&lt;/b&gt; and that's not even
+considering older options like &lt;b&gt;gulp&lt;/b&gt; and &lt;b&gt;grunt&lt;/b&gt; and ancillary tools
+like &lt;b&gt;babel&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+A typical React or Vue project is going to need a &lt;a href="https://github.com/krasimir/react-webpack-starter/blob/master/package.json"&gt;project.json&lt;/a&gt; and
+&lt;a href="https://github.com/krasimir/react-webpack-starter/blob/master/webpack.config.js"&gt;webpack.config.js&lt;/a&gt; file and sometimes some other files as well. Check
+out the links. They're from a simple project template I found
+online. Far from simple.
+&lt;/p&gt;
+
+&lt;p&gt;
+When I was playing with Vue.js a couple of months ago, I ended up
+using Webpack to convert the source code into the final JS, take care
+of live-reloading, and in general manage the project. I still have no
+idea how most of it works. I don't know if it's just me but I'm very
+uncomfortable relying on tools that I really don't fully understand to
+build my systems. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The Clojure world is little better with Leiningen and Boot. If you
+don't believe me, try to make heads or tails of &lt;a href="https://github.com/bhauman/figwheel-template/blob/master/src/leiningen/new/figwheel/project.clj"&gt;this&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+While it's true that as a professional you'll likely use one set of
+tools on a day to day basis and you'll eventually get to know them
+that doesn't mean it's not a good idea to prepare kids for what's to
+come.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+On the K12 side we have drag and drop languages, specialized learning
+IDEs like BlueJ, simple cut down IDEs like Dr Racket and completely
+online environments like repl.it. All great starter tools that
+insulate beginners from the complexities to come. College's
+might get closer to the "real world" but just a tad. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Don't get me wrong, I like many of the tools used in K12
+classes and there's far too much complexity in the professional world to
+throw at beginners. If we look at a student's entire school
+career, classes are already so packed with material it would be hard to
+really prepare kids for the real world within their classes. You could
+take that tried and true teacher / professor technique of just
+requiring it and having the kids figure it out on their own but that's
+really just downright abusive.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't have an answer for this one. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I have my kids use tools like Git and GitHub early along with using
+testing frameworks and external libraries. I also try to move my
+students to a general purpose programmable platform like Emacs or
+Vim. I think these are sound practices but students will still have a
+big learning curve when they finally get to industry. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I really would love it to see the tooling become simpler and
+documentation better. &lt;a href="https://github.com/parcel-bundler/parcel"&gt;Parcel&lt;/a&gt;, a Javascript bundler is one of the newer
+kids on the block and is much simpler and cleaner than alternatives
+like Webpack. The new version of Clojure has it's own command line
+tool which is also simpler than the alternatives. Maybe we are already
+moving in the right direction and this entire rant will become moot in a couple of years.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>csed</category><category>education</category><category>tools</category><guid>http://cestlaz.github.io/posts/tools-and-complexity/</guid><pubDate>Thu, 05 Apr 2018 22:55:21 GMT</pubDate></item><item><title>NYC CS4All - This Is Not The CS We're Looking For</title><link>http://cestlaz.github.io/posts/this-is-not-the-cs-were-looking-for/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org18df527" class="outline-2"&gt;
+&lt;h2 id="org18df527"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org18df527"&gt;
 &lt;p&gt;
 It's no secret that I'm something of an old curmudgeon in the K12 CS
 Education world and I've been critical of a number of initiatives and
@@ -149,9 +275,9 @@ CS4All in NY will be more about getting something into every classroom
 rather than something appropriate and good.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>csed</category><category>curriculum</category><guid>http://cestlaz.github.io/posts/this-is-not-the-cs-were-looking-for/</guid><pubDate>Fri, 29 Sep 2017 14:40:24 GMT</pubDate></item><item><title>The Cost of AP Exams</title><link>http://cestlaz.github.io/posts/cost-of-ap-exams/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd23649c" class="outline-2"&gt;
-&lt;h2 id="orgd23649c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd23649c"&gt;
+&lt;/div&gt;</description><category>csed</category><category>curriculum</category><guid>http://cestlaz.github.io/posts/this-is-not-the-cs-were-looking-for/</guid><pubDate>Fri, 29 Sep 2017 14:40:24 GMT</pubDate></item><item><title>The Cost of AP Exams</title><link>http://cestlaz.github.io/posts/cost-of-ap-exams/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org62263ae" class="outline-2"&gt;
+&lt;h2 id="org62263ae"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org62263ae"&gt;
 &lt;p&gt;
 Now that I'm back from vacation and summer's winding down I thought
 I'd start getting back to more classroom related posts. I still have a
@@ -239,9 +365,9 @@ At the end of the day it should be about students learning not about
 students taking high stakes exams.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>ap</category><category>csed</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/cost-of-ap-exams/</guid><pubDate>Thu, 17 Aug 2017 11:07:12 GMT</pubDate></item><item><title>A friendly reminder to use the right language when describing CS</title><link>http://cestlaz.github.io/posts/languages-or-cs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org190ca7e" class="outline-2"&gt;
-&lt;h2 id="org190ca7e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org190ca7e"&gt;
+&lt;/div&gt;</description><category>ap</category><category>csed</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/cost-of-ap-exams/</guid><pubDate>Thu, 17 Aug 2017 11:07:12 GMT</pubDate></item><item><title>A friendly reminder to use the right language when describing CS</title><link>http://cestlaz.github.io/posts/languages-or-cs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4b64f1c" class="outline-2"&gt;
+&lt;h2 id="org4b64f1c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4b64f1c"&gt;
 &lt;p&gt;
 I was part of this conversation the other day:
 &lt;/p&gt;
@@ -316,9 +442,9 @@ language so that other educators and policy makers don't get the wrong
 idea.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>csed</category><category>education</category><guid>http://cestlaz.github.io/posts/languages-or-cs/</guid><pubDate>Tue, 11 Jul 2017 01:17:47 GMT</pubDate></item><item><title>A Plea to AP teachers- don't measure yourself by your scores</title><link>http://cestlaz.github.io/posts/teachers-you-arent-your-test-scores/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org0a0263a" class="outline-2"&gt;
-&lt;h2 id="org0a0263a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0a0263a"&gt;
+&lt;/div&gt;</description><category>cs</category><category>csed</category><category>education</category><guid>http://cestlaz.github.io/posts/languages-or-cs/</guid><pubDate>Tue, 11 Jul 2017 01:17:47 GMT</pubDate></item><item><title>A Plea to AP teachers- don't measure yourself by your scores</title><link>http://cestlaz.github.io/posts/teachers-you-arent-your-test-scores/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge7f3d6e" class="outline-2"&gt;
+&lt;h2 id="orge7f3d6e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge7f3d6e"&gt;
 &lt;p&gt;
 AP scores just came out. As usual, I see the posts and take part in
 conversations where teachers talk about their results. Some are happy
@@ -404,9 +530,9 @@ either. Certainly don't use them to drive what and how you teach. Let
 your students and your conscience be your guide.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>ap</category><category>apcs</category><category>csed</category><category>education</category><guid>http://cestlaz.github.io/posts/teachers-you-arent-your-test-scores/</guid><pubDate>Thu, 06 Jul 2017 21:22:10 GMT</pubDate></item><item><title>SIGCSE 2017 - Recap</title><link>http://cestlaz.github.io/posts/sigcse-2017-recap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org07016a6" class="outline-2"&gt;
-&lt;h2 id="org07016a6"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org07016a6"&gt;
+&lt;/div&gt;</description><category>ap</category><category>apcs</category><category>csed</category><category>education</category><guid>http://cestlaz.github.io/posts/teachers-you-arent-your-test-scores/</guid><pubDate>Thu, 06 Jul 2017 21:22:10 GMT</pubDate></item><item><title>SIGCSE 2017 - Recap</title><link>http://cestlaz.github.io/posts/sigcse-2017-recap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc851197" class="outline-2"&gt;
+&lt;h2 id="orgc851197"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc851197"&gt;
 &lt;p&gt;
 As a high school teacher, I was never able to attend SIGCSE, the
 conference of the ACM's Special Interest Group on Computer Science
@@ -440,9 +566,9 @@ Today, some overall thoughts.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orga462fb7" class="outline-2"&gt;
-&lt;h2 id="orga462fb7"&gt;The good&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga462fb7"&gt;
+&lt;div id="outline-container-org0bf9b8d" class="outline-2"&gt;
+&lt;h2 id="org0bf9b8d"&gt;The good&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0bf9b8d"&gt;
 &lt;p&gt;
 As with many conferences, the "hallway track" along with receptions
 sponsored by &lt;a href="https://csnyc.org/our-work/cs4all"&gt;the CS4All consurtium&lt;/a&gt;, &lt;a href="http://tealsk12.org"&gt;TEALS&lt;/a&gt;, &lt;a href="http://code.org"&gt;Code.org&lt;/a&gt; were terrific. I
@@ -475,9 +601,9 @@ probability and statistics in CS Ed, and aspects of  &lt;a href="http://dl.acm.o
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orge836d81" class="outline-2"&gt;
-&lt;h2 id="orge836d81"&gt;The bad&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge836d81"&gt;
+&lt;div id="outline-container-org0b9aad5" class="outline-2"&gt;
+&lt;h2 id="org0b9aad5"&gt;The bad&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0b9aad5"&gt;
 &lt;p&gt;
 The biggest downside to me was that I found very little value added in
 a number of the paper sessions over just reading the papers. Part of
@@ -493,9 +619,9 @@ or the book to his class.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org8eb7fa6" class="outline-2"&gt;
-&lt;h2 id="org8eb7fa6"&gt;Other thoughts&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8eb7fa6"&gt;
+&lt;div id="outline-container-orgf37ed0d" class="outline-2"&gt;
+&lt;h2 id="orgf37ed0d"&gt;Other thoughts&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf37ed0d"&gt;
 &lt;p&gt;
 One paper presentation I very much liked was &lt;a href="http://dl.acm.org/citation.cfm?id=3017701&amp;amp;CFID=738971273&amp;amp;CFTOKEN=22106692"&gt;Exam Wrappers: Not a
 Silver Bullet&lt;/a&gt; presented by &lt;a href="https://michellecraig.github.io/"&gt;Michelle Craig&lt;/a&gt; and &lt;a href="http://pages.cpsc.ucalgary.ca/~bdstephe/"&gt;Ben Stephenson&lt;/a&gt;. I
@@ -842,4 +968,4 @@ class on Friday but I'll be back at work so it looks like no class
 after tomorrow until Monday.
 
 &lt;/p&gt;&lt;p&gt;
-Comments?&lt;/p&gt;&lt;/dl&gt;</description><category>community</category><category>csed</category><guid>http://cestlaz.github.io/posts/2012-10-31-sandy-bridge.html/</guid><pubDate>Wed, 31 Oct 2012 04:00:00 GMT</pubDate></item><item><title>Anyone can cook</title><link>http://cestlaz.github.io/posts/2012-04-15-anyone-can-cook.html/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div style="text-align: center;"&gt;&lt;span style="font-size: x-large;"&gt;Anyone can cook&lt;/span&gt; - Chef Gusteau&lt;/div&gt;&lt;br&gt;These days the rage seems anyone can code.&lt;br&gt;&lt;br&gt;On line attempts to teach coding and computing abound.&lt;br&gt;&lt;br&gt;We've got Udacity and Coursera trying to bring college level academic offerings to the masses on one extreme and more down to earth "learn to code" efforts with Codecademy getting the most press.&lt;br&gt;&lt;br&gt;While I applaud any effort to make knowledge more accessible, there are a lot of unanswered questions as to the effectiveness of these latest attempts. Recent posts by &lt;a href="http://blog.mrmeyer.com/?p=13213"&gt;Dan Meyer&lt;/a&gt; and &lt;a href="http://hackeducation.com/2012/04/14/udacity-cs101/"&gt;Audrey Watters&lt;/a&gt; have started to raise questions and in my opinion some of the hype has worn off.&lt;br&gt;&lt;br&gt;At some point, I plan to talk at length about the Udacity and Coursera offerings as well as attempts to increase on line course offerings at the high school levels. I'll talk about the difficulties and dangers that lie ahead.&lt;br&gt;&lt;br&gt;Today, I'd like to talk about the more vocational offerings such as what Codecademy is doing.&lt;br&gt;&lt;br&gt;The premise seems to be that anyone can code and that everyone should code. I've been thinking about this for a while and I keep coming back to the question, "what's the endgame?"&lt;br&gt;&lt;br&gt;Teaching Javascript, HTML and the like narrowly focuses on creating web pages. Even if we forget about difficulties of on line learning that include lack of an interactive feedback loop, lack of follow up,  a narrow curriculum, and the fact that programming beyond the basics is not easy, what's the goal? While I find making an interactive web site cool, I don't know how much it benefits the masses.&lt;br&gt;&lt;br&gt;One could argue that the mental exercise of programming is a benefit and having a better understanding of how a computer works is a good thing. I'd agree, but what we really could benefit from is a different paradigm in terms of how we approach using computers. A new approach would make even rudimentary scripting skills of greater value to all.&lt;br&gt;&lt;br&gt;Most of us use computers as program loaders. That is, we sit down, load our word processor, edit something, and exit the word processor. Load our web browser, search the web, exit, load the next program, do something, etc. We might have multiple programs up at the same time, but we use them in isolation.&lt;br&gt;&lt;br&gt;This is how most people's computing experience has evolved.&lt;br&gt;&lt;br&gt;With this mindset, I'm not sure how useful coding will be for the masses. People might benefit from some rudimentary scripting a la Excel macros or Google App Scripts, but power users already do this. I don't think that the ability to program within the constraints of scripting individual applications will be a game changer.  To make rudimentary programming skills valuable we must use computers in a way that allows us to use simple techniques to tie together powerful applications.&lt;br&gt;&lt;br&gt;A few years ago, right before our Christmas break, I stopped over in the Math Chairman's office to wish him a good holiday. Danny was hard at work. He was frantically trying to change the math web site before he left.&lt;br&gt;&lt;br&gt;The math site was a mess. It consisted of a few dozen loosely arranged folders each with multiple sub folders. Danny was looking in each folder for old sample final exams, each saved as a Tiff file. He would load the file into Photoshop, convert it to another format and save it. He would then change the corresponding HTML file to reference the new file. He had been at it for hours with no end in sight. I said "Danny, I've got this, go home."&lt;br&gt;&lt;br&gt;I went to my office, wrote a small shell script, maybe 10 lines, hit enter, got on my bike and rode home. When I got there, the job was done.&lt;br&gt;&lt;br&gt;Now Danny's a really smart guy and he's technically savvy. The difference is that I was taught to try to tie programs together through the command line while he was taught to do things in the Windows/Mac way of loading one program and using it in isolation. I used a simple shell script to tie together a number of powerful Linux applications (find, imagemagick, sed) rather than pointing and clicking over and over again.&lt;br&gt;&lt;br&gt;I've seen this "program loader" mind set time and time again and in surprising places. My good friend and colleague &lt;a href="http://garyrubinstein.teachforus.org/"&gt;Gary Rubenstein&lt;/a&gt; has done a lot of work debunking the "educational reformers" that are currently in power. Gary had been using Excel to do all his analysis until I pointed out that he could download his data and use simple Python scripts to greater effect. Why was I surprised that Gary wasn't already doing this? Well, in addition to being an amazing math teacher, Gary holds a Masters degree in Computer Science and had worked as a professional programmer in a prior life.&lt;br&gt;&lt;br&gt;Of course, our life isn't made any easier with closed file formats and vendors that try to isolate their data, but if we could re-educate people to use computers across applications, that would make rudimentary programming useful to all and then indeed there would be a reason for everyone to code.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width="1" height="1" src="https://blogger.googleusercontent.com/tracker/468689896075458340-448488222916899193?l=cestlaz.blogspot.com" alt=""&gt;&lt;/div&gt;</description><category>csed</category><guid>http://cestlaz.github.io/posts/2012-04-15-anyone-can-cook.html/</guid><pubDate>Sun, 15 Apr 2012 04:00:00 GMT</pubDate></item></channel></rss>
+Comments?&lt;/p&gt;&lt;/dl&gt;</description><category>community</category><category>csed</category><guid>http://cestlaz.github.io/posts/2012-10-31-sandy-bridge.html/</guid><pubDate>Wed, 31 Oct 2012 04:00:00 GMT</pubDate></item></channel></rss>

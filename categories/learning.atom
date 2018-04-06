@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about learning</title>
   <id>http://cestlaz.github.io/categories/learning.atom</id>
-  <updated>2018-02-16T13:07:16Z</updated>
+  <updated>2018-02-12T19:18:16Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -19,9 +19,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/"/>
-    <summary type="html">&lt;div id="outline-container-org50706fc" class="outline-2"&gt;
-&lt;h2 id="org50706fc"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org50706fc"&gt;
+    <summary type="html">&lt;div id="outline-container-org1432f66" class="outline-2"&gt;
+&lt;h2 id="org1432f66"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1432f66"&gt;
 &lt;p&gt;
 Thanks to everyone who voted for topics or commented with suggestions
 for videos. I'll try to get to them in the coming months.
@@ -34,9 +34,9 @@ browser extension that allows you to edit web form inputs with Emacs.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org3eef295" class="outline-2"&gt;
-&lt;h2 id="org3eef295"&gt;UPDATE&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3eef295"&gt;
+&lt;div id="outline-container-org1fd9c1a" class="outline-2"&gt;
+&lt;h2 id="org1fd9c1a"&gt;UPDATE&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1fd9c1a"&gt;
 &lt;p&gt;
 I forgot to mention that you can set a shortcut key, at least in chrome rather than
 clicking on the icon. This makes things much smoother.
@@ -72,9 +72,9 @@ Enjoy:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-39-mu4e/"/>
-    <summary type="html">&lt;div id="outline-container-orgadbd9d3" class="outline-2"&gt;
-&lt;h2 id="orgadbd9d3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgadbd9d3"&gt;
+    <summary type="html">&lt;div id="outline-container-org5eebc40" class="outline-2"&gt;
+&lt;h2 id="org5eebc40"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5eebc40"&gt;
 &lt;p&gt;
 I generally use three email accounts. My personal one, work one, and
 one for my non-profit. For a couple of years, I've been using mu4e
@@ -114,9 +114,9 @@ thought of as three parts.
 &lt;/ol&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org91d0311" class="outline-3"&gt;
-&lt;h3 id="org91d0311"&gt;Part 1 Getting the email to your local machine using mbsync&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org91d0311"&gt;
+&lt;div id="outline-container-orga9335b9" class="outline-3"&gt;
+&lt;h3 id="orga9335b9"&gt;Part 1 Getting the email to your local machine using mbsync&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orga9335b9"&gt;
 &lt;p&gt;
 I found his terrific blog post by &lt;a href="https://twitter.com/robstewartUK"&gt;Rob Stewart&lt;/a&gt; on setting up &lt;a href="http://www.macs.hw.ac.uk/~rs46/posts/2014-01-13-mu4e-email-client.html"&gt;mbsync and
 mu4e&lt;/a&gt;. Read it over. I basically followed his directions for setting up
@@ -140,9 +140,9 @@ manually. I describe all of this in the video.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org2172028" class="outline-3"&gt;
-&lt;h3 id="org2172028"&gt;Part 2 - setting up mu.&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org2172028"&gt;
+&lt;div id="outline-container-orgbe8717f" class="outline-3"&gt;
+&lt;h3 id="orgbe8717f"&gt;Part 2 - setting up mu.&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgbe8717f"&gt;
 &lt;p&gt;
 To set up mu, clone it from git://github.com/djcb/mu.git and build
 it. You can find dependencies &lt;a href="https://www.djcbsoftware.nl/code/mu/mu4e/Installation.html"&gt;here&lt;/a&gt; and then follow the same sequence
@@ -166,9 +166,9 @@ you can look at the mu cheatsheet &lt;a href="http://www.djcbsoftware.nl/code/mu
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org8ae48a4" class="outline-3"&gt;
-&lt;h3 id="org8ae48a4"&gt;Setting up mu4e in emacs&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org8ae48a4"&gt;
+&lt;div id="outline-container-orgbcb229f" class="outline-3"&gt;
+&lt;h3 id="orgbcb229f"&gt;Setting up mu4e in emacs&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgbcb229f"&gt;
 &lt;p&gt;
 Finally, you can set up mu4e in emacs. Take a look at Rob's
 configuration in his post or my &lt;a href="https://github.com/zamansky/using-emacs/blob/master/mu4econfig-sample.el"&gt;sample&lt;/a&gt; config. You'll have to take a
@@ -208,9 +208,9 @@ Enjoy:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-38-dired/"/>
-    <summary type="html">&lt;div id="outline-container-orge061962" class="outline-2"&gt;
-&lt;h2 id="orge061962"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge061962"&gt;
+    <summary type="html">&lt;div id="outline-container-org8603a7a" class="outline-2"&gt;
+&lt;h2 id="org8603a7a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8603a7a"&gt;
 &lt;p&gt;
 The 38th installment of Using Emacs is about &lt;b&gt;&lt;b&gt;dired&lt;/b&gt;&lt;/b&gt;, Emacs' built
 in mode for navigating and working with directories.
@@ -296,9 +296,9 @@ how other people are using it.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-37-treemacs/"/>
-    <summary type="html">&lt;div id="outline-container-org9bb7148" class="outline-2"&gt;
-&lt;h2 id="org9bb7148"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9bb7148"&gt;
+    <summary type="html">&lt;div id="outline-container-org62a4e66" class="outline-2"&gt;
+&lt;h2 id="org62a4e66"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org62a4e66"&gt;
 &lt;p&gt;
 I've been meaning to get back to making Emacs videos but I've been
 having trouble figuring out what to record.
@@ -341,9 +341,9 @@ but if like that type of interface, definitely check Treemacs out.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/"/>
-    <summary type="html">&lt;div id="outline-container-org3cd510b" class="outline-2"&gt;
-&lt;h2 id="org3cd510b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3cd510b"&gt;
+    <summary type="html">&lt;div id="outline-container-org222f311" class="outline-2"&gt;
+&lt;h2 id="org222f311"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org222f311"&gt;
 &lt;p&gt;
 I've been working on a vue.js project this summer. During the school
 year I really can't dive into code so it's been fun.
@@ -431,9 +431,9 @@ you want.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-35-blogging/"/>
-    <summary type="html">&lt;div id="outline-container-org35f7326" class="outline-2"&gt;
-&lt;h2 id="org35f7326"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org35f7326"&gt;
+    <summary type="html">&lt;div id="outline-container-org9c22ba7" class="outline-2"&gt;
+&lt;h2 id="org9c22ba7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9c22ba7"&gt;
 &lt;p&gt;
 Very little new Emacs in today's episode of Using Emacs. The video
 shows my old blogging workflow and what I'm playing with now.

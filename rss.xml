@@ -1,7 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 01 Apr 2018 13:44:58 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Passover April 1 And Indiana Jones</title><link>http://cestlaz.github.io/posts/passover-april-1-and-indiana-jones/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org0afaee9" class="outline-2"&gt;
-&lt;h2 id="org0afaee9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0afaee9"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 06 Apr 2018 00:18:28 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Tools and Complexity</title><link>http://cestlaz.github.io/posts/tools-and-complexity/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org32ed0d7" class="outline-2"&gt;
+&lt;h2 id="org32ed0d7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org32ed0d7"&gt;
+&lt;p&gt;
+&lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; wrote about &lt;a href="http://blog.acthompson.net/2018/04/thoughts-on-where-cs-education-tools.html"&gt;CS education tools&lt;/a&gt; earlier today. I've
+also been meaning to write on the topic but from a different point of
+view.
+&lt;/p&gt;
+
+&lt;p&gt;
+I do my best to keep up with the latest and greatest in the CS world
+both on the academic side as well as the professional one. That's not
+really possible, but I do my best. When I have a small project to work
+on I'll some times use it as an excuse to play with some recent
+technology. Over December, I wanted to write an application viewer to
+use for company / student internship matching. I started by looking at
+&lt;a href="https://reactjs.org/"&gt;React&lt;/a&gt; but ended up using &lt;a href="https://vuejs.org/"&gt;Vue.js&lt;/a&gt; which I liked much more for a variety
+of reasons.
+&lt;/p&gt;
+
+&lt;p&gt;
+The viewer served it's purpose but I think it can be turned into a
+much more comprehensive student / employer internship platform. I
+tried to steal a few minutes over this past week's spring break to
+start a rewrite using another toolset, Clojure, Clojurescript and
+Reagent. I'm really liking the Clojure stack and using
+Emacs and Cider for the IDE is really blowing me away. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I've noticed is that for every new language of framework you also
+have to learn a whole set of ancillary tools.
+&lt;/p&gt;
+
+&lt;p&gt;
+It didn't used to be that way. Back in the day, things were much
+simpler. I remembering doing work at Goldman Sachs, it was as simple
+as typing something on the command line like &lt;code&gt;cc file1.c file2.c
+file3.c&lt;/code&gt;. I of course had to be cutting edge and use fancy modern
+tools like &lt;a href="https://www.gnu.org/software/make/"&gt;Make&lt;/a&gt;. What's more, the tools I used in industry were very
+similar to what I used in college. 
+&lt;/p&gt;
+
+&lt;p&gt;
+We now live in very different times.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you go to the getting started guides for React or Vue it's pretty easy to
+get hello world up and running but beyond that you start to fall in to
+the Javascript tooling hole. To start you need either &lt;b&gt;npm&lt;/b&gt; or &lt;b&gt;yarn&lt;/b&gt;
+just to manage packages and dependencies. Then you need a build system
+or bundler like &lt;b&gt;webpack&lt;/b&gt;, &lt;b&gt;browserify&lt;/b&gt;, or &lt;b&gt;parcel&lt;/b&gt; and that's not even
+considering older options like &lt;b&gt;gulp&lt;/b&gt; and &lt;b&gt;grunt&lt;/b&gt; and ancillary tools
+like &lt;b&gt;babel&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+A typical React or Vue project is going to need a &lt;a href="https://github.com/krasimir/react-webpack-starter/blob/master/package.json"&gt;project.json&lt;/a&gt; and
+&lt;a href="https://github.com/krasimir/react-webpack-starter/blob/master/webpack.config.js"&gt;webpack.config.js&lt;/a&gt; file and sometimes some other files as well. Check
+out the links. They're from a simple project template I found
+online. Far from simple.
+&lt;/p&gt;
+
+&lt;p&gt;
+When I was playing with Vue.js a couple of months ago, I ended up
+using Webpack to convert the source code into the final JS, take care
+of live-reloading, and in general manage the project. I still have no
+idea how most of it works. I don't know if it's just me but I'm very
+uncomfortable relying on tools that I really don't fully understand to
+build my systems. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The Clojure world is little better with Leiningen and Boot. If you
+don't believe me, try to make heads or tails of &lt;a href="https://github.com/bhauman/figwheel-template/blob/master/src/leiningen/new/figwheel/project.clj"&gt;this&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+While it's true that as a professional you'll likely use one set of
+tools on a day to day basis and you'll eventually get to know them
+that doesn't mean it's not a good idea to prepare kids for what's to
+come.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+On the K12 side we have drag and drop languages, specialized learning
+IDEs like BlueJ, simple cut down IDEs like Dr Racket and completely
+online environments like repl.it. All great starter tools that
+insulate beginners from the complexities to come. College's
+might get closer to the "real world" but just a tad. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Don't get me wrong, I like many of the tools used in K12
+classes and there's far too much complexity in the professional world to
+throw at beginners. If we look at a student's entire school
+career, classes are already so packed with material it would be hard to
+really prepare kids for the real world within their classes. You could
+take that tried and true teacher / professor technique of just
+requiring it and having the kids figure it out on their own but that's
+really just downright abusive.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't have an answer for this one. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I have my kids use tools like Git and GitHub early along with using
+testing frameworks and external libraries. I also try to move my
+students to a general purpose programmable platform like Emacs or
+Vim. I think these are sound practices but students will still have a
+big learning curve when they finally get to industry. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I really would love it to see the tooling become simpler and
+documentation better. &lt;a href="https://github.com/parcel-bundler/parcel"&gt;Parcel&lt;/a&gt;, a Javascript bundler is one of the newer
+kids on the block and is much simpler and cleaner than alternatives
+like Webpack. The new version of Clojure has it's own command line
+tool which is also simpler than the alternatives. Maybe we are already
+moving in the right direction and this entire rant will become moot in a couple of years.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>csed</category><category>education</category><category>tools</category><guid>http://cestlaz.github.io/posts/tools-and-complexity/</guid><pubDate>Thu, 05 Apr 2018 22:55:21 GMT</pubDate></item><item><title>Passover April 1 And Indiana Jones</title><link>http://cestlaz.github.io/posts/passover-april-1-and-indiana-jones/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6fc24cc" class="outline-2"&gt;
+&lt;h2 id="org6fc24cc"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6fc24cc"&gt;
 &lt;p&gt;
 I've never done much in terms of the April Fools thing but frequently
 enjoy other peoples shenanigans.
@@ -16,9 +142,9 @@ that Passover staple, Echad Mi Yodea.
 Enjoy: &lt;a href="http://seccorecit.blogspot.com/2018/04/a-historically-informed-echad-mi-yodea.html"&gt;A Historically Informed Echad Mi Yodea&lt;/a&gt;.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/passover-april-1-and-indiana-jones/</guid><pubDate>Sun, 01 Apr 2018 13:17:21 GMT</pubDate></item><item><title>Do It The Dumb Way</title><link>http://cestlaz.github.io/posts/do-it-the-dumb-way/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org50339e5" class="outline-2"&gt;
-&lt;h2 id="org50339e5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org50339e5"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/passover-april-1-and-indiana-jones/</guid><pubDate>Sun, 01 Apr 2018 13:17:21 GMT</pubDate></item><item><title>Do It The Dumb Way</title><link>http://cestlaz.github.io/posts/do-it-the-dumb-way/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgbdd5f6c" class="outline-2"&gt;
+&lt;h2 id="orgbdd5f6c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgbdd5f6c"&gt;
 &lt;p&gt;
 There's so much to like in the shape drawing lessons I talked about
 in my &lt;a href="http://cestlaz.github.io/posts/refactoring/"&gt;refactoring&lt;/a&gt; post that I thought I'd share a little more here.
@@ -161,9 +287,9 @@ but I think you get the idea.
 The best solution is one that works and Sometimes the "dumb" approach is the best approach.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>software engineering</category><guid>http://cestlaz.github.io/posts/do-it-the-dumb-way/</guid><pubDate>Fri, 30 Mar 2018 12:24:09 GMT</pubDate></item><item><title>Ethics In CS Education</title><link>http://cestlaz.github.io/posts/ethics-in-cs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org13c9eaa" class="outline-2"&gt;
-&lt;h2 id="org13c9eaa"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org13c9eaa"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>software engineering</category><guid>http://cestlaz.github.io/posts/do-it-the-dumb-way/</guid><pubDate>Fri, 30 Mar 2018 12:24:09 GMT</pubDate></item><item><title>Ethics In CS Education</title><link>http://cestlaz.github.io/posts/ethics-in-cs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org33777a9" class="outline-2"&gt;
+&lt;h2 id="org33777a9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org33777a9"&gt;
 &lt;p&gt;
 I've been meaning to write about ethics in CS education for a
 while. Probably since I saw &lt;a href="https://www.nytimes.com/2018/02/12/business/computer-science-ethics-courses.html?smid=fb-share"&gt;this article&lt;/a&gt; in the NY Times but got sidetracked.
@@ -261,9 +387,9 @@ sure that pre service CS teacher preparation develops to attract and
 create great teachers for which ethical CS is part of their core. 
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>ethicalCS</category><category>preservicexs</category><category>teachers</category><guid>http://cestlaz.github.io/posts/ethics-in-cs/</guid><pubDate>Sun, 25 Mar 2018 20:59:36 GMT</pubDate></item><item><title>Sigcse2018 Proof</title><link>http://cestlaz.github.io/posts/sigcse2018-proof/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgb62254a" class="outline-2"&gt;
-&lt;h2 id="orgb62254a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb62254a"&gt;
+&lt;/div&gt;</description><category>education</category><category>ethicalCS</category><category>preservicexs</category><category>teachers</category><guid>http://cestlaz.github.io/posts/ethics-in-cs/</guid><pubDate>Sun, 25 Mar 2018 20:59:36 GMT</pubDate></item><item><title>Sigcse2018 Proof</title><link>http://cestlaz.github.io/posts/sigcse2018-proof/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org0bf6c52" class="outline-2"&gt;
+&lt;h2 id="org0bf6c52"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0bf6c52"&gt;
 &lt;p&gt;
 Next up from SIGCSE2018 is &lt;a href="https://dl.acm.org/citation.cfm?id=3159609"&gt;Connect the Dots to Prove It&lt;/a&gt; presented by
 Mark McCartin-Lim. This paper was presented during the same papers
@@ -330,9 +456,9 @@ school and supporting them in those early years can go a long way to
 alleviate problems that only surface at the college level.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/sigcse2018-proof/</guid><pubDate>Fri, 23 Mar 2018 20:24:21 GMT</pubDate></item><item><title>Refactoring</title><link>http://cestlaz.github.io/posts/refactoring/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge6d16aa" class="outline-2"&gt;
-&lt;h2 id="orge6d16aa"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge6d16aa"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/sigcse2018-proof/</guid><pubDate>Fri, 23 Mar 2018 20:24:21 GMT</pubDate></item><item><title>Refactoring</title><link>http://cestlaz.github.io/posts/refactoring/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org955b391" class="outline-2"&gt;
+&lt;h2 id="org955b391"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org955b391"&gt;
 &lt;p&gt;
 One of my laments on teaching computer science is that students are
 rarely taught and given the chance to develop  good programming
@@ -572,9 +698,9 @@ talking about structuring programs and refactoring. Where else can we
 inject good programming practices in ways that make sense early on?
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/refactoring/</guid><pubDate>Wed, 21 Mar 2018 12:11:38 GMT</pubDate></item><item><title>Testing Part 2</title><link>http://cestlaz.github.io/posts/testing-part2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9eba993" class="outline-2"&gt;
-&lt;h2 id="org9eba993"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9eba993"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/refactoring/</guid><pubDate>Wed, 21 Mar 2018 12:11:38 GMT</pubDate></item><item><title>Testing Part 2</title><link>http://cestlaz.github.io/posts/testing-part2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org362281f" class="outline-2"&gt;
+&lt;h2 id="org362281f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org362281f"&gt;
 &lt;p&gt;
 A few weeks ago I wrote about &lt;a href="https://cestlaz.github.io/posts/testing-testing/#.Wq7Ud3XwZhE"&gt;introducing testing&lt;/a&gt; in CS classes,
 specifically using a testing framework. In that post I talked about
@@ -687,9 +813,9 @@ teacher easier both in terms of understanding the students work and in
 terms of speed of evaluation. Sounds like a win to me.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-part2/</guid><pubDate>Sun, 18 Mar 2018 21:04:04 GMT</pubDate></item><item><title>On Prestigious Competitons And High Schools</title><link>http://cestlaz.github.io/posts/on-prestigious-competitons-and-high-schools/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8b98398" class="outline-2"&gt;
-&lt;h2 id="org8b98398"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8b98398"&gt;
+&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-part2/</guid><pubDate>Sun, 18 Mar 2018 21:04:04 GMT</pubDate></item><item><title>On Prestigious Competitons And High Schools</title><link>http://cestlaz.github.io/posts/on-prestigious-competitons-and-high-schools/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgcc60af9" class="outline-2"&gt;
+&lt;h2 id="orgcc60af9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgcc60af9"&gt;
 &lt;p&gt;
 The ACM recently announced this year's winners of the Cutler-Bell
 Prize in High School Computing. Over on his blog, &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt;
@@ -871,9 +997,9 @@ couple of specific math teachers.&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><category>competitions</category><category>education</category><guid>http://cestlaz.github.io/posts/on-prestigious-competitons-and-high-schools/</guid><pubDate>Sat, 17 Mar 2018 19:49:59 GMT</pubDate></item><item><title>Using Emacs 46 Auto Yasnippets</title><link>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org1a8467e" class="outline-2"&gt;
-&lt;h2 id="org1a8467e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1a8467e"&gt;
+&lt;/div&gt;</description><category>competitions</category><category>education</category><guid>http://cestlaz.github.io/posts/on-prestigious-competitons-and-high-schools/</guid><pubDate>Sat, 17 Mar 2018 19:49:59 GMT</pubDate></item><item><title>Using Emacs 46 Auto Yasnippets</title><link>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge453c51" class="outline-2"&gt;
+&lt;h2 id="orge453c51"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge453c51"&gt;
 &lt;p&gt;
 The other day I discovered &lt;a href="https://github.com/abo-abo/auto-yasnippet"&gt;auto-yasnippet&lt;/a&gt;, another great package by
 &lt;a href="https://github.com/abo-abo"&gt;Oleh Krehel&lt;/a&gt; or abo-abo.
@@ -927,9 +1053,9 @@ Check out the video:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/utrMabxgXbg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</guid><pubDate>Fri, 16 Mar 2018 00:05:36 GMT</pubDate></item><item><title>Sigcse2018 Making theory more acccesible</title><link>http://cestlaz.github.io/posts/sigcse2018-theory/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf2eb3b3" class="outline-2"&gt;
-&lt;h2 id="orgf2eb3b3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf2eb3b3"&gt;
+&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</guid><pubDate>Fri, 16 Mar 2018 00:05:36 GMT</pubDate></item><item><title>Sigcse2018 Making theory more acccesible</title><link>http://cestlaz.github.io/posts/sigcse2018-theory/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgaae4caa" class="outline-2"&gt;
+&lt;h2 id="orgaae4caa"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgaae4caa"&gt;
 &lt;p&gt;
 Next up from SIGCSE 2018 is John MacCormick's session on
 &lt;a href="https://dl.acm.org/citation.cfm?id=3159557"&gt;Strategies for Baing the CS Theory Course on Non-decision Problems&lt;/a&gt;
@@ -999,110 +1125,4 @@ a copy. Once I do I hope to be able to find some gems that I can work
 into CS 1 experiences.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><category>theory</category><guid>http://cestlaz.github.io/posts/sigcse2018-theory/</guid><pubDate>Tue, 13 Mar 2018 23:21:43 GMT</pubDate></item><item><title>Using Emacs 45 - Company or Autocomplete</title><link>http://cestlaz.github.io/posts/using-emacs-45-company/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4e48fa5" class="outline-2"&gt;
-&lt;h2 id="org4e48fa5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4e48fa5"&gt;
-&lt;p&gt;
-This is a good time to be an Emacs user. In addition to all of the
-great packages and tools being developed there seem to be more people
-regularly blogging and making videos about Emacs than ever before.
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;a href="http://planet.emacsen.org/"&gt;Planet Emacsen&lt;/a&gt; aggregates a ton of Emcas blogs and Emacs Legend Sacha
-Chua posts what's going on in emacs every week on her &lt;a href="http://sachachua.com/blog/category/geek/emacs/"&gt;blog&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-on the video front, &lt;a href="https://www.youtube.com/channel/ucdetz7akmws0_gnjog01d2g"&gt;uncle dave&lt;/a&gt; has recently joined the ranks of emacs
-video producers. sometimes we'll cover the same topic. dave made a
-video on swiper the other week and i made one a year ago. the other
-week we both made videos on mpd almost on the same day but dave
-focussed on emms and i focussed on simple-mpc. i think this
-is great because it gives different perspectives.
-&lt;/p&gt;
-
-&lt;p&gt;
-today, i watched dave's video on &lt;a href="https://www.youtube.com/watch?v=xewzfruru6k&amp;amp;t=854s"&gt;company&lt;/a&gt; mode for auto
-completion. I've always used &lt;a href="http://cestlaz.github.io/posts/using-emacs-8-autocomplete/"&gt;autocomplete&lt;/a&gt; mode. I thought it would be
-a good time for me to see how the other half lived.
-&lt;/p&gt;
-
-&lt;p&gt;
-You can find my configurations up on GitHub
-(&lt;a href="https://github.com/zamansky/using-emacs"&gt;https://github.com/zamansky/using-emacs&lt;/a&gt;). The master branch is using
-autocomplete and the company-test branch for company. I've also pulled
-out the relevant code and am placing it down under the video.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here's what I've found so far:
-&lt;/p&gt;
-
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/srFQwTvbaxY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-org1172c40" class="outline-2"&gt;
-&lt;h2 id="org1172c40"&gt;Company config (so far):&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1172c40"&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company&lt;/span&gt;
-&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-&lt;span class="nv"&gt;:config&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;company-idle-delay&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;company-minimum-prefix-length&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-company-mode&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company-irony&lt;/span&gt;
-&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-&lt;span class="nv"&gt;:config&lt;/span&gt; 
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'company-backends&lt;/span&gt; &lt;span class="ss"&gt;'company-irony&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;irony&lt;/span&gt;
-&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-&lt;span class="nv"&gt;:config&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'c++-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'c-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-cdb-autosetup-compile-options&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;irony-eldoc&lt;/span&gt;
-&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-&lt;span class="nv"&gt;:config&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode-hook&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="ss"&gt;'irony-eldoc&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company-jedi&lt;/span&gt;
-    &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-    &lt;span class="nv"&gt;:config&lt;/span&gt;
-    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;my/python-mode-hook&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
-  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'company-backends&lt;/span&gt; &lt;span class="ss"&gt;'company-jedi&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'my/python-mode-hook&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-orgd2107d4" class="outline-2"&gt;
-&lt;h2 id="orgd2107d4"&gt;Autocomplete config&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd2107d4"&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;auto-complete&lt;/span&gt;
-&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-&lt;span class="nv"&gt;:init&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;progn&lt;/span&gt;
-  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ac-config-default&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-auto-complete-mode&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-  &lt;span class="p"&gt;))&lt;/span&gt;
-
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;py-python-command&lt;/span&gt; &lt;span class="s"&gt;"python3"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;python-shell-interpreter&lt;/span&gt; &lt;span class="s"&gt;"python3"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;jedi&lt;/span&gt;
-    &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
-    &lt;span class="nv"&gt;:init&lt;/span&gt;
-    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:setup&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:ac-setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-45-company/</guid><pubDate>Sun, 11 Mar 2018 12:05:45 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>theory</category><guid>http://cestlaz.github.io/posts/sigcse2018-theory/</guid><pubDate>Tue, 13 Mar 2018 23:21:43 GMT</pubDate></item></channel></rss>

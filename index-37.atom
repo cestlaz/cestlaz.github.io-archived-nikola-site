@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 37)</title>
   <id>http://cestlaz.github.io/index-37.atom</id>
-  <updated>2018-04-01T13:19:57Z</updated>
+  <updated>2018-04-05T23:31:10Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -15,6 +15,125 @@
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-37.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
+    <title>Using Emacs 45 - Company or Autocomplete</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-45-company/</id>
+    <updated>2018-03-11T08:05:45-04:00</updated>
+    <published>2018-03-11T08:05:45-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-45-company/"/>
+    <summary type="html">&lt;div id="outline-container-org33b7b2c" class="outline-2"&gt;
+&lt;h2 id="org33b7b2c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org33b7b2c"&gt;
+&lt;p&gt;
+This is a good time to be an Emacs user. In addition to all of the
+great packages and tools being developed there seem to be more people
+regularly blogging and making videos about Emacs than ever before.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="http://planet.emacsen.org/"&gt;Planet Emacsen&lt;/a&gt; aggregates a ton of Emcas blogs and Emacs Legend Sacha
+Chua posts what's going on in emacs every week on her &lt;a href="http://sachachua.com/blog/category/geek/emacs/"&gt;blog&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+on the video front, &lt;a href="https://www.youtube.com/channel/ucdetz7akmws0_gnjog01d2g"&gt;uncle dave&lt;/a&gt; has recently joined the ranks of emacs
+video producers. sometimes we'll cover the same topic. dave made a
+video on swiper the other week and i made one a year ago. the other
+week we both made videos on mpd almost on the same day but dave
+focussed on emms and i focussed on simple-mpc. i think this
+is great because it gives different perspectives.
+&lt;/p&gt;
+
+&lt;p&gt;
+today, i watched dave's video on &lt;a href="https://www.youtube.com/watch?v=xewzfruru6k&amp;amp;t=854s"&gt;company&lt;/a&gt; mode for auto
+completion. I've always used &lt;a href="http://cestlaz.github.io/posts/using-emacs-8-autocomplete/"&gt;autocomplete&lt;/a&gt; mode. I thought it would be
+a good time for me to see how the other half lived.
+&lt;/p&gt;
+
+&lt;p&gt;
+You can find my configurations up on GitHub
+(&lt;a href="https://github.com/zamansky/using-emacs"&gt;https://github.com/zamansky/using-emacs&lt;/a&gt;). The master branch is using
+autocomplete and the company-test branch for company. I've also pulled
+out the relevant code and am placing it down under the video.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's what I've found so far:
+&lt;/p&gt;
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/srFQwTvbaxY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org0580de9" class="outline-2"&gt;
+&lt;h2 id="org0580de9"&gt;Company config (so far):&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0580de9"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;company-idle-delay&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;company-minimum-prefix-length&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-company-mode&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company-irony&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt; 
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'company-backends&lt;/span&gt; &lt;span class="ss"&gt;'company-irony&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;irony&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'c++-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'c-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-cdb-autosetup-compile-options&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;irony-eldoc&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode-hook&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="ss"&gt;'irony-eldoc&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company-jedi&lt;/span&gt;
+    &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+    &lt;span class="nv"&gt;:config&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;my/python-mode-hook&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'company-backends&lt;/span&gt; &lt;span class="ss"&gt;'company-jedi&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'my/python-mode-hook&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org67bf776" class="outline-2"&gt;
+&lt;h2 id="org67bf776"&gt;Autocomplete config&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org67bf776"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;auto-complete&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:init&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;progn&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ac-config-default&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-auto-complete-mode&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;py-python-command&lt;/span&gt; &lt;span class="s"&gt;"python3"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;python-shell-interpreter&lt;/span&gt; &lt;span class="s"&gt;"python3"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;jedi&lt;/span&gt;
+    &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+    &lt;span class="nv"&gt;:init&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:setup&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:ac-setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
     <title>How my views on education research were shaped</title>
     <id>http://cestlaz.github.io/posts/practitioners-and-researchers/</id>
     <updated>2018-03-07T19:41:16-04:00</updated>
@@ -23,9 +142,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/practitioners-and-researchers/"/>
-    <summary type="html">&lt;div id="outline-container-orgb4aede6" class="outline-2"&gt;
-&lt;h2 id="orgb4aede6"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb4aede6"&gt;
+    <summary type="html">&lt;div id="outline-container-org2da317e" class="outline-2"&gt;
+&lt;h2 id="org2da317e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org2da317e"&gt;
 &lt;p&gt;
 After reading a couple of comments on my &lt;a href="http://cestlaz.github.io/posts/sigcse2018-code-tracing/"&gt;last post&lt;/a&gt; where I talked a
 bit about practitioners vs researchers I thought I'd expand and
@@ -184,9 +303,9 @@ We all have a role to play in this game.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018-code-tracing/"/>
-    <summary type="html">&lt;div id="outline-container-org0fb6eb8" class="outline-2"&gt;
-&lt;h2 id="org0fb6eb8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0fb6eb8"&gt;
+    <summary type="html">&lt;div id="outline-container-org45688ea" class="outline-2"&gt;
+&lt;h2 id="org45688ea"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org45688ea"&gt;
 &lt;p&gt;
 Next up from SIGCSE is &lt;a href="https://dl.acm.org/citation.cfm?id=3159527"&gt;An Explicit Strategy to Scaffold Novice Program
 Tracing&lt;/a&gt; by Benjamin Xie, Greg Nelson and Andy Ko, presented by
@@ -338,9 +457,9 @@ can read Benji Xi's medium post &lt;a href="https://medium.com/bits-and-behavior
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-44-pdf/"/>
-    <summary type="html">&lt;div id="outline-container-org8ec625d" class="outline-2"&gt;
-&lt;h2 id="org8ec625d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8ec625d"&gt;
+    <summary type="html">&lt;div id="outline-container-orga34b33a" class="outline-2"&gt;
+&lt;h2 id="orga34b33a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga34b33a"&gt;
 &lt;p&gt;
 One of my titles at Hunter College is Director of the Daedalus CS
 Honors program. It's something like a Hunter specific, CS specific
@@ -412,9 +531,9 @@ Take a look and let me know what you think:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018-bootstrap/"/>
-    <summary type="html">&lt;div id="outline-container-orgc43063e" class="outline-2"&gt;
-&lt;h2 id="orgc43063e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc43063e"&gt;
+    <summary type="html">&lt;div id="outline-container-orge428d07" class="outline-2"&gt;
+&lt;h2 id="orge428d07"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge428d07"&gt;
 &lt;p&gt;
 I really didn't know what to expect at the &lt;a href="https://dl.acm.org/citation.cfm?id=3159471"&gt;Creativity, Customization,
 and Ownership: Game Design in Bootstrap: Algebra&lt;/a&gt; session. I've been a

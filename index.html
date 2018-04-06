@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-37.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/passover-april-1-and-indiana-jones/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/tools-and-complexity/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,147 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/passover-april-1-and-indiana-jones/" class="u-url">Passover April 1 And Indiana Jones</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/tools-and-complexity/" class="u-url">Tools and Complexity</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/tools-and-complexity/" rel="bookmark"><time class="published dt-published" datetime="2018-04-05T18:55:21-04:00" title="2018-04-05 18:55">2018-04-05 18:55</time></a></p>
+                <p class="commentline">            <a href="posts/tools-and-complexity/#disqus_thread" data-disqus-identifier="cache/posts/tools-and-complexity.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org32ed0d7" class="outline-2">
+<h2 id="org32ed0d7"></h2>
+<div class="outline-text-2" id="text-org32ed0d7">
+<p>
+<a href="https://twitter.com/alfredtwo">Alfred Thompson</a> wrote about <a href="http://blog.acthompson.net/2018/04/thoughts-on-where-cs-education-tools.html">CS education tools</a> earlier today. I've
+also been meaning to write on the topic but from a different point of
+view.
+</p>
+
+<p>
+I do my best to keep up with the latest and greatest in the CS world
+both on the academic side as well as the professional one. That's not
+really possible, but I do my best. When I have a small project to work
+on I'll some times use it as an excuse to play with some recent
+technology. Over December, I wanted to write an application viewer to
+use for company / student internship matching. I started by looking at
+<a href="https://reactjs.org/">React</a> but ended up using <a href="https://vuejs.org/">Vue.js</a> which I liked much more for a variety
+of reasons.
+</p>
+
+<p>
+The viewer served it's purpose but I think it can be turned into a
+much more comprehensive student / employer internship platform. I
+tried to steal a few minutes over this past week's spring break to
+start a rewrite using another toolset, Clojure, Clojurescript and
+Reagent. I'm really liking the Clojure stack and using
+Emacs and Cider for the IDE is really blowing me away. 
+</p>
+
+<p>
+What I've noticed is that for every new language of framework you also
+have to learn a whole set of ancillary tools.
+</p>
+
+<p>
+It didn't used to be that way. Back in the day, things were much
+simpler. I remembering doing work at Goldman Sachs, it was as simple
+as typing something on the command line like <code>cc file1.c file2.c
+file3.c</code>. I of course had to be cutting edge and use fancy modern
+tools like <a href="https://www.gnu.org/software/make/">Make</a>. What's more, the tools I used in industry were very
+similar to what I used in college. 
+</p>
+
+<p>
+We now live in very different times.
+</p>
+
+<p>
+If you go to the getting started guides for React or Vue it's pretty easy to
+get hello world up and running but beyond that you start to fall in to
+the Javascript tooling hole. To start you need either <b>npm</b> or <b>yarn</b>
+just to manage packages and dependencies. Then you need a build system
+or bundler like <b>webpack</b>, <b>browserify</b>, or <b>parcel</b> and that's not even
+considering older options like <b>gulp</b> and <b>grunt</b> and ancillary tools
+like <b>babel</b>.
+</p>
+
+<p>
+A typical React or Vue project is going to need a <a href="https://github.com/krasimir/react-webpack-starter/blob/master/package.json">project.json</a> and
+<a href="https://github.com/krasimir/react-webpack-starter/blob/master/webpack.config.js">webpack.config.js</a> file and sometimes some other files as well. Check
+out the links. They're from a simple project template I found
+online. Far from simple.
+</p>
+
+<p>
+When I was playing with Vue.js a couple of months ago, I ended up
+using Webpack to convert the source code into the final JS, take care
+of live-reloading, and in general manage the project. I still have no
+idea how most of it works. I don't know if it's just me but I'm very
+uncomfortable relying on tools that I really don't fully understand to
+build my systems. 
+</p>
+
+<p>
+The Clojure world is little better with Leiningen and Boot. If you
+don't believe me, try to make heads or tails of <a href="https://github.com/bhauman/figwheel-template/blob/master/src/leiningen/new/figwheel/project.clj">this</a>. 
+</p>
+
+<p>
+While it's true that as a professional you'll likely use one set of
+tools on a day to day basis and you'll eventually get to know them
+that doesn't mean it's not a good idea to prepare kids for what's to
+come.
+</p>
+
+
+<p>
+On the K12 side we have drag and drop languages, specialized learning
+IDEs like BlueJ, simple cut down IDEs like Dr Racket and completely
+online environments like repl.it. All great starter tools that
+insulate beginners from the complexities to come. College's
+might get closer to the "real world" but just a tad. 
+</p>
+
+<p>
+Don't get me wrong, I like many of the tools used in K12
+classes and there's far too much complexity in the professional world to
+throw at beginners. If we look at a student's entire school
+career, classes are already so packed with material it would be hard to
+really prepare kids for the real world within their classes. You could
+take that tried and true teacher / professor technique of just
+requiring it and having the kids figure it out on their own but that's
+really just downright abusive.
+</p>
+
+<p>
+I don't have an answer for this one. 
+</p>
+
+<p>
+I have my kids use tools like Git and GitHub early along with using
+testing frameworks and external libraries. I also try to move my
+students to a general purpose programmable platform like Emacs or
+Vim. I think these are sound practices but students will still have a
+big learning curve when they finally get to industry. 
+</p>
+
+<p>
+What I really would love it to see the tooling become simpler and
+documentation better. <a href="https://github.com/parcel-bundler/parcel">Parcel</a>, a Javascript bundler is one of the newer
+kids on the block and is much simpler and cleaner than alternatives
+like Webpack. The new version of Clojure has it's own command line
+tool which is also simpler than the alternatives. Maybe we are already
+moving in the right direction and this entire rant will become moot in a couple of years.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/passover-april-1-and-indiana-jones/" class="u-url">Passover April 1 And Indiana Jones</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -102,9 +242,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org0afaee9" class="outline-2">
-<h2 id="org0afaee9"></h2>
-<div class="outline-text-2" id="text-org0afaee9">
+    <div id="outline-container-org6fc24cc" class="outline-2">
+<h2 id="org6fc24cc"></h2>
+<div class="outline-text-2" id="text-org6fc24cc">
 <p>
 I've never done much in terms of the April Fools thing but frequently
 enjoy other peoples shenanigans.
@@ -133,9 +273,9 @@ Enjoy: <a href="http://seccorecit.blogspot.com/2018/04/a-historically-informed-e
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org50339e5" class="outline-2">
-<h2 id="org50339e5"></h2>
-<div class="outline-text-2" id="text-org50339e5">
+    <div id="outline-container-orgbdd5f6c" class="outline-2">
+<h2 id="orgbdd5f6c"></h2>
+<div class="outline-text-2" id="text-orgbdd5f6c">
 <p>
 There's so much to like in the shape drawing lessons I talked about
 in my <a href="http://cestlaz.github.io/posts/refactoring/">refactoring</a> post that I thought I'd share a little more here.
@@ -292,9 +432,9 @@ The best solution is one that works and Sometimes the "dumb" approach is the bes
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org13c9eaa" class="outline-2">
-<h2 id="org13c9eaa"></h2>
-<div class="outline-text-2" id="text-org13c9eaa">
+    <div id="outline-container-org33777a9" class="outline-2">
+<h2 id="org33777a9"></h2>
+<div class="outline-text-2" id="text-org33777a9">
 <p>
 I've been meaning to write about ethics in CS education for a
 while. Probably since I saw <a href="https://www.nytimes.com/2018/02/12/business/computer-science-ethics-courses.html?smid=fb-share">this article</a> in the NY Times but got sidetracked.
@@ -405,9 +545,9 @@ create great teachers for which ethical CS is part of their core.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgb62254a" class="outline-2">
-<h2 id="orgb62254a"></h2>
-<div class="outline-text-2" id="text-orgb62254a">
+    <div id="outline-container-org0bf6c52" class="outline-2">
+<h2 id="org0bf6c52"></h2>
+<div class="outline-text-2" id="text-org0bf6c52">
 <p>
 Next up from SIGCSE2018 is <a href="https://dl.acm.org/citation.cfm?id=3159609">Connect the Dots to Prove It</a> presented by
 Mark McCartin-Lim. This paper was presented during the same papers
@@ -486,9 +626,9 @@ alleviate problems that only surface at the college level.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orge6d16aa" class="outline-2">
-<h2 id="orge6d16aa"></h2>
-<div class="outline-text-2" id="text-orge6d16aa">
+    <div id="outline-container-org955b391" class="outline-2">
+<h2 id="org955b391"></h2>
+<div class="outline-text-2" id="text-org955b391">
 <p>
 One of my laments on teaching computer science is that students are
 rarely taught and given the chance to develop  good programming
@@ -742,9 +882,9 @@ inject good programming practices in ways that make sense early on?
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org9eba993" class="outline-2">
-<h2 id="org9eba993"></h2>
-<div class="outline-text-2" id="text-org9eba993">
+    <div id="outline-container-org362281f" class="outline-2">
+<h2 id="org362281f"></h2>
+<div class="outline-text-2" id="text-org362281f">
 <p>
 A few weeks ago I wrote about <a href="https://cestlaz.github.io/posts/testing-testing/#.Wq7Ud3XwZhE">introducing testing</a> in CS classes,
 specifically using a testing framework. In that post I talked about
@@ -871,9 +1011,9 @@ terms of speed of evaluation. Sounds like a win to me.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org8b98398" class="outline-2">
-<h2 id="org8b98398"></h2>
-<div class="outline-text-2" id="text-org8b98398">
+    <div id="outline-container-orgcc60af9" class="outline-2">
+<h2 id="orgcc60af9"></h2>
+<div class="outline-text-2" id="text-orgcc60af9">
 <p>
 The ACM recently announced this year's winners of the Cutler-Bell
 Prize in High School Computing. Over on his blog, <a href="https://twitter.com/alfredtwo">Alfred Thompson</a>
@@ -1071,9 +1211,9 @@ couple of specific math teachers.</div>
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org1a8467e" class="outline-2">
-<h2 id="org1a8467e"></h2>
-<div class="outline-text-2" id="text-org1a8467e">
+    <div id="outline-container-orge453c51" class="outline-2">
+<h2 id="orge453c51"></h2>
+<div class="outline-text-2" id="text-orge453c51">
 <p>
 The other day I discovered <a href="https://github.com/abo-abo/auto-yasnippet">auto-yasnippet</a>, another great package by
 <a href="https://github.com/abo-abo">Oleh Krehel</a> or abo-abo.
@@ -1141,9 +1281,9 @@ Check out the video:
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgf2eb3b3" class="outline-2">
-<h2 id="orgf2eb3b3"></h2>
-<div class="outline-text-2" id="text-orgf2eb3b3">
+    <div id="outline-container-orgaae4caa" class="outline-2">
+<h2 id="orgaae4caa"></h2>
+<div class="outline-text-2" id="text-orgaae4caa">
 <p>
 Next up from SIGCSE 2018 is John MacCormick's session on
 <a href="https://dl.acm.org/citation.cfm?id=3159557">Strategies for Baing the CS Theory Course on Non-decision Problems</a>
@@ -1212,126 +1352,6 @@ signed up for a reviewer copy at SIGCSE and look forward to receiving
 a copy. Once I do I hope to be able to find some gems that I can work
 into CS 1 experiences.
 </p>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-45-company/" class="u-url">Using Emacs 45 - Company or Autocomplete</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/using-emacs-45-company/" rel="bookmark"><time class="published dt-published" datetime="2018-03-11T08:05:45-04:00" title="2018-03-11 08:05">2018-03-11 08:05</time></a></p>
-                <p class="commentline">            <a href="posts/using-emacs-45-company/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-45-company.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-org4e48fa5" class="outline-2">
-<h2 id="org4e48fa5"></h2>
-<div class="outline-text-2" id="text-org4e48fa5">
-<p>
-This is a good time to be an Emacs user. In addition to all of the
-great packages and tools being developed there seem to be more people
-regularly blogging and making videos about Emacs than ever before.
-</p>
-
-<p>
-<a href="http://planet.emacsen.org/">Planet Emacsen</a> aggregates a ton of Emcas blogs and Emacs Legend Sacha
-Chua posts what's going on in emacs every week on her <a href="http://sachachua.com/blog/category/geek/emacs/">blog</a>.
-</p>
-
-<p>
-on the video front, <a href="https://www.youtube.com/channel/ucdetz7akmws0_gnjog01d2g">uncle dave</a> has recently joined the ranks of emacs
-video producers. sometimes we'll cover the same topic. dave made a
-video on swiper the other week and i made one a year ago. the other
-week we both made videos on mpd almost on the same day but dave
-focussed on emms and i focussed on simple-mpc. i think this
-is great because it gives different perspectives.
-</p>
-
-<p>
-today, i watched dave's video on <a href="https://www.youtube.com/watch?v=xewzfruru6k&amp;t=854s">company</a> mode for auto
-completion. I've always used <a href="http://cestlaz.github.io/posts/using-emacs-8-autocomplete/">autocomplete</a> mode. I thought it would be
-a good time for me to see how the other half lived.
-</p>
-
-<p>
-You can find my configurations up on GitHub
-(<a href="https://github.com/zamansky/using-emacs">https://github.com/zamansky/using-emacs</a>). The master branch is using
-autocomplete and the company-test branch for company. I've also pulled
-out the relevant code and am placing it down under the video.
-</p>
-
-<p>
-Here's what I've found so far:
-</p>
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/srFQwTvbaxY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-</div>
-
-<div id="outline-container-org1172c40" class="outline-2">
-<h2 id="org1172c40">Company config (so far):</h2>
-<div class="outline-text-2" id="text-org1172c40">
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">company</span>
-<span class="nv">:ensure</span> <span class="nv">t</span>
-<span class="nv">:config</span>
-<span class="p">(</span><span class="nf">setq</span> <span class="nv">company-idle-delay</span> <span class="mi">0</span><span class="p">)</span>
-<span class="p">(</span><span class="nf">setq</span> <span class="nv">company-minimum-prefix-length</span> <span class="mi">3</span><span class="p">)</span>
-<span class="p">(</span><span class="nf">global-company-mode</span> <span class="nv">t</span><span class="p">))</span>
-
-<span class="p">(</span><span class="nf">use-package</span> <span class="nv">company-irony</span>
-<span class="nv">:ensure</span> <span class="nv">t</span>
-<span class="nv">:config</span> 
-<span class="p">(</span><span class="nf">add-to-list</span> <span class="ss">'company-backends</span> <span class="ss">'company-irony</span><span class="p">))</span>
-
-<span class="p">(</span><span class="nf">use-package</span> <span class="nv">irony</span>
-<span class="nv">:ensure</span> <span class="nv">t</span>
-<span class="nv">:config</span>
-<span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'c++-mode-hook</span> <span class="ss">'irony-mode</span><span class="p">)</span>
-<span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'c-mode-hook</span> <span class="ss">'irony-mode</span><span class="p">)</span>
-<span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'irony-mode-hook</span> <span class="ss">'irony-cdb-autosetup-compile-options</span><span class="p">))</span>
-
-<span class="p">(</span><span class="nf">use-package</span> <span class="nv">irony-eldoc</span>
-<span class="nv">:ensure</span> <span class="nv">t</span>
-<span class="nv">:config</span>
-<span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'irony-mode-hook</span> <span class="o">#</span><span class="ss">'irony-eldoc</span><span class="p">))</span>
-
-<span class="p">(</span><span class="nf">use-package</span> <span class="nv">company-jedi</span>
-    <span class="nv">:ensure</span> <span class="nv">t</span>
-    <span class="nv">:config</span>
-    <span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'python-mode-hook</span> <span class="ss">'jedi:setup</span><span class="p">))</span>
-
-<span class="p">(</span><span class="nf">defun</span> <span class="nv">my/python-mode-hook</span> <span class="p">()</span>
-  <span class="p">(</span><span class="nf">add-to-list</span> <span class="ss">'company-backends</span> <span class="ss">'company-jedi</span><span class="p">))</span>
-
-<span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'python-mode-hook</span> <span class="ss">'my/python-mode-hook</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-
-<div id="outline-container-orgd2107d4" class="outline-2">
-<h2 id="orgd2107d4">Autocomplete config</h2>
-<div class="outline-text-2" id="text-orgd2107d4">
-<div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">use-package</span> <span class="nv">auto-complete</span>
-<span class="nv">:ensure</span> <span class="nv">t</span>
-<span class="nv">:init</span>
-<span class="p">(</span><span class="nf">progn</span>
-  <span class="p">(</span><span class="nf">ac-config-default</span><span class="p">)</span>
-  <span class="p">(</span><span class="nf">global-auto-complete-mode</span> <span class="nv">t</span><span class="p">)</span>
-  <span class="p">))</span>
-
-<span class="p">(</span><span class="nf">setq</span> <span class="nv">py-python-command</span> <span class="s">"python3"</span><span class="p">)</span>
-<span class="p">(</span><span class="nf">setq</span> <span class="nv">python-shell-interpreter</span> <span class="s">"python3"</span><span class="p">)</span>
-
-  <span class="p">(</span><span class="nf">use-package</span> <span class="nv">jedi</span>
-    <span class="nv">:ensure</span> <span class="nv">t</span>
-    <span class="nv">:init</span>
-    <span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'python-mode-hook</span> <span class="ss">'jedi:setup</span><span class="p">)</span>
-    <span class="p">(</span><span class="nf">add-hook</span> <span class="ss">'python-mode-hook</span> <span class="ss">'jedi:ac-setup</span><span class="p">))</span>
-</pre></div>
 </div>
 </div>
     </div>
