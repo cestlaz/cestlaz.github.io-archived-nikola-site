@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 07 Apr 2018 18:09:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs Episode 47 - Magit</title><link>http://cestlaz.github.io/posts/using-emacs-47-magit/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org89fbcbe" class="outline-2"&gt;
-&lt;h2 id="org89fbcbe"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org89fbcbe"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 07 Apr 2018 20:01:59 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs Episode 47 - Magit</title><link>http://cestlaz.github.io/posts/using-emacs-47-magit/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgcaa993b" class="outline-2"&gt;
+&lt;h2 id="orgcaa993b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgcaa993b"&gt;
 &lt;p&gt;
 I've been holding off on doing a &lt;a href="https://magit.vc/"&gt;Magit&lt;/a&gt; video for a while. Mostly
 because I wasn't using it exclusively and also because there are
@@ -15,7 +15,7 @@ it all finally clicked.
 &lt;/p&gt;
 
 &lt;p&gt;
-In site of what the documentation says, Magit &lt;b&gt;is not&lt;/b&gt; an interface
+In spite of what the documentation says, Magit &lt;b&gt;is not&lt;/b&gt; an interface
 for git. Magit is a &lt;b&gt;command and control&lt;/b&gt; center for git. You can
 launch it just to execute some git commands but you can also leave it
 up and running in an Emacs window or frame as a constant project
@@ -44,9 +44,9 @@ Check out the video:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/1IYsiHXR620" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-47-magit/</guid><pubDate>Sat, 07 Apr 2018 13:05:36 GMT</pubDate></item><item><title>Competitions and Hackathons</title><link>http://cestlaz.github.io/posts/hs-competitions/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf39025f" class="outline-2"&gt;
-&lt;h2 id="orgf39025f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf39025f"&gt;
+&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-47-magit/</guid><pubDate>Sat, 07 Apr 2018 13:05:36 GMT</pubDate></item><item><title>Competitions and Hackathons</title><link>http://cestlaz.github.io/posts/hs-competitions/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3cd7210" class="outline-2"&gt;
+&lt;h2 id="org3cd7210"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3cd7210"&gt;
 &lt;p&gt;
 Today's the last day of spring break. After the weekend it's back to
 the grind. It really hasn't been much of a spring break. The rain and
@@ -144,9 +144,9 @@ see great local opportunities like these emerging and hopefully
 running for years to come.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>competitions</category><category>cs</category><category>events</category><guid>http://cestlaz.github.io/posts/hs-competitions/</guid><pubDate>Fri, 06 Apr 2018 21:22:15 GMT</pubDate></item><item><title>Tools and Complexity</title><link>http://cestlaz.github.io/posts/tools-and-complexity/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org32ed0d7" class="outline-2"&gt;
-&lt;h2 id="org32ed0d7"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org32ed0d7"&gt;
+&lt;/div&gt;</description><category>competitions</category><category>cs</category><category>events</category><guid>http://cestlaz.github.io/posts/hs-competitions/</guid><pubDate>Fri, 06 Apr 2018 21:22:15 GMT</pubDate></item><item><title>Tools and Complexity</title><link>http://cestlaz.github.io/posts/tools-and-complexity/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org45c1165" class="outline-2"&gt;
+&lt;h2 id="org45c1165"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org45c1165"&gt;
 &lt;p&gt;
 &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; wrote about &lt;a href="http://blog.acthompson.net/2018/04/thoughts-on-where-cs-education-tools.html"&gt;CS education tools&lt;/a&gt; earlier today. I've
 also been meaning to write on the topic but from a different point of
@@ -270,9 +270,9 @@ tool which is also simpler than the alternatives. Maybe we are already
 moving in the right direction and this entire rant will become moot in a couple of years.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>csed</category><category>education</category><category>tools</category><guid>http://cestlaz.github.io/posts/tools-and-complexity/</guid><pubDate>Thu, 05 Apr 2018 22:55:21 GMT</pubDate></item><item><title>Passover April 1 And Indiana Jones</title><link>http://cestlaz.github.io/posts/passover-april-1-and-indiana-jones/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6fc24cc" class="outline-2"&gt;
-&lt;h2 id="org6fc24cc"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6fc24cc"&gt;
+&lt;/div&gt;</description><category>cs</category><category>csed</category><category>education</category><category>tools</category><guid>http://cestlaz.github.io/posts/tools-and-complexity/</guid><pubDate>Thu, 05 Apr 2018 22:55:21 GMT</pubDate></item><item><title>Passover April 1 And Indiana Jones</title><link>http://cestlaz.github.io/posts/passover-april-1-and-indiana-jones/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org0afaee9" class="outline-2"&gt;
+&lt;h2 id="org0afaee9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0afaee9"&gt;
 &lt;p&gt;
 I've never done much in terms of the April Fools thing but frequently
 enjoy other peoples shenanigans.
@@ -287,9 +287,9 @@ that Passover staple, Echad Mi Yodea.
 Enjoy: &lt;a href="http://seccorecit.blogspot.com/2018/04/a-historically-informed-echad-mi-yodea.html"&gt;A Historically Informed Echad Mi Yodea&lt;/a&gt;.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/passover-april-1-and-indiana-jones/</guid><pubDate>Sun, 01 Apr 2018 13:17:21 GMT</pubDate></item><item><title>Do It The Dumb Way</title><link>http://cestlaz.github.io/posts/do-it-the-dumb-way/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgbdd5f6c" class="outline-2"&gt;
-&lt;h2 id="orgbdd5f6c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgbdd5f6c"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/passover-april-1-and-indiana-jones/</guid><pubDate>Sun, 01 Apr 2018 13:17:21 GMT</pubDate></item><item><title>Do It The Dumb Way</title><link>http://cestlaz.github.io/posts/do-it-the-dumb-way/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org50339e5" class="outline-2"&gt;
+&lt;h2 id="org50339e5"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org50339e5"&gt;
 &lt;p&gt;
 There's so much to like in the shape drawing lessons I talked about
 in my &lt;a href="http://cestlaz.github.io/posts/refactoring/"&gt;refactoring&lt;/a&gt; post that I thought I'd share a little more here.
@@ -432,9 +432,9 @@ but I think you get the idea.
 The best solution is one that works and Sometimes the "dumb" approach is the best approach.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>software engineering</category><guid>http://cestlaz.github.io/posts/do-it-the-dumb-way/</guid><pubDate>Fri, 30 Mar 2018 12:24:09 GMT</pubDate></item><item><title>Ethics In CS Education</title><link>http://cestlaz.github.io/posts/ethics-in-cs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org33777a9" class="outline-2"&gt;
-&lt;h2 id="org33777a9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org33777a9"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>software engineering</category><guid>http://cestlaz.github.io/posts/do-it-the-dumb-way/</guid><pubDate>Fri, 30 Mar 2018 12:24:09 GMT</pubDate></item><item><title>Ethics In CS Education</title><link>http://cestlaz.github.io/posts/ethics-in-cs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org13c9eaa" class="outline-2"&gt;
+&lt;h2 id="org13c9eaa"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org13c9eaa"&gt;
 &lt;p&gt;
 I've been meaning to write about ethics in CS education for a
 while. Probably since I saw &lt;a href="https://www.nytimes.com/2018/02/12/business/computer-science-ethics-courses.html?smid=fb-share"&gt;this article&lt;/a&gt; in the NY Times but got sidetracked.
@@ -532,9 +532,9 @@ sure that pre service CS teacher preparation develops to attract and
 create great teachers for which ethical CS is part of their core. 
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>ethicalCS</category><category>preservicexs</category><category>teachers</category><guid>http://cestlaz.github.io/posts/ethics-in-cs/</guid><pubDate>Sun, 25 Mar 2018 20:59:36 GMT</pubDate></item><item><title>Sigcse2018 Proof</title><link>http://cestlaz.github.io/posts/sigcse2018-proof/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org0bf6c52" class="outline-2"&gt;
-&lt;h2 id="org0bf6c52"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0bf6c52"&gt;
+&lt;/div&gt;</description><category>education</category><category>ethicalCS</category><category>preservicexs</category><category>teachers</category><guid>http://cestlaz.github.io/posts/ethics-in-cs/</guid><pubDate>Sun, 25 Mar 2018 20:59:36 GMT</pubDate></item><item><title>Sigcse2018 Proof</title><link>http://cestlaz.github.io/posts/sigcse2018-proof/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgb62254a" class="outline-2"&gt;
+&lt;h2 id="orgb62254a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb62254a"&gt;
 &lt;p&gt;
 Next up from SIGCSE2018 is &lt;a href="https://dl.acm.org/citation.cfm?id=3159609"&gt;Connect the Dots to Prove It&lt;/a&gt; presented by
 Mark McCartin-Lim. This paper was presented during the same papers
@@ -601,9 +601,9 @@ school and supporting them in those early years can go a long way to
 alleviate problems that only surface at the college level.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/sigcse2018-proof/</guid><pubDate>Fri, 23 Mar 2018 20:24:21 GMT</pubDate></item><item><title>Refactoring</title><link>http://cestlaz.github.io/posts/refactoring/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org955b391" class="outline-2"&gt;
-&lt;h2 id="org955b391"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org955b391"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/sigcse2018-proof/</guid><pubDate>Fri, 23 Mar 2018 20:24:21 GMT</pubDate></item><item><title>Refactoring</title><link>http://cestlaz.github.io/posts/refactoring/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge6d16aa" class="outline-2"&gt;
+&lt;h2 id="orge6d16aa"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge6d16aa"&gt;
 &lt;p&gt;
 One of my laments on teaching computer science is that students are
 rarely taught and given the chance to develop  good programming
@@ -843,9 +843,9 @@ talking about structuring programs and refactoring. Where else can we
 inject good programming practices in ways that make sense early on?
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/refactoring/</guid><pubDate>Wed, 21 Mar 2018 12:11:38 GMT</pubDate></item><item><title>Testing Part 2</title><link>http://cestlaz.github.io/posts/testing-part2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org362281f" class="outline-2"&gt;
-&lt;h2 id="org362281f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org362281f"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/refactoring/</guid><pubDate>Wed, 21 Mar 2018 12:11:38 GMT</pubDate></item><item><title>Testing Part 2</title><link>http://cestlaz.github.io/posts/testing-part2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9eba993" class="outline-2"&gt;
+&lt;h2 id="org9eba993"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9eba993"&gt;
 &lt;p&gt;
 A few weeks ago I wrote about &lt;a href="https://cestlaz.github.io/posts/testing-testing/#.Wq7Ud3XwZhE"&gt;introducing testing&lt;/a&gt; in CS classes,
 specifically using a testing framework. In that post I talked about
@@ -958,9 +958,9 @@ teacher easier both in terms of understanding the students work and in
 terms of speed of evaluation. Sounds like a win to me.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-part2/</guid><pubDate>Sun, 18 Mar 2018 21:04:04 GMT</pubDate></item><item><title>On Prestigious Competitons And High Schools</title><link>http://cestlaz.github.io/posts/on-prestigious-competitons-and-high-schools/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgcc60af9" class="outline-2"&gt;
-&lt;h2 id="orgcc60af9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgcc60af9"&gt;
+&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-part2/</guid><pubDate>Sun, 18 Mar 2018 21:04:04 GMT</pubDate></item><item><title>On Prestigious Competitons And High Schools</title><link>http://cestlaz.github.io/posts/on-prestigious-competitons-and-high-schools/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8b98398" class="outline-2"&gt;
+&lt;h2 id="org8b98398"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8b98398"&gt;
 &lt;p&gt;
 The ACM recently announced this year's winners of the Cutler-Bell
 Prize in High School Computing. Over on his blog, &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt;
