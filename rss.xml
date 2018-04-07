@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 06 Apr 2018 23:24:28 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Competitions and Hackathons</title><link>http://cestlaz.github.io/posts/hs-competitions/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf39025f" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 07 Apr 2018 18:09:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs Episode 47 - Magit</title><link>http://cestlaz.github.io/posts/using-emacs-47-magit/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org89fbcbe" class="outline-2"&gt;
+&lt;h2 id="org89fbcbe"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org89fbcbe"&gt;
+&lt;p&gt;
+I've been holding off on doing a &lt;a href="https://magit.vc/"&gt;Magit&lt;/a&gt; video for a while. Mostly
+because I wasn't using it exclusively and also because there are
+already a number of good Magit videos and resources out there.
+&lt;/p&gt;
+
+&lt;p&gt;
+What changed? Along with the new version of Magin, Jonas Bernoulli
+wrote up &lt;a href="https://emacsair.me/2017/09/01/magit-walk-through/"&gt;a walkthrough of the Magit interface&lt;/a&gt;. For whatever reason,
+it all finally clicked. 
+&lt;/p&gt;
+
+&lt;p&gt;
+In site of what the documentation says, Magit &lt;b&gt;is not&lt;/b&gt; an interface
+for git. Magit is a &lt;b&gt;command and control&lt;/b&gt; center for git. You can
+launch it just to execute some git commands but you can also leave it
+up and running in an Emacs window or frame as a constant project
+overview.
+&lt;/p&gt;
+
+&lt;p&gt;
+Wow. Mind blown!!!
+&lt;/p&gt;
+
+&lt;p&gt;
+If you use Emacs for Deveopment, you &lt;b&gt;have to&lt;/b&gt; use Magit. If you don't
+use Emacs, you can load it on the side for Magit. If you're not a
+developer, learn to code so you can use Magit!!!!!
+&lt;/p&gt;
+
+&lt;p&gt;
+I tried to do justice to the package in the video. Magit along with &lt;a href="https://orgmode.org/"&gt;Org
+Mode&lt;/a&gt; are arguably Emacs killer apps - enough in and of themselves to
+justify using Emacs.
+&lt;/p&gt;
+
+&lt;p&gt;
+Check out the video:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/1IYsiHXR620" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-47-magit/</guid><pubDate>Sat, 07 Apr 2018 13:05:36 GMT</pubDate></item><item><title>Competitions and Hackathons</title><link>http://cestlaz.github.io/posts/hs-competitions/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf39025f" class="outline-2"&gt;
 &lt;h2 id="orgf39025f"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-orgf39025f"&gt;
 &lt;p&gt;
@@ -1097,60 +1142,4 @@ couple of specific math teachers.&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><category>competitions</category><category>education</category><guid>http://cestlaz.github.io/posts/on-prestigious-competitons-and-high-schools/</guid><pubDate>Sat, 17 Mar 2018 19:49:59 GMT</pubDate></item><item><title>Using Emacs 46 Auto Yasnippets</title><link>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge453c51" class="outline-2"&gt;
-&lt;h2 id="orge453c51"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge453c51"&gt;
-&lt;p&gt;
-The other day I discovered &lt;a href="https://github.com/abo-abo/auto-yasnippet"&gt;auto-yasnippet&lt;/a&gt;, another great package by
-&lt;a href="https://github.com/abo-abo"&gt;Oleh Krehel&lt;/a&gt; or abo-abo.
-&lt;/p&gt;
-
-&lt;p&gt;
-It looks like it's going to be a great way to solve a particular
-problem that come up now and again.
-&lt;/p&gt;
-
-&lt;p&gt;
-There are plenty of times when I want to create a number of similar
-but slightly different blocks of text. The example on the project
-site  is:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;count_of_red&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_total&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"red"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="n"&gt;count_of_blue&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_total&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"blue"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;span class="n"&gt;count_of_green&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_total&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"green"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-You could use multiple cursors, a macro, or other methods to put in
-the common text but you still have to deal with the parts of each line
-that are unique, the red, green, and blue. 
-&lt;/p&gt;
-
-&lt;p&gt;
-You could use a yasnippet but it's unlikely that you'll have a snippet
-for every occasion. This is where auto-yasnippet comes in. You would
-write the first line but add  a tilda as a placeholder:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;count_of&lt;/span&gt;&lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;red&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_total&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"~red"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-and then invoke &lt;code&gt;aya-create&lt;/code&gt;. This will get rid of the tildas and
-create the auto-snippet. Then when you run &lt;code&gt;aya-expand&lt;/code&gt; it will put in
-the snippet with the tilda locations as placeholders.
-&lt;/p&gt;
-
-&lt;p&gt;
-Very cool.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-Check out the video:
-&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/utrMabxgXbg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</guid><pubDate>Fri, 16 Mar 2018 00:05:36 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>competitions</category><category>education</category><guid>http://cestlaz.github.io/posts/on-prestigious-competitons-and-high-schools/</guid><pubDate>Sat, 17 Mar 2018 19:49:59 GMT</pubDate></item></channel></rss>

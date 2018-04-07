@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-37.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/hs-competitions/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-47-magit/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,66 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/hs-competitions/" class="u-url">Competitions and Hackathons</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-47-magit/" class="u-url">Using Emacs Episode 47 - Magit</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/using-emacs-47-magit/" rel="bookmark"><time class="published dt-published" datetime="2018-04-07T09:05:36-04:00" title="2018-04-07 09:05">2018-04-07 09:05</time></a></p>
+                <p class="commentline">            <a href="posts/using-emacs-47-magit/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-47-magit.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org89fbcbe" class="outline-2">
+<h2 id="org89fbcbe"></h2>
+<div class="outline-text-2" id="text-org89fbcbe">
+<p>
+I've been holding off on doing a <a href="https://magit.vc/">Magit</a> video for a while. Mostly
+because I wasn't using it exclusively and also because there are
+already a number of good Magit videos and resources out there.
+</p>
+
+<p>
+What changed? Along with the new version of Magin, Jonas Bernoulli
+wrote up <a href="https://emacsair.me/2017/09/01/magit-walk-through/">a walkthrough of the Magit interface</a>. For whatever reason,
+it all finally clicked. 
+</p>
+
+<p>
+In site of what the documentation says, Magit <b>is not</b> an interface
+for git. Magit is a <b>command and control</b> center for git. You can
+launch it just to execute some git commands but you can also leave it
+up and running in an Emacs window or frame as a constant project
+overview.
+</p>
+
+<p>
+Wow. Mind blown!!!
+</p>
+
+<p>
+If you use Emacs for Deveopment, you <b>have to</b> use Magit. If you don't
+use Emacs, you can load it on the side for Magit. If you're not a
+developer, learn to code so you can use Magit!!!!!
+</p>
+
+<p>
+I tried to do justice to the package in the video. Magit along with <a href="https://orgmode.org/">Org
+Mode</a> are arguably Emacs killer apps - enough in and of themselves to
+justify using Emacs.
+</p>
+
+<p>
+Check out the video:
+</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1IYsiHXR620" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/hs-competitions/" class="u-url">Competitions and Hackathons</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -1308,76 +1367,6 @@ couple of specific math teachers.</div>
 </div>
 
 
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-46-auto-yasnippets/" class="u-url">Using Emacs 46 Auto Yasnippets</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/using-emacs-46-auto-yasnippets/" rel="bookmark"><time class="published dt-published" datetime="2018-03-15T20:05:36-04:00" title="2018-03-15 20:05">2018-03-15 20:05</time></a></p>
-                <p class="commentline">            <a href="posts/using-emacs-46-auto-yasnippets/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-46-auto-yasnippets.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-orge453c51" class="outline-2">
-<h2 id="orge453c51"></h2>
-<div class="outline-text-2" id="text-orge453c51">
-<p>
-The other day I discovered <a href="https://github.com/abo-abo/auto-yasnippet">auto-yasnippet</a>, another great package by
-<a href="https://github.com/abo-abo">Oleh Krehel</a> or abo-abo.
-</p>
-
-<p>
-It looks like it's going to be a great way to solve a particular
-problem that come up now and again.
-</p>
-
-<p>
-There are plenty of times when I want to create a number of similar
-but slightly different blocks of text. The example on the project
-site  is:
-</p>
-
-<div class="highlight"><pre><span></span><span class="n">count_of_red</span> <span class="o">=</span> <span class="n">get_total</span><span class="p">(</span><span class="s">"red"</span><span class="p">);</span>
-<span class="n">count_of_blue</span> <span class="o">=</span> <span class="n">get_total</span><span class="p">(</span><span class="s">"blue"</span><span class="p">);</span>
-<span class="n">count_of_green</span> <span class="o">=</span> <span class="n">get_total</span><span class="p">(</span><span class="s">"green"</span><span class="p">);</span>
-</pre></div>
-
-<p>
-You could use multiple cursors, a macro, or other methods to put in
-the common text but you still have to deal with the parts of each line
-that are unique, the red, green, and blue. 
-</p>
-
-<p>
-You could use a yasnippet but it's unlikely that you'll have a snippet
-for every occasion. This is where auto-yasnippet comes in. You would
-write the first line but add  a tilda as a placeholder:
-</p>
-
-<div class="highlight"><pre><span></span><span class="n">count_of</span><span class="o">~</span><span class="n">red</span> <span class="o">=</span> <span class="n">get_total</span><span class="p">(</span><span class="s">"~red"</span><span class="p">)</span>
-</pre></div>
-
-<p>
-and then invoke <code>aya-create</code>. This will get rid of the tildas and
-create the auto-snippet. Then when you run <code>aya-expand</code> it will put in
-the snippet with the tilda locations as placeholders.
-</p>
-
-<p>
-Very cool.
-</p>
-
-
-<p>
-Check out the video:
-</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/utrMabxgXbg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 </div>
     </div>

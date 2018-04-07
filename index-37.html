@@ -91,7 +91,77 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sigcse2018-theory/" class="u-url">Sigcse2018 Making theory more acccesible</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-46-auto-yasnippets/" class="u-url">Using Emacs 46 Auto Yasnippets</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/using-emacs-46-auto-yasnippets/" rel="bookmark"><time class="published dt-published" datetime="2018-03-15T20:05:36-04:00" title="2018-03-15 20:05">2018-03-15 20:05</time></a></p>
+                <p class="commentline">            <a href="posts/using-emacs-46-auto-yasnippets/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-46-auto-yasnippets.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-orge453c51" class="outline-2">
+<h2 id="orge453c51"></h2>
+<div class="outline-text-2" id="text-orge453c51">
+<p>
+The other day I discovered <a href="https://github.com/abo-abo/auto-yasnippet">auto-yasnippet</a>, another great package by
+<a href="https://github.com/abo-abo">Oleh Krehel</a> or abo-abo.
+</p>
+
+<p>
+It looks like it's going to be a great way to solve a particular
+problem that come up now and again.
+</p>
+
+<p>
+There are plenty of times when I want to create a number of similar
+but slightly different blocks of text. The example on the project
+site  is:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">count_of_red</span> <span class="o">=</span> <span class="n">get_total</span><span class="p">(</span><span class="s">"red"</span><span class="p">);</span>
+<span class="n">count_of_blue</span> <span class="o">=</span> <span class="n">get_total</span><span class="p">(</span><span class="s">"blue"</span><span class="p">);</span>
+<span class="n">count_of_green</span> <span class="o">=</span> <span class="n">get_total</span><span class="p">(</span><span class="s">"green"</span><span class="p">);</span>
+</pre></div>
+
+<p>
+You could use multiple cursors, a macro, or other methods to put in
+the common text but you still have to deal with the parts of each line
+that are unique, the red, green, and blue. 
+</p>
+
+<p>
+You could use a yasnippet but it's unlikely that you'll have a snippet
+for every occasion. This is where auto-yasnippet comes in. You would
+write the first line but add  a tilda as a placeholder:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">count_of</span><span class="o">~</span><span class="n">red</span> <span class="o">=</span> <span class="n">get_total</span><span class="p">(</span><span class="s">"~red"</span><span class="p">)</span>
+</pre></div>
+
+<p>
+and then invoke <code>aya-create</code>. This will get rid of the tildas and
+create the auto-snippet. Then when you run <code>aya-expand</code> it will put in
+the snippet with the tilda locations as placeholders.
+</p>
+
+<p>
+Very cool.
+</p>
+
+
+<p>
+Check out the video:
+</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/utrMabxgXbg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sigcse2018-theory/" class="u-url">Sigcse2018 Making theory more acccesible</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
