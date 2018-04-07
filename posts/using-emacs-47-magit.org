@@ -1,0 +1,41 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs Episode 47 - Magit
+.. slug: using-emacs-47-magit
+.. date: 2018-04-07 09:05:36 UTC-04:00
+.. tags: emacs, tools, editing
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+I've been holding off on doing a [[https://magit.vc/][Magit]] video for a while. Mostly
+because I wasn't using it exclusively and also because there are
+already a number of good Magit videos and resources out there.
+
+What changed? Along with the new version of Magin, Jonas Bernoulli
+wrote up [[https://emacsair.me/2017/09/01/magit-walk-through/][a walkthrough of the Magit interface]]. For whatever reason,
+it all finally clicked. 
+
+In site of what the documentation says, Magit *is not* an interface
+for git. Magit is a *command and control* center for git. You can
+launch it just to execute some git commands but you can also leave it
+up and running in an Emacs window or frame as a constant project
+overview.
+
+Wow. Mind blown!!!
+
+If you use Emacs for Deveopment, you *have to* use Magit. If you don't
+use Emacs, you can load it on the side for Magit. If you're not a
+developer, learn to code so you can use Magit!!!!!
+
+I tried to do justice to the package in the video. Magit along with [[https://orgmode.org/][Org
+Mode]] are arguably Emacs killer apps - enough in and of themselves to
+justify using Emacs.
+
+Check out the video:
+
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1IYsiHXR620" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+#+END_EXPORT
