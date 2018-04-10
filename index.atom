@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2018-04-08T23:39:45Z</updated>
+  <updated>2018-04-10T23:56:04Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,108 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-37.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Why Strong K12 Teacher Certification is Important</title>
+    <id>http://cestlaz.github.io/posts/strong-teacher-certification/</id>
+    <updated>2018-04-10T17:39:30-04:00</updated>
+    <published>2018-04-10T17:39:30-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/strong-teacher-certification/"/>
+    <summary type="html">&lt;div id="outline-container-org44a29a0" class="outline-2"&gt;
+&lt;h2 id="org44a29a0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org44a29a0"&gt;
+&lt;p&gt;
+About a week ago New York State's new regulation creating a &lt;a href="http://www.crainsnewyork.com/article/20180327/NEWS/180329893/new-york-will-finally-have-certified-computer-science-teachers"&gt;K12 CS
+teacher certification&lt;/a&gt; went live. Just the other day I was honored to be
+interviewed by  &lt;a href="https://twitter.com/mflamm_reporter"&gt;Matt Flamm&lt;/a&gt; of Crain's New York in a &lt;a href="http://www.crainsnewyork.com/article/20180410/TECHNOLOGY/180419999/asked-answered-teacher-changed-jobs-to-push-for-new-york-states-new"&gt;follow up piece&lt;/a&gt;
+about it. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Having K12 CS teacher certification is big and having quality programs
+that lead to certification is &lt;b&gt;HUGE&lt;/b&gt;. In my view, it's a game changer.
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's Focus on high school, my wheelhouse.
+&lt;/p&gt;
+
+&lt;p&gt;
+From a course offerings point of view it's the wild west. I don't mean
+this as a bad thing, it's just that there's a huge range of offerings
+from AP to home brew, physical computing, game based, cyber security,
+you name it, there's a curriculum. The long and short of this is that
+schools need teachers to teach all of these experiences. Without a
+strong certification pathway we're going to be stuck with the current
+training based model where teachers are trained to deliver canned
+curricula rather than truly teach. With strong teacher preparation
+programs teachers will be prepared not only to deliver all the
+existing curricula but, arguable more importantly design their own
+learning experiences appropriate for the populations they work with.
+&lt;/p&gt;
+
+&lt;p&gt;
+This is important and alone would make having CS certification
+worthwhile but to me the BIG win is that it creates a viable career
+path. 
+&lt;/p&gt;
+
+&lt;p&gt;
+People say we'll never find enough CS teachers because the tech
+industry pays so well. I've never believed that. We find math teachers
+even though many could flee to finance and chem teachers in spite of
+big pharma's call so why can't we find CS teachers? Because we've
+never provided a path into the profession and a viable career track. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Certification means that over time schools will be able to build CS
+teachers and the discipline will be treated as the other
+subjects. Prior to certification, a CS teacher might be cut if a
+school's math department downsized. With certification, the career
+track for a CS teacher is the same as the track for any other teacher.
+&lt;/p&gt;
+
+&lt;p&gt;
+It also means that young people starting out who are interested in
+both teaching and computer science will have a way of getting into the
+profession - something that has never before existed.
+&lt;/p&gt;
+
+&lt;p&gt;
+Having CS certification alone won't woo a
+plethora of current tech professionals into teaching but over time,
+we'll start to have CS Ed majors or CS majors pursuing CS ED Masters
+degrees and entering the profession. This won't happen in a press or
+election cycle but it will happen.
+&lt;/p&gt;
+
+&lt;p&gt;
+This all hinges on quality prep programs. I think I've hit the sweet
+spot with what I've designed at Hunter. The critical components are of
+course content and pedagogy. Teacher candidates must have both
+sufficient depth and breadth in the subject and all the pedagogical
+content knowledge that comes along with it. I don't agree with the
+common approach of taking a course to teach a course - that is, having
+courses like "APCS - Principles for teachers" or "APCS - A for
+teachers."  I want my teachers to be able to teach any reasonable
+curriculum or design their own so we'll be rolling out courses that
+examine the commonly offerd curricula but prepare teachers for a whole
+lot more.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's been an exciting week in NY CS Ed and there's a lot more to come.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="certification" label="certification"/>
+    <category term="cs" label="cs"/>
+    <category term="policy" label="policy"/>
+    <category term="teaching" label="teaching"/>
+  </entry>
   <entry>
     <title>Using Emacs Episode 47 - Magit</title>
     <id>http://cestlaz.github.io/posts/using-emacs-47-magit/</id>
@@ -1091,202 +1193,5 @@ terms of speed of evaluation. Sounds like a win to me.
     <category term="cs" label="cs"/>
     <category term="software-engineering" label="software engineering"/>
     <category term="tools" label="tools"/>
-  </entry>
-  <entry>
-    <title>On Prestigious Competitons And High Schools</title>
-    <id>http://cestlaz.github.io/posts/on-prestigious-competitons-and-high-schools/</id>
-    <updated>2018-03-17T15:49:59-04:00</updated>
-    <published>2018-03-17T15:49:59-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/on-prestigious-competitons-and-high-schools/"/>
-    <summary type="html">&lt;div id="outline-container-orgcc60af9" class="outline-2"&gt;
-&lt;h2 id="orgcc60af9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgcc60af9"&gt;
-&lt;p&gt;
-The ACM recently announced this year's winners of the Cutler-Bell
-Prize in High School Computing. Over on his blog, &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt;
-noted that the winners were either from independent or magnet public
-schools. Alfred also noted that most of the winners of prestigious
-science competitions like the Regeneron Science Talent Search (nee
-Intel, nee Westinghouse) were from public magnet schools. In &lt;a href="http://blog.acthompson.net/2018/03/impressive-high-school-computer-science.html%0A"&gt;his post&lt;/a&gt;,
-Alfred ruminates on this and wonders "how to we add the flexibility
-and support to more students at more schools?"
-&lt;/p&gt;
-
-&lt;p&gt;
-As someone who spent over 25 years at Stuyvesant, arguably the
-granddaddy of these public magnet schools, I wanted to share some
-thoughts. I can only share my experiences from Stuy along with what I
-know from a few other schools but I still hope this is worth a read.
-&lt;/p&gt;
-
-&lt;p&gt;
-The Regeneron competitions under it's various names is the oldest and
-most established of these competition so it's pretty easy to get some
-data. Stuy is at or near the top of the list in terms of Regeneron
-finalists and semi finalists. The &lt;a href="https://en.wikipedia.org/wiki/Regeneron_Science_Talent_Search"&gt;Wikipediapage&lt;/a&gt; lists Stuy as second
-to Montgomery Blair with 22 finalists to 40 but the data only goes
-back to 1999. I personally know of at least 7 more finalists from my
-early years at Stuy, 4 more from the early 90s, 8 more listed under
-the page's "notable" entries and who kows how many from the 80s and
-earlier. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Stuy had a strong run of finalists in the early 90's and the early
-2000's but there has been a fall off in recent years.
-&lt;/p&gt;
-
-&lt;p&gt;
-Let's look at what makes Stuy "special" and then at the fall off.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-In terms of money, Stuy gets a basic budget similar to other NYC
-public schools plus some extra due to the extra graduation
-requirements (other schools get extra money for an assortment of
-reasons). I seem to recall that the Parents Association raises
-somewhere in the low to mid six figures and the Alumni Association has
-been historically dysfunctional as a fundraising body.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, it's not money.
-&lt;/p&gt;
-
-&lt;p&gt;
-Flexible scheduling? That's something that Alfred mentioned. Stuy kids
-have super packed programs. Some kids take 10 classes a day with no
-lunch so that's not it either.
-&lt;/p&gt;
-
-&lt;p&gt;
-Teachers? Stuy gets its teachers the same way as other public
-schools and just like other public schools they have some terrific
-teachers and some absolute disasters. Stuy also gets a slice of a
-particular class of teacher that starts their career at Stuy, never
-learns to teach because the kids figure it out but thinks they're gods
-gift to teaching.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, no, it's not the teachers, at least not on the whole.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, what does Stuy do?
-&lt;/p&gt;
-
-&lt;p&gt;
-It collects talent and this is the same thing that the other magnet
-schools and the elite private schools do as well. Get a bunch of
-bright, hard working, motivated kids together and good things
-happen. It gets high achieving students from a combination of entrance
-exam, reputation, and location &lt;sup&gt;&lt;a id="fnr.1" class="footref" href="http://cestlaz.github.io/posts/on-prestigious-competitons-and-high-schools/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm not arguing against this – I think there is a need for public
-magnet schools like Stuy but I think it's important to recognize that
-this is a major contributor to competition results and doesn't
-necessarily say anything about the school in terms of leadership or
-instruction.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's similar to a college coach who gets the best recruits. Are they
-really a great coach? Can they develop talent or are they just getting
-the best talent and getting out of the way. Who's the better coach?
-The one who gets all the 5 star recruits every years and frequently
-wins it all or the coach who gets 3 star recruits, doesn't win as much
-but develops those 3 stars to a point where they can compete against the 5 star
-programs.
-&lt;/p&gt;
-
-&lt;p&gt;
-That's the starting point but then there's the targeting of the top
-prospects. Stuy had a run of finalists during the early 2000s. At the
-time, a friend of mine ran the math research program. His strategy? He
-would scour the school for the kids most likely to win the
-competition, get those kids into his class, and hook them  up with
-professors with the most promising project potential. It worked
-more often than not. Contrast that to what I did when I ran our CS
-research program. I didn't take the program seriously for a variety of
-reasons but my job was to give EVERY kid in my class the opportunity
-to explore some aspect of CS. I had a few semi-finalists which is
-neither here nor there but never the stream of winners that my friend
-had.
-&lt;/p&gt;
-
-&lt;p&gt;
-Looking back to Stuy's earlier success, we had a Bio Chair who ran a
-similar program. I knew people in that program from when I was a
-student. The top talent was recruited and nurtured, the rest, pretty
-much ignored. Makes a school look good but not really the hallmark of
-a great school
-&lt;/p&gt;
-
-&lt;p&gt;
-Other schools had a similar strategy. Back in the '80s Cardozo - a
-neighborhood high school in Bayside Queens had a great run of
-Westinghouse results but that's because the science chair at the time
-had a similar program - rope in the top talent early (sophomore year)
-and nurture them. After a while the school got a reputation and would
-then attract more "science talent."
-&lt;/p&gt;
-
-&lt;p&gt;
-Stuy's had a falloff in finalists in recent years and I believe that's
-due to not having anyone focusing on recruiting kids specifically for
-results. Personally, I think this is a good thing but others
-disagree. A school with one finalist is perceived to be better than a
-school that gives a great research experience to every student but
-produces no finalists. In recent years, there's been talk of "what
-can we do to get more winners again." I think that's a shame, the
-conversation should always be "what can we do to improve the
-educational experience we offer all of our students."
-&lt;/p&gt;
-
-&lt;p&gt;
-None of this is to take away from any of the winners of  any of these
-competitions. All the finalists and winners I've known have been
-exceptional intellects and top people in their fields. This is just a
-commentary on what role a school does, should, and shouldn't play.
-&lt;/p&gt;
-
-&lt;p&gt;
-In my early years at Stuy, I worked with our top kids on CS
-competitions, The kids would place very well in the USACO competitions
-throughout the year. One year we entered the ACSL and I realized that
-I had a choice - focus on the top handful of kids to make a winning
-team that could compete for the title or focus on all the kids but not
-expect that great single result. I realized that the top kids
-would probably be alright without that extra attention. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I still think I did right by those kids but that realization also led
-me to design my intro class, hack required CS into Stuy and probably
-end up positively affecting far more students than if I just focused
-on the top percent of a percent.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="footnotes"&gt;
-&lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
-&lt;div id="text-footnotes"&gt;
-
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" class="footnum" href="http://cestlaz.github.io/posts/on-prestigious-competitons-and-high-schools/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;That said, students have also been
-drawn to Stuy for the CS program which is fairly unique and also for a
-couple of specific math teachers.&lt;/div&gt;&lt;/div&gt;
-
-
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="competitions" label="competitions"/>
-    <category term="education" label="education"/>
   </entry>
 </feed>

@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Using Emacs Episode 47 - Magit | C'est la Z</title>
+<title>Why Strong K12 Teacher Certification is Important | C'est la Z</title>
 <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
@@ -16,25 +16,21 @@ article: http://ogp.me/ns/article#
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="../../index.atom">
-<link rel="canonical" href="http://cestlaz.github.io/posts/using-emacs-47-magit/">
+<link rel="canonical" href="http://cestlaz.github.io/posts/strong-teacher-certification/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
-<link rel="prev" href="../hs-competitions/" title="Competitions and Hackathons" type="text/html">
-<link rel="next" href="../strong-teacher-certification/" title="Why Strong K12 Teacher Certification is Important" type="text/html">
+<link rel="prev" href="../using-emacs-47-magit/" title="Using Emacs Episode 47 - Magit" type="text/html">
 <meta property="og:site_name" content="C'est la Z">
-<meta property="og:title" content="Using Emacs Episode 47 - Magit">
-<meta property="og:url" content="http://cestlaz.github.io/posts/using-emacs-47-magit/">
-<meta property="og:description" content="I've been holding off on doing a Magit video for a while. Mostly
-because I wasn't using it exclusively and also because there are
-already a number of good Magit videos and resources out there.
-
-
-
-What">
+<meta property="og:title" content="Why Strong K12 Teacher Certification is Important">
+<meta property="og:url" content="http://cestlaz.github.io/posts/strong-teacher-certification/">
+<meta property="og:description" content="About a week ago New York State's new regulation creating a K12 CS
+teacher certification went live. Just the other day I was honored to be
+interviewed by  Matt Flamm of Crain's New York in a follow up">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2018-04-07T09:05:36-04:00">
-<meta property="article:tag" content="editing">
-<meta property="article:tag" content="emacs">
-<meta property="article:tag" content="tools">
+<meta property="article:published_time" content="2018-04-10T17:39:30-04:00">
+<meta property="article:tag" content="certification">
+<meta property="article:tag" content="cs">
+<meta property="article:tag" content="policy">
+<meta property="article:tag" content="teaching">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -102,14 +98,14 @@ What">
 						<div class="col-md-8">
 				
 								
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Using Emacs Episode 47 - Magit</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Why Strong K12 Teacher Certification is Important</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                     Mike Zamansky
             </span></p>
-            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2018-04-07T09:05:36-04:00" itemprop="datePublished" title="2018-04-07 09:05">2018-04-07 09:05</time></a></p>
-                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-47-magit.html">Comments</a>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2018-04-10T17:39:30-04:00" itemprop="datePublished" title="2018-04-10 17:39">2018-04-10 17:39</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/strong-teacher-certification.html">Comments</a>
 
 
             
@@ -117,50 +113,92 @@ What">
 </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div id="outline-container-org86de79d" class="outline-2">
-<h2 id="org86de79d"></h2>
-<div class="outline-text-2" id="text-org86de79d">
+    <div id="outline-container-org44a29a0" class="outline-2">
+<h2 id="org44a29a0"></h2>
+<div class="outline-text-2" id="text-org44a29a0">
 <p>
-I've been holding off on doing a <a href="https://magit.vc/">Magit</a> video for a while. Mostly
-because I wasn't using it exclusively and also because there are
-already a number of good Magit videos and resources out there.
+About a week ago New York State's new regulation creating a <a href="http://www.crainsnewyork.com/article/20180327/NEWS/180329893/new-york-will-finally-have-certified-computer-science-teachers">K12 CS
+teacher certification</a> went live. Just the other day I was honored to be
+interviewed by  <a href="https://twitter.com/mflamm_reporter">Matt Flamm</a> of Crain's New York in a <a href="http://www.crainsnewyork.com/article/20180410/TECHNOLOGY/180419999/asked-answered-teacher-changed-jobs-to-push-for-new-york-states-new">follow up piece</a>
+about it. 
 </p>
 
 <p>
-What changed? Along with the new version of Magin, Jonas Bernoulli
-wrote up <a href="https://emacsair.me/2017/09/01/magit-walk-through/">a walkthrough of the Magit interface</a>. For whatever reason,
-it all finally clicked. 
+Having K12 CS teacher certification is big and having quality programs
+that lead to certification is <b>HUGE</b>. In my view, it's a game changer.
 </p>
 
 <p>
-In spite of what the documentation says, Magit <b>is not</b> an interface
-for git. Magit is a <b>command and control</b> center for git. You can
-launch it just to execute some git commands but you can also leave it
-up and running in an Emacs window or frame as a constant project
-overview.
+Let's Focus on high school, my wheelhouse.
 </p>
 
 <p>
-Wow. Mind blown!!!
+From a course offerings point of view it's the wild west. I don't mean
+this as a bad thing, it's just that there's a huge range of offerings
+from AP to home brew, physical computing, game based, cyber security,
+you name it, there's a curriculum. The long and short of this is that
+schools need teachers to teach all of these experiences. Without a
+strong certification pathway we're going to be stuck with the current
+training based model where teachers are trained to deliver canned
+curricula rather than truly teach. With strong teacher preparation
+programs teachers will be prepared not only to deliver all the
+existing curricula but, arguable more importantly design their own
+learning experiences appropriate for the populations they work with.
 </p>
 
 <p>
-If you use Emacs for Deveopment, you <b>have to</b> use Magit. If you don't
-use Emacs, you can load it on the side for Magit. If you're not a
-developer, learn to code so you can use Magit!!!!!
+This is important and alone would make having CS certification
+worthwhile but to me the BIG win is that it creates a viable career
+path. 
 </p>
 
 <p>
-I tried to do justice to the package in the video. Magit along with <a href="https://orgmode.org/">Org
-Mode</a> are arguably Emacs killer apps - enough in and of themselves to
-justify using Emacs.
+People say we'll never find enough CS teachers because the tech
+industry pays so well. I've never believed that. We find math teachers
+even though many could flee to finance and chem teachers in spite of
+big pharma's call so why can't we find CS teachers? Because we've
+never provided a path into the profession and a viable career track. 
 </p>
 
 <p>
-Check out the video:
+Certification means that over time schools will be able to build CS
+teachers and the discipline will be treated as the other
+subjects. Prior to certification, a CS teacher might be cut if a
+school's math department downsized. With certification, the career
+track for a CS teacher is the same as the track for any other teacher.
 </p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1IYsiHXR620" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p>
+It also means that young people starting out who are interested in
+both teaching and computer science will have a way of getting into the
+profession - something that has never before existed.
+</p>
+
+<p>
+Having CS certification alone won't woo a
+plethora of current tech professionals into teaching but over time,
+we'll start to have CS Ed majors or CS majors pursuing CS ED Masters
+degrees and entering the profession. This won't happen in a press or
+election cycle but it will happen.
+</p>
+
+<p>
+This all hinges on quality prep programs. I think I've hit the sweet
+spot with what I've designed at Hunter. The critical components are of
+course content and pedagogy. Teacher candidates must have both
+sufficient depth and breadth in the subject and all the pedagogical
+content knowledge that comes along with it. I don't agree with the
+common approach of taking a course to teach a course - that is, having
+courses like "APCS - Principles for teachers" or "APCS - A for
+teachers."  I want my teachers to be able to teach any reasonable
+curriculum or design their own so we'll be rolling out courses that
+examine the commonly offerd curricula but prepare teachers for a whole
+lot more.
+</p>
+
+<p>
+It's been an exciting week in NY CS Ed and there's a lot more to come.
+</p>
 </div>
 </div>
 
@@ -176,24 +214,22 @@ Check out the video:
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
 </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../categories/editing/" rel="tag">editing</a></li>
-            <li><a class="tag p-category" href="../../categories/emacs/" rel="tag">emacs</a></li>
-            <li><a class="tag p-category" href="../../categories/tools/" rel="tag">tools</a></li>
+<li><a class="tag p-category" href="../../categories/certification/" rel="tag">certification</a></li>
+            <li><a class="tag p-category" href="../../categories/cs/" rel="tag">cs</a></li>
+            <li><a class="tag p-category" href="../../categories/policy/" rel="tag">policy</a></li>
+            <li><a class="tag p-category" href="../../categories/teaching/" rel="tag">teaching</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../hs-competitions/" rel="prev" title="Competitions and Hackathons">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../strong-teacher-certification/" rel="next" title="Why Strong K12 Teacher Certification is Important">Next post</a>
+                <a href="../using-emacs-47-magit/" rel="prev" title="Using Emacs Episode 47 - Magit">Previous post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="cestlaz",
-            disqus_url="http://cestlaz.github.io/posts/using-emacs-47-magit/",
-        disqus_title="Using Emacs Episode 47 - Magit",
-        disqus_identifier="cache/posts/using-emacs-47-magit.html",
+            disqus_url="http://cestlaz.github.io/posts/strong-teacher-certification/",
+        disqus_title="Why Strong K12 Teacher Certification is Important",
+        disqus_identifier="cache/posts/strong-teacher-certification.html",
         disqus_config = function () {
             this.language = "en";
         };
