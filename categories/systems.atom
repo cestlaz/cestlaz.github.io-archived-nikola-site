@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about systems</title>
   <id>http://cestlaz.github.io/categories/systems.atom</id>
-  <updated>2018-03-01T22:28:48Z</updated>
+  <updated>2018-04-18T21:34:41Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -19,9 +19,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/"/>
-    <summary type="html">&lt;div id="outline-container-orgad9edaa" class="outline-2"&gt;
-&lt;h2 id="orgad9edaa"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgad9edaa"&gt;
+    <summary type="html">&lt;div id="outline-container-org354c0a5" class="outline-2"&gt;
+&lt;h2 id="org354c0a5"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org354c0a5"&gt;
 &lt;p&gt;
 I wasn't going to go to this session. I started out in a panel on
 integrating social good into CS Ed. With the panel not meeting my
@@ -31,7 +31,7 @@ Programming&lt;/a&gt;, a paper presented by &lt;a href="http://www.cs.cmu.edu/~b
 &lt;/p&gt;
 
 &lt;p&gt;
-I really like both the paper and the talk.
+I really liked both the paper and the talk.
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -45,13 +45,13 @@ or &lt;b&gt;malloc&lt;/b&gt; for us old time C wonks.
 
 &lt;p&gt;
 There were a number of self perceived  deficiencies with the
-assignment such as it encouraging bad programming style by modeling
+assignment such as encouraging bad programming style by modeling
 less than ideal practices but the biggest deficiency as that students
 could game the assignment. Students could do very well on the
 assignment by exploiting knowledge of the assignment rather than by
 writing a full and correct malloc implementation. One example is that
 students were able to figure out that no allocation would be more than
-100MB so they really didn't have to deal with 64 bit pointers. Tey
+100MB so they really didn't have to deal with 64 bit pointers. They
 could use smaller offsets thus simplifying the assignment. The
 assignment became more about figuring out how to get it through the
 grader and less about learning memory management. I'm sure I'm
@@ -92,6 +92,69 @@ but my big takeaway was…
 
 &lt;p&gt;
 Well, Duh…
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;students aren't doing as they should&lt;/li&gt;
+&lt;li&gt;teacher realizes students are gaming assignment&lt;/li&gt;
+&lt;li&gt;teacher reworks assignment&lt;/li&gt;
+&lt;li&gt;students do better&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Teachers do this all the time. Of course when we do it, it's not
+"research." This was a recurring theme for me at SIGCSE2018 and I
+tweeted it. While it's true that K12 teachers can learn a lot about CS
+content from higher ed, people in higher ed can learn a lot about
+teaching from teachers. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What Railing presented was terrific and important as changing
+assignments like this will now be considered by people who haven't
+thought about this before but this is second nature to a teacher. Of
+course I'm talking about a good teacher, not one who blindly follows
+scripted lessons.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't mean this as a slight to professors. They're hired and
+promoted based on research so much of their job involves another skill
+set. I know many professors who care very much about teaching but they
+might only teach one or two classes a semester that meets once or
+twice a week while a typical high school teacher meets 150 students a
+day five days a week over five different classes a day.  Much more of
+an opportunity for deliberate practice.
+&lt;/p&gt;
+
+&lt;p&gt;
+This presents a huge challenge. How can professors who are hired and
+promoted as researchers be given the time and ability to develop as
+teachers? What about adjuncts or Teaching Assistants? I'd imagine it's
+even harder for them. I know that colleges have lines for teaching
+faculty but from what I can see, those instructors are usually super
+overloaded with classes and students so that doesn't solve the
+problem. Even if you do have teaching faculty that have the time to
+develop their craft, how do you get those teaching chops over to the
+research faculty?
+&lt;/p&gt;
+
+&lt;p&gt;
+After the session, I was talking about this with &lt;a href="http://www.cs.cmu.edu/~mjs/"&gt;Mark Stehlik&lt;/a&gt;,
+Assistant Dean at CMU's School of Computer Science. Mark was telling
+me about CMU's efforts to develop teaching faculty across the
+disciplines. I was happy to hear about the efforts CMU was taking but
+it sounds like they have the same challenges with respect to pedagogy
+as everyone else. If it's a challenge for CMU with all their
+resources, what does that mean for the rest of us?
+&lt;/p&gt;
+
+&lt;p&gt;
+Still, it was encouraging to go to a number of sessions where it was
+clear that professors - both teaching and research faculty are serious
+about the craft of teaching and conferences like SIGCSE can bring them
+together with those of us who don't have the chops as researchers but
+do so as teachers.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>

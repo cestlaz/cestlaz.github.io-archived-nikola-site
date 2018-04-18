@@ -3,7 +3,7 @@
 <feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 25)</title>
   <id>http://cestlaz.github.io/index-25.atom</id>
-  <updated>2018-02-12T19:18:15Z</updated>
+  <updated>2017-12-22T12:59:43Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -25,9 +25,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-23-capture-1/"/>
-    <summary type="html">&lt;div id="outline-container-org03cfdf2" class="outline-2"&gt;
-&lt;h2 id="org03cfdf2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org03cfdf2"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 Org mode has an amazing feature - &lt;b&gt;&lt;b&gt;org-capture&lt;/b&gt;&lt;/b&gt;. I only started
 using it recently but it's really awesome. 
@@ -48,10 +48,14 @@ what I use for:
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;recording blog ideas&lt;/li&gt;
-&lt;li&gt;managing bookmarks&lt;/li&gt;
-&lt;li&gt;taking short Notes&lt;/li&gt;
-&lt;li&gt;managing my calendar.&lt;/li&gt;
+&lt;li&gt;recording blog ideas
+&lt;/li&gt;
+&lt;li&gt;managing bookmarks
+&lt;/li&gt;
+&lt;li&gt;taking short Notes
+&lt;/li&gt;
+&lt;li&gt;managing my calendar.
+&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -156,26 +160,35 @@ More information on capture templates can be found &lt;a href="http://orgmode.or
 &lt;/p&gt;
 
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-wPfxuxIfeU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/-wPfxuxIfeU"&gt;https://www.youtube.com/embed/-wPfxuxIfeU&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org79e72bb" class="outline-2"&gt;
-&lt;h2 id="org79e72bb"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org79e72bb"&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;Video series overview page:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
@@ -191,9 +204,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/inverted-index/"/>
-    <summary type="html">&lt;div id="outline-container-org98d6538" class="outline-2"&gt;
-&lt;h2 id="org98d6538"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org98d6538"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 I haven't spoken much about the class I've been teaching this
 semester. It's an intro CS course - a programming heavy intro. I
@@ -225,49 +238,49 @@ example, given the following four one line files:
 
 
 &lt;colgroup&gt;
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 &lt;/colgroup&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th scope="col" class="org-left"&gt;files&lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt;contents&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;files&lt;/th&gt;
+&lt;th scope="col" class="left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="left"&gt;contents&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td class="org-left"&gt;file.01&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;if you prick us do we not bleed&lt;/td&gt;
+&lt;td class="left"&gt;file.01&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;if you prick us do we not bleed&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;file.02&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;if you tickle us do we not laugh&lt;/td&gt;
+&lt;td class="left"&gt;file.02&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;if you tickle us do we not laugh&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;file.03&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;if you poison us do we not die and&lt;/td&gt;
+&lt;td class="left"&gt;file.03&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;if you poison us do we not die and&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;file.04&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;if you wrong us shall we not revenge&lt;/td&gt;
+&lt;td class="left"&gt;file.04&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;if you wrong us shall we not revenge&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -283,48 +296,48 @@ that contain it (partially shown here),
 
 
 &lt;colgroup&gt;
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 &lt;/colgroup&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th scope="col" class="org-left"&gt;Word&lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt;Files containing It's&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;Word&lt;/th&gt;
+&lt;th scope="col" class="left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="left"&gt;Files containing It's&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td class="org-left"&gt;if&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;td class="left"&gt;if&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;you&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;td class="left"&gt;you&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;prick&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01&lt;/td&gt;
+&lt;td class="left"&gt;prick&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;us&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;td class="left"&gt;us&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;do&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01 file.02 file.03&lt;/td&gt;
+&lt;td class="left"&gt;do&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01 file.02 file.03&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -601,9 +614,9 @@ works.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-21-web-mode/"/>
-    <summary type="html">&lt;div id="outline-container-org5669c33" class="outline-2"&gt;
-&lt;h2 id="org5669c33"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5669c33"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 Quick post today. 
 &lt;/p&gt;
@@ -649,26 +662,35 @@ The web-mode &lt;a href="http://web-mode.org"&gt;documentation&lt;/a&gt; has mor
 
 
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/69bQa5n23jc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/69bQa5n23jc"&gt;https://www.youtube.com/embed/69bQa5n23jc&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org1ac3301" class="outline-2"&gt;
-&lt;h2 id="org1ac3301"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1ac3301"&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;Video series overview page:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
@@ -684,9 +706,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-22-emacsclient/"/>
-    <summary type="html">&lt;div id="outline-container-orga82bbc9" class="outline-2"&gt;
-&lt;h2 id="orga82bbc9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga82bbc9"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 Another quick hit today.
 &lt;/p&gt;
@@ -717,7 +739,7 @@ That's where running emacs as a server comes in.. I set up a keyboard shortcut m
 &lt;p&gt;
 Rather than trying to run emacs, this tries to connect to an already
 running emacs server. The &lt;b&gt;&lt;b&gt;-c&lt;/b&gt;&lt;/b&gt; creates a new frame. Instead if you
-use &lt;b&gt;&lt;b&gt;-t&lt;/b&gt;&lt;/b&gt; it will open emacs in the terminal. The &lt;b&gt;&lt;b&gt;-a ""&lt;/b&gt;&lt;/b&gt; tells
+use &lt;b&gt;&lt;b&gt;-t&lt;/b&gt;&lt;/b&gt; it will open emacs in the terminal. The &lt;b&gt;*-a ""*&lt;/b&gt; tells
 emacs to run itself as a server (daemon) if it isn't already running.
 &lt;/p&gt;
 
@@ -734,26 +756,35 @@ forever since you just keep emacs up and running.
 
 
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/9AHGsCtsClg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/9AHGsCtsClg"&gt;https://www.youtube.com/embed/9AHGsCtsClg&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org21972e8" class="outline-2"&gt;
-&lt;h2 id="org21972e8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org21972e8"&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;Video series overview page:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
@@ -769,9 +800,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-20-yanking/"/>
-    <summary type="html">&lt;div id="outline-container-org4ed5e97" class="outline-2"&gt;
-&lt;h2 id="org4ed5e97"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4ed5e97"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 Today's video is a bit of a follow up on the last one as well as a few
 miscillaneous configuration.
@@ -818,26 +849,35 @@ files in a could based filesystem like Dropbox or Owncloud.
 &lt;/p&gt;
 
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LReZI7VAy8w" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/LReZI7VAy8w"&gt;https://www.youtube.com/embed/LReZI7VAy8w&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-orgd60bb5c" class="outline-2"&gt;
-&lt;h2 id="orgd60bb5c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd60bb5c"&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;Video series overview page:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
@@ -853,9 +893,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/dont-focus-on-sts/"/>
-    <summary type="html">&lt;div id="outline-container-org77d4061" class="outline-2"&gt;
-&lt;h2 id="org77d4061"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org77d4061"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 Over on Facebook, my Alma Mater and long time employer, Stuyvesant
 High School seems to be making a big push to up it's Regeneron Science
@@ -900,8 +940,10 @@ did he do it?
 
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;Identify Stuyvesant's top talent - the ones already most likely to
-succeed in the STS.&lt;/li&gt;
-&lt;li&gt;Pawn them off on a lab or professor.&lt;/li&gt;
+succeed in the STS.
+&lt;/li&gt;
+&lt;li&gt;Pawn them off on a lab or professor.
+&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -948,9 +990,9 @@ about.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-19-live/"/>
-    <summary type="html">&lt;div id="outline-container-org1b34c50" class="outline-2"&gt;
-&lt;h2 id="org1b34c50"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1b34c50"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 Some of the videos I want to make are going to be much easier to do if
 I'm working in my own account where my whole file tree is available. 
@@ -979,26 +1021,35 @@ everything.
 
 
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/8RwQNXOjSis" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/8RwQNXOjSis"&gt;https://www.youtube.com/embed/8RwQNXOjSis&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-orgfc2626f" class="outline-2"&gt;
-&lt;h2 id="orgfc2626f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgfc2626f"&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;Video series overview page:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
@@ -1014,9 +1065,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/digitaloceanflask/"/>
-    <summary type="html">&lt;div id="outline-container-org8c3a31b" class="outline-2"&gt;
-&lt;h2 id="org8c3a31b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8c3a31b"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 This post points to the next three videos in the Flask series.
 &lt;/p&gt;
@@ -1034,10 +1085,14 @@ their tutorials
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04"&gt;Server Setup (Ubuntu)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-connect-to-your-droplet-with-ssh%0A"&gt;Connecting to your droplet with ssh&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-sqet-up-ssh-keys--2"&gt;Setting up ssh keys&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorial_series/getting-started-with-linux"&gt;Getting started with Linux (series)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04"&gt;Server Setup (Ubuntu)&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-connect-to-your-droplet-with-ssh%0A"&gt;Connecting to your droplet with ssh&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-sqet-up-ssh-keys--2"&gt;Setting up ssh keys&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorial_series/getting-started-with-linux"&gt;Getting started with Linux (series)&lt;/a&gt; 
+&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -1047,24 +1102,39 @@ In general, there are lots of great tutorials and guides at the
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orga0caa35" class="outline-2"&gt;
-&lt;h2 id="orga0caa35"&gt;Setting up a Droplet&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga0caa35"&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LOS8PscXhz8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;Setting up a Droplet&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/LOS8PscXhz8"&gt;https://www.youtube.com/embed/LOS8PscXhz8&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org470ca1c" class="outline-2"&gt;
-&lt;h2 id="org470ca1c"&gt;Deploying with Gunicorn&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org470ca1c"&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/oum5Kh-69pg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;Deploying with Gunicorn&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/oum5Kh-69pg"&gt;https://www.youtube.com/embed/oum5Kh-69pg&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orged1fd29" class="outline-2"&gt;
-&lt;h2 id="orged1fd29"&gt;sshfs and FreeDNS&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orged1fd29"&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/aha2r5I18i0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div id="outline-container-sec-4" class="outline-2"&gt;
+&lt;h2 id="sec-4"&gt;sshfs and FreeDNS&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-4"&gt;
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/aha2r5I18i0"&gt;https://www.youtube.com/embed/aha2r5I18i0&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
     <category term="devops" label="devops"/>
@@ -1080,9 +1150,9 @@ In general, there are lots of great tutorials and guides at the
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-18-narrow/"/>
-    <summary type="html">&lt;div id="outline-container-org69dd205" class="outline-2"&gt;
-&lt;h2 id="org69dd205"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org69dd205"&gt;
+    <summary type="html">&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 I meant to cover these last time but decided not to so as to keep the
 videos to about 10 minutes each.
@@ -1154,26 +1224,35 @@ Enjoy
 
 
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/xne0kS1DfVs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/xne0kS1DfVs"&gt;https://www.youtube.com/embed/xne0kS1DfVs&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-orgaf3fd46" class="outline-2"&gt;
-&lt;h2 id="orgaf3fd46"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgaf3fd46"&gt;
+&lt;div id="outline-container-sec-2" class="outline-2"&gt;
+&lt;h2 id="sec-2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-2"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
 &lt;li&gt;Video series overview page:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
