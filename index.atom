@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2018-04-21T00:00:58Z</updated>
+  <updated>2018-04-21T12:43:26Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,115 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-38.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>No Magic Bullets - Discovery Learning</title>
+    <id>http://cestlaz.github.io/posts/no-magic-bullets-constructivism/</id>
+    <updated>2018-04-21T07:40:16-04:00</updated>
+    <published>2018-04-21T07:40:16-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/no-magic-bullets-constructivism/"/>
+    <summary type="html">&lt;div id="outline-container-org4df9158" class="outline-2"&gt;
+&lt;h2 id="org4df9158"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4df9158"&gt;
+&lt;p&gt;
+The most recent NYC CSTA chapter meeting was "How do I assess CS?" I
+wanted to go but it's been such a crazy month I was just too wiped
+out. Fortunately, the meetup was &lt;a href="https://www.youtube.com/watch?v=XIMKAZbHAiA&amp;amp;index=83&amp;amp;list=WL&amp;amp;t=1796s"&gt;recorded&lt;/a&gt;. I was able to watch the
+first half this morning while working out on my &lt;a href="https://www.staczero.com/hero"&gt;stationary trainer&lt;/a&gt;
+which leads me to today's rare Saturday morning blog
+post. The meetup consisted of two panels. The first was made up of K12
+teachers who taught CS. I can't talk about the second panel yet since I'm
+only halfway through but there were a couple of points made by my
+friend &lt;a href="https://twitter.com/KatieJergens"&gt;Katie Jergens&lt;/a&gt; who teaches at Dalton that I thought were worth
+talking about.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first was when Katie noted that through working with the panel,
+one of her takeaways was that:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Giving students an explicit strategy for solving a problem - "this is
+how I would do it….," - giving them an explicit strategy first and then giving them a
+problem for which that strategy would apply is much more effective than
+having them discover it on their own.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+This was refreshing to hear after being beaten over the head on
+discovery learning and constructivism for the past five or so
+years as being the magic bullet for teachers. I shared more thoughts
+on this a few weeks ago when I wrote about a SIGCSE paper presented by
+&lt;a href="https://cestlaz.github.io/posts/sigcse2018-bootstrap/"&gt;Bootstrap World&lt;/a&gt; that I very much liked. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Katie went on to talk about how the group found that while "discovery
+learning" can be effective it can also be frustrating and lose kids
+along the way. It also takes a lot of time and preparation, something
+that's short on supply in most public schools.
+&lt;/p&gt;
+
+&lt;p&gt;
+This made me think about the recent flurry
+of discussion around the debunking of learning styles which had
+previously been the magic bullet. When I started, the secret sauce was cooperative
+learning. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course any good teacher knows there's no magic bullet. You fill
+your tool belt and chest with as much as you can and use what's
+best based on your strengths as a teacher combined with what will work
+best with your students.
+&lt;/p&gt;
+
+&lt;p&gt;
+Another point that Katie made that I found refreshing had to do with 
+something she does with her classes. A good portion of a student's grade is
+based on what she calls a "booster." Each student has to work one on
+one with her on some project. The student either scores a 0 or a 100 -
+the student keeps working with the direct support of the teacher until
+it's perfect. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The important thing that Katie said with respect to this is "I can
+do this because my largest class is sixteen students." No way could
+this ever scale to a public school where a teacher can meet with over
+150 students a day and barely has time eat lunch let alone
+work one on one with a student in a suitably quiet place like an
+office. The refreshing thing to hear was the acknowledgment of the
+fact that what works in a rich private school won't work in a public
+school. 
+&lt;/p&gt;
+
+&lt;p&gt;
+All to often education and yes, CS Ed is driven by people who
+really have no clue. They're anointed as thought leaders but they
+don't walk the walk. Some have some knowledge and experience but many
+don't. Until you've gotten a few years under your belt in a strap
+cashed public school that takes all comers, don't tell them how they
+should do it. Katie didn't - she acknowledged the problem - too bad so
+many others don't. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm looking forward to watching the rest of the video during a future
+workout and might have more to share then. For now, take a look for
+yourself.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="assessment" label="assessment"/>
+    <category term="csed" label="csed"/>
+    <category term="teaching" label="teaching"/>
+  </entry>
   <entry>
     <title>Unit Tests Grading Workflow</title>
     <id>http://cestlaz.github.io/posts/unit-tests-grading-workflow/</id>
@@ -20,9 +129,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/unit-tests-grading-workflow/"/>
-    <summary type="html">&lt;div id="outline-container-orgab2bca9" class="outline-2"&gt;
-&lt;h2 id="orgab2bca9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgab2bca9"&gt;
+    <summary type="html">&lt;div id="outline-container-org3003fc5" class="outline-2"&gt;
+&lt;h2 id="org3003fc5"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3003fc5"&gt;
 &lt;p&gt;
 I've talked before about unit testing (&lt;a href="http://cestlaz.github.io/posts/testing-testing"&gt;here&lt;/a&gt;, and &lt;a href="http://cestlaz.github.io/posts/testing-part2"&gt;here&lt;/a&gt;). My premise is
 that in addition to being an important industry technique, it's a
@@ -165,9 +274,9 @@ drill down into the other projects efficiently as well.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/teals-time/"/>
-    <summary type="html">&lt;div id="outline-container-orgc173508" class="outline-2"&gt;
-&lt;h2 id="orgc173508"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc173508"&gt;
+    <summary type="html">&lt;div id="outline-container-org6d915c6" class="outline-2"&gt;
+&lt;h2 id="org6d915c6"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6d915c6"&gt;
 &lt;p&gt;
 Everybody know's I'm the Statler and Waldorf of the CS Education
 world.
@@ -252,9 +361,9 @@ with TEALS - here's a link to more information:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/math-for-math-teachers/"/>
-    <summary type="html">&lt;div id="outline-container-org30432c8" class="outline-2"&gt;
-&lt;h2 id="org30432c8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org30432c8"&gt;
+    <summary type="html">&lt;div id="outline-container-org699c524" class="outline-2"&gt;
+&lt;h2 id="org699c524"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org699c524"&gt;
 &lt;p&gt;
 Last Thursday I attended an event - the release of "Priming the
 Computer Science Teacher Pump: Integrating CS Education into Schools
@@ -358,9 +467,9 @@ We can do better.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/strong-teacher-certification/"/>
-    <summary type="html">&lt;div id="outline-container-org44a29a0" class="outline-2"&gt;
-&lt;h2 id="org44a29a0"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org44a29a0"&gt;
+    <summary type="html">&lt;div id="outline-container-org7e41e12" class="outline-2"&gt;
+&lt;h2 id="org7e41e12"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7e41e12"&gt;
 &lt;p&gt;
 About a week ago New York State's new regulation creating a &lt;a href="http://www.crainsnewyork.com/article/20180327/NEWS/180329893/new-york-will-finally-have-certified-computer-science-teachers"&gt;K12 CS
 teacher certification&lt;/a&gt; went live. Just the other day I was honored to be
@@ -460,9 +569,9 @@ It's been an exciting week in NY CS Ed and there's a lot more to come.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-47-magit/"/>
-    <summary type="html">&lt;div id="outline-container-org86de79d" class="outline-2"&gt;
-&lt;h2 id="org86de79d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org86de79d"&gt;
+    <summary type="html">&lt;div id="outline-container-orgcaa993b" class="outline-2"&gt;
+&lt;h2 id="orgcaa993b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgcaa993b"&gt;
 &lt;p&gt;
 I've been holding off on doing a &lt;a href="https://magit.vc/"&gt;Magit&lt;/a&gt; video for a while. Mostly
 because I wasn't using it exclusively and also because there are
@@ -519,9 +628,9 @@ Check out the video:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/hs-competitions/"/>
-    <summary type="html">&lt;div id="outline-container-orgf39025f" class="outline-2"&gt;
-&lt;h2 id="orgf39025f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf39025f"&gt;
+    <summary type="html">&lt;div id="outline-container-org3cd7210" class="outline-2"&gt;
+&lt;h2 id="org3cd7210"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3cd7210"&gt;
 &lt;p&gt;
 Today's the last day of spring break. After the weekend it's back to
 the grind. It really hasn't been much of a spring break. The rain and
@@ -633,9 +742,9 @@ running for years to come.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/tools-and-complexity/"/>
-    <summary type="html">&lt;div id="outline-container-org32ed0d7" class="outline-2"&gt;
-&lt;h2 id="org32ed0d7"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org32ed0d7"&gt;
+    <summary type="html">&lt;div id="outline-container-org45c1165" class="outline-2"&gt;
+&lt;h2 id="org45c1165"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org45c1165"&gt;
 &lt;p&gt;
 &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; wrote about &lt;a href="http://blog.acthompson.net/2018/04/thoughts-on-where-cs-education-tools.html"&gt;CS education tools&lt;/a&gt; earlier today. I've
 also been meaning to write on the topic but from a different point of
@@ -774,9 +883,9 @@ moving in the right direction and this entire rant will become moot in a couple 
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/passover-april-1-and-indiana-jones/"/>
-    <summary type="html">&lt;div id="outline-container-org6fc24cc" class="outline-2"&gt;
-&lt;h2 id="org6fc24cc"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6fc24cc"&gt;
+    <summary type="html">&lt;div id="outline-container-org0afaee9" class="outline-2"&gt;
+&lt;h2 id="org0afaee9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0afaee9"&gt;
 &lt;p&gt;
 I've never done much in terms of the April Fools thing but frequently
 enjoy other peoples shenanigans.
@@ -802,9 +911,9 @@ Enjoy: &lt;a href="http://seccorecit.blogspot.com/2018/04/a-historically-informe
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/do-it-the-dumb-way/"/>
-    <summary type="html">&lt;div id="outline-container-orgbdd5f6c" class="outline-2"&gt;
-&lt;h2 id="orgbdd5f6c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgbdd5f6c"&gt;
+    <summary type="html">&lt;div id="outline-container-org50339e5" class="outline-2"&gt;
+&lt;h2 id="org50339e5"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org50339e5"&gt;
 &lt;p&gt;
 There's so much to like in the shape drawing lessons I talked about
 in my &lt;a href="http://cestlaz.github.io/posts/refactoring/"&gt;refactoring&lt;/a&gt; post that I thought I'd share a little more here.
@@ -951,120 +1060,5 @@ The best solution is one that works and Sometimes the "dumb" approach is the bes
     <category term="cs" label="cs"/>
     <category term="pedagogy" label="pedagogy"/>
     <category term="software-engineering" label="software engineering"/>
-  </entry>
-  <entry>
-    <title>Ethics In CS Education</title>
-    <id>http://cestlaz.github.io/posts/ethics-in-cs/</id>
-    <updated>2018-03-25T16:59:36-04:00</updated>
-    <published>2018-03-25T16:59:36-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/ethics-in-cs/"/>
-    <summary type="html">&lt;div id="outline-container-org33777a9" class="outline-2"&gt;
-&lt;h2 id="org33777a9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org33777a9"&gt;
-&lt;p&gt;
-I've been meaning to write about ethics in CS education for a
-while. Probably since I saw &lt;a href="https://www.nytimes.com/2018/02/12/business/computer-science-ethics-courses.html?smid=fb-share"&gt;this article&lt;/a&gt; in the NY Times but got sidetracked.
-&lt;/p&gt;
-
-&lt;p&gt;
-I was reminded when I saw this tweet by Hadi the other day:
-&lt;/p&gt;
-
-&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;This message is bigger than Facebook. Computer science faces an ethics crisis. That’s why &lt;a href="https://twitter.com/codeorg?ref_src=twsrc%5Etfw"&gt;@codeorg&lt;/a&gt; covers ethics and digital citizenship in our computer science courses. (And we’re thankful that most of the largest tech companies support us) &lt;a href="https://t.co/roSkAzANQM"&gt;https://t.co/roSkAzANQM&lt;/a&gt;&lt;/p&gt;— Hadi Partovi (@hadip) &lt;a href="https://twitter.com/hadip/status/977673429485731840?ref_src=twsrc%5Etfw"&gt;March 24, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-
-&lt;p&gt;
-I think we can all agree that bringing ethics and digital citizenship
-and, frankly, citizenship in general to our students is important. What I wonder is
-what approaches will lead to meaningful results and what methods will
-lead us to checking off the "covered that" box.
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm skeptical of throwing an ethics course into the curriculum as some
-places seem to be doing. A class might be required, might fulfill an
-elective requirement or it might just be an extra course. If it's
-required, what does it replace or are you just going to add more to
-the student load. If it fulfills an elective credit, will it be
-perceived as "the easy course" as opposed to say, theory and if it's
-just an extra course, who's going to take it? Will it just become
-preaching to the choir. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Better is what Hadi mentioned in his tweet - embed ethics throughout
-all of your courses and while I think this type of embedding is
-important and I'd argue necessary, I'm still betting it won't be
-enough to make a difference.
-&lt;/p&gt;
-
-&lt;p&gt;
-When teaching a course, teachers cover the curriculum but when you
-drill down to where they focus their time, it comes down to:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;what they think is important for the kids to know.&lt;/li&gt;
-&lt;li&gt;what they think the kids will need for that high stakes exam.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-If a teacher feels embedding ethical concerns is important they'll
-spend time on it, if not, it will be lip service. Even if it's on the
-high stakes exam, unless the teacher really believes that this is
-important it will just be teaching to the test.
-&lt;/p&gt;
-
-&lt;p&gt;
-I'd argue that it has to go even further since teachers can only do so
-much. How many schools have honor codes and how many of us know
-graduates from those schools who exhibit less than ethical behaviour.
-&lt;/p&gt;
-
-&lt;p&gt;
-So what do we do?
-&lt;/p&gt;
-
-&lt;p&gt;
-Well, of course we do have to embed ethical concerns across the
-curriculum. Teachers should be armed with both the materials and time
-needed to address ethical concerns but beyond that, we need teachers
-for which ethical CS is important.
-&lt;/p&gt;
-
-&lt;p&gt;
-My friend &lt;a href="https://twitter.com/ed_saber"&gt;Saber Khan&lt;/a&gt; has been facilitating a monthly #ethicalCS
-twitter chat for close to a year now. I don't take part in too many
-twitter chats but do recognize that they're important in raising both
-awareness and community. I've also seen ethical CS issues more
-frequently appear as conference sessions and professional development.
-&lt;/p&gt;
-
-&lt;p&gt;
-The next big step is to start at the beginning - pre service teacher
-training and in my opinion, not with a course but rather embedding
-ethical issues throughout teacher preparation. 
-&lt;/p&gt;
-
-&lt;p&gt;
-If we want to crack this nut it can't just be from curriculum and from
-the choir. Pre service CS teacher training is in it's infancy and has
-not yet really found its form.
-&lt;/p&gt;
-
-&lt;p&gt;
-Much to my chagrin, a lot of CS Ed has gone the way of other Ed: Math
-Ed, Science Ed, etc. and not in a good way. Let's see if we can make
-sure that pre service CS teacher preparation develops to attract and
-create great teachers for which ethical CS is part of their core. 
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="education" label="education"/>
-    <category term="ethicalcs" label="ethicalCS"/>
-    <category term="preservicexs" label="preservicexs"/>
-    <category term="teachers" label="teachers"/>
   </entry>
 </feed>
