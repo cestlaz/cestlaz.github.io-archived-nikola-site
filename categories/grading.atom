@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>Posts about grading</title>
+  <id>http://cestlaz.github.io/categories/grading.atom</id>
+  <updated>2018-04-21T00:00:58Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/grading.atom"/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/grading/"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Unit Tests Grading Workflow</title>
+    <id>http://cestlaz.github.io/posts/unit-tests-grading-workflow/</id>
+    <updated>2018-04-20T17:49:28-04:00</updated>
+    <published>2018-04-20T17:49:28-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/unit-tests-grading-workflow/"/>
+    <summary type="html">&lt;div id="outline-container-orgab2bca9" class="outline-2"&gt;
+&lt;h2 id="orgab2bca9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgab2bca9"&gt;
+&lt;p&gt;
+I've talked before about unit testing (&lt;a href="http://cestlaz.github.io/posts/testing-testing"&gt;here&lt;/a&gt;, and &lt;a href="http://cestlaz.github.io/posts/testing-part2"&gt;here&lt;/a&gt;). My premise is
+that in addition to being an important industry technique, it's a
+sound practice for students studying CS. I also contend that it can
+make grading easier on the teacher. Maybe not as easy as an
+auto-grader but those have &lt;a href="https://cestlaz.github.io/posts/2015-10-16-graders.html/#.WtplHHXwZhE"&gt;their own problems&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Since I spent most of today grading I thought I'd share my current
+workflow and how unit tests have made me more efficient.
+&lt;/p&gt;
+
+&lt;p&gt;
+I have each student make a single GitHub repo for all individual
+homeworks, labs and small projects. They'll make additional repos for
+larger and group projects. They fill out a Google form to give me the
+repo link. I download the form and end up with a CSV file something like this:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Doe, John, git@github.com:johndoe/mymoework.git
+Doe, Jane, git@github.com:janedoe/labs.git
+etc.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+My goal is to clone each students repo into a directory and then
+throughout the term, they add assignments to their own repos using the
+names and specifications I give them. For example, after assigning
+three assignments, I could pull everything from their repos and I
+would have a directory structure something like this:
+&lt;/p&gt;
+
+
+&lt;pre class="example"&gt;
+hw
+├── doe_jane
+│   ├── hw_01
+│   ├── hw_02
+│   └── hw_03
+│ 
+└── doe_john
+    ├── hw_01
+    └── hw_02
+&lt;/pre&gt;
+
+&lt;p&gt;
+To get there, I have to change the csv file to a small shell script:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone git@github.com:johndoe/mymoework.git doe_john
+git clone git@github.com:janedoe/labs.git doe_jane
+etc.
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+I usually do this in Emacs with a macro.
+&lt;/p&gt;
+
+&lt;p&gt;
+Now I'm ready to go.
+&lt;/p&gt;
+
+&lt;p&gt;
+Whenever there's a new assignment, I just have to update all the
+repos. I go into the root hw directory and loop through all the
+subdirectoryes:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cs /path/to/hw_root
+for i in `ls`
+do 
+  cd /path/to/hw_root/$i
+  git pull
+done
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+At this point I could go into each repo but we can do better. Since I
+have all of my students submit a Makefile with a default target to
+build an executable named &lt;code&gt;main&lt;/code&gt; and also a target named &lt;code&gt;tests&lt;/code&gt; which
+will build an executable to run the unit tests named &lt;code&gt;tests&lt;/code&gt; I do this
+instead of a straight pull:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cs /path/to/hw_root
+for i in `ls`
+do 
+  cd /path/to/hw_root/$i
+  git pull
+  cd hw_03 # or whatever assignment I'm grading
+  make tests
+  make 
+done
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Now, if I want, I can go into each directory, run the tests by typing
+&lt;code&gt;./tests&lt;/code&gt;  and the hw or project with &lt;code&gt;./main&lt;/code&gt;. I can also add a
+couple of lines to the for loop above like:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;echo "$i Test Report\n----------------\n" &amp;gt;&amp;gt; /path/to/hw_root/test_report
+./tests &amp;gt;&amp;gt; /path/to/hw_root/test_rport
+echo "----------------------\n\n"
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+This gives me a single file with everyone's test results. Either by
+doing this or by running the tests in each folder manually I can
+quickly see what works and what doesn't.
+&lt;/p&gt;
+
+&lt;p&gt;
+While I'm doing this, I have Emacs up and with &lt;b&gt;dired mode&lt;/b&gt; and more
+specifically &lt;b&gt;ag-dired-regexp&lt;/b&gt; which lets me easily
+navigate to any student's files. Combined with the test results I can
+quickly evaluate the entire assignment.
+&lt;/p&gt;
+
+&lt;p&gt;
+Put all of this together and it makes grading somewhat bearable. I can
+work through well written, correct assignments extremely quickly and
+drill down into the other projects efficiently as well.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="grading" label="grading"/>
+    <category term="testing" label="testing"/>
+    <category term="workflow" label="workflow"/>
+  </entry>
+</feed>

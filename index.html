@@ -18,8 +18,8 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
-<link rel="next" href="index-37.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/teals-time/" type="text/html">
+<link rel="next" href="index-38.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/unit-tests-grading-workflow/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,151 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/teals-time/" class="u-url">TEALS Time</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/unit-tests-grading-workflow/" class="u-url">Unit Tests Grading Workflow</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/unit-tests-grading-workflow/" rel="bookmark"><time class="published dt-published" datetime="2018-04-20T17:49:28-04:00" title="2018-04-20 17:49">2018-04-20 17:49</time></a></p>
+                <p class="commentline">            <a href="posts/unit-tests-grading-workflow/#disqus_thread" data-disqus-identifier="cache/posts/unit-tests-grading-workflow.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-orgab2bca9" class="outline-2">
+<h2 id="orgab2bca9"></h2>
+<div class="outline-text-2" id="text-orgab2bca9">
+<p>
+I've talked before about unit testing (<a href="http://cestlaz.github.io/posts/testing-testing">here</a>, and <a href="http://cestlaz.github.io/posts/testing-part2">here</a>). My premise is
+that in addition to being an important industry technique, it's a
+sound practice for students studying CS. I also contend that it can
+make grading easier on the teacher. Maybe not as easy as an
+auto-grader but those have <a href="https://cestlaz.github.io/posts/2015-10-16-graders.html/#.WtplHHXwZhE">their own problems</a>. 
+</p>
+
+<p>
+Since I spent most of today grading I thought I'd share my current
+workflow and how unit tests have made me more efficient.
+</p>
+
+<p>
+I have each student make a single GitHub repo for all individual
+homeworks, labs and small projects. They'll make additional repos for
+larger and group projects. They fill out a Google form to give me the
+repo link. I download the form and end up with a CSV file something like this:
+</p>
+
+<div class="highlight"><pre><span></span>Doe, John, git@github.com:johndoe/mymoework.git
+Doe, Jane, git@github.com:janedoe/labs.git
+etc.
+</pre></div>
+
+
+<p>
+My goal is to clone each students repo into a directory and then
+throughout the term, they add assignments to their own repos using the
+names and specifications I give them. For example, after assigning
+three assignments, I could pull everything from their repos and I
+would have a directory structure something like this:
+</p>
+
+
+<pre class="example">
+hw
+├── doe_jane
+│   ├── hw_01
+│   ├── hw_02
+│   └── hw_03
+│ 
+└── doe_john
+    ├── hw_01
+    └── hw_02
+</pre>
+
+<p>
+To get there, I have to change the csv file to a small shell script:
+</p>
+
+<div class="highlight"><pre><span></span>git clone git@github.com:johndoe/mymoework.git doe_john
+git clone git@github.com:janedoe/labs.git doe_jane
+etc.
+</pre></div>
+
+<p>
+I usually do this in Emacs with a macro.
+</p>
+
+<p>
+Now I'm ready to go.
+</p>
+
+<p>
+Whenever there's a new assignment, I just have to update all the
+repos. I go into the root hw directory and loop through all the
+subdirectoryes:
+</p>
+
+<div class="highlight"><pre><span></span>cs /path/to/hw_root
+for i in `ls`
+do 
+  cd /path/to/hw_root/$i
+  git pull
+done
+</pre></div>
+
+<p>
+At this point I could go into each repo but we can do better. Since I
+have all of my students submit a Makefile with a default target to
+build an executable named <code>main</code> and also a target named <code>tests</code> which
+will build an executable to run the unit tests named <code>tests</code> I do this
+instead of a straight pull:
+</p>
+
+<div class="highlight"><pre><span></span>cs /path/to/hw_root
+for i in `ls`
+do 
+  cd /path/to/hw_root/$i
+  git pull
+  cd hw_03 # or whatever assignment I'm grading
+  make tests
+  make 
+done
+</pre></div>
+
+<p>
+Now, if I want, I can go into each directory, run the tests by typing
+<code>./tests</code>  and the hw or project with <code>./main</code>. I can also add a
+couple of lines to the for loop above like:
+</p>
+
+<div class="highlight"><pre><span></span>echo "$i Test Report\n----------------\n" &gt;&gt; /path/to/hw_root/test_report
+./tests &gt;&gt; /path/to/hw_root/test_rport
+echo "----------------------\n\n"
+</pre></div>
+
+<p>
+This gives me a single file with everyone's test results. Either by
+doing this or by running the tests in each folder manually I can
+quickly see what works and what doesn't.
+</p>
+
+<p>
+While I'm doing this, I have Emacs up and with <b>dired mode</b> and more
+specifically <b>ag-dired-regexp</b> which lets me easily
+navigate to any student's files. Combined with the test results I can
+quickly evaluate the entire assignment.
+</p>
+
+<p>
+Put all of this together and it makes grading somewhat bearable. I can
+work through well written, correct assignments extremely quickly and
+drill down into the other projects efficiently as well.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/teals-time/" class="u-url">TEALS Time</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -102,9 +246,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orge12efc4" class="outline-2">
-<h2 id="orge12efc4"></h2>
-<div class="outline-text-2" id="text-orge12efc4">
+    <div id="outline-container-orgc173508" class="outline-2">
+<h2 id="orgc173508"></h2>
+<div class="outline-text-2" id="text-orgc173508">
 <p>
 Everybody know's I'm the Statler and Waldorf of the CS Education
 world.
@@ -189,9 +333,9 @@ with TEALS - here's a link to more information:
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org484cc57" class="outline-2">
-<h2 id="org484cc57"></h2>
-<div class="outline-text-2" id="text-org484cc57">
+    <div id="outline-container-org30432c8" class="outline-2">
+<h2 id="org30432c8"></h2>
+<div class="outline-text-2" id="text-org30432c8">
 <p>
 Last Thursday I attended an event - the release of "Priming the
 Computer Science Teacher Pump: Integrating CS Education into Schools
@@ -298,9 +442,9 @@ We can do better.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org0780bf8" class="outline-2">
-<h2 id="org0780bf8"></h2>
-<div class="outline-text-2" id="text-org0780bf8">
+    <div id="outline-container-org44a29a0" class="outline-2">
+<h2 id="org44a29a0"></h2>
+<div class="outline-text-2" id="text-org44a29a0">
 <p>
 About a week ago New York State's new regulation creating a <a href="http://www.crainsnewyork.com/article/20180327/NEWS/180329893/new-york-will-finally-have-certified-computer-science-teachers">K12 CS
 teacher certification</a> went live. Just the other day I was honored to be
@@ -399,9 +543,9 @@ It's been an exciting week in NY CS Ed and there's a lot more to come.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org0403a9e" class="outline-2">
-<h2 id="org0403a9e"></h2>
-<div class="outline-text-2" id="text-org0403a9e">
+    <div id="outline-container-org86de79d" class="outline-2">
+<h2 id="org86de79d"></h2>
+<div class="outline-text-2" id="text-org86de79d">
 <p>
 I've been holding off on doing a <a href="https://magit.vc/">Magit</a> video for a while. Mostly
 because I wasn't using it exclusively and also because there are
@@ -458,9 +602,9 @@ Check out the video:
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org36b3fdf" class="outline-2">
-<h2 id="org36b3fdf"></h2>
-<div class="outline-text-2" id="text-org36b3fdf">
+    <div id="outline-container-orgf39025f" class="outline-2">
+<h2 id="orgf39025f"></h2>
+<div class="outline-text-2" id="text-orgf39025f">
 <p>
 Today's the last day of spring break. After the weekend it's back to
 the grind. It really hasn't been much of a spring break. The rain and
@@ -570,9 +714,9 @@ running for years to come.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org10a8533" class="outline-2">
-<h2 id="org10a8533"></h2>
-<div class="outline-text-2" id="text-org10a8533">
+    <div id="outline-container-org32ed0d7" class="outline-2">
+<h2 id="org32ed0d7"></h2>
+<div class="outline-text-2" id="text-org32ed0d7">
 <p>
 <a href="https://twitter.com/alfredtwo">Alfred Thompson</a> wrote about <a href="http://blog.acthompson.net/2018/04/thoughts-on-where-cs-education-tools.html">CS education tools</a> earlier today. I've
 also been meaning to write on the topic but from a different point of
@@ -710,9 +854,9 @@ moving in the right direction and this entire rant will become moot in a couple 
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org53ebf73" class="outline-2">
-<h2 id="org53ebf73"></h2>
-<div class="outline-text-2" id="text-org53ebf73">
+    <div id="outline-container-org6fc24cc" class="outline-2">
+<h2 id="org6fc24cc"></h2>
+<div class="outline-text-2" id="text-org6fc24cc">
 <p>
 I've never done much in terms of the April Fools thing but frequently
 enjoy other peoples shenanigans.
@@ -741,9 +885,9 @@ Enjoy: <a href="http://seccorecit.blogspot.com/2018/04/a-historically-informed-e
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org803d762" class="outline-2">
-<h2 id="org803d762"></h2>
-<div class="outline-text-2" id="text-org803d762">
+    <div id="outline-container-orgbdd5f6c" class="outline-2">
+<h2 id="orgbdd5f6c"></h2>
+<div class="outline-text-2" id="text-orgbdd5f6c">
 <p>
 There's so much to like in the shape drawing lessons I talked about
 in my <a href="http://cestlaz.github.io/posts/refactoring/">refactoring</a> post that I thought I'd share a little more here.
@@ -900,9 +1044,9 @@ The best solution is one that works and Sometimes the "dumb" approach is the bes
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org79446d6" class="outline-2">
-<h2 id="org79446d6"></h2>
-<div class="outline-text-2" id="text-org79446d6">
+    <div id="outline-container-org33777a9" class="outline-2">
+<h2 id="org33777a9"></h2>
+<div class="outline-text-2" id="text-org33777a9">
 <p>
 I've been meaning to write about ethics in CS education for a
 while. Probably since I saw <a href="https://www.nytimes.com/2018/02/12/business/computer-science-ethics-courses.html?smid=fb-share">this article</a> in the NY Times but got sidetracked.
@@ -1001,92 +1145,11 @@ create great teachers for which ethical CS is part of their core.
 </div>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/sigcse2018-proof/" class="u-url">Sigcse2018 Proof</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/sigcse2018-proof/" rel="bookmark"><time class="published dt-published" datetime="2018-03-23T16:24:21-04:00" title="2018-03-23 16:24">2018-03-23 16:24</time></a></p>
-                <p class="commentline">            <a href="posts/sigcse2018-proof/#disqus_thread" data-disqus-identifier="cache/posts/sigcse2018-proof.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-orgd0b68e2" class="outline-2">
-<h2 id="orgd0b68e2"></h2>
-<div class="outline-text-2" id="text-orgd0b68e2">
-<p>
-Next up from SIGCSE2018 is <a href="https://dl.acm.org/citation.cfm?id=3159609">Connect the Dots to Prove It</a> presented by
-Mark McCartin-Lim. This paper was presented during the same papers
-session as <a href="http://cestlaz.github.io/posts/sigcse2018-theory">MacCormick</a> paper I wrote up previously and my reaction to
-this one was similar to my reaction to MacCormick's.
-</p>
-
-<p>
-My reaction to MacCormick was - "This is awesome but while he's talking
-about redesigning existing theory courses, I think we can get a lot of
-mileage out of bringing these ideas into lower level CS courses."
-</p>
-
-<p>
-I felt similarly about this paper.
-</p>
-
-<p>
-The premise is simple - proof is hard and teaching proof is
-hard. Students don't know how to begin, what's allowed, what's not
-allowed, what's sufficient etc. McCartin-Lim and his team developed a
-software tool to present proof as a puzzle and to provide students
-with necessary support. 
-</p>
-
-<p>
-The tool allows students to interactively construct a graph of their
-proof. The graph helps students visualize the proof and the
-relationships between the assumptions and assertions.
-</p>
-
-<p>
-Here's an example:
-</p>
-
-
-
-<div class="figure">
-<p><img src="img/sigcse2018-proof1.png" alt="sigcse2018-proof1.png" width="500px" align="center"></p>
-</div>
-
-<p>
-And a more complex one:
-</p>
-
-
-
-<div class="figure">
-<p><img src="img/sigcse2018-proof2.png" alt="sigcse2018-proof2.png" width="500px" align="center"></p>
-</div>
-
-<p>
-My immediate thought was that this should be reskinned as a high
-school product and rolled out in Geometry classes. I've written before
-about the fact that proof is <a href="https://cestlaz.github.io/posts/standards-who-for/">rarely taught</a> and rarely taught well even
-though it's supposed to be the star topic between Algebra and Trigonometry. A tool like this could
-probably help. This made me think further of the disconnect between
-K12 and higher education. McCartin-Lim talked about students having
-difficulty learning proof but lost in the conversation is that
-students should start building there proof related foundations in high
-school and supporting them in those early years can go a long way to
-alleviate problems that only surface at the college level.
-</p>
-</div>
-</div>
-    </div>
     </article>
 </div>
         <nav class="postindexpager"><ul class="pager">
 <li class="next">
-                <a href="index-37.html" rel="next">Older posts</a>
+                <a href="index-38.html" rel="next">Older posts</a>
             </li>
         </ul></nav><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
 </div>

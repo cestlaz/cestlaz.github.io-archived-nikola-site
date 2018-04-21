@@ -1,0 +1,119 @@
+#+BEGIN_COMMENT
+.. title: Unit Tests Grading Workflow
+.. slug: unit-tests-grading-workflow
+.. date: 2018-04-20 17:49:28 UTC-04:00
+.. tags: testing, workflow, grading, emacs
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+I've talked before about unit testing ([[http://cestlaz.github.io/posts/testing-testing][here]], and [[http://cestlaz.github.io/posts/testing-part2][here]]). My premise is
+that in addition to being an important industry technique, it's a
+sound practice for students studying CS. I also contend that it can
+make grading easier on the teacher. Maybe not as easy as an
+auto-grader but those have [[https://cestlaz.github.io/posts/2015-10-16-graders.html/#.WtplHHXwZhE][their own problems]]. 
+
+Since I spent most of today grading I thought I'd share my current
+workflow and how unit tests have made me more efficient.
+
+I have each student make a single GitHub repo for all individual
+homeworks, labs and small projects. They'll make additional repos for
+larger and group projects. They fill out a Google form to give me the
+repo link. I download the form and end up with a CSV file something like this:
+
+#+BEGIN_SRC csv
+Doe, John, git@github.com:johndoe/mymoework.git
+Doe, Jane, git@github.com:janedoe/labs.git
+etc.
+#+END_SRC
+
+
+My goal is to clone each students repo into a directory and then
+throughout the term, they add assignments to their own repos using the
+names and specifications I give them. For example, after assigning
+three assignments, I could pull everything from their repos and I
+would have a directory structure something like this:
+
+
+#+BEGIN_EXAMPLE
+hw
+├── doe_jane
+│   ├── hw_01
+│   ├── hw_02
+│   └── hw_03
+│ 
+└── doe_john
+    ├── hw_01
+    └── hw_02
+#+END_EXAMPLE
+
+To get there, I have to change the csv file to a small shell script:
+
+#+BEGIN_SRC bash
+git clone git@github.com:johndoe/mymoework.git doe_john
+git clone git@github.com:janedoe/labs.git doe_jane
+etc.
+#+END_SRC
+
+I usually do this in Emacs with a macro.
+
+Now I'm ready to go.
+
+Whenever there's a new assignment, I just have to update all the
+repos. I go into the root hw directory and loop through all the
+subdirectoryes:
+
+#+BEGIN_SRC bash
+cs /path/to/hw_root
+for i in `ls`
+do 
+  cd /path/to/hw_root/$i
+  git pull
+done
+#+END_SRC
+
+At this point I could go into each repo but we can do better. Since I
+have all of my students submit a Makefile with a default target to
+build an executable named ~main~ and also a target named ~tests~ which
+will build an executable to run the unit tests named ~tests~ I do this
+instead of a straight pull:
+
+#+BEGIN_SRC bash
+cs /path/to/hw_root
+for i in `ls`
+do 
+  cd /path/to/hw_root/$i
+  git pull
+  cd hw_03 # or whatever assignment I'm grading
+  make tests
+  make 
+done
+#+END_SRC
+
+Now, if I want, I can go into each directory, run the tests by typing
+~./tests~  and the hw or project with ~./main~. I can also add a
+couple of lines to the for loop above like:
+
+#+BEGIN_SRC bash
+  echo "$i Test Report\n----------------\n" >> /path/to/hw_root/test_report
+  ./tests >> /path/to/hw_root/test_rport
+  echo "----------------------\n\n"
+#+END_SRC
+
+This gives me a single file with everyone's test results. Either by
+doing this or by running the tests in each folder manually I can
+quickly see what works and what doesn't.
+
+While I'm doing this, I have Emacs up and with *dired mode* and more
+specifically *ag-dired-regexp* which lets me easily
+navigate to any student's files. Combined with the test results I can
+quickly evaluate the entire assignment.
+
+Put all of this together and it makes grading somewhat bearable. I can
+work through well written, correct assignments extremely quickly and
+drill down into the other projects efficiently as well.
+
+
