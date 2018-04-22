@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 21 Apr 2018 12:43:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>No Magic Bullets - Discovery Learning</title><link>http://cestlaz.github.io/posts/no-magic-bullets-constructivism/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4df9158" class="outline-2"&gt;
-&lt;h2 id="org4df9158"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4df9158"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 22 Apr 2018 21:38:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 48 Silversearcher</title><link>http://cestlaz.github.io/posts/using-emacs-48-silversearcher/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org67b566e" class="outline-2"&gt;
+&lt;h2 id="org67b566e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org67b566e"&gt;
+&lt;p&gt;
+A couple of days ago I wrote about on my &lt;a href="http://cestlaz.github.io/posts/unit-tests-grading-workflow"&gt;lab grading workflow&lt;/a&gt;. In the
+post I mentioned that I used Emacs to easily navigate between student
+folders and files so I can actually look at their work in addition to
+their programs output and test results.
+&lt;/p&gt;
+
+&lt;p&gt;
+The key is a combination of &lt;code&gt;dired&lt;/code&gt; and &lt;a href="https://github.com/Wilfred/ag.el"&gt;ag&lt;/a&gt;, Emacs's interface to &lt;a href="https://github.com/ggreer/the_silver_searcher"&gt;the
+Silver Searcher&lt;/a&gt; which is something like a recursive code grep on
+steroids. I also briefly try to show &lt;a href="https://github.com/mhayashi1120/Emacs-wgrep"&gt;wgrep&lt;/a&gt; in the video which allows
+you to edit Emacs grep buffers, effectively allowing you to make
+changes across a set of files all at once. It ended up not working
+with silversearcher - if anyone out there knows why, please chime in.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-sFTkCQ774o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-48-silversearcher/</guid><pubDate>Sun, 22 Apr 2018 21:28:41 GMT</pubDate></item><item><title>No Magic Bullets - Discovery Learning</title><link>http://cestlaz.github.io/posts/no-magic-bullets-constructivism/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org94aa495" class="outline-2"&gt;
+&lt;h2 id="org94aa495"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org94aa495"&gt;
 &lt;p&gt;
 The most recent NYC CSTA chapter meeting was "How do I assess CS?" I
 wanted to go but it's been such a crazy month I was just too wiped
@@ -94,9 +119,9 @@ workout and might have more to share then. For now, take a look for
 yourself.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>assessment</category><category>csed</category><category>teaching</category><guid>http://cestlaz.github.io/posts/no-magic-bullets-constructivism/</guid><pubDate>Sat, 21 Apr 2018 11:40:16 GMT</pubDate></item><item><title>Unit Tests Grading Workflow</title><link>http://cestlaz.github.io/posts/unit-tests-grading-workflow/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3003fc5" class="outline-2"&gt;
-&lt;h2 id="org3003fc5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3003fc5"&gt;
+&lt;/div&gt;</description><category>assessment</category><category>csed</category><category>teaching</category><guid>http://cestlaz.github.io/posts/no-magic-bullets-constructivism/</guid><pubDate>Sat, 21 Apr 2018 11:40:16 GMT</pubDate></item><item><title>Unit Tests Grading Workflow</title><link>http://cestlaz.github.io/posts/unit-tests-grading-workflow/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgab2bca9" class="outline-2"&gt;
+&lt;h2 id="orgab2bca9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgab2bca9"&gt;
 &lt;p&gt;
 I've talked before about unit testing (&lt;a href="http://cestlaz.github.io/posts/testing-testing"&gt;here&lt;/a&gt;, and &lt;a href="http://cestlaz.github.io/posts/testing-part2"&gt;here&lt;/a&gt;). My premise is
 that in addition to being an important industry technique, it's a
@@ -224,9 +249,9 @@ work through well written, correct assignments extremely quickly and
 drill down into the other projects efficiently as well.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>grading</category><category>testing</category><category>workflow</category><guid>http://cestlaz.github.io/posts/unit-tests-grading-workflow/</guid><pubDate>Fri, 20 Apr 2018 21:49:28 GMT</pubDate></item><item><title>TEALS Time</title><link>http://cestlaz.github.io/posts/teals-time/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6d915c6" class="outline-2"&gt;
-&lt;h2 id="org6d915c6"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6d915c6"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>grading</category><category>testing</category><category>workflow</category><guid>http://cestlaz.github.io/posts/unit-tests-grading-workflow/</guid><pubDate>Fri, 20 Apr 2018 21:49:28 GMT</pubDate></item><item><title>TEALS Time</title><link>http://cestlaz.github.io/posts/teals-time/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc173508" class="outline-2"&gt;
+&lt;h2 id="orgc173508"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc173508"&gt;
 &lt;p&gt;
 Everybody know's I'm the Statler and Waldorf of the CS Education
 world.
@@ -298,9 +323,9 @@ with TEALS - here's a link to more information:
 &lt;a href="https://www.tealsk12.org/volunteers/"&gt;https://www.tealsk12.org/volunteers/&lt;/a&gt;.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cseducation</category><category>programs</category><guid>http://cestlaz.github.io/posts/teals-time/</guid><pubDate>Wed, 18 Apr 2018 14:14:13 GMT</pubDate></item><item><title>Math For Math Teachers - watering down CS Ed before we even start</title><link>http://cestlaz.github.io/posts/math-for-math-teachers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org699c524" class="outline-2"&gt;
-&lt;h2 id="org699c524"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org699c524"&gt;
+&lt;/div&gt;</description><category>cseducation</category><category>programs</category><guid>http://cestlaz.github.io/posts/teals-time/</guid><pubDate>Wed, 18 Apr 2018 14:14:13 GMT</pubDate></item><item><title>Math For Math Teachers - watering down CS Ed before we even start</title><link>http://cestlaz.github.io/posts/math-for-math-teachers/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org30432c8" class="outline-2"&gt;
+&lt;h2 id="org30432c8"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org30432c8"&gt;
 &lt;p&gt;
 Last Thursday I attended an event - the release of "Priming the
 Computer Science Teacher Pump: Integrating CS Education into Schools
@@ -393,9 +418,9 @@ sequences.
 We can do better. 
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/math-for-math-teachers/</guid><pubDate>Sat, 14 Apr 2018 14:44:36 GMT</pubDate></item><item><title>Why Strong K12 Teacher Certification is Important</title><link>http://cestlaz.github.io/posts/strong-teacher-certification/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7e41e12" class="outline-2"&gt;
-&lt;h2 id="org7e41e12"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7e41e12"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/math-for-math-teachers/</guid><pubDate>Sat, 14 Apr 2018 14:44:36 GMT</pubDate></item><item><title>Why Strong K12 Teacher Certification is Important</title><link>http://cestlaz.github.io/posts/strong-teacher-certification/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org44a29a0" class="outline-2"&gt;
+&lt;h2 id="org44a29a0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org44a29a0"&gt;
 &lt;p&gt;
 About a week ago New York State's new regulation creating a &lt;a href="http://www.crainsnewyork.com/article/20180327/NEWS/180329893/new-york-will-finally-have-certified-computer-science-teachers"&gt;K12 CS
 teacher certification&lt;/a&gt; went live. Just the other day I was honored to be
@@ -480,9 +505,9 @@ lot more.
 It's been an exciting week in NY CS Ed and there's a lot more to come.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>certification</category><category>cs</category><category>policy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/strong-teacher-certification/</guid><pubDate>Tue, 10 Apr 2018 21:39:30 GMT</pubDate></item><item><title>Using Emacs Episode 47 - Magit</title><link>http://cestlaz.github.io/posts/using-emacs-47-magit/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgcaa993b" class="outline-2"&gt;
-&lt;h2 id="orgcaa993b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgcaa993b"&gt;
+&lt;/div&gt;</description><category>certification</category><category>cs</category><category>policy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/strong-teacher-certification/</guid><pubDate>Tue, 10 Apr 2018 21:39:30 GMT</pubDate></item><item><title>Using Emacs Episode 47 - Magit</title><link>http://cestlaz.github.io/posts/using-emacs-47-magit/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org86de79d" class="outline-2"&gt;
+&lt;h2 id="org86de79d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org86de79d"&gt;
 &lt;p&gt;
 I've been holding off on doing a &lt;a href="https://magit.vc/"&gt;Magit&lt;/a&gt; video for a while. Mostly
 because I wasn't using it exclusively and also because there are
@@ -525,9 +550,9 @@ Check out the video:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/1IYsiHXR620" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-47-magit/</guid><pubDate>Sat, 07 Apr 2018 13:05:36 GMT</pubDate></item><item><title>Competitions and Hackathons</title><link>http://cestlaz.github.io/posts/hs-competitions/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3cd7210" class="outline-2"&gt;
-&lt;h2 id="org3cd7210"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3cd7210"&gt;
+&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-47-magit/</guid><pubDate>Sat, 07 Apr 2018 13:05:36 GMT</pubDate></item><item><title>Competitions and Hackathons</title><link>http://cestlaz.github.io/posts/hs-competitions/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgf39025f" class="outline-2"&gt;
+&lt;h2 id="orgf39025f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf39025f"&gt;
 &lt;p&gt;
 Today's the last day of spring break. After the weekend it's back to
 the grind. It really hasn't been much of a spring break. The rain and
@@ -625,9 +650,9 @@ see great local opportunities like these emerging and hopefully
 running for years to come.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>competitions</category><category>cs</category><category>events</category><guid>http://cestlaz.github.io/posts/hs-competitions/</guid><pubDate>Fri, 06 Apr 2018 21:22:15 GMT</pubDate></item><item><title>Tools and Complexity</title><link>http://cestlaz.github.io/posts/tools-and-complexity/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org45c1165" class="outline-2"&gt;
-&lt;h2 id="org45c1165"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org45c1165"&gt;
+&lt;/div&gt;</description><category>competitions</category><category>cs</category><category>events</category><guid>http://cestlaz.github.io/posts/hs-competitions/</guid><pubDate>Fri, 06 Apr 2018 21:22:15 GMT</pubDate></item><item><title>Tools and Complexity</title><link>http://cestlaz.github.io/posts/tools-and-complexity/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org32ed0d7" class="outline-2"&gt;
+&lt;h2 id="org32ed0d7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org32ed0d7"&gt;
 &lt;p&gt;
 &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; wrote about &lt;a href="http://blog.acthompson.net/2018/04/thoughts-on-where-cs-education-tools.html"&gt;CS education tools&lt;/a&gt; earlier today. I've
 also been meaning to write on the topic but from a different point of
@@ -751,9 +776,9 @@ tool which is also simpler than the alternatives. Maybe we are already
 moving in the right direction and this entire rant will become moot in a couple of years.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>csed</category><category>education</category><category>tools</category><guid>http://cestlaz.github.io/posts/tools-and-complexity/</guid><pubDate>Thu, 05 Apr 2018 22:55:21 GMT</pubDate></item><item><title>Passover April 1 And Indiana Jones</title><link>http://cestlaz.github.io/posts/passover-april-1-and-indiana-jones/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org0afaee9" class="outline-2"&gt;
-&lt;h2 id="org0afaee9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0afaee9"&gt;
+&lt;/div&gt;</description><category>cs</category><category>csed</category><category>education</category><category>tools</category><guid>http://cestlaz.github.io/posts/tools-and-complexity/</guid><pubDate>Thu, 05 Apr 2018 22:55:21 GMT</pubDate></item><item><title>Passover April 1 And Indiana Jones</title><link>http://cestlaz.github.io/posts/passover-april-1-and-indiana-jones/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6fc24cc" class="outline-2"&gt;
+&lt;h2 id="org6fc24cc"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6fc24cc"&gt;
 &lt;p&gt;
 I've never done much in terms of the April Fools thing but frequently
 enjoy other peoples shenanigans.
@@ -768,149 +793,4 @@ that Passover staple, Echad Mi Yodea.
 Enjoy: &lt;a href="http://seccorecit.blogspot.com/2018/04/a-historically-informed-echad-mi-yodea.html"&gt;A Historically Informed Echad Mi Yodea&lt;/a&gt;.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/passover-april-1-and-indiana-jones/</guid><pubDate>Sun, 01 Apr 2018 13:17:21 GMT</pubDate></item><item><title>Do It The Dumb Way</title><link>http://cestlaz.github.io/posts/do-it-the-dumb-way/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org50339e5" class="outline-2"&gt;
-&lt;h2 id="org50339e5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org50339e5"&gt;
-&lt;p&gt;
-There's so much to like in the shape drawing lessons I talked about
-in my &lt;a href="http://cestlaz.github.io/posts/refactoring/"&gt;refactoring&lt;/a&gt; post that I thought I'd share a little more here.
-&lt;/p&gt;
-
-&lt;p&gt;
-It can be argued that the most important things for a program to do is work. The
-most clever, elegant, creative program is worthless if it doesn't
-produce the desired result. All too often, beginners and hot shot beginners in particular try to
-be too clever too early and get themselves into trouble. 
-&lt;/p&gt;
-
-&lt;p&gt;
-When doing the shape drawing lessons the first couple of shape are
-pretty easy
-&lt;/p&gt;
-
-&lt;pre class="example"&gt;
-
-| ****            |    | *               |
-| ****            |    | **              |
-| ****            |    | ***             |
-| ****            |    | ****            |
-| ****            |    |                 |
-|                 |    |                 |
-&lt;/pre&gt;
-
-&lt;p&gt;
-but things get more interesting with the right justified triangle:
-&lt;/p&gt;
-
-
-&lt;pre class="example"&gt;
-----*       *
----**      **
---***     ***
--****    ****
-*****   *****
-
-&lt;/pre&gt;
-
-&lt;p&gt;
-For this triangle, students want to come up with the formula for the
-number of spaces. They usually figure out something like this with
-&lt;code&gt;h-i-1&lt;/code&gt; spaces and &lt;code&gt;i+1&lt;/code&gt; stars:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;tri2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-    &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"-"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-The formulas become harder to figure out as the shapes become more
-complex and sometimes students get stymied.
-&lt;/p&gt;
-
-&lt;p&gt;
-The truth is that while they're struggling to find the perfect
-solution, it's sometimes better to do it the dumb way.
-&lt;/p&gt;
-
-&lt;p&gt;
-Consider drawing a trapezoid like this example of height 5 and
-starting width 12:
-&lt;/p&gt;
-
-&lt;pre class="example"&gt;
-************
- **********
-  ********
-   ******
-    ****
-&lt;/pre&gt;
-
-&lt;p&gt;
-A student could come up with the "formulas" for spaces and stars but
-sometimes there's a more straightforward way.
-&lt;/p&gt;
-
-&lt;p&gt;
-Consider the number of spaces on each line on the left hand side of
-the shape. First line is 0 then 1, 2 etc. Why not start a variable
-&lt;code&gt;spaces&lt;/code&gt; at 0 and increment it on each loop iteration.
-&lt;/p&gt;
-
-&lt;p&gt;
-For the number of stars, it's starting at the width and being reduced
-by 2 each time.
-&lt;/p&gt;
-
-&lt;p&gt;
-This leads to a solution similar to this (using the line routine from
-the earlier refactoring post):
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;trap&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;height&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-
-  &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;spaces&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;stars&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;height&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;spaces&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;" "&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;lines&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;stars&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="n"&gt;spaces&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;spaces&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="n"&gt;stars&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;stars&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-This solution is simple to construct, simple to understand, and quite
-frankly, hard to get wrong.
-&lt;/p&gt;
-
-&lt;p&gt;
-It can also lead a student to discovering a pattern or "formula" such
-as what was used to solve the earlier problems. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This might seem to some as a cheap way out, the dumb approach -
-creating extra variables and have them count along the way but I
-don't. There's nothing wrong with simple and straightforward. Yes, you
-could come up with an elegant formula but the bottom line is you need
-something to count 0,1,2,3… so create a variable to do it. You need
-something to count 12,10,8,… create one for that as well.
-&lt;/p&gt;
-
-&lt;p&gt;
- Now, I'm not advocating writing 100 if statements rather than a loop
-but I think you get the idea.
-&lt;/p&gt;
-
-&lt;p&gt;
-The best solution is one that works and Sometimes the "dumb" approach is the best approach.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>software engineering</category><guid>http://cestlaz.github.io/posts/do-it-the-dumb-way/</guid><pubDate>Fri, 30 Mar 2018 12:24:09 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/passover-april-1-and-indiana-jones/</guid><pubDate>Sun, 01 Apr 2018 13:17:21 GMT</pubDate></item></channel></rss>

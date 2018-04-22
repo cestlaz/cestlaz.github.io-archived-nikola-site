@@ -1,0 +1,30 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs 48 Silversearcher
+.. slug: using-emacs-48-silversearcher
+.. date: 2018-04-22 17:28:41 UTC-04:00
+.. tags: emacs, tools, editing 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+
+A couple of days ago I wrote about on my [[http://cestlaz.github.io/posts/unit-tests-grading-workflow][lab grading workflow]]. In the
+post I mentioned that I used Emacs to easily navigate between student
+folders and files so I can actually look at their work in addition to
+their programs output and test results.
+
+The key is a combination of ~dired~ and [[https://github.com/Wilfred/ag.el][ag]], Emacs's interface to [[https://github.com/ggreer/the_silver_searcher][the
+Silver Searcher]] which is something like a recursive code grep on
+steroids. I also briefly try to show [[https://github.com/mhayashi1120/Emacs-wgrep][wgrep]] in the video which allows
+you to edit Emacs grep buffers, effectively allowing you to make
+changes across a set of files all at once. It ended up not working
+with silversearcher - if anyone out there knows why, please chime in.
+
+Enjoy:
+
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-sFTkCQ774o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+#+END_EXPORT

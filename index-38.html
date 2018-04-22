@@ -91,7 +91,166 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/ethics-in-cs/" class="u-url">Ethics In CS Education</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/do-it-the-dumb-way/" class="u-url">Do It The Dumb Way</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/do-it-the-dumb-way/" rel="bookmark"><time class="published dt-published" datetime="2018-03-30T08:24:09-04:00" title="2018-03-30 08:24">2018-03-30 08:24</time></a></p>
+                <p class="commentline">            <a href="posts/do-it-the-dumb-way/#disqus_thread" data-disqus-identifier="cache/posts/do-it-the-dumb-way.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-orgbdd5f6c" class="outline-2">
+<h2 id="orgbdd5f6c"></h2>
+<div class="outline-text-2" id="text-orgbdd5f6c">
+<p>
+There's so much to like in the shape drawing lessons I talked about
+in my <a href="http://cestlaz.github.io/posts/refactoring/">refactoring</a> post that I thought I'd share a little more here.
+</p>
+
+<p>
+It can be argued that the most important things for a program to do is work. The
+most clever, elegant, creative program is worthless if it doesn't
+produce the desired result. All too often, beginners and hot shot beginners in particular try to
+be too clever too early and get themselves into trouble. 
+</p>
+
+<p>
+When doing the shape drawing lessons the first couple of shape are
+pretty easy
+</p>
+
+<pre class="example">
+
+| ****            |    | *               |
+| ****            |    | **              |
+| ****            |    | ***             |
+| ****            |    | ****            |
+| ****            |    |                 |
+|                 |    |                 |
+</pre>
+
+<p>
+but things get more interesting with the right justified triangle:
+</p>
+
+
+<pre class="example">
+----*       *
+---**      **
+--***     ***
+-****    ****
+*****   *****
+
+</pre>
+
+<p>
+For this triangle, students want to come up with the formula for the
+number of spaces. They usually figure out something like this with
+<code>h-i-1</code> spaces and <code>i+1</code> stars:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">tri2</span><span class="p">(</span><span class="kt">int</span> <span class="n">h</span><span class="p">){</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">r</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">h</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="n">line</span><span class="p">(</span><span class="n">h</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="s">"-"</span><span class="p">)</span> <span class="o">+</span> <span class="n">line</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="s">"*"</span><span class="p">)</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+  <span class="p">}</span>
+</pre></div>
+
+<p>
+The formulas become harder to figure out as the shapes become more
+complex and sometimes students get stymied.
+</p>
+
+<p>
+The truth is that while they're struggling to find the perfect
+solution, it's sometimes better to do it the dumb way.
+</p>
+
+<p>
+Consider drawing a trapezoid like this example of height 5 and
+starting width 12:
+</p>
+
+<pre class="example">
+************
+ **********
+  ********
+   ******
+    ****
+</pre>
+
+<p>
+A student could come up with the "formulas" for spaces and stars but
+sometimes there's a more straightforward way.
+</p>
+
+<p>
+Consider the number of spaces on each line on the left hand side of
+the shape. First line is 0 then 1, 2 etc. Why not start a variable
+<code>spaces</code> at 0 and increment it on each loop iteration.
+</p>
+
+<p>
+For the number of stars, it's starting at the width and being reduced
+by 2 each time.
+</p>
+
+<p>
+This leads to a solution similar to this (using the line routine from
+the earlier refactoring post):
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">trap</span><span class="p">(</span><span class="kt">int</span> <span class="n">height</span><span class="p">,</span> <span class="kt">int</span> <span class="n">width</span><span class="p">){</span>
+  <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">r</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
+
+  <span class="kt">int</span> <span class="n">spaces</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kt">int</span> <span class="n">stars</span> <span class="o">=</span> <span class="n">width</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">height</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="n">line</span><span class="p">(</span><span class="n">spaces</span><span class="p">,</span><span class="s">" "</span><span class="p">)</span> <span class="o">+</span> <span class="n">lines</span><span class="p">(</span><span class="n">stars</span><span class="p">,</span><span class="s">"*"</span><span class="p">)</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+    <span class="n">spaces</span> <span class="o">=</span> <span class="n">spaces</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">stars</span> <span class="o">=</span> <span class="n">stars</span> <span class="o">-</span> <span class="mi">2</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>
+This solution is simple to construct, simple to understand, and quite
+frankly, hard to get wrong.
+</p>
+
+<p>
+It can also lead a student to discovering a pattern or "formula" such
+as what was used to solve the earlier problems. 
+</p>
+
+<p>
+This might seem to some as a cheap way out, the dumb approach -
+creating extra variables and have them count along the way but I
+don't. There's nothing wrong with simple and straightforward. Yes, you
+could come up with an elegant formula but the bottom line is you need
+something to count 0,1,2,3… so create a variable to do it. You need
+something to count 12,10,8,… create one for that as well.
+</p>
+
+<p>
+ Now, I'm not advocating writing 100 if statements rather than a loop
+but I think you get the idea.
+</p>
+
+<p>
+The best solution is one that works and Sometimes the "dumb" approach is the best approach.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/ethics-in-cs/" class="u-url">Ethics In CS Education</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -103,9 +262,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org13c9eaa" class="outline-2">
-<h2 id="org13c9eaa"></h2>
-<div class="outline-text-2" id="text-org13c9eaa">
+    <div id="outline-container-org33777a9" class="outline-2">
+<h2 id="org33777a9"></h2>
+<div class="outline-text-2" id="text-org33777a9">
 <p>
 I've been meaning to write about ethics in CS education for a
 while. Probably since I saw <a href="https://www.nytimes.com/2018/02/12/business/computer-science-ethics-courses.html?smid=fb-share">this article</a> in the NY Times but got sidetracked.
@@ -216,9 +375,9 @@ create great teachers for which ethical CS is part of their core.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-orgb62254a" class="outline-2">
-<h2 id="orgb62254a"></h2>
-<div class="outline-text-2" id="text-orgb62254a">
+    <div id="outline-container-org0bf6c52" class="outline-2">
+<h2 id="org0bf6c52"></h2>
+<div class="outline-text-2" id="text-org0bf6c52">
 <p>
 Next up from SIGCSE2018 is <a href="https://dl.acm.org/citation.cfm?id=3159609">Connect the Dots to Prove It</a> presented by
 Mark McCartin-Lim. This paper was presented during the same papers

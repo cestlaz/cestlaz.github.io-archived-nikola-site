@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2018-04-21T12:43:26Z</updated>
+  <updated>2018-04-22T21:38:08Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,45 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-38.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Using Emacs 48 Silversearcher</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-48-silversearcher/</id>
+    <updated>2018-04-22T17:28:41-04:00</updated>
+    <published>2018-04-22T17:28:41-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-48-silversearcher/"/>
+    <summary type="html">&lt;div id="outline-container-org67b566e" class="outline-2"&gt;
+&lt;h2 id="org67b566e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org67b566e"&gt;
+&lt;p&gt;
+A couple of days ago I wrote about on my &lt;a href="http://cestlaz.github.io/posts/unit-tests-grading-workflow"&gt;lab grading workflow&lt;/a&gt;. In the
+post I mentioned that I used Emacs to easily navigate between student
+folders and files so I can actually look at their work in addition to
+their programs output and test results.
+&lt;/p&gt;
+
+&lt;p&gt;
+The key is a combination of &lt;code&gt;dired&lt;/code&gt; and &lt;a href="https://github.com/Wilfred/ag.el"&gt;ag&lt;/a&gt;, Emacs's interface to &lt;a href="https://github.com/ggreer/the_silver_searcher"&gt;the
+Silver Searcher&lt;/a&gt; which is something like a recursive code grep on
+steroids. I also briefly try to show &lt;a href="https://github.com/mhayashi1120/Emacs-wgrep"&gt;wgrep&lt;/a&gt; in the video which allows
+you to edit Emacs grep buffers, effectively allowing you to make
+changes across a set of files all at once. It ended up not working
+with silversearcher - if anyone out there knows why, please chime in.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-sFTkCQ774o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="editing" label="editing"/>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>No Magic Bullets - Discovery Learning</title>
     <id>http://cestlaz.github.io/posts/no-magic-bullets-constructivism/</id>
@@ -20,9 +59,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/no-magic-bullets-constructivism/"/>
-    <summary type="html">&lt;div id="outline-container-org4df9158" class="outline-2"&gt;
-&lt;h2 id="org4df9158"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4df9158"&gt;
+    <summary type="html">&lt;div id="outline-container-org94aa495" class="outline-2"&gt;
+&lt;h2 id="org94aa495"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org94aa495"&gt;
 &lt;p&gt;
 The most recent NYC CSTA chapter meeting was "How do I assess CS?" I
 wanted to go but it's been such a crazy month I was just too wiped
@@ -129,9 +168,9 @@ yourself.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/unit-tests-grading-workflow/"/>
-    <summary type="html">&lt;div id="outline-container-org3003fc5" class="outline-2"&gt;
-&lt;h2 id="org3003fc5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3003fc5"&gt;
+    <summary type="html">&lt;div id="outline-container-orgab2bca9" class="outline-2"&gt;
+&lt;h2 id="orgab2bca9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgab2bca9"&gt;
 &lt;p&gt;
 I've talked before about unit testing (&lt;a href="http://cestlaz.github.io/posts/testing-testing"&gt;here&lt;/a&gt;, and &lt;a href="http://cestlaz.github.io/posts/testing-part2"&gt;here&lt;/a&gt;). My premise is
 that in addition to being an important industry technique, it's a
@@ -274,9 +313,9 @@ drill down into the other projects efficiently as well.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/teals-time/"/>
-    <summary type="html">&lt;div id="outline-container-org6d915c6" class="outline-2"&gt;
-&lt;h2 id="org6d915c6"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6d915c6"&gt;
+    <summary type="html">&lt;div id="outline-container-orgc173508" class="outline-2"&gt;
+&lt;h2 id="orgc173508"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc173508"&gt;
 &lt;p&gt;
 Everybody know's I'm the Statler and Waldorf of the CS Education
 world.
@@ -361,9 +400,9 @@ with TEALS - here's a link to more information:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/math-for-math-teachers/"/>
-    <summary type="html">&lt;div id="outline-container-org699c524" class="outline-2"&gt;
-&lt;h2 id="org699c524"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org699c524"&gt;
+    <summary type="html">&lt;div id="outline-container-org30432c8" class="outline-2"&gt;
+&lt;h2 id="org30432c8"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org30432c8"&gt;
 &lt;p&gt;
 Last Thursday I attended an event - the release of "Priming the
 Computer Science Teacher Pump: Integrating CS Education into Schools
@@ -467,9 +506,9 @@ We can do better.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/strong-teacher-certification/"/>
-    <summary type="html">&lt;div id="outline-container-org7e41e12" class="outline-2"&gt;
-&lt;h2 id="org7e41e12"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7e41e12"&gt;
+    <summary type="html">&lt;div id="outline-container-org44a29a0" class="outline-2"&gt;
+&lt;h2 id="org44a29a0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org44a29a0"&gt;
 &lt;p&gt;
 About a week ago New York State's new regulation creating a &lt;a href="http://www.crainsnewyork.com/article/20180327/NEWS/180329893/new-york-will-finally-have-certified-computer-science-teachers"&gt;K12 CS
 teacher certification&lt;/a&gt; went live. Just the other day I was honored to be
@@ -569,9 +608,9 @@ It's been an exciting week in NY CS Ed and there's a lot more to come.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-47-magit/"/>
-    <summary type="html">&lt;div id="outline-container-orgcaa993b" class="outline-2"&gt;
-&lt;h2 id="orgcaa993b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgcaa993b"&gt;
+    <summary type="html">&lt;div id="outline-container-org86de79d" class="outline-2"&gt;
+&lt;h2 id="org86de79d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org86de79d"&gt;
 &lt;p&gt;
 I've been holding off on doing a &lt;a href="https://magit.vc/"&gt;Magit&lt;/a&gt; video for a while. Mostly
 because I wasn't using it exclusively and also because there are
@@ -628,9 +667,9 @@ Check out the video:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/hs-competitions/"/>
-    <summary type="html">&lt;div id="outline-container-org3cd7210" class="outline-2"&gt;
-&lt;h2 id="org3cd7210"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3cd7210"&gt;
+    <summary type="html">&lt;div id="outline-container-orgf39025f" class="outline-2"&gt;
+&lt;h2 id="orgf39025f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf39025f"&gt;
 &lt;p&gt;
 Today's the last day of spring break. After the weekend it's back to
 the grind. It really hasn't been much of a spring break. The rain and
@@ -742,9 +781,9 @@ running for years to come.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/tools-and-complexity/"/>
-    <summary type="html">&lt;div id="outline-container-org45c1165" class="outline-2"&gt;
-&lt;h2 id="org45c1165"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org45c1165"&gt;
+    <summary type="html">&lt;div id="outline-container-org32ed0d7" class="outline-2"&gt;
+&lt;h2 id="org32ed0d7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org32ed0d7"&gt;
 &lt;p&gt;
 &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; wrote about &lt;a href="http://blog.acthompson.net/2018/04/thoughts-on-where-cs-education-tools.html"&gt;CS education tools&lt;/a&gt; earlier today. I've
 also been meaning to write on the topic but from a different point of
@@ -883,9 +922,9 @@ moving in the right direction and this entire rant will become moot in a couple 
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/passover-april-1-and-indiana-jones/"/>
-    <summary type="html">&lt;div id="outline-container-org0afaee9" class="outline-2"&gt;
-&lt;h2 id="org0afaee9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0afaee9"&gt;
+    <summary type="html">&lt;div id="outline-container-org6fc24cc" class="outline-2"&gt;
+&lt;h2 id="org6fc24cc"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6fc24cc"&gt;
 &lt;p&gt;
 I've never done much in terms of the April Fools thing but frequently
 enjoy other peoples shenanigans.
@@ -901,164 +940,5 @@ Enjoy: &lt;a href="http://seccorecit.blogspot.com/2018/04/a-historically-informe
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
-  </entry>
-  <entry>
-    <title>Do It The Dumb Way</title>
-    <id>http://cestlaz.github.io/posts/do-it-the-dumb-way/</id>
-    <updated>2018-03-30T08:24:09-04:00</updated>
-    <published>2018-03-30T08:24:09-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/do-it-the-dumb-way/"/>
-    <summary type="html">&lt;div id="outline-container-org50339e5" class="outline-2"&gt;
-&lt;h2 id="org50339e5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org50339e5"&gt;
-&lt;p&gt;
-There's so much to like in the shape drawing lessons I talked about
-in my &lt;a href="http://cestlaz.github.io/posts/refactoring/"&gt;refactoring&lt;/a&gt; post that I thought I'd share a little more here.
-&lt;/p&gt;
-
-&lt;p&gt;
-It can be argued that the most important things for a program to do is work. The
-most clever, elegant, creative program is worthless if it doesn't
-produce the desired result. All too often, beginners and hot shot beginners in particular try to
-be too clever too early and get themselves into trouble. 
-&lt;/p&gt;
-
-&lt;p&gt;
-When doing the shape drawing lessons the first couple of shape are
-pretty easy
-&lt;/p&gt;
-
-&lt;pre class="example"&gt;
-
-| ****            |    | *               |
-| ****            |    | **              |
-| ****            |    | ***             |
-| ****            |    | ****            |
-| ****            |    |                 |
-|                 |    |                 |
-&lt;/pre&gt;
-
-&lt;p&gt;
-but things get more interesting with the right justified triangle:
-&lt;/p&gt;
-
-
-&lt;pre class="example"&gt;
-----*       *
----**      **
---***     ***
--****    ****
-*****   *****
-
-&lt;/pre&gt;
-
-&lt;p&gt;
-For this triangle, students want to come up with the formula for the
-number of spaces. They usually figure out something like this with
-&lt;code&gt;h-i-1&lt;/code&gt; spaces and &lt;code&gt;i+1&lt;/code&gt; stars:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;tri2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-    &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"-"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-The formulas become harder to figure out as the shapes become more
-complex and sometimes students get stymied.
-&lt;/p&gt;
-
-&lt;p&gt;
-The truth is that while they're struggling to find the perfect
-solution, it's sometimes better to do it the dumb way.
-&lt;/p&gt;
-
-&lt;p&gt;
-Consider drawing a trapezoid like this example of height 5 and
-starting width 12:
-&lt;/p&gt;
-
-&lt;pre class="example"&gt;
-************
- **********
-  ********
-   ******
-    ****
-&lt;/pre&gt;
-
-&lt;p&gt;
-A student could come up with the "formulas" for spaces and stars but
-sometimes there's a more straightforward way.
-&lt;/p&gt;
-
-&lt;p&gt;
-Consider the number of spaces on each line on the left hand side of
-the shape. First line is 0 then 1, 2 etc. Why not start a variable
-&lt;code&gt;spaces&lt;/code&gt; at 0 and increment it on each loop iteration.
-&lt;/p&gt;
-
-&lt;p&gt;
-For the number of stars, it's starting at the width and being reduced
-by 2 each time.
-&lt;/p&gt;
-
-&lt;p&gt;
-This leads to a solution similar to this (using the line routine from
-the earlier refactoring post):
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;trap&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;height&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-
-  &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;spaces&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;stars&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;height&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;spaces&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;" "&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;lines&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;stars&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="n"&gt;spaces&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;spaces&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="n"&gt;stars&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;stars&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-This solution is simple to construct, simple to understand, and quite
-frankly, hard to get wrong.
-&lt;/p&gt;
-
-&lt;p&gt;
-It can also lead a student to discovering a pattern or "formula" such
-as what was used to solve the earlier problems. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This might seem to some as a cheap way out, the dumb approach -
-creating extra variables and have them count along the way but I
-don't. There's nothing wrong with simple and straightforward. Yes, you
-could come up with an elegant formula but the bottom line is you need
-something to count 0,1,2,3… so create a variable to do it. You need
-something to count 12,10,8,… create one for that as well.
-&lt;/p&gt;
-
-&lt;p&gt;
- Now, I'm not advocating writing 100 if statements rather than a loop
-but I think you get the idea.
-&lt;/p&gt;
-
-&lt;p&gt;
-The best solution is one that works and Sometimes the "dumb" approach is the best approach.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="cs" label="cs"/>
-    <category term="pedagogy" label="pedagogy"/>
-    <category term="software-engineering" label="software engineering"/>
   </entry>
 </feed>
