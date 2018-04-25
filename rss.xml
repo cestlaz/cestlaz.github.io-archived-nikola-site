@@ -1,5 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 22 Apr 2018 21:38:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 48 Silversearcher</title><link>http://cestlaz.github.io/posts/using-emacs-48-silversearcher/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org67b566e" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 25 Apr 2018 21:31:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Do the students finish the tests or does the test finish the students</title><link>http://cestlaz.github.io/posts/tests-finish-students/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd7aad17" class="outline-2"&gt;
+&lt;h2 id="orgd7aad17"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd7aad17"&gt;
+&lt;p&gt;
+I tweeted this the other day:
+&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Why don't so many  teachers and professors understand that the test or assignment you can do in 15 minutes will take your beginning students at least an hour and probably a lot more to complete.&lt;/p&gt;— Mike Zamansky (@zamansky) &lt;a href="https://twitter.com/zamansky/status/986609723557404673?ref_src=twsrc%5Etfw"&gt;April 18, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;p&gt;
+What led to the tweet was a discussion I was having with some students
+about not having enough time on tests which led to a discussion of
+having to drop everything to spend every waking hour on a project.
+&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-org94426e2" class="outline-3"&gt;
+&lt;h3 id="org94426e2"&gt;Let's talk about tests.&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org94426e2"&gt;
+&lt;p&gt;
+I'm not saying that tests are the best forms of assessment - most of
+the time I'd much rather have students work on projects. There are,
+however, times when tests make sense or are otherwise appropriate.
+&lt;/p&gt;
+
+&lt;p&gt;
+In any event, writing a test is hard. Rather, writing good test is
+hard. It's certianly easy enough to put a bunch of multiple choice or
+short answer questions on paper and it's easy enough to give a hard
+equation to solve or some code to write but creating a good test is a
+task and half. You first have to figure out what you're trying to
+assess - memory, thought process, synthesizing concepts? Then you want
+to construct questions that give you insights into your students
+knowledge and thought process.
+&lt;/p&gt;
+
+&lt;p&gt;
+Some things that I consider when putting together a test:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Does it ramp up in difficulty - that is, are there some "gimme
+questions" and some challenges.&lt;/li&gt;
+&lt;li&gt;Are questions all or nothing - if a kid doesn't see things my way
+are they dead in the water.&lt;/li&gt;
+&lt;li&gt;Will the test repeatedly penalize or reward the same concept over
+and over again on the test.&lt;/li&gt;
+&lt;li&gt;Do I cover all the concepts I want to assess.&lt;/li&gt;
+&lt;li&gt;Do you make kids waste time with boilerplate code.&lt;/li&gt;
+&lt;li&gt;Do the questions take so long to read and digest that there's little
+time to form and write down answers.&lt;/li&gt;
+&lt;li&gt;Do the answers convey anything about the students thought process or
+just correctness.&lt;/li&gt;
+&lt;li&gt;Is it easy or impossible to grade and grade fairly.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+What about length? To me a well crafted test should be completed by
+the average student with a few minutes to spare - enough time to check
+a couple of answers. This is not to say that they'll ace the exam,
+just finish it. Far too many teachers make tests an assessment of
+speed and accuracy at speed rather than understanding. That might
+actually be important in certain contexts - preparing for the APCS-A
+multiple choice section as an example but in general, it's not a good
+way of assessing what a student really knows. 
+&lt;/p&gt;
+
+&lt;p&gt;
+It's also important that the the average student can achieve a score
+that you expect from an average student. That's probably in the 80s on
+a 0-100 scale or a B. Yes, I know, C is supposed to be average but
+with grade inflation being what it is…
+&lt;/p&gt;
+
+&lt;p&gt;
+You should &lt;b&gt;NOT&lt;/b&gt; give an assessment where the average score is
+something like 17 out of 100 with the top student earning a 37. Sure,
+you can curve it but it also places a lot of stress on the
+students. You might do this from time to time - you might misjudge the
+difficulty of a test or your class but it shouldn't be a regular
+occurence. Teachers sometimes forget about the psychological affect
+that a unfair test can have on a student even if the teacher "fixes" it
+after the fact.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org23e70d8" class="outline-3"&gt;
+&lt;h3 id="org23e70d8"&gt;Don't be afraid to experiment or have some fun.&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org23e70d8"&gt;
+&lt;p&gt;
+It's also ok to try different things. One year, having just completed
+a unit on Cellualar Automata I decided to give a quiz. I figured it
+would take the kids 10 to 15 minutes so I gave them 30. The quiz was
+something like the following:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+You have 30 minutes to compose something on a sheet of paper that when
+I review it convinces me that you know something about the Cellular
+Automata Unit we just completed.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+Some kids loved the quiz, some hated it. The ones that hated it had
+been trained for years as expert standardized test takers and this
+level of freedom really freaked the out.
+&lt;/p&gt;
+
+&lt;p&gt;
+Another time, I gave a multi page test of serious questions mixed with
+crazy shenanigans. Question one would be some CS problem followed by
+some instructions like "stand up, do 5 jumping jacks and sit down" or
+"shout out your favorite olde timey exclamation" or even "stand up, if
+or when you see another student standing, switch seats with the and
+continue the test." The test started with explicit instructions not to
+read ahead but to read and do each question in order. The last page
+was the answer key and I asked the kids to self-grade. Interestingly
+enough the grading was pretty honest. After that one, I received a few
+apology emails from kids who read to the end first encouraging me to
+give them failing grades for cheating. Wow, I wasn't expecting
+that. The test was something of an end of year goof. The CS questions
+were really easy - I wanted to reward them with something silly and
+easy - a guaranteed A after a year of hard work.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org8daf8eb" class="outline-3"&gt;
+&lt;h3 id="org8daf8eb"&gt;Tests to drive instruction and future practice&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org8daf8eb"&gt;
+&lt;p&gt;
+As a final point to ponder, tests shouldn't only be about grades. A
+well crafted test should drive instruction. Kids will get answers
+wrong - will your questions be crafted so that you can gain insights
+into why the got them wrong.
+&lt;/p&gt;
+
+&lt;p&gt;
+In an early class you might notice things like:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;kids printing rather than returning answers&lt;/li&gt;
+&lt;li&gt;kids not understanding scope&lt;/li&gt;
+&lt;li&gt;kids having difficulty with idioms like &lt;code&gt;i=i+1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;kids needing more scaffolding to approach a problem&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+This can drive instruction moving forward.
+&lt;/p&gt;
+
+&lt;p&gt;
+Over time you'll also learn how to fine tune your tests and other
+assessments.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-orgcbf26d7" class="outline-3"&gt;
+&lt;h3 id="orgcbf26d7"&gt;Next time, we'll talk about projects&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgcbf26d7"&gt;
+&lt;p&gt;
+Unless of course I get distracted by another blog topic or shiny
+object.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>assessments</category><category>education</category><guid>http://cestlaz.github.io/posts/tests-finish-students/</guid><pubDate>Wed, 25 Apr 2018 19:53:06 GMT</pubDate></item><item><title>Using Emacs 48 Silversearcher</title><link>http://cestlaz.github.io/posts/using-emacs-48-silversearcher/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org67b566e" class="outline-2"&gt;
 &lt;h2 id="org67b566e"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-org67b566e"&gt;
 &lt;p&gt;
@@ -776,21 +949,4 @@ tool which is also simpler than the alternatives. Maybe we are already
 moving in the right direction and this entire rant will become moot in a couple of years.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>csed</category><category>education</category><category>tools</category><guid>http://cestlaz.github.io/posts/tools-and-complexity/</guid><pubDate>Thu, 05 Apr 2018 22:55:21 GMT</pubDate></item><item><title>Passover April 1 And Indiana Jones</title><link>http://cestlaz.github.io/posts/passover-april-1-and-indiana-jones/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6fc24cc" class="outline-2"&gt;
-&lt;h2 id="org6fc24cc"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6fc24cc"&gt;
-&lt;p&gt;
-I've never done much in terms of the April Fools thing but frequently
-enjoy other peoples shenanigans.
-&lt;/p&gt;
-
-&lt;p&gt;
-For those of you similarly inclined I share my son Natan's take on
-that Passover staple, Echad Mi Yodea.
-&lt;/p&gt;
-
-&lt;p&gt;
-Enjoy: &lt;a href="http://seccorecit.blogspot.com/2018/04/a-historically-informed-echad-mi-yodea.html"&gt;A Historically Informed Echad Mi Yodea&lt;/a&gt;.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/passover-april-1-and-indiana-jones/</guid><pubDate>Sun, 01 Apr 2018 13:17:21 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>cs</category><category>csed</category><category>education</category><category>tools</category><guid>http://cestlaz.github.io/posts/tools-and-complexity/</guid><pubDate>Thu, 05 Apr 2018 22:55:21 GMT</pubDate></item></channel></rss>
