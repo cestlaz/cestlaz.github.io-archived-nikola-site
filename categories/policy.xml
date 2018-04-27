@@ -1,5 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about policy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/policy.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 21 Apr 2018 12:39:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Why Strong K12 Teacher Certification is Important</title><link>http://cestlaz.github.io/posts/strong-teacher-certification/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7e41e12" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about policy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/policy.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 27 Apr 2018 17:57:35 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Unfunded Mandates and CS For All</title><link>http://cestlaz.github.io/posts/unfunded-mandates/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4e6858c" class="outline-2"&gt;
+&lt;h2 id="org4e6858c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4e6858c"&gt;
+&lt;p&gt;
+This morning, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about &lt;a href="https://computinged.wordpress.com/2018/04/27/lack-of-funding-leads-to-lack-of-teachers-leads-to-lack-of-cs-classes-we-may-need-to-change-our-strategy/"&gt;unfunded mandates and CS for
+All&lt;/a&gt;. Unfunded mandates frequently wreak havoc on schools in a number
+of ways but in the long run, I don't think it should have a severe
+effect on CS for All. Rather, it could have a big impact on the number
+of CS courses we offer beyond that.
+&lt;/p&gt;
+
+&lt;p&gt;
+Mark relay's a story from the Cambridge Rindge and Latin School where
+at the time many students wanted more CS classes but the school wasn't
+planning on hiring a new CS teacher. The money quote is:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Over 50 percent of students signing up for Level 2 [computer science] courses next year identify as African Americans,
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+No, I'm not talking about the diversity issue raised by the quote, I'm
+talking about &lt;b&gt;Level 2 [computer science]&lt;/b&gt;. This implies that the
+students already had &lt;b&gt;Level 1 computer science&lt;/b&gt;. Level 1 would cover
+CS For All so now we're talking about CS electives vs other
+electives. This is something I had to deal with for most of my career
+even after we got a CS requirement at Stuy. It was always a battle to
+hire enough CS teachers to meet demand. The hard part was politics -
+there were always older more entrenched subject areas who would rather
+force kids into their electives rather than allow them to take my CS
+electives. This is a whole other kettle of fish than CS for All. It's
+an issue for some schools now and will become a &lt;b&gt;BIG&lt;/b&gt; issue in five to
+fifteen years when a single CS required course is more the norm. The
+issue raised here is a new CS elective vs entrenched teachers and
+classes which shuld lead to a discussion of the relative value of CS
+electives vs other electives. That said, the reality is that it
+usually comes down to school and local power and politics. Also to be
+considered is the potential ebb and flow of interest - there might be
+demand for 5 more CS classes and 5 less something else this year but
+there might not be next year and then we're in real trouble staffing
+wise.
+&lt;/p&gt;
+
+&lt;p&gt;
+Schools, public high schools in particular are zero sum endeavors. You
+have a fixed number of periods a day, specific class requirements, and
+certain mandates as to a the minimum and maximum number of classes a
+student can take. In New York City, I believe students are required to
+have a "full" schedule which basically means they can't come in for
+English, Math, and History and then go home.
+&lt;/p&gt;
+
+&lt;p&gt;
+With CS for All, you're basically allocating reallocating some amount
+of time to computer science. It might be hard to find a qualified
+teacher. particularly in a small school where the population won't
+support a full time CS teacher and it might ruffle the feathers of the
+teachers that will be losing the time but it shouldn't make much of a
+dent or really any dent on the budget.
+&lt;/p&gt;
+
+&lt;p&gt;
+Mark also raises the possibility of embedding CS into other subject
+classes. &lt;a href="http://www.bootstrapworld.org/"&gt;Bootstrap&lt;/a&gt; is a program that I'm rather fond of that does
+just this in Algebra classes (although more recently they're working
+to branch out into other subject areas). Even though I'm a big
+Bootstrap fan I don't think that's the answer to CS for All or CS in
+the high schools in general. I think that one of the reasons why
+Bootstrap works so well is the alignment between the CS tool they use
+and the way Algebra is or can be taught. Another reason is the fact
+that while Algebra is the lowest level of the traditional high school
+classes, it's frequently the one for which the most time is
+allocated. Students in low performing schools might take Algebra over
+two years or have a double period. This won't be the case for other
+subject areas. What this means is that there's more likely extra time
+to embed another subject, cs, into the Algebra class. Long term,
+embedding CS into another subject area requires:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;a teacher that really knows both subjects&lt;/li&gt;
+&lt;li&gt;enough time so you can add all the cool CS content while still
+preparing the students for both the next level of whatever subject
+you're embedded in  as well as for whatever standardized
+assessments come at the end of the year.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+As I said, I'm a Bootstrap fan but I don't think that's the answer for
+CS in K12.
+&lt;/p&gt;
+
+&lt;p&gt;
+Back to the original topic there are certainly issues with
+implementing CS for All but I don't think school funding is the
+biggest hurdle. For me there are other big challenges. One is having a
+supply of qualified teachers. In the long run as states outline CS
+requirements and pre-service programs crop up this will work itself
+out. Until then, yes, we will have an issue and yes it will take some
+funding for stop gap and transitional teacher preperation. A second issue is
+working the internal politics. Adding CS does mean removing something
+else or more likely a piece of something else. The third one is what
+I'm noticing in NY where CS for all seems to at times forget about
+the CS. If we have knowledgeable teachers we can work around that one
+but I still think that might be my biggest concern.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>csforall</category><category>policy</category><guid>http://cestlaz.github.io/posts/unfunded-mandates/</guid><pubDate>Fri, 27 Apr 2018 12:43:09 GMT</pubDate></item><item><title>Why Strong K12 Teacher Certification is Important</title><link>http://cestlaz.github.io/posts/strong-teacher-certification/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7e41e12" class="outline-2"&gt;
 &lt;h2 id="org7e41e12"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-org7e41e12"&gt;
 &lt;p&gt;
@@ -1103,170 +1213,4 @@ Education should be having hard conversations about this and then
 strongly advocating for the positions they feel correct.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</guid><pubDate>Tue, 18 Jul 2017 23:51:40 GMT</pubDate></item><item><title>Self Certification - not a good idea</title><link>http://cestlaz.github.io/posts/dont-self-certify/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org1db9e1d" class="outline-2"&gt;
-&lt;h2 id="org1db9e1d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1db9e1d"&gt;
-&lt;p&gt;
-You've probably seen an image like this:
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/dont-self-certify/self-signed.png" alt="self-signed.png" align="center"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-It's what you see when you try to access a secure web site but the web
-site itself certified itself as being secure.
-&lt;/p&gt;
-
-&lt;p&gt;
-When people see this on a professional site it sets off all manner of
-red flags. We feel much more comfortable when go to a site and we
-don't see that error. When we see the secure green lock in the url bar
-indicating that this site is certified through an external trusted
-source.
-&lt;/p&gt;
-
-&lt;p&gt;
-Let's take this a step further. If you needed surgery would you go to
-a board certified surgeon or would you go to Dr. Nick Riviera or some
-other "self certified" doctor? Likewise you wouldn't want to be
-represented in court by someone who hasn't passed the bar. 
-&lt;/p&gt;
-
-&lt;p&gt;
-We might not feel that these certification and licensing processes are
-perfect but when we need the services of a doctor or lawyer, we're
-happy these gatekeepers exist.
-&lt;/p&gt;
-
-&lt;p&gt;
-So we should all be extremely concerned with today's announcement that
-the deal for mayoral control just brokered in NYC came with strings
-attached and one of those strings looks to open the doors to give some
-charter chains the ability to self certify their teachers.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here's a story on it in &lt;a href="http://www.politico.com/states/new-york/city-hall/story/2017/07/06/with-city-charters-poised-to-win-certification-deal-education-schools-fret-113243"&gt;Politico&lt;/a&gt; and one in &lt;a href="http://www.chalkbeat.org/posts/ny/2017/07/06/some-charter-school-teachers-could-become-certified-without-a-masters-under-proposed-new-suny-rules/"&gt;Chalkbeat&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-One might think that some requirements to become a teacher are
-ridiculous. I'll get to them later  but this is really giving the fox
-the keys to the henhouse.
-&lt;/p&gt;
-
-&lt;p&gt;
-Charters appear to have extremely high rates of teacher attrition so
-it makes sense that they want to control their teacher pipeline. This
-alone should be a red flag against self certification but what else
-are charter chains known for?
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Misleading stats - claiming amazing passing numbers on standardized
-exams while neglecting to mention that somehow or other big blocks
-of students were removed from the school prior to the test year
-(&lt;a href="http://www.shankerinstitute.org/blog/student-attrition-and-backfilling-success-academy-charter-schools-what-student-enrollment"&gt;link&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;The gotta go list&lt;/li&gt;
-&lt;li&gt;Forcing high levels of parent involvement (tough for single working
-parents)&lt;/li&gt;
-&lt;li&gt;Charging &lt;a href="http://www.houstonchronicle.com/news/education/article/KIPP-schools-collected-millions-in-unallowable-11257006.php"&gt;illegal fees&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-Top this off with as taking resources from public schools.
-&lt;/p&gt;
-
-&lt;p&gt;
-Charters operate in anything but a transparent manner and we're
-expected to trust them to prepare "highly effective" teachers? I don't
-think so. Since there is no real accountability for charter schools -
-they can easily game the system through student attrition, selective
-admissions (by putting up barriers to enter the lottery) and test prep
-they can pay lip service to teacher preparation and the public will be
-none the wiser. 
-&lt;/p&gt;
-
-&lt;p&gt;
-If we had a reasonable way of holding principals accountable and no,
-test scores are not the answer then we could pretty much do away
-with teacher certification. If principals were held to task to run an
-effective school, something we can easily define but not measure, then
-they would have every incentive to hire the best
-teachers. Unfortunately we're nowhere near that place.
-&lt;/p&gt;
-
-&lt;p&gt;
-Since we're not, we're left with the current systems of teacher
-certification that has it's own slew of problems. A big part of it, in
-my opinion is that schools of education have lost the high
-ground. While there are some institutions doing great work, reputation
-wise, schools of education are held in very low regard. Strong
-teachers trade stories of the watered down content classes and waste
-of time classes where professors share their pet theories of
-education. I can't tell you how many times I've heard the new
-definitive way to teach. At the same time, education research is
-frequently held in low regard by teachers and the general public. 
-&lt;/p&gt;
-
-&lt;p&gt;
-On the one hand we have charters run by and support by non-educators
-wanting us to trust them and on the other we have institutions that
-are questioned by the teachers they produce and the general public.
-&lt;/p&gt;
-
-&lt;p&gt;
-What a mess.
-&lt;/p&gt;
-
-&lt;p&gt;
-I don't know the answer. I'm working on teacher certifications
-programs at Hunter and it's a balancing act. How much content is
-sufficient and how much is too much. Can any of the general content be
-streamlined or is it all necessary. If it isn't necessary do we need
-it anyway to satisfy the bean counters?
-&lt;/p&gt;
-
-&lt;p&gt;
-If you don't have enough then we're sending unprepared teachers into
-the classroom. Too much and we'll drive potential teachers away.
-&lt;/p&gt;
-
-&lt;p&gt;
-As computer science education is defining itself we see similar
-struggles. We have some people advocating certifications analogous to
-existing teacher certifications. On the other extreme we have
-advocates for two weeks summer training and you're a CS teacher. I'd
-like to think that I'm advocating for the sweet spot. Strong content
-knowledge not tied to a specific course and matching content related
-pedagogy. Time will tell becomes the certification standard and time
-will tell whose approach was right.
-&lt;/p&gt;
-
-&lt;p&gt;
-For now, it's important not to give away the store. Private charter
-schools should not be the driving force behind teacher certification
-and they certainly shouldn't be allowed to train their own teachers
-and then 'teach' our students without much greater scrutiny.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div id="outline-container-org5f756c2" class="outline-2"&gt;
-&lt;h2 id="org5f756c2"&gt;Addendum:&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5f756c2"&gt;
-&lt;p&gt;
-I'm sure some of my friends will point out that private schools aren't
-held to any particular standard for teacher certification. This is
-true but private schools don't take public funds. Actually they do but
-in my opinion, they shouldn't. I maintain that charter schools are
-publicly funded private schools in that they take public money but
-operate as private entities. As such they should be held under the
-greatest of scrutiny and standards – they aren't
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>certification</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/dont-self-certify/</guid><pubDate>Fri, 07 Jul 2017 19:34:19 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</guid><pubDate>Tue, 18 Jul 2017 23:51:40 GMT</pubDate></item></channel></rss>
