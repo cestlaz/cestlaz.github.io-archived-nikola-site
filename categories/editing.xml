@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about editing)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/editing.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 22 Apr 2018 21:38:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 48 Silversearcher</title><link>http://cestlaz.github.io/posts/using-emacs-48-silversearcher/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org67b566e" class="outline-2"&gt;
-&lt;h2 id="org67b566e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org67b566e"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about editing)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/editing.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 27 Apr 2018 13:11:46 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs 48 Silversearcher</title><link>http://cestlaz.github.io/posts/using-emacs-48-silversearcher/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org1146e60" class="outline-2"&gt;
+&lt;h2 id="org1146e60"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1146e60"&gt;
 &lt;p&gt;
 A couple of days ago I wrote about on my &lt;a href="http://cestlaz.github.io/posts/unit-tests-grading-workflow"&gt;lab grading workflow&lt;/a&gt;. In the
 post I mentioned that I used Emacs to easily navigate between student
@@ -24,9 +24,9 @@ Enjoy:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-sFTkCQ774o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-48-silversearcher/</guid><pubDate>Sun, 22 Apr 2018 21:28:41 GMT</pubDate></item><item><title>Using Emacs Episode 47 - Magit</title><link>http://cestlaz.github.io/posts/using-emacs-47-magit/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org86de79d" class="outline-2"&gt;
-&lt;h2 id="org86de79d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org86de79d"&gt;
+&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-48-silversearcher/</guid><pubDate>Sun, 22 Apr 2018 21:28:41 GMT</pubDate></item><item><title>Using Emacs Episode 47 - Magit</title><link>http://cestlaz.github.io/posts/using-emacs-47-magit/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgcaa993b" class="outline-2"&gt;
+&lt;h2 id="orgcaa993b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgcaa993b"&gt;
 &lt;p&gt;
 I've been holding off on doing a &lt;a href="https://magit.vc/"&gt;Magit&lt;/a&gt; video for a while. Mostly
 because I wasn't using it exclusively and also because there are
@@ -69,9 +69,9 @@ Check out the video:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/1IYsiHXR620" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-47-magit/</guid><pubDate>Sat, 07 Apr 2018 13:05:36 GMT</pubDate></item><item><title>Using Emacs 46 Auto Yasnippets</title><link>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge453c51" class="outline-2"&gt;
-&lt;h2 id="orge453c51"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge453c51"&gt;
+&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-47-magit/</guid><pubDate>Sat, 07 Apr 2018 13:05:36 GMT</pubDate></item><item><title>Using Emacs 46 Auto Yasnippets</title><link>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org1a8467e" class="outline-2"&gt;
+&lt;h2 id="org1a8467e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1a8467e"&gt;
 &lt;p&gt;
 The other day I discovered &lt;a href="https://github.com/abo-abo/auto-yasnippet"&gt;auto-yasnippet&lt;/a&gt;, another great package by
 &lt;a href="https://github.com/abo-abo"&gt;Oleh Krehel&lt;/a&gt; or abo-abo.
