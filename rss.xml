@@ -1,5 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 25 Apr 2018 21:31:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Do the students finish the tests or does the test finish the students</title><link>http://cestlaz.github.io/posts/tests-finish-students/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd7aad17" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 27 Apr 2018 00:07:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Pull Requests and Other Peoples Code</title><link>http://cestlaz.github.io/posts/pull-requests/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgedbe003" class="outline-2"&gt;
+&lt;h2 id="orgedbe003"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgedbe003"&gt;
+&lt;p&gt;
+One of the things I've heard for years from former students - both
+those looking for jobs and those looking to hire is that colleges
+don't really do a good job preparing students for careers in
+tech. Sure they teach the algorithms and the theory but ther are a lot
+of missing pieces, particularly on the practical end. I'm certainly
+not advocating turning CS programs into coding schools but there are
+many low cost opportunities to bring practical real world best
+practices in to the CS classroom. I most recently wrote about &lt;a href="http://cestlaz.github.io/posts/testing-part2%0A"&gt;unit
+testing&lt;/a&gt; and had earlier about using &lt;a href="https://cestlaz.github.io/posts/sigcse-2017-github-4"&gt;GitHub as an educational
+tool&lt;/a&gt;. I've been happy with the way I introduce students to Git and
+how we use GitHub in my classes but I've never found a smooth way to
+introduce Pull Requests. A pull request is basically a mechanism by
+which one can suggest a change to a project even if you don't own
+it. The project owner can then decide to merge it in or not. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Being comfortable with the pull request work flow is an important part
+of contributing to open source projects. The basic process is that you
+make a copy of the project you want to work on by forking it, make
+your changes, then issue a pull request back to the project. For a
+beginner, there are a lot of moving parts. Instead, I teach my
+students branching and merging within a project. It's much easier and
+arguably more useful for day to day projects. I'd like my kid to learn the
+pull request mechanics but I haden't thought of a good way to do it. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I've also wanted to give kids more real world experiences in class and
+one experience they rarely get is working in other peoples code
+bases. In school you largely write your own projects be they group or
+solo or work off a hopefully tried and true code base provided by the
+instructor. In the real world you're frequently working off of someone
+elses code and it's rarely in a polished state.
+&lt;/p&gt;
+
+&lt;p&gt;
+I finally found a way to kill both birds with one stone. A couple of
+weeks ago my class' lab was rather lengthy. It involved reading in a
+source file and reformating it in a sensible way. I knew most of the
+students wouldn't finish it in the allotted time and even if they did,
+this was an easy assignment to extend. On lab day I had students
+create a new repo for this lab (normally they just add a folder in a
+their "labs" repo) and get as much done as they could. The rule was
+simple - push what you've got up to GitHub at the end of class and
+then you can't push anything else. I also made it clear that I didn't
+expect a completed lab..
+&lt;/p&gt;
+
+&lt;p&gt;
+We continued the lab in the next class session. This time. I randomly
+assigned repos to students so that they would fork someone elses
+lab. They then had to complete the lab on the other students code base
+and then issue a pull request back to the original
+&lt;/p&gt;
+
+&lt;p&gt;
+This was the first time I've tried this so it was a little
+klunky. I'll do a much better job specifying the assignment and
+instructions next time around but even so I think the class went
+well. By the end of the class the students had sucesfully forked a
+project, issued a pull request, and merged one in to their own
+project. The only think I wasn't happy with was that many of the
+merges happened automatically. I have to figure out how to set things
+up so that there are merge conflicts since I want my students to
+experience that.
+&lt;/p&gt;
+
+&lt;p&gt;
+Overall,  I was very happy with the way things worked out. The
+students were able to experience important real workd software
+engineering techniques without removing any of the academic CS in the
+class. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>git</category><category>github</category><category>software engineering</category><guid>http://cestlaz.github.io/posts/pull-requests/</guid><pubDate>Thu, 26 Apr 2018 23:07:02 GMT</pubDate></item><item><title>Do the students finish the tests or does the test finish the students</title><link>http://cestlaz.github.io/posts/tests-finish-students/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd7aad17" class="outline-2"&gt;
 &lt;h2 id="orgd7aad17"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-orgd7aad17"&gt;
 &lt;p&gt;
@@ -823,130 +902,4 @@ see great local opportunities like these emerging and hopefully
 running for years to come.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>competitions</category><category>cs</category><category>events</category><guid>http://cestlaz.github.io/posts/hs-competitions/</guid><pubDate>Fri, 06 Apr 2018 21:22:15 GMT</pubDate></item><item><title>Tools and Complexity</title><link>http://cestlaz.github.io/posts/tools-and-complexity/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org32ed0d7" class="outline-2"&gt;
-&lt;h2 id="org32ed0d7"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org32ed0d7"&gt;
-&lt;p&gt;
-&lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; wrote about &lt;a href="http://blog.acthompson.net/2018/04/thoughts-on-where-cs-education-tools.html"&gt;CS education tools&lt;/a&gt; earlier today. I've
-also been meaning to write on the topic but from a different point of
-view.
-&lt;/p&gt;
-
-&lt;p&gt;
-I do my best to keep up with the latest and greatest in the CS world
-both on the academic side as well as the professional one. That's not
-really possible, but I do my best. When I have a small project to work
-on I'll some times use it as an excuse to play with some recent
-technology. Over December, I wanted to write an application viewer to
-use for company / student internship matching. I started by looking at
-&lt;a href="https://reactjs.org/"&gt;React&lt;/a&gt; but ended up using &lt;a href="https://vuejs.org/"&gt;Vue.js&lt;/a&gt; which I liked much more for a variety
-of reasons.
-&lt;/p&gt;
-
-&lt;p&gt;
-The viewer served it's purpose but I think it can be turned into a
-much more comprehensive student / employer internship platform. I
-tried to steal a few minutes over this past week's spring break to
-start a rewrite using another toolset, Clojure, Clojurescript and
-Reagent. I'm really liking the Clojure stack and using
-Emacs and Cider for the IDE is really blowing me away. 
-&lt;/p&gt;
-
-&lt;p&gt;
-What I've noticed is that for every new language of framework you also
-have to learn a whole set of ancillary tools.
-&lt;/p&gt;
-
-&lt;p&gt;
-It didn't used to be that way. Back in the day, things were much
-simpler. I remembering doing work at Goldman Sachs, it was as simple
-as typing something on the command line like &lt;code&gt;cc file1.c file2.c
-file3.c&lt;/code&gt;. I of course had to be cutting edge and use fancy modern
-tools like &lt;a href="https://www.gnu.org/software/make/"&gt;Make&lt;/a&gt;. What's more, the tools I used in industry were very
-similar to what I used in college. 
-&lt;/p&gt;
-
-&lt;p&gt;
-We now live in very different times.
-&lt;/p&gt;
-
-&lt;p&gt;
-If you go to the getting started guides for React or Vue it's pretty easy to
-get hello world up and running but beyond that you start to fall in to
-the Javascript tooling hole. To start you need either &lt;b&gt;npm&lt;/b&gt; or &lt;b&gt;yarn&lt;/b&gt;
-just to manage packages and dependencies. Then you need a build system
-or bundler like &lt;b&gt;webpack&lt;/b&gt;, &lt;b&gt;browserify&lt;/b&gt;, or &lt;b&gt;parcel&lt;/b&gt; and that's not even
-considering older options like &lt;b&gt;gulp&lt;/b&gt; and &lt;b&gt;grunt&lt;/b&gt; and ancillary tools
-like &lt;b&gt;babel&lt;/b&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-A typical React or Vue project is going to need a &lt;a href="https://github.com/krasimir/react-webpack-starter/blob/master/package.json"&gt;project.json&lt;/a&gt; and
-&lt;a href="https://github.com/krasimir/react-webpack-starter/blob/master/webpack.config.js"&gt;webpack.config.js&lt;/a&gt; file and sometimes some other files as well. Check
-out the links. They're from a simple project template I found
-online. Far from simple.
-&lt;/p&gt;
-
-&lt;p&gt;
-When I was playing with Vue.js a couple of months ago, I ended up
-using Webpack to convert the source code into the final JS, take care
-of live-reloading, and in general manage the project. I still have no
-idea how most of it works. I don't know if it's just me but I'm very
-uncomfortable relying on tools that I really don't fully understand to
-build my systems. 
-&lt;/p&gt;
-
-&lt;p&gt;
-The Clojure world is little better with Leiningen and Boot. If you
-don't believe me, try to make heads or tails of &lt;a href="https://github.com/bhauman/figwheel-template/blob/master/src/leiningen/new/figwheel/project.clj"&gt;this&lt;/a&gt;. 
-&lt;/p&gt;
-
-&lt;p&gt;
-While it's true that as a professional you'll likely use one set of
-tools on a day to day basis and you'll eventually get to know them
-that doesn't mean it's not a good idea to prepare kids for what's to
-come.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-On the K12 side we have drag and drop languages, specialized learning
-IDEs like BlueJ, simple cut down IDEs like Dr Racket and completely
-online environments like repl.it. All great starter tools that
-insulate beginners from the complexities to come. College's
-might get closer to the "real world" but just a tad. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Don't get me wrong, I like many of the tools used in K12
-classes and there's far too much complexity in the professional world to
-throw at beginners. If we look at a student's entire school
-career, classes are already so packed with material it would be hard to
-really prepare kids for the real world within their classes. You could
-take that tried and true teacher / professor technique of just
-requiring it and having the kids figure it out on their own but that's
-really just downright abusive.
-&lt;/p&gt;
-
-&lt;p&gt;
-I don't have an answer for this one. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I have my kids use tools like Git and GitHub early along with using
-testing frameworks and external libraries. I also try to move my
-students to a general purpose programmable platform like Emacs or
-Vim. I think these are sound practices but students will still have a
-big learning curve when they finally get to industry. 
-&lt;/p&gt;
-
-&lt;p&gt;
-What I really would love it to see the tooling become simpler and
-documentation better. &lt;a href="https://github.com/parcel-bundler/parcel"&gt;Parcel&lt;/a&gt;, a Javascript bundler is one of the newer
-kids on the block and is much simpler and cleaner than alternatives
-like Webpack. The new version of Clojure has it's own command line
-tool which is also simpler than the alternatives. Maybe we are already
-moving in the right direction and this entire rant will become moot in a couple of years.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>csed</category><category>education</category><category>tools</category><guid>http://cestlaz.github.io/posts/tools-and-complexity/</guid><pubDate>Thu, 05 Apr 2018 22:55:21 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>competitions</category><category>cs</category><category>events</category><guid>http://cestlaz.github.io/posts/hs-competitions/</guid><pubDate>Fri, 06 Apr 2018 21:22:15 GMT</pubDate></item></channel></rss>

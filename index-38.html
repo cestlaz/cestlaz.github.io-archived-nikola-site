@@ -91,7 +91,147 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/passover-april-1-and-indiana-jones/" class="u-url">Passover April 1 And Indiana Jones</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/tools-and-complexity/" class="u-url">Tools and Complexity</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/tools-and-complexity/" rel="bookmark"><time class="published dt-published" datetime="2018-04-05T18:55:21-04:00" title="2018-04-05 18:55">2018-04-05 18:55</time></a></p>
+                <p class="commentline">            <a href="posts/tools-and-complexity/#disqus_thread" data-disqus-identifier="cache/posts/tools-and-complexity.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org32ed0d7" class="outline-2">
+<h2 id="org32ed0d7"></h2>
+<div class="outline-text-2" id="text-org32ed0d7">
+<p>
+<a href="https://twitter.com/alfredtwo">Alfred Thompson</a> wrote about <a href="http://blog.acthompson.net/2018/04/thoughts-on-where-cs-education-tools.html">CS education tools</a> earlier today. I've
+also been meaning to write on the topic but from a different point of
+view.
+</p>
+
+<p>
+I do my best to keep up with the latest and greatest in the CS world
+both on the academic side as well as the professional one. That's not
+really possible, but I do my best. When I have a small project to work
+on I'll some times use it as an excuse to play with some recent
+technology. Over December, I wanted to write an application viewer to
+use for company / student internship matching. I started by looking at
+<a href="https://reactjs.org/">React</a> but ended up using <a href="https://vuejs.org/">Vue.js</a> which I liked much more for a variety
+of reasons.
+</p>
+
+<p>
+The viewer served it's purpose but I think it can be turned into a
+much more comprehensive student / employer internship platform. I
+tried to steal a few minutes over this past week's spring break to
+start a rewrite using another toolset, Clojure, Clojurescript and
+Reagent. I'm really liking the Clojure stack and using
+Emacs and Cider for the IDE is really blowing me away. 
+</p>
+
+<p>
+What I've noticed is that for every new language of framework you also
+have to learn a whole set of ancillary tools.
+</p>
+
+<p>
+It didn't used to be that way. Back in the day, things were much
+simpler. I remembering doing work at Goldman Sachs, it was as simple
+as typing something on the command line like <code>cc file1.c file2.c
+file3.c</code>. I of course had to be cutting edge and use fancy modern
+tools like <a href="https://www.gnu.org/software/make/">Make</a>. What's more, the tools I used in industry were very
+similar to what I used in college. 
+</p>
+
+<p>
+We now live in very different times.
+</p>
+
+<p>
+If you go to the getting started guides for React or Vue it's pretty easy to
+get hello world up and running but beyond that you start to fall in to
+the Javascript tooling hole. To start you need either <b>npm</b> or <b>yarn</b>
+just to manage packages and dependencies. Then you need a build system
+or bundler like <b>webpack</b>, <b>browserify</b>, or <b>parcel</b> and that's not even
+considering older options like <b>gulp</b> and <b>grunt</b> and ancillary tools
+like <b>babel</b>.
+</p>
+
+<p>
+A typical React or Vue project is going to need a <a href="https://github.com/krasimir/react-webpack-starter/blob/master/package.json">project.json</a> and
+<a href="https://github.com/krasimir/react-webpack-starter/blob/master/webpack.config.js">webpack.config.js</a> file and sometimes some other files as well. Check
+out the links. They're from a simple project template I found
+online. Far from simple.
+</p>
+
+<p>
+When I was playing with Vue.js a couple of months ago, I ended up
+using Webpack to convert the source code into the final JS, take care
+of live-reloading, and in general manage the project. I still have no
+idea how most of it works. I don't know if it's just me but I'm very
+uncomfortable relying on tools that I really don't fully understand to
+build my systems. 
+</p>
+
+<p>
+The Clojure world is little better with Leiningen and Boot. If you
+don't believe me, try to make heads or tails of <a href="https://github.com/bhauman/figwheel-template/blob/master/src/leiningen/new/figwheel/project.clj">this</a>. 
+</p>
+
+<p>
+While it's true that as a professional you'll likely use one set of
+tools on a day to day basis and you'll eventually get to know them
+that doesn't mean it's not a good idea to prepare kids for what's to
+come.
+</p>
+
+
+<p>
+On the K12 side we have drag and drop languages, specialized learning
+IDEs like BlueJ, simple cut down IDEs like Dr Racket and completely
+online environments like repl.it. All great starter tools that
+insulate beginners from the complexities to come. College's
+might get closer to the "real world" but just a tad. 
+</p>
+
+<p>
+Don't get me wrong, I like many of the tools used in K12
+classes and there's far too much complexity in the professional world to
+throw at beginners. If we look at a student's entire school
+career, classes are already so packed with material it would be hard to
+really prepare kids for the real world within their classes. You could
+take that tried and true teacher / professor technique of just
+requiring it and having the kids figure it out on their own but that's
+really just downright abusive.
+</p>
+
+<p>
+I don't have an answer for this one. 
+</p>
+
+<p>
+I have my kids use tools like Git and GitHub early along with using
+testing frameworks and external libraries. I also try to move my
+students to a general purpose programmable platform like Emacs or
+Vim. I think these are sound practices but students will still have a
+big learning curve when they finally get to industry. 
+</p>
+
+<p>
+What I really would love it to see the tooling become simpler and
+documentation better. <a href="https://github.com/parcel-bundler/parcel">Parcel</a>, a Javascript bundler is one of the newer
+kids on the block and is much simpler and cleaner than alternatives
+like Webpack. The new version of Clojure has it's own command line
+tool which is also simpler than the alternatives. Maybe we are already
+moving in the right direction and this entire rant will become moot in a couple of years.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/passover-april-1-and-indiana-jones/" class="u-url">Passover April 1 And Indiana Jones</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
