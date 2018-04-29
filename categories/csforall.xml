@@ -1,7 +1,233 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about csforall)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/csforall.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 27 Apr 2018 17:57:35 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Unfunded Mandates and CS For All</title><link>http://cestlaz.github.io/posts/unfunded-mandates/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4e6858c" class="outline-2"&gt;
-&lt;h2 id="org4e6858c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4e6858c"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about csforall)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/csforall.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 29 Apr 2018 23:07:15 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Is there room for CS for All</title><link>http://cestlaz.github.io/posts/room-for-csforall/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org59c958b" class="outline-2"&gt;
+&lt;h2 id="org59c958b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org59c958b"&gt;
+&lt;p&gt;
+A fear revolving around CS For All concerns where will the money
+come from and how will we fit in the new classes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+One suggested solution is to integrate CS into other subjects. I
+thought I'd write today about why I don't think the fear is valid and
+while integrating CS into other classes can have value, it probably
+isn't a long term solution for CS education.
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's start with the integration solution. The idea is to bring CS
+into an existing class. &lt;a href="http://www.bootstrapworld.org/"&gt;Bootstrap&lt;/a&gt;, a program I've written about before
+and one of the programs I like does this, primarily in Algebra. The
+idea is that this supports the student's learning Algebra while
+exposing them to CS. It's a nice program but a math teacher using
+Bootstrap shouldn't be confused with a computer science
+teacher. They're bringing some CS to their student and engaging the
+students in a different way mathematically and that's all great but in
+general you can't take two classes worth of material and concepts and
+fit them into one class and the number of teachers who are truly
+knowledgable in any two academic subject areas both in content and
+pedagogical content knowledge is few. I'm guessing that one of the
+reasons that Bootstrap works in Algebra is the alignment of the
+toolset and Algebra and how you can teach it. The other is that
+Algebra is frequently given more time for fewer topics. In some
+struggling schools, students might have two years of algebra or a
+double period so there's time to add in some CS.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm all for cross curricular work. You can look at applications of
+science in math classes, do mathy work in a CS class, run stats and
+data analysis in math and CS classes on materials from History classes
+and all of this is great. You can even create great combined curricula
+where you do indeed teach multiple subjects in an integrated way but
+to think that you can take what is typically taught in two different
+classes and you can combine both so that they're taught in one class
+with one teacher sounds fishy to me.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, at the end of the day, if you go the integration approach you're
+either going to have to dedicate a similar set of resources both in
+time and personel to having independent courses. The alternative is
+that CS will be the second class subject.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, let's look at actually bringing in CS For All as a separate
+course. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Here are the New York State Graduation Requirements &lt;sup&gt;&lt;a id="fnr.1" class="footref" href="http://cestlaz.github.io/posts/room-for-csforall/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;:
+&lt;/p&gt;
+
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col class="org-left"&gt;
+
+&lt;col class="org-left"&gt;
+
+&lt;col class="org-right"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col" class="org-left"&gt;Subject&lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="org-right"&gt;Number of semesters&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="org-left"&gt;English&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;Soc Studies&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;Science&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;Math&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;LOTE&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;Arts&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;Phys Ed&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;Health&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;Electives&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="org-left"&gt;Total&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;44&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;
+It can be difficult to fit Phys Ed in since it has to be offered every
+semester so let's double the Phys Ed requirement to 8 semesters. What
+is actually normally done is to have 7.5 periods of science a week and
+2.5 periods of Gym.
+&lt;/p&gt;
+
+&lt;p&gt;
+This means that the basic student program uses 48 class slots and
+includes 7 elective slots.
+&lt;/p&gt;
+
+&lt;p&gt;
+In terms of exit exams, students have to pass the following Regents:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;English&lt;/li&gt;
+&lt;li&gt;Any single math (Algebra, Geometery, Alg 2 / Trig)&lt;/li&gt;
+&lt;li&gt;Any single Social Studies (US History or Global History&lt;/li&gt;
+&lt;li&gt;Any single Science (Living Env (bio), Chem, Phys, Earth Science)&lt;/li&gt;
+&lt;li&gt;Any additional Regents exam&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+The requirement of passing a single Math regents is what leads to the
+extra time allocated to Algebra that I mentioned when discussing
+integrating CS into Algebra above.
+&lt;/p&gt;
+
+&lt;p&gt;
+To get an Advanced Regents diploma you have to pass additional exams -
+both history, all three math, three science and maybe more.  
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Using a Typical 7 period plus lunch day, we have room for 56 single
+semeter classes in a high school career. This means that assuming
+students aren't failing too many classes, even with the extra Phys Ed
+allocation I mentioned above  we can easily fit computer
+science into our day. In fact, we can technically fit in four full
+years assuming a student doesn't have to repeat any class. 
+&lt;/p&gt;
+
+&lt;p&gt;
+So in New York state we certainly have the time but what about the
+budget? That's not an issue either. The state also requires that
+students recieve 5.5 hours of instruction a day exclusive of
+lunch. At 47 minute periods, that translates to students being
+assigned 7 instructional classes a day which means we can't just give
+the kids the required 44. We have to fill all 56 available class slots
+over those four years. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course it's not really that simple. Students fail classes and have
+to repeat them and some classes might be assigned more time than
+others but it looks to me like we should be able to fit
+computer science in without any big budgetary or scheduling
+changes. The challenge will be finding the teacher and working the
+internal politics and policies since as computer science comes in it
+will mean removing some electives even if those electives are additional years
+of science, math, or English.
+&lt;/p&gt;
+
+&lt;p&gt;
+Programs like &lt;a href="https://www.tealsk12.org/"&gt;TEALS&lt;/a&gt; and Bootstrap are important transitional programs
+and even when we do have qualified CS teachers they will play an
+important role - TEALS in providing industry support and resources and
+Bootstrap by integrating curricular areas and over time as preservice
+programs start to appear the rest will work itself out.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="footnotes"&gt;
+&lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
+&lt;div id="text-footnotes"&gt;
+
+&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" class="footnum" href="http://cestlaz.github.io/posts/room-for-csforall/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;The state
+lists by credits which are a year, I doubled the numbers to map to semesters&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;</description><category>csforall</category><category>policy</category><guid>http://cestlaz.github.io/posts/room-for-csforall/</guid><pubDate>Sun, 29 Apr 2018 20:29:04 GMT</pubDate></item><item><title>Unfunded Mandates and CS For All</title><link>http://cestlaz.github.io/posts/unfunded-mandates/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgbc4dc60" class="outline-2"&gt;
+&lt;h2 id="orgbc4dc60"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgbc4dc60"&gt;
 &lt;p&gt;
 This morning, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about &lt;a href="https://computinged.wordpress.com/2018/04/27/lack-of-funding-leads-to-lack-of-teachers-leads-to-lack-of-cs-classes-we-may-need-to-change-our-strategy/"&gt;unfunded mandates and CS for
 All&lt;/a&gt;. Unfunded mandates frequently wreak havoc on schools in a number

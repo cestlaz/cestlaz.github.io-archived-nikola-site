@@ -1,0 +1,128 @@
+#+BEGIN_COMMENT
+.. title: Is there room for CS for All
+.. slug: room-for-csforall
+.. date: 2018-04-29 16:29:04 UTC-04:00
+.. tags: policy, csforall
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+A fear revolving around CS For All concerns where will the money
+come from and how will we fit in the new classes. 
+
+One suggested solution is to integrate CS into other subjects. I
+thought I'd write today about why I don't think the fear is valid and
+while integrating CS into other classes can have value, it probably
+isn't a long term solution for CS education.
+
+Let's start with the integration solution. The idea is to bring CS
+into an existing class. [[http://www.bootstrapworld.org/][Bootstrap]], a program I've written about before
+and one of the programs I like does this, primarily in Algebra. The
+idea is that this supports the student's learning Algebra while
+exposing them to CS. It's a nice program but a math teacher using
+Bootstrap shouldn't be confused with a computer science
+teacher. They're bringing some CS to their student and engaging the
+students in a different way mathematically and that's all great but in
+general you can't take two classes worth of material and concepts and
+fit them into one class and the number of teachers who are truly
+knowledgable in any two academic subject areas both in content and
+pedagogical content knowledge is few. I'm guessing that one of the
+reasons that Bootstrap works in Algebra is the alignment of the
+toolset and Algebra and how you can teach it. The other is that
+Algebra is frequently given more time for fewer topics. In some
+struggling schools, students might have two years of algebra or a
+double period so there's time to add in some CS.
+
+I'm all for cross curricular work. You can look at applications of
+science in math classes, do mathy work in a CS class, run stats and
+data analysis in math and CS classes on materials from History classes
+and all of this is great. You can even create great combined curricula
+where you do indeed teach multiple subjects in an integrated way but
+to think that you can take what is typically taught in two different
+classes and you can combine both so that they're taught in one class
+with one teacher sounds fishy to me.
+
+So, at the end of the day, if you go the integration approach you're
+either going to have to dedicate a similar set of resources both in
+time and personel to having independent courses. The alternative is
+that CS will be the second class subject.
+
+So, let's look at actually bringing in CS For All as a separate
+course. 
+
+Here are the New York State Graduation Requirements [fn::The state
+lists by credits which are a year, I doubled the numbers to map to semesters]:
+
+| Subject     |   | Number of semesters |
+|-------------+---+---------------------|
+| English     |   |                   8 |
+| Soc Studies |   |                   8 |
+| Science     |   |                   6 |
+| Math        |   |                   6 |
+| LOTE        |   |                   2 |
+| Arts        |   |                   2 |
+| Phys Ed     |   |                   4 |
+| Health      |   |                   1 |
+| Electives   |   |                   7 |
+|-------------+---+---------------------|
+| Total       |   |                  44 |
+
+It can be difficult to fit Phys Ed in since it has to be offered every
+semester so let's double the Phys Ed requirement to 8 semesters. What
+is actually normally done is to have 7.5 periods of science a week and
+2.5 periods of Gym.
+
+This means that the basic student program uses 48 class slots and
+includes 7 elective slots.
+
+In terms of exit exams, students have to pass the following Regents:
+- English
+- Any single math (Algebra, Geometery, Alg 2 / Trig)
+- Any single Social Studies (US History or Global History
+- Any single Science (Living Env (bio), Chem, Phys, Earth Science)
+- Any additional Regents exam
+
+The requirement of passing a single Math regents is what leads to the
+extra time allocated to Algebra that I mentioned when discussing
+integrating CS into Algebra above.
+
+To get an Advanced Regents diploma you have to pass additional exams -
+both history, all three math, three science and maybe more.  
+
+
+Using a Typical 7 period plus lunch day, we have room for 56 single
+semeter classes in a high school career. This means that assuming
+students aren't failing too many classes, even with the extra Phys Ed
+allocation I mentioned above  we can easily fit computer
+science into our day. In fact, we can technically fit in four full
+years assuming a student doesn't have to repeat any class. 
+
+So in New York state we certainly have the time but what about the
+budget? That's not an issue either. The state also requires that
+students recieve 5.5 hours of instruction a day exclusive of
+lunch. At 47 minute periods, that translates to students being
+assigned 7 instructional classes a day which means we can't just give
+the kids the required 44. We have to fill all 56 available class slots
+over those four years. 
+
+Of course it's not really that simple. Students fail classes and have
+to repeat them and some classes might be assigned more time than
+others but it looks to me like we should be able to fit
+computer science in without any big budgetary or scheduling
+changes. The challenge will be finding the teacher and working the
+internal politics and policies since as computer science comes in it
+will mean removing some electives even if those electives are additional years
+of science, math, or English.
+
+Programs like [[https://www.tealsk12.org/][TEALS]] and Bootstrap are important transitional programs
+and even when we do have qualified CS teachers they will play an
+important role - TEALS in providing industry support and resources and
+Bootstrap by integrating curricular areas and over time as preservice
+programs start to appear the rest will work itself out.
+
+
+
+

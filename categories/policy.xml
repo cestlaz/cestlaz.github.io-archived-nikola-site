@@ -1,7 +1,233 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about policy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/policy.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 27 Apr 2018 17:57:35 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Unfunded Mandates and CS For All</title><link>http://cestlaz.github.io/posts/unfunded-mandates/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4e6858c" class="outline-2"&gt;
-&lt;h2 id="org4e6858c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4e6858c"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about policy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/policy.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 29 Apr 2018 23:07:15 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Is there room for CS for All</title><link>http://cestlaz.github.io/posts/room-for-csforall/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org59c958b" class="outline-2"&gt;
+&lt;h2 id="org59c958b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org59c958b"&gt;
+&lt;p&gt;
+A fear revolving around CS For All concerns where will the money
+come from and how will we fit in the new classes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+One suggested solution is to integrate CS into other subjects. I
+thought I'd write today about why I don't think the fear is valid and
+while integrating CS into other classes can have value, it probably
+isn't a long term solution for CS education.
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's start with the integration solution. The idea is to bring CS
+into an existing class. &lt;a href="http://www.bootstrapworld.org/"&gt;Bootstrap&lt;/a&gt;, a program I've written about before
+and one of the programs I like does this, primarily in Algebra. The
+idea is that this supports the student's learning Algebra while
+exposing them to CS. It's a nice program but a math teacher using
+Bootstrap shouldn't be confused with a computer science
+teacher. They're bringing some CS to their student and engaging the
+students in a different way mathematically and that's all great but in
+general you can't take two classes worth of material and concepts and
+fit them into one class and the number of teachers who are truly
+knowledgable in any two academic subject areas both in content and
+pedagogical content knowledge is few. I'm guessing that one of the
+reasons that Bootstrap works in Algebra is the alignment of the
+toolset and Algebra and how you can teach it. The other is that
+Algebra is frequently given more time for fewer topics. In some
+struggling schools, students might have two years of algebra or a
+double period so there's time to add in some CS.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm all for cross curricular work. You can look at applications of
+science in math classes, do mathy work in a CS class, run stats and
+data analysis in math and CS classes on materials from History classes
+and all of this is great. You can even create great combined curricula
+where you do indeed teach multiple subjects in an integrated way but
+to think that you can take what is typically taught in two different
+classes and you can combine both so that they're taught in one class
+with one teacher sounds fishy to me.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, at the end of the day, if you go the integration approach you're
+either going to have to dedicate a similar set of resources both in
+time and personel to having independent courses. The alternative is
+that CS will be the second class subject.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, let's look at actually bringing in CS For All as a separate
+course. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Here are the New York State Graduation Requirements &lt;sup&gt;&lt;a id="fnr.1" class="footref" href="http://cestlaz.github.io/posts/room-for-csforall/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;:
+&lt;/p&gt;
+
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col class="org-left"&gt;
+
+&lt;col class="org-left"&gt;
+
+&lt;col class="org-right"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col" class="org-left"&gt;Subject&lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="org-right"&gt;Number of semesters&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="org-left"&gt;English&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;Soc Studies&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;8&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;Science&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;Math&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;LOTE&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;Arts&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;Phys Ed&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;4&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;Health&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-left"&gt;Electives&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="org-left"&gt;Total&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;td class="org-right"&gt;44&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;
+It can be difficult to fit Phys Ed in since it has to be offered every
+semester so let's double the Phys Ed requirement to 8 semesters. What
+is actually normally done is to have 7.5 periods of science a week and
+2.5 periods of Gym.
+&lt;/p&gt;
+
+&lt;p&gt;
+This means that the basic student program uses 48 class slots and
+includes 7 elective slots.
+&lt;/p&gt;
+
+&lt;p&gt;
+In terms of exit exams, students have to pass the following Regents:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;English&lt;/li&gt;
+&lt;li&gt;Any single math (Algebra, Geometery, Alg 2 / Trig)&lt;/li&gt;
+&lt;li&gt;Any single Social Studies (US History or Global History&lt;/li&gt;
+&lt;li&gt;Any single Science (Living Env (bio), Chem, Phys, Earth Science)&lt;/li&gt;
+&lt;li&gt;Any additional Regents exam&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+The requirement of passing a single Math regents is what leads to the
+extra time allocated to Algebra that I mentioned when discussing
+integrating CS into Algebra above.
+&lt;/p&gt;
+
+&lt;p&gt;
+To get an Advanced Regents diploma you have to pass additional exams -
+both history, all three math, three science and maybe more.  
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Using a Typical 7 period plus lunch day, we have room for 56 single
+semeter classes in a high school career. This means that assuming
+students aren't failing too many classes, even with the extra Phys Ed
+allocation I mentioned above  we can easily fit computer
+science into our day. In fact, we can technically fit in four full
+years assuming a student doesn't have to repeat any class. 
+&lt;/p&gt;
+
+&lt;p&gt;
+So in New York state we certainly have the time but what about the
+budget? That's not an issue either. The state also requires that
+students recieve 5.5 hours of instruction a day exclusive of
+lunch. At 47 minute periods, that translates to students being
+assigned 7 instructional classes a day which means we can't just give
+the kids the required 44. We have to fill all 56 available class slots
+over those four years. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course it's not really that simple. Students fail classes and have
+to repeat them and some classes might be assigned more time than
+others but it looks to me like we should be able to fit
+computer science in without any big budgetary or scheduling
+changes. The challenge will be finding the teacher and working the
+internal politics and policies since as computer science comes in it
+will mean removing some electives even if those electives are additional years
+of science, math, or English.
+&lt;/p&gt;
+
+&lt;p&gt;
+Programs like &lt;a href="https://www.tealsk12.org/"&gt;TEALS&lt;/a&gt; and Bootstrap are important transitional programs
+and even when we do have qualified CS teachers they will play an
+important role - TEALS in providing industry support and resources and
+Bootstrap by integrating curricular areas and over time as preservice
+programs start to appear the rest will work itself out.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="footnotes"&gt;
+&lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
+&lt;div id="text-footnotes"&gt;
+
+&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" class="footnum" href="http://cestlaz.github.io/posts/room-for-csforall/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;The state
+lists by credits which are a year, I doubled the numbers to map to semesters&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;</description><category>csforall</category><category>policy</category><guid>http://cestlaz.github.io/posts/room-for-csforall/</guid><pubDate>Sun, 29 Apr 2018 20:29:04 GMT</pubDate></item><item><title>Unfunded Mandates and CS For All</title><link>http://cestlaz.github.io/posts/unfunded-mandates/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgbc4dc60" class="outline-2"&gt;
+&lt;h2 id="orgbc4dc60"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgbc4dc60"&gt;
 &lt;p&gt;
 This morning, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about &lt;a href="https://computinged.wordpress.com/2018/04/27/lack-of-funding-leads-to-lack-of-teachers-leads-to-lack-of-cs-classes-we-may-need-to-change-our-strategy/"&gt;unfunded mandates and CS for
 All&lt;/a&gt;. Unfunded mandates frequently wreak havoc on schools in a number
@@ -109,9 +335,9 @@ the CS. If we have knowledgeable teachers we can work around that one
 but I still think that might be my biggest concern.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>csforall</category><category>policy</category><guid>http://cestlaz.github.io/posts/unfunded-mandates/</guid><pubDate>Fri, 27 Apr 2018 12:43:09 GMT</pubDate></item><item><title>Why Strong K12 Teacher Certification is Important</title><link>http://cestlaz.github.io/posts/strong-teacher-certification/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7e41e12" class="outline-2"&gt;
-&lt;h2 id="org7e41e12"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7e41e12"&gt;
+&lt;/div&gt;</description><category>csforall</category><category>policy</category><guid>http://cestlaz.github.io/posts/unfunded-mandates/</guid><pubDate>Fri, 27 Apr 2018 12:43:09 GMT</pubDate></item><item><title>Why Strong K12 Teacher Certification is Important</title><link>http://cestlaz.github.io/posts/strong-teacher-certification/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org44a29a0" class="outline-2"&gt;
+&lt;h2 id="org44a29a0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org44a29a0"&gt;
 &lt;p&gt;
 About a week ago New York State's new regulation creating a &lt;a href="http://www.crainsnewyork.com/article/20180327/NEWS/180329893/new-york-will-finally-have-certified-computer-science-teachers"&gt;K12 CS
 teacher certification&lt;/a&gt; went live. Just the other day I was honored to be
@@ -196,9 +422,9 @@ lot more.
 It's been an exciting week in NY CS Ed and there's a lot more to come.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>certification</category><category>cs</category><category>policy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/strong-teacher-certification/</guid><pubDate>Tue, 10 Apr 2018 21:39:30 GMT</pubDate></item><item><title>Fixing the Absent Teacher Reserve (ATR) situation</title><link>http://cestlaz.github.io/posts/atrs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd1a1cac" class="outline-2"&gt;
-&lt;h2 id="orgd1a1cac"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd1a1cac"&gt;
+&lt;/div&gt;</description><category>certification</category><category>cs</category><category>policy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/strong-teacher-certification/</guid><pubDate>Tue, 10 Apr 2018 21:39:30 GMT</pubDate></item><item><title>Fixing the Absent Teacher Reserve (ATR) situation</title><link>http://cestlaz.github.io/posts/atrs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7bd5371" class="outline-2"&gt;
+&lt;h2 id="org7bd5371"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7bd5371"&gt;
 &lt;p&gt;
 In the New York City department of education a recurring hot topic is
 the Absent Teacher Reserve or ATR pool. 
@@ -366,9 +592,9 @@ schools force the placement.&lt;/li&gt;
 That's it. Simple and solves the problem.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/atrs/</guid><pubDate>Fri, 22 Dec 2017 13:01:50 GMT</pubDate></item><item><title>New York State moving forward with CS Teacher Certification</title><link>http://cestlaz.github.io/posts/NY-CS-Certificate/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd92872d" class="outline-2"&gt;
-&lt;h2 id="orgd92872d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd92872d"&gt;
+&lt;/div&gt;</description><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/atrs/</guid><pubDate>Fri, 22 Dec 2017 13:01:50 GMT</pubDate></item><item><title>New York State moving forward with CS Teacher Certification</title><link>http://cestlaz.github.io/posts/NY-CS-Certificate/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org266c823" class="outline-2"&gt;
+&lt;h2 id="org266c823"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org266c823"&gt;
 &lt;p&gt;
 Last April I woke up early and trekked up to Albany along with a few
 of my Hunter College colleagues to share our thoughts on K12 Computer
@@ -467,9 +693,9 @@ you here to the NY State Board of Regents, Board of Education and
 State Education department.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>certification</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/NY-CS-Certificate/</guid><pubDate>Tue, 12 Dec 2017 23:57:37 GMT</pubDate></item><item><title>A test result is just a test result</title><link>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org49bb251" class="outline-2"&gt;
-&lt;h2 id="org49bb251"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org49bb251"&gt;
+&lt;/div&gt;</description><category>certification</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/NY-CS-Certificate/</guid><pubDate>Tue, 12 Dec 2017 23:57:37 GMT</pubDate></item><item><title>A test result is just a test result</title><link>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgdadccb8" class="outline-2"&gt;
+&lt;h2 id="orgdadccb8"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgdadccb8"&gt;
 &lt;p&gt;
 This past weekend was &lt;a href="http://catskillsconf.com"&gt;Catskillsconf&lt;/a&gt; - my favorite event of the
 year. I spent the weekend up in Ulster County with a bunch of my
@@ -485,9 +711,9 @@ are indicative of a good curriculum or good professional development (PD).
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgc62d62f" class="outline-2"&gt;
-&lt;h2 id="orgc62d62f"&gt;TL;DR - NO!!!!!&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc62d62f"&gt;
+&lt;div id="outline-container-org9ce82fd" class="outline-2"&gt;
+&lt;h2 id="org9ce82fd"&gt;TL;DR - NO!!!!!&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9ce82fd"&gt;
 &lt;p&gt;
 Further, anyone who thinks that a set of exam results can tell you
 that a particular PD sequence or curriculum is good shouldn't be
@@ -576,9 +802,9 @@ there, there's lots of good stuff to read.&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><category>assessment</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</guid><pubDate>Mon, 16 Oct 2017 00:17:21 GMT</pubDate></item><item><title>Standards - Who are they for?</title><link>http://cestlaz.github.io/posts/standards-who-for/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org79111cd" class="outline-2"&gt;
-&lt;h2 id="org79111cd"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org79111cd"&gt;
+&lt;/div&gt;</description><category>assessment</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</guid><pubDate>Mon, 16 Oct 2017 00:17:21 GMT</pubDate></item><item><title>Standards - Who are they for?</title><link>http://cestlaz.github.io/posts/standards-who-for/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgae3fcf5" class="outline-2"&gt;
+&lt;h2 id="orgae3fcf5"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgae3fcf5"&gt;
 &lt;p&gt;
 The big push at last year's CSTA conference was the release of the new
 CSTA K12 standards. It seemed that every other session was pushing
@@ -858,9 +1084,9 @@ important that they look to the greater issues, form their own
 opinions, and then act on what they believe is right.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>ed</category><category>policy</category><category>standards</category><guid>http://cestlaz.github.io/posts/standards-who-for/</guid><pubDate>Tue, 10 Oct 2017 18:05:35 GMT</pubDate></item><item><title>Is the new Secret Sauce ever better?</title><link>http://cestlaz.github.io/posts/is-the-new-secret-sauce-ever-better/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org96006d2" class="outline-2"&gt;
-&lt;h2 id="org96006d2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org96006d2"&gt;
+&lt;/div&gt;</description><category>cs</category><category>ed</category><category>policy</category><category>standards</category><guid>http://cestlaz.github.io/posts/standards-who-for/</guid><pubDate>Tue, 10 Oct 2017 18:05:35 GMT</pubDate></item><item><title>Is the new Secret Sauce ever better?</title><link>http://cestlaz.github.io/posts/is-the-new-secret-sauce-ever-better/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9aac00f" class="outline-2"&gt;
+&lt;h2 id="org9aac00f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9aac00f"&gt;
 &lt;p&gt;
 I read &lt;a href="http://nancyebailey.com/2017/09/05/xq-super-schools-business-working-to-end-public-high-schools/"&gt;this&lt;/a&gt; piece earlier today on &lt;a href="https://twitter.com/NancyEBailey1"&gt;Nancy Bailey&lt;/a&gt;'s blog. 
 &lt;/p&gt;
@@ -942,9 +1168,9 @@ own children?
 Just some Friday food for thought.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>policy</category><category>STEM</category><guid>http://cestlaz.github.io/posts/is-the-new-secret-sauce-ever-better/</guid><pubDate>Fri, 08 Sep 2017 16:32:22 GMT</pubDate></item><item><title>The Cost of AP Exams</title><link>http://cestlaz.github.io/posts/cost-of-ap-exams/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd23649c" class="outline-2"&gt;
-&lt;h2 id="orgd23649c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd23649c"&gt;
+&lt;/div&gt;</description><category>education</category><category>policy</category><category>STEM</category><guid>http://cestlaz.github.io/posts/is-the-new-secret-sauce-ever-better/</guid><pubDate>Fri, 08 Sep 2017 16:32:22 GMT</pubDate></item><item><title>The Cost of AP Exams</title><link>http://cestlaz.github.io/posts/cost-of-ap-exams/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org62263ae" class="outline-2"&gt;
+&lt;h2 id="org62263ae"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org62263ae"&gt;
 &lt;p&gt;
 Now that I'm back from vacation and summer's winding down I thought
 I'd start getting back to more classroom related posts. I still have a
@@ -1032,9 +1258,9 @@ At the end of the day it should be about students learning not about
 students taking high stakes exams.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>ap</category><category>csed</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/cost-of-ap-exams/</guid><pubDate>Thu, 17 Aug 2017 11:07:12 GMT</pubDate></item><item><title>Thoughts on non educator  influences on CS Education</title><link>http://cestlaz.github.io/posts/outside-influences-on-cs-ed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4b8c199" class="outline-2"&gt;
-&lt;h2 id="org4b8c199"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4b8c199"&gt;
+&lt;/div&gt;</description><category>ap</category><category>csed</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/cost-of-ap-exams/</guid><pubDate>Thu, 17 Aug 2017 11:07:12 GMT</pubDate></item><item><title>Thoughts on non educator  influences on CS Education</title><link>http://cestlaz.github.io/posts/outside-influences-on-cs-ed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd932ecb" class="outline-2"&gt;
+&lt;h2 id="orgd932ecb"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd932ecb"&gt;
 &lt;p&gt;
 Yesterday &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; blogged about a NY Times piece discussing
 &lt;a href="https://computinged.wordpress.com/2017/07/28/silicon-valley-pushing-coding-into-american-classrooms-through-code-org-nytimes/"&gt;Silicon Valleys influence on education through Code.org&lt;/a&gt;.
@@ -1092,125 +1318,4 @@ I've seen many Ed Tech people, armed with the best intentions, enter the lions d
 &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/outside-influences-on-cs-ed/</guid><pubDate>Sat, 29 Jul 2017 15:40:02 GMT</pubDate></item><item><title>CS Ed advocates should pay attention to greater ed issues</title><link>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgbb42e34" class="outline-2"&gt;
-&lt;h2 id="orgbb42e34"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgbb42e34"&gt;
-&lt;p&gt;
-For anyone involved in K12 CS education, the past few years have been
-a wild ride. When I first tried to make inroads in the DOE decades ago
-I couldn't get through the door. Now, CS Education is everyone's
-darling. It's really amazing. It's been a combination of grass roots
-efforts by teachers, non profit education efforts such as &lt;a href="http://teals12k.org"&gt;TEALS&lt;/a&gt;, advocacy of
-groups like &lt;a href="http://code.org"&gt;Code.org&lt;/a&gt; and amazing individuals like &lt;a href="http://avc.com/2017/06/bearing-witness/"&gt;Fred Wilson&lt;/a&gt; who has
-probably done more to move the needle of CS Ed in NY than any other 10
-people combined.
-&lt;/p&gt;
-
-&lt;p&gt;
-While everyone agrees that to do CS education right at the K12 level
-we need great teachers and lots of them, everyone also knows that
-teachers voices are often unheard. The voices with the greatest weight
-belong to the large non-profits, principals, superintendents and
-local politicians. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Today's post is a plea to those with voices to think about the effects
-of their advocacy for CS Ed to the greater education landscape.
-&lt;/p&gt;
-
-&lt;p&gt;
-I started thinking about this recently as I've been developing the
-CS teacher certification programs for Hunter College. As I spoke to
-people across the nation I found that many of the efforts to
-developing teacher certification are what I call the "you take it you
-teach it" model. You take an abbreviated version of APCS-A and APCS-P
-and you're a certified CS teacher. Just about every real educator feels
-that this is ludicrous. Some feel that this can be a first step - get
-these credentials to get in the door and then you have three to five
-years to really learn your subject and craft. I'm good with that but I
-have a problem with anyone who says "you take it you teach it" is good
-enough and I've heard of a number of regions that are seriously
-considering it.
-&lt;/p&gt;
-
-&lt;p&gt;
-Why is this so bad and, I'd argue, dangerous? Not merely because we'll
-end up with substandard CS teachers for the foreseeable future but
-also because it undermines the teaching profession as a whole.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's no secret that public education is under attack. A number of
-states including Wisconsin, Arizona, Oklahoma, New York and Michigan
-have considered relaxing the standards to become a teacher to address
-a teacher shortage. In their twisted logic, the politicians and
-"reformers" say that we can't find enough qualified teachers because
-we've made it an untenable career so let's lower standards. You can
-argue that any current state's requirements are overly cumbersome but
-that's another conversation.
-&lt;/p&gt;
-
-&lt;p&gt;
-When CS Educators say that all that's needed to teach CS is to sit in
-on a two week APCS institute is saying that to teach any subject you
-don't need content expertise. This is dangerous to education as a
-whole and when power players in the CS Ed movement don't speak up
-otherwise or even worse that the stance that "you take it you teach
-it" is OK, we're undermining teaching as a profession. 
-&lt;/p&gt;
-
-&lt;p&gt;
-We need our heavy hitters to publicly and privately say that we need a
-short term entry into the profession but we absolutely need plans and
-pathways so that at the end of the day we have the best prepared
-teachers in our schools for CS and for all subjects.
-&lt;/p&gt;
-
-&lt;p&gt;
-Another issue is when as CS Educators we don't pay attention to the
-whole child. I was at a meeting of CSTA people  from about thirty
-states a few years ago. Someone asked "how can we advocate for CS when
-the school might use it as an excuse to get rid of music?" Cameron
-Wilson, at the time a lobbyist for the ACM said something to the
-effect of "I'm not concerned with other subjects, my concern is
-getting CS into the schools." I get it, he was employed to stump CS
-but we have to remember that we're only a piece of the puzzle. We want
-a seat at the table but we have to make sure that the table is
-populated with everyone needed to provide a great education for our
-kids. 
-&lt;/p&gt;
-
-&lt;p&gt;
-A final issue I'll mention here is how so many CS educators are so
-close to the College Board. It was very disturbing that so many CS Ed
-players were pushing for more students to take the APCS exam. Not the
-class, not some other CS class but the APCS exam. AP is an extremely
-controversial subject among teachers and many of us feel that too many
-kids take too many AP classes and certainly too many exams. Remember,
-the College Board is the organization that pushes things like the
-PSAT8/9 another meaningless but high stakes exam inflicted upon our
-kids at taxpayer expense. I understand that AP makes things easy -
-they have courses, curricula, etc. but we've given the college board
-an outsized influence on CS education and we're not paying attention
-to their outsized influence on education in general. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm just a small time teacher. I don't have a national voice. I'm
-urging those that do:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Look into what's going on in greater education. Look at the way
-public education has been under attack and why.&lt;/li&gt;
-&lt;li&gt;Look at the side affects of our choices - who we partner with and
-what policies we push.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-We might not agree on the right path but everyone with a voice in CS
-Education should be having hard conversations about this and then
-strongly advocating for the positions they feel correct.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/cd-ed-and-all-ed/</guid><pubDate>Tue, 18 Jul 2017 23:51:40 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/outside-influences-on-cs-ed/</guid><pubDate>Sat, 29 Jul 2017 15:40:02 GMT</pubDate></item></channel></rss>
