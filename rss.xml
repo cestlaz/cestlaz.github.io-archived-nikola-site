@@ -1,5 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 29 Apr 2018 23:07:15 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Is there room for CS for All</title><link>http://cestlaz.github.io/posts/room-for-csforall/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org59c958b" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 25 May 2018 21:03:43 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Should CS for All be implemented at the college level?</title><link>http://cestlaz.github.io/posts/csforall-in-college/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge360915" class="outline-2"&gt;
+&lt;h2 id="orge360915"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge360915"&gt;
+&lt;p&gt;
+There's been a lively discussion on pushback to CS for All at the K12
+level over on Facebook. &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; started a sub thread asking if CS
+for All should first be implemented at the undergrad level rather than K12. 
+&lt;/p&gt;
+
+&lt;p&gt;
+It's an interesting question and as good as anything to get me out of
+my month long non-blogging rut.
+&lt;/p&gt;
+
+&lt;p&gt;
+Mark was right when he said that if Colleges implement CS for All, K12 will 
+likely do so to follow - just look at AP. Colleges have been saying
+that students should take more AP classes (while giving less credit)
+and we all know where that's led. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand, can colleges really do CS for All, what does it
+mean and what would it look like.
+&lt;/p&gt;
+
+&lt;p&gt;
+Much like there is no single K12 - it's 50 states and who knows how
+many independent school districts, there won't be a single CS for All
+at the college level but let's think about how things could play out.
+&lt;/p&gt;
+
+&lt;p&gt;
+Many colleges have distribution requirements. Students must take one
+course from bucket A, two from bucket B etc. Many schools that I've
+looked at already  count CS courses in one of their distribution
+buckets. This doesn't mean every student will take CS but in theory
+means they can. Colleges could in theory create a required CS bucket
+or even a required CS course but I don't think it's as easy as
+that. It might be at a private institution but while I don't know all
+the ins and outs of Hunter's governance rules I do know that adding a
+universal student requirement is a HUGE undertaking.
+&lt;/p&gt;
+
+&lt;p&gt;
+So my take is that while it might be easy for a private college
+to add a CS requirement I'm guessing other public institutions are
+more similar to Hunter and it's not going to be an easy task.
+&lt;/p&gt;
+
+&lt;p&gt;
+Regardless, let's say we have a required class on the books. Will we
+have the capacity to teach it? It seems that schools are struggling to deal
+with their existing CS majors and running sufficient electives and
+courses for them. Just a month or so ago there was an article about a
+college ending its CS minor due to lack of resources. It doesn't sound
+like a radically different problem then that faced in K12. Maybe it's
+harder given that at least in NY, there is &lt;a href="http://cestlaz.github.io/posts/room-for-csforall"&gt;room for a required CS
+course&lt;/a&gt; if you can find the teacher.
+&lt;/p&gt;
+
+&lt;p&gt;
+Even so, assuming we have the capacity to enroll every undergrad in a
+CS course what would that be? I think most people would be in
+agreement that it shouldn't be CS 101. Maybe existing pre-major
+courses but even there I don't know if that's always the best
+path. There could be a great pre-major course to give students the
+basics and lead some into the major but what about a CS course for
+students in majors that need some deeper but focussed programming
+skills. The appropriate course for them isn't the same as a
+general/pre-major course. Using Statistics as an example, at Hunter,
+many majors require a statistics course which is off loaded to the
+Stats department. Each major has slightly different requirements. Over
+years, the end result is a course that it seems that nobody is happy
+with - a least common denominator course. CS for All at the college level
+could give us a least common denominator course that doesn't serve
+anyone.
+&lt;/p&gt;
+
+&lt;p&gt;
+Now, if you have the resources, none of these are issues. A well
+heeled private institution can run tons of sections of specialized
+classes no problem but this means just like on the K12 level we'll
+get the CS for All tale of two cities that I see coming in NY where
+the rich schools have good programs and the poor get a substandard
+experience.
+&lt;/p&gt;
+
+&lt;p&gt;
+With all of this said, I'm finally getting to the big red flag with
+college CS for All and it's an issue that everyone conveniently
+ignores. I'm talking about teacher quality. One of my big takeaways
+from SIGCSE is that college faculty are well behind K12 teachers in
+terms of pedagogy and I don't see this changing anytime soon. This is
+to be expected given that professor's career advancement is really
+based on research. Having a good teacher is always important but it's
+even more important for non-major students since a student in the
+professor's major will at least be passionate about the subject
+area. To me, this is not a recipe for success.
+&lt;/p&gt;
+
+&lt;p&gt;
+One can certainly make the claim that we aren't any better off right
+now at the K12 level because we don't have teachers who know either
+the subject nor how to teach it and at least at the college level they
+know the subject matter. This is very true and it's why pre-service CS
+teacher preparation is so critical to getting this right even though
+it will take time. That's something that both Mark and I have been
+vocal about but more on that subject next time.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>csed</category><category>csforall</category><category>policy</category><guid>http://cestlaz.github.io/posts/csforall-in-college/</guid><pubDate>Fri, 25 May 2018 20:23:23 GMT</pubDate></item><item><title>Is there room for CS for All</title><link>http://cestlaz.github.io/posts/room-for-csforall/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org59c958b" class="outline-2"&gt;
 &lt;h2 id="org59c958b"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-org59c958b"&gt;
 &lt;p&gt;
@@ -1006,91 +1117,4 @@ sequences.
 We can do better. 
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/math-for-math-teachers/</guid><pubDate>Sat, 14 Apr 2018 14:44:36 GMT</pubDate></item><item><title>Why Strong K12 Teacher Certification is Important</title><link>http://cestlaz.github.io/posts/strong-teacher-certification/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org44a29a0" class="outline-2"&gt;
-&lt;h2 id="org44a29a0"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org44a29a0"&gt;
-&lt;p&gt;
-About a week ago New York State's new regulation creating a &lt;a href="http://www.crainsnewyork.com/article/20180327/NEWS/180329893/new-york-will-finally-have-certified-computer-science-teachers"&gt;K12 CS
-teacher certification&lt;/a&gt; went live. Just the other day I was honored to be
-interviewed by  &lt;a href="https://twitter.com/mflamm_reporter"&gt;Matt Flamm&lt;/a&gt; of Crain's New York in a &lt;a href="http://www.crainsnewyork.com/article/20180410/TECHNOLOGY/180419999/asked-answered-teacher-changed-jobs-to-push-for-new-york-states-new"&gt;follow up piece&lt;/a&gt;
-about it. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Having K12 CS teacher certification is big and having quality programs
-that lead to certification is &lt;b&gt;HUGE&lt;/b&gt;. In my view, it's a game changer.
-&lt;/p&gt;
-
-&lt;p&gt;
-Let's Focus on high school, my wheelhouse.
-&lt;/p&gt;
-
-&lt;p&gt;
-From a course offerings point of view it's the wild west. I don't mean
-this as a bad thing, it's just that there's a huge range of offerings
-from AP to home brew, physical computing, game based, cyber security,
-you name it, there's a curriculum. The long and short of this is that
-schools need teachers to teach all of these experiences. Without a
-strong certification pathway we're going to be stuck with the current
-training based model where teachers are trained to deliver canned
-curricula rather than truly teach. With strong teacher preparation
-programs teachers will be prepared not only to deliver all the
-existing curricula but, arguable more importantly design their own
-learning experiences appropriate for the populations they work with.
-&lt;/p&gt;
-
-&lt;p&gt;
-This is important and alone would make having CS certification
-worthwhile but to me the BIG win is that it creates a viable career
-path. 
-&lt;/p&gt;
-
-&lt;p&gt;
-People say we'll never find enough CS teachers because the tech
-industry pays so well. I've never believed that. We find math teachers
-even though many could flee to finance and chem teachers in spite of
-big pharma's call so why can't we find CS teachers? Because we've
-never provided a path into the profession and a viable career track. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Certification means that over time schools will be able to build CS
-teachers and the discipline will be treated as the other
-subjects. Prior to certification, a CS teacher might be cut if a
-school's math department downsized. With certification, the career
-track for a CS teacher is the same as the track for any other teacher.
-&lt;/p&gt;
-
-&lt;p&gt;
-It also means that young people starting out who are interested in
-both teaching and computer science will have a way of getting into the
-profession - something that has never before existed.
-&lt;/p&gt;
-
-&lt;p&gt;
-Having CS certification alone won't woo a
-plethora of current tech professionals into teaching but over time,
-we'll start to have CS Ed majors or CS majors pursuing CS ED Masters
-degrees and entering the profession. This won't happen in a press or
-election cycle but it will happen.
-&lt;/p&gt;
-
-&lt;p&gt;
-This all hinges on quality prep programs. I think I've hit the sweet
-spot with what I've designed at Hunter. The critical components are of
-course content and pedagogy. Teacher candidates must have both
-sufficient depth and breadth in the subject and all the pedagogical
-content knowledge that comes along with it. I don't agree with the
-common approach of taking a course to teach a course - that is, having
-courses like "APCS - Principles for teachers" or "APCS - A for
-teachers."  I want my teachers to be able to teach any reasonable
-curriculum or design their own so we'll be rolling out courses that
-examine the commonly offerd curricula but prepare teachers for a whole
-lot more.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's been an exciting week in NY CS Ed and there's a lot more to come.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>certification</category><category>cs</category><category>policy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/strong-teacher-certification/</guid><pubDate>Tue, 10 Apr 2018 21:39:30 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/math-for-math-teachers/</guid><pubDate>Sat, 14 Apr 2018 14:44:36 GMT</pubDate></item></channel></rss>
