@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about git)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/git.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 30 May 2018 12:49:46 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Pull Requests and Other People's Code</title><link>http://cestlaz.github.io/posts/pull-requests/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9200339" class="outline-2"&gt;
-&lt;h2 id="org9200339"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9200339"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about git)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/git.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 27 Apr 2018 13:12:10 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Pull Requests and Other People's Code</title><link>http://cestlaz.github.io/posts/pull-requests/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6726c03" class="outline-2"&gt;
+&lt;h2 id="org6726c03"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6726c03"&gt;
 &lt;p&gt;
 One of the things I've heard for years from former students - both
 those looking for jobs and those looking to hire is that colleges
@@ -78,9 +78,9 @@ engineering techniques without removing any of the academic CS in the
 class. 
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>git</category><category>github</category><category>software engineering</category><guid>http://cestlaz.github.io/posts/pull-requests/</guid><pubDate>Thu, 26 Apr 2018 23:07:02 GMT</pubDate></item><item><title>Using Emacs 42 - Git Gutter and Time Machine</title><link>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org054b38f" class="outline-2"&gt;
-&lt;h2 id="org054b38f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org054b38f"&gt;
+&lt;/div&gt;</description><category>git</category><category>github</category><category>software engineering</category><guid>http://cestlaz.github.io/posts/pull-requests/</guid><pubDate>Thu, 26 Apr 2018 23:07:02 GMT</pubDate></item><item><title>Using Emacs 42 - Git Gutter and Time Machine</title><link>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org53478fd" class="outline-2"&gt;
+&lt;h2 id="org53478fd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org53478fd"&gt;
 &lt;p&gt;
 One day I'll do a Magit video but since there are already some good
 ones out there I thought I'd share a couple of other great git related
@@ -110,9 +110,9 @@ Enjoy
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/P-mLxkb-EE8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>git</category><guid>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</guid><pubDate>Sun, 18 Feb 2018 12:05:45 GMT</pubDate></item><item><title>Collaborative Coding or Cheating</title><link>http://cestlaz.github.io/posts/collaborative-coding-or-cheating/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>git</category><guid>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</guid><pubDate>Sun, 18 Feb 2018 12:05:45 GMT</pubDate></item><item><title>Collaborative Coding or Cheating</title><link>http://cestlaz.github.io/posts/collaborative-coding-or-cheating/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org42323b6" class="outline-2"&gt;
+&lt;h2 id="org42323b6"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org42323b6"&gt;
 &lt;p&gt;
 I haven't been teaching this past semester. That's why I haven't been
 writing much about lessons. I miss working with students but that will
@@ -154,15 +154,11 @@ Teachers have all sorts of options these days including:
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;Using a CMS like Blackboard or Moodle
-&lt;/li&gt;
-&lt;li&gt;Dropbox based solutions
-&lt;/li&gt;
-&lt;li&gt;Emailing projects
-&lt;/li&gt;
+&lt;li&gt;Using a CMS like Blackboard or Moodle&lt;/li&gt;
+&lt;li&gt;Dropbox based solutions&lt;/li&gt;
+&lt;li&gt;Emailing projects&lt;/li&gt;
 &lt;li&gt;Using development tools and sites such as git with GitHub, BitBucket
-or other repository hosting services
-&lt;/li&gt;
+or other repository hosting services&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
