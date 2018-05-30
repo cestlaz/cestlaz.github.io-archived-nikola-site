@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about scheme)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/scheme.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 30 May 2018 13:41:45 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Teaching recursion early? Make sure to use a good tool.</title><link>http://cestlaz.github.io/posts/recursion-early/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd390722" class="outline-2"&gt;
+&lt;h2 id="orgd390722"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd390722"&gt;
+&lt;p&gt;
+I replied this tweet yesterday and thought I'd expound a bit.
+&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;We started kids using scheme on 10th grade at stuy so did recursion early. Not everyone got all of it but it think it made things much easier for those that you more CS later.&lt;/p&gt;— Mike Zamansky (@zamansky) &lt;a href="https://twitter.com/zamansky/status/1001508028439519233?ref_src=twsrc%5Etfw"&gt;May 29, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;p&gt;
+We introduced recursion very early in our intro course at Stuy and I
+think it worked well. In that course we started by using Racket (nee
+Scheme) as the first programming unit. Originally we
+started the kids out first using NetLogo or StarLogo and followed with
+Scheme but after a few years we switched the order.
+&lt;/p&gt;
+
+&lt;p&gt;
+I wouldn't always recommend Scheme for a first course and in fact
+frequently don't but given how the Stuy course was introduced and
+developed it made sense and worked. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Was it worth doing things this way? I think so. Prior to that intro
+course becoming a requirement I got to see students coming in from
+different pathways to APCS. Some came in raw with zero formal
+experience, some self taught, some through that intro course and some
+having taken another more traditional intro programming course or
+experience. The kids who started on Scheme had no more difficulty
+mastering loops and iteration but had an easier time getting to the
+more advanced recursive techniques. This wasn't a surprise - it wasn't
+their first rodeo. This also jived with reports I read at the time
+that felt that when students did recursion first, iteration was just
+as easy but when they did iteration first, recursion was harder. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You can of course make a strong case that recursion isn't necessary
+for a kid that isn't going to study more CS. I'll merely argue that
+what we did at Stuy worked with that population and I wouldn't change
+it. At the same time, I've helped a number of teachers design classes and programs
+where we agreed that recursion first was not the way to go.
+&lt;/p&gt;
+
+&lt;p&gt;
+In any event, it wasn't that I specifically wanted to do recursion
+early but rather, there were a number of things I wanted to do with
+the class for which Scheme made sense and recursion was just one of
+them.
+&lt;/p&gt;
+
+&lt;p&gt;
+Some reasons to like (or for some, to dislike) Scheme early:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;It's functional – everything is a function. While this is
+technically not true, we can fudge it a bit at this level. You put
+things in parens so instead of add(a,b) you write (add a b) or
+really (+ a b). You can also do (+ a b c). Things that would be
+statements are also functions: (if Booelean TruePart FalsePart) is the &lt;b&gt;if&lt;/b&gt;
+statement. For example &lt;code&gt;(if (&amp;gt;= a b) a b)&lt;/code&gt; returns the larger of a
+and b.&lt;/li&gt;
+&lt;li&gt;Because it's functional it avoids the issue kids have with &lt;code&gt;=&lt;/code&gt; being
+for assignment rather than comparison.&lt;/li&gt;
+&lt;li&gt;It has great support for list processing.&lt;/li&gt;
+&lt;li&gt;Recursion is much more natural.&lt;/li&gt;
+&lt;li&gt;It's a super simple language with simple rules and a simple, small  syntax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Of course, Scheme isn't perfect and some people dislike the above
+reasons. It's also easy to come up with a number of other good reasons
+not to use a language like Scheme. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the recursion front, it makes things much easier. There are no
+loops so recursion develops as a natural form for repetition:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;define &lt;/span&gt;&lt;span class="nv"&gt;f&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+	    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;* &lt;/span&gt;&lt;span class="nv"&gt;x&lt;/span&gt;  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;f&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;- &lt;/span&gt;&lt;span class="nv"&gt;x&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)))))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+This defines a function that takes one parameter and returns
+&lt;code&gt;x*(x-1)*(x-2)...&lt;/code&gt;. It repeats, but never ends. This leads to adding
+a base case:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;define &lt;/span&gt;&lt;span class="nv"&gt;f&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;if &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;&amp;lt; &lt;/span&gt;&lt;span class="nv"&gt;x&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+		&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;* &lt;/span&gt;&lt;span class="nv"&gt;x&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;f&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;- &lt;/span&gt;&lt;span class="nv"&gt;x&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+		&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Which is your basic factorial function.
+&lt;/p&gt;
+
+&lt;p&gt;
+Since this use of recursion for repetition  develops naturally as we
+introduce language concepts it's easier for kids to get their heads
+around it as opposed to when they've seen loops already and have an
+"easier" alternative. You can make the case that you could introduce
+recursion this way in a language with loops like Python but once loops
+are available and particularly when loops are idiomatic, students will
+find them and getting them to think recursively will be more
+difficult.
+&lt;/p&gt;
+
+&lt;p&gt;
+Scheme and most other functional programming languages also have
+strong support for lists and list recursion. This means you don't have
+to limit yourself to mathy problems. Think about a todo list:
+&lt;/p&gt;
+
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Go to the market&lt;/li&gt;
+&lt;li&gt;Buy a gallon of milk&lt;/li&gt;
+&lt;li&gt;If they have eggs, get a dozen (heh heh)&lt;/li&gt;
+&lt;li&gt;Go home&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+Processing a todo list is really a recursive problem:
+&lt;/p&gt;
+
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;If the list is empty you're done&lt;/li&gt;
+&lt;li&gt;Take the first item off  the list&lt;/li&gt;
+&lt;li&gt;Do it&lt;/li&gt;
+&lt;li&gt;Recurse&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+Once you start working with lists, you can play with all sorts of
+recursive examples.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the end of the Scheme unit the big project is creating a sentence
+generator. The kids don't know it but they're learning about grammars
+and in fact are writing a recursive descent parser - they just think
+they're writing a program that creates silly sentences. It's a really
+nice project that uses recursion in a way that's different and I'd
+argue more fun and interesting than the usual approaches. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I chose Scheme for a variety of reasons. I also chose NetLogo for
+specific reasons. Unlike Scheme (or most other popular learning
+languages), NetLogo is really all about agent based parallel
+processing. There are concepts that we can explore easily and in depth
+with NetLogo that would be tremendously difficult in any other
+language and at the same time, there are things that are easy to
+explore in other languages that Netlogo doesn't lend itself to.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, in the end, this post really isn't about when to teach
+recursion. It's more about how languages lend themselves to solving
+different problems and teaching different concepts in different
+ways. If all you have is a hammer, everything looks like a
+nail. Fortunately, we can do better.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>recursion</category><category>scheme</category><guid>http://cestlaz.github.io/posts/recursion-early/</guid><pubDate>Wed, 30 May 2018 12:42:29 GMT</pubDate></item></channel></rss>

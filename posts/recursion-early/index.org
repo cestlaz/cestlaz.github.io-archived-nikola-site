@@ -1,0 +1,139 @@
+#+BEGIN_COMMENT
+.. title: Teaching recursion early? Make sure to use a good tool.
+.. slug: recursion-early
+.. date: 2018-05-30 08:42:29 UTC-04:00
+.. tags: recursion, scheme, pedagogy, cs
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+I replied this tweet yesterday and thought I'd expound a bit.
+
+#+BEGIN_EXPORT html
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">We started kids using scheme on 10th grade at stuy so did recursion early. Not everyone got all of it but it think it made things much easier for those that you more CS later.</p>&mdash; Mike Zamansky (@zamansky) <a href="https://twitter.com/zamansky/status/1001508028439519233?ref_src=twsrc%5Etfw">May 29, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+#+END_EXPORT
+
+We introduced recursion very early in our intro course at Stuy and I
+think it worked well. In that course we started by using Racket (nee
+Scheme) as the first programming unit. Originally we
+started the kids out first using NetLogo or StarLogo and followed with
+Scheme but after a few years we switched the order.
+
+I wouldn't always recommend Scheme for a first course and in fact
+frequently don't but given how the Stuy course was introduced and
+developed it made sense and worked. 
+
+Was it worth doing things this way? I think so. Prior to that intro
+course becoming a requirement I got to see students coming in from
+different pathways to APCS. Some came in raw with zero formal
+experience, some self taught, some through that intro course and some
+having taken another more traditional intro programming course or
+experience. The kids who started on Scheme had no more difficulty
+mastering loops and iteration but had an easier time getting to the
+more advanced recursive techniques. This wasn't a surprise - it wasn't
+their first rodeo. This also jived with reports I read at the time
+that felt that when students did recursion first, iteration was just
+as easy but when they did iteration first, recursion was harder. 
+
+You can of course make a strong case that recursion isn't necessary
+for a kid that isn't going to study more CS. I'll merely argue that
+what we did at Stuy worked with that population and I wouldn't change
+it. At the same time, I've helped a number of teachers design classes and programs
+where we agreed that recursion first was not the way to go.
+
+In any event, it wasn't that I specifically wanted to do recursion
+early but rather, there were a number of things I wanted to do with
+the class for which Scheme made sense and recursion was just one of
+them.
+
+Some reasons to like (or for some, to dislike) Scheme early:
+- It's functional -- everything is a function. While this is
+  technically not true, we can fudge it a bit at this level. You put
+  things in parens so instead of add(a,b) you write (add a b) or
+  really (+ a b). You can also do (+ a b c). Things that would be
+  statements are also functions: (if Booelean TruePart FalsePart) is the *if*
+  statement. For example ~(if (>= a b) a b)~ returns the larger of a
+  and b.
+- Because it's functional it avoids the issue kids have with ~=~ being
+  for assignment rather than comparison. 
+- It has great support for list processing.
+- Recursion is much more natural.
+- It's a super simple language with simple rules and a simple, small  syntax 
+
+Of course, Scheme isn't perfect and some people dislike the above
+reasons. It's also easy to come up with a number of other good reasons
+not to use a language like Scheme. 
+
+On the recursion front, it makes things much easier. There are no
+loops so recursion develops as a natural form for repetition:
+
+#+BEGIN_SRC scheme
+  (define f (lambda (x) 
+              (* x  (f (- x 1)))))
+#+END_SRC
+
+This defines a function that takes one parameter and returns
+~x*(x-1)*(x-2)...~. It repeats, but never ends. This leads to adding
+a base case:
+
+#+BEGIN_SRC scheme
+  (define f (lambda (x)
+              (if (< x 2)
+                  (* x (f (- x 1)))
+                  1)))
+#+END_SRC
+
+Which is your basic factorial function.
+
+Since this use of recursion for repetition  develops naturally as we
+introduce language concepts it's easier for kids to get their heads
+around it as opposed to when they've seen loops already and have an
+"easier" alternative. You can make the case that you could introduce
+recursion this way in a language with loops like Python but once loops
+are available and particularly when loops are idiomatic, students will
+find them and getting them to think recursively will be more
+difficult.
+
+Scheme and most other functional programming languages also have
+strong support for lists and list recursion. This means you don't have
+to limit yourself to mathy problems. Think about a todo list:
+
+1. Go to the market
+2. Buy a gallon of milk
+3. If they have eggs, get a dozen (heh heh)
+4. Go home
+
+Processing a todo list is really a recursive problem:
+
+1. If the list is empty you're done
+2. Take the first item off  the list
+3. Do it
+4. Recurse
+
+Once you start working with lists, you can play with all sorts of
+recursive examples.
+
+At the end of the Scheme unit the big project is creating a sentence
+generator. The kids don't know it but they're learning about grammars
+and in fact are writing a recursive descent parser - they just think
+they're writing a program that creates silly sentences. It's a really
+nice project that uses recursion in a way that's different and I'd
+argue more fun and interesting than the usual approaches. 
+
+I chose Scheme for a variety of reasons. I also chose NetLogo for
+specific reasons. Unlike Scheme (or most other popular learning
+languages), NetLogo is really all about agent based parallel
+processing. There are concepts that we can explore easily and in depth
+with NetLogo that would be tremendously difficult in any other
+language and at the same time, there are things that are easy to
+explore in other languages that Netlogo doesn't lend itself to.
+
+So, in the end, this post really isn't about when to teach
+recursion. It's more about how languages lend themselves to solving
+different problems and teaching different concepts in different
+ways. If all you have is a hammer, everything looks like a
+nail. Fortunately, we can do better.

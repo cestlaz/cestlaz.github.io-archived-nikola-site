@@ -1,19 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
-<feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 37)</title>
   <id>http://cestlaz.github.io/index-37.atom</id>
-  <updated>2018-04-20T23:33:04Z</updated>
+  <updated>2018-04-18T21:35:31Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/index-37.atom"/>
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-36.atom"/>
-  <link rel="previous" type="application/atom+xml" href="http://cestlaz.github.io/index-38.atom"/>
+  <link rel="previous" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
   <link rel="current" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
-  <link rel="next-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-38.atom"/>
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-36.atom"/>
-  <fh:archive/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-37.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
@@ -25,9 +23,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/refactoring/"/>
-    <summary type="html">&lt;div id="outline-container-org955b391" class="outline-2"&gt;
-&lt;h2 id="org955b391"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org955b391"&gt;
+    <summary type="html">&lt;div id="outline-container-org160705c" class="outline-2"&gt;
+&lt;h2 id="org160705c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org160705c"&gt;
 &lt;p&gt;
 One of my laments on teaching computer science is that students are
 rarely taught and given the chance to develop  good programming
@@ -281,9 +279,9 @@ inject good programming practices in ways that make sense early on?
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/testing-part2/"/>
-    <summary type="html">&lt;div id="outline-container-org362281f" class="outline-2"&gt;
-&lt;h2 id="org362281f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org362281f"&gt;
+    <summary type="html">&lt;div id="outline-container-orgd699fd5" class="outline-2"&gt;
+&lt;h2 id="orgd699fd5"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd699fd5"&gt;
 &lt;p&gt;
 A few weeks ago I wrote about &lt;a href="https://cestlaz.github.io/posts/testing-testing/#.Wq7Ud3XwZhE"&gt;introducing testing&lt;/a&gt; in CS classes,
 specifically using a testing framework. In that post I talked about
@@ -410,9 +408,9 @@ terms of speed of evaluation. Sounds like a win to me.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/on-prestigious-competitons-and-high-schools/"/>
-    <summary type="html">&lt;div id="outline-container-orgcc60af9" class="outline-2"&gt;
-&lt;h2 id="orgcc60af9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgcc60af9"&gt;
+    <summary type="html">&lt;div id="outline-container-org73b7e8f" class="outline-2"&gt;
+&lt;h2 id="org73b7e8f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org73b7e8f"&gt;
 &lt;p&gt;
 The ACM recently announced this year's winners of the Cutler-Bell
 Prize in High School Computing. Over on his blog, &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt;
@@ -607,9 +605,9 @@ couple of specific math teachers.&lt;/div&gt;&lt;/div&gt;
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/"/>
-    <summary type="html">&lt;div id="outline-container-orge453c51" class="outline-2"&gt;
-&lt;h2 id="orge453c51"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge453c51"&gt;
+    <summary type="html">&lt;div id="outline-container-org49fca1d" class="outline-2"&gt;
+&lt;h2 id="org49fca1d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org49fca1d"&gt;
 &lt;p&gt;
 The other day I discovered &lt;a href="https://github.com/abo-abo/auto-yasnippet"&gt;auto-yasnippet&lt;/a&gt;, another great package by
 &lt;a href="https://github.com/abo-abo"&gt;Oleh Krehel&lt;/a&gt; or abo-abo.
@@ -677,9 +675,9 @@ Check out the video:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018-theory/"/>
-    <summary type="html">&lt;div id="outline-container-orgaae4caa" class="outline-2"&gt;
-&lt;h2 id="orgaae4caa"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgaae4caa"&gt;
+    <summary type="html">&lt;div id="outline-container-org30b5456" class="outline-2"&gt;
+&lt;h2 id="org30b5456"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org30b5456"&gt;
 &lt;p&gt;
 Next up from SIGCSE 2018 is John MacCormick's session on
 &lt;a href="https://dl.acm.org/citation.cfm?id=3159557"&gt;Strategies for Baing the CS Theory Course on Non-decision Problems&lt;/a&gt;
@@ -763,9 +761,9 @@ into CS 1 experiences.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-45-company/"/>
-    <summary type="html">&lt;div id="outline-container-org33b7b2c" class="outline-2"&gt;
-&lt;h2 id="org33b7b2c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org33b7b2c"&gt;
+    <summary type="html">&lt;div id="outline-container-orgd48d1bf" class="outline-2"&gt;
+&lt;h2 id="orgd48d1bf"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd48d1bf"&gt;
 &lt;p&gt;
 This is a good time to be an Emacs user. In addition to all of the
 great packages and tools being developed there seem to be more people
@@ -808,9 +806,9 @@ Here's what I've found so far:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org0580de9" class="outline-2"&gt;
-&lt;h2 id="org0580de9"&gt;Company config (so far):&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0580de9"&gt;
+&lt;div id="outline-container-orgeb6064a" class="outline-2"&gt;
+&lt;h2 id="orgeb6064a"&gt;Company config (so far):&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgeb6064a"&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company&lt;/span&gt;
 &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
 &lt;span class="nv"&gt;:config&lt;/span&gt;
@@ -848,9 +846,9 @@ Here's what I've found so far:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org67bf776" class="outline-2"&gt;
-&lt;h2 id="org67bf776"&gt;Autocomplete config&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org67bf776"&gt;
+&lt;div id="outline-container-orgcde7876" class="outline-2"&gt;
+&lt;h2 id="orgcde7876"&gt;Autocomplete config&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgcde7876"&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;auto-complete&lt;/span&gt;
 &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
 &lt;span class="nv"&gt;:init&lt;/span&gt;
@@ -882,9 +880,9 @@ Here's what I've found so far:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/practitioners-and-researchers/"/>
-    <summary type="html">&lt;div id="outline-container-org2da317e" class="outline-2"&gt;
-&lt;h2 id="org2da317e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org2da317e"&gt;
+    <summary type="html">&lt;div id="outline-container-org459f475" class="outline-2"&gt;
+&lt;h2 id="org459f475"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org459f475"&gt;
 &lt;p&gt;
 After reading a couple of comments on my &lt;a href="http://cestlaz.github.io/posts/sigcse2018-code-tracing/"&gt;last post&lt;/a&gt; where I talked a
 bit about practitioners vs researchers I thought I'd expand and
@@ -1043,9 +1041,9 @@ We all have a role to play in this game.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018-code-tracing/"/>
-    <summary type="html">&lt;div id="outline-container-org45688ea" class="outline-2"&gt;
-&lt;h2 id="org45688ea"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org45688ea"&gt;
+    <summary type="html">&lt;div id="outline-container-org59a17d3" class="outline-2"&gt;
+&lt;h2 id="org59a17d3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org59a17d3"&gt;
 &lt;p&gt;
 Next up from SIGCSE is &lt;a href="https://dl.acm.org/citation.cfm?id=3159527"&gt;An Explicit Strategy to Scaffold Novice Program
 Tracing&lt;/a&gt; by Benjamin Xie, Greg Nelson and Andy Ko, presented by
@@ -1197,9 +1195,9 @@ can read Benji Xi's medium post &lt;a href="https://medium.com/bits-and-behavior
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-44-pdf/"/>
-    <summary type="html">&lt;div id="outline-container-orga34b33a" class="outline-2"&gt;
-&lt;h2 id="orga34b33a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga34b33a"&gt;
+    <summary type="html">&lt;div id="outline-container-orgb4279b1" class="outline-2"&gt;
+&lt;h2 id="orgb4279b1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb4279b1"&gt;
 &lt;p&gt;
 One of my titles at Hunter College is Director of the Daedalus CS
 Honors program. It's something like a Hunter specific, CS specific
@@ -1271,9 +1269,9 @@ Take a look and let me know what you think:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018-bootstrap/"/>
-    <summary type="html">&lt;div id="outline-container-orge428d07" class="outline-2"&gt;
-&lt;h2 id="orge428d07"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge428d07"&gt;
+    <summary type="html">&lt;div id="outline-container-orgd0b6207" class="outline-2"&gt;
+&lt;h2 id="orgd0b6207"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd0b6207"&gt;
 &lt;p&gt;
 I really didn't know what to expect at the &lt;a href="https://dl.acm.org/citation.cfm?id=3159471"&gt;Creativity, Customization,
 and Ownership: Game Design in Bootstrap: Algebra&lt;/a&gt; session. I've been a
