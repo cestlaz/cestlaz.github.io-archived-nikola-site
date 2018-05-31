@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about csforall</title>
   <id>http://cestlaz.github.io/categories/csforall.atom</id>
-  <updated>2018-04-27T17:23:06Z</updated>
+  <updated>2018-04-29T23:05:37Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -19,11 +19,11 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/unfunded-mandates/"/>
-    <summary type="html">&lt;div id="outline-container-orged323e8" class="outline-2"&gt;
-&lt;h2 id="orged323e8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orged323e8"&gt;
+    <summary type="html">&lt;div id="outline-container-orgbc4dc60" class="outline-2"&gt;
+&lt;h2 id="orgbc4dc60"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgbc4dc60"&gt;
 &lt;p&gt;
-This morning, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; write about &lt;a href="https://computinged.wordpress.com/2018/04/27/lack-of-funding-leads-to-lack-of-teachers-leads-to-lack-of-cs-classes-we-may-need-to-change-our-strategy/"&gt;unfunded mandates and CS for
+This morning, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about &lt;a href="https://computinged.wordpress.com/2018/04/27/lack-of-funding-leads-to-lack-of-teachers-leads-to-lack-of-cs-classes-we-may-need-to-change-our-strategy/"&gt;unfunded mandates and CS for
 All&lt;/a&gt;. Unfunded mandates frequently wreak havoc on schools in a number
 of ways but in the long run, I don't think it should have a severe
 effect on CS for All. Rather, it could have a big impact on the number
@@ -36,30 +36,33 @@ at the time many students wanted more CS classes but the school wasn't
 planning on hiring a new CS teacher. The money quote is:
 &lt;/p&gt;
 
+&lt;blockquote&gt;
 &lt;p&gt;
-#+BEGIN&lt;sub&gt;QUOTE&lt;/sub&gt;
 Over 50 percent of students signing up for Level 2 [computer science] courses next year identify as African Americans,
-#+END&lt;sub&gt;SRC&lt;/sub&gt;
 &lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;
 No, I'm not talking about the diversity issue raised by the quote, I'm
 talking about &lt;b&gt;Level 2 [computer science]&lt;/b&gt;. This implies that the
 students already had &lt;b&gt;Level 1 computer science&lt;/b&gt;. Level 1 would cover
-CS For All so now we're talking about CS vs other subjects. This is
-something I had to deal with for most of my career even after we got a
-CS requirement at Stuy. It was always a battle to hire enough CS
-teachers to meet demand. The hard part was politics - there were
-always older more entrenched subject areas who would rather force kids
-into their electives rather than allow them to take my CS
+CS For All so now we're talking about CS electives vs other
+electives. This is something I had to deal with for most of my career
+even after we got a CS requirement at Stuy. It was always a battle to
+hire enough CS teachers to meet demand. The hard part was politics -
+there were always older more entrenched subject areas who would rather
+force kids into their electives rather than allow them to take my CS
 electives. This is a whole other kettle of fish than CS for All. It's
 an issue for some schools now and will become a &lt;b&gt;BIG&lt;/b&gt; issue in five to
-fifteen years when a single CS required course is more the norm. Now
-we have to deal with other entrenched classes, a discussion of the
-relative value of CS electives vs other electives and also the ebb and
-flow of interest - there might be demand for 5 more CS classes and 5
-less something else this year but there might not be next year and
-then we're in real trouble staffing wise.
+fifteen years when a single CS required course is more the norm. The
+issue raised here is a new CS elective vs entrenched teachers and
+classes which shuld lead to a discussion of the relative value of CS
+electives vs other electives. That said, the reality is that it
+usually comes down to school and local power and politics. Also to be
+considered is the potential ebb and flow of interest - there might be
+demand for 5 more CS classes and 5 less something else this year but
+there might not be next year and then we're in real trouble staffing
+wise.
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -88,14 +91,14 @@ to branch out into other subject areas). Even though I'm a big
 Bootstrap fan I don't think that's the answer to CS for All or CS in
 the high schools in general. I think that one of the reasons why
 Bootstrap works so well is the alignment between the CS tool they use
-and the way Algebra is or can be taught so that. Another is the fact
+and the way Algebra is or can be taught. Another reason is the fact
 that while Algebra is the lowest level of the traditional high school
 classes, it's frequently the one for which the most time is
 allocated. Students in low performing schools might take Algebra over
 two years or have a double period. This won't be the case for other
-subject areas. What this means is that there more likely extra time
-to embed another subject into the Algebra class. Long term, embedding CS into
-another subject area requires:
+subject areas. What this means is that there's more likely extra time
+to embed another subject, cs, into the Algebra class. Long term,
+embedding CS into another subject area requires:
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
@@ -105,6 +108,26 @@ preparing the students for both the next level of whatever subject
 you're embedded in  as well as for whatever standardized
 assessments come at the end of the year.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;
+As I said, I'm a Bootstrap fan but I don't think that's the answer for
+CS in K12.
+&lt;/p&gt;
+
+&lt;p&gt;
+Back to the original topic there are certainly issues with
+implementing CS for All but I don't think school funding is the
+biggest hurdle. For me there are other big challenges. One is having a
+supply of qualified teachers. In the long run as states outline CS
+requirements and pre-service programs crop up this will work itself
+out. Until then, yes, we will have an issue and yes it will take some
+funding for stop gap and transitional teacher preperation. A second issue is
+working the internal politics. Adding CS does mean removing something
+else or more likely a piece of something else. The third one is what
+I'm noticing in NY where CS for all seems to at times forget about
+the CS. If we have knowledgeable teachers we can work around that one
+but I still think that might be my biggest concern.
+&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
     <category term="csforall" label="csforall"/>

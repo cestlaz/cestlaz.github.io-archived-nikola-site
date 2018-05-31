@@ -3,14 +3,108 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2018-05-30T19:54:40Z</updated>
+  <updated>2018-05-31T22:49:00Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
-  <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-38.atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-39.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>The Tech or the Teacher</title>
+    <id>http://cestlaz.github.io/posts/tech-or-teacher/</id>
+    <updated>2018-05-31T17:43:28-04:00</updated>
+    <published>2018-05-31T17:43:28-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/tech-or-teacher/"/>
+    <summary type="html">&lt;div id="outline-container-orgda89321" class="outline-2"&gt;
+&lt;h2 id="orgda89321"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgda89321"&gt;
+&lt;p&gt;
+Every morning one of the first things I do is quickly glance at my
+emails and other notifications. I really should wait until I'm more
+awake but old habits die hard. 
+&lt;/p&gt;
+
+&lt;p&gt;
+As some of you know over the past couple of years I've been making a
+series of &lt;a href="http://cestlaz.github.io/stories/emacs"&gt;videos&lt;/a&gt; and related post on using my editor of choice,
+Emacs. I've done 48 videos, have over 2500 subscribers on
+YouTube and people seem to find some value from the series. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This morning one of my emails was a new comment on one of my videos:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Thanks for not describing a single key combination and how that fits
+into basic usage of org mode.  I was going to subscribe but if all
+your videos are going to be about showing off how fast you are at
+typing emacs commands on your annoyingly noisy keyborad, then no
+thanks!﻿
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+My first reaction was "you know, you could have said something like
+'if you slow down an actually say the keys it would be much easier to
+follow and would be more valuable' and it would be much better received" but
+then I started to think about instructional videos in general. I
+started to make these videos for my students. I thought they might be
+helpful and then found that the Emacs community by and large liked
+them. They're not teaching anything deep or complicated just how I use
+a programmable editor. Even so, I was reminded by this comment about
+the limitations of videos and ed tech in general.
+&lt;/p&gt;
+
+&lt;p&gt;
+Videos provide some nice features - you can watch them at any time,
+you can pause and replay, and in some cases you can watch at super
+speeds. What you can't do is slow the video down and most importantly
+you can't ask questions or interact with the instructor. You can leave
+comments if the video is on a platform like YouTube but that's pretty
+limited.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand, if this was a class, we would have been able to
+interact and I as the instructor would have had a much better chance
+to make sure this "student" was up to speed. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course, this wasn't a class. I don't have the time to teach tools
+like Emacs in class and since it is a mechanical skill, it can be
+offloaded to a video. The video has the ancillary benefit of living on
+and being discoverable and viewable by the public at large. This is a
+good thing. Videos are tech and tech scales. Unfortunately, good
+education doesn't. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Videos are tech and tech is the rage. Lots of people are working hard
+to get more tech in front of our kids - usually at the expense of
+having a great teacher. This is something we don't need. Technology is
+nice but I'd rather have my kids in a small class with a knowledgable
+teacher and a piece of chalk than all the tech in the world. 
+&lt;/p&gt;
+
+&lt;p&gt;
+As a computer science guy and a computer science teacher I think it's
+good to remind myself that tech is cool but a good teacher is way cooler.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="edtech" label="edtech"/>
+    <category term="teaching" label="teaching"/>
+    <category term="tech" label="tech"/>
+  </entry>
   <entry>
     <title>Teaching recursion early? Make sure to use a good tool.</title>
     <id>http://cestlaz.github.io/posts/recursion-early/</id>
@@ -20,9 +114,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/recursion-early/"/>
-    <summary type="html">&lt;div id="outline-container-org6ae8c83" class="outline-2"&gt;
-&lt;h2 id="org6ae8c83"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6ae8c83"&gt;
+    <summary type="html">&lt;div id="outline-container-orgc0563fc" class="outline-2"&gt;
+&lt;h2 id="orgc0563fc"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc0563fc"&gt;
 &lt;p&gt;
 I replied this tweet yesterday and thought I'd expound a bit.
 &lt;/p&gt;
@@ -204,9 +298,9 @@ nail. Fortunately, we can do better.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/is-cs4all-worth-doing/"/>
-    <summary type="html">&lt;div id="outline-container-org24edba7" class="outline-2"&gt;
-&lt;h2 id="org24edba7"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org24edba7"&gt;
+    <summary type="html">&lt;div id="outline-container-org31ed3fc" class="outline-2"&gt;
+&lt;h2 id="org31ed3fc"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org31ed3fc"&gt;
 &lt;p&gt;
 Last time I mentioned the pushback on CS for All. While many people
 are all in for CS for All, resistance is coming from many
@@ -263,9 +357,9 @@ every Stuy student was one worth fighting and winning.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/csforall-in-college/"/>
-    <summary type="html">&lt;div id="outline-container-org8f1c202" class="outline-2"&gt;
-&lt;h2 id="org8f1c202"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8f1c202"&gt;
+    <summary type="html">&lt;div id="outline-container-orge360915" class="outline-2"&gt;
+&lt;h2 id="orge360915"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge360915"&gt;
 &lt;p&gt;
 There's been a lively discussion on pushback to CS for All at the K12
 level over on Facebook. &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; started a sub thread asking if CS
@@ -388,9 +482,9 @@ vocal about but more on that subject next time.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/room-for-csforall/"/>
-    <summary type="html">&lt;div id="outline-container-org2156df4" class="outline-2"&gt;
-&lt;h2 id="org2156df4"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org2156df4"&gt;
+    <summary type="html">&lt;div id="outline-container-org59c958b" class="outline-2"&gt;
+&lt;h2 id="org59c958b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org59c958b"&gt;
 &lt;p&gt;
 A fear revolving around CS For All concerns where will the money
 come from and how will we fit in the new classes. 
@@ -627,9 +721,9 @@ lists by credits which are a year, I doubled the numbers to map to semesters&lt;
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/unfunded-mandates/"/>
-    <summary type="html">&lt;div id="outline-container-org4e6858c" class="outline-2"&gt;
-&lt;h2 id="org4e6858c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4e6858c"&gt;
+    <summary type="html">&lt;div id="outline-container-orgbc4dc60" class="outline-2"&gt;
+&lt;h2 id="orgbc4dc60"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgbc4dc60"&gt;
 &lt;p&gt;
 This morning, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about &lt;a href="https://computinged.wordpress.com/2018/04/27/lack-of-funding-leads-to-lack-of-teachers-leads-to-lack-of-cs-classes-we-may-need-to-change-our-strategy/"&gt;unfunded mandates and CS for
 All&lt;/a&gt;. Unfunded mandates frequently wreak havoc on schools in a number
@@ -750,9 +844,9 @@ but I still think that might be my biggest concern.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/pull-requests/"/>
-    <summary type="html">&lt;div id="outline-container-org6726c03" class="outline-2"&gt;
-&lt;h2 id="org6726c03"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6726c03"&gt;
+    <summary type="html">&lt;div id="outline-container-org598e411" class="outline-2"&gt;
+&lt;h2 id="org598e411"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org598e411"&gt;
 &lt;p&gt;
 One of the things I've heard for years from former students - both
 those looking for jobs and those looking to hire is that colleges
@@ -843,9 +937,9 @@ class.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/tests-finish-students/"/>
-    <summary type="html">&lt;div id="outline-container-orgc102b10" class="outline-2"&gt;
-&lt;h2 id="orgc102b10"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc102b10"&gt;
+    <summary type="html">&lt;div id="outline-container-orgd7aad17" class="outline-2"&gt;
+&lt;h2 id="orgd7aad17"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd7aad17"&gt;
 &lt;p&gt;
 I tweeted this the other day:
 &lt;/p&gt;
@@ -861,9 +955,9 @@ having to drop everything to spend every waking hour on a project.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org1e99658" class="outline-3"&gt;
-&lt;h3 id="org1e99658"&gt;Let's talk about tests.&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org1e99658"&gt;
+&lt;div id="outline-container-org94426e2" class="outline-3"&gt;
+&lt;h3 id="org94426e2"&gt;Let's talk about tests.&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org94426e2"&gt;
 &lt;p&gt;
 I'm not saying that tests are the best forms of assessment - most of
 the time I'd much rather have students work on projects. There are,
@@ -932,9 +1026,9 @@ after the fact.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org474b075" class="outline-3"&gt;
-&lt;h3 id="org474b075"&gt;Don't be afraid to experiment or have some fun.&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org474b075"&gt;
+&lt;div id="outline-container-org23e70d8" class="outline-3"&gt;
+&lt;h3 id="org23e70d8"&gt;Don't be afraid to experiment or have some fun.&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org23e70d8"&gt;
 &lt;p&gt;
 It's also ok to try different things. One year, having just completed
 a unit on Cellualar Automata I decided to give a quiz. I figured it
@@ -975,9 +1069,9 @@ easy - a guaranteed A after a year of hard work.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org85c64d7" class="outline-3"&gt;
-&lt;h3 id="org85c64d7"&gt;Tests to drive instruction and future practice&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org85c64d7"&gt;
+&lt;div id="outline-container-org8daf8eb" class="outline-3"&gt;
+&lt;h3 id="org8daf8eb"&gt;Tests to drive instruction and future practice&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org8daf8eb"&gt;
 &lt;p&gt;
 As a final point to ponder, tests shouldn't only be about grades. A
 well crafted test should drive instruction. Kids will get answers
@@ -1007,9 +1101,9 @@ assessments.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org80d8bc3" class="outline-3"&gt;
-&lt;h3 id="org80d8bc3"&gt;Next time, we'll talk about projects&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org80d8bc3"&gt;
+&lt;div id="outline-container-orgcbf26d7" class="outline-3"&gt;
+&lt;h3 id="orgcbf26d7"&gt;Next time, we'll talk about projects&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgcbf26d7"&gt;
 &lt;p&gt;
 Unless of course I get distracted by another blog topic or shiny
 object.
@@ -1029,9 +1123,9 @@ object.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-48-silversearcher/"/>
-    <summary type="html">&lt;div id="outline-container-org1146e60" class="outline-2"&gt;
-&lt;h2 id="org1146e60"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1146e60"&gt;
+    <summary type="html">&lt;div id="outline-container-org67b566e" class="outline-2"&gt;
+&lt;h2 id="org67b566e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org67b566e"&gt;
 &lt;p&gt;
 A couple of days ago I wrote about on my &lt;a href="http://cestlaz.github.io/posts/unit-tests-grading-workflow"&gt;lab grading workflow&lt;/a&gt;. In the
 post I mentioned that I used Emacs to easily navigate between student
@@ -1068,9 +1162,9 @@ Enjoy:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/no-magic-bullets-constructivism/"/>
-    <summary type="html">&lt;div id="outline-container-org4df9158" class="outline-2"&gt;
-&lt;h2 id="org4df9158"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4df9158"&gt;
+    <summary type="html">&lt;div id="outline-container-org94aa495" class="outline-2"&gt;
+&lt;h2 id="org94aa495"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org94aa495"&gt;
 &lt;p&gt;
 The most recent NYC CSTA chapter meeting was "How do I assess CS?" I
 wanted to go but it's been such a crazy month I was just too wiped
@@ -1167,150 +1261,5 @@ yourself.
     <category term="assessment" label="assessment"/>
     <category term="csed" label="csed"/>
     <category term="teaching" label="teaching"/>
-  </entry>
-  <entry>
-    <title>Unit Tests Grading Workflow</title>
-    <id>http://cestlaz.github.io/posts/unit-tests-grading-workflow/</id>
-    <updated>2018-04-20T17:49:28-04:00</updated>
-    <published>2018-04-20T17:49:28-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/unit-tests-grading-workflow/"/>
-    <summary type="html">&lt;div id="outline-container-org3003fc5" class="outline-2"&gt;
-&lt;h2 id="org3003fc5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3003fc5"&gt;
-&lt;p&gt;
-I've talked before about unit testing (&lt;a href="http://cestlaz.github.io/posts/testing-testing"&gt;here&lt;/a&gt;, and &lt;a href="http://cestlaz.github.io/posts/testing-part2"&gt;here&lt;/a&gt;). My premise is
-that in addition to being an important industry technique, it's a
-sound practice for students studying CS. I also contend that it can
-make grading easier on the teacher. Maybe not as easy as an
-auto-grader but those have &lt;a href="https://cestlaz.github.io/posts/2015-10-16-graders.html/#.WtplHHXwZhE"&gt;their own problems&lt;/a&gt;. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Since I spent most of today grading I thought I'd share my current
-workflow and how unit tests have made me more efficient.
-&lt;/p&gt;
-
-&lt;p&gt;
-I have each student make a single GitHub repo for all individual
-homeworks, labs and small projects. They'll make additional repos for
-larger and group projects. They fill out a Google form to give me the
-repo link. I download the form and end up with a CSV file something like this:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Doe, John, git@github.com:johndoe/mymoework.git
-Doe, Jane, git@github.com:janedoe/labs.git
-etc.
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;
-My goal is to clone each students repo into a directory and then
-throughout the term, they add assignments to their own repos using the
-names and specifications I give them. For example, after assigning
-three assignments, I could pull everything from their repos and I
-would have a directory structure something like this:
-&lt;/p&gt;
-
-
-&lt;pre class="example"&gt;
-hw
-├── doe_jane
-│   ├── hw_01
-│   ├── hw_02
-│   └── hw_03
-│ 
-└── doe_john
-    ├── hw_01
-    └── hw_02
-&lt;/pre&gt;
-
-&lt;p&gt;
-To get there, I have to change the csv file to a small shell script:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone git@github.com:johndoe/mymoework.git doe_john
-git clone git@github.com:janedoe/labs.git doe_jane
-etc.
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-I usually do this in Emacs with a macro.
-&lt;/p&gt;
-
-&lt;p&gt;
-Now I'm ready to go.
-&lt;/p&gt;
-
-&lt;p&gt;
-Whenever there's a new assignment, I just have to update all the
-repos. I go into the root hw directory and loop through all the
-subdirectoryes:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cs /path/to/hw_root
-for i in `ls`
-do 
-  cd /path/to/hw_root/$i
-  git pull
-done
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-At this point I could go into each repo but we can do better. Since I
-have all of my students submit a Makefile with a default target to
-build an executable named &lt;code&gt;main&lt;/code&gt; and also a target named &lt;code&gt;tests&lt;/code&gt; which
-will build an executable to run the unit tests named &lt;code&gt;tests&lt;/code&gt; I do this
-instead of a straight pull:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cs /path/to/hw_root
-for i in `ls`
-do 
-  cd /path/to/hw_root/$i
-  git pull
-  cd hw_03 # or whatever assignment I'm grading
-  make tests
-  make 
-done
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Now, if I want, I can go into each directory, run the tests by typing
-&lt;code&gt;./tests&lt;/code&gt;  and the hw or project with &lt;code&gt;./main&lt;/code&gt;. I can also add a
-couple of lines to the for loop above like:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;echo "$i Test Report\n----------------\n" &amp;gt;&amp;gt; /path/to/hw_root/test_report
-./tests &amp;gt;&amp;gt; /path/to/hw_root/test_rport
-echo "----------------------\n\n"
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-This gives me a single file with everyone's test results. Either by
-doing this or by running the tests in each folder manually I can
-quickly see what works and what doesn't.
-&lt;/p&gt;
-
-&lt;p&gt;
-While I'm doing this, I have Emacs up and with &lt;b&gt;dired mode&lt;/b&gt; and more
-specifically &lt;b&gt;ag-dired-regexp&lt;/b&gt; which lets me easily
-navigate to any student's files. Combined with the test results I can
-quickly evaluate the entire assignment.
-&lt;/p&gt;
-
-&lt;p&gt;
-Put all of this together and it makes grading somewhat bearable. I can
-work through well written, correct assignments extremely quickly and
-drill down into the other projects efficiently as well.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="emacs" label="emacs"/>
-    <category term="grading" label="grading"/>
-    <category term="testing" label="testing"/>
-    <category term="workflow" label="workflow"/>
   </entry>
 </feed>
