@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 39)</title>
   <id>http://cestlaz.github.io/index-39.atom</id>
-  <updated>2018-06-03T15:26:24Z</updated>
+  <updated>2018-06-04T13:03:19Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -15,6 +15,45 @@
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-39.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
   <entry>
+    <title>Using Emacs 48 Silversearcher</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-48-silversearcher/</id>
+    <updated>2018-04-22T17:28:41-04:00</updated>
+    <published>2018-04-22T17:28:41-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-48-silversearcher/"/>
+    <summary type="html">&lt;div id="outline-container-org0e8e200" class="outline-2"&gt;
+&lt;h2 id="org0e8e200"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0e8e200"&gt;
+&lt;p&gt;
+A couple of days ago I wrote about on my &lt;a href="http://cestlaz.github.io/posts/unit-tests-grading-workflow"&gt;lab grading workflow&lt;/a&gt;. In the
+post I mentioned that I used Emacs to easily navigate between student
+folders and files so I can actually look at their work in addition to
+their programs output and test results.
+&lt;/p&gt;
+
+&lt;p&gt;
+The key is a combination of &lt;code&gt;dired&lt;/code&gt; and &lt;a href="https://github.com/Wilfred/ag.el"&gt;ag&lt;/a&gt;, Emacs's interface to &lt;a href="https://github.com/ggreer/the_silver_searcher"&gt;the
+Silver Searcher&lt;/a&gt; which is something like a recursive code grep on
+steroids. I also briefly try to show &lt;a href="https://github.com/mhayashi1120/Emacs-wgrep"&gt;wgrep&lt;/a&gt; in the video which allows
+you to edit Emacs grep buffers, effectively allowing you to make
+changes across a set of files all at once. It ended up not working
+with silversearcher - if anyone out there knows why, please chime in.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-sFTkCQ774o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="editing" label="editing"/>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
     <title>No Magic Bullets - Discovery Learning</title>
     <id>http://cestlaz.github.io/posts/no-magic-bullets-constructivism/</id>
     <updated>2018-04-21T07:40:16-04:00</updated>
@@ -23,9 +62,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/no-magic-bullets-constructivism/"/>
-    <summary type="html">&lt;div id="outline-container-org4df9158" class="outline-2"&gt;
-&lt;h2 id="org4df9158"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4df9158"&gt;
+    <summary type="html">&lt;div id="outline-container-orge68c6f0" class="outline-2"&gt;
+&lt;h2 id="orge68c6f0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge68c6f0"&gt;
 &lt;p&gt;
 The most recent NYC CSTA chapter meeting was "How do I assess CS?" I
 wanted to go but it's been such a crazy month I was just too wiped
@@ -132,9 +171,9 @@ yourself.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/unit-tests-grading-workflow/"/>
-    <summary type="html">&lt;div id="outline-container-org3003fc5" class="outline-2"&gt;
-&lt;h2 id="org3003fc5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3003fc5"&gt;
+    <summary type="html">&lt;div id="outline-container-org03cf052" class="outline-2"&gt;
+&lt;h2 id="org03cf052"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org03cf052"&gt;
 &lt;p&gt;
 I've talked before about unit testing (&lt;a href="http://cestlaz.github.io/posts/testing-testing"&gt;here&lt;/a&gt;, and &lt;a href="http://cestlaz.github.io/posts/testing-part2"&gt;here&lt;/a&gt;). My premise is
 that in addition to being an important industry technique, it's a
