@@ -1,0 +1,190 @@
+#+BEGIN_COMMENT
+.. title: How I Grokked OOP
+.. slug: how-i-grokked-oop
+.. date: 2018-06-14 12:15:41 UTC-04:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+Time to get back to CS and CS Ed related blogging.
+
+Last week, in Garth Flint's post about his [[https://gflint.wordpress.com/2018/06/01/747/][summer plans]], Garth
+mentioned wanting to get his head around Object Oriented Programming
+and possibly taking a course to help him get there. I thought I'd talk
+a little about how I got my head around OOP here and some of the
+difficulties I faced then and what people might face now.
+
+Nowadays, kids are faced with OOP pretty early on. If they take APCS-A
+they're using Java which is Object Oriented. Same if they start
+at a college using Java. If they start with C++ or Python they may or
+may not see objects early on. In any event, the nature of that first
+course doesn't really lend itself to really grokking OOP. Even if a
+student takes a class prior to APCS-A or it's college equivalent,
+they're pretty y raw. Small programs with just a few constructs don't
+really show the uses of OOP. Both inheritance and interfaces can feel
+forced in a first year course and when the examples are artificial and
+wonky and their are easier ways to accomplish the same task, it's hard
+for a student to really buy into the paradigm.
+
+Now, in all fairness, I'm not a big fan of Object Oriented Programming
+and it's usually not the first tool I go to. That said, it's a useful
+tool and it has it's place.
+
+I cut my teeth in the 1980s. I went to the Courant Institute at
+NYU. The core language back then was Pascal which had a number of
+limitations including only supporting single file programs. Somewhere
+along the line I taught myself C which most professors were happy to
+accept assignments in. I never heard of OOP in my formal
+schooling. Some time near or soon after I graduated I had heard of
+this C++ thing but hadn't used it.
+
+After working my way through school I spent some time as a developer
+at Goldman Sachs. I was the only guy on my team doing Windows 2.1
+development. Windows 2.1 was built on top of DOS. It's big improvement
+over Windows 1.0 was that it supported overlapping windows. Pretty cool.
+
+
+#+ATTR_HTML: :width 300px :align center
+[[https://upload.wikimedia.org/wikipedia/en/8/8f/Windows_2.1.png]]
+
+
+I learned to program Windows like everyone else:
+
+#+ATTR_HTML: :width 200px :align center
+[[http://www.charlespetzold.com/oop/pw1.png]]
+
+It was all done in C. The big project I was on was for Global
+Equities. Specifically, supporting trading of Japanese Warrants. I had
+to write a trading system and in doing that implement among other
+things a mini spreadsheet in C from bare metal.
+
+This was probably going to be the most complex thing I designed and
+built from scratch to date. I had a bunch of cells that were
+associated with either rows or columns or both and all sorts of
+complex interactions. I needed a way to manage complexity and even
+though I didn't use the term at the time, manage state. 
+
+C doesn't have a lot of fancy in language constructs to help and I was
+somewhat on an island - I taught myself C and there weren't any
+experienced C / Windows programmers in my group or on my floor so I
+had to figure things out on my own.
+
+Here's what I came up with, or rather something like what I came up
+with -- it was close to 30 years ago and I don't even remember 100% of
+what it was supposed to do.
+
+I decided to create a single file for each concept -
+
+- cell.c / cell.h for cells
+- row.c / row.h for rows
+- sheet.c / sheet.h for 
+- etc.
+
+In each, I would do something like this:
+
+#+BEGIN_SRC c
+
+/* sheet.c */
+
+
+/* things declared here are "global" but limited to this file **/
+struct sheet *sheets; /* an array of the sheets */
+
+/* functions that will be made available to other files */
+
+/* return a pointer to the named sheet */
+struct sheet sheet_get(char *name){
+/* implementation */
+}
+
+/* create a new sheet */
+struct sheet *sheet_create(char *name, int rows, int cols){
+/* implementation/
+}
+
+/* functions that will only be used internally */
+
+struct sheet *allocate_sheet_memory(int rows, int cols){
+/*implementation*/
+}
+
+
+/* etc */
+#+END_SRC
+
+
+#+BEGIN_SRC c
+  /* sheet.h */
+
+  /* 
+     Note that only the headers for the exterrnally available stuff is included
+  ,*/
+
+
+  struct sheet *sheet_get(char *name);
+  struct sheet *sheet_create(char *name,int rows, int cols);
+
+
+#+END_SRC
+
+The idea is that everything about a sheet is in ~sheet.c~ and only a
+few functions are made available to the rest of the program via the
+header file. 
+
+Shortly after I designed the program, I started to delve into OOP at
+the encouragement of some colleagues. I read Meyer:
+
+#+ATTR_HTML: :width 200px :align center
+[[https://images.gr-assets.com/books/1392538685l/3328934.jpg]]
+
+and the first edition of Booch: 
+
+#+ATTR_HTML: :width 200px :align center
+[[https://www.pearsonhighered.com/assets/bigcovers/0/8/0/5/0805353402.jpg]]
+
+I realized that in a way I was implementing singleton objects in
+C. The file declared the object. The functions I exposed via the
+header files were public, the other functions private and the "global"
+variables that were local to the file, private class variables.
+
+There was no inheritance but it did help me encapsulate functionality
+and state. 
+
+It turns out I saw something like this when I briefly looked at Ada. I
+think it was called Object Typed Programming - objects with only a
+single instance and no inheritance. 
+
+The books gave me the official names for things but the project I was
+developing gave me the context to where it all made sense. I had a
+problem to solve that didn't lend itself to a low level imperative
+language but you work with the tools you have and this is what I came
+up with.
+
+Unfortunately, it's harder for beginners as projects are smaller and
+while there are good small example of OOP there's also so much going
+on in a course like APCS-A. It gets more convoluted when you're using
+Python or C++ as you might be shown Objects in a C++ class while
+professor is really teaching C with Objects rather than doing things
+the C++ way. 
+
+One thing that helps is using a language or tool where objects make
+sense. NetLogo - used in Stuy's intro course is a nice one. Turtles
+and patches - the inhabitants of the NetLogo can be viewed as
+objects. I'd draw heavily on NetLogo analogies when teaching APCS at
+Stuy. There are also tools like BlueJ which is tied closely to objects
+and is probably terrific at giving structure to help objects make
+sense but I don't like those types of tools for other reasons.
+
+At the end of the day, it is just a tool and to be honest, I'm not
+really a big fan of OOP. I'll use it but it's not my go to paradigm.
+
+I'll leave you with this video which talks about why:
+
+
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QM1iUe6IofM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+#+END_EXPORT
