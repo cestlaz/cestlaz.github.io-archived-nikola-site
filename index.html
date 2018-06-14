@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-39.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/shsat-part2/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/how-i-grokked-oop/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,253 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/shsat-part2/" class="u-url">Giving control of NYC's specialized schools to a political appointee</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/how-i-grokked-oop/" class="u-url">How I Grokked OOP</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/how-i-grokked-oop/" rel="bookmark"><time class="published dt-published" datetime="2018-06-14T12:15:41-04:00" title="2018-06-14 12:15">2018-06-14 12:15</time></a></p>
+                <p class="commentline">            <a href="posts/how-i-grokked-oop/#disqus_thread" data-disqus-identifier="cache/posts/how-i-grokked-oop.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-orgd370799" class="outline-2">
+<h2 id="orgd370799"></h2>
+<div class="outline-text-2" id="text-orgd370799">
+<p>
+Time to get back to CS and CS Ed related blogging.
+</p>
+
+<p>
+Last week, in Garth Flint's post about his <a href="https://gflint.wordpress.com/2018/06/01/747/">summer plans</a>, Garth
+mentioned wanting to get his head around Object Oriented Programming
+and possibly taking a course to help him get there. I thought I'd talk
+a little about how I got my head around OOP here and some of the
+difficulties I faced then and what people might face now.
+</p>
+
+<p>
+Nowadays, kids are faced with OOP pretty early on. If they take APCS-A
+they're using Java which is Object Oriented. Same if they start
+at a college using Java. If they start with C++ or Python they may or
+may not see objects early on. In any event, the nature of that first
+course doesn't really lend itself to really grokking OOP. Even if a
+student takes a class prior to APCS-A or it's college equivalent,
+they're pretty y raw. Small programs with just a few constructs don't
+really show the uses of OOP. Both inheritance and interfaces can feel
+forced in a first year course and when the examples are artificial and
+wonky and their are easier ways to accomplish the same task, it's hard
+for a student to really buy into the paradigm.
+</p>
+
+<p>
+Now, in all fairness, I'm not a big fan of Object Oriented Programming
+and it's usually not the first tool I go to. That said, it's a useful
+tool and it has it's place.
+</p>
+
+<p>
+I cut my teeth in the 1980s. I went to the Courant Institute at
+NYU. The core language back then was Pascal which had a number of
+limitations including only supporting single file programs. Somewhere
+along the line I taught myself C which most professors were happy to
+accept assignments in. I never heard of OOP in my formal
+schooling. Some time near or soon after I graduated I had heard of
+this C++ thing but hadn't used it.
+</p>
+
+<p>
+After working my way through school I spent some time as a developer
+at Goldman Sachs. I was the only guy on my team doing Windows 2.1
+development. Windows 2.1 was built on top of DOS. It's big improvement
+over Windows 1.0 was that it supported overlapping windows. Pretty cool.
+</p>
+
+
+
+<div class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Windows_2.1.png" alt="Windows_2.1.png" width="300px" align="center"></p>
+</div>
+
+
+<p>
+I learned to program Windows like everyone else:
+</p>
+
+
+<div class="figure">
+<p><img src="http://www.charlespetzold.com/oop/pw1.png" alt="pw1.png" width="200px" align="center"></p>
+</div>
+
+<p>
+It was all done in C. The big project I was on was for Global
+Equities. Specifically, supporting trading of Japanese Warrants. I had
+to write a trading system and in doing that implement among other
+things a mini spreadsheet in C from bare metal.
+</p>
+
+<p>
+This was probably going to be the most complex thing I designed and
+built from scratch to date. I had a bunch of cells that were
+associated with either rows or columns or both and all sorts of
+complex interactions. I needed a way to manage complexity and even
+though I didn't use the term at the time, manage state. 
+</p>
+
+<p>
+C doesn't have a lot of fancy in language constructs to help and I was
+somewhat on an island - I taught myself C and there weren't any
+experienced C / Windows programmers in my group or on my floor so I
+had to figure things out on my own.
+</p>
+
+<p>
+Here's what I came up with, or rather something like what I came up
+with – it was close to 30 years ago and I don't even remember 100% of
+what it was supposed to do.
+</p>
+
+<p>
+I decided to create a single file for each concept -
+</p>
+
+<ul class="org-ul">
+<li>cell.c / cell.h for cells</li>
+<li>row.c / row.h for rows</li>
+<li>sheet.c / sheet.h for</li>
+<li>etc.</li>
+</ul>
+<p>
+In each, I would do something like this:
+</p>
+
+<div class="highlight"><pre><span></span><span class="cm">/* sheet.c */</span>
+
+
+<span class="cm">/* things declared here are "global" but limited to this file **/</span>
+<span class="k">struct</span> <span class="n">sheet</span> <span class="o">*</span><span class="n">sheets</span><span class="p">;</span> <span class="cm">/* an array of the sheets */</span>
+
+<span class="cm">/* functions that will be made available to other files */</span>
+
+<span class="cm">/* return a pointer to the named sheet */</span>
+<span class="k">struct</span> <span class="n">sheet</span> <span class="nf">sheet_get</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">){</span>
+<span class="cm">/* implementation */</span>
+<span class="p">}</span>
+
+<span class="cm">/* create a new sheet */</span>
+<span class="k">struct</span> <span class="n">sheet</span> <span class="o">*</span><span class="nf">sheet_create</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">rows</span><span class="p">,</span> <span class="kt">int</span> <span class="n">cols</span><span class="p">){</span>
+<span class="cm">/* implementation/</span>
+<span class="cm">}</span>
+
+<span class="cm">/* functions that will only be used internally */</span>
+
+<span class="k">struct</span> <span class="n">sheet</span> <span class="o">*</span><span class="n">allocate_sheet_memory</span><span class="p">(</span><span class="kt">int</span> <span class="n">rows</span><span class="p">,</span> <span class="kt">int</span> <span class="n">cols</span><span class="p">){</span>
+<span class="cm">/*implementation*/</span>
+<span class="p">}</span>
+
+
+<span class="cm">/* etc */</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="cm">/* sheet.h */</span>
+
+<span class="cm">/* </span>
+<span class="cm">   Note that only the headers for the exterrnally available stuff is included</span>
+<span class="cm">*/</span>
+
+
+<span class="k">struct</span> <span class="n">sheet</span> <span class="o">*</span><span class="nf">sheet_get</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">);</span>
+<span class="k">struct</span> <span class="n">sheet</span> <span class="o">*</span><span class="nf">sheet_create</span><span class="p">(</span><span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">,</span><span class="kt">int</span> <span class="n">rows</span><span class="p">,</span> <span class="kt">int</span> <span class="n">cols</span><span class="p">);</span>
+</pre></div>
+
+<p>
+The idea is that everything about a sheet is in <code>sheet.c</code> and only a
+few functions are made available to the rest of the program via the
+header file. 
+</p>
+
+<p>
+Shortly after I designed the program, I started to delve into OOP at
+the encouragement of some colleagues. I read Meyer:
+</p>
+
+
+<div class="figure">
+<p><img src="https://images.gr-assets.com/books/1392538685l/3328934.jpg" alt="3328934.jpg" width="200px" align="center"></p>
+</div>
+
+<p>
+and the first edition of Booch: 
+</p>
+
+
+<div class="figure">
+<p><img src="https://www.pearsonhighered.com/assets/bigcovers/0/8/0/5/0805353402.jpg" alt="0805353402.jpg" width="200px" align="center"></p>
+</div>
+
+<p>
+I realized that in a way I was implementing singleton objects in
+C. The file declared the object. The functions I exposed via the
+header files were public, the other functions private and the "global"
+variables that were local to the file, private class variables.
+</p>
+
+<p>
+There was no inheritance but it did help me encapsulate functionality
+and state. 
+</p>
+
+<p>
+It turns out I saw something like this when I briefly looked at Ada. I
+think it was called Object Typed Programming - objects with only a
+single instance and no inheritance. 
+</p>
+
+<p>
+The books gave me the official names for things but the project I was
+developing gave me the context to where it all made sense. I had a
+problem to solve that didn't lend itself to a low level imperative
+language but you work with the tools you have and this is what I came
+up with.
+</p>
+
+<p>
+Unfortunately, it's harder for beginners as projects are smaller and
+while there are good small example of OOP there's also so much going
+on in a course like APCS-A. It gets more convoluted when you're using
+Python or C++ as you might be shown Objects in a C++ class while
+professor is really teaching C with Objects rather than doing things
+the C++ way. 
+</p>
+
+<p>
+One thing that helps is using a language or tool where objects make
+sense. NetLogo - used in Stuy's intro course is a nice one. Turtles
+and patches - the inhabitants of the NetLogo can be viewed as
+objects. I'd draw heavily on NetLogo analogies when teaching APCS at
+Stuy. There are also tools like BlueJ which is tied closely to objects
+and is probably terrific at giving structure to help objects make
+sense but I don't like those types of tools for other reasons.
+</p>
+
+<p>
+At the end of the day, it is just a tool and to be honest, I'm not
+really a big fan of OOP. I'll use it but it's not my go to paradigm.
+</p>
+
+<p>
+I'll leave you with this video which talks about why:
+</p>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QM1iUe6IofM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/shsat-part2/" class="u-url">Giving control of NYC's specialized schools to a political appointee</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -1614,192 +1860,6 @@ students were able to experience important real workd software
 engineering techniques without removing any of the academic CS in the
 class. 
 </p>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/tests-finish-students/" class="u-url">Do the students finish the tests or does the test finish the students</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/tests-finish-students/" rel="bookmark"><time class="published dt-published" datetime="2018-04-25T15:53:06-04:00" title="2018-04-25 15:53">2018-04-25 15:53</time></a></p>
-                <p class="commentline">            <a href="posts/tests-finish-students/#disqus_thread" data-disqus-identifier="cache/posts/tests-finish-students.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-orgc102b10" class="outline-2">
-<h2 id="orgc102b10"></h2>
-<div class="outline-text-2" id="text-orgc102b10">
-<p>
-I tweeted this the other day:
-</p>
-
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">Why don't so many  teachers and professors understand that the test or assignment you can do in 15 minutes will take your beginning students at least an hour and probably a lot more to complete.</p>— Mike Zamansky (@zamansky) <a href="https://twitter.com/zamansky/status/986609723557404673?ref_src=twsrc%5Etfw">April 18, 2018</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><p>
-What led to the tweet was a discussion I was having with some students
-about not having enough time on tests which led to a discussion of
-having to drop everything to spend every waking hour on a project.
-</p>
-</div>
-
-
-<div id="outline-container-org1e99658" class="outline-3">
-<h3 id="org1e99658">Let's talk about tests.</h3>
-<div class="outline-text-3" id="text-org1e99658">
-<p>
-I'm not saying that tests are the best forms of assessment - most of
-the time I'd much rather have students work on projects. There are,
-however, times when tests make sense or are otherwise appropriate.
-</p>
-
-<p>
-In any event, writing a test is hard. Rather, writing good test is
-hard. It's certianly easy enough to put a bunch of multiple choice or
-short answer questions on paper and it's easy enough to give a hard
-equation to solve or some code to write but creating a good test is a
-task and half. You first have to figure out what you're trying to
-assess - memory, thought process, synthesizing concepts? Then you want
-to construct questions that give you insights into your students
-knowledge and thought process.
-</p>
-
-<p>
-Some things that I consider when putting together a test:
-</p>
-
-<ul class="org-ul">
-<li>Does it ramp up in difficulty - that is, are there some "gimme
-questions" and some challenges.</li>
-<li>Are questions all or nothing - if a kid doesn't see things my way
-are they dead in the water.</li>
-<li>Will the test repeatedly penalize or reward the same concept over
-and over again on the test.</li>
-<li>Do I cover all the concepts I want to assess.</li>
-<li>Do you make kids waste time with boilerplate code.</li>
-<li>Do the questions take so long to read and digest that there's little
-time to form and write down answers.</li>
-<li>Do the answers convey anything about the students thought process or
-just correctness.</li>
-<li>Is it easy or impossible to grade and grade fairly.</li>
-</ul>
-<p>
-What about length? To me a well crafted test should be completed by
-the average student with a few minutes to spare - enough time to check
-a couple of answers. This is not to say that they'll ace the exam,
-just finish it. Far too many teachers make tests an assessment of
-speed and accuracy at speed rather than understanding. That might
-actually be important in certain contexts - preparing for the APCS-A
-multiple choice section as an example but in general, it's not a good
-way of assessing what a student really knows. 
-</p>
-
-<p>
-It's also important that the the average student can achieve a score
-that you expect from an average student. That's probably in the 80s on
-a 0-100 scale or a B. Yes, I know, C is supposed to be average but
-with grade inflation being what it is…
-</p>
-
-<p>
-You should <b>NOT</b> give an assessment where the average score is
-something like 17 out of 100 with the top student earning a 37. Sure,
-you can curve it but it also places a lot of stress on the
-students. You might do this from time to time - you might misjudge the
-difficulty of a test or your class but it shouldn't be a regular
-occurence. Teachers sometimes forget about the psychological affect
-that a unfair test can have on a student even if the teacher "fixes" it
-after the fact.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org474b075" class="outline-3">
-<h3 id="org474b075">Don't be afraid to experiment or have some fun.</h3>
-<div class="outline-text-3" id="text-org474b075">
-<p>
-It's also ok to try different things. One year, having just completed
-a unit on Cellualar Automata I decided to give a quiz. I figured it
-would take the kids 10 to 15 minutes so I gave them 30. The quiz was
-something like the following:
-</p>
-
-<blockquote>
-<p>
-You have 30 minutes to compose something on a sheet of paper that when
-I review it convinces me that you know something about the Cellular
-Automata Unit we just completed.
-</p>
-</blockquote>
-
-<p>
-Some kids loved the quiz, some hated it. The ones that hated it had
-been trained for years as expert standardized test takers and this
-level of freedom really freaked the out.
-</p>
-
-<p>
-Another time, I gave a multi page test of serious questions mixed with
-crazy shenanigans. Question one would be some CS problem followed by
-some instructions like "stand up, do 5 jumping jacks and sit down" or
-"shout out your favorite olde timey exclamation" or even "stand up, if
-or when you see another student standing, switch seats with the and
-continue the test." The test started with explicit instructions not to
-read ahead but to read and do each question in order. The last page
-was the answer key and I asked the kids to self-grade. Interestingly
-enough the grading was pretty honest. After that one, I received a few
-apology emails from kids who read to the end first encouraging me to
-give them failing grades for cheating. Wow, I wasn't expecting
-that. The test was something of an end of year goof. The CS questions
-were really easy - I wanted to reward them with something silly and
-easy - a guaranteed A after a year of hard work.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org85c64d7" class="outline-3">
-<h3 id="org85c64d7">Tests to drive instruction and future practice</h3>
-<div class="outline-text-3" id="text-org85c64d7">
-<p>
-As a final point to ponder, tests shouldn't only be about grades. A
-well crafted test should drive instruction. Kids will get answers
-wrong - will your questions be crafted so that you can gain insights
-into why the got them wrong.
-</p>
-
-<p>
-In an early class you might notice things like:
-</p>
-
-<ul class="org-ul">
-<li>kids printing rather than returning answers</li>
-<li>kids not understanding scope</li>
-<li>kids having difficulty with idioms like <code>i=i+1</code>
-</li>
-<li>kids needing more scaffolding to approach a problem</li>
-</ul>
-<p>
-This can drive instruction moving forward.
-</p>
-
-<p>
-Over time you'll also learn how to fine tune your tests and other
-assessments.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org80d8bc3" class="outline-3">
-<h3 id="org80d8bc3">Next time, we'll talk about projects</h3>
-<div class="outline-text-3" id="text-org80d8bc3">
-<p>
-Unless of course I get distracted by another blog topic or shiny
-object.
-</p>
-</div>
 </div>
 </div>
     </div>
