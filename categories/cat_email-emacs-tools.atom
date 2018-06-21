@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>Posts about email, emacs, tools</title>
+  <id>http://cestlaz.github.io/categories/cat_email-emacs-tools.atom</id>
+  <updated>2018-06-21T18:02:38Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/cat_email-emacs-tools.atom"/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/cat_email-emacs-tools/"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Using Emacs Episode 49 mu4e-conversation</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/</id>
+    <updated>2018-06-21T13:28:41-04:00</updated>
+    <published>2018-06-21T13:28:41-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/"/>
+    <summary type="html">&lt;div id="outline-container-org5e51f96" class="outline-2"&gt;
+&lt;h2 id="org5e51f96"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5e51f96"&gt;
+&lt;p&gt;
+I've been using Emacs for email for a couple of years now. Not for
+everything, for now my personal email is still Gmail but work is sent
+and read through Emacs. I'm currently using &lt;a href="https://www.djcbsoftware.nl/code/mu/mu4e.html"&gt;mu4e&lt;/a&gt; and while it has a
+few quirks and limitations, I like it very much. You can take a look
+on how I configure and use it &lt;a href="http://cestlaz.github.io/posts/using-emacs-39-mu4e/"&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="editing" label="editing"/>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+</feed>

@@ -1,0 +1,50 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs Episode 49 mu4e-conversation
+.. slug: using-emacs-49-mu4e-conversation
+.. date: 2018-06-21 13:28:41 UTC-04:00
+.. tags: emacs, tools, editing 
+.. category: email, emacs, tools
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+I've been using Emacs for email for a couple of years now. Not for
+everything, for now my personal email is still Gmail but work is sent
+and read through Emacs. I'm currently using [[https://www.djcbsoftware.nl/code/mu/mu4e.html][mu4e]] and while it has a
+few quirks and limitations, I like it very much. You can take a look
+on how I configure and use it [[http://cestlaz.github.io/posts/using-emacs-39-mu4e/][here]].
+
+The other day I saw [[https://www.reddit.com/r/emacs/comments/8qryri/mu4econversation_single_buffer_fullthread_display/][this]] thread on Emacs about a new package -
+[[https://gitlab.com/ambrevar/mu4e-conversation][mu4e-conversation]]. It's a package that deals with email threads.
+
+It's pretty cool. You can invoke it whenever you're in the headers
+view you can just run ~M-x mu4e-conversation~ and it combines all the
+email messages in the current thread into a single buffer. 
+
+It's pretty nice. 
+
+You can navigate between messages in the thread with ~C-c C-n~ and
+~C-c C-p~ and use most if not all of the usual mu4e goodness but on
+top of that you can also toggle what the author calls tree mode by
+hitting ~V~. Tree mode turns the thread into an org-mode tree - also
+extremely cool.
+
+On top of this, you can also make mu4e your default viewing mode by
+setting a single variable with ~(setq mu4e-view-func 'mu4e-conversation)~.
+
+
+Although it's very cool, I'm not sure if mu4e-conversation will find
+its way into my workflow or not and probably won't know for a
+while. This is mostly due to the fact that it's summer so work email
+slows down and I won't have too many long threads to play with this
+on.
+
+I'll report back once I give it a fair shake but in the meantime if
+anyone out there has had the time to play with it, let us know what
+you think.
+
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V5efS8uXANI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+#+END_EXPORT
