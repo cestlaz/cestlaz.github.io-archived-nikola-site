@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Using Emacs Episode 49 mu4e-conversation | C'est la Z</title>
+<title>PD for people who know CS | C'est la Z</title>
 <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/rst.css" rel="stylesheet" type="text/css">
 <link href="../../assets/css/code.css" rel="stylesheet" type="text/css">
@@ -16,21 +16,22 @@ article: http://ogp.me/ns/article#
 <meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="../../index.atom">
-<link rel="canonical" href="http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/">
+<link rel="canonical" href="http://cestlaz.github.io/posts/pd-for-cs/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Mike Zamansky">
-<link rel="prev" href="../how-i-grokked-oop/" title="How I Grokked OOP" type="text/html">
-<link rel="next" href="../pd-for-cs/" title="PD for people who know CS" type="text/html">
+<link rel="prev" href="../using-emacs-49-mu4e-conversation/" title="Using Emacs Episode 49 mu4e-conversation" type="text/html">
 <meta property="og:site_name" content="C'est la Z">
-<meta property="og:title" content="Using Emacs Episode 49 mu4e-conversation">
-<meta property="og:url" content="http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/">
-<meta property="og:description" content="I've been using Emacs for email for a couple of years now. Not for
-everything, for now my personal email is still Gmail but work is sent
-and read through Emacs. I'm currently using mu4e and while it h">
+<meta property="og:title" content="PD for people who know CS">
+<meta property="og:url" content="http://cestlaz.github.io/posts/pd-for-cs/">
+<meta property="og:description" content="I saw a couple of tweets from Sarah Judd this morning:
+
+
+
+A lot of CS Ed PD assumes you are new to CS. I really want CS Ed PD for people like us that came from a CS background and want to understand t">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2018-06-21T13:28:41-04:00">
-<meta property="article:tag" content="editing">
-<meta property="article:tag" content="emacs">
-<meta property="article:tag" content="tools">
+<meta property="article:published_time" content="2018-06-27T14:41:59-04:00">
+<meta property="article:tag" content="csed">
+<meta property="article:tag" content="pedagogy">
+<meta property="article:tag" content="teaching">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -98,14 +99,14 @@ and read through Emacs. I'm currently using mu4e and while it h">
 						<div class="col-md-8">
 				
 								
-<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Using Emacs Episode 49 mu4e-conversation</a></h1>
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">PD for people who know CS</a></h1>
 
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                     Mike Zamansky
             </span></p>
-            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2018-06-21T13:28:41-04:00" itemprop="datePublished" title="2018-06-21 13:28">2018-06-21 13:28</time></a></p>
-                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-49-mu4e-conversation.html">Comments</a>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2018-06-27T14:41:59-04:00" itemprop="datePublished" title="2018-06-27 14:41">2018-06-27 14:41</time></a></p>
+                <p class="commentline">            <a href="#disqus_thread" data-disqus-identifier="cache/posts/pd-for-cs.html">Comments</a>
 
 
             
@@ -113,61 +114,124 @@ and read through Emacs. I'm currently using mu4e and while it h">
 </div>
         
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <div id="outline-container-orge326c32" class="outline-2">
-<h2 id="orge326c32"></h2>
-<div class="outline-text-2" id="text-orge326c32">
+    <div id="outline-container-org38f3e02" class="outline-2">
+<h2 id="org38f3e02"></h2>
+<div class="outline-text-2" id="text-org38f3e02">
 <p>
-I've been using Emacs for email for a couple of years now. Not for
-everything, for now my personal email is still Gmail but work is sent
-and read through Emacs. I'm currently using <a href="https://www.djcbsoftware.nl/code/mu/mu4e.html">mu4e</a> and while it has a
-few quirks and limitations, I like it very much. You can take a look
-on how I configure and use it <a href="http://cestlaz.github.io/posts/using-emacs-39-mu4e/">here</a>.
-</p>
-
-<p>
-The other day I saw <a href="https://www.reddit.com/r/emacs/comments/8qryri/mu4econversation_single_buffer_fullthread_display/">this</a> thread on Emacs about a new package -
-<a href="https://gitlab.com/ambrevar/mu4e-conversation">mu4e-conversation</a>. It's a package that deals with email threads.
-</p>
-
-<p>
-It's pretty cool. You can invoke it whenever you're in the headers
-view you can just run <code>M-x mu4e-conversation</code> and it combines all the
-email messages in the current thread into a single buffer. 
-</p>
-
-<p>
-It's pretty nice. 
-</p>
-
-<p>
-You can navigate between messages in the thread with <code>C-c C-n</code> and
-<code>C-c C-p</code> and use most if not all of the usual mu4e goodness but on
-top of that you can also toggle what the author calls tree mode by
-hitting <code>V</code>. Tree mode turns the thread into an org-mode tree - also
-extremely cool.
-</p>
-
-<p>
-On top of this, you can also make mu4e your default viewing mode by
-setting a single variable with <code>(setq mu4e-view-func 'mu4e-conversation)</code>.
+I saw a couple of tweets from Sarah Judd this morning:
 </p>
 
 
-<p>
-Although it's very cool, I'm not sure if mu4e-conversation will find
-its way into my workflow or not and probably won't know for a
-while. This is mostly due to the fact that it's summer so work email
-slows down and I won't have too many long threads to play with this
-on.
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en">
+<p lang="en" dir="ltr">A lot of CS Ed PD assumes you are new to CS. I really want CS Ed PD for people like us that came from a CS background and want to understand the pedagogy for CS in particular better. Do you know of some?</p>— Sarah Judd (@SarahEJudd) <a href="https://twitter.com/SarahEJudd/status/1011785286693552139?ref_src=twsrc%5Etfw">June 27, 2018</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><blockquote class="twitter-tweet" data-conversation="none" data-lang="en">
+<p lang="en" dir="ltr">Yes! I love SIGCSE and CSTA. I just feel like... Math teachers don't get PD that starts with "and this is how you add and subtract!" and I'd love more CS PD that assumes the content is there, and can focus on the pedagogy.</p>— Sarah Judd (@SarahEJudd) <a href="https://twitter.com/SarahEJudd/status/1011966102795059200?ref_src=twsrc%5Etfw">June 27, 2018</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><p>
+It wasn't the first time I've heard this refrain. Last year I attended
+my first CSTA conference. I had numerous conversations with CS
+teachers on the fact that everything was on an intro level in terms of
+both content and teaching. Further conversations with local teachers
+with stronger CS backgrounds led me to run a professional development
+session at Hunter this past election day for more experienced CS
+teachers at schools that offered more than the basics.
 </p>
 
 <p>
-I'll report back once I give it a fair shake but in the meantime if
-anyone out there has had the time to play with it, let us know what
-you think.
+While it's not surprising that most of the PD opportunities for CS teachers are
+rather rudimentary given that nationally most programs are new and
+most teachers are new to the subject but there are a few deeper
+reasons.
 </p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/V5efS8uXANI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p>
+To start, there are big players in the CS Ed movement that are pushing
+curricula and specific programs and that leads to scripted PD for
+their products and not depth of knowledge nor deep pedagogical content
+knowledge let alone basic pedagogy. Add to this the fact that many of
+the "thought leaders" in the space don't have experience teaching CS
+at the K12 level and in many cases don't have a background either in
+teaching nor tech and you can see where the problem comes from. On top
+of this we have the erosion of respect for teaching as a profession
+where reformers are trying to take the teacher out of teaching and are
+trying to reduce pedagogy to following scripts. This problem goes well
+beyond CS Ed but as the new kid on the block it probably hits us
+hardest.
+</p>
+
+<p>
+In any case, preparing beginners is both necessary and appropriate for
+the time being but we can and must do a better job than what's
+currently "state of the art." At the same time we have to do something
+with the CS teachers who indeed do have strong content knowledge but
+don't feel comfortable with imparting that knowledge.
+</p>
+
+<p>
+So, what should we do?
+</p>
+
+<p>
+For new teachers the solution will ultimately have to come
+from pre-service programs but what we end up getting is going to
+largely be dictated on what's required by individual states. If states
+merely require passing an exam like the Praxis CS exam which, from
+what I can gather isn't a horrible content exam then we're going to
+see CS teachers bumble through their early to mid careers while trying
+to figure out how to teach CS much like I did way back when. If they
+end up endorsing pre-service programs that are focused on specific
+curricula - APCS-A for teachers, APCS-P for teachers, <a href="https://cestlaz.github.io/posts/math-for-math-teachers/">Math for Math
+teachers</a> if you will but for CS, we're also not going to get strong
+well prepared pedagogues. On the other hand if you can design a
+program that has a strong pedagogical component to go along with the
+content, you have a chance. Even with a well designed program
+implementation will still be a challenge. Who will teach it? Education
+professors who don't have CS backgrounds? CS professors with little
+pedagogical training? Neither of those groups necessarily have any
+real experience as actual K12 teachers. If you can find honest to
+goodness experienced, strong K12 CS teachers to teach your pedagogy
+courses that's a big win but that's going to be hard in most cases. 
+</p>
+
+<p>
+I think we designed a great program at Hunter and have a practical and
+strong implementation plan. If you're going to be
+at CSTA2018 you can hear all about it and why we designed it as we did
+in the talk I'm giving. 
+</p>
+
+<p>
+For the more experienced I don't have a universal answer but I can say
+what I'm planning. Teachers in NY have to complete 100 CTLE hours
+every five years. For beginners, there are plenty of options, at least
+content wise. For teachers who know CS, not so much. I was at a meetup
+talking to a few friends a couple of weeks ago and one mentioned that
+they get most of their hours in Math for America CS
+workshops. Unfortunately more than a few of my CS teacher friends who
+are in MFA tell me that the CS content in these workshops, while they
+do satisfy the hours, are somewhat lacking on the CS / CS pedagogy
+side.
+</p>
+
+<p>
+Here's what I'm planning - we (Hunter) will host a once a month
+dinner/session for CS teachers who are a little farther along CS
+wise. I haven't worked out all the details yet but I've got a few tech
+companies that are already interested in sponsoring and helping out
+should we need anything and we'll probably set most of our agenda for
+the year at the first session where I'll make my best guess at a
+useful agenda. This is something I'm pretty excited about. It should
+help create a network of more experienced CS teachers which will both
+help bolster that segment of the community and provide a long term
+resource to newcomers and it should be a lot of fun.
+</p>
+
+<p>
+In some ways, this is why I ended up joining Hunter. Regardless of
+what the city and state do, we're going to prepare the teachers and if
+you have a well prepared teacher, you've got a shot.
+</p>
 </div>
 </div>
 
@@ -183,24 +247,21 @@ you think.
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c49121003efecd"></script><!-- AddThis Button END -->
 </div>
     <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
-<li><a class="tag p-category" href="../../categories/editing/" rel="tag">editing</a></li>
-            <li><a class="tag p-category" href="../../categories/emacs/" rel="tag">emacs</a></li>
-            <li><a class="tag p-category" href="../../categories/tools/" rel="tag">tools</a></li>
+<li><a class="tag p-category" href="../../categories/csed/" rel="tag">csed</a></li>
+            <li><a class="tag p-category" href="../../categories/pedagogy/" rel="tag">pedagogy</a></li>
+            <li><a class="tag p-category" href="../../categories/teaching/" rel="tag">teaching</a></li>
         </ul>
 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../how-i-grokked-oop/" rel="prev" title="How I Grokked OOP">Previous post</a>
-            </li>
-            <li class="next">
-                <a href="../pd-for-cs/" rel="next" title="PD for people who know CS">Next post</a>
+                <a href="../using-emacs-49-mu4e-conversation/" rel="prev" title="Using Emacs Episode 49 mu4e-conversation">Previous post</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
                         <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="cestlaz",
-            disqus_url="http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/",
-        disqus_title="Using Emacs Episode 49 mu4e-conversation",
-        disqus_identifier="cache/posts/using-emacs-49-mu4e-conversation.html",
+            disqus_url="http://cestlaz.github.io/posts/pd-for-cs/",
+        disqus_title="PD for people who know CS",
+        disqus_identifier="cache/posts/pd-for-cs.html",
         disqus_config = function () {
             this.language = "en";
         };

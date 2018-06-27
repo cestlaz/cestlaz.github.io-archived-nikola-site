@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2018-06-21T18:06:07Z</updated>
+  <updated>2018-06-27T19:41:06Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,139 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-39.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>PD for people who know CS</title>
+    <id>http://cestlaz.github.io/posts/pd-for-cs/</id>
+    <updated>2018-06-27T14:41:59-04:00</updated>
+    <published>2018-06-27T14:41:59-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/pd-for-cs/"/>
+    <summary type="html">&lt;div id="outline-container-org38f3e02" class="outline-2"&gt;
+&lt;h2 id="org38f3e02"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org38f3e02"&gt;
+&lt;p&gt;
+I saw a couple of tweets from Sarah Judd this morning:
+&lt;/p&gt;
+
+
+&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;A lot of CS Ed PD assumes you are new to CS. I really want CS Ed PD for people like us that came from a CS background and want to understand the pedagogy for CS in particular better. Do you know of some?&lt;/p&gt;— Sarah Judd (@SarahEJudd) &lt;a href="https://twitter.com/SarahEJudd/status/1011785286693552139?ref_src=twsrc%5Etfw"&gt;June 27, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Yes! I love SIGCSE and CSTA. I just feel like... Math teachers don't get PD that starts with "and this is how you add and subtract!" and I'd love more CS PD that assumes the content is there, and can focus on the pedagogy.&lt;/p&gt;— Sarah Judd (@SarahEJudd) &lt;a href="https://twitter.com/SarahEJudd/status/1011966102795059200?ref_src=twsrc%5Etfw"&gt;June 27, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;p&gt;
+It wasn't the first time I've heard this refrain. Last year I attended
+my first CSTA conference. I had numerous conversations with CS
+teachers on the fact that everything was on an intro level in terms of
+both content and teaching. Further conversations with local teachers
+with stronger CS backgrounds led me to run a professional development
+session at Hunter this past election day for more experienced CS
+teachers at schools that offered more than the basics.
+&lt;/p&gt;
+
+&lt;p&gt;
+While it's not surprising that most of the PD opportunities for CS teachers are
+rather rudimentary given that nationally most programs are new and
+most teachers are new to the subject but there are a few deeper
+reasons.
+&lt;/p&gt;
+
+&lt;p&gt;
+To start, there are big players in the CS Ed movement that are pushing
+curricula and specific programs and that leads to scripted PD for
+their products and not depth of knowledge nor deep pedagogical content
+knowledge let alone basic pedagogy. Add to this the fact that many of
+the "thought leaders" in the space don't have experience teaching CS
+at the K12 level and in many cases don't have a background either in
+teaching nor tech and you can see where the problem comes from. On top
+of this we have the erosion of respect for teaching as a profession
+where reformers are trying to take the teacher out of teaching and are
+trying to reduce pedagogy to following scripts. This problem goes well
+beyond CS Ed but as the new kid on the block it probably hits us
+hardest.
+&lt;/p&gt;
+
+&lt;p&gt;
+In any case, preparing beginners is both necessary and appropriate for
+the time being but we can and must do a better job than what's
+currently "state of the art." At the same time we have to do something
+with the CS teachers who indeed do have strong content knowledge but
+don't feel comfortable with imparting that knowledge.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, what should we do?
+&lt;/p&gt;
+
+&lt;p&gt;
+For new teachers the solution will ultimately have to come
+from pre-service programs but what we end up getting is going to
+largely be dictated on what's required by individual states. If states
+merely require passing an exam like the Praxis CS exam which, from
+what I can gather isn't a horrible content exam then we're going to
+see CS teachers bumble through their early to mid careers while trying
+to figure out how to teach CS much like I did way back when. If they
+end up endorsing pre-service programs that are focused on specific
+curricula - APCS-A for teachers, APCS-P for teachers, &lt;a href="https://cestlaz.github.io/posts/math-for-math-teachers/"&gt;Math for Math
+teachers&lt;/a&gt; if you will but for CS, we're also not going to get strong
+well prepared pedagogues. On the other hand if you can design a
+program that has a strong pedagogical component to go along with the
+content, you have a chance. Even with a well designed program
+implementation will still be a challenge. Who will teach it? Education
+professors who don't have CS backgrounds? CS professors with little
+pedagogical training? Neither of those groups necessarily have any
+real experience as actual K12 teachers. If you can find honest to
+goodness experienced, strong K12 CS teachers to teach your pedagogy
+courses that's a big win but that's going to be hard in most cases. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I think we designed a great program at Hunter and have a practical and
+strong implementation plan. If you're going to be
+at CSTA2018 you can hear all about it and why we designed it as we did
+in the talk I'm giving. 
+&lt;/p&gt;
+
+&lt;p&gt;
+For the more experienced I don't have a universal answer but I can say
+what I'm planning. Teachers in NY have to complete 100 CTLE hours
+every five years. For beginners, there are plenty of options, at least
+content wise. For teachers who know CS, not so much. I was at a meetup
+talking to a few friends a couple of weeks ago and one mentioned that
+they get most of their hours in Math for America CS
+workshops. Unfortunately more than a few of my CS teacher friends who
+are in MFA tell me that the CS content in these workshops, while they
+do satisfy the hours, are somewhat lacking on the CS / CS pedagogy
+side.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's what I'm planning - we (Hunter) will host a once a month
+dinner/session for CS teachers who are a little farther along CS
+wise. I haven't worked out all the details yet but I've got a few tech
+companies that are already interested in sponsoring and helping out
+should we need anything and we'll probably set most of our agenda for
+the year at the first session where I'll make my best guess at a
+useful agenda. This is something I'm pretty excited about. It should
+help create a network of more experienced CS teachers which will both
+help bolster that segment of the community and provide a long term
+resource to newcomers and it should be a lot of fun.
+&lt;/p&gt;
+
+&lt;p&gt;
+In some ways, this is why I ended up joining Hunter. Regardless of
+what the city and state do, we're going to prepare the teachers and if
+you have a well prepared teacher, you've got a shot.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="csed" label="csed"/>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="teaching" label="teaching"/>
+  </entry>
   <entry>
     <title>Using Emacs Episode 49 mu4e-conversation</title>
     <id>http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/</id>
@@ -1678,129 +1811,6 @@ programs start to appear the rest will work itself out.
 lists by credits which are a year, I doubled the numbers to map to semesters&lt;/div&gt;&lt;/div&gt;
 
 
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="csforall" label="csforall"/>
-    <category term="policy" label="policy"/>
-  </entry>
-  <entry>
-    <title>Unfunded Mandates and CS For All</title>
-    <id>http://cestlaz.github.io/posts/unfunded-mandates/</id>
-    <updated>2018-04-27T08:43:09-04:00</updated>
-    <published>2018-04-27T08:43:09-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/unfunded-mandates/"/>
-    <summary type="html">&lt;div id="outline-container-org4e6858c" class="outline-2"&gt;
-&lt;h2 id="org4e6858c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4e6858c"&gt;
-&lt;p&gt;
-This morning, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about &lt;a href="https://computinged.wordpress.com/2018/04/27/lack-of-funding-leads-to-lack-of-teachers-leads-to-lack-of-cs-classes-we-may-need-to-change-our-strategy/"&gt;unfunded mandates and CS for
-All&lt;/a&gt;. Unfunded mandates frequently wreak havoc on schools in a number
-of ways but in the long run, I don't think it should have a severe
-effect on CS for All. Rather, it could have a big impact on the number
-of CS courses we offer beyond that.
-&lt;/p&gt;
-
-&lt;p&gt;
-Mark relay's a story from the Cambridge Rindge and Latin School where
-at the time many students wanted more CS classes but the school wasn't
-planning on hiring a new CS teacher. The money quote is:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-Over 50 percent of students signing up for Level 2 [computer science] courses next year identify as African Americans,
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-No, I'm not talking about the diversity issue raised by the quote, I'm
-talking about &lt;b&gt;Level 2 [computer science]&lt;/b&gt;. This implies that the
-students already had &lt;b&gt;Level 1 computer science&lt;/b&gt;. Level 1 would cover
-CS For All so now we're talking about CS electives vs other
-electives. This is something I had to deal with for most of my career
-even after we got a CS requirement at Stuy. It was always a battle to
-hire enough CS teachers to meet demand. The hard part was politics -
-there were always older more entrenched subject areas who would rather
-force kids into their electives rather than allow them to take my CS
-electives. This is a whole other kettle of fish than CS for All. It's
-an issue for some schools now and will become a &lt;b&gt;BIG&lt;/b&gt; issue in five to
-fifteen years when a single CS required course is more the norm. The
-issue raised here is a new CS elective vs entrenched teachers and
-classes which shuld lead to a discussion of the relative value of CS
-electives vs other electives. That said, the reality is that it
-usually comes down to school and local power and politics. Also to be
-considered is the potential ebb and flow of interest - there might be
-demand for 5 more CS classes and 5 less something else this year but
-there might not be next year and then we're in real trouble staffing
-wise.
-&lt;/p&gt;
-
-&lt;p&gt;
-Schools, public high schools in particular are zero sum endeavors. You
-have a fixed number of periods a day, specific class requirements, and
-certain mandates as to a the minimum and maximum number of classes a
-student can take. In New York City, I believe students are required to
-have a "full" schedule which basically means they can't come in for
-English, Math, and History and then go home.
-&lt;/p&gt;
-
-&lt;p&gt;
-With CS for All, you're basically allocating reallocating some amount
-of time to computer science. It might be hard to find a qualified
-teacher. particularly in a small school where the population won't
-support a full time CS teacher and it might ruffle the feathers of the
-teachers that will be losing the time but it shouldn't make much of a
-dent or really any dent on the budget.
-&lt;/p&gt;
-
-&lt;p&gt;
-Mark also raises the possibility of embedding CS into other subject
-classes. &lt;a href="http://www.bootstrapworld.org/"&gt;Bootstrap&lt;/a&gt; is a program that I'm rather fond of that does
-just this in Algebra classes (although more recently they're working
-to branch out into other subject areas). Even though I'm a big
-Bootstrap fan I don't think that's the answer to CS for All or CS in
-the high schools in general. I think that one of the reasons why
-Bootstrap works so well is the alignment between the CS tool they use
-and the way Algebra is or can be taught. Another reason is the fact
-that while Algebra is the lowest level of the traditional high school
-classes, it's frequently the one for which the most time is
-allocated. Students in low performing schools might take Algebra over
-two years or have a double period. This won't be the case for other
-subject areas. What this means is that there's more likely extra time
-to embed another subject, cs, into the Algebra class. Long term,
-embedding CS into another subject area requires:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;a teacher that really knows both subjects&lt;/li&gt;
-&lt;li&gt;enough time so you can add all the cool CS content while still
-preparing the students for both the next level of whatever subject
-you're embedded in  as well as for whatever standardized
-assessments come at the end of the year.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-As I said, I'm a Bootstrap fan but I don't think that's the answer for
-CS in K12.
-&lt;/p&gt;
-
-&lt;p&gt;
-Back to the original topic there are certainly issues with
-implementing CS for All but I don't think school funding is the
-biggest hurdle. For me there are other big challenges. One is having a
-supply of qualified teachers. In the long run as states outline CS
-requirements and pre-service programs crop up this will work itself
-out. Until then, yes, we will have an issue and yes it will take some
-funding for stop gap and transitional teacher preperation. A second issue is
-working the internal politics. Adding CS does mean removing something
-else or more likely a piece of something else. The third one is what
-I'm noticing in NY where CS for all seems to at times forget about
-the CS. If we have knowledgeable teachers we can work around that one
-but I still think that might be my biggest concern.
-&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
     <category term="csforall" label="csforall"/>
