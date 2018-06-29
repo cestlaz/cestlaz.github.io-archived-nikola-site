@@ -3,13 +3,521 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about csed</title>
   <id>http://cestlaz.github.io/categories/csed.atom</id>
-  <updated>2018-02-16T13:07:14Z</updated>
+  <updated>2018-06-29T21:25:28Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/csed.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/csed/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>PD for people who know CS</title>
+    <id>http://cestlaz.github.io/posts/pd-for-cs/</id>
+    <updated>2018-06-27T14:41:59-04:00</updated>
+    <published>2018-06-27T14:41:59-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/pd-for-cs/"/>
+    <summary type="html">&lt;div id="outline-container-org9bb6680" class="outline-2"&gt;
+&lt;h2 id="org9bb6680"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9bb6680"&gt;
+&lt;p&gt;
+I saw a couple of tweets from Sarah Judd this morning:
+&lt;/p&gt;
+
+
+&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;A lot of CS Ed PD assumes you are new to CS. I really want CS Ed PD for people like us that came from a CS background and want to understand the pedagogy for CS in particular better. Do you know of some?&lt;/p&gt;— Sarah Judd (@SarahEJudd) &lt;a href="https://twitter.com/SarahEJudd/status/1011785286693552139?ref_src=twsrc%5Etfw"&gt;June 27, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Yes! I love SIGCSE and CSTA. I just feel like... Math teachers don't get PD that starts with "and this is how you add and subtract!" and I'd love more CS PD that assumes the content is there, and can focus on the pedagogy.&lt;/p&gt;— Sarah Judd (@SarahEJudd) &lt;a href="https://twitter.com/SarahEJudd/status/1011966102795059200?ref_src=twsrc%5Etfw"&gt;June 27, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;p&gt;
+It wasn't the first time I've heard this refrain. Last year I attended
+my first CSTA conference. I had numerous conversations with CS
+teachers on the fact that everything was on an intro level in terms of
+both content and teaching. Further conversations with local teachers
+with stronger CS backgrounds led me to run a professional development
+session at Hunter this past election day for more experienced CS
+teachers at schools that offered more than the basics.
+&lt;/p&gt;
+
+&lt;p&gt;
+While it's not surprising that most of the PD opportunities for CS teachers are
+rather rudimentary given that nationally most programs are new and
+most teachers are new to the subject but there are a few deeper
+reasons.
+&lt;/p&gt;
+
+&lt;p&gt;
+To start, there are big players in the CS Ed movement that are pushing
+curricula and specific programs and that leads to scripted PD for
+their products and not depth of knowledge nor deep pedagogical content
+knowledge let alone basic pedagogy. Add to this the fact that many of
+the "thought leaders" in the space don't have experience teaching CS
+at the K12 level and in many cases don't have a background either in
+teaching nor tech and you can see where the problem comes from. On top
+of this we have the erosion of respect for teaching as a profession
+where reformers are trying to take the teacher out of teaching and are
+trying to reduce pedagogy to following scripts. This problem goes well
+beyond CS Ed but as the new kid on the block it probably hits us
+hardest.
+&lt;/p&gt;
+
+&lt;p&gt;
+In any case, preparing beginners is both necessary and appropriate for
+the time being but we can and must do a better job than what's
+currently "state of the art." At the same time we have to do something
+with the CS teachers who indeed do have strong content knowledge but
+don't feel comfortable with imparting that knowledge.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, what should we do?
+&lt;/p&gt;
+
+&lt;p&gt;
+For new teachers the solution will ultimately have to come
+from pre-service programs but what we end up getting is going to
+largely be dictated on what's required by individual states. If states
+merely require passing an exam like the Praxis CS exam which, from
+what I can gather isn't a horrible content exam then we're going to
+see CS teachers bumble through their early to mid careers while trying
+to figure out how to teach CS much like I did way back when. If they
+end up endorsing pre-service programs that are focused on specific
+curricula - APCS-A for teachers, APCS-P for teachers, &lt;a href="https://cestlaz.github.io/posts/math-for-math-teachers/"&gt;Math for Math
+teachers&lt;/a&gt; if you will but for CS, we're also not going to get strong
+well prepared pedagogues. On the other hand if you can design a
+program that has a strong pedagogical component to go along with the
+content, you have a chance. Even with a well designed program
+implementation will still be a challenge. Who will teach it? Education
+professors who don't have CS backgrounds? CS professors with little
+pedagogical training? Neither of those groups necessarily have any
+real experience as actual K12 teachers. If you can find honest to
+goodness experienced, strong K12 CS teachers to teach your pedagogy
+courses that's a big win but that's going to be hard in most cases. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I think we designed a great program at Hunter and have a practical and
+strong implementation plan. If you're going to be
+at CSTA2018 you can hear all about it and why we designed it as we did
+in the talk I'm giving. 
+&lt;/p&gt;
+
+&lt;p&gt;
+For the more experienced I don't have a universal answer but I can say
+what I'm planning. Teachers in NY have to complete 100 CTLE hours
+every five years. For beginners, there are plenty of options, at least
+content wise. For teachers who know CS, not so much. I was at a meetup
+talking to a few friends a couple of weeks ago and one mentioned that
+they get most of their hours in Math for America CS
+workshops. Unfortunately more than a few of my CS teacher friends who
+are in MFA tell me that the CS content in these workshops, while they
+do satisfy the hours, are somewhat lacking on the CS / CS pedagogy
+side.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's what I'm planning - we (Hunter) will host a once a month
+dinner/session for CS teachers who are a little farther along CS
+wise. I haven't worked out all the details yet but I've got a few tech
+companies that are already interested in sponsoring and helping out
+should we need anything and we'll probably set most of our agenda for
+the year at the first session where I'll make my best guess at a
+useful agenda. This is something I'm pretty excited about. It should
+help create a network of more experienced CS teachers which will both
+help bolster that segment of the community and provide a long term
+resource to newcomers and it should be a lot of fun.
+&lt;/p&gt;
+
+&lt;p&gt;
+In some ways, this is why I ended up joining Hunter. Regardless of
+what the city and state do, we're going to prepare the teachers and if
+you have a well prepared teacher, you've got a shot.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="csed" label="csed"/>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="teaching" label="teaching"/>
+  </entry>
+  <entry>
+    <title>Should CS for All be implemented at the college level?</title>
+    <id>http://cestlaz.github.io/posts/csforall-in-college/</id>
+    <updated>2018-05-25T16:23:23-04:00</updated>
+    <published>2018-05-25T16:23:23-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/csforall-in-college/"/>
+    <summary type="html">&lt;div id="outline-container-org035321e" class="outline-2"&gt;
+&lt;h2 id="org035321e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org035321e"&gt;
+&lt;p&gt;
+There's been a lively discussion on pushback to CS for All at the K12
+level over on Facebook. &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; started a sub thread asking if CS
+for All should first be implemented at the undergrad level rather than K12. 
+&lt;/p&gt;
+
+&lt;p&gt;
+It's an interesting question and as good as anything to get me out of
+my month long non-blogging rut.
+&lt;/p&gt;
+
+&lt;p&gt;
+Mark was right when he said that if Colleges implement CS for All, K12 will 
+likely do so to follow - just look at AP. Colleges have been saying
+that students should take more AP classes (while giving less credit)
+and we all know where that's led. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand, can colleges really do CS for All, what does it
+mean and what would it look like.
+&lt;/p&gt;
+
+&lt;p&gt;
+Much like there is no single K12 - it's 50 states and who knows how
+many independent school districts, there won't be a single CS for All
+at the college level but let's think about how things could play out.
+&lt;/p&gt;
+
+&lt;p&gt;
+Many colleges have distribution requirements. Students must take one
+course from bucket A, two from bucket B etc. Many schools that I've
+looked at already  count CS courses in one of their distribution
+buckets. This doesn't mean every student will take CS but in theory
+means they can. Colleges could in theory create a required CS bucket
+or even a required CS course but I don't think it's as easy as
+that. It might be at a private institution but while I don't know all
+the ins and outs of Hunter's governance rules I do know that adding a
+universal student requirement is a HUGE undertaking.
+&lt;/p&gt;
+
+&lt;p&gt;
+So my take is that while it might be easy for a private college
+to add a CS requirement I'm guessing other public institutions are
+more similar to Hunter and it's not going to be an easy task.
+&lt;/p&gt;
+
+&lt;p&gt;
+Regardless, let's say we have a required class on the books. Will we
+have the capacity to teach it? It seems that schools are struggling to deal
+with their existing CS majors and running sufficient electives and
+courses for them. Just a month or so ago there was an article about a
+college ending its CS minor due to lack of resources. It doesn't sound
+like a radically different problem then that faced in K12. Maybe it's
+harder given that at least in NY, there is &lt;a href="http://cestlaz.github.io/posts/room-for-csforall"&gt;room for a required CS
+course&lt;/a&gt; if you can find the teacher.
+&lt;/p&gt;
+
+&lt;p&gt;
+Even so, assuming we have the capacity to enroll every undergrad in a
+CS course what would that be? I think most people would be in
+agreement that it shouldn't be CS 101. Maybe existing pre-major
+courses but even there I don't know if that's always the best
+path. There could be a great pre-major course to give students the
+basics and lead some into the major but what about a CS course for
+students in majors that need some deeper but focussed programming
+skills. The appropriate course for them isn't the same as a
+general/pre-major course. Using Statistics as an example, at Hunter,
+many majors require a statistics course which is off loaded to the
+Stats department. Each major has slightly different requirements. Over
+years, the end result is a course that it seems that nobody is happy
+with - a least common denominator course. CS for All at the college level
+could give us a least common denominator course that doesn't serve
+anyone.
+&lt;/p&gt;
+
+&lt;p&gt;
+Now, if you have the resources, none of these are issues. A well
+heeled private institution can run tons of sections of specialized
+classes no problem but this means just like on the K12 level we'll
+get the CS for All tale of two cities that I see coming in NY where
+the rich schools have good programs and the poor get a substandard
+experience.
+&lt;/p&gt;
+
+&lt;p&gt;
+With all of this said, I'm finally getting to the big red flag with
+college CS for All and it's an issue that everyone conveniently
+ignores. I'm talking about teacher quality. One of my big takeaways
+from SIGCSE is that college faculty are well behind K12 teachers in
+terms of pedagogy and I don't see this changing anytime soon. This is
+to be expected given that professor's career advancement is really
+based on research. Having a good teacher is always important but it's
+even more important for non-major students since a student in the
+professor's major will at least be passionate about the subject
+area. To me, this is not a recipe for success.
+&lt;/p&gt;
+
+&lt;p&gt;
+One can certainly make the claim that we aren't any better off right
+now at the K12 level because we don't have teachers who know either
+the subject nor how to teach it and at least at the college level they
+know the subject matter. This is very true and it's why pre-service CS
+teacher preparation is so critical to getting this right even though
+it will take time. That's something that both Mark and I have been
+vocal about but more on that subject next time.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="csed" label="csed"/>
+    <category term="csforall" label="csforall"/>
+    <category term="policy" label="policy"/>
+  </entry>
+  <entry>
+    <title>No Magic Bullets - Discovery Learning</title>
+    <id>http://cestlaz.github.io/posts/no-magic-bullets-constructivism/</id>
+    <updated>2018-04-21T07:40:16-04:00</updated>
+    <published>2018-04-21T07:40:16-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/no-magic-bullets-constructivism/"/>
+    <summary type="html">&lt;div id="outline-container-orgb255dab" class="outline-2"&gt;
+&lt;h2 id="orgb255dab"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb255dab"&gt;
+&lt;p&gt;
+The most recent NYC CSTA chapter meeting was "How do I assess CS?" I
+wanted to go but it's been such a crazy month I was just too wiped
+out. Fortunately, the meetup was &lt;a href="https://www.youtube.com/watch?v=XIMKAZbHAiA&amp;amp;index=83&amp;amp;list=WL&amp;amp;t=1796s"&gt;recorded&lt;/a&gt;. I was able to watch the
+first half this morning while working out on my &lt;a href="https://www.staczero.com/hero"&gt;stationary trainer&lt;/a&gt;
+which leads me to today's rare Saturday morning blog
+post. The meetup consisted of two panels. The first was made up of K12
+teachers who taught CS. I can't talk about the second panel yet since I'm
+only halfway through but there were a couple of points made by my
+friend &lt;a href="https://twitter.com/KatieJergens"&gt;Katie Jergens&lt;/a&gt; who teaches at Dalton that I thought were worth
+talking about.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first was when Katie noted that through working with the panel,
+one of her takeaways was that:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Giving students an explicit strategy for solving a problem - "this is
+how I would do it….," - giving them an explicit strategy first and then giving them a
+problem for which that strategy would apply is much more effective than
+having them discover it on their own.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+This was refreshing to hear after being beaten over the head on
+discovery learning and constructivism for the past five or so
+years as being the magic bullet for teachers. I shared more thoughts
+on this a few weeks ago when I wrote about a SIGCSE paper presented by
+&lt;a href="https://cestlaz.github.io/posts/sigcse2018-bootstrap/"&gt;Bootstrap World&lt;/a&gt; that I very much liked. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Katie went on to talk about how the group found that while "discovery
+learning" can be effective it can also be frustrating and lose kids
+along the way. It also takes a lot of time and preparation, something
+that's short on supply in most public schools.
+&lt;/p&gt;
+
+&lt;p&gt;
+This made me think about the recent flurry
+of discussion around the debunking of learning styles which had
+previously been the magic bullet. When I started, the secret sauce was cooperative
+learning. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course any good teacher knows there's no magic bullet. You fill
+your tool belt and chest with as much as you can and use what's
+best based on your strengths as a teacher combined with what will work
+best with your students.
+&lt;/p&gt;
+
+&lt;p&gt;
+Another point that Katie made that I found refreshing had to do with 
+something she does with her classes. A good portion of a student's grade is
+based on what she calls a "booster." Each student has to work one on
+one with her on some project. The student either scores a 0 or a 100 -
+the student keeps working with the direct support of the teacher until
+it's perfect. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The important thing that Katie said with respect to this is "I can
+do this because my largest class is sixteen students." No way could
+this ever scale to a public school where a teacher can meet with over
+150 students a day and barely has time eat lunch let alone
+work one on one with a student in a suitably quiet place like an
+office. The refreshing thing to hear was the acknowledgment of the
+fact that what works in a rich private school won't work in a public
+school. 
+&lt;/p&gt;
+
+&lt;p&gt;
+All to often education and yes, CS Ed is driven by people who
+really have no clue. They're anointed as thought leaders but they
+don't walk the walk. Some have some knowledge and experience but many
+don't. Until you've gotten a few years under your belt in a strap
+cashed public school that takes all comers, don't tell them how they
+should do it. Katie didn't - she acknowledged the problem - too bad so
+many others don't. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm looking forward to watching the rest of the video during a future
+workout and might have more to share then. For now, take a look for
+yourself.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="assessment" label="assessment"/>
+    <category term="csed" label="csed"/>
+    <category term="teaching" label="teaching"/>
+  </entry>
+  <entry>
+    <title>Tools and Complexity</title>
+    <id>http://cestlaz.github.io/posts/tools-and-complexity/</id>
+    <updated>2018-04-05T18:55:21-04:00</updated>
+    <published>2018-04-05T18:55:21-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/tools-and-complexity/"/>
+    <summary type="html">&lt;div id="outline-container-org06fa8b0" class="outline-2"&gt;
+&lt;h2 id="org06fa8b0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org06fa8b0"&gt;
+&lt;p&gt;
+&lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; wrote about &lt;a href="http://blog.acthompson.net/2018/04/thoughts-on-where-cs-education-tools.html"&gt;CS education tools&lt;/a&gt; earlier today. I've
+also been meaning to write on the topic but from a different point of
+view.
+&lt;/p&gt;
+
+&lt;p&gt;
+I do my best to keep up with the latest and greatest in the CS world
+both on the academic side as well as the professional one. That's not
+really possible, but I do my best. When I have a small project to work
+on I'll some times use it as an excuse to play with some recent
+technology. Over December, I wanted to write an application viewer to
+use for company / student internship matching. I started by looking at
+&lt;a href="https://reactjs.org/"&gt;React&lt;/a&gt; but ended up using &lt;a href="https://vuejs.org/"&gt;Vue.js&lt;/a&gt; which I liked much more for a variety
+of reasons.
+&lt;/p&gt;
+
+&lt;p&gt;
+The viewer served it's purpose but I think it can be turned into a
+much more comprehensive student / employer internship platform. I
+tried to steal a few minutes over this past week's spring break to
+start a rewrite using another toolset, Clojure, Clojurescript and
+Reagent. I'm really liking the Clojure stack and using
+Emacs and Cider for the IDE is really blowing me away. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I've noticed is that for every new language of framework you also
+have to learn a whole set of ancillary tools.
+&lt;/p&gt;
+
+&lt;p&gt;
+It didn't used to be that way. Back in the day, things were much
+simpler. I remembering doing work at Goldman Sachs, it was as simple
+as typing something on the command line like &lt;code&gt;cc file1.c file2.c
+file3.c&lt;/code&gt;. I of course had to be cutting edge and use fancy modern
+tools like &lt;a href="https://www.gnu.org/software/make/"&gt;Make&lt;/a&gt;. What's more, the tools I used in industry were very
+similar to what I used in college. 
+&lt;/p&gt;
+
+&lt;p&gt;
+We now live in very different times.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you go to the getting started guides for React or Vue it's pretty easy to
+get hello world up and running but beyond that you start to fall in to
+the Javascript tooling hole. To start you need either &lt;b&gt;npm&lt;/b&gt; or &lt;b&gt;yarn&lt;/b&gt;
+just to manage packages and dependencies. Then you need a build system
+or bundler like &lt;b&gt;webpack&lt;/b&gt;, &lt;b&gt;browserify&lt;/b&gt;, or &lt;b&gt;parcel&lt;/b&gt; and that's not even
+considering older options like &lt;b&gt;gulp&lt;/b&gt; and &lt;b&gt;grunt&lt;/b&gt; and ancillary tools
+like &lt;b&gt;babel&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+A typical React or Vue project is going to need a &lt;a href="https://github.com/krasimir/react-webpack-starter/blob/master/package.json"&gt;project.json&lt;/a&gt; and
+&lt;a href="https://github.com/krasimir/react-webpack-starter/blob/master/webpack.config.js"&gt;webpack.config.js&lt;/a&gt; file and sometimes some other files as well. Check
+out the links. They're from a simple project template I found
+online. Far from simple.
+&lt;/p&gt;
+
+&lt;p&gt;
+When I was playing with Vue.js a couple of months ago, I ended up
+using Webpack to convert the source code into the final JS, take care
+of live-reloading, and in general manage the project. I still have no
+idea how most of it works. I don't know if it's just me but I'm very
+uncomfortable relying on tools that I really don't fully understand to
+build my systems. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The Clojure world is little better with Leiningen and Boot. If you
+don't believe me, try to make heads or tails of &lt;a href="https://github.com/bhauman/figwheel-template/blob/master/src/leiningen/new/figwheel/project.clj"&gt;this&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+While it's true that as a professional you'll likely use one set of
+tools on a day to day basis and you'll eventually get to know them
+that doesn't mean it's not a good idea to prepare kids for what's to
+come.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+On the K12 side we have drag and drop languages, specialized learning
+IDEs like BlueJ, simple cut down IDEs like Dr Racket and completely
+online environments like repl.it. All great starter tools that
+insulate beginners from the complexities to come. College's
+might get closer to the "real world" but just a tad. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Don't get me wrong, I like many of the tools used in K12
+classes and there's far too much complexity in the professional world to
+throw at beginners. If we look at a student's entire school
+career, classes are already so packed with material it would be hard to
+really prepare kids for the real world within their classes. You could
+take that tried and true teacher / professor technique of just
+requiring it and having the kids figure it out on their own but that's
+really just downright abusive.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't have an answer for this one. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I have my kids use tools like Git and GitHub early along with using
+testing frameworks and external libraries. I also try to move my
+students to a general purpose programmable platform like Emacs or
+Vim. I think these are sound practices but students will still have a
+big learning curve when they finally get to industry. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I really would love it to see the tooling become simpler and
+documentation better. &lt;a href="https://github.com/parcel-bundler/parcel"&gt;Parcel&lt;/a&gt;, a Javascript bundler is one of the newer
+kids on the block and is much simpler and cleaner than alternatives
+like Webpack. The new version of Clojure has it's own command line
+tool which is also simpler than the alternatives. Maybe we are already
+moving in the right direction and this entire rant will become moot in a couple of years.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="csed" label="csed"/>
+    <category term="education" label="education"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>NYC CS4All - This Is Not The CS We're Looking For</title>
     <id>http://cestlaz.github.io/posts/this-is-not-the-cs-were-looking-for/</id>
@@ -19,9 +527,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/this-is-not-the-cs-were-looking-for/"/>
-    <summary type="html">&lt;div id="outline-container-orgcce11cb" class="outline-2"&gt;
-&lt;h2 id="orgcce11cb"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgcce11cb"&gt;
+    <summary type="html">&lt;div id="outline-container-org2b7236e" class="outline-2"&gt;
+&lt;h2 id="org2b7236e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org2b7236e"&gt;
 &lt;p&gt;
 It's no secret that I'm something of an old curmudgeon in the K12 CS
 Education world and I've been critical of a number of initiatives and
@@ -182,9 +690,9 @@ rather than something appropriate and good.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/cost-of-ap-exams/"/>
-    <summary type="html">&lt;div id="outline-container-orgd23649c" class="outline-2"&gt;
-&lt;h2 id="orgd23649c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd23649c"&gt;
+    <summary type="html">&lt;div id="outline-container-org3fc97ed" class="outline-2"&gt;
+&lt;h2 id="org3fc97ed"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3fc97ed"&gt;
 &lt;p&gt;
 Now that I'm back from vacation and summer's winding down I thought
 I'd start getting back to more classroom related posts. I still have a
@@ -287,9 +795,9 @@ students taking high stakes exams.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/languages-or-cs/"/>
-    <summary type="html">&lt;div id="outline-container-org190ca7e" class="outline-2"&gt;
-&lt;h2 id="org190ca7e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org190ca7e"&gt;
+    <summary type="html">&lt;div id="outline-container-org6ab361b" class="outline-2"&gt;
+&lt;h2 id="org6ab361b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6ab361b"&gt;
 &lt;p&gt;
 I was part of this conversation the other day:
 &lt;/p&gt;
@@ -378,9 +886,9 @@ idea.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/teachers-you-arent-your-test-scores/"/>
-    <summary type="html">&lt;div id="outline-container-org0a0263a" class="outline-2"&gt;
-&lt;h2 id="org0a0263a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0a0263a"&gt;
+    <summary type="html">&lt;div id="outline-container-org5d401c3" class="outline-2"&gt;
+&lt;h2 id="org5d401c3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5d401c3"&gt;
 &lt;p&gt;
 AP scores just came out. As usual, I see the posts and take part in
 conversations where teachers talk about their results. Some are happy
@@ -481,9 +989,9 @@ your students and your conscience be your guide.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse-2017-recap/"/>
-    <summary type="html">&lt;div id="outline-container-org07016a6" class="outline-2"&gt;
-&lt;h2 id="org07016a6"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org07016a6"&gt;
+    <summary type="html">&lt;div id="outline-container-orgdfcbb69" class="outline-2"&gt;
+&lt;h2 id="orgdfcbb69"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgdfcbb69"&gt;
 &lt;p&gt;
 As a high school teacher, I was never able to attend SIGCSE, the
 conference of the ACM's Special Interest Group on Computer Science
@@ -517,9 +1025,9 @@ Today, some overall thoughts.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orga462fb7" class="outline-2"&gt;
-&lt;h2 id="orga462fb7"&gt;The good&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga462fb7"&gt;
+&lt;div id="outline-container-org23b007a" class="outline-2"&gt;
+&lt;h2 id="org23b007a"&gt;The good&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org23b007a"&gt;
 &lt;p&gt;
 As with many conferences, the "hallway track" along with receptions
 sponsored by &lt;a href="https://csnyc.org/our-work/cs4all"&gt;the CS4All consurtium&lt;/a&gt;, &lt;a href="http://tealsk12.org"&gt;TEALS&lt;/a&gt;, &lt;a href="http://code.org"&gt;Code.org&lt;/a&gt; were terrific. I
@@ -552,9 +1060,9 @@ probability and statistics in CS Ed, and aspects of  &lt;a href="http://dl.acm.o
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orge836d81" class="outline-2"&gt;
-&lt;h2 id="orge836d81"&gt;The bad&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge836d81"&gt;
+&lt;div id="outline-container-orgf97eec5" class="outline-2"&gt;
+&lt;h2 id="orgf97eec5"&gt;The bad&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf97eec5"&gt;
 &lt;p&gt;
 The biggest downside to me was that I found very little value added in
 a number of the paper sessions over just reading the papers. Part of
@@ -570,9 +1078,9 @@ or the book to his class.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org8eb7fa6" class="outline-2"&gt;
-&lt;h2 id="org8eb7fa6"&gt;Other thoughts&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8eb7fa6"&gt;
+&lt;div id="outline-container-org4ce044f" class="outline-2"&gt;
+&lt;h2 id="org4ce044f"&gt;Other thoughts&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4ce044f"&gt;
 &lt;p&gt;
 One paper presentation I very much liked was &lt;a href="http://dl.acm.org/citation.cfm?id=3017701&amp;amp;CFID=738971273&amp;amp;CFTOKEN=22106692"&gt;Exam Wrappers: Not a
 Silver Bullet&lt;/a&gt; presented by &lt;a href="https://michellecraig.github.io/"&gt;Michelle Craig&lt;/a&gt; and &lt;a href="http://pages.cpsc.ucalgary.ca/~bdstephe/"&gt;Ben Stephenson&lt;/a&gt;. I

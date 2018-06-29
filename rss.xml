@@ -1,7 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 27 Jun 2018 19:41:06 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>PD for people who know CS</title><link>http://cestlaz.github.io/posts/pd-for-cs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org38f3e02" class="outline-2"&gt;
-&lt;h2 id="org38f3e02"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org38f3e02"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 29 Jun 2018 23:11:24 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Hunter CS - a lot of progress in a short time</title><link>http://cestlaz.github.io/posts/hunter-cs-year-two/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3936e80" class="outline-2"&gt;
+&lt;h2 id="org3936e80"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3936e80"&gt;
+&lt;p&gt;
+Yesterday I was back on campus for an early orientation session for
+Hunter's incoming Daedalus CS honors students. It was the first time
+all of us got to meet face to face. The students I met with will be
+my third cohort. I got to thinking how far we've come in under three
+years. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Hunter's had a strong but little known undergraduate
+CS program for as long as I've known. Much like any program, we've got
+our strengths and weaknesses but you go through our program and
+academically you'll be as well prepared as from anywhere else. We have some
+challenges being a commuter school, a liberal arts school and a school
+not commonly thought of for CS but the core has always been there.  
+&lt;/p&gt;
+
+&lt;p&gt;
+Hunter has been making a concerted effort to up its computer science
+game and my joining the team has been part of that. The Daedalus
+program is an honors scholarship program. It's similar to the well
+known CUNY Macaulay program but it's specific to Hunter and specific to
+CS. Our kids get scholarships, laptops, special classes (with me),
+activities and events and more. Our first cohort had 12. This past
+year we had 23 but a funny thing happened right after we started. Hunter's
+Macaulay CS students heard about what was going on and wanted in. The
+end result was that last years cohort had a total of 27 students
+as we invited the incoming Hunter Macaulay CS students into the
+fold. This year, we're up to about 50 total and it looks to be a very
+strong group. To be honest I'm a little
+scared of growing this quickly. The kids will be great but it will be
+a challenge building the community across multiple classes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm really pleased with the first two cohorts performance both in
+class and out. They're progressing well through the academic program
+and are ahead of schedule in terms of internships and outside
+activities but I'm even happier that they've been working to level up
+Hunter CS as a whole. They started a once a week Dojo last year where
+all Hunter CS students could hang out and work on tech projects and
+have a speaker series on tap for this coming year. For my part, I've
+got a couple of new ideas up my sleeve but I'm going to keep them
+under wraps for now.
+&lt;/p&gt;
+
+&lt;p&gt;
+Three years ago Hunter wasn't so much on the map for CS inclined high
+school students and while there's much work to be done, many of our
+incoming cohort members chose us over other programs that have
+traditionally been considered CS strongholds.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the same time, our efforts to connect Hunter CS to the NY Tech community have begun to
+raise our profile on the other end of the pipeline.
+&lt;/p&gt;
+
+&lt;p&gt;
+There's still a long rode ahead but I thought I'd give myself a day to
+look back on how far we've come in a short time. Having a great public college option for CS
+education is critical for NYC. This was one of the things I left Stuy to
+accomplish and we're well on our way.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>college</category><category>cs</category><guid>http://cestlaz.github.io/posts/hunter-cs-year-two/</guid><pubDate>Fri, 29 Jun 2018 21:41:05 GMT</pubDate></item><item><title>PD for people who know CS</title><link>http://cestlaz.github.io/posts/pd-for-cs/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9bb6680" class="outline-2"&gt;
+&lt;h2 id="org9bb6680"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9bb6680"&gt;
 &lt;p&gt;
 I saw a couple of tweets from Sarah Judd this morning:
 &lt;/p&gt;
@@ -118,9 +186,9 @@ what the city and state do, we're going to prepare the teachers and if
 you have a well prepared teacher, you've got a shot.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>csed</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/pd-for-cs/</guid><pubDate>Wed, 27 Jun 2018 18:41:59 GMT</pubDate></item><item><title>Using Emacs Episode 49 mu4e-conversation</title><link>http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge326c32" class="outline-2"&gt;
-&lt;h2 id="orge326c32"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge326c32"&gt;
+&lt;/div&gt;</description><category>csed</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/pd-for-cs/</guid><pubDate>Wed, 27 Jun 2018 18:41:59 GMT</pubDate></item><item><title>Using Emacs Episode 49 mu4e-conversation</title><link>http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8a3b4fb" class="outline-2"&gt;
+&lt;h2 id="org8a3b4fb"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8a3b4fb"&gt;
 &lt;p&gt;
 I've been using Emacs for email for a couple of years now. Not for
 everything, for now my personal email is still Gmail but work is sent
@@ -174,9 +242,9 @@ you think.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/V5efS8uXANI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/</guid><pubDate>Thu, 21 Jun 2018 17:28:41 GMT</pubDate></item><item><title>How I Grokked OOP</title><link>http://cestlaz.github.io/posts/how-i-grokked-oop/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd370799" class="outline-2"&gt;
-&lt;h2 id="orgd370799"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd370799"&gt;
+&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/</guid><pubDate>Thu, 21 Jun 2018 17:28:41 GMT</pubDate></item><item><title>How I Grokked OOP</title><link>http://cestlaz.github.io/posts/how-i-grokked-oop/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org26e496c" class="outline-2"&gt;
+&lt;h2 id="org26e496c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org26e496c"&gt;
 &lt;p&gt;
 Time to get back to CS and CS Ed related blogging.
 &lt;/p&gt;
@@ -411,9 +479,9 @@ I'll leave you with this video which talks about why:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/QM1iUe6IofM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/how-i-grokked-oop/</guid><pubDate>Thu, 14 Jun 2018 16:15:41 GMT</pubDate></item><item><title>Giving control of NYC's specialized schools to a political appointee</title><link>http://cestlaz.github.io/posts/shsat-part2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org0e4b023" class="outline-2"&gt;
-&lt;h2 id="org0e4b023"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0e4b023"&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/how-i-grokked-oop/</guid><pubDate>Thu, 14 Jun 2018 16:15:41 GMT</pubDate></item><item><title>Giving control of NYC's specialized schools to a political appointee</title><link>http://cestlaz.github.io/posts/shsat-part2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4db677c" class="outline-2"&gt;
+&lt;h2 id="org4db677c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4db677c"&gt;
 &lt;p&gt;
 Yesterday I shared my thoughts on Bill de Blasio's plans to "fix" the
 selection criteria for New York City's specialized high schools. If
@@ -599,9 +667,9 @@ from the political left and the privatization push from the political
 right (or actually both sides) pretty soon there will be nothing left.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>gifted</category><category>policy</category><guid>http://cestlaz.github.io/posts/shsat-part2/</guid><pubDate>Mon, 04 Jun 2018 12:00:40 GMT</pubDate></item><item><title>Changing Admissions to the NYC Specialized High Schools</title><link>http://cestlaz.github.io/posts/shsat/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org5647c3a" class="outline-2"&gt;
-&lt;h2 id="org5647c3a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5647c3a"&gt;
+&lt;/div&gt;</description><category>education</category><category>gifted</category><category>policy</category><guid>http://cestlaz.github.io/posts/shsat-part2/</guid><pubDate>Mon, 04 Jun 2018 12:00:40 GMT</pubDate></item><item><title>Changing Admissions to the NYC Specialized High Schools</title><link>http://cestlaz.github.io/posts/shsat/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4502de2" class="outline-2"&gt;
+&lt;h2 id="org4502de2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4502de2"&gt;
 &lt;p&gt;
 Yesterday, Bill de Blasio, the current Mayor of New York City outlined
 how he would "fix" our specialized schools. The schools he was
@@ -660,9 +728,9 @@ humanities, sciences and offered a robust music program.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org7a9b65e" class="outline-2"&gt;
-&lt;h2 id="org7a9b65e"&gt;The overall picture&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7a9b65e"&gt;
+&lt;div id="outline-container-org14cb4f9" class="outline-2"&gt;
+&lt;h2 id="org14cb4f9"&gt;The overall picture&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org14cb4f9"&gt;
 &lt;p&gt;
 For reference, here are &lt;a href="http://www.theschoolboards.com/showthread.php/4324-Specialized-High-School-SHSAT-Cutoff-Scores-for-2018"&gt;unofficial cutoff scores&lt;/a&gt; for the specialized
 schools from 2018 along with the NY State data on free and reduced
@@ -764,13 +832,13 @@ root problem.
 
 
 
-&lt;div id="outline-container-orgf0f6f49" class="outline-2"&gt;
-&lt;h2 id="orgf0f6f49"&gt;The plan&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf0f6f49"&gt;
+&lt;div id="outline-container-org31c10ac" class="outline-2"&gt;
+&lt;h2 id="org31c10ac"&gt;The plan&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org31c10ac"&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgf35161e" class="outline-3"&gt;
-&lt;h3 id="orgf35161e"&gt;Part 1 - test prep&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgf35161e"&gt;
+&lt;div id="outline-container-org3e65932" class="outline-3"&gt;
+&lt;h3 id="org3e65932"&gt;Part 1 - test prep&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org3e65932"&gt;
 &lt;p&gt;
 There's idea here is that test prep is rampant for SHSAT and that the
 test can be gamed. This may or may not be true but if it is then it's
@@ -810,9 +878,9 @@ really?
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgb920711" class="outline-3"&gt;
-&lt;h3 id="orgb920711"&gt;Part 2 - use state test scores instead of the SHSAT&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgb920711"&gt;
+&lt;div id="outline-container-orgd89380a" class="outline-3"&gt;
+&lt;h3 id="orgd89380a"&gt;Part 2 - use state test scores instead of the SHSAT&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgd89380a"&gt;
 &lt;p&gt;
 This &lt;b&gt;could be&lt;/b&gt; a &lt;b&gt;very&lt;/b&gt; good thing with one major caveat. 
 &lt;/p&gt;
@@ -849,9 +917,9 @@ could be a suitable alternative.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org0607368" class="outline-3"&gt;
-&lt;h3 id="org0607368"&gt;Part 3 - admissions from every middle school&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org0607368"&gt;
+&lt;div id="outline-container-org084aaf7" class="outline-3"&gt;
+&lt;h3 id="org084aaf7"&gt;Part 3 - admissions from every middle school&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org084aaf7"&gt;
 &lt;p&gt;
 This is the third part of BdB's proposal - guarantee admissions to the
 top 10% of students at every middle school.
@@ -894,9 +962,9 @@ this equation?
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org33995ae" class="outline-2"&gt;
-&lt;h2 id="org33995ae"&gt;Is one measure bad?&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org33995ae"&gt;
+&lt;div id="outline-container-orge93ca88" class="outline-2"&gt;
+&lt;h2 id="orge93ca88"&gt;Is one measure bad?&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge93ca88"&gt;
 &lt;p&gt;
 So there you have my thoughts on BdB's specific proposals but I also
 want to address his contention that a single measure is bad and makes
@@ -927,9 +995,9 @@ something that can't be gamed or politically influenced,
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgd4640da" class="outline-2"&gt;
-&lt;h2 id="orgd4640da"&gt;Alternatives&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd4640da"&gt;
+&lt;div id="outline-container-org1544b47" class="outline-2"&gt;
+&lt;h2 id="org1544b47"&gt;Alternatives&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1544b47"&gt;
 &lt;p&gt;
 Should the city address the fact that there are groups that are under
 represented at the specialized schools? Certainly, or rather, the city
@@ -944,9 +1012,9 @@ thoughts on what the city can and should be doing.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org9ac1e5e" class="outline-3"&gt;
-&lt;h3 id="org9ac1e5e"&gt;Do the experiments in the non-big three.&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org9ac1e5e"&gt;
+&lt;div id="outline-container-org50a5a57" class="outline-3"&gt;
+&lt;h3 id="org50a5a57"&gt;Do the experiments in the non-big three.&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org50a5a57"&gt;
 &lt;p&gt;
 There are five specialized schools that aren't covered by state
 legislation. Why not run your experiments there. You've got  the big
@@ -963,9 +1031,9 @@ how it goes before jumping in whole hog. Figure out if anything works first.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgbb91a4a" class="outline-3"&gt;
-&lt;h3 id="orgbb91a4a"&gt;Check existing data&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgbb91a4a"&gt;
+&lt;div id="outline-container-org5ae80d4" class="outline-3"&gt;
+&lt;h3 id="org5ae80d4"&gt;Check existing data&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org5ae80d4"&gt;
 &lt;p&gt;
 We've got SHSAT results and State Test score results along with
 student grades for years. Why not study correlations between
@@ -978,9 +1046,9 @@ data to do better.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org6b83d00" class="outline-3"&gt;
-&lt;h3 id="org6b83d00"&gt;Fix the middle schools&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org6b83d00"&gt;
+&lt;div id="outline-container-org00bea87" class="outline-3"&gt;
+&lt;h3 id="org00bea87"&gt;Fix the middle schools&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org00bea87"&gt;
 &lt;p&gt;
 This one is more pie in the sky because no politician really wants to
 take this one but you've got to look at what's going on in the middle
@@ -1016,9 +1084,9 @@ downturn in the numbers over the decades.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org0ad1cca" class="outline-2"&gt;
-&lt;h2 id="org0ad1cca"&gt;So where are we&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0ad1cca"&gt;
+&lt;div id="outline-container-org3ad97c7" class="outline-2"&gt;
+&lt;h2 id="org3ad97c7"&gt;So where are we&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3ad97c7"&gt;
 &lt;p&gt;
 There are a lot of changes I'd love to see in our public schools and I
 do believe BdB's heart is in the right place. I'm concerned that some
@@ -1036,9 +1104,9 @@ proposed should be weighed carefully and &lt;b&gt;tested&lt;/b&gt; before taking
 that could real harm when good is intended.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>education</category><category>gifted</category><category>policy</category><guid>http://cestlaz.github.io/posts/shsat/</guid><pubDate>Sun, 03 Jun 2018 11:01:31 GMT</pubDate></item><item><title>The Tech or the Teacher</title><link>http://cestlaz.github.io/posts/tech-or-teacher/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org17c1276" class="outline-2"&gt;
-&lt;h2 id="org17c1276"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org17c1276"&gt;
+&lt;/div&gt;</description><category>education</category><category>gifted</category><category>policy</category><guid>http://cestlaz.github.io/posts/shsat/</guid><pubDate>Sun, 03 Jun 2018 11:01:31 GMT</pubDate></item><item><title>The Tech or the Teacher</title><link>http://cestlaz.github.io/posts/tech-or-teacher/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org523157b" class="outline-2"&gt;
+&lt;h2 id="org523157b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org523157b"&gt;
 &lt;p&gt;
 Every morning one of the first things I do is quickly glance at my
 emails and other notifications. I really should wait until I'm more
@@ -1116,9 +1184,9 @@ As a computer science guy and a computer science teacher I think it's
 good to remind myself that tech is cool but a good teacher is way cooler.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>edtech</category><category>teaching</category><category>tech</category><guid>http://cestlaz.github.io/posts/tech-or-teacher/</guid><pubDate>Thu, 31 May 2018 21:43:28 GMT</pubDate></item><item><title>Teaching recursion early? Make sure to use a good tool.</title><link>http://cestlaz.github.io/posts/recursion-early/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6ae8c83" class="outline-2"&gt;
-&lt;h2 id="org6ae8c83"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6ae8c83"&gt;
+&lt;/div&gt;</description><category>edtech</category><category>teaching</category><category>tech</category><guid>http://cestlaz.github.io/posts/tech-or-teacher/</guid><pubDate>Thu, 31 May 2018 21:43:28 GMT</pubDate></item><item><title>Teaching recursion early? Make sure to use a good tool.</title><link>http://cestlaz.github.io/posts/recursion-early/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org42c41d2" class="outline-2"&gt;
+&lt;h2 id="org42c41d2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org42c41d2"&gt;
 &lt;p&gt;
 I replied this tweet yesterday and thought I'd expound a bit.
 &lt;/p&gt;
@@ -1285,9 +1353,9 @@ ways. If all you have is a hammer, everything looks like a
 nail. Fortunately, we can do better.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>recursion</category><category>scheme</category><guid>http://cestlaz.github.io/posts/recursion-early/</guid><pubDate>Wed, 30 May 2018 12:42:29 GMT</pubDate></item><item><title>Is Cs for All Worth Doing</title><link>http://cestlaz.github.io/posts/is-cs4all-worth-doing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org24edba7" class="outline-2"&gt;
-&lt;h2 id="org24edba7"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org24edba7"&gt;
+&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>recursion</category><category>scheme</category><guid>http://cestlaz.github.io/posts/recursion-early/</guid><pubDate>Wed, 30 May 2018 12:42:29 GMT</pubDate></item><item><title>Is Cs for All Worth Doing</title><link>http://cestlaz.github.io/posts/is-cs4all-worth-doing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org906e238" class="outline-2"&gt;
+&lt;h2 id="org906e238"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org906e238"&gt;
 &lt;p&gt;
 Last time I mentioned the pushback on CS for All. While many people
 are all in for CS for All, resistance is coming from many
@@ -1332,9 +1400,9 @@ There's no doubt in my mind that the battle to get a good CS course to
 every Stuy student was one worth fighting and winning.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>csforall</category><guid>http://cestlaz.github.io/posts/is-cs4all-worth-doing/</guid><pubDate>Sat, 26 May 2018 20:18:38 GMT</pubDate></item><item><title>Should CS for All be implemented at the college level?</title><link>http://cestlaz.github.io/posts/csforall-in-college/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8f1c202" class="outline-2"&gt;
-&lt;h2 id="org8f1c202"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8f1c202"&gt;
+&lt;/div&gt;</description><category>csforall</category><guid>http://cestlaz.github.io/posts/is-cs4all-worth-doing/</guid><pubDate>Sat, 26 May 2018 20:18:38 GMT</pubDate></item><item><title>Should CS for All be implemented at the college level?</title><link>http://cestlaz.github.io/posts/csforall-in-college/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org035321e" class="outline-2"&gt;
+&lt;h2 id="org035321e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org035321e"&gt;
 &lt;p&gt;
 There's been a lively discussion on pushback to CS for All at the K12
 level over on Facebook. &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; started a sub thread asking if CS
@@ -1443,230 +1511,4 @@ it will take time. That's something that both Mark and I have been
 vocal about but more on that subject next time.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>csed</category><category>csforall</category><category>policy</category><guid>http://cestlaz.github.io/posts/csforall-in-college/</guid><pubDate>Fri, 25 May 2018 20:23:23 GMT</pubDate></item><item><title>Is there room for CS for All</title><link>http://cestlaz.github.io/posts/room-for-csforall/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org2156df4" class="outline-2"&gt;
-&lt;h2 id="org2156df4"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org2156df4"&gt;
-&lt;p&gt;
-A fear revolving around CS For All concerns where will the money
-come from and how will we fit in the new classes. 
-&lt;/p&gt;
-
-&lt;p&gt;
-One suggested solution is to integrate CS into other subjects. I
-thought I'd write today about why I don't think the fear is valid and
-while integrating CS into other classes can have value, it probably
-isn't a long term solution for CS education.
-&lt;/p&gt;
-
-&lt;p&gt;
-Let's start with the integration solution. The idea is to bring CS
-into an existing class. &lt;a href="http://www.bootstrapworld.org/"&gt;Bootstrap&lt;/a&gt;, a program I've written about before
-and one of the programs I like does this, primarily in Algebra. The
-idea is that this supports the student's learning Algebra while
-exposing them to CS. It's a nice program but a math teacher using
-Bootstrap shouldn't be confused with a computer science
-teacher. They're bringing some CS to their student and engaging the
-students in a different way mathematically and that's all great but in
-general you can't take two classes worth of material and concepts and
-fit them into one class and the number of teachers who are truly
-knowledgable in any two academic subject areas both in content and
-pedagogical content knowledge is few. I'm guessing that one of the
-reasons that Bootstrap works in Algebra is the alignment of the
-toolset and Algebra and how you can teach it. The other is that
-Algebra is frequently given more time for fewer topics. In some
-struggling schools, students might have two years of algebra or a
-double period so there's time to add in some CS.
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm all for cross curricular work. You can look at applications of
-science in math classes, do mathy work in a CS class, run stats and
-data analysis in math and CS classes on materials from History classes
-and all of this is great. You can even create great combined curricula
-where you do indeed teach multiple subjects in an integrated way but
-to think that you can take what is typically taught in two different
-classes and you can combine both so that they're taught in one class
-with one teacher sounds fishy to me.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, at the end of the day, if you go the integration approach you're
-either going to have to dedicate a similar set of resources both in
-time and personel to having independent courses. The alternative is
-that CS will be the second class subject.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, let's look at actually bringing in CS For All as a separate
-course. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Here are the New York State Graduation Requirements &lt;sup&gt;&lt;a id="fnr.1" class="footref" href="http://cestlaz.github.io/posts/room-for-csforall/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt;:
-&lt;/p&gt;
-
-&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
-
-
-&lt;colgroup&gt;
-&lt;col class="org-left"&gt;
-
-&lt;col class="org-left"&gt;
-
-&lt;col class="org-right"&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th scope="col" class="org-left"&gt;Subject&lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="org-right"&gt;Number of semesters&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class="org-left"&gt;English&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-right"&gt;8&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="org-left"&gt;Soc Studies&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-right"&gt;8&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="org-left"&gt;Science&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-right"&gt;6&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="org-left"&gt;Math&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-right"&gt;6&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="org-left"&gt;LOTE&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-right"&gt;2&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="org-left"&gt;Arts&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-right"&gt;2&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="org-left"&gt;Phys Ed&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-right"&gt;4&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="org-left"&gt;Health&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-right"&gt;1&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td class="org-left"&gt;Electives&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-right"&gt;7&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class="org-left"&gt;Total&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-right"&gt;44&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;
-It can be difficult to fit Phys Ed in since it has to be offered every
-semester so let's double the Phys Ed requirement to 8 semesters. What
-is actually normally done is to have 7.5 periods of science a week and
-2.5 periods of Gym.
-&lt;/p&gt;
-
-&lt;p&gt;
-This means that the basic student program uses 48 class slots and
-includes 7 elective slots.
-&lt;/p&gt;
-
-&lt;p&gt;
-In terms of exit exams, students have to pass the following Regents:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;English&lt;/li&gt;
-&lt;li&gt;Any single math (Algebra, Geometery, Alg 2 / Trig)&lt;/li&gt;
-&lt;li&gt;Any single Social Studies (US History or Global History&lt;/li&gt;
-&lt;li&gt;Any single Science (Living Env (bio), Chem, Phys, Earth Science)&lt;/li&gt;
-&lt;li&gt;Any additional Regents exam&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-The requirement of passing a single Math regents is what leads to the
-extra time allocated to Algebra that I mentioned when discussing
-integrating CS into Algebra above.
-&lt;/p&gt;
-
-&lt;p&gt;
-To get an Advanced Regents diploma you have to pass additional exams -
-both history, all three math, three science and maybe more.  
-&lt;/p&gt;
-
-
-&lt;p&gt;
-Using a Typical 7 period plus lunch day, we have room for 56 single
-semeter classes in a high school career. This means that assuming
-students aren't failing too many classes, even with the extra Phys Ed
-allocation I mentioned above  we can easily fit computer
-science into our day. In fact, we can technically fit in four full
-years assuming a student doesn't have to repeat any class. 
-&lt;/p&gt;
-
-&lt;p&gt;
-So in New York state we certainly have the time but what about the
-budget? That's not an issue either. The state also requires that
-students recieve 5.5 hours of instruction a day exclusive of
-lunch. At 47 minute periods, that translates to students being
-assigned 7 instructional classes a day which means we can't just give
-the kids the required 44. We have to fill all 56 available class slots
-over those four years. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Of course it's not really that simple. Students fail classes and have
-to repeat them and some classes might be assigned more time than
-others but it looks to me like we should be able to fit
-computer science in without any big budgetary or scheduling
-changes. The challenge will be finding the teacher and working the
-internal politics and policies since as computer science comes in it
-will mean removing some electives even if those electives are additional years
-of science, math, or English.
-&lt;/p&gt;
-
-&lt;p&gt;
-Programs like &lt;a href="https://www.tealsk12.org/"&gt;TEALS&lt;/a&gt; and Bootstrap are important transitional programs
-and even when we do have qualified CS teachers they will play an
-important role - TEALS in providing industry support and resources and
-Bootstrap by integrating curricular areas and over time as preservice
-programs start to appear the rest will work itself out.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="footnotes"&gt;
-&lt;h2 class="footnotes"&gt;Footnotes: &lt;/h2&gt;
-&lt;div id="text-footnotes"&gt;
-
-&lt;div class="footdef"&gt;&lt;sup&gt;&lt;a id="fn.1" class="footnum" href="http://cestlaz.github.io/posts/room-for-csforall/#fnr.1"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;div class="footpara"&gt;The state
-lists by credits which are a year, I doubled the numbers to map to semesters&lt;/div&gt;&lt;/div&gt;
-
-
-&lt;/div&gt;
-&lt;/div&gt;</description><category>csforall</category><category>policy</category><guid>http://cestlaz.github.io/posts/room-for-csforall/</guid><pubDate>Sun, 29 Apr 2018 20:29:04 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>csed</category><category>csforall</category><category>policy</category><guid>http://cestlaz.github.io/posts/csforall-in-college/</guid><pubDate>Fri, 25 May 2018 20:23:23 GMT</pubDate></item></channel></rss>
