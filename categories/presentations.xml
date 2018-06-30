@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about presentations)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/presentations.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 30 Jun 2018 19:23:35 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs Episode 50 - presentations</title><link>http://cestlaz.github.io/posts/using-emacs-50-presentations/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org37b1bdd" class="outline-2"&gt;
+&lt;h2 id="org37b1bdd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org37b1bdd"&gt;
+&lt;p&gt;
+Next weekend I'll be attending the Computer Science Teachers
+Association's &lt;a href="https://www.csteachers.org/general/custom.asp?page=2018Conference"&gt;annual conference.&lt;/a&gt; It's probably the biggest conference
+focussed on K12 Computer Science education. This year, in addition to
+attending, I'll be giving a talk on preservice and inservice CS
+teacher preparation programs. I'll be talking about the new New York
+State certification requirements along with what we're rolling out at
+Hunter College. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This means putting together a slide deck for the session. When I have
+to work collaboratively with non-Emacs users, I will usually go to
+Google Docs for presentations. It works and the collaborative aspects
+are nice but tools like Google Docs and Powerpoint are designed around
+composing slides manually. I much prefer to use a tool where I can
+focus on writing my presentation and have the tool turn it into a
+presentation.
+&lt;/p&gt;
+
+&lt;p&gt;
+Org-mode is of course the ideal tool. As an outliner, it lends itself
+to organizing a talk:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;* topic 1
+   the content for slide one
+* topic 2
+   the content for slide two
+* topic 3
+   etc.
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+I can embed code, tables, images, and more. I can also cycle
+visibility so I can focus on individual sections. Org-mode also has a
+number of export options to take a plain org file which is just ascii
+with markup and export it as a presentation. In the video, I'll take a
+quick look at &lt;code&gt;ox-beamer&lt;/code&gt;, which exports to a Beamer presentation in LaTeX and then a PDF,
+&lt;code&gt;epresent&lt;/code&gt; which presents right in Emacs and finally &lt;code&gt;ox-reveal&lt;/code&gt; wich
+creates a &lt;code&gt;reveal.js&lt;/code&gt; presentation. I ultimately decide to continue to
+use &lt;code&gt;ox-reveal&lt;/code&gt; as it's pretty simple and flexible and I can also directly serve
+the final presentation from my own laptop, a usb drive, or directly
+from GitHub. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Check out the video to see how. If you want more information on using
+&lt;code&gt;ox-reveal&lt;/code&gt; check out my earlier &lt;a href="http://cestlaz.github.io/posts/using-emacs-11-reveal"&gt;Using Emacs post and video&lt;/a&gt;. 
+&lt;/p&gt;
+
+
+
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/bRoSpJ23Kzk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>presentations</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-50-presentations/</guid><pubDate>Sat, 30 Jun 2018 18:10:24 GMT</pubDate></item></channel></rss>

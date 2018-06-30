@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/tools.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 29 Jun 2018 21:25:29 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs Episode 49 mu4e-conversation</title><link>http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org8a3b4fb" class="outline-2"&gt;
-&lt;h2 id="org8a3b4fb"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8a3b4fb"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about tools)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/tools.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 30 Jun 2018 19:23:35 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Using Emacs Episode 50 - presentations</title><link>http://cestlaz.github.io/posts/using-emacs-50-presentations/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org37b1bdd" class="outline-2"&gt;
+&lt;h2 id="org37b1bdd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org37b1bdd"&gt;
+&lt;p&gt;
+Next weekend I'll be attending the Computer Science Teachers
+Association's &lt;a href="https://www.csteachers.org/general/custom.asp?page=2018Conference"&gt;annual conference.&lt;/a&gt; It's probably the biggest conference
+focussed on K12 Computer Science education. This year, in addition to
+attending, I'll be giving a talk on preservice and inservice CS
+teacher preparation programs. I'll be talking about the new New York
+State certification requirements along with what we're rolling out at
+Hunter College. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This means putting together a slide deck for the session. When I have
+to work collaboratively with non-Emacs users, I will usually go to
+Google Docs for presentations. It works and the collaborative aspects
+are nice but tools like Google Docs and Powerpoint are designed around
+composing slides manually. I much prefer to use a tool where I can
+focus on writing my presentation and have the tool turn it into a
+presentation.
+&lt;/p&gt;
+
+&lt;p&gt;
+Org-mode is of course the ideal tool. As an outliner, it lends itself
+to organizing a talk:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;* topic 1
+   the content for slide one
+* topic 2
+   the content for slide two
+* topic 3
+   etc.
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+I can embed code, tables, images, and more. I can also cycle
+visibility so I can focus on individual sections. Org-mode also has a
+number of export options to take a plain org file which is just ascii
+with markup and export it as a presentation. In the video, I'll take a
+quick look at &lt;code&gt;ox-beamer&lt;/code&gt;, which exports to a Beamer presentation in LaTeX and then a PDF,
+&lt;code&gt;epresent&lt;/code&gt; which presents right in Emacs and finally &lt;code&gt;ox-reveal&lt;/code&gt; wich
+creates a &lt;code&gt;reveal.js&lt;/code&gt; presentation. I ultimately decide to continue to
+use &lt;code&gt;ox-reveal&lt;/code&gt; as it's pretty simple and flexible and I can also directly serve
+the final presentation from my own laptop, a usb drive, or directly
+from GitHub. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Check out the video to see how. If you want more information on using
+&lt;code&gt;ox-reveal&lt;/code&gt; check out my earlier &lt;a href="http://cestlaz.github.io/posts/using-emacs-11-reveal"&gt;Using Emacs post and video&lt;/a&gt;. 
+&lt;/p&gt;
+
+
+
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/bRoSpJ23Kzk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>emacs</category><category>presentations</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-50-presentations/</guid><pubDate>Sat, 30 Jun 2018 18:10:24 GMT</pubDate></item><item><title>Using Emacs Episode 49 mu4e-conversation</title><link>http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org892f4be" class="outline-2"&gt;
+&lt;h2 id="org892f4be"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org892f4be"&gt;
 &lt;p&gt;
 I've been using Emacs for email for a couple of years now. Not for
 everything, for now my personal email is still Gmail but work is sent
@@ -55,9 +115,9 @@ you think.
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/V5efS8uXANI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/</guid><pubDate>Thu, 21 Jun 2018 17:28:41 GMT</pubDate></item><item><title>Using Emacs 48 Silversearcher</title><link>http://cestlaz.github.io/posts/using-emacs-48-silversearcher/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org14eb33c" class="outline-2"&gt;
-&lt;h2 id="org14eb33c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org14eb33c"&gt;
+&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/</guid><pubDate>Thu, 21 Jun 2018 17:28:41 GMT</pubDate></item><item><title>Using Emacs 48 Silversearcher</title><link>http://cestlaz.github.io/posts/using-emacs-48-silversearcher/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org67b566e" class="outline-2"&gt;
+&lt;h2 id="org67b566e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org67b566e"&gt;
 &lt;p&gt;
 A couple of days ago I wrote about on my &lt;a href="http://cestlaz.github.io/posts/unit-tests-grading-workflow"&gt;lab grading workflow&lt;/a&gt;. In the
 post I mentioned that I used Emacs to easily navigate between student
@@ -80,9 +140,9 @@ Enjoy:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-sFTkCQ774o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-48-silversearcher/</guid><pubDate>Sun, 22 Apr 2018 21:28:41 GMT</pubDate></item><item><title>Using Emacs Episode 47 - Magit</title><link>http://cestlaz.github.io/posts/using-emacs-47-magit/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org873a8e1" class="outline-2"&gt;
-&lt;h2 id="org873a8e1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org873a8e1"&gt;
+&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-48-silversearcher/</guid><pubDate>Sun, 22 Apr 2018 21:28:41 GMT</pubDate></item><item><title>Using Emacs Episode 47 - Magit</title><link>http://cestlaz.github.io/posts/using-emacs-47-magit/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org86de79d" class="outline-2"&gt;
+&lt;h2 id="org86de79d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org86de79d"&gt;
 &lt;p&gt;
 I've been holding off on doing a &lt;a href="https://magit.vc/"&gt;Magit&lt;/a&gt; video for a while. Mostly
 because I wasn't using it exclusively and also because there are
@@ -125,9 +185,9 @@ Check out the video:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/1IYsiHXR620" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-47-magit/</guid><pubDate>Sat, 07 Apr 2018 13:05:36 GMT</pubDate></item><item><title>Tools and Complexity</title><link>http://cestlaz.github.io/posts/tools-and-complexity/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org06fa8b0" class="outline-2"&gt;
-&lt;h2 id="org06fa8b0"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org06fa8b0"&gt;
+&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-47-magit/</guid><pubDate>Sat, 07 Apr 2018 13:05:36 GMT</pubDate></item><item><title>Tools and Complexity</title><link>http://cestlaz.github.io/posts/tools-and-complexity/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org32ed0d7" class="outline-2"&gt;
+&lt;h2 id="org32ed0d7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org32ed0d7"&gt;
 &lt;p&gt;
 &lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; wrote about &lt;a href="http://blog.acthompson.net/2018/04/thoughts-on-where-cs-education-tools.html"&gt;CS education tools&lt;/a&gt; earlier today. I've
 also been meaning to write on the topic but from a different point of
@@ -251,9 +311,9 @@ tool which is also simpler than the alternatives. Maybe we are already
 moving in the right direction and this entire rant will become moot in a couple of years.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>csed</category><category>education</category><category>tools</category><guid>http://cestlaz.github.io/posts/tools-and-complexity/</guid><pubDate>Thu, 05 Apr 2018 22:55:21 GMT</pubDate></item><item><title>Testing Part 2</title><link>http://cestlaz.github.io/posts/testing-part2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgaf372a1" class="outline-2"&gt;
-&lt;h2 id="orgaf372a1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgaf372a1"&gt;
+&lt;/div&gt;</description><category>cs</category><category>csed</category><category>education</category><category>tools</category><guid>http://cestlaz.github.io/posts/tools-and-complexity/</guid><pubDate>Thu, 05 Apr 2018 22:55:21 GMT</pubDate></item><item><title>Testing Part 2</title><link>http://cestlaz.github.io/posts/testing-part2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org362281f" class="outline-2"&gt;
+&lt;h2 id="org362281f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org362281f"&gt;
 &lt;p&gt;
 A few weeks ago I wrote about &lt;a href="https://cestlaz.github.io/posts/testing-testing/#.Wq7Ud3XwZhE"&gt;introducing testing&lt;/a&gt; in CS classes,
 specifically using a testing framework. In that post I talked about
@@ -366,9 +426,9 @@ teacher easier both in terms of understanding the students work and in
 terms of speed of evaluation. Sounds like a win to me.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-part2/</guid><pubDate>Sun, 18 Mar 2018 21:04:04 GMT</pubDate></item><item><title>Using Emacs 46 Auto Yasnippets</title><link>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org1e8ae12" class="outline-2"&gt;
-&lt;h2 id="org1e8ae12"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1e8ae12"&gt;
+&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-part2/</guid><pubDate>Sun, 18 Mar 2018 21:04:04 GMT</pubDate></item><item><title>Using Emacs 46 Auto Yasnippets</title><link>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge453c51" class="outline-2"&gt;
+&lt;h2 id="orge453c51"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge453c51"&gt;
 &lt;p&gt;
 The other day I discovered &lt;a href="https://github.com/abo-abo/auto-yasnippet"&gt;auto-yasnippet&lt;/a&gt;, another great package by
 &lt;a href="https://github.com/abo-abo"&gt;Oleh Krehel&lt;/a&gt; or abo-abo.
@@ -422,9 +482,9 @@ Check out the video:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/utrMabxgXbg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</guid><pubDate>Fri, 16 Mar 2018 00:05:36 GMT</pubDate></item><item><title>Using Emacs 45 - Company or Autocomplete</title><link>http://cestlaz.github.io/posts/using-emacs-45-company/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgb0b8888" class="outline-2"&gt;
-&lt;h2 id="orgb0b8888"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb0b8888"&gt;
+&lt;/div&gt;</description><category>editing</category><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</guid><pubDate>Fri, 16 Mar 2018 00:05:36 GMT</pubDate></item><item><title>Using Emacs 45 - Company or Autocomplete</title><link>http://cestlaz.github.io/posts/using-emacs-45-company/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org33b7b2c" class="outline-2"&gt;
+&lt;h2 id="org33b7b2c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org33b7b2c"&gt;
 &lt;p&gt;
 This is a good time to be an Emacs user. In addition to all of the
 great packages and tools being developed there seem to be more people
@@ -467,9 +527,9 @@ Here's what I've found so far:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgf426f12" class="outline-2"&gt;
-&lt;h2 id="orgf426f12"&gt;Company config (so far):&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf426f12"&gt;
+&lt;div id="outline-container-org0580de9" class="outline-2"&gt;
+&lt;h2 id="org0580de9"&gt;Company config (so far):&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0580de9"&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company&lt;/span&gt;
 &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
 &lt;span class="nv"&gt;:config&lt;/span&gt;
@@ -507,9 +567,9 @@ Here's what I've found so far:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgf2fb297" class="outline-2"&gt;
-&lt;h2 id="orgf2fb297"&gt;Autocomplete config&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf2fb297"&gt;
+&lt;div id="outline-container-org67bf776" class="outline-2"&gt;
+&lt;h2 id="org67bf776"&gt;Autocomplete config&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org67bf776"&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;auto-complete&lt;/span&gt;
 &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
 &lt;span class="nv"&gt;:init&lt;/span&gt;
@@ -528,9 +588,9 @@ Here's what I've found so far:
     &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:ac-setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-45-company/</guid><pubDate>Sun, 11 Mar 2018 12:05:45 GMT</pubDate></item><item><title>Using Emacs 44 - An org-mode workflow for application processing</title><link>http://cestlaz.github.io/posts/using-emacs-44-pdf/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org12141e9" class="outline-2"&gt;
-&lt;h2 id="org12141e9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org12141e9"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-45-company/</guid><pubDate>Sun, 11 Mar 2018 12:05:45 GMT</pubDate></item><item><title>Using Emacs 44 - An org-mode workflow for application processing</title><link>http://cestlaz.github.io/posts/using-emacs-44-pdf/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga34b33a" class="outline-2"&gt;
+&lt;h2 id="orga34b33a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga34b33a"&gt;
 &lt;p&gt;
 One of my titles at Hunter College is Director of the Daedalus CS
 Honors program. It's something like a Hunter specific, CS specific
@@ -588,9 +648,9 @@ Take a look and let me know what you think:
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LFO2UbzbZhA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>pdf</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-44-pdf/</guid><pubDate>Sat, 03 Mar 2018 12:05:45 GMT</pubDate></item><item><title>Testing, Testing</title><link>http://cestlaz.github.io/posts/testing-testing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgae49d3e" class="outline-2"&gt;
-&lt;h2 id="orgae49d3e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgae49d3e"&gt;
+&lt;/div&gt;</description><category>emacs</category><category>pdf</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-44-pdf/</guid><pubDate>Sat, 03 Mar 2018 12:05:45 GMT</pubDate></item><item><title>Testing, Testing</title><link>http://cestlaz.github.io/posts/testing-testing/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga2d6f11" class="outline-2"&gt;
+&lt;h2 id="orga2d6f11"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga2d6f11"&gt;
 &lt;p&gt;
 With CS4All being the buzzword of the day we're paying a lot of
 attention to the fact that when we teach a CS class for all students,
@@ -777,43 +837,4 @@ on track to using test frameworks - something they'll need wherever
 they end up.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-testing/</guid><pubDate>Mon, 19 Feb 2018 12:26:16 GMT</pubDate></item><item><title>Using Emacs 40 - Atomic Chrome</title><link>http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org26e5633" class="outline-2"&gt;
-&lt;h2 id="org26e5633"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org26e5633"&gt;
-&lt;p&gt;
-Thanks to everyone who voted for topics or commented with suggestions
-for videos. I'll try to get to them in the coming months.
-&lt;/p&gt;
-
-&lt;p&gt;
-Today is just a quick hit on Atomic Chrome - an Emacs package and
-browser extension that allows you to edit web form inputs with Emacs.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-orgc846245" class="outline-2"&gt;
-&lt;h2 id="orgc846245"&gt;UPDATE&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc846245"&gt;
-&lt;p&gt;
-I forgot to mention that you can set a shortcut key, at least in chrome rather than
-clicking on the icon. This makes things much smoother.
-&lt;/p&gt;
-
-&lt;p&gt;
-All you have to do is:
-&lt;/p&gt;
-
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;Go to &lt;b&gt;&lt;b&gt;chrome://extensions&lt;/b&gt;&lt;/b&gt;&lt;/li&gt;
-&lt;li&gt;On the bottom of the page you'll see a button to set &lt;b&gt;&lt;b&gt;keyboard shortcuts&lt;/b&gt;&lt;/b&gt;&lt;/li&gt;
-&lt;li&gt;Set the shortcut for Atomic Chrome&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;
-Enjoy:
-&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/wyPZws66Sic" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>emacs</category><category>learning</category><category>tools</category><guid>http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/</guid><pubDate>Wed, 31 Jan 2018 11:00:00 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>cs</category><category>software engineering</category><category>tools</category><guid>http://cestlaz.github.io/posts/testing-testing/</guid><pubDate>Mon, 19 Feb 2018 12:26:16 GMT</pubDate></item></channel></rss>

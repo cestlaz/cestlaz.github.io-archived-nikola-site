@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="http://cestlaz.github.io/assets/xml/atom.xsl" type="text/xsl media="all"?>
+<feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
+  <title>Posts about presentations</title>
+  <id>http://cestlaz.github.io/categories/presentations.atom</id>
+  <updated>2018-06-30T18:59:37Z</updated>
+  <author>
+    <name>Mike Zamansky</name>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/presentations.atom"/>
+  <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/presentations/"/>
+  <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Using Emacs Episode 50 - presentations</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-50-presentations/</id>
+    <updated>2018-06-30T14:10:24-04:00</updated>
+    <published>2018-06-30T14:10:24-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-50-presentations/"/>
+    <summary type="html">&lt;div id="outline-container-org69909f0" class="outline-2"&gt;
+&lt;h2 id="org69909f0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org69909f0"&gt;
+&lt;p&gt;
+Next weekend I'll be attending the Computer Science Teachers
+Association's &lt;a href="https://www.csteachers.org/general/custom.asp?page=2018Conference"&gt;annual conference.&lt;/a&gt; It's probably the biggest conference
+focussed on K12 Computer Science education. This year, in addition to
+attending, I'll be giving a talk on preservice and inservice CS
+teacher preparation programs. I'll be talking about the new New York
+State certification requirements along with what we're rolling out at
+Hunter College. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This means putting together a slide deck for the session. When I have
+to work collaboratively with non-Emacs users, I will usually go to
+Google Docs for presentations. It works and the collaborative aspects
+are nice but tools like Google Docs and Powerpoint are designed around
+composing slides manually. I much prefer to use a tool where I can
+focus on writing my presentation and have the tool turn it into a
+presentation.
+&lt;/p&gt;
+
+&lt;p&gt;
+Org-mode is of course the ideal tool. As an outliner, it lends itself
+to organizing a talk:
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org6314d79" class="outline-3"&gt;
+&lt;h3 id="org6314d79"&gt;topic 1&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-orgae76a19" class="outline-3"&gt;
+&lt;h3 id="orgae76a19"&gt;topic 2&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div id="outline-container-orgcdb2bc7" class="outline-3"&gt;
+&lt;h3 id="orgcdb2bc7"&gt;topic 3&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-orgc2c85e1" class="outline-2"&gt;
+&lt;h2 id="orgc2c85e1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc2c85e1"&gt;
+&lt;p&gt;
+etc. 
+&lt;/p&gt;
+
+
+&lt;p&gt;
+&lt;a href="http://cestlaz.github.io/posts/using-emacs-11-reveal"&gt;http://cestlaz.github.io/posts/using-emacs-11-reveal&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="presentations" label="presentations"/>
+    <category term="tools" label="tools"/>
+  </entry>
+</feed>

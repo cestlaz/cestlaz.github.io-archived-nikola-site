@@ -19,7 +19,7 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
 <link rel="next" href="index-39.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/hunter-cs-year-two/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/using-emacs-50-presentations/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,81 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/hunter-cs-year-two/" class="u-url">Hunter CS - a lot of progress in a short time</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/using-emacs-50-presentations/" class="u-url">Using Emacs Episode 50 - presentations</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/using-emacs-50-presentations/" rel="bookmark"><time class="published dt-published" datetime="2018-06-30T14:10:24-04:00" title="2018-06-30 14:10">2018-06-30 14:10</time></a></p>
+                <p class="commentline">            <a href="posts/using-emacs-50-presentations/#disqus_thread" data-disqus-identifier="cache/posts/using-emacs-50-presentations.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org37b1bdd" class="outline-2">
+<h2 id="org37b1bdd"></h2>
+<div class="outline-text-2" id="text-org37b1bdd">
+<p>
+Next weekend I'll be attending the Computer Science Teachers
+Association's <a href="https://www.csteachers.org/general/custom.asp?page=2018Conference">annual conference.</a> It's probably the biggest conference
+focussed on K12 Computer Science education. This year, in addition to
+attending, I'll be giving a talk on preservice and inservice CS
+teacher preparation programs. I'll be talking about the new New York
+State certification requirements along with what we're rolling out at
+Hunter College. 
+</p>
+
+<p>
+This means putting together a slide deck for the session. When I have
+to work collaboratively with non-Emacs users, I will usually go to
+Google Docs for presentations. It works and the collaborative aspects
+are nice but tools like Google Docs and Powerpoint are designed around
+composing slides manually. I much prefer to use a tool where I can
+focus on writing my presentation and have the tool turn it into a
+presentation.
+</p>
+
+<p>
+Org-mode is of course the ideal tool. As an outliner, it lends itself
+to organizing a talk:
+</p>
+
+<div class="highlight"><pre><span></span>* topic 1
+   the content for slide one
+* topic 2
+   the content for slide two
+* topic 3
+   etc.
+</pre></div>
+
+<p>
+I can embed code, tables, images, and more. I can also cycle
+visibility so I can focus on individual sections. Org-mode also has a
+number of export options to take a plain org file which is just ascii
+with markup and export it as a presentation. In the video, I'll take a
+quick look at <code>ox-beamer</code>, which exports to a Beamer presentation in LaTeX and then a PDF,
+<code>epresent</code> which presents right in Emacs and finally <code>ox-reveal</code> wich
+creates a <code>reveal.js</code> presentation. I ultimately decide to continue to
+use <code>ox-reveal</code> as it's pretty simple and flexible and I can also directly serve
+the final presentation from my own laptop, a usb drive, or directly
+from GitHub. 
+</p>
+
+<p>
+Check out the video to see how. If you want more information on using
+<code>ox-reveal</code> check out my earlier <a href="http://cestlaz.github.io/posts/using-emacs-11-reveal">Using Emacs post and video</a>. 
+</p>
+
+
+
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bRoSpJ23Kzk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/hunter-cs-year-two/" class="u-url">Hunter CS - a lot of progress in a short time</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -102,9 +176,9 @@ article: http://ogp.me/ns/article#
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org3936e80" class="outline-2">
-<h2 id="org3936e80"></h2>
-<div class="outline-text-2" id="text-org3936e80">
+    <div id="outline-container-org5c6917c" class="outline-2">
+<h2 id="org5c6917c"></h2>
+<div class="outline-text-2" id="text-org5c6917c">
 <p>
 Yesterday I was back on campus for an early orientation session for
 Hunter's incoming Daedalus CS honors students. It was the first time
@@ -184,9 +258,9 @@ accomplish and we're well on our way.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org9bb6680" class="outline-2">
-<h2 id="org9bb6680"></h2>
-<div class="outline-text-2" id="text-org9bb6680">
+    <div id="outline-container-orga9212ce" class="outline-2">
+<h2 id="orga9212ce"></h2>
+<div class="outline-text-2" id="text-orga9212ce">
 <p>
 I saw a couple of tweets from Sarah Judd this morning:
 </p>
@@ -317,9 +391,9 @@ you have a well prepared teacher, you've got a shot.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org8a3b4fb" class="outline-2">
-<h2 id="org8a3b4fb"></h2>
-<div class="outline-text-2" id="text-org8a3b4fb">
+    <div id="outline-container-org892f4be" class="outline-2">
+<h2 id="org892f4be"></h2>
+<div class="outline-text-2" id="text-org892f4be">
 <p>
 I've been using Emacs for email for a couple of years now. Not for
 everything, for now my personal email is still Gmail but work is sent
@@ -387,9 +461,9 @@ you think.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org26e496c" class="outline-2">
-<h2 id="org26e496c"></h2>
-<div class="outline-text-2" id="text-org26e496c">
+    <div id="outline-container-org52c16b8" class="outline-2">
+<h2 id="org52c16b8"></h2>
+<div class="outline-text-2" id="text-org52c16b8">
 <p>
 Time to get back to CS and CS Ed related blogging.
 </p>
@@ -633,9 +707,9 @@ I'll leave you with this video which talks about why:
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org4db677c" class="outline-2">
-<h2 id="org4db677c"></h2>
-<div class="outline-text-2" id="text-org4db677c">
+    <div id="outline-container-orgda4fee7" class="outline-2">
+<h2 id="orgda4fee7"></h2>
+<div class="outline-text-2" id="text-orgda4fee7">
 <p>
 Yesterday I shared my thoughts on Bill de Blasio's plans to "fix" the
 selection criteria for New York City's specialized high schools. If
@@ -824,9 +898,9 @@ right (or actually both sides) pretty soon there will be nothing left.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org4502de2" class="outline-2">
-<h2 id="org4502de2"></h2>
-<div class="outline-text-2" id="text-org4502de2">
+    <div id="outline-container-orgdb72ea1" class="outline-2">
+<h2 id="orgdb72ea1"></h2>
+<div class="outline-text-2" id="text-orgdb72ea1">
 <p>
 Yesterday, Bill de Blasio, the current Mayor of New York City outlined
 how he would "fix" our specialized schools. The schools he was
@@ -885,9 +959,9 @@ humanities, sciences and offered a robust music program.
 </div>
 </div>
 
-<div id="outline-container-org14cb4f9" class="outline-2">
-<h2 id="org14cb4f9">The overall picture</h2>
-<div class="outline-text-2" id="text-org14cb4f9">
+<div id="outline-container-org2eb1006" class="outline-2">
+<h2 id="org2eb1006">The overall picture</h2>
+<div class="outline-text-2" id="text-org2eb1006">
 <p>
 For reference, here are <a href="http://www.theschoolboards.com/showthread.php/4324-Specialized-High-School-SHSAT-Cutoff-Scores-for-2018">unofficial cutoff scores</a> for the specialized
 schools from 2018 along with the NY State data on free and reduced
@@ -975,13 +1049,13 @@ root problem.
 
 
 
-<div id="outline-container-org31c10ac" class="outline-2">
-<h2 id="org31c10ac">The plan</h2>
-<div class="outline-text-2" id="text-org31c10ac">
+<div id="outline-container-org23e0e41" class="outline-2">
+<h2 id="org23e0e41">The plan</h2>
+<div class="outline-text-2" id="text-org23e0e41">
 </div>
-<div id="outline-container-org3e65932" class="outline-3">
-<h3 id="org3e65932">Part 1 - test prep</h3>
-<div class="outline-text-3" id="text-org3e65932">
+<div id="outline-container-org69604f3" class="outline-3">
+<h3 id="org69604f3">Part 1 - test prep</h3>
+<div class="outline-text-3" id="text-org69604f3">
 <p>
 There's idea here is that test prep is rampant for SHSAT and that the
 test can be gamed. This may or may not be true but if it is then it's
@@ -1021,9 +1095,9 @@ really?
 </div>
 </div>
 
-<div id="outline-container-orgd89380a" class="outline-3">
-<h3 id="orgd89380a">Part 2 - use state test scores instead of the SHSAT</h3>
-<div class="outline-text-3" id="text-orgd89380a">
+<div id="outline-container-org1c2c479" class="outline-3">
+<h3 id="org1c2c479">Part 2 - use state test scores instead of the SHSAT</h3>
+<div class="outline-text-3" id="text-org1c2c479">
 <p>
 This <b>could be</b> a <b>very</b> good thing with one major caveat. 
 </p>
@@ -1059,9 +1133,9 @@ could be a suitable alternative.
 </div>
 </div>
 
-<div id="outline-container-org084aaf7" class="outline-3">
-<h3 id="org084aaf7">Part 3 - admissions from every middle school</h3>
-<div class="outline-text-3" id="text-org084aaf7">
+<div id="outline-container-orgba9f00c" class="outline-3">
+<h3 id="orgba9f00c">Part 3 - admissions from every middle school</h3>
+<div class="outline-text-3" id="text-orgba9f00c">
 <p>
 This is the third part of BdB's proposal - guarantee admissions to the
 top 10% of students at every middle school.
@@ -1104,9 +1178,9 @@ this equation?
 </div>
 
 
-<div id="outline-container-orge93ca88" class="outline-2">
-<h2 id="orge93ca88">Is one measure bad?</h2>
-<div class="outline-text-2" id="text-orge93ca88">
+<div id="outline-container-org0feac6f" class="outline-2">
+<h2 id="org0feac6f">Is one measure bad?</h2>
+<div class="outline-text-2" id="text-org0feac6f">
 <p>
 So there you have my thoughts on BdB's specific proposals but I also
 want to address his contention that a single measure is bad and makes
@@ -1137,9 +1211,9 @@ something that can't be gamed or politically influenced,
 </div>
 </div>
 
-<div id="outline-container-org1544b47" class="outline-2">
-<h2 id="org1544b47">Alternatives</h2>
-<div class="outline-text-2" id="text-org1544b47">
+<div id="outline-container-org21307c7" class="outline-2">
+<h2 id="org21307c7">Alternatives</h2>
+<div class="outline-text-2" id="text-org21307c7">
 <p>
 Should the city address the fact that there are groups that are under
 represented at the specialized schools? Certainly, or rather, the city
@@ -1154,9 +1228,9 @@ thoughts on what the city can and should be doing.
 </div>
 
 
-<div id="outline-container-org50a5a57" class="outline-3">
-<h3 id="org50a5a57">Do the experiments in the non-big three.</h3>
-<div class="outline-text-3" id="text-org50a5a57">
+<div id="outline-container-org076106b" class="outline-3">
+<h3 id="org076106b">Do the experiments in the non-big three.</h3>
+<div class="outline-text-3" id="text-org076106b">
 <p>
 There are five specialized schools that aren't covered by state
 legislation. Why not run your experiments there. You've got  the big
@@ -1173,9 +1247,9 @@ how it goes before jumping in whole hog. Figure out if anything works first.
 </div>
 </div>
 
-<div id="outline-container-org5ae80d4" class="outline-3">
-<h3 id="org5ae80d4">Check existing data</h3>
-<div class="outline-text-3" id="text-org5ae80d4">
+<div id="outline-container-org3408140" class="outline-3">
+<h3 id="org3408140">Check existing data</h3>
+<div class="outline-text-3" id="text-org3408140">
 <p>
 We've got SHSAT results and State Test score results along with
 student grades for years. Why not study correlations between
@@ -1188,9 +1262,9 @@ data to do better.
 </div>
 </div>
 
-<div id="outline-container-org00bea87" class="outline-3">
-<h3 id="org00bea87">Fix the middle schools</h3>
-<div class="outline-text-3" id="text-org00bea87">
+<div id="outline-container-orgd0a1c65" class="outline-3">
+<h3 id="orgd0a1c65">Fix the middle schools</h3>
+<div class="outline-text-3" id="text-orgd0a1c65">
 <p>
 This one is more pie in the sky because no politician really wants to
 take this one but you've got to look at what's going on in the middle
@@ -1226,9 +1300,9 @@ downturn in the numbers over the decades.
 </div>
 </div>
 
-<div id="outline-container-org3ad97c7" class="outline-2">
-<h2 id="org3ad97c7">So where are we</h2>
-<div class="outline-text-2" id="text-org3ad97c7">
+<div id="outline-container-org6093a20" class="outline-2">
+<h2 id="org6093a20">So where are we</h2>
+<div class="outline-text-2" id="text-org6093a20">
 <p>
 There are a lot of changes I'd love to see in our public schools and I
 do believe BdB's heart is in the right place. I'm concerned that some
@@ -1260,9 +1334,9 @@ that could real harm when good is intended.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org523157b" class="outline-2">
-<h2 id="org523157b"></h2>
-<div class="outline-text-2" id="text-org523157b">
+    <div id="outline-container-orgda89321" class="outline-2">
+<h2 id="orgda89321"></h2>
+<div class="outline-text-2" id="text-orgda89321">
 <p>
 Every morning one of the first things I do is quickly glance at my
 emails and other notifications. I really should wait until I'm more
@@ -1354,9 +1428,9 @@ good to remind myself that tech is cool but a good teacher is way cooler.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org42c41d2" class="outline-2">
-<h2 id="org42c41d2"></h2>
-<div class="outline-text-2" id="text-org42c41d2">
+    <div id="outline-container-orgc0563fc" class="outline-2">
+<h2 id="orgc0563fc"></h2>
+<div class="outline-text-2" id="text-orgc0563fc">
 <p>
 I replied this tweet yesterday and thought I'd expound a bit.
 </p>
@@ -1534,9 +1608,9 @@ nail. Fortunately, we can do better.
         </p>
 </div>
     </header><div class="e-content entry-content">
-    <div id="outline-container-org906e238" class="outline-2">
-<h2 id="org906e238"></h2>
-<div class="outline-text-2" id="text-org906e238">
+    <div id="outline-container-org31ed3fc" class="outline-2">
+<h2 id="org31ed3fc"></h2>
+<div class="outline-text-2" id="text-org31ed3fc">
 <p>
 Last time I mentioned the pushback on CS for All. While many people
 are all in for CS for All, resistance is coming from many
@@ -1579,131 +1653,6 @@ look back at years of results and see the good and the bad.
 <p>
 There's no doubt in my mind that the battle to get a good CS course to
 every Stuy student was one worth fighting and winning.
-</p>
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/csforall-in-college/" class="u-url">Should CS for All be implemented at the college level?</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/csforall-in-college/" rel="bookmark"><time class="published dt-published" datetime="2018-05-25T16:23:23-04:00" title="2018-05-25 16:23">2018-05-25 16:23</time></a></p>
-                <p class="commentline">            <a href="posts/csforall-in-college/#disqus_thread" data-disqus-identifier="cache/posts/csforall-in-college.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-org035321e" class="outline-2">
-<h2 id="org035321e"></h2>
-<div class="outline-text-2" id="text-org035321e">
-<p>
-There's been a lively discussion on pushback to CS for All at the K12
-level over on Facebook. <a href="https://twitter.com/guzdial">Mark Guzdial</a> started a sub thread asking if CS
-for All should first be implemented at the undergrad level rather than K12. 
-</p>
-
-<p>
-It's an interesting question and as good as anything to get me out of
-my month long non-blogging rut.
-</p>
-
-<p>
-Mark was right when he said that if Colleges implement CS for All, K12 will 
-likely do so to follow - just look at AP. Colleges have been saying
-that students should take more AP classes (while giving less credit)
-and we all know where that's led. 
-</p>
-
-<p>
-On the other hand, can colleges really do CS for All, what does it
-mean and what would it look like.
-</p>
-
-<p>
-Much like there is no single K12 - it's 50 states and who knows how
-many independent school districts, there won't be a single CS for All
-at the college level but let's think about how things could play out.
-</p>
-
-<p>
-Many colleges have distribution requirements. Students must take one
-course from bucket A, two from bucket B etc. Many schools that I've
-looked at already  count CS courses in one of their distribution
-buckets. This doesn't mean every student will take CS but in theory
-means they can. Colleges could in theory create a required CS bucket
-or even a required CS course but I don't think it's as easy as
-that. It might be at a private institution but while I don't know all
-the ins and outs of Hunter's governance rules I do know that adding a
-universal student requirement is a HUGE undertaking.
-</p>
-
-<p>
-So my take is that while it might be easy for a private college
-to add a CS requirement I'm guessing other public institutions are
-more similar to Hunter and it's not going to be an easy task.
-</p>
-
-<p>
-Regardless, let's say we have a required class on the books. Will we
-have the capacity to teach it? It seems that schools are struggling to deal
-with their existing CS majors and running sufficient electives and
-courses for them. Just a month or so ago there was an article about a
-college ending its CS minor due to lack of resources. It doesn't sound
-like a radically different problem then that faced in K12. Maybe it's
-harder given that at least in NY, there is <a href="http://cestlaz.github.io/posts/room-for-csforall">room for a required CS
-course</a> if you can find the teacher.
-</p>
-
-<p>
-Even so, assuming we have the capacity to enroll every undergrad in a
-CS course what would that be? I think most people would be in
-agreement that it shouldn't be CS 101. Maybe existing pre-major
-courses but even there I don't know if that's always the best
-path. There could be a great pre-major course to give students the
-basics and lead some into the major but what about a CS course for
-students in majors that need some deeper but focussed programming
-skills. The appropriate course for them isn't the same as a
-general/pre-major course. Using Statistics as an example, at Hunter,
-many majors require a statistics course which is off loaded to the
-Stats department. Each major has slightly different requirements. Over
-years, the end result is a course that it seems that nobody is happy
-with - a least common denominator course. CS for All at the college level
-could give us a least common denominator course that doesn't serve
-anyone.
-</p>
-
-<p>
-Now, if you have the resources, none of these are issues. A well
-heeled private institution can run tons of sections of specialized
-classes no problem but this means just like on the K12 level we'll
-get the CS for All tale of two cities that I see coming in NY where
-the rich schools have good programs and the poor get a substandard
-experience.
-</p>
-
-<p>
-With all of this said, I'm finally getting to the big red flag with
-college CS for All and it's an issue that everyone conveniently
-ignores. I'm talking about teacher quality. One of my big takeaways
-from SIGCSE is that college faculty are well behind K12 teachers in
-terms of pedagogy and I don't see this changing anytime soon. This is
-to be expected given that professor's career advancement is really
-based on research. Having a good teacher is always important but it's
-even more important for non-major students since a student in the
-professor's major will at least be passionate about the subject
-area. To me, this is not a recipe for success.
-</p>
-
-<p>
-One can certainly make the claim that we aren't any better off right
-now at the K12 level because we don't have teachers who know either
-the subject nor how to teach it and at least at the college level they
-know the subject matter. This is very true and it's why pre-service CS
-teacher preparation is so critical to getting this right even though
-it will take time. That's something that both Mark and I have been
-vocal about but more on that subject next time.
 </p>
 </div>
 </div>

@@ -3,852 +3,13 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about teaching</title>
   <id>http://cestlaz.github.io/categories/teaching.atom</id>
-  <updated>2018-06-29T21:25:28Z</updated>
+  <updated>2018-02-12T19:18:11Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/teaching.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/teaching/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
-  <entry>
-    <title>PD for people who know CS</title>
-    <id>http://cestlaz.github.io/posts/pd-for-cs/</id>
-    <updated>2018-06-27T14:41:59-04:00</updated>
-    <published>2018-06-27T14:41:59-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/pd-for-cs/"/>
-    <summary type="html">&lt;div id="outline-container-org9bb6680" class="outline-2"&gt;
-&lt;h2 id="org9bb6680"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9bb6680"&gt;
-&lt;p&gt;
-I saw a couple of tweets from Sarah Judd this morning:
-&lt;/p&gt;
-
-
-&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;A lot of CS Ed PD assumes you are new to CS. I really want CS Ed PD for people like us that came from a CS background and want to understand the pedagogy for CS in particular better. Do you know of some?&lt;/p&gt;— Sarah Judd (@SarahEJudd) &lt;a href="https://twitter.com/SarahEJudd/status/1011785286693552139?ref_src=twsrc%5Etfw"&gt;June 27, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-
-&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;Yes! I love SIGCSE and CSTA. I just feel like... Math teachers don't get PD that starts with "and this is how you add and subtract!" and I'd love more CS PD that assumes the content is there, and can focus on the pedagogy.&lt;/p&gt;— Sarah Judd (@SarahEJudd) &lt;a href="https://twitter.com/SarahEJudd/status/1011966102795059200?ref_src=twsrc%5Etfw"&gt;June 27, 2018&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-
-&lt;p&gt;
-It wasn't the first time I've heard this refrain. Last year I attended
-my first CSTA conference. I had numerous conversations with CS
-teachers on the fact that everything was on an intro level in terms of
-both content and teaching. Further conversations with local teachers
-with stronger CS backgrounds led me to run a professional development
-session at Hunter this past election day for more experienced CS
-teachers at schools that offered more than the basics.
-&lt;/p&gt;
-
-&lt;p&gt;
-While it's not surprising that most of the PD opportunities for CS teachers are
-rather rudimentary given that nationally most programs are new and
-most teachers are new to the subject but there are a few deeper
-reasons.
-&lt;/p&gt;
-
-&lt;p&gt;
-To start, there are big players in the CS Ed movement that are pushing
-curricula and specific programs and that leads to scripted PD for
-their products and not depth of knowledge nor deep pedagogical content
-knowledge let alone basic pedagogy. Add to this the fact that many of
-the "thought leaders" in the space don't have experience teaching CS
-at the K12 level and in many cases don't have a background either in
-teaching nor tech and you can see where the problem comes from. On top
-of this we have the erosion of respect for teaching as a profession
-where reformers are trying to take the teacher out of teaching and are
-trying to reduce pedagogy to following scripts. This problem goes well
-beyond CS Ed but as the new kid on the block it probably hits us
-hardest.
-&lt;/p&gt;
-
-&lt;p&gt;
-In any case, preparing beginners is both necessary and appropriate for
-the time being but we can and must do a better job than what's
-currently "state of the art." At the same time we have to do something
-with the CS teachers who indeed do have strong content knowledge but
-don't feel comfortable with imparting that knowledge.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, what should we do?
-&lt;/p&gt;
-
-&lt;p&gt;
-For new teachers the solution will ultimately have to come
-from pre-service programs but what we end up getting is going to
-largely be dictated on what's required by individual states. If states
-merely require passing an exam like the Praxis CS exam which, from
-what I can gather isn't a horrible content exam then we're going to
-see CS teachers bumble through their early to mid careers while trying
-to figure out how to teach CS much like I did way back when. If they
-end up endorsing pre-service programs that are focused on specific
-curricula - APCS-A for teachers, APCS-P for teachers, &lt;a href="https://cestlaz.github.io/posts/math-for-math-teachers/"&gt;Math for Math
-teachers&lt;/a&gt; if you will but for CS, we're also not going to get strong
-well prepared pedagogues. On the other hand if you can design a
-program that has a strong pedagogical component to go along with the
-content, you have a chance. Even with a well designed program
-implementation will still be a challenge. Who will teach it? Education
-professors who don't have CS backgrounds? CS professors with little
-pedagogical training? Neither of those groups necessarily have any
-real experience as actual K12 teachers. If you can find honest to
-goodness experienced, strong K12 CS teachers to teach your pedagogy
-courses that's a big win but that's going to be hard in most cases. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I think we designed a great program at Hunter and have a practical and
-strong implementation plan. If you're going to be
-at CSTA2018 you can hear all about it and why we designed it as we did
-in the talk I'm giving. 
-&lt;/p&gt;
-
-&lt;p&gt;
-For the more experienced I don't have a universal answer but I can say
-what I'm planning. Teachers in NY have to complete 100 CTLE hours
-every five years. For beginners, there are plenty of options, at least
-content wise. For teachers who know CS, not so much. I was at a meetup
-talking to a few friends a couple of weeks ago and one mentioned that
-they get most of their hours in Math for America CS
-workshops. Unfortunately more than a few of my CS teacher friends who
-are in MFA tell me that the CS content in these workshops, while they
-do satisfy the hours, are somewhat lacking on the CS / CS pedagogy
-side.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here's what I'm planning - we (Hunter) will host a once a month
-dinner/session for CS teachers who are a little farther along CS
-wise. I haven't worked out all the details yet but I've got a few tech
-companies that are already interested in sponsoring and helping out
-should we need anything and we'll probably set most of our agenda for
-the year at the first session where I'll make my best guess at a
-useful agenda. This is something I'm pretty excited about. It should
-help create a network of more experienced CS teachers which will both
-help bolster that segment of the community and provide a long term
-resource to newcomers and it should be a lot of fun.
-&lt;/p&gt;
-
-&lt;p&gt;
-In some ways, this is why I ended up joining Hunter. Regardless of
-what the city and state do, we're going to prepare the teachers and if
-you have a well prepared teacher, you've got a shot.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="csed" label="csed"/>
-    <category term="pedagogy" label="pedagogy"/>
-    <category term="teaching" label="teaching"/>
-  </entry>
-  <entry>
-    <title>The Tech or the Teacher</title>
-    <id>http://cestlaz.github.io/posts/tech-or-teacher/</id>
-    <updated>2018-05-31T17:43:28-04:00</updated>
-    <published>2018-05-31T17:43:28-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/tech-or-teacher/"/>
-    <summary type="html">&lt;div id="outline-container-org523157b" class="outline-2"&gt;
-&lt;h2 id="org523157b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org523157b"&gt;
-&lt;p&gt;
-Every morning one of the first things I do is quickly glance at my
-emails and other notifications. I really should wait until I'm more
-awake but old habits die hard. 
-&lt;/p&gt;
-
-&lt;p&gt;
-As some of you know over the past couple of years I've been making a
-series of &lt;a href="http://cestlaz.github.io/stories/emacs"&gt;videos&lt;/a&gt; and related post on using my editor of choice,
-Emacs. I've done 48 videos, have over 2500 subscribers on
-YouTube and people seem to find some value from the series. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This morning one of my emails was a new comment on one of my videos:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-Thanks for not describing a single key combination and how that fits
-into basic usage of org mode.  I was going to subscribe but if all
-your videos are going to be about showing off how fast you are at
-typing emacs commands on your annoyingly noisy keyborad, then no
-thanks!﻿
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-
-&lt;p&gt;
-My first reaction was "you know, you could have said something like
-'if you slow down an actually say the keys it would be much easier to
-follow and would be more valuable' and it would be much better received" but
-then I started to think about instructional videos in general. I
-started to make these videos for my students. I thought they might be
-helpful and then found that the Emacs community by and large liked
-them. They're not teaching anything deep or complicated just how I use
-a programmable editor. Even so, I was reminded by this comment about
-the limitations of videos and ed tech in general.
-&lt;/p&gt;
-
-&lt;p&gt;
-Videos provide some nice features - you can watch them at any time,
-you can pause and replay, and in some cases you can watch at super
-speeds. What you can't do is slow the video down and most importantly
-you can't ask questions or interact with the instructor. You can leave
-comments if the video is on a platform like YouTube but that's pretty
-limited.
-&lt;/p&gt;
-
-&lt;p&gt;
-On the other hand, if this was a class, we would have been able to
-interact and I as the instructor would have had a much better chance
-to make sure this "student" was up to speed. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Of course, this wasn't a class. I don't have the time to teach tools
-like Emacs in class and since it is a mechanical skill, it can be
-offloaded to a video. The video has the ancillary benefit of living on
-and being discoverable and viewable by the public at large. This is a
-good thing. Videos are tech and tech scales. Unfortunately, good
-education doesn't. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Videos are tech and tech is the rage. Lots of people are working hard
-to get more tech in front of our kids - usually at the expense of
-having a great teacher. This is something we don't need. Technology is
-nice but I'd rather have my kids in a small class with a knowledgable
-teacher and a piece of chalk than all the tech in the world. 
-&lt;/p&gt;
-
-&lt;p&gt;
-As a computer science guy and a computer science teacher I think it's
-good to remind myself that tech is cool but a good teacher is way cooler.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="edtech" label="edtech"/>
-    <category term="teaching" label="teaching"/>
-    <category term="tech" label="tech"/>
-  </entry>
-  <entry>
-    <title>No Magic Bullets - Discovery Learning</title>
-    <id>http://cestlaz.github.io/posts/no-magic-bullets-constructivism/</id>
-    <updated>2018-04-21T07:40:16-04:00</updated>
-    <published>2018-04-21T07:40:16-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/no-magic-bullets-constructivism/"/>
-    <summary type="html">&lt;div id="outline-container-orgb255dab" class="outline-2"&gt;
-&lt;h2 id="orgb255dab"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb255dab"&gt;
-&lt;p&gt;
-The most recent NYC CSTA chapter meeting was "How do I assess CS?" I
-wanted to go but it's been such a crazy month I was just too wiped
-out. Fortunately, the meetup was &lt;a href="https://www.youtube.com/watch?v=XIMKAZbHAiA&amp;amp;index=83&amp;amp;list=WL&amp;amp;t=1796s"&gt;recorded&lt;/a&gt;. I was able to watch the
-first half this morning while working out on my &lt;a href="https://www.staczero.com/hero"&gt;stationary trainer&lt;/a&gt;
-which leads me to today's rare Saturday morning blog
-post. The meetup consisted of two panels. The first was made up of K12
-teachers who taught CS. I can't talk about the second panel yet since I'm
-only halfway through but there were a couple of points made by my
-friend &lt;a href="https://twitter.com/KatieJergens"&gt;Katie Jergens&lt;/a&gt; who teaches at Dalton that I thought were worth
-talking about.
-&lt;/p&gt;
-
-&lt;p&gt;
-The first was when Katie noted that through working with the panel,
-one of her takeaways was that:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-Giving students an explicit strategy for solving a problem - "this is
-how I would do it….," - giving them an explicit strategy first and then giving them a
-problem for which that strategy would apply is much more effective than
-having them discover it on their own.
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-This was refreshing to hear after being beaten over the head on
-discovery learning and constructivism for the past five or so
-years as being the magic bullet for teachers. I shared more thoughts
-on this a few weeks ago when I wrote about a SIGCSE paper presented by
-&lt;a href="https://cestlaz.github.io/posts/sigcse2018-bootstrap/"&gt;Bootstrap World&lt;/a&gt; that I very much liked. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Katie went on to talk about how the group found that while "discovery
-learning" can be effective it can also be frustrating and lose kids
-along the way. It also takes a lot of time and preparation, something
-that's short on supply in most public schools.
-&lt;/p&gt;
-
-&lt;p&gt;
-This made me think about the recent flurry
-of discussion around the debunking of learning styles which had
-previously been the magic bullet. When I started, the secret sauce was cooperative
-learning. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Of course any good teacher knows there's no magic bullet. You fill
-your tool belt and chest with as much as you can and use what's
-best based on your strengths as a teacher combined with what will work
-best with your students.
-&lt;/p&gt;
-
-&lt;p&gt;
-Another point that Katie made that I found refreshing had to do with 
-something she does with her classes. A good portion of a student's grade is
-based on what she calls a "booster." Each student has to work one on
-one with her on some project. The student either scores a 0 or a 100 -
-the student keeps working with the direct support of the teacher until
-it's perfect. 
-&lt;/p&gt;
-
-&lt;p&gt;
-The important thing that Katie said with respect to this is "I can
-do this because my largest class is sixteen students." No way could
-this ever scale to a public school where a teacher can meet with over
-150 students a day and barely has time eat lunch let alone
-work one on one with a student in a suitably quiet place like an
-office. The refreshing thing to hear was the acknowledgment of the
-fact that what works in a rich private school won't work in a public
-school. 
-&lt;/p&gt;
-
-&lt;p&gt;
-All to often education and yes, CS Ed is driven by people who
-really have no clue. They're anointed as thought leaders but they
-don't walk the walk. Some have some knowledge and experience but many
-don't. Until you've gotten a few years under your belt in a strap
-cashed public school that takes all comers, don't tell them how they
-should do it. Katie didn't - she acknowledged the problem - too bad so
-many others don't. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm looking forward to watching the rest of the video during a future
-workout and might have more to share then. For now, take a look for
-yourself.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="assessment" label="assessment"/>
-    <category term="csed" label="csed"/>
-    <category term="teaching" label="teaching"/>
-  </entry>
-  <entry>
-    <title>Why Strong K12 Teacher Certification is Important</title>
-    <id>http://cestlaz.github.io/posts/strong-teacher-certification/</id>
-    <updated>2018-04-10T17:39:30-04:00</updated>
-    <published>2018-04-10T17:39:30-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/strong-teacher-certification/"/>
-    <summary type="html">&lt;div id="outline-container-org7fcb981" class="outline-2"&gt;
-&lt;h2 id="org7fcb981"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7fcb981"&gt;
-&lt;p&gt;
-About a week ago New York State's new regulation creating a &lt;a href="http://www.crainsnewyork.com/article/20180327/NEWS/180329893/new-york-will-finally-have-certified-computer-science-teachers"&gt;K12 CS
-teacher certification&lt;/a&gt; went live. Just the other day I was honored to be
-interviewed by  &lt;a href="https://twitter.com/mflamm_reporter"&gt;Matt Flamm&lt;/a&gt; of Crain's New York in a &lt;a href="http://www.crainsnewyork.com/article/20180410/TECHNOLOGY/180419999/asked-answered-teacher-changed-jobs-to-push-for-new-york-states-new"&gt;follow up piece&lt;/a&gt;
-about it. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Having K12 CS teacher certification is big and having quality programs
-that lead to certification is &lt;b&gt;HUGE&lt;/b&gt;. In my view, it's a game changer.
-&lt;/p&gt;
-
-&lt;p&gt;
-Let's Focus on high school, my wheelhouse.
-&lt;/p&gt;
-
-&lt;p&gt;
-From a course offerings point of view it's the wild west. I don't mean
-this as a bad thing, it's just that there's a huge range of offerings
-from AP to home brew, physical computing, game based, cyber security,
-you name it, there's a curriculum. The long and short of this is that
-schools need teachers to teach all of these experiences. Without a
-strong certification pathway we're going to be stuck with the current
-training based model where teachers are trained to deliver canned
-curricula rather than truly teach. With strong teacher preparation
-programs teachers will be prepared not only to deliver all the
-existing curricula but, arguable more importantly design their own
-learning experiences appropriate for the populations they work with.
-&lt;/p&gt;
-
-&lt;p&gt;
-This is important and alone would make having CS certification
-worthwhile but to me the BIG win is that it creates a viable career
-path. 
-&lt;/p&gt;
-
-&lt;p&gt;
-People say we'll never find enough CS teachers because the tech
-industry pays so well. I've never believed that. We find math teachers
-even though many could flee to finance and chem teachers in spite of
-big pharma's call so why can't we find CS teachers? Because we've
-never provided a path into the profession and a viable career track. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Certification means that over time schools will be able to build CS
-teachers and the discipline will be treated as the other
-subjects. Prior to certification, a CS teacher might be cut if a
-school's math department downsized. With certification, the career
-track for a CS teacher is the same as the track for any other teacher.
-&lt;/p&gt;
-
-&lt;p&gt;
-It also means that young people starting out who are interested in
-both teaching and computer science will have a way of getting into the
-profession - something that has never before existed.
-&lt;/p&gt;
-
-&lt;p&gt;
-Having CS certification alone won't woo a
-plethora of current tech professionals into teaching but over time,
-we'll start to have CS Ed majors or CS majors pursuing CS ED Masters
-degrees and entering the profession. This won't happen in a press or
-election cycle but it will happen.
-&lt;/p&gt;
-
-&lt;p&gt;
-This all hinges on quality prep programs. I think I've hit the sweet
-spot with what I've designed at Hunter. The critical components are of
-course content and pedagogy. Teacher candidates must have both
-sufficient depth and breadth in the subject and all the pedagogical
-content knowledge that comes along with it. I don't agree with the
-common approach of taking a course to teach a course - that is, having
-courses like "APCS - Principles for teachers" or "APCS - A for
-teachers."  I want my teachers to be able to teach any reasonable
-curriculum or design their own so we'll be rolling out courses that
-examine the commonly offerd curricula but prepare teachers for a whole
-lot more.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's been an exciting week in NY CS Ed and there's a lot more to come.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="certification" label="certification"/>
-    <category term="cs" label="cs"/>
-    <category term="policy" label="policy"/>
-    <category term="teaching" label="teaching"/>
-  </entry>
-  <entry>
-    <title>Refactoring</title>
-    <id>http://cestlaz.github.io/posts/refactoring/</id>
-    <updated>2018-03-21T08:11:38-04:00</updated>
-    <published>2018-03-21T08:11:38-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/refactoring/"/>
-    <summary type="html">&lt;div id="outline-container-orgb8cefc1" class="outline-2"&gt;
-&lt;h2 id="orgb8cefc1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb8cefc1"&gt;
-&lt;p&gt;
-One of my laments on teaching computer science is that students are
-rarely taught and given the chance to develop  good programming
-practices. There's usually not enough time. Beginners work on small
-"toys" which don't lend themselves to good software development
-practices and later on, there's so much other material like
-algorithms, data structures etc. to teach and
-learn that programming practices usually amount to lines like:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-"Make sure to comment your code.."
-&lt;/p&gt;
-
-&lt;p&gt;
-"Indent properly…"
-&lt;/p&gt;
-
-&lt;p&gt;
-"Use functions…"
-&lt;/p&gt;
-
-&lt;p&gt;
-"It's important to test your code…"
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-so when I see an opportunity to use a simple example to drive home a
-good practice,  I try to jump on it.
-&lt;/p&gt;
-
-&lt;p&gt;
-Drawing shapes with text is a typical early project. I've seen it in
-text books and online and have been doing it for years. I recall doing
-it back in the 80s in Fortran IV when the programs we wrote were on &lt;a href="https://en.wikipedia.org/wiki/Punched_card"&gt;punch cards&lt;/a&gt;, run
-overnight on an &lt;a href="https://en.wikipedia.org/wiki/IBM_1130"&gt;IBM 1130&lt;/a&gt;, and printouts picked up the next day.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's a nice use of nested loops. The students will write functions to
-create assorted shapes out of asterisks  like rectangles and
-triangles. Typical solutions look like this:
-&lt;/p&gt;
-
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
-
-
-&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-
-&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;tri&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-      &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;
-    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Which results in shapes like these:
-&lt;/p&gt;
-
-&lt;pre class="example"&gt;
-
-| ****            |    | *               |
-| ****            |    | **              |
-| ****            |    | ***             |
-| ****            |    | ****            |
-| ****            |    |                 |
-|                 |    |                 |
-|                 |    |                 |
-| *************** |    | *               |
-| *************** |    | **              |
-| *************** |    | ***             |
-| *************** |    | ****            |
-| *************** |    | *****           |
-| *************** |    | ******          |
-| *************** |    | *******         |
-
-&lt;/pre&gt;
-
-&lt;p&gt;
-Then there will be more interesting shapes including things like:
-&lt;/p&gt;
-
-&lt;pre class="example"&gt;
-
-   *       *            *****
-  **      ***           *   *            and more
- ***     *****          *   *
-****      ***           *****
-           *   
-
-&lt;/pre&gt;
-
-&lt;p&gt;
-This is a great time to talk about refactoring.  All of the shape
-drawing functions follow the same pattern - there's an outer loop for
-the height and then one or more inner loops to draw each line. We can
-factor out the inner loops in to a separate &lt;code&gt;line()&lt;/code&gt; function.
-&lt;/p&gt;
-
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
-
-
-&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;     &lt;span class="c1"&gt;//&lt;/span&gt;
-      &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;                    &lt;span class="c1"&gt;// &amp;lt;----- This can be factored out&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;                                 &lt;span class="c1"&gt;//&lt;/span&gt;
-    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-
-&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;tri&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;    &lt;span class="c1"&gt;//&lt;/span&gt;
-      &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;                   &lt;span class="c1"&gt;// &amp;lt;---------------- along with this&lt;/span&gt;
-    &lt;span class="p"&gt;}&lt;/span&gt;                               &lt;span class="c1"&gt;//&lt;/span&gt;
-    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-It's just like factoring in algebra:
-&lt;/p&gt;
-
-&lt;div class="LATEX"&gt;
-&lt;p&gt;
-
-&lt;/p&gt;
-
-&lt;p&gt;
-(RectangleOuterLoop × Line) + (TriangleOuterLoop × Line) ⇒ Line  (Rectangleouterloop × TriangleOuterloop)
-&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;p&gt;
-We end up with:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
-
-&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-
-&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;tri&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;
-It's simpler, cleaner, and also can lead us to thinking about the
-"harder" shapes in an interesting way. Instead of looking at the right
-justified triangle as a triangle, we can think of each level as two
-lines - one of spaces (shown here as dashes) followed by a line of
-stars:
-&lt;/p&gt;
-
-
-&lt;pre class="example"&gt;
-----*       *
----**      **
---***     ***
--****    ****
-*****   *****
-
-&lt;/pre&gt;
-
-&lt;p&gt;
-Noticing that  for a height of 5, the dashed lines count down in
-length 4,3,2,1,0 and the star lines count up 1,2,3,4,5, we get:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;tri2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
-  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"-"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="p"&gt;}&lt;/span&gt;
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-
-&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;tri2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Here we have typical early CS assignment that really lends itself to
-talking about structuring programs and refactoring. Where else can we
-inject good programming practices in ways that make sense early on?
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="cs" label="cs"/>
-    <category term="pedagogy" label="pedagogy"/>
-    <category term="teaching" label="teaching"/>
-  </entry>
-  <entry>
-    <title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title>
-    <id>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</id>
-    <updated>2018-03-02T09:27:33-04:00</updated>
-    <published>2018-03-02T09:27:33-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018-bootstrap/"/>
-    <summary type="html">&lt;div id="outline-container-org1622e3f" class="outline-2"&gt;
-&lt;h2 id="org1622e3f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1622e3f"&gt;
-&lt;p&gt;
-I really didn't know what to expect at the &lt;a href="https://dl.acm.org/citation.cfm?id=3159471"&gt;Creativity, Customization,
-and Ownership: Game Design in Bootstrap: Algebra&lt;/a&gt; session. I've been a
-big fan of &lt;a href="http://www.bootstrapworld.org/"&gt;Bootstrep&lt;/a&gt; for years and looking at the authors, &lt;a href="http://blog.acthompson.net/2017/10/cs-teacher-interview-emmanuel.html"&gt;Emmanuel
-Schanzer&lt;/a&gt;'s been a freind forever. I've never met &lt;a href="https://twitter.com/ShriramKMurthi"&gt;Shriram Krishnamurthi&lt;/a&gt;
-in person but am looking forward to it. We've traded emails and blog
-comments. I'd like to consider him a friend and I certainly respect
-him and his work even though we frequently disagree around the
-edges. The third author and presenter, Kathi Fisler was new to me.
-&lt;/p&gt;
-
-&lt;p&gt;
-The Bootstrap program is embedded in algebra classes. In it, students
-use Racket (nee scheme) to reinforce math skills while building
-computer science skills. The big student project is a graphical game.
-&lt;/p&gt;
-
-&lt;p&gt;
-When designing the project, students are asked to decide on and find
-four resources:
-&lt;/p&gt;
-
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;The background image&lt;/li&gt;
-&lt;li&gt;The player image&lt;/li&gt;
-&lt;li&gt;The target image&lt;/li&gt;
-&lt;li&gt;The enemy image&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;
-Students are given a short amount of time to decide on and find these
-four images. I think it was about ten minutes and that's it. That's
-all the "creativity" in the assignment. After that, all the students
-are essentially creating the same game with different skins.
-&lt;/p&gt;
-
-&lt;p&gt;
-This design makes sense. You can't have students going all over the
-place. Constraining the assignment in this way allows teachers who
-might now be strong in computer science to guide the kids through the
-program to completion.
-&lt;/p&gt;
-
-&lt;p&gt;
-At the time I was thinking: I really like all of this but is it really
-open ended creativity and discovery with respect to math or computer
-science? As it turned out, Fisler addressed this point at the end of
-the talk in a way that made me vary happy.
-&lt;/p&gt;
-
-&lt;p&gt;
-Fisler went on to describe the rest of the student experience and then
-went on to talk about the statistics they gathered. 
-&lt;/p&gt;
-
-&lt;p&gt;
-One big takeaway was that while all the students were essentially
-writing the same game varying only the graphical elements, this
-encouraged students to create very different themes. They also created
-rich stories around their games. The project might not have been
-"creative" with respect to the CS or Math directions but it was certainly
-creative in other important areas. The other takeaway was that
-survey's indicated all sorts of positives from the program as a whole
-so the project didn't seem to have suffered by having the students
-essentially write the same program. Participants were proud of their
-work, they felt their games were different from their peers and in
-general the experience was good.
-&lt;/p&gt;
-
-&lt;p&gt;
-During questions, someone asked about adding a fifth element - a
-projectile or missile. It turns out that at one point the program had a
-projectile component but that led to the vast majority of projects to
-be themed in very similar ways. Even though not the same, it reminded me to something Randy
-Pausch said in his &lt;a href="https://www.youtube.com/watch?v=ji5_MqicxSo"&gt;Last Lecture&lt;/a&gt;:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-You make whatever you want. Two rules: no shooting violence and no
-pornography. Not because I’m opposed to those in particular, but you know, that’s been done with
-VR, right? [laughter] And you’d be amazed how many 19-year-old boys are completely out of ideas
-when you take those off the table.
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-At the very end, Fisler addressed my questions about creativity and
-discovery. She posed these questions of her own: "Do we overstate the
-case for creativity?" and "Is pure constructivism a win?"
-&lt;/p&gt;
-
-&lt;p&gt;
-I've ranted on contructivism before. It can be great but a
-constructivist lesson takes a knowledgeable educator and a lot of time,
-preparation, and effort. It's a big ask for, say, a high school
-teacher who's already taking home hours of work every evening. Too
-often I've seen the following "contructivist" model instead:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Take an isntructor that doesn't know their craft, the content, or
-niether.&lt;/li&gt;
-&lt;li&gt;Let the kids play with stuff.&lt;/li&gt;
-&lt;li&gt;Show off the couple of autodidacts that figure it out as success
-stories.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-I'll rant more about this "model" with respect to the new buzz word
-"lead learner" at some point in the future.
-&lt;/p&gt;
-
-&lt;p&gt;
-On the creativity side, it's important but there are also times for
-the instructor to lead and for guidelines to be followed.
-We want to foster creativity but that doesn't mean that it's 100%
-creativity 100% of the time. Education is like life, a balance. The
-Bootstrap program had to constrain the CS and math learning but
-allowed for creativity in other areas. It's smart and it's a win.
-&lt;/p&gt;
-
-&lt;p&gt;
-I still want to meet Shriram in person one day and now also Kathi
-Fisler. I didn't know what to expect walking in but I left the talk
-reminded of why I'm such a fan of Emmanuel, his team, and their work.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="cs" label="cs"/>
-    <category term="pedagogy" label="pedagogy"/>
-    <category term="teaching" label="teaching"/>
-  </entry>
   <entry>
     <title>Tools can shape how we think</title>
     <id>http://cestlaz.github.io/posts/advent-2016-6-4/</id>
@@ -858,9 +19,9 @@ reminded of why I'm such a fan of Emmanuel, his team, and their work.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-2016-6-4/"/>
-    <summary type="html">&lt;div id="outline-container-org4a42606" class="outline-2"&gt;
-&lt;h2 id="org4a42606"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4a42606"&gt;
+    <summary type="html">&lt;div id="outline-container-org7ab1556" class="outline-2"&gt;
+&lt;h2 id="org7ab1556"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7ab1556"&gt;
 &lt;p&gt;
 I've been having fun with this years &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; competition. So
 far, I've been able to keep up but with I expect that to change in
@@ -912,9 +73,9 @@ I decided to do this rant as a video. I hope you enjoy it:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/thoughts-on-a-hackathon/"/>
-    <summary type="html">&lt;div id="outline-container-org8c82a89" class="outline-2"&gt;
-&lt;h2 id="org8c82a89"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8c82a89"&gt;
+    <summary type="html">&lt;div id="outline-container-org1bdf5cd" class="outline-2"&gt;
+&lt;h2 id="org1bdf5cd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1bdf5cd"&gt;
 &lt;p&gt;
 Yesterday I was one of the judges at &lt;a href="http://stuyhacks.com/"&gt;StuyHacks&lt;/a&gt;. A one day hackathon at
 Stuyvesant run by and organized by the students. I don't have attendee
@@ -1040,9 +201,9 @@ StuyHacks &lt;a href="http://stuyhacks.com/"&gt;web page&lt;/a&gt; and make sure
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/happy_ladybug/"/>
-    <summary type="html">&lt;div id="outline-container-org857d5fd" class="outline-2"&gt;
-&lt;h2 id="org857d5fd"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org857d5fd"&gt;
+    <summary type="html">&lt;div id="outline-container-orga34d121" class="outline-2"&gt;
+&lt;h2 id="orga34d121"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga34d121"&gt;
 &lt;p&gt;
 We all love interesting problems. The trouble is that it's hard to
 find suitably interesting problems for students when they're just
@@ -1226,9 +387,9 @@ in the comments.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/programming-idioms/"/>
-    <summary type="html">&lt;div id="outline-container-org93083df" class="outline-2"&gt;
-&lt;h2 id="org93083df"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org93083df"&gt;
+    <summary type="html">&lt;div id="outline-container-org90971e9" class="outline-2"&gt;
+&lt;h2 id="org90971e9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org90971e9"&gt;
 &lt;p&gt;
 I just read Jeff Yearout's recent post titled &lt;a href="http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html"&gt;The Beginner's Garden of
 Concepts&lt;/a&gt;. Not directly related but it got me thinking about
@@ -1340,9 +501,9 @@ helpful to our students if we do.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/new-tool-thonny/"/>
-    <summary type="html">&lt;div id="outline-container-org45e5351" class="outline-2"&gt;
-&lt;h2 id="org45e5351"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org45e5351"&gt;
+    <summary type="html">&lt;div id="outline-container-org5b1aa86" class="outline-2"&gt;
+&lt;h2 id="org5b1aa86"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5b1aa86"&gt;
 &lt;p&gt;
 Last year I &lt;a href="https://cestlaz.github.io/posts/new-term-new-tool-replit"&gt;wrote about&lt;/a&gt; &lt;a href="http://repl.it"&gt;repl.it&lt;/a&gt;, an online IDE that supports multiple
 languages. At the time it had some rudimentary classroom support and
@@ -1398,9 +559,9 @@ video:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/theseus%27s-curriculum/"/>
-    <summary type="html">&lt;div id="outline-container-orgaa2d3c1" class="outline-2"&gt;
-&lt;h2 id="orgaa2d3c1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgaa2d3c1"&gt;
+    <summary type="html">&lt;div id="outline-container-org1541fff" class="outline-2"&gt;
+&lt;h2 id="org1541fff"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1541fff"&gt;
 &lt;p&gt;
 With the school year starting I was originally planning on writing
 about my class rules. 
@@ -1513,9 +674,9 @@ reasoning using Euclidean Geometry as platform&lt;/div&gt;&lt;/div&gt;
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/teaching-ap-first-time/"/>
-    <summary type="html">&lt;div id="outline-container-org69e1b0d" class="outline-2"&gt;
-&lt;h2 id="org69e1b0d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org69e1b0d"&gt;
+    <summary type="html">&lt;div id="outline-container-org0aa92a3" class="outline-2"&gt;
+&lt;h2 id="org0aa92a3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0aa92a3"&gt;
 &lt;p&gt;
 I got  an email from a friend the other day. Among other things, he
 mentioned that he would be teaching APCS-A for the first time this
@@ -1646,9 +807,9 @@ lot more than if I wasn't there."
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/three-times/"/>
-    <summary type="html">&lt;div id="outline-container-org776c157" class="outline-2"&gt;
-&lt;h2 id="org776c157"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org776c157"&gt;
+    <summary type="html">&lt;div id="outline-container-org18d868f" class="outline-2"&gt;
+&lt;h2 id="org18d868f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org18d868f"&gt;
 &lt;p&gt;
 &lt;a href="https://twitter.com/CompSci4All/with_replies?lang=en"&gt;Brenda Wilkerson&lt;/a&gt;, Director of CS and IT education for Chicago public
 schools was one of the keynote speakers at this year's CSTA
@@ -1757,9 +918,9 @@ reasonable to require that they do so given the resources.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/cs-teacher-eval/"/>
-    <summary type="html">&lt;div id="outline-container-org3f59570" class="outline-2"&gt;
-&lt;h2 id="org3f59570"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3f59570"&gt;
+    <summary type="html">&lt;div id="outline-container-orgee34e32" class="outline-2"&gt;
+&lt;h2 id="orgee34e32"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgee34e32"&gt;
 &lt;p&gt;
 Another set of tweets god me thinking:
 &lt;/p&gt;
@@ -1906,9 +1067,9 @@ open mind and look at the big picture.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/teacher-to-cs-or-cs-to-teacher/"/>
-    <summary type="html">&lt;div id="outline-container-org61630c9" class="outline-2"&gt;
-&lt;h2 id="org61630c9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org61630c9"&gt;
+    <summary type="html">&lt;div id="outline-container-org7dfef9d" class="outline-2"&gt;
+&lt;h2 id="org7dfef9d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7dfef9d"&gt;
 &lt;p&gt;
 Is it easier to take CS people and teach them to teach or is it easier
 to take teachers and teach them CS?
@@ -2014,9 +1175,9 @@ no less from our CS teachers.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/disclosing-bugs/"/>
-    <summary type="html">&lt;div id="outline-container-org9e33fb2" class="outline-2"&gt;
-&lt;h2 id="org9e33fb2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9e33fb2"&gt;
+    <summary type="html">&lt;div id="outline-container-org04e94fd" class="outline-2"&gt;
+&lt;h2 id="org04e94fd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org04e94fd"&gt;
 &lt;p&gt;
 Over on Facebook, a fellow CS educator &lt;sup&gt;&lt;a id="fnr.1" class="footref" href="http://cestlaz.github.io/posts/disclosing-bugs/#fn.1"&gt;1&lt;/a&gt;&lt;/sup&gt; made a comment on something he
 wanted to try with his students this summer: having the students
@@ -2033,9 +1194,9 @@ towers anyway so here goes…
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org383e600" class="outline-2"&gt;
-&lt;h2 id="org383e600"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org383e600"&gt;
+&lt;div id="outline-container-org4fcfa49" class="outline-2"&gt;
+&lt;h2 id="org4fcfa49"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4fcfa49"&gt;
 &lt;p&gt;
 At a very basic level, I ask my students to provide a roadmap to any
 project they submit - usually in a readme file. I basically ask:
@@ -2083,9 +1244,9 @@ support them.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-orgb0f4fdf" class="outline-2"&gt;
-&lt;h2 id="orgb0f4fdf"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb0f4fdf"&gt;
+&lt;div id="outline-container-orgf43ad7e" class="outline-2"&gt;
+&lt;h2 id="orgf43ad7e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf43ad7e"&gt;
 &lt;p&gt;
 So, does this work? Yes but with some caveats. It works better once
 the class and teacher know each other. If the students trust the
@@ -2126,9 +1287,9 @@ made in a semi-private forum and I haven't asked permission.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/python-editors/"/>
-    <summary type="html">&lt;div id="outline-container-orgad023f5" class="outline-2"&gt;
-&lt;h2 id="orgad023f5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgad023f5"&gt;
+    <summary type="html">&lt;div id="outline-container-org0471732" class="outline-2"&gt;
+&lt;h2 id="org0471732"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0471732"&gt;
 &lt;p&gt;
 Earlier today I read Garth Flint's latest post on &lt;a href="https://gflint.wordpress.com/2017/05/25/python-editors-simple-wins/%0A"&gt;choosing a Python
 environment for his classes&lt;/a&gt;. While our classes and populations are
@@ -2269,9 +1430,9 @@ use Emacs in general:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/design-course-with-constraints/"/>
-    <summary type="html">&lt;div id="outline-container-orgbac4b4d" class="outline-2"&gt;
-&lt;h2 id="orgbac4b4d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgbac4b4d"&gt;
+    <summary type="html">&lt;div id="outline-container-org74e3a53" class="outline-2"&gt;
+&lt;h2 id="org74e3a53"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org74e3a53"&gt;
 &lt;p&gt;
 One of the hats I wear at Hunter is to build a new &lt;a href="https://cestlaz.github.io/posts/2016-03-29-hunter-cs.html"&gt;CS Honors program&lt;/a&gt;
 and to bring my particular brand of insanity to &lt;a href="https://cestlaz.github.io/posts/hunter-cs-important"&gt;Hunter College CS&lt;/a&gt; as a
@@ -2344,18 +1505,18 @@ Some of the other difficulties included:
 &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org3363784" class="outline-3"&gt;
-&lt;h3 id="org3363784"&gt;The language was C++:&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org3363784"&gt;
+&lt;div id="outline-container-org62d835c" class="outline-3"&gt;
+&lt;h3 id="org62d835c"&gt;The language was C++:&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org62d835c"&gt;
 &lt;p&gt;
 Since the labs were to be done in C++, I had to use that as the
 language for the class. That meant no "fun" libraries or frameworks.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgc6ce238" class="outline-3"&gt;
-&lt;h3 id="orgc6ce238"&gt;The labs were solo assignments:&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgc6ce238"&gt;
+&lt;div id="outline-container-orgd6b3be8" class="outline-3"&gt;
+&lt;h3 id="orgd6b3be8"&gt;The labs were solo assignments:&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgd6b3be8"&gt;
 &lt;p&gt;
 Since the labs were solo projects and there was one per week it made
 it very difficult to structure group experiences. I wanted to cover
@@ -2365,9 +1526,9 @@ lab being handed down each week.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org92bac7b" class="outline-3"&gt;
-&lt;h3 id="org92bac7b"&gt;Someone else dictated the language sequence:&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org92bac7b"&gt;
+&lt;div id="outline-container-orgef3ff7c" class="outline-3"&gt;
+&lt;h3 id="orgef3ff7c"&gt;Someone else dictated the language sequence:&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgef3ff7c"&gt;
 &lt;p&gt;
 The labs were designed to support what the students were learning in
 135 and were only distributed a day or two before the week was to
@@ -2376,9 +1537,9 @@ frequently. This should be easier next year.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org8d4349c" class="outline-3"&gt;
-&lt;h3 id="org8d4349c"&gt;Labs didn't match the supplemental material:&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org8d4349c"&gt;
+&lt;div id="outline-container-orgd9fa44f" class="outline-3"&gt;
+&lt;h3 id="orgd9fa44f"&gt;Labs didn't match the supplemental material:&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgd9fa44f"&gt;
 &lt;p&gt;
 The best example of this was when we were talking about testing. We
 ended up using &lt;a href="https://github.com/philsquared/Catch"&gt;Catch&lt;/a&gt; as a testing framework. The problem was that
@@ -2483,9 +1644,9 @@ but sometimes just a talk on the side. Sometimes many years later.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/thumb_clickers/"/>
-    <summary type="html">&lt;div id="outline-container-orgd1d8127" class="outline-2"&gt;
-&lt;h2 id="orgd1d8127"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd1d8127"&gt;
+    <summary type="html">&lt;div id="outline-container-org67e08c4" class="outline-2"&gt;
+&lt;h2 id="org67e08c4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org67e08c4"&gt;
 &lt;p&gt;
 Last Friday, &lt;a href="https://twitter.com/guzdial"&gt;Mark Guzdial&lt;/a&gt; wrote about the woes of &lt;a href="https://computinged.wordpress.com/2017/03/31/the-need-for-better-software-and-systems-to-support-active-cs-learning/%0A"&gt;using clickers&lt;/a&gt; in a
 class. The amount of effort required to use his school's approved
@@ -2558,9 +1719,9 @@ Thumbs.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org68c1994" class="outline-2"&gt;
-&lt;h2 id="org68c1994"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org68c1994"&gt;
+&lt;div id="outline-container-org7b082ed" class="outline-2"&gt;
+&lt;h2 id="org7b082ed"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7b082ed"&gt;
 &lt;p&gt;
 Periodically, I'll poll my class.
 &lt;/p&gt;
@@ -2814,9 +1975,9 @@ failing to mention her on my facebook shoutout.&lt;/div&gt;&lt;/div&gt;
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/end-to-act-1/"/>
-    <summary type="html">&lt;div id="outline-container-orgdfc97b4" class="outline-2"&gt;
-&lt;h2 id="orgdfc97b4"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgdfc97b4"&gt;
+    <summary type="html">&lt;div id="outline-container-org705e749" class="outline-2"&gt;
+&lt;h2 id="org705e749"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org705e749"&gt;
 
 &lt;div class="figure"&gt;
 &lt;p&gt;&lt;img src="http://cestlaz.github.io/img/end-act-1/facebook.jpg" alt="facebook.jpg" align="center"&gt;

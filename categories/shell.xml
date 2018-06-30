@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about shell)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/shell.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 29 Jun 2018 21:25:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>User friendly - I do not think that means what you think it means</title><link>http://cestlaz.github.io/posts/user-friendly/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgc2f185d" class="outline-2"&gt;
-&lt;h2 id="orgc2f185d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc2f185d"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about shell)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/shell.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 12 Feb 2018 19:18:15 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>User friendly - I do not think that means what you think it means</title><link>http://cestlaz.github.io/posts/user-friendly/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd30aa45" class="outline-2"&gt;
+&lt;h2 id="orgd30aa45"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd30aa45"&gt;
 &lt;p&gt;
 Saw this post the other day: &lt;a href="https://pupeno.com/2016/09/26/emacs-is-hurting-clojure/"&gt;Emacs is hurting Clojure&lt;/a&gt; and this response: &lt;a href="http://irreal.org/blog/?p=5597"&gt;Is Emacs Really HJard to Learn / Use&lt;/a&gt;.
 &lt;/p&gt;
@@ -134,9 +134,9 @@ tool we don't know isn't easy to use until we learn it. Let's focus on
 the path to learning the useful ones.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cli</category><category>emacs</category><category>linux</category><category>shell</category><category>tools</category><guid>http://cestlaz.github.io/posts/user-friendly/</guid><pubDate>Wed, 28 Sep 2016 15:13:37 GMT</pubDate></item><item><title>Shell short - tagging old posts in Nikola</title><link>http://cestlaz.github.io/posts/shell-short-tagging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org21eb107" class="outline-2"&gt;
-&lt;h2 id="org21eb107"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org21eb107"&gt;
+&lt;/div&gt;</description><category>cli</category><category>emacs</category><category>linux</category><category>shell</category><category>tools</category><guid>http://cestlaz.github.io/posts/user-friendly/</guid><pubDate>Wed, 28 Sep 2016 15:13:37 GMT</pubDate></item><item><title>Shell short - tagging old posts in Nikola</title><link>http://cestlaz.github.io/posts/shell-short-tagging/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org7885517" class="outline-2"&gt;
+&lt;h2 id="org7885517"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7885517"&gt;
 &lt;p&gt;
 Quick post to add to the recent command line fu I've been writing
 about.
@@ -205,17 +205,17 @@ done
 A line at a time:
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgd2eb751" class="outline-3"&gt;
-&lt;h3 id="orgd2eb751"&gt;ls *md *html&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgd2eb751"&gt;
+&lt;div id="outline-container-orgfdd36ca" class="outline-3"&gt;
+&lt;h3 id="orgfdd36ca"&gt;ls *md *html&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgfdd36ca"&gt;
 &lt;p&gt;
 This lists all the files with that end in &lt;b&gt;&lt;b&gt;md&lt;/b&gt;&lt;/b&gt; or &lt;b&gt;&lt;b&gt;html&lt;/b&gt;&lt;/b&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org56cdb5a" class="outline-3"&gt;
-&lt;h3 id="org56cdb5a"&gt;| while read filename&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org56cdb5a"&gt;
+&lt;div id="outline-container-orga1556d5" class="outline-3"&gt;
+&lt;h3 id="orga1556d5"&gt;| while read filename&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orga1556d5"&gt;
 &lt;p&gt;
 The vertical bar (pipe) sends the output of &lt;b&gt;&lt;b&gt;ls&lt;/b&gt;&lt;/b&gt; into the &lt;b&gt;&lt;b&gt;while read&lt;/b&gt;&lt;/b&gt;
 command. The &lt;b&gt;&lt;b&gt;while&lt;/b&gt;&lt;/b&gt; command sets up a loop which, each time
@@ -225,9 +225,9 @@ through, reads the next input and places into the variable
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org1115dbc" class="outline-3"&gt;
-&lt;h3 id="org1115dbc"&gt;sed "/ type: text/  i .. tags: " $filename&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org1115dbc"&gt;
+&lt;div id="outline-container-orgfb7818c" class="outline-3"&gt;
+&lt;h3 id="orgfb7818c"&gt;sed "/ type: text/  i .. tags: " $filename&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgfb7818c"&gt;
 &lt;p&gt;
 Sed is the stream editor. The stuff between the slashes finds the line
 with the text &lt;b&gt;&lt;b&gt;type: text&lt;/b&gt;&lt;/b&gt; in it. The &lt;b&gt;&lt;b&gt;i&lt;/b&gt;&lt;/b&gt; inserts a line above and
@@ -239,9 +239,9 @@ loop.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgb32ec95" class="outline-2"&gt;
-&lt;h2 id="orgb32ec95"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb32ec95"&gt;
+&lt;div id="outline-container-org6627200" class="outline-2"&gt;
+&lt;h2 id="org6627200"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6627200"&gt;
 &lt;p&gt;
 Now all of my files have blank &lt;b&gt;&lt;b&gt;tag&lt;/b&gt;&lt;/b&gt; slugs so I can find my netlogo
 posts and tag them:
@@ -271,18 +271,18 @@ So, just a bit of quick shell scripting and I've:
 You can find all those posts &lt;a href="http://cestlaz.github.io/categories/netlogo"&gt;here&lt;/a&gt;.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cli</category><category>linux</category><category>nikola</category><category>shell</category><category>tools</category><guid>http://cestlaz.github.io/posts/shell-short-tagging/</guid><pubDate>Sun, 15 May 2016 13:58:44 GMT</pubDate></item><item><title>REPOST - Shell games - who confirmed attendance</title><link>http://cestlaz.github.io/posts/duplicate-emails/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org1d6bde1" class="outline-2"&gt;
-&lt;h2 id="org1d6bde1"&gt;Repost&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1d6bde1"&gt;
+&lt;/div&gt;</description><category>cli</category><category>linux</category><category>nikola</category><category>shell</category><category>tools</category><guid>http://cestlaz.github.io/posts/shell-short-tagging/</guid><pubDate>Sun, 15 May 2016 13:58:44 GMT</pubDate></item><item><title>REPOST - Shell games - who confirmed attendance</title><link>http://cestlaz.github.io/posts/duplicate-emails/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6a16bdb" class="outline-2"&gt;
+&lt;h2 id="org6a16bdb"&gt;Repost&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6a16bdb"&gt;
 &lt;p&gt;
 This is a repost from March 2015. It didn't transfer when I rebooted the blog.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org261f9ea" class="outline-2"&gt;
-&lt;h2 id="org261f9ea"&gt;Original&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org261f9ea"&gt;
+&lt;div id="outline-container-org57a3f02" class="outline-2"&gt;
+&lt;h2 id="org57a3f02"&gt;Original&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org57a3f02"&gt;
 &lt;p&gt;
 Quick post on why I love the Unix command line.
 &lt;/p&gt;
@@ -466,9 +466,9 @@ If you think this way and know some basic tools, all of a sudden all
 manner of text manipulation problems become pretty easy.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cli</category><category>linux</category><category>shell</category><category>tools</category><guid>http://cestlaz.github.io/posts/duplicate-emails/</guid><pubDate>Thu, 12 May 2016 13:52:25 GMT</pubDate></item><item><title>BASH scripting?</title><link>http://cestlaz.github.io/posts/bash-scripting/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org25d09c0" class="outline-2"&gt;
-&lt;h2 id="org25d09c0"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org25d09c0"&gt;
+&lt;/div&gt;</description><category>cli</category><category>linux</category><category>shell</category><category>tools</category><guid>http://cestlaz.github.io/posts/duplicate-emails/</guid><pubDate>Thu, 12 May 2016 13:52:25 GMT</pubDate></item><item><title>BASH scripting?</title><link>http://cestlaz.github.io/posts/bash-scripting/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3d2a62a" class="outline-2"&gt;
+&lt;h2 id="org3d2a62a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3d2a62a"&gt;
 &lt;p&gt;
 Over in the Facebook AP Computer Science Teachers group someone asked
 for thoughts on covering BASH scripting as a post AP topic.
@@ -625,9 +625,9 @@ In terms of tools, I get a lot of mileage out of:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org61bd813" class="outline-2"&gt;
-&lt;h2 id="org61bd813"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org61bd813"&gt;
+&lt;div id="outline-container-orgd278e9e" class="outline-2"&gt;
+&lt;h2 id="orgd278e9e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd278e9e"&gt;
 &lt;p&gt;
 A nice simple thing you can do with these is clean data. Let's say you
 want to do some analytics on a book from Project Gutenberg. You might
