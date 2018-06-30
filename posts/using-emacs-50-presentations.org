@@ -1,0 +1,61 @@
+#+BEGIN_COMMENT
+.. title: Using Emacs Episode 50 - presentations
+.. slug: using-emacs-50-presentations
+.. date: 2018-06-30 14:10:24 UTC-04:00
+.. tags: emacs, tools, presentations
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+Next weekend I'll be attending the Computer Science Teachers
+Association's [[https://www.csteachers.org/general/custom.asp?page=2018Conference][annual conference.]] It's probably the biggest conference
+focussed on K12 Computer Science education. This year, in addition to
+attending, I'll be giving a talk on preservice and inservice CS
+teacher preparation programs. I'll be talking about the new New York
+State certification requirements along with what we're rolling out at
+Hunter College. 
+
+This means putting together a slide deck for the session. When I have
+to work collaboratively with non-Emacs users, I will usually go to
+Google Docs for presentations. It works and the collaborative aspects
+are nice but tools like Google Docs and Powerpoint are designed around
+composing slides manually. I much prefer to use a tool where I can
+focus on writing my presentation and have the tool turn it into a
+presentation.
+
+Org-mode is of course the ideal tool. As an outliner, it lends itself
+to organizing a talk:
+
+#+BEGIN_SRC org
+,* topic 1
+   the content for slide one
+,* topic 2
+   the content for slide two
+,* topic 3
+   etc.
+#+END_SRC
+
+I can embed code, tables, images, and more. I can also cycle
+visibility so I can focus on individual sections. Org-mode also has a
+number of export options to take a plain org file which is just ascii
+with markup and export it as a presentation. In the video, I'll take a
+quick look at ~ox-beamer~, which exports to a Beamer presentation in LaTeX and then a PDF,
+~epresent~ which presents right in Emacs and finally ~ox-reveal~ wich
+creates a ~reveal.js~ presentation. I ultimately decide to continue to
+use ~ox-reveal~ as it's pretty simple and flexible and I can also directly serve
+the final presentation from my own laptop, a usb drive, or directly
+from GitHub. 
+
+Check out the video to see how. If you want more information on using
+~ox-reveal~ check out my earlier [[http://cestlaz.github.io/posts/using-emacs-11-reveal][Using Emacs post and video]]. 
+
+
+
+
+
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bRoSpJ23Kzk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+#+END_EXPORT
