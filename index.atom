@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2018-06-30T19:23:36Z</updated>
+  <updated>2018-07-02T00:46:47Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,78 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-39.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Talking about CS teacher certification at CSTA 2018</title>
+    <id>http://cestlaz.github.io/posts/csta-2018/</id>
+    <updated>2018-07-01T19:57:06-04:00</updated>
+    <published>2018-07-01T19:57:06-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/csta-2018/"/>
+    <summary type="html">&lt;div id="outline-container-org38f5df0" class="outline-2"&gt;
+&lt;h2 id="org38f5df0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org38f5df0"&gt;
+&lt;p&gt;
+As I mentioned in my last post, this coming weekend is the Computer
+Science Teachers Association (CSTA) conference. I've been a member of
+CSTA since the beginning but this will be only the second time I've
+made it to the annual conference.
+&lt;/p&gt;
+
+&lt;p&gt;
+The CSTA conference might be the largest conference specifically for
+k12 computer science teachers and that makes it different from
+conferences like SIGCSE which is for CS education and education
+research at all levels or ISTE which seems to be more of an Ed Tech
+conference.
+&lt;/p&gt;
+
+&lt;p&gt;
+I really enjoyed the conference last year but as the sessions seemed
+to be weighted towards beginning CS teachers and towards the CSTA
+standards I found most of the value in the "hallway track" when I got
+to meet and chat with CS teachers from all over the country.
+&lt;/p&gt;
+
+&lt;p&gt;
+Glancing at the program, there looks to be a bunch of interesting
+sessions and this time more sessions that I think I'll personally be
+interested in . 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm also giving a talk. New York State just approved and created K12
+Computer Science Teacher Certification and we're currently making
+plans to roll out our Masters and Certificate programs for CS teachers
+as soon as we get state approval. The Masters program will be largely
+for preservice teacher candidates and the certificate program for in
+service teachers certified in other areas. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The talk will cover a bit of the history of CS Education in New York,
+what the state is doing and mostly what where building at Hunter and
+why. It should be a fun talk. I'm hoping for some people from other
+states attend so we can have a rich discussion during the session.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, if you're going to be at the CSTA conference, I'd love to see
+you either at my session or at the conference in general. I'll be
+spending most of my non session time there with my friends at GitHub
+education.
+&lt;/p&gt;
+
+&lt;p&gt;
+For those of you can't make it, I hope to blog about the weekend and I
+hope others do as well.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="csed" label="csed"/>
+    <category term="education" label="education"/>
+  </entry>
   <entry>
     <title>Using Emacs Episode 50 - presentations</title>
     <id>http://cestlaz.github.io/posts/using-emacs-50-presentations/</id>
@@ -20,9 +92,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-50-presentations/"/>
-    <summary type="html">&lt;div id="outline-container-org37b1bdd" class="outline-2"&gt;
-&lt;h2 id="org37b1bdd"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org37b1bdd"&gt;
+    <summary type="html">&lt;div id="outline-container-orgd026baf" class="outline-2"&gt;
+&lt;h2 id="orgd026baf"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd026baf"&gt;
 &lt;p&gt;
 Next weekend I'll be attending the Computer Science Teachers
 Association's &lt;a href="https://www.csteachers.org/general/custom.asp?page=2018Conference"&gt;annual conference.&lt;/a&gt; It's probably the biggest conference
@@ -94,9 +166,9 @@ Check out the video to see how. If you want more information on using
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/hunter-cs-year-two/"/>
-    <summary type="html">&lt;div id="outline-container-org5c6917c" class="outline-2"&gt;
-&lt;h2 id="org5c6917c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5c6917c"&gt;
+    <summary type="html">&lt;div id="outline-container-org3936e80" class="outline-2"&gt;
+&lt;h2 id="org3936e80"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3936e80"&gt;
 &lt;p&gt;
 Yesterday I was back on campus for an early orientation session for
 Hunter's incoming Daedalus CS honors students. It was the first time
@@ -175,9 +247,9 @@ accomplish and we're well on our way.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/pd-for-cs/"/>
-    <summary type="html">&lt;div id="outline-container-orga9212ce" class="outline-2"&gt;
-&lt;h2 id="orga9212ce"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga9212ce"&gt;
+    <summary type="html">&lt;div id="outline-container-org9bb6680" class="outline-2"&gt;
+&lt;h2 id="org9bb6680"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9bb6680"&gt;
 &lt;p&gt;
 I saw a couple of tweets from Sarah Judd this morning:
 &lt;/p&gt;
@@ -308,9 +380,9 @@ you have a well prepared teacher, you've got a shot.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/"/>
-    <summary type="html">&lt;div id="outline-container-org892f4be" class="outline-2"&gt;
-&lt;h2 id="org892f4be"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org892f4be"&gt;
+    <summary type="html">&lt;div id="outline-container-org8a3b4fb" class="outline-2"&gt;
+&lt;h2 id="org8a3b4fb"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8a3b4fb"&gt;
 &lt;p&gt;
 I've been using Emacs for email for a couple of years now. Not for
 everything, for now my personal email is still Gmail but work is sent
@@ -378,9 +450,9 @@ you think.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/how-i-grokked-oop/"/>
-    <summary type="html">&lt;div id="outline-container-org52c16b8" class="outline-2"&gt;
-&lt;h2 id="org52c16b8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org52c16b8"&gt;
+    <summary type="html">&lt;div id="outline-container-org26e496c" class="outline-2"&gt;
+&lt;h2 id="org26e496c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org26e496c"&gt;
 &lt;p&gt;
 Time to get back to CS and CS Ed related blogging.
 &lt;/p&gt;
@@ -626,9 +698,9 @@ I'll leave you with this video which talks about why:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/shsat-part2/"/>
-    <summary type="html">&lt;div id="outline-container-orgda4fee7" class="outline-2"&gt;
-&lt;h2 id="orgda4fee7"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgda4fee7"&gt;
+    <summary type="html">&lt;div id="outline-container-org4db677c" class="outline-2"&gt;
+&lt;h2 id="org4db677c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4db677c"&gt;
 &lt;p&gt;
 Yesterday I shared my thoughts on Bill de Blasio's plans to "fix" the
 selection criteria for New York City's specialized high schools. If
@@ -828,9 +900,9 @@ right (or actually both sides) pretty soon there will be nothing left.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/shsat/"/>
-    <summary type="html">&lt;div id="outline-container-orgdb72ea1" class="outline-2"&gt;
-&lt;h2 id="orgdb72ea1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgdb72ea1"&gt;
+    <summary type="html">&lt;div id="outline-container-org4502de2" class="outline-2"&gt;
+&lt;h2 id="org4502de2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4502de2"&gt;
 &lt;p&gt;
 Yesterday, Bill de Blasio, the current Mayor of New York City outlined
 how he would "fix" our specialized schools. The schools he was
@@ -889,9 +961,9 @@ humanities, sciences and offered a robust music program.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org2eb1006" class="outline-2"&gt;
-&lt;h2 id="org2eb1006"&gt;The overall picture&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org2eb1006"&gt;
+&lt;div id="outline-container-org14cb4f9" class="outline-2"&gt;
+&lt;h2 id="org14cb4f9"&gt;The overall picture&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org14cb4f9"&gt;
 &lt;p&gt;
 For reference, here are &lt;a href="http://www.theschoolboards.com/showthread.php/4324-Specialized-High-School-SHSAT-Cutoff-Scores-for-2018"&gt;unofficial cutoff scores&lt;/a&gt; for the specialized
 schools from 2018 along with the NY State data on free and reduced
@@ -993,13 +1065,13 @@ root problem.
 
 
 
-&lt;div id="outline-container-org23e0e41" class="outline-2"&gt;
-&lt;h2 id="org23e0e41"&gt;The plan&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org23e0e41"&gt;
+&lt;div id="outline-container-org31c10ac" class="outline-2"&gt;
+&lt;h2 id="org31c10ac"&gt;The plan&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org31c10ac"&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org69604f3" class="outline-3"&gt;
-&lt;h3 id="org69604f3"&gt;Part 1 - test prep&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org69604f3"&gt;
+&lt;div id="outline-container-org3e65932" class="outline-3"&gt;
+&lt;h3 id="org3e65932"&gt;Part 1 - test prep&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org3e65932"&gt;
 &lt;p&gt;
 There's idea here is that test prep is rampant for SHSAT and that the
 test can be gamed. This may or may not be true but if it is then it's
@@ -1039,9 +1111,9 @@ really?
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org1c2c479" class="outline-3"&gt;
-&lt;h3 id="org1c2c479"&gt;Part 2 - use state test scores instead of the SHSAT&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org1c2c479"&gt;
+&lt;div id="outline-container-orgd89380a" class="outline-3"&gt;
+&lt;h3 id="orgd89380a"&gt;Part 2 - use state test scores instead of the SHSAT&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgd89380a"&gt;
 &lt;p&gt;
 This &lt;b&gt;could be&lt;/b&gt; a &lt;b&gt;very&lt;/b&gt; good thing with one major caveat. 
 &lt;/p&gt;
@@ -1078,9 +1150,9 @@ could be a suitable alternative.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgba9f00c" class="outline-3"&gt;
-&lt;h3 id="orgba9f00c"&gt;Part 3 - admissions from every middle school&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgba9f00c"&gt;
+&lt;div id="outline-container-org084aaf7" class="outline-3"&gt;
+&lt;h3 id="org084aaf7"&gt;Part 3 - admissions from every middle school&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org084aaf7"&gt;
 &lt;p&gt;
 This is the third part of BdB's proposal - guarantee admissions to the
 top 10% of students at every middle school.
@@ -1123,9 +1195,9 @@ this equation?
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org0feac6f" class="outline-2"&gt;
-&lt;h2 id="org0feac6f"&gt;Is one measure bad?&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0feac6f"&gt;
+&lt;div id="outline-container-orge93ca88" class="outline-2"&gt;
+&lt;h2 id="orge93ca88"&gt;Is one measure bad?&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge93ca88"&gt;
 &lt;p&gt;
 So there you have my thoughts on BdB's specific proposals but I also
 want to address his contention that a single measure is bad and makes
@@ -1156,9 +1228,9 @@ something that can't be gamed or politically influenced,
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org21307c7" class="outline-2"&gt;
-&lt;h2 id="org21307c7"&gt;Alternatives&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org21307c7"&gt;
+&lt;div id="outline-container-org1544b47" class="outline-2"&gt;
+&lt;h2 id="org1544b47"&gt;Alternatives&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1544b47"&gt;
 &lt;p&gt;
 Should the city address the fact that there are groups that are under
 represented at the specialized schools? Certainly, or rather, the city
@@ -1173,9 +1245,9 @@ thoughts on what the city can and should be doing.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org076106b" class="outline-3"&gt;
-&lt;h3 id="org076106b"&gt;Do the experiments in the non-big three.&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org076106b"&gt;
+&lt;div id="outline-container-org50a5a57" class="outline-3"&gt;
+&lt;h3 id="org50a5a57"&gt;Do the experiments in the non-big three.&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org50a5a57"&gt;
 &lt;p&gt;
 There are five specialized schools that aren't covered by state
 legislation. Why not run your experiments there. You've got  the big
@@ -1192,9 +1264,9 @@ how it goes before jumping in whole hog. Figure out if anything works first.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org3408140" class="outline-3"&gt;
-&lt;h3 id="org3408140"&gt;Check existing data&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org3408140"&gt;
+&lt;div id="outline-container-org5ae80d4" class="outline-3"&gt;
+&lt;h3 id="org5ae80d4"&gt;Check existing data&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org5ae80d4"&gt;
 &lt;p&gt;
 We've got SHSAT results and State Test score results along with
 student grades for years. Why not study correlations between
@@ -1207,9 +1279,9 @@ data to do better.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgd0a1c65" class="outline-3"&gt;
-&lt;h3 id="orgd0a1c65"&gt;Fix the middle schools&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgd0a1c65"&gt;
+&lt;div id="outline-container-org00bea87" class="outline-3"&gt;
+&lt;h3 id="org00bea87"&gt;Fix the middle schools&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org00bea87"&gt;
 &lt;p&gt;
 This one is more pie in the sky because no politician really wants to
 take this one but you've got to look at what's going on in the middle
@@ -1245,9 +1317,9 @@ downturn in the numbers over the decades.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org6093a20" class="outline-2"&gt;
-&lt;h2 id="org6093a20"&gt;So where are we&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6093a20"&gt;
+&lt;div id="outline-container-org3ad97c7" class="outline-2"&gt;
+&lt;h2 id="org3ad97c7"&gt;So where are we&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3ad97c7"&gt;
 &lt;p&gt;
 There are a lot of changes I'd love to see in our public schools and I
 do believe BdB's heart is in the right place. I'm concerned that some
@@ -1279,9 +1351,9 @@ that could real harm when good is intended.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/tech-or-teacher/"/>
-    <summary type="html">&lt;div id="outline-container-orgda89321" class="outline-2"&gt;
-&lt;h2 id="orgda89321"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgda89321"&gt;
+    <summary type="html">&lt;div id="outline-container-org523157b" class="outline-2"&gt;
+&lt;h2 id="org523157b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org523157b"&gt;
 &lt;p&gt;
 Every morning one of the first things I do is quickly glance at my
 emails and other notifications. I really should wait until I'm more
@@ -1373,9 +1445,9 @@ good to remind myself that tech is cool but a good teacher is way cooler.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/recursion-early/"/>
-    <summary type="html">&lt;div id="outline-container-orgc0563fc" class="outline-2"&gt;
-&lt;h2 id="orgc0563fc"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc0563fc"&gt;
+    <summary type="html">&lt;div id="outline-container-org42c41d2" class="outline-2"&gt;
+&lt;h2 id="org42c41d2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org42c41d2"&gt;
 &lt;p&gt;
 I replied this tweet yesterday and thought I'd expound a bit.
 &lt;/p&gt;
@@ -1547,64 +1619,5 @@ nail. Fortunately, we can do better.
     <category term="pedagogy" label="pedagogy"/>
     <category term="recursion" label="recursion"/>
     <category term="scheme" label="scheme"/>
-  </entry>
-  <entry>
-    <title>Is Cs for All Worth Doing</title>
-    <id>http://cestlaz.github.io/posts/is-cs4all-worth-doing/</id>
-    <updated>2018-05-26T16:18:38-04:00</updated>
-    <published>2018-05-26T16:18:38-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/is-cs4all-worth-doing/"/>
-    <summary type="html">&lt;div id="outline-container-org31ed3fc" class="outline-2"&gt;
-&lt;h2 id="org31ed3fc"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org31ed3fc"&gt;
-&lt;p&gt;
-Last time I mentioned the pushback on CS for All. While many people
-are all in for CS for All, resistance is coming from many
-areas. There's resistance from teachers of other subject areas, people
-who think it's merely job training for the tech industry (which it can be if done poorly),
-people who feel it will be implemented at the expense of other
-important subjects already on the chopping block like music and art,
-and others.
-&lt;/p&gt;
-
-&lt;p&gt;
-When I started the intro course at Stuy I tried to design something
-that would be of value to all Stuy students and also inspire some to
-continue on to more advanced CS classes. The class has been a
-requirement for well over a decade at this point. I know that not
-everyone loved the course but as they say, the proof is in the
-pudding. It clearly got more people into the pool as gender numbers
-for our more advanced CS courses got and remained much better since
-the intro class became a requirement. I can't tell you how many people
-now in tech have told me that they never considered CS and only got
-into it from our intro course.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, we had CS for All at Stuy before there was a CS for All and if
-exposing more kids to CS was the only benefit it would have been worth
-it but there's more. In addition to getting more people and more
-underrepresented people into tech, I've had scores of kids in a huge
-range of fields come back to exclaim the value of having been forced
-to take our intro course. These kids became authors, lawyers,
-entrepreneurs, (non CS) teachers, journalists, venture capitalists,
-Wall Street people, (non CS) professors and researchers, and more.
-&lt;/p&gt;
-
-&lt;p&gt;
-The benefit of being in the latter stages of a career is that you can
-look back at years of results and see the good and the bad.
-&lt;/p&gt;
-
-&lt;p&gt;
-There's no doubt in my mind that the battle to get a good CS course to
-every Stuy student was one worth fighting and winning.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="csforall" label="csforall"/>
   </entry>
 </feed>

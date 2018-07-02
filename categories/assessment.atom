@@ -3,13 +3,122 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about assessment</title>
   <id>http://cestlaz.github.io/categories/assessment.atom</id>
-  <updated>2018-02-12T19:18:11Z</updated>
+  <updated>2018-06-29T21:25:32Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/assessment.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/assessment/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>No Magic Bullets - Discovery Learning</title>
+    <id>http://cestlaz.github.io/posts/no-magic-bullets-constructivism/</id>
+    <updated>2018-04-21T07:40:16-04:00</updated>
+    <published>2018-04-21T07:40:16-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/no-magic-bullets-constructivism/"/>
+    <summary type="html">&lt;div id="outline-container-orgb255dab" class="outline-2"&gt;
+&lt;h2 id="orgb255dab"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb255dab"&gt;
+&lt;p&gt;
+The most recent NYC CSTA chapter meeting was "How do I assess CS?" I
+wanted to go but it's been such a crazy month I was just too wiped
+out. Fortunately, the meetup was &lt;a href="https://www.youtube.com/watch?v=XIMKAZbHAiA&amp;amp;index=83&amp;amp;list=WL&amp;amp;t=1796s"&gt;recorded&lt;/a&gt;. I was able to watch the
+first half this morning while working out on my &lt;a href="https://www.staczero.com/hero"&gt;stationary trainer&lt;/a&gt;
+which leads me to today's rare Saturday morning blog
+post. The meetup consisted of two panels. The first was made up of K12
+teachers who taught CS. I can't talk about the second panel yet since I'm
+only halfway through but there were a couple of points made by my
+friend &lt;a href="https://twitter.com/KatieJergens"&gt;Katie Jergens&lt;/a&gt; who teaches at Dalton that I thought were worth
+talking about.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first was when Katie noted that through working with the panel,
+one of her takeaways was that:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Giving students an explicit strategy for solving a problem - "this is
+how I would do it….," - giving them an explicit strategy first and then giving them a
+problem for which that strategy would apply is much more effective than
+having them discover it on their own.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+This was refreshing to hear after being beaten over the head on
+discovery learning and constructivism for the past five or so
+years as being the magic bullet for teachers. I shared more thoughts
+on this a few weeks ago when I wrote about a SIGCSE paper presented by
+&lt;a href="https://cestlaz.github.io/posts/sigcse2018-bootstrap/"&gt;Bootstrap World&lt;/a&gt; that I very much liked. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Katie went on to talk about how the group found that while "discovery
+learning" can be effective it can also be frustrating and lose kids
+along the way. It also takes a lot of time and preparation, something
+that's short on supply in most public schools.
+&lt;/p&gt;
+
+&lt;p&gt;
+This made me think about the recent flurry
+of discussion around the debunking of learning styles which had
+previously been the magic bullet. When I started, the secret sauce was cooperative
+learning. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course any good teacher knows there's no magic bullet. You fill
+your tool belt and chest with as much as you can and use what's
+best based on your strengths as a teacher combined with what will work
+best with your students.
+&lt;/p&gt;
+
+&lt;p&gt;
+Another point that Katie made that I found refreshing had to do with 
+something she does with her classes. A good portion of a student's grade is
+based on what she calls a "booster." Each student has to work one on
+one with her on some project. The student either scores a 0 or a 100 -
+the student keeps working with the direct support of the teacher until
+it's perfect. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The important thing that Katie said with respect to this is "I can
+do this because my largest class is sixteen students." No way could
+this ever scale to a public school where a teacher can meet with over
+150 students a day and barely has time eat lunch let alone
+work one on one with a student in a suitably quiet place like an
+office. The refreshing thing to hear was the acknowledgment of the
+fact that what works in a rich private school won't work in a public
+school. 
+&lt;/p&gt;
+
+&lt;p&gt;
+All to often education and yes, CS Ed is driven by people who
+really have no clue. They're anointed as thought leaders but they
+don't walk the walk. Some have some knowledge and experience but many
+don't. Until you've gotten a few years under your belt in a strap
+cashed public school that takes all comers, don't tell them how they
+should do it. Katie didn't - she acknowledged the problem - too bad so
+many others don't. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm looking forward to watching the rest of the video during a future
+workout and might have more to share then. For now, take a look for
+yourself.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="assessment" label="assessment"/>
+    <category term="csed" label="csed"/>
+    <category term="teaching" label="teaching"/>
+  </entry>
   <entry>
     <title>Making contest problems and writing tests</title>
     <id>http://cestlaz.github.io/posts/advent-2017-making-tests/</id>
@@ -19,9 +128,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-2017-making-tests/"/>
-    <summary type="html">&lt;div id="outline-container-org162e650" class="outline-2"&gt;
-&lt;h2 id="org162e650"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org162e650"&gt;
+    <summary type="html">&lt;div id="outline-container-orgccf0078" class="outline-2"&gt;
+&lt;h2 id="orgccf0078"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgccf0078"&gt;
 &lt;p&gt;
 I'm now well behind in &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. Traveling up to Michigan to see
 my son and my brother and his family will do that.
@@ -104,9 +213,9 @@ back to Advent of Code.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/"/>
-    <summary type="html">&lt;div id="outline-container-orgdadccb8" class="outline-2"&gt;
-&lt;h2 id="orgdadccb8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgdadccb8"&gt;
+    <summary type="html">&lt;div id="outline-container-orgf35c81d" class="outline-2"&gt;
+&lt;h2 id="orgf35c81d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf35c81d"&gt;
 &lt;p&gt;
 This past weekend was &lt;a href="http://catskillsconf.com"&gt;Catskillsconf&lt;/a&gt; - my favorite event of the
 year. I spent the weekend up in Ulster County with a bunch of my
@@ -122,9 +231,9 @@ are indicative of a good curriculum or good professional development (PD).
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org9ce82fd" class="outline-2"&gt;
-&lt;h2 id="org9ce82fd"&gt;TL;DR - NO!!!!!&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9ce82fd"&gt;
+&lt;div id="outline-container-orgc43fab3" class="outline-2"&gt;
+&lt;h2 id="orgc43fab3"&gt;TL;DR - NO!!!!!&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc43fab3"&gt;
 &lt;p&gt;
 Further, anyone who thinks that a set of exam results can tell you
 that a particular PD sequence or curriculum is good shouldn't be
