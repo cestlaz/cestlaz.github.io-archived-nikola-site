@@ -91,7 +91,187 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/is-cs4all-worth-doing/" class="u-url">Is Cs for All Worth Doing</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/recursion-early/" class="u-url">Teaching recursion early? Make sure to use a good tool.</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/recursion-early/" rel="bookmark"><time class="published dt-published" datetime="2018-05-30T08:42:29-04:00" title="2018-05-30 08:42">2018-05-30 08:42</time></a></p>
+                <p class="commentline">            <a href="posts/recursion-early/#disqus_thread" data-disqus-identifier="cache/posts/recursion-early.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-org42c41d2" class="outline-2">
+<h2 id="org42c41d2"></h2>
+<div class="outline-text-2" id="text-org42c41d2">
+<p>
+I replied this tweet yesterday and thought I'd expound a bit.
+</p>
+
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">We started kids using scheme on 10th grade at stuy so did recursion early. Not everyone got all of it but it think it made things much easier for those that you more CS later.</p>— Mike Zamansky (@zamansky) <a href="https://twitter.com/zamansky/status/1001508028439519233?ref_src=twsrc%5Etfw">May 29, 2018</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><p>
+We introduced recursion very early in our intro course at Stuy and I
+think it worked well. In that course we started by using Racket (nee
+Scheme) as the first programming unit. Originally we
+started the kids out first using NetLogo or StarLogo and followed with
+Scheme but after a few years we switched the order.
+</p>
+
+<p>
+I wouldn't always recommend Scheme for a first course and in fact
+frequently don't but given how the Stuy course was introduced and
+developed it made sense and worked. 
+</p>
+
+<p>
+Was it worth doing things this way? I think so. Prior to that intro
+course becoming a requirement I got to see students coming in from
+different pathways to APCS. Some came in raw with zero formal
+experience, some self taught, some through that intro course and some
+having taken another more traditional intro programming course or
+experience. The kids who started on Scheme had no more difficulty
+mastering loops and iteration but had an easier time getting to the
+more advanced recursive techniques. This wasn't a surprise - it wasn't
+their first rodeo. This also jived with reports I read at the time
+that felt that when students did recursion first, iteration was just
+as easy but when they did iteration first, recursion was harder. 
+</p>
+
+<p>
+You can of course make a strong case that recursion isn't necessary
+for a kid that isn't going to study more CS. I'll merely argue that
+what we did at Stuy worked with that population and I wouldn't change
+it. At the same time, I've helped a number of teachers design classes and programs
+where we agreed that recursion first was not the way to go.
+</p>
+
+<p>
+In any event, it wasn't that I specifically wanted to do recursion
+early but rather, there were a number of things I wanted to do with
+the class for which Scheme made sense and recursion was just one of
+them.
+</p>
+
+<p>
+Some reasons to like (or for some, to dislike) Scheme early:
+</p>
+<ul class="org-ul">
+<li>It's functional – everything is a function. While this is
+technically not true, we can fudge it a bit at this level. You put
+things in parens so instead of add(a,b) you write (add a b) or
+really (+ a b). You can also do (+ a b c). Things that would be
+statements are also functions: (if Booelean TruePart FalsePart) is the <b>if</b>
+statement. For example <code>(if (&gt;= a b) a b)</code> returns the larger of a
+and b.</li>
+<li>Because it's functional it avoids the issue kids have with <code>=</code> being
+for assignment rather than comparison.</li>
+<li>It has great support for list processing.</li>
+<li>Recursion is much more natural.</li>
+<li>It's a super simple language with simple rules and a simple, small  syntax</li>
+</ul>
+<p>
+Of course, Scheme isn't perfect and some people dislike the above
+reasons. It's also easy to come up with a number of other good reasons
+not to use a language like Scheme. 
+</p>
+
+<p>
+On the recursion front, it makes things much easier. There are no
+loops so recursion develops as a natural form for repetition:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define </span><span class="nv">f</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">x</span><span class="p">)</span> 
+	    <span class="p">(</span><span class="nb">* </span><span class="nv">x</span>  <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nb">- </span><span class="nv">x</span> <span class="mi">1</span><span class="p">)))))</span>
+</pre></div>
+
+<p>
+This defines a function that takes one parameter and returns
+<code>x*(x-1)*(x-2)...</code>. It repeats, but never ends. This leads to adding
+a base case:
+</p>
+
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define </span><span class="nv">f</span> <span class="p">(</span><span class="k">lambda </span><span class="p">(</span><span class="nf">x</span><span class="p">)</span>
+	    <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">&lt; </span><span class="nv">x</span> <span class="mi">2</span><span class="p">)</span>
+		<span class="mi">1</span>
+		<span class="p">(</span><span class="nb">* </span><span class="nv">x</span> <span class="p">(</span><span class="nf">f</span> <span class="p">(</span><span class="nb">- </span><span class="nv">x</span> <span class="mi">1</span><span class="p">))))))</span>
+</pre></div>
+
+<p>
+Which is your basic factorial function.
+</p>
+
+<p>
+Since this use of recursion for repetition  develops naturally as we
+introduce language concepts it's easier for kids to get their heads
+around it as opposed to when they've seen loops already and have an
+"easier" alternative. You can make the case that you could introduce
+recursion this way in a language with loops like Python but once loops
+are available and particularly when loops are idiomatic, students will
+find them and getting them to think recursively will be more
+difficult.
+</p>
+
+<p>
+Scheme and most other functional programming languages also have
+strong support for lists and list recursion. This means you don't have
+to limit yourself to mathy problems. Think about a todo list:
+</p>
+
+<ol class="org-ol">
+<li>Go to the market</li>
+<li>Buy a gallon of milk</li>
+<li>If they have eggs, get a dozen (heh heh)</li>
+<li>Go home</li>
+</ol>
+<p>
+Processing a todo list is really a recursive problem:
+</p>
+
+<ol class="org-ol">
+<li>If the list is empty you're done</li>
+<li>Take the first item off  the list</li>
+<li>Do it</li>
+<li>Recurse</li>
+</ol>
+<p>
+Once you start working with lists, you can play with all sorts of
+recursive examples.
+</p>
+
+<p>
+At the end of the Scheme unit the big project is creating a sentence
+generator. The kids don't know it but they're learning about grammars
+and in fact are writing a recursive descent parser - they just think
+they're writing a program that creates silly sentences. It's a really
+nice project that uses recursion in a way that's different and I'd
+argue more fun and interesting than the usual approaches. 
+</p>
+
+<p>
+I chose Scheme for a variety of reasons. I also chose NetLogo for
+specific reasons. Unlike Scheme (or most other popular learning
+languages), NetLogo is really all about agent based parallel
+processing. There are concepts that we can explore easily and in depth
+with NetLogo that would be tremendously difficult in any other
+language and at the same time, there are things that are easy to
+explore in other languages that Netlogo doesn't lend itself to.
+</p>
+
+<p>
+So, in the end, this post really isn't about when to teach
+recursion. It's more about how languages lend themselves to solving
+different problems and teaching different concepts in different
+ways. If all you have is a hammer, everything looks like a
+nail. Fortunately, we can do better.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/is-cs4all-worth-doing/" class="u-url">Is Cs for All Worth Doing</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
