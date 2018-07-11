@@ -3,13 +3,151 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about git</title>
   <id>http://cestlaz.github.io/categories/git.atom</id>
-  <updated>2018-02-12T19:18:15Z</updated>
+  <updated>2018-06-29T21:25:31Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/git.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/git/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Pull Requests and Other People's Code</title>
+    <id>http://cestlaz.github.io/posts/pull-requests/</id>
+    <updated>2018-04-26T19:07:02-04:00</updated>
+    <published>2018-04-26T19:07:02-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/pull-requests/"/>
+    <summary type="html">&lt;div id="outline-container-org218fb71" class="outline-2"&gt;
+&lt;h2 id="org218fb71"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org218fb71"&gt;
+&lt;p&gt;
+One of the things I've heard for years from former students - both
+those looking for jobs and those looking to hire is that colleges
+don't really do a good job preparing students for careers in
+tech. Sure they teach the algorithms and the theory but ther are a lot
+of missing pieces, particularly on the practical end. I'm certainly
+not advocating turning CS programs into coding schools but there are
+many low cost opportunities to bring practical real world best
+practices in to the CS classroom. I most recently wrote about &lt;a href="http://cestlaz.github.io/posts/testing-part2%0A"&gt;unit
+testing&lt;/a&gt; and had earlier about using &lt;a href="https://cestlaz.github.io/posts/sigcse-2017-github-4"&gt;GitHub as an educational
+tool&lt;/a&gt;. I've been happy with the way I introduce students to Git and
+how we use GitHub in my classes but I've never found a smooth way to
+introduce Pull Requests. A pull request is basically a mechanism by
+which one can suggest a change to a project even if you don't own
+it. The project owner can then decide to merge it in or not. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Being comfortable with the pull request work flow is an important part
+of contributing to open source projects. The basic process is that you
+make a copy of the project you want to work on by forking it, make
+your changes, then issue a pull request back to the project. For a
+beginner, there are a lot of moving parts. Instead, I teach my
+students branching and merging within a project. It's much easier and
+arguably more useful for day to day projects. I'd like my kid to learn the
+pull request mechanics but I haden't thought of a good way to do it. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I've also wanted to give kids more real world experiences in class and
+one experience they rarely get is working in other people's code
+bases. In school you largely write your own projects be they group or
+solo or work off a hopefully tried and true code base provided by the
+instructor. In the real world you're frequently working off of someone
+elses code and it's rarely in a polished state.
+&lt;/p&gt;
+
+&lt;p&gt;
+I finally found a way to kill both birds with one stone. A couple of
+weeks ago my class' lab was rather lengthy. It involved reading in a
+source file and reformating it in a sensible way. I knew most of the
+students wouldn't finish it in the allotted time and even if they did,
+this was an easy assignment to extend. On lab day I had students
+create a new repo for this lab (normally they just add a folder in a
+their "labs" repo) and get as much done as they could. The rule was
+simple - push what you've got up to GitHub at the end of class and
+then you can't push anything else. I also made it clear that I didn't
+expect a completed lab..
+&lt;/p&gt;
+
+&lt;p&gt;
+We continued the lab in the next class session. This time. I randomly
+assigned repos to students so that they would fork someone elses
+lab. They then had to complete the lab on the other students code base
+and then issue a pull request back to the original
+&lt;/p&gt;
+
+&lt;p&gt;
+This was the first time I've tried this so it was a little
+klunky. I'll do a much better job specifying the assignment and
+instructions next time around but even so I think the class went
+well. By the end of the class the students had sucesfully forked a
+project, issued a pull request, and merged one in to their own
+project. The only think I wasn't happy with was that many of the
+merges happened automatically. I have to figure out how to set things
+up so that there are merge conflicts since I want my students to
+experience that.
+&lt;/p&gt;
+
+&lt;p&gt;
+Overall,  I was very happy with the way things worked out. The
+students were able to experience important real workd software
+engineering techniques without removing any of the academic CS in the
+class. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="git" label="git"/>
+    <category term="github" label="github"/>
+    <category term="software-engineering" label="software engineering"/>
+  </entry>
+  <entry>
+    <title>Using Emacs 42 - Git Gutter and Time Machine</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</id>
+    <updated>2018-02-18T08:05:45-04:00</updated>
+    <published>2018-02-18T08:05:45-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-42-git-gutter/"/>
+    <summary type="html">&lt;div id="outline-container-org35ece5c" class="outline-2"&gt;
+&lt;h2 id="org35ece5c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org35ece5c"&gt;
+&lt;p&gt;
+One day I'll do a Magit video but since there are already some good
+ones out there I thought I'd share a couple of other great git related
+packages.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first is &lt;a href="https://github.com/syohex/emacs-git-gutter/tree/00c05264af046b5ce248e5b0bc42f117d9c27a09"&gt;Git Gutter&lt;/a&gt; which adds markers on the side gutter of your
+buffer so you know what's changed since you're last commit. I pretty
+much use it exclusively for that visual but it can also be used to
+cmmit and revert individual chunks of your changes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The second is &lt;a href="https://github.com/pidu/git-timemachine"&gt;Git Timemachine&lt;/a&gt; which lets you move forward and back
+between commits. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The video demos both. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy
+&lt;/p&gt;
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/P-mLxkb-EE8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="git" label="git"/>
+  </entry>
   <entry>
     <title>Collaborative Coding or Cheating</title>
     <id>http://cestlaz.github.io/posts/collaborative-coding-or-cheating/</id>
@@ -19,9 +157,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/collaborative-coding-or-cheating/"/>
-    <summary type="html">&lt;div id="outline-container-org27ceac4" class="outline-2"&gt;
-&lt;h2 id="org27ceac4"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org27ceac4"&gt;
+    <summary type="html">&lt;div id="outline-container-org940b165" class="outline-2"&gt;
+&lt;h2 id="org940b165"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org940b165"&gt;
 &lt;p&gt;
 I haven't been teaching this past semester. That's why I haven't been
 writing much about lessons. I miss working with students but that will
