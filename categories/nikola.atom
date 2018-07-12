@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about nikola</title>
   <id>http://cestlaz.github.io/categories/nikola.atom</id>
-  <updated>2018-06-29T21:25:32Z</updated>
+  <updated>2018-02-12T19:18:15Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -19,9 +19,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/shell-short-tagging/"/>
-    <summary type="html">&lt;div id="outline-container-org21eb107" class="outline-2"&gt;
-&lt;h2 id="org21eb107"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org21eb107"&gt;
+    <summary type="html">&lt;div id="outline-container-org7885517" class="outline-2"&gt;
+&lt;h2 id="org7885517"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7885517"&gt;
 &lt;p&gt;
 Quick post to add to the recent command line fu I've been writing
 about.
@@ -90,17 +90,17 @@ done
 A line at a time:
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgd2eb751" class="outline-3"&gt;
-&lt;h3 id="orgd2eb751"&gt;ls *md *html&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgd2eb751"&gt;
+&lt;div id="outline-container-orgfdd36ca" class="outline-3"&gt;
+&lt;h3 id="orgfdd36ca"&gt;ls *md *html&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgfdd36ca"&gt;
 &lt;p&gt;
 This lists all the files with that end in &lt;b&gt;&lt;b&gt;md&lt;/b&gt;&lt;/b&gt; or &lt;b&gt;&lt;b&gt;html&lt;/b&gt;&lt;/b&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org56cdb5a" class="outline-3"&gt;
-&lt;h3 id="org56cdb5a"&gt;| while read filename&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org56cdb5a"&gt;
+&lt;div id="outline-container-orga1556d5" class="outline-3"&gt;
+&lt;h3 id="orga1556d5"&gt;| while read filename&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orga1556d5"&gt;
 &lt;p&gt;
 The vertical bar (pipe) sends the output of &lt;b&gt;&lt;b&gt;ls&lt;/b&gt;&lt;/b&gt; into the &lt;b&gt;&lt;b&gt;while read&lt;/b&gt;&lt;/b&gt;
 command. The &lt;b&gt;&lt;b&gt;while&lt;/b&gt;&lt;/b&gt; command sets up a loop which, each time
@@ -110,9 +110,9 @@ through, reads the next input and places into the variable
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org1115dbc" class="outline-3"&gt;
-&lt;h3 id="org1115dbc"&gt;sed "/ type: text/  i .. tags: " $filename&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org1115dbc"&gt;
+&lt;div id="outline-container-orgfb7818c" class="outline-3"&gt;
+&lt;h3 id="orgfb7818c"&gt;sed "/ type: text/  i .. tags: " $filename&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgfb7818c"&gt;
 &lt;p&gt;
 Sed is the stream editor. The stuff between the slashes finds the line
 with the text &lt;b&gt;&lt;b&gt;type: text&lt;/b&gt;&lt;/b&gt; in it. The &lt;b&gt;&lt;b&gt;i&lt;/b&gt;&lt;/b&gt; inserts a line above and
@@ -124,9 +124,9 @@ loop.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgb32ec95" class="outline-2"&gt;
-&lt;h2 id="orgb32ec95"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb32ec95"&gt;
+&lt;div id="outline-container-org6627200" class="outline-2"&gt;
+&lt;h2 id="org6627200"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6627200"&gt;
 &lt;p&gt;
 Now all of my files have blank &lt;b&gt;&lt;b&gt;tag&lt;/b&gt;&lt;/b&gt; slugs so I can find my netlogo
 posts and tag them:
