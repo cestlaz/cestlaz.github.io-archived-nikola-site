@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 40)</title>
   <id>http://cestlaz.github.io/index-40.atom</id>
-  <updated>2018-07-12T23:33:50Z</updated>
+  <updated>2018-07-16T23:39:43Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,254 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-39.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-40.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>How I Grokked OOP</title>
+    <id>http://cestlaz.github.io/posts/how-i-grokked-oop/</id>
+    <updated>2018-06-14T12:15:41-04:00</updated>
+    <published>2018-06-14T12:15:41-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/how-i-grokked-oop/"/>
+    <summary type="html">&lt;div id="outline-container-org52c16b8" class="outline-2"&gt;
+&lt;h2 id="org52c16b8"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org52c16b8"&gt;
+&lt;p&gt;
+Time to get back to CS and CS Ed related blogging.
+&lt;/p&gt;
+
+&lt;p&gt;
+Last week, in Garth Flint's post about his &lt;a href="https://gflint.wordpress.com/2018/06/01/747/"&gt;summer plans&lt;/a&gt;, Garth
+mentioned wanting to get his head around Object Oriented Programming
+and possibly taking a course to help him get there. I thought I'd talk
+a little about how I got my head around OOP here and some of the
+difficulties I faced then and what people might face now.
+&lt;/p&gt;
+
+&lt;p&gt;
+Nowadays, kids are faced with OOP pretty early on. If they take APCS-A
+they're using Java which is Object Oriented. Same if they start
+at a college using Java. If they start with C++ or Python they may or
+may not see objects early on. In any event, the nature of that first
+course doesn't really lend itself to really grokking OOP. Even if a
+student takes a class prior to APCS-A or it's college equivalent,
+they're pretty y raw. Small programs with just a few constructs don't
+really show the uses of OOP. Both inheritance and interfaces can feel
+forced in a first year course and when the examples are artificial and
+wonky and their are easier ways to accomplish the same task, it's hard
+for a student to really buy into the paradigm.
+&lt;/p&gt;
+
+&lt;p&gt;
+Now, in all fairness, I'm not a big fan of Object Oriented Programming
+and it's usually not the first tool I go to. That said, it's a useful
+tool and it has it's place.
+&lt;/p&gt;
+
+&lt;p&gt;
+I cut my teeth in the 1980s. I went to the Courant Institute at
+NYU. The core language back then was Pascal which had a number of
+limitations including only supporting single file programs. Somewhere
+along the line I taught myself C which most professors were happy to
+accept assignments in. I never heard of OOP in my formal
+schooling. Some time near or soon after I graduated I had heard of
+this C++ thing but hadn't used it.
+&lt;/p&gt;
+
+&lt;p&gt;
+After working my way through school I spent some time as a developer
+at Goldman Sachs. I was the only guy on my team doing Windows 2.1
+development. Windows 2.1 was built on top of DOS. It's big improvement
+over Windows 1.0 was that it supported overlapping windows. Pretty cool.
+&lt;/p&gt;
+
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Windows_2.1.png" alt="Windows_2.1.png" width="300px" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+I learned to program Windows like everyone else:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://www.charlespetzold.com/oop/pw1.png" alt="pw1.png" width="200px" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+It was all done in C. The big project I was on was for Global
+Equities. Specifically, supporting trading of Japanese Warrants. I had
+to write a trading system and in doing that implement among other
+things a mini spreadsheet in C from bare metal.
+&lt;/p&gt;
+
+&lt;p&gt;
+This was probably going to be the most complex thing I designed and
+built from scratch to date. I had a bunch of cells that were
+associated with either rows or columns or both and all sorts of
+complex interactions. I needed a way to manage complexity and even
+though I didn't use the term at the time, manage state. 
+&lt;/p&gt;
+
+&lt;p&gt;
+C doesn't have a lot of fancy in language constructs to help and I was
+somewhat on an island - I taught myself C and there weren't any
+experienced C / Windows programmers in my group or on my floor so I
+had to figure things out on my own.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's what I came up with, or rather something like what I came up
+with – it was close to 30 years ago and I don't even remember 100% of
+what it was supposed to do.
+&lt;/p&gt;
+
+&lt;p&gt;
+I decided to create a single file for each concept -
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;cell.c / cell.h for cells&lt;/li&gt;
+&lt;li&gt;row.c / row.h for rows&lt;/li&gt;
+&lt;li&gt;sheet.c / sheet.h for&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+In each, I would do something like this:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/* sheet.c */&lt;/span&gt;
+
+
+&lt;span class="cm"&gt;/* things declared here are "global" but limited to this file **/&lt;/span&gt;
+&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;sheet&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;sheets&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="cm"&gt;/* an array of the sheets */&lt;/span&gt;
+
+&lt;span class="cm"&gt;/* functions that will be made available to other files */&lt;/span&gt;
+
+&lt;span class="cm"&gt;/* return a pointer to the named sheet */&lt;/span&gt;
+&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;sheet&lt;/span&gt; &lt;span class="nf"&gt;sheet_get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+&lt;span class="cm"&gt;/* implementation */&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="cm"&gt;/* create a new sheet */&lt;/span&gt;
+&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;sheet&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nf"&gt;sheet_create&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;rows&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;cols&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+&lt;span class="cm"&gt;/* implementation/&lt;/span&gt;
+&lt;span class="cm"&gt;}&lt;/span&gt;
+
+&lt;span class="cm"&gt;/* functions that will only be used internally */&lt;/span&gt;
+
+&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;sheet&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;allocate_sheet_memory&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;rows&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;cols&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+&lt;span class="cm"&gt;/*implementation*/&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+
+&lt;span class="cm"&gt;/* etc */&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cm"&gt;/* sheet.h */&lt;/span&gt;
+
+&lt;span class="cm"&gt;/* &lt;/span&gt;
+&lt;span class="cm"&gt;   Note that only the headers for the exterrnally available stuff is included&lt;/span&gt;
+&lt;span class="cm"&gt;*/&lt;/span&gt;
+
+
+&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;sheet&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nf"&gt;sheet_get&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;sheet&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nf"&gt;sheet_create&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;rows&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;cols&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The idea is that everything about a sheet is in &lt;code&gt;sheet.c&lt;/code&gt; and only a
+few functions are made available to the rest of the program via the
+header file. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Shortly after I designed the program, I started to delve into OOP at
+the encouragement of some colleagues. I read Meyer:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="https://images.gr-assets.com/books/1392538685l/3328934.jpg" alt="3328934.jpg" width="200px" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+and the first edition of Booch: 
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="https://www.pearsonhighered.com/assets/bigcovers/0/8/0/5/0805353402.jpg" alt="0805353402.jpg" width="200px" align="center"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+I realized that in a way I was implementing singleton objects in
+C. The file declared the object. The functions I exposed via the
+header files were public, the other functions private and the "global"
+variables that were local to the file, private class variables.
+&lt;/p&gt;
+
+&lt;p&gt;
+There was no inheritance but it did help me encapsulate functionality
+and state. 
+&lt;/p&gt;
+
+&lt;p&gt;
+It turns out I saw something like this when I briefly looked at Ada. I
+think it was called Object Typed Programming - objects with only a
+single instance and no inheritance. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The books gave me the official names for things but the project I was
+developing gave me the context to where it all made sense. I had a
+problem to solve that didn't lend itself to a low level imperative
+language but you work with the tools you have and this is what I came
+up with.
+&lt;/p&gt;
+
+&lt;p&gt;
+Unfortunately, it's harder for beginners as projects are smaller and
+while there are good small example of OOP there's also so much going
+on in a course like APCS-A. It gets more convoluted when you're using
+Python or C++ as you might be shown Objects in a C++ class while
+professor is really teaching C with Objects rather than doing things
+the C++ way. 
+&lt;/p&gt;
+
+&lt;p&gt;
+One thing that helps is using a language or tool where objects make
+sense. NetLogo - used in Stuy's intro course is a nice one. Turtles
+and patches - the inhabitants of the NetLogo can be viewed as
+objects. I'd draw heavily on NetLogo analogies when teaching APCS at
+Stuy. There are also tools like BlueJ which is tied closely to objects
+and is probably terrific at giving structure to help objects make
+sense but I don't like those types of tools for other reasons.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the end of the day, it is just a tool and to be honest, I'm not
+really a big fan of OOP. I'll use it but it's not my go to paradigm.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'll leave you with this video which talks about why:
+&lt;/p&gt;
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/QM1iUe6IofM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
   <entry>
     <title>Giving control of NYC's specialized schools to a political appointee</title>
     <id>http://cestlaz.github.io/posts/shsat-part2/</id>
