@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about email, emacs, tools</title>
   <id>http://cestlaz.github.io/categories/cat_email-emacs-tools.atom</id>
-  <updated>2018-06-30T18:59:37Z</updated>
+  <updated>2018-06-21T18:02:38Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -19,9 +19,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/"/>
-    <summary type="html">&lt;div id="outline-container-org892f4be" class="outline-2"&gt;
-&lt;h2 id="org892f4be"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org892f4be"&gt;
+    <summary type="html">&lt;div id="outline-container-org5e51f96" class="outline-2"&gt;
+&lt;h2 id="org5e51f96"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5e51f96"&gt;
 &lt;p&gt;
 I've been using Emacs for email for a couple of years now. Not for
 everything, for now my personal email is still Gmail but work is sent
@@ -29,51 +29,6 @@ and read through Emacs. I'm currently using &lt;a href="https://www.djcbsoftware
 few quirks and limitations, I like it very much. You can take a look
 on how I configure and use it &lt;a href="http://cestlaz.github.io/posts/using-emacs-39-mu4e/"&gt;here&lt;/a&gt;.
 &lt;/p&gt;
-
-&lt;p&gt;
-The other day I saw &lt;a href="https://www.reddit.com/r/emacs/comments/8qryri/mu4econversation_single_buffer_fullthread_display/"&gt;this&lt;/a&gt; thread on Emacs about a new package -
-&lt;a href="https://gitlab.com/ambrevar/mu4e-conversation"&gt;mu4e-conversation&lt;/a&gt;. It's a package that deals with email threads.
-&lt;/p&gt;
-
-&lt;p&gt;
-It's pretty cool. You can invoke it whenever you're in the headers
-view you can just run &lt;code&gt;M-x mu4e-conversation&lt;/code&gt; and it combines all the
-email messages in the current thread into a single buffer. 
-&lt;/p&gt;
-
-&lt;p&gt;
-It's pretty nice. 
-&lt;/p&gt;
-
-&lt;p&gt;
-You can navigate between messages in the thread with &lt;code&gt;C-c C-n&lt;/code&gt; and
-&lt;code&gt;C-c C-p&lt;/code&gt; and use most if not all of the usual mu4e goodness but on
-top of that you can also toggle what the author calls tree mode by
-hitting &lt;code&gt;V&lt;/code&gt;. Tree mode turns the thread into an org-mode tree - also
-extremely cool.
-&lt;/p&gt;
-
-&lt;p&gt;
-On top of this, you can also make mu4e your default viewing mode by
-setting a single variable with &lt;code&gt;(setq mu4e-view-func 'mu4e-conversation)&lt;/code&gt;.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-Although it's very cool, I'm not sure if mu4e-conversation will find
-its way into my workflow or not and probably won't know for a
-while. This is mostly due to the fact that it's summer so work email
-slows down and I won't have too many long threads to play with this
-on.
-&lt;/p&gt;
-
-&lt;p&gt;
-I'll report back once I give it a fair shake but in the meantime if
-anyone out there has had the time to play with it, let us know what
-you think.
-&lt;/p&gt;
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/V5efS8uXANI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
     <category term="editing" label="editing"/>

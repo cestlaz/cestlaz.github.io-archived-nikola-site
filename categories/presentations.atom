@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about presentations</title>
   <id>http://cestlaz.github.io/categories/presentations.atom</id>
-  <updated>2018-06-30T18:59:37Z</updated>
+  <updated>2018-07-23T19:54:58Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -19,9 +19,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-50-presentations/"/>
-    <summary type="html">&lt;div id="outline-container-org69909f0" class="outline-2"&gt;
-&lt;h2 id="org69909f0"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org69909f0"&gt;
+    <summary type="html">&lt;div id="outline-container-orgeeb26ca" class="outline-2"&gt;
+&lt;h2 id="orgeeb26ca"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgeeb26ca"&gt;
 &lt;p&gt;
 Next weekend I'll be attending the Computer Science Teachers
 Association's &lt;a href="https://www.csteachers.org/general/custom.asp?page=2018Conference"&gt;annual conference.&lt;/a&gt; It's probably the biggest conference
@@ -46,30 +46,38 @@ presentation.
 Org-mode is of course the ideal tool. As an outliner, it lends itself
 to organizing a talk:
 &lt;/p&gt;
-&lt;/div&gt;
 
-&lt;div id="outline-container-org6314d79" class="outline-3"&gt;
-&lt;h3 id="org6314d79"&gt;topic 1&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-orgae76a19" class="outline-3"&gt;
-&lt;h3 id="orgae76a19"&gt;topic 2&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div id="outline-container-orgcdb2bc7" class="outline-3"&gt;
-&lt;h3 id="orgcdb2bc7"&gt;topic 3&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;* topic 1
+   the content for slide one
+* topic 2
+   the content for slide two
+* topic 3
+   etc.
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;div id="outline-container-orgc2c85e1" class="outline-2"&gt;
-&lt;h2 id="orgc2c85e1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc2c85e1"&gt;
 &lt;p&gt;
-etc. 
+I can embed code, tables, images, and more. I can also cycle
+visibility so I can focus on individual sections. Org-mode also has a
+number of export options to take a plain org file which is just ascii
+with markup and export it as a presentation. In the video, I'll take a
+quick look at &lt;code&gt;ox-beamer&lt;/code&gt;, which exports to a Beamer presentation in LaTeX and then a PDF,
+&lt;code&gt;epresent&lt;/code&gt; which presents right in Emacs and finally &lt;code&gt;ox-reveal&lt;/code&gt; wich
+creates a &lt;code&gt;reveal.js&lt;/code&gt; presentation. I ultimately decide to continue to
+use &lt;code&gt;ox-reveal&lt;/code&gt; as it's pretty simple and flexible and I can also directly serve
+the final presentation from my own laptop, a usb drive, or directly
+from GitHub. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Check out the video to see how. If you want more information on using
+&lt;code&gt;ox-reveal&lt;/code&gt; check out my earlier &lt;a href="http://cestlaz.github.io/posts/using-emacs-11-reveal"&gt;Using Emacs post and video&lt;/a&gt;. 
 &lt;/p&gt;
 
 
-&lt;p&gt;
-&lt;a href="http://cestlaz.github.io/posts/using-emacs-11-reveal"&gt;http://cestlaz.github.io/posts/using-emacs-11-reveal&lt;/a&gt;
-&lt;/p&gt;
+
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/bRoSpJ23Kzk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
     <category term="emacs" label="emacs"/>
