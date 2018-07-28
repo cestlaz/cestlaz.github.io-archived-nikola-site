@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2018-07-23T19:55:20Z</updated>
+  <updated>2018-07-28T21:13:35Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,121 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-40.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Two Faces of Project Based Learning</title>
+    <id>http://cestlaz.github.io/posts/two-faces-of-pbl/</id>
+    <updated>2018-07-28T15:59:45-04:00</updated>
+    <published>2018-07-28T15:59:45-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/two-faces-of-pbl/"/>
+    <summary type="html">&lt;div id="outline-container-org9ba0c60" class="outline-2"&gt;
+&lt;h2 id="org9ba0c60"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9ba0c60"&gt;
+&lt;p&gt;
+If one looks at my twitter feed they'll notice that in addition to CS
+Ed, another issue I'm passionate about is school reform or rather
+resistance to what is popularly known as and mislabeled as school reform. I'm anti
+vouchers, charter schools, high stakes testing and more. One of the
+heroes of this resistance is education historian Diane Ravitch. I'm a
+big fan of Diane's and she's one of the true great champions of public
+schools, kids, and teachers. She blogged today about how a superintendent on Long Island &lt;a href="https://dianeravitch.net/2018/07/27/new-york-district-on-long-island-shows-that-problem-based-curriculum-produces-better-results-than-test-prep/"&gt;replaced test
+prep with project based learning&lt;/a&gt;. The post which talks about how this
+superintendent improved test results  is worth a read. My only
+quibble was that we shouldn't read anything into the results for a
+variety of reasons including the fact that the group of students who
+did the project based learning (PBL) units instead of test prep were
+self selecting volunteers.
+&lt;/p&gt;
+
+&lt;p&gt;
+One of the comments caught my eye: 
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+PBL is just another “student-centered” fad…
+&lt;/p&gt;
+
+&lt;p&gt;
+PBL operates on the myth of “transference” perpetuated by non-educators.
+&lt;/p&gt;
+
+&lt;p&gt;
+…
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+The comment continues on with a number of good points.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why am I writing about it here? Because PBL is a big CS Ed buzzword
+and like most buzzwords there's both truth at the root of the hype and
+hype that distorts the truth.
+&lt;/p&gt;
+
+&lt;p&gt;
+When done right with the right group of kids, project based learning
+can be wonderful but it takes a lot of time and effort. You can't just
+set the kids loose to learn. You've got to train them to work
+together, set up the project, as the teacher, you've got to know the
+subject so as to know when to guide, when to tell, when to prod, and when to leave
+them alone. Doing it right, at least for most students, is certainly
+not giving them the instruction sheet and going off the check your
+email. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand, it's easy to do it wrong. If you've got high
+performing kids, they'll figure things out. If you've got a few high
+performing kids, they can mask the fact that the majority of a group
+isn't getting things. You might have an assignment where a kid figures
+out a formula from discovered data and might be able to then use it to
+make predictions but there's a good chance they won't understand why
+it works or it's root derivation. That's where we need the teacher. 
+&lt;/p&gt;
+
+&lt;p&gt;
+One of the dangers of bad PBL is that it's sexy. Kids are engaged and
+it appears to work - particularly when the teacher doesn't know the
+subject area. This is my great fear whenever I hear things about
+teachers being "Lead Learners." Sure, when you're a converted
+something else teacher moving into CS you won't know the subject
+matter but that has to change over time. I've seen enough instances of
+cases where teachers never develop their chops and just throw projects
+at the kids augmented by scripted curricula or computer driver
+content. The kids get through the class or program but are not
+prepared for the next class or next level. I've seen this with the old
+Cisco curriculum, any number of after school and summer programs -
+some VERY highly regarded ones and I think we'll see more and more of
+this in states that are pushing CSforAll without developing the
+necessary pre and in service programs for their teachers. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Don't let my last two paragraphs leave you feeling that I'm anti
+PBL. I'm not. It's great when done right and if you have thee time and
+resources in your school and classes you should be using it when
+appropriate. 
+&lt;/p&gt;
+
+
+&lt;p&gt;
+If you want some pointers on how to get going in the right direction with PBL in CS  check out &lt;a href="https://www.amazon.com/Computer-Science-K-12-Imagining-possibilities-ebook/dp/B07DYDXBSH/ref=sr_1_1?ie=UTF8&amp;amp;qid=1532808363&amp;amp;sr=8-1&amp;amp;keywords=doug+bergman"&gt;this
+book&lt;/a&gt; by my buddy Doug Bergman. It's a great getting started guide by a
+great teacher. He's basically Mr. PBL and he does it right.  If you're new to CS you'll still need to learn content
+and if you're new to teaching, you'll be developing your chops for
+your entire career but it's a great resource to get you and then your
+kids started on the journey.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="csed" label="csed"/>
+    <category term="pbl" label="pbl"/>
+    <category term="pedagogy" label="pedagogy"/>
+  </entry>
   <entry>
     <title>Keyboarding and the Digital Divide</title>
     <id>http://cestlaz.github.io/posts/keyboarding-dig-divite/</id>
@@ -20,9 +135,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/keyboarding-dig-divite/"/>
-    <summary type="html">&lt;div id="outline-container-org230da27" class="outline-2"&gt;
-&lt;h2 id="org230da27"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org230da27"&gt;
+    <summary type="html">&lt;div id="outline-container-org82e7314" class="outline-2"&gt;
+&lt;h2 id="org82e7314"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org82e7314"&gt;
 &lt;p&gt;
 My friend Adam posted this link to an article on &lt;a href="http://www.asahi.com/ajw/articles/AJ201803290068.html"&gt;the new digital
 divide&lt;/a&gt; the other day. It's talking about young people who do
@@ -142,9 +257,9 @@ understand that and act accordingly.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/time-to-create-an-ethics-course/"/>
-    <summary type="html">&lt;div id="outline-container-orge951ed7" class="outline-2"&gt;
-&lt;h2 id="orge951ed7"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge951ed7"&gt;
+    <summary type="html">&lt;div id="outline-container-orgc45bbe2" class="outline-2"&gt;
+&lt;h2 id="orgc45bbe2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc45bbe2"&gt;
 &lt;p&gt;
 I think it's time for me to start developing a CS Ethics class. 
 &lt;/p&gt;
@@ -216,9 +331,9 @@ publish whatever the end result is.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/brian-kernighan-videos/"/>
-    <summary type="html">&lt;div id="outline-container-orgfaceb63" class="outline-2"&gt;
-&lt;h2 id="orgfaceb63"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgfaceb63"&gt;
+    <summary type="html">&lt;div id="outline-container-org4d95223" class="outline-2"&gt;
+&lt;h2 id="org4d95223"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4d95223"&gt;
 &lt;p&gt;
 I noticed a couple of short videos - interviews with &lt;a href="https://en.wikipedia.org/wiki/Brian_Kernighan"&gt;Brian Kernighan&lt;/a&gt; -
 on my YouTube home page the other day. This is probably because I
@@ -305,9 +420,9 @@ Part 2:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/how-early-apcs/"/>
-    <summary type="html">&lt;div id="outline-container-org8d639ce" class="outline-2"&gt;
-&lt;h2 id="org8d639ce"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8d639ce"&gt;
+    <summary type="html">&lt;div id="outline-container-orgcbbac1b" class="outline-2"&gt;
+&lt;h2 id="orgcbbac1b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgcbbac1b"&gt;
 &lt;p&gt;
 In what grade should students take APCS? This question comes up from
 time to time. 
@@ -346,9 +461,9 @@ Stuy.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org8bc9033" class="outline-2"&gt;
-&lt;h2 id="org8bc9033"&gt;MATH BOOKS and Physics First&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8bc9033"&gt;
+&lt;div id="outline-container-org36525a3" class="outline-2"&gt;
+&lt;h2 id="org36525a3"&gt;MATH BOOKS and Physics First&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org36525a3"&gt;
 &lt;p&gt;
 As parents, my wife and I learned early on that we'd have to
 supplement what our kids would learn in school, particularly in terms
@@ -399,9 +514,9 @@ considerably.
 
 
 
-&lt;div id="outline-container-org541d0ab" class="outline-2"&gt;
-&lt;h2 id="org541d0ab"&gt;APCS&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org541d0ab"&gt;
+&lt;div id="outline-container-org91aa818" class="outline-2"&gt;
+&lt;h2 id="org91aa818"&gt;APCS&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org91aa818"&gt;
 &lt;p&gt;
 So what about APCS? At Stuy we always taught a superset of the old
 APCS-AB. It's mostly APCS-A in the Fall semester and Data Structures
@@ -442,9 +557,9 @@ our AP class.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org6112b98" class="outline-2"&gt;
-&lt;h2 id="org6112b98"&gt;Has it worked?&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6112b98"&gt;
+&lt;div id="outline-container-org4cf1f0e" class="outline-2"&gt;
+&lt;h2 id="org4cf1f0e"&gt;Has it worked?&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4cf1f0e"&gt;
 &lt;p&gt;
 By and large the system has worked. Kids now get an intro in the 10th
 grade followed by APCS in 11 and more electives if desired in the
@@ -468,9 +583,9 @@ everything else, it seems that this works the best for us.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgb1872c2" class="outline-2"&gt;
-&lt;h2 id="orgb1872c2"&gt;Why the rush?&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb1872c2"&gt;
+&lt;div id="outline-container-org6963d1b" class="outline-2"&gt;
+&lt;h2 id="org6963d1b"&gt;Why the rush?&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6963d1b"&gt;
 &lt;p&gt;
 Frequently the question as to when to teach APCS revolves around how
 early it can be taught. I have to ask - why are we so caught up with
@@ -507,9 +622,9 @@ right answer to this.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org698e75b" class="outline-2"&gt;
-&lt;h2 id="org698e75b"&gt;Last words and what should you do?&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org698e75b"&gt;
+&lt;div id="outline-container-org3956df4" class="outline-2"&gt;
+&lt;h2 id="org3956df4"&gt;Last words and what should you do?&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3956df4"&gt;
 &lt;p&gt;
 As I said up front, there's no right answer to this. I'm still
 convinced that 11th grade is probably the best general entry point for
@@ -561,9 +676,9 @@ we're doing pretty good.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/csta-2018-future/"/>
-    <summary type="html">&lt;div id="outline-container-orgec03c5b" class="outline-2"&gt;
-&lt;h2 id="orgec03c5b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgec03c5b"&gt;
+    <summary type="html">&lt;div id="outline-container-orgf1dbdf4" class="outline-2"&gt;
+&lt;h2 id="orgf1dbdf4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf1dbdf4"&gt;
 &lt;p&gt;
 In addition to everything I wrote about last time there were a couple
 of other big announcements at this year's CSTA conference. Both
@@ -651,9 +766,9 @@ this year brings both on the local and national level.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/csta-2018-report/"/>
-    <summary type="html">&lt;div id="outline-container-org9c6ca8d" class="outline-2"&gt;
-&lt;h2 id="org9c6ca8d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9c6ca8d"&gt;
+    <summary type="html">&lt;div id="outline-container-org78aa4a7" class="outline-2"&gt;
+&lt;h2 id="org78aa4a7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org78aa4a7"&gt;
 &lt;p&gt;
 I just got back from the CSTA (Computer Science Teacher's Association)
 conference. It's the biggest annual conference dedicated to K12 CS
@@ -827,9 +942,9 @@ already looking forward to next year.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/ap-2018/"/>
-    <summary type="html">&lt;div id="outline-container-orga763f39" class="outline-2"&gt;
-&lt;h2 id="orga763f39"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga763f39"&gt;
+    <summary type="html">&lt;div id="outline-container-org3bf0593" class="outline-2"&gt;
+&lt;h2 id="org3bf0593"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3bf0593"&gt;
 &lt;p&gt;
 While busy finishing off my sides for my talk at CSTA2018 this weekend
 I noticed a Facebook post about APCS exam grades now or shortly being
@@ -948,9 +1063,9 @@ Hope to see many of you this weekend at CSTA2018.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/certification-the-old-way/"/>
-    <summary type="html">&lt;div id="outline-container-orgb6bb803" class="outline-2"&gt;
-&lt;h2 id="orgb6bb803"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb6bb803"&gt;
+    <summary type="html">&lt;div id="outline-container-org2914da7" class="outline-2"&gt;
+&lt;h2 id="org2914da7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org2914da7"&gt;
 &lt;p&gt;
 I've taken part in a few conversations and read more than a few
 threads on teacher certification exams recently. Specifically, CS
@@ -1131,9 +1246,9 @@ day.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/csta-2018/"/>
-    <summary type="html">&lt;div id="outline-container-org7e69b96" class="outline-2"&gt;
-&lt;h2 id="org7e69b96"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7e69b96"&gt;
+    <summary type="html">&lt;div id="outline-container-org59368bf" class="outline-2"&gt;
+&lt;h2 id="org59368bf"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org59368bf"&gt;
 &lt;p&gt;
 As I mentioned in my last post, this coming weekend is the Computer
 Science Teachers Association (CSTA) conference. I've been a member of
@@ -1193,79 +1308,5 @@ hope others do as well.
 &lt;/div&gt;</summary>
     <category term="csed" label="csed"/>
     <category term="education" label="education"/>
-  </entry>
-  <entry>
-    <title>Using Emacs Episode 50 - presentations</title>
-    <id>http://cestlaz.github.io/posts/using-emacs-50-presentations/</id>
-    <updated>2018-06-30T14:10:24-04:00</updated>
-    <published>2018-06-30T14:10:24-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-50-presentations/"/>
-    <summary type="html">&lt;div id="outline-container-orgeeb26ca" class="outline-2"&gt;
-&lt;h2 id="orgeeb26ca"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgeeb26ca"&gt;
-&lt;p&gt;
-Next weekend I'll be attending the Computer Science Teachers
-Association's &lt;a href="https://www.csteachers.org/general/custom.asp?page=2018Conference"&gt;annual conference.&lt;/a&gt; It's probably the biggest conference
-focussed on K12 Computer Science education. This year, in addition to
-attending, I'll be giving a talk on preservice and inservice CS
-teacher preparation programs. I'll be talking about the new New York
-State certification requirements along with what we're rolling out at
-Hunter College. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This means putting together a slide deck for the session. When I have
-to work collaboratively with non-Emacs users, I will usually go to
-Google Docs for presentations. It works and the collaborative aspects
-are nice but tools like Google Docs and Powerpoint are designed around
-composing slides manually. I much prefer to use a tool where I can
-focus on writing my presentation and have the tool turn it into a
-presentation.
-&lt;/p&gt;
-
-&lt;p&gt;
-Org-mode is of course the ideal tool. As an outliner, it lends itself
-to organizing a talk:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;* topic 1
-   the content for slide one
-* topic 2
-   the content for slide two
-* topic 3
-   etc.
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-I can embed code, tables, images, and more. I can also cycle
-visibility so I can focus on individual sections. Org-mode also has a
-number of export options to take a plain org file which is just ascii
-with markup and export it as a presentation. In the video, I'll take a
-quick look at &lt;code&gt;ox-beamer&lt;/code&gt;, which exports to a Beamer presentation in LaTeX and then a PDF,
-&lt;code&gt;epresent&lt;/code&gt; which presents right in Emacs and finally &lt;code&gt;ox-reveal&lt;/code&gt; wich
-creates a &lt;code&gt;reveal.js&lt;/code&gt; presentation. I ultimately decide to continue to
-use &lt;code&gt;ox-reveal&lt;/code&gt; as it's pretty simple and flexible and I can also directly serve
-the final presentation from my own laptop, a usb drive, or directly
-from GitHub. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Check out the video to see how. If you want more information on using
-&lt;code&gt;ox-reveal&lt;/code&gt; check out my earlier &lt;a href="http://cestlaz.github.io/posts/using-emacs-11-reveal"&gt;Using Emacs post and video&lt;/a&gt;. 
-&lt;/p&gt;
-
-
-
-
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/bRoSpJ23Kzk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="emacs" label="emacs"/>
-    <category term="presentations" label="presentations"/>
-    <category term="tools" label="tools"/>
   </entry>
 </feed>
