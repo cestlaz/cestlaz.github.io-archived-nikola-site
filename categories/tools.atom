@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about tools</title>
   <id>http://cestlaz.github.io/categories/tools.atom</id>
-  <updated>2018-02-16T13:07:17Z</updated>
+  <updated>2018-02-12T19:18:17Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -19,9 +19,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/"/>
-    <summary type="html">&lt;div id="outline-container-org50706fc" class="outline-2"&gt;
-&lt;h2 id="org50706fc"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org50706fc"&gt;
+    <summary type="html">&lt;div id="outline-container-org1432f66" class="outline-2"&gt;
+&lt;h2 id="org1432f66"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1432f66"&gt;
 &lt;p&gt;
 Thanks to everyone who voted for topics or commented with suggestions
 for videos. I'll try to get to them in the coming months.
@@ -34,9 +34,9 @@ browser extension that allows you to edit web form inputs with Emacs.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org3eef295" class="outline-2"&gt;
-&lt;h2 id="org3eef295"&gt;UPDATE&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3eef295"&gt;
+&lt;div id="outline-container-org1fd9c1a" class="outline-2"&gt;
+&lt;h2 id="org1fd9c1a"&gt;UPDATE&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1fd9c1a"&gt;
 &lt;p&gt;
 I forgot to mention that you can set a shortcut key, at least in chrome rather than
 clicking on the icon. This makes things much smoother.
@@ -72,9 +72,9 @@ Enjoy:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-39-mu4e/"/>
-    <summary type="html">&lt;div id="outline-container-orgadbd9d3" class="outline-2"&gt;
-&lt;h2 id="orgadbd9d3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgadbd9d3"&gt;
+    <summary type="html">&lt;div id="outline-container-org5eebc40" class="outline-2"&gt;
+&lt;h2 id="org5eebc40"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5eebc40"&gt;
 &lt;p&gt;
 I generally use three email accounts. My personal one, work one, and
 one for my non-profit. For a couple of years, I've been using mu4e
@@ -114,9 +114,9 @@ thought of as three parts.
 &lt;/ol&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org91d0311" class="outline-3"&gt;
-&lt;h3 id="org91d0311"&gt;Part 1 Getting the email to your local machine using mbsync&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org91d0311"&gt;
+&lt;div id="outline-container-orga9335b9" class="outline-3"&gt;
+&lt;h3 id="orga9335b9"&gt;Part 1 Getting the email to your local machine using mbsync&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orga9335b9"&gt;
 &lt;p&gt;
 I found his terrific blog post by &lt;a href="https://twitter.com/robstewartUK"&gt;Rob Stewart&lt;/a&gt; on setting up &lt;a href="http://www.macs.hw.ac.uk/~rs46/posts/2014-01-13-mu4e-email-client.html"&gt;mbsync and
 mu4e&lt;/a&gt;. Read it over. I basically followed his directions for setting up
@@ -140,9 +140,9 @@ manually. I describe all of this in the video.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org2172028" class="outline-3"&gt;
-&lt;h3 id="org2172028"&gt;Part 2 - setting up mu.&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org2172028"&gt;
+&lt;div id="outline-container-orgbe8717f" class="outline-3"&gt;
+&lt;h3 id="orgbe8717f"&gt;Part 2 - setting up mu.&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgbe8717f"&gt;
 &lt;p&gt;
 To set up mu, clone it from git://github.com/djcb/mu.git and build
 it. You can find dependencies &lt;a href="https://www.djcbsoftware.nl/code/mu/mu4e/Installation.html"&gt;here&lt;/a&gt; and then follow the same sequence
@@ -166,9 +166,9 @@ you can look at the mu cheatsheet &lt;a href="http://www.djcbsoftware.nl/code/mu
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org8ae48a4" class="outline-3"&gt;
-&lt;h3 id="org8ae48a4"&gt;Setting up mu4e in emacs&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org8ae48a4"&gt;
+&lt;div id="outline-container-orgbcb229f" class="outline-3"&gt;
+&lt;h3 id="orgbcb229f"&gt;Setting up mu4e in emacs&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgbcb229f"&gt;
 &lt;p&gt;
 Finally, you can set up mu4e in emacs. Take a look at Rob's
 configuration in his post or my &lt;a href="https://github.com/zamansky/using-emacs/blob/master/mu4econfig-sample.el"&gt;sample&lt;/a&gt; config. You'll have to take a
@@ -208,9 +208,9 @@ Enjoy:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-2016-6-4/"/>
-    <summary type="html">&lt;div id="outline-container-org9ef6fed" class="outline-2"&gt;
-&lt;h2 id="org9ef6fed"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9ef6fed"&gt;
+    <summary type="html">&lt;div id="outline-container-org7ab1556" class="outline-2"&gt;
+&lt;h2 id="org7ab1556"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7ab1556"&gt;
 &lt;p&gt;
 I've been having fun with this years &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; competition. So
 far, I've been able to keep up but with I expect that to change in
@@ -262,9 +262,9 @@ I decided to do this rant as a video. I hope you enjoy it:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-38-dired/"/>
-    <summary type="html">&lt;div id="outline-container-orge061962" class="outline-2"&gt;
-&lt;h2 id="orge061962"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge061962"&gt;
+    <summary type="html">&lt;div id="outline-container-org8603a7a" class="outline-2"&gt;
+&lt;h2 id="org8603a7a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8603a7a"&gt;
 &lt;p&gt;
 The 38th installment of Using Emacs is about &lt;b&gt;&lt;b&gt;dired&lt;/b&gt;&lt;/b&gt;, Emacs' built
 in mode for navigating and working with directories.
@@ -350,9 +350,9 @@ how other people are using it.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-37-treemacs/"/>
-    <summary type="html">&lt;div id="outline-container-org9bb7148" class="outline-2"&gt;
-&lt;h2 id="org9bb7148"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9bb7148"&gt;
+    <summary type="html">&lt;div id="outline-container-org62a4e66" class="outline-2"&gt;
+&lt;h2 id="org62a4e66"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org62a4e66"&gt;
 &lt;p&gt;
 I've been meaning to get back to making Emacs videos but I've been
 having trouble figuring out what to record.
@@ -395,9 +395,9 @@ but if like that type of interface, definitely check Treemacs out.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/new-tool-thonny/"/>
-    <summary type="html">&lt;div id="outline-container-org92e742e" class="outline-2"&gt;
-&lt;h2 id="org92e742e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org92e742e"&gt;
+    <summary type="html">&lt;div id="outline-container-org5b1aa86" class="outline-2"&gt;
+&lt;h2 id="org5b1aa86"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5b1aa86"&gt;
 &lt;p&gt;
 Last year I &lt;a href="https://cestlaz.github.io/posts/new-term-new-tool-replit"&gt;wrote about&lt;/a&gt; &lt;a href="http://repl.it"&gt;repl.it&lt;/a&gt;, an online IDE that supports multiple
 languages. At the time it had some rudimentary classroom support and
@@ -453,9 +453,9 @@ video:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-36-touch-of-elisp/"/>
-    <summary type="html">&lt;div id="outline-container-org3cd510b" class="outline-2"&gt;
-&lt;h2 id="org3cd510b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3cd510b"&gt;
+    <summary type="html">&lt;div id="outline-container-org222f311" class="outline-2"&gt;
+&lt;h2 id="org222f311"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org222f311"&gt;
 &lt;p&gt;
 I've been working on a vue.js project this summer. During the school
 year I really can't dive into code so it's been fun.
@@ -543,9 +543,9 @@ you want.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-35-blogging/"/>
-    <summary type="html">&lt;div id="outline-container-org35f7326" class="outline-2"&gt;
-&lt;h2 id="org35f7326"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org35f7326"&gt;
+    <summary type="html">&lt;div id="outline-container-org9c22ba7" class="outline-2"&gt;
+&lt;h2 id="org9c22ba7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9c22ba7"&gt;
 &lt;p&gt;
 Very little new Emacs in today's episode of Using Emacs. The video
 shows my old blogging workflow and what I'm playing with now.
@@ -584,9 +584,9 @@ There's not much more to say here so enjoy the video:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-34-ibuffer-emmet/"/>
-    <summary type="html">&lt;div id="outline-container-org56db353" class="outline-2"&gt;
-&lt;h2 id="org56db353"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org56db353"&gt;
+    <summary type="html">&lt;div id="outline-container-org1ea7eac" class="outline-2"&gt;
+&lt;h2 id="org1ea7eac"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1ea7eac"&gt;
 &lt;p&gt;
 A couple of quick, unrelated packages today.
 &lt;/p&gt;
@@ -656,9 +656,9 @@ Here's my configuration (mostly stolen from Owen):
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgc0a276a" class="outline-2"&gt;
-&lt;h2 id="orgc0a276a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc0a276a"&gt;
+&lt;div id="outline-container-org213b3b0" class="outline-2"&gt;
+&lt;h2 id="org213b3b0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org213b3b0"&gt;
 &lt;p&gt;
 The video also shows &lt;a href="https://github.com/smihica/emmet-mode"&gt;emmet&lt;/a&gt; mode. A terrific mode for quickly creating
 HTML and CSS. I tried it a long time ago when it was called zencoding
@@ -688,9 +688,9 @@ Check them both out:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org96d59f2" class="outline-2"&gt;
-&lt;h2 id="org96d59f2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org96d59f2"&gt;
+&lt;div id="outline-container-org210dc9e" class="outline-2"&gt;
+&lt;h2 id="org210dc9e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org210dc9e"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -701,7 +701,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -718,9 +718,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/python-editors/"/>
-    <summary type="html">&lt;div id="outline-container-org8d27b89" class="outline-2"&gt;
-&lt;h2 id="org8d27b89"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8d27b89"&gt;
+    <summary type="html">&lt;div id="outline-container-org0471732" class="outline-2"&gt;
+&lt;h2 id="org0471732"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0471732"&gt;
 &lt;p&gt;
 Earlier today I read Garth Flint's latest post on &lt;a href="https://gflint.wordpress.com/2017/05/25/python-editors-simple-wins/%0A"&gt;choosing a Python
 environment for his classes&lt;/a&gt;. While our classes and populations are
@@ -861,9 +861,9 @@ use Emacs in general:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-33-projectile-jump/"/>
-    <summary type="html">&lt;div id="outline-container-org145d564" class="outline-2"&gt;
-&lt;h2 id="org145d564"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org145d564"&gt;
+    <summary type="html">&lt;div id="outline-container-org3a547db" class="outline-2"&gt;
+&lt;h2 id="org3a547db"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3a547db"&gt;
 &lt;p&gt;
 If you keep Emacs open all the time you end up accumulating lots of
 buffers. That can make navigating a little bit awkward.
@@ -955,9 +955,9 @@ Enjoy.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org9fb61e5" class="outline-2"&gt;
-&lt;h2 id="org9fb61e5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9fb61e5"&gt;
+&lt;div id="outline-container-org45d75e2" class="outline-2"&gt;
+&lt;h2 id="org45d75e2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org45d75e2"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -968,7 +968,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -1084,9 +1084,9 @@ least interesting.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse-2017-github-3/"/>
-    <summary type="html">&lt;div id="outline-container-org0c46b24" class="outline-2"&gt;
-&lt;h2 id="org0c46b24"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0c46b24"&gt;
+    <summary type="html">&lt;div id="outline-container-orga5910ad" class="outline-2"&gt;
+&lt;h2 id="orga5910ad"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga5910ad"&gt;
 &lt;p&gt;
 I wanted to write this up earlier but, as so frequently happens all my
 dormant work projects decided it was time to rise up and demand
@@ -1264,9 +1264,9 @@ I'll get back to some emacs videos, other SIGCSE stuff and my normal rants.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse-2017-github-2/"/>
-    <summary type="html">&lt;div id="outline-container-orge2fbffa" class="outline-2"&gt;
-&lt;h2 id="orge2fbffa"&gt;Note:&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge2fbffa"&gt;
+    <summary type="html">&lt;div id="outline-container-org734eb38" class="outline-2"&gt;
+&lt;h2 id="org734eb38"&gt;Note:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org734eb38"&gt;
 &lt;p&gt;
 Just for some quick context. The process I started to describe in the
 last post and continue here chronicles what I did at Stuy with high
@@ -1276,9 +1276,9 @@ but the overarching themes remain the same.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgf570f82" class="outline-2"&gt;
-&lt;h2 id="orgf570f82"&gt;Post starts here:&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf570f82"&gt;
+&lt;div id="outline-container-orge2fce92" class="outline-2"&gt;
+&lt;h2 id="orge2fce92"&gt;Post starts here:&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge2fce92"&gt;
 &lt;p&gt;
 Now that your students have been pulling the classcode repo regularly
 it's time to move to the next step - adding and pushing files to a
@@ -1401,9 +1401,9 @@ projects using git.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse-2017-github-1/"/>
-    <summary type="html">&lt;div id="outline-container-org8db1627" class="outline-2"&gt;
-&lt;h2 id="org8db1627"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8db1627"&gt;
+    <summary type="html">&lt;div id="outline-container-org4a5fb05" class="outline-2"&gt;
+&lt;h2 id="org4a5fb05"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4a5fb05"&gt;
 &lt;p&gt;
 Both at and prior to SIGCSE 2017, I promised to write up the steps I
 take to introduce and use revision control systems in my classes. 
@@ -1448,9 +1448,9 @@ and introduce complexity and roadblocks a piece at a time.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org1d932e7" class="outline-2"&gt;
-&lt;h2 id="org1d932e7"&gt;Step 1 - code distribution&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1d932e7"&gt;
+&lt;div id="outline-container-org772ec9b" class="outline-2"&gt;
+&lt;h2 id="org772ec9b"&gt;Step 1 - code distribution&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org772ec9b"&gt;
 &lt;p&gt;
 To start, I don't even talk about version control. We start with code
 distribution. For years, I've looked for efficient ways of sharing
@@ -1500,9 +1500,9 @@ current offerings before jumping in.
 &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org522fa4d" class="outline-3"&gt;
-&lt;h3 id="org522fa4d"&gt;Set up&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org522fa4d"&gt;
+&lt;div id="outline-container-org7f8cd79" class="outline-3"&gt;
+&lt;h3 id="org7f8cd79"&gt;Set up&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org7f8cd79"&gt;
 &lt;p&gt;
 Before starting, make sure you register your ssh keys. &lt;a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/"&gt;This&lt;/a&gt; help page
 has more information. You'll want to register an ssh key from every
@@ -1531,9 +1531,9 @@ has to be done once.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org002b134" class="outline-3"&gt;
-&lt;h3 id="org002b134"&gt;Teacher use&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org002b134"&gt;
+&lt;div id="outline-container-org9f7d5f1" class="outline-3"&gt;
+&lt;h3 id="org9f7d5f1"&gt;Teacher use&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org9f7d5f1"&gt;
 &lt;p&gt;
 Next, clone out the repo. &lt;b&gt;&lt;b&gt;BEGINNER NOTE:&lt;/b&gt;&lt;/b&gt; Make sure you check out
 the ssh version not the https version. Just make sure that when you
@@ -1558,9 +1558,9 @@ I use a similar flow when I want to add files in my office or at home.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgeb67045" class="outline-3"&gt;
-&lt;h3 id="orgeb67045"&gt;Student use&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgeb67045"&gt;
+&lt;div id="outline-container-org5551096" class="outline-3"&gt;
+&lt;h3 id="org5551096"&gt;Student use&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org5551096"&gt;
 &lt;p&gt;
 From the student point of view, assuming a public repo, they just have to clone the repo and
 at the beginning of every class or work session, do a &lt;b&gt;&lt;b&gt;git
@@ -1569,9 +1569,9 @@ pull&lt;/b&gt;&lt;/b&gt;. That's all there is to it.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org3503b92" class="outline-3"&gt;
-&lt;h3 id="org3503b92"&gt;Thoughts&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org3503b92"&gt;
+&lt;div id="outline-container-org6666064" class="outline-3"&gt;
+&lt;h3 id="org6666064"&gt;Thoughts&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org6666064"&gt;
 &lt;p&gt;
 That's it. The kids are now using GitHub – they're probably looking
 at and poking around on the web site as well as pulling files to their
@@ -1619,9 +1619,9 @@ next post in this series.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-32-cpp/"/>
-    <summary type="html">&lt;div id="outline-container-org95e9ba7" class="outline-2"&gt;
-&lt;h2 id="org95e9ba7"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org95e9ba7"&gt;
+    <summary type="html">&lt;div id="outline-container-org538a1ed" class="outline-2"&gt;
+&lt;h2 id="org538a1ed"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org538a1ed"&gt;
 &lt;p&gt;
 This video is specifically for my students or any students out there
 who are starting with C++ and emacs. The videos also longer than usual, coming in
@@ -1815,9 +1815,9 @@ Enjoy.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orge96d65c" class="outline-2"&gt;
-&lt;h2 id="orge96d65c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge96d65c"&gt;
+&lt;div id="outline-container-orga2d78b8" class="outline-2"&gt;
+&lt;h2 id="orga2d78b8"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga2d78b8"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -1828,7 +1828,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -1845,9 +1845,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-31-elfeed-3/"/>
-    <summary type="html">&lt;div id="outline-container-orgb4c2565" class="outline-2"&gt;
-&lt;h2 id="orgb4c2565"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb4c2565"&gt;
+    <summary type="html">&lt;div id="outline-container-org4fbd76a" class="outline-2"&gt;
+&lt;h2 id="org4fbd76a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4fbd76a"&gt;
 &lt;p&gt;
 In &lt;a href="http://cestlaz.github.io/posts/using-emacs-30-elfeed-2"&gt;part 2&lt;/a&gt; I talked about how I used &lt;a href="https://github.com/abo-abo/hydra"&gt;Hyrdas&lt;/a&gt; to quickly navigate through
 elfeed tags. It was a nice step up but the fact that I still had to
@@ -2015,9 +2015,9 @@ Here's the video:
 Enjoy.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org5dd8d61" class="outline-3"&gt;
-&lt;h3 id="org5dd8d61"&gt;&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org5dd8d61"&gt;
+&lt;div id="outline-container-org58ffdf2" class="outline-3"&gt;
+&lt;h3 id="org58ffdf2"&gt;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org58ffdf2"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -2028,7 +2028,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -2046,9 +2046,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-30-elfeed-2/"/>
-    <summary type="html">&lt;div id="outline-container-org23f1c6e" class="outline-2"&gt;
-&lt;h2 id="org23f1c6e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org23f1c6e"&gt;
+    <summary type="html">&lt;div id="outline-container-orgde1eca7" class="outline-2"&gt;
+&lt;h2 id="orgde1eca7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgde1eca7"&gt;
 &lt;p&gt;
 In &lt;a href="http://cestlaz.github.io/posts/using-emacs-29%20elfeed/"&gt;part 1&lt;/a&gt;, I talked about &lt;a href="https://github.com/skeeto/elfeed"&gt;elfeed&lt;/a&gt;, a really awesome feed reader for
 emacs. Generally, I'm really liking it but there's been one problem -
@@ -2186,9 +2186,9 @@ Enjoy.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgdd3b44f" class="outline-2"&gt;
-&lt;h2 id="orgdd3b44f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgdd3b44f"&gt;
+&lt;div id="outline-container-org48e137d" class="outline-2"&gt;
+&lt;h2 id="org48e137d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org48e137d"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -2199,7 +2199,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -2216,9 +2216,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-29%20elfeed/"/>
-    <summary type="html">&lt;div id="outline-container-org06ab4c1" class="outline-2"&gt;
-&lt;h2 id="org06ab4c1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org06ab4c1"&gt;
+    <summary type="html">&lt;div id="outline-container-org1291b3e" class="outline-2"&gt;
+&lt;h2 id="org1291b3e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1291b3e"&gt;
 &lt;p&gt;
 Since the demise of Google Reader, I've been using &lt;a href="http://feedly.com"&gt;Feedly&lt;/a&gt; to read my
 streams. Feedly's a nice product and it's been working well for me for
@@ -2346,9 +2346,9 @@ Check out elfeed and make sure to go to the links provided on the main
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org8fda928" class="outline-2"&gt;
-&lt;h2 id="org8fda928"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8fda928"&gt;
+&lt;div id="outline-container-org832cd0f" class="outline-2"&gt;
+&lt;h2 id="org832cd0f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org832cd0f"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/pOFqzK1Ymr4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;
@@ -2356,9 +2356,9 @@ Enjoy.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orge6c2d0a" class="outline-2"&gt;
-&lt;h2 id="orge6c2d0a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge6c2d0a"&gt;
+&lt;div id="outline-container-org923553e" class="outline-2"&gt;
+&lt;h2 id="org923553e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org923553e"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -2369,7 +2369,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -2386,9 +2386,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-27-rectangles/"/>
-    <summary type="html">&lt;div id="outline-container-org305428a" class="outline-2"&gt;
-&lt;h2 id="org305428a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org305428a"&gt;
+    <summary type="html">&lt;div id="outline-container-orge228e9a" class="outline-2"&gt;
+&lt;h2 id="orge228e9a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge228e9a"&gt;
 &lt;p&gt;
 One of my favorite but little used emacs features is rectangular
 editing. It's little used because I don't need it all that often. It's
@@ -2424,9 +2424,9 @@ Here's a link to all the functions:
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orga8da46d" class="outline-2"&gt;
-&lt;h2 id="orga8da46d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga8da46d"&gt;
+&lt;div id="outline-container-orgefd1eef" class="outline-2"&gt;
+&lt;h2 id="orgefd1eef"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgefd1eef"&gt;
 &lt;p&gt;
 And the video:
 &lt;/p&gt;
@@ -2438,9 +2438,9 @@ Enjoy.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org371a32e" class="outline-2"&gt;
-&lt;h2 id="org371a32e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org371a32e"&gt;
+&lt;div id="outline-container-org82fdc09" class="outline-2"&gt;
+&lt;h2 id="org82fdc09"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org82fdc09"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -2451,7 +2451,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -2468,9 +2468,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-27-shell/"/>
-    <summary type="html">&lt;div id="outline-container-org783adc7" class="outline-2"&gt;
-&lt;h2 id="org783adc7"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org783adc7"&gt;
+    <summary type="html">&lt;div id="outline-container-org8bf8ac2" class="outline-2"&gt;
+&lt;h2 id="org8bf8ac2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8bf8ac2"&gt;
 &lt;p&gt;
 While I use emacs for all all sorts of things, one of the things I
 haven't done much is run shells from within emacs. I'm not sure
@@ -2538,16 +2538,16 @@ Enjoy
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-orgc795cca" class="outline-2"&gt;
-&lt;h2 id="orgc795cca"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc795cca"&gt;
+&lt;div id="outline-container-org8ef9da8" class="outline-2"&gt;
+&lt;h2 id="org8ef9da8"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8ef9da8"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/pjhRFMUxBB4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org1236671" class="outline-2"&gt;
-&lt;h2 id="org1236671"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1236671"&gt;
+&lt;div id="outline-container-orgd9463da" class="outline-2"&gt;
+&lt;h2 id="orgd9463da"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd9463da"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -2558,7 +2558,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -2575,9 +2575,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-26-gcal/"/>
-    <summary type="html">&lt;div id="outline-container-org3e102bc" class="outline-2"&gt;
-&lt;h2 id="org3e102bc"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3e102bc"&gt;
+    <summary type="html">&lt;div id="outline-container-orga741dfd" class="outline-2"&gt;
+&lt;h2 id="orga741dfd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga741dfd"&gt;
 &lt;p&gt;
 A while ago I did a couple of videos on how I use org-capture
 (&lt;a href="http://cestlaz.github.io/posts/using-emacs-23-capture-1/"&gt;part 1&lt;/a&gt;, &lt;a href="http://cestlaz.github.io/posts/using-emacs-24-capture-2/"&gt;part 2&lt;/a&gt;). I didn't get into a big part of org-capture - how I
@@ -2735,9 +2735,9 @@ Enjoy.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-orge4aa4ca" class="outline-2"&gt;
-&lt;h2 id="orge4aa4ca"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge4aa4ca"&gt;
+&lt;div id="outline-container-org3a5c955" class="outline-2"&gt;
+&lt;h2 id="org3a5c955"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3a5c955"&gt;
 &lt;p&gt;
 Better version:
 &lt;/p&gt;
@@ -2752,9 +2752,9 @@ Old, bad version:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgfa9a953" class="outline-2"&gt;
-&lt;h2 id="orgfa9a953"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgfa9a953"&gt;
+&lt;div id="outline-container-org07b6dc4" class="outline-2"&gt;
+&lt;h2 id="org07b6dc4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org07b6dc4"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -2765,7 +2765,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -2782,9 +2782,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-25-tramp/"/>
-    <summary type="html">&lt;div id="outline-container-org7d95ed3" class="outline-2"&gt;
-&lt;h2 id="org7d95ed3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7d95ed3"&gt;
+    <summary type="html">&lt;div id="outline-container-org0fde55d" class="outline-2"&gt;
+&lt;h2 id="org0fde55d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0fde55d"&gt;
 &lt;p&gt;
 Today's video talks about using emacs &lt;a href="https://www.emacswiki.org/emacs/TrampMode"&gt;Tramp&lt;/a&gt; mode.
 &lt;/p&gt;
@@ -2886,9 +2886,9 @@ a directory tree from a remote machine and use it on my local machine.
 
 
 
-&lt;div id="outline-container-org1382d2c" class="outline-2"&gt;
-&lt;h2 id="org1382d2c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1382d2c"&gt;
+&lt;div id="outline-container-orge0d9e08" class="outline-2"&gt;
+&lt;h2 id="orge0d9e08"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge0d9e08"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -2899,7 +2899,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -2916,9 +2916,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-24-capture-2/"/>
-    <summary type="html">&lt;div id="outline-container-orgfe40e60" class="outline-2"&gt;
-&lt;h2 id="orgfe40e60"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgfe40e60"&gt;
+    <summary type="html">&lt;div id="outline-container-orge6dd78a" class="outline-2"&gt;
+&lt;h2 id="orge6dd78a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge6dd78a"&gt;
 &lt;p&gt;
 Not much in today's actual post. The video is a continuation of the last one on &lt;a href="http://cestlaz.github.io/posts/using-emacs-23-capture-1"&gt;org-capture&lt;/a&gt;.
 &lt;/p&gt;
@@ -2982,9 +2982,9 @@ with before making that video.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-orgd165cc5" class="outline-2"&gt;
-&lt;h2 id="orgd165cc5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd165cc5"&gt;
+&lt;div id="outline-container-orgd2b219d" class="outline-2"&gt;
+&lt;h2 id="orgd2b219d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd2b219d"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -2995,7 +2995,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -3012,9 +3012,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-23-capture-1/"/>
-    <summary type="html">&lt;div id="outline-container-org990fb9a" class="outline-2"&gt;
-&lt;h2 id="org990fb9a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org990fb9a"&gt;
+    <summary type="html">&lt;div id="outline-container-org03cfdf2" class="outline-2"&gt;
+&lt;h2 id="org03cfdf2"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org03cfdf2"&gt;
 &lt;p&gt;
 Org mode has an amazing feature - &lt;b&gt;&lt;b&gt;org-capture&lt;/b&gt;&lt;/b&gt;. I only started
 using it recently but it's really awesome. 
@@ -3148,9 +3148,9 @@ More information on capture templates can be found &lt;a href="http://orgmode.or
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org90b8359" class="outline-2"&gt;
-&lt;h2 id="org90b8359"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org90b8359"&gt;
+&lt;div id="outline-container-org79e72bb" class="outline-2"&gt;
+&lt;h2 id="org79e72bb"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org79e72bb"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -3161,7 +3161,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -3178,9 +3178,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-21-web-mode/"/>
-    <summary type="html">&lt;div id="outline-container-org0f56d0c" class="outline-2"&gt;
-&lt;h2 id="org0f56d0c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0f56d0c"&gt;
+    <summary type="html">&lt;div id="outline-container-org5669c33" class="outline-2"&gt;
+&lt;h2 id="org5669c33"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5669c33"&gt;
 &lt;p&gt;
 Quick post today. 
 &lt;/p&gt;
@@ -3231,9 +3231,9 @@ The web-mode &lt;a href="http://web-mode.org"&gt;documentation&lt;/a&gt; has mor
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org5aab598" class="outline-2"&gt;
-&lt;h2 id="org5aab598"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5aab598"&gt;
+&lt;div id="outline-container-org1ac3301" class="outline-2"&gt;
+&lt;h2 id="org1ac3301"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1ac3301"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -3244,7 +3244,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -3261,9 +3261,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-22-emacsclient/"/>
-    <summary type="html">&lt;div id="outline-container-org129c9ed" class="outline-2"&gt;
-&lt;h2 id="org129c9ed"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org129c9ed"&gt;
+    <summary type="html">&lt;div id="outline-container-orga82bbc9" class="outline-2"&gt;
+&lt;h2 id="orga82bbc9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga82bbc9"&gt;
 &lt;p&gt;
 Another quick hit today.
 &lt;/p&gt;
@@ -3316,9 +3316,9 @@ forever since you just keep emacs up and running.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org42a2f2e" class="outline-2"&gt;
-&lt;h2 id="org42a2f2e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org42a2f2e"&gt;
+&lt;div id="outline-container-org21972e8" class="outline-2"&gt;
+&lt;h2 id="org21972e8"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org21972e8"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -3329,7 +3329,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -3346,9 +3346,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-20-yanking/"/>
-    <summary type="html">&lt;div id="outline-container-org219f5ec" class="outline-2"&gt;
-&lt;h2 id="org219f5ec"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org219f5ec"&gt;
+    <summary type="html">&lt;div id="outline-container-org4ed5e97" class="outline-2"&gt;
+&lt;h2 id="org4ed5e97"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4ed5e97"&gt;
 &lt;p&gt;
 Today's video is a bit of a follow up on the last one as well as a few
 miscillaneous configuration.
@@ -3400,9 +3400,9 @@ files in a could based filesystem like Dropbox or Owncloud.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org79be534" class="outline-2"&gt;
-&lt;h2 id="org79be534"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org79be534"&gt;
+&lt;div id="outline-container-orgd60bb5c" class="outline-2"&gt;
+&lt;h2 id="orgd60bb5c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd60bb5c"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -3413,7 +3413,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -3430,9 +3430,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-19-live/"/>
-    <summary type="html">&lt;div id="outline-container-orgf57612c" class="outline-2"&gt;
-&lt;h2 id="orgf57612c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf57612c"&gt;
+    <summary type="html">&lt;div id="outline-container-org1b34c50" class="outline-2"&gt;
+&lt;h2 id="org1b34c50"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1b34c50"&gt;
 &lt;p&gt;
 Some of the videos I want to make are going to be much easier to do if
 I'm working in my own account where my whole file tree is available. 
@@ -3466,9 +3466,9 @@ everything.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org18b2c99" class="outline-2"&gt;
-&lt;h2 id="org18b2c99"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org18b2c99"&gt;
+&lt;div id="outline-container-orgfc2626f" class="outline-2"&gt;
+&lt;h2 id="orgfc2626f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgfc2626f"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -3479,7 +3479,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -3496,9 +3496,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/digitaloceanflask/"/>
-    <summary type="html">&lt;div id="outline-container-org1f5f2d7" class="outline-2"&gt;
-&lt;h2 id="org1f5f2d7"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1f5f2d7"&gt;
+    <summary type="html">&lt;div id="outline-container-org8c3a31b" class="outline-2"&gt;
+&lt;h2 id="org8c3a31b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8c3a31b"&gt;
 &lt;p&gt;
 This post points to the next three videos in the Flask series.
 &lt;/p&gt;
@@ -3529,23 +3529,23 @@ In general, there are lots of great tutorials and guides at the
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org24f6e15" class="outline-2"&gt;
-&lt;h2 id="org24f6e15"&gt;Setting up a Droplet&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org24f6e15"&gt;
+&lt;div id="outline-container-orga0caa35" class="outline-2"&gt;
+&lt;h2 id="orga0caa35"&gt;Setting up a Droplet&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga0caa35"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LOS8PscXhz8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org7053571" class="outline-2"&gt;
-&lt;h2 id="org7053571"&gt;Deploying with Gunicorn&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7053571"&gt;
+&lt;div id="outline-container-org470ca1c" class="outline-2"&gt;
+&lt;h2 id="org470ca1c"&gt;Deploying with Gunicorn&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org470ca1c"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/oum5Kh-69pg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org3b2eff0" class="outline-2"&gt;
-&lt;h2 id="org3b2eff0"&gt;sshfs and FreeDNS&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3b2eff0"&gt;
+&lt;div id="outline-container-orged1fd29" class="outline-2"&gt;
+&lt;h2 id="orged1fd29"&gt;sshfs and FreeDNS&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orged1fd29"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/aha2r5I18i0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
@@ -3562,9 +3562,9 @@ In general, there are lots of great tutorials and guides at the
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-18-narrow/"/>
-    <summary type="html">&lt;div id="outline-container-org968abfe" class="outline-2"&gt;
-&lt;h2 id="org968abfe"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org968abfe"&gt;
+    <summary type="html">&lt;div id="outline-container-org69dd205" class="outline-2"&gt;
+&lt;h2 id="org69dd205"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org69dd205"&gt;
 &lt;p&gt;
 I meant to cover these last time but decided not to so as to keep the
 videos to about 10 minutes each.
@@ -3641,9 +3641,9 @@ Enjoy
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-orged0bcbb" class="outline-2"&gt;
-&lt;h2 id="orged0bcbb"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orged0bcbb"&gt;
+&lt;div id="outline-container-orgaf3fd46" class="outline-2"&gt;
+&lt;h2 id="orgaf3fd46"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgaf3fd46"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -3654,7 +3654,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -3671,9 +3671,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-17-misc/"/>
-    <summary type="html">&lt;div id="outline-container-orgc0ee10f" class="outline-2"&gt;
-&lt;h2 id="orgc0ee10f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc0ee10f"&gt;
+    <summary type="html">&lt;div id="outline-container-orga076b08" class="outline-2"&gt;
+&lt;h2 id="orga076b08"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga076b08"&gt;
 &lt;p&gt;
 I'm working on getting enough of my real configuration into this
 series so that I can dump my current one and use this one all them
@@ -3690,9 +3690,9 @@ time.
 &lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org8c6f692" class="outline-3"&gt;
-&lt;h3 id="org8c6f692"&gt;Highlight line Mode&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org8c6f692"&gt;
+&lt;div id="outline-container-org2dfdf0d" class="outline-3"&gt;
+&lt;h3 id="org2dfdf0d"&gt;Highlight line Mode&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org2dfdf0d"&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;(global-hl-line-mode t)
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -3703,9 +3703,9 @@ the cursor's on. Nothing huge, I just like it.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org0e6222b" class="outline-3"&gt;
-&lt;h3 id="org0e6222b"&gt;&lt;a href="https://github.com/Malabarba/beacon"&gt;Beacon mode&lt;/a&gt;&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org0e6222b"&gt;
+&lt;div id="outline-container-org6aa7b69" class="outline-3"&gt;
+&lt;h3 id="org6aa7b69"&gt;&lt;a href="https://github.com/Malabarba/beacon"&gt;Beacon mode&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org6aa7b69"&gt;
 &lt;p&gt;
 &lt;a href="https://github.com/Malabarba/beacon"&gt;Beacon mode&lt;/a&gt; flashes the cursor whenever you scroll. It makes things
 easy to locate the cursor when scrolling
@@ -3725,9 +3725,9 @@ easy to locate the cursor when scrolling
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org8c77c05" class="outline-3"&gt;
-&lt;h3 id="org8c77c05"&gt;&lt;a href="https://github.com/nflath/hungry-delete"&gt;Hungry Delete mode&lt;/a&gt;&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org8c77c05"&gt;
+&lt;div id="outline-container-orga067e3a" class="outline-3"&gt;
+&lt;h3 id="orga067e3a"&gt;&lt;a href="https://github.com/nflath/hungry-delete"&gt;Hungry Delete mode&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orga067e3a"&gt;
 &lt;p&gt;
 &lt;a href="https://github.com/nflath/hungry-delete"&gt;This mode&lt;/a&gt; deletes all the whitespace after the cursor (or before it)
 when you use delete or backspace.
@@ -3742,9 +3742,9 @@ when you use delete or backspace.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org4e5d5da" class="outline-3"&gt;
-&lt;h3 id="org4e5d5da"&gt;&lt;a href="https://github.com/magnars/expand-region.el"&gt;Expand Region&lt;/a&gt;&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org4e5d5da"&gt;
+&lt;div id="outline-container-orgd92936e" class="outline-3"&gt;
+&lt;h3 id="orgd92936e"&gt;&lt;a href="https://github.com/magnars/expand-region.el"&gt;Expand Region&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgd92936e"&gt;
 &lt;p&gt;
 &lt;a href="https://github.com/magnars"&gt;Magnar Sveen's&lt;/a&gt; awesome expand region mode is a must have. He also
 wrote the amazing &lt;a href="https://github.com/magnars/multiple-cursors.el"&gt;multiple cursors&lt;/a&gt; package. I highly recommend
@@ -3775,9 +3775,9 @@ so we'll come back to that later.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-org49cb07c" class="outline-2"&gt;
-&lt;h2 id="org49cb07c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org49cb07c"&gt;
+&lt;div id="outline-container-org95ebb13" class="outline-2"&gt;
+&lt;h2 id="org95ebb13"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org95ebb13"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -3788,7 +3788,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -3805,9 +3805,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/flask-setup-virtualenv/"/>
-    <summary type="html">&lt;div id="outline-container-orgf5700d2" class="outline-2"&gt;
-&lt;h2 id="orgf5700d2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf5700d2"&gt;
+    <summary type="html">&lt;div id="outline-container-org08e9023" class="outline-2"&gt;
+&lt;h2 id="org08e9023"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org08e9023"&gt;
 &lt;p&gt;
 Those laptops that my Hunter students were supposed to get have
 finally arrived. We're distributing them on Monday. Each student will
@@ -3931,9 +3931,9 @@ environment.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-16-undo-tree/"/>
-    <summary type="html">&lt;div id="outline-container-org266d033" class="outline-2"&gt;
-&lt;h2 id="org266d033"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org266d033"&gt;
+    <summary type="html">&lt;div id="outline-container-org1bc2542" class="outline-2"&gt;
+&lt;h2 id="org1bc2542"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1bc2542"&gt;
 &lt;p&gt;
 If you use emacs, you should keep an eye on Jon Snader's &lt;a href="http://irreal.org/blog/"&gt;blog&lt;/a&gt;,
 &lt;a href="http://irreal.org/blog/"&gt;irreal.org&lt;/a&gt;. A few days he posted on &lt;a href="http://irreal.org/blog/?p=5621"&gt;Undo Tree&lt;/a&gt; - a package that extends
@@ -3994,7 +3994,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -4011,9 +4011,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/user-friendly/"/>
-    <summary type="html">&lt;div id="outline-container-orgab663f8" class="outline-2"&gt;
-&lt;h2 id="orgab663f8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgab663f8"&gt;
+    <summary type="html">&lt;div id="outline-container-orgd30aa45" class="outline-2"&gt;
+&lt;h2 id="orgd30aa45"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd30aa45"&gt;
 &lt;p&gt;
 Saw this post the other day: &lt;a href="https://pupeno.com/2016/09/26/emacs-is-hurting-clojure/"&gt;Emacs is hurting Clojure&lt;/a&gt; and this response: &lt;a href="http://irreal.org/blog/?p=5597"&gt;Is Emacs Really HJard to Learn / Use&lt;/a&gt;.
 &lt;/p&gt;
@@ -4162,9 +4162,9 @@ the path to learning the useful ones.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-15-macros/"/>
-    <summary type="html">&lt;div id="outline-container-org93fda34" class="outline-2"&gt;
-&lt;h2 id="org93fda34"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org93fda34"&gt;
+    <summary type="html">&lt;div id="outline-container-org032c110" class="outline-2"&gt;
+&lt;h2 id="org032c110"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org032c110"&gt;
 &lt;p&gt;
 I originally planned on do some videos on C++ development but I'm just
 not feeling it. Probably because I'm excited to be working with my
@@ -4261,7 +4261,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -4278,9 +4278,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/new-term-new-tool-replit/"/>
-    <summary type="html">&lt;div id="outline-container-orge2142c1" class="outline-2"&gt;
-&lt;h2 id="orge2142c1"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge2142c1"&gt;
+    <summary type="html">&lt;div id="outline-container-org947b0d7" class="outline-2"&gt;
+&lt;h2 id="org947b0d7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org947b0d7"&gt;
 &lt;p&gt;
 We're now a week in to my first class at Hunter. It's a little early
 for me to really compare and contrast the high school to college
@@ -4387,9 +4387,9 @@ systems but I'm glad to have repl.it in my teaching arsenal.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-14-thoughts/"/>
-    <summary type="html">&lt;div id="outline-container-orgc4172f0" class="outline-2"&gt;
-&lt;h2 id="orgc4172f0"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc4172f0"&gt;
+    <summary type="html">&lt;div id="outline-container-orgbcae1d0" class="outline-2"&gt;
+&lt;h2 id="orgbcae1d0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgbcae1d0"&gt;
 &lt;p&gt;
 Sorry for the incosistancy of the posts. I hope to get to that one
 video a week soon but I've still got a hectic couple of weeks ahead.
@@ -4426,7 +4426,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -4443,9 +4443,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-13-yasnippet/"/>
-    <summary type="html">&lt;div id="outline-container-org09635e8" class="outline-2"&gt;
-&lt;h2 id="org09635e8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org09635e8"&gt;
+    <summary type="html">&lt;div id="outline-container-org35333fc" class="outline-2"&gt;
+&lt;h2 id="org35333fc"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org35333fc"&gt;
 &lt;p&gt;
 It turns out that &lt;a href="https://github.com/jorgenschaefer/elpy"&gt;Elpy&lt;/a&gt;, a popular emacs package for python development
 is much easier to set up than I remember. It turns out all you need
@@ -4532,7 +4532,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -4549,9 +4549,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-12-python/"/>
-    <summary type="html">&lt;div id="outline-container-orged3b51b" class="outline-2"&gt;
-&lt;h2 id="orged3b51b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orged3b51b"&gt;
+    <summary type="html">&lt;div id="outline-container-orgf8a724e" class="outline-2"&gt;
+&lt;h2 id="orgf8a724e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf8a724e"&gt;
 &lt;p&gt;
 This week, we're going to look at my setup for Python programming. 
 &lt;/p&gt;
@@ -4657,7 +4657,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -4674,9 +4674,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-11-reveal/"/>
-    <summary type="html">&lt;div id="outline-container-org9dae141" class="outline-2"&gt;
-&lt;h2 id="org9dae141"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9dae141"&gt;
+    <summary type="html">&lt;div id="outline-container-org3608ba7" class="outline-2"&gt;
+&lt;h2 id="org3608ba7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3608ba7"&gt;
 &lt;p&gt;
 Happy to be back after a couple of weeks.
 &lt;/p&gt;
@@ -4777,7 +4777,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -4794,9 +4794,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-10-org-init/"/>
-    <summary type="html">&lt;div id="outline-container-org1be1970" class="outline-2"&gt;
-&lt;h2 id="org1be1970"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1be1970"&gt;
+    <summary type="html">&lt;div id="outline-container-org2aa67ba" class="outline-2"&gt;
+&lt;h2 id="org2aa67ba"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org2aa67ba"&gt;
 &lt;p&gt;
 I'll be traveling for the next couple of weeks so I probably won't
 have time for another video until mid to late July. I'll probably
@@ -4959,7 +4959,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -4976,9 +4976,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-9-themes/"/>
-    <summary type="html">&lt;div id="outline-container-org7571da8" class="outline-2"&gt;
-&lt;h2 id="org7571da8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7571da8"&gt;
+    <summary type="html">&lt;div id="outline-container-org3b43732" class="outline-2"&gt;
+&lt;h2 id="org3b43732"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3b43732"&gt;
 &lt;p&gt;
 Now that we have a nice basic configuration, let's make Emacs look a
 little nicer.
@@ -5056,7 +5056,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Complete code built up over all videos:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -5073,9 +5073,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-8-autocomplete/"/>
-    <summary type="html">&lt;div id="outline-container-orgd8ab13e" class="outline-2"&gt;
-&lt;h2 id="orgd8ab13e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd8ab13e"&gt;
+    <summary type="html">&lt;div id="outline-container-orge793843" class="outline-2"&gt;
+&lt;h2 id="orge793843"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge793843"&gt;
 &lt;p&gt;
 Out of the box, Emacs supports various types of completion.
 &lt;/p&gt;
@@ -5150,7 +5150,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Complete code built up over all videos:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -5167,9 +5167,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-7-avy/"/>
-    <summary type="html">&lt;div id="outline-container-orgb63f854" class="outline-2"&gt;
-&lt;h2 id="orgb63f854"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb63f854"&gt;
+    <summary type="html">&lt;div id="outline-container-org53aaf80" class="outline-2"&gt;
+&lt;h2 id="org53aaf80"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org53aaf80"&gt;
 &lt;p&gt;
 Here's a really cool navigation method that I've been meaning to use
 more. Avy is a replacement for ace-jump mode which is an
@@ -5237,7 +5237,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Complete code built up over all videos:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -5359,9 +5359,9 @@ fully working, more properly done solution:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-6-swiper/"/>
-    <summary type="html">&lt;div id="outline-container-orgddff8e9" class="outline-2"&gt;
-&lt;h2 id="orgddff8e9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgddff8e9"&gt;
+    <summary type="html">&lt;div id="outline-container-org5d302c9" class="outline-2"&gt;
+&lt;h2 id="org5d302c9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5d302c9"&gt;
 &lt;p&gt;
 This video is all about using incremental search to navigate through your emacs buffers.
 &lt;/p&gt;
@@ -5442,7 +5442,7 @@ If you want to see a nice video specifically on swiper by the author, here it is
 Relevant links:
 &lt;/p&gt;
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;Swiper: &lt;a href="https://github.com/abo-abo/swiper"&gt;&lt;/a&gt;&lt;a href="https://github.com/abo-abo/swiper"&gt;https://github.com/abo-abo/swiper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Swiper: &lt;a href="https://github.com/abo-abo/swiper"&gt;https://github.com/abo-abo/swiper&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;The Swiper Manual: &lt;a href="http://oremacs.com/swiper/"&gt;http://oremacs.com/swiper/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Video series overview page:
 &lt;ul class="org-ul"&gt;
@@ -5454,7 +5454,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Complete code built up over all videos:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -5561,9 +5561,9 @@ leave a comment for anything that the form doesn't cover?
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-5-windows/"/>
-    <summary type="html">&lt;div id="outline-container-org6f115a8" class="outline-2"&gt;
-&lt;h2 id="org6f115a8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6f115a8"&gt;
+    <summary type="html">&lt;div id="outline-container-orgd3846bc" class="outline-2"&gt;
+&lt;h2 id="orgd3846bc"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd3846bc"&gt;
 &lt;p&gt;
 Sorry for the delay in getting this next video / post up. I spent the
 last part of last week at &lt;a href="http://go.personaldemocracy.com/"&gt;The Personal Democracy Forum 2016&lt;/a&gt; which is really an exceptional conference.
@@ -5697,7 +5697,7 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Complete code built up over all videos:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -5714,11 +5714,11 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-3-elisp/"/>
-    <summary type="html">&lt;div id="outline-container-org5d8cd81" class="outline-2"&gt;
-&lt;h2 id="org5d8cd81"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5d8cd81"&gt;
-
+    <summary type="html">&lt;div id="outline-container-org8ef7c15" class="outline-2"&gt;
+&lt;h2 id="org8ef7c15"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8ef7c15"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/nyQxRarVYH4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
 &lt;p&gt;
 Many people think of Emacs as an editor. I like to think of it as an Elisp interpreter where you live code documents.
 &lt;/p&gt;
@@ -5756,11 +5756,11 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code for this video:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-2-org"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-3-elisp"&gt;https://github.com/zamansky/using-emacs/tree/lesson-3-elisp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-2-org"&gt;https://github.com/zamansky/using-emacs/tree/lesson-3-elisp&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Complete code built up over all videos:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -5777,9 +5777,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-4-buffers/"/>
-    <summary type="html">&lt;div id="outline-container-org148008d" class="outline-2"&gt;
-&lt;h2 id="org148008d"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org148008d"&gt;
+    <summary type="html">&lt;div id="outline-container-orgc014b9b" class="outline-2"&gt;
+&lt;h2 id="orgc014b9b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc014b9b"&gt;
 &lt;iframe width="480" height="270" src="https://www.youtube.com/embed/v5eTK5lC0xs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;
@@ -5949,11 +5949,11 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code for this video:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers"&gt;https://github.com/zamansky/using-emacs/tree/lesson-4-buffers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-4-buffers"&gt;https://github.com/zamansky/using-emacs/tree/lesson-4-buffers&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Complete code built up over all videos:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -5970,9 +5970,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-2-org/"/>
-    <summary type="html">&lt;div id="outline-container-org00238e9" class="outline-2"&gt;
-&lt;h2 id="org00238e9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org00238e9"&gt;
+    <summary type="html">&lt;div id="outline-container-orga2970b3" class="outline-2"&gt;
+&lt;h2 id="orga2970b3"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga2970b3"&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/x5KiYDd9s8k?list=PL9KxKa8NpFxIcNQa9js7dQQIHc81b0-Xg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;
@@ -6023,11 +6023,11 @@ Relevant links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code for this video:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-2-org"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-2-org"&gt;https://github.com/zamansky/using-emacs/tree/lesson-2-org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-2-org"&gt;https://github.com/zamansky/using-emacs/tree/lesson-2-org&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Complete code built up over all videos:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Packages
 &lt;ul class="org-ul"&gt;
@@ -6048,9 +6048,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-1-setup/"/>
-    <summary type="html">&lt;div id="outline-container-org1d16f69" class="outline-2"&gt;
-&lt;h2 id="org1d16f69"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1d16f69"&gt;
+    <summary type="html">&lt;div id="outline-container-orgdc49d00" class="outline-2"&gt;
+&lt;h2 id="orgdc49d00"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgdc49d00"&gt;
 &lt;p&gt;
 This video will step you through setting up Emacs to use &lt;a href="http://melpa.org/#/"&gt;MELPA&lt;/a&gt; for packages.
 &lt;/p&gt;
@@ -6110,15 +6110,15 @@ Relavent links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code for this video:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"&gt;https://github.com/zamansky/using-emacs/tree/lesson-1-setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"&gt;https://github.com/zamansky/using-emacs/tree/lesson-1-setup&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Complete code built up over all videos:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Melpa and packages
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://melpa.org"&gt;&lt;/a&gt;&lt;a href="http://melpa.org"&gt;http://melpa.org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://melpa.org"&gt;http://melpa.org&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/justbur/emacs-which-key"&gt;which-key&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/larstvei/Try"&gt;try&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
@@ -6137,9 +6137,9 @@ Relavent links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-introduction/"/>
-    <summary type="html">&lt;div id="outline-container-orge89b4f5" class="outline-2"&gt;
-&lt;h2 id="orge89b4f5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge89b4f5"&gt;
+    <summary type="html">&lt;div id="outline-container-orgb92b142" class="outline-2"&gt;
+&lt;h2 id="orgb92b142"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgb92b142"&gt;
 &lt;p&gt;
 I'm sure I've mentioned that I've been an Emacs wonk for
 decades. Since the mid-80's in fact. I've spent time using other
@@ -6201,14 +6201,14 @@ tools. We'll also cover some larger topics including:
 
 &lt;p&gt;
 I'll put together an index to these posts along with any ancillary
-materials here: &lt;a href="file:///stories/emacs"&gt;&lt;/a&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;.
+materials here: &lt;a href="file:///stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgf564e54" class="outline-2"&gt;
-&lt;h2 id="orgf564e54"&gt;Getting started&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf564e54"&gt;
+&lt;div id="outline-container-org9036890" class="outline-2"&gt;
+&lt;h2 id="org9036890"&gt;Getting started&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9036890"&gt;
 &lt;p&gt;
 This series is going to assume you've installed emacs and worked your
 way through the included tutorial.
@@ -6249,9 +6249,9 @@ So, stay tuned.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/collaborative-coding-or-cheating/"/>
-    <summary type="html">&lt;div id="outline-container-org42323b6" class="outline-2"&gt;
-&lt;h2 id="org42323b6"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org42323b6"&gt;
+    <summary type="html">&lt;div id="outline-container-org27ceac4" class="outline-2"&gt;
+&lt;h2 id="org27ceac4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org27ceac4"&gt;
 &lt;p&gt;
 I haven't been teaching this past semester. That's why I haven't been
 writing much about lessons. I miss working with students but that will
@@ -6421,9 +6421,9 @@ right way.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/shell-short-tagging/"/>
-    <summary type="html">&lt;div id="outline-container-org122a046" class="outline-2"&gt;
-&lt;h2 id="org122a046"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org122a046"&gt;
+    <summary type="html">&lt;div id="outline-container-org7885517" class="outline-2"&gt;
+&lt;h2 id="org7885517"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org7885517"&gt;
 &lt;p&gt;
 Quick post to add to the recent command line fu I've been writing
 about.
@@ -6492,17 +6492,17 @@ done
 A line at a time:
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgc5acfe6" class="outline-3"&gt;
-&lt;h3 id="orgc5acfe6"&gt;ls *md *html&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgc5acfe6"&gt;
+&lt;div id="outline-container-orgfdd36ca" class="outline-3"&gt;
+&lt;h3 id="orgfdd36ca"&gt;ls *md *html&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgfdd36ca"&gt;
 &lt;p&gt;
 This lists all the files with that end in &lt;b&gt;&lt;b&gt;md&lt;/b&gt;&lt;/b&gt; or &lt;b&gt;&lt;b&gt;html&lt;/b&gt;&lt;/b&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-org19f69fd" class="outline-3"&gt;
-&lt;h3 id="org19f69fd"&gt;| while read filename&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-org19f69fd"&gt;
+&lt;div id="outline-container-orga1556d5" class="outline-3"&gt;
+&lt;h3 id="orga1556d5"&gt;| while read filename&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orga1556d5"&gt;
 &lt;p&gt;
 The vertical bar (pipe) sends the output of &lt;b&gt;&lt;b&gt;ls&lt;/b&gt;&lt;/b&gt; into the &lt;b&gt;&lt;b&gt;while read&lt;/b&gt;&lt;/b&gt;
 command. The &lt;b&gt;&lt;b&gt;while&lt;/b&gt;&lt;/b&gt; command sets up a loop which, each time
@@ -6512,9 +6512,9 @@ through, reads the next input and places into the variable
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgd2f486f" class="outline-3"&gt;
-&lt;h3 id="orgd2f486f"&gt;sed "/ type: text/  i .. tags: " $filename&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgd2f486f"&gt;
+&lt;div id="outline-container-orgfb7818c" class="outline-3"&gt;
+&lt;h3 id="orgfb7818c"&gt;sed "/ type: text/  i .. tags: " $filename&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgfb7818c"&gt;
 &lt;p&gt;
 Sed is the stream editor. The stuff between the slashes finds the line
 with the text &lt;b&gt;&lt;b&gt;type: text&lt;/b&gt;&lt;/b&gt; in it. The &lt;b&gt;&lt;b&gt;i&lt;/b&gt;&lt;/b&gt; inserts a line above and
@@ -6526,9 +6526,9 @@ loop.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org13e26fe" class="outline-2"&gt;
-&lt;h2 id="org13e26fe"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org13e26fe"&gt;
+&lt;div id="outline-container-org6627200" class="outline-2"&gt;
+&lt;h2 id="org6627200"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6627200"&gt;
 &lt;p&gt;
 Now all of my files have blank &lt;b&gt;&lt;b&gt;tag&lt;/b&gt;&lt;/b&gt; slugs so I can find my netlogo
 posts and tag them:
@@ -6574,18 +6574,18 @@ You can find all those posts &lt;a href="http://cestlaz.github.io/categories/net
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/duplicate-emails/"/>
-    <summary type="html">&lt;div id="outline-container-orgba12304" class="outline-2"&gt;
-&lt;h2 id="orgba12304"&gt;Repost&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgba12304"&gt;
+    <summary type="html">&lt;div id="outline-container-org6a16bdb" class="outline-2"&gt;
+&lt;h2 id="org6a16bdb"&gt;Repost&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6a16bdb"&gt;
 &lt;p&gt;
 This is a repost from March 2015. It didn't transfer when I rebooted the blog.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgf92e8b5" class="outline-2"&gt;
-&lt;h2 id="orgf92e8b5"&gt;Original&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf92e8b5"&gt;
+&lt;div id="outline-container-org57a3f02" class="outline-2"&gt;
+&lt;h2 id="org57a3f02"&gt;Original&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org57a3f02"&gt;
 &lt;p&gt;
 Quick post on why I love the Unix command line.
 &lt;/p&gt;
@@ -6784,9 +6784,9 @@ manner of text manipulation problems become pretty easy.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/bash-scripting/"/>
-    <summary type="html">&lt;div id="outline-container-org2b661e4" class="outline-2"&gt;
-&lt;h2 id="org2b661e4"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org2b661e4"&gt;
+    <summary type="html">&lt;div id="outline-container-org3d2a62a" class="outline-2"&gt;
+&lt;h2 id="org3d2a62a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3d2a62a"&gt;
 &lt;p&gt;
 Over in the Facebook AP Computer Science Teachers group someone asked
 for thoughts on covering BASH scripting as a post AP topic.
@@ -6943,9 +6943,9 @@ In terms of tools, I get a lot of mileage out of:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgd0d1c35" class="outline-2"&gt;
-&lt;h2 id="orgd0d1c35"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd0d1c35"&gt;
+&lt;div id="outline-container-orgd278e9e" class="outline-2"&gt;
+&lt;h2 id="orgd278e9e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd278e9e"&gt;
 &lt;p&gt;
 A nice simple thing you can do with these is clean data. Let's say you
 want to do some analytics on a book from Project Gutenberg. You might
@@ -7113,9 +7113,9 @@ anymore it's still an important part of the programs I build.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/2016-04-17-emacs-jekyll-nikola/"/>
-    <summary type="html">&lt;div id="outline-container-org767b7a3" class="outline-2"&gt;
-&lt;h2 id="org767b7a3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org767b7a3"&gt;
+    <summary type="html">&lt;div id="outline-container-org57e24df" class="outline-2"&gt;
+&lt;h2 id="org57e24df"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org57e24df"&gt;
 &lt;p&gt;
 Switched over from &lt;a href="https://jekyllrb.com/"&gt;Jekyll&lt;/a&gt; to &lt;a href="https://getnikola.com/"&gt;Nikola&lt;/a&gt; yesterday.
 &lt;/p&gt;
@@ -7166,7 +7166,7 @@ some meta information up top or markdown.
 
 &lt;p&gt;
 You can take a look at my old site at
-&lt;a href="https://github.com/cestlaz/cestlaz.github.io-jekyll"&gt;&lt;/a&gt;&lt;a href="https://github.com/cestlaz/cestlaz.github.io-jekyll"&gt;https://github.com/cestlaz/cestlaz.github.io-jekyll&lt;/a&gt; if you want to
+&lt;a href="https://github.com/cestlaz/cestlaz.github.io-jekyll"&gt;https://github.com/cestlaz/cestlaz.github.io-jekyll&lt;/a&gt; if you want to
 take a look.
 &lt;/p&gt;
 
@@ -7228,7 +7228,7 @@ My new workflow:
 
 &lt;p&gt;
 And that's it. You can look at my Nikola site here:
-&lt;a href="https://github.com/cestlaz/cestlaz.github.io"&gt;&lt;/a&gt;&lt;a href="https://github.com/cestlaz/cestlaz.github.io"&gt;https://github.com/cestlaz/cestlaz.github.io&lt;/a&gt;.
+&lt;a href="https://github.com/cestlaz/cestlaz.github.io"&gt;https://github.com/cestlaz/cestlaz.github.io&lt;/a&gt;.
 The source code is in the &lt;b&gt;&lt;b&gt;src&lt;/b&gt;&lt;/b&gt; branch, the actual rendered blog in
 the &lt;b&gt;&lt;b&gt;master&lt;/b&gt;&lt;/b&gt; branch.
 &lt;/p&gt;
