@@ -1,0 +1,165 @@
+#+BEGIN_COMMENT
+.. title: Class Communications
+.. slug: class-communications
+.. date: 2018-08-08 15:13:11 UTC-04:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+
+Right now I'm on vacation in Harrogate England. Natan  is here taking part in the International Gilbert and Sullivan
+Festival so Devorah and I came along as tourists. Today we went to Knaresborough:
+
+#+CAPTION: The River Nidd as seen from Knaresborough Castle
+#+ATTR_HTML: :width 500px :align center 
+[[../../img/knaresborough.jpg]]
+
+Normally when traveling I try to get everything in and that leaves me
+pretty exhausted at the end of each day. Since this time we'll be here
+for around two weeks, I'm trying a less hectic pace. Do some touring
+along with some rest and relaxation. I actually gave myself the time
+to do some recreational reading and just finished [[https://www.amazon.com/Comeback-LeMond-American-Cycling-Legendary-ebook/dp/B075VDQD2W/ref=sr_1_1?ie=UTF8&qid=1533756774&sr=8-1&keywords=the+comeback+de+vise][The Comeback]] by
+Daniel de Vise and have a big queue of what's next.
+
+I'm also going to try to get a blog post or two out.
+
+One thing I've been meaning to blog about for a while is class
+communication and having seen [[https://medium.com/bucknell-hci/how-i-use-slack-in-my-courses-a-3-year-reflection-888c7e742d04][this]] the other day, I guess it's time.
+
+In the article, Evan Peck talks about his experience using Slack as a
+means of class communications and why he likes it. 
+
+Here's my take:
+
+Class communication takes many forms. It can be the dissemination of
+information such as assignments or announcements, assignment collection,
+presenting feedback either on assignments or in general, specific
+interactions between the instructor and the students, group
+discussions, and cross student interactions. 
+
+For sharing and collecting code as well as providing feedback, I like
+using [[https://cestlaz.github.io/posts/sigcse-2017-github-4/][Git and GitHub]]. I use it for homework, projects, sharing class
+code - pretty much anything involving code or student work. That
+leaves all of the basic communication platforms. The popular ones
+include:
+
+- The schools CMS -- Moodle, Blackboard etc.
+- Piazza or other forum platforms
+- Slack and other chat platforms
+- Facebook groups
+- old school mail lists
+
+* Blackboard or your school's CMS
+
+First up, Blackboard.
+
+Just no.
+
+In my experience, they're all slow and clunky and usually have an
+awkward interface. I've always found them hard to navigate and use and
+I find little value added.
+
+* Piazza and forum software
+
+[[https://piazza.com/][Piazza]] is a free to use discussion platform. Many schools use
+it. Personally, I don't like Piazza but it does have some good points:
+
+- The Q&A format works pretty well.
+- It allows anonymous posting which is sometimes desirable.
+- You can look at participation reports
+- TAs or instructors can approve questions and answers
+
+There really is a lot to like about it but it doesn't work for
+me. Personally, I don't like the interface but that wouldn't be the
+deal breaker for me if my kids liked it. The deal breaker for me is
+that kids have to actively go to the site. Yes, they can set their
+preferences for alerts but if they don't and they don't check the site
+regularly they'll miss things. This is a big deal to me. If I send out
+something important I have no idea if or when people will check in on
+it. For me personally, it's yet another site that I have to actively
+and regularly check. 
+
+Another interesting thing I learned about Piazza has to do with
+students honesty about platforms. Back at Stuy a colleague used Piazza
+regularly and was getting good results with it - many active
+students. I couldn't get as much buy in. The teacher told me that the
+kids said they really liked the platform. A year or two later, I
+surveyed the kids in my class -- they were in his and other teachers
+the previous year or two. I asked them about platforms they used and
+how they felt about them. The results were that they used Facebook
+groups on their own (I'll talk about them later) and used whatever
+platform we required because we required it. Even if they said they
+liked it, they really didn't.
+
+Last semester I set up a [[https://www.discourse.org/][Discourse]] server for HunterCS. Discourse is
+another discussion platform. I liked the
+fact that I could run the server and had ownership of the data. I also
+liked the way the forum software worked in general. On the other hand,
+it had similar overall problems as Piazza.
+
+* Slack
+
+A hot contender and the one that Mr. Peck uses is Slack. It's a chat
+platform. It can be a separate app running on your phone or desktop or
+you can use a web interface. It has channels for topics, can thread
+discussions, it does alerts well and can integrate with tools like
+calendars and GitHub. Just like with Piazza, there's a lot to like.
+
+My problem with Slack is that it's really for live communication not
+asynchronous after hours communication. It works best when you're
+working on something and you have your slack window open, you have a
+question so you type it in and get immediate answers. It just doesn't
+seem to work as well when you don't use it live. You can read the
+messages posted since you last checked but it can be really hard to
+follow unless people explicitly use the threading.
+
+Slack also shares the issue of being another site or application to
+use but since it does alerts well it doesn't bother me as much.
+
+* Facebook groups
+
+Facebook groups seem to have been the student go to for a while
+now. They create their own teacher/professor free student groups. I
+think it's great that they create resources like this and as I tell
+them, it's important for them to have a forum that's free from the
+teacher's eyes. I mean, how can they plan that surprise party for me
+on the class chatroom that I have access to :-). On the other hand,
+Facebook groups have some downsides:
+- Not searchable or discoverable. I've seen kids only find out about
+  them at the end of semesters.
+- In some cases, each year a new group is created so no institutional
+  memory develops. 
+- All the info stays in Facebook
+
+
+* Mail lists
+
+This all brings me to old school mailing lists. I've been using them
+for decades and I keep coming back to them. Since they're just email,
+no one has to check a separate app or site. Since they're email, they
+support threading. Also as email, they can be public to the list or
+private to just one or a few people.
+
+Again, they're not perfect - I can't easily set up long term
+categories or channels like you can with Slack or Piazza and they
+don't integrate with tools like calendars so as with everything else,
+there's always some compromise.
+
+* What do you use?
+
+I think I might try Slack again this semester if the students want to
+go for it or maybe discourse. If they don't want to try those, then
+it'll be back to mailing lists.
+
+What do all of you use? What are the strong and weak points of your
+chosen platform and what would make the ideal platform for class
+communication?
+
+ 
+
+
+
