@@ -1,0 +1,138 @@
+#+BEGIN_COMMENT
+.. title: Early Code Reuse
+.. slug: early-code-reuse
+.. date: 2018-08-16 02:28:18 UTC-04:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+I've been following the tweets coming out of [[https://icer.acm.org/][ICER2018]]. I've never been
+to ICER but now am thinking about trying to get funding to go next
+year. One set of tweets involved students writing or using APIs or
+Libraries. This overlaps with Owen Astrachan's talk from this past
+year's CSTA conference on sorting. I was planning on writing a post
+about Owen's talk but I thought I'd leave it for the school year
+closer to when sorting is typically covered.
+
+The points alluded to in the tweets go far deeper than can be
+addressed in one blog post and are more suited to the sorting post
+I'll write later on but I thought I'd share a lab that I stole from a
+friend of mine years ago to try to get the kids to abstract code into
+functions or methods early and to start to think about reusing blocks
+of code.
+
+I've talked about abstracting out and reusing code [[https://cestlaz.github.io/posts/refactoring][before]], after
+students have covered repetition but this lab
+can be done even earlier.  Part of the motivation is the age old
+problem of objects / functions / methods early or control structures
+early. With o/f/m early kids think about decomposition, layers, and
+abstractions but they don't have the tools to do a whole lot of
+interesting things. On the other hand, with control structures early,
+kids tend to get in the mindset of throwing everything in "main" at
+the top level.
+
+This lab tries to get the kids abstracting out and reusing or sharing
+code but doesn't require much more than methods or functions.
+
+The idea is to create an ASCII art robot or something similar. Of
+course, this could also be done in a graphical environment:
+
+
+#+BEGIN_EXAMPLE
+
+     ######################
+     #                    #
+     #   XX          XX   #
+     #                    #
+     #       XXXXX        #
+     #                    #
+     ######################
+              ###
+              ###
+          #############
+          #           #
+   ########           ########
+          #           #
+          #           #
+          #           #
+          #############
+            ##      ##
+            ##      ##
+            ##      ##
+_ 
+#+END_EXAMPLE
+
+This can easily be done with a series of output instructions or
+possibly by building a string with embedded newlines.
+
+The interesting part comes when you have the student write different
+functions for the parts of the robot - the head, body, and legs.
+
+Students end up with routines like this:
+
+#+BEGIN_SRC java
+  String generateHead(){
+      String h = "##########\n";
+      h =    h + "#        #\n";
+      h =    h + "#  X  X  #\n";
+      h =    h + "#         #\n";
+      h =    h + "###########\n";
+      return h;
+  }
+
+#+END_SRC
+
+and then can generate their robot:
+
+#+BEGIN_SRC java
+  String generateRobot(){
+      String r = "";
+      r = r + generatehead();
+      r = r + generateBody();
+      r = r + generateLegs();
+      return r;
+  }
+
+#+END_SRC
+
+Now for the fun part. Students can make a variety of heads, legs, and
+bodies. Going further, introduce if statements and random numbers and
+they can generate random robots:
+
+#+BEGIN_SRC java
+  String genRobot(){
+      Random r = new Random();
+      String robot="";
+
+      int i = r.nextInt(3);
+      if (i == 0) {
+          r = r + generateHead1();
+      } else if (i==1){
+          r = r + generateHead2();
+      } else {
+          r = r + generateHead3();
+      }
+
+      /* Generate the rest of the robot here */
+
+      return robot;
+
+  }
+
+
+#+END_SRC
+
+Not the most elegant code but this can be done VERY early when the
+students don't know more advanced constructs and techniques.
+
+The class can also share robot "components" as long as there's a
+simple code sharing mechanism - perhaps using [[https://help.github.com/articles/about-gists/][gists]]. 
+
+Finally, this can be revisited if desired later on once the class has
+covered more advanced language constructs.
+
+

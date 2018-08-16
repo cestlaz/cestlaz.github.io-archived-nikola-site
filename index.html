@@ -18,8 +18,8 @@ article: http://ogp.me/ns/article#
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="alternate" type="application/atom+xml" title="Atom" href="index.atom">
 <link rel="canonical" href="http://cestlaz.github.io/">
-<link rel="next" href="index-40.html" type="text/html">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/class-communications/" type="text/html">
+<link rel="next" href="index-41.html" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/early-code-reuse/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -90,7 +90,168 @@ article: http://ogp.me/ns/article#
     
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/class-communications/" class="u-url">Class Communications</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/early-code-reuse/" class="u-url">Early Code Reuse</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Mike Zamansky
+            </span></p>
+            <p class="dateline"><a href="posts/early-code-reuse/" rel="bookmark"><time class="published dt-published" datetime="2018-08-16T02:28:18-04:00" title="2018-08-16 02:28">2018-08-16 02:28</time></a></p>
+                <p class="commentline">            <a href="posts/early-code-reuse/#disqus_thread" data-disqus-identifier="cache/posts/early-code-reuse.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div id="outline-container-orga374521" class="outline-2">
+<h2 id="orga374521"></h2>
+<div class="outline-text-2" id="text-orga374521">
+<p>
+I've been following the tweets coming out of <a href="https://icer.acm.org/">ICER2018</a>. I've never been
+to ICER but now am thinking about trying to get funding to go next
+year. One set of tweets involved students writing or using APIs or
+Libraries. This overlaps with Owen Astrachan's talk from this past
+year's CSTA conference on sorting. I was planning on writing a post
+about Owen's talk but I thought I'd leave it for the school year
+closer to when sorting is typically covered.
+</p>
+
+<p>
+The points alluded to in the tweets go far deeper than can be
+addressed in one blog post and are more suited to the sorting post
+I'll write later on but I thought I'd share a lab that I stole from a
+friend of mine years ago to try to get the kids to abstract code into
+functions or methods early and to start to think about reusing blocks
+of code.
+</p>
+
+<p>
+I've talked about abstracting out and reusing code <a href="https://cestlaz.github.io/posts/refactoring">before</a>, after
+students have covered repetition but this lab
+can be done even earlier.  Part of the motivation is the age old
+problem of objects / functions / methods early or control structures
+early. With o/f/m early kids think about decomposition, layers, and
+abstractions but they don't have the tools to do a whole lot of
+interesting things. On the other hand, with control structures early,
+kids tend to get in the mindset of throwing everything in "main" at
+the top level.
+</p>
+
+<p>
+This lab tries to get the kids abstracting out and reusing or sharing
+code but doesn't require much more than methods or functions.
+</p>
+
+<p>
+The idea is to create an ASCII art robot or something similar. Of
+course, this could also be done in a graphical environment:
+</p>
+
+
+<pre class="example">
+
+     ######################
+     #                    #
+     #   XX          XX   #
+     #                    #
+     #       XXXXX        #
+     #                    #
+     ######################
+              ###
+              ###
+          #############
+          #           #
+   ########           ########
+          #           #
+          #           #
+          #           #
+          #############
+            ##      ##
+            ##      ##
+            ##      ##
+_ 
+</pre>
+
+<p>
+This can easily be done with a series of output instructions or
+possibly by building a string with embedded newlines.
+</p>
+
+<p>
+The interesting part comes when you have the student write different
+functions for the parts of the robot - the head, body, and legs.
+</p>
+
+<p>
+Students end up with routines like this:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">String</span> <span class="nf">generateHead</span><span class="o">(){</span>
+    <span class="n">String</span> <span class="n">h</span> <span class="o">=</span> <span class="s">"##########\n"</span><span class="o">;</span>
+    <span class="n">h</span> <span class="o">=</span>    <span class="n">h</span> <span class="o">+</span> <span class="s">"#        #\n"</span><span class="o">;</span>
+    <span class="n">h</span> <span class="o">=</span>    <span class="n">h</span> <span class="o">+</span> <span class="s">"#  X  X  #\n"</span><span class="o">;</span>
+    <span class="n">h</span> <span class="o">=</span>    <span class="n">h</span> <span class="o">+</span> <span class="s">"#         #\n"</span><span class="o">;</span>
+    <span class="n">h</span> <span class="o">=</span>    <span class="n">h</span> <span class="o">+</span> <span class="s">"###########\n"</span><span class="o">;</span>
+    <span class="k">return</span> <span class="n">h</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></div>
+
+<p>
+and then can generate their robot:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">String</span> <span class="nf">generateRobot</span><span class="o">(){</span>
+    <span class="n">String</span> <span class="n">r</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="n">generatehead</span><span class="o">();</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="n">generateBody</span><span class="o">();</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="n">generateLegs</span><span class="o">();</span>
+    <span class="k">return</span> <span class="n">r</span><span class="o">;</span>
+<span class="o">}</span>
+</pre></div>
+
+<p>
+Now for the fun part. Students can make a variety of heads, legs, and
+bodies. Going further, introduce if statements and random numbers and
+they can generate random robots:
+</p>
+
+<div class="highlight"><pre><span></span><span class="n">String</span> <span class="nf">genRobot</span><span class="o">(){</span>
+    <span class="n">Random</span> <span class="n">r</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Random</span><span class="o">();</span>
+    <span class="n">String</span> <span class="n">robot</span><span class="o">=</span><span class="s">""</span><span class="o">;</span>
+
+    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="na">nextInt</span><span class="o">(</span><span class="mi">3</span><span class="o">);</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+	<span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="n">generateHead1</span><span class="o">();</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">i</span><span class="o">==</span><span class="mi">1</span><span class="o">){</span>
+	<span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="n">generateHead2</span><span class="o">();</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+	<span class="n">r</span> <span class="o">=</span> <span class="n">r</span> <span class="o">+</span> <span class="n">generateHead3</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="cm">/* Generate the rest of the robot here */</span>
+
+    <span class="k">return</span> <span class="n">robot</span><span class="o">;</span>
+
+<span class="o">}</span>
+</pre></div>
+
+<p>
+Not the most elegant code but this can be done VERY early when the
+students don't know more advanced constructs and techniques.
+</p>
+
+<p>
+The class can also share robot "components" as long as there's a
+simple code sharing mechanism - perhaps using <a href="https://help.github.com/articles/about-gists/">gists</a>. 
+</p>
+
+<p>
+Finally, this can be revisited if desired later on once the class has
+covered more advanced language constructs.
+</p>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/class-communications/" class="u-url">Class Communications</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Mike Zamansky
@@ -1357,130 +1518,11 @@ already looking forward to next year.
 </div>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="posts/ap-2018/" class="u-url">I'm not going to congratulate you on your AP results</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Mike Zamansky
-            </span></p>
-            <p class="dateline"><a href="posts/ap-2018/" rel="bookmark"><time class="published dt-published" datetime="2018-07-05T15:36:22-04:00" title="2018-07-05 15:36">2018-07-05 15:36</time></a></p>
-                <p class="commentline">            <a href="posts/ap-2018/#disqus_thread" data-disqus-identifier="cache/posts/ap-2018.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div id="outline-container-org3bf0593" class="outline-2">
-<h2 id="org3bf0593"></h2>
-<div class="outline-text-2" id="text-org3bf0593">
-<p>
-While busy finishing off my sides for my talk at CSTA2018 this weekend
-I noticed a Facebook post about APCS exam grades now or shortly being
-available.
-</p>
-
-<p>
-I'm no longer teaching high school but still fancy myself a teacher
-first and part of the K12CS community. We're a growing community and
-we're growing fast.
-</p>
-
-<p>
-Usually, at this time of year we see a number of people posting their
-results. "I had 16 test takers, had 5 fives, 6 fours etc." 
-</p>
-
-<p>
-I decided that not only won't I be congratulating anyone on their
-results this year but decided to write this quick post to say no one
-should.
-</p>
-
-<p>
-I'm not saying that hundreds of teachers out there don't deserve
-congratulations - they do. The problem is, for everyone who's kids 
-got all fours and fives, somewhere out there was a teacher who
-possibly through no fault of their own had students scoring ones, twos
-and threes. 
-</p>
-
-<p>
-When I was at Stuy, almost all of my kids got fours or fives when the
-exam was the old AB exam. When it went to A only, it was almost
-exclusively fives with a few fours and maybe a single one. That wasn't
-me. It was the kids. The AP CS teacher before me got similar results
-as did all of my colleagues and the teachers who are still
-there. Again, it was the kids.
-</p>
-
-<p>
-That's not to say that I didn't add value. I know I spent a career at
-Stuy doing right by those kids regardless of test scores.
-</p>
-
-<p>
-The fact is that there's only so much a teacher can do.
-</p>
-
-<ul class="org-ul">
-<li>Was APCS (A or principles) their first course?</li>
-<li>What other demands are placed on the students?</li>
-<li>How about the teacher?</li>
-<li>How many kids in a class? How much time?</li>
-<li>Is APCS an elective or required??</li>
-<li>Is the teacher getting the support they need?</li>
-</ul>
-<p>
-And the list goes on. I know some great teachers who never had classes
-with great AP results and meh teachers that did. Actually, I know some
-APCS and Calc teachers that consistently had classes with good scores
-through drill and kill and building student speed. Of course, at the
-same time these teachers totally turned the kids off from the subjects
-</p>
-
-<p>
-Our teachers do deserve praise and congratulations.
-</p>
-
-<ul class="org-ul">
-<li>Praise for getting through another year.</li>
-<li>Praise for forging a path in this new subject area.</li>
-<li>Praise for doing more with less.</li>
-<li>Praise for inspiring kids and starting them on a path.</li>
-<li>Praise for changing lives for the better.</li>
-<li>And so on</li>
-</ul>
-<p>
-If your kids left with more than they came in with you did a great job
-and deserve congratulations. If you set a seed that will later grow
-you've done an enormous amount of good.
-</p>
-
-
-<p>
-It's like I would always tell my kids when they won an award. I was
-never proud of them actually winning the award. I was proud of how they carried
-themselves, prepared, performed or whatever. The award was just some
-outsider also noticing they're awesome.
-</p>
-
-<p>
-Same thing here so I won't be congratulating teachers on student test
-results. The results coming in do provide some measure of closure for
-the year though so I will congratulate you all on the year and your
-work.
-</p>
-
-<p>
-Hope to see many of you this weekend at CSTA2018.
-</p>
-</div>
-</div>
-    </div>
     </article>
 </div>
         <nav class="postindexpager"><ul class="pager">
 <li class="next">
-                <a href="index-40.html" rel="next">Older posts</a>
+                <a href="index-41.html" rel="next">Older posts</a>
             </li>
         </ul></nav><script>var disqus_shortname="cestlaz";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
 </div>

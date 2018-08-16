@@ -1,5 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 08 Aug 2018 20:18:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Class Communications</title><link>http://cestlaz.github.io/posts/class-communications/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org70d5ae3" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 16 Aug 2018 07:09:59 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Early Code Reuse</title><link>http://cestlaz.github.io/posts/early-code-reuse/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orga374521" class="outline-2"&gt;
+&lt;h2 id="orga374521"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga374521"&gt;
+&lt;p&gt;
+I've been following the tweets coming out of &lt;a href="https://icer.acm.org/"&gt;ICER2018&lt;/a&gt;. I've never been
+to ICER but now am thinking about trying to get funding to go next
+year. One set of tweets involved students writing or using APIs or
+Libraries. This overlaps with Owen Astrachan's talk from this past
+year's CSTA conference on sorting. I was planning on writing a post
+about Owen's talk but I thought I'd leave it for the school year
+closer to when sorting is typically covered.
+&lt;/p&gt;
+
+&lt;p&gt;
+The points alluded to in the tweets go far deeper than can be
+addressed in one blog post and are more suited to the sorting post
+I'll write later on but I thought I'd share a lab that I stole from a
+friend of mine years ago to try to get the kids to abstract code into
+functions or methods early and to start to think about reusing blocks
+of code.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've talked about abstracting out and reusing code &lt;a href="https://cestlaz.github.io/posts/refactoring"&gt;before&lt;/a&gt;, after
+students have covered repetition but this lab
+can be done even earlier.  Part of the motivation is the age old
+problem of objects / functions / methods early or control structures
+early. With o/f/m early kids think about decomposition, layers, and
+abstractions but they don't have the tools to do a whole lot of
+interesting things. On the other hand, with control structures early,
+kids tend to get in the mindset of throwing everything in "main" at
+the top level.
+&lt;/p&gt;
+
+&lt;p&gt;
+This lab tries to get the kids abstracting out and reusing or sharing
+code but doesn't require much more than methods or functions.
+&lt;/p&gt;
+
+&lt;p&gt;
+The idea is to create an ASCII art robot or something similar. Of
+course, this could also be done in a graphical environment:
+&lt;/p&gt;
+
+
+&lt;pre class="example"&gt;
+
+     ######################
+     #                    #
+     #   XX          XX   #
+     #                    #
+     #       XXXXX        #
+     #                    #
+     ######################
+              ###
+              ###
+          #############
+          #           #
+   ########           ########
+          #           #
+          #           #
+          #           #
+          #############
+            ##      ##
+            ##      ##
+            ##      ##
+_ 
+&lt;/pre&gt;
+
+&lt;p&gt;
+This can easily be done with a series of output instructions or
+possibly by building a string with embedded newlines.
+&lt;/p&gt;
+
+&lt;p&gt;
+The interesting part comes when you have the student write different
+functions for the parts of the robot - the head, body, and legs.
+&lt;/p&gt;
+
+&lt;p&gt;
+Students end up with routines like this:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="nf"&gt;generateHead&lt;/span&gt;&lt;span class="o"&gt;(){&lt;/span&gt;
+    &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"##########\n"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;    &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"#        #\n"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;    &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"#  X  X  #\n"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;    &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"#         #\n"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;    &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"###########\n"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+and then can generate their robot:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="nf"&gt;generateRobot&lt;/span&gt;&lt;span class="o"&gt;(){&lt;/span&gt;
+    &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;generatehead&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;generateBody&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;generateLegs&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Now for the fun part. Students can make a variety of heads, legs, and
+bodies. Going further, introduce if statements and random numbers and
+they can generate random robots:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="nf"&gt;genRobot&lt;/span&gt;&lt;span class="o"&gt;(){&lt;/span&gt;
+    &lt;span class="n"&gt;Random&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;Random&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+    &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;robot&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+
+    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;nextInt&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+	&lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;generateHead1&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
+	&lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;generateHead2&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
+	&lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;generateHead3&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
+    &lt;span class="o"&gt;}&lt;/span&gt;
+
+    &lt;span class="cm"&gt;/* Generate the rest of the robot here */&lt;/span&gt;
+
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;robot&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Not the most elegant code but this can be done VERY early when the
+students don't know more advanced constructs and techniques.
+&lt;/p&gt;
+
+&lt;p&gt;
+The class can also share robot "components" as long as there's a
+simple code sharing mechanism - perhaps using &lt;a href="https://help.github.com/articles/about-gists/"&gt;gists&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Finally, this can be revisited if desired later on once the class has
+covered more advanced language constructs.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/early-code-reuse/</guid><pubDate>Thu, 16 Aug 2018 06:28:18 GMT</pubDate></item><item><title>Class Communications</title><link>http://cestlaz.github.io/posts/class-communications/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org70d5ae3" class="outline-2"&gt;
 &lt;h2 id="org70d5ae3"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-org70d5ae3"&gt;
 &lt;p&gt;
@@ -1147,111 +1294,4 @@ really outdid themselves this year. Great job on CSTA 2018. I'm
 already looking forward to next year.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/csta-2018-report/</guid><pubDate>Tue, 10 Jul 2018 23:30:06 GMT</pubDate></item><item><title>I'm not going to congratulate you on your AP results</title><link>http://cestlaz.github.io/posts/ap-2018/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3bf0593" class="outline-2"&gt;
-&lt;h2 id="org3bf0593"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3bf0593"&gt;
-&lt;p&gt;
-While busy finishing off my sides for my talk at CSTA2018 this weekend
-I noticed a Facebook post about APCS exam grades now or shortly being
-available.
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm no longer teaching high school but still fancy myself a teacher
-first and part of the K12CS community. We're a growing community and
-we're growing fast.
-&lt;/p&gt;
-
-&lt;p&gt;
-Usually, at this time of year we see a number of people posting their
-results. "I had 16 test takers, had 5 fives, 6 fours etc." 
-&lt;/p&gt;
-
-&lt;p&gt;
-I decided that not only won't I be congratulating anyone on their
-results this year but decided to write this quick post to say no one
-should.
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm not saying that hundreds of teachers out there don't deserve
-congratulations - they do. The problem is, for everyone who's kids 
-got all fours and fives, somewhere out there was a teacher who
-possibly through no fault of their own had students scoring ones, twos
-and threes. 
-&lt;/p&gt;
-
-&lt;p&gt;
-When I was at Stuy, almost all of my kids got fours or fives when the
-exam was the old AB exam. When it went to A only, it was almost
-exclusively fives with a few fours and maybe a single one. That wasn't
-me. It was the kids. The AP CS teacher before me got similar results
-as did all of my colleagues and the teachers who are still
-there. Again, it was the kids.
-&lt;/p&gt;
-
-&lt;p&gt;
-That's not to say that I didn't add value. I know I spent a career at
-Stuy doing right by those kids regardless of test scores.
-&lt;/p&gt;
-
-&lt;p&gt;
-The fact is that there's only so much a teacher can do.
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Was APCS (A or principles) their first course?&lt;/li&gt;
-&lt;li&gt;What other demands are placed on the students?&lt;/li&gt;
-&lt;li&gt;How about the teacher?&lt;/li&gt;
-&lt;li&gt;How many kids in a class? How much time?&lt;/li&gt;
-&lt;li&gt;Is APCS an elective or required??&lt;/li&gt;
-&lt;li&gt;Is the teacher getting the support they need?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-And the list goes on. I know some great teachers who never had classes
-with great AP results and meh teachers that did. Actually, I know some
-APCS and Calc teachers that consistently had classes with good scores
-through drill and kill and building student speed. Of course, at the
-same time these teachers totally turned the kids off from the subjects
-&lt;/p&gt;
-
-&lt;p&gt;
-Our teachers do deserve praise and congratulations.
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Praise for getting through another year.&lt;/li&gt;
-&lt;li&gt;Praise for forging a path in this new subject area.&lt;/li&gt;
-&lt;li&gt;Praise for doing more with less.&lt;/li&gt;
-&lt;li&gt;Praise for inspiring kids and starting them on a path.&lt;/li&gt;
-&lt;li&gt;Praise for changing lives for the better.&lt;/li&gt;
-&lt;li&gt;And so on&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-If your kids left with more than they came in with you did a great job
-and deserve congratulations. If you set a seed that will later grow
-you've done an enormous amount of good.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-It's like I would always tell my kids when they won an award. I was
-never proud of them actually winning the award. I was proud of how they carried
-themselves, prepared, performed or whatever. The award was just some
-outsider also noticing they're awesome.
-&lt;/p&gt;
-
-&lt;p&gt;
-Same thing here so I won't be congratulating teachers on student test
-results. The results coming in do provide some measure of closure for
-the year though so I will congratulate you all on the year and your
-work.
-&lt;/p&gt;
-
-&lt;p&gt;
-Hope to see many of you this weekend at CSTA2018.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>ap</category><category>csed</category><category>tests</category><guid>http://cestlaz.github.io/posts/ap-2018/</guid><pubDate>Thu, 05 Jul 2018 19:36:22 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/csta-2018-report/</guid><pubDate>Tue, 10 Jul 2018 23:30:06 GMT</pubDate></item></channel></rss>
