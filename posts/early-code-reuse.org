@@ -110,11 +110,11 @@ they can generate random robots:
 
       int i = r.nextInt(3);
       if (i == 0) {
-          r = r + generateHead1();
+          robot = robot + generateHead1();
       } else if (i==1){
-          r = r + generateHead2();
+          robot = robot + generateHead2();
       } else {
-          r = r + generateHead3();
+          robot = robot + generoateHead3();
       }
 
       /* Generate the rest of the robot here */
