@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2018-08-17T06:27:20Z</updated>
+  <updated>2018-08-17T19:58:06Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,142 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-41.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Rite Of Passage Projects</title>
+    <id>http://cestlaz.github.io/posts/rite-of-passage-projects/</id>
+    <updated>2018-08-17T15:18:11-04:00</updated>
+    <published>2018-08-17T15:18:11-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/rite-of-passage-projects/"/>
+    <summary type="html">&lt;div id="outline-container-org047f8c6" class="outline-2"&gt;
+&lt;h2 id="org047f8c6"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org047f8c6"&gt;
+&lt;p&gt;
+JCS's &lt;a href="https://irreal.org/blog/?p=7414#comment-4045190612"&gt;post&lt;/a&gt; on Irreal today brought me back. It was about &lt;a href="https://en.wikipedia.org/wiki/Brief_(text_editor)"&gt;Brief&lt;/a&gt; which
+was the editing hotness back in the day. I played with it a little
+really mostly used Emacs clones for real work when I was stuck on
+MS-DOS systems. Usually either &lt;a href="https://en.wikipedia.org/wiki/JOVE"&gt;JOVE&lt;/a&gt; or &lt;a href="https://en.wikipedia.org/wiki/Epsilon_(text_editor)"&gt;Epsilon&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+In the comments Jon reminded me about the &lt;a href="https://en.wikipedia.org/wiki/MKS_Toolkit"&gt;MKS Toolkit&lt;/a&gt;
+which brought most everyday Unix tools to DOS along with a shell and
+a version of Vi. I didn't use Vi much and I only used their shell
+until I wrote my own. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This got me thinking about "rite of passage" projects. I was in
+college in the mid to late 80s. It was the heyday of the
+IBM-PC. Schools still used older time sharing systems like DEC-20s and
+Vaxen but the PC was all the rage. The cool thing about them was that
+you had full control and access to the machine and it was simple
+enough to get your head around pretty much everything about it. The
+downside was that MS-DOS was very limited and of course there was
+little to no networking going on. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the one hand, you could dive into the low level machine language
+stuff very easily. Get Norton's book:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="https://covers.openlibrary.org/b/id/7446489-L.jpg" alt="7446489-L.jpg" align="center" height="250"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+and you're on your way. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand many student's graduated with no concept of time
+sharing and the ramifications of sharing a system or resources were
+foreign to many kids.
+&lt;/p&gt;
+
+&lt;p&gt;
+Even though we always look back to the "good old days," in many ways
+things weren't much different. I got a very strong background in
+academic CS from NYU (Courant Institute) but just like today, there
+was no real preparation for the real world.If you wanted to really develop your
+coding chops you had to work on side projects.
+&lt;/p&gt;
+
+&lt;p&gt;
+I seem to recall, a typical "rite of passage" side project was writing
+your own shell. It didn't have to be anything as powerful as BASH or
+ZSH but it would typically be much more powerful than DOS and much
+more Unixy.
+&lt;/p&gt;
+
+&lt;p&gt;
+I recall writing my first shell down in UC-49 of Tisch Hall when the
+computer labs weren't busy. I wrote it in C which was what the cool
+kids used back then. Specifically I used the &lt;a href="https://en.wikipedia.org/wiki/Mark_Williams_Company"&gt;Let's C&lt;/a&gt; compiler from the
+Mark Williams company. This was before Turbo C 2.0 so Let's C was
+pretty much the only game in town for a cheap Unix style C compiler
+for DOS. There was also Run/C but that was a C interpreter, not a
+compiler. I also used that to learn C. Funny story - I certainly
+didn't know this at the time but Run/C was written by Peter
+Brooks. Peter and I would later meet when he became my colleague at
+Stuyvesant teaching CS and I now have the privilege of being able to
+call him friend. I joke that I owe him ~ $100 for the interpreter from
+back in the day.
+&lt;/p&gt;
+
+&lt;p&gt;
+Since this was on DOS, I couldn't do real Unix style pipes like 
+&lt;code&gt;cat file | sort | uniq -c | sort -n&lt;/code&gt; but I did simulate it with redirection and temporary
+files. It also supported aliases, simple scripts and I think a few
+other things. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I was pretty happy with it and used it for a couple of years. It was
+also one of the first substantial programs I wrote. I learned a lot
+from doing it.
+&lt;/p&gt;
+
+&lt;p&gt;
+Another "rite of passage" program that was common back then was a
+text based window library. Somethig like ncurses that would allow you
+to make text based windows and menus on the text only screen. I also
+wrote one of these and actually got to use it for a project when I
+started working at Goldman. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I guess the third "rite of passage" project I remember was writing a C
+compiler but that was different because it was for a class. It was a
+significant project but the class didn't really help with writing a
+large program in general - it was all about the compiler and all the
+theory behind it. Great course but not one in software engineering.
+&lt;/p&gt;
+
+&lt;p&gt;
+Nowadays the projects have changed. Text based windowing is long gone
+and while I still think writing a shell is a useful and rewarding
+exercise it's not scratching an itch the way it did back when we were
+stuck on DOS. I guess writing a full stack web app is probably a
+pretty typical one for students these days. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Any others?
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="c" label="C"/>
+    <category term="cs" label="cs"/>
+    <category term="emacs" label="emacs"/>
+    <category term="programming" label="programming"/>
+    <category term="projects" label="projects"/>
+  </entry>
   <entry>
     <title>Early Code Reuse</title>
     <id>http://cestlaz.github.io/posts/early-code-reuse/</id>
@@ -1253,181 +1389,5 @@ this year brings both on the local and national level.
 &lt;/div&gt;</summary>
     <category term="csed" label="csed"/>
     <category term="csta" label="csta"/>
-  </entry>
-  <entry>
-    <title>Csta 2018 Report</title>
-    <id>http://cestlaz.github.io/posts/csta-2018-report/</id>
-    <updated>2018-07-10T19:30:06-04:00</updated>
-    <published>2018-07-10T19:30:06-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/csta-2018-report/"/>
-    <summary type="html">&lt;div id="outline-container-org78aa4a7" class="outline-2"&gt;
-&lt;h2 id="org78aa4a7"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org78aa4a7"&gt;
-&lt;p&gt;
-I just got back from the CSTA (Computer Science Teacher's Association)
-conference. It's the biggest annual conference dedicated to K12 CS
-education. I think there were about 700 people attending. It felt much
-larger than last year but compared to SIGCSE which is double the size,
-CSTA still felt pretty intimate.
-&lt;/p&gt;
-
-&lt;p&gt;
-The conference was in Omaha Devorah came along to play tourist and we both 
-came a day early to do some site seeing. 
-&lt;/p&gt;
-
-&lt;p&gt;
-First, we hit the &lt;a href="http://www.omahazoo.com/"&gt;zoo&lt;/a&gt; and &lt;a href="https://www.lauritzengardens.org/"&gt;Lauritzen Gardens&lt;/a&gt;. We've got the Bronx Zoo
-here in NY an the NY and Brooklyn Botanical Gardens which are all
-pretty impressive but even so, Omaha's zoo and gardens are well worth
-a visit. We then went over to the &lt;a href="https://durhammuseum.org/"&gt;Durham Museum&lt;/a&gt; which was really
-terrific. Housed in an old railroad station, the museum has lots of
-great Omaha history as well as trains and other neat exhibits.
-&lt;/p&gt;
-
-&lt;p&gt;
-We also walked all over and did our best to pick up on the local
-flavor. One of our discoveries was a terrifically quirky
-&lt;a href="https://www.omahanostalgia.com/"&gt;retro/nostalgia/antiques&lt;/a&gt; store. It had an awesome working Pinball
-museum
-&lt;/p&gt;
-
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/csta-2018/pinball.jpg" alt="pinball.jpg" align="center"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;
-along with all the rubber ducks you'd ever want for debugging
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/csta-2018/ducks.jpg" alt="ducks.jpg" align="center"&gt; 
-&lt;/p&gt;
-&lt;/div&gt;
-
-
-
-&lt;p&gt;
-and a whole lot more. 
-&lt;/p&gt;
-
-&lt;p&gt;
-By the river, we found both a statue and series of plaques honoring
-labor:
-&lt;/p&gt;
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/csta-2018/labor.jpg" alt="labor.jpg" align="center"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-something I'm thinking a lot about now in light of the recent Janus
-decision.
-&lt;/p&gt;
-
-
-
-&lt;p&gt;
-As for the conference. It was 100% worth it. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I spent a lot of time at the GitHub booth with my new friend  &lt;a href="https://twitter.com/JohnPhamous"&gt;John&lt;/a&gt;
-talking about how I use GitHub with my classes.
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/csta-2018/git.jpg" alt="git.jpg" align="center"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-and as always one of the highlights was spending time with old friends
-and making new friends while talking shop.
-&lt;/p&gt;
-
-&lt;p&gt;
-I also gave a talk on the state of CS teacher certification in New
-York State and what we're rolling out at Hunter. that led to
-discussions with people from all over. Texas, California, Indiana, and
-other places. We had some great discussions as to what's going on all
-over the country. I also had a chance to talk to teachers from all
-over NY State to let them know how Hunter can help them.
-&lt;/p&gt;
-
-&lt;p&gt;
-There were also interesting sessions. I attended a BOF facilitated by
-&lt;a href="https://twitter.com/Todd_Lash"&gt;Todd Lash&lt;/a&gt; and others about mapping model lessons to CS standards. I'm
-actually not a fan of "the standards" and have some serious concerns
-about how standards are thrown around and used but it was a very
-interesting session nonetheless.
-&lt;/p&gt;
-
-&lt;p&gt;
-I also enjoyed a session by Owen Astrachan on teaching sorting. Owen
-gives a great talk. I didn't agree with some of how he approaches
-teaching sorting but then we teach different classes and students and
-could have slightly different goals leading to my view. In any case, it was very
-interesting and I plan on  stealing the motivation he used. Owen
-started with a list of top hits - their titles and artist names and
-had us perform some mini data mining exercises on them in a
-spreadsheet to motivate the concept of sorting.
-&lt;/p&gt;
-
-&lt;p&gt;
-Probably the highlight of the conference for me was &lt;a href="https://twitter.com/mfh?lang=en"&gt;Michelle Friend&lt;/a&gt;'s
-keynote. She had me as soon as she encouraged us to question the value
-of a lot of the education research out there. It got better when she
-reminded the audience of teachers that they &lt;b&gt;were&lt;/b&gt; all education
-researchers. they perform their practice every day, analyze the
-results, and work to improve. So often, I hear education researchers
-dismiss teachers - "that's just anecdotal" they say while they
-publish the "true way" while ignoring the thousands of complex factors
-that actually affect education. There is some research that's great
-and some researchers I greatly respect but I've been forced to read
-enough bunk and there's been enough nonsense forced upon teachers over
-the years that just doesn't work in practice that a healthy dose of
-skepticism is critical.
-&lt;/p&gt;
-
-&lt;p&gt;
-Michelle also talked about assessment and how we test "what we can"
-rather than what we should.
-&lt;/p&gt;
-
-&lt;p&gt;
-It wasn't a talk from on high but I think it's what the audience
-needed - a talk from someone who's currently an academic but who at
-her core, I think is a teacher. It was teacher to teacher and that's
-what, at least in my opinion CSTA should be about.
-&lt;/p&gt;
-
-&lt;p&gt;
-A final highlight for me was when they awarded the Cutler Bell price
-for high school students. I knew that Benjamin Spector &amp;amp; Michael
-Truell were winners but I didn't realize they'd be at the conference
-to receive their award for their work  creating &lt;a href="https://halite.io/"&gt;Halite&lt;/a&gt;. I had helped
-them a bit along the way so knew the quality and impact of the project
-and it was great to see Ben and Mike recognized and to be there to be
-able to congratulate them in person.
-&lt;/p&gt;
-
-&lt;p&gt;
-Now it's back home and back to reality. The organizing committee
-really outdid themselves this year. Great job on CSTA 2018. I'm
-already looking forward to next year.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
   </entry>
 </feed>

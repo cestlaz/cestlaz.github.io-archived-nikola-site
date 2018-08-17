@@ -1,5 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sat, 30 Jun 2018 18:59:37 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Hunter CS - a lot of progress in a short time</title><link>http://cestlaz.github.io/posts/hunter-cs-year-two/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org5c6917c" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about cs)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/cs.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Fri, 17 Aug 2018 19:58:06 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Rite Of Passage Projects</title><link>http://cestlaz.github.io/posts/rite-of-passage-projects/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org047f8c6" class="outline-2"&gt;
+&lt;h2 id="org047f8c6"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org047f8c6"&gt;
+&lt;p&gt;
+JCS's &lt;a href="https://irreal.org/blog/?p=7414#comment-4045190612"&gt;post&lt;/a&gt; on Irreal today brought me back. It was about &lt;a href="https://en.wikipedia.org/wiki/Brief_(text_editor)"&gt;Brief&lt;/a&gt; which
+was the editing hotness back in the day. I played with it a little
+really mostly used Emacs clones for real work when I was stuck on
+MS-DOS systems. Usually either &lt;a href="https://en.wikipedia.org/wiki/JOVE"&gt;JOVE&lt;/a&gt; or &lt;a href="https://en.wikipedia.org/wiki/Epsilon_(text_editor)"&gt;Epsilon&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+In the comments Jon reminded me about the &lt;a href="https://en.wikipedia.org/wiki/MKS_Toolkit"&gt;MKS Toolkit&lt;/a&gt;
+which brought most everyday Unix tools to DOS along with a shell and
+a version of Vi. I didn't use Vi much and I only used their shell
+until I wrote my own. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This got me thinking about "rite of passage" projects. I was in
+college in the mid to late 80s. It was the heyday of the
+IBM-PC. Schools still used older time sharing systems like DEC-20s and
+Vaxen but the PC was all the rage. The cool thing about them was that
+you had full control and access to the machine and it was simple
+enough to get your head around pretty much everything about it. The
+downside was that MS-DOS was very limited and of course there was
+little to no networking going on. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the one hand, you could dive into the low level machine language
+stuff very easily. Get Norton's book:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="https://covers.openlibrary.org/b/id/7446489-L.jpg" alt="7446489-L.jpg" align="center" height="250"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+and you're on your way. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand many student's graduated with no concept of time
+sharing and the ramifications of sharing a system or resources were
+foreign to many kids.
+&lt;/p&gt;
+
+&lt;p&gt;
+Even though we always look back to the "good old days," in many ways
+things weren't much different. I got a very strong background in
+academic CS from NYU (Courant Institute) but just like today, there
+was no real preparation for the real world.If you wanted to really develop your
+coding chops you had to work on side projects.
+&lt;/p&gt;
+
+&lt;p&gt;
+I seem to recall, a typical "rite of passage" side project was writing
+your own shell. It didn't have to be anything as powerful as BASH or
+ZSH but it would typically be much more powerful than DOS and much
+more Unixy.
+&lt;/p&gt;
+
+&lt;p&gt;
+I recall writing my first shell down in UC-49 of Tisch Hall when the
+computer labs weren't busy. I wrote it in C which was what the cool
+kids used back then. Specifically I used the &lt;a href="https://en.wikipedia.org/wiki/Mark_Williams_Company"&gt;Let's C&lt;/a&gt; compiler from the
+Mark Williams company. This was before Turbo C 2.0 so Let's C was
+pretty much the only game in town for a cheap Unix style C compiler
+for DOS. There was also Run/C but that was a C interpreter, not a
+compiler. I also used that to learn C. Funny story - I certainly
+didn't know this at the time but Run/C was written by Peter
+Brooks. Peter and I would later meet when he became my colleague at
+Stuyvesant teaching CS and I now have the privilege of being able to
+call him friend. I joke that I owe him ~ $100 for the interpreter from
+back in the day.
+&lt;/p&gt;
+
+&lt;p&gt;
+Since this was on DOS, I couldn't do real Unix style pipes like 
+&lt;code&gt;cat file | sort | uniq -c | sort -n&lt;/code&gt; but I did simulate it with redirection and temporary
+files. It also supported aliases, simple scripts and I think a few
+other things. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I was pretty happy with it and used it for a couple of years. It was
+also one of the first substantial programs I wrote. I learned a lot
+from doing it.
+&lt;/p&gt;
+
+&lt;p&gt;
+Another "rite of passage" program that was common back then was a
+text based window library. Somethig like ncurses that would allow you
+to make text based windows and menus on the text only screen. I also
+wrote one of these and actually got to use it for a project when I
+started working at Goldman. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I guess the third "rite of passage" project I remember was writing a C
+compiler but that was different because it was for a class. It was a
+significant project but the class didn't really help with writing a
+large program in general - it was all about the compiler and all the
+theory behind it. Great course but not one in software engineering.
+&lt;/p&gt;
+
+&lt;p&gt;
+Nowadays the projects have changed. Text based windowing is long gone
+and while I still think writing a shell is a useful and rewarding
+exercise it's not scratching an itch the way it did back when we were
+stuck on DOS. I guess writing a full stack web app is probably a
+pretty typical one for students these days. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Any others?
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>C</category><category>cs</category><category>emacs</category><category>programming</category><category>projects</category><guid>http://cestlaz.github.io/posts/rite-of-passage-projects/</guid><pubDate>Fri, 17 Aug 2018 19:18:11 GMT</pubDate></item><item><title>Hunter CS - a lot of progress in a short time</title><link>http://cestlaz.github.io/posts/hunter-cs-year-two/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org5c6917c" class="outline-2"&gt;
 &lt;h2 id="org5c6917c"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-org5c6917c"&gt;
 &lt;p&gt;
@@ -1123,135 +1243,4 @@ a copy. Once I do I hope to be able to find some gems that I can work
 into CS 1 experiences.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>education</category><category>theory</category><guid>http://cestlaz.github.io/posts/sigcse2018-theory/</guid><pubDate>Tue, 13 Mar 2018 23:21:43 GMT</pubDate></item><item><title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title><link>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge428d07" class="outline-2"&gt;
-&lt;h2 id="orge428d07"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge428d07"&gt;
-&lt;p&gt;
-I really didn't know what to expect at the &lt;a href="https://dl.acm.org/citation.cfm?id=3159471"&gt;Creativity, Customization,
-and Ownership: Game Design in Bootstrap: Algebra&lt;/a&gt; session. I've been a
-big fan of &lt;a href="http://www.bootstrapworld.org/"&gt;Bootstrep&lt;/a&gt; for years and looking at the authors, &lt;a href="http://blog.acthompson.net/2017/10/cs-teacher-interview-emmanuel.html"&gt;Emmanuel
-Schanzer&lt;/a&gt;'s been a freind forever. I've never met &lt;a href="https://twitter.com/ShriramKMurthi"&gt;Shriram Krishnamurthi&lt;/a&gt;
-in person but am looking forward to it. We've traded emails and blog
-comments. I'd like to consider him a friend and I certainly respect
-him and his work even though we frequently disagree around the
-edges. The third author and presenter, Kathi Fisler was new to me.
-&lt;/p&gt;
-
-&lt;p&gt;
-The Bootstrap program is embedded in algebra classes. In it, students
-use Racket (nee scheme) to reinforce math skills while building
-computer science skills. The big student project is a graphical game.
-&lt;/p&gt;
-
-&lt;p&gt;
-When designing the project, students are asked to decide on and find
-four resources:
-&lt;/p&gt;
-
-&lt;ol class="org-ol"&gt;
-&lt;li&gt;The background image&lt;/li&gt;
-&lt;li&gt;The player image&lt;/li&gt;
-&lt;li&gt;The target image&lt;/li&gt;
-&lt;li&gt;The enemy image&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;
-Students are given a short amount of time to decide on and find these
-four images. I think it was about ten minutes and that's it. That's
-all the "creativity" in the assignment. After that, all the students
-are essentially creating the same game with different skins.
-&lt;/p&gt;
-
-&lt;p&gt;
-This design makes sense. You can't have students going all over the
-place. Constraining the assignment in this way allows teachers who
-might now be strong in computer science to guide the kids through the
-program to completion.
-&lt;/p&gt;
-
-&lt;p&gt;
-At the time I was thinking: I really like all of this but is it really
-open ended creativity and discovery with respect to math or computer
-science? As it turned out, Fisler addressed this point at the end of
-the talk in a way that made me vary happy.
-&lt;/p&gt;
-
-&lt;p&gt;
-Fisler went on to describe the rest of the student experience and then
-went on to talk about the statistics they gathered. 
-&lt;/p&gt;
-
-&lt;p&gt;
-One big takeaway was that while all the students were essentially
-writing the same game varying only the graphical elements, this
-encouraged students to create very different themes. They also created
-rich stories around their games. The project might not have been
-"creative" with respect to the CS or Math directions but it was certainly
-creative in other important areas. The other takeaway was that
-survey's indicated all sorts of positives from the program as a whole
-so the project didn't seem to have suffered by having the students
-essentially write the same program. Participants were proud of their
-work, they felt their games were different from their peers and in
-general the experience was good.
-&lt;/p&gt;
-
-&lt;p&gt;
-During questions, someone asked about adding a fifth element - a
-projectile or missile. It turns out that at one point the program had a
-projectile component but that led to the vast majority of projects to
-be themed in very similar ways. Even though not the same, it reminded me to something Randy
-Pausch said in his &lt;a href="https://www.youtube.com/watch?v=ji5_MqicxSo"&gt;Last Lecture&lt;/a&gt;:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-You make whatever you want. Two rules: no shooting violence and no
-pornography. Not because I’m opposed to those in particular, but you know, that’s been done with
-VR, right? [laughter] And you’d be amazed how many 19-year-old boys are completely out of ideas
-when you take those off the table.
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-At the very end, Fisler addressed my questions about creativity and
-discovery. She posed these questions of her own: "Do we overstate the
-case for creativity?" and "Is pure constructivism a win?"
-&lt;/p&gt;
-
-&lt;p&gt;
-I've ranted on contructivism before. It can be great but a
-constructivist lesson takes a knowledgeable educator and a lot of time,
-preparation, and effort. It's a big ask for, say, a high school
-teacher who's already taking home hours of work every evening. Too
-often I've seen the following "contructivist" model instead:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Take an isntructor that doesn't know their craft, the content, or
-niether.&lt;/li&gt;
-&lt;li&gt;Let the kids play with stuff.&lt;/li&gt;
-&lt;li&gt;Show off the couple of autodidacts that figure it out as success
-stories.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-I'll rant more about this "model" with respect to the new buzz word
-"lead learner" at some point in the future.
-&lt;/p&gt;
-
-&lt;p&gt;
-On the creativity side, it's important but there are also times for
-the instructor to lead and for guidelines to be followed.
-We want to foster creativity but that doesn't mean that it's 100%
-creativity 100% of the time. Education is like life, a balance. The
-Bootstrap program had to constrain the CS and math learning but
-allowed for creativity in other areas. It's smart and it's a win.
-&lt;/p&gt;
-
-&lt;p&gt;
-I still want to meet Shriram in person one day and now also Kathi
-Fisler. I didn't know what to expect walking in but I left the talk
-reminded of why I'm such a fan of Emmanuel, his team, and their work.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>pedagogy</category><category>teaching</category><guid>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</guid><pubDate>Fri, 02 Mar 2018 13:27:33 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>cs</category><category>education</category><category>theory</category><guid>http://cestlaz.github.io/posts/sigcse2018-theory/</guid><pubDate>Tue, 13 Mar 2018 23:21:43 GMT</pubDate></item></channel></rss>
