@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2018-08-17T19:58:06Z</updated>
+  <updated>2018-08-19T19:50:08Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,171 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-41.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Software Longevity</title>
+    <id>http://cestlaz.github.io/posts/software-longevity/</id>
+    <updated>2018-08-19T10:16:43-04:00</updated>
+    <published>2018-08-19T10:16:43-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/software-longevity/"/>
+    <summary type="html">&lt;div id="outline-container-org44f52de" class="outline-2"&gt;
+&lt;h2 id="org44f52de"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org44f52de"&gt;
+&lt;p&gt;
+Writing about &lt;a href="http://cestlaz.github.io/posts/rite-of-passage-projects/#.W3l-fxhKhhE"&gt;old projects&lt;/a&gt; got me thinking of my first programming gig
+and software longevity. It was a part time after school / full time
+summer job at Arcus-Simplex-Brown. I started in my senior year in high
+school and continued through most of my first year in college. It
+wasn't my first job - that was being a delivery boy at &lt;a href="http://videoroom.net/"&gt;Video Room&lt;/a&gt;, an
+independent video store that's survived from the old VHS/Betamax days
+through DVDs and is still, somehow or other, surviving in this day and
+age of streaming video. My job at Arcus-Simplex-Brown was my first job
+as a programmer. I got it through my buddy Ben who got it from one of
+our math teachers at Stuy. Ben had found a job closer to home so
+passed this one along to me.
+&lt;/p&gt;
+
+&lt;p&gt;
+Arcus-Simplex-Brown was (is?) a ticket printing company
+&lt;/p&gt;
+
+
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="https://i.ebayimg.com/images/g/nxYAAOSwHUhaGYw3/s-l1600.png" alt="s-l1600.png" align="center" height="100"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="https://i.pinimg.com/originals/c1/f0/ec/c1f0ec2f524c9e3e65c5e8b50fc7226a.png" alt="c1f0ec2f524c9e3e65c5e8b50fc7226a.png" align="center" height="100"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;
+They also did tickets for sporting events like the Knicks and
+Rangers at the Garden. More recently, this was 1983, they had started
+selling computer printed tickets and that's where I came in. They had
+a dot matrix line printer. Not the small kind used by personal
+computer owners and small businesses:
+&lt;/p&gt;
+
+&lt;p align="center" height="100"&gt;
+[[&lt;img src="https://global.epson.com/company/corporate_history/milestone_products/img/11_product.jpg" alt="11_product.jpg" align="center" height="100"&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Printers like the &lt;a href="https://global.epson.com/company/corporate_history/milestone_products/11_mx80.html"&gt;Epson MX 80&lt;/a&gt; pictured above had a print head that
+moved across a line at a time much like a modern desktop ink jet
+printer. The difference was that it had a print head that had a matrix
+of pins which fired and hit an ink ribbon which left the ink
+impression on the paper.
+&lt;/p&gt;
+
+&lt;p&gt;
+Rather, they had a big heavy duty one where the print head went across
+the entire width of the paper and it literally printed a line at a
+time:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="https://cdn8.bigcommerce.com/s-a1x7hg2jgk/images/stencil/1280x1280/products/21296/120659/printronix-p5008-800-lpm-proline-series-5-line-matrix-printer-1.35__97003.1490181342.jpg" alt="printronix-p5008-800-lpm-proline-series-5-line-matrix-printer-1.35__97003.1490181342.jpg" align="center" height="100"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+and a computer attached. I think it was an old &lt;a href="https://en.wikipedia.org/wiki/North_Star_Computers"&gt;North Star&lt;/a&gt;
+computer. It ran &lt;a href="https://en.wikipedia.org/wiki/CP/M"&gt;CP/M&lt;/a&gt; which was like a primitive version of
+MS-DOS. 64K of memory  and
+two floppy drives. It had a basic interpreter built in and they
+also had a basic compiler. 
+&lt;/p&gt;
+
+&lt;p&gt;
+They had a program that was supposed to print the tickets but it
+didn't really work. My first job was to get it working, It was a HUGE
+mess of a program. God knows how many lines of BASIC code with a few
+gosubs and a ton of gotos. I don't think there were too many
+comments. It didn't help that in addition to having to deal with
+custom theater seating plans and ticket policies you had to know all
+sorts of magical incantations to get the printer to do the special
+fonts correctly and I don't recall us having a printer manual so it
+all had to be divined from the non-working code. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On top of all this, the program was so complex that only the simplest
+test cases could be run via the interpreter interactively. Any real
+change had to go through the compiler and it took about 40 minutes to
+compile the program. Whenever I wanted to take a long break, It set up
+a compile. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Somehow or other, I got the thing to work. The code started as a mess
+and I didn't improve it any I really had no idea what I was
+doing. Still, it did work and we were able to reliably print tickets
+for all sorts of things.
+&lt;/p&gt;
+
+&lt;p&gt;
+I stopped working at Arcus-Simplex-Brown once I got a job at NYU. That
+gig ultimately turned into a full time job which enabled me to work my
+way through school. It was the right move but I had a great time and
+learned a lot at Arcus.
+&lt;/p&gt;
+
+&lt;p&gt;
+I didn't think much about the work I did at Arcus over the years. I
+finished college, went to Goldman, then some consulting and ultimately
+ teaching career.
+&lt;/p&gt;
+
+&lt;p&gt;
+One day at Stuy, I noticed this:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/arcus-ticket.jpg" alt="arcus-ticket.jpg" align="center" height="400"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+This was now Spring 2012 - almost 30 years later. Judging from the dot
+pattern  of the letters it looked like the same printer and was
+probably the same program!!!!!!! I couldn't believe it. Stuy didn't
+use these tickets back in my day so I was really surprised. It looked
+like some horrible code I wrote as a kid was still being used
+productively almost three decades later!!!!!! They could have
+continued to use it because it basically worked or maybe because they
+were afraid that touching it would break everything.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+I don't remember what the code looked like but know it was
+horrible. If I had it, I'd be to embarrassed to share and that's saying
+something. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The lesson of all this? You never know how long your code is going to
+live. It might surprise you. Hopefully in a good way. 
+&lt;/p&gt;
+
+&lt;p&gt;
+All the more reason to do better than I did and learn how to do it
+right. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
   <entry>
     <title>Rite Of Passage Projects</title>
     <id>http://cestlaz.github.io/posts/rite-of-passage-projects/</id>
@@ -1299,95 +1464,5 @@ we're doing pretty good.
 &lt;/div&gt;</summary>
     <category term="ap" label="ap"/>
     <category term="apcs" label="apcs"/>
-  </entry>
-  <entry>
-    <title>CSTA 2018 - Funding and Direction</title>
-    <id>http://cestlaz.github.io/posts/csta-2018-future/</id>
-    <updated>2018-07-12T17:24:07-04:00</updated>
-    <published>2018-07-12T17:24:07-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/csta-2018-future/"/>
-    <summary type="html">&lt;div id="outline-container-orgf1dbdf4" class="outline-2"&gt;
-&lt;h2 id="orgf1dbdf4"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgf1dbdf4"&gt;
-&lt;p&gt;
-In addition to everything I wrote about last time there were a couple
-of other big announcements at this year's CSTA conference. Both
-announcements deal with funding.
-&lt;/p&gt;
-
-&lt;p&gt;
-First, there is a new class of CSTA membership. The free tier remains
-but now for $50 you can join &lt;a href="https://www.csteachers.org/page/cstaplus"&gt;CSTA+&lt;/a&gt;. This new level of membership comes
-with a bunch of extras that are probably good for K12 teachers but I
-doubt I'll use any of them. I did, however, get a snazzy CSTA+ water
-bottle by joining at the conference. For me the interesting part is
-that 50% of CSTA+ dues will go to support local chapters.
-&lt;/p&gt;
-
-&lt;p&gt;
-I don't exactly know what that means but it's what got me to
-join. Ultimately, local teaching communities are important and CSTA+
-supports that, I'm all in.
-&lt;/p&gt;
-
-&lt;p&gt;
-That said, what do chapters do? I know what goes on in NY but not
-elsewhere. I bet the same is true for people all over the country. One
-question that came up repeatedly at the conference, at least in my
-circles was "what would the chapters use the money for?" I think it
-would be wonderful if on the CSTA web site there was a page where
-chapters could easily list activities funded by the central
-organization. I'm not looking for a big write up - who has time to
-read or write that. I'm looking for a line or two. What the chapter
-did and maybe a few comments on details. Over time this could be  a
-great way for chapters to steal ideas from each other.
-&lt;/p&gt;
-
-&lt;p&gt;
-The other piece of big news was &lt;a href="https://www.linkedin.com/pulse/new-partnership-support-computer-science-teachers-mary-snapp-1c/?published="&gt;Microsoft pledging a big chunk of
-change to the CSTA&lt;/a&gt;. I've often lamented that so many CS Education (and
-education decisions in general) are decided by everyone except the
-teachers. The CSTA is our teacher's professional organization and our
-best bet for teacher representation when policy is made and
-implemented. Once again it appears that some of these funds will help
-support local chapters. 
-&lt;/p&gt;
-
-&lt;p&gt;
-The Microsoft funding though got me thinking. The linked piece talks
-about advocacy, professional development and curriculum. All important but
-there's an even greater need right around the corner. We need quality,
-qualified CS teachers and we need them now. Taking a teacher with no
-CS background and giving them some PD can be a stop gap but it isn't a
-solution. Long term we need pre and in service teacher preparation
-programs similar to what we're rolling out at Hunter. Programs that
-include both pedagogy and content. As states begin to require these
-programs, as they do in all other subject areas, teachers both new and
-in service will have to take a number of graduate credits. In our
-case, 18 for a certificate for an already licensed teacher and our MA
-program is somewhere in the 30s. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I'd love to see money allocated to pay for CS teacher certification
-through our public colleges as they (we) roll out programs. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This said, the Microsoft commitment is great news for the CSTA and
-CSTA is a great option for teachers that can afford it.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here in NY, our CSTA chapter is fairly young. I'm excited to see what
-this year brings both on the local and national level.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="csed" label="csed"/>
-    <category term="csta" label="csta"/>
   </entry>
 </feed>

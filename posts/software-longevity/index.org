@@ -1,0 +1,119 @@
+#+BEGIN_COMMENT
+.. title: Software Longevity
+.. slug: software-longevity
+.. date: 2018-08-19 10:16:43 UTC-04:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+
+Writing about [[http://cestlaz.github.io/posts/rite-of-passage-projects/#.W3l-fxhKhhE][old projects]] got me thinking of my first programming gig
+and software longevity. It was a part time after school / full time
+summer job at Arcus-Simplex-Brown. I started in my senior year in high
+school and continued through most of my first year in college. It
+wasn't my first job - that was being a delivery boy at [[http://videoroom.net/][Video Room]], an
+independent video store that's survived from the old VHS/Betamax days
+through DVDs and is still, somehow or other, surviving in this day and
+age of streaming video. My job at Arcus-Simplex-Brown was my first job
+as a programmer. I got it through my buddy Ben who got it from one of
+our math teachers at Stuy. Ben had found a job closer to home so
+passed this one along to me.
+
+Arcus-Simplex-Brown was (is?) a ticket printing company
+
+
+
+#+ATTR_HTML: :align center :height 100
+[[https://i.ebayimg.com/images/g/nxYAAOSwHUhaGYw3/s-l1600.png]]
+
+#+ATTR_HTML: :align center :height 100
+[[https://i.pinimg.com/originals/c1/f0/ec/c1f0ec2f524c9e3e65c5e8b50fc7226a.png]]
+
+
+They also did tickets for sporting events like the Knicks and
+Rangers at the Garden. More recently, this was 1983, they had started
+selling computer printed tickets and that's where I came in. They had
+a dot matrix line printer. Not the small kind used by personal
+computer owners and small businesses:
+
+#+ATTR_HTML: :align center :height 100
+[[https://global.epson.com/company/corporate_history/milestone_products/img/11_product.jpg
+
+Printers like the [[https://global.epson.com/company/corporate_history/milestone_products/11_mx80.html][Epson MX 80]] pictured above had a print head that
+moved across a line at a time much like a modern desktop ink jet
+printer. The difference was that it had a print head that had a matrix
+of pins which fired and hit an ink ribbon which left the ink
+impression on the paper.
+
+Rather, they had a big heavy duty one where the print head went across
+the entire width of the paper and it literally printed a line at a
+time:
+
+#+ATTR_HTML: :align center :height 100
+https://cdn8.bigcommerce.com/s-a1x7hg2jgk/images/stencil/1280x1280/products/21296/120659/printronix-p5008-800-lpm-proline-series-5-line-matrix-printer-1.35__97003.1490181342.jpg
+
+and a computer attached. I think it was an old [[https://en.wikipedia.org/wiki/North_Star_Computers][North Star]]
+computer. It ran [[https://en.wikipedia.org/wiki/CP/M][CP/M]] which was like a primitive version of
+MS-DOS. 64K of memory  and
+two floppy drives. It had a basic interpreter built in and they
+also had a basic compiler. 
+
+They had a program that was supposed to print the tickets but it
+didn't really work. My first job was to get it working, It was a HUGE
+mess of a program. God knows how many lines of BASIC code with a few
+gosubs and a ton of gotos. I don't think there were too many
+comments. It didn't help that in addition to having to deal with
+custom theater seating plans and ticket policies you had to know all
+sorts of magical incantations to get the printer to do the special
+fonts correctly and I don't recall us having a printer manual so it
+all had to be divined from the non-working code. 
+
+On top of all this, the program was so complex that only the simplest
+test cases could be run via the interpreter interactively. Any real
+change had to go through the compiler and it took about 40 minutes to
+compile the program. Whenever I wanted to take a long break, It set up
+a compile. 
+
+Somehow or other, I got the thing to work. The code started as a mess
+and I didn't improve it any I really had no idea what I was
+doing. Still, it did work and we were able to reliably print tickets
+for all sorts of things.
+
+I stopped working at Arcus-Simplex-Brown once I got a job at NYU. That
+gig ultimately turned into a full time job which enabled me to work my
+way through school. It was the right move but I had a great time and
+learned a lot at Arcus.
+
+I didn't think much about the work I did at Arcus over the years. I
+finished college, went to Goldman, then some consulting and ultimately
+ teaching career.
+
+One day at Stuy, I noticed this:
+
+#+ATTR_HTML: :align center :height 400
+[[../../img/arcus-ticket.jpg]]
+
+This was now Spring 2012 - almost 30 years later. Judging from the dot
+pattern  of the letters it looked like the same printer and was
+probably the same program!!!!!!! I couldn't believe it. Stuy didn't
+use these tickets back in my day so I was really surprised. It looked
+like some horrible code I wrote as a kid was still being used
+productively almost three decades later!!!!!! They could have
+continued to use it because it basically worked or maybe because they
+were afraid that touching it would break everything.
+
+
+I don't remember what the code looked like but know it was
+horrible. If I had it, I'd be to embarrassed to share and that's saying
+something. 
+
+The lesson of all this? You never know how long your code is going to
+live. It might surprise you. Hopefully in a good way. 
+
+All the more reason to do better than I did and learn how to do it
+right. 
+
