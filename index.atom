@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2018-08-19T19:50:08Z</updated>
+  <updated>2018-08-20T06:54:10Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -20,9 +20,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/software-longevity/"/>
-    <summary type="html">&lt;div id="outline-container-org44f52de" class="outline-2"&gt;
-&lt;h2 id="org44f52de"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org44f52de"&gt;
+    <summary type="html">&lt;div id="outline-container-org49b9865" class="outline-2"&gt;
+&lt;h2 id="org49b9865"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org49b9865"&gt;
 &lt;p&gt;
 Writing about &lt;a href="http://cestlaz.github.io/posts/rite-of-passage-projects/#.W3l-fxhKhhE"&gt;old projects&lt;/a&gt; got me thinking of my first programming gig
 and software longevity. It was a part time after school / full time
@@ -79,7 +79,7 @@ impression on the paper.
 &lt;p&gt;
 Rather, they had a big heavy duty one where the print head went across
 the entire width of the paper and it literally printed a line at a
-time:
+time
 &lt;/p&gt;
 
 
@@ -112,7 +112,7 @@ all had to be divined from the non-working code.
 On top of all this, the program was so complex that only the simplest
 test cases could be run via the interpreter interactively. Any real
 change had to go through the compiler and it took about 40 minutes to
-compile the program. Whenever I wanted to take a long break, It set up
+compile the program. Whenever I wanted to take a long break, I set up
 a compile. 
 &lt;/p&gt;
 
