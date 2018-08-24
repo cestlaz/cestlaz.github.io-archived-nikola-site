@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 41)</title>
   <id>http://cestlaz.github.io/index-41.atom</id>
-  <updated>2018-08-19T19:13:14Z</updated>
+  <updated>2018-08-24T21:50:16Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -14,6 +14,262 @@
   <link rel="prev-archive" type="application/atom+xml" href="http://cestlaz.github.io/index-40.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/index-41.html"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>How early for APCS</title>
+    <id>http://cestlaz.github.io/posts/how-early-apcs/</id>
+    <updated>2018-07-15T07:11:03-04:00</updated>
+    <published>2018-07-15T07:11:03-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/how-early-apcs/"/>
+    <summary type="html">&lt;div id="outline-container-orgcbbac1b" class="outline-2"&gt;
+&lt;h2 id="orgcbbac1b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgcbbac1b"&gt;
+&lt;p&gt;
+In what grade should students take APCS? This question comes up from
+time to time. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I've heard answers ranging from middle school through never. Infact,
+years ago, my chairman relayed a conversation he had with Marvin
+Minsky where he asked Minsky what the high schools should be teaching
+with respect to CS. The answer was "nothing." This was then amended to
+"teach them to type." Of course this was a long time ago but I believe
+the sentiment was that college was the right time and the high schools
+don't know what they're doing and will just screw up the
+kids. Actually, I still see some of this attitude today and it gets
+passed down where high school teachers sometimes don't want the
+middle schools to "mess up their kids" and on down the line. 
+&lt;/p&gt;
+
+&lt;p&gt;
+At this point, it's pretty clear that you can do good CS at the high
+school level and as things are being pushed down the grades we'll
+eventually figure out what's right and when.
+&lt;/p&gt;
+
+&lt;p&gt;
+Still, within the high school the question of what grade for APCS-A
+remains.
+&lt;/p&gt;
+
+&lt;p&gt;
+There isn't a single right answer for this but I can share
+my experience and what I ended up deciding when I developed things at
+Stuy.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div id="outline-container-org36525a3" class="outline-2"&gt;
+&lt;h2 id="org36525a3"&gt;MATH BOOKS and Physics First&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org36525a3"&gt;
+&lt;p&gt;
+As parents, my wife and I learned early on that we'd have to
+supplement what our kids would learn in school, particularly in terms
+of math and science. I was in charge of math. Since I used assorted
+books to help, math time came to be known simply as "MATH BOOKS." It's
+funny that now while my kids don't look back super fondly on MATH BOOKS  
+they agree that it was an important thing for us to do.
+&lt;/p&gt;
+
+&lt;p&gt;
+I discovered, as I'm sure many parents do, that there are times when a
+kid is just not ready for a subject. At one point I tried to introduce
+Algebra too early and saw it wasn't going to take so I pulled back. A
+while later, we tried again. This time it was clear that they could do
+the mechanics and solve problems based on rules and formulae but they
+really didn't "get it." A third attempt some time later, they were
+ready. They mastered the subject with deep understanding easily. It
+could be argued that the early exposure helped but I don't think it
+did.
+&lt;/p&gt;
+
+&lt;p&gt;
+The takeaway here is that kids can do the mechanics and appear to
+succeed but if it's too early, they don't really learn the subject.
+&lt;/p&gt;
+
+&lt;p&gt;
+I saw this on a larger scale with "Physics First." At Stuy, most
+freshmen would take Bio in 9th grade followed by Chem and then Physics
+in their Junior year. Physics first kids would take Physics in the 9th
+grade. I don't have any evidence for this but based on my inquiries
+over the years it seemed that the kids who took physics in their
+junior year had a deeper understanding of the subject. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I also personally saw this when teaching math classes early on in my
+career. Most Stuy freshmen take geometry. The math aces take
+precalc or calc but a few weren't math aces but were the star in their
+middle school. They were pushed through geometry in 8th  grade and
+started Stuy in Algebra 2 and Trig. The majority of these kids that I
+taught could spit back all the formulas and theorems from geometry but
+very few were actually ready for Alg2/Trig and struggled
+considerably. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;div id="outline-container-org91aa818" class="outline-2"&gt;
+&lt;h2 id="org91aa818"&gt;APCS&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org91aa818"&gt;
+&lt;p&gt;
+So what about APCS? At Stuy we always taught a superset of the old
+APCS-AB. It's mostly APCS-A in the Fall semester and Data Structures
+in the Spring. When I started, there was no prerequisite for APCS so I
+had students in all grades. Mostly Juniors and Seniors but a few
+Sophomores. I think I only had a freshman in APCS once and they were
+an outlier. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Some of my sophomores were ready, more could merely spit back material
+and do the mechanics - enough to pass the APCS-AB exam but they really
+didn't get it. There were some, however that weren't ready. These were
+very bright kids and while I can't say for sure, deep down I very much
+suspect that if they took my class a year later they would have done
+much better and they might have followed a very different path towards
+their future. 
+&lt;/p&gt;
+
+&lt;p&gt;
+As a teachers we can change lives for the better and in fact save
+lives. We can also do great damage. Because of the latter, teachers
+should follow the mantra "first do no harm." This led me to a general
+rule of taking kids into APCS-AB until their junior year. If I were to
+allow a sophomore in I wanted to be pretty sure that the kid was
+ready.
+&lt;/p&gt;
+
+&lt;p&gt;
+Later we were able to create a sophomore year CS requirement which
+gave all kids exposure to CS prior to APCS-A (we still taught AB but
+by now only the A exam was offered) and also gave us a platform to vet
+the outliers who might be ready for APCS. For those kids, in addition
+to an interview we had them self study APCS-A, do a project and sit
+for the APCS-A final exam and then we'd add them to the second half of
+our AP class. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org4cf1f0e" class="outline-2"&gt;
+&lt;h2 id="org4cf1f0e"&gt;Has it worked?&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4cf1f0e"&gt;
+&lt;p&gt;
+By and large the system has worked. Kids now get an intro in the 10th
+grade followed by APCS in 11 and more electives if desired in the
+12th. For the kid that's truly ready for APCS in the 10th grade, we
+have a path. We don't make it easy but the path is there. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Over the years we've had some CS superstars come through the
+program. Some have pushed back – "why do I have to take the intro?"
+"Why can't i start right away in APCS?" – after all was said and
+done, all but one came back to say that we did it the right way and
+that they benefited from all our classes.
+&lt;/p&gt;
+
+&lt;p&gt;
+At Stuy, it seems that for most students, 11th grade is right for our
+APCS. Between academic maturity, other classes, scheduling and
+everything else, it seems that this works the best for us.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org6963d1b" class="outline-2"&gt;
+&lt;h2 id="org6963d1b"&gt;Why the rush?&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6963d1b"&gt;
+&lt;p&gt;
+Frequently the question as to when to teach APCS revolves around how
+early it can be taught. I have to ask - why are we so caught up with
+doing things so early? 
+&lt;/p&gt;
+
+&lt;p&gt;
+If we're just pushing college level courses down to high school then
+what's the point? The kids will have to take the classes again if
+they're going to major in CS anyway. 
+&lt;/p&gt;
+
+&lt;p&gt;
+If you have a program that doesn't duplicate college courses you might
+want to have kids finish APCS-A earlier but I wonder how early you
+really need.
+&lt;/p&gt;
+
+&lt;p&gt;
+As a society we keep pushing things down younger and younger. We're
+pushing AP classes like history or APCS-P down to 10th grade or even
+earlier. You have to ask, is a course that's developmentally
+appropriate for a 18-22 year old developmentally appropriate for a 14
+or 15 year old? Probably not. You also have to ask that if it makes
+more sense to push further ahead or if it's better to do enrichment at
+a level the kids can handle. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm an enrichment over acceleration guy but other people differ. Just
+like the question of when for APCS, there's probably not a single
+right answer to this.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org3956df4" class="outline-2"&gt;
+&lt;h2 id="org3956df4"&gt;Last words and what should you do?&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org3956df4"&gt;
+&lt;p&gt;
+As I said up front, there's no right answer to this. I'm still
+convinced that 11th grade is probably the best general entry point for
+APCS-AB but if I were only teaching APCS-A maybe I'd shift it down a
+year. My gut tells me no, partially based on teaching non APCS to 8th,
+9th, and 10th graders but maybe. Of course, we all teach different
+students in different environments so your mileage may vary.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are also those outlier kids that can truly master the subject at
+an earlier age, I'm not really considering them here but they should
+be accommodated when possible.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you've been running a program for a while, look at the data - not
+how many kids pass the exam - look at how many master the next level
+material. If your kids next class is data structures in college, find
+out how well prepared they were and see if and how it maps to the
+grade in which they took APCS. If you're just starting, I'd recommend
+erring on the side of caution - remember "do no harm." 
+&lt;/p&gt;
+
+&lt;p&gt;
+If you have to teach CS and it turns out you have to teach it when the
+kids are too young to master APCS-A then don't teach APCS-A, teach
+great CS at a level that's appropriate.
+&lt;/p&gt;
+
+&lt;p&gt;
+All of this will work itself out in time. Until we get there, there
+will be some mis-steps - I know I've had mine. As long
+as we continue to move the kids forward and give them something that they
+wouldn't have been getting otherwise while we figure all this out,
+we're doing pretty good. 
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="ap" label="ap"/>
+    <category term="apcs" label="apcs"/>
+  </entry>
   <entry>
     <title>CSTA 2018 - Funding and Direction</title>
     <id>http://cestlaz.github.io/posts/csta-2018-future/</id>
