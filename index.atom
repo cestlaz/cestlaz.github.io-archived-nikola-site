@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2018-08-27T23:33:55Z</updated>
+  <updated>2018-09-04T23:54:57Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -11,6 +11,78 @@
   <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-41.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Wishing all K12 teachers a great year</title>
+    <id>http://cestlaz.github.io/posts/starting-school-2018/</id>
+    <updated>2018-09-04T17:33:30-04:00</updated>
+    <published>2018-09-04T17:33:30-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/starting-school-2018/"/>
+    <summary type="html">&lt;div id="outline-container-org9177810" class="outline-2"&gt;
+&lt;h2 id="org9177810"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9177810"&gt;
+&lt;p&gt;
+Today was the first day of school for all NYC teachers. Students come
+back tomorrow. That's a quick turnaround. Some years, they get a day
+or two before the kids come in. That's much easier.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first day is usually dominated by meetings. In a large school like
+Stuy you'll typically have a long faculty meeting in the morning and a
+department meeting in the afternoon. Not much time to actually get
+ready for classes. You might think that it shouldn't be a big deal
+since you had all summer but in NYC where budgets don't come out until
+the summer for teachers not to know exactly what or when they're
+teaching until the first day back.
+&lt;/p&gt;
+
+&lt;p&gt;
+Things started at Hunter college last week but things are different
+there. I was excited to my students but the overall energy isn't the
+same. We're two weeks in and I still haven't seen most of my CS
+colleagues. In the high school, everyone comes back at once. 
+&lt;/p&gt;
+
+&lt;p&gt;
+In any event. It's an exciting time in what should be an exciting year
+for CS teachers and students. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not going to rehash everything that's going on since I'm sure most
+readers already already know what's going on but I'll add one
+thing. Many New York teachers need ongoing professional development -
+CTLE hours. It seems that teachers in specific programs like New York
+City's Software Engineering Pilot (SEP) have a number of PD
+opportunities provided to them and there also seems to be a good
+amount of PD at the entry level. 
+&lt;/p&gt;
+
+&lt;p&gt;
+There doesn't seem to be much for the teacher ready for that next
+step. 
+&lt;/p&gt;
+
+&lt;p&gt;
+To address this, we'll be offering once a month sessions through
+Hunter for CS teachers who are ready to move beyond the basics both in
+content and pedagogy.
+&lt;/p&gt;
+
+&lt;p&gt;
+The plan is to start some time in October.
+&lt;/p&gt;
+
+&lt;p&gt;
+In the meantime to all the teachers meeting their students tomorrow -
+have a great semester!!!!!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
   <entry>
     <title>Class Rules</title>
     <id>http://cestlaz.github.io/posts/class-rules/</id>
@@ -1322,79 +1394,5 @@ understand that and act accordingly.
     <category term="digitaldivide" label="digitaldivide"/>
     <category term="keyboarding" label="keyboarding"/>
     <category term="skills" label="skills"/>
-  </entry>
-  <entry>
-    <title>Time To Create An Ethics Course</title>
-    <id>http://cestlaz.github.io/posts/time-to-create-an-ethics-course/</id>
-    <updated>2018-07-21T16:52:21-04:00</updated>
-    <published>2018-07-21T16:52:21-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/time-to-create-an-ethics-course/"/>
-    <summary type="html">&lt;div id="outline-container-orgc45bbe2" class="outline-2"&gt;
-&lt;h2 id="orgc45bbe2"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc45bbe2"&gt;
-&lt;p&gt;
-I think it's time for me to start developing a CS Ethics class. 
-&lt;/p&gt;
-
-&lt;p&gt;
-An ethics course isn't a replacement for having teachers that live and
-model good behavior and weave ethical issues throughout the curriculum
-but still, adding a separate course on top of that has its merits.
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm not in a rush to create this course. I might be done in a month or
-it might take a couple of years. When I'm done, I'll add it as an
-option in my CS Teacher education programs but hopefully it will be an
-attractive course for undergrad CS majors as well.
-&lt;/p&gt;
-
-&lt;p&gt;
-While it's easy enough to come up with possible topics - privacy,
-moral responsibilities, biased algorithms, net neutrality and on and
-on I'm looking for this course to have a serious coding component. I
-want the students to build things to really understand the
-implications of what they're studying.
-&lt;/p&gt;
-
-&lt;p&gt;
-One topic I definitely want to cover is &lt;a href="https://news.harvard.edu/gazette/story/2011/10/youre-not-so-anonymous/"&gt;anonimity&lt;/a&gt;. I'd love to find
-the right combination of data sets and have the class discover that
-some hidden information in the sets isn't nearly as hidden as it seems
-to be. When I was at Stuy, I was thinking about
-having the kids give me permission to use their class schedules since
-even with names removed we could probably identify many kids by
-electives and overlapping classes. I have no idea what I'll be able to
-do at Hunter. If I can come up with something good I think this will
-form the basis of a pretty amazing part of the class.
-&lt;/p&gt;
-
-&lt;p&gt;
-Another project I'd love to put together is something dealing with a
-biased algorithm. Again, I don't know where this will go, maybe
-something where I can seed the class so that different groups
-implement some project differently and we can then analyze each groups
-biases, hidden or otherwise. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Beyond these two, I'm not sure.
-&lt;/p&gt;
-
-&lt;p&gt;
-How about you? Anyone out there have any good ideas for programming
-projects for an ethical CS course? If so, please share. It might be a
-while but when I do finish putting this together I'll be sure to
-publish whatever the end result is.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="csed" label="csed"/>
-    <category term="curriculum" label="curriculum"/>
-    <category term="ethicalcs" label="ethicalCS"/>
-    <category term="ethics" label="ethics"/>
   </entry>
 </feed>
