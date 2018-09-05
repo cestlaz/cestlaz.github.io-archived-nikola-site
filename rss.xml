@@ -1,5 +1,294 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 04 Sep 2018 23:54:57 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Wishing all K12 teachers a great year</title><link>http://cestlaz.github.io/posts/starting-school-2018/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9177810" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 05 Sep 2018 23:23:52 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Do you need to know binary for CS?</title><link>http://cestlaz.github.io/posts/why-binary/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org67668b0" class="outline-2"&gt;
+&lt;h2 id="org67668b0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org67668b0"&gt;
+&lt;p&gt;
+Yesterday, Alfred Thompson asked &lt;a href="https://twitter.com/alfredtwo/status/1036982959587446784"&gt;"Why is it important for CS students
+to understand binary?"&lt;/a&gt; on Twitter which led to a number of interesting
+responses. Alfred summarized and wrote his own thoughts on &lt;a href="http://blog.acthompson.net/2018/09/why-teach-binary-in-computer-science.html"&gt;his blog&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I wanted to add a comment but I already wrote a post for yesterday so
+put it off until today.
+&lt;/p&gt;
+
+&lt;p&gt;
+First let me say that you can have a very successful career in tech
+and not really know binary or number bases other than 10. That career
+could be as as programmer, software engineer, network specialist,
+devops or in many other areas that fall on the CS side of tech.
+&lt;/p&gt;
+
+&lt;p&gt;
+You also can't really get through a CS program without learning about
+binary. If you're self taught or go to a code school then that's
+another story.
+&lt;/p&gt;
+
+&lt;p&gt;
+The question is, is it worth the time spent.
+&lt;/p&gt;
+
+&lt;p&gt;
+One can easily argue that systems - that is low level, close to the
+metal knowledge is one of the two "latins" of CS, the other being CS
+theory. You might not explicitly use either but they give you a
+stronger foundation in everything. You also can't study systems without a
+good knowledge of binary so if you want to do anything low level, you
+need it.
+&lt;/p&gt;
+
+&lt;p&gt;
+What about beyond those easy but not all to convincing to new students
+answers?
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's loo at a few things we can do with binary.
+&lt;/p&gt;
+
+&lt;p&gt;
+A big part of binary notation is that you can look at data as a string
+of bits. You can also manipulate that data using things like &lt;code&gt;and&lt;/code&gt;,
+&lt;code&gt;or&lt;/code&gt;, &lt;code&gt;not&lt;/code&gt;, and &lt;code&gt;xor&lt;/code&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+At it's core &lt;code&gt;and&lt;/code&gt; let's you turn off bits. &lt;code&gt;And&lt;/code&gt; any bit with a 0 and
+it will become a 0. &lt;code&gt;And&lt;/code&gt; it with a 1 and it stays the same.
+&lt;/p&gt;
+
+\begin{array}{ccccc}
+&amp;amp;1 &amp;amp; 1 &amp;amp; 0 &amp;amp; 0\\
+and &amp;amp;0 &amp;amp; 1 &amp;amp; 0 &amp;amp; 1\\\hline
+&amp;amp;0 &amp;amp; 1 &amp;amp; 0 &amp;amp; 0\\
+\end{array}
+
+&lt;p&gt;
+&lt;code&gt;Or&lt;/code&gt; is used to turn on bits. You &lt;code&gt;or&lt;/code&gt; any bit with a 1 and it gets
+turned on. &lt;code&gt;Or&lt;/code&gt; it with a 0 and it stays as it was.
+&lt;/p&gt;
+
+\begin{array}{ccccc}
+&amp;amp;1 &amp;amp; 1 &amp;amp; 0 &amp;amp; 0\\
+or &amp;amp;0 &amp;amp; 1 &amp;amp; 0 &amp;amp; 1\\\hline
+&amp;amp;1 &amp;amp; 1 &amp;amp; 0 &amp;amp; 1\\
+\end{array}
+
+&lt;p&gt;
+&lt;code&gt;Xor&lt;/code&gt; a bit with a 1 and the bit flips, with a 0 it stays the same.
+&lt;/p&gt;
+
+\begin{array}{ccccc}
+&amp;amp;1 &amp;amp; 1 &amp;amp; 0 &amp;amp; 0\\
+xor &amp;amp;0 &amp;amp; 1 &amp;amp; 0 &amp;amp; 1\\\hline
+&amp;amp;1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 1\\
+\end{array}
+
+
+&lt;p&gt;
+What can we do with this? For one thing, image processing. Students
+frequently play with images where each pixel is represented as a 24
+bit color. Three bytes, one each for red, green, and blue. Each byte
+is really 8 bits. We can use bitwise operations on the binary digits
+to turn on or off color.
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's say we have this rgb triple: (200, 15, 80) which in hexadecimal
+is C8 0F 50 or 10111000 00001111 01010000 in binary. If we want to
+turn off the reddest reds we could &lt;code&gt;and&lt;/code&gt; the color with 00001111
+11111111 11111111 or 0FFFFF:
+&lt;/p&gt;
+
+\begin{array}{cccc}
+&amp;amp; 10111000 &amp;amp; 00001111 &amp;amp; 01010000\\
+and &amp;amp; 00001111 &amp;amp; 11111111 &amp;amp; 11111111\\\hline
+&amp;amp; 00001000 &amp;amp; 00001111 &amp;amp; 01010000\\
+\end{array}
+
+&lt;p&gt;
+Yes, you could just use the base 10
+values and keep on calling color setting and conversion functions but
+if you understand binary it's quicker and easier and what's going on
+will actually make sense. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course you probably wouldn't write out the binary but would rather
+use the hex notation which once a student realizes is just 4 bit
+groupings of binary becomes really easy. As a bonus, once you're used
+to binary and hex those hexadecimal color values will all of a sudden
+make sense.
+&lt;/p&gt;
+
+&lt;p&gt;
+This is just the tip of the image processing and graphics iceberg with
+respect to binary. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Related although I haven't played with it myself, I'd imagine you could use
+these types of bitwise operations on images to play with
+steganography.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Another use of binary is in cybersecurity. Things like buffer
+overflows and blowing the stack all make much more sense if you know
+how memory is arranged and that's easier to understand if you
+understand binary, bytes, and word sizes. I do experiments with my
+classes when we use C or C++ where they access arrays off the ends and
+end up messing with neighboring variables. It seems like magic unless
+you know about memory and to know memory you need to know binary.
+&lt;/p&gt;
+
+&lt;p&gt;
+How about image file formats? Many image file formats start with a
+fixed size header. Here's the header definition for the GIF file
+format:
+&lt;/p&gt;
+
+&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;
+
+
+&lt;colgroup&gt;
+&lt;col class="org-right"&gt;
+
+&lt;col class="org-left"&gt;
+
+&lt;col class="org-left"&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="col" class="org-right"&gt;Offset&lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt;Length&lt;/th&gt;
+&lt;th scope="col" class="org-left"&gt;Contents&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class="org-right"&gt;0&lt;/td&gt;
+&lt;td class="org-left"&gt;3  bytes&lt;/td&gt;
+&lt;td class="org-left"&gt;"GIF"&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-right"&gt;3&lt;/td&gt;
+&lt;td class="org-left"&gt;3  bytes&lt;/td&gt;
+&lt;td class="org-left"&gt;"87a" or "89a"&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-right"&gt;6&lt;/td&gt;
+&lt;td class="org-left"&gt;2  bytes&lt;/td&gt;
+&lt;td class="org-left"&gt;&amp;lt;Logical Screen Width&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-right"&gt;8&lt;/td&gt;
+&lt;td class="org-left"&gt;2  bytes&lt;/td&gt;
+&lt;td class="org-left"&gt;&amp;lt;Logical Screen Height&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-right"&gt;10&lt;/td&gt;
+&lt;td class="org-left"&gt;1  byte&lt;/td&gt;
+&lt;td class="org-left"&gt;bit0: Global Color Table Flag (GCTF)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-right"&gt;bit&lt;/td&gt;
+&lt;td class="org-left"&gt;1..3:  Color&lt;/td&gt;
+&lt;td class="org-left"&gt;Resolution&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-right"&gt;bit&lt;/td&gt;
+&lt;td class="org-left"&gt;4:  Sort&lt;/td&gt;
+&lt;td class="org-left"&gt;Flag to Global Color Table&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-right"&gt;bit&lt;/td&gt;
+&lt;td class="org-left"&gt;5..7:  Size&lt;/td&gt;
+&lt;td class="org-left"&gt;of Global Color Table:2&lt;sup&gt;(1+n)&lt;/sup&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-right"&gt;11&lt;/td&gt;
+&lt;td class="org-left"&gt;1  byte&lt;/td&gt;
+&lt;td class="org-left"&gt;&amp;lt;Background Color Index&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-right"&gt;12&lt;/td&gt;
+&lt;td class="org-left"&gt;1  byte&lt;/td&gt;
+&lt;td class="org-left"&gt;&amp;lt;Pixel Aspect Ratio&amp;gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-right"&gt;13&lt;/td&gt;
+&lt;td class="org-left"&gt;?  bytes&lt;/td&gt;
+&lt;td class="org-left"&gt;&amp;lt;Global Color Table(0..255 x 3 bytes)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-right"&gt;?&lt;/td&gt;
+&lt;td class="org-left"&gt;bytes  &amp;lt;Blocks&amp;gt;&lt;/td&gt;
+&lt;td class="org-left"&gt; &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td class="org-right"&gt;1&lt;/td&gt;
+&lt;td class="org-left"&gt;bytes  &amp;lt;Trailer&amp;gt;&lt;/td&gt;
+&lt;td class="org-left"&gt;(0x3b)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;
+The header info is defined bit by bit so you have to know about binary
+and know how to manipulate data on a bit level. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Those were three biggies but there are other places where knowing
+binary makes tons of sense:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;flag type parameters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;understanding floating point numbers&lt;/li&gt;
+&lt;li&gt;using shifts for quick doubling and halving of data&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Does this mean that binary has to be or should be in a first course?
+No. Should it be somewhere? Certainly and rather than doing binary
+because it's on the test or because "you should know it" you can pick
+and choose your spots and cover it when it will be fun and interesting
+for your kids.
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;p&gt;
+world
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>mathjax</category><guid>http://cestlaz.github.io/posts/why-binary/</guid><pubDate>Wed, 05 Sep 2018 21:15:01 GMT</pubDate></item><item><title>Wishing all K12 teachers a great year</title><link>http://cestlaz.github.io/posts/starting-school-2018/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org9177810" class="outline-2"&gt;
 &lt;h2 id="org9177810"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-org9177810"&gt;
 &lt;p&gt;
@@ -1154,112 +1443,4 @@ your entire career but it's a great resource to get you and then your
 kids started on the journey.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>csed</category><category>pbl</category><category>pedagogy</category><guid>http://cestlaz.github.io/posts/two-faces-of-pbl/</guid><pubDate>Sat, 28 Jul 2018 19:59:45 GMT</pubDate></item><item><title>Keyboarding and the Digital Divide</title><link>http://cestlaz.github.io/posts/keyboarding-dig-divite/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org82e7314" class="outline-2"&gt;
-&lt;h2 id="org82e7314"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org82e7314"&gt;
-&lt;p&gt;
-My friend Adam posted this link to an article on &lt;a href="http://www.asahi.com/ajw/articles/AJ201803290068.html"&gt;the new digital
-divide&lt;/a&gt; the other day. It's talking about young people who do
-everything on the phone so aren't familiar or comfortable with a
-traditional keyboard/mouse computer setup. In the comments there were
-some of us who lamented about the term "digital natives" and the idea
-that kids these days know all about computers and technology.
-&lt;/p&gt;
-
-&lt;p&gt;
-This led me to think about a couple of things. First was a
-conversation I had a few years ago with someone who taught lower
-grades. I forget if it was upper elementary or middle school. He asked
-if his school should continue to teach keyboarding. I thought about it
-for a minute and decided it was probably a good thing. At some point,
-kids will have to type things - papers, reports, programs and the kid
-that doesn't have to fight with the technology has a clear
-advantage. I don't remember who said this but one of the early
-rationales for markup typesetting systems like LaTeX or HTML was that
-the system takes care of the formatting so the author could focus on
-the content. You shouldn't stress about how large the type should be,
-how to emphasize some text or how to number a section, just say you
-want a section, let the system format it and you focus and writing
-your content. 
-&lt;/p&gt;
-
-&lt;p&gt;
-In the case of HTML  you weren't supposed to worry about the size of
-the screen, if it could show graphics, or even if it was color,
-grayscale or black and white - you just provided the content and
-markup and the browser would render it correctly. Same with LaTeX. You
-just labelled your document with things like \section \subseciton,
-\footnote \equation etc. and let the system typeset it. If you're
-publishing a book, just say it's a book and it'll render it correctly,
-a paper, it'll make the appropriate adjustments. 
-&lt;/p&gt;
-
-&lt;p&gt;
-All this meant you could just focus on your content.
-&lt;/p&gt;
-
-&lt;p&gt;
-At a more basic level, the same is true for typing. If you're hunting
-for keys in words you're distracted from thinking about sentences let
-alone concepts, flow, etc. A kid who can type most certainly has an
-advantage over one who does not.
-&lt;/p&gt;
-
-&lt;p&gt;
-Meanwhile in the schools there's frequently an assumption that kids
-used computers all the time so they certainly can type. In my
-experience that hasn't been the case and as pointed out in the linked
-article above things are probably going to get worse. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Of course it's true that typing might eventually go the way of the
-dodo. Maybe swiping and tapping with thumbs will become the norm
-through society or maybe we'll go to mostly dictation (although that
-has it's own problems) but we won't get there for a while.
-&lt;/p&gt;
-
-&lt;p&gt;
-The article also made me think about the fact that kids these days use
-computers all them time and don't know how to do anything on
-them. Almost sounds like a Yogiism. The truth is that, yes, kids grew
-up using computers, tablets, and phones but they use them within the
-walled silos of Facebook, snapchat etc.
-&lt;/p&gt;
-
-&lt;p&gt;
-Back in the day, if you used computers you had to make an effort. If
-you wanted to use a word processor you had to learn something about a
-file system. If you wanted to do something on that new fangled thing
-called the internet, you had to learn something about HTML and
-transferring files. In general, if you were a teacher and a kid used a
-computer for something they were probably pretty knowledgable about
-computers and if they didn't know something they could probably figure
-it out.
-&lt;/p&gt;
-
-&lt;p&gt;
-Now, everything is within a pre provided application. Kids can use
-Google Docs or I'd guess Microsoft Office and have no idea what a file
-system is. They put up pictures using Instagram, commuincate using
-Facebook or Snapchat and in general don't have to know anything about
-the technology they're using. Some argue that CS Education should
-&lt;a href="https://www.rushkoff.com/books/program-or-be-programmed/"&gt;address this&lt;/a&gt; but then we turn around and use integrated cloud based
-environments so the kids learn some of the algorithmic side of
-programming but nothing about the environment they're working in.
-&lt;/p&gt;
-
-&lt;p&gt;
-Personally, I think our kids should ahve at least a rudimentary
-understanding of what's under the hood but I could be wrong. I try to
-address this by starting the kids in &lt;a href="https://ccl.northwestern.edu/netlogo/"&gt;sheltered environments&lt;/a&gt; and then
-graduate them up to the command line but that's just me.
-&lt;/p&gt;
-
-&lt;p&gt;
-The important takeaway is to remember that a "digital native" may very
-know nothing about the technology that they're using. We should
-understand that and act accordingly.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>digitaldivide</category><category>keyboarding</category><category>skills</category><guid>http://cestlaz.github.io/posts/keyboarding-dig-divite/</guid><pubDate>Mon, 23 Jul 2018 13:16:35 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>csed</category><category>pbl</category><category>pedagogy</category><guid>http://cestlaz.github.io/posts/two-faces-of-pbl/</guid><pubDate>Sat, 28 Jul 2018 19:59:45 GMT</pubDate></item></channel></rss>

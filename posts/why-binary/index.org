@@ -1,0 +1,163 @@
+#+BEGIN_COMMENT
+.. title: Do you need to know binary for CS?
+.. slug: why-binary
+.. date: 2018-09-05 17:15:01 UTC-04:00
+.. tags: mathjax, cs
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+* 
+Yesterday, Alfred Thompson asked [[https://twitter.com/alfredtwo/status/1036982959587446784]["Why is it important for CS students
+to understand binary?"]] on Twitter which led to a number of interesting
+responses. Alfred summarized and wrote his own thoughts on [[http://blog.acthompson.net/2018/09/why-teach-binary-in-computer-science.html][his blog]]. 
+
+I wanted to add a comment but I already wrote a post for yesterday so
+put it off until today.
+
+First let me say that you can have a very successful career in tech
+and not really know binary or number bases other than 10. That career
+could be as as programmer, software engineer, network specialist,
+devops or in many other areas that fall on the CS side of tech.
+
+You also can't really get through a CS program without learning about
+binary. If you're self taught or go to a code school then that's
+another story.
+
+The question is, is it worth the time spent.
+
+One can easily argue that systems - that is low level, close to the
+metal knowledge is one of the two "latins" of CS, the other being CS
+theory. You might not explicitly use either but they give you a
+stronger foundation in everything. You also can't study systems without a
+good knowledge of binary so if you want to do anything low level, you
+need it.
+
+What about beyond those easy but not all to convincing to new students
+answers?
+
+Let's loo at a few things we can do with binary.
+
+A big part of binary notation is that you can look at data as a string
+of bits. You can also manipulate that data using things like ~and~,
+~or~, ~not~, and ~xor~.
+
+At it's core ~and~ let's you turn off bits. ~And~ any bit with a 0 and
+it will become a 0. ~And~ it with a 1 and it stays the same.
+
+\begin{array}{ccccc}
+&1 & 1 & 0 & 0\\
+and &0 & 1 & 0 & 1\\\hline
+&0 & 1 & 0 & 0\\
+\end{array}
+
+~Or~ is used to turn on bits. You ~or~ any bit with a 1 and it gets
+turned on. ~Or~ it with a 0 and it stays as it was.
+
+\begin{array}{ccccc}
+&1 & 1 & 0 & 0\\
+or &0 & 1 & 0 & 1\\\hline
+&1 & 1 & 0 & 1\\
+\end{array}
+
+~Xor~ a bit with a 1 and the bit flips, with a 0 it stays the same.
+
+\begin{array}{ccccc}
+&1 & 1 & 0 & 0\\
+xor &0 & 1 & 0 & 1\\\hline
+&1 & 0 & 0 & 1\\
+\end{array}
+
+
+What can we do with this? For one thing, image processing. Students
+frequently play with images where each pixel is represented as a 24
+bit color. Three bytes, one each for red, green, and blue. Each byte
+is really 8 bits. We can use bitwise operations on the binary digits
+to turn on or off color.
+
+Let's say we have this rgb triple: (200, 15, 80) which in hexadecimal
+is C8 0F 50 or 10111000 00001111 01010000 in binary. If we want to
+turn off the reddest reds we could ~and~ the color with 00001111
+11111111 11111111 or 0FFFFF:
+
+\begin{array}{cccc}
+& 10111000 & 00001111 & 01010000\\
+and & 00001111 & 11111111 & 11111111\\\hline
+& 00001000 & 00001111 & 01010000\\
+\end{array}
+
+Yes, you could just use the base 10
+values and keep on calling color setting and conversion functions but
+if you understand binary it's quicker and easier and what's going on
+will actually make sense. 
+
+Of course you probably wouldn't write out the binary but would rather
+use the hex notation which once a student realizes is just 4 bit
+groupings of binary becomes really easy. As a bonus, once you're used
+to binary and hex those hexadecimal color values will all of a sudden
+make sense.
+
+This is just the tip of the image processing and graphics iceberg with
+respect to binary. 
+
+Related although I haven't played with it myself, I'd imagine you could use
+these types of bitwise operations on images to play with
+steganography.
+
+
+Another use of binary is in cybersecurity. Things like buffer
+overflows and blowing the stack all make much more sense if you know
+how memory is arranged and that's easier to understand if you
+understand binary, bytes, and word sizes. I do experiments with my
+classes when we use C or C++ where they access arrays off the ends and
+end up messing with neighboring variables. It seems like magic unless
+you know about memory and to know memory you need to know binary.
+
+How about image file formats? Many image file formats start with a
+fixed size header. Here's the header definition for the GIF file
+format:
+
+| Offset | Length           | Contents                              |
+|--------+------------------+---------------------------------------|
+|      0 | 3  bytes         | "GIF"                                 |
+|      3 | 3  bytes         | "87a" or "89a"                        |
+|      6 | 2  bytes         | <Logical Screen Width>                |
+|      8 | 2  bytes         | <Logical Screen Height>               |
+|     10 | 1  byte          | bit0: Global Color Table Flag (GCTF)  |
+|    bit | 1..3:  Color     | Resolution                            |
+|    bit | 4:  Sort         | Flag to Global Color Table            |
+|    bit | 5..7:  Size      | of Global Color Table:2^(1+n)         |
+|     11 | 1  byte          | <Background Color Index>              |
+|     12 | 1  byte          | <Pixel Aspect Ratio>                  |
+|     13 | ?  bytes         | <Global Color Table(0..255 x 3 bytes) |
+|      ? | bytes  <Blocks>  |                                       |
+|      1 | bytes  <Trailer> | (0x3b)                                |
+|--------+------------------+---------------------------------------|
+
+The header info is defined bit by bit so you have to know about binary
+and know how to manipulate data on a bit level. 
+
+Those were three biggies but there are other places where knowing
+binary makes tons of sense:
+ - flag type parameters
+- understanding floating point numbers
+- using shifts for quick doubling and halving of data
+
+Does this mean that binary has to be or should be in a first course?
+No. Should it be somewhere? Certainly and rather than doing binary
+because it's on the test or because "you should know it" you can pick
+and choose your spots and cover it when it will be fun and interesting
+for your kids.
+
+
+
+
+
+
+
+
+
+
+
+world

@@ -3,13 +3,46 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about mathjax</title>
   <id>http://cestlaz.github.io/categories/mathjax.atom</id>
-  <updated>2018-02-12T19:18:15Z</updated>
+  <updated>2018-09-05T21:31:46Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/mathjax.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/mathjax/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Why Binary</title>
+    <id>http://cestlaz.github.io/posts/why-binary/</id>
+    <updated>2018-09-05T17:15:01-04:00</updated>
+    <published>2018-09-05T17:15:01-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/why-binary/"/>
+    <summary type="html">&lt;div id="outline-container-org4bb9812" class="outline-2"&gt;
+&lt;h2 id="org4bb9812"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4bb9812"&gt;
+&lt;p&gt;
+\[
+&lt;/p&gt;
+
+
+\begin{equation}
+x=\sqrt{b}
+\end{equation}
+
+&lt;p&gt;
+If \(a^2=b\) and \( b=2 \), then the solution must be
+either \[ a=+\sqrt{2} \] or \[ a=-\sqrt{2} \]
+&lt;/p&gt;
+
+&lt;p&gt;
+\]
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="mathjax" label="mathjax"/>
+  </entry>
   <entry>
     <title>Blogging with Emacs, Jekyll and Nikola</title>
     <id>http://cestlaz.github.io/posts/2016-04-17-emacs-jekyll-nikola/</id>

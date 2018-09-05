@@ -3,13 +3,985 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about emacs</title>
   <id>http://cestlaz.github.io/categories/emacs.atom</id>
-  <updated>2018-02-12T19:18:16Z</updated>
+  <updated>2018-09-05T21:31:47Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/emacs.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/emacs/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Rite Of Passage Projects</title>
+    <id>http://cestlaz.github.io/posts/rite-of-passage-projects/</id>
+    <updated>2018-08-17T15:18:11-04:00</updated>
+    <published>2018-08-17T15:18:11-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/rite-of-passage-projects/"/>
+    <summary type="html">&lt;div id="outline-container-org047f8c6" class="outline-2"&gt;
+&lt;h2 id="org047f8c6"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org047f8c6"&gt;
+&lt;p&gt;
+JCS's &lt;a href="https://irreal.org/blog/?p=7414#comment-4045190612"&gt;post&lt;/a&gt; on Irreal today brought me back. It was about &lt;a href="https://en.wikipedia.org/wiki/Brief_(text_editor)"&gt;Brief&lt;/a&gt; which
+was the editing hotness back in the day. I played with it a little
+really mostly used Emacs clones for real work when I was stuck on
+MS-DOS systems. Usually either &lt;a href="https://en.wikipedia.org/wiki/JOVE"&gt;JOVE&lt;/a&gt; or &lt;a href="https://en.wikipedia.org/wiki/Epsilon_(text_editor)"&gt;Epsilon&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+In the comments Jon reminded me about the &lt;a href="https://en.wikipedia.org/wiki/MKS_Toolkit"&gt;MKS Toolkit&lt;/a&gt;
+which brought most everyday Unix tools to DOS along with a shell and
+a version of Vi. I didn't use Vi much and I only used their shell
+until I wrote my own. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This got me thinking about "rite of passage" projects. I was in
+college in the mid to late 80s. It was the heyday of the
+IBM-PC. Schools still used older time sharing systems like DEC-20s and
+Vaxen but the PC was all the rage. The cool thing about them was that
+you had full control and access to the machine and it was simple
+enough to get your head around pretty much everything about it. The
+downside was that MS-DOS was very limited and of course there was
+little to no networking going on. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the one hand, you could dive into the low level machine language
+stuff very easily. Get Norton's book:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="https://covers.openlibrary.org/b/id/7446489-L.jpg" alt="7446489-L.jpg" align="center" height="250"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+and you're on your way. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand many student's graduated with no concept of time
+sharing and the ramifications of sharing a system or resources were
+foreign to many kids.
+&lt;/p&gt;
+
+&lt;p&gt;
+Even though we always look back to the "good old days," in many ways
+things weren't much different. I got a very strong background in
+academic CS from NYU (Courant Institute) but just like today, there
+was no real preparation for the real world.If you wanted to really develop your
+coding chops you had to work on side projects.
+&lt;/p&gt;
+
+&lt;p&gt;
+I seem to recall, a typical "rite of passage" side project was writing
+your own shell. It didn't have to be anything as powerful as BASH or
+ZSH but it would typically be much more powerful than DOS and much
+more Unixy.
+&lt;/p&gt;
+
+&lt;p&gt;
+I recall writing my first shell down in UC-49 of Tisch Hall when the
+computer labs weren't busy. I wrote it in C which was what the cool
+kids used back then. Specifically I used the &lt;a href="https://en.wikipedia.org/wiki/Mark_Williams_Company"&gt;Let's C&lt;/a&gt; compiler from the
+Mark Williams company. This was before Turbo C 2.0 so Let's C was
+pretty much the only game in town for a cheap Unix style C compiler
+for DOS. There was also Run/C but that was a C interpreter, not a
+compiler. I also used that to learn C. Funny story - I certainly
+didn't know this at the time but Run/C was written by Peter
+Brooks. Peter and I would later meet when he became my colleague at
+Stuyvesant teaching CS and I now have the privilege of being able to
+call him friend. I joke that I owe him ~ $100 for the interpreter from
+back in the day.
+&lt;/p&gt;
+
+&lt;p&gt;
+Since this was on DOS, I couldn't do real Unix style pipes like 
+&lt;code&gt;cat file | sort | uniq -c | sort -n&lt;/code&gt; but I did simulate it with redirection and temporary
+files. It also supported aliases, simple scripts and I think a few
+other things. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I was pretty happy with it and used it for a couple of years. It was
+also one of the first substantial programs I wrote. I learned a lot
+from doing it.
+&lt;/p&gt;
+
+&lt;p&gt;
+Another "rite of passage" program that was common back then was a
+text based window library. Somethig like ncurses that would allow you
+to make text based windows and menus on the text only screen. I also
+wrote one of these and actually got to use it for a project when I
+started working at Goldman. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I guess the third "rite of passage" project I remember was writing a C
+compiler but that was different because it was for a class. It was a
+significant project but the class didn't really help with writing a
+large program in general - it was all about the compiler and all the
+theory behind it. Great course but not one in software engineering.
+&lt;/p&gt;
+
+&lt;p&gt;
+Nowadays the projects have changed. Text based windowing is long gone
+and while I still think writing a shell is a useful and rewarding
+exercise it's not scratching an itch the way it did back when we were
+stuck on DOS. I guess writing a full stack web app is probably a
+pretty typical one for students these days. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Any others?
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="c" label="C"/>
+    <category term="cs" label="cs"/>
+    <category term="emacs" label="emacs"/>
+    <category term="programming" label="programming"/>
+    <category term="projects" label="projects"/>
+  </entry>
+  <entry>
+    <title>Using Emacs Episode 50 - presentations</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-50-presentations/</id>
+    <updated>2018-06-30T14:10:24-04:00</updated>
+    <published>2018-06-30T14:10:24-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-50-presentations/"/>
+    <summary type="html">&lt;div id="outline-container-org37b1bdd" class="outline-2"&gt;
+&lt;h2 id="org37b1bdd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org37b1bdd"&gt;
+&lt;p&gt;
+Next weekend I'll be attending the Computer Science Teachers
+Association's &lt;a href="https://www.csteachers.org/general/custom.asp?page=2018Conference"&gt;annual conference.&lt;/a&gt; It's probably the biggest conference
+focussed on K12 Computer Science education. This year, in addition to
+attending, I'll be giving a talk on preservice and inservice CS
+teacher preparation programs. I'll be talking about the new New York
+State certification requirements along with what we're rolling out at
+Hunter College. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This means putting together a slide deck for the session. When I have
+to work collaboratively with non-Emacs users, I will usually go to
+Google Docs for presentations. It works and the collaborative aspects
+are nice but tools like Google Docs and Powerpoint are designed around
+composing slides manually. I much prefer to use a tool where I can
+focus on writing my presentation and have the tool turn it into a
+presentation.
+&lt;/p&gt;
+
+&lt;p&gt;
+Org-mode is of course the ideal tool. As an outliner, it lends itself
+to organizing a talk:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;* topic 1
+   the content for slide one
+* topic 2
+   the content for slide two
+* topic 3
+   etc.
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+I can embed code, tables, images, and more. I can also cycle
+visibility so I can focus on individual sections. Org-mode also has a
+number of export options to take a plain org file which is just ascii
+with markup and export it as a presentation. In the video, I'll take a
+quick look at &lt;code&gt;ox-beamer&lt;/code&gt;, which exports to a Beamer presentation in LaTeX and then a PDF,
+&lt;code&gt;epresent&lt;/code&gt; which presents right in Emacs and finally &lt;code&gt;ox-reveal&lt;/code&gt; wich
+creates a &lt;code&gt;reveal.js&lt;/code&gt; presentation. I ultimately decide to continue to
+use &lt;code&gt;ox-reveal&lt;/code&gt; as it's pretty simple and flexible and I can also directly serve
+the final presentation from my own laptop, a usb drive, or directly
+from GitHub. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Check out the video to see how. If you want more information on using
+&lt;code&gt;ox-reveal&lt;/code&gt; check out my earlier &lt;a href="http://cestlaz.github.io/posts/using-emacs-11-reveal"&gt;Using Emacs post and video&lt;/a&gt;. 
+&lt;/p&gt;
+
+
+
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/bRoSpJ23Kzk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="presentations" label="presentations"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs Episode 49 mu4e-conversation</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/</id>
+    <updated>2018-06-21T13:28:41-04:00</updated>
+    <published>2018-06-21T13:28:41-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/"/>
+    <summary type="html">&lt;div id="outline-container-org892f4be" class="outline-2"&gt;
+&lt;h2 id="org892f4be"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org892f4be"&gt;
+&lt;p&gt;
+I've been using Emacs for email for a couple of years now. Not for
+everything, for now my personal email is still Gmail but work is sent
+and read through Emacs. I'm currently using &lt;a href="https://www.djcbsoftware.nl/code/mu/mu4e.html"&gt;mu4e&lt;/a&gt; and while it has a
+few quirks and limitations, I like it very much. You can take a look
+on how I configure and use it &lt;a href="http://cestlaz.github.io/posts/using-emacs-39-mu4e/"&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+The other day I saw &lt;a href="https://www.reddit.com/r/emacs/comments/8qryri/mu4econversation_single_buffer_fullthread_display/"&gt;this&lt;/a&gt; thread on Emacs about a new package -
+&lt;a href="https://gitlab.com/ambrevar/mu4e-conversation"&gt;mu4e-conversation&lt;/a&gt;. It's a package that deals with email threads.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's pretty cool. You can invoke it whenever you're in the headers
+view you can just run &lt;code&gt;M-x mu4e-conversation&lt;/code&gt; and it combines all the
+email messages in the current thread into a single buffer. 
+&lt;/p&gt;
+
+&lt;p&gt;
+It's pretty nice. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You can navigate between messages in the thread with &lt;code&gt;C-c C-n&lt;/code&gt; and
+&lt;code&gt;C-c C-p&lt;/code&gt; and use most if not all of the usual mu4e goodness but on
+top of that you can also toggle what the author calls tree mode by
+hitting &lt;code&gt;V&lt;/code&gt;. Tree mode turns the thread into an org-mode tree - also
+extremely cool.
+&lt;/p&gt;
+
+&lt;p&gt;
+On top of this, you can also make mu4e your default viewing mode by
+setting a single variable with &lt;code&gt;(setq mu4e-view-func 'mu4e-conversation)&lt;/code&gt;.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Although it's very cool, I'm not sure if mu4e-conversation will find
+its way into my workflow or not and probably won't know for a
+while. This is mostly due to the fact that it's summer so work email
+slows down and I won't have too many long threads to play with this
+on.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'll report back once I give it a fair shake but in the meantime if
+anyone out there has had the time to play with it, let us know what
+you think.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/V5efS8uXANI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="editing" label="editing"/>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs 48 Silversearcher</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-48-silversearcher/</id>
+    <updated>2018-04-22T17:28:41-04:00</updated>
+    <published>2018-04-22T17:28:41-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-48-silversearcher/"/>
+    <summary type="html">&lt;div id="outline-container-org67b566e" class="outline-2"&gt;
+&lt;h2 id="org67b566e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org67b566e"&gt;
+&lt;p&gt;
+A couple of days ago I wrote about on my &lt;a href="http://cestlaz.github.io/posts/unit-tests-grading-workflow"&gt;lab grading workflow&lt;/a&gt;. In the
+post I mentioned that I used Emacs to easily navigate between student
+folders and files so I can actually look at their work in addition to
+their programs output and test results.
+&lt;/p&gt;
+
+&lt;p&gt;
+The key is a combination of &lt;code&gt;dired&lt;/code&gt; and &lt;a href="https://github.com/Wilfred/ag.el"&gt;ag&lt;/a&gt;, Emacs's interface to &lt;a href="https://github.com/ggreer/the_silver_searcher"&gt;the
+Silver Searcher&lt;/a&gt; which is something like a recursive code grep on
+steroids. I also briefly try to show &lt;a href="https://github.com/mhayashi1120/Emacs-wgrep"&gt;wgrep&lt;/a&gt; in the video which allows
+you to edit Emacs grep buffers, effectively allowing you to make
+changes across a set of files all at once. It ended up not working
+with silversearcher - if anyone out there knows why, please chime in.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-sFTkCQ774o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="editing" label="editing"/>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Unit Tests Grading Workflow</title>
+    <id>http://cestlaz.github.io/posts/unit-tests-grading-workflow/</id>
+    <updated>2018-04-20T17:49:28-04:00</updated>
+    <published>2018-04-20T17:49:28-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/unit-tests-grading-workflow/"/>
+    <summary type="html">&lt;div id="outline-container-orgab2bca9" class="outline-2"&gt;
+&lt;h2 id="orgab2bca9"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgab2bca9"&gt;
+&lt;p&gt;
+I've talked before about unit testing (&lt;a href="http://cestlaz.github.io/posts/testing-testing"&gt;here&lt;/a&gt;, and &lt;a href="http://cestlaz.github.io/posts/testing-part2"&gt;here&lt;/a&gt;). My premise is
+that in addition to being an important industry technique, it's a
+sound practice for students studying CS. I also contend that it can
+make grading easier on the teacher. Maybe not as easy as an
+auto-grader but those have &lt;a href="https://cestlaz.github.io/posts/2015-10-16-graders.html/#.WtplHHXwZhE"&gt;their own problems&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Since I spent most of today grading I thought I'd share my current
+workflow and how unit tests have made me more efficient.
+&lt;/p&gt;
+
+&lt;p&gt;
+I have each student make a single GitHub repo for all individual
+homeworks, labs and small projects. They'll make additional repos for
+larger and group projects. They fill out a Google form to give me the
+repo link. I download the form and end up with a CSV file something like this:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Doe, John, git@github.com:johndoe/mymoework.git
+Doe, Jane, git@github.com:janedoe/labs.git
+etc.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+My goal is to clone each students repo into a directory and then
+throughout the term, they add assignments to their own repos using the
+names and specifications I give them. For example, after assigning
+three assignments, I could pull everything from their repos and I
+would have a directory structure something like this:
+&lt;/p&gt;
+
+
+&lt;pre class="example"&gt;
+hw
+├── doe_jane
+│   ├── hw_01
+│   ├── hw_02
+│   └── hw_03
+│ 
+└── doe_john
+    ├── hw_01
+    └── hw_02
+&lt;/pre&gt;
+
+&lt;p&gt;
+To get there, I have to change the csv file to a small shell script:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone git@github.com:johndoe/mymoework.git doe_john
+git clone git@github.com:janedoe/labs.git doe_jane
+etc.
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+I usually do this in Emacs with a macro.
+&lt;/p&gt;
+
+&lt;p&gt;
+Now I'm ready to go.
+&lt;/p&gt;
+
+&lt;p&gt;
+Whenever there's a new assignment, I just have to update all the
+repos. I go into the root hw directory and loop through all the
+subdirectoryes:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cs /path/to/hw_root
+for i in `ls`
+do 
+  cd /path/to/hw_root/$i
+  git pull
+done
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+At this point I could go into each repo but we can do better. Since I
+have all of my students submit a Makefile with a default target to
+build an executable named &lt;code&gt;main&lt;/code&gt; and also a target named &lt;code&gt;tests&lt;/code&gt; which
+will build an executable to run the unit tests named &lt;code&gt;tests&lt;/code&gt; I do this
+instead of a straight pull:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cs /path/to/hw_root
+for i in `ls`
+do 
+  cd /path/to/hw_root/$i
+  git pull
+  cd hw_03 # or whatever assignment I'm grading
+  make tests
+  make 
+done
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Now, if I want, I can go into each directory, run the tests by typing
+&lt;code&gt;./tests&lt;/code&gt;  and the hw or project with &lt;code&gt;./main&lt;/code&gt;. I can also add a
+couple of lines to the for loop above like:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;echo "$i Test Report\n----------------\n" &amp;gt;&amp;gt; /path/to/hw_root/test_report
+./tests &amp;gt;&amp;gt; /path/to/hw_root/test_rport
+echo "----------------------\n\n"
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+This gives me a single file with everyone's test results. Either by
+doing this or by running the tests in each folder manually I can
+quickly see what works and what doesn't.
+&lt;/p&gt;
+
+&lt;p&gt;
+While I'm doing this, I have Emacs up and with &lt;b&gt;dired mode&lt;/b&gt; and more
+specifically &lt;b&gt;ag-dired-regexp&lt;/b&gt; which lets me easily
+navigate to any student's files. Combined with the test results I can
+quickly evaluate the entire assignment.
+&lt;/p&gt;
+
+&lt;p&gt;
+Put all of this together and it makes grading somewhat bearable. I can
+work through well written, correct assignments extremely quickly and
+drill down into the other projects efficiently as well.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="grading" label="grading"/>
+    <category term="testing" label="testing"/>
+    <category term="workflow" label="workflow"/>
+  </entry>
+  <entry>
+    <title>Using Emacs Episode 47 - Magit</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-47-magit/</id>
+    <updated>2018-04-07T09:05:36-04:00</updated>
+    <published>2018-04-07T09:05:36-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-47-magit/"/>
+    <summary type="html">&lt;div id="outline-container-org86de79d" class="outline-2"&gt;
+&lt;h2 id="org86de79d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org86de79d"&gt;
+&lt;p&gt;
+I've been holding off on doing a &lt;a href="https://magit.vc/"&gt;Magit&lt;/a&gt; video for a while. Mostly
+because I wasn't using it exclusively and also because there are
+already a number of good Magit videos and resources out there.
+&lt;/p&gt;
+
+&lt;p&gt;
+What changed? Along with the new version of Magin, Jonas Bernoulli
+wrote up &lt;a href="https://emacsair.me/2017/09/01/magit-walk-through/"&gt;a walkthrough of the Magit interface&lt;/a&gt;. For whatever reason,
+it all finally clicked. 
+&lt;/p&gt;
+
+&lt;p&gt;
+In spite of what the documentation says, Magit &lt;b&gt;is not&lt;/b&gt; an interface
+for git. Magit is a &lt;b&gt;command and control&lt;/b&gt; center for git. You can
+launch it just to execute some git commands but you can also leave it
+up and running in an Emacs window or frame as a constant project
+overview.
+&lt;/p&gt;
+
+&lt;p&gt;
+Wow. Mind blown!!!
+&lt;/p&gt;
+
+&lt;p&gt;
+If you use Emacs for Deveopment, you &lt;b&gt;have to&lt;/b&gt; use Magit. If you don't
+use Emacs, you can load it on the side for Magit. If you're not a
+developer, learn to code so you can use Magit!!!!!
+&lt;/p&gt;
+
+&lt;p&gt;
+I tried to do justice to the package in the video. Magit along with &lt;a href="https://orgmode.org/"&gt;Org
+Mode&lt;/a&gt; are arguably Emacs killer apps - enough in and of themselves to
+justify using Emacs.
+&lt;/p&gt;
+
+&lt;p&gt;
+Check out the video:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/1IYsiHXR620" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="editing" label="editing"/>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs 46 Auto Yasnippets</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</id>
+    <updated>2018-03-15T20:05:36-04:00</updated>
+    <published>2018-03-15T20:05:36-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/"/>
+    <summary type="html">&lt;div id="outline-container-orge453c51" class="outline-2"&gt;
+&lt;h2 id="orge453c51"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge453c51"&gt;
+&lt;p&gt;
+The other day I discovered &lt;a href="https://github.com/abo-abo/auto-yasnippet"&gt;auto-yasnippet&lt;/a&gt;, another great package by
+&lt;a href="https://github.com/abo-abo"&gt;Oleh Krehel&lt;/a&gt; or abo-abo.
+&lt;/p&gt;
+
+&lt;p&gt;
+It looks like it's going to be a great way to solve a particular
+problem that come up now and again.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are plenty of times when I want to create a number of similar
+but slightly different blocks of text. The example on the project
+site  is:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;count_of_red&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_total&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"red"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="n"&gt;count_of_blue&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_total&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"blue"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="n"&gt;count_of_green&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_total&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"green"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+You could use multiple cursors, a macro, or other methods to put in
+the common text but you still have to deal with the parts of each line
+that are unique, the red, green, and blue. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You could use a yasnippet but it's unlikely that you'll have a snippet
+for every occasion. This is where auto-yasnippet comes in. You would
+write the first line but add  a tilda as a placeholder:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;count_of&lt;/span&gt;&lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;red&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_total&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"~red"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+and then invoke &lt;code&gt;aya-create&lt;/code&gt;. This will get rid of the tildas and
+create the auto-snippet. Then when you run &lt;code&gt;aya-expand&lt;/code&gt; it will put in
+the snippet with the tilda locations as placeholders.
+&lt;/p&gt;
+
+&lt;p&gt;
+Very cool.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Check out the video:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/utrMabxgXbg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="editing" label="editing"/>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs 45 - Company or Autocomplete</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-45-company/</id>
+    <updated>2018-03-11T08:05:45-04:00</updated>
+    <published>2018-03-11T08:05:45-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-45-company/"/>
+    <summary type="html">&lt;div id="outline-container-org33b7b2c" class="outline-2"&gt;
+&lt;h2 id="org33b7b2c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org33b7b2c"&gt;
+&lt;p&gt;
+This is a good time to be an Emacs user. In addition to all of the
+great packages and tools being developed there seem to be more people
+regularly blogging and making videos about Emacs than ever before.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="http://planet.emacsen.org/"&gt;Planet Emacsen&lt;/a&gt; aggregates a ton of Emcas blogs and Emacs Legend Sacha
+Chua posts what's going on in emacs every week on her &lt;a href="http://sachachua.com/blog/category/geek/emacs/"&gt;blog&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+on the video front, &lt;a href="https://www.youtube.com/channel/ucdetz7akmws0_gnjog01d2g"&gt;uncle dave&lt;/a&gt; has recently joined the ranks of emacs
+video producers. sometimes we'll cover the same topic. dave made a
+video on swiper the other week and i made one a year ago. the other
+week we both made videos on mpd almost on the same day but dave
+focussed on emms and i focussed on simple-mpc. i think this
+is great because it gives different perspectives.
+&lt;/p&gt;
+
+&lt;p&gt;
+today, i watched dave's video on &lt;a href="https://www.youtube.com/watch?v=xewzfruru6k&amp;amp;t=854s"&gt;company&lt;/a&gt; mode for auto
+completion. I've always used &lt;a href="http://cestlaz.github.io/posts/using-emacs-8-autocomplete/"&gt;autocomplete&lt;/a&gt; mode. I thought it would be
+a good time for me to see how the other half lived.
+&lt;/p&gt;
+
+&lt;p&gt;
+You can find my configurations up on GitHub
+(&lt;a href="https://github.com/zamansky/using-emacs"&gt;https://github.com/zamansky/using-emacs&lt;/a&gt;). The master branch is using
+autocomplete and the company-test branch for company. I've also pulled
+out the relevant code and am placing it down under the video.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's what I've found so far:
+&lt;/p&gt;
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/srFQwTvbaxY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org0580de9" class="outline-2"&gt;
+&lt;h2 id="org0580de9"&gt;Company config (so far):&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0580de9"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;company-idle-delay&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;company-minimum-prefix-length&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-company-mode&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company-irony&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt; 
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'company-backends&lt;/span&gt; &lt;span class="ss"&gt;'company-irony&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;irony&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'c++-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'c-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-cdb-autosetup-compile-options&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;irony-eldoc&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode-hook&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="ss"&gt;'irony-eldoc&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company-jedi&lt;/span&gt;
+    &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+    &lt;span class="nv"&gt;:config&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;my/python-mode-hook&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'company-backends&lt;/span&gt; &lt;span class="ss"&gt;'company-jedi&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'my/python-mode-hook&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org67bf776" class="outline-2"&gt;
+&lt;h2 id="org67bf776"&gt;Autocomplete config&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org67bf776"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;auto-complete&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:init&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;progn&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ac-config-default&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-auto-complete-mode&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;py-python-command&lt;/span&gt; &lt;span class="s"&gt;"python3"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;python-shell-interpreter&lt;/span&gt; &lt;span class="s"&gt;"python3"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;jedi&lt;/span&gt;
+    &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+    &lt;span class="nv"&gt;:init&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:setup&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:ac-setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs 44 - An org-mode workflow for application processing</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-44-pdf/</id>
+    <updated>2018-03-03T08:05:45-04:00</updated>
+    <published>2018-03-03T08:05:45-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-44-pdf/"/>
+    <summary type="html">&lt;div id="outline-container-orga34b33a" class="outline-2"&gt;
+&lt;h2 id="orga34b33a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga34b33a"&gt;
+&lt;p&gt;
+One of my titles at Hunter College is Director of the Daedalus CS
+Honors program. It's something like a Hunter specific, CS specific
+version of the CUNY Macaulay Honors program. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Hunter gives all its students the ability to get a great computer
+science education at a fraction of the cost of a private institution
+and if you're a Daedalus scholar you also get a scholarship, a laptop,
+special classes (with me :-) ), activities and more. Just the other
+day we visited  &lt;a href="http://samsungnext.com/"&gt;Samsung Next&lt;/a&gt; accelerator and earlier in the year we
+made our annual visit to &lt;a href="http://www.catskillsconf.com/"&gt;Catskills Conf&lt;/a&gt;, arguably my favorite event of
+the year. 
+&lt;/p&gt;
+
+&lt;p&gt;
+When deciding on which students to recommend for acceptance, I try to
+glean as much information as I can about each applicant. When I feel
+there's not enough information, I've been known to reach out to
+recommenders and other sources for more. But first I go through the
+applications. For each student, I'm provided with a pdf file with a
+bunch of data and also an entry in an internal Hunter online form with
+even more.
+&lt;/p&gt;
+
+&lt;p&gt;
+For the first cohort, this wasn't a big deal. I hadn't even started at
+Hunter when the applications closed so there was no
+outreach. Everything was after the fact so there were very few
+students to evaluate.
+&lt;/p&gt;
+
+&lt;p&gt;
+Last year, I was able to do some outreach and we had around 60 or so
+applications for a little over 20 spots.
+&lt;/p&gt;
+
+&lt;p&gt;
+This year, there are well over 100 applicants (and we're looking to
+grow the program by a large number of students). All of a sudden, it
+wasn't so easy to navigate all the pdf files.
+&lt;/p&gt;
+
+&lt;p&gt;
+Emacs to the rescue. Using a combination of org-mod,  &lt;a href="https://github.com/politza/pdf-tools"&gt;pdf-tools&lt;/a&gt;, and
+&lt;a href="https://melpa.org/#/org-pdfview"&gt;org-pdfview&lt;/a&gt; I've come up with a workflow that I very much like.
+&lt;/p&gt;
+
+&lt;p&gt;
+Take a look and let me know what you think:
+&lt;/p&gt;
+
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LFO2UbzbZhA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="pdf" label="pdf"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs 43 - Music with MPD</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-43-music/</id>
+    <updated>2018-02-20T08:05:45-04:00</updated>
+    <published>2018-02-20T08:05:45-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-43-music/"/>
+    <summary type="html">&lt;div id="outline-container-org208ddec" class="outline-2"&gt;
+&lt;h2 id="org208ddec"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org208ddec"&gt;
+&lt;p&gt;
+I like to listen to music at work. Sometimes I just stream from
+YouTube, Soundcloud, Spotify or some other online source but if you're
+a person of a certain age, like me, you probably have quite an mp3
+collection. All those CDs that have been ripped not to mention some
+converted vinyl.
+&lt;/p&gt;
+
+&lt;p&gt;
+I used to use the &lt;a href="https://www.musicpd.org/"&gt;Music Player Daemon&lt;/a&gt; or MPD back in the day. It would
+run in the background and you could connect to it using lots of
+&lt;a href="https://www.musicpd.org/clients/"&gt;clients&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+When I was running Ubuntu and Mint Linux, I had some trouble setting
+up MPD but the process is much smoother using Manjaro which is Arch
+based and I'm currently enjoying.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's a video on how I set up MPD and also use Emacs to control it.
+&lt;/p&gt;
+
+&lt;p&gt;
+Coincidentally, on the same day I recorded this, &lt;a href="https://www.youtube.com/channel/UCDEtZ7AKmwS0_GNJog01D2g/feed"&gt;Uncle Dave&lt;/a&gt; put up a
+similar &lt;a href="https://www.youtube.com/watch?v=xTVN8UDScqk"&gt;video&lt;/a&gt;. Dave also sets up MPD on an Arch based linux but he
+uses EMMS for his player. I ultimately end up with Simple-MPC with
+briefs stops at the built in MPC mode and Mingus along the way.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LWd60rc_rQ0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="mpd" label="mpd"/>
+    <category term="music" label="music"/>
+  </entry>
+  <entry>
+    <title>Using Emacs 42 - Git Gutter and Time Machine</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-42-git-gutter/</id>
+    <updated>2018-02-18T08:05:45-04:00</updated>
+    <published>2018-02-18T08:05:45-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-42-git-gutter/"/>
+    <summary type="html">&lt;div id="outline-container-org916ae49" class="outline-2"&gt;
+&lt;h2 id="org916ae49"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org916ae49"&gt;
+&lt;p&gt;
+One day I'll do a Magit video but since there are already some good
+ones out there I thought I'd share a couple of other great git related
+packages.
+&lt;/p&gt;
+
+&lt;p&gt;
+The first is &lt;a href="https://github.com/syohex/emacs-git-gutter/tree/00c05264af046b5ce248e5b0bc42f117d9c27a09"&gt;Git Gutter&lt;/a&gt; which adds markers on the side gutter of your
+buffer so you know what's changed since you're last commit. I pretty
+much use it exclusively for that visual but it can also be used to
+cmmit and revert individual chunks of your changes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The second is &lt;a href="https://github.com/pidu/git-timemachine"&gt;Git Timemachine&lt;/a&gt; which lets you move forward and back
+between commits. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The video demos both. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy
+&lt;/p&gt;
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/P-mLxkb-EE8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="git" label="git"/>
+  </entry>
+  <entry>
+    <title>Using Emacs 41 Pandoc</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-41-pandoc/</id>
+    <updated>2018-02-13T08:05:45-04:00</updated>
+    <published>2018-02-13T08:05:45-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-41-pandoc/"/>
+    <summary type="html">&lt;div id="outline-container-org9929ccd" class="outline-2"&gt;
+&lt;h2 id="org9929ccd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9929ccd"&gt;
+&lt;p&gt;
+Another Emacs quick hit today. Actually, not really Emacs. Today's
+video is a quick, really quick, look at &lt;a href="https://pandoc.org/"&gt;Pandoc&lt;/a&gt;. Pandoc is a document
+converter. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Here are the formats that Pandoc can covert read from:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+Markdown, CommonMark, PHP Markdown Extra, GitHub-Flavored Markdown,
+MultiMarkdown, and (subsets of) Textile, reStructuredText, HTML,
+LaTeX, MediaWiki markup, TWiki markup, TikiWiki markup, Creole 1.0,
+Haddock markup, OPML, Emacs Org mode, DocBook, JATS, Muse, txt2tags,
+Vimwiki, EPUB, ODT, and Word docx.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+And here are the ones it can write to:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+plain text, Markdown, CommonMark, PHP Markdown Extra, GitHub-Flavored
+Markdown, MultiMarkdown, reStructuredText, XHTML, HTML5, LaTeX
+(including beamer slide shows), ConTeXt, RTF, OPML, DocBook, JATS,
+OpenDocument, ODT, Word docx, GNU Texinfo, MediaWiki markup, DokuWiki
+markup, ZimWiki markup, Haddock markup, EPUB (v2 or v3), FictionBook2,
+Textile, groff man, groff ms, Emacs Org mode, AsciiDoc, InDesign ICML,
+TEI Simple, Muse, PowerPoint slide shows and Slidy, Slideous,
+DZSlides, reveal.js, PDF
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;p&gt;
+That's pretty impressive
+&lt;/p&gt;
+
+&lt;p&gt;
+I was faced with an html file describing a lab for all the CSCI13500
+students at Hunter. I wanted to modify it for my class and that was
+going to be a bear. I also wanted an easy way to have it render up on
+GitHub. With pandoc, it was trivial. I just typed:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pandoc -f html -t org -o lab3.org lab3.html
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+which converted the file to org-mode. This was trivial to edit and
+then I uploaded it to GitHub as the lab's Readme.org file which GitHub
+automatically renders on the project page.
+&lt;/p&gt;
+
+&lt;p&gt;
+Pandoc for the win.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've also used pandoc to move between org-mode and word files. 
+&lt;/p&gt;
+
+&lt;p&gt;
+If you haven't checked out pandoc, you should.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/qVUZsH-MDRM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+  </entry>
   <entry>
     <title>Using Emacs 40 - Atomic Chrome</title>
     <id>http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/</id>
@@ -2619,9 +3591,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-19-live/"/>
-    <summary type="html">&lt;div id="outline-container-org1b34c50" class="outline-2"&gt;
-&lt;h2 id="org1b34c50"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1b34c50"&gt;
+    <summary type="html">&lt;div id="outline-container-org31d3964" class="outline-2"&gt;
+&lt;h2 id="org31d3964"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org31d3964"&gt;
 &lt;p&gt;
 Some of the videos I want to make are going to be much easier to do if
 I'm working in my own account where my whole file tree is available. 
@@ -2655,9 +3627,9 @@ everything.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-orgfc2626f" class="outline-2"&gt;
-&lt;h2 id="orgfc2626f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgfc2626f"&gt;
+&lt;div id="outline-container-org9e90fba" class="outline-2"&gt;
+&lt;h2 id="org9e90fba"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9e90fba"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -4512,11 +5484,11 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-3-elisp/"/>
-    <summary type="html">&lt;div id="outline-container-org8ef7c15" class="outline-2"&gt;
-&lt;h2 id="org8ef7c15"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8ef7c15"&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/nyQxRarVYH4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+    <summary type="html">&lt;div id="outline-container-org25154ad" class="outline-2"&gt;
+&lt;h2 id="org25154ad"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org25154ad"&gt;
 
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/nyQxRarVYH4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;
 Many people think of Emacs as an editor. I like to think of it as an Elisp interpreter where you live code documents.
 &lt;/p&gt;

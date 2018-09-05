@@ -3,13 +3,1901 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about cs</title>
   <id>http://cestlaz.github.io/categories/cs.atom</id>
-  <updated>2018-02-12T19:18:17Z</updated>
+  <updated>2018-09-05T21:31:46Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/cs.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/cs/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Rite Of Passage Projects</title>
+    <id>http://cestlaz.github.io/posts/rite-of-passage-projects/</id>
+    <updated>2018-08-17T15:18:11-04:00</updated>
+    <published>2018-08-17T15:18:11-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/rite-of-passage-projects/"/>
+    <summary type="html">&lt;div id="outline-container-org047f8c6" class="outline-2"&gt;
+&lt;h2 id="org047f8c6"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org047f8c6"&gt;
+&lt;p&gt;
+JCS's &lt;a href="https://irreal.org/blog/?p=7414#comment-4045190612"&gt;post&lt;/a&gt; on Irreal today brought me back. It was about &lt;a href="https://en.wikipedia.org/wiki/Brief_(text_editor)"&gt;Brief&lt;/a&gt; which
+was the editing hotness back in the day. I played with it a little
+really mostly used Emacs clones for real work when I was stuck on
+MS-DOS systems. Usually either &lt;a href="https://en.wikipedia.org/wiki/JOVE"&gt;JOVE&lt;/a&gt; or &lt;a href="https://en.wikipedia.org/wiki/Epsilon_(text_editor)"&gt;Epsilon&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+In the comments Jon reminded me about the &lt;a href="https://en.wikipedia.org/wiki/MKS_Toolkit"&gt;MKS Toolkit&lt;/a&gt;
+which brought most everyday Unix tools to DOS along with a shell and
+a version of Vi. I didn't use Vi much and I only used their shell
+until I wrote my own. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This got me thinking about "rite of passage" projects. I was in
+college in the mid to late 80s. It was the heyday of the
+IBM-PC. Schools still used older time sharing systems like DEC-20s and
+Vaxen but the PC was all the rage. The cool thing about them was that
+you had full control and access to the machine and it was simple
+enough to get your head around pretty much everything about it. The
+downside was that MS-DOS was very limited and of course there was
+little to no networking going on. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the one hand, you could dive into the low level machine language
+stuff very easily. Get Norton's book:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="https://covers.openlibrary.org/b/id/7446489-L.jpg" alt="7446489-L.jpg" align="center" height="250"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+and you're on your way. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand many student's graduated with no concept of time
+sharing and the ramifications of sharing a system or resources were
+foreign to many kids.
+&lt;/p&gt;
+
+&lt;p&gt;
+Even though we always look back to the "good old days," in many ways
+things weren't much different. I got a very strong background in
+academic CS from NYU (Courant Institute) but just like today, there
+was no real preparation for the real world.If you wanted to really develop your
+coding chops you had to work on side projects.
+&lt;/p&gt;
+
+&lt;p&gt;
+I seem to recall, a typical "rite of passage" side project was writing
+your own shell. It didn't have to be anything as powerful as BASH or
+ZSH but it would typically be much more powerful than DOS and much
+more Unixy.
+&lt;/p&gt;
+
+&lt;p&gt;
+I recall writing my first shell down in UC-49 of Tisch Hall when the
+computer labs weren't busy. I wrote it in C which was what the cool
+kids used back then. Specifically I used the &lt;a href="https://en.wikipedia.org/wiki/Mark_Williams_Company"&gt;Let's C&lt;/a&gt; compiler from the
+Mark Williams company. This was before Turbo C 2.0 so Let's C was
+pretty much the only game in town for a cheap Unix style C compiler
+for DOS. There was also Run/C but that was a C interpreter, not a
+compiler. I also used that to learn C. Funny story - I certainly
+didn't know this at the time but Run/C was written by Peter
+Brooks. Peter and I would later meet when he became my colleague at
+Stuyvesant teaching CS and I now have the privilege of being able to
+call him friend. I joke that I owe him ~ $100 for the interpreter from
+back in the day.
+&lt;/p&gt;
+
+&lt;p&gt;
+Since this was on DOS, I couldn't do real Unix style pipes like 
+&lt;code&gt;cat file | sort | uniq -c | sort -n&lt;/code&gt; but I did simulate it with redirection and temporary
+files. It also supported aliases, simple scripts and I think a few
+other things. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I was pretty happy with it and used it for a couple of years. It was
+also one of the first substantial programs I wrote. I learned a lot
+from doing it.
+&lt;/p&gt;
+
+&lt;p&gt;
+Another "rite of passage" program that was common back then was a
+text based window library. Somethig like ncurses that would allow you
+to make text based windows and menus on the text only screen. I also
+wrote one of these and actually got to use it for a project when I
+started working at Goldman. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I guess the third "rite of passage" project I remember was writing a C
+compiler but that was different because it was for a class. It was a
+significant project but the class didn't really help with writing a
+large program in general - it was all about the compiler and all the
+theory behind it. Great course but not one in software engineering.
+&lt;/p&gt;
+
+&lt;p&gt;
+Nowadays the projects have changed. Text based windowing is long gone
+and while I still think writing a shell is a useful and rewarding
+exercise it's not scratching an itch the way it did back when we were
+stuck on DOS. I guess writing a full stack web app is probably a
+pretty typical one for students these days. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Any others?
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="c" label="C"/>
+    <category term="cs" label="cs"/>
+    <category term="emacs" label="emacs"/>
+    <category term="programming" label="programming"/>
+    <category term="projects" label="projects"/>
+  </entry>
+  <entry>
+    <title>Hunter CS - a lot of progress in a short time</title>
+    <id>http://cestlaz.github.io/posts/hunter-cs-year-two/</id>
+    <updated>2018-06-29T17:41:05-04:00</updated>
+    <published>2018-06-29T17:41:05-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/hunter-cs-year-two/"/>
+    <summary type="html">&lt;div id="outline-container-org5c6917c" class="outline-2"&gt;
+&lt;h2 id="org5c6917c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org5c6917c"&gt;
+&lt;p&gt;
+Yesterday I was back on campus for an early orientation session for
+Hunter's incoming Daedalus CS honors students. It was the first time
+all of us got to meet face to face. The students I met with will be
+my third cohort. I got to thinking how far we've come in under three
+years. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Hunter's had a strong but little known undergraduate
+CS program for as long as I've known. Much like any program, we've got
+our strengths and weaknesses but you go through our program and
+academically you'll be as well prepared as from anywhere else. We have some
+challenges being a commuter school, a liberal arts school and a school
+not commonly thought of for CS but the core has always been there.  
+&lt;/p&gt;
+
+&lt;p&gt;
+Hunter has been making a concerted effort to up its computer science
+game and my joining the team has been part of that. The Daedalus
+program is an honors scholarship program. It's similar to the well
+known CUNY Macaulay program but it's specific to Hunter and specific to
+CS. Our kids get scholarships, laptops, special classes (with me),
+activities and events and more. Our first cohort had 12. This past
+year we had 23 but a funny thing happened right after we started. Hunter's
+Macaulay CS students heard about what was going on and wanted in. The
+end result was that last years cohort had a total of 27 students
+as we invited the incoming Hunter Macaulay CS students into the
+fold. This year, we're up to about 50 total and it looks to be a very
+strong group. To be honest I'm a little
+scared of growing this quickly. The kids will be great but it will be
+a challenge building the community across multiple classes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm really pleased with the first two cohorts performance both in
+class and out. They're progressing well through the academic program
+and are ahead of schedule in terms of internships and outside
+activities but I'm even happier that they've been working to level up
+Hunter CS as a whole. They started a once a week Dojo last year where
+all Hunter CS students could hang out and work on tech projects and
+have a speaker series on tap for this coming year. For my part, I've
+got a couple of new ideas up my sleeve but I'm going to keep them
+under wraps for now.
+&lt;/p&gt;
+
+&lt;p&gt;
+Three years ago Hunter wasn't so much on the map for CS inclined high
+school students and while there's much work to be done, many of our
+incoming cohort members chose us over other programs that have
+traditionally been considered CS strongholds.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the same time, our efforts to connect Hunter CS to the NY Tech community have begun to
+raise our profile on the other end of the pipeline.
+&lt;/p&gt;
+
+&lt;p&gt;
+There's still a long rode ahead but I thought I'd give myself a day to
+look back on how far we've come in a short time. Having a great public college option for CS
+education is critical for NYC. This was one of the things I left Stuy to
+accomplish and we're well on our way.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="college" label="college"/>
+    <category term="cs" label="cs"/>
+  </entry>
+  <entry>
+    <title>Teaching recursion early? Make sure to use a good tool.</title>
+    <id>http://cestlaz.github.io/posts/recursion-early/</id>
+    <updated>2018-05-30T08:42:29-04:00</updated>
+    <published>2018-05-30T08:42:29-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/recursion-early/"/>
+    <summary type="html">&lt;div id="outline-container-orgc0563fc" class="outline-2"&gt;
+&lt;h2 id="orgc0563fc"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgc0563fc"&gt;
+&lt;p&gt;
+I replied this tweet yesterday and thought I'd expound a bit.
+&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;We started kids using scheme on 10th grade at stuy so did recursion early. Not everyone got all of it but it think it made things much easier for those that you more CS later.&lt;/p&gt;— Mike Zamansky (@zamansky) &lt;a href="https://twitter.com/zamansky/status/1001508028439519233?ref_src=twsrc%5Etfw"&gt;May 29, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;p&gt;
+We introduced recursion very early in our intro course at Stuy and I
+think it worked well. In that course we started by using Racket (nee
+Scheme) as the first programming unit. Originally we
+started the kids out first using NetLogo or StarLogo and followed with
+Scheme but after a few years we switched the order.
+&lt;/p&gt;
+
+&lt;p&gt;
+I wouldn't always recommend Scheme for a first course and in fact
+frequently don't but given how the Stuy course was introduced and
+developed it made sense and worked. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Was it worth doing things this way? I think so. Prior to that intro
+course becoming a requirement I got to see students coming in from
+different pathways to APCS. Some came in raw with zero formal
+experience, some self taught, some through that intro course and some
+having taken another more traditional intro programming course or
+experience. The kids who started on Scheme had no more difficulty
+mastering loops and iteration but had an easier time getting to the
+more advanced recursive techniques. This wasn't a surprise - it wasn't
+their first rodeo. This also jived with reports I read at the time
+that felt that when students did recursion first, iteration was just
+as easy but when they did iteration first, recursion was harder. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You can of course make a strong case that recursion isn't necessary
+for a kid that isn't going to study more CS. I'll merely argue that
+what we did at Stuy worked with that population and I wouldn't change
+it. At the same time, I've helped a number of teachers design classes and programs
+where we agreed that recursion first was not the way to go.
+&lt;/p&gt;
+
+&lt;p&gt;
+In any event, it wasn't that I specifically wanted to do recursion
+early but rather, there were a number of things I wanted to do with
+the class for which Scheme made sense and recursion was just one of
+them.
+&lt;/p&gt;
+
+&lt;p&gt;
+Some reasons to like (or for some, to dislike) Scheme early:
+&lt;/p&gt;
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;It's functional – everything is a function. While this is
+technically not true, we can fudge it a bit at this level. You put
+things in parens so instead of add(a,b) you write (add a b) or
+really (+ a b). You can also do (+ a b c). Things that would be
+statements are also functions: (if Booelean TruePart FalsePart) is the &lt;b&gt;if&lt;/b&gt;
+statement. For example &lt;code&gt;(if (&amp;gt;= a b) a b)&lt;/code&gt; returns the larger of a
+and b.&lt;/li&gt;
+&lt;li&gt;Because it's functional it avoids the issue kids have with &lt;code&gt;=&lt;/code&gt; being
+for assignment rather than comparison.&lt;/li&gt;
+&lt;li&gt;It has great support for list processing.&lt;/li&gt;
+&lt;li&gt;Recursion is much more natural.&lt;/li&gt;
+&lt;li&gt;It's a super simple language with simple rules and a simple, small  syntax&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Of course, Scheme isn't perfect and some people dislike the above
+reasons. It's also easy to come up with a number of other good reasons
+not to use a language like Scheme. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the recursion front, it makes things much easier. There are no
+loops so recursion develops as a natural form for repetition:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;define &lt;/span&gt;&lt;span class="nv"&gt;f&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+	    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;* &lt;/span&gt;&lt;span class="nv"&gt;x&lt;/span&gt;  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;f&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;- &lt;/span&gt;&lt;span class="nv"&gt;x&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)))))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+This defines a function that takes one parameter and returns
+&lt;code&gt;x*(x-1)*(x-2)...&lt;/code&gt;. It repeats, but never ends. This leads to adding
+a base case:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;define &lt;/span&gt;&lt;span class="nv"&gt;f&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;lambda &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+	    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;if &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;&amp;lt; &lt;/span&gt;&lt;span class="nv"&gt;x&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+		&lt;span class="mi"&gt;1&lt;/span&gt;
+		&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;* &lt;/span&gt;&lt;span class="nv"&gt;x&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;f&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;- &lt;/span&gt;&lt;span class="nv"&gt;x&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;))))))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Which is your basic factorial function.
+&lt;/p&gt;
+
+&lt;p&gt;
+Since this use of recursion for repetition  develops naturally as we
+introduce language concepts it's easier for kids to get their heads
+around it as opposed to when they've seen loops already and have an
+"easier" alternative. You can make the case that you could introduce
+recursion this way in a language with loops like Python but once loops
+are available and particularly when loops are idiomatic, students will
+find them and getting them to think recursively will be more
+difficult.
+&lt;/p&gt;
+
+&lt;p&gt;
+Scheme and most other functional programming languages also have
+strong support for lists and list recursion. This means you don't have
+to limit yourself to mathy problems. Think about a todo list:
+&lt;/p&gt;
+
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;Go to the market&lt;/li&gt;
+&lt;li&gt;Buy a gallon of milk&lt;/li&gt;
+&lt;li&gt;If they have eggs, get a dozen (heh heh)&lt;/li&gt;
+&lt;li&gt;Go home&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+Processing a todo list is really a recursive problem:
+&lt;/p&gt;
+
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;If the list is empty you're done&lt;/li&gt;
+&lt;li&gt;Take the first item off  the list&lt;/li&gt;
+&lt;li&gt;Do it&lt;/li&gt;
+&lt;li&gt;Recurse&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+Once you start working with lists, you can play with all sorts of
+recursive examples.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the end of the Scheme unit the big project is creating a sentence
+generator. The kids don't know it but they're learning about grammars
+and in fact are writing a recursive descent parser - they just think
+they're writing a program that creates silly sentences. It's a really
+nice project that uses recursion in a way that's different and I'd
+argue more fun and interesting than the usual approaches. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I chose Scheme for a variety of reasons. I also chose NetLogo for
+specific reasons. Unlike Scheme (or most other popular learning
+languages), NetLogo is really all about agent based parallel
+processing. There are concepts that we can explore easily and in depth
+with NetLogo that would be tremendously difficult in any other
+language and at the same time, there are things that are easy to
+explore in other languages that Netlogo doesn't lend itself to.
+&lt;/p&gt;
+
+&lt;p&gt;
+So, in the end, this post really isn't about when to teach
+recursion. It's more about how languages lend themselves to solving
+different problems and teaching different concepts in different
+ways. If all you have is a hammer, everything looks like a
+nail. Fortunately, we can do better.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="recursion" label="recursion"/>
+    <category term="scheme" label="scheme"/>
+  </entry>
+  <entry>
+    <title>Why Strong K12 Teacher Certification is Important</title>
+    <id>http://cestlaz.github.io/posts/strong-teacher-certification/</id>
+    <updated>2018-04-10T17:39:30-04:00</updated>
+    <published>2018-04-10T17:39:30-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/strong-teacher-certification/"/>
+    <summary type="html">&lt;div id="outline-container-org44a29a0" class="outline-2"&gt;
+&lt;h2 id="org44a29a0"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org44a29a0"&gt;
+&lt;p&gt;
+About a week ago New York State's new regulation creating a &lt;a href="http://www.crainsnewyork.com/article/20180327/NEWS/180329893/new-york-will-finally-have-certified-computer-science-teachers"&gt;K12 CS
+teacher certification&lt;/a&gt; went live. Just the other day I was honored to be
+interviewed by  &lt;a href="https://twitter.com/mflamm_reporter"&gt;Matt Flamm&lt;/a&gt; of Crain's New York in a &lt;a href="http://www.crainsnewyork.com/article/20180410/TECHNOLOGY/180419999/asked-answered-teacher-changed-jobs-to-push-for-new-york-states-new"&gt;follow up piece&lt;/a&gt;
+about it. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Having K12 CS teacher certification is big and having quality programs
+that lead to certification is &lt;b&gt;HUGE&lt;/b&gt;. In my view, it's a game changer.
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's Focus on high school, my wheelhouse.
+&lt;/p&gt;
+
+&lt;p&gt;
+From a course offerings point of view it's the wild west. I don't mean
+this as a bad thing, it's just that there's a huge range of offerings
+from AP to home brew, physical computing, game based, cyber security,
+you name it, there's a curriculum. The long and short of this is that
+schools need teachers to teach all of these experiences. Without a
+strong certification pathway we're going to be stuck with the current
+training based model where teachers are trained to deliver canned
+curricula rather than truly teach. With strong teacher preparation
+programs teachers will be prepared not only to deliver all the
+existing curricula but, arguable more importantly design their own
+learning experiences appropriate for the populations they work with.
+&lt;/p&gt;
+
+&lt;p&gt;
+This is important and alone would make having CS certification
+worthwhile but to me the BIG win is that it creates a viable career
+path. 
+&lt;/p&gt;
+
+&lt;p&gt;
+People say we'll never find enough CS teachers because the tech
+industry pays so well. I've never believed that. We find math teachers
+even though many could flee to finance and chem teachers in spite of
+big pharma's call so why can't we find CS teachers? Because we've
+never provided a path into the profession and a viable career track. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Certification means that over time schools will be able to build CS
+teachers and the discipline will be treated as the other
+subjects. Prior to certification, a CS teacher might be cut if a
+school's math department downsized. With certification, the career
+track for a CS teacher is the same as the track for any other teacher.
+&lt;/p&gt;
+
+&lt;p&gt;
+It also means that young people starting out who are interested in
+both teaching and computer science will have a way of getting into the
+profession - something that has never before existed.
+&lt;/p&gt;
+
+&lt;p&gt;
+Having CS certification alone won't woo a
+plethora of current tech professionals into teaching but over time,
+we'll start to have CS Ed majors or CS majors pursuing CS ED Masters
+degrees and entering the profession. This won't happen in a press or
+election cycle but it will happen.
+&lt;/p&gt;
+
+&lt;p&gt;
+This all hinges on quality prep programs. I think I've hit the sweet
+spot with what I've designed at Hunter. The critical components are of
+course content and pedagogy. Teacher candidates must have both
+sufficient depth and breadth in the subject and all the pedagogical
+content knowledge that comes along with it. I don't agree with the
+common approach of taking a course to teach a course - that is, having
+courses like "APCS - Principles for teachers" or "APCS - A for
+teachers."  I want my teachers to be able to teach any reasonable
+curriculum or design their own so we'll be rolling out courses that
+examine the commonly offerd curricula but prepare teachers for a whole
+lot more.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's been an exciting week in NY CS Ed and there's a lot more to come.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="certification" label="certification"/>
+    <category term="cs" label="cs"/>
+    <category term="policy" label="policy"/>
+    <category term="teaching" label="teaching"/>
+  </entry>
+  <entry>
+    <title>Competitions and Hackathons</title>
+    <id>http://cestlaz.github.io/posts/hs-competitions/</id>
+    <updated>2018-04-06T17:22:15-04:00</updated>
+    <published>2018-04-06T17:22:15-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/hs-competitions/"/>
+    <summary type="html">&lt;div id="outline-container-orgf39025f" class="outline-2"&gt;
+&lt;h2 id="orgf39025f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf39025f"&gt;
+&lt;p&gt;
+Today's the last day of spring break. After the weekend it's back to
+the grind. It really hasn't been much of a spring break. The rain and
+the snow made for very little spring and between working on the Hunter
+/ CUNY2X Internship program and reviewing applications for my Hunter
+Daedalus CS Honors program there has been very little break.
+&lt;/p&gt;
+
+&lt;p&gt;
+Today was no exception - I spent much of the day working but I did
+take a few hours to head over to Cornell Tech on Roosevelt
+Island. Why? To check out the &lt;a href="https://www.cs.cornell.edu/events/cornell-high-school-programming-contest"&gt;Cornell High School Progrmaming
+Contest&lt;/a&gt; - first time in NYC.
+&lt;/p&gt;
+
+&lt;p&gt;
+I was invited by my friend and organizer &lt;a href="https://twitter.com/diane_levitt"&gt;Diane Levitt&lt;/a&gt;. I only stayed
+for an hour or so but it was shaping up to be a great event. It looked
+like around a hundred kids from maybe a dozen or so schools and it was
+run simultaneously with high schoolers on the Ithaca campus where the
+competition has been running for a few years. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The format was similar to other high school programming competitions
+I've been to. Teams of two or three sharing a single computer to solve
+a number of programming problems that varied in difficulty. You can
+check out a few "warm up" problems on the competition &lt;a href="https://www.cs.cornell.edu/events/cornell-high-school-programming-contest"&gt;site&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The competition reminded me of the &lt;a href="https://www.sjcny.edu/long-island/academics/programs-departments/mathematics-and-computer-science/programming-competition"&gt;St. Joseph's High School
+Programming Competition&lt;/a&gt; held every spring but in NYC so more
+convenient for city dwellers. I went to the St. Joseph's competition a
+few times and I'm a big fan. I particularly like the awards luncheon
+after the competition. If I were to make one suggestion to the
+organizers there it would be to mix the seating at the luncheon so
+that kids get to sit with and spend time with kids from different
+schools.
+&lt;/p&gt;
+
+&lt;p&gt;
+These competitions contrast nicely with hackathons like &lt;a href="http://stuyhacks.com/%0A"&gt;StuyHacks&lt;/a&gt;
+for which I acted as a judge a couple of months ago. Competitions are, well,
+competitive. Hackathons can be but don't have to be. Competitions are
+about solving problems, hackathons, building things. Each can speak to
+a different kind of student. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Both competitions and hackathons have problems as well. On the competition
+side we have:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Schools with more developed CS programs dominate&lt;/li&gt;
+&lt;li&gt;A single strong student can carry a team&lt;/li&gt;
+&lt;li&gt;Some kids don't like or do well in the competitive environment&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+And on the hackathon side:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;24 hours of straight work is just a bad idea and a bad thing to
+encourage.&lt;/li&gt;
+&lt;li&gt;Big advantage to teams that bring prefab code.&lt;/li&gt;
+&lt;li&gt;Big advantage to kids with experience.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Both types of events are great opportunities for young
+programmers. They're celebrate academic work, bring tech kids together
+as a community and when done right are
+something of a CS party. Neither type of event speaks to all kids so
+it's great to have both competitions and hackathons to go along with
+other types of events available for our kids. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Another thing I love abut the Cornell and St, Joseph's competitions
+along with StuyHacks is that they're open to all schools and hence all
+students. There's room for the novice and also the expert and you
+don't have to be in a particular school or program to participate.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are other events beyond these three. There are online
+competitions like &lt;a href="http://www.usaco.org/"&gt;the USACO&lt;/a&gt;, competitions on HackerRank and Topcoder,
+&lt;a href="http://halite.io"&gt;Halite&lt;/a&gt; along with it's hackathon which is great but specialized and in
+person ones that are farther away like the &lt;a href="http://pclassic.org/%0A"&gt;PClassic&lt;/a&gt; in Philidelphia
+and Rowan's &lt;a href="http://elvis.rowan.edu/rupc/%0A"&gt;HS programming competition&lt;/a&gt; in New Jersey but it's great to
+see great local opportunities like these emerging and hopefully
+running for years to come.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="competitions" label="competitions"/>
+    <category term="cs" label="cs"/>
+    <category term="events" label="events"/>
+  </entry>
+  <entry>
+    <title>Tools and Complexity</title>
+    <id>http://cestlaz.github.io/posts/tools-and-complexity/</id>
+    <updated>2018-04-05T18:55:21-04:00</updated>
+    <published>2018-04-05T18:55:21-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/tools-and-complexity/"/>
+    <summary type="html">&lt;div id="outline-container-org32ed0d7" class="outline-2"&gt;
+&lt;h2 id="org32ed0d7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org32ed0d7"&gt;
+&lt;p&gt;
+&lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; wrote about &lt;a href="http://blog.acthompson.net/2018/04/thoughts-on-where-cs-education-tools.html"&gt;CS education tools&lt;/a&gt; earlier today. I've
+also been meaning to write on the topic but from a different point of
+view.
+&lt;/p&gt;
+
+&lt;p&gt;
+I do my best to keep up with the latest and greatest in the CS world
+both on the academic side as well as the professional one. That's not
+really possible, but I do my best. When I have a small project to work
+on I'll some times use it as an excuse to play with some recent
+technology. Over December, I wanted to write an application viewer to
+use for company / student internship matching. I started by looking at
+&lt;a href="https://reactjs.org/"&gt;React&lt;/a&gt; but ended up using &lt;a href="https://vuejs.org/"&gt;Vue.js&lt;/a&gt; which I liked much more for a variety
+of reasons.
+&lt;/p&gt;
+
+&lt;p&gt;
+The viewer served it's purpose but I think it can be turned into a
+much more comprehensive student / employer internship platform. I
+tried to steal a few minutes over this past week's spring break to
+start a rewrite using another toolset, Clojure, Clojurescript and
+Reagent. I'm really liking the Clojure stack and using
+Emacs and Cider for the IDE is really blowing me away. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I've noticed is that for every new language of framework you also
+have to learn a whole set of ancillary tools.
+&lt;/p&gt;
+
+&lt;p&gt;
+It didn't used to be that way. Back in the day, things were much
+simpler. I remembering doing work at Goldman Sachs, it was as simple
+as typing something on the command line like &lt;code&gt;cc file1.c file2.c
+file3.c&lt;/code&gt;. I of course had to be cutting edge and use fancy modern
+tools like &lt;a href="https://www.gnu.org/software/make/"&gt;Make&lt;/a&gt;. What's more, the tools I used in industry were very
+similar to what I used in college. 
+&lt;/p&gt;
+
+&lt;p&gt;
+We now live in very different times.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you go to the getting started guides for React or Vue it's pretty easy to
+get hello world up and running but beyond that you start to fall in to
+the Javascript tooling hole. To start you need either &lt;b&gt;npm&lt;/b&gt; or &lt;b&gt;yarn&lt;/b&gt;
+just to manage packages and dependencies. Then you need a build system
+or bundler like &lt;b&gt;webpack&lt;/b&gt;, &lt;b&gt;browserify&lt;/b&gt;, or &lt;b&gt;parcel&lt;/b&gt; and that's not even
+considering older options like &lt;b&gt;gulp&lt;/b&gt; and &lt;b&gt;grunt&lt;/b&gt; and ancillary tools
+like &lt;b&gt;babel&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+A typical React or Vue project is going to need a &lt;a href="https://github.com/krasimir/react-webpack-starter/blob/master/package.json"&gt;project.json&lt;/a&gt; and
+&lt;a href="https://github.com/krasimir/react-webpack-starter/blob/master/webpack.config.js"&gt;webpack.config.js&lt;/a&gt; file and sometimes some other files as well. Check
+out the links. They're from a simple project template I found
+online. Far from simple.
+&lt;/p&gt;
+
+&lt;p&gt;
+When I was playing with Vue.js a couple of months ago, I ended up
+using Webpack to convert the source code into the final JS, take care
+of live-reloading, and in general manage the project. I still have no
+idea how most of it works. I don't know if it's just me but I'm very
+uncomfortable relying on tools that I really don't fully understand to
+build my systems. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The Clojure world is little better with Leiningen and Boot. If you
+don't believe me, try to make heads or tails of &lt;a href="https://github.com/bhauman/figwheel-template/blob/master/src/leiningen/new/figwheel/project.clj"&gt;this&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+While it's true that as a professional you'll likely use one set of
+tools on a day to day basis and you'll eventually get to know them
+that doesn't mean it's not a good idea to prepare kids for what's to
+come.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+On the K12 side we have drag and drop languages, specialized learning
+IDEs like BlueJ, simple cut down IDEs like Dr Racket and completely
+online environments like repl.it. All great starter tools that
+insulate beginners from the complexities to come. College's
+might get closer to the "real world" but just a tad. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Don't get me wrong, I like many of the tools used in K12
+classes and there's far too much complexity in the professional world to
+throw at beginners. If we look at a student's entire school
+career, classes are already so packed with material it would be hard to
+really prepare kids for the real world within their classes. You could
+take that tried and true teacher / professor technique of just
+requiring it and having the kids figure it out on their own but that's
+really just downright abusive.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't have an answer for this one. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I have my kids use tools like Git and GitHub early along with using
+testing frameworks and external libraries. I also try to move my
+students to a general purpose programmable platform like Emacs or
+Vim. I think these are sound practices but students will still have a
+big learning curve when they finally get to industry. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I really would love it to see the tooling become simpler and
+documentation better. &lt;a href="https://github.com/parcel-bundler/parcel"&gt;Parcel&lt;/a&gt;, a Javascript bundler is one of the newer
+kids on the block and is much simpler and cleaner than alternatives
+like Webpack. The new version of Clojure has it's own command line
+tool which is also simpler than the alternatives. Maybe we are already
+moving in the right direction and this entire rant will become moot in a couple of years.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="csed" label="csed"/>
+    <category term="education" label="education"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Do It The Dumb Way</title>
+    <id>http://cestlaz.github.io/posts/do-it-the-dumb-way/</id>
+    <updated>2018-03-30T08:24:09-04:00</updated>
+    <published>2018-03-30T08:24:09-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/do-it-the-dumb-way/"/>
+    <summary type="html">&lt;div id="outline-container-orgbdd5f6c" class="outline-2"&gt;
+&lt;h2 id="orgbdd5f6c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgbdd5f6c"&gt;
+&lt;p&gt;
+There's so much to like in the shape drawing lessons I talked about
+in my &lt;a href="http://cestlaz.github.io/posts/refactoring/"&gt;refactoring&lt;/a&gt; post that I thought I'd share a little more here.
+&lt;/p&gt;
+
+&lt;p&gt;
+It can be argued that the most important things for a program to do is work. The
+most clever, elegant, creative program is worthless if it doesn't
+produce the desired result. All too often, beginners and hot shot beginners in particular try to
+be too clever too early and get themselves into trouble. 
+&lt;/p&gt;
+
+&lt;p&gt;
+When doing the shape drawing lessons the first couple of shape are
+pretty easy
+&lt;/p&gt;
+
+&lt;pre class="example"&gt;
+
+| ****            |    | *               |
+| ****            |    | **              |
+| ****            |    | ***             |
+| ****            |    | ****            |
+| ****            |    |                 |
+|                 |    |                 |
+&lt;/pre&gt;
+
+&lt;p&gt;
+but things get more interesting with the right justified triangle:
+&lt;/p&gt;
+
+
+&lt;pre class="example"&gt;
+----*       *
+---**      **
+--***     ***
+-****    ****
+*****   *****
+
+&lt;/pre&gt;
+
+&lt;p&gt;
+For this triangle, students want to come up with the formula for the
+number of spaces. They usually figure out something like this with
+&lt;code&gt;h-i-1&lt;/code&gt; spaces and &lt;code&gt;i+1&lt;/code&gt; stars:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;tri2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+    &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"-"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+The formulas become harder to figure out as the shapes become more
+complex and sometimes students get stymied.
+&lt;/p&gt;
+
+&lt;p&gt;
+The truth is that while they're struggling to find the perfect
+solution, it's sometimes better to do it the dumb way.
+&lt;/p&gt;
+
+&lt;p&gt;
+Consider drawing a trapezoid like this example of height 5 and
+starting width 12:
+&lt;/p&gt;
+
+&lt;pre class="example"&gt;
+************
+ **********
+  ********
+   ******
+    ****
+&lt;/pre&gt;
+
+&lt;p&gt;
+A student could come up with the "formulas" for spaces and stars but
+sometimes there's a more straightforward way.
+&lt;/p&gt;
+
+&lt;p&gt;
+Consider the number of spaces on each line on the left hand side of
+the shape. First line is 0 then 1, 2 etc. Why not start a variable
+&lt;code&gt;spaces&lt;/code&gt; at 0 and increment it on each loop iteration.
+&lt;/p&gt;
+
+&lt;p&gt;
+For the number of stars, it's starting at the width and being reduced
+by 2 each time.
+&lt;/p&gt;
+
+&lt;p&gt;
+This leads to a solution similar to this (using the line routine from
+the earlier refactoring post):
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;trap&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;height&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+  &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;spaces&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;stars&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;width&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;height&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;spaces&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;" "&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;lines&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;stars&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;spaces&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;spaces&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;stars&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;stars&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+This solution is simple to construct, simple to understand, and quite
+frankly, hard to get wrong.
+&lt;/p&gt;
+
+&lt;p&gt;
+It can also lead a student to discovering a pattern or "formula" such
+as what was used to solve the earlier problems. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This might seem to some as a cheap way out, the dumb approach -
+creating extra variables and have them count along the way but I
+don't. There's nothing wrong with simple and straightforward. Yes, you
+could come up with an elegant formula but the bottom line is you need
+something to count 0,1,2,3… so create a variable to do it. You need
+something to count 12,10,8,… create one for that as well.
+&lt;/p&gt;
+
+&lt;p&gt;
+ Now, I'm not advocating writing 100 if statements rather than a loop
+but I think you get the idea.
+&lt;/p&gt;
+
+&lt;p&gt;
+The best solution is one that works and Sometimes the "dumb" approach is the best approach.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="software-engineering" label="software engineering"/>
+  </entry>
+  <entry>
+    <title>Refactoring</title>
+    <id>http://cestlaz.github.io/posts/refactoring/</id>
+    <updated>2018-03-21T08:11:38-04:00</updated>
+    <published>2018-03-21T08:11:38-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/refactoring/"/>
+    <summary type="html">&lt;div id="outline-container-org955b391" class="outline-2"&gt;
+&lt;h2 id="org955b391"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org955b391"&gt;
+&lt;p&gt;
+One of my laments on teaching computer science is that students are
+rarely taught and given the chance to develop  good programming
+practices. There's usually not enough time. Beginners work on small
+"toys" which don't lend themselves to good software development
+practices and later on, there's so much other material like
+algorithms, data structures etc. to teach and
+learn that programming practices usually amount to lines like:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+"Make sure to comment your code.."
+&lt;/p&gt;
+
+&lt;p&gt;
+"Indent properly…"
+&lt;/p&gt;
+
+&lt;p&gt;
+"Use functions…"
+&lt;/p&gt;
+
+&lt;p&gt;
+"It's important to test your code…"
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+so when I see an opportunity to use a simple example to drive home a
+good practice,  I try to jump on it.
+&lt;/p&gt;
+
+&lt;p&gt;
+Drawing shapes with text is a typical early project. I've seen it in
+text books and online and have been doing it for years. I recall doing
+it back in the 80s in Fortran IV when the programs we wrote were on &lt;a href="https://en.wikipedia.org/wiki/Punched_card"&gt;punch cards&lt;/a&gt;, run
+overnight on an &lt;a href="https://en.wikipedia.org/wiki/IBM_1130"&gt;IBM 1130&lt;/a&gt;, and printouts picked up the next day.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's a nice use of nested loops. The students will write functions to
+create assorted shapes out of asterisks  like rectangles and
+triangles. Typical solutions look like this:
+&lt;/p&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+
+
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;tri&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+      &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Which results in shapes like these:
+&lt;/p&gt;
+
+&lt;pre class="example"&gt;
+
+| ****            |    | *               |
+| ****            |    | **              |
+| ****            |    | ***             |
+| ****            |    | ****            |
+| ****            |    |                 |
+|                 |    |                 |
+|                 |    |                 |
+| *************** |    | *               |
+| *************** |    | **              |
+| *************** |    | ***             |
+| *************** |    | ****            |
+| *************** |    | *****           |
+| *************** |    | ******          |
+| *************** |    | *******         |
+
+&lt;/pre&gt;
+
+&lt;p&gt;
+Then there will be more interesting shapes including things like:
+&lt;/p&gt;
+
+&lt;pre class="example"&gt;
+
+   *       *            *****
+  **      ***           *   *            and more
+ ***     *****          *   *
+****      ***           *****
+           *   
+
+&lt;/pre&gt;
+
+&lt;p&gt;
+This is a great time to talk about refactoring.  All of the shape
+drawing functions follow the same pattern - there's an outer loop for
+the height and then one or more inner loops to draw each line. We can
+factor out the inner loops in to a separate &lt;code&gt;line()&lt;/code&gt; function.
+&lt;/p&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+
+
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;     &lt;span class="c1"&gt;//&lt;/span&gt;
+      &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;                    &lt;span class="c1"&gt;// &amp;lt;----- This can be factored out&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;                                 &lt;span class="c1"&gt;//&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;tri&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;    &lt;span class="c1"&gt;//&lt;/span&gt;
+      &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;                   &lt;span class="c1"&gt;// &amp;lt;---------------- along with this&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;                               &lt;span class="c1"&gt;//&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+It's just like factoring in algebra:
+&lt;/p&gt;
+
+&lt;div class="LATEX"&gt;
+&lt;p&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;
+(RectangleOuterLoop × Line) + (TriangleOuterLoop × Line) ⇒ Line  (Rectangleouterloop × TriangleOuterloop)
+&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;
+We end up with:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;c&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;w&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+
+&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;tri&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+It's simpler, cleaner, and also can lead us to thinking about the
+"harder" shapes in an interesting way. Instead of looking at the right
+justified triangle as a triangle, we can think of each level as two
+lines - one of spaces (shown here as dashes) followed by a line of
+stars:
+&lt;/p&gt;
+
+
+&lt;pre class="example"&gt;
+----*       *
+---**      **
+--***     ***
+-****    ****
+*****   *****
+
+&lt;/pre&gt;
+
+&lt;p&gt;
+Noticing that  for a height of 5, the dashed lines count down in
+length 4,3,2,1,0 and the star lines count up 1,2,3,4,5, we get:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;tri2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"-"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;"*"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;tri2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+  &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Here we have typical early CS assignment that really lends itself to
+talking about structuring programs and refactoring. Where else can we
+inject good programming practices in ways that make sense early on?
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="teaching" label="teaching"/>
+  </entry>
+  <entry>
+    <title>Testing Part 2</title>
+    <id>http://cestlaz.github.io/posts/testing-part2/</id>
+    <updated>2018-03-18T17:04:04-04:00</updated>
+    <published>2018-03-18T17:04:04-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/testing-part2/"/>
+    <summary type="html">&lt;div id="outline-container-org362281f" class="outline-2"&gt;
+&lt;h2 id="org362281f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org362281f"&gt;
+&lt;p&gt;
+A few weeks ago I wrote about &lt;a href="https://cestlaz.github.io/posts/testing-testing/#.Wq7Ud3XwZhE"&gt;introducing testing&lt;/a&gt; in CS classes,
+specifically using a testing framework. In that post I talked about
+the plan but now I can talk about the results.
+&lt;/p&gt;
+
+&lt;p&gt;
+My class interleaves with Hunter's CSCI 13500 - Software Analysis and
+Design I class. One day each week, my students have complete a hands
+on lab focusing on whatever is being covered in the 13500 class. I
+decided to use one of those labs as a first foray into testing. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I had each student use a classmates lab solution. They were to examine
+their solution and write a test suite for the lab using the &lt;a href="https://github.com/onqtam/doctest"&gt;doctest&lt;/a&gt;
+C++ testing framework.
+&lt;/p&gt;
+
+&lt;p&gt;
+I think this proved to be a valuable exercise. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Partway into the exercise, a few students independently had an issue -
+they couldn't even build the tests.
+&lt;/p&gt;
+
+&lt;p&gt;
+The code looked right. Something like this:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;TEST_CASE&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Lab 4 Tests"&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="n"&gt;CHECK&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;getValue&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"3/12/2016"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="mf"&gt;54.3&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+It looked like at textbook example of a test case but it wouldn't even
+compile.
+&lt;/p&gt;
+
+&lt;p&gt;
+In all cases, the original student code compiled and ran and gave the
+correct result. All the students had code similar to this:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="s"&gt;"Testing getValue for 3/12/2016: "&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;getValue&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"3/12/2016"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+This stumped everyone for a while - why wouldn't the test even
+compile.
+&lt;/p&gt;
+
+&lt;p&gt;
+The answer was "data types." The lab specification required that
+getValue was supposed to return a &lt;code&gt;double&lt;/code&gt; but in all the problem
+cases, the student returned a &lt;code&gt;std::string&lt;/code&gt;. The lab appeared to work
+since &lt;code&gt;std::cout&lt;/code&gt; handles strings as well as numeric data types but
+once they put it in to a test case that actually checked types the
+problem was apparent and easy to fix.
+&lt;/p&gt;
+
+&lt;p&gt;
+As it turns out, I was pretty excited about this – even before
+finishign the tests, the act of writing tests revealed a problem. This
+is a good thing. 
+&lt;/p&gt;
+
+&lt;p&gt;
+From there, it was pretty easy for students to finish writing the
+tests for their classmates labs.
+&lt;/p&gt;
+
+&lt;p&gt;
+Fast forward a week. This was the first lab where I required
+the students to submit their own test suite as part of their lab. This
+didn't seem to slow anyone down by an appreciable and time will tell
+if this leads to better development practices but it certainly made my
+life easier. I was able to quickly move from repo to repo and type:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;make tests
+./tests -s
+... watch the tests run
+make
+./main
+--- watch the program run
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Easy peasy.
+&lt;/p&gt;
+
+&lt;p&gt;
+Not only did it make it faster for me, it also gave me insights into
+their programs by seeing their decisions in terms of test writing.
+&lt;/p&gt;
+
+&lt;p&gt;
+Is it a win? 
+&lt;/p&gt;
+
+&lt;p&gt;
+At the very worst, they're learning an
+industry practice and at best, it's going to help them improve as
+software engineers. Add on the fact that it's making my life as a
+teacher easier both in terms of understanding the students work and in
+terms of speed of evaluation. Sounds like a win to me.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="software-engineering" label="software engineering"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Sigcse2018 Making theory more acccesible</title>
+    <id>http://cestlaz.github.io/posts/sigcse2018-theory/</id>
+    <updated>2018-03-13T19:21:43-04:00</updated>
+    <published>2018-03-13T19:21:43-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018-theory/"/>
+    <summary type="html">&lt;div id="outline-container-orgaae4caa" class="outline-2"&gt;
+&lt;h2 id="orgaae4caa"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgaae4caa"&gt;
+&lt;p&gt;
+Next up from SIGCSE 2018 is John MacCormick's session on
+&lt;a href="https://dl.acm.org/citation.cfm?id=3159557"&gt;Strategies for Baing the CS Theory Course on Non-decision Problems&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+MacCormicks's stance is that CS theory  is tough the first time around
+and using non-decision problems is a viable approach to make theory
+more accessible to beginners. As MacCormick said in his paper:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+… a decision problem may ask the yes/no question, "Does this graph
+have a Hamilton cycle?" The corresponding non-decision problem is,
+"Please give me a Hamilton cycle of this graph if it has one."
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+This leads to writing programs to explore concepts in CS theory rather
+than just living in the world of proof. 
+&lt;/p&gt;
+
+&lt;p&gt;
+MacCormick goes on to say that:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+For this audience, the key advantage of non-decision problems
+is that they are more realistic: they match the previous programming
+and algorithms experience of undergraduates more closely.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+I love the idea. Writing a program can make an abstract problem more
+concrete and can lead to better understanding for those of us who are
+less math inclined.
+&lt;/p&gt;
+
+&lt;p&gt;
+My next thought was that this shouldn't just be a change implemented
+in theory courses. Some of these ideas should move down to more
+introductory CS classes. Not the hardcore stuff but light
+introductions to the topics so that we can layer the learning. If we
+introduce some of these concepts in CS 1 classes then when they get to
+the theory class it won't be the students first rodeo.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've had success with this when teaching recursion early. I've also
+done it with other concepts. When we teach the Towers of Hanoi, yes,
+it's a nice recursion problem but really it's to get the students
+thinking about run time and a bit of proof. likewise, when we do a
+maze solver in NetLogo we're alluding to dynamic programming, search,
+and path finding.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't have too much more to say on this topic right now. I'm not
+enough of a theory guy to sensibly design these experiences. The good
+news is that MacCormick has written an soon to be released &lt;a href="https://www.amazon.com/What-Can-Computed-Practical-Computation/dp/0691170665/ref=asap_bc?ie=UTF8"&gt;book&lt;/a&gt; on the subject. I
+signed up for a reviewer copy at SIGCSE and look forward to receiving
+a copy. Once I do I hope to be able to find some gems that I can work
+into CS 1 experiences.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="education" label="education"/>
+    <category term="theory" label="theory"/>
+  </entry>
+  <entry>
+    <title>Sigcse2018 Bootstrapworld on Creativity in CS classes</title>
+    <id>http://cestlaz.github.io/posts/sigcse2018-bootstrap/</id>
+    <updated>2018-03-02T09:27:33-04:00</updated>
+    <published>2018-03-02T09:27:33-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018-bootstrap/"/>
+    <summary type="html">&lt;div id="outline-container-orge428d07" class="outline-2"&gt;
+&lt;h2 id="orge428d07"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge428d07"&gt;
+&lt;p&gt;
+I really didn't know what to expect at the &lt;a href="https://dl.acm.org/citation.cfm?id=3159471"&gt;Creativity, Customization,
+and Ownership: Game Design in Bootstrap: Algebra&lt;/a&gt; session. I've been a
+big fan of &lt;a href="http://www.bootstrapworld.org/"&gt;Bootstrep&lt;/a&gt; for years and looking at the authors, &lt;a href="http://blog.acthompson.net/2017/10/cs-teacher-interview-emmanuel.html"&gt;Emmanuel
+Schanzer&lt;/a&gt;'s been a freind forever. I've never met &lt;a href="https://twitter.com/ShriramKMurthi"&gt;Shriram Krishnamurthi&lt;/a&gt;
+in person but am looking forward to it. We've traded emails and blog
+comments. I'd like to consider him a friend and I certainly respect
+him and his work even though we frequently disagree around the
+edges. The third author and presenter, Kathi Fisler was new to me.
+&lt;/p&gt;
+
+&lt;p&gt;
+The Bootstrap program is embedded in algebra classes. In it, students
+use Racket (nee scheme) to reinforce math skills while building
+computer science skills. The big student project is a graphical game.
+&lt;/p&gt;
+
+&lt;p&gt;
+When designing the project, students are asked to decide on and find
+four resources:
+&lt;/p&gt;
+
+&lt;ol class="org-ol"&gt;
+&lt;li&gt;The background image&lt;/li&gt;
+&lt;li&gt;The player image&lt;/li&gt;
+&lt;li&gt;The target image&lt;/li&gt;
+&lt;li&gt;The enemy image&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;
+Students are given a short amount of time to decide on and find these
+four images. I think it was about ten minutes and that's it. That's
+all the "creativity" in the assignment. After that, all the students
+are essentially creating the same game with different skins.
+&lt;/p&gt;
+
+&lt;p&gt;
+This design makes sense. You can't have students going all over the
+place. Constraining the assignment in this way allows teachers who
+might now be strong in computer science to guide the kids through the
+program to completion.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the time I was thinking: I really like all of this but is it really
+open ended creativity and discovery with respect to math or computer
+science? As it turned out, Fisler addressed this point at the end of
+the talk in a way that made me vary happy.
+&lt;/p&gt;
+
+&lt;p&gt;
+Fisler went on to describe the rest of the student experience and then
+went on to talk about the statistics they gathered. 
+&lt;/p&gt;
+
+&lt;p&gt;
+One big takeaway was that while all the students were essentially
+writing the same game varying only the graphical elements, this
+encouraged students to create very different themes. They also created
+rich stories around their games. The project might not have been
+"creative" with respect to the CS or Math directions but it was certainly
+creative in other important areas. The other takeaway was that
+survey's indicated all sorts of positives from the program as a whole
+so the project didn't seem to have suffered by having the students
+essentially write the same program. Participants were proud of their
+work, they felt their games were different from their peers and in
+general the experience was good.
+&lt;/p&gt;
+
+&lt;p&gt;
+During questions, someone asked about adding a fifth element - a
+projectile or missile. It turns out that at one point the program had a
+projectile component but that led to the vast majority of projects to
+be themed in very similar ways. Even though not the same, it reminded me to something Randy
+Pausch said in his &lt;a href="https://www.youtube.com/watch?v=ji5_MqicxSo"&gt;Last Lecture&lt;/a&gt;:
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+You make whatever you want. Two rules: no shooting violence and no
+pornography. Not because I’m opposed to those in particular, but you know, that’s been done with
+VR, right? [laughter] And you’d be amazed how many 19-year-old boys are completely out of ideas
+when you take those off the table.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+At the very end, Fisler addressed my questions about creativity and
+discovery. She posed these questions of her own: "Do we overstate the
+case for creativity?" and "Is pure constructivism a win?"
+&lt;/p&gt;
+
+&lt;p&gt;
+I've ranted on contructivism before. It can be great but a
+constructivist lesson takes a knowledgeable educator and a lot of time,
+preparation, and effort. It's a big ask for, say, a high school
+teacher who's already taking home hours of work every evening. Too
+often I've seen the following "contructivist" model instead:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;Take an isntructor that doesn't know their craft, the content, or
+niether.&lt;/li&gt;
+&lt;li&gt;Let the kids play with stuff.&lt;/li&gt;
+&lt;li&gt;Show off the couple of autodidacts that figure it out as success
+stories.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+I'll rant more about this "model" with respect to the new buzz word
+"lead learner" at some point in the future.
+&lt;/p&gt;
+
+&lt;p&gt;
+On the creativity side, it's important but there are also times for
+the instructor to lead and for guidelines to be followed.
+We want to foster creativity but that doesn't mean that it's 100%
+creativity 100% of the time. Education is like life, a balance. The
+Bootstrap program had to constrain the CS and math learning but
+allowed for creativity in other areas. It's smart and it's a win.
+&lt;/p&gt;
+
+&lt;p&gt;
+I still want to meet Shriram in person one day and now also Kathi
+Fisler. I didn't know what to expect walking in but I left the talk
+reminded of why I'm such a fan of Emmanuel, his team, and their work.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="teaching" label="teaching"/>
+  </entry>
+  <entry>
+    <title>Sigcse2018 - Malloc Lab</title>
+    <id>http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/</id>
+    <updated>2018-03-01T16:59:31-04:00</updated>
+    <published>2018-03-01T16:59:31-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/sigcse2018-Malloc-Lab/"/>
+    <summary type="html">&lt;div id="outline-container-org9ede4c6" class="outline-2"&gt;
+&lt;h2 id="org9ede4c6"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9ede4c6"&gt;
+&lt;p&gt;
+I wasn't going to go to this session. I started out in a panel on
+integrating social good into CS Ed. With the panel not meeting my
+expectations I moved over to my second choice - the system programming
+sessions where I saw &lt;a href="https://dl.acm.org/citation.cfm?id=3159597"&gt;Implementing Malloc: Students and Systems
+Programming&lt;/a&gt;, a paper presented by &lt;a href="http://www.cs.cmu.edu/~bpr/"&gt;Brian Railing&lt;/a&gt; of CMU.
+&lt;/p&gt;
+
+&lt;p&gt;
+I really liked both the paper and the talk.
+&lt;/p&gt;
+
+&lt;p&gt;
+CMU computer science students all take a systems course that uses
+&lt;a href="https://www.amazon.com/Computer-Systems-Programmers-Perspective-3/dp/9332573905/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=Y5ZKG2V8ZYZZPZHQP8SQ"&gt;Computer Systems: A Programmer's Perspective&lt;/a&gt;. It's a great book. I
+read through the first edition years ago and felt it was great
+resource not only in a systems course but also for self study. One of
+the labs has the students implement their own memory allocation calls,
+or &lt;b&gt;malloc&lt;/b&gt; for us old time C wonks. 
+&lt;/p&gt;
+
+&lt;p&gt;
+There were a number of self perceived  deficiencies with the
+assignment such as encouraging bad programming style by modeling
+less than ideal practices but the biggest deficiency as that students
+could game the assignment. Students could do very well on the
+assignment by exploiting knowledge of the assignment rather than by
+writing a full and correct malloc implementation. One example is that
+students were able to figure out that no allocation would be more than
+100MB so they really didn't have to deal with 64 bit pointers. They
+could use smaller offsets thus simplifying the assignment. The
+assignment became more about figuring out how to get it through the
+grader and less about learning memory management. I'm sure I'm
+overstating it but that's the idea.
+&lt;/p&gt;
+
+&lt;p&gt;
+Railing explained all of the deficiencies and then how they changed
+the assignment to address them.
+&lt;/p&gt;
+
+&lt;p&gt;
+At the end of the day, the assignment had fewer loopholes to game so
+students had to really write the malloc library and presumably learn
+about memory management.
+&lt;/p&gt;
+
+&lt;p&gt;
+They also added an intermediate deliverable so students couldn't leave
+everything for the last minute.
+&lt;/p&gt;
+
+&lt;p&gt;
+Near the end of the talk, Railing discussed results where he pointed
+out that students final exam scores didn't change but they did better
+on the malloc questions. It wasn't clear if the overall scores didn't
+change, meaning that the students did better on the malloc questions
+but worse somewhere else or if they did similarly to past students on
+the other sections and in addition they scored better on the malloc
+questions. I'm not sold on the final exam questions being the best way
+to evaluate learning but it is an easy data point. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I loved the presentation and paper and I love what Railing is doing
+but my big takeaway was…
+&lt;/p&gt;
+
+&lt;p&gt;
+Well, Duh…
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;students aren't doing as they should&lt;/li&gt;
+&lt;li&gt;teacher realizes students are gaming assignment&lt;/li&gt;
+&lt;li&gt;teacher reworks assignment&lt;/li&gt;
+&lt;li&gt;students do better&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Teachers do this all the time. Of course when we do it, it's not
+"research." This was a recurring theme for me at SIGCSE2018 and I
+tweeted it. While it's true that K12 teachers can learn a lot about CS
+content from higher ed, people in higher ed can learn a lot about
+teaching from teachers. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What Railing presented was terrific and important as changing
+assignments like this will now be considered by people who haven't
+thought about this before but this is second nature to a teacher. Of
+course I'm talking about a good teacher, not one who blindly follows
+scripted lessons.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't mean this as a slight to professors. They're hired and
+promoted based on research so much of their job involves another skill
+set. I know many professors who care very much about teaching but they
+might only teach one or two classes a semester that meets once or
+twice a week while a typical high school teacher meets 150 students a
+day five days a week over five different classes a day.  Much more of
+an opportunity for deliberate practice.
+&lt;/p&gt;
+
+&lt;p&gt;
+This presents a huge challenge. How can professors who are hired and
+promoted as researchers be given the time and ability to develop as
+teachers? What about adjuncts or Teaching Assistants? I'd imagine it's
+even harder for them. I know that colleges have lines for teaching
+faculty but from what I can see, those instructors are usually super
+overloaded with classes and students so that doesn't solve the
+problem. Even if you do have teaching faculty that have the time to
+develop their craft, how do you get those teaching chops over to the
+research faculty?
+&lt;/p&gt;
+
+&lt;p&gt;
+After the session, I was talking about this with &lt;a href="http://www.cs.cmu.edu/~mjs/"&gt;Mark Stehlik&lt;/a&gt;,
+Assistant Dean at CMU's School of Computer Science. Mark was telling
+me about CMU's efforts to develop teaching faculty across the
+disciplines. I was happy to hear about the efforts CMU was taking but
+it sounds like they have the same challenges with respect to pedagogy
+as everyone else. If it's a challenge for CMU with all their
+resources, what does that mean for the rest of us?
+&lt;/p&gt;
+
+&lt;p&gt;
+Still, it was encouraging to go to a number of sessions where it was
+clear that professors - both teaching and research faculty are serious
+about the craft of teaching and conferences like SIGCSE can bring them
+together with those of us who don't have the chops as researchers but
+do so as teachers.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="pedagogy" label="pedagogy"/>
+    <category term="systems" label="systems"/>
+  </entry>
+  <entry>
+    <title>Testing, Testing</title>
+    <id>http://cestlaz.github.io/posts/testing-testing/</id>
+    <updated>2018-02-19T08:26:16-04:00</updated>
+    <published>2018-02-19T08:26:16-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/testing-testing/"/>
+    <summary type="html">&lt;div id="outline-container-orga2d6f11" class="outline-2"&gt;
+&lt;h2 id="orga2d6f11"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga2d6f11"&gt;
+&lt;p&gt;
+With CS4All being the buzzword of the day we're paying a lot of
+attention to the fact that when we teach a CS class for all students,
+most of them won't end up studying CS or going directly
+into a tech heavy field. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Among those that do study CS though, there is another division. Those
+studying CS as an academic exercise or to go on to graduate studies
+and those who are going in to the tech sector. For those going into
+the tech field, it's important that they're prepared in terms of
+software development, design, and all those goodies not covered in CS
+classes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not advocating removing the good stuff currently in most colleg CS
+curricua, although I will say that most CS programs I've reveiwed could benefit by
+trimming some requriements and adding some electives. I am advocating
+doing more than telling your students "comment your code," - a refrain
+many undergrads have heard frequently with little guidance.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm advocating to begin by bringing in tools and practices that either
+don't detract from current CS classes or in fact can add to or
+streamline them.
+&lt;/p&gt;
+
+&lt;p&gt;
+Last year I wrote about &lt;a href="https://cestlaz.github.io/posts/sigcse-2017-github-4/"&gt;using Git and GitHub&lt;/a&gt; in my classes. Students
+have to submit projects anyway and frequently have to work in teams so
+using Git and a Git hosting service can actually make both student's
+and instructor's class experiences better while introducing them to an
+industry best practice.
+&lt;/p&gt;
+
+&lt;p&gt;
+Today I want to talk about testing. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Students are always told to test their code but frequently not given
+tremendous guidance. The results can be:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;projects that don't compile&lt;/li&gt;
+&lt;li&gt;projects that compile and run but not the way they're supposed to.&lt;/li&gt;
+&lt;li&gt;wonky input or interfaces&lt;/li&gt;
+&lt;li&gt;projects that don't work for all cases&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;
+On the instructor side, we have to evaluate the student's
+submissions and deal with all of this. Some teachers use auto graders
+to help. I have mixed feelings on them. On the one hand they can speed
+up grading but on the other hand it's important for me as the teacher
+to actually dive into the student's code. In any case, using an auto grader
+is actually somewhat similar to running a test suite.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why not have the students create their own test suites? If done right,
+this should encourage students to evaluate their own code more
+carefully and also cut down on the time it takes the intructor to
+evaluate a given submission. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This means that we have to use a testing framework with a very low
+cost of entry.
+&lt;/p&gt;
+
+&lt;p&gt;
+I ended up finding &lt;a href="https://github.com/onqtam/doctest"&gt;doctest&lt;/a&gt; for C++. It's really simple and just a
+single include file. This means that students don't have to actually
+install anything on their machines. Here's the example from the
+project page:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="https://github.com/onqtam/doctest/raw/master/scripts/data/using_doctest_888px_wide.gif" alt="using_doctest_888px_wide.gif"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Basically, the students can just start writing tests.
+&lt;/p&gt;
+
+&lt;p&gt;
+Python also has a couple of low friction testing options. One is to
+use the built in &lt;a href="https://docs.python.org/3/library/doctest.html"&gt;doctest&lt;/a&gt; facility. Basically you put sample runs in the doc
+string at the top of a function with the expected output:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;factorial&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;"""Return the factorial of n, an exact integer &amp;gt;= 0.&lt;/span&gt;
+
+&lt;span class="sd"&gt;    If the result is small enough to fit in an int, return an int.&lt;/span&gt;
+&lt;span class="sd"&gt;    Else return a long.&lt;/span&gt;
+
+&lt;span class="sd"&gt;    &amp;gt;&amp;gt;&amp;gt; [factorial(n) for n in range(6)]&lt;/span&gt;
+&lt;span class="sd"&gt;    [1, 1, 2, 6, 24, 120]&lt;/span&gt;
+&lt;span class="sd"&gt;    &amp;gt;&amp;gt;&amp;gt; factorial(30)&lt;/span&gt;
+&lt;span class="sd"&gt;    265252859812191058636308480000000&lt;/span&gt;
+&lt;span class="sd"&gt;     """&lt;/span&gt;
+
+    &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;math&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;ValueError&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"n must be &amp;gt;= 0"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;math&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;floor&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;ValueError&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"n must be exact integer"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;  &lt;span class="c1"&gt;# catch a value like 1e300&lt;/span&gt;
+	&lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;OverflowError&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"n too large"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;result&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+    &lt;span class="n"&gt;factor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+    &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;factor&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="n"&gt;result&lt;/span&gt; &lt;span class="o"&gt;*=&lt;/span&gt; &lt;span class="n"&gt;factor&lt;/span&gt;
+	&lt;span class="n"&gt;factor&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;result&lt;/span&gt;
+
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s2"&gt;"__main__"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;doctest&lt;/span&gt;
+    &lt;span class="n"&gt;doctest&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;testmod&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+This might seem a little cumbersome, particularly if you look at the
+example at the link. It also requires the tests go on top of each
+function and that the tests will print out as part of the docstring. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The other easy Python option is the built in &lt;a href="https://docs.python.org/3/library/unittest.html"&gt;unittest&lt;/a&gt; module. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's an example of testing strings from the link above:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;unittest&lt;/span&gt;
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;TestStringMethods&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;unittest&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;TestCase&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_upper&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;assertEqual&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'foo'&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;upper&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="s1"&gt;'FOO'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_isupper&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;assertTrue&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'FOO'&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isupper&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+	&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;assertFalse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Foo'&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isupper&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'hello world'&lt;/span&gt;
+	&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;assertEqual&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;split&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'hello'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'world'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+	&lt;span class="c1"&gt;# check that s.split fails when the separator is not a string&lt;/span&gt;
+	&lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;assertRaises&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ne"&gt;TypeError&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	    &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;'__main__'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;unittest&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+I havn't played with Java testing in years but I'd guess there's
+something similarly light weight.
+&lt;/p&gt;
+
+&lt;p&gt;
+Tomorrow I'm hoping to finish the groundwork on using C++ doctest with
+my class and I'll write another post afterwards. Probably after SIGCSE
+since I'll be attending that from Wednesday on.
+&lt;/p&gt;
+
+&lt;p&gt;
+We'll see how this goes but I'm guessing it will work well. If it
+does, it should make my life as a grader easier and also get the kids
+on track to using test frameworks - something they'll need wherever
+they end up.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="software-engineering" label="software engineering"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>APCS-P -  Bigger Intake Or Leaky Pipe</title>
     <id>http://cestlaz.github.io/posts/apcsp-bigger-intake-or-leaky-pipe/</id>

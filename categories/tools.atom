@@ -3,13 +3,991 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about tools</title>
   <id>http://cestlaz.github.io/categories/tools.atom</id>
-  <updated>2018-02-12T19:18:17Z</updated>
+  <updated>2018-09-05T21:31:57Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/tools.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/tools/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Using Emacs Episode 50 - presentations</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-50-presentations/</id>
+    <updated>2018-06-30T14:10:24-04:00</updated>
+    <published>2018-06-30T14:10:24-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-50-presentations/"/>
+    <summary type="html">&lt;div id="outline-container-org37b1bdd" class="outline-2"&gt;
+&lt;h2 id="org37b1bdd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org37b1bdd"&gt;
+&lt;p&gt;
+Next weekend I'll be attending the Computer Science Teachers
+Association's &lt;a href="https://www.csteachers.org/general/custom.asp?page=2018Conference"&gt;annual conference.&lt;/a&gt; It's probably the biggest conference
+focussed on K12 Computer Science education. This year, in addition to
+attending, I'll be giving a talk on preservice and inservice CS
+teacher preparation programs. I'll be talking about the new New York
+State certification requirements along with what we're rolling out at
+Hunter College. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This means putting together a slide deck for the session. When I have
+to work collaboratively with non-Emacs users, I will usually go to
+Google Docs for presentations. It works and the collaborative aspects
+are nice but tools like Google Docs and Powerpoint are designed around
+composing slides manually. I much prefer to use a tool where I can
+focus on writing my presentation and have the tool turn it into a
+presentation.
+&lt;/p&gt;
+
+&lt;p&gt;
+Org-mode is of course the ideal tool. As an outliner, it lends itself
+to organizing a talk:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;* topic 1
+   the content for slide one
+* topic 2
+   the content for slide two
+* topic 3
+   etc.
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+I can embed code, tables, images, and more. I can also cycle
+visibility so I can focus on individual sections. Org-mode also has a
+number of export options to take a plain org file which is just ascii
+with markup and export it as a presentation. In the video, I'll take a
+quick look at &lt;code&gt;ox-beamer&lt;/code&gt;, which exports to a Beamer presentation in LaTeX and then a PDF,
+&lt;code&gt;epresent&lt;/code&gt; which presents right in Emacs and finally &lt;code&gt;ox-reveal&lt;/code&gt; wich
+creates a &lt;code&gt;reveal.js&lt;/code&gt; presentation. I ultimately decide to continue to
+use &lt;code&gt;ox-reveal&lt;/code&gt; as it's pretty simple and flexible and I can also directly serve
+the final presentation from my own laptop, a usb drive, or directly
+from GitHub. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Check out the video to see how. If you want more information on using
+&lt;code&gt;ox-reveal&lt;/code&gt; check out my earlier &lt;a href="http://cestlaz.github.io/posts/using-emacs-11-reveal"&gt;Using Emacs post and video&lt;/a&gt;. 
+&lt;/p&gt;
+
+
+
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/bRoSpJ23Kzk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="presentations" label="presentations"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs Episode 49 mu4e-conversation</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/</id>
+    <updated>2018-06-21T13:28:41-04:00</updated>
+    <published>2018-06-21T13:28:41-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/"/>
+    <summary type="html">&lt;div id="outline-container-org892f4be" class="outline-2"&gt;
+&lt;h2 id="org892f4be"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org892f4be"&gt;
+&lt;p&gt;
+I've been using Emacs for email for a couple of years now. Not for
+everything, for now my personal email is still Gmail but work is sent
+and read through Emacs. I'm currently using &lt;a href="https://www.djcbsoftware.nl/code/mu/mu4e.html"&gt;mu4e&lt;/a&gt; and while it has a
+few quirks and limitations, I like it very much. You can take a look
+on how I configure and use it &lt;a href="http://cestlaz.github.io/posts/using-emacs-39-mu4e/"&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+The other day I saw &lt;a href="https://www.reddit.com/r/emacs/comments/8qryri/mu4econversation_single_buffer_fullthread_display/"&gt;this&lt;/a&gt; thread on Emacs about a new package -
+&lt;a href="https://gitlab.com/ambrevar/mu4e-conversation"&gt;mu4e-conversation&lt;/a&gt;. It's a package that deals with email threads.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's pretty cool. You can invoke it whenever you're in the headers
+view you can just run &lt;code&gt;M-x mu4e-conversation&lt;/code&gt; and it combines all the
+email messages in the current thread into a single buffer. 
+&lt;/p&gt;
+
+&lt;p&gt;
+It's pretty nice. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You can navigate between messages in the thread with &lt;code&gt;C-c C-n&lt;/code&gt; and
+&lt;code&gt;C-c C-p&lt;/code&gt; and use most if not all of the usual mu4e goodness but on
+top of that you can also toggle what the author calls tree mode by
+hitting &lt;code&gt;V&lt;/code&gt;. Tree mode turns the thread into an org-mode tree - also
+extremely cool.
+&lt;/p&gt;
+
+&lt;p&gt;
+On top of this, you can also make mu4e your default viewing mode by
+setting a single variable with &lt;code&gt;(setq mu4e-view-func 'mu4e-conversation)&lt;/code&gt;.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Although it's very cool, I'm not sure if mu4e-conversation will find
+its way into my workflow or not and probably won't know for a
+while. This is mostly due to the fact that it's summer so work email
+slows down and I won't have too many long threads to play with this
+on.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'll report back once I give it a fair shake but in the meantime if
+anyone out there has had the time to play with it, let us know what
+you think.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/V5efS8uXANI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="editing" label="editing"/>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs 48 Silversearcher</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-48-silversearcher/</id>
+    <updated>2018-04-22T17:28:41-04:00</updated>
+    <published>2018-04-22T17:28:41-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-48-silversearcher/"/>
+    <summary type="html">&lt;div id="outline-container-org67b566e" class="outline-2"&gt;
+&lt;h2 id="org67b566e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org67b566e"&gt;
+&lt;p&gt;
+A couple of days ago I wrote about on my &lt;a href="http://cestlaz.github.io/posts/unit-tests-grading-workflow"&gt;lab grading workflow&lt;/a&gt;. In the
+post I mentioned that I used Emacs to easily navigate between student
+folders and files so I can actually look at their work in addition to
+their programs output and test results.
+&lt;/p&gt;
+
+&lt;p&gt;
+The key is a combination of &lt;code&gt;dired&lt;/code&gt; and &lt;a href="https://github.com/Wilfred/ag.el"&gt;ag&lt;/a&gt;, Emacs's interface to &lt;a href="https://github.com/ggreer/the_silver_searcher"&gt;the
+Silver Searcher&lt;/a&gt; which is something like a recursive code grep on
+steroids. I also briefly try to show &lt;a href="https://github.com/mhayashi1120/Emacs-wgrep"&gt;wgrep&lt;/a&gt; in the video which allows
+you to edit Emacs grep buffers, effectively allowing you to make
+changes across a set of files all at once. It ended up not working
+with silversearcher - if anyone out there knows why, please chime in.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-sFTkCQ774o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="editing" label="editing"/>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs Episode 47 - Magit</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-47-magit/</id>
+    <updated>2018-04-07T09:05:36-04:00</updated>
+    <published>2018-04-07T09:05:36-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-47-magit/"/>
+    <summary type="html">&lt;div id="outline-container-org86de79d" class="outline-2"&gt;
+&lt;h2 id="org86de79d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org86de79d"&gt;
+&lt;p&gt;
+I've been holding off on doing a &lt;a href="https://magit.vc/"&gt;Magit&lt;/a&gt; video for a while. Mostly
+because I wasn't using it exclusively and also because there are
+already a number of good Magit videos and resources out there.
+&lt;/p&gt;
+
+&lt;p&gt;
+What changed? Along with the new version of Magin, Jonas Bernoulli
+wrote up &lt;a href="https://emacsair.me/2017/09/01/magit-walk-through/"&gt;a walkthrough of the Magit interface&lt;/a&gt;. For whatever reason,
+it all finally clicked. 
+&lt;/p&gt;
+
+&lt;p&gt;
+In spite of what the documentation says, Magit &lt;b&gt;is not&lt;/b&gt; an interface
+for git. Magit is a &lt;b&gt;command and control&lt;/b&gt; center for git. You can
+launch it just to execute some git commands but you can also leave it
+up and running in an Emacs window or frame as a constant project
+overview.
+&lt;/p&gt;
+
+&lt;p&gt;
+Wow. Mind blown!!!
+&lt;/p&gt;
+
+&lt;p&gt;
+If you use Emacs for Deveopment, you &lt;b&gt;have to&lt;/b&gt; use Magit. If you don't
+use Emacs, you can load it on the side for Magit. If you're not a
+developer, learn to code so you can use Magit!!!!!
+&lt;/p&gt;
+
+&lt;p&gt;
+I tried to do justice to the package in the video. Magit along with &lt;a href="https://orgmode.org/"&gt;Org
+Mode&lt;/a&gt; are arguably Emacs killer apps - enough in and of themselves to
+justify using Emacs.
+&lt;/p&gt;
+
+&lt;p&gt;
+Check out the video:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/1IYsiHXR620" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="editing" label="editing"/>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Tools and Complexity</title>
+    <id>http://cestlaz.github.io/posts/tools-and-complexity/</id>
+    <updated>2018-04-05T18:55:21-04:00</updated>
+    <published>2018-04-05T18:55:21-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/tools-and-complexity/"/>
+    <summary type="html">&lt;div id="outline-container-org32ed0d7" class="outline-2"&gt;
+&lt;h2 id="org32ed0d7"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org32ed0d7"&gt;
+&lt;p&gt;
+&lt;a href="https://twitter.com/alfredtwo"&gt;Alfred Thompson&lt;/a&gt; wrote about &lt;a href="http://blog.acthompson.net/2018/04/thoughts-on-where-cs-education-tools.html"&gt;CS education tools&lt;/a&gt; earlier today. I've
+also been meaning to write on the topic but from a different point of
+view.
+&lt;/p&gt;
+
+&lt;p&gt;
+I do my best to keep up with the latest and greatest in the CS world
+both on the academic side as well as the professional one. That's not
+really possible, but I do my best. When I have a small project to work
+on I'll some times use it as an excuse to play with some recent
+technology. Over December, I wanted to write an application viewer to
+use for company / student internship matching. I started by looking at
+&lt;a href="https://reactjs.org/"&gt;React&lt;/a&gt; but ended up using &lt;a href="https://vuejs.org/"&gt;Vue.js&lt;/a&gt; which I liked much more for a variety
+of reasons.
+&lt;/p&gt;
+
+&lt;p&gt;
+The viewer served it's purpose but I think it can be turned into a
+much more comprehensive student / employer internship platform. I
+tried to steal a few minutes over this past week's spring break to
+start a rewrite using another toolset, Clojure, Clojurescript and
+Reagent. I'm really liking the Clojure stack and using
+Emacs and Cider for the IDE is really blowing me away. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I've noticed is that for every new language of framework you also
+have to learn a whole set of ancillary tools.
+&lt;/p&gt;
+
+&lt;p&gt;
+It didn't used to be that way. Back in the day, things were much
+simpler. I remembering doing work at Goldman Sachs, it was as simple
+as typing something on the command line like &lt;code&gt;cc file1.c file2.c
+file3.c&lt;/code&gt;. I of course had to be cutting edge and use fancy modern
+tools like &lt;a href="https://www.gnu.org/software/make/"&gt;Make&lt;/a&gt;. What's more, the tools I used in industry were very
+similar to what I used in college. 
+&lt;/p&gt;
+
+&lt;p&gt;
+We now live in very different times.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you go to the getting started guides for React or Vue it's pretty easy to
+get hello world up and running but beyond that you start to fall in to
+the Javascript tooling hole. To start you need either &lt;b&gt;npm&lt;/b&gt; or &lt;b&gt;yarn&lt;/b&gt;
+just to manage packages and dependencies. Then you need a build system
+or bundler like &lt;b&gt;webpack&lt;/b&gt;, &lt;b&gt;browserify&lt;/b&gt;, or &lt;b&gt;parcel&lt;/b&gt; and that's not even
+considering older options like &lt;b&gt;gulp&lt;/b&gt; and &lt;b&gt;grunt&lt;/b&gt; and ancillary tools
+like &lt;b&gt;babel&lt;/b&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+A typical React or Vue project is going to need a &lt;a href="https://github.com/krasimir/react-webpack-starter/blob/master/package.json"&gt;project.json&lt;/a&gt; and
+&lt;a href="https://github.com/krasimir/react-webpack-starter/blob/master/webpack.config.js"&gt;webpack.config.js&lt;/a&gt; file and sometimes some other files as well. Check
+out the links. They're from a simple project template I found
+online. Far from simple.
+&lt;/p&gt;
+
+&lt;p&gt;
+When I was playing with Vue.js a couple of months ago, I ended up
+using Webpack to convert the source code into the final JS, take care
+of live-reloading, and in general manage the project. I still have no
+idea how most of it works. I don't know if it's just me but I'm very
+uncomfortable relying on tools that I really don't fully understand to
+build my systems. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The Clojure world is little better with Leiningen and Boot. If you
+don't believe me, try to make heads or tails of &lt;a href="https://github.com/bhauman/figwheel-template/blob/master/src/leiningen/new/figwheel/project.clj"&gt;this&lt;/a&gt;. 
+&lt;/p&gt;
+
+&lt;p&gt;
+While it's true that as a professional you'll likely use one set of
+tools on a day to day basis and you'll eventually get to know them
+that doesn't mean it's not a good idea to prepare kids for what's to
+come.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+On the K12 side we have drag and drop languages, specialized learning
+IDEs like BlueJ, simple cut down IDEs like Dr Racket and completely
+online environments like repl.it. All great starter tools that
+insulate beginners from the complexities to come. College's
+might get closer to the "real world" but just a tad. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Don't get me wrong, I like many of the tools used in K12
+classes and there's far too much complexity in the professional world to
+throw at beginners. If we look at a student's entire school
+career, classes are already so packed with material it would be hard to
+really prepare kids for the real world within their classes. You could
+take that tried and true teacher / professor technique of just
+requiring it and having the kids figure it out on their own but that's
+really just downright abusive.
+&lt;/p&gt;
+
+&lt;p&gt;
+I don't have an answer for this one. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I have my kids use tools like Git and GitHub early along with using
+testing frameworks and external libraries. I also try to move my
+students to a general purpose programmable platform like Emacs or
+Vim. I think these are sound practices but students will still have a
+big learning curve when they finally get to industry. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What I really would love it to see the tooling become simpler and
+documentation better. &lt;a href="https://github.com/parcel-bundler/parcel"&gt;Parcel&lt;/a&gt;, a Javascript bundler is one of the newer
+kids on the block and is much simpler and cleaner than alternatives
+like Webpack. The new version of Clojure has it's own command line
+tool which is also simpler than the alternatives. Maybe we are already
+moving in the right direction and this entire rant will become moot in a couple of years.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="csed" label="csed"/>
+    <category term="education" label="education"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Testing Part 2</title>
+    <id>http://cestlaz.github.io/posts/testing-part2/</id>
+    <updated>2018-03-18T17:04:04-04:00</updated>
+    <published>2018-03-18T17:04:04-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/testing-part2/"/>
+    <summary type="html">&lt;div id="outline-container-org362281f" class="outline-2"&gt;
+&lt;h2 id="org362281f"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org362281f"&gt;
+&lt;p&gt;
+A few weeks ago I wrote about &lt;a href="https://cestlaz.github.io/posts/testing-testing/#.Wq7Ud3XwZhE"&gt;introducing testing&lt;/a&gt; in CS classes,
+specifically using a testing framework. In that post I talked about
+the plan but now I can talk about the results.
+&lt;/p&gt;
+
+&lt;p&gt;
+My class interleaves with Hunter's CSCI 13500 - Software Analysis and
+Design I class. One day each week, my students have complete a hands
+on lab focusing on whatever is being covered in the 13500 class. I
+decided to use one of those labs as a first foray into testing. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I had each student use a classmates lab solution. They were to examine
+their solution and write a test suite for the lab using the &lt;a href="https://github.com/onqtam/doctest"&gt;doctest&lt;/a&gt;
+C++ testing framework.
+&lt;/p&gt;
+
+&lt;p&gt;
+I think this proved to be a valuable exercise. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Partway into the exercise, a few students independently had an issue -
+they couldn't even build the tests.
+&lt;/p&gt;
+
+&lt;p&gt;
+The code looked right. Something like this:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;TEST_CASE&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Lab 4 Tests"&lt;/span&gt;&lt;span class="p"&gt;){&lt;/span&gt;
+  &lt;span class="n"&gt;CHECK&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;getValue&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"3/12/2016"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="mf"&gt;54.3&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+It looked like at textbook example of a test case but it wouldn't even
+compile.
+&lt;/p&gt;
+
+&lt;p&gt;
+In all cases, the original student code compiled and ran and gave the
+correct result. All the students had code similar to this:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;cout&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="s"&gt;"Testing getValue for 3/12/2016: "&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;getValue&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"3/12/2016"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;std&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+This stumped everyone for a while - why wouldn't the test even
+compile.
+&lt;/p&gt;
+
+&lt;p&gt;
+The answer was "data types." The lab specification required that
+getValue was supposed to return a &lt;code&gt;double&lt;/code&gt; but in all the problem
+cases, the student returned a &lt;code&gt;std::string&lt;/code&gt;. The lab appeared to work
+since &lt;code&gt;std::cout&lt;/code&gt; handles strings as well as numeric data types but
+once they put it in to a test case that actually checked types the
+problem was apparent and easy to fix.
+&lt;/p&gt;
+
+&lt;p&gt;
+As it turns out, I was pretty excited about this – even before
+finishign the tests, the act of writing tests revealed a problem. This
+is a good thing. 
+&lt;/p&gt;
+
+&lt;p&gt;
+From there, it was pretty easy for students to finish writing the
+tests for their classmates labs.
+&lt;/p&gt;
+
+&lt;p&gt;
+Fast forward a week. This was the first lab where I required
+the students to submit their own test suite as part of their lab. This
+didn't seem to slow anyone down by an appreciable and time will tell
+if this leads to better development practices but it certainly made my
+life easier. I was able to quickly move from repo to repo and type:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;make tests
+./tests -s
+... watch the tests run
+make
+./main
+--- watch the program run
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+Easy peasy.
+&lt;/p&gt;
+
+&lt;p&gt;
+Not only did it make it faster for me, it also gave me insights into
+their programs by seeing their decisions in terms of test writing.
+&lt;/p&gt;
+
+&lt;p&gt;
+Is it a win? 
+&lt;/p&gt;
+
+&lt;p&gt;
+At the very worst, they're learning an
+industry practice and at best, it's going to help them improve as
+software engineers. Add on the fact that it's making my life as a
+teacher easier both in terms of understanding the students work and in
+terms of speed of evaluation. Sounds like a win to me.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="software-engineering" label="software engineering"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs 46 Auto Yasnippets</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</id>
+    <updated>2018-03-15T20:05:36-04:00</updated>
+    <published>2018-03-15T20:05:36-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/"/>
+    <summary type="html">&lt;div id="outline-container-orge453c51" class="outline-2"&gt;
+&lt;h2 id="orge453c51"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge453c51"&gt;
+&lt;p&gt;
+The other day I discovered &lt;a href="https://github.com/abo-abo/auto-yasnippet"&gt;auto-yasnippet&lt;/a&gt;, another great package by
+&lt;a href="https://github.com/abo-abo"&gt;Oleh Krehel&lt;/a&gt; or abo-abo.
+&lt;/p&gt;
+
+&lt;p&gt;
+It looks like it's going to be a great way to solve a particular
+problem that come up now and again.
+&lt;/p&gt;
+
+&lt;p&gt;
+There are plenty of times when I want to create a number of similar
+but slightly different blocks of text. The example on the project
+site  is:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;count_of_red&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_total&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"red"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="n"&gt;count_of_blue&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_total&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"blue"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="n"&gt;count_of_green&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_total&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"green"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+You could use multiple cursors, a macro, or other methods to put in
+the common text but you still have to deal with the parts of each line
+that are unique, the red, green, and blue. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You could use a yasnippet but it's unlikely that you'll have a snippet
+for every occasion. This is where auto-yasnippet comes in. You would
+write the first line but add  a tilda as a placeholder:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;count_of&lt;/span&gt;&lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;red&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_total&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"~red"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+and then invoke &lt;code&gt;aya-create&lt;/code&gt;. This will get rid of the tildas and
+create the auto-snippet. Then when you run &lt;code&gt;aya-expand&lt;/code&gt; it will put in
+the snippet with the tilda locations as placeholders.
+&lt;/p&gt;
+
+&lt;p&gt;
+Very cool.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Check out the video:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/utrMabxgXbg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="editing" label="editing"/>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs 45 - Company or Autocomplete</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-45-company/</id>
+    <updated>2018-03-11T08:05:45-04:00</updated>
+    <published>2018-03-11T08:05:45-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-45-company/"/>
+    <summary type="html">&lt;div id="outline-container-org33b7b2c" class="outline-2"&gt;
+&lt;h2 id="org33b7b2c"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org33b7b2c"&gt;
+&lt;p&gt;
+This is a good time to be an Emacs user. In addition to all of the
+great packages and tools being developed there seem to be more people
+regularly blogging and making videos about Emacs than ever before.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href="http://planet.emacsen.org/"&gt;Planet Emacsen&lt;/a&gt; aggregates a ton of Emcas blogs and Emacs Legend Sacha
+Chua posts what's going on in emacs every week on her &lt;a href="http://sachachua.com/blog/category/geek/emacs/"&gt;blog&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+on the video front, &lt;a href="https://www.youtube.com/channel/ucdetz7akmws0_gnjog01d2g"&gt;uncle dave&lt;/a&gt; has recently joined the ranks of emacs
+video producers. sometimes we'll cover the same topic. dave made a
+video on swiper the other week and i made one a year ago. the other
+week we both made videos on mpd almost on the same day but dave
+focussed on emms and i focussed on simple-mpc. i think this
+is great because it gives different perspectives.
+&lt;/p&gt;
+
+&lt;p&gt;
+today, i watched dave's video on &lt;a href="https://www.youtube.com/watch?v=xewzfruru6k&amp;amp;t=854s"&gt;company&lt;/a&gt; mode for auto
+completion. I've always used &lt;a href="http://cestlaz.github.io/posts/using-emacs-8-autocomplete/"&gt;autocomplete&lt;/a&gt; mode. I thought it would be
+a good time for me to see how the other half lived.
+&lt;/p&gt;
+
+&lt;p&gt;
+You can find my configurations up on GitHub
+(&lt;a href="https://github.com/zamansky/using-emacs"&gt;https://github.com/zamansky/using-emacs&lt;/a&gt;). The master branch is using
+autocomplete and the company-test branch for company. I've also pulled
+out the relevant code and am placing it down under the video.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's what I've found so far:
+&lt;/p&gt;
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/srFQwTvbaxY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org0580de9" class="outline-2"&gt;
+&lt;h2 id="org0580de9"&gt;Company config (so far):&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0580de9"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;company-idle-delay&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;company-minimum-prefix-length&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-company-mode&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company-irony&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt; 
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'company-backends&lt;/span&gt; &lt;span class="ss"&gt;'company-irony&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;irony&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'c++-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'c-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-cdb-autosetup-compile-options&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;irony-eldoc&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:config&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'irony-mode-hook&lt;/span&gt; &lt;span class="o"&gt;#&lt;/span&gt;&lt;span class="ss"&gt;'irony-eldoc&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;company-jedi&lt;/span&gt;
+    &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+    &lt;span class="nv"&gt;:config&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;defun&lt;/span&gt; &lt;span class="nv"&gt;my/python-mode-hook&lt;/span&gt; &lt;span class="p"&gt;()&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-to-list&lt;/span&gt; &lt;span class="ss"&gt;'company-backends&lt;/span&gt; &lt;span class="ss"&gt;'company-jedi&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'my/python-mode-hook&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="outline-container-org67bf776" class="outline-2"&gt;
+&lt;h2 id="org67bf776"&gt;Autocomplete config&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org67bf776"&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;auto-complete&lt;/span&gt;
+&lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+&lt;span class="nv"&gt;:init&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;progn&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;ac-config-default&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;global-auto-complete-mode&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+  &lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;py-python-command&lt;/span&gt; &lt;span class="s"&gt;"python3"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;setq&lt;/span&gt; &lt;span class="nv"&gt;python-shell-interpreter&lt;/span&gt; &lt;span class="s"&gt;"python3"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+  &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;use-package&lt;/span&gt; &lt;span class="nv"&gt;jedi&lt;/span&gt;
+    &lt;span class="nv"&gt;:ensure&lt;/span&gt; &lt;span class="nv"&gt;t&lt;/span&gt;
+    &lt;span class="nv"&gt;:init&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:setup&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;add-hook&lt;/span&gt; &lt;span class="ss"&gt;'python-mode-hook&lt;/span&gt; &lt;span class="ss"&gt;'jedi:ac-setup&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs 44 - An org-mode workflow for application processing</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-44-pdf/</id>
+    <updated>2018-03-03T08:05:45-04:00</updated>
+    <published>2018-03-03T08:05:45-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-44-pdf/"/>
+    <summary type="html">&lt;div id="outline-container-orga34b33a" class="outline-2"&gt;
+&lt;h2 id="orga34b33a"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga34b33a"&gt;
+&lt;p&gt;
+One of my titles at Hunter College is Director of the Daedalus CS
+Honors program. It's something like a Hunter specific, CS specific
+version of the CUNY Macaulay Honors program. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Hunter gives all its students the ability to get a great computer
+science education at a fraction of the cost of a private institution
+and if you're a Daedalus scholar you also get a scholarship, a laptop,
+special classes (with me :-) ), activities and more. Just the other
+day we visited  &lt;a href="http://samsungnext.com/"&gt;Samsung Next&lt;/a&gt; accelerator and earlier in the year we
+made our annual visit to &lt;a href="http://www.catskillsconf.com/"&gt;Catskills Conf&lt;/a&gt;, arguably my favorite event of
+the year. 
+&lt;/p&gt;
+
+&lt;p&gt;
+When deciding on which students to recommend for acceptance, I try to
+glean as much information as I can about each applicant. When I feel
+there's not enough information, I've been known to reach out to
+recommenders and other sources for more. But first I go through the
+applications. For each student, I'm provided with a pdf file with a
+bunch of data and also an entry in an internal Hunter online form with
+even more.
+&lt;/p&gt;
+
+&lt;p&gt;
+For the first cohort, this wasn't a big deal. I hadn't even started at
+Hunter when the applications closed so there was no
+outreach. Everything was after the fact so there were very few
+students to evaluate.
+&lt;/p&gt;
+
+&lt;p&gt;
+Last year, I was able to do some outreach and we had around 60 or so
+applications for a little over 20 spots.
+&lt;/p&gt;
+
+&lt;p&gt;
+This year, there are well over 100 applicants (and we're looking to
+grow the program by a large number of students). All of a sudden, it
+wasn't so easy to navigate all the pdf files.
+&lt;/p&gt;
+
+&lt;p&gt;
+Emacs to the rescue. Using a combination of org-mod,  &lt;a href="https://github.com/politza/pdf-tools"&gt;pdf-tools&lt;/a&gt;, and
+&lt;a href="https://melpa.org/#/org-pdfview"&gt;org-pdfview&lt;/a&gt; I've come up with a workflow that I very much like.
+&lt;/p&gt;
+
+&lt;p&gt;
+Take a look and let me know what you think:
+&lt;/p&gt;
+
+
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LFO2UbzbZhA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="emacs" label="emacs"/>
+    <category term="pdf" label="pdf"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Testing, Testing</title>
+    <id>http://cestlaz.github.io/posts/testing-testing/</id>
+    <updated>2018-02-19T08:26:16-04:00</updated>
+    <published>2018-02-19T08:26:16-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/testing-testing/"/>
+    <summary type="html">&lt;div id="outline-container-orga2d6f11" class="outline-2"&gt;
+&lt;h2 id="orga2d6f11"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orga2d6f11"&gt;
+&lt;p&gt;
+With CS4All being the buzzword of the day we're paying a lot of
+attention to the fact that when we teach a CS class for all students,
+most of them won't end up studying CS or going directly
+into a tech heavy field. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Among those that do study CS though, there is another division. Those
+studying CS as an academic exercise or to go on to graduate studies
+and those who are going in to the tech sector. For those going into
+the tech field, it's important that they're prepared in terms of
+software development, design, and all those goodies not covered in CS
+classes. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm not advocating removing the good stuff currently in most colleg CS
+curricua, although I will say that most CS programs I've reveiwed could benefit by
+trimming some requriements and adding some electives. I am advocating
+doing more than telling your students "comment your code," - a refrain
+many undergrads have heard frequently with little guidance.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'm advocating to begin by bringing in tools and practices that either
+don't detract from current CS classes or in fact can add to or
+streamline them.
+&lt;/p&gt;
+
+&lt;p&gt;
+Last year I wrote about &lt;a href="https://cestlaz.github.io/posts/sigcse-2017-github-4/"&gt;using Git and GitHub&lt;/a&gt; in my classes. Students
+have to submit projects anyway and frequently have to work in teams so
+using Git and a Git hosting service can actually make both student's
+and instructor's class experiences better while introducing them to an
+industry best practice.
+&lt;/p&gt;
+
+&lt;p&gt;
+Today I want to talk about testing. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Students are always told to test their code but frequently not given
+tremendous guidance. The results can be:
+&lt;/p&gt;
+
+&lt;ul class="org-ul"&gt;
+&lt;li&gt;projects that don't compile&lt;/li&gt;
+&lt;li&gt;projects that compile and run but not the way they're supposed to.&lt;/li&gt;
+&lt;li&gt;wonky input or interfaces&lt;/li&gt;
+&lt;li&gt;projects that don't work for all cases&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;
+On the instructor side, we have to evaluate the student's
+submissions and deal with all of this. Some teachers use auto graders
+to help. I have mixed feelings on them. On the one hand they can speed
+up grading but on the other hand it's important for me as the teacher
+to actually dive into the student's code. In any case, using an auto grader
+is actually somewhat similar to running a test suite.
+&lt;/p&gt;
+
+&lt;p&gt;
+Why not have the students create their own test suites? If done right,
+this should encourage students to evaluate their own code more
+carefully and also cut down on the time it takes the intructor to
+evaluate a given submission. 
+&lt;/p&gt;
+
+&lt;p&gt;
+This means that we have to use a testing framework with a very low
+cost of entry.
+&lt;/p&gt;
+
+&lt;p&gt;
+I ended up finding &lt;a href="https://github.com/onqtam/doctest"&gt;doctest&lt;/a&gt; for C++. It's really simple and just a
+single include file. This means that students don't have to actually
+install anything on their machines. Here's the example from the
+project page:
+&lt;/p&gt;
+
+
+&lt;div class="figure"&gt;
+&lt;p&gt;&lt;img src="https://github.com/onqtam/doctest/raw/master/scripts/data/using_doctest_888px_wide.gif" alt="using_doctest_888px_wide.gif"&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+Basically, the students can just start writing tests.
+&lt;/p&gt;
+
+&lt;p&gt;
+Python also has a couple of low friction testing options. One is to
+use the built in &lt;a href="https://docs.python.org/3/library/doctest.html"&gt;doctest&lt;/a&gt; facility. Basically you put sample runs in the doc
+string at the top of a function with the expected output:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;factorial&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="sd"&gt;"""Return the factorial of n, an exact integer &amp;gt;= 0.&lt;/span&gt;
+
+&lt;span class="sd"&gt;    If the result is small enough to fit in an int, return an int.&lt;/span&gt;
+&lt;span class="sd"&gt;    Else return a long.&lt;/span&gt;
+
+&lt;span class="sd"&gt;    &amp;gt;&amp;gt;&amp;gt; [factorial(n) for n in range(6)]&lt;/span&gt;
+&lt;span class="sd"&gt;    [1, 1, 2, 6, 24, 120]&lt;/span&gt;
+&lt;span class="sd"&gt;    &amp;gt;&amp;gt;&amp;gt; factorial(30)&lt;/span&gt;
+&lt;span class="sd"&gt;    265252859812191058636308480000000&lt;/span&gt;
+&lt;span class="sd"&gt;     """&lt;/span&gt;
+
+    &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;math&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="ow"&gt;not&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;ValueError&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"n must be &amp;gt;= 0"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;math&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;floor&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;ValueError&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"n must be exact integer"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;  &lt;span class="c1"&gt;# catch a value like 1e300&lt;/span&gt;
+	&lt;span class="k"&gt;raise&lt;/span&gt; &lt;span class="ne"&gt;OverflowError&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"n too large"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;result&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+    &lt;span class="n"&gt;factor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+    &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;factor&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+	&lt;span class="n"&gt;result&lt;/span&gt; &lt;span class="o"&gt;*=&lt;/span&gt; &lt;span class="n"&gt;factor&lt;/span&gt;
+	&lt;span class="n"&gt;factor&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;result&lt;/span&gt;
+
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s2"&gt;"__main__"&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;doctest&lt;/span&gt;
+    &lt;span class="n"&gt;doctest&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;testmod&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;
+This might seem a little cumbersome, particularly if you look at the
+example at the link. It also requires the tests go on top of each
+function and that the tests will print out as part of the docstring. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The other easy Python option is the built in &lt;a href="https://docs.python.org/3/library/unittest.html"&gt;unittest&lt;/a&gt; module. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's an example of testing strings from the link above:
+&lt;/p&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;unittest&lt;/span&gt;
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;TestStringMethods&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;unittest&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;TestCase&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_upper&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;assertEqual&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'foo'&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;upper&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="s1"&gt;'FOO'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_isupper&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;assertTrue&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'FOO'&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isupper&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+	&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;assertFalse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'Foo'&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isupper&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+
+    &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;test_split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'hello world'&lt;/span&gt;
+	&lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;assertEqual&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;split&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;'hello'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'world'&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+	&lt;span class="c1"&gt;# check that s.split fails when the separator is not a string&lt;/span&gt;
+	&lt;span class="k"&gt;with&lt;/span&gt; &lt;span class="bp"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;assertRaises&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ne"&gt;TypeError&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+	    &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="vm"&gt;__name__&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;'__main__'&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="n"&gt;unittest&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;
+I havn't played with Java testing in years but I'd guess there's
+something similarly light weight.
+&lt;/p&gt;
+
+&lt;p&gt;
+Tomorrow I'm hoping to finish the groundwork on using C++ doctest with
+my class and I'll write another post afterwards. Probably after SIGCSE
+since I'll be attending that from Wednesday on.
+&lt;/p&gt;
+
+&lt;p&gt;
+We'll see how this goes but I'm guessing it will work well. If it
+does, it should make my life as a grader easier and also get the kids
+on track to using test frameworks - something they'll need wherever
+they end up.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="cs" label="cs"/>
+    <category term="software-engineering" label="software engineering"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>Using Emacs 40 - Atomic Chrome</title>
     <id>http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/</id>
@@ -3430,9 +4408,9 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-19-live/"/>
-    <summary type="html">&lt;div id="outline-container-org1b34c50" class="outline-2"&gt;
-&lt;h2 id="org1b34c50"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org1b34c50"&gt;
+    <summary type="html">&lt;div id="outline-container-org31d3964" class="outline-2"&gt;
+&lt;h2 id="org31d3964"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org31d3964"&gt;
 &lt;p&gt;
 Some of the videos I want to make are going to be much easier to do if
 I'm working in my own account where my whole file tree is available. 
@@ -3466,9 +4444,9 @@ everything.
 &lt;/div&gt;
 
 
-&lt;div id="outline-container-orgfc2626f" class="outline-2"&gt;
-&lt;h2 id="orgfc2626f"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgfc2626f"&gt;
+&lt;div id="outline-container-org9e90fba" class="outline-2"&gt;
+&lt;h2 id="org9e90fba"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org9e90fba"&gt;
 &lt;p&gt;
 Relevant links:
 &lt;/p&gt;
@@ -5714,11 +6692,11 @@ Relevant links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-3-elisp/"/>
-    <summary type="html">&lt;div id="outline-container-org8ef7c15" class="outline-2"&gt;
-&lt;h2 id="org8ef7c15"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org8ef7c15"&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/nyQxRarVYH4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+    <summary type="html">&lt;div id="outline-container-org25154ad" class="outline-2"&gt;
+&lt;h2 id="org25154ad"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org25154ad"&gt;
 
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/nyQxRarVYH4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;
 Many people think of Emacs as an editor. I like to think of it as an Elisp interpreter where you live code documents.
 &lt;/p&gt;

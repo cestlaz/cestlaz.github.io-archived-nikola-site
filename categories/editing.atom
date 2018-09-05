@@ -3,13 +3,181 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about editing</title>
   <id>http://cestlaz.github.io/categories/editing.atom</id>
-  <updated>2018-03-16T00:40:03Z</updated>
+  <updated>2018-09-05T21:31:58Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/editing.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/editing/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Using Emacs Episode 49 mu4e-conversation</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/</id>
+    <updated>2018-06-21T13:28:41-04:00</updated>
+    <published>2018-06-21T13:28:41-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-49-mu4e-conversation/"/>
+    <summary type="html">&lt;div id="outline-container-org892f4be" class="outline-2"&gt;
+&lt;h2 id="org892f4be"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org892f4be"&gt;
+&lt;p&gt;
+I've been using Emacs for email for a couple of years now. Not for
+everything, for now my personal email is still Gmail but work is sent
+and read through Emacs. I'm currently using &lt;a href="https://www.djcbsoftware.nl/code/mu/mu4e.html"&gt;mu4e&lt;/a&gt; and while it has a
+few quirks and limitations, I like it very much. You can take a look
+on how I configure and use it &lt;a href="http://cestlaz.github.io/posts/using-emacs-39-mu4e/"&gt;here&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+The other day I saw &lt;a href="https://www.reddit.com/r/emacs/comments/8qryri/mu4econversation_single_buffer_fullthread_display/"&gt;this&lt;/a&gt; thread on Emacs about a new package -
+&lt;a href="https://gitlab.com/ambrevar/mu4e-conversation"&gt;mu4e-conversation&lt;/a&gt;. It's a package that deals with email threads.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's pretty cool. You can invoke it whenever you're in the headers
+view you can just run &lt;code&gt;M-x mu4e-conversation&lt;/code&gt; and it combines all the
+email messages in the current thread into a single buffer. 
+&lt;/p&gt;
+
+&lt;p&gt;
+It's pretty nice. 
+&lt;/p&gt;
+
+&lt;p&gt;
+You can navigate between messages in the thread with &lt;code&gt;C-c C-n&lt;/code&gt; and
+&lt;code&gt;C-c C-p&lt;/code&gt; and use most if not all of the usual mu4e goodness but on
+top of that you can also toggle what the author calls tree mode by
+hitting &lt;code&gt;V&lt;/code&gt;. Tree mode turns the thread into an org-mode tree - also
+extremely cool.
+&lt;/p&gt;
+
+&lt;p&gt;
+On top of this, you can also make mu4e your default viewing mode by
+setting a single variable with &lt;code&gt;(setq mu4e-view-func 'mu4e-conversation)&lt;/code&gt;.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+Although it's very cool, I'm not sure if mu4e-conversation will find
+its way into my workflow or not and probably won't know for a
+while. This is mostly due to the fact that it's summer so work email
+slows down and I won't have too many long threads to play with this
+on.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'll report back once I give it a fair shake but in the meantime if
+anyone out there has had the time to play with it, let us know what
+you think.
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/V5efS8uXANI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="editing" label="editing"/>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs 48 Silversearcher</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-48-silversearcher/</id>
+    <updated>2018-04-22T17:28:41-04:00</updated>
+    <published>2018-04-22T17:28:41-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-48-silversearcher/"/>
+    <summary type="html">&lt;div id="outline-container-org67b566e" class="outline-2"&gt;
+&lt;h2 id="org67b566e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org67b566e"&gt;
+&lt;p&gt;
+A couple of days ago I wrote about on my &lt;a href="http://cestlaz.github.io/posts/unit-tests-grading-workflow"&gt;lab grading workflow&lt;/a&gt;. In the
+post I mentioned that I used Emacs to easily navigate between student
+folders and files so I can actually look at their work in addition to
+their programs output and test results.
+&lt;/p&gt;
+
+&lt;p&gt;
+The key is a combination of &lt;code&gt;dired&lt;/code&gt; and &lt;a href="https://github.com/Wilfred/ag.el"&gt;ag&lt;/a&gt;, Emacs's interface to &lt;a href="https://github.com/ggreer/the_silver_searcher"&gt;the
+Silver Searcher&lt;/a&gt; which is something like a recursive code grep on
+steroids. I also briefly try to show &lt;a href="https://github.com/mhayashi1120/Emacs-wgrep"&gt;wgrep&lt;/a&gt; in the video which allows
+you to edit Emacs grep buffers, effectively allowing you to make
+changes across a set of files all at once. It ended up not working
+with silversearcher - if anyone out there knows why, please chime in.
+&lt;/p&gt;
+
+&lt;p&gt;
+Enjoy:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-sFTkCQ774o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="editing" label="editing"/>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
+  <entry>
+    <title>Using Emacs Episode 47 - Magit</title>
+    <id>http://cestlaz.github.io/posts/using-emacs-47-magit/</id>
+    <updated>2018-04-07T09:05:36-04:00</updated>
+    <published>2018-04-07T09:05:36-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-47-magit/"/>
+    <summary type="html">&lt;div id="outline-container-org86de79d" class="outline-2"&gt;
+&lt;h2 id="org86de79d"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org86de79d"&gt;
+&lt;p&gt;
+I've been holding off on doing a &lt;a href="https://magit.vc/"&gt;Magit&lt;/a&gt; video for a while. Mostly
+because I wasn't using it exclusively and also because there are
+already a number of good Magit videos and resources out there.
+&lt;/p&gt;
+
+&lt;p&gt;
+What changed? Along with the new version of Magin, Jonas Bernoulli
+wrote up &lt;a href="https://emacsair.me/2017/09/01/magit-walk-through/"&gt;a walkthrough of the Magit interface&lt;/a&gt;. For whatever reason,
+it all finally clicked. 
+&lt;/p&gt;
+
+&lt;p&gt;
+In spite of what the documentation says, Magit &lt;b&gt;is not&lt;/b&gt; an interface
+for git. Magit is a &lt;b&gt;command and control&lt;/b&gt; center for git. You can
+launch it just to execute some git commands but you can also leave it
+up and running in an Emacs window or frame as a constant project
+overview.
+&lt;/p&gt;
+
+&lt;p&gt;
+Wow. Mind blown!!!
+&lt;/p&gt;
+
+&lt;p&gt;
+If you use Emacs for Deveopment, you &lt;b&gt;have to&lt;/b&gt; use Magit. If you don't
+use Emacs, you can load it on the side for Magit. If you're not a
+developer, learn to code so you can use Magit!!!!!
+&lt;/p&gt;
+
+&lt;p&gt;
+I tried to do justice to the package in the video. Magit along with &lt;a href="https://orgmode.org/"&gt;Org
+Mode&lt;/a&gt; are arguably Emacs killer apps - enough in and of themselves to
+justify using Emacs.
+&lt;/p&gt;
+
+&lt;p&gt;
+Check out the video:
+&lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/1IYsiHXR620" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+    <category term="editing" label="editing"/>
+    <category term="emacs" label="emacs"/>
+    <category term="tools" label="tools"/>
+  </entry>
   <entry>
     <title>Using Emacs 46 Auto Yasnippets</title>
     <id>http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/</id>
@@ -19,9 +187,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-46-auto-yasnippets/"/>
-    <summary type="html">&lt;div id="outline-container-org4c51645" class="outline-2"&gt;
-&lt;h2 id="org4c51645"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4c51645"&gt;
+    <summary type="html">&lt;div id="outline-container-orge453c51" class="outline-2"&gt;
+&lt;h2 id="orge453c51"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge453c51"&gt;
 &lt;p&gt;
 The other day I discovered &lt;a href="https://github.com/abo-abo/auto-yasnippet"&gt;auto-yasnippet&lt;/a&gt;, another great package by
 &lt;a href="https://github.com/abo-abo"&gt;Oleh Krehel&lt;/a&gt; or abo-abo.
@@ -68,10 +236,12 @@ the snippet with the tilda locations as placeholders.
 Very cool.
 &lt;/p&gt;
 
+
 &lt;p&gt;
 Check out the video:
-&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/utrMabxgXbg"&gt;https://www.youtube.com/embed/utrMabxgXbg&lt;/a&gt;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
 &lt;/p&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/utrMabxgXbg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
     <category term="editing" label="editing"/>
