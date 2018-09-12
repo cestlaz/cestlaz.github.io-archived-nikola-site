@@ -1,5 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about policy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/policy.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 05 Sep 2018 21:31:58 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Giving control of NYC's specialized schools to a political appointee</title><link>http://cestlaz.github.io/posts/shsat-part2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgda4fee7" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about policy)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/policy.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 12 Sep 2018 00:01:48 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Creating a school for CS</title><link>http://cestlaz.github.io/posts/creating-a-school/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd017c4e" class="outline-2"&gt;
+&lt;h2 id="orgd017c4e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd017c4e"&gt;
+&lt;p&gt;
+&lt;a href="http://blog.acthompson.net/2018/09/do-we-really-need-cs-focused-high.html"&gt;Do we really need CS focused high schools?&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+That's the question Alfred Thompson asked partly in reaction to my
+&lt;a href="https://cestlaz.github.io/posts/that-time-bill-gates-visited-afse"&gt;post&lt;/a&gt; talking about Bill Gates' visit to &lt;a href="http://afsenyc.org"&gt;AFSE&lt;/a&gt;, a NYC public school
+with a CS focus.
+&lt;/p&gt;
+
+&lt;p&gt;
+On both posts, &lt;a href="https://twitter.com/reallymdp"&gt;Michael Preston&lt;/a&gt; shared some important and good points about
+AFSE as a starting point and gateway that helped lead to CS4All in NYC
+and also specifically about AFSE. 
+&lt;/p&gt;
+
+&lt;p&gt;
+In response to Alfred's question I thought it was time I shared a bit
+about what I was pushing for AFSE back when I was involved. I wasn't
+able to talk publicly about any of this at the time because I was
+warned very sternly by one DOE person involved that I shouldn't talk
+to "outsiders" about my concerns or designs. In retrospect, since I
+stopped getting replies to my emails and was apparently dropped from
+email lists after they selected their founding principal, I probably
+should have been more public about my critiques. On the other hand, I
+should have been more politic internally prior to getting to that
+point.
+&lt;/p&gt;
+
+&lt;p&gt;
+Reading Alfred's post, what I was pushing for AFSE at the time cuts
+right to Alfred's question so I thought I'd write about it today.
+&lt;/p&gt;
+
+&lt;p&gt;
+Before starting though I want to be &lt;b&gt;absolutely clear&lt;/b&gt; about one
+thing. This is not a critique of AFSE as it stands. There are some
+great teachers and wonderful students there and I do what I can to
+support both whenever I can. This is a post about my design vs the
+DOE's design and later implementation. Also note that the numbers,
+sizes, restrictions and designs are all based on NY state and NYC
+requirements along with what one can typically do in a NYC public
+school. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Even though it's the least important issue with respect to a CS school
+or not, let's start by getting the dirty word out of the way. Given
+the stated mission of the school (at the time) I wanted a screen. Not
+a "Stuy test" screen but something. Probably something more along the
+lines of the screen used by the Manhattan Science Hunter High
+School. We never got that far in discussing it. My contention was and
+still is that if you want to produce "Google ready" software engineers
+by high school graduation, particularly in a small school, you can't
+start with kids 2 or 3 years behind in math. Now, if your goal isn't
+"Google ready engineers" but rather to use CS to engage a population
+that isn't otherwise engaged, I can get behind that and you don't need
+a screen. It's important however to note it's a different mission.
+&lt;/p&gt;
+
+&lt;p&gt;
+The DOE would maintain that you don't need any screen and kids can
+start out years behind and by the end of their senior year they'd be
+years ahead. It doesn't work that way. 
+&lt;/p&gt;
+
+&lt;p&gt;
+They'd ask tech people at meetings what they looked for in employees
+knowing that they'd get back "teamwork, creativity etc." I would of
+course follow up with "where do you look for these candidates" and
+they'd say "MIT, Cal Tech, Harvard." 
+&lt;/p&gt;
+
+&lt;p&gt;
+The DOE insisted on no screen. This is fine but it's no surprise that
+Google's not beating down the doors for AFSE graduates right out of
+high school and the math regents show that you indeed can't take kids
+from multiple years behind and end up with them multiple years ahead
+given typical school resources. They're doing really good work there
+but there's no such thing as a miracle school just hard work and
+incremental progress. I have heard more than once that the founding
+principal had lobbied for a screen so I feel my original assessment
+was correct.
+&lt;/p&gt;
+
+&lt;p&gt;
+Next up, size. The DOE insisted on a small school focused on CS. They
+wanted a school of around 136 kids per grade, which makes for 4
+"homerooms," and that the school would focus on CS. My proposal was
+very different. I advocated for a school with about 340 kids per grade
+and not specifically focused on CS but rather with a great model CS
+program - a Software Engineering Institute at the blah blah school if
+you would.
+&lt;/p&gt;
+
+&lt;p&gt;
+A small school can't support a wide range of classes. With 4 classes
+of kids per grade you don't have a lot of schedule flexibility in
+terms of class levels or electives. You also have very few teachers
+per subject - for a subject taught for a full year every year for a
+single period, you'd have one teacher per grade in that subject. If
+you're a school for CS you're not going to be able to offer a robust
+schedule of music or arts classes. Likewise an arts school is going to
+be hard pressed to offer a suite of science electives. Remember,
+public schools are not flush with money and can't just offer loads of
+courses for a handful of kids. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What we end up with is a school with limited offerings beyond CS and
+we're asking kids to decide in 8th grade if that's the career path for
+them. This is a hidden problem of all small schools. Kids shouldn't
+have to decide on their future in the 8th grade. They should all be
+able to go to schools that offer a wide range of subjects to a good
+degree of depth. Only large public schools can do this. I know that
+public schools come with their own problems but this is one of the
+trade offs. I believe that having this selection done in 8th grade
+along with the tech stereotypes and preconceptions is a big part of
+the schools difficulty in appealing to girls.
+&lt;/p&gt;
+
+&lt;p&gt;
+Now even if every student who applied and is randomly accepted into
+AFSE does indeed want to be a CS person then we've also lost because
+we've done nothing to get more kids into the pool. It could still
+potentially function as a model school in terms of courses or possibly
+pedagogy but it won't expose and inspire anyone new with respect to
+tech.
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's contrast that with what I proposed. I wanted around 340 kids per
+grade or 10 "homerooms." How did I arrive at that number? It wasn't
+just a guess. Schools like Stuyvesant or Brooklyn Tech are clearly too
+large and impersonal but small 136 kids per grade schools are too
+small. The 10 homeroom per grade school seems to be the best
+compromise. There are enough teachers so that there's institutional
+memory when one leaves, enough of them and students for a varied set
+of electives. It also means that there are enough teachers to avoid
+bad fits between teacher and student. At the same time, it's not so
+large that kids get lost. I also spoke with some of the best
+programmers I know - not computer programmers but people who schedule
+students for classes in schools and this seems to be the best
+compromise size range. Also, with this size you don't necessarily need
+a screen if you want "Google ready" software engineers. There will be
+enough of a range kids that come in behind and kids that come in ahead
+can get what they need.
+&lt;/p&gt;
+
+&lt;p&gt;
+I also didn't want it to be a CS school but rather a school with great
+CS. That way it would appeal to a range of students. Kids who think
+they want to do CS and those who don't. At the end of they day some of
+the kids that think they wanted CS won't want it and those kids will
+have other options. At the same time some of the non-tech kids will
+take the required CS and find out that "this is neat stuff" and we get
+to increase the number of people in the tent.
+&lt;/p&gt;
+
+&lt;p&gt;
+I still believe my design would have worked out better but that's not
+to say that I don't think that AFSE has been and is important. As Mike
+pointed out in his comment, AFSE was the first unscreened school to
+offer legit and it did (and does) offer a place for CS kids that don't
+get into or don't want to go to a place like Stuy which is very much a
+large school and an unforgiving machine. It was also a showpiece that
+helped pave the way for CS in all NYC schools. All of that's good.
+&lt;/p&gt;
+
+&lt;p&gt;
+I do regret parts of what went down between me and DOE. I don't regret
+sticking to my beliefs in terms of school design but I would like to
+have been able to handle the politics of the situation better. Had I
+remained involved I think I had more to offer. I don't regret it too
+much – at the time it went from the DOE telling me one week to "you
+can have any role in the school you want" to the next week "we want to
+introduce you to the person who we're making principal" and I
+recognize that I'd have a hard time putting that aside now and the me
+of a decade ago would have found it impossible. That said, I think
+everyone would have been better off if both sides could have played
+things better. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'd still love to have the chance someday to set up and run a school
+of my design with my team. It'll probably never happen but it would be
+nice.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+"
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>policy</category><category>schools</category><guid>http://cestlaz.github.io/posts/creating-a-school/</guid><pubDate>Tue, 11 Sep 2018 22:06:09 GMT</pubDate></item><item><title>Giving control of NYC's specialized schools to a political appointee</title><link>http://cestlaz.github.io/posts/shsat-part2/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgda4fee7" class="outline-2"&gt;
 &lt;h2 id="orgda4fee7"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-orgda4fee7"&gt;
 &lt;p&gt;
@@ -1538,286 +1735,4 @@ there, there's lots of good stuff to read.&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;/div&gt;
-&lt;/div&gt;</description><category>assessment</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</guid><pubDate>Mon, 16 Oct 2017 00:17:21 GMT</pubDate></item><item><title>Standards - Who are they for?</title><link>http://cestlaz.github.io/posts/standards-who-for/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgae3fcf5" class="outline-2"&gt;
-&lt;h2 id="orgae3fcf5"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgae3fcf5"&gt;
-&lt;p&gt;
-The big push at last year's CSTA conference was the release of the new
-CSTA K12 standards. It seemed that every other session was pushing
-them in one way or another. I've been meaning to share my thoughts
-about them or, more specifically, learning standards in general for a
-while but with announcement about federal funding for CS coming from
-the White House last week I thought it was time.
-&lt;/p&gt;
-
-&lt;p&gt;
-Before diving into CS standards lets talk about math.
-&lt;/p&gt;
-
-&lt;p&gt;
-To start I have yet to meet a math teacher that needs
-"the Standards" to know what to teach. Some how or other math teachers know
-they're supposed to teach in an algebra or geometry class. When NY
-moved to "integrated math" teachers were able to re-sequence classes
-without the benefit of "the standards" and when NY went back to
-Algebra, Geometry, then Alg 2 and Trig, teachers had no problem
-reorganizing classes again.
-&lt;/p&gt;
-
-&lt;p&gt;
-New teachers didn't go to "the Standards" to learn the ropes. Schools
-defined syllabi, teachers observed each other, shared resources, used
-lesson plan books and in general knew what they were supposed to teach
-and at what level.
-&lt;/p&gt;
-
-&lt;p&gt;
-In my quarter century of teaching, always in a math department we
-spent a lot of time talking about what we taught, when we taught it,
-how we taught it and at what level but until common core was forced
-down our throats we NEVER discussed "the Standards." We discussed our
-students, where we thought we could take them, and how to get them
-there. Somehow our students did alright.
-&lt;/p&gt;
-
-&lt;p&gt;
-More recently, the push has been on "The Standards," common core in particular.
-&lt;/p&gt;
-
-&lt;p&gt;
-Common standards sound good - kids in every school will learn the same
-things at the same level - but I contend that they aren't about
-learning. They're about testing.
-&lt;/p&gt;
-
-&lt;p&gt;
-Let's look at a few of the math standards. These were pulled directly
-from the Common Core:
-&lt;/p&gt;
-
-
-&lt;blockquote&gt;
-&lt;p&gt;
-Derive the equation of a circle of given center and radius using the
-Pythagorean Theorem; complete the square to find the center and radius
-of a circle given by an equation.
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-Use coordinates to prove simple geometric theorems algebraically. For
-example, prove or disprove that a figure defined by four given points
-in the coordinate plane is a rectangle; prove or disprove that the
-point (1, √3) lies on the circle centered at the origin and containing
-the point (0, 2).
-&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;
-
-&lt;/p&gt;
-
-&lt;p&gt;
-Derive using similarity the fact that the length of the arc
-intercepted by an angle is proportional to the radius, and define the
-radian measure of the angle as the constant of proportionality; derive
-the formula for the area of a sector.
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-These aren't about deep thinking and problem solving. They're about
-very specific skills or techniques. They're also easy to put on a
-test. Much easier then assessing a students real problem solving ability.
-&lt;/p&gt;
-
-&lt;p&gt;
-Common Core comes hand in hand with standardized testing which is then
-used to punish students, teachers, and schools. 
-&lt;/p&gt;
-
-&lt;p&gt;
-We keep hearing about individualized instruction - meeting the kids
-where they are but the standards tell us that kids MUST know specific
-things at specific times. You can't have both. In the best case, with
-"the standards" we can only meet students "where they are" within
-annual bands.
-&lt;/p&gt;
-
-&lt;p&gt;
-What has this led to? Narrowing curriculum for one thing. Since schools are
-evaluated based on the standardized exam in core subjects focus
-narrows and other subjects fall by the wayside. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Arguably worse is selective teaching within common core subjects.
-&lt;/p&gt;
-
-&lt;p&gt;
-Take for example, Geometry. The course is really "Logic and Deductive
-Reasoning using Euclidean Geometry as a Platform" but it's generally
-called Geometry. This class is supposed to be about getting kids to
-think. I've already shared a few standards above but let me tell you
-about an open secret - many schools don't really teach proof -
-arguably the most important part of the class.
-&lt;/p&gt;
-
-&lt;p&gt;
-In my last year at Stuy I graded Geometry regents for the city. I
-graded exams for two highly regarded unscreened schools. One that was
-lauded in a State of the Union address and the other equally hyped. I
-graded all of each school's students geometry regents so it wasn't
-just a sampling. Out of all the papers, only two or three scored more
-than 2 out of 9 points for the proof question and most were entirely
-left blank.
-&lt;/p&gt;
-
-&lt;p&gt;
-What happened? Proof is hard to teach and hard to learn but it's also
-only a small part of the standardized exam. It's critical for a
-school's survival and for the student to graduate that a passing score
-is earned. Rather than spending a large amount of time on few points
-and probably get a limited return I've been told that many schools
-spend much more time on topics that area easier to teach and have more
-weight on the exam. This makes the school look better and helps the
-student graduate but arguably the most important aspect of the course
-has been minimized.
-&lt;/p&gt;
-
-&lt;p&gt;
-High stakes testing leads to gaming the system. Common core standards
-come hand in hand with high stakes testing. We see the same with AP
-exams - there are schools that force students to take exams even when
-they are woefully prepared and mostly fail because this helps the
-school shoot up in the ratings.
-&lt;/p&gt;
-
-&lt;p&gt;
-This is what the common core math standards have given us. They're not
-for teachers - we don't need them - we know what to teach and only
-wish that the bean counters would indeed allow us to meet students
-where they are. Standards are about testing.
-&lt;/p&gt;
-
-&lt;p&gt;
-Let's move on to CS standards. 
-&lt;/p&gt;
-
-&lt;p&gt;
-It might not be fair to compare CS to math since K12 math education
-has been around much longer and is more well defined and in theory
-having a set of standards gives us a common language to discuss,
-compare, and contrast all the content providers and curriculum
-developers out there. On the other hand, I also believe that with well
-prepared teachers who understand content and pedagogy the value isn't
-all that great. It's also worth considering the fact that nothing
-really makes the CSTA Standard  writers special. There's no reason to
-think that another group - be they a handful of teachers or a content
-provider can't do a comparable job.
-&lt;/p&gt;
-
-&lt;p&gt;
-Here are some selections from the CSTA standards:
-&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;
-Design and develop a software artifact working in a team. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Compare and contrast various software licensing schemes (e.g., open source, freeware,
-commercial). 
-&lt;/p&gt;
-
-&lt;p&gt;
-Design, develop, and implement a computing artifact that responds to an event (e.g., robot
-that responds to a sensor, mobile app that responds to a text message, sprite that responds
-to a broadcas
-&lt;/p&gt;
-
-&lt;p&gt;
-Demonstrate the value of abstraction for managing problem complexity (e.g., using a list
-instead of discrete variables). 
-&lt;/p&gt;
-
-&lt;p&gt;
-Design algorithms u sing sequence, selection, and iteration. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Discuss techniques used to store, process, and retrieve different amounts of information
-(e.g., files, databases, data warehouses). 
-&lt;/p&gt;
-
-&lt;p&gt;
-Compare and debate the positive and negative impacts of computing on behavior and
-culture (e.g., evolution from hitchhiking to ridesharing apps, online accommodation rental
-services). 
-&lt;/p&gt;
-
-&lt;p&gt;
-Use simple encryption and decryption algorithms to transmit/receive an encrypted
-message. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Decompose a problem by creating new data types, functions, or classes.
-&lt;/p&gt;
-
-&lt;p&gt;
-Evaluate algorithms (e.g., sorting, searching) in terms of their efficiency, correctness, and
-clarity. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Use data analysis to identify significant patterns in complex systems (e.g., take existing data
-sets and make sense of them). 
-&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;
-There's nothing wrong with these. They aren't specific enough to
-develop lessons from but, they can provide a
-consistent framework to discuss different offerings. Were the much
-more specific, we'd have the same issue I railed about with the math
-standards so this is a good thing. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Actually, in general, I don't have a problem with these standards. I
-might agree with some parts and disagree with others but that's
-neither here nor there.
-&lt;/p&gt;
-
-&lt;p&gt;
-To me the big concern on standards is what will they actually be used
-for. It's nice to think that it's a set of guidelines from which we
-can develop strong local experiences but I think this is somewhat
-naive. As states and the federal government bring CS Education into
-the fold there's no reason to believe that CS will be special. CS Ed
-will go the way of other subject areas. That means that whatever
-standards governments adopt, they will likely be used for high stakes
-tests rather than for true education. If you look to see how the
-sausage is made you can see the harm standards and standardized
-testing has wrought  in subjects like math. CS Ed won't be far behind.
-&lt;/p&gt;
-
-&lt;p&gt;
-While we should be proud of all the work that's going on in our
-community it's more important now than ever to keep an eye on the
-overall big picture and be aware of how work intended for one purpose
-within the community can be used very differently by those outside of
-it. This is particularly important for advocates  not in public schools. Public
-schools educate the majority of American students so CS4All means
-public schools. Standardized testing won't affect private schools (or
-private charters in many cases) nor will they affect colleges and in
-fact will be a boon to EdTech companies selling there wares. Many of
-the loudest voices in CSEd come from these contingents - it's
-important that they look to the greater issues, form their own
-opinions, and then act on what they believe is right.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><category>cs</category><category>ed</category><category>policy</category><category>standards</category><guid>http://cestlaz.github.io/posts/standards-who-for/</guid><pubDate>Tue, 10 Oct 2017 18:05:35 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><category>assessment</category><category>cs</category><category>education</category><category>policy</category><guid>http://cestlaz.github.io/posts/ap-results-measure-of-curriculum/</guid><pubDate>Mon, 16 Oct 2017 00:17:21 GMT</pubDate></item></channel></rss>

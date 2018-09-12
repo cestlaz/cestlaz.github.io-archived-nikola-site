@@ -1,5 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Sun, 09 Sep 2018 20:19:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>That Time Bill Gates Visited AFSE</title><link>http://cestlaz.github.io/posts/that-time-bill-gates-visited-afse/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgbbe3593" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Wed, 12 Sep 2018 00:01:48 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Creating a school for CS</title><link>http://cestlaz.github.io/posts/creating-a-school/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd017c4e" class="outline-2"&gt;
+&lt;h2 id="orgd017c4e"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd017c4e"&gt;
+&lt;p&gt;
+&lt;a href="http://blog.acthompson.net/2018/09/do-we-really-need-cs-focused-high.html"&gt;Do we really need CS focused high schools?&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+That's the question Alfred Thompson asked partly in reaction to my
+&lt;a href="https://cestlaz.github.io/posts/that-time-bill-gates-visited-afse"&gt;post&lt;/a&gt; talking about Bill Gates' visit to &lt;a href="http://afsenyc.org"&gt;AFSE&lt;/a&gt;, a NYC public school
+with a CS focus.
+&lt;/p&gt;
+
+&lt;p&gt;
+On both posts, &lt;a href="https://twitter.com/reallymdp"&gt;Michael Preston&lt;/a&gt; shared some important and good points about
+AFSE as a starting point and gateway that helped lead to CS4All in NYC
+and also specifically about AFSE. 
+&lt;/p&gt;
+
+&lt;p&gt;
+In response to Alfred's question I thought it was time I shared a bit
+about what I was pushing for AFSE back when I was involved. I wasn't
+able to talk publicly about any of this at the time because I was
+warned very sternly by one DOE person involved that I shouldn't talk
+to "outsiders" about my concerns or designs. In retrospect, since I
+stopped getting replies to my emails and was apparently dropped from
+email lists after they selected their founding principal, I probably
+should have been more public about my critiques. On the other hand, I
+should have been more politic internally prior to getting to that
+point.
+&lt;/p&gt;
+
+&lt;p&gt;
+Reading Alfred's post, what I was pushing for AFSE at the time cuts
+right to Alfred's question so I thought I'd write about it today.
+&lt;/p&gt;
+
+&lt;p&gt;
+Before starting though I want to be &lt;b&gt;absolutely clear&lt;/b&gt; about one
+thing. This is not a critique of AFSE as it stands. There are some
+great teachers and wonderful students there and I do what I can to
+support both whenever I can. This is a post about my design vs the
+DOE's design and later implementation. Also note that the numbers,
+sizes, restrictions and designs are all based on NY state and NYC
+requirements along with what one can typically do in a NYC public
+school. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Even though it's the least important issue with respect to a CS school
+or not, let's start by getting the dirty word out of the way. Given
+the stated mission of the school (at the time) I wanted a screen. Not
+a "Stuy test" screen but something. Probably something more along the
+lines of the screen used by the Manhattan Science Hunter High
+School. We never got that far in discussing it. My contention was and
+still is that if you want to produce "Google ready" software engineers
+by high school graduation, particularly in a small school, you can't
+start with kids 2 or 3 years behind in math. Now, if your goal isn't
+"Google ready engineers" but rather to use CS to engage a population
+that isn't otherwise engaged, I can get behind that and you don't need
+a screen. It's important however to note it's a different mission.
+&lt;/p&gt;
+
+&lt;p&gt;
+The DOE would maintain that you don't need any screen and kids can
+start out years behind and by the end of their senior year they'd be
+years ahead. It doesn't work that way. 
+&lt;/p&gt;
+
+&lt;p&gt;
+They'd ask tech people at meetings what they looked for in employees
+knowing that they'd get back "teamwork, creativity etc." I would of
+course follow up with "where do you look for these candidates" and
+they'd say "MIT, Cal Tech, Harvard." 
+&lt;/p&gt;
+
+&lt;p&gt;
+The DOE insisted on no screen. This is fine but it's no surprise that
+Google's not beating down the doors for AFSE graduates right out of
+high school and the math regents show that you indeed can't take kids
+from multiple years behind and end up with them multiple years ahead
+given typical school resources. They're doing really good work there
+but there's no such thing as a miracle school just hard work and
+incremental progress. I have heard more than once that the founding
+principal had lobbied for a screen so I feel my original assessment
+was correct.
+&lt;/p&gt;
+
+&lt;p&gt;
+Next up, size. The DOE insisted on a small school focused on CS. They
+wanted a school of around 136 kids per grade, which makes for 4
+"homerooms," and that the school would focus on CS. My proposal was
+very different. I advocated for a school with about 340 kids per grade
+and not specifically focused on CS but rather with a great model CS
+program - a Software Engineering Institute at the blah blah school if
+you would.
+&lt;/p&gt;
+
+&lt;p&gt;
+A small school can't support a wide range of classes. With 4 classes
+of kids per grade you don't have a lot of schedule flexibility in
+terms of class levels or electives. You also have very few teachers
+per subject - for a subject taught for a full year every year for a
+single period, you'd have one teacher per grade in that subject. If
+you're a school for CS you're not going to be able to offer a robust
+schedule of music or arts classes. Likewise an arts school is going to
+be hard pressed to offer a suite of science electives. Remember,
+public schools are not flush with money and can't just offer loads of
+courses for a handful of kids. 
+&lt;/p&gt;
+
+&lt;p&gt;
+What we end up with is a school with limited offerings beyond CS and
+we're asking kids to decide in 8th grade if that's the career path for
+them. This is a hidden problem of all small schools. Kids shouldn't
+have to decide on their future in the 8th grade. They should all be
+able to go to schools that offer a wide range of subjects to a good
+degree of depth. Only large public schools can do this. I know that
+public schools come with their own problems but this is one of the
+trade offs. I believe that having this selection done in 8th grade
+along with the tech stereotypes and preconceptions is a big part of
+the schools difficulty in appealing to girls.
+&lt;/p&gt;
+
+&lt;p&gt;
+Now even if every student who applied and is randomly accepted into
+AFSE does indeed want to be a CS person then we've also lost because
+we've done nothing to get more kids into the pool. It could still
+potentially function as a model school in terms of courses or possibly
+pedagogy but it won't expose and inspire anyone new with respect to
+tech.
+&lt;/p&gt;
+
+&lt;p&gt;
+Let's contrast that with what I proposed. I wanted around 340 kids per
+grade or 10 "homerooms." How did I arrive at that number? It wasn't
+just a guess. Schools like Stuyvesant or Brooklyn Tech are clearly too
+large and impersonal but small 136 kids per grade schools are too
+small. The 10 homeroom per grade school seems to be the best
+compromise. There are enough teachers so that there's institutional
+memory when one leaves, enough of them and students for a varied set
+of electives. It also means that there are enough teachers to avoid
+bad fits between teacher and student. At the same time, it's not so
+large that kids get lost. I also spoke with some of the best
+programmers I know - not computer programmers but people who schedule
+students for classes in schools and this seems to be the best
+compromise size range. Also, with this size you don't necessarily need
+a screen if you want "Google ready" software engineers. There will be
+enough of a range kids that come in behind and kids that come in ahead
+can get what they need.
+&lt;/p&gt;
+
+&lt;p&gt;
+I also didn't want it to be a CS school but rather a school with great
+CS. That way it would appeal to a range of students. Kids who think
+they want to do CS and those who don't. At the end of they day some of
+the kids that think they wanted CS won't want it and those kids will
+have other options. At the same time some of the non-tech kids will
+take the required CS and find out that "this is neat stuff" and we get
+to increase the number of people in the tent.
+&lt;/p&gt;
+
+&lt;p&gt;
+I still believe my design would have worked out better but that's not
+to say that I don't think that AFSE has been and is important. As Mike
+pointed out in his comment, AFSE was the first unscreened school to
+offer legit and it did (and does) offer a place for CS kids that don't
+get into or don't want to go to a place like Stuy which is very much a
+large school and an unforgiving machine. It was also a showpiece that
+helped pave the way for CS in all NYC schools. All of that's good.
+&lt;/p&gt;
+
+&lt;p&gt;
+I do regret parts of what went down between me and DOE. I don't regret
+sticking to my beliefs in terms of school design but I would like to
+have been able to handle the politics of the situation better. Had I
+remained involved I think I had more to offer. I don't regret it too
+much – at the time it went from the DOE telling me one week to "you
+can have any role in the school you want" to the next week "we want to
+introduce you to the person who we're making principal" and I
+recognize that I'd have a hard time putting that aside now and the me
+of a decade ago would have found it impossible. That said, I think
+everyone would have been better off if both sides could have played
+things better. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I'd still love to have the chance someday to set up and run a school
+of my design with my team. It'll probably never happen but it would be
+nice.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+"
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>cs</category><category>policy</category><category>schools</category><guid>http://cestlaz.github.io/posts/creating-a-school/</guid><pubDate>Tue, 11 Sep 2018 22:06:09 GMT</pubDate></item><item><title>That Time Bill Gates Visited AFSE</title><link>http://cestlaz.github.io/posts/that-time-bill-gates-visited-afse/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgbbe3593" class="outline-2"&gt;
 &lt;h2 id="orgbbe3593"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-orgbbe3593"&gt;
 &lt;p&gt;
@@ -1363,97 +1560,4 @@ chosen platform and what would make the ideal platform for class
 communication?
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/class-communications/</guid><pubDate>Wed, 08 Aug 2018 19:13:11 GMT</pubDate></item><item><title>Getting Ready To Go Back</title><link>http://cestlaz.github.io/posts/getting-ready-to-go-back-2018/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6f0fc9e" class="outline-2"&gt;
-&lt;h2 id="org6f0fc9e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6f0fc9e"&gt;
-&lt;p&gt;
-It's August 3rd and I've been giving a lot of thought to the start of
-the semester. Normally I wouldn't think about the Fall term this
-early. While I've been working on and off since last semester ended, I
-don't officially "go back" until August 23rd with classes starting on
-the 27th. The difference is that for the first time in forever we're
-taking a longish trip between now and then.
-&lt;/p&gt;
-
-&lt;p&gt;
-We're heading over to Harrogate England. We've never been but Natan's
-taking part in the &lt;a href="http://www.gsfestivals.org/"&gt;International Gilbert and Sullivan Festival&lt;/a&gt; so we
-figured we'd follow and play tourist while he was rehearsing and
-otherwise doing the festival. I'm looking forward to the trip but
-don't expect to get much prep work done while we're there.
-&lt;/p&gt;
-
-&lt;p&gt;
-So, what's coming this semester?
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-orga937396" class="outline-2"&gt;
-&lt;h2 id="orga937396"&gt;Classes&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga937396"&gt;
-&lt;p&gt;
-Hunter's honors program has grown big time so I'll be teaching two
-classes instead of one this semester. One section will be our
-pre-major CS course and one will be our CS1. I've done both before so
-I won't need a lot of advance prep. Besides, I learned long ago that
-no matter how much prep you do, everything changes once you get in the
-classroom with a new batch of kids. Better just to have starter
-material and a direction since everything's going to change after day
-one anyway.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-orgc6cccc2" class="outline-2"&gt;
-&lt;h2 id="orgc6cccc2"&gt;Teacher Ed stuff&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgc6cccc2"&gt;
-&lt;p&gt;
-On the teacher education program front, we've got to send a few items
-back through governance for approval. Instead of having teachers in my
-programs take a separate fieldwork course, I integrated it into my
-curriculum development course. Another change that we have to make,
-believe it or not, is to remove the words "for teachers" and "for
-educators" from two of the pure computer science courses in the
-program. Fortunately, I've done all the prep work needed to get these
-going come late August. We're still planning on starting our first
-cohort in the Spring.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-org7eb569b" class="outline-2"&gt;
-&lt;h2 id="org7eb569b"&gt;Other stuff&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7eb569b"&gt;
-&lt;p&gt;
-Here's where a lot of the fun stuff is happening. Like last year, I'm
-planning on doing a lot of outreach to high schools to talk about
-colleges, tech, and Hunter. The outreach's &lt;a href="https://cestlaz.github.io/posts/hunter-cs-year-two/"&gt;really made a difference&lt;/a&gt;
-but it take a lot of time since it's all about school visits. I'm
-hoping to get to some parents association meetings as well this year. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm also planning a number of new things for our Hunter CS students
-and I'd love to jump on the planning now but these things really have
-to wait until the term starts. Here's some of what's on tap:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;A monthly CTLE session for CS teachers.&lt;/li&gt;
-&lt;li&gt;A monthly tech talk / meetup at Hunter for CS students.&lt;/li&gt;
-&lt;li&gt;Finding more and more internship opportunities for the kids.&lt;/li&gt;
-&lt;li&gt;A series of open source workshops I'm coordinating with MongoDB.&lt;/li&gt;
-&lt;li&gt;I'm hoping to work out some workshops for the kids with &lt;a href="https://www.redballoonsecurity.com/"&gt;Red Balloon
-Security&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;And a new tech mentoring program I'm hoping to get off the ground.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;
-I'm sure some of these plans will change. I think I'm pretty ready to
-go for the fall but I'll still mull things over for the next few
-weeks. 
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/getting-ready-to-go-back-2018/</guid><pubDate>Fri, 03 Aug 2018 18:23:32 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/class-communications/</guid><pubDate>Wed, 08 Aug 2018 19:13:11 GMT</pubDate></item></channel></rss>
