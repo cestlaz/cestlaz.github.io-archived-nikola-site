@@ -3,7 +3,7 @@
 <feed xmlns:fh="http://purl.org/syndication/history/1.0" xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z (old posts, page 20)</title>
   <id>http://cestlaz.github.io/index-20.atom</id>
-  <updated>2018-09-05T21:31:58Z</updated>
+  <updated>2018-02-16T13:07:14Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -25,9 +25,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-1-setup/"/>
-    <summary type="html">&lt;div id="outline-container-orgdc49d00" class="outline-2"&gt;
-&lt;h2 id="orgdc49d00"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgdc49d00"&gt;
+    <summary type="html">&lt;div id="outline-container-org1d16f69" class="outline-2"&gt;
+&lt;h2 id="org1d16f69"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org1d16f69"&gt;
 &lt;p&gt;
 This video will step you through setting up Emacs to use &lt;a href="http://melpa.org/#/"&gt;MELPA&lt;/a&gt; for packages.
 &lt;/p&gt;
@@ -87,15 +87,15 @@ Relavent links:
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Code for this video:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"&gt;https://github.com/zamansky/using-emacs/tree/lesson-1-setup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/lesson-1-setup"&gt;https://github.com/zamansky/using-emacs/tree/lesson-1-setup&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Complete code built up over all videos:
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;&lt;/a&gt;&lt;a href="https://github.com/zamansky/using-emacs/tree/master"&gt;https://github.com/zamansky/using-emacs/tree/master&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Melpa and packages
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;&lt;a href="http://melpa.org"&gt;http://melpa.org&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://melpa.org"&gt;&lt;/a&gt;&lt;a href="http://melpa.org"&gt;http://melpa.org&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/justbur/emacs-which-key"&gt;which-key&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/larstvei/Try"&gt;try&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
@@ -114,9 +114,9 @@ Relavent links:
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-introduction/"/>
-    <summary type="html">&lt;div id="outline-container-orgb92b142" class="outline-2"&gt;
-&lt;h2 id="orgb92b142"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb92b142"&gt;
+    <summary type="html">&lt;div id="outline-container-orge89b4f5" class="outline-2"&gt;
+&lt;h2 id="orge89b4f5"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge89b4f5"&gt;
 &lt;p&gt;
 I'm sure I've mentioned that I've been an Emacs wonk for
 decades. Since the mid-80's in fact. I've spent time using other
@@ -178,14 +178,14 @@ tools. We'll also cover some larger topics including:
 
 &lt;p&gt;
 I'll put together an index to these posts along with any ancillary
-materials here: &lt;a href="file:///stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;.
+materials here: &lt;a href="file:///stories/emacs"&gt;&lt;/a&gt;&lt;a href="http://cestlaz.github.io/stories/emacs"&gt;http://cestlaz.github.io/stories/emacs&lt;/a&gt;.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org9036890" class="outline-2"&gt;
-&lt;h2 id="org9036890"&gt;Getting started&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org9036890"&gt;
+&lt;div id="outline-container-orgf564e54" class="outline-2"&gt;
+&lt;h2 id="orgf564e54"&gt;Getting started&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf564e54"&gt;
 &lt;p&gt;
 This series is going to assume you've installed emacs and worked your
 way through the included tutorial.
@@ -226,9 +226,9 @@ So, stay tuned.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/collaborative-coding-or-cheating/"/>
-    <summary type="html">&lt;div id="outline-container-org27ceac4" class="outline-2"&gt;
-&lt;h2 id="org27ceac4"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org27ceac4"&gt;
+    <summary type="html">&lt;div id="outline-container-org42323b6" class="outline-2"&gt;
+&lt;h2 id="org42323b6"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org42323b6"&gt;
 &lt;p&gt;
 I haven't been teaching this past semester. That's why I haven't been
 writing much about lessons. I miss working with students but that will
@@ -398,9 +398,9 @@ right way.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/shell-short-tagging/"/>
-    <summary type="html">&lt;div id="outline-container-org7885517" class="outline-2"&gt;
-&lt;h2 id="org7885517"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org7885517"&gt;
+    <summary type="html">&lt;div id="outline-container-org122a046" class="outline-2"&gt;
+&lt;h2 id="org122a046"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org122a046"&gt;
 &lt;p&gt;
 Quick post to add to the recent command line fu I've been writing
 about.
@@ -469,17 +469,17 @@ done
 A line at a time:
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgfdd36ca" class="outline-3"&gt;
-&lt;h3 id="orgfdd36ca"&gt;ls *md *html&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgfdd36ca"&gt;
+&lt;div id="outline-container-orgc5acfe6" class="outline-3"&gt;
+&lt;h3 id="orgc5acfe6"&gt;ls *md *html&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgc5acfe6"&gt;
 &lt;p&gt;
 This lists all the files with that end in &lt;b&gt;&lt;b&gt;md&lt;/b&gt;&lt;/b&gt; or &lt;b&gt;&lt;b&gt;html&lt;/b&gt;&lt;/b&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orga1556d5" class="outline-3"&gt;
-&lt;h3 id="orga1556d5"&gt;| while read filename&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orga1556d5"&gt;
+&lt;div id="outline-container-org19f69fd" class="outline-3"&gt;
+&lt;h3 id="org19f69fd"&gt;| while read filename&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-org19f69fd"&gt;
 &lt;p&gt;
 The vertical bar (pipe) sends the output of &lt;b&gt;&lt;b&gt;ls&lt;/b&gt;&lt;/b&gt; into the &lt;b&gt;&lt;b&gt;while read&lt;/b&gt;&lt;/b&gt;
 command. The &lt;b&gt;&lt;b&gt;while&lt;/b&gt;&lt;/b&gt; command sets up a loop which, each time
@@ -489,9 +489,9 @@ through, reads the next input and places into the variable
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;div id="outline-container-orgfb7818c" class="outline-3"&gt;
-&lt;h3 id="orgfb7818c"&gt;sed "/ type: text/  i .. tags: " $filename&lt;/h3&gt;
-&lt;div class="outline-text-3" id="text-orgfb7818c"&gt;
+&lt;div id="outline-container-orgd2f486f" class="outline-3"&gt;
+&lt;h3 id="orgd2f486f"&gt;sed "/ type: text/  i .. tags: " $filename&lt;/h3&gt;
+&lt;div class="outline-text-3" id="text-orgd2f486f"&gt;
 &lt;p&gt;
 Sed is the stream editor. The stuff between the slashes finds the line
 with the text &lt;b&gt;&lt;b&gt;type: text&lt;/b&gt;&lt;/b&gt; in it. The &lt;b&gt;&lt;b&gt;i&lt;/b&gt;&lt;/b&gt; inserts a line above and
@@ -503,9 +503,9 @@ loop.
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org6627200" class="outline-2"&gt;
-&lt;h2 id="org6627200"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6627200"&gt;
+&lt;div id="outline-container-org13e26fe" class="outline-2"&gt;
+&lt;h2 id="org13e26fe"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org13e26fe"&gt;
 &lt;p&gt;
 Now all of my files have blank &lt;b&gt;&lt;b&gt;tag&lt;/b&gt;&lt;/b&gt; slugs so I can find my netlogo
 posts and tag them:
@@ -551,18 +551,18 @@ You can find all those posts &lt;a href="http://cestlaz.github.io/categories/net
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/duplicate-emails/"/>
-    <summary type="html">&lt;div id="outline-container-org6a16bdb" class="outline-2"&gt;
-&lt;h2 id="org6a16bdb"&gt;Repost&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6a16bdb"&gt;
+    <summary type="html">&lt;div id="outline-container-orgba12304" class="outline-2"&gt;
+&lt;h2 id="orgba12304"&gt;Repost&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgba12304"&gt;
 &lt;p&gt;
 This is a repost from March 2015. It didn't transfer when I rebooted the blog.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-org57a3f02" class="outline-2"&gt;
-&lt;h2 id="org57a3f02"&gt;Original&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org57a3f02"&gt;
+&lt;div id="outline-container-orgf92e8b5" class="outline-2"&gt;
+&lt;h2 id="orgf92e8b5"&gt;Original&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgf92e8b5"&gt;
 &lt;p&gt;
 Quick post on why I love the Unix command line.
 &lt;/p&gt;
@@ -761,9 +761,9 @@ manner of text manipulation problems become pretty easy.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/bash-scripting/"/>
-    <summary type="html">&lt;div id="outline-container-org3d2a62a" class="outline-2"&gt;
-&lt;h2 id="org3d2a62a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3d2a62a"&gt;
+    <summary type="html">&lt;div id="outline-container-org2b661e4" class="outline-2"&gt;
+&lt;h2 id="org2b661e4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org2b661e4"&gt;
 &lt;p&gt;
 Over in the Facebook AP Computer Science Teachers group someone asked
 for thoughts on covering BASH scripting as a post AP topic.
@@ -920,9 +920,9 @@ In terms of tools, I get a lot of mileage out of:
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id="outline-container-orgd278e9e" class="outline-2"&gt;
-&lt;h2 id="orgd278e9e"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd278e9e"&gt;
+&lt;div id="outline-container-orgd0d1c35" class="outline-2"&gt;
+&lt;h2 id="orgd0d1c35"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd0d1c35"&gt;
 &lt;p&gt;
 A nice simple thing you can do with these is clean data. Let's say you
 want to do some analytics on a book from Project Gutenberg. You might
@@ -1090,9 +1090,9 @@ anymore it's still an important part of the programs I build.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/world-without-college-board/"/>
-    <summary type="html">&lt;div id="outline-container-orgd1b56e0" class="outline-2"&gt;
-&lt;h2 id="orgd1b56e0"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd1b56e0"&gt;
+    <summary type="html">&lt;div id="outline-container-orgce607ff" class="outline-2"&gt;
+&lt;h2 id="orgce607ff"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgce607ff"&gt;
 &lt;p&gt;
 Some good points in the Facebook comments on my &lt;a href="http://cestlaz.github.io/posts/ap-we-dont-trust-teachers/#.Vy5aAd9vH0o"&gt;last post&lt;/a&gt;. One notable
 comment was the fact that many teachers wouldn't be able to gain the

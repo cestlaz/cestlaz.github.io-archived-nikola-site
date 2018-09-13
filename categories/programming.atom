@@ -3,149 +3,13 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about programming</title>
   <id>http://cestlaz.github.io/categories/programming.atom</id>
-  <updated>2018-09-05T21:31:47Z</updated>
+  <updated>2018-02-16T13:07:17Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/categories/programming.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/categories/programming/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
-  <entry>
-    <title>Rite Of Passage Projects</title>
-    <id>http://cestlaz.github.io/posts/rite-of-passage-projects/</id>
-    <updated>2018-08-17T15:18:11-04:00</updated>
-    <published>2018-08-17T15:18:11-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/rite-of-passage-projects/"/>
-    <summary type="html">&lt;div id="outline-container-org047f8c6" class="outline-2"&gt;
-&lt;h2 id="org047f8c6"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org047f8c6"&gt;
-&lt;p&gt;
-JCS's &lt;a href="https://irreal.org/blog/?p=7414#comment-4045190612"&gt;post&lt;/a&gt; on Irreal today brought me back. It was about &lt;a href="https://en.wikipedia.org/wiki/Brief_(text_editor)"&gt;Brief&lt;/a&gt; which
-was the editing hotness back in the day. I played with it a little
-really mostly used Emacs clones for real work when I was stuck on
-MS-DOS systems. Usually either &lt;a href="https://en.wikipedia.org/wiki/JOVE"&gt;JOVE&lt;/a&gt; or &lt;a href="https://en.wikipedia.org/wiki/Epsilon_(text_editor)"&gt;Epsilon&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-In the comments Jon reminded me about the &lt;a href="https://en.wikipedia.org/wiki/MKS_Toolkit"&gt;MKS Toolkit&lt;/a&gt;
-which brought most everyday Unix tools to DOS along with a shell and
-a version of Vi. I didn't use Vi much and I only used their shell
-until I wrote my own. 
-&lt;/p&gt;
-
-&lt;p&gt;
-This got me thinking about "rite of passage" projects. I was in
-college in the mid to late 80s. It was the heyday of the
-IBM-PC. Schools still used older time sharing systems like DEC-20s and
-Vaxen but the PC was all the rage. The cool thing about them was that
-you had full control and access to the machine and it was simple
-enough to get your head around pretty much everything about it. The
-downside was that MS-DOS was very limited and of course there was
-little to no networking going on. 
-&lt;/p&gt;
-
-&lt;p&gt;
-On the one hand, you could dive into the low level machine language
-stuff very easily. Get Norton's book:
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="https://covers.openlibrary.org/b/id/7446489-L.jpg" alt="7446489-L.jpg" align="center" height="250"&gt;
-&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-and you're on your way. 
-&lt;/p&gt;
-
-&lt;p&gt;
-On the other hand many student's graduated with no concept of time
-sharing and the ramifications of sharing a system or resources were
-foreign to many kids.
-&lt;/p&gt;
-
-&lt;p&gt;
-Even though we always look back to the "good old days," in many ways
-things weren't much different. I got a very strong background in
-academic CS from NYU (Courant Institute) but just like today, there
-was no real preparation for the real world.If you wanted to really develop your
-coding chops you had to work on side projects.
-&lt;/p&gt;
-
-&lt;p&gt;
-I seem to recall, a typical "rite of passage" side project was writing
-your own shell. It didn't have to be anything as powerful as BASH or
-ZSH but it would typically be much more powerful than DOS and much
-more Unixy.
-&lt;/p&gt;
-
-&lt;p&gt;
-I recall writing my first shell down in UC-49 of Tisch Hall when the
-computer labs weren't busy. I wrote it in C which was what the cool
-kids used back then. Specifically I used the &lt;a href="https://en.wikipedia.org/wiki/Mark_Williams_Company"&gt;Let's C&lt;/a&gt; compiler from the
-Mark Williams company. This was before Turbo C 2.0 so Let's C was
-pretty much the only game in town for a cheap Unix style C compiler
-for DOS. There was also Run/C but that was a C interpreter, not a
-compiler. I also used that to learn C. Funny story - I certainly
-didn't know this at the time but Run/C was written by Peter
-Brooks. Peter and I would later meet when he became my colleague at
-Stuyvesant teaching CS and I now have the privilege of being able to
-call him friend. I joke that I owe him ~ $100 for the interpreter from
-back in the day.
-&lt;/p&gt;
-
-&lt;p&gt;
-Since this was on DOS, I couldn't do real Unix style pipes like 
-&lt;code&gt;cat file | sort | uniq -c | sort -n&lt;/code&gt; but I did simulate it with redirection and temporary
-files. It also supported aliases, simple scripts and I think a few
-other things. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I was pretty happy with it and used it for a couple of years. It was
-also one of the first substantial programs I wrote. I learned a lot
-from doing it.
-&lt;/p&gt;
-
-&lt;p&gt;
-Another "rite of passage" program that was common back then was a
-text based window library. Somethig like ncurses that would allow you
-to make text based windows and menus on the text only screen. I also
-wrote one of these and actually got to use it for a project when I
-started working at Goldman. 
-&lt;/p&gt;
-
-&lt;p&gt;
-I guess the third "rite of passage" project I remember was writing a C
-compiler but that was different because it was for a class. It was a
-significant project but the class didn't really help with writing a
-large program in general - it was all about the compiler and all the
-theory behind it. Great course but not one in software engineering.
-&lt;/p&gt;
-
-&lt;p&gt;
-Nowadays the projects have changed. Text based windowing is long gone
-and while I still think writing a shell is a useful and rewarding
-exercise it's not scratching an itch the way it did back when we were
-stuck on DOS. I guess writing a full stack web app is probably a
-pretty typical one for students these days. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Any others?
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
-    <category term="c" label="C"/>
-    <category term="cs" label="cs"/>
-    <category term="emacs" label="emacs"/>
-    <category term="programming" label="programming"/>
-    <category term="projects" label="projects"/>
-  </entry>
   <entry>
     <title>Advent of Code 2017 - Day 1</title>
     <id>http://cestlaz.github.io/posts/advent-2017-1/</id>
@@ -155,9 +19,9 @@ Any others?
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/advent-2017-1/"/>
-    <summary type="html">&lt;div id="outline-container-org5cf76f3" class="outline-2"&gt;
-&lt;h2 id="org5cf76f3"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5cf76f3"&gt;
+    <summary type="html">&lt;div id="outline-container-org99aa2ad" class="outline-2"&gt;
+&lt;h2 id="org99aa2ad"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org99aa2ad"&gt;
 &lt;p&gt;
 It's once again time for &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. That one a day programming
 competition that's been running now for three years.
@@ -334,9 +198,9 @@ write that up later.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/quick-sort-starting/"/>
-    <summary type="html">&lt;div id="outline-container-org51b8cd8" class="outline-2"&gt;
-&lt;h2 id="org51b8cd8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org51b8cd8"&gt;
+    <summary type="html">&lt;div id="outline-container-orgd651a25" class="outline-2"&gt;
+&lt;h2 id="orgd651a25"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd651a25"&gt;
 &lt;p&gt;
 Thks question was posed the other day - how can one get students to
 truly understand the quicksort algorithm?
@@ -430,9 +294,9 @@ Enjoy.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/programming-idioms/"/>
-    <summary type="html">&lt;div id="outline-container-org90971e9" class="outline-2"&gt;
-&lt;h2 id="org90971e9"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org90971e9"&gt;
+    <summary type="html">&lt;div id="outline-container-orgba61bac" class="outline-2"&gt;
+&lt;h2 id="orgba61bac"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgba61bac"&gt;
 &lt;p&gt;
 I just read Jeff Yearout's recent post titled &lt;a href="http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html"&gt;The Beginner's Garden of
 Concepts&lt;/a&gt;. Not directly related but it got me thinking about
@@ -939,9 +803,9 @@ students.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/inverted-index/"/>
-    <summary type="html">&lt;div id="outline-container-org98d6538" class="outline-2"&gt;
-&lt;h2 id="org98d6538"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org98d6538"&gt;
+    <summary type="html">&lt;div id="outline-container-orge8fecb8" class="outline-2"&gt;
+&lt;h2 id="orge8fecb8"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge8fecb8"&gt;
 &lt;p&gt;
 I haven't spoken much about the class I've been teaching this
 semester. It's an intro CS course - a programming heavy intro. I

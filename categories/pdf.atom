@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about pdf</title>
   <id>http://cestlaz.github.io/categories/pdf.atom</id>
-  <updated>2018-09-05T21:31:46Z</updated>
+  <updated>2018-03-03T14:10:31Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -19,9 +19,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-44-pdf/"/>
-    <summary type="html">&lt;div id="outline-container-orga34b33a" class="outline-2"&gt;
-&lt;h2 id="orga34b33a"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga34b33a"&gt;
+    <summary type="html">&lt;div id="outline-container-org6f93cec" class="outline-2"&gt;
+&lt;h2 id="org6f93cec"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6f93cec"&gt;
 &lt;p&gt;
 One of my titles at Hunter College is Director of the Daedalus CS
 Honors program. It's something like a Hunter specific, CS specific
@@ -33,7 +33,7 @@ Hunter gives all its students the ability to get a great computer
 science education at a fraction of the cost of a private institution
 and if you're a Daedalus scholar you also get a scholarship, a laptop,
 special classes (with me :-) ), activities and more. Just the other
-day we visited  &lt;a href="http://samsungnext.com/"&gt;Samsung Next&lt;/a&gt; accelerator and earlier in the year we
+day we visited the &lt;a href="http://samsungnext.com/"&gt;Samsung Next&lt;/a&gt; accelerator and earlier in the year we
 made our annual visit to &lt;a href="http://www.catskillsconf.com/"&gt;Catskills Conf&lt;/a&gt;, arguably my favorite event of
 the year. 
 &lt;/p&gt;
@@ -41,16 +41,15 @@ the year.
 &lt;p&gt;
 When deciding on which students to recommend for acceptance, I try to
 glean as much information as I can about each applicant. When I feel
-there's not enough information, I've been known to reach out to
-recommenders and other sources for more. But first I go through the
-applications. For each student, I'm provided with a pdf file with a
-bunch of data and also an entry in an internal Hunter online form with
-even more.
+there's information, I've been known to reach out to recommenders for
+more information but first I go through the applications. For each
+student, I'm provided with a pdf file with a bunch of data and also an
+entry in an internal Hunter online form with even more.
 &lt;/p&gt;
 
 &lt;p&gt;
 For the first cohort, this wasn't a big deal. I hadn't even started at
-Hunter when the applications closed so there was no
+Hunter when the applications closed so there was o
 outreach. Everything was after the fact so there were very few
 students to evaluate.
 &lt;/p&gt;
@@ -74,10 +73,6 @@ Emacs to the rescue. Using a combination of org-mod,  &lt;a href="https://github
 &lt;p&gt;
 Take a look and let me know what you think:
 &lt;/p&gt;
-
-
-
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LFO2UbzbZhA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
     <category term="emacs" label="emacs"/>
