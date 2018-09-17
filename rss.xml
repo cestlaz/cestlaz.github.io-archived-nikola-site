@@ -1,5 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 13 Sep 2018 20:11:38 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Creating a school for CS</title><link>http://cestlaz.github.io/posts/creating-a-school/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6a3afbf" class="outline-2"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z</title><link>http://cestlaz.github.io/</link><description>C'est la Z</description><atom:link href="http://cestlaz.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Mon, 17 Sep 2018 00:31:33 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Blight Move</title><link>http://cestlaz.github.io/posts/blight-move/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgfdb6e96" class="outline-2"&gt;
+&lt;h2 id="orgfdb6e96"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgfdb6e96"&gt;
+&lt;p&gt;
+It was Jon and Amy's wedding. Jon was my student back in the day so
+there were a handful of Stuy alums there to celebrate the
+occasion. Some, like Jon, I had stayed in touch with and now count as
+friends. Others, I knew but hadn't kept up with.
+&lt;/p&gt;
+
+&lt;p&gt;
+I was with a cluster of guests and for some reason the conversation
+turned to chess computers. I started telling a  story about the my former
+teacher &lt;a href="https://cestlaz.github.io/posts/2012-05-09-my-favorite-year-teacher.html"&gt;Herb Greenhut&lt;/a&gt;'s Talking Chess Challenger computer. You would
+type in your move using modern algebraic chess notation using a kaypad
+and the program would not only respond by displaying it's move in said
+notation but also speak it in it's best &lt;a href="https://www.imdb.com/title/tt0086567/"&gt;War Games&lt;/a&gt; voice.
+&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+D5 TO E6 - PAWN TAKES ROOK
+&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+Herb had a friend Dan,  who was a decent chess player but nowhere good
+enough to compete with someone at the theoretical level of the Chess
+Challenger at it's higher levels. Even so he came up not only with a way
+to beat the computer but also to cause it to have a nervous breakdown.
+&lt;/p&gt;
+
+&lt;p&gt;
+Dan figured that the computer assumed a sensible opponent so when it
+considered its next move it built a tree assuming the human player
+would try to find strong moves. Dan would play crazy outlandish moves
+so that the computer would have to spend all its time working through
+game trees and then settle on a bad move having not found the right
+move path. Dan didn't know anything about computer science, search
+trees or Alpha Beta pruning but he was a smart guy and just figured it
+out.
+&lt;/p&gt;
+
+&lt;p&gt;
+At one point, he made a crazy move and the computer responded
+something like "C4 TO E5" and all of a sudden, I hear blurted out from
+a voice from across the wedding reception "BLIGHT MOVE!!!!!!!!"
+&lt;/p&gt;
+
+&lt;p&gt;
+I looked over and it was Mikey, a former student who I had not kept in
+contact with who had finished the story. What had happened is that the
+computer had started to create new pieces. In this case a "blight"
+which we eventually determined could move as either a bishop or a
+knight. 
+&lt;/p&gt;
+
+&lt;p&gt;
+The cool thing to me was that this was a dumb story I told my classes in
+1994 or 5 and here we were some twenty years later and Mikey
+remembered it.
+&lt;/p&gt;
+
+&lt;p&gt;
+You really never know what your students will remember about you or
+your classes years into the future.
+&lt;/p&gt;
+
+&lt;p&gt;
+I was reminded of this when I saw this tweet the other day:
+&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;For anyone wondering, this poll was in response to the quote:&lt;br&gt;&lt;br&gt;"They may forget what you said, but they will never forget how you made them feel." &lt;a href="https://t.co/QHMXTxjeLA"&gt;https://t.co/QHMXTxjeLA&lt;/a&gt;&lt;/p&gt;— Adam Boxer (@adamboxer1) &lt;a href="https://twitter.com/adamboxer1/status/1041051593255411713?ref_src=twsrc%5Etfw"&gt;September 15, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+&lt;p&gt;
+I don't know the context of the quote but &lt;a href="https://twitter.com/adamboxer1"&gt;Adam Boxer&lt;/a&gt;'s reply in the
+tweet stream seems to indicate that it comes from the thought that
+they won't remember the content so it isn't important as long as the
+kids feel good about themselves. The truth is that as a K12 teacher
+we're responsible for both the students development in the subject and
+also as a person and while people might not remember the name of the
+teacher that taught them anything in particular and in spite of people
+saying they learned "nothing in school" the truth is there's quite a
+bit that most people do learn from their teachers.
+&lt;/p&gt;
+
+&lt;p&gt;
+In terms of how students feel, I'm guessing there are some kids who
+felt that I made them feel smart or capable and probably some that I
+ended up inadvertently turning off but the majority probably didn't
+feel much of an impact in terms of how I made them feel. 
+&lt;/p&gt;
+
+&lt;p&gt;
+On the other hand, it's pretty amazing the range of things they do
+remember. Some academic, some ancillary, some just plain silly. 
+&lt;/p&gt;
+
+&lt;p&gt;
+I heard through a secondary source that Liz, mamy years out still
+remembers the recursive sock puppets I use. Since Liz is a successful
+software engineer I'm guessing she remembers the recursion as well.
+&lt;/p&gt;
+
+&lt;p&gt;
+Blake told me last year that the short edit, save, test, commit cycle
+I used made an impact on him. That's something I mention but really
+mostly model in class.
+&lt;/p&gt;
+
+&lt;p&gt;
+A couple of years ago, when out in California, I was visiting with
+Pawel who was in my class in the early 90s. He reminded me of a lesson
+that really made an impact on him. It was on a day when I decided to
+throw the planned lesson out the window and ended up working thorugh
+how I would approach and try to solve one of the recent USACO problems
+going from reading the problem to working solution.
+&lt;/p&gt;
+
+&lt;p&gt;
+Of course they all remember the Halloween costumes but that's neither
+here nor there.
+&lt;/p&gt;
+
+&lt;p&gt;
+I've had students tell me other things they remember. Sometimes, I
+don't even recall saying them. That's an important point. It might be a
+throwaway line for us as teachers but it can have a huge impact or at
+least be really memorable for the listener.
+&lt;/p&gt;
+
+&lt;p&gt;
+It's just another reminder of the impact we can have and the
+responsibility we must take seriously as teachers.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/blight-move/</guid><pubDate>Sun, 16 Sep 2018 20:37:09 GMT</pubDate></item><item><title>Creating a school for CS</title><link>http://cestlaz.github.io/posts/creating-a-school/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org6a3afbf" class="outline-2"&gt;
 &lt;h2 id="org6a3afbf"&gt;&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-org6a3afbf"&gt;
 &lt;p&gt;
@@ -1336,228 +1473,4 @@ Finally, this can be revisited if desired later on once the class has
 covered more advanced language constructs.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/early-code-reuse/</guid><pubDate>Thu, 16 Aug 2018 06:28:18 GMT</pubDate></item><item><title>Class Communications</title><link>http://cestlaz.github.io/posts/class-communications/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org3c708ae" class="outline-2"&gt;
-&lt;h2 id="org3c708ae"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3c708ae"&gt;
-&lt;p&gt;
-Right now I'm on vacation in Harrogate England. Natan  is here taking part in the International Gilbert and Sullivan
-Festival so Devorah and I came along as tourists. Today we went to Knaresborough:
-&lt;/p&gt;
-
-
-&lt;div class="figure"&gt;
-&lt;p&gt;&lt;img src="http://cestlaz.github.io/img/knaresborough.jpg" alt="knaresborough.jpg" width="500px" align="center"&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;span class="figure-number"&gt;Figure 1: &lt;/span&gt;The River Nidd as seen from Knaresborough Castle&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-Normally when traveling I try to get everything in and that leaves me
-pretty exhausted at the end of each day. Since this time we'll be here
-for around two weeks, I'm trying a less hectic pace. Do some touring
-along with some rest and relaxation. I actually gave myself the time
-to do some recreational reading and just finished &lt;a href="https://www.amazon.com/Comeback-LeMond-American-Cycling-Legendary-ebook/dp/B075VDQD2W/ref=sr_1_1?ie=UTF8&amp;amp;qid=1533756774&amp;amp;sr=8-1&amp;amp;keywords=the+comeback+de+vise"&gt;The Comeback&lt;/a&gt; by
-Daniel de Vise and have a big queue of what's next.
-&lt;/p&gt;
-
-&lt;p&gt;
-I'm also going to try to get a blog post or two out.
-&lt;/p&gt;
-
-&lt;p&gt;
-One thing I've been meaning to blog about for a while is class
-communication and having seen &lt;a href="https://medium.com/bucknell-hci/how-i-use-slack-in-my-courses-a-3-year-reflection-888c7e742d04"&gt;this&lt;/a&gt; the other day, I guess it's time.
-&lt;/p&gt;
-
-&lt;p&gt;
-In the article, Evan Peck talks about his experience using Slack as a
-means of class communications and why he likes it. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Here's my take:
-&lt;/p&gt;
-
-&lt;p&gt;
-Class communication takes many forms. It can be the dissemination of
-information such as assignments or announcements, assignment collection,
-presenting feedback either on assignments or in general, specific
-interactions between the instructor and the students, group
-discussions, and cross student interactions. 
-&lt;/p&gt;
-
-&lt;p&gt;
-For sharing and collecting code as well as providing feedback, I like
-using &lt;a href="https://cestlaz.github.io/posts/sigcse-2017-github-4/"&gt;Git and GitHub&lt;/a&gt;. I use it for homework, projects, sharing class
-code - pretty much anything involving code or student work. That
-leaves all of the basic communication platforms. The popular ones
-include:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;The schools CMS – Moodle, Blackboard etc.&lt;/li&gt;
-&lt;li&gt;Piazza or other forum platforms&lt;/li&gt;
-&lt;li&gt;Slack and other chat platforms&lt;/li&gt;
-&lt;li&gt;Facebook groups&lt;/li&gt;
-&lt;li&gt;old school mail lists&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-org3ec3e87" class="outline-2"&gt;
-&lt;h2 id="org3ec3e87"&gt;Blackboard or your school's CMS&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org3ec3e87"&gt;
-&lt;p&gt;
-First up, Blackboard.
-&lt;/p&gt;
-
-&lt;p&gt;
-Just no.
-&lt;/p&gt;
-
-&lt;p&gt;
-In my experience, they're all slow and clunky and usually have an
-awkward interface. I've always found them hard to navigate and use and
-I find little value added.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-org25abfd3" class="outline-2"&gt;
-&lt;h2 id="org25abfd3"&gt;Piazza and forum software&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org25abfd3"&gt;
-&lt;p&gt;
-&lt;a href="https://piazza.com/"&gt;Piazza&lt;/a&gt; is a free to use discussion platform. Many schools use
-it. Personally, I don't like Piazza but it does have some good points:
-&lt;/p&gt;
-
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;The Q&amp;amp;A format works pretty well.&lt;/li&gt;
-&lt;li&gt;It allows anonymous posting which is sometimes desirable.&lt;/li&gt;
-&lt;li&gt;You can look at participation reports&lt;/li&gt;
-&lt;li&gt;TAs or instructors can approve questions and answers&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;
-There really is a lot to like about it but it doesn't work for
-me. Personally, I don't like the interface but that wouldn't be the
-deal breaker for me if my kids liked it. The deal breaker for me is
-that kids have to actively go to the site. Yes, they can set their
-preferences for alerts but if they don't and they don't check the site
-regularly they'll miss things. This is a big deal to me. If I send out
-something important I have no idea if or when people will check in on
-it. For me personally, it's yet another site that I have to actively
-and regularly check. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Another interesting thing I learned about Piazza has to do with
-students honesty about platforms. Back at Stuy a colleague used Piazza
-regularly and was getting good results with it - many active
-students. I couldn't get as much buy in. The teacher told me that the
-kids said they really liked the platform. A year or two later, I
-surveyed the kids in my class – they were in his and other teachers
-the previous year or two. I asked them about platforms they used and
-how they felt about them. The results were that they used Facebook
-groups on their own (I'll talk about them later) and used whatever
-platform we required because we required it. Even if they said they
-liked it, they really didn't.
-&lt;/p&gt;
-
-&lt;p&gt;
-Last semester I set up a &lt;a href="https://www.discourse.org/"&gt;Discourse&lt;/a&gt; server for HunterCS. Discourse is
-another discussion platform. I liked the
-fact that I could run the server and had ownership of the data. I also
-liked the way the forum software worked in general. On the other hand,
-it had similar overall problems as Piazza.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-org4a35128" class="outline-2"&gt;
-&lt;h2 id="org4a35128"&gt;Slack&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4a35128"&gt;
-&lt;p&gt;
-A hot contender and the one that Mr. Peck uses is Slack. It's a chat
-platform. It can be a separate app running on your phone or desktop or
-you can use a web interface. It has channels for topics, can thread
-discussions, it does alerts well and can integrate with tools like
-calendars and GitHub. Just like with Piazza, there's a lot to like.
-&lt;/p&gt;
-
-&lt;p&gt;
-My problem with Slack is that it's really for live communication not
-asynchronous after hours communication. It works best when you're
-working on something and you have your slack window open, you have a
-question so you type it in and get immediate answers. It just doesn't
-seem to work as well when you don't use it live. You can read the
-messages posted since you last checked but it can be really hard to
-follow unless people explicitly use the threading.
-&lt;/p&gt;
-
-&lt;p&gt;
-Slack also shares the issue of being another site or application to
-use but since it does alerts well it doesn't bother me as much.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-orga2f9f00" class="outline-2"&gt;
-&lt;h2 id="orga2f9f00"&gt;Facebook groups&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orga2f9f00"&gt;
-&lt;p&gt;
-Facebook groups seem to have been the student go to for a while
-now. They create their own teacher/professor free student groups. I
-think it's great that they create resources like this and as I tell
-them, it's important for them to have a forum that's free from the
-teacher's eyes. I mean, how can they plan that surprise party for me
-on the class chatroom that I have access to :-). On the other hand,
-Facebook groups have some downsides:
-&lt;/p&gt;
-&lt;ul class="org-ul"&gt;
-&lt;li&gt;Not searchable or discoverable. I've seen kids only find out about
-them at the end of semesters.&lt;/li&gt;
-&lt;li&gt;In some cases, each year a new group is created so no institutional
-memory develops.&lt;/li&gt;
-&lt;li&gt;All the info stays in Facebook&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;div id="outline-container-org5f01fc2" class="outline-2"&gt;
-&lt;h2 id="org5f01fc2"&gt;Mail lists&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5f01fc2"&gt;
-&lt;p&gt;
-This all brings me to old school mailing lists. I've been using them
-for decades and I keep coming back to them. Since they're just email,
-no one has to check a separate app or site. Since they're email, they
-support threading. Also as email, they can be public to the list or
-private to just one or a few people.
-&lt;/p&gt;
-
-&lt;p&gt;
-Again, they're not perfect - I can't easily set up long term
-categories or channels like you can with Slack or Piazza and they
-don't integrate with tools like calendars so as with everything else,
-there's always some compromise.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div id="outline-container-orgaef0b86" class="outline-2"&gt;
-&lt;h2 id="orgaef0b86"&gt;What do you use?&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgaef0b86"&gt;
-&lt;p&gt;
-I think I might try Slack again this semester if the students want to
-go for it or maybe discourse. If they don't want to try those, then
-it'll be back to mailing lists.
-&lt;/p&gt;
-
-&lt;p&gt;
-What do all of you use? What are the strong and weak points of your
-chosen platform and what would make the ideal platform for class
-communication?
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/class-communications/</guid><pubDate>Wed, 08 Aug 2018 19:13:11 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><guid>http://cestlaz.github.io/posts/early-code-reuse/</guid><pubDate>Thu, 16 Aug 2018 06:28:18 GMT</pubDate></item></channel></rss>
