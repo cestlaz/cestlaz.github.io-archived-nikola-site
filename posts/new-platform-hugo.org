@@ -1,0 +1,44 @@
+#+BEGIN_COMMENT
+.. title: Moving to a new bloggin platform
+.. slug: new-platform-hugo
+.. date: 2018-09-20 07:37:52 UTC-04:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* 
+
+I've been using [[https://getnikola.com/blog/][Nikola]] to generate this blog since April 2016 -
+shortly after I started at Hunter. Prior to that I used [[https://jekyllrb.com/][Jekyll]] for  a
+bunch of that and it all started out as a Google Blogger blog.
+
+I moved from Blogger to Jekyll because I wanted to control my content
+and also because I wanted to user Markdown. Later I started using
+[[https://orgmode.org/][org-mode]] markdown for not only my blog but also for tons of other
+things. Jekyll became a problem for me because I'm not a Ruby guy I
+had issues maintaining Ruby ecosystem installs across all my
+machines. Next came Nikola. It was easier for me to maintain because
+it's written in Python but even so I've had some issues recently. Not
+with Nikola but with other libraries. While I like Nikola I figured
+this was a sign and it was time to learn something new.
+
+This time, I'm going to try [[https://gohugo.io/][Hugo]] written in [[https://golang.org/%0A][Go]]. It has native support
+for Org-mode  and overall looks pretty spiffy.
+
+I'll shift over in a couple of days.
+
+If you're a regular reader and you don't see a new post within a week
+it would be a real help of you would let me know. Everything should
+transision smoothly but you never know.
+
+Thanks!!!!
+
+
+
+
+
+
+
