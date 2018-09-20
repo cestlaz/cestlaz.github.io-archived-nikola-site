@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about programming)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/programming.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 13 Sep 2018 20:11:38 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Rite Of Passage Projects</title><link>http://cestlaz.github.io/posts/rite-of-passage-projects/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgb08052c" class="outline-2"&gt;
-&lt;h2 id="orgb08052c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb08052c"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C'est la Z (Posts about programming)</title><link>http://cestlaz.github.io/</link><description></description><atom:link href="http://cestlaz.github.io/categories/programming.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Tue, 18 Sep 2018 12:59:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Rite Of Passage Projects</title><link>http://cestlaz.github.io/posts/rite-of-passage-projects/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org4e176fd" class="outline-2"&gt;
+&lt;h2 id="org4e176fd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4e176fd"&gt;
 &lt;p&gt;
 JCS's &lt;a href="https://irreal.org/blog/?p=7414#comment-4045190612"&gt;post&lt;/a&gt; on Irreal today brought me back. It was about &lt;a href="https://en.wikipedia.org/wiki/Brief_(text_editor)"&gt;Brief&lt;/a&gt; which
 was the editing hotness back in the day. I played with it a little
@@ -119,9 +119,9 @@ pretty typical one for students these days.
 Any others?
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>C</category><category>cs</category><category>emacs</category><category>programming</category><category>projects</category><guid>http://cestlaz.github.io/posts/rite-of-passage-projects/</guid><pubDate>Fri, 17 Aug 2018 19:18:11 GMT</pubDate></item><item><title>Advent of Code 2017 - Day 1</title><link>http://cestlaz.github.io/posts/advent-2017-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-org99aa2ad" class="outline-2"&gt;
-&lt;h2 id="org99aa2ad"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org99aa2ad"&gt;
+&lt;/div&gt;</description><category>C</category><category>cs</category><category>emacs</category><category>programming</category><category>projects</category><guid>http://cestlaz.github.io/posts/rite-of-passage-projects/</guid><pubDate>Fri, 17 Aug 2018 19:18:11 GMT</pubDate></item><item><title>Advent of Code 2017 - Day 1</title><link>http://cestlaz.github.io/posts/advent-2017-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 It's once again time for &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt;. That one a day programming
 competition that's been running now for three years.
@@ -283,9 +283,9 @@ Day 2 also has a nice list comprehension based solution. Maybe I'll
 write that up later.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>adventofcode</category><category>cs</category><category>programming</category><category>python</category><guid>http://cestlaz.github.io/posts/advent-2017-1/</guid><pubDate>Sat, 02 Dec 2017 12:27:02 GMT</pubDate></item><item><title>Motivating and understanding quicksort</title><link>http://cestlaz.github.io/posts/quick-sort-starting/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgd651a25" class="outline-2"&gt;
-&lt;h2 id="orgd651a25"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgd651a25"&gt;
+&lt;/div&gt;</description><category>adventofcode</category><category>cs</category><category>programming</category><category>python</category><guid>http://cestlaz.github.io/posts/advent-2017-1/</guid><pubDate>Sat, 02 Dec 2017 12:27:02 GMT</pubDate></item><item><title>Motivating and understanding quicksort</title><link>http://cestlaz.github.io/posts/quick-sort-starting/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 Thks question was posed the other day - how can one get students to
 truly understand the quicksort algorithm?
@@ -332,11 +332,14 @@ from this new arrangement. We can now tell that:
 &lt;/p&gt;
 
 &lt;ul class="org-ul"&gt;
-&lt;li&gt;everyone to the left of the "pivot" is less than the pivot&lt;/li&gt;
-&lt;li&gt;everyone to the right is greater&lt;/li&gt;
+&lt;li&gt;everyone to the left of the "pivot" is less than the pivot
+&lt;/li&gt;
+&lt;li&gt;everyone to the right is greater
+&lt;/li&gt;
 &lt;li&gt;The pivot element is at its true location if the list were
 sorted. That is, if we started arranging around item k, then we've
-moved item k to the kth location in the dataset.&lt;/li&gt;
+moved item k to the kth location in the dataset.
+&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;
@@ -365,9 +368,9 @@ programming paradigms (&lt;a href="https://cestlaz.github.io/posts/2010-03-14-so
 Enjoy.
 &lt;/p&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><category>algorithms. unplugged</category><category>cs</category><category>programming</category><guid>http://cestlaz.github.io/posts/quick-sort-starting/</guid><pubDate>Tue, 21 Nov 2017 14:34:05 GMT</pubDate></item><item><title>Programming Idioms</title><link>http://cestlaz.github.io/posts/programming-idioms/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orgba61bac" class="outline-2"&gt;
-&lt;h2 id="orgba61bac"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgba61bac"&gt;
+&lt;/div&gt;</description><category>algorithms. unplugged</category><category>cs</category><category>programming</category><guid>http://cestlaz.github.io/posts/quick-sort-starting/</guid><pubDate>Tue, 21 Nov 2017 14:34:05 GMT</pubDate></item><item><title>Programming Idioms</title><link>http://cestlaz.github.io/posts/programming-idioms/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 I just read Jeff Yearout's recent post titled &lt;a href="http://k12csteaching.blogspot.com/2017/10/the-beginners-garden-of-concepts.html"&gt;The Beginner's Garden of
 Concepts&lt;/a&gt;. Not directly related but it got me thinking about
@@ -679,7 +682,12 @@ Part two of this problem is a perfect time to use that technique.
 Here's the video, I hope you enjoy it:
 &lt;/p&gt;
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/EC8gSrYQ11g" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</description><category>adventofcode</category><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-of-code-2016-2/</guid><pubDate>Thu, 08 Dec 2016 13:40:49 GMT</pubDate></item><item><title>A Teacher looks at Advent of Code 2016 #1</title><link>http://cestlaz.github.io/posts/advent-code-2016-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
+&lt;div class="export"&gt;
+&lt;p&gt;
+&amp;lt;iframe width="560" height="315" src="&lt;a href="https://www.youtube.com/embed/EC8gSrYQ11g"&gt;https://www.youtube.com/embed/EC8gSrYQ11g&lt;/a&gt;" frameborder="0" allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;
+&lt;/p&gt;
+
+&lt;/div&gt;</description><category>adventofcode</category><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-of-code-2016-2/</guid><pubDate>Thu, 08 Dec 2016 13:40:49 GMT</pubDate></item><item><title>A Teacher looks at Advent of Code 2016 #1</title><link>http://cestlaz.github.io/posts/advent-code-2016-1/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;p&gt;
 I recently &lt;a href="http://cestlaz.github.io/posts/advent-of-code-2016/"&gt;posted&lt;/a&gt; about &lt;a href="http://adventofcode.com"&gt;Advent of Code&lt;/a&gt; - a series of programming
 problems relseased one a day. While they vary in terms of level of
 difficulty, a number of them make nice problems for introductory to
@@ -801,9 +809,9 @@ Here's all the code:
 &lt;p&gt;
 Overall, a nice little problem for beginning and intermediate
 students.
-&lt;/p&gt;</description><category>adventofcode</category><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-code-2016-1/</guid><pubDate>Tue, 06 Dec 2016 15:46:17 GMT</pubDate></item><item><title>Inverted Index Project</title><link>http://cestlaz.github.io/posts/inverted-index/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-orge8fecb8" class="outline-2"&gt;
-&lt;h2 id="orge8fecb8"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orge8fecb8"&gt;
+&lt;/p&gt;</description><category>adventofcode</category><category>cs</category><category>pedagogy</category><category>programming</category><guid>http://cestlaz.github.io/posts/advent-code-2016-1/</guid><pubDate>Tue, 06 Dec 2016 15:46:17 GMT</pubDate></item><item><title>Inverted Index Project</title><link>http://cestlaz.github.io/posts/inverted-index/</link><dc:creator>Mike Zamansky</dc:creator><description>&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
 I haven't spoken much about the class I've been teaching this
 semester. It's an intro CS course - a programming heavy intro. I
@@ -835,49 +843,49 @@ example, given the following four one line files:
 
 
 &lt;colgroup&gt;
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 &lt;/colgroup&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th scope="col" class="org-left"&gt;files&lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt;contents&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;files&lt;/th&gt;
+&lt;th scope="col" class="left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="left"&gt;contents&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td class="org-left"&gt;file.01&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;if you prick us do we not bleed&lt;/td&gt;
+&lt;td class="left"&gt;file.01&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;if you prick us do we not bleed&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;file.02&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;if you tickle us do we not laugh&lt;/td&gt;
+&lt;td class="left"&gt;file.02&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;if you tickle us do we not laugh&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;file.03&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;if you poison us do we not die and&lt;/td&gt;
+&lt;td class="left"&gt;file.03&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;if you poison us do we not die and&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;file.04&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;if you wrong us shall we not revenge&lt;/td&gt;
+&lt;td class="left"&gt;file.04&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;if you wrong us shall we not revenge&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -893,48 +901,48 @@ that contain it (partially shown here),
 
 
 &lt;colgroup&gt;
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 
-&lt;col class="org-left"&gt;
+&lt;col class="left"&gt;
 &lt;/colgroup&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th scope="col" class="org-left"&gt;Word&lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt; &lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt;Files containing It's&lt;/th&gt;
+&lt;th scope="col" class="left"&gt;Word&lt;/th&gt;
+&lt;th scope="col" class="left"&gt; &lt;/th&gt;
+&lt;th scope="col" class="left"&gt;Files containing It's&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td class="org-left"&gt;if&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;td class="left"&gt;if&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;you&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;td class="left"&gt;you&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;prick&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01&lt;/td&gt;
+&lt;td class="left"&gt;prick&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;us&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
+&lt;td class="left"&gt;us&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01 file.02 file.03 file.04&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td class="org-left"&gt;do&lt;/td&gt;
-&lt;td class="org-left"&gt; &lt;/td&gt;
-&lt;td class="org-left"&gt;file.01 file.02 file.03&lt;/td&gt;
+&lt;td class="left"&gt;do&lt;/td&gt;
+&lt;td class="left"&gt; &lt;/td&gt;
+&lt;td class="left"&gt;file.01 file.02 file.03&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;

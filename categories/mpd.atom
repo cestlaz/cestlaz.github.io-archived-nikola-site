@@ -3,7 +3,7 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>Posts about mpd</title>
   <id>http://cestlaz.github.io/categories/mpd.atom</id>
-  <updated>2018-02-26T10:23:31Z</updated>
+  <updated>2018-02-20T19:59:41Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
@@ -19,45 +19,37 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/using-emacs-43-music/"/>
-    <summary type="html">&lt;div id="outline-container-orgdda820b" class="outline-2"&gt;
-&lt;h2 id="orgdda820b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgdda820b"&gt;
+    <summary type="html">&lt;div id="outline-container-org6935196" class="outline-2"&gt;
+&lt;h2 id="org6935196"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6935196"&gt;
 &lt;p&gt;
-I like to listen to music at work. Sometimes I just stream from
-YouTube, Soundcloud, Spotify or some other online source but if you're
-a person of a certain age, like me, you probably have quite an mp3
-collection. All those CDs that have been ripped not to mention some
-converted vinyl.
+One day I'll do a Magit video but since there are already some good
+ones out there I thought I'd share a couple of other great git related
+packages.
 &lt;/p&gt;
 
 &lt;p&gt;
-I used to use the &lt;a href="https://www.musicpd.org/"&gt;Music Player Daemon&lt;/a&gt; or MPD back in the day. It would
-run in the background and you could connect to it using lots of
-&lt;a href="https://www.musicpd.org/clients/"&gt;clients&lt;/a&gt;.
+The first is &lt;a href="https://github.com/syohex/emacs-git-gutter/tree/00c05264af046b5ce248e5b0bc42f117d9c27a09"&gt;Git Gutter&lt;/a&gt; which adds markers on the side gutter of your
+buffer so you know what's changed since you're last commit. I pretty
+much use it exclusively for that visual but it can also be used to
+cmmit and revert individual chunks of your changes. 
 &lt;/p&gt;
 
 &lt;p&gt;
-When I was running Ubuntu and Mint Linux, I had some trouble setting
-up MPD but the process is much smoother using Manjaro which is Arch
-based and I'm currently enjoying.
+The second is &lt;a href="https://github.com/pidu/git-timemachine"&gt;Git Timemachine&lt;/a&gt; which lets you move forward and back
+between commits. 
 &lt;/p&gt;
 
 &lt;p&gt;
-Here's a video on how I set up MPD and also use Emacs to control it.
+The video demos both. 
 &lt;/p&gt;
 
 &lt;p&gt;
-Coincidentally, on the same day I recorded this, &lt;a href="https://www.youtube.com/channel/UCDEtZ7AKmwS0_GNJog01D2g/feed"&gt;Uncle Dave&lt;/a&gt; put up a
-similar &lt;a href="https://www.youtube.com/watch?v=xTVN8UDScqk"&gt;video&lt;/a&gt;. Dave also sets up MPD on an Arch based linux but he
-uses EMMS for his player. I ultimately end up with Simple-MPC with
-briefs stops at the built in MPC mode and Mingus along the way.
+Enjoy
 &lt;/p&gt;
 
-&lt;p&gt;
-Enjoy.
-&lt;/p&gt;
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LWd60rc_rQ0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/P-mLxkb-EE8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;/div&gt;</summary>
     <category term="emacs" label="emacs"/>

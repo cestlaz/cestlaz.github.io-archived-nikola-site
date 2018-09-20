@@ -3,14 +3,65 @@
 <feed xml:lang="en" xmlns="http://www.w3.org/2005/Atom">
   <title>C'est la Z</title>
   <id>http://cestlaz.github.io/index.atom</id>
-  <updated>2018-09-17T00:31:33Z</updated>
+  <updated>2018-09-20T15:31:58Z</updated>
   <author>
     <name>Mike Zamansky</name>
   </author>
   <link rel="self" type="application/atom+xml" href="http://cestlaz.github.io/index.atom"/>
-  <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-41.atom"/>
+  <link rel="next" type="application/atom+xml" href="http://cestlaz.github.io/index-42.atom"/>
   <link rel="alternate" type="text/html" href="http://cestlaz.github.io/"/>
   <generator uri="https://getnikola.com/">Nikola</generator>
+  <entry>
+    <title>Moving to a new bloggin platform</title>
+    <id>http://cestlaz.github.io/posts/new-platform-hugo/</id>
+    <updated>2018-09-20T07:37:52-04:00</updated>
+    <published>2018-09-20T07:37:52-04:00</published>
+    <author>
+      <name>Mike Zamansky</name>
+    </author>
+    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/new-platform-hugo/"/>
+    <summary type="html">&lt;div id="outline-container-orgec1de43" class="outline-2"&gt;
+&lt;h2 id="orgec1de43"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgec1de43"&gt;
+&lt;p&gt;
+I've been using &lt;a href="https://getnikola.com/blog/"&gt;Nikola&lt;/a&gt; to generate this blog since April 2016 -
+shortly after I started at Hunter. Prior to that I used &lt;a href="https://jekyllrb.com/"&gt;Jekyll&lt;/a&gt; for  a
+bunch of that and it all started out as a Google Blogger blog.
+&lt;/p&gt;
+
+&lt;p&gt;
+I moved from Blogger to Jekyll because I wanted to control my content
+and also because I wanted to user Markdown. Later I started using
+&lt;a href="https://orgmode.org/"&gt;org-mode&lt;/a&gt; markdown for not only my blog but also for tons of other
+things. Jekyll became a problem for me because I'm not a Ruby guy I
+had issues maintaining Ruby ecosystem installs across all my
+machines. Next came Nikola. It was easier for me to maintain because
+it's written in Python but even so I've had some issues recently. Not
+with Nikola but with other libraries. While I like Nikola I figured
+this was a sign and it was time to learn something new.
+&lt;/p&gt;
+
+&lt;p&gt;
+This time, I'm going to try &lt;a href="https://gohugo.io/"&gt;Hugo&lt;/a&gt; written in &lt;a href="https://golang.org/%0A"&gt;Go&lt;/a&gt;. It has native support
+for Org-mode  and overall looks pretty spiffy.
+&lt;/p&gt;
+
+&lt;p&gt;
+I'll shift over in a couple of days.
+&lt;/p&gt;
+
+&lt;p&gt;
+If you're a regular reader and you don't see a new post within a week
+it would be a real help of you would let me know. Everything should
+transision smoothly but you never know.
+&lt;/p&gt;
+
+&lt;p&gt;
+Thanks!!!!
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</summary>
+  </entry>
   <entry>
     <title>Blight Move</title>
     <id>http://cestlaz.github.io/posts/blight-move/</id>
@@ -20,9 +71,9 @@
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/blight-move/"/>
-    <summary type="html">&lt;div id="outline-container-orgfdb6e96" class="outline-2"&gt;
-&lt;h2 id="orgfdb6e96"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgfdb6e96"&gt;
+    <summary type="html">&lt;div id="outline-container-org77053e5" class="outline-2"&gt;
+&lt;h2 id="org77053e5"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org77053e5"&gt;
 &lt;p&gt;
 It was Jon and Amy's wedding. Jon was my student back in the day so
 there were a handful of Stuy alums there to celebrate the
@@ -168,9 +219,9 @@ responsibility we must take seriously as teachers.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/creating-a-school/"/>
-    <summary type="html">&lt;div id="outline-container-org6a3afbf" class="outline-2"&gt;
-&lt;h2 id="org6a3afbf"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org6a3afbf"&gt;
+    <summary type="html">&lt;div id="outline-container-org8055370" class="outline-2"&gt;
+&lt;h2 id="org8055370"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org8055370"&gt;
 &lt;p&gt;
 &lt;a href="http://blog.acthompson.net/2018/09/do-we-really-need-cs-focused-high.html"&gt;Do we really need CS focused high schools?&lt;/a&gt;
 &lt;/p&gt;
@@ -379,9 +430,9 @@ nice.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/that-time-bill-gates-visited-afse/"/>
-    <summary type="html">&lt;div id="outline-container-org4f4cbba" class="outline-2"&gt;
-&lt;h2 id="org4f4cbba"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4f4cbba"&gt;
+    <summary type="html">&lt;div id="outline-container-orge77d786" class="outline-2"&gt;
+&lt;h2 id="orge77d786"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orge77d786"&gt;
 &lt;p&gt;
 AFSE stands for the Academy for Software Engineering. It's a public
 school in New York City with a stated focus on, well, software
@@ -504,9 +555,9 @@ or will it make it easier to get non tech types. Time will tell.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/why-binary/"/>
-    <summary type="html">&lt;div id="outline-container-orgadd9252" class="outline-2"&gt;
-&lt;h2 id="orgadd9252"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgadd9252"&gt;
+    <summary type="html">&lt;div id="outline-container-orgfd9899b" class="outline-2"&gt;
+&lt;h2 id="orgfd9899b"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgfd9899b"&gt;
 &lt;p&gt;
 Yesterday, Alfred Thompson asked &lt;a href="https://twitter.com/alfredtwo/status/1036982959587446784"&gt;"Why is it important for CS students
 to understand binary?"&lt;/a&gt; on Twitter which led to a number of interesting
@@ -806,9 +857,9 @@ world
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/starting-school-2018/"/>
-    <summary type="html">&lt;div id="outline-container-org0e37a62" class="outline-2"&gt;
-&lt;h2 id="org0e37a62"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org0e37a62"&gt;
+    <summary type="html">&lt;div id="outline-container-org6a6a321" class="outline-2"&gt;
+&lt;h2 id="org6a6a321"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org6a6a321"&gt;
 &lt;p&gt;
 Today was the first day of school for all NYC teachers. Students come
 back tomorrow. That's a quick turnaround. Some years, they get a day
@@ -878,9 +929,9 @@ have a great semester!!!!!
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/class-rules/"/>
-    <summary type="html">&lt;div id="outline-container-org44f33c0" class="outline-2"&gt;
-&lt;h2 id="org44f33c0"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org44f33c0"&gt;
+    <summary type="html">&lt;div id="outline-container-org60b9db4" class="outline-2"&gt;
+&lt;h2 id="org60b9db4"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org60b9db4"&gt;
 &lt;p&gt;
 Classes started up again today so I thought I'd talk about my class
 rules.
@@ -1016,9 +1067,9 @@ I think it's important enough to make the effort.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/artifacts-have-stories/"/>
-    <summary type="html">&lt;div id="outline-container-org5017cfe" class="outline-2"&gt;
-&lt;h2 id="org5017cfe"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org5017cfe"&gt;
+    <summary type="html">&lt;div id="outline-container-org0b17966" class="outline-2"&gt;
+&lt;h2 id="org0b17966"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org0b17966"&gt;
 &lt;p&gt;
 Earlier today I was asked about my avatar:
 &lt;/p&gt;
@@ -1155,9 +1206,9 @@ my past and my shared journey with so many of my students.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/software-longevity/"/>
-    <summary type="html">&lt;div id="outline-container-org4eb7fa6" class="outline-2"&gt;
-&lt;h2 id="org4eb7fa6"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-org4eb7fa6"&gt;
+    <summary type="html">&lt;div id="outline-container-orgd198407" class="outline-2"&gt;
+&lt;h2 id="orgd198407"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-orgd198407"&gt;
 &lt;p&gt;
 Writing about &lt;a href="http://cestlaz.github.io/posts/rite-of-passage-projects/#.W3l-fxhKhhE"&gt;old projects&lt;/a&gt; got me thinking of my first programming gig
 and software longevity. It was a part time after school / full time
@@ -1320,9 +1371,9 @@ right.
       <name>Mike Zamansky</name>
     </author>
     <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/rite-of-passage-projects/"/>
-    <summary type="html">&lt;div id="outline-container-orgb08052c" class="outline-2"&gt;
-&lt;h2 id="orgb08052c"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgb08052c"&gt;
+    <summary type="html">&lt;div id="outline-container-org4e176fd" class="outline-2"&gt;
+&lt;h2 id="org4e176fd"&gt;&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-org4e176fd"&gt;
 &lt;p&gt;
 JCS's &lt;a href="https://irreal.org/blog/?p=7414#comment-4045190612"&gt;post&lt;/a&gt; on Irreal today brought me back. It was about &lt;a href="https://en.wikipedia.org/wiki/Brief_(text_editor)"&gt;Brief&lt;/a&gt; which
 was the editing hotness back in the day. I played with it a little
@@ -1446,163 +1497,5 @@ Any others?
     <category term="emacs" label="emacs"/>
     <category term="programming" label="programming"/>
     <category term="projects" label="projects"/>
-  </entry>
-  <entry>
-    <title>Early Code Reuse</title>
-    <id>http://cestlaz.github.io/posts/early-code-reuse/</id>
-    <updated>2018-08-16T02:28:18-04:00</updated>
-    <published>2018-08-16T02:28:18-04:00</published>
-    <author>
-      <name>Mike Zamansky</name>
-    </author>
-    <link rel="alternate" type="text/html" href="http://cestlaz.github.io/posts/early-code-reuse/"/>
-    <summary type="html">&lt;div id="outline-container-orgef9434b" class="outline-2"&gt;
-&lt;h2 id="orgef9434b"&gt;&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-orgef9434b"&gt;
-&lt;p&gt;
-I've been following the tweets coming out of &lt;a href="https://icer.acm.org/"&gt;ICER2018&lt;/a&gt;. I've never been
-to ICER but now am thinking about trying to get funding to go next
-year. One set of tweets involved students writing or using APIs or
-Libraries. This overlaps with Owen Astrachan's talk from this past
-year's CSTA conference on sorting. I was planning on writing a post
-about Owen's talk but I thought I'd leave it for the school year
-closer to when sorting is typically covered.
-&lt;/p&gt;
-
-&lt;p&gt;
-The points alluded to in the tweets go far deeper than can be
-addressed in one blog post and are more suited to the sorting post
-I'll write later on but I thought I'd share a lab that I stole from a
-friend of mine years ago to try to get the kids to abstract code into
-functions or methods early and to start to think about reusing blocks
-of code.
-&lt;/p&gt;
-
-&lt;p&gt;
-I've talked about abstracting out and reusing code &lt;a href="https://cestlaz.github.io/posts/refactoring"&gt;before&lt;/a&gt;, after
-students have covered repetition but this lab
-can be done even earlier.  Part of the motivation is the age old
-problem of objects / functions / methods early or control structures
-early. With o/f/m early kids think about decomposition, layers, and
-abstractions but they don't have the tools to do a whole lot of
-interesting things. On the other hand, with control structures early,
-kids tend to get in the mindset of throwing everything in "main" at
-the top level.
-&lt;/p&gt;
-
-&lt;p&gt;
-This lab tries to get the kids abstracting out and reusing or sharing
-code but doesn't require much more than methods or functions.
-&lt;/p&gt;
-
-&lt;p&gt;
-The idea is to create an ASCII art robot or something similar. Of
-course, this could also be done in a graphical environment:
-&lt;/p&gt;
-
-
-&lt;pre class="example"&gt;
-
-     ######################
-     #                    #
-     #   XX          XX   #
-     #                    #
-     #       XXXXX        #
-     #                    #
-     ######################
-              ###
-              ###
-          #############
-          #           #
-   ########           ########
-          #           #
-          #           #
-          #           #
-          #############
-            ##      ##
-            ##      ##
-            ##      ##
-_ 
-&lt;/pre&gt;
-
-&lt;p&gt;
-This can easily be done with a series of output instructions or
-possibly by building a string with embedded newlines.
-&lt;/p&gt;
-
-&lt;p&gt;
-The interesting part comes when you have the student write different
-functions for the parts of the robot - the head, body, and legs.
-&lt;/p&gt;
-
-&lt;p&gt;
-Students end up with routines like this:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="nf"&gt;generateHead&lt;/span&gt;&lt;span class="o"&gt;(){&lt;/span&gt;
-    &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;"##########\n"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-    &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;    &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"#        #\n"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-    &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;    &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"#  X  X  #\n"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-    &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;    &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"#         #\n"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-    &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;    &lt;span class="n"&gt;h&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;"###########\n"&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-and then can generate their robot:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="nf"&gt;generateRobot&lt;/span&gt;&lt;span class="o"&gt;(){&lt;/span&gt;
-    &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;generatehead&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
-    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;generateBody&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
-    &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;generateLegs&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Now for the fun part. Students can make a variety of heads, legs, and
-bodies. Going further, introduce if statements and random numbers and
-they can generate random robots:
-&lt;/p&gt;
-
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="nf"&gt;genRobot&lt;/span&gt;&lt;span class="o"&gt;(){&lt;/span&gt;
-    &lt;span class="n"&gt;Random&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="n"&gt;Random&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
-    &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;robot&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;""&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-
-    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="na"&gt;nextInt&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-	&lt;span class="n"&gt;robot&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;robot&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;generateHead1&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
-    &lt;span class="o"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;){&lt;/span&gt;
-	&lt;span class="n"&gt;robot&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;robot&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;generateHead2&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
-    &lt;span class="o"&gt;}&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="o"&gt;{&lt;/span&gt;
-	&lt;span class="n"&gt;robot&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;robot&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;generoateHead3&lt;/span&gt;&lt;span class="o"&gt;();&lt;/span&gt;
-    &lt;span class="o"&gt;}&lt;/span&gt;
-
-    &lt;span class="cm"&gt;/* Generate the rest of the robot here */&lt;/span&gt;
-
-    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;robot&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
-
-&lt;span class="o"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;
-Not the most elegant code but this can be done VERY early when the
-students don't know more advanced constructs and techniques.
-&lt;/p&gt;
-
-&lt;p&gt;
-The class can also share robot "components" as long as there's a
-simple code sharing mechanism - perhaps using &lt;a href="https://help.github.com/articles/about-gists/"&gt;gists&lt;/a&gt;. 
-&lt;/p&gt;
-
-&lt;p&gt;
-Finally, this can be revisited if desired later on once the class has
-covered more advanced language constructs.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;</summary>
   </entry>
 </feed>
